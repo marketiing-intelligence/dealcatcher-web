@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="no" class="lenis lenis-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Totalentreprenør | Construction Excellence</title>
+
+    <!-- Google Fonts: Manrope (Body) + Space Grotesk (Display) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Manrope', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                        mono: ['IBM Plex Mono', 'monospace'],
+                    },
+                    colors: {
+                        dark: 'var(--color-dark)',
+                        light: 'var(--color-light)',
+                        accent: 'var(--color-accent)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- GSAP & Lenis -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
+    <style>
+        :root {
+            /* DEFAULTS (Overridden by Theme Switcher) */
+            --color-dark: #0F172A;
+            --color-light: #F8FAFC;
+            --color-accent: #38BDF8;
+            /* Nordic Blue Default */
+        }
+
+        body {
+            background-color: var(--color-light);
+            color: var(--color-dark);
+            font-family: 'Manrope', sans-serif;
+            overflow-x: hidden;
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        .display-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        /* UTILS */
+        .bg-accent {
+            background-color: var(--color-accent) !important;
+            transition: background-color 0.5s;
+        }
+
+        .text-accent {
+            color: var(--color-accent) !important;
+            transition: color 0.5s;
+        }
+
+        .border-accent {
+            border-color: var(--color-accent) !important;
+            transition: border-color 0.5s;
+        }
+
+        .clip-diagonal {
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        }
+
+        .clip-diagonal-top {
+            clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+        }
+
+        /* HERO ANIM */
+        .hero-split-left {
+            transform: translateX(-100%);
+            animation: slideInLeft 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        .hero-split-right {
+            transform: translateX(100%);
+            animation: slideInRight 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        @keyframes slideInLeft {
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        /* FORM */
+        .form-input {
+            background: transparent;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 1rem 0;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .form-input:focus {
+            border-bottom-color: white;
+        }
+    </style>
+</head>
+
+<body class="antialiased">
+
+    <!-- NAV -->
+    <!-- NAV (Scroll-Aware) -->
+    <nav id="main-nav"
+        class="fixed top-0 w-full z-50 px-6 py-4 flex justify-between items-center text-white transition-all duration-300">
+        <a href="#hero" class="display-font text-xl md:text-2xl font-bold tracking-tighter flex items-center gap-2">
+            <img src="assets/company_logo_total_1767961946647.png" alt="Total Logo"
+                class="h-8 md:h-10 w-auto object-contain opacity-100 transition-opacity" style="filter: invert(1);">
+        </a>
+        <div class="hidden md:flex gap-8 font-medium text-sm items-center">
+            <a href="#services" class="hover:underline decoration-2 underline-offset-4 transition-all">Services</a>
+            <a href="#about" class="hover:underline decoration-2 underline-offset-4 transition-all">About</a>
+            <a href="#projects" class="hover:underline decoration-2 underline-offset-4 transition-all">Projects</a>
+
+            <!-- Language Switcher -->
+            <div class="flex gap-2 border-l border-white/20 pl-6">
+                <button onclick="setLanguage('no')" id="lang-no"
+                    class="hover:text-accent font-mono text-xs opacity-50 transition-all">NO</button>
+                <button onclick="setLanguage('en')" id="lang-en"
+                    class="hover:text-accent font-mono text-xs font-bold transition-all">EN</button>
+            </div>
+
+            <a href="#contact"
+                class="px-4 py-2 border border-white rounded-sm hover:bg-white hover:text-black transition-colors">Contact</a>
+        </div>
+        <button onclick="toggleThemePanel()" class="md:hidden font-bold uppercase tracking-widest text-xs">MENU</button>
+    </nav>
+
+    <!-- 01. HERO (Enhanced Split Layout) -->
+    <section id="hero" class="min-h-screen flex flex-col md:flex-row relative overflow-hidden pt-20 md:pt-0">
+
+        <!-- Interactive Split Container -->
+        <div id="hero-split-container"
+            class="absolute inset-0 z-0 flex w-[120%] -left-[10%] h-full pointer-events-none">
+            <!-- Left: Image Parallax -->
+            <div class="w-1/2 h-full relative overflow-hidden hero-split-left">
+                <img src="assets/hero_background_1767958362195.png" id="hero-img"
+                    class="w-full h-full object-cover grayscale scale-110" data-img-key="hero">
+                <div class="absolute inset-0 bg-dark/20 mix-blend-multiply"></div>
+            </div>
+            <!-- Right: Color Block -->
+            <div class="w-1/2 h-full bg-accent hero-split-right relative overflow-hidden">
+                <!-- Noise Texture -->
+                <div class="absolute inset-0 opacity-10 mix-blend-overlay"
+                    style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E');">
+                </div>
+            </div>
+        </div>
+
+        <!-- Foreground Content (Right Side) -->
+        <div
+            class="w-full md:w-1/2 ml-auto h-[50vh] md:h-screen flex flex-col justify-center p-8 md:p-20 text-white relative z-10 overflow-hidden">
+
+            <!-- Scrolling Marquee Background -->
+            <div
+                class="absolute top-1/2 left-0 -translate-y-1/2 w-[200%] -translate-x-[20%] opacity-10 pointer-events-none select-none overflow-hidden">
+                <div class="whitespace-nowrap font-display font-black text-[20vh] leading-none uppercase marquee-hero"
+                    style="-webkit-text-stroke: 2px white; color: transparent;">
+                    Total Contractor Total Contractor Total Contractor
+                </div>
+            </div>
+
+            <span class="font-mono text-xs uppercase tracking-widest opacity-60 mb-6 relative block reveal-text">Est.
+                1999 • Norway</span>
+
+            <h1 class="display-font text-6xl md:text-8xl lg:text-9xl font-bold leading-[0.85] mb-8 relative drop-shadow-2xl"
+                data-i18n="hero.title">
+                Building<br>Tomorrow.
+            </h1>
+
+            <p class="max-w-md text-lg md:text-xl font-light opacity-90 mb-12 leading-relaxed relative reveal-text"
+                data-i18n="hero.subtitle">
+                We combine industrial precision with architectural vision. From concept to turnkey delivery.
+            </p>
+
+            <a href="#contact"
+                class="w-fit px-10 py-5 bg-white text-dark font-bold uppercase tracking-wider text-sm rounded-sm hover:scale-105 transition-transform shadow-2xl relative overflow-hidden group">
+                <div
+                    class="absolute inset-0 bg-accent translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                </div>
+                <span class="relative group-hover:text-white transition-colors" data-i18n="hero.cta">Get in Touch</span>
+            </a>
+        </div>
+        <!-- Tech Accents: Crosshair & Coords -->
+        <div class="absolute top-8 left-8 hidden md:block opacity-60">
+            <svg width="24" height="24" viewBox="0 0 24 24" class="text-accent stroke-[2px]">
+                <line x1="12" y1="0" x2="12" y2="24" stroke="currentColor" />
+                <line x1="0" y1="12" x2="24" y2="12" stroke="currentColor" />
+            </svg>
+            <span class="font-mono text-[10px] block mt-1 tracking-widest">59.91°N / 10.75°E</span>
+        </div>
+
+    </section>
+
+    <!-- 02. TRUST BAR (System Status Strip) -->
+    <section class="border-y border-white/20 bg-black py-4 overflow-hidden">
+        <div
+            class="container mx-auto px-6 flex flex-wrap justify-between items-center font-mono text-[10px] uppercase tracking-[0.2em] text-accent">
+            <!-- Item 1 -->
+            <div class="flex items-center gap-4 py-2 opacity-100">
+                <div class="w-2 h-2 bg-accent animate-pulse"></div>
+                <span class="text-white font-bold">Sentral Godkjenning</span>
+                <span class="border border-white/40 px-1 py-0.5 text-accent">[REG: 2026-B30]</span>
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden md:flex items-center gap-4 py-2 border-l border-white/20 pl-4 opacity-100">
+                <span class="text-white font-bold">Mesterbrev</span>
+                <span class="border border-white/40 px-1 py-0.5 text-accent">[SERT: M-992]</span>
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden md:flex items-center gap-4 py-2 border-l border-white/20 pl-4 opacity-100">
+                <span class="text-white font-bold">StartBANK</span>
+                <span class="border border-white/40 px-1 py-0.5 text-accent">[ID: 88421]</span>
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden md:flex items-center gap-4 py-2 border-l border-white/20 pl-4 opacity-100">
+                <span class="text-white font-bold">Miljøfyrtårn</span>
+                <span class="border border-white/40 px-1 py-0.5 text-accent">[ECO: A+]</span>
+            </div>
+            <!-- Coordinates -->
+            <div class="hidden lg:block ml-auto text-white/50">
+                SYS.STATUS: <span class="text-green-500 font-bold">ONLINE</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 03. SERVICES (New) -->
+    <section id="services" class="py-24 bg-light">
+        <div class="container mx-auto px-6">
+            <div class="mb-16">
+                <span class="text-accent font-mono text-xs uppercase tracking-widest mb-4 block" data-i18n="serv.sub">//
+                    EXPERTISE</span>
+                <h2 class="display-font text-4xl md:text-6xl font-bold text-dark w-full max-w-2xl"
+                    data-i18n="serv.title">
+                    Comprehensive<br>Construction
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="p-8 bg-white border border-dark/5 hover:border-accent transition-colors group">
+                    <div
+                        class="w-12 h-12 bg-accent/10 text-accent flex items-center justify-center mb-6 rounded-sm group-hover:bg-accent group-hover:!text-white transition-all duration-300">
+                        <svg class="w-6 h-6 group-hover:scale-110 transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4" data-i18n="serv.c1.title">Total Enterprise</h3>
+                    <p class="text-dark/80 leading-relaxed font-medium" data-i18n="serv.c1.desc">Full project management
+                        from initial groundbreaking to final handover. One point of contact.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="p-8 bg-white border border-dark/5 hover:border-accent transition-colors group">
+                    <div
+                        class="w-12 h-12 bg-accent/10 text-accent flex items-center justify-center mb-6 rounded-sm group-hover:bg-accent group-hover:!text-white transition-all duration-300">
+                        <svg class="w-6 h-6 group-hover:scale-110 transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4" data-i18n="serv.c2.title">Architecture</h3>
+                    <p class="text-dark/80 leading-relaxed font-medium" data-i18n="serv.c2.desc">In-house architects
+                        ensuring form follows function. We design modern spaces for modern living.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="p-8 bg-white border border-dark/5 hover:border-accent transition-colors group">
+                    <div
+                        class="w-12 h-12 bg-accent/10 text-accent flex items-center justify-center mb-6 rounded-sm group-hover:bg-accent group-hover:!text-white transition-all duration-300">
+                        <svg class="w-6 h-6 group-hover:scale-110 transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4" data-i18n="serv.c3.title">Energy Systems</h3>
+                    <p class="text-dark/80 leading-relaxed font-medium" data-i18n="serv.c3.desc">Leading the way in
+                        sustainable building. Geothermal heating, solar integration, and passive standards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 04. PROCESS (Horizontal Tech Timeline) -->
+    <section id="process" class="relative bg-black py-24 px-6 md:px-16 overflow-hidden border-y border-white/10">
+        <!-- Tech Background -->
+        <div class="absolute inset-0 z-0 opacity-20 pointer-events-none"
+            style="background-image: radial-gradient(circle, #38BDF8 1px, transparent 1px); background-size: 20px 20px;">
+        </div>
+
+        <div class="relative z-10 container mx-auto">
+            <div class="flex justify-between items-end mb-16 border-b-2 border-accent pb-4">
+                <div>
+                    <span class="font-mono text-xs uppercase tracking-widest text-accent mb-2 block"
+                        data-i18n="proc.sub">// PROTOCOL</span>
+                    <h2 class="display-font text-5xl md:text-7xl font-bold uppercase text-white drop-shadow-[0_0_15px_rgba(0,0,0,0.5)]"
+                        data-i18n="proc.title">
+                        Execution<br>Log</h2>
+                </div>
+                <div class="font-mono text-xs text-right hidden md:block text-white/60">
+                    <div class="mb-1">BATCH: #2026-X</div>
+                    <div>STATUS: INITIATED</div>
+                </div>
+            </div>
+
+            <!-- Steps Grid (Not sticky, aggressive grid) -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+
+                <!-- Step 1 -->
+                <div
+                    class="group border border-white/10 bg-dark/80 p-6 backdrop-blur-sm hover:border-accent transition-all duration-300">
+                    <div class="flex justify-between items-start mb-8">
+                        <span
+                            class="font-mono text-4xl font-bold text-white/40 group-hover:text-accent transition-colors">01</span>
+                        <div class="w-2 h-2 bg-white/40 group-hover:bg-accent rounded-full"></div>
+                    </div>
+                    <div class="aspect-video bg-black mb-6 relative overflow-hidden border border-white/5">
+                        <img src="assets/daglig_leder_portrait_1767958435216.png"
+                            class="w-full h-full object-cover grayscale mix-blend-luminosity hover:mix-blend-normal transition-all duration-500">
+                        <div class="absolute top-2 left-2 font-mono text-[9px] bg-accent text-black px-1">SCANNING...
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2 text-white uppercase" data-i18n="proc.s1.title">Analysis</h3>
+                    <p class="font-mono text-xs text-white leading-relaxed font-bold shadow-black drop-shadow-md"
+                        data-i18n="proc.s1.desc">
+                        > Site topography scan<br>
+                        > Structural feasibility<br>
+                        > Concept generation
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div
+                    class="group border border-white/10 bg-dark/80 p-6 backdrop-blur-sm hover:border-accent transition-all duration-300 mt-0 md:mt-12">
+                    <div class="flex justify-between items-start mb-8">
+                        <span
+                            class="font-mono text-4xl font-bold text-white/40 group-hover:text-accent transition-colors">02</span>
+                        <div class="w-2 h-2 bg-white/40 group-hover:bg-accent rounded-full"></div>
+                    </div>
+                    <div class="aspect-video bg-black mb-6 relative overflow-hidden border border-white/5">
+                        <img src="assets/technical_texture_1767958422508.png"
+                            class="w-full h-full object-cover grayscale mix-blend-luminosity hover:mix-blend-normal transition-all duration-500">
+                        <div class="absolute top-2 left-2 font-mono text-[9px] bg-accent text-black px-1">DEPLOYING
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2 text-white uppercase" data-i18n="proc.s2.title">Groundwork</h3>
+                    <p class="font-mono text-xs text-white leading-relaxed font-bold shadow-black drop-shadow-md"
+                        data-i18n="proc.s2.desc">
+                        > Precision blasting<br>
+                        > Rock stabilization<br>
+                        > Foundation casting
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div
+                    class="group border border-white/10 bg-dark/80 p-6 backdrop-blur-sm hover:border-accent transition-all duration-300">
+                    <div class="flex justify-between items-start mb-8">
+                        <span
+                            class="font-mono text-4xl font-bold text-white/40 group-hover:text-accent transition-colors">03</span>
+                        <div class="w-2 h-2 bg-white/40 group-hover:bg-accent rounded-full"></div>
+                    </div>
+                    <div class="aspect-video bg-black mb-6 relative overflow-hidden border border-white/5">
+                        <img src="assets/process_step_3_steel_timber_1767960667755.png"
+                            class="w-full h-full object-cover grayscale mix-blend-luminosity hover:mix-blend-normal transition-all duration-500">
+                        <div class="absolute top-2 left-2 font-mono text-[9px] bg-accent text-black px-1">ASSEMBLY</div>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2 text-white uppercase" data-i18n="proc.s3.title">Structure</h3>
+                    <p class="font-mono text-xs text-white leading-relaxed font-bold shadow-black drop-shadow-md"
+                        data-i18n="proc.s3.desc">
+                        > Steel framework<br>
+                        > CLT installation<br>
+                        > Envelope sealing
+                    </p>
+                </div>
+
+                <!-- Step 4 -->
+                <div
+                    class="group border border-white/10 bg-dark/80 p-6 backdrop-blur-sm hover:border-accent transition-all duration-300 mt-0 md:mt-12">
+                    <div class="flex justify-between items-start mb-8">
+                        <span
+                            class="font-mono text-4xl font-bold text-white/40 group-hover:text-accent transition-colors">04</span>
+                        <div class="w-2 h-2 bg-white/40 group-hover:bg-accent rounded-full"></div>
+                    </div>
+                    <div class="aspect-video bg-black mb-6 relative overflow-hidden border border-white/5">
+                        <img src="assets/process_step_4_handover_1767960776152.png"
+                            class="w-full h-full object-cover grayscale mix-blend-luminosity hover:mix-blend-normal transition-all duration-500">
+                        <div class="absolute top-2 left-2 font-mono text-[9px] bg-accent text-black px-1">COMPLETE</div>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2 text-white uppercase" data-i18n="proc.s4.title">Handover</h3>
+                    <p class="font-mono text-xs text-white leading-relaxed font-bold shadow-black drop-shadow-md"
+                        data-i18n="proc.s4.desc">
+                        > Quality assurance<br>
+                        > Documentation<br>
+                        > Key transfer
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 05. SUSTAINABILITY (Tech Grid Version) -->
+    <section id="sustainability"
+        class="relative py-24 md:py-40 px-6 md:px-16 min-h-screen flex items-center bg-dark transition-colors duration-1000 ease-linear border-y border-white/10 overflow-hidden"
+        data-bgcolor="#1B2B1E">
+
+        <!-- Grid Background -->
+        <div class="absolute inset-0 opacity-10 pointer-events-none"
+            style="background-image: linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px); background-size: 50px 50px;">
+        </div>
+
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center relative z-10">
+            <div class="relative order-2 md:order-1 group border border-white/20 p-4 bg-white/5 backdrop-blur-sm">
+                <div class="absolute top-0 left-0 bg-accent text-black font-mono text-xs px-2 py-1 font-bold z-20">
+                    MAT_ID: TIMBER_CLT</div>
+                <img src="assets/sustainability_texture_1767958375058.png"
+                    class="w-full grayscale contrast-125 filter group-hover:grayscale-0 transition-all duration-700 block"
+                    alt="Wood">
+                <div class="mt-4 flex justify-between font-mono text-xs text-white/60 pt-4 border-t border-white/10">
+                    <span>DENSITY: 500kg/m3</span>
+                    <span>ORIGIN: NORDIC_FORESTS</span>
+                </div>
+            </div>
+
+            <div class="order-1 md:order-2 text-white">
+                <div class="mb-8 border-l-2 border-accent pl-4">
+                    <span class="text-accent font-mono text-xs uppercase tracking-widest block mb-2"
+                        data-i18n="sust.sub">> ENV_PROTOCOL</span>
+                    <h2 class="display-font text-5xl md:text-7xl font-bold uppercase leading-[0.9]"
+                        data-i18n="sust.title">
+                        Nature<br>OS <span class="text-accent">2.0</span>
+                    </h2>
+                </div>
+
+                <div class="font-mono text-sm space-y-6 border-t border-white/10 pt-8">
+                    <p class="text-white/80 leading-relaxed" data-i18n="sust.p1">
+                        > SYSTEM_OPTIMIZATION: Cross Laminated Timber structure reduces total carbon footprint by 40% vs
+                        Traditional Concrete.
+                    </p>
+                    <p class="text-white/80 leading-relaxed" data-i18n="sust.p2">
+                        > INTEGRATION: Passive thermal regulation logic applied to all exterior envelopes.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-4 mt-8">
+                        <div class="bg-white/5 p-4 border border-white/10">
+                            <span class="block text-accent text-xs mb-1">CO2_EMISSION</span>
+                            <span class="text-2xl font-bold">-45%</span>
+                        </div>
+                        <div class="bg-white/5 p-4 border border-white/10">
+                            <span class="block text-accent text-xs mb-1">RECYCLABILITY</span>
+                            <span class="text-2xl font-bold">98%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 06. LEADERSHIP (Personnel File) -->
+    <section class="py-24 bg-light text-dark border-t border-dark/5 relative overflow-hidden">
+        <!-- Tech Decoration -->
+        <div class="absolute top-0 right-0 p-4 font-mono text-[10px] text-dark/20 hidden md:block">
+            PERSONNEL_DB_ACCESS: AUTHORIZED
+        </div>
+
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row gap-0 border border-dark/10 bg-white">
+                <!-- Image Col -->
+                <div class="w-full md:w-1/2 relative group border-r border-dark/10">
+                    <img src="assets/ceo_portrait_nordic_1767961934691.png"
+                        class="w-full h-[600px] object-cover grayscale contrast-125 transition-all duration-500 group-hover:contrast-100"
+                        alt="CEO">
+
+                    <!-- ID Card Overlay -->
+                    <div
+                        class="absolute bottom-6 left-6 bg-white/90 backdrop-blur border border-dark/20 p-4 min-w-[200px]">
+                        <div class="flex justify-between items-center mb-2 border-b border-dark/10 pb-2">
+                            <span class="font-mono text-[10px] text-dark/50">ID_CARD</span>
+                            <div class="w-2 h-2 rounded-full bg-green-500"></div>
+                        </div>
+                        <h4 class="font-bold text-lg leading-none">J.E. Johansen</h4>
+                        <span class="font-mono text-xs text-accent">CEO / OPERATOR</span>
+                    </div>
+                </div>
+
+                <!-- Text Col -->
+                <div
+                    class="w-full md:w-1/2 p-12 flex flex-col justify-center relative bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9IiMwMDAiIGZpbGwtb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==')]">
+                    <span
+                        class="text-accent font-mono text-xs uppercase tracking-widest mb-6 block border-l-2 border-accent pl-2"
+                        data-i18n="lead.sub">> LEADERSHIP_STATEMENT</span>
+
+                    <h3 class="display-font text-4xl font-bold uppercase mb-8 leading-tight" data-i18n="lead.quote">
+                        "Uncertainty is<br> System Error."
+                    </h3>
+
+                    <div class="font-mono text-sm text-dark/70 space-y-6 border-l border-dark/20 pl-6 ml-1">
+                        <p class="leading-relaxed" data-i18n="lead.p1">
+                            // As a total contractor, our prime directive is precision. We eliminate variables. We
+                            execute with military discipline.
+                        </p>
+                        <p class="leading-relaxed" data-i18n="lead.p2">
+                            // Architecture is the code. Construction is the compilation.
+                        </p>
+                    </div>
+
+                    <div class="mt-12 pt-6 border-t border-dark/10 flex justify-between items-center font-mono text-xs">
+                        <span>EXP_LEVEL: 25_YEARS</span>
+                        <span>STATUS: ACTIVE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 07. PROJECTS (Archive Grid) -->
+    <section id="projects" class="py-24 bg-dark text-light clip-diagonal-top pb-48 relative border-t border-white/10">
+        <div class="container mx-auto px-6 mb-16 flex justify-between items-end border-b border-white/20 pb-6">
+            <div>
+                <span class="text-accent font-mono text-xs uppercase tracking-widest mb-2 block">>
+                    DATABASE_ACCESS</span>
+                <h2 class="display-font text-5xl md:text-7xl font-bold uppercase" data-i18n="work.title">
+                    Selected<br>Archives</h2>
+            </div>
+            <a href="projects.html"
+                class="hidden md:flex items-center gap-4 px-6 py-3 border border-white/20 hover:border-accent hover:bg-accent hover:text-black transition-all group">
+                <span class="uppercase tracking-widest text-xs font-bold font-mono" data-i18n="work.viewall">[
+                    VIEW_ALL_RECORDS ]</span>
+            </a>
+        </div>
+
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-0 border border-white/10">
+            <!-- P1 -->
+            <div class="group relative overflow-hidden border-b md:border-b-0 md:border-r border-white/10 aspect-[4/3]">
+                <!-- Image Monitor -->
+                <div class="absolute inset-0 z-0">
+                    <img src="assets/portfolio_item_1_1767958389520.png"
+                        class="w-full h-full object-cover grayscale contrast-125 opacity-40 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
+                        data-img-key="work.p1">
+                </div>
+
+                <!-- HUD Overlay -->
+                <div class="absolute inset-0 z-10 p-8 flex flex-col justify-between pointer-events-none">
+                    <div class="flex justify-between items-start">
+                        <span
+                            class="bg-black/80 text-white font-mono text-[10px] px-2 py-1 border border-white/20">REC_001</span>
+                        <div class="w-2 h-2 bg-accent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+
+                    <div class="translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                        <h3 class="text-3xl font-bold uppercase mb-2 drop-shadow-lg" data-i18n="work.p1.title">Villa
+                            Nord</h3>
+                        <div
+                            class="flex gap-4 font-mono text-[10px] text-accent uppercase tracking-widest bg-black/80 w-fit px-2 py-1 border border-white/20">
+                            <span data-i18n="work.p1.sub">OSLO // CONCRETE</span>
+                            <span>:: COMPLETED</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scanline -->
+                <div
+                    class="absolute inset-0 bg-[linear-gradient(transparent_50%,rgba(0,0,0,0.5)_50%)] bg-[length:100%_4px] opacity-20 pointer-events-none">
+                </div>
+            </div>
+
+            <!-- P2 -->
+            <div class="group relative overflow-hidden aspect-[4/3]">
+                <!-- Image Monitor -->
+                <div class="absolute inset-0 z-0">
+                    <img src="assets/portfolio_item_2_1767958409257.png"
+                        class="w-full h-full object-cover grayscale contrast-125 opacity-40 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
+                        data-img-key="work.p2">
+                </div>
+
+                <!-- HUD Overlay -->
+                <div class="absolute inset-0 z-10 p-8 flex flex-col justify-between pointer-events-none">
+                    <div class="flex justify-between items-start">
+                        <span
+                            class="bg-black/80 text-white font-mono text-[10px] px-2 py-1 border border-white/20">REC_002</span>
+                        <div class="w-2 h-2 bg-accent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+
+                    <div class="translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                        <h3 class="text-3xl font-bold uppercase mb-2 drop-shadow-lg" data-i18n="work.p2.title">Mountain
+                            Lodge</h3>
+                        <div
+                            class="flex gap-4 font-mono text-[10px] text-accent uppercase tracking-widest bg-black/80 w-fit px-2 py-1 border border-white/20">
+                            <span data-i18n="work.p2.sub">GEILO // TIMBER</span>
+                            <span>:: IN_PROGRESS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scanline -->
+                <div
+                    class="absolute inset-0 bg-[linear-gradient(transparent_50%,rgba(0,0,0,0.5)_50%)] bg-[length:100%_4px] opacity-20 pointer-events-none">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 08. CONFIGURATOR (Terminal Interface - Theme Adaptive) -->
+    <section id="configurator"
+        class="py-24 px-6 md:px-16 bg-black text-light font-mono relative border-t border-white/10 min-h-screen flex flex-col justify-center overflow-hidden">
+
+        <!-- CRT Scanline Effect (Neutral) -->
+        <div class="absolute inset-0 pointer-events-none opacity-5 z-0"
+            style="background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(255, 255, 255, 0.05) 50%), linear-gradient(90deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.02)); background-size: 100% 2px, 3px 100%;">
+        </div>
+
+        <div class="w-full max-w-7xl mx-auto z-10 relative">
+            <!-- Terminal Header -->
+            <div class="border-b-2 border-white/20 pb-8 mb-12 flex justify-between items-end">
+                <div>
+                    <span class="text-xs uppercase tracking-widest block mb-2 opacity-70 text-accent">>
+                        SYSTEM_INIT_PROTOCOL</span>
+                    <h2 class="text-4xl md:text-6xl font-black uppercase tracking-tighter text-white"
+                        data-i18n="conf.title">
+                        Start<br><span class="text-transparent"
+                            style="-webkit-text-stroke: 1px var(--color-accent);">Uplink_</span>
+                    </h2>
+                </div>
+                <div class="hidden md:block text-right text-xs opacity-70 font-mono">
+                    <p>SERVER: ONLINE</p>
+                    <p>PING: <span class="text-accent">12ms</span></p>
+                    <p>ENCRYPTION: 256-BIT</p>
+                </div>
+            </div>
+
+            <!-- Terminal Form Container -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <!-- Sidebar Commands -->
+                <div class="lg:col-span-3 border-r border-white/10 pr-8 hidden lg:block">
+                    <ul class="space-y-4 text-xs opacity-60 font-mono">
+                        <li class="flex justify-between"><span data-i18n="conf.m1">[01] TYPE</span> <span
+                                class="text-accent" data-i18n="conf.stat.done">DONE</span></li>
+                        <li class="flex justify-between"><span data-i18n="conf.m2">[02] BUDGET</span> <span
+                                data-i18n="conf.stat.wait">WAITING</span></li>
+                        <li class="flex justify-between"><span data-i18n="conf.m3">[03] DATA</span> <span
+                                data-i18n="conf.stat.wait">WAITING</span></li>
+                        <li class="flex justify-between"><span data-i18n="conf.m4">[04] EXEC</span> <span
+                                data-i18n="conf.stat.lock">LOCKED</span></li>
+                    </ul>
+                    <div class="mt-12 p-4 border border-white/10 bg-white/5">
+                        <p class="text-[10px] leading-relaxed opacity-70" data-i18n="conf.sidebar.msg">> Awaiting user
+                            input sequence. Select project parameters to initialize total contracting engine.</p>
+                    </div>
+                </div>
+
+                <!-- Main Input Area -->
+                <div class="lg:col-span-9">
+                    <!-- Step 1: Type -->
+                    <div id="step-1" class="conf-step">
+                        <div class="mb-8 flex items-center gap-4">
+                            <div class="w-3 h-3 bg-accent animate-pulse"></div>
+                            <h4 class="text-white text-xl font-bold" data-i18n="conf.s1.title">SELECT_TARGET_MODULE:
+                            </h4>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <button onclick="configNext(2)"
+                                class="group border border-white/20 p-8 text-left hover:bg-white/5 hover:border-accent transition-all duration-300">
+                                <span
+                                    class="block text-4xl mb-4 opacity-50 font-display group-hover:opacity-100 group-hover:text-accent transition-all">01</span>
+                                <span class="block text-lg font-bold text-white uppercase tracking-widest">
+                                    < Resident>
+                                </span>
+                            </button>
+                            <button onclick="configNext(2)"
+                                class="group border border-white/20 p-8 text-left hover:bg-white/5 hover:border-accent transition-all duration-300">
+                                <span
+                                    class="block text-4xl mb-4 opacity-50 font-display group-hover:opacity-100 group-hover:text-accent transition-all">02</span>
+                                <span class="block text-lg font-bold text-white uppercase tracking-widest">
+                                    < Cabin>
+                                </span>
+                            </button>
+                            <button onclick="configNext(2)"
+                                class="group border border-white/20 p-8 text-left hover:bg-white/5 hover:border-accent transition-all duration-300">
+                                <span
+                                    class="block text-4xl mb-4 opacity-50 font-display group-hover:opacity-100 group-hover:text-accent transition-all">03</span>
+                                <span class="block text-lg font-bold text-white uppercase tracking-widest">
+                                    < Industry>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Budget (Hidden) -->
+                    <div id="step-2" class="conf-step hidden">
+                        <div class="mb-8 flex items-center gap-4">
+                            <div class="w-3 h-3 bg-accent animate-pulse"></div>
+                            <h4 class="text-white text-xl font-bold">DEFINE_CAPITAL_ALLOCATION:</h4>
+                        </div>
+                        <div class="border border-white/20 p-12 bg-black relative">
+                            <!-- Ruler -->
+                            <div class="absolute top-0 left-0 w-full h-full pointer-events-none opacity-20"
+                                style="background-image: linear-gradient(90deg, var(--color-accent) 1px, transparent 1px); background-size: 10% 100%;">
+                            </div>
+
+                            <div class="relative z-10">
+                                <div class="flex justify-between text-xs mb-6 text-white/70 font-mono">
+                                    <span>[MIN: 5M]</span>
+                                    <span class="text-white text-2xl font-bold bg-black px-2 border border-accent">25.0
+                                        MNOK</span>
+                                    <span>[MAX: 50M+]</span>
+                                </div>
+                                <input type="range"
+                                    class="w-full h-2 bg-white/10 rounded-none appearance-none cursor-pointer accent-accent">
+                            </div>
+                        </div>
+                        <button onclick="configNext(3)"
+                            class="mt-8 px-12 py-4 bg-accent hover:bg-white hover:text-black text-white font-bold uppercase tracking-widest shadow-lg transition-all duration-300">
+                            >> EXECUTE_NEXT_PHASE
+                        </button>
+                    </div>
+
+                    <!-- Step 3: Location (Hidden) -->
+                    <div id="step-3" class="conf-step hidden">
+                        <div class="mb-8 flex items-center gap-4">
+                            <div class="w-3 h-3 bg-accent animate-pulse"></div>
+                            <h4 class="text-white text-xl font-bold">INPUT_CONTACT_COORDINATES:</h4>
+                        </div>
+                        <div class="space-y-6 max-w-2xl">
+                            <div class="relative group">
+                                <span
+                                    class="absolute left-0 top-0 text-xs text-accent font-bold opacity-70 group-focus-within:opacity-100 transition-opacity">>>
+                                    LOCATION_ID</span>
+                                <input type="text" placeholder="MUNICIPALITY"
+                                    class="w-full bg-transparent border-b-2 border-white/20 py-4 pt-6 text-white font-bold uppercase tracking-widest focus:border-accent focus:outline-none transition-colors placeholder-white/30">
+                            </div>
+                            <div class="grid grid-cols-2 gap-8">
+                                <div class="relative group">
+                                    <span
+                                        class="absolute left-0 top-0 text-xs text-accent font-bold opacity-70 group-focus-within:opacity-100 transition-opacity">>>
+                                        AGENT_ID</span>
+                                    <input type="text" placeholder="FULL NAME"
+                                        class="w-full bg-transparent border-b-2 border-white/20 py-4 pt-6 text-white font-bold uppercase tracking-widest focus:border-accent focus:outline-none transition-colors placeholder-white/30">
+                                </div>
+                                <div class="relative group">
+                                    <span
+                                        class="absolute left-0 top-0 text-xs text-accent font-bold opacity-70 group-focus-within:opacity-100 transition-opacity">>>
+                                        COMMS_LINK</span>
+                                    <input type="email" placeholder="EMAIL ADDRESS"
+                                        class="w-full bg-transparent border-b-2 border-white/20 py-4 pt-6 text-white font-bold uppercase tracking-widest focus:border-accent focus:outline-none transition-colors placeholder-white/30">
+                                </div>
+                            </div>
+                            <button
+                                class="mt-12 px-12 py-4 border border-accent text-accent hover:bg-accent hover:text-white font-bold uppercase tracking-widest transition-all w-full md:w-auto">
+                                [ TRANSMIT_DATA ]
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 09. FOOTER (Blueprint Grid - Theme Adaptive) -->
+    <footer class="bg-black text-white border-t border-white/20 font-mono text-xs">
+        <!-- Top Tech Bar -->
+        <div class="border-b border-white/20 py-2 px-6 flex justify-between uppercase opacity-50">
+            <span>> SYSTEM_SHUTDOWN</span>
+            <span>> END_OF_LINE</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 min-h-[400px]">
+            <!-- Col 1: Map (6 cols) -->
+            <div
+                class="md:col-span-6 border-b md:border-b-0 md:border-r border-white/20 relative overflow-hidden grayscale contrast-125 group">
+                <img src="assets/map_monochrome_oslo_1767961545992.png"
+                    class="w-full h-full object-cover opacity-50 group-hover:opacity-75 transition-opacity duration-500">
+                <!-- Crosshair Overlay -->
+                <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                    <div class="w-64 h-64 border border-white/30 rounded-full flex items-center justify-center">
+                        <div class="w-2 h-2 bg-white"></div>
+                    </div>
+                    <div class="absolute w-full h-px bg-white/10"></div>
+                    <div class="absolute h-full w-px bg-white/10"></div>
+                </div>
+                <div class="absolute bottom-4 left-4 bg-black border border-white p-2 text-[10px]">
+                    HQ_COORDS: 59.91°N / 10.75°E
+                </div>
+            </div>
+
+            <!-- Col 2: Info (3 cols) -->
+            <div
+                class="md:col-span-3 border-b md:border-b-0 md:border-r border-white/20 p-8 flex flex-col justify-between">
+                <div>
+                    <h3 class="font-bold text-2xl uppercase mb-8 border-l-4 border-accent pl-4">Total<br>Contractor</h3>
+                    <div class="space-y-4 opacity-70">
+                        <p>> Dronning Eufemias gate 8</p>
+                        <p>> 0191 Oslo, Norway</p>
+                        <p>> Org: 931 930 202 MVA</p>
+                    </div>
+                </div>
+                <div class="mt-12">
+                    <p class="opacity-50 mb-2">__CONTACT_UPLINK:</p>
+                    <a href="mailto:post@total.no"
+                        class="block text-lg hover:text-accent transition-colors">post@total.no</a>
+                    <a href="tel:+4722334455" class="block text-lg hover:text-accent transition-colors">+47 22 33 44
+                        55</a>
+                </div>
+            </div>
+
+            <!-- Col 3: Links (3 cols) -->
+            <div class="md:col-span-3 p-8 flex flex-col justify-between bg-white/5">
+                <nav class="flex flex-col gap-4 text-sm">
+                    <a href="#" class="hover:text-accent hover:translate-x-2 transition-all" data-i18n="foot.serv">>
+                        SERVICES</a>
+                    <a href="#" class="hover:text-accent hover:translate-x-2 transition-all" data-i18n="foot.proj">>
+                        PROJECTS</a>
+                    <a href="#" class="hover:text-accent hover:translate-x-2 transition-all" data-i18n="foot.about">>
+                        ABOUT</a>
+                    <a href="#" class="hover:text-accent hover:translate-x-2 transition-all" data-i18n="foot.car">>
+                        CAREERS</a>
+                </nav>
+                <div class="opacity-40 text-[10px] mt-12">
+                    <p>© 2026 TOTAL CONTRACTOR AS</p>
+                    <a href="accessibility.html" class="underline hover:text-white" data-i18n="foot.acc">ACCESSIBILITY
+                        PROTOCOL</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SHARED: FLOATING CONFIGURATOR BUTTON (Internal Tool) -->
+
+    <button onclick="App.toggleThemePanel()" id="config-trigger" aria-label="Open Configurator"
+        class="fixed top-1/2 right-0 z-[1001] bg-white text-dark p-3 rounded-l-md hover:bg-accent hover:text-white transition-colors shadow-2xl translate-y-[-50%] border-l border-y border-dark/10 group transition-opacity duration-300">
+        <svg class="w-6 h-6 group-hover:rotate-90 transition-transform duration-700" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24">
+
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z">
+            </path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z">
+            </path>
+        </svg>
+    </button>
+
+    <!-- SHARED: THEME PANEL (Standardized) -->
+    <div id="theme-panel"
+        class="fixed top-0 right-0 h-full w-80 bg-dark border-l border-light/10 z-[1000] transform translate-x-full transition-transform duration-500 ease-out p-8 shadow-2xl text-white">
+        <div class="flex justify-between items-center mb-8 border-b border-light/20 pb-4">
+            <h3 class="font-mono text-sm uppercase tracking-widest text-light">Internal Config</h3>
+            <button onclick="App.toggleThemePanel()" aria-label="Lukk konfigurator"
+                class="text-light/50 hover:text-accent">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </svg>
+            </button>
+        </div>
+
+        <div class="space-y-8 overflow-y-auto h-[calc(100vh-150px)] pb-10 custom-scrollbar">
+
+            <!-- SECTION 1: BUSINESS TYPE (DEMO) -->
+            <div>
+                <h4 class="font-mono text-[10px] text-light/50 mb-3 uppercase tracking-widest">1. Select
+                    Business
+                </h4>
+                <div class="flex flex-col gap-2">
+                    <button id="btn-demo-demo1" onclick="App.setDemo('demo1')"
+                        class="text-left px-4 py-3 border border-light/10 text-xs font-mono text-light bg-light/5 hover:bg-light/10 hover:border-accent transition-all flex justify-between items-center group">
+                        <span>THE TOTAL CONTRACTOR</span>
+                        <span class="opacity-0 group-hover:opacity-100 text-accent transition-opacity">→</span>
+                    </button>
+                    <button id="btn-demo-demo2" onclick="App.setDemo('demo2')"
+                        class="text-left px-4 py-3 border border-light/10 text-xs font-mono text-light bg-light/5 hover:bg-light/10 hover:border-accent transition-all flex justify-between items-center group">
+                        <span>SERVICE SPECIALIST</span>
+                        <span class="opacity-0 group-hover:opacity-100 text-accent transition-opacity">→</span>
+                    </button>
+                    <button id="btn-demo-demo3" onclick="App.setDemo('demo3')"
+                        class="text-left px-4 py-3 border border-light/10 text-xs font-mono text-light bg-light/5 hover:bg-light/10 hover:border-accent transition-all flex justify-between items-center group">
+                        <span>FINISHING EXPERT</span>
+                        <span class="opacity-0 group-hover:opacity-100 text-accent transition-opacity">→</span>
+                    </button>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="font-mono text-[10px] text-light/50 mb-3 uppercase tracking-widest">2. Select Layout</h4>
+                <div class="grid grid-cols-3 gap-2 mb-2">
+                    <button id="btn-tpl-std" onclick="App.setTemplate('std')"
+                        class="aspect-video border border-light/10 bg-light/5 flex flex-col items-center justify-center gap-1 group hover:border-accent hover:text-accent transition-all">
+                        <div class="w-4 h-2 border border-light/30 group-hover:border-accent"></div>
+                        <span class="text-[8px] font-mono text-light/50 group-hover:text-accent">STD</span>
+                    </button>
+                    <button id="btn-tpl-min" onclick="App.setTemplate('min')"
+                        class="aspect-video border border-light/10 bg-light/5 flex flex-col items-center justify-center gap-1 group hover:border-accent hover:text-accent transition-all">
+                        <div class="w-4 h-2 border border-light/30 group-hover:border-accent"></div>
+                        <span class="text-[8px] font-mono text-light/50 group-hover:text-accent">SWISS</span>
+                    </button>
+                    <button id="btn-tpl-grid" onclick="App.setTemplate('grid')"
+                        class="aspect-video border border-light/10 bg-light/5 flex flex-col items-center justify-center gap-1 group hover:border-accent hover:text-accent transition-all config-active">
+                        <div class="w-4 h-2 border border-light/30 group-hover:border-accent"></div>
+                        <span class="text-[8px] font-mono text-light/50 group-hover:text-accent">TECH</span>
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- SECTION 3: VISUAL THEME -->
+            <div>
+                <h4 class="font-mono text-[10px] text-light/50 mb-3 uppercase tracking-widest">3. Visual Style</h4>
+                <div class="space-y-2">
+                    <!-- Theme 1 -->
+                    <button id="btn-theme-default" onclick="App.setTheme('default')"
+                        class="w-full p-3 border border-light/10 flex items-center gap-4 hover:border-accent group transition-all bg-light/5">
+                        <div class="w-6 h-6 bg-[#1A1A1B] border border-[#FF5F1F] rounded-full"></div>
+                        <span class="font-mono text-xs uppercase group-hover:text-accent">Safety Orange</span>
+                    </button>
+                    <!-- Theme 2 -->
+                    <button id="btn-theme-nordic" onclick="App.setTheme('nordic')"
+                        class="w-full p-3 border border-light/10 flex items-center gap-4 hover:border-accent group transition-all bg-light/5">
+                        <div class="w-6 h-6 bg-[#0F172A] border border-[#38BDF8] rounded-full"></div>
+                        <span class="font-mono text-xs uppercase group-hover:text-accent">Nordic Blue</span>
+                    </button>
+                    <!-- Theme 3 -->
+                    <button id="btn-theme-nature" onclick="App.setTheme('nature')"
+                        class="w-full p-3 border border-light/10 flex items-center gap-4 hover:border-accent group transition-all bg-light/5">
+                        <div class="w-6 h-6 bg-[#1B2B1E] border border-[#D4A373] rounded-full"></div>
+                        <span class="font-mono text-xs uppercase group-hover:text-accent">Forest Copper</span>
+                    </button>
+                    <!-- Theme 4 -->
+                    <button id="btn-theme-steel" onclick="App.setTheme('steel')"
+                        class="w-full p-3 border border-light/10 flex items-center gap-4 hover:border-accent group transition-all bg-light/5">
+                        <div class="w-6 h-6 bg-[#E5E5E5] border border-[#333] rounded-full relative overflow-hidden">
+                            <div class="absolute inset-0 bg-[#333] w-1/2"></div>
+                        </div>
+                        <span class="font-mono text-xs uppercase group-hover:text-accent">Steel Mono</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 1. CONFIG & DATA (Standardized)
+        const showcaseConfig = {
+            demo1: {
+                title: "The Total Contractor",
+                images: { hero: "assets/hero_background_1767958362195.png", p1: "assets/portfolio_item_1_1767958389520.png", p2: "assets/portfolio_item_2_1767958409257.png", team: "assets/ceo_portrait_nordic_1767961934691.png" },
+                i18n: {
+                    no: {
+                        "hero.title": "Bygger<br>Fremtiden.",
+                        "hero.subtitle": "Vi realiserer ambisiøse prosjekter med industriell presisjon. Fra konsept til ferdigstillelse.",
+                        "hero.cta": "Kontakt Oss",
+                        "serv.sub": "// EKSPERTISE",
+                        "serv.title": "Total<br>Enterprise",
+                        "serv.c1.title": "Totalentreprise",
+                        "serv.c1.desc": "Full prosjektledelse fra første spadetak til overlevering. Ett kontaktpunkt.",
+                        "serv.c2.title": "Arkitektur",
+                        "serv.c2.desc": "Interne arkitekter sikrer at form følger funksjon. Vi designer moderne rom for moderne liv.",
+                        "serv.c3.title": "Energisystemer",
+                        "serv.c3.desc": "Ledende innen bærekraftig bygging. Geotermisk varme, solenergi og passivhus-standarder.",
+                        "proc.sub": "// PROTOKOLL",
+                        "proc.title": "Prosjekt<br>Logg",
+                        "proc.s1.title": "ANALYSE",
+                        "proc.s1.desc": "> Topografisk skanning<br>> Strukturell mulighetsstudie<br>> Konseptgenerering",
+                        "proc.s2.title": "GRUNNARBEID",
+                        "proc.s2.desc": "> Presisjonssprengning<br>> Fjellstabilisering<br>> Fundamentstøping",
+                        "proc.s3.title": "STRUKTUR",
+                        "proc.s3.desc": "> Stålrammeverk<br>> Massivtre montasje<br>> Klimaskall tetting",
+                        "proc.s4.title": "OVERLEVERING",
+                        "proc.s4.desc": "> Kvalitetssikring<br>> Dokumentasjon<br>> Nøkkeloverdragelse",
+                        "sust.sub": "> MILJØ_PROTOKOLL",
+                        "sust.title": "Natur<br>OS <span class='text-accent'>2.0</span>",
+                        "sust.p1": "> SYSTEMOPTIMALISERING: Massivtre-konstruksjon reduserer totalt karbonavtrykk med 40% vs tradisjonell betong.",
+                        "sust.p2": "> INTEGRASJON: Passiv termisk reguleringslogikk implementert i alle ytre skall.",
+                        "lead.sub": "> LEDELSES_ERKLÆRING",
+                        "lead.quote": "\"Usikkerhet er<br> Systemfeil.\"",
+                        "lead.p1": "// Som totalentreprenør er vår hovedinstruks presisjon. Vi eliminerer variabler. Vi utfører med militær disiplin.",
+                        "lead.p2": "// Arkitektur er koden. Konstruksjon er kompileringen.",
+                        "work.title": "Utvalgte Verk",
+                        "work.viewall": "[ SE ARKIVET ]",
+                        "work.p1.title": "Villa Nord",
+                        "work.p1.sub": "OSLO // BETONG",
+                        "work.p2.title": "Fjellhytte",
+                        "work.p2.sub": "GEILO // TØMMER",
+                        "conf.title": "Start<br><span class='text-transparent' style='-webkit-text-stroke: 1px var(--color-accent);'>Oppkobling_</span>",
+                        "conf.m1": "[01] TYPE", "conf.m2": "[02] BUDSJETT", "conf.m3": "[03] DATA", "conf.m4": "[04] EXEC",
+                        "conf.stat.done": "FERDIG", "conf.stat.wait": "VENTER", "conf.stat.lock": "LÅST",
+                        "conf.sidebar.msg": "> Venter på input-sekvens. Velg prosjektparametere for å initialisere totalentreprenørmotoren.",
+                        "conf.s1.title": "VELG_MÅL_MODUL:",
+                        "conf.s2.title": "DEFINER_KAPITAL_ALLOKERING:",
+                        "conf.s3.title": "INPUT_KONTAKT_KOORDINATER:",
+                        "conf.btn.next": "Eksekver",
+                        "conf.btn.submit": "[ SEND_DATA ]",
+                        "foot.serv": "> TJENESTER", "foot.proj": "> PROSJEKTER", "foot.about": "> OM OSS", "foot.car": "> KARRIERE",
+                        "foot.acc": "TILGJENGELIGHETSPROTOKOLL"
+                    },
+                    en: {
+                        "hero.title": "Building<br>Tomorrow.",
+                        "hero.subtitle": "We combine industrial precision with architectural vision. From concept to turnkey delivery.",
+                        "hero.cta": "Get in Touch",
+                        "serv.sub": "// EXPERTISE",
+                        "serv.title": "Comprehensive<br>Construction",
+                        "serv.c1.title": "Total Enterprise",
+                        "serv.c1.desc": "Full project management from initial groundbreaking to final handover. One point of contact.",
+                        "serv.c2.title": "Architecture",
+                        "serv.c2.desc": "In-house architects ensuring form follows function. We design modern spaces for modern living.",
+                        "serv.c3.title": "Energy Systems",
+                        "serv.c3.desc": "Leading the way in sustainable building. Geothermal heating, solar integration, and passive standards.",
+                        "proc.sub": "// PROTOCOL",
+                        "proc.title": "Execution<br>Log",
+                        "proc.s1.title": "Analysis",
+                        "proc.s1.desc": "> Site topography scan<br>> Structural feasibility<br>> Concept generation",
+                        "proc.s2.title": "Groundwork",
+                        "proc.s2.desc": "> Precision blasting<br>> Rock stabilization<br>> Foundation casting",
+                        "proc.s3.title": "Structure",
+                        "proc.s3.desc": "> Steel framework<br>> CLT installation<br>> Envelope sealing",
+                        "proc.s4.title": "Handover",
+                        "proc.s4.desc": "> Quality assurance<br>> Documentation<br>> Key transfer",
+                        "sust.sub": "> ENV_PROTOCOL",
+                        "sust.title": "Nature<br>OS <span class='text-accent'>2.0</span>",
+                        "sust.p1": "> SYSTEM_OPTIMIZATION: Cross Laminated Timber structure reduces total carbon footprint by 40% vs Traditional Concrete.",
+                        "sust.p2": "> INTEGRATION: Passive thermal regulation logic applied to all exterior envelopes.",
+                        "lead.sub": "> LEADERSHIP_STATEMENT",
+                        "lead.quote": "\"Uncertainty is<br> System Error.\"",
+                        "lead.p1": "// As a total contractor, our prime directive is precision. We eliminate variables. We execute with military discipline.",
+                        "lead.p2": "// Architecture is the code. Construction is the compilation.",
+                        "work.title": "Selected<br>Archives",
+                        "work.viewall": "[ VIEW_ALL_RECORDS ]",
+                        "work.p1.title": "Villa North",
+                        "work.p1.sub": "OSLO // CONCRETE",
+                        "work.p2.title": "Mountain Lodge",
+                        "work.p2.sub": "GEILO // TIMBER",
+                        "conf.title": "Start<br><span class='text-transparent' style='-webkit-text-stroke: 1px var(--color-accent);'>Uplink_</span>",
+                        "conf.m1": "[01] TYPE", "conf.m2": "[02] BUDGET", "conf.m3": "[03] DATA", "conf.m4": "[04] EXEC",
+                        "conf.stat.done": "DONE", "conf.stat.wait": "WAITING", "conf.stat.lock": "LOCKED",
+                        "conf.sidebar.msg": "> Awaiting user input sequence. Select project parameters to initialize total contracting engine.",
+                        "conf.s1.title": "SELECT_TARGET_MODULE:",
+                        "conf.s2.title": "DEFINE_CAPITAL_ALLOCATION:",
+                        "conf.s3.title": "INPUT_CONTACT_COORDINATES:",
+                        "conf.btn.next": "Execute",
+                        "conf.btn.submit": "[ TRANSMIT_DATA ]",
+                        "foot.serv": "> SERVICES", "foot.proj": "> PROJECTS", "foot.about": "> ABOUT", "foot.car": "> CAREERS",
+                        "foot.acc": "ACCESSIBILITY PROTOCOL"
+                    }
+                }
+            },
+            demo2: { title: "Service", images: {}, i18n: { no: {}, en: {} } },
+            demo3: { title: "Expert", images: {}, i18n: { no: {}, en: {} } }
+        };
+
+        // 3. PAGE LOGIC (Scripts)
+        function configNext(step) {
+            document.querySelectorAll('.conf-step').forEach(s => s.classList.add('hidden'));
+            document.getElementById('step-' + step).classList.remove('hidden');
+        }
+
+        // GSAP ScrollTrigger
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Sustainability Color Shift
+        ScrollTrigger.create({
+            trigger: "#sustainability",
+            start: "top center",
+            end: "bottom center",
+            onEnter: () => document.documentElement.style.setProperty('--color-dark', '#1B2B1E'),
+            onLeaveBack: () => document.documentElement.style.setProperty('--color-dark', '#0F172A'),
+        });
+
+        // Caliper Logic
+        const caliperThumb = document.getElementById('caliper-thumb');
+        const caliperValue = document.getElementById('caliper-value');
+        if (caliperThumb && caliperValue) {
+            ScrollTrigger.create({
+                trigger: "#process",
+                start: "top top",
+                end: "bottom bottom",
+                scrub: true,
+                onUpdate: (self) => {
+                    // Move thumb based on scroll progress
+                    const progress = self.progress;
+                    const trackHeight = document.getElementById('caliper-track').offsetHeight;
+                    const yPos = progress * trackHeight;
+                    caliperThumb.style.transform = `translateY(${yPos}px)`;
+                    caliperValue.innerText = (progress * 100).toFixed(1) + 'mm';
+                }
+            });
+        }
+
+        // Sticky Process Indicator
+        const steps = document.querySelectorAll('.process-step');
+        steps.forEach((step, index) => {
+            ScrollTrigger.create({
+                trigger: step,
+                start: "top center",
+                end: "bottom center",
+                onToggle: (self) => {
+                    if (self.isActive) {
+                        document.querySelectorAll('.process-indicator').forEach(el => el.classList.remove('active', 'text-accent'));
+                        document.querySelectorAll('.process-indicator')[index].classList.add('active', 'text-accent');
+                    }
+                }
+            });
+        });
+
+        let currentLang = 'en';
+        let currentDemo = 'demo1';
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            document.getElementById('lang-no').classList.toggle('font-bold', lang === 'no');
+            document.getElementById('lang-no').classList.toggle('opacity-50', lang !== 'no');
+            document.getElementById('lang-en').classList.toggle('font-bold', lang === 'en');
+            document.getElementById('lang-en').classList.toggle('opacity-50', lang !== 'en');
+            updateText();
+            localStorage.setItem('lang', lang);
+        }
+
+        function loadDemo(demoId) {
+            currentDemo = demoId;
+            const data = showcaseConfig[demoId] || showcaseConfig['demo1'];
+
+            document.querySelectorAll('[id^="btn-demo"]').forEach(b => b.classList.remove('config-active'));
+            const btn = document.getElementById('btn-demo-' + demoId);
+            if (btn) btn.classList.add('config-active');
+
+            // Redirect if switching to Demo 2 from here
+            if (demoId === 'demo2' && !window.location.href.includes('terminal.html') && !window.location.href.includes('blueprint.html') && !window.location.href.includes('pulse.html')) {
+                return;
+            }
+
+            if (data.images) {
+                document.querySelectorAll('[data-img-key]').forEach(el => {
+                    const key = el.getAttribute('data-img-key');
+                    if (data.images[key]) el.src = data.images[key];
+                });
+            }
+            updateText();
+            localStorage.setItem('demo', demoId);
+        }
+
+        function updateText() {
+            const i18n = showcaseConfig[currentDemo]?.i18n?.[currentLang] || showcaseConfig['demo1'].i18n['en'];
+            if (!i18n) return;
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (i18n[key]) el.innerHTML = i18n[key];
+            });
+        }
+
+        function setTheme(name) {
+            const themes = {
+                default: { dark: '#1A1A1B', light: '#F5F5F7', accent: '#EA580C' }, // OrangeRed 600
+                nordic: { dark: '#0F172A', light: '#F1F5F9', accent: '#0284C7' }, // Sky 600
+                nature: { dark: '#1B2B1E', light: '#FAEDCD', accent: '#B45309' }, // Amber 700
+                steel: { dark: '#121212', light: '#E5E5E5', accent: '#525252' }  // Neutral 600
+            };
+            const t = themes[name];
+            if (!t) return;
+
+            document.documentElement.style.setProperty('--color-dark', t.dark);
+            document.documentElement.style.setProperty('--color-light', t.light);
+            document.documentElement.style.setProperty('--color-accent', t.accent);
+
+            document.querySelectorAll('[id^="btn-theme"]').forEach(b => b.classList.remove('config-active'));
+            const btn = document.getElementById('btn-theme-' + name);
+            if (btn) {
+                btn.classList.add('config-active');
+            }
+
+            localStorage.setItem('theme', name);
+        }
+
+
+
+        // 3. ANIMATION
+        const lenis = new Lenis({ duration: 1.2, smooth: true });
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        // INIT
+        document.addEventListener('DOMContentLoaded', () => {
+            // Force Demo 1 context for this template family
+            // If user explicitly navigates here, they expect to see this template, not be redirected back to Demo 2
+            let d = localStorage.getItem('demo') || 'demo1';
+            if (d === 'demo2') {
+                d = 'demo1';
+                localStorage.setItem('demo', 'demo1');
+            }
+
+            const l = localStorage.getItem('lang') || 'no';
+            const t = localStorage.getItem('theme') || 'nordic';
+            if (l) {
+                currentLang = l;
+                setLanguage(l);
+            }
+            loadDemo(d);
+            setTheme(t);
+        });
+
+        // NAV SCROLL EFFECT
+        // NAV SCROLL EFFECT
+        const nav = document.getElementById('main-nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                // Using hardcoded dark color to allow opacity to work reliably
+                nav.classList.add('bg-[#101010]/95', 'backdrop-blur-md', 'shadow-xl', 'py-3');
+                nav.classList.remove('py-4');
+            } else {
+                nav.classList.remove('bg-[#101010]/95', 'backdrop-blur-md', 'shadow-xl', 'py-3');
+                nav.classList.add('py-4');
+            }
+        });
+    </script>
+    <script src="common.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="no" class="lenis lenis-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLUEPRINT_MODE | Service Specialist</title>
+
+    <!-- Fonts: Inter Tight (Headings) & IBM Plex Mono (Labels) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter+Tight:ital,wght@0,300;0,400;0,600;1,300&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter Tight', 'sans-serif'],
+                        mono: ['IBM Plex Mono', 'monospace'],
+                    },
+                    colors: {
+                        paper: 'var(--color-paper)',
+                        blueprint: 'var(--color-blueprint)',
+                        dark: 'var(--color-dark)',
+                        light: 'var(--color-light)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Libs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
+    <!-- Core Logic -->
+    <script src="common.js"></script>
+
+    <style>
+        :root {
+            /* BLUEPRINT THEME - LINKED TO COMMON.JS */
+            --color-paper: var(--color-light);
+            --color-blueprint: var(--color-accent);
+            --grid-size: 40px;
+        }
+
+        body {
+            background-color: var(--color-paper);
+            color: var(--color-blueprint);
+            font-family: 'Inter Tight', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Technical Grid */
+        .bg-grid {
+            background-size: var(--grid-size) var(--grid-size);
+            background-image:
+                linear-gradient(to right, rgba(0, 87, 255, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(0, 87, 255, 0.05) 1px, transparent 1px);
+        }
+
+        .crosshair {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+        }
+
+        .crosshair::before,
+        .crosshair::after {
+            content: '';
+            position: absolute;
+            background: var(--color-blueprint);
+        }
+
+        .crosshair::before {
+            width: 1px;
+            height: 100%;
+            left: 50%;
+        }
+
+        .crosshair::after {
+            height: 1px;
+            width: 100%;
+            top: 50%;
+        }
+
+        .outline-text {
+            color: transparent;
+            -webkit-text-stroke: 1px var(--color-blueprint);
+        }
+
+        /* Caliper Line */
+        .caliper-line {
+            height: 100%;
+            width: 1px;
+            background: var(--color-blueprint);
+            position: absolute;
+            left: 50%;
+            top: 0;
+        }
+
+        /* Magnetic Input Focus */
+        input:focus+label,
+        input:not(:placeholder-shown)+label {
+            color: var(--color-blueprint);
+            transform: translateY(-0.5rem) scale(0.8);
+        }
+
+        /* Animated Grid Pulse */
+        @keyframes gridPulse {
+            0% {
+                opacity: 0.05;
+            }
+
+            50% {
+                opacity: 0.1;
+            }
+
+            100% {
+                opacity: 0.05;
+            }
+        }
+
+        @keyframes scan {
+            0% {
+                left: 0%;
+                opacity: 0;
+            }
+
+            10% {
+                opacity: 1;
+            }
+
+            90% {
+                opacity: 1;
+            }
+
+            100% {
+                left: 100%;
+                opacity: 0;
+            }
+        }
+
+        @keyframes shimmer {
+            0% {
+                transform: translateX(-150%) skewX(-12deg);
+            }
+
+            50% {
+                transform: translateX(150%) skewX(-12deg);
+            }
+
+            100% {
+                transform: translateX(150%) skewX(-12deg);
+            }
+        }
+
+        .bg-grid {
+            animation: gridPulse 4s infinite ease-in-out;
+        }
+
+        /* Config Panel Active State */
+        .config-active {
+            border-color: #0057FF !important;
+            background-color: rgba(0, 87, 255, 0.1) !important;
+        }
+
+        .config-btn {
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .config-btn:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-color: white;
+        }
+    </style>
+
+<body class="relative">
+    <!-- Background Grid -->
+    <div class="fixed inset-0 bg-grid pointer-events-none z-0"></div>
+
+    <!-- NAV -->
+    <nav
+        class="fixed top-0 w-full z-50 bg-paper/90 backdrop-blur border-b border-blueprint/10 px-8 py-6 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <div class="w-3 h-3 bg-blueprint"></div>
+            <span class="font-mono text-sm tracking-widest font-bold">TOTAL_PLAN</span>
+        </div>
+        <div class="hidden md:flex gap-12 font-mono text-xs">
+            <a href="#hero" class="hover:underline underline-offset-4 decoration-blueprint" data-i18n="nav_1">01.0 //
+                OVERVIEW</a>
+            <a href="#specs" class="hover:underline underline-offset-4 decoration-blueprint" data-i18n="nav_2">02.0 //
+                SPECS</a>
+            <a href="#contact" class="hover:underline underline-offset-4 decoration-blueprint" data-i18n="nav_3">03.0 //
+                CONNECT</a>
+        </div>
+
+        <div class="flex items-center gap-4">
+            <!-- Lang Switcher -->
+            <div class="flex gap-2 text-[10px] font-mono border border-blueprint/20 px-2 py-1">
+                <button id="lang-no" onclick="App.setLanguage('no')" class="hover:text-blueprint opacity-50">NO</button>
+                <span class="opacity-20">|</span>
+                <button id="lang-en" onclick="App.setLanguage('en')" class="hover:text-blueprint opacity-50">EN</button>
+            </div>
+            <!-- Removed DWG.SETTINGS button to standardize floating icon -->
+            <div class="w-4"></div>
+        </div>
+    </nav>
+
+    <!-- CONFIG PANEL TRIGGER (Moved out of Nav) -->
+    <button onclick="App.toggleThemePanel()" id="config-trigger" aria-label="Open Configurator"
+        class="fixed top-1/2 right-0 z-[1001] bg-white text-dark p-3 rounded-l-md hover:bg-blueprint hover:text-white transition-colors shadow-2xl translate-y-[-50%] border-l border-y border-dark/10 group transition-opacity duration-300">
+        <svg class="w-6 h-6 group-hover:rotate-90 transition-transform duration-700" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z">
+            </path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z">
+            </path>
+        </svg>
+    </button>
+
+    <!-- 01. HERO [THE BLUEPRINT] -->
+    <section id="hero" class="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+        <!-- Blueprint Poster BG -->
+        <div class="absolute inset-0 opacity-10 mix-blend-multiply pointer-events-none">
+            <img src="assets/demo2/blueprint_bg.png" class="w-full h-full object-cover">
+        </div>
+
+        <!-- Measurement Lines -->
+        <div class="absolute top-1/2 left-4 md:left-20 w-px h-64 bg-blueprint/20 -translate-y-1/2">
+            <span class="absolute top-0 -left-2 text-[10px] font-mono">0.00</span>
+            <span class="absolute bottom-0 -left-2 text-[10px] font-mono">10.0</span>
+        </div>
+        <div class="absolute bottom-20 left-1/2 -translate-x-1/2 h-px w-64 bg-blueprint/20">
+            <span class="absolute -top-4 left-0 text-[10px] font-mono">X: 124.5</span>
+            <span class="absolute -top-4 right-0 text-[10px] font-mono">X: 884.2</span>
+        </div>
+
+        <div class="relative z-10 text-center">
+            <span class="font-mono text-xs bg-blueprint text-white px-2 py-1 mb-6 inline-block">SCALE 1:1</span>
+
+            <h1 class="text-7xl md:text-9xl font-light tracking-tighter mb-4 text-dark reveal-text" data-i18n="hero_h1">
+                24/7 <span class="font-bold text-blueprint">AKUTT</span>VAKT
+            </h1>
+            <h2 class="text-4xl md:text-6xl font-light outline-text tracking-tighter mb-8 reveal-text"
+                data-i18n="hero_title">
+                EMERGENCY_UNIT
+            </h2>
+
+            <div class="mb-8 reveal-text">
+                <span class="bg-red-600 text-white px-3 py-1 font-mono text-sm font-bold animate-pulse"
+                    data-i18n="hero_alert">/// RESPONS: 45 MIN</span>
+            </div>
+
+            <p class="font-mono text-sm max-w-xl mx-auto mb-12 text-dark/70 reveal-text" data-i18n="hero_sub">
+                // FULL TEKNISK DOKUMENTASJON.<br>
+                // SERTIFISERT UTFØRELSE IHT. NEK 400 / VÅTROMNORMEN.
+            </p>
+
+            <a href="#contact"
+                class="group relative inline-block px-8 py-3 overflow-hidden border border-blueprint text-blueprint font-mono text-sm hover:text-white hover:bg-blueprint transition-colors reveal-text">
+                <div class="absolute inset-0 w-2 bg-white/40 skew-x-12 -translate-x-full animate-[shimmer_2s_infinite]">
+                </div>
+                <span class="relative z-10 font-bold" data-i18n="hero_cta">RING NÅ -></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- 02. TECH SPECS (TRUST) -->
+    <section id="specs" class="py-24 border-y border-blueprint/10 bg-white relative">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+                <img src="assets/demo2/blueprint_poster.png"
+                    class="w-full shadow-[20px_20px_0px_rgba(0,87,255,0.1)] border border-blueprint/10 grayscale mix-blend-multiply opacity-80">
+                <!-- Overlay Grids -->
+                <div class="absolute inset-0 border border-blueprint/20 m-4"></div>
+                <div class="absolute -bottom-4 -right-4 bg-blueprint text-white text-xs font-mono p-2">FIG 2.4 -
+                    STRUCTURE</div>
+            </div>
+
+            <div class="space-y-12">
+                <div>
+                    <h3 class="font-mono text-xs text-blueprint mb-4" data-i18n="tech_cert">CERTIFICATION_LAYER</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="border border-blueprint/20 p-4 relative">
+                            <div class="absolute top-0 left-0 w-2 h-2 border-t border-l border-blueprint"></div>
+                            <h4 class="font-bold">DSB</h4>
+                            <p class="text-xs font-mono mt-2 text-dark/60" data-i18n="tech_dsb">Rating: A+</p>
+                        </div>
+                        <div class="border border-blueprint/20 p-4 relative">
+                            <div class="absolute top-0 right-0 w-2 h-2 border-t border-r border-blueprint"></div>
+                            <h4 class="font-bold">VÅTROM</h4>
+                            <p class="text-xs font-mono mt-2 text-dark/60" data-i18n="tech_bvn">Norm: 2026</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-mono text-xs text-blueprint mb-4" data-i18n="tech_flow">OPERATIONAL_FLOW</h3>
+                    <div class="relative pl-8 border-l border-blueprint/20 space-y-8">
+                        <div class="relative">
+                            <div class="absolute -left-[33px] top-1 w-2 h-2 bg-blueprint rounded-full"></div>
+                            <h4 class="font-bold" data-i18n="flow_contact">01. CONTACT</h4>
+                            <p class="text-xs font-mono text-dark/60" data-i18n="flow_contact_d">Signal received.</p>
+                        </div>
+                        <div class="relative">
+                            <div
+                                class="absolute -left-[33px] top-1 w-2 h-2 bg-white border border-blueprint rounded-full">
+                            </div>
+                            <h4 class="font-bold" data-i18n="flow_diag">02. DIAGNOSE</h4>
+                            <p class="text-xs font-mono text-dark/60" data-i18n="flow_diag_d">On-site analysis.</p>
+                        </div>
+                        <div class="relative">
+                            <div
+                                class="absolute -left-[33px] top-1 w-2 h-2 bg-white border border-blueprint rounded-full">
+                            </div>
+                            <h4 class="font-bold" data-i18n="flow_exec">03. EXECUTE</h4>
+                            <p class="text-xs font-mono text-dark/60" data-i18n="flow_exec_d">Repair implemented.</p>
+                        </div>
+                        <div class="relative">
+                            <div
+                                class="absolute -left-[33px] top-1 w-2 h-2 bg-dark border border-blueprint rounded-full">
+                            </div>
+                            <h4 class="font-bold" data-i18n="flow_doc">04. HANDOVER</h4>
+                            <p class="text-xs font-mono text-dark/60" data-i18n="flow_doc_d">Docs uploaded.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 02.5 SERVICE RADAR (INSERTED) -->
+    <section class="py-24 border-b border-blueprint/10 bg-paper">
+        <div class="container mx-auto flex flex-col md:flex-row gap-16 items-center px-6">
+            <div class="w-full md:w-1/2 relative aspect-square max-w-lg flex items-center justify-center">
+                <!-- Outer Static Ring -->
+                <div class="absolute inset-0 border border-blueprint/10 rounded-full"></div>
+
+                <!-- Rotating Dashed Ring -->
+                <div
+                    class="absolute inset-4 border border-dashed border-blueprint/30 rounded-full animate-[spin_30s_linear_infinite]">
+                </div>
+
+                <!-- Counter-Rotating Inner Ring -->
+                <div
+                    class="absolute inset-12 border border-blueprint/20 rounded-full animate-[spin_20s_linear_infinite_reverse]">
+                </div>
+
+                <!-- Radar Scanner Beam -->
+                <div class="absolute inset-4 rounded-full overflow-hidden animate-[spin_4s_linear_infinite]">
+                    <div class="w-full h-full bg-gradient-to-tr from-transparent via-transparent to-blueprint/20"></div>
+                </div>
+
+                <!-- Axis Crosshair -->
+                <div class="absolute inset-0 flex items-center justify-center opacity-30">
+                    <div class="w-full h-px bg-blueprint"></div>
+                    <div class="h-full w-px bg-blueprint absolute"></div>
+                </div>
+
+                <!-- Center Core -->
+                <div
+                    class="absolute bg-blueprint/10 w-24 h-24 rounded-full flex items-center justify-center border border-blueprint/50 animate-pulse">
+                    <span class="text-blueprint font-mono text-xs">SCANNING</span>
+                </div>
+
+                <!-- Pulsing Data Nodes -->
+                <div class="absolute top-[15%] right-[25%] flex items-center gap-2 animate-pulse">
+                    <div class="w-2 h-2 bg-blueprint rounded-full shadow-[0_0_10px_var(--color-blueprint)]"></div>
+                    <span class="font-mono text-[10px] text-blueprint bg-white/50 px-1">T-800</span>
+                </div>
+                <div class="absolute bottom-[25%] left-[20%] flex items-center gap-2 animate-pulse delay-75">
+                    <span class="font-mono text-[10px] text-blueprint bg-white/50 px-1">X-22</span>
+                    <div class="w-2 h-2 bg-blueprint rounded-full shadow-[0_0_10px_var(--color-blueprint)]"></div>
+                </div>
+                <div class="absolute bottom-[15%] right-[30%] flex items-center gap-2 animate-pulse delay-150">
+                    <div class="w-2 h-2 bg-blueprint rounded-full shadow-[0_0_10px_var(--color-blueprint)]"></div>
+                    <span class="font-mono text-[10px] text-blueprint bg-white/50 px-1">N-44</span>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 space-y-6 text-dark">
+                <h2 class="text-4xl font-light"><span class="text-blueprint">>></span> <span
+                        data-i18n="radar_title">SERVICE_MODULES</span></h2>
+                <div
+                    class="border border-blueprint/20 p-6 hover:bg-white transition-all hover:scale-[1.02] hover:shadow-lg service-item group cursor-pointer relative overflow-hidden">
+                    <div
+                        class="absolute inset-0 bg-blueprint/5 translate-x-full group-hover:translate-x-0 transition-transform duration-300">
+                    </div>
+                    <h3 class="text-xl font-bold text-blueprint relative z-10" data-i18n="radar_1_t">[01] INSTALLATION
+                    </h3>
+                    <p class="font-mono text-xs mt-2 relative z-10" data-i18n="radar_1_d">Full specs wiring, fuse box
+                        upgrades.</p>
+                </div>
+                <div
+                    class="border border-blueprint/20 p-6 hover:bg-white transition-all hover:scale-[1.02] hover:shadow-lg service-item group cursor-pointer relative overflow-hidden">
+                    <div
+                        class="absolute inset-0 bg-blueprint/5 translate-x-full group-hover:translate-x-0 transition-transform duration-300">
+                    </div>
+                    <h3 class="text-xl font-bold text-blueprint relative z-10" data-i18n="radar_2_t">[02] DIAGNOSTICS
+                    </h3>
+                    <p class="font-mono text-xs mt-2 relative z-10" data-i18n="radar_2_d">Thermal imaging, fault
+                        finding.</p>
+                </div>
+                <div
+                    class="border border-blueprint/20 p-6 hover:bg-white transition-all hover:scale-[1.02] hover:shadow-lg service-item group cursor-pointer relative overflow-hidden">
+                    <div
+                        class="absolute inset-0 bg-blueprint/5 translate-x-full group-hover:translate-x-0 transition-transform duration-300">
+                    </div>
+                    <h3 class="text-xl font-bold text-blueprint relative z-10" data-i18n="radar_3_t">[03] AUTOMATION
+                    </h3>
+                    <p class="font-mono text-xs mt-2 relative z-10" data-i18n="radar_3_d">Smart home logic controller.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 02.6 TACTICAL MAP (OVERHAULED) -->
+    <section class="h-[600px] relative border-y border-blueprint/20 overflow-hidden bg-white group">
+        <!-- Blueprint Ink Filtered Map -->
+        <div
+            class="absolute inset-0 opacity-40 mix-blend-multiply transition-transform duration-[10s] ease-linear group-hover:scale-105">
+            <img src="assets/demo2/map_dark_monochrome_1768208886093.png"
+                class="w-full h-full object-cover grayscale brightness-110 contrast-125 hover:brightness-100 transition-all duration-500"
+                style="filter: sepia(1) hue-rotate(190deg) saturate(3) opacity(0.5);">
+        </div>
+
+        <!-- Technical Overlays -->
+        <div class="absolute inset-0 bg-grid opacity-30"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,white_100%)] opacity-40"></div>
+
+        <!-- Scanning Beam -->
+        <div
+            class="absolute top-0 bottom-0 w-px bg-blueprint/50 shadow-[0_0_15px_var(--color-blueprint)] animate-[scan_4s_ease-in-out_infinite_alternate] left-0">
+        </div>
+
+        <!-- Center Targeting System -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center">
+            <!-- Outer Brackets -->
+            <div class="w-96 h-64 border-x border-blueprint/20 absolute"></div>
+            <div class="w-80 h-48 border-y border-blueprint/20 absolute"></div>
+
+            <!-- Rotating Reticle -->
+            <div
+                class="w-64 h-64 border border-dashed border-blueprint/30 rounded-full animate-[spin_60s_linear_infinite]">
+            </div>
+            <div class="w-4 h-4 bg-blueprint rounded-full relative z-10 animate-pulse">
+                <div class="absolute -inset-4 border border-blueprint rounded-full animate-ping opacity-20"></div>
+            </div>
+
+            <!-- Label -->
+            <div class="absolute top-4 left-4 bg-white/80 backdrop-blur border border-blueprint/20 px-3 py-1">
+                <span class="font-mono text-[10px] text-blueprint font-bold tracking-widest">SECTOR_04: ACTIVE</span>
+            </div>
+        </div>
+
+        <!-- Floating HUD Data -->
+        <div
+            class="absolute bottom-8 right-8 bg-white/90 backdrop-blur border border-blueprint/20 p-6 shadow-lg max-w-xs">
+            <h4 class="font-mono text-xs text-blueprint font-bold mb-2 flex items-center gap-2">
+                <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                LIVE_COVERAGE
+            </h4>
+            <div class="space-y-2 font-mono text-[10px] text-dark/70">
+                <div class="flex justify-between border-b border-blueprint/10 py-1">
+                    <span>UNITS_ACTIVE</span>
+                    <span class="font-bold">14</span>
+                </div>
+                <div class="flex justify-between border-b border-blueprint/10 py-1">
+                    <span>AVG_RESPONSE</span>
+                    <span class="font-bold">12m 30s</span>
+                </div>
+                <div class="flex justify-between py-1">
+                    <span>SIGNAL_STR</span>
+                    <span class="font-bold">98.4%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Corner Accents -->
+        <div class="absolute top-0 left-0 w-8 h-8 border-t border-l border-blueprint/50 m-4"></div>
+        <div class="absolute top-0 right-0 w-8 h-8 border-t border-r border-blueprint/50 m-4"></div>
+        <div class="absolute bottom-0 left-0 w-8 h-8 border-b border-l border-blueprint/50 m-4"></div>
+        <div class="absolute bottom-0 right-0 w-8 h-8 border-b border-r border-blueprint/50 m-4"></div>
+    </section>
+
+    <!-- 02.7 TESTIMONIALS (PROJECT REFERENCES) -->
+    <section class="py-24 px-6 bg-white border-b border-blueprint/10">
+        <div class="container mx-auto bg-paper border border-blueprint/20 p-8 shadow-sm max-w-4xl relative">
+            <!-- Decorative Tape -->
+            <div
+                class="absolute -top-3 left-1/2 -translate-x-1/2 w-32 h-6 bg-yellow-100/50 rotate-[-1deg] shadow-sm transform">
+            </div>
+
+            <h3 class="font-mono text-xs text-blueprint uppercase tracking-widest mb-8 text-center"
+                data-i18n="ref_title">[ KUNDER &
+                REFERANSER ]</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 font-mono text-sm text-dark/80">
+                <div class="relative pl-6 border-l border-blueprint/30">
+                    <p class="mb-4 italic" data-i18n="ref_1">"Fantastisk oppfølging fra start til slutt. Total
+                        Entreprenør holdt
+                        tidsfristen og leverte uten feil."</p>
+                    <div class="text-[10px] text-blueprint uppercase tracking-wider">
+                        — Anders H., Prosjektleder Obos
+                    </div>
+                </div>
+                <div class="relative pl-6 border-l border-blueprint/30">
+                    <p class="mb-4 italic" data-i18n="ref_2">"Vi bruker dem fast på alle våre næringsbygg.
+                        Profesjonelle, dokumenterte og
+                        alltid tilgjengelig."</p>
+                    <div class="text-[10px] text-blueprint uppercase tracking-wider">
+                        — Siri K., Eiendomsdrift AS
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 03. CONTACT (GRID FORM) -->
+    <section id="contact" class="py-32 bg-paper relative">
+        <!-- Background Grid -->
+        <div class="absolute inset-0 bg-grid opacity-50"></div>
+
+        <div class="container mx-auto max-w-4xl bg-white border border-blueprint/20 shadow-xl relative z-10 p-12">
+            <div
+                class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-blueprint text-white px-4 py-1 font-mono text-xs">
+                FORM_ID: REQ-001
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl font-light mb-6" data-i18n="form_title">Project<br>Parameters</h2>
+                    <p class="font-mono text-xs text-dark/60 mb-8" data-i18n="form_desc">
+                        Please define the scope of required maintenance or emergency protocols.
+                    </p>
+
+                    <div class="space-y-4 font-mono text-xs">
+                        <div class="flex justify-between border-b border-blueprint/10 py-2">
+                            <span data-i18n="form_est">EST. TIME</span>
+                            <span>&lt; 60 MIN</span>
+                        </div>
+                        <div class="flex justify-between border-b border-blueprint/10 py-2">
+                            <span data-i18n="form_avail">AVAILABILITY</span>
+                            <span class="text-blueprint" data-i18n="form_stat">ONLINE</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="space-y-6">
+                    <div>
+                        <label class="block font-mono text-[10px] mb-1 text-blueprint" data-i18n="form_client">KUNDE /
+                            FIRMA</label>
+                        <input type="text"
+                            class="w-full border-b border-blueprint/20 py-2 focus:outline-none focus:border-blueprint transition-colors font-mono text-sm bg-transparent"
+                            placeholder="Navn / Foretak" data-i18n-ph="ph_name">
+                    </div>
+                    <div>
+                        <label class="block font-mono text-[10px] mb-1 text-blueprint"
+                            data-i18n="form_coord">PROJEKTADRESSE</label>
+                        <input type="text"
+                            class="w-full border-b border-blueprint/20 py-2 focus:outline-none focus:border-blueprint transition-colors font-mono text-sm bg-transparent"
+                            placeholder="Adresse" data-i18n-ph="ph_addr">
+                    </div>
+
+                    <!-- File Upload Blueprint Style -->
+                    <div
+                        class="border border-dashed border-blueprint/30 p-4 text-center cursor-pointer hover:bg-blueprint/5 transition-colors">
+                        <span class="text-2xl text-blueprint">↑</span>
+                        <p class="font-mono text-[10px] text-blueprint mt-2" data-i18n="form_up">LAST OPP TEGNING /
+                            BILDE</p>
+                    </div>
+
+                    <button
+                        class="w-full bg-blueprint text-white py-4 font-mono text-xs hover:bg-dark transition-colors border border-blueprint"
+                        data-i18n="form_btn">
+                        [ SEND FORESPØRSEL ]
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- 08. FOOTER -->
+        <footer class="bg-paper border-t border-blueprint/20 py-16 px-6 relative">
+            <!-- Grid Background -->
+            <div class="absolute inset-0 bg-grid opacity-30 pointer-events-none"></div>
+
+            <div class="container mx-auto relative z-10 grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="space-y-4">
+                    <div class="text-2xl font-bold tracking-tighter uppercase text-dark">
+                        TOTAL<span class="text-blueprint">.ENT</span>
+                    </div>
+                    <p class="font-mono text-xs text-dark/60" data-i18n="ft_desc">
+                        Engineered for precision. Built for reliability.<br>
+                        License: NO-9942
+                    </p>
+                    <div
+                        class="font-mono text-[10px] text-blueprint border border-blueprint/20 px-2 py-1 inline-block bg-white">
+                        ORG.NR: 994 221 112 MVA
+                    </div>
+                </div>
+
+                <div class="font-mono text-xs text-dark/70">
+                    <h4 class="text-blueprint font-bold mb-4" data-i18n="ft_map">[ SITEMAP ]</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-blueprint transition-colors" data-i18n="ft_l1">SERVICES</a>
+                        </li>
+                        <li><a href="#" class="hover:text-blueprint transition-colors" data-i18n="ft_l2">BLUEPRINTS</a>
+                        </li>
+                        <li><a href="#" class="hover:text-blueprint transition-colors" data-i18n="ft_l3">PROJECTS</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="font-mono text-xs text-dark/70">
+                    <h4 class="text-blueprint font-bold mb-4" data-i18n="ft_leg">[ LEGAL ]</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-blueprint transition-colors"
+                                data-i18n="ft_gdpr">GDPR_COMPLIANCE</a></li>
+                        <li><a href="#" class="hover:text-blueprint transition-colors" data-i18n="ft_hms">HMS_DOCS</a>
+                        </li>
+                        <li><a href="#" class="hover:text-blueprint transition-colors"
+                                data-i18n="ft_acc">TILGJENGELIGHET</a></li>
+                    </ul>
+                </div>
+
+                <div class="font-mono text-xs text-dark/70">
+                    <h4 class="text-blueprint font-bold mb-4" data-i18n="ft_hq">[ HQ_DETAILS ]</h4>
+                    <p class="text-lg text-blueprint mb-2">99 44 22 11</p>
+                    <p class="mb-4">Oslo, Norway</p>
+                    <div class="flex gap-2">
+                        <a href="#"
+                            class="px-2 py-1 border border-blueprint/20 hover:bg-blueprint hover:text-white transition-colors">FB</a>
+                        <a href="#"
+                            class="px-2 py-1 border border-blueprint/20 hover:bg-blueprint hover:text-white transition-colors">LI</a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="container mx-auto mt-12 pt-8 border-t border-blueprint/10 text-center font-mono text-[10px] text-dark/40">
+                © 2026 TOTAL ENTREPRENØR AS. ALL RIGHTS RESERVED.
+            </div>
+        </footer>
+
+        <!-- CONFIG PANEL (SHARED) -->
+        <div id="theme-panel" style="background-color: #0F172A; color: white;"
+            class="fixed top-0 right-0 h-full w-80 bg-[#0F172A] border-l border-white/10 z-[1000] transform translate-x-full transition-transform duration-500 ease-out p-8 shadow-2xl">
+            <div class="flex justify-between items-center mb-8 border-b border-white/20 pb-4">
+                <h3 class="font-mono text-sm uppercase tracking-widest text-white">Internal Config</h3>
+                <button onclick="App.toggleThemePanel()" class="text-white/50 hover:text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="space-y-4 overflow-y-auto h-[calc(100vh-150px)] pb-10 custom-scrollbar">
+
+                <!-- SECTION 1: BUSINESS TYPE (DEMO) -->
+                <div>
+                    <h4 class="font-mono text-[10px] text-white/50 mb-3 uppercase tracking-widest">1. Select Business
+                    </h4>
+                    <div class="flex flex-col gap-2">
+                        <button id="btn-demo-demo1" onclick="App.setDemo('demo1')"
+                            class="config-btn text-left px-4 py-3 text-xs font-mono text-white transition-all flex justify-between items-center group">
+                            <span>THE TOTAL CONTRACTOR</span>
+                            <span class="opacity-0 group-hover:opacity-100 text-white transition-opacity">→</span>
+                        </button>
+                        <button id="btn-demo-demo2" onclick="App.setDemo('demo2')"
+                            class="config-btn text-left px-4 py-3 text-xs font-mono text-white transition-all flex justify-between items-center group config-active">
+                            <span>SERVICE SPECIALIST</span>
+                            <span class="opacity-0 group-hover:opacity-100 text-white transition-opacity">→</span>
+                        </button>
+                        <button id="btn-demo-demo3" onclick="App.setDemo('demo3')"
+                            class="config-btn text-left px-4 py-3 text-xs font-mono text-white transition-all flex justify-between items-center group">
+                            <span>FINISHING EXPERT</span>
+                            <span class="opacity-0 group-hover:opacity-100 text-white transition-opacity">→</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-mono text-[10px] text-white/50 mb-3 uppercase tracking-widest">2. Select Layout</h4>
+                    <div class="grid grid-cols-3 gap-2 mb-2">
+                        <button id="btn-tpl-term" onclick="App.setTemplate('term')"
+                            class="config-btn aspect-video flex flex-col items-center justify-center gap-1 group transition-all">
+                            <div class="w-4 h-2 bg-white/10 group-hover:bg-white/20"></div>
+                            <span class="text-[8px] font-mono text-white/50 group-hover:text-white">TERM</span>
+                        </button>
+                        <button id="btn-tpl-blue" onclick="App.setTemplate('blue')"
+                            class="config-btn aspect-video flex flex-col items-center justify-center gap-1 group transition-all config-active">
+                            <div class="w-4 h-2 bg-white/10 group-hover:bg-white/20"></div>
+                            <span class="text-[8px] font-mono text-white/50 group-hover:text-white">BLUE</span>
+                        </button>
+                        <button id="btn-tpl-pulse" onclick="App.setTemplate('pulse')"
+                            class="config-btn aspect-video flex flex-col items-center justify-center gap-1 group transition-all">
+                            <div class="w-4 h-2 bg-white/10 group-hover:bg-white/20"></div>
+                            <span class="text-[8px] font-mono text-white/50 group-hover:text-white">PULSE</span>
+                        </button>
+                    </div>
+
+                    <!-- SECTION 3: VISUAL THEME -->
+                    <div>
+                        <h4 class="font-mono text-[10px] text-white/50 mb-3 uppercase tracking-widest">3. Visual Style
+                        </h4>
+                        <div class="space-y-2">
+                            <!-- Theme 1 -->
+                            <button id="btn-theme-default" onclick="App.setTheme('default')"
+                                class="config-btn w-full p-3 flex items-center gap-4 group transition-all">
+                                <div
+                                    class="w-6 h-6 bg-[#FF5F1F] rounded-full border-2 border-[#1A1A1B] shadow-[0_0_10px_rgba(255,95,31,0.3)]">
+                                </div>
+                                <span class="font-mono text-xs uppercase text-white group-hover:text-white">Safety
+                                    Orange</span>
+                            </button>
+                            <!-- Theme 2 -->
+                            <button id="btn-theme-nordic" onclick="App.setTheme('nordic')"
+                                class="config-btn w-full p-3 flex items-center gap-4 group transition-all">
+                                <div
+                                    class="w-6 h-6 bg-[#38BDF8] rounded-full border-2 border-[#0F172A] shadow-[0_0_10px_rgba(56,189,248,0.3)]">
+                                </div>
+                                <span class="font-mono text-xs uppercase text-white group-hover:text-white">Nordic
+                                    Blue</span>
+                            </button>
+                            <!-- Theme 3 -->
+                            <button id="btn-theme-nature" onclick="App.setTheme('nature')"
+                                class="config-btn w-full p-3 flex items-center gap-4 group transition-all">
+                                <div
+                                    class="w-6 h-6 bg-[#D4A373] rounded-full border-2 border-[#1B2B1E] shadow-[0_0_10px_rgba(212,163,115,0.3)]">
+                                </div>
+                                <span class="font-mono text-xs uppercase text-white group-hover:text-white">Forest
+                                    Copper</span>
+                            </button>
+                            <!-- Theme 4 -->
+                            <button id="btn-theme-steel" onclick="App.setTheme('steel')"
+                                class="config-btn w-full p-3 flex items-center gap-4 group transition-all">
+                                <div class="w-6 h-6 bg-[#E5E5E5] rounded-full border-2 border-[#333]"></div>
+                                <span class="font-mono text-xs uppercase text-white group-hover:text-white">Steel
+                                    Mono</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                const lenis = new Lenis();
+                function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
+                requestAnimationFrame(raf);
+
+
+
+                // GSAP Animations
+                gsap.registerPlugin(ScrollTrigger);
+
+                // Hero & Parallax
+                const tl = gsap.timeline();
+                tl.from('.reveal-text', {
+                    y: 50,
+                    opacity: 0,
+                    duration: 1,
+                    stagger: 0.2,
+                    ease: "power3.out"
+                })
+                    .from('#hero img', {
+                        scale: 1.1,
+                        opacity: 0,
+                        duration: 1.5,
+                        ease: "power2.out"
+                    }, 0);
+
+                // Service Items Stagger using Batch for better visibility
+                ScrollTrigger.batch(".service-item", {
+                    onEnter: batch => gsap.to(batch, { autoAlpha: 1, x: 0, stagger: 0.15, overwrite: true }),
+                    onLeave: batch => gsap.set(batch, { autoAlpha: 0, overwrite: true }),
+                    onEnterBack: batch => gsap.to(batch, { autoAlpha: 1, x: 0, stagger: 0.15, overwrite: true }),
+                    onLeaveBack: batch => gsap.set(batch, { autoAlpha: 0, overwrite: true })
+                });
+
+                // Set initial state
+                gsap.set(".service-item", { autoAlpha: 0, x: 50 });
+
+                gsap.to('.bg-grid', {
+                    backgroundPosition: "0px 100px",
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: "body",
+                        start: "top top",
+                        end: "bottom bottom",
+                        scrub: true
+                    }
+                });
+
+                // Section Reveal (Generic)
+                gsap.utils.toArray('section').forEach(section => {
+                    gsap.from(section.querySelectorAll('h2, h3, .border'), {
+                        y: 30,
+                        opacity: 0,
+                        duration: 0.8,
+                        stagger: 0.1,
+                        scrollTrigger: {
+                            trigger: section,
+                            start: "top 80%",
+                            toggleActions: "play none none reverse"
+                        }
+                    });
+                });
+
+                window.showcaseConfig = {
+                    demo2: {
+                        i18n: {
+                            no: {
+                                "nav_1": "01.0 // OVERSIKT",
+                                "nav_2": "02.0 // SPESIFIKASJON",
+                                "nav_3": "03.0 // KONTAKT",
+                                "scale": "MÅLESTOKK 1:1",
+                                "hero_h1": "24/7 <span class='font-bold text-blueprint'>AKUTT</span>VAKT",
+                                "hero_title": "NØD_ENHET",
+                                "hero_sub": "// KUN AUTORISERT PERSONELL.<br>// UMIDDELBAR RESPONS-PROTOKOLL.",
+                                "hero_alert": "/// RESPONS: 45 MIN",
+                                "hero_cta": "RING NÅ ->",
+                                "fig_struct": "FIG 2.4 - STRUKTUR",
+                                "tech_cert": "SERTIFISERING_LAG",
+                                "tech_dsb": "DSB RANGERING: A+",
+                                "tech_bvn": "VÅTROM NORM: 2026",
+                                "tech_flow": "OPERASJONELL_FLYT",
+                                "flow_contact": "01. KONTAKT",
+                                "flow_contact_d": "Signal mottatt.",
+                                "flow_diag": "02. DIAGNOSE",
+                                "flow_diag_d": "Analyse på stedet.",
+                                "flow_exec": "03. UTFØRELSE",
+                                "flow_doc": "04. DOKUMENTASJON",
+                                "flow_exec_d": "Feilretting utført.",
+                                "flow_doc_d": "Lastet opp til Boligmappa.",
+                                "radar_title": "TJENESTE_MODULER",
+                                "radar_1_t": "[01] INSTALLASJON", "radar_1_d": "Full spec kabling, sikringsskap.",
+                                "radar_2_t": "[02] DIAGNOSTIKK", "radar_2_d": "Termografering, feilsøking.",
+                                "radar_3_t": "[03] AUTOMASJON", "radar_3_d": "Smarthus logikk-kontroller.",
+                                "ref_title": "[ KUNDER & REFERANSER ]",
+                                "ref_1": "\"Fantastisk oppfølging fra start til slutt. Total Entreprenør holdt tidsfristen og leverte uten feil.\"",
+                                "ref_2": "\"Vi bruker dem fast på alle våre næringsbygg. Profesjonelle, dokumenterte og alltid tilgjengelig.\"",
+                                "form_title": "Prosjekt<br>Parameter",
+                                "form_desc": "Definer omfanget av vedlikehold eller nødprotokoll.",
+                                "form_est": "EST. TID", "form_avail": "TILGJENGELIGHET", "form_stat": "PÅ NETT",
+                                "form_client": "KLIENT_ID", "ph_name": "Navn / Foretak",
+                                "form_coord": "KOORDINATER", "ph_addr": "Adresse",
+                                "form_spec": "SPESIFIKASJONER",
+                                "form_up": "LAST OPP TEGNING",
+                                "form_btn": "[ SEND_TEGNING ]",
+                                "ft_map": "[ SIDEKART ]",
+                                "ft_l1": "TJENESTER", "ft_l2": "TEGNINGER", "ft_l3": "PROSJEKTER",
+                                "ft_leg": "[ JURIDISK ]",
+                                "ft_gdpr": "GDPR_SAMSVAR", "ft_hms": "HMS_DOKUMENTASJON", "ft_acc": "TILGJENGELIGHETSERKLÆRING",
+                                "ft_hq": "[ HOVEDKONTOR ]",
+                                "ft_desc": "Konstruert for presisjon. Bygget for pålitelighet.<br>Lisens: NO-9942"
+                            },
+                            en: {
+                                "nav_1": "01.0 // OVERVIEW",
+                                "nav_2": "02.0 // SPECS",
+                                "nav_3": "03.0 // CONNECT",
+                                "scale": "SCALE 1:1",
+                                "hero_h1": "24/7 <span class='font-bold text-blueprint'>EMERGENCY</span>UNIT",
+                                "hero_title": "EMERGENCY_UNIT",
+                                "hero_sub": "// AUTHORIZED PERSONNEL ONLY.<br>// IMMEDIATE RESPONSE PROTOCOL INITIATED.",
+                                "hero_alert": "/// RESPONSE: 45 MIN",
+                                "hero_cta": "CALL NOW ->",
+                                "fig_struct": "FIG 2.4 - STRUCTURE",
+                                "tech_cert": "CERTIFICATION_LAYER",
+                                "tech_dsb": "DSB RATING: A+",
+                                "tech_bvn": "WETROOM NORM: 2026",
+                                "tech_flow": "OPERATIONAL_FLOW",
+                                "flow_contact": "01. CONTACT",
+                                "flow_contact_d": "Signal received.",
+                                "flow_diag": "02. DIAGNOSE",
+                                "flow_diag_d": "On-site analysis.",
+                                "flow_exec": "03. EXECUTE",
+                                "flow_doc": "04. HANDOVER",
+                                "flow_exec_d": "Repair implemented.",
+                                "flow_doc_d": "Docs uploaded.",
+                                "radar_title": "SERVICE_MODULES",
+                                "radar_1_t": "[01] INSTALLATION", "radar_1_d": "Full specs wiring, fuse box upgrades.",
+                                "radar_2_t": "[02] DIAGNOSTICS", "radar_2_d": "Thermal imaging, fault finding.",
+                                "radar_3_t": "[03] AUTOMATION", "radar_3_d": "Smart home logic controller.",
+                                "ref_title": "[ CLIENTS & REFERENCES ]",
+                                "ref_1": "\"Incredible follow-up from start to finish. Total Contractor met the deadline and delivered without errors.\"",
+                                "ref_2": "\"We use them regularly for all our commercial buildings. Professional, documented, and always available.\"",
+                                "form_title": "Project<br>Parameters",
+                                "form_desc": "Please define the scope of required maintenance or emergency protocols.",
+                                "form_est": "EST. TIME", "form_avail": "AVAILABILITY", "form_stat": "ONLINE",
+                                "form_client": "CLIENT_ID", "ph_name": "Name / Company",
+                                "form_coord": "COORDINATES", "ph_addr": "Address",
+                                "form_spec": "SPECIFICATIONS",
+                                "form_up": "UPLOAD BLUEPRINT",
+                                "form_btn": "[ SUBMIT_BLUEPRINT ]",
+                                "ft_map": "[ SITEMAP ]",
+                                "ft_l1": "SERVICES", "ft_l2": "BLUEPRINTS", "ft_l3": "PROJECTS",
+                                "ft_leg": "[ LEGAL ]",
+                                "ft_gdpr": "GDPR_COMPLIANCE", "ft_hms": "HSE_DOCS", "ft_acc": "ACCESSIBILITY",
+                                "ft_hq": "[ HQ_DETAILS ]",
+                                "ft_desc": "Engineered for precision. Built for reliability.<br>License: NO-9942"
+                            }
+                        }
+                    }
+                };
+
+                document.addEventListener('DOMContentLoaded', () => {
+                    // App auto-init via common.js
+                });
+            </script>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+{
+  "nav": {
+    "templates": "Maler",
+    "newWebsite": "Ny Nettside",
+    "wcagCompliance": "WCAG Samsvar",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "badge": "Webdesign for Norge",
+    "titleStart": "Profesjonelle nettsider for",
+    "titleHighlight": "norske bedrifter",
+    "subtitle": "AI-sokeklarr. WCAG-kompatibel. Bygget for a konvertere besokende til kunder. Null stress fra din side.",
+    "ctaPrimary": "Jeg trenger en nettside",
+    "ctaSecondary": "Fiks min eksisterende side",
+    "trustLabel": "Bygget for fremtiden",
+    "trustItems": ["AI-sokoptimalisert", "WCAG 2.0 AA Kompatibel", "Klar for norsk lov"]
+  },
+  "whatWeDo": {
+    "badge": "Hva Vi Gjor",
+    "title": "Et komplett kundeanskaffelsessystem",
+    "subtitle": "Nettside + Annonsering = kunder som aktivt soker etter dine tjenester.",
+    "website": {
+      "title": "Profesjonell Nettside",
+      "description": "Ditt digitale fundament. En nettside som ser profesjonell ut, rangerer i AI-sokresultater og konverterer besokende til betalende kunder.",
+      "features": [
+        "AI-sokeklar (ChatGPT, Perplexity, Google AI)",
+        "WCAG 2.0 AA kompatibel (norsk lov)",
+        "Bygget for a konvertere besokende til kunder",
+        "Hosting og vedlikehold inkludert"
+      ],
+      "priceLabel": "Fra",
+      "price": "10 000 kr",
+      "priceSuffix": "+ 500 kr/mnd"
+    },
+    "ads": {
+      "title": "Google Ads Administrasjon",
+      "description": "Akseler resultatene dine. Nar noen soker \"snekker Oslo\" eller \"rorlegger Bergen\", vises annonsen din overs. Direkte leads fra folk som aktivt leter.",
+      "features": [
+        "Sokordanalyse for ditt omrade",
+        "Norsk annonsetekst",
+        "Manedlig optimalisering og A/B-testing",
+        "Resultatrapporter med ROI-sporing"
+      ],
+      "priceLabel": "Administrasjonsgebyr",
+      "price": "2 000 kr",
+      "priceSuffix": "/mnd + 10% annonseforbruk"
+    },
+    "combined": {
+      "website": "Nettside",
+      "converts": "Konverterer besokende",
+      "ads": "Annonser",
+      "brings": "Bringer besokende",
+      "result": "Kunder"
+    }
+  },
+  "whoWeHelp": {
+    "badge": "Hvem Vi Hjelper",
+    "title": "To veier til en sterkere tilstedevaerelse pa nett",
+    "subtitle": "Enten du trenger en ny nettside eller ma fikse tilgjengelighetsproblemer, har vi deg dekket.",
+    "segments": [
+      {
+        "title": "Ingen nettside enna?",
+        "description": "Du er en dyktig handverker, men kundene finner deg ikke pa nett. Konkurrentene dine med nettsider vinner jobber som burde vaere dine. AI-assistenter kan ikke anbefale deg fordi du ikke eksisterer digitalt.",
+        "cta": "Fa din profesjonelle nettside",
+        "features": ["AI-sokeklar", "WCAG Kompatibel", "Fra 10 000 kr"]
+      },
+      {
+        "title": "Tilgjengelighetsproblemer pa nettsiden?",
+        "description": "97% av norske nettsider feiler WCAG-samsvarsjekker. Siden din bryter kanskje loven uten at du vet det. Digdir gjennomforer tilfeldige revisjoner og publiserer resultatene offentlig.",
+        "cta": "Fa din gratis WCAG-revisjon",
+        "features": ["Gratis Revisjon", "Detaljert Rapport", "Gjenoppbyggingsalternativ"]
+      }
+    ]
+  },
+  "portfolio": {
+    "badge": "Vare Maler",
+    "title": "Design som konverterer besokende til kunder",
+    "subtitle": "Hver mal er AI-klar, WCAG-kompatibel og optimalisert for norske bedrifter.",
+    "viewAll": "Se alle maler",
+    "viewDemo": "Se Live Demo"
+  },
+  "whyUs": {
+    "badge": "Hvorfor DealCatcher",
+    "title": "Den rette partneren for din tilstedevaerelse pa nett",
+    "subtitle": "Vi er ikke bare et vanlig webbyra. Vi bygger nettsider som er klare for fremtiden.",
+    "reasons": [
+      {
+        "title": "Bygget for 2026+",
+        "points": [
+          "AI-sokoptimalisering fra dag en",
+          "Semantisk HTML som algoritmer forstar",
+          "Bedriften din blir anbefalt av ChatGPT og Google AI"
+        ]
+      },
+      {
+        "title": "Klar for Norsk Lov",
+        "points": [
+          "100% WCAG 2.0 AA kompatibel",
+          "Manedlig samsvarsovervaking",
+          "Null risiko for Digdir-boter"
+        ]
+      },
+      {
+        "title": "Vi Tar Oss Av Alt",
+        "points": [
+          "15 minutter for a fylle ut briefen",
+          "Design, utvikling, hosting, vedlikehold",
+          "Du fokuserer pa handverket ditt, vi tar resten"
+        ]
+      }
+    ]
+  },
+  "cta": {
+    "titleStart": "Klar til a bygge din",
+    "titleHighlight": "tilstedevaerelse pa nett",
+    "subtitle": "La oss snakke om hvordan vi kan hjelpe bedriften din med a bli funnet pa nett. Bestill en gratis konsultasjon eller send oss en melding.",
+    "ctaPrimary": "Kom i gang",
+    "ctaSecondary": "Kontakt oss"
+  },
+  "footer": {
+    "description": "Profesjonelle nettsider for norske bedrifter. AI-klare, WCAG-kompatible, bygget for a konvertere.",
+    "services": "Tjenester",
+    "contact": "Kontakt",
+    "newWebsite": "Ny Nettside",
+    "wcagCompliance": "WCAG Samsvar",
+    "copyright": "Alle rettigheter reservert.",
+    "privacy": "Personvernerkaering",
+    "terms": "Vilkar for Bruk"
+  }
+}

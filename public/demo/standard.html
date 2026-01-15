@@ -1,0 +1,1917 @@
+<!DOCTYPE html>
+<html lang="no" class="lenis lenis-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Totalentreprenør | Vi realiserer dine ambisjoner</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;1,300&family=Inter+Tight:wght@500;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS (CDN for single file) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter Tight', 'sans-serif'],
+                        mono: ['IBM Plex Mono', 'monospace'],
+                    },
+                    colors: {
+                        dark: 'var(--color-dark)',
+                        light: 'var(--color-light)',
+                        accent: 'var(--color-accent)',
+                        forest: 'var(--color-forest)',
+                        wood: '#C19A6B'
+                    },
+                    cursor: {
+                        none: 'none'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- GSAP & Lenis -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
+    <style>
+        :root {
+            /* Theme 1: Default (Safety Orange) */
+            --color-dark: #1A1A1B;
+            --color-light: #F5F5F7;
+            --color-accent: #FF5F1F;
+            --color-forest: #1B2B1E;
+        }
+
+        /* --- CONFIGURATOR ACTIVE STATE --- */
+        .config-active {
+            border-color: var(--color-accent) !important;
+            background-color: rgba(255, 255, 255, 0.05) !important;
+            opacity: 1 !important;
+            box-shadow: 0 0 15px var(--color-accent) !important;
+        }
+
+        .config-active span {
+            color: var(--color-light) !important;
+        }
+
+        .config-active div {
+            border-color: var(--color-accent) !important;
+        }
+
+
+
+        body {
+            background-color: var(--color-dark);
+            color: var(--color-light);
+            overflow-x: hidden;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        /* Grain Overlay */
+        .grain-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.03;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+
+        /* Custom Cursor */
+        .cursor-dot {
+            width: 12px;
+            height: 12px;
+            background-color: var(--color-accent);
+            position: fixed;
+            top: 0;
+            left: 0;
+            border-radius: 50%;
+            z-index: 10000;
+            pointer-events: none;
+            mix-blend-mode: difference;
+            transition: width 0.3s, height 0.3s, background-color 0.3s;
+        }
+
+        .cursor-dot.hovered {
+            width: 60px;
+            height: 60px;
+            background-color: var(--color-accent);
+            opacity: 0.8;
+            backdrop-filter: blur(2px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cursor-dot.hovered::after {
+            content: attr(data-text);
+            font-size: 10px;
+            font-family: 'IBM Plex Mono', monospace;
+            color: #fff;
+        }
+
+        /* Hide default scrollbar */
+        ::-webkit-scrollbar {
+            width: 0px;
+            background: transparent;
+        }
+
+        /* UU: Global Focus Style for Keyboard Navigation */
+        :focus-visible {
+            outline: 2px solid var(--color-accent);
+            outline-offset: 2px;
+            z-index: 10001;
+        }
+
+        /* Caliper Line */
+        .caliper-line {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 1px;
+            height: 100%;
+            background: rgba(245, 245, 247, 0.2);
+        }
+
+        .caliper-thumb {
+            position: absolute;
+            right: -10px;
+            /* Center on line */
+            width: 20px;
+            height: 40px;
+            /* Simple SVG styling handled in HTML */
+        }
+
+        .outline-text {
+            -webkit-text-stroke: 1px rgba(245, 245, 247, 0.4);
+            color: transparent;
+            transition: color 0.3s;
+        }
+
+        .outline-text:hover {
+            color: #F5F5F7;
+        }
+
+        .reveal-text span {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body class="cursor-none">
+    <a href="#main-content"
+        class="fixed top-0 left-0 -translate-y-full focus:translate-y-0 z-[100] bg-accent text-dark px-4 py-2 font-mono text-sm transition-transform">
+        Hopp til innhold
+    </a>
+
+    <!-- FX Layers -->
+    <div class="grain-overlay"></div>
+    <div class="cursor-dot" id="cursor"></div>
+
+    <!-- Navigation (Floating) -->
+    <!-- Navigation (Floating - Rigid for UU) -->
+    <nav
+        class="fixed top-0 w-full z-50 px-6 py-6 flex justify-between items-center bg-[#1A1A1B]/90 backdrop-blur-md border-b border-light/5 text-[#F5F5F7] transition-colors duration-300">
+        <div class="flex items-center gap-3 relative group cursor-pointer hover-trigger" data-hover-text="HOME">
+            <img src="assets/company_logo_total_1767961946647.png"
+                class="h-8 opacity-90 hover:opacity-100 transition-opacity" style="filter: invert(1);"
+                alt="Totalentreprenør Logo">
+            <span class="text-xl font-bold tracking-tighter uppercase">Total<span class="text-accent">.</span></span>
+        </div>
+        <div class="hidden md:flex gap-8 font-mono text-xs tracking-widest opacity-80">
+            <a href="#process" class="hover:text-accent transition-colors hover-trigger" data-hover-text="PROCESS"
+                data-i18n="nav.process">PROSESS</a>
+            <a href="#sustainability" class="hover:text-accent transition-colors hover-trigger" data-hover-text="ECO"
+                data-i18n="nav.sustainability">BÆREKRAFT</a>
+            <a href="#work" class="hover:text-accent transition-colors hover-trigger" data-hover-text="WORK"
+                data-i18n="nav.projects">PROSJEKTER</a>
+            <a href="#configurator" class="hover:text-accent transition-colors hover-trigger" data-hover-text="CONTACT"
+                data-i18n="nav.contact">KONTAKT</a>
+        </div>
+        <div class="flex items-center gap-6">
+            <!-- Language Switcher -->
+            <div class="flex gap-2 font-mono text-xs cursor-pointer z-50">
+                <span id="lang-no" class="hover:text-accent transition-colors underline"
+                    onclick="setLanguage('no')">NO</span>
+                <span class="opacity-30">/</span>
+                <span id="lang-en" class="hover:text-accent transition-colors" onclick="setLanguage('en')">EN</span>
+            </div>
+            <button
+                class="border border-light/30 px-6 py-2 rounded-full font-mono text-xs uppercase hover:bg-light hover:text-dark transition-all duration-300 hover-trigger"
+                data-hover-text="CONTACT" data-i18n="nav.contact">
+                Kontakt Oss
+            </button>
+        </div>
+    </nav>
+
+    <!-- Floating Badge: Sentral Godkjenning -->
+    <div id="floating-badge"
+        class="fixed bottom-8 left-8 z-40 hidden md:flex items-center gap-3 bg-dark/90 backdrop-blur-md border border-accent/20 px-4 py-3 rounded-sm shadow-2xl transition-all duration-300 group">
+        <a href="https://sgregister.dibk.no/" target="_blank" class="flex items-center gap-3">
+            <img src="assets/certificate_sentral_godkjenning_v2_1767963720366.png"
+                class="h-8 w-auto invert grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all"
+                alt="Sentral Godkjenning">
+            <div class="flex flex-col">
+                <span class="font-mono text-[10px] text-accent tracking-widest uppercase">Certified</span>
+                <span class="text-xs font-bold leading-none text-light">Sentral Godkjenning</span>
+            </div>
+        </a>
+        <button onclick="document.getElementById('floating-badge').style.display='none'"
+            class="absolute -top-2 -right-2 bg-accent text-dark rounded-full p-1 opacity-0 group-hover:opacity-100 transition-opacity hover:bg-white shadow-md">
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+    </div>
+
+    <!-- 01. HERO SECTION -->
+    <section class="relative h-screen w-full flex overflow-hidden" id="main-content">
+        <!-- Left: Typography -->
+        <div class="w-full md:w-[40%] h-full p-8 md:p-16 flex flex-col justify-center z-10 bg-dark relative">
+            <h1 class="text-[clamp(12vw,12vh,8rem)] md:text-[12vh] leading-[0.9] font-black uppercase tracking-tighter"
+                id="hero-title" data-i18n="hero.title">
+                Vi<br>
+                Realiserer
+            </h1>
+            <p class="mt-8 font-mono text-sm max-w-[300px] text-light/60 reveal-type" data-i18n="hero.subtitle">
+                // 01 <br>
+                Fra første spadetak til nøkkelferdig hjem. Vi overgår dine ambisjoner med presisjon.
+            </p>
+
+            <h2 class="absolute bottom-8 left-8 md:left-16 text-xs font-mono text-accent" data-i18n="hero.scroll">
+                SCROLL TO EXPLORE
+            </h2>
+
+            <a href="#configurator"
+                class="absolute bottom-32 left-8 md:left-16 border border-light/30 px-10 py-4 hover:bg-white hover:text-dark hover:border-white transition-all duration-300 font-mono text-xs uppercase tracking-widest backdrop-blur-sm group z-20">
+                <span data-i18n="hero.cta">START DITT PROSJEKT</span>
+            </a>
+
+            <!-- Crosshair Element -->
+            <div class="absolute inset-0 pointer-events-none opacity-20 hidden md:block z-0">
+                <div class="absolute top-1/2 left-0 w-full h-px bg-light"></div>
+                <div class="absolute top-0 left-1/2 w-px h-full bg-light"></div>
+                <div
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[20vw] h-[20vw] border border-light rounded-full">
+                </div>
+            </div>
+        </div>
+
+        <!-- Right: "Video" (Image Placeholder) -->
+        <div class="absolute top-0 right-0 w-full md:w-[70%] h-full z-0 clip-hero hover-trigger" data-hover-text="VIEW">
+            <!-- Image with Ken Burns Effect -->
+            <img src="assets/hero_background_1767958362195.png" alt="Industrial Construction"
+                class="w-full h-full object-cover opacity-80 scale-110 will-change-transform" id="hero-image"
+                data-img-key="hero">
+            <div class="absolute inset-0 bg-gradient-to-r from-dark via-dark/40 to-transparent"></div>
+        </div>
+    </section>
+
+    <!-- 02. TRUST BAR (Static Grid) -->
+    <section class="py-12 border-y border-light/5 bg-dark relative overflow-hidden">
+        <div
+            class="container mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center opacity-60 hover:opacity-100 transition-opacity duration-500">
+            <!-- Item 1: Sentral (Image) -->
+            <div class="text-center group flex flex-col items-center gap-3">
+                <img src="assets/certificate_sentral_godkjenning_v2_1767963720366.png"
+                    class="h-10 md:h-12 w-auto invert grayscale group-hover:grayscale-0 transition-all">
+                <span class="font-mono text-[9px] text-light/40 uppercase tracking-widest">[REG: 2026-B30]</span>
+            </div>
+            <!-- Item 2: Mesterbrev -->
+            <div class="text-center group flex flex-col items-center gap-3">
+                <span class="font-bold text-lg md:text-xl text-light uppercase tracking-tighter">Mesterbrev</span>
+                <span class="font-mono text-[9px] text-light/40 uppercase tracking-widest">[SERT: M-992]</span>
+            </div>
+            <!-- Item 3: StartBANK -->
+            <div class="text-center group flex flex-col items-center gap-3">
+                <span class="font-bold text-lg md:text-xl text-light uppercase tracking-tighter">StartBANK</span>
+                <span class="font-mono text-[9px] text-light/40 uppercase tracking-widest">[ID: 88421]</span>
+            </div>
+            <!-- Item 4: Miljøfyrtårn -->
+            <div class="text-center group flex flex-col items-center gap-3">
+                <span class="font-bold text-lg md:text-xl text-light uppercase tracking-tighter">Miljøfyrtårn</span>
+                <span class="font-mono text-[9px] text-light/40 uppercase tracking-widest">[ECO: A+]</span>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- 03. CORE SERVICE (Totalentreprenør) -->
+    <section class="py-12 md:py-24 px-6 md:px-16 bg-light text-dark relative">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-xs font-mono text-accent uppercase tracking-widest mb-6" data-i18n="core.label">//
+                TOTALENTREPRENØR</h2>
+            <h3 class="text-4xl md:text-6xl font-black uppercase leading-tight mb-8" data-i18n="core.title">
+                Fra Første Spadetak<br>Til Nøkkelferdig Drøm.
+            </h3>
+            <p class="text-xl text-dark/70 font-light max-w-2xl mx-auto leading-relaxed" data-i18n="core.desc">
+                Vi tar det fulle ansvaret. Én kontrakt, én kontaktperson, ingen ansvarsfraskrivelse. Vi koordinerer
+                arkitekter, grunnarbeid, tømrere og stålmontører slik at du kan fokusere på visjonen, ikke logistikken.
+            </p>
+        </div>
+    </section>
+
+    <!-- 04. PROCESS (Caliper) -->
+    <!-- This section pins. Left is sticky titles, right is scrolling cards. -->
+    <section id="process"
+        class="relative bg-dark min-h-screen flex flex-col md:flex-row py-16 md:py-32 px-6 md:px-16 gap-12 overflow-hidden">
+
+        <!-- Caliper Graphic (Absolute to section) -->
+        <div class="hidden md:block absolute right-16 top-32 bottom-32 w-[100px] pointer-events-none z-20"
+            id="caliper-track">
+            <div class="caliper-line"></div>
+            <!-- The Thumb -->
+            <div class="caliper-thumb flex flex-col items-end" id="caliper-thumb">
+                <div class="text-[10px] font-mono mb-1 text-accent opacity-80" id="caliper-value">00.0mm</div>
+                <svg width="40" height="20" viewBox="0 0 40 20" fill="none" class="opacity-80">
+                    <path d="M0 10H40" stroke="#F5F5F7" stroke-width="1" />
+                    <path d="M0 0V20" stroke="#F5F5F7" stroke-width="2" />
+                    <path d="M35 5V15" stroke="#F5F5F7" stroke-width="1" />
+                </svg>
+            </div>
+        </div>
+
+        <!-- Sticky Header/Nav for Process -->
+        <div class="w-full md:w-1/3 h-fit md:sticky md:top-32" id="process-sticky">
+            <h2 class="text-5xl md:text-8xl font-black uppercase tracking-tight mb-8" data-i18n="process.title">
+                Prosess
+            </h2>
+            <p class="font-mono text-sm max-w-xs text-light/60 mb-8" data-i18n="process.desc">
+                Industriell presisjon møter arkitektonisk visjon. Vår arbeidsflyt representerer den høyeste standarden i
+                norsk utførelse.
+            </p>
+            <div class="hidden md:flex flex-col gap-4 font-mono text-sm text-light/40">
+                <span class="process-indicator active text-accent" data-step-target="01"
+                    data-i18n="process.step1.label">// 01 IDÉ &
+                    KONSEPT</span>
+                <span class="process-indicator" data-step-target="02" data-i18n="process.step2.label">// 02
+                    GRUNNARBEID</span>
+                <span class="process-indicator" data-step-target="03" data-i18n="process.step3.label">// 03 RÅBYGG &
+                    KONSTRUKSJON</span>
+                <span class="process-indicator" data-step-target="04" data-i18n="process.step4.label">// 04
+                    OVERLEVERING</span>
+            </div>
+        </div>
+
+        <!-- Scrollable Content -->
+        <div class="w-full md:w-1/2 flex flex-col gap-32 pb-32">
+
+            <!-- Step 01 -->
+            <div class="process-step group" data-step="01">
+                <div class="aspect-[4/3] overflow-hidden mb-6 relative">
+                    <img src="assets/daglig_leder_portrait_1767958435216.png"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        alt="Architect">
+                    <div class="absolute bottom-4 left-4 font-mono text-xs bg-dark/80 px-2 py-1 backdrop-blur-sm border border-light/10"
+                        data-i18n="process.fig1">
+                        FIG 01.0 - PLANLEGGING</div>
+                </div>
+                <h3 class="text-3xl font-bold mb-4" data-i18n="process.step1.title">Konsultasjon & Arkitektur</h3>
+                <p class="text-light/70 font-light leading-relaxed max-w-md" data-i18n="process.step1.text">
+                    Vi starter med å dekonstruere visjonen. Analyse av tomt, topografi, lysforhold og strukturell
+                    gjennomførbarhet.
+                </p>
+            </div>
+
+            <!-- Step 02 -->
+            <div class="process-step group" data-step="02">
+                <div class="aspect-[4/3] overflow-hidden mb-6 relative">
+                    <img src="assets/technical_texture_1767958422508.png"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        alt="Concrete">
+                    <div
+                        class="absolute top-2 right-2 font-mono text-[9px] text-light/50 bg-dark/40 px-1 backdrop-blur-sm border border-light/10">
+                        [SPEC: CONCRETE_B35_MF40]
+                    </div>
+                    <div class="absolute bottom-4 left-4 font-mono text-xs bg-dark/80 px-2 py-1 backdrop-blur-sm border border-light/10"
+                        data-i18n="process.fig2">
+                        FIG 02.0 - GRUNNARBEID</div>
+                </div>
+                <h3 class="text-3xl font-bold mb-4" data-i18n="process.step2.title">Tungt Grunnarbeid</h3>
+                <p class="text-light/70 font-light leading-relaxed max-w-md" data-i18n="process.step2.text">
+                    Presisjonssprengning og betongarmering. Vi sørger for at fjellet gir etter for strukturen, ikke
+                    omvendt.
+                </p>
+            </div>
+            <!-- Step 03 -->
+            <div class="process-step group" data-step="03">
+                <div class="aspect-[4/3] overflow-hidden mb-6 relative">
+                    <img src="assets/process_step_3_steel_timber_1767960667755.png"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        alt="Steel Framework">
+                    <div
+                        class="absolute top-2 right-2 font-mono text-[9px] text-light/50 bg-dark/40 px-1 backdrop-blur-sm border border-light/10">
+                        [SPEC: STEEL_GRADE_S355]
+                    </div>
+                    <div class="absolute bottom-4 left-4 font-mono text-xs bg-dark/80 px-2 py-1 backdrop-blur-sm border border-light/10"
+                        data-i18n="process.fig3">
+                        FIG 03.0 - KONSTRUKSJON</div>
+                </div>
+                <h3 class="text-3xl font-bold mb-4" data-i18n="process.step3.title">Reisverk & Stål</h3>
+                <p class="text-light/70 font-light leading-relaxed max-w-md" data-i18n="process.step3.text">
+                    Skjelettet reiser seg. Industrielle stålbjelker møter lokalt tømmer. Den brutalistiske
+                    sofistikasjonen tar form.
+                </p>
+            </div>
+
+            <!-- Step 04 -->
+            <div class="process-step group" data-step="04">
+                <div class="aspect-[4/3] overflow-hidden mb-6 relative">
+                    <img src="assets/process_step_4_handover_1767960776152.png"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        alt="Handover">
+                    <div
+                        class="absolute top-2 right-2 font-mono text-[9px] text-light/50 bg-dark/40 px-1 backdrop-blur-sm border border-light/10">
+                        [SPEC: FINAL_INSPECTION_ISO9001]
+                    </div>
+                    <div class="absolute bottom-4 left-4 font-mono text-xs bg-dark/80 px-2 py-1 backdrop-blur-sm border border-light/10"
+                        data-i18n="process.fig4">
+                        FIG 04.0 - OVERLEVERING</div>
+                </div>
+                <h3 class="text-3xl font-bold mb-4" data-i18n="process.step4.title">Overlevering & Nøkler</h3>
+                <p class="text-light/70 font-light leading-relaxed max-w-md" data-i18n="process.step4.text">
+                    Den siste finishen. Kvalitetssjekk ned til minste detalj før vi overleverer nøkkelen til ditt nye
+                    hjem.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 05. SUSTAINABILITY SHIFT (Bg Color Change) -->
+    <section id="sustainability"
+        class="relative py-20 md:py-48 px-6 md:px-16 min-h-screen flex items-center bg-dark transition-colors duration-1000 ease-linear"
+        data-bgcolor="#1B2B1E">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+
+            <div class="relative order-2 md:order-1">
+                <img src="assets/sustainability_texture_1767958375058.png"
+                    class="w-full max-w-md ml-auto md:mr-12 rounded-sm shadow-2xl" alt="Wood Texture" id="sust-image"
+                    data-img-key="sust">
+                <div
+                    class="absolute -top-12 -left-12 font-mono text-[200px] leading-none text-white/5 font-bold pointer-events-none select-none">
+                    CO2
+                </div>
+            </div>
+
+            <div class="order-1 md:order-2">
+                <div class="text-accent font-mono text-sm mb-4" data-i18n="sust.tag">// GRØNN FREMTID</div>
+                <h2 class="text-6xl md:text-8xl font-black uppercase tracking-tight mb-8 leading-[0.9]"
+                    data-i18n="sust.title">
+                    Naturen<br>er Vår<br>Partner.
+                </h2>
+                <p class="text-xl text-light/80 font-light max-w-lg leading-relaxed" data-i18n="sust.text">
+                    Bygging i massivtre (CLT) reduserer klimaavtrykket betraktelig. Vi integrerer bygget i landskapet
+                    med respekt for omgivelsene.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 06. PORTFOLIO GRID -->
+    <section id="work" class="py-16 md:py-32 px-6 md:px-16 bg-light text-dark">
+        <!-- Header -->
+        <div
+            class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 md:mb-24 border-b border-dark/10 pb-8">
+            <div>
+                <span class="font-mono text-xs text-accent uppercase tracking-widest mb-2 block"
+                    data-i18n="work.label">// PORTFOLIO</span>
+                <h2 class="text-5xl md:text-7xl font-black tracking-tighter uppercase leading-none"
+                    data-i18n="work.title">Utvalgte<br>Prosjekter</h2>
+            </div>
+            <a href="projects.html" class="hidden md:flex items-center gap-2 group hover:text-accent transition-colors">
+                <span class="font-mono text-xs underline" data-i18n="work.viewall">SE HELE ARKIVET</span>
+                <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+            </a>
+        </div>
+
+        <!-- Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-16 md:gap-y-32">
+
+            <!-- Project 1 -->
+            <div class="group cursor-pointer hover-trigger block" data-hover-text="VIEW">
+                <div class="overflow-hidden mb-6 relative">
+                    <img src="assets/portfolio_item_1_1767958389520.png"
+                        class="w-full aspect-[4/3] object-cover transition-transform duration-1000 ease-out group-hover:scale-105 lazy"
+                        alt="Funkis">
+                    <div class="absolute inset-0 bg-dark/0 group-hover:bg-dark/10 transition-colors duration-500"></div>
+                </div>
+
+                <div class="flex justify-between items-start">
+                    <div class="flex flex-col">
+                        <span class="font-mono text-xs text-accent mb-2">01</span>
+                        <h3 class="text-3xl font-bold uppercase mb-1 group-hover:text-accent transition-colors"
+                            data-i18n="work.p1.title">Villa Nordstrand</h3>
+                        <p class="font-mono text-xs text-dark/40" data-i18n="work.p1.sub">OSLO // BETONG & EIK</p>
+                    </div>
+                    <span
+                        class="text-sm font-bold opacity-0 -translate-x-4 transition-all group-hover:opacity-100 group-hover:translate-x-0">2024</span>
+                </div>
+            </div>
+
+            <!-- Project 2 (Staggered) -->
+            <div class="group cursor-pointer hover-trigger block md:mt-32" data-hover-text="VIEW">
+                <div class="overflow-hidden mb-6 relative">
+                    <img src="assets/portfolio_item_2_1767958409257.png"
+                        class="w-full aspect-[4/3] object-cover transition-transform duration-1000 ease-out group-hover:scale-105 lazy"
+                        alt="Hytte">
+                    <div class="absolute inset-0 bg-dark/0 group-hover:bg-dark/10 transition-colors duration-500"></div>
+                </div>
+
+                <div class="flex justify-between items-start">
+                    <div class="flex flex-col">
+                        <span class="font-mono text-xs text-accent mb-2">02</span>
+                        <h3 class="text-3xl font-bold uppercase mb-1 group-hover:text-accent transition-colors"
+                            data-i18n="work.p2.title">Geilo Lodge</h3>
+                        <p class="font-mono text-xs text-dark/40" data-i18n="work.p2.sub">GEILO // SORT TRE</p>
+                    </div>
+                    <span
+                        class="text-sm font-bold opacity-0 -translate-x-4 transition-all group-hover:opacity-100 group-hover:translate-x-0">2023</span>
+                </div>
+            </div>
+
+            <!-- Mobile View All Link -->
+            <div class="md:hidden mt-16 flex justify-center">
+                <a href="projects.html" class="font-mono text-xs underline hover:text-accent"
+                    data-i18n="work.viewall">SE HELE
+                    ARKIVET</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 07. TEAM SECTION (Om Oss) -->
+    <section class="py-16 md:py-32 px-6 md:px-16 bg-light text-dark border-t border-dark/5">
+        <div class="flex flex-col md:flex-row gap-16 items-center">
+            <!-- Image -->
+            <div class="w-full md:w-1/2 relative group">
+                <div
+                    class="absolute inset-0 bg-accent/10 translate-x-4 translate-y-4 -z-10 transition-transform group-hover:translate-x-6 group-hover:translate-y-6">
+                </div>
+                <img src="assets/ceo_portrait_nordic_1767961934691.png" alt="Daglig Leder"
+                    class="w-full h-[600px] object-cover grayscale contrast-125" data-img-key="team">
+            </div>
+            <!-- Content -->
+            <div class="w-full md:w-1/2">
+                <h2 class="text-xs font-mono text-accent uppercase tracking-widest mb-6" data-i18n="team.label">//
+                    LEDELSE</h2>
+                <h3 class="text-4xl font-bold mb-8" data-i18n="team.title">Profesjonalisme i<br>Hvert Ledd.</h3>
+                <p class="text-lg text-dark/70 font-light leading-relaxed mb-8" data-i18n="team.text">
+                    "Som totalentreprenør er vår oppgave å fjerne usikkerhet. Vi leder prosjektet med en militær
+                    presisjon og en kunstners øye for detaljer. Våre team består utelukkende av sertifiserte fagfolk som
+                    deler vår visjon om perfeksjon."
+                </p>
+                <div class="flex flex-col gap-1">
+                    <span class="font-bold uppercase tracking-wide">Jan-Erik Johansen</span>
+                    <span class="font-mono text-xs text-dark/40 uppercase">Daglig Leder / CEO</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 08. CONFIGURATOR (Multi-step) -->
+    <section id="configurator"
+        class="py-16 md:py-32 px-6 md:px-16 bg-dark text-light border-t border-light/5 relative min-h-[500px] md:min-h-[800px] flex items-center justify-center">
+        <div class="w-full max-w-2xl">
+            <!-- Header -->
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black uppercase mb-4" data-i18n="conf.title">Start Dialogen</h2>
+                <p class="text-light/60 font-mono text-xs tracking-widest" data-i18n="conf.subtitle">VELG PROSJEKTTYPE
+                    FOR Å STARTE</p>
+            </div>
+
+            <!-- Form Container -->
+            <div
+                class="relative bg-light/5 border border-light/10 p-8 md:p-12 backdrop-blur-sm rounded-sm overflow-hidden min-h-[400px]">
+
+                <!-- Loading Overlay (Analysis) -->
+                <div id="conf-loading"
+                    class="absolute inset-0 bg-dark z-50 flex flex-col items-center justify-center hidden">
+                    <div class="w-16 h-1 bg-light/20 mb-4 overflow-hidden">
+                        <div class="w-full h-full bg-accent animate-progress"></div>
+                    </div>
+                    <p class="font-mono text-xs animate-pulse" data-i18n="conf.analyzing">ANALYSERER
+                        PROSJEKTSPESIFIKASJONER...</p>
+                </div>
+
+                <!-- Success Overlay -->
+                <div id="conf-success"
+                    class="absolute inset-0 bg-dark z-50 flex flex-col items-center justify-center hidden">
+                    <svg class="w-16 h-16 text-accent mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 13l4 4L19 7">
+                        </path>
+                    </svg>
+                    <h3 class="text-2xl font-bold mb-2">Forespørsel Sendt</h3>
+                    <p class="text-light/60 text-center max-w-xs" data-i18n="conf.success">Vi kontakter deg innen 24
+                        timer for en uforpliktende befaring.</p>
+                </div>
+
+                <!-- Step 1: Type -->
+                <div id="step-1" class="conf-step transition-opacity duration-500">
+                    <h4 class="font-mono text-xs text-accent mb-8">01 / TYPE PROSJEKT</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <button
+                            class="type-btn group p-6 border border-light/10 hover:border-accent hover:bg-light/5 text-left transition-all"
+                            onclick="selectType(this, 'House')">
+                            <svg class="w-8 h-8 mb-4 text-light/50 group-hover:text-accent" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
+                                </path>
+                            </svg>
+                            <span class="block font-bold">Enebolig</span>
+                        </button>
+                        <button
+                            class="type-btn group p-6 border border-light/10 hover:border-accent hover:bg-light/5 text-left transition-all"
+                            onclick="selectType(this, 'Cabin')">
+                            <svg class="w-8 h-8 mb-4 text-light/50 group-hover:text-accent" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
+                                </path>
+                            </svg>
+                            <span class="block font-bold">Hytte</span>
+                        </button>
+                        <button
+                            class="type-btn group p-6 border border-light/10 hover:border-accent hover:bg-light/5 text-left transition-all"
+                            onclick="selectType(this, 'Ground')">
+                            <svg class="w-8 h-8 mb-4 text-light/50 group-hover:text-accent" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                                    d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z">
+                                </path>
+                            </svg>
+                            <span class="block font-bold">Grunnarbeid</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 2: Budget -->
+                <div id="step-2" class="conf-step hidden transition-opacity duration-500">
+                    <h4 class="font-mono text-xs text-accent mb-8">02 / BUDSJETTRAMME</h4>
+                    <div class="py-12">
+                        <div class="flex justify-between font-mono text-xs mb-4">
+                            <span data-i18n="conf.min">5 MNOK</span>
+                            <span id="budget-display" class="text-accent text-xl font-bold">25 MNOK</span>
+                            <span data-i18n="conf.max">50 MNOK+</span>
+                        </div>
+                        <input type="range" min="5" max="50" value="25"
+                            class="w-full h-1 bg-light/20 rounded-lg appearance-none cursor-pointer accent-accent hover:accent-white transition-all"
+                            id="budget-slider" oninput="updateBudgetDisplay(this.value)"
+                            aria-label="Velg budsjettramme">
+                    </div>
+                    <button onclick="nextStep(3)"
+                        class="w-full py-4 border border-light/20 hover:bg-white hover:text-dark transition-colors font-mono uppercase tracking-widest"
+                        data-i18n="conf.next">NESTE STEG</button>
+                </div>
+
+                <!-- Step 3: Details -->
+                <div id="step-3" class="conf-step hidden transition-opacity duration-500">
+                    <h4 class="font-mono text-xs text-accent mb-8">03 / LOKASJON & KONTAKT</h4>
+                    <div class="space-y-6">
+                        <input type="text" placeholder="Hvor skal det bygges? (Kommune/Sted)"
+                            aria-label="Lokasjon for prosjekt"
+                            class="w-full bg-transparent border-b border-light/20 py-4 focus:border-accent focus:outline-none placeholder-light/30 text-lg">
+                        <div class="grid grid-cols-2 gap-6">
+                            <input type="text" placeholder="Navn" aria-label="Ditt navn"
+                                class="w-full bg-transparent border-b border-light/20 py-4 focus:border-accent focus:outline-none placeholder-light/30">
+                            <input type="email" placeholder="E-post" aria-label="Din e-postadresse"
+                                class="w-full bg-transparent border-b border-light/20 py-4 focus:border-accent focus:outline-none placeholder-light/30">
+                        </div>
+                        <input type="tel" placeholder="Telefon" aria-label="Ditt telefonnummer"
+                            class="w-full bg-transparent border-b border-light/20 py-4 focus:border-accent focus:outline-none placeholder-light/30">
+                    </div>
+                    <button onclick="submitConfigurator()"
+                        class="w-full mt-12 py-4 bg-accent text-dark hover:bg-white transition-colors font-bold uppercase tracking-widest"
+                        data-i18n="conf.submit">SEND FORESPØRSEL</button>
+                </div>
+
+                <!-- Navigation Dots (Optional) -->
+                <div class="flex justify-center gap-2 mt-8">
+                    <div id="dot-1" class="w-2 h-2 rounded-full bg-accent"></div>
+                    <div id="dot-2" class="w-2 h-2 rounded-full bg-light/20"></div>
+                    <div id="dot-3" class="w-2 h-2 rounded-full bg-light/20"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER & MAP -->
+    <footer class="border-t border-light/10 bg-dark relative">
+        <div class="flex flex-col md:flex-row h-auto md:h-[500px]">
+            <!-- Left: Info (50%) -->
+            <div
+                class="w-full md:w-1/2 p-6 md:p-24 flex flex-col justify-between border-b md:border-b-0 md:border-r border-light/10">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-12 font-mono text-xs text-light/60">
+                    <!-- Col 1: Company -->
+                    <div class="flex flex-col gap-2">
+                        <span class="text-light uppercase tracking-widest mb-4">Totalentreprenør AS</span>
+                        <p>Dronning Eufemias gate 8</p>
+                        <p>0191 Oslo</p>
+                        <p class="mt-4">Org.nr: <span class="text-white text-lg font-bold">931 930 202 MVA</span></p>
+                    </div>
+
+                    <!-- Col 2: Contact -->
+                    <div class="flex flex-col gap-2">
+                        <span class="text-light uppercase tracking-widest mb-4"
+                            data-i18n="footer.contact">Kontakt</span>
+                        <a href="mailto:post@totalentreprenor.no"
+                            class="hover:text-accent transition-colors">post@totalentreprenor.no</a>
+                        <a href="tel:+4722334455" class="hover:text-accent transition-colors">+47 22 33 44 55</a>
+                    </div>
+
+                    <!-- Col 3: Socials -->
+                    <div class="flex flex-col gap-2">
+                        <span class="text-light uppercase tracking-widest mb-4">Social</span>
+                        <a href="#" class="flex items-center gap-2 hover:text-accent transition-colors group">
+                            <svg class="w-4 h-4 fill-current group-hover:scale-110 transition-transform"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.073-4.948-.197-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                            Instagram
+                        </a>
+                        <a href="#" class="flex items-center gap-2 hover:text-accent transition-colors group">
+                            <svg class="w-4 h-4 fill-current group-hover:scale-110 transition-transform"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h5v-8.306c0-4.613 5.432-5.185 5.432 0v8.306h5v-10.5c0-5.352-7.053-5.127-8.026-2.502h-.056v-2.998z" />
+                            </svg>
+                            LinkedIn
+                        </a>
+                        <a href="#" class="flex items-center gap-2 hover:text-accent transition-colors group">
+                            <svg class="w-4 h-4 fill-current group-hover:scale-110 transition-transform"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385h-3.047v-3.47h3.047v-2.641c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953h-1.513c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385c5.737-.9 10.125-5.864 10.125-11.854z" />
+                            </svg>
+                            Facebook
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col justify-between items-start mt-12 font-mono text-[10px] text-light/20 uppercase tracking-widest gap-2">
+                    <div class="flex gap-4">
+                        <a href="#" class="hover:text-light transition-colors">Personvern</a>
+                        <a href="accessibility.html"
+                            class="hover:text-light transition-colors">Tilgjengelseserklæring</a>
+                    </div>
+                    <div>
+                        <p>© 2026 Totalentreprenør AS</p>
+                        <p class="mt-1">Designed by <a href="https://www.marketing-intelligence.io/" target="_blank"
+                                class="hover:text-accent transition-colors text-light/30">Marketing Intelligence</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Map (50%) -->
+            <div class="w-full md:w-1/2 relative min-h-[400px] md:min-h-full bg-[#111] group overflow-hidden">
+                <img src="assets/map_monochrome_oslo_1767961545992.png" alt="Map Location"
+                    class="w-full h-full object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-700">
+
+                <!-- Pin -->
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                    <div class="relative group cursor-pointer">
+                        <div class="w-4 h-4 rounded-full bg-[#FF5F1F] animate-ping absolute inset-0 opacity-75"></div>
+                        <div class="w-4 h-4 rounded-full bg-[#FF5F1F] relative shadow-[0_0_20px_#FF5F1F]"></div>
+                        <!-- Tooltip -->
+                        <div
+                            class="absolute bottom-full left-1/2 -translate-x-1/2 mb-4 px-4 py-2 bg-dark/90 backdrop-blur-md border border-light/10 text-xs font-mono whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+                            HOVEDKONTOR OSLO
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating CTA -->
+    <a href="#configurator"
+        class="fixed bottom-8 right-8 z-40 bg-[#FF5F1F] text-white p-4 rounded-full shadow-[0_10px_40px_rgba(255,95,31,0.4)] hover:scale-110 transition-transform flex items-center gap-3 pr-6 group">
+        <div class="bg-white/20 p-2 rounded-full">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+        </div>
+        <div class="flex flex-col">
+            <span class="text-[10px] font-mono opacity-80 leading-none" data-i18n="cta.free">GRATIS</span>
+            <span class="font-bold text-sm leading-none" data-i18n="cta.befaring">BEFARING</span>
+        </div>
+    </a>
+
+
+    <!-- THEME SWITCHER -->
+    <!-- Toggle -->
+    <button onclick="App.toggleThemePanel()" id="config-trigger" aria-label="Open Configurator"
+        class="fixed top-1/2 right-0 z-[1001] bg-white text-dark p-3 rounded-l-md hover:bg-accent hover:text-white transition-colors shadow-2xl translate-y-[-50%] border-l border-y border-dark/10 group transition-opacity duration-300">
+        <svg class="w-6 h-6 group-hover:rotate-90 transition-transform duration-700" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z">
+            </path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z">
+            </path>
+        </svg>
+    </button>
+
+    <!-- Panel -->
+    <div id="theme-panel"
+        class="fixed top-0 right-0 h-full w-80 bg-dark border-l border-light/10 z-[1000] transform translate-x-full transition-transform duration-500 ease-out p-8 shadow-2xl">
+        <div class="flex justify-between items-center mb-8 border-b border-light/20 pb-4">
+            <h3 class="font-mono text-sm uppercase tracking-widest text-light">Internal Config</h3>
+            <button onclick="App.toggleThemePanel()" class="text-light/50 hover:text-accent">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </svg>
+            </button>
+        </div>
+
+        <div class="space-y-4 overflow-y-auto h-[calc(100vh-150px)] pb-10 custom-scrollbar">
+
+            <!-- SECTION 1: BUSINESS TYPE (DEMO) -->
+            <div>
+                <h4 class="font-mono text-[10px] text-light/50 mb-3 uppercase tracking-widest">1. Select Business</h4>
+                <div class="flex flex-col gap-2">
+                    <button id="btn-demo-demo1" onclick="loadDemo('demo1')"
+                        class="text-left px-4 py-3 border border-light/10 text-xs font-mono text-light bg-light/5 hover:bg-light/10 hover:border-accent transition-all flex justify-between items-center group">
+                        <span>THE TOTAL CONTRACTOR</span>
+                        <span class="opacity-0 group-hover:opacity-100 text-accent transition-opacity">→</span>
+                    </button>
+                    <button id="btn-demo-demo2" onclick="loadDemo('demo2')"
+                        class="text-left px-4 py-3 border border-light/10 text-xs font-mono text-light bg-light/5 hover:bg-light/10 hover:border-accent transition-all flex justify-between items-center group">
+                        <span>SERVICE SPECIALIST</span>
+                        <span class="opacity-0 group-hover:opacity-100 text-accent transition-opacity">→</span>
+                    </button>
+                    <button id="btn-demo-demo3" onclick="loadDemo('demo3')"
+                        class="text-left px-4 py-3 border border-light/10 text-xs font-mono text-light bg-light/5 hover:bg-light/10 hover:border-accent transition-all flex justify-between items-center group">
+                        <span>FINISHING EXPERT</span>
+                        <span class="opacity-0 group-hover:opacity-100 text-accent transition-opacity">→</span>
+                    </button>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="font-mono text-[10px] text-light/50 mb-3 uppercase tracking-widest">2. Select Layout</h4>
+                <div class="grid grid-cols-3 gap-2 mb-2">
+                    <button id="btn-tpl-std" onclick="setTemplate('std')"
+                        class="aspect-video border border-light/10 bg-light/5 flex flex-col items-center justify-center gap-1 group hover:border-accent hover:text-accent transition-all">
+                        <div class="w-4 h-2 border border-light/30 group-hover:border-accent"></div>
+                        <span class="text-[8px] font-mono text-light/50 group-hover:text-accent">STD</span>
+                    </button>
+                    <button id="btn-tpl-min" onclick="setTemplate('min')"
+                        class="aspect-video border border-light/10 bg-light/5 flex flex-col items-center justify-center gap-1 group hover:border-accent hover:text-accent transition-all">
+                        <div class="w-4 h-2 border border-light/30 group-hover:border-accent"></div>
+                        <span class="text-[8px] font-mono text-light/50 group-hover:text-accent">SWISS</span>
+                    </button>
+                    <button id="btn-tpl-grid" onclick="setTemplate('grid')"
+                        class="aspect-video border border-light/10 bg-light/5 flex flex-col items-center justify-center gap-1 group hover:border-accent hover:text-accent transition-all">
+                        <div class="w-4 h-2 border border-light/30 group-hover:border-accent"></div>
+                        <span class="text-[8px] font-mono text-light/50 group-hover:text-accent">TECH</span>
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- SECTION 3: VISUAL THEME -->
+            <div>
+                <h4 class="font-mono text-[10px] text-light/50 mb-3 uppercase tracking-widest">3. Visual Style</h4>
+                <div class="space-y-2">
+                    <!-- Theme 1 -->
+                    <button id="btn-theme-default" onclick="setTheme('default')"
+                        class="w-full p-3 border border-light/10 flex items-center gap-4 hover:border-accent group transition-all bg-light/5">
+                        <div class="w-6 h-6 bg-[#1A1A1B] border border-[#FF5F1F] rounded-full"></div>
+                        <span class="font-mono text-xs uppercase group-hover:text-accent">Safety Orange</span>
+                    </button>
+                    <!-- Theme 2 -->
+                    <button id="btn-theme-nordic" onclick="setTheme('nordic')"
+                        class="w-full p-3 border border-light/10 flex items-center gap-4 hover:border-accent group transition-all bg-light/5">
+                        <div class="w-6 h-6 bg-[#0F172A] border border-[#38BDF8] rounded-full"></div>
+                        <span class="font-mono text-xs uppercase group-hover:text-accent">Nordic Blue</span>
+                    </button>
+                    <!-- Theme 3 -->
+                    <button id="btn-theme-nature" onclick="setTheme('nature')"
+                        class="w-full p-3 border border-light/10 flex items-center gap-4 hover:border-accent group transition-all bg-light/5">
+                        <div class="w-6 h-6 bg-[#1B2B1E] border border-[#D4A373] rounded-full"></div>
+                        <span class="font-mono text-xs uppercase group-hover:text-accent">Forest Copper</span>
+                    </button>
+                    <!-- Theme 4 -->
+                    <button id="btn-theme-steel" onclick="setTheme('steel')"
+                        class="w-full p-3 border border-light/10 flex items-center gap-4 hover:border-accent group transition-all bg-light/5">
+                        <div class="w-6 h-6 bg-[#E5E5E5] border border-[#333] rounded-full relative overflow-hidden">
+                            <div class="absolute inset-0 bg-[#333] w-1/2"></div>
+                        </div>
+                        <span class="font-mono text-xs uppercase group-hover:text-accent">Steel Mono</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <p class="absolute bottom-8 left-8 text-[10px] text-light/20 font-mono">
+            PREVIEW MODE
+        </p>
+    </div>
+
+
+    <!-- SCRIPTS -->
+    <script>
+        // 0. Translations
+        // MASTER SHOWCASE ENGINE
+        const showcaseConfig = {
+            // DEMO 1: THE TOTAL CONTRACTOR (Original)
+            demo1: {
+                title: "The Total Contractor",
+                images: {
+                    hero: "assets/hero_background_1767958362195.png",
+                    sust: "assets/sustainability_texture_1767958375058.png",
+                    team: "assets/ceo_portrait_nordic_1767961934691.png"
+                },
+                i18n: {
+                    no: {
+                        "nav.process": "PROSESS",
+                        "nav.sustainability": "BÆREKRAFT",
+                        "nav.projects": "PROSJEKTER",
+                        "nav.contact": "KONTAKT OSS",
+                        "hero.title": "VI<br>REALISERER",
+                        "hero.subtitle": "// 01 <br>Fra første spadetak til nøkkelferdig hjem. Vi overgår dine ambisjoner med presisjon.",
+                        "hero.scroll": "SCROLL FOR Å UTFORSKE",
+                        "hero.cta": "START DITT PROSJEKT",
+                        "marquee.sentral": "Sentral Godkjenning",
+                        "marquee.eco": "Miljøfyrtårn Sertifisert",
+                        "marquee.ns": "Norsk Standard 3420",
+                        "marquee.startbank": "Startbank Registrert",
+                        "trust.appro": "SENTRALT GODKJENT FOR ANSVARSRETT",
+                        "trust.exp": "25 ÅRS ERFARING",
+                        "trust.qual": "ISO 9001 SERTIFISERT",
+                        "core.label": "// TOTALENTREPRENØR",
+                        "core.title": "Fra Første Spadetak<br>Til Nøkkelferdig Drøm.",
+                        "core.desc": "Vi tar det fulle ansvaret. Én kontrakt, én kontaktperson, ingen ansvarsfraskrivelse. Vi koordinerer arkitekter, grunnarbeid, tømrere og stålmontører slik at du kan fokusere på visjonen, ikke logistikken.",
+                        "process.title": "PROSESS",
+                        "process.desc": "Industriell presisjon møter arkitektonisk visjon. Vår arbeidsflyt representerer den høyeste standarden i norsk utførelse.",
+                        "process.step1.label": "// 01 IDÉ & KONSEPT",
+                        "process.step1.title": "Konsultasjon & Arkitektur",
+                        "process.step1.text": "Vi starter med å dekonstruere visjonen. Analyse av tomt, topografi, lysforhold og strukturell gjennomførbarhet.",
+                        "process.fig1": "FIG 01.0 - PLANLEGGING",
+                        "process.step2.label": "// 02 GRUNNARBEID",
+                        "process.step2.title": "Tungt Grunnarbeid",
+                        "process.step2.text": "Presisjonssprengning og betongarmering. Vi sørger for at fjellet gir etter for strukturen, ikke omvendt.",
+                        "process.fig2": "FIG 02.0 - GRUNNARBEID",
+                        "process.step3.label": "// 03 RÅBYGG & KONSTRUKSJON",
+                        "process.step3.title": "Reisverk & Stål",
+                        "process.step3.text": "Skjelettet reiser seg. Industrielle stålbjelker møter lokalt tømmer. Den brutalistiske sofistikasjonen tar form.",
+                        "process.fig3": "FIG 03.0 - REISVERK",
+                        "process.step4.label": "// 04 OVERLEVERING",
+                        "process.step4.title": "Overlevering & Nøkler",
+                        "process.step4.text": "Den siste finishen. Kvalitetssjekk ned til minste detalj før vi overleverer nøkkelen til ditt nye hjem.",
+                        "process.fig4": "FIG 04.0 - OVERLEVERING",
+                        "team.label": "// LEDELSE",
+                        "team.title": "Profesjonalisme i<br>Hvert Ledd.",
+                        "team.text": "\"Som totalentreprenør er vår oppgave å fjerne usikkerhet. Vi leder prosjektet med en militær presisjon og en kunstners øye for detaljer. Våre team består utelukkende av sertifiserte fagfolk som deler vår visjon om perfeksjon.\"",
+                        "sust.tag": "// GRØNN FREMTID",
+                        "sust.title": "Naturen<br>er Vår<br>Partner.",
+                        "sust.text": "Bygging i massivtre (CLT) reduserer klimaavtrykket betraktelig. Vi integrerer bygget i landskapet med respekt for omgivelsene.",
+                        "work.label": "// PORTFOLIO",
+                        "work.title": "UTVALGTE<br>PROSJEKTER",
+                        "work.viewall": "SE HELE ARKIVET",
+                        "work.p1.title": "Villa Nordstrand",
+                        "work.p1.sub": "OSLO // BETONG & EIK",
+                        "work.p2.title": "Geilo Lodge",
+                        "work.p2.sub": "GEILO // SORT TRE",
+                        "conf.title": "START DIALOGEN",
+                        "conf.subtitle": "VELG PROSJEKTTYPE FOR Å STARTE",
+                        "conf.min": "5 MNOK",
+                        "conf.max": "50 MNOK+",
+                        "conf.next": "NESTE STEG",
+                        "conf.submit": "SEND FORESPØRSEL",
+                        "conf.analyzing": "ANALYSERER PROSJEKTSPESIFIKASJONER...",
+                        "conf.success": "Vi kontakter deg innen 24 timer for en uforpliktende befaring.",
+                        "footer.org": "Orgnr: 965 242 112",
+                        "footer.loc": "Oslo, Norge",
+                        "footer.contact": "KONTAKT",
+                        "cta.free": "GRATIS",
+                        "cta.befaring": "BEFARING"
+                    },
+                    en: {
+                        "nav.process": "PROCESS",
+                        "nav.sustainability": "SUSTAINABILITY",
+                        "nav.projects": "PROJECTS",
+                        "nav.contact": "CONTACT US",
+                        "hero.title": "WE<br>REALIZE",
+                        "hero.subtitle": "// 01 <br>From the first spade to a turnkey home. We exceed your ambitions with precision.",
+                        "hero.scroll": "SCROLL TO EXPLORE",
+                        "hero.cta": "START YOUR PROJECT",
+                        "marquee.sentral": "Central Approval",
+                        "marquee.eco": "Eco-Lighthouse Certified",
+                        "marquee.ns": "Norwegian Standard 3420",
+                        "marquee.startbank": "Startbank Registered",
+                        "trust.appro": "CENTRAL APPROVAL FOR LIABILITY",
+                        "trust.exp": "25 YEARS EXPERIENCE",
+                        "trust.qual": "ISO 9001 CERTIFIED",
+                        "core.label": "// TOTAL CONTRACTOR",
+                        "core.title": "From Groundbreaking<br>To Turnkey Dream.",
+                        "core.desc": "We take full responsibility. One contract, one contact point, no disclaimers. We coordinate architects, groundwork, carpenters, and steel fitters so you can focus on the vision, not the logistics.",
+                        "process.title": "PROCESS",
+                        "process.desc": "Industrial precision meets architectural vision. Our workflow represents the highest standard in Scandinavian execution.",
+                        "process.step1.label": "// 01 IDEA & CONCEPT",
+                        "process.step1.title": "Consultation & Architecture",
+                        "process.step1.text": "We begin by deconstructing the vision. Analysis of site topography, light conditions, and structural feasibility.",
+                        "process.fig1": "FIG 01.0 - PLANNING",
+                        "process.step2.label": "// 02 FOUNDATION",
+                        "process.step2.title": "Groundwork",
+                        "process.step2.text": "Precision blasting and concrete reinforcements. We ensure the mountain yields to the structure, not the other way around.",
+                        "process.fig2": "FIG 02.0 - FOUNDATION",
+                        "process.step3.label": "// 03 STRUCTURE",
+                        "process.step3.title": "Structure",
+                        "process.step3.text": "The skeleton rises. Steel meets timber.",
+                        "process.fig3": "FIG 03.0 - STRUCTURE",
+                        "process.step4.label": "// 04 HANDOVER",
+                        "process.step4.title": "Handover",
+                        "process.step4.text": "Quality check down to the smallest detail.",
+                        "process.fig4": "FIG 04.0 - HANDOVER",
+                        "team.label": "// MANAGEMENT",
+                        "team.title": "Professionalism.",
+                        "team.text": "\"Our job is to eliminate uncertainty.\"",
+                        "sust.tag": "// GREEN FUTURE",
+                        "sust.title": "Nature<br>is Our<br>Partner.",
+                        "sust.text": "Building in CLT reduces carbon footprint.",
+                        "work.label": "// PORTFOLIO",
+                        "work.title": "SELECTED<br>WORKS",
+                        "work.viewall": "VIEW ARCHIVE",
+                        "work.p1.title": "Nordstrand Villa",
+                        "work.p1.sub": "OSLO // CONCRETE",
+                        "work.p2.title": "Geilo Lodge",
+                        "work.p2.sub": "GEILO // WOOD",
+                        "conf.title": "START DIALOGUE",
+                        "conf.subtitle": "SELECT PROJECT TYPE",
+                        "conf.analyzing": "ANALYZING...",
+                        "conf.success": "We will contact you shortly.",
+                        "footer.contact": "CONTACT",
+                        "footer.org": "Org No: 965 242 112",
+                        "footer.loc": "Oslo, Norway",
+                        "cta.free": "FREE",
+                        "cta.befaring": "INSPECTION"
+                    }
+                }
+            },
+            // DEMO 2: SERVICE SPECIALIST (Plumber/Electrician)
+            demo2: {
+                title: "The Service Specialist",
+                images: {
+                    hero: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=2669&auto=format&fit=crop", // Electrician/Technical
+                    sust: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2532&auto=format&fit=crop", // Tech components
+                    team: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2664&auto=format&fit=crop" // Meeting/Service
+                },
+                i18n: {
+                    no: {
+                        "nav.process": "TJENESTER",
+                        "nav.sustainability": "GARANTI",
+                        "nav.projects": "REFERANSER",
+                        "nav.contact": "24/7 VAKT",
+                        "hero.title": "AKUTT<br>BISTAND",
+                        "hero.subtitle": "// 01 <br>Vi løser dine problemer når de oppstår. 24 timer i døgnet, 365 dager i året.",
+                        "hero.scroll": "SCROLL FOR TJENESTER",
+                        "hero.cta": "RING OSS NÅ",
+                        "marquee.sentral": "Autorisert Installatør",
+                        "marquee.eco": "DSB Godkjent",
+                        "marquee.ns": "Garanti Bestemmelser",
+                        "marquee.startbank": "Mesterbrev",
+                        "trust.appro": "AUTORISERT INSTALLATØR",
+                        "trust.exp": "DØGNÅPEN VAKTTELEFON",
+                        "trust.qual": "DSB GODKJENT",
+                        "core.label": "// DIN SPESIALIST",
+                        "core.title": "Sikkerhet, Service<br>og Garanti.",
+                        "core.desc": "Vi er din trygghet i hverdagen. Fra akutt vannlekkasje til komplett rehabilitering av det elektriske anlegget. Våre biler er rullende verksteder.",
+                        "process.title": "SERVICE",
+                        "process.desc": "Effektivitet er vårt varemerke. Vi kaster ikke bort tiden din.",
+                        "process.step1.label": "// 01 KONTAKT",
+                        "process.step1.title": "Henvendelse & Vakt",
+                        "process.step1.text": "Ring vår vakttelefon. Vi identifiserer omfanget og sender nærmeste bil umiddelbart ved akutte behov.",
+                        "process.fig1": "FIG 01.0 - RESPONSTID",
+                        "process.step2.label": "// 02 UTRYKNING",
+                        "process.step2.title": "På Stedet",
+                        "process.step2.text": "Våre montører ankommer med komplett utstyr. Feilsøking starter umiddelbart.",
+                        "process.fig2": "FIG 02.0 - DIAGNOSE",
+                        "process.step3.label": "// 03 UTBEDRING",
+                        "process.step3.title": "Reparasjon",
+                        "process.step3.text": "Vi utbedrer feilen effektivt og i henhold til gjeldende forskrifter. Dokumentasjon skrives fortløpende.",
+                        "process.fig3": "FIG 03.0 - UTFØRELSE",
+                        "process.step4.label": "// 04 DOKUMENTASJON",
+                        "process.step4.title": "Ferdigstilling",
+                        "process.step4.text": "Samsvarserklæring mottas digitalt via Boligmappa øyeblikkelig etter utført oppdrag.",
+                        "process.fig4": "FIG 04.0 - GARANTI",
+                        "team.label": "// OM OSS",
+                        "team.title": "Alltid På Vakt<br>For Deg.",
+                        "team.text": "\"I servicebransjen er tilgjengelighet alt. Vi sover ikke for at du skal kunne sove trygt. Vi kombinerer håndverkstradisjoner med moderne teknologi.\"",
+                        "sust.tag": "// ENERGI",
+                        "sust.title": "Smart<br>Strøm<br>Sparing.",
+                        "sust.text": "Vi installerer smarthus-løsninger som reduserer strømregningen din automatisk.",
+                        "work.label": "// REFERANSER",
+                        "work.title": "SISTE<br>OPPDRAG",
+                        "work.viewall": "SE FLERE OPPDRAG",
+                        "work.p1.title": "Smart-Oppgradering",
+                        "work.p1.sub": "OSLO // SMARTHUS",
+                        "work.p2.title": "Total Rehab Bad",
+                        "work.p2.sub": "ASIN // RØRLEGGER",
+                        "conf.title": "BESTILL SERVICE",
+                        "conf.subtitle": "HVA KAN VI HJELPE MED?",
+                        "conf.analyzing": "FINNER LEDIG MONTØR...",
+                        "conf.success": "Oppdrag registrert. En montør kontakter deg straks.",
+                        "footer.contact": "VAKTTELEFON",
+                        "footer.org": "Orgnr: 965 242 112",
+                        "footer.loc": "Oslo, Norge",
+                        "cta.free": "GRATIS",
+                        "cta.befaring": "BEFARING"
+                    },
+                    en: {
+                        "nav.process": "SERVICES",
+                        "nav.sustainability": "WARRANTY",
+                        "nav.projects": "REFERENCES",
+                        "nav.contact": "24/7 SUPPORT",
+                        "hero.title": "EXPERT<br>SERVICE",
+                        "hero.subtitle": "// 01 <br>We solve your problems instantly. 24/7/365 availability.",
+                        "hero.scroll": "SCROLL FOR SERVICES",
+                        "hero.cta": "CALL NOW",
+                        "marquee.sentral": "Authorized Installer",
+                        "marquee.eco": "Certified Safety",
+                        "marquee.ns": "Warranty Guarantee",
+                        "marquee.startbank": "Master Craftsman",
+                        "trust.appro": "AUTHORIZED INSTALLER",
+                        "trust.exp": "24/7 HOTLINE",
+                        "trust.qual": "CERTIFIED SAFETY",
+                        "core.label": "// YOUR SPECIALIST",
+                        "core.title": "Safety, Service<br>& Warranty.",
+                        "core.desc": "We are your security. From acute leaks to electrical rehab.",
+                        "process.title": "SERVICE",
+                        "process.desc": "Efficiency is our trademark.",
+                        "process.step1.label": "// 01 CONTACT",
+                        "process.step1.title": "Inquiry",
+                        "process.step1.text": "Call us. We dispatch immediately.",
+                        "process.fig1": "FIG 01.0 - RESPONSE",
+                        "process.step2.label": "// 02 ARRIVAL",
+                        "process.step2.title": "On Site",
+                        "process.step2.text": "Technicians arrive fully equipped.",
+                        "process.fig2": "FIG 02.0 - DIAGNOSIS",
+                        "process.step3.label": "// 03 REPAIR",
+                        "process.step3.title": "Execution",
+                        "process.step3.text": "Faults fixed according to regulations.",
+                        "process.fig3": "FIG 03.0 - EXECUTION",
+                        "process.step4.label": "// 04 DOCS",
+                        "process.step4.title": "Documentation",
+                        "process.step4.text": "Digital certificates sent instantly.",
+                        "process.fig4": "FIG 04.0 - DOCS",
+                        "team.label": "// ABOUT US",
+                        "team.title": "Always On<br>Guard.",
+                        "team.text": "\"In service, availability is everything.\"",
+                        "sust.tag": "// ENERGY",
+                        "sust.title": "Smart<br>Power<br>Saving.",
+                        "sust.text": "We install smart home solutions.",
+                        "work.label": "// REFS",
+                        "work.title": "LATEST<br>JOBS",
+                        "work.viewall": "VIEW ALL",
+                        "work.p1.title": "Smart Upgrade",
+                        "work.p1.sub": "SMART HOME",
+                        "work.p2.title": "Bath Rehab",
+                        "work.p2.sub": "PLUMBING",
+                        "conf.title": "ORDER SERVICE",
+                        "conf.subtitle": "HOW CAN WE HELP?",
+                        "conf.analyzing": "FINDING TECH...",
+                        "conf.success": "Order registered.",
+                        "footer.contact": "HOTLINE",
+                        "footer.org": "Org No: 965 242 112",
+                        "footer.loc": "Oslo, Norway",
+                        "cta.free": "FREE",
+                        "cta.befaring": "INSPECTION"
+                    }
+                }
+            },
+            // DEMO 3: THE FINISHING EXPERT (Painter/Interiors)
+            demo3: {
+                title: "The Finishing Expert",
+                images: {
+                    hero: "https://images.unsplash.com/photo-1562663474-6cbb3eaa4d14?q=80&w=2574&auto=format&fit=crop", // Painting/Art
+                    sust: "https://images.unsplash.com/photo-1594818379496-da1e345b0ded?q=80&w=2664&auto=format&fit=crop", // Paint Texture
+                    team: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2574&auto=format&fit=crop" // Artisan
+                },
+                i18n: {
+                    no: {
+                        "nav.process": "METODE",
+                        "nav.sustainability": "PALETT",
+                        "nav.projects": "GALLERI",
+                        "nav.contact": "BEFARING",
+                        "hero.title": "REN<br>PERFEKSJON",
+                        "hero.subtitle": "// 01 <br>Det er overflaten du ser. Det er detaljene du føler. Vi gir rommet karakter.",
+                        "hero.scroll": "SCROLL FOR DETALJER",
+                        "hero.cta": "SE VÅRE FARGER",
+                        "marquee.sentral": "Malerforbundet",
+                        "marquee.eco": "Svanemerket Maling",
+                        "marquee.ns": "Respekt for Faget",
+                        "marquee.startbank": "Estetisk Garanti",
+                        "trust.appro": "MEDLEM MALERFORBUNDET",
+                        "trust.exp": "3. GENERASJON",
+                        "trust.qual": "SVANEMERKET",
+                        "core.label": "// SURFACE SPECIALIST",
+                        "core.title": "Det Ligger i<br>Detaljene.",
+                        "core.desc": "Et rom er bare fire vegger inntil det får farge og tekstur. Vi er spesialister på eksklusive overflateteknikker, listefrie løsninger og mikrosement.",
+                        "process.title": "METODE",
+                        "process.desc": "Tålmodighet og presisjon. Et perfekt resultat kan ikke hastes frem.",
+                        "process.step1.label": "// 01 FORARBEID",
+                        "process.step1.title": "Maskering & Puss",
+                        "process.step1.text": "Grunnlaget er alt. Vi bruker 70% av tiden på forarbeid for å sikre en plettfri finish.",
+                        "process.fig1": "FIG 01.0 - GRUNNING",
+                        "process.step2.label": "// 02 STRUKTUR",
+                        "process.step2.title": "Sparkel & Duk",
+                        "process.step2.text": "Slette vegger krever en kirurgisk hånd. Vi helsparkler for å oppnå den sømløse looken.",
+                        "process.fig2": "FIG 02.0 - SLETTING",
+                        "process.step3.label": "// 03 FARGE",
+                        "process.step3.title": "Pigmentering",
+                        "process.step3.text": "Påføring av maling eller mikrosement. Fargedybde og spill skspes med bevisste strøk.",
+                        "process.fig3": "FIG 03.0 - PIGMENT",
+                        "process.step4.label": "// 04 FINISH",
+                        "process.step4.title": "Kvalitetskontroll",
+                        "process.step4.text": "Vi går over hver kvadratcentimeter med slepelys. Ingenting overlates til tilfeldighetene.",
+                        "process.fig4": "FIG 04.0 - LYSKONTROLL",
+                        "team.label": "// ATELIERET",
+                        "team.title": "Håndverkere<br>Med Lidenskap.",
+                        "team.text": "\"Maling er ikke bare beskyttelse, det er stemning. Våre malere forstår fargeteori og materiallære. Vi skaper rom du har lyst til å oppholde deg i.\"",
+                        "sust.tag": "// FARGE",
+                        "sust.title": "Levende<br>Farger<br>Naturlig.",
+                        "sust.text": "Vi bruker utelukkende løsemiddelfrie produkter og naturlige pigmenter som puster.",
+                        "work.label": "// GALLERI",
+                        "work.title": "UTVALGTE<br>ROM",
+                        "work.viewall": "SE GALLERIET",
+                        "work.p1.title": "Mikrosement Bad",
+                        "work.p1.sub": "OSLO // BETONG LOOK",
+                        "work.p2.title": "Klassisk Stue",
+                        "work.p2.sub": "BYGDØY // KALKMALING",
+                        "conf.title": "NYTT UTTRYKK?",
+                        "conf.subtitle": "HVA SKAL MALES?",
+                        "conf.analyzing": "BLANDER FARGER...",
+                        "conf.success": "Forespørsel mottatt. Vi kommer gjerne på befaring.",
+                        "footer.contact": "KONTAKT",
+                        "footer.org": "Orgnr: 965 242 112",
+                        "footer.loc": "Oslo, Norway",
+                        "cta.free": "GRATIS",
+                        "cta.befaring": "BEFARING"
+                    },
+                    en: {
+                        "nav.process": "METHOD",
+                        "nav.sustainability": "PALETTE",
+                        "nav.projects": "GALLERY",
+                        "nav.contact": "INSPECTION",
+                        "hero.title": "PURE<br>PERFECTION",
+                        "hero.subtitle": "// 01 <br>It's the surface you see. The details you feel.",
+                        "hero.scroll": "SCROLL FOR DETAILS",
+                        "hero.cta": "SEE COLORS",
+                        "marquee.sentral": "Master Painters",
+                        "marquee.eco": "Eco Label",
+                        "marquee.ns": "Respect for Craft",
+                        "marquee.startbank": "Aesthetic Guarantee",
+                        "trust.appro": "GUILD MEMBER",
+                        "trust.exp": "3RD GENERATION",
+                        "trust.qual": "ECO CERTIFIED",
+                        "core.label": "// SURFACE SPECIALIST",
+                        "core.title": "It's All in<br>The Details.",
+                        "core.desc": "We specialize in exclusive surface techniques, seamless finishes, and microcement.",
+                        "process.title": "METHOD",
+                        "process.desc": "Patience and precision.",
+                        "process.step1.label": "// 01 PREP",
+                        "process.step1.title": "Masking & Sanding",
+                        "process.step1.text": "70% of the job is preparation.",
+                        "process.fig1": "FIG 01.0 - PRIMING",
+                        "process.step2.label": "// 02 STRUCTURE",
+                        "process.step2.title": "Plastering",
+                        "process.step2.text": "Seamless walls require a surgical hand.",
+                        "process.fig2": "FIG 02.0 - SMOOTHING",
+                        "process.step3.label": "// 03 COLOR",
+                        "process.step3.title": "Pigmentation",
+                        "process.step3.text": "Depth and play created with conscious strokes.",
+                        "process.fig3": "FIG 03.0 - PIGMENT",
+                        "process.step4.label": "// 04 FINISH",
+                        "process.step4.title": "Quality Control",
+                        "process.step4.text": "Inspected with grazing light.",
+                        "process.fig4": "FIG 04.0 - CHECK",
+                        "team.label": "// STUDIO",
+                        "team.title": "Craftsmen with<br>Passion.",
+                        "team.text": "\"Paint is mood. We create rooms you want to be in.\"",
+                        "sust.tag": "// COLOR",
+                        "sust.title": "Living<br>Colors<br>Naturally.",
+                        "sust.text": "Solvent-free products only.",
+                        "work.label": "// GALLERY",
+                        "work.title": "SELECTED<br>ROOMS",
+                        "work.viewall": "VIEW GALLERY",
+                        "work.p1.title": "Microcement Bath",
+                        "work.p1.sub": "CONCRETE LOOK",
+                        "work.p2.title": "Classic Living",
+                        "work.p2.sub": "LIME PAINT",
+                        "conf.title": "NEW LOOK?",
+                        "conf.subtitle": "WHAT NEEDS PAINT?",
+                        "conf.analyzing": "MIXING COLORS...",
+                        "conf.success": "Request received.",
+                        "footer.contact": "CONTACT",
+                        "footer.org": "Org No: 965 242 112",
+                        "footer.loc": "Oslo, Norway",
+                        "cta.free": "FREE",
+                        "cta.befaring": "INSPECTION"
+                    }
+                }
+            }
+        };
+
+        const legacy_i18n = {
+            no: {
+                "nav.process": "PROSESS",
+                "nav.sustainability": "BÆREKRAFT",
+                "nav.projects": "PROSJEKTER",
+                "nav.contact": "KONTAKT OSS",
+                "hero.title": "VI<br>REALISERER",
+                "hero.subtitle": "// 01 <br>Fra første spadetak til nøkkelferdig hjem. Vi overgår dine ambisjoner med presisjon.",
+                "hero.scroll": "SCROLL FOR Å UTFORSKE",
+                "hero.cta": "START DITT PROSJEKT",
+                "marquee.sentral": "Sentral Godkjenning",
+                "marquee.eco": "Miljøfyrtårn Sertifisert",
+                "marquee.ns": "Norsk Standard 3420",
+                "marquee.startbank": "Startbank Registrert",
+                "trust.appro": "SENTRALT GODKJENT FOR ANSVARSRETT",
+                "trust.exp": "25 ÅRS ERFARING",
+                "trust.qual": "ISO 9001 SERTIFISERT",
+                "core.label": "// TOTALENTREPRENØR",
+                "core.title": "Fra Første Spadetak<br>Til Nøkkelferdig Drøm.",
+                "core.desc": "Vi tar det fulle ansvaret. Én kontrakt, én kontaktperson, ingen ansvarsfraskrivelse. Vi koordinerer arkitekter, grunnarbeid, tømrere og stålmontører slik at du kan fokusere på visjonen, ikke logistikken.",
+                "process.title": "PROSESS",
+                "process.desc": "Industriell presisjon møter arkitektonisk visjon. Vår arbeidsflyt representerer den høyeste standarden i norsk utførelse.",
+                "process.step1.label": "// 01 IDÉ & KONSEPT",
+                "process.step2.label": "// 02 GRUNNARBEID",
+                "process.step3.label": "// 03 RÅBYGG & KONSTRUKSJON",
+                "process.step4.label": "// 04 OVERLEVERING",
+                "process.step1.title": "Konsultasjon & Arkitektur",
+                "process.step1.text": "Vi starter med å dekonstruere visjonen. Analyse av tomt, topografi, lysforhold og strukturell gjennomførbarhet.",
+                "process.fig1": "FIG 01.0 - PLANLEGGING",
+                "process.step2.title": "Tungt Grunnarbeid",
+                "process.step2.text": "Presisjonssprengning og betongarmering. Vi sørger for at fjellet gir etter for strukturen, ikke omvendt.",
+                "process.fig2": "FIG 02.0 - GRUNNARBEID",
+                "process.fig3": "FIG 03.0 - REISVERK",
+                "process.step3.title": "Reisverk & Stål",
+                "process.step3.text": "Skjelettet reiser seg. Industrielle stålbjelker møter lokalt tømmer. Den brutalistiske sofistikasjonen tar form.",
+                "process.fig4": "FIG 04.0 - OVERLEVERING",
+                "process.step4.title": "Overlevering & Nøkler",
+                "process.step4.text": "Den siste finishen. Kvalitetssjekk ned til minste detalj før vi overleverer nøkkelen til ditt nye hjem.",
+                "team.label": "// LEDELSE",
+                "team.title": "Profesjonalisme i<br>Hvert Ledd.",
+                "team.text": "\"Som totalentreprenør er vår oppgave å fjerne usikkerhet. Vi leder prosjektet med en militær presisjon og en kunstners øye for detaljer. Våre team består utelukkende av sertifiserte fagfolk som deler vår visjon om perfeksjon.\"",
+                "sust.tag": "// GRØNN FREMTID",
+                "sust.title": "Naturen<br>er Vår<br>Partner.",
+                "sust.text": "Bygging i massivtre (CLT) reduserer klimaavtrykket betraktelig. Vi integrerer bygget i landskapet med respekt for omgivelsene.",
+                "work.label": "// PORTFOLIO",
+                "work.title": "UTVALGTE<br>PROSJEKTER",
+                "work.viewall": "SE HELE ARKIVET",
+                "work.p1.title": "Villa Nordstrand",
+                "work.p1.sub": "OSLO // BETONG & EIK",
+                "work.p2.title": "Geilo Lodge",
+                "work.p2.sub": "GEILO // SORT TRE",
+                "conf.title": "START DIALOGEN",
+                "conf.subtitle": "VELG PROSJEKTTYPE FOR Å STARTE",
+                "conf.min": "5 MNOK",
+                "conf.max": "50 MNOK+",
+                "conf.next": "NESTE STEG",
+                "conf.submit": "SEND FORESPØRSEL",
+                "conf.analyzing": "ANALYSERER PROSJEKTSPESIFIKASJONER...",
+                "conf.success": "Vi kontakter deg innen 24 timer for en uforpliktende befaring.",
+                "footer.org": "Orgnr: 965 242 112",
+                "footer.loc": "Oslo, Norge",
+                "footer.contact": "KONTAKT",
+                "cta.free": "GRATIS",
+                "cta.befaring": "BEFARING"
+            },
+            en: {
+                "nav.process": "PROCESS",
+                "nav.sustainability": "SUSTAINABILITY",
+                "nav.projects": "PROJECTS",
+                "nav.contact": "CONTACT US",
+                "hero.title": "WE<br>REALIZE",
+                "hero.subtitle": "// 01 <br>From the first spade to a turnkey home. We exceed your ambitions with precision.",
+                "hero.scroll": "SCROLL TO EXPLORE",
+                "hero.scroll": "SCROLL TO EXPLORE",
+                "hero.cta": "START YOUR PROJECT",
+                "marquee.sentral": "Central Approval",
+                "marquee.eco": "Eco-Lighthouse Certified",
+                "marquee.eco": "Eco-Lighthouse Certified",
+                "marquee.ns": "Norwegian Standard 3420",
+                "marquee.startbank": "Startbank Registered",
+                "trust.appro": "CENTRAL APPROVAL FOR LIABILITY",
+                "trust.exp": "25 YEARS EXPERIENCE",
+                "trust.qual": "ISO 9001 CERTIFIED",
+                "core.label": "// TOTAL CONTRACTOR",
+                "core.title": "From Groundbreaking<br>To Turnkey Dream.",
+                "core.desc": "We take full responsibility. One contract, one contact point, no disclaimers. We coordinate architects, groundwork, carpenters, and steel fitters so you can focus on the vision, not the logistics.",
+                "process.title": "PROCESS",
+                "process.desc": "Industrial precision meets architectural vision. Our workflow represents the highest standard in Scandinavian execution.",
+                "process.step1.label": "// 01 IDEA & CONCEPT",
+                "process.step2.label": "// 02 FOUNDATION",
+                "process.step3.label": "// 03 STRUCTURE",
+                "process.step4.label": "// 04 HANDOVER",
+                "process.step1.title": "Consultation & Architecture",
+                "process.step1.text": "We begin by deconstructing the vision. Analysis of site topography, light conditions, and structural feasibility.",
+                "process.fig1": "FIG 01.0 - PLANNING",
+                "process.step2.title": "Heavy Groundwork",
+                "process.step2.text": "Precision blasting and concrete reinforcements. We ensure the mountain yields to the structure, not the other way around.",
+                "process.fig2": "FIG 02.0 - FOUNDATION",
+                "process.fig3": "FIG 03.0 - STRUCTURE",
+                "process.step3.title": "Framework & Steel",
+                "process.step3.text": "The skeleton rises. Industrial steel beams meet locally sourced timber. The Brutalist Sophistication takes form.",
+                "process.fig4": "FIG 04.0 - HANDOVER",
+                "process.step4.title": "Handover & Keys",
+                "process.step4.text": "The final finish. Quality check down to the smallest detail before we hand over the key to your new home.",
+                "team.label": "// MANAGEMENT",
+                "team.title": "Professionalism in<br>Every Step.",
+                "team.text": "\"As a total contractor, our job is to eliminate uncertainty. We lead the project with military precision and an artist's eye for detail. Our teams consist exclusively of certified professionals who share our vision of perfection.\"",
+                "sust.tag": "// GREEN FUTURE",
+                "sust.title": "Nature<br>is Our<br>Partner.",
+                "sust.text": "Building in Cross Laminated Timber (CLT) significantly reduces the carbon footprint. We integrate the building into the landscape with respect.",
+                "work.label": "// PORTFOLIO",
+                "work.title": "SELECTED<br>WORKS",
+                "work.viewall": "VIEW ALL ARCHIVE",
+                "work.p1.title": "Villa Nordstrand",
+                "work.p1.sub": "OSLO // CONCRETE & OAK",
+                "work.p2.title": "Geilo Lodge",
+                "work.p2.sub": "GEILO // BLACK WOOD",
+                "conf.title": "START THE DIALOGUE",
+                "conf.subtitle": "SELECT PROJECT TYPE",
+                "conf.min": "5 MNOK",
+                "conf.max": "50 MNOK+",
+                "conf.next": "NEXT STEP",
+                "conf.submit": "SEND REQUEST",
+                "conf.analyzing": "ANALYZING PROJECT SPECS...",
+                "conf.success": "We will contact you within 24 hours for a non-binding inspection.",
+                "footer.org": "Org No: 965 242 112",
+                "footer.loc": "Oslo, Norway",
+                "footer.contact": "CONTACT",
+                "cta.free": "FREE",
+                "cta.befaring": "INSPECTION"
+            }
+        };
+
+        // MASTER SHOWCASE LOGIC
+        let currentDemo = 'demo1';
+        let currentLang = 'no';
+        let currentI18n = showcaseConfig.demo1.i18n;
+
+        function loadDemo(demoId) {
+            console.log("Loading Demo:", demoId);
+            if (!showcaseConfig[demoId]) return;
+
+            // Redirect if switching to Demo 2 from here
+            if (demoId === 'demo2' && !window.location.href.includes('terminal.html') && !window.location.href.includes('blueprint.html') && !window.location.href.includes('pulse.html')) {
+                window.location.href = 'terminal.html';
+                return;
+            }
+
+            // 1. Update State
+            currentDemo = demoId;
+            currentI18n = showcaseConfig[demoId].i18n;
+
+            // 2. Update Images
+            const imgs = showcaseConfig[demoId].images;
+            if (imgs) {
+                // Map internal keys to DOM data-img-key
+                // Note: The config keys are simple 'hero', 'sust', 'team'.
+                // The DOM use data-img-key="hero-image" etc.
+                // Let's align them.
+                const imgMap = {
+                    'hero': 'hero',
+                    'sust': 'sust',
+                    'team': 'team'
+                };
+
+                for (const [confKey, domKey] of Object.entries(imgMap)) {
+                    // Find images with this key
+                    const elements = document.querySelectorAll(`[data-img-key="${domKey}"]`);
+                    elements.forEach(el => {
+                        if (imgs[confKey]) {
+                            // Simple opacity transition could go here
+                            el.style.opacity = '0';
+                            setTimeout(() => {
+                                el.src = imgs[confKey];
+                                el.style.opacity = '1';
+                            }, 200);
+                        }
+                    });
+                }
+            }
+
+            // 3. Update Text
+            updateContent();
+
+            // 4. Update UI Active State
+            document.querySelectorAll('[id^="btn-demo"]').forEach(b => b.classList.remove('config-active'));
+            const btn = document.getElementById('btn-demo-' + demoId);
+            if (btn) btn.classList.add('config-active');
+
+            // 5. Persist
+            localStorage.setItem('demo', demoId);
+
+            // NOTE: We do NOT force theme here anymore.
+            // User choice is respected via separate persistence.
+        }
+
+        function updateContent() {
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (currentI18n[currentLang] && currentI18n[currentLang][key]) {
+                    el.innerHTML = currentI18n[currentLang][key];
+                }
+            });
+        }
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('lang', lang); // Save
+            updateContent();
+
+            // Update Active State
+            const noBtn = document.getElementById('lang-no');
+            const enBtn = document.getElementById('lang-en');
+            if (noBtn) noBtn.classList.toggle('underline', lang === 'no');
+            if (enBtn) enBtn.classList.toggle('underline', lang === 'en');
+        }
+
+        // --- THEME & TEMPLATE ENGINE ---
+
+        const themes = {
+            default: { dark: '#1A1A1B', light: '#F5F5F7', accent: '#FF5F1F', forest: '#1B2B1E', logoInvert: 1 },
+            nordic: { dark: '#0F172A', light: '#F1F5F9', accent: '#38BDF8', forest: '#334155', logoInvert: 1 },
+            nature: { dark: '#1B2B1E', light: '#FAEDCD', accent: '#D4A373', forest: '#344E41', logoInvert: 1 },
+            steel: { dark: '#121212', light: '#E5E5E5', accent: '#767676', forest: '#2C2C2C', logoInvert: 1 }
+        };
+
+        function setTheme(themeName) {
+            if (!themes[themeName]) return;
+
+            const t = themes[themeName];
+            const root = document.documentElement;
+
+            // 1. Set Variables
+            root.style.setProperty('--color-dark', t.dark);
+            root.style.setProperty('--color-light', t.light);
+            root.style.setProperty('--color-accent', t.accent);
+            root.style.setProperty('--color-forest', t.forest);
+            root.style.setProperty('--logo-invert', t.logoInvert);
+
+            // Update UI active state (relying on IDs)
+            document.querySelectorAll('[id^="btn-theme"]').forEach(b => b.classList.remove('config-active'));
+            const btn = document.getElementById('btn-theme-' + themeName);
+            if (btn) btn.classList.add('config-active');
+
+            // Persist theme selection
+            localStorage.setItem('theme', themeName);
+        }
+
+
+
+        // 5. Template Switching
+
+
+        // --- INITIALIZATION ---
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Restore State
+            // Force Demo 1 context for this template family
+            let savedDemo = localStorage.getItem('demo') || 'demo1';
+            if (savedDemo === 'demo2') {
+                savedDemo = 'demo1';
+                localStorage.setItem('demo', 'demo1');
+            }
+            const savedLang = localStorage.getItem('lang') || 'no';
+            const savedTheme = localStorage.getItem('theme') || 'steel'; // Default to Steel
+            const savedTemplate = localStorage.getItem('template') || 'std'; // Default to Standard
+
+            // 2. Apply State
+            if (savedLang) {
+                currentLang = savedLang;
+                setLanguage(savedLang); // Updates UI active state
+            }
+            if (savedDemo) loadDemo(savedDemo);
+            if (savedTheme) setTheme(savedTheme);
+
+            // 3. Init Smooth Scroll
+            const lenis = new Lenis({
+                duration: 1.2,
+                easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+                direction: 'vertical',
+                gestureDirection: 'vertical',
+                smooth: true,
+                mouseMultiplier: 1,
+                smoothTouch: false,
+                touchMultiplier: 2,
+            });
+
+            function raf(time) {
+                lenis.raf(time);
+                requestAnimationFrame(raf);
+            }
+            requestAnimationFrame(raf);
+
+            // Integrations
+            ScrollTrigger.refresh();
+        });
+
+        // 1. Initialize Lenis (Legacy - Removed, moved above) 
+
+        const lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            direction: 'vertical',
+            gestureDirection: 'vertical',
+            smooth: true,
+            mouseMultiplier: 1,
+            smoothTouch: false,
+            touchMultiplier: 2,
+        })
+
+        function raf(time) {
+            lenis.raf(time)
+            requestAnimationFrame(raf)
+        }
+        requestAnimationFrame(raf)
+
+        // 2. GSAP Registers
+        gsap.registerPlugin(ScrollTrigger);
+
+        // 3. Kinetic Type (Hero)
+        const heroTitle = document.getElementById('hero-title');
+        document.addEventListener('mousemove', (e) => {
+            const xPos = (e.clientX / window.innerWidth - 0.5) * 20; // -10 to 10
+            const yPos = (e.clientY / window.innerHeight - 0.5) * 10;
+
+            gsap.to(heroTitle, {
+                duration: 1,
+                rotationY: xPos,
+                rotationX: -yPos,
+                ease: 'power2.out',
+                transformPerspective: 900,
+                transformOrigin: "center center"
+            });
+        });
+
+        // Hero Image "Ken Burns" Effect (Slow continuous movement)
+        // Initial entry
+        gsap.to("#hero-image", {
+            opacity: 0.6,
+            duration: 2.5,
+            ease: "power2.inOut"
+        });
+
+        // Continuous Loop
+        const heroTimeline = gsap.timeline({ repeat: -1, yoyo: true });
+
+        heroTimeline.to("#hero-image", {
+            scale: 1.15,
+            duration: 20,
+            ease: "sine.inOut" // Very smooth, non-linear easing for natural feel
+        }).to("#hero-image", {
+            // Subtle pan effect if the image is wider/taller, or just stay with scale for safety
+            rotation: 0.5, // Very subtle rotation
+            duration: 25,
+            ease: "sine.inOut"
+        }, "<"); // Run concurrently
+
+        // 4. Caliper Logic (Scroll Progress)
+        // Map scroll of 'process' section to movement of .caliper-thumb
+        ScrollTrigger.create({
+            trigger: "#process",
+            start: "top top",
+            end: "bottom bottom",
+            scrub: 0, // Direct scrub
+            onUpdate: (self) => {
+                const progress = self.progress;
+                const trackHeight = document.getElementById('caliper-track').offsetHeight;
+                const thumbPos = progress * (trackHeight - 40); // 40 is height of thumb
+
+                // Move thumb
+                gsap.set("#caliper-thumb", { y: thumbPos });
+
+                // Update value fake text
+                const mm = (progress * 100).toFixed(1);
+                document.getElementById('caliper-value').innerText = `${mm}mm`;
+            }
+        });
+
+        // Pin Process Title (Desktop Only)
+        ScrollTrigger.matchMedia({
+            "(min-width: 768px)": function () {
+                ScrollTrigger.create({
+                    trigger: "#process",
+                    start: "top top",
+                    end: "bottom 80%",
+                    pin: "#process-sticky",
+                    pinSpacing: false
+                });
+            }
+        });
+
+        // 4.1. Process Sidebar Active State Spy
+        const processSteps = document.querySelectorAll('.process-step');
+        const indicators = document.querySelectorAll('.process-indicator');
+
+        processSteps.forEach((step, index) => {
+            ScrollTrigger.create({
+                trigger: step,
+                start: "top center",
+                end: "bottom center",
+                onToggle: (self) => {
+                    if (self.isActive) {
+                        indicators.forEach(el => {
+                            el.classList.remove('active', 'text-accent');
+                            el.classList.add('text-light/40');
+                        });
+                        if (indicators[index]) {
+                            indicators[index].classList.add('active', 'text-accent');
+                            indicators[index].classList.remove('text-light/40');
+                        }
+                    }
+                }
+            });
+        });
+        gsap.to("body", {
+            backgroundColor: "var(--color-forest)",
+            scrollTrigger: {
+                trigger: "#sustainability",
+                start: "top 50%",
+                end: "bottom 50%",
+                toggleActions: "play reverse play reverse",
+                onEnter: () => document.body.style.backgroundColor = "var(--color-forest)",
+                onLeave: () => document.body.style.backgroundColor = "var(--color-dark)",
+                onEnterBack: () => document.body.style.backgroundColor = "var(--color-forest)",
+                onLeaveBack: () => document.body.style.backgroundColor = "var(--color-dark)"
+            }
+        });
+
+        // 5.1 Sustainability Image Parallax
+        gsap.fromTo("#sust-image",
+            { y: 50, scale: 0.95, opacity: 0.8 },
+            {
+                y: -50,
+                scale: 1,
+                opacity: 1,
+                scrollTrigger: {
+                    trigger: "#sustainability",
+                    start: "top bottom",
+                    end: "bottom top",
+                    scrub: 1
+                }
+            }
+        );
+
+        // Fix for the next section being light
+        ScrollTrigger.create({
+            trigger: "#work",
+            start: "top 50%",
+            onEnter: () => document.body.style.backgroundColor = "var(--color-light)",
+            onLeaveBack: () => document.body.style.backgroundColor = "var(--color-forest)"
+        });
+
+        // And back to dark for configurator
+        ScrollTrigger.create({
+            trigger: ".range-slider", // element deeper in configurator
+            start: "top 100%", // trigger earlier
+            onEnter: () => {
+                // The section container has bg-dark class, so body color is less relevant but good for overscroll
+                document.body.style.backgroundColor = "var(--color-dark)";
+            }
+        });
+
+
+        // 6. Custom Cursor Logic
+        const cursor = document.getElementById('cursor');
+        const hoverTriggers = document.querySelectorAll('.hover-trigger');
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX - 6 + 'px'; // Center offset
+            cursor.style.top = e.clientY - 6 + 'px';
+        });
+
+        hoverTriggers.forEach(trigger => {
+            trigger.addEventListener('mouseenter', () => {
+                const text = trigger.getAttribute('data-hover-text');
+                cursor.classList.add('hovered');
+                if (text) cursor.setAttribute('data-text', text);
+            });
+            trigger.addEventListener('mouseleave', () => {
+                cursor.classList.remove('hovered');
+                cursor.removeAttribute('data-text');
+            });
+        });
+
+        // 7. Configurator Logic (Multi-step)
+        let confState = {
+            step: 1,
+            type: null,
+            budget: 25,
+            details: {}
+        };
+
+        function selectType(btn, type) {
+            // UI
+            document.querySelectorAll('.type-btn').forEach(b => {
+                b.classList.remove('border-accent', 'bg-light/5');
+            });
+            btn.classList.add('border-accent', 'bg-light/5');
+
+            // State
+            confState.type = type;
+
+            // Auto advance
+            setTimeout(() => nextStep(2), 500);
+        }
+
+        function updateBudgetDisplay(val) {
+            document.getElementById('budget-display').innerText = val + " MNOK" + (val == 50 ? "+" : "");
+            confState.budget = val;
+        }
+
+        function nextStep(targetStep) {
+            // Hide all
+            document.querySelectorAll('.conf-step').forEach(el => {
+                el.classList.add('hidden', 'opacity-0');
+                el.classList.remove('opacity-100');
+            });
+
+            // Show target
+            const targetEl = document.getElementById('step-' + targetStep);
+            targetEl.classList.remove('hidden');
+            // Small delay for fade in
+            setTimeout(() => {
+                targetEl.classList.remove('opacity-0');
+                targetEl.classList.add('opacity-100');
+            }, 50);
+
+            // Update Dots
+            updateDots(targetStep);
+            confState.step = targetStep;
+        }
+
+        function updateDots(step) {
+            for (let i = 1; i <= 3; i++) {
+                const dot = document.getElementById('dot-' + i);
+                if (i <= step) {
+                    dot.classList.remove('bg-light/20');
+                    dot.classList.add('bg-accent');
+                } else {
+                    dot.classList.add('bg-light/20');
+                    dot.classList.remove('bg-accent');
+                }
+            }
+        }
+
+        function submitConfigurator() {
+            // Show Loading
+            const loadingScreen = document.getElementById('conf-loading');
+            loadingScreen.classList.remove('hidden');
+
+            // Simulate Analysis
+            setTimeout(() => {
+                loadingScreen.classList.add('hidden');
+                document.getElementById('conf-success').classList.remove('hidden');
+            }, 2500);
+        }
+
+        // 8. Marquee Animation
+        gsap.to(".marquee-content", {
+            xPercent: -50,
+            repeat: -1,
+            duration: 20,
+            ease: "linear"
+        });
+
+
+
+    </script>
+    </script>
+    <script src="common.js"></script>
+</body>
+
+</html>

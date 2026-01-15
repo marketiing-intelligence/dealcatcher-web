@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="no" class="lenis lenis-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Totalentreprenør | Vi realiserer dine ambisjoner</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Inter+Tight:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter Tight', 'sans-serif'],
+                        mono: ['IBM Plex Mono', 'monospace'],
+                        serif: ['Cormorant Garamond', 'serif'],
+                    },
+                    colors: {
+                        dark: 'var(--color-dark)',
+                        light: 'var(--color-light)',
+                        accent: 'var(--color-accent)',
+                        wood: '#C19A6B'
+                    },
+                    cursor: {
+                        none: 'none'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- GSAP & Lenis -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
+    <style>
+        :root {
+            /* Default Theme Variables (will be overridden by JS) */
+            --color-dark: #1A1A1B;
+            --color-light: #F5F5F7;
+            --color-accent: #FF5F1F;
+
+            /* Swiss Template Specifics */
+            --swiss-bg: #FFFFFF;
+            --swiss-text: #050505;
+            --swiss-line: rgba(0, 0, 0, 0.1);
+        }
+
+        /* --- GLOBAL RESET & SWISS BASE --- */
+        body {
+            background-color: var(--swiss-bg);
+            color: var(--swiss-text);
+            font-family: 'Inter Tight', sans-serif;
+            cursor: none;
+            /* Custom cursor */
+            overflow-x: hidden;
+            line-height: 1.2;
+        }
+
+        /* GRID SYSTEM (The Holy Grid) */
+        /* We use a fixed 4-column grid overlay and layout */
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            /* 32px gap */
+            padding: 0 4vw;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        @media (max-width: 1024px) {
+            .grid-layout {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+        }
+
+        /* TYPOGRAPHY */
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Inter Tight', sans-serif;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -0.04em;
+        }
+
+        .font-mono {
+            font-family: 'IBM Plex Mono', monospace;
+            letter-spacing: 0.05em;
+        }
+
+        /* UTILITIES */
+        .section-border {
+            border-top: 1px solid var(--swiss-line);
+        }
+
+        .full-h {
+            min-height: 100vh;
+        }
+
+        /* IMAGES - GRAYSCALE TO COLOR */
+        .img-reveal {
+            filter: grayscale(100%);
+            transition: filter 0.6s ease, transform 0.8s ease;
+            transform: scale(1);
+        }
+
+        .group:hover .img-reveal,
+        .img-reveal:hover {
+            filter: grayscale(0%);
+            transform: scale(1.02);
+        }
+
+        /* CUSTOM CURSOR */
+        #cursor-dot {
+            width: 10px;
+            height: 10px;
+            background-color: var(--color-accent);
+            position: fixed;
+            border-radius: 50%;
+            z-index: 9999;
+            pointer-events: none;
+            transition: width 0.3s, height 0.3s, background-color 0.2s;
+            /* Removed transform delay */
+            mix-blend-mode: difference;
+        }
+
+        #cursor-dot.hovered {
+            transform: scale(5);
+            background-color: var(--color-accent);
+            opacity: 0.5;
+        }
+
+        /* CROSSHAIR FULL SCREEN */
+        .crosshair-line {
+            position: fixed;
+            background: var(--color-accent);
+            pointer-events: none;
+            z-index: 9998;
+            opacity: 0.3;
+        }
+
+        .ch-x {
+            width: 100%;
+            height: 1px;
+            top: 50%;
+            left: 0;
+        }
+
+        .ch-y {
+            width: 1px;
+            height: 100%;
+            top: 0;
+            left: 50%;
+        }
+
+        /* SCROLL BAR HIDDEN */
+        ::-webkit-scrollbar {
+            width: 0px;
+            background: transparent;
+        }
+
+        /* NAVIGATION - 4 CORNERS */
+        .nav-corner {
+            position: fixed;
+            z-index: 100;
+            padding: 2rem;
+            mix-blend-mode: difference;
+            color: #fff;
+            /* Invert against white bg */
+        }
+
+        .nav-tl {
+            top: 0;
+            left: 0;
+        }
+
+        .nav-tr {
+            top: 0;
+            right: 0;
+        }
+
+        .nav-bl {
+            bottom: 0;
+            left: 0;
+        }
+
+        .nav-br {
+            bottom: 0;
+            right: 0;
+        }
+
+        /* MOBILE ADJUSTMENTS */
+        @media (max-width: 768px) {
+
+            .nav-tr,
+            .nav-bl {
+                display: none;
+            }
+
+            /* Simplify mob nav */
+            .crosshair-line {
+                display: none;
+            }
+
+            h1 {
+                font-size: 15vw !important;
+            }
+        }
+
+        /* CONFIGURATOR ACTIVE STATE */
+        /* CONFIGURATOR ACTIVE STATE */
+        .config-active {
+            border-color: var(--color-accent) !important;
+            background-color: rgba(255, 255, 255, 0.05) !important;
+            opacity: 1 !important;
+            box-shadow: 0 0 15px var(--color-accent) !important;
+        }
+
+        .config-active span {
+            color: var(--color-light) !important;
+        }
+
+        .config-active div {
+            border-color: var(--color-accent) !important;
+        }
+
+        /* THEME PANEL SIDEBAR */
+        #theme-panel {
+            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            color: #ffffff !important;
+            /* Force white text */
+            background-color: #0A0A0A !important;
+            /* Force dark background */
+        }
+
+        #theme-panel button {
+            color: #ffffff !important;
+        }
+
+        #theme-panel .text-gray-500,
+        #theme-panel .text-light\/50 {
+            color: #a1a1aa !important;
+            /* light gray */
+        }
+
+        #theme-panel .config-active span {
+            color: var(--color-light) !important;
+        }
+
+        #theme-panel .hover\:text-\[var\(--color-accent\)\]:hover {
+            color: var(--color-accent) !important;
+        }
+
+        @keyframes scrolldown {
+            0% {
+                top: -100%;
+            }
+
+            100% {
+                top: 100%;
+            }
+        }
+
+        .animate-scrolldown {
+            animation: scrolldown 2s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+        }
+
+        .black-ops {
+            font-family: 'Black Ops One', system-ui;
+            /* Fallback if not loaded, but gives that military feel if available or use heavy Inter */
+            font-weight: 900;
+        }
+
+        /* UU / ACCESSIBILITY FOCUS STATES */
+        :focus-visible {
+            outline: 2px solid var(--color-accent);
+            outline-offset: 4px;
+        }
+    </style>
+</head>
+
+<body class="layout-min">
+
+    <!-- SYSTEM LAYERS -->
+    <div id="cursor-dot"></div>
+    <div class="crosshair-line ch-x"></div>
+    <div class="crosshair-line ch-y"></div>
+
+    <!-- BACKGROUND GRID LINES (Fixed Overlay) -->
+    <div class="fixed inset-0 z-0 flex justify-between px-[4vw] pointer-events-none">
+        <!-- 4 columns = 5 lines including edges, or 3 internal lines? Let's do 4 visible columns -->
+        <!-- We'll just draw lines between columns -->
+        <div class="h-full w-px bg-black/5"></div>
+        <div class="h-full w-px bg-black/5 hidden lg:block"></div>
+        <div class="h-full w-px bg-black/5 hidden lg:block"></div>
+        <div class="h-full w-px bg-black/5 hidden lg:block"></div>
+        <div class="h-full w-px bg-black/5"></div>
+    </div>
+
+    <!-- 0. NAVIGATION (Fixed Corners) -->
+    <nav>
+        <div class="nav-corner nav-tl flex items-center gap-4">
+            <a href="#" class="relative group">
+                <img src="assets/company_logo_total_1767961946647.png" alt="Total Contractor"
+                    class="h-12 w-auto object-contain mix-blend-multiply dark:mix-blend-screen">
+            </a>
+            <span class="font-mono text-xs font-bold uppercase tracking-widest hidden md:block">Total.</span>
+        </div>
+        <div class="nav-corner nav-tr flex gap-6 font-mono text-xs font-bold tracking-widest items-center">
+            <a href="#process" class="hover:text-[var(--color-accent)] transition-colors hidden md:block"
+                data-i18n="nav.process">PROCESS</a>
+            <a href="#work" class="hover:text-[var(--color-accent)] transition-colors hidden md:block"
+                data-i18n="nav.projects">PROJECTS</a>
+            <a href="#configurator" class="hover:text-[var(--color-accent)] transition-colors hidden md:block"
+                data-i18n="nav.contact">CONTACT</a>
+
+            <div class="h-4 w-px bg-current opacity-20 hidden md:block"></div>
+
+            <!-- Moved Lang Switcher Here -->
+            <div class="flex gap-1">
+                <span onclick="setLanguage('no')" id="lang-no"
+                    class="cursor-pointer hover:text-[var(--color-accent)]">NO</span>
+                <span class="opacity-30">/</span>
+                <span onclick="setLanguage('en')" id="lang-en"
+                    class="cursor-pointer hover:text-[var(--color-accent)]">EN</span>
+            </div>
+
+            <!-- MENU Button Removed as requested -->
+        </div>
+
+        <!-- Bottom Left Empty or Socials -->
+        <div class="nav-corner nav-bl font-mono text-xs font-bold">
+            <!-- EST. 1999 Moved to Footer -->
+        </div>
+        <div class="nav-corner nav-br">
+            <!-- Moved to Top Right -->
+        </div>
+    </nav>
+
+
+    <!-- 1. HERO SECTION (Dojebane / Curtain Reveal) -->
+    <main class="relative z-10 w-full bg-transparent">
+        <section class="h-screen w-full relative flex items-center justify-center overflow-hidden" id="hero">
+
+            <!-- Background Image with Scale Effect -->
+            <div class="absolute inset-0 z-0">
+                <img src="assets/hero_background_1767958362195.png" data-img-key="hero"
+                    class="w-full h-full object-cover grayscale opacity-40 scale-105" style="transform-origin: center;"
+                    id="hero-bg">
+                <div class="absolute inset-0 bg-gradient-to-t from-white via-transparent to-white opacity-80"></div>
+            </div>
+
+            <!-- Kinetic Title Centered -->
+            <div class="relative z-10 text-center flex flex-col items-center max-w-4xl mx-auto px-4 mix-blend-multiply">
+                <h1 class="text-[clamp(3rem,8vw,120px)] leading-[0.9] tracking-tighter font-black text-[#050505] select-none"
+                    id="hero-title" data-i18n="hero.title" style="opacity: 0; transform: translateY(30px);">
+                    We<br>Realize
+                </h1>
+
+                <!-- H2 Subtitle (New) -->
+                <h2 class="mt-6 font-mono text-sm md:text-base font-normal tracking-wide uppercase text-gray-600 max-w-xl opacity-0"
+                    id="hero-subtitle" data-i18n="hero.subtitle" style="transform: translateY(20px);">
+                    From the first spade to a turnkey home.<br>We exceed your ambitions with precision.
+                </h2>
+
+                <!-- Floating CTA -->
+                <div class="mt-10 opacity-0" id="hero-cta">
+                    <a href="#configurator"
+                        class="group relative inline-flex items-center justify-center px-10 py-4 bg-[var(--color-accent)] text-white rounded-full overflow-hidden transition-transform hover:scale-105 shadow-xl">
+                        <span class="relative z-10 font-mono text-xs font-bold uppercase tracking-[0.15em] mr-3"
+                            data-i18n="conf.title">START PROJECT</span>
+                        <span class="relative z-10 bg-white/20 p-1.5 rounded-full">
+                            <svg class="w-3 h-3 group-hover:rotate-45 transition-transform" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div
+                class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 opacity-50 mix-blend-multiply">
+                <span class="font-mono text-[10px] uppercase tracking-widest">SCROLL TO EXPLORE</span>
+                <div class="w-[1px] h-12 bg-black overflow-hidden relative">
+                    <div class="absolute top-0 left-0 w-full h-1/2 bg-[var(--color-accent)] animate-scrolldown"></div>
+                </div>
+            </div>
+
+            <!-- Footer Info -->
+            <div
+                class="absolute bottom-8 left-8 right-8 flex justify-between font-mono text-[10px] uppercase opacity-40 hidden md:flex">
+                <div>HQ: 59.91° N</div>
+                <div>EST. 1999</div>
+            </div>
+        </section>
+
+
+        <!-- 2. TRUST BAR (Swiss Grid) -->
+        <div class="border-y border-black bg-white text-black py-8">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-0">
+                    <!-- Item 1 -->
+                    <div class="border-r border-black/10 px-4 text-center group">
+                        <div class="h-12 flex items-center justify-center mb-2">
+                            <img src="assets/certificate_sentral_godkjenning_v2_1767963720366.png"
+                                class="h-8 w-auto grayscale group-hover:grayscale-0 transition-all">
+                        </div>
+                        <span class="font-mono text-[10px] uppercase font-bold tracking-widest block">[REG:
+                            2026-B30]</span>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="border-r border-black/10 px-4 text-center group">
+                        <div
+                            class="h-12 flex items-center justify-center font-black text-xl uppercase leading-none mb-2 group-hover:text-[var(--color-accent)] transition-colors">
+                            Mester<br>brev
+                        </div>
+                        <span class="font-mono text-[10px] uppercase font-bold tracking-widest block">[SERT:
+                            M-992]</span>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="border-r border-black/10 px-4 text-center group">
+                        <div
+                            class="h-12 flex items-center justify-center font-black text-xl uppercase leading-none mb-2 group-hover:text-[var(--color-accent)] transition-colors">
+                            Start<br>Bank
+                        </div>
+                        <span class="font-mono text-[10px] uppercase font-bold tracking-widest block">[ID: 88421]</span>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="px-4 text-center group">
+                        <div
+                            class="h-12 flex items-center justify-center font-black text-xl uppercase leading-none mb-2 group-hover:text-[var(--color-accent)] transition-colors">
+                            Eco<br>Light
+                        </div>
+                        <span class="font-mono text-[10px] uppercase font-bold tracking-widest block">[ECO: A+]</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 3. MANIFESTO -->
+        <section class="py-32 grid-layout">
+            <div class="lg:col-span-1">
+                <span class="font-mono text-xs text-[var(--color-accent)]">(02) MANIFESTO</span>
+            </div>
+            <div class="lg:col-span-3">
+                <h2 class="text-4xl lg:text-7xl leading-tight mb-12" data-i18n="core.title">
+                    Fra Første Spadetak<br>Til Nøkkelferdig Drøm.
+                </h2>
+                <div class="border-l-2 border-[var(--color-accent)] pl-8 max-w-2xl">
+                    <p class="font-serif text-2xl italic leading-relaxed" data-i18n="core.desc">
+                        "Vi tar det fulle ansvaret. Én kontrakt, én kontaktperson. Vi koordinerer arkitekter,
+                        grunnarbeid, og konstruksjon med militær presisjon."
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 4. PROCESS GRID -->
+        <section class="section-border py-24 bg-white" id="process">
+            <div class="grid-layout">
+                <div class="lg:col-span-1 h-full relative">
+                    <div class="sticky top-32">
+                        <span class="font-mono text-xs text-[var(--color-accent)] block mb-4">(03) METHODOLOGY</span>
+                        <h3 class="text-3xl font-bold uppercase leading-none mb-8">Precision<br>Protocol</h3>
+                        <div class="hidden lg:block w-px h-32 bg-black/10 relative">
+                            <div class="absolute top-0 left-[-2px] w-[5px] h-[10px] bg-[var(--color-accent)]"
+                                id="process-progress"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-3 grid grid-cols-1 lg:grid-cols-2 gap-px bg-black/10 border border-black/10">
+                    <!-- Cards with White BG to create Grid lines via gap -->
+
+                    <!-- Step 1 -->
+                    <div
+                        class="bg-white p-8 group hover:bg-black hover:text-white transition-colors h-[300px] flex flex-col justify-between">
+                        <span class="font-mono text-xs block opacity-50">01 // ANALYSIS</span>
+                        <div>
+                            <h4 class="text-xl mb-2" data-i18n="process.step1.title">Consultation</h4>
+                            <p class="font-mono text-[10px] max-w-[200px]" data-i18n="process.step1.text">Analysis of
+                                site topography and feasibility.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div
+                        class="bg-white p-8 group hover:bg-black hover:text-white transition-colors h-[300px] flex flex-col justify-between">
+                        <span class="font-mono text-xs block opacity-50">02 // FOUNDATION</span>
+                        <div>
+                            <h4 class="text-xl mb-2" data-i18n="process.step2.title">Groundwork</h4>
+                            <p class="font-mono text-[10px] max-w-[200px]" data-i18n="process.step2.text">Precision
+                                blasting and reinforcement.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div
+                        class="bg-white p-8 group hover:bg-black hover:text-white transition-colors h-[300px] flex flex-col justify-between">
+                        <span class="font-mono text-xs block opacity-50">03 // STRUCTURE</span>
+                        <div>
+                            <h4 class="text-xl mb-2" data-i18n="process.step3.title">Construction</h4>
+                            <p class="font-mono text-[10px] max-w-[200px]" data-i18n="process.step3.text">Steel beams
+                                meeting timber.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div
+                        class="bg-white p-8 group hover:bg-black hover:text-white transition-colors h-[300px] flex flex-col justify-between">
+                        <span class="font-mono text-xs block opacity-50">04 // HANDOVER</span>
+                        <div>
+                            <h4 class="text-xl mb-2" data-i18n="process.step4.title">Completion</h4>
+                            <p class="font-mono text-[10px] max-w-[200px]" data-i18n="process.step4.text">Final quality
+                                check and delivery.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 5. SUSTAINABILITY (Inverted) -->
+        <section
+            class="py-32 bg-black text-white relative overflow-hidden section-border transition-colors duration-1000"
+            id="sustainability" data-bgcolor="#1B2B1E">
+            <!-- Background Image with Parallax -->
+            <div class="absolute inset-0 opacity-40">
+                <img src="assets/sustainability_texture_1767958375058.png" data-img-key="sust"
+                    class="w-full h-full object-cover grayscale" alt="">
+            </div>
+
+            <div class="grid-layout relative z-10">
+                <div class="lg:col-span-2">
+                    <span class="font-mono text-xs text-[var(--color-accent)] block mb-6">(04) IMPACT</span>
+                    <h3 class="text-6xl lg:text-8xl font-black uppercase tracking-tighter leading-[0.8] mb-8"
+                        data-i18n="sust.title">
+                        Nature<br><span class="text-transparent stroke-white"
+                            style="-webkit-text-stroke: 1px white;">Partner</span>
+                    </h3>
+                </div>
+                <div class="lg:col-span-2 flex items-end">
+                    <p class="font-mono text-sm max-w-md border-l border-[var(--color-accent)] pl-6"
+                        data-i18n="sust.text">
+                        Building in Cross Laminated Timber (CLT) significantly reduces the carbon footprint. We
+                        integrate the building into the landscape with respect.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 6. LEADERSHIP (Swiss Portrait) -->
+        <section class="section-border py-24 bg-white" id="leadership" data-bgcolor="#FFFFFF">
+            <div class="grid-layout">
+                <div class="lg:col-span-1">
+                    <span class="font-mono text-xs text-[var(--color-accent)]">(05) LEADERSHIP</span>
+                </div>
+                <div class="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div class="relative order-2 md:order-1">
+                        <img src="assets/ceo_portrait_nordic_1767961934691.png"
+                            class="w-full grayscale hover:grayscale-0 transition-all duration-500" alt="CEO">
+                        <div class="mt-4 border-l-2 border-black pl-4">
+                            <h4 class="font-bold uppercase">Jan-Erik Johansen</h4>
+                            <span class="font-mono text-xs text-gray-500">CEO / DAGLIG LEDER</span>
+                        </div>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <h3 class="text-4xl lg:text-5xl font-black uppercase tracking-tighter leading-none mb-8">
+                            Professionalism<br>in Every Step.
+                        </h3>
+                        <p class="font-serif text-xl italic leading-relaxed max-w-md">
+                            "As a total contractor, our job is to remove uncertainty. We lead the project with military
+                            precision and an artist's eye for detail."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. SELECTED WORKS -->
+        <!-- 7. SELECTED WORKS (Refactored) -->
+        <section class="section-border py-24 bg-white" id="work">
+            <div class="grid-layout">
+
+                <!-- Header -->
+                <div class="lg:col-span-1 mb-12 lg:mb-0">
+                    <span class="font-mono text-xs text-[var(--color-accent)]">(06) ARCHIVE</span>
+                    <h3 class="text-4xl mt-4 font-bold uppercase leading-none mb-8" data-i18n="work.title">
+                        Selected<br>Works
+                    </h3>
+                    <a href="#"
+                        class="font-mono text-xs underline decoration-[var(--color-accent)] underline-offset-4 hover:bg-black hover:text-white inline-block p-2 transition-colors">VIEW
+                        FULL ARCHIVE -></a>
+                </div>
+
+                <!-- Projects Grid (Columns 2-4) -->
+                <div class="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                    <!-- Project 1 -->
+                    <div class="group relative aspect-[4/5] overflow-hidden cursor-none">
+                        <img src="assets/portfolio_item_1_1767958389520.png"
+                            class="w-full h-full object-cover img-reveal" alt="Villa Nordstrand - Modern Concrete Home">
+                        <div class="absolute bottom-0 left-0 bg-white p-4 border-t border-r border-black/10">
+                            <h4 class="text-xl font-bold uppercase" data-i18n="work.p1.title">Villa Nordstrand</h4>
+                            <span class="font-mono text-[10px] block mt-1 text-gray-500" data-i18n="work.p1.sub">OSLO //
+                                CONCRETE</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="group relative aspect-[4/5] overflow-hidden cursor-none mt-12 md:mt-0">
+                        <img src="assets/portfolio_item_2_1767958409257.png"
+                            class="w-full h-full object-cover img-reveal" alt="Geilo Lodge - Timber Cabin">
+                        <div class="absolute bottom-0 left-0 bg-white p-4 border-t border-r border-black/10">
+                            <h4 class="text-xl font-bold uppercase">Geilo Lodge</h4>
+                            <span class="font-mono text-[10px] block mt-1 text-gray-500">GEILO // TIMBER</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="group relative aspect-[4/5] overflow-hidden cursor-none hidden md:block">
+                        <img src="assets/project_seaside_villa_minimalist_1767964503602.png"
+                            class="w-full h-full object-cover img-reveal" alt="Fjord Retreat - Glass Villa">
+                        <div class="absolute bottom-0 left-0 bg-white p-4 border-t border-r border-black/10">
+                            <h4 class="text-xl font-bold uppercase">Fjord Retreat</h4>
+                            <span class="font-mono text-[10px] block mt-1 text-gray-500">ALESUND // GLASS</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="group relative aspect-[4/5] overflow-hidden cursor-none hidden md:block">
+                        <img src="assets/project_urban_loft_renovation_1767964516112.png"
+                            class="w-full h-full object-cover img-reveal" alt="Urban Loft - Brick Interior">
+                        <div class="absolute bottom-0 left-0 bg-white p-4 border-t border-r border-black/10">
+                            <h4 class="text-xl font-bold uppercase">Urban Loft</h4>
+                            <span class="font-mono text-[10px] block mt-1 text-gray-500">BERGEN // BRICK</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 7. CONFIGURATOR (Technical Terminal) -->
+        <section id="configurator"
+            class="bg-[#111] text-white py-32 relative overflow-hidden border-t-4 border-[var(--color-accent)]">
+            <!-- Grid BG -->
+            <div class="absolute inset-0 pointer-events-none opacity-20"
+                style="background-image: linear-gradient(#333 1px, transparent 1px), linear-gradient(90deg, #333 1px, transparent 1px); background-size: 40px 40px;">
+            </div>
+
+            <div class="grid-layout relative z-10">
+                <!-- Side Panel -->
+                <div class="lg:col-span-1">
+                    <span class="font-mono text-xs text-[var(--color-accent)] block mb-4">(06) INITIATE</span>
+                    <div class="font-mono text-[10px] text-gray-500 space-y-2">
+                        <p>> SYSTEM: ONLINE</p>
+                        <p>> ENCRYPTION: SECURE</p>
+                        <p>> RESPONSE: < 24H</p>
+                    </div>
+                </div>
+
+                <!-- Main Form -->
+                <div class="lg:col-span-3">
+                    <h3 class="text-5xl font-black uppercase tracking-tighter mb-12" data-i18n="conf.title">Start
+                        Project_</h3>
+
+                    <!-- DYNAMIC FORM CONTAINER -->
+                    <div id="conf-container">
+
+                        <!-- STEP 1: TYPE -->
+                        <div id="step-1" class="conf-step">
+                            <p class="font-mono text-xs text-[var(--color-accent)] mb-6">SELECT PROJECT TYPE_</p>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <button onclick="selectType(this, 'Residential')"
+                                    class="border border-white/20 p-8 text-left hover:bg-white hover:text-black hover:border-white transition-all group">
+                                    <span
+                                        class="font-mono text-xs opacity-50 block mb-2 group-hover:opacity-100">[A]</span>
+                                    <span class="text-xl font-bold uppercase tracking-widest">Residential</span>
+                                </button>
+                                <button onclick="selectType(this, 'Commercial')"
+                                    class="border border-white/20 p-8 text-left hover:bg-white hover:text-black hover:border-white transition-all group">
+                                    <span
+                                        class="font-mono text-xs opacity-50 block mb-2 group-hover:opacity-100">[B]</span>
+                                    <span class="text-xl font-bold uppercase tracking-widest">Cabin / Leisure</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- STEP 2: BUDGET (Hidden) -->
+                        <div id="step-2" class="conf-step hidden">
+                            <p class="font-mono text-xs text-[var(--color-accent)] mb-6">BUDGET ESTIMATE_</p>
+                            <div class="border-y border-white/20 py-12">
+                                <div class="flex justify-between font-mono text-xs mb-4 text-gray-500">
+                                    <span>MIN (5M)</span>
+                                    <span class="text-white font-bold text-xl" id="budget-val">25 MNOK</span>
+                                    <span>MAX (50M+)</span>
+                                </div>
+                                <input type="range" min="5" max="50" value="25"
+                                    class="w-full h-1 bg-gray-800 appearance-none cursor-pointer accent-[var(--color-accent)]"
+                                    oninput="updateBudget(this.value)">
+                            </div>
+                            <div class="mt-8">
+                                <button onclick="nextStep(3)"
+                                    class="bg-white text-black px-8 py-3 font-mono text-xs font-bold uppercase hover:bg-[var(--color-accent)] transition-colors">CONFIRM
+                                    & PROCEED -></button>
+                            </div>
+                        </div>
+
+                        <!-- STEP 3: CONTACT (Hidden) -->
+                        <div id="step-3" class="conf-step hidden">
+                            <p class="font-mono text-xs text-[var(--color-accent)] mb-6">CONTACT PROTOCOL_</p>
+                            <div class="space-y-4 max-w-md">
+                                <label class="sr-only" for="input-name">Full Name</label>
+                                <input type="text" id="input-name" placeholder="FULL NAME" aria-label="Full Name"
+                                    class="w-full bg-transparent border-b border-white/20 py-4 font-mono text-sm text-white focus:border-[var(--color-accent)] focus:outline-none placeholder-gray-600">
+                                <label class="sr-only" for="input-email">Email Address</label>
+                                <input type="email" id="input-email" placeholder="EMAIL ADDRESS"
+                                    aria-label="Email Address"
+                                    class="w-full bg-transparent border-b border-white/20 py-4 font-mono text-sm text-white focus:border-[var(--color-accent)] focus:outline-none placeholder-gray-600">
+                                <label class="sr-only" for="input-phone">Phone Number</label>
+                                <input type="tel" id="input-phone" placeholder="PHONE NUMBER" aria-label="Phone Number"
+                                    class="w-full bg-transparent border-b border-white/20 py-4 font-mono text-sm text-white focus:border-[var(--color-accent)] focus:outline-none placeholder-gray-600">
+                            </div>
+                            <button onclick="submitForm()"
+                                class="mt-12 w-full max-w-md bg-[var(--color-accent)] text-white py-4 font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-colors">
+                                TRANSMIT REQUEST
+                            </button>
+                        </div>
+
+                        <!-- SUCCESS (Hidden) -->
+                        <div id="conf-success" class="hidden py-8">
+                            <h4 class="text-3xl font-bold mb-4 text-[var(--color-accent)]">TRANSMISSION RECEIVED.</h4>
+                            <p class="font-mono text-sm text-gray-400">Our engineers will evaluate the data and
+                                establish contact within 24 hours.</p>
+                            <button onclick="location.reload()" class="mt-8 text-xs font-mono underline">RESET
+                                SIGNAL</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 8. FOOTER -->
+        <footer class="bg-dark text-white pt-24 pb-8 section-border">
+            <div class="grid-layout">
+                <div class="lg:col-span-1">
+                    <span class="font-black text-2xl uppercase tracking-tighter block mb-4">Total.</span>
+                    <span class="font-mono text-[10px] uppercase opacity-50 block mb-8">EST. 1999</span>
+                </div>
+                <div class="lg:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-12 font-mono text-xs text-gray-400">
+                    <div>
+                        <span class="text-white block mb-4 uppercase tracking-widest">Office</span>
+                        <p>Dronning Eufemias gate 8</p>
+                        <p>0191 Oslo, Norway</p>
+                    </div>
+                    <div>
+                        <span class="text-white block mb-4 uppercase tracking-widest">Connect</span>
+                        <p><a href="#" class="hover:text-[var(--color-accent)]">post@totalentreprenor.no</a></p>
+                        <p>+47 22 33 44 55</p>
+                    </div>
+                    <div>
+                        <span class="text-white block mb-4 uppercase tracking-widest">Legal</span>
+                        <p>Org. nr: 931 930 202 MVA</p>
+                        <p><a href="#" class="hover:text-white">Privacy Policy</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-24 font-mono text-[10px] text-gray-600">
+                © 2026 Totalentreprenør AS. All systems nominal.
+            </div>
+        </footer>
+
+
+
+    </main>
+
+    <!-- 9. THEME PANEL (Hidden Right Sidebar) -->
+    <!-- Floating Toggle Button (Restored) -->
+    <button onclick="App.toggleThemePanel()" id="config-trigger" aria-label="Open Configurator"
+        class="fixed top-1/2 right-0 z-[1001] bg-white text-dark p-3 rounded-l-md hover:bg-accent hover:text-white transition-colors shadow-2xl translate-y-[-50%] border-l border-y border-dark/10 group transition-opacity duration-300">
+        <svg class="w-6 h-6 group-hover:rotate-90 transition-transform duration-700" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z">
+            </path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z">
+            </path>
+        </svg>
+    </button>
+
+    <!-- Floating CTA (Restored) -->
+    <a href="#configurator" onclick="lenis.scrollTo('#configurator')"
+        class="fixed bottom-8 right-8 z-[140] bg-[var(--color-accent)] text-white p-4 rounded-full shadow-[0_10px_40px_rgba(0,0,0,0.2)] hover:scale-110 transition-transform flex items-center gap-3 pr-6 group">
+        <div class="bg-white/20 p-2 rounded-full">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                </path>
+            </svg>
+        </div>
+        <div class="flex flex-col">
+            <span class="text-[10px] font-mono opacity-80 leading-none">FREE</span>
+            <span class="font-bold text-sm leading-none">INSPECTION</span>
+        </div>
+    </a>
+
+    <div id="theme-panel"
+        class="fixed top-0 right-0 h-full w-80 bg-dark border-l border-light/10 z-[1000] transform translate-x-full transition-transform duration-500 ease-out p-8 shadow-2xl flex flex-col">
+
+        <!-- Header with Logo -->
+        <div class="flex justify-between items-center mb-8 border-b border-light/20 pb-4">
+            <h3 class="font-mono text-sm uppercase tracking-widest text-light">Internal Config</h3>
+            <button onclick="App.toggleThemePanel()" class="text-light/50 hover:text-accent">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </svg>
+            </button>
+        </div>
+
+        <div class="space-y-4 overflow-y-auto h-[calc(100vh-150px)] pb-10 custom-scrollbar">
+
+            <!-- SECTION 1: BUSINESS TYPE (DEMO) -->
+            <div>
+                <h4 class="font-mono text-[10px] text-light/50 mb-3 uppercase tracking-widest">1. Select Business
+                </h4>
+                <div class="flex flex-col gap-2">
+                    <button id="btn-demo-demo1" onclick="loadDemo('demo1')"
+                        class="text-left px-4 py-3 border border-light/10 text-xs font-mono text-light bg-light/5 hover:bg-light/10 hover:border-accent transition-all flex justify-between items-center group">
+                        <span>THE TOTAL CONTRACTOR</span>
+                        <span class="opacity-0 group-hover:opacity-100 text-accent transition-opacity">→</span>
+                    </button>
+                    <button id="btn-demo-demo2" onclick="loadDemo('demo2')"
+                        class="text-left px-4 py-3 border border-light/10 text-xs font-mono text-light bg-light/5 hover:bg-light/10 hover:border-accent transition-all flex justify-between items-center group">
+                        <span>SERVICE SPECIALIST</span>
+                        <span class="opacity-0 group-hover:opacity-100 text-accent transition-opacity">→</span>
+                    </button>
+                    <button id="btn-demo-demo3" onclick="loadDemo('demo3')"
+                        class="text-left px-4 py-3 border border-light/10 text-xs font-mono text-light bg-light/5 hover:bg-light/10 hover:border-accent transition-all flex justify-between items-center group">
+                        <span>FINISHING EXPERT</span>
+                        <span class="opacity-0 group-hover:opacity-100 text-accent transition-opacity">→</span>
+                    </button>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="font-mono text-[10px] text-light/50 mb-3 uppercase tracking-widest">2. Select Layout</h4>
+                <div class="grid grid-cols-3 gap-2 mb-2">
+                    <button id="btn-tpl-std" onclick="setTemplate('std')"
+                        class="aspect-video border border-light/10 bg-light/5 flex flex-col items-center justify-center gap-1 group hover:border-accent hover:text-accent transition-all">
+                        <div class="w-4 h-2 border border-light/30 group-hover:border-accent"></div>
+                        <span class="text-[8px] font-mono text-light/50 group-hover:text-accent">STD</span>
+                    </button>
+                    <button id="btn-tpl-min" onclick="setTemplate('min')"
+                        class="aspect-video border border-light/10 bg-light/5 flex flex-col items-center justify-center gap-1 group hover:border-accent hover:text-accent transition-all config-active">
+                        <div class="w-4 h-2 border border-light/30 group-hover:border-accent"></div>
+                        <span class="text-[8px] font-mono text-light/50 group-hover:text-accent">SWISS</span>
+                    </button>
+                    <button id="btn-tpl-grid" onclick="setTemplate('grid')"
+                        class="aspect-video border border-light/10 bg-light/5 flex flex-col items-center justify-center gap-1 group hover:border-accent hover:text-accent transition-all">
+                        <div class="w-4 h-2 border border-light/30 group-hover:border-accent"></div>
+                        <span class="text-[8px] font-mono text-light/50 group-hover:text-accent">TECH</span>
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- SECTION 3: VISUAL THEME -->
+            <div>
+                <h4 class="font-mono text-[10px] text-light/50 mb-3 uppercase tracking-widest">3. Visual Style</h4>
+                <div class="space-y-2">
+                    <!-- Theme 1 -->
+                    <button id="btn-theme-default" onclick="setTheme('default')"
+                        class="w-full p-3 border border-light/10 flex items-center gap-4 hover:border-accent group transition-all bg-light/5">
+                        <div class="w-6 h-6 bg-[#1A1A1B] border border-[#FF5F1F] rounded-full"></div>
+                        <span class="font-mono text-xs uppercase group-hover:text-accent">Safety Orange</span>
+                    </button>
+                    <!-- Theme 2 -->
+                    <button id="btn-theme-nordic" onclick="setTheme('nordic')"
+                        class="w-full p-3 border border-light/10 flex items-center gap-4 hover:border-accent group transition-all bg-light/5">
+                        <div class="w-6 h-6 bg-[#0F172A] border border-[#38BDF8] rounded-full"></div>
+                        <span class="font-mono text-xs uppercase group-hover:text-accent">Nordic Blue</span>
+                    </button>
+                    <!-- Theme 3 -->
+                    <button id="btn-theme-nature" onclick="setTheme('nature')"
+                        class="w-full p-3 border border-light/10 flex items-center gap-4 hover:border-accent group transition-all bg-light/5">
+                        <div class="w-6 h-6 bg-[#1B2B1E] border border-[#D4A373] rounded-full"></div>
+                        <span class="font-mono text-xs uppercase group-hover:text-accent">Forest Copper</span>
+                    </button>
+                    <!-- Theme 4 -->
+                    <button id="btn-theme-steel" onclick="setTheme('steel')"
+                        class="w-full p-3 border border-light/10 flex items-center gap-4 hover:border-accent group transition-all bg-light/5">
+                        <div class="w-6 h-6 bg-[#E5E5E5] border border-[#333] rounded-full relative overflow-hidden">
+                            <div class="absolute inset-0 bg-[#333] w-1/2"></div>
+                        </div>
+                        <span class="font-mono text-xs uppercase group-hover:text-accent">Steel Mono</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <p class="absolute bottom-8 left-8 text-[10px] text-light/20 font-mono">
+            PREVIEW MODE
+        </p>
+    </div>
+
+    <!-- THEME SWITCHER (Floating, consistent) -->
+    <button onclick="toggleThemePanel()" aria-label="Åpne fargekonfigurator"
+        class="fixed top-1/2 right-0 z-[60] bg-light text-dark p-3 rounded-l-md hover:bg-accent transition-colors shadow-xl translate-y-[-50%] border border-dark/5">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z">
+            </path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z">
+            </path>
+        </svg>
+    </button>
+
+
+    <!-- --- SCRIPTS --- -->
+    <script>
+        // 1. CONFIG & DATA (Preserved from original)
+        const showcaseConfig = {
+            demo1: {
+                title: "The Total Contractor",
+                images: { hero: "assets/hero_background_1767958362195.png", sust: "assets/sustainability_texture_1767958375058.png", team: "assets/ceo_portrait_nordic_1767961934691.png" },
+                i18n: {
+                    no: { "nav.process": "PROSESS", "nav.projects": "PROSJEKTER", "nav.contact": "KONTAKT", "hero.title": "VI<br>REALISERER", "hero.subtitle": "Fra første spadetak til nøkkelferdig hjem.", "core.title": "Fra Første Spadetak<br>Til Nøkkelferdig Drøm.", "core.desc": "Vi tar det fulle ansvaret. Én kontrakt, én kontaktperson.", "process.step1.title": "Konsultasjon", "process.step1.text": "Analyse av tomt og behov.", "process.step2.title": "Grunnarbeid", "process.step2.text": "Sprengning og fundamentering.", "process.step3.title": "Konstruksjon", "process.step3.text": "Reising av råbygg.", "process.step4.title": "Overlevering", "process.step4.text": "Nøkkelferdig leveranse.", "work.title": "Utvalgte<br>Prosjekter", "work.p1.title": "Villa Nordstrand", "work.p1.sub": "OSLO // BETONG", "sust.title": "Naturen<br>Vår Partner", "sust.text": "Massivtre reduserer klimaavtrykket.", "conf.title": "Start Prosjekt" },
+                    en: { "nav.process": "PROCESS", "nav.projects": "PROJECTS", "nav.contact": "CONTACT", "hero.title": "WE<br>REALIZE", "hero.subtitle": "From groundbreak to turnkey.", "core.title": "From First Spade<br>To Turnkey Dream.", "core.desc": "We take full responsibility. One contract, one contact.", "process.step1.title": "Consultation", "process.step1.text": "Site analysis.", "process.step2.title": "Groundwork", "process.step2.text": "Blasting and foundation.", "process.step3.title": "Structure", "process.step3.text": "Steel and timber.", "process.step4.title": "Handover", "process.step4.text": "Turnkey delivery.", "work.title": "Selected<br>Works", "work.p1.title": "Villa Nordstrand", "work.p1.sub": "OSLO // CONCRETE", "sust.title": "Nature<br>Partner", "sust.text": "CLT reduces carbon footprint.", "conf.title": "Start Project" }
+                }
+            },
+            demo2: {
+                title: "Service Specialist",
+                images: { hero: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=2669&auto=format&fit=crop", sust: "https://images.unsplash.com/photo-1581094794329-c8112a89af12", team: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7" },
+                i18n: {
+                    no: { "nav.process": "TJENESTER", "nav.projects": "REFERANSER", "nav.contact": "VAKT 24/7", "hero.title": "AKUTT<br>BISTAND", "hero.subtitle": "Vi løser problemer umiddelbart.", "core.title": "Sikkerhet, Service<br>og Garanti.", "core.desc": "Din trygghet i hverdagen. Rørlegger og Elektriker på dagen.", "process.step1.title": "Henvendelse", "process.step1.text": "Ring vår vakttelefon.", "process.step2.title": "Utrykning", "process.step2.text": "Vi er på stedet raskt.", "process.step3.title": "Utbedring", "process.step3.text": "Feilretting etter forskrift.", "process.step4.title": "Dokumentasjon", "process.step4.text": "Digital samsvarserklæring.", "work.title": "Siste<br>Oppdrag", "work.p1.title": "Total Rehab", "work.p1.sub": "BAD // RØRLEGGER", "sust.title": "Smart<br>Energi", "sust.text": "Vi reduserer strømregningen din.", "conf.title": "Bestill Service" },
+                    en: { "nav.process": "SERVICES", "nav.projects": "REFERENCES", "nav.contact": "24/7 SUPPORT", "hero.title": "EXPERT<br>SERVICE", "hero.subtitle": "Instant problem solving.", "core.title": "Safety, Service<br>& Warranty.", "core.desc": "Your daily security. Plumbers and Electricians on call.", "process.step1.title": "Call Us", "process.step1.text": "24/7 hotline.", "process.step2.title": "Dispatch", "process.step2.text": "We arrive quickly.", "process.step3.title": "Repair", "process.step3.text": "Fixed to code.", "process.step4.title": "Docs", "process.step4.text": "Digital certification.", "work.title": "Recent<br>Jobs", "work.p1.title": "Full Rehab", "work.p1.sub": "BATH // PLUMBING", "sust.title": "Smart<br>Energy", "sust.text": "Lowering your power bill.", "conf.title": "Order Service" }
+                }
+            },
+            demo3: {
+                title: "Finishing Expert",
+                images: { hero: "https://images.unsplash.com/photo-1562663474-6cbb3eaa4d14?q=80&w=2574&auto=format&fit=crop", sust: "https://images.unsplash.com/photo-1594818379496-da1e345b0ded", team: "https://images.unsplash.com/photo-1581092160562-40aa08e78837" },
+                i18n: {
+                    no: { "nav.process": "METODE", "nav.projects": "GALLERI", "nav.contact": "BEFARING", "hero.title": "REN<br>PERFEKSJON", "hero.subtitle": "Detaljene skaper helheten.", "core.title": "Det Ligger i<br>Detaljene.", "core.desc": "Spesialister på maling, mikrosement og eksklusive overflater.", "process.step1.title": "Forarbeid", "process.step1.text": "70% av jobben.", "process.step2.title": "Struktur", "process.step2.text": "Sparkling og duk.", "process.step3.title": "Pigment", "process.step3.text": "Nøyaktig fargeblanding.", "process.step4.title": "Finish", "process.step4.text": "Perfekt resultat.", "work.title": "Utvalgte<br>Rom", "work.p1.title": "Mikrosement Bad", "work.p1.sub": "OSLO // BETONG LOOK", "sust.title": "Levende<br>Farger", "sust.text": "Miljøvennlige pigmenter.", "conf.title": "Nytt Uttrykk" },
+                    en: { "nav.process": "METHOD", "nav.projects": "GALLERY", "nav.contact": "INQUIRY", "hero.title": "PURE<br>PERFECTION", "hero.subtitle": "Details make the whole.", "core.title": "It's All in<br>The Details.", "core.desc": "Specialists in paint, microcement and exclusive surfaces.", "process.step1.title": "Prep", "process.step1.text": "70% of the work.", "process.step2.title": "Structure", "process.step2.text": "Plastering.", "process.step3.title": "Pigment", "process.step3.text": "Exact color mixing.", "process.step4.title": "Finish", "process.step4.text": "Perfect results.", "work.title": "Selected<br>Rooms", "work.p1.title": "Microcement Bath", "work.p1.sub": "OSLO // CONCRETE LOOK", "sust.title": "Living<br>Colors", "sust.text": "Eco-friendly pigments.", "conf.title": "New Look" }
+                }
+            }
+        };
+
+        let currentLang = 'no';
+        let currentDemo = 'demo1';
+
+        // 2. CORE LOGIC (Load, Theme, Lang)
+        function loadDemo(demoId) {
+            currentDemo = demoId;
+            const data = showcaseConfig[demoId];
+            if (!data) return;
+
+            // Redirect if switching to Demo 2 from here
+            if (demoId === 'demo2') {
+                window.location.href = 'terminal.html';
+                return;
+            }
+
+            // Update Active Config UI
+            document.querySelectorAll('[id^="btn-demo"]').forEach(b => b.classList.remove('config-active'));
+            const btn = document.getElementById('btn-demo-' + demoId);
+            if (btn) btn.classList.add('config-active');
+
+            // Images
+            if (data.images) {
+                document.querySelectorAll('[data-img-key]').forEach(el => {
+                    const key = el.getAttribute('data-img-key');
+                    if (data.images[key]) el.src = data.images[key];
+                });
+            }
+
+            // Text
+            updateText();
+            localStorage.setItem('demo', demoId);
+        }
+
+        function updateText() {
+            const i18n = showcaseConfig[currentDemo].i18n[currentLang];
+            if (!i18n) return;
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (i18n[key]) el.innerHTML = i18n[key];
+            });
+        }
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            updateText();
+            document.getElementById('lang-no').classList.toggle('underline', lang === 'no');
+            document.getElementById('lang-en').classList.toggle('underline', lang === 'en');
+            localStorage.setItem('lang', lang);
+        }
+
+        const themes = {
+            // Colors tweaked for WCAG AA Contrast (4.5:1) where possible
+            default: { dark: '#1A1A1B', light: '#F5F5F7', accent: '#D94E18' }, // Darkened Orange
+            nordic: { dark: '#0F172A', light: '#F1F5F9', accent: '#0284C7' },  // Darkened Sky Blue
+            nature: { dark: '#1B2B1E', light: '#FAEDCD', accent: '#B07D4C' },  // Darkened Sand/Wood
+            steel: { dark: '#121212', light: '#E5E5E5', accent: '#525252' }    // Darkened Grey
+        };
+
+        function setTheme(name) {
+            const t = themes[name];
+            if (!t) return;
+
+            // Set CSS Vars
+            document.documentElement.style.setProperty('--color-dark', t.dark);
+            document.documentElement.style.setProperty('--color-light', t.light);
+            document.documentElement.style.setProperty('--color-accent', t.accent);
+
+            // UI Feedback
+            document.querySelectorAll('[id^="btn-theme"]').forEach(b => b.classList.remove('config-active'));
+            const btn = document.getElementById('btn-theme-' + name);
+            if (btn) btn.classList.add('config-active');
+
+            localStorage.setItem('theme', name);
+        }
+
+        // 5. Template Switching
+        function setTemplate(tplKey) {
+            const map = {
+                'std': 'standard.html',
+                'min': 'swiss.html',
+                'grid': 'technical.html',
+                'term': 'terminal.html',
+                'blue': 'blueprint.html',
+                'pulse': 'pulse.html'
+            };
+            if (map[tplKey]) {
+                localStorage.setItem('template', tplKey);
+                window.location.href = map[tplKey];
+            }
+        }
+
+        function toggleThemePanel() {
+            document.getElementById('theme-panel').classList.toggle('translate-x-full');
+        }
+
+        // 3. UI INTERACTIONS
+
+        // Custom Cursor (Optimized)
+        const cursorDot = document.getElementById('cursor-dot');
+        const cursorX = document.querySelector('.ch-x');
+        const cursorY = document.querySelector('.ch-y');
+
+        document.addEventListener('mousemove', (e) => {
+            if (cursorDot) cursorDot.style.transform = `translate(${e.clientX - 5}px, ${e.clientY - 5}px)`;
+            if (cursorX) cursorX.style.top = e.clientY + 'px';
+            if (cursorY) cursorY.style.left = e.clientX + 'px';
+        });
+
+        // Hover Effect on Links/Buttons
+        document.querySelectorAll('a, button').forEach(el => {
+            el.addEventListener('mouseenter', () => document.getElementById('cursor-dot').classList.add('hovered'));
+            el.addEventListener('mouseleave', () => document.getElementById('cursor-dot').classList.remove('hovered'));
+        });
+
+        // Configurator Logic
+        function selectType(btn, val) {
+            document.querySelectorAll('#step-1 button').forEach(b => b.classList.remove('bg-white', 'text-black'));
+            btn.classList.add('bg-white', 'text-black');
+            setTimeout(() => nextStep(2), 300);
+        }
+        function updateBudget(val) {
+            document.getElementById('budget-val').innerText = val + " MNOK";
+        }
+        function nextStep(step) {
+            document.querySelectorAll('.conf-step').forEach(s => s.classList.add('hidden'));
+            document.getElementById('step-' + step).classList.remove('hidden');
+        }
+        function submitForm() {
+            document.querySelectorAll('.conf-step').forEach(s => s.classList.add('hidden'));
+            document.getElementById('conf-success').classList.remove('hidden');
+        }
+
+        // 4. ANIMATION (GSAP + Lenis)
+        const lenis = new Lenis({ duration: 1.2, smooth: true });
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+
+        // FIX: Handle Anchor Links with Lenis
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                lenis.scrollTo(this.getAttribute('href'));
+            });
+        });
+
+        // Grid Entrance
+        gsap.from(".grid-layout > div", {
+            y: 50, opacity: 0, duration: 1, stagger: 0.1, delay: 0.5, ease: "power3.out"
+        });
+
+        // Hero Entrance
+        const tl = gsap.timeline();
+        tl.to("#hero-title", { opacity: 1, y: 0, duration: 1.5, ease: "power3.out" })
+            .to("#hero-subtitle", { opacity: 1, y: 0, duration: 1.2, ease: "power3.out" }, "-=1")
+            .to("#hero-cta", { opacity: 1, y: 0, duration: 1, ease: "power3.out" }, "-=0.8");
+
+        // Mouse Parallax on Title
+        document.addEventListener('mousemove', (e) => {
+            const x = (e.clientX / window.innerWidth - 0.5) * 50;
+            const y = (e.clientY / window.innerHeight - 0.5) * 50;
+            gsap.to("#hero-title", { x: x, y: y, duration: 1, ease: "power2.out" });
+        });
+
+        // 5. SCROLL INTERACTIONS (Color Shift & Progress)
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Color Shift (Targeting Section Background)
+        const colorSections = document.querySelectorAll('[data-bgcolor]');
+        colorSections.forEach(section => {
+            const color = section.dataset.bgcolor;
+            ScrollTrigger.create({
+                trigger: section,
+                start: "top 50%",
+                end: "bottom 50%",
+                onEnter: () => gsap.to(section, { backgroundColor: color, duration: 1 }),
+                onLeave: () => gsap.to(section, { backgroundColor: "#000000", duration: 1 }), // Reset to black (default for dark sections)
+                onEnterBack: () => gsap.to(section, { backgroundColor: color, duration: 1 }),
+                onLeaveBack: () => gsap.to(section, { backgroundColor: "#000000", duration: 1 })
+            });
+        });
+
+        // Process Progress Bar
+        gsap.to("#process-progress", {
+            height: "100%",
+            ease: "none",
+            scrollTrigger: {
+                trigger: "#process",
+                start: "top center",
+                end: "bottom center",
+                scrub: true
+            }
+        });
+
+        // INIT
+        document.addEventListener('DOMContentLoaded', () => {
+            // Force Demo 1 context
+            let d = localStorage.getItem('demo') || 'demo1';
+            if (d === 'demo2') {
+                d = 'demo1';
+                localStorage.setItem('demo', 'demo1');
+            }
+            const l = localStorage.getItem('lang') || 'no';
+            const t = localStorage.getItem('theme') || 'default';
+
+            // In Swiss mode, default to 'default (Orange)' if none set, or respect choice
+            if (l) {
+                currentLang = l;
+                setLanguage(l);
+            }
+            loadDemo(d);
+            setTheme(t);
+        });
+
+    </script>
+    </script>
+    <script src="common.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE FINISHING EXPERT | DEMO 3</title>
+
+    <!-- TAILWIND -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@300;500&family=Inter+Tight:wght@300;400;600&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@300&display=swap"
+        rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: 'var(--bg)',
+                        text: 'var(--text)',
+                        accent: 'var(--accent)',
+                        secondary: 'var(--secondary)',
+                    },
+                    fontFamily: {
+                        gallery: ['"Cormorant Garamond"', 'serif'],
+                        studio: ['"Inter Tight"', 'sans-serif'],
+                        canvas: ['"Archivo Black"', 'sans-serif'],
+                        mono: ['"JetBrains Mono"', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        :root {
+            /* SHARED DEFAULTS */
+            --transition: 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        /* GALLERI THEME (Default) */
+        [data-theme="gallery"] {
+            --bg: #FCFCFC;
+            --text: #1A1A1A;
+            --accent: #C19A6B;
+            /* Gold/Beige */
+            --secondary: #F0F0F0;
+            --font-head: 'Cormorant Garamond', serif;
+            --font-body: 'Inter', sans-serif;
+            --ui-round: 0px;
+            --ui-border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        /* STUDIO THEME */
+        [data-theme="studio"] {
+            --bg: #E5E5E5;
+            --text: #0F172A;
+            --accent: #0057FF;
+            /* Architectural Blue */
+            --secondary: #D4D4D4;
+            --font-head: 'Inter Tight', sans-serif;
+            --font-body: 'JetBrains Mono', monospace;
+            --ui-round: 4px;
+            --ui-border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        /* CANVAS THEME */
+        [data-theme="canvas"] {
+            --bg: #1B2B1E;
+            /* Deep Forest */
+            --text: #E2E8F0;
+            --accent: #D4AF37;
+            /* Brass */
+            --secondary: #0F1A12;
+            --font-head: 'Archivo Black', sans-serif;
+            --font-body: 'IBM Plex Mono', monospace;
+            --ui-round: 12px;
+            --ui-border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: var(--font-body);
+            transition: background-color var(--transition), color var(--transition);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: var(--font-head);
+            font-weight: normal;
+        }
+
+        /* UTILS */
+        .theme-trans {
+            transition: all var(--transition);
+        }
+
+        .split-line {
+            width: 1px;
+            background: currentColor;
+            opacity: 0.1;
+        }
+
+        /* THEME SPECIFICS */
+        [data-theme="studio"] .grid-bg {
+            background-image:
+                linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        [data-theme="canvas"] .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* BEFORE / AFTER SLIDER */
+        .slider-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 80vh;
+        }
+
+        .slider-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .slider-handle {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--accent);
+            cursor: ew-resize;
+            z-index: 10;
+        }
+
+        .slider-handle-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40px;
+            height: 40px;
+            background: var(--accent);
+            color: var(--bg);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body class="overflow-x-hidden opacity-100 transition-opacity duration-700" data-theme="gallery">
+
+    <!-- APP CONTAINER -->
+    <div id="app" class="relative bg-bg text-text selection:bg-accent selection:text-white">
+
+        <!-- CONFIG TRIGGER (Standardized) -->
+        <button onclick="App.toggleThemePanel()" id="config-trigger" aria-label="Open Configurator"
+            class="fixed top-1/2 right-0 z-[1001] bg-white text-black p-3 rounded-l-md hover:bg-accent hover:text-white transition-colors shadow-2xl translate-y-[-50%] border-l border-y border-black/10 group transition-opacity duration-300">
+            <svg class="w-6 h-6 group-hover:rotate-90 transition-transform duration-700" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z">
+                </path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z">
+                </path>
+            </svg>
+        </button>
+
+        <!-- NAVBAR -->
+        <nav class="fixed top-0 w-full z-40 px-8 py-8 flex justify-between items-start pointer-events-none">
+            <div class="pointer-events-auto">
+                <img src="assets/demo3/logo_white.png" id="nav-logo" alt="The Finishing Expert"
+                    class="h-10 w-auto object-contain transition-all duration-300 filter invert">
+            </div>
+
+            <!-- Minimal Nav Links -->
+            <div class="hidden md:flex flex-col gap-2 pointer-events-auto">
+                <div id="nav-links"
+                    class="flex gap-6 text-[10px] uppercase tracking-[0.2em] font-sans text-text transition-colors duration-300">
+                    <a href="#services" class="hover:text-accent transition-colors">Services</a>
+                    <a href="#materials" class="hover:text-accent transition-colors">Materials</a>
+                    <a href="#portfolio" class="hover:text-accent transition-colors">Projects</a>
+                    <a href="#contact" class="hover:text-accent transition-colors">Contact</a>
+                    <div class="w-px h-3 bg-current opacity-20 mx-2"></div>
+                    <button onclick="LocalApp.setLang('no')" class="hover:text-accent transition-colors">NO</button>
+                    <button onclick="LocalApp.setLang('en')" class="hover:text-accent transition-colors">EN</button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- HERO SECTION: EDITORIAL SPLIT -->
+        <section class="slider-container relative h-[90vh] w-full overflow-hidden flex items-center bg-[#F4F4F4]"
+            data-theme-section="dark">
+            <!-- AFTER IMAGE (Underneath) -->
+            <div class="slider-image absolute inset-0 z-0"
+                style="background-image: url('assets/demo3/gallery_museum.png'); background-attachment: fixed;">
+                <div class="absolute inset-0 bg-black/40"></div>
+            </div>
+
+
+            <!-- BEFORE IMAGE (Clipped on top) -->
+            <div class="slider-image absolute top-0 left-0 h-full z-10 border-r border-white/20" id="before-img"
+                style="background-image: url('assets/demo3/studio_blueprint.png'); width: 50%; background-attachment: fixed; filter: grayscale(100%) contrast(1.2);">
+                <div class="absolute inset-0 bg-black/50"></div>
+            </div>
+
+            <!-- OVERLAY TEXT LEFT -->
+            <div
+                class="absolute top-[20%] left-8 md:left-24 z-20 pointer-events-none text-white drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
+                <p class="text-[10px] uppercase tracking-[0.4em] mb-4 opacity-90 font-sans pl-1 drop-shadow-md">Oslo
+                    &
+                    Omegn</p>
+                <h2 class="text-5xl md:text-7xl font-serif leading-none italic drop-shadow-xl whitespace-nowrap"
+                    data-i18n="hero_before">
+                    Total</h2>
+            </div>
+
+            <!-- OVERLAY TEXT RIGHT -->
+            <div
+                class="absolute bottom-[20%] right-8 md:right-24 z-20 pointer-events-none text-white text-right drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
+                <p class="text-[10px] uppercase tracking-[0.4em] mb-4 opacity-90 font-sans pr-1 drop-shadow-md">
+                    Eksklusiv
+                    Renovering</p>
+                <h2 class="text-5xl md:text-7xl font-serif leading-none drop-shadow-xl whitespace-nowrap"
+                    data-i18n="hero_after">
+                    Entreprenør
+                </h2>
+            </div>
+
+            <!-- DRAGGABLE HANDLE -->
+            <div class="slider-handle absolute h-full w-px bg-white/50 z-30 cursor-ew-resize backdrop-blur-sm"
+                id="slider-handle" style="left: 50%;">
+                <div
+                    class="slider-handle-btn absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-full border border-white flex items-center justify-center bg-white/10 backdrop-blur-md text-white transition-transform hover:scale-110">
+                    <span class="font-serif italic text-xl">&harr;</span>
+                </div>
+            </div>
+
+            <!-- SCROLL INDICATOR -->
+            <div
+                class="absolute bottom-8 left-1/2 -translate-x-1/2 text-[10px] tracking-[0.2em] opacity-50 font-sans uppercase animate-pulse mix-blend-difference text-white">
+                Scroll to Explore
+            </div>
+        </section>
+
+        <!-- INTRO TEXT -->
+        <section class="py-32 px-8 flex justify-center bg-bg relative z-20">
+            <div class="max-w-2xl text-center">
+                <span class="text-accent text-3xl font-serif italic mb-6 block">&mdash;</span>
+                <p class="text-2xl md:text-4xl font-serif leading-tight text-text mb-8" data-i18n="serv_sub">
+                    "Precision is not just a detail. It is the foundation of luxury. We curate spaces that feel as
+                    elevated as art."
+                </p>
+                <div class="h-16 w-px bg-text/10 mx-auto"></div>
+            </div>
+        </section>
+
+        <!-- SERVICES: ASYMMETRICAL LIST -->
+        <section class="py-24 px-8 md:px-24 bg-bg relative z-20">
+            <div class="flex flex-col md:flex-row items-baseline justify-between mb-24 border-b border-text/10 pb-8">
+                <h2 class="text-5xl md:text-8xl font-serif text-text" data-i18n="serv_title">Expertise</h2>
+                <div class="text-sm font-sans uppercase tracking-widest opacity-40 mt-4 md:mt-0">[ Services ]</div>
+            </div>
+
+            <div class="space-y-32">
+                <!-- Service 1 (Left) -->
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-12 group items-center">
+                    <div class="md:col-span-1 text-accent font-serif text-2xl italic opacity-50">01</div>
+                    <div class="md:col-span-5">
+                        <h3 class="text-4xl md:text-5xl font-serif mb-6 group-hover:text-accent transition-colors duration-500"
+                            data-i18n="serv_1">Malermester</h3>
+                        <p class="text-sm font-sans text-text/60 leading-relaxed max-w-sm mb-8" data-i18n="serv_1_desc">
+                            Dust-free sanding technology meets artisanal application. We specialize in deep matte
+                            finishes that absorb light rather than reflecting it.
+                        </p>
+                        <a href="#"
+                            class="text-xs uppercase tracking-widest hover:text-accent border-b border-transparent hover:border-accent transition-all pb-1 inline-block">View
+                            Specs</a>
+                    </div>
+                    <div class="md:col-span-6 relative aspect-[4/3] overflow-hidden">
+                        <img src="assets/demo3/gallery_museum.png"
+                            class="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 transform group-hover:scale-105"
+                            alt="Painting">
+                    </div>
+                </div>
+
+                <!-- Service 2 (Right) -->
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-12 group items-center">
+                    <div class="md:col-span-6 order-2 md:order-1 relative aspect-[4/3] overflow-hidden">
+                        <img src="assets/demo3/studio_blueprint.png"
+                            class="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 transform group-hover:scale-105"
+                            alt="Flooring">
+                    </div>
+                    <div class="md:col-span-5 order-1 md:order-2 md:pl-12">
+                        <h3 class="text-4xl md:text-5xl font-serif mb-6 group-hover:text-accent transition-colors duration-500"
+                            data-i18n="serv_2">Flislegging</h3>
+                        <p class="text-sm font-sans text-text/60 leading-relaxed max-w-sm mb-8" data-i18n="serv_2_desc">
+                            From large-format Italian porcelain to seamless microcement. Our optical alignment ensures
+                            every grout line is a deliberate design choice.
+                        </p>
+                        <div
+                            class="md:col-span-1 text-accent font-serif text-2xl italic opacity-50 mb-4 md:mb-0 md:absolute md:-left-12">
+                            02</div>
+                        <a href="#"
+                            class="text-xs uppercase tracking-widest hover:text-accent border-b border-transparent hover:border-accent transition-all pb-1 inline-block">View
+                            Specs</a>
+                    </div>
+                </div>
+
+                <!-- Service 3 (Left) -->
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-12 group items-center">
+                    <div class="md:col-span-1 text-accent font-serif text-2xl italic opacity-50">03</div>
+                    <div class="md:col-span-5">
+                        <h3 class="text-4xl md:text-5xl font-serif mb-6 group-hover:text-accent transition-colors duration-500"
+                            data-i18n="serv_3">Snekkerglede</h3>
+                        <p class="text-sm font-sans text-text/60 leading-relaxed max-w-sm mb-8" data-i18n="serv_3_desc">
+                            Custom cabinetry and millwork that integrates seamlessly with your architecture. Walnut,
+                            white oak, and integrated LED lighting systems.
+                        </p>
+                        <a href="#"
+                            class="text-xs uppercase tracking-widest hover:text-accent border-b border-transparent hover:border-accent transition-all pb-1 inline-block">View
+                            Specs</a>
+                    </div>
+                    <div class="md:col-span-6 relative aspect-[4/3] overflow-hidden">
+                        <img src="assets/demo3/canvas_cinematic.png"
+                            class="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 transform group-hover:scale-105"
+                            alt="Joinery">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. MATERIAL & TEXTURE LIBRARY -->
+        <section class="py-24 px-8 md:px-24 bg-secondary relative z-20 border-t border-text/5 text-text">
+            <div class="mb-16">
+                <h2 class="text-4xl md:text-6xl font-serif text-text mb-4" data-i18n="mat_title">Material Library</h2>
+                <p class="text-sm font-sans uppercase tracking-widest opacity-40" data-i18n="mat_sub">Curated Finishes
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 h-[60vh]">
+                <!-- Item 1 -->
+                <div class="relative group overflow-hidden bg-white">
+                    <img src="assets/demo3/texture_oak.png"
+                        class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-700"
+                        alt="Oak">
+                    <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
+                    <div class="absolute bottom-6 left-6">
+                        <p class="font-serif text-2xl italic">White Oak</p>
+                        <p class="font-sans text-[10px] uppercase tracking-widest opacity-60">Natural Oil</p>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="relative group overflow-hidden bg-white mt-12 md:mt-24">
+                    <img src="assets/demo3/texture_stone.png" class="absolute inset-0 w-full h-full object-cover"
+                        alt="Basalt">
+                    <div class="absolute bottom-6 left-6 text-white">
+                        <p class="font-serif text-2xl italic">Basalt</p>
+                        <p class="font-sans text-[10px] uppercase tracking-widest opacity-60">Matte Stone</p>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="relative group overflow-hidden bg-white">
+                    <img src="assets/demo3/texture_limewash.png"
+                        class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-700"
+                        alt="Lime">
+                    <div class="absolute inset-0 bg-white/20 group-hover:bg-transparent transition-colors"></div>
+                    <div class="absolute bottom-6 left-6 text-dark">
+                        <p class="font-serif text-2xl italic">Limewash</p>
+                        <p class="font-sans text-[10px] uppercase tracking-widest opacity-60">Warm Beige</p>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="relative group overflow-hidden bg-white mt-12 md:mt-24">
+                    <img src="assets/demo3/texture_brass.png"
+                        class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-700"
+                        alt="Brass">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
+                    <div class="absolute bottom-6 left-6 text-white">
+                        <p class="font-serif text-2xl italic">Aged Brass</p>
+                        <p class="font-sans text-[10px] uppercase tracking-widest opacity-60">Patina</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. THE CRAFT JOURNEY (Process) -->
+        <section class="py-24 px-8 md:px-24 bg-bg relative z-20 text-text">
+            <div class="flex flex-col md:flex-row items-baseline justify-between mb-24">
+                <h2 class="text-4xl md:text-6xl font-serif text-text" data-i18n="process_title">The Journey</h2>
+                <div class="text-sm font-sans uppercase tracking-widest opacity-40 mt-4 md:mt-0">[ From Concept to
+                    Perfection ]</div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 border-t border-text/10 pt-12">
+                <!-- Step 1 -->
+                <div class="group">
+                    <div class="text-[10px] font-sans uppercase tracking-widest opacity-40 mb-4">01. Consultation</div>
+                    <h3 class="text-2xl font-serif italic mb-4 group-hover:text-accent transition-colors"
+                        data-i18n="process_step1">Vision & Style
+                    </h3>
+                    <p class="text-sm opacity-60 leading-relaxed" data-i18n="process_desc1">We meet to define your
+                        aesthetic. Color matching,
+                        material selection, and feasibility study.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="group">
+                    <div class="text-[10px] font-sans uppercase tracking-widest opacity-40 mb-4">02. Preparation</div>
+                    <h3 class="text-2xl font-serif italic mb-4 group-hover:text-accent transition-colors"
+                        data-i18n="process_step2">The Foundation
+                    </h3>
+                    <p class="text-sm opacity-60 leading-relaxed" data-i18n="process_desc2">Precise masking and surface
+                        treatment. 70% of the
+                        quality lies in what you don't see.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="group">
+                    <div class="text-[10px] font-sans uppercase tracking-widest opacity-40 mb-4">03. Execution</div>
+                    <h3 class="text-2xl font-serif italic mb-4 group-hover:text-accent transition-colors"
+                        data-i18n="process_step3">Artisanal
+                        Craft</h3>
+                    <p class="text-sm opacity-60 leading-relaxed" data-i18n="process_desc3">Application by master
+                        craftsmen. Spray painting,
+                        tiling, and joinery with millimeter precision.</p>
+                </div>
+                <!-- Step 4 -->
+                <div class="group">
+                    <div class="text-[10px] font-sans uppercase tracking-widest opacity-40 mb-4">04. Handover</div>
+                    <h3 class="text-2xl font-serif italic mb-4 group-hover:text-accent transition-colors"
+                        data-i18n="process_step4">White Glove
+                    </h3>
+                    <p class="text-sm opacity-60 leading-relaxed" data-i18n="process_desc4">Final inspection, cleaning,
+                        and digital documentation
+                        (FDV) delivery.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. MASTER CERTIFICATIONS -->
+        <section class="py-12 border-y border-text/5 bg-secondary overflow-hidden text-text">
+            <div
+                class="flex justify-around items-center opacity-40 grayscale hover:grayscale-0 transition-all duration-500">
+                <!-- Replace with actual logos, using text placeholders styling for now -->
+                <div class="flex items-center gap-4">
+                    <div
+                        class="w-12 h-12 border border-text/20 rounded-full flex items-center justify-center font-serif italic">
+                        M</div>
+                    <span class="font-sans text-xs uppercase tracking-widest">Mesterbrev</span>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 border border-text/20 flex items-center justify-center font-serif italic">S
+                    </div>
+                    <span class="font-sans text-xs uppercase tracking-widest">StartBANK</span>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 border border-text/20 flex items-center justify-center font-serif italic">N
+                    </div>
+                    <span class="font-sans text-xs uppercase tracking-widest">Norsk Industri</span>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 border border-text/20 flex items-center justify-center font-serif italic">V
+                    </div>
+                    <span class="font-sans text-xs uppercase tracking-widest">Våtrom</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- HORIZONTAL SCROLL PORTFOLIO (Existing) -->
+        <section class="py-32 bg-secondary overflow-hidden">
+            <div class="px-8 md:px-24 mb-16 flex justify-between items-end">
+                <h2 class="text-4xl md:text-6xl font-serif text-text" data-i18n="work_title">Curated Projects</h2>
+                <a href="#"
+                    class="text-xs font-sans uppercase tracking-[0.2em] border-b border-text/20 pb-2 hover:border-accent transition-colors"
+                    data-i18n="work_view">View Full Archive</a>
+            </div>
+
+            <!-- Scroll Container -->
+    </div>
+    </div>
+    </section>
+
+    <!-- 8. BEFARING: BOOK CONSULTATION -->
+    <section class="py-32 px-8 md:px-24 bg-text text-bg relative overflow-hidden" data-theme-section="dark">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 relative z-10">
+            <div>
+                <span class="text-accent text-3xl font-serif italic mb-6 block">&mdash;</span>
+                <h2 class="text-5xl md:text-7xl font-serif mb-8 leading-none" data-i18n="cta_title">Ready for
+                    a<br>Change?</h2>
+                <p class="text-lg opacity-70 font-sans leading-relaxed max-w-md mb-12" data-i18n="cta_desc">
+                    Your home is your sanctuary. Let's discuss how we can elevate your space with our finishing
+                    expertise.
+                </p>
+                <div class="flex flex-col gap-4 text-sm font-sans opacity-60">
+                    <p>Oslo & Omegn</p>
+                    <p>+47 22 33 44 55</p>
+                    <p>post@finishing-expert.no</p>
+                </div>
+            </div>
+
+            <div class="border border-white/20 p-8 md:p-12 relative">
+                <h3 class="font-serif text-3xl mb-8 italic" data-i18n="cta_form_title">Request Consultation</h3>
+                <form class="space-y-6">
+                    <div class="grid grid-cols-2 gap-6">
+                        <input type="text" placeholder="Name" data-i18n-attr="placeholder:cta_name"
+                            class="w-full bg-transparent border-b border-white/20 py-2 focus:border-accent outline-none font-sans text-sm">
+                        <input type="text" placeholder="Phone" data-i18n-attr="placeholder:cta_phone"
+                            class="w-full bg-transparent border-b border-white/20 py-2 focus:border-accent outline-none font-sans text-sm">
+                    </div>
+                    <input type="email" placeholder="Email Address" data-i18n-attr="placeholder:cta_email"
+                        class="w-full bg-transparent border-b border-white/20 py-2 focus:border-accent outline-none font-sans text-sm">
+
+                    <div class="pt-4">
+                        <p class="text-[10px] uppercase tracking-widest opacity-50 mb-4" data-i18n="cta_style">Preferred
+                            Style:</p>
+                        <div class="flex gap-4">
+                            <label class="flex items-center gap-2 cursor-pointer group">
+                                <div class="w-4 h-4 border border-white/20 rounded-full group-hover:border-accent">
+                                </div>
+                                <span class="text-xs font-sans opacity-70" data-i18n="cta_style_nordic">Nordic</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer group">
+                                <div class="w-4 h-4 border border-white/20 rounded-full group-hover:border-accent">
+                                </div>
+                                <span class="text-xs font-sans opacity-70" data-i18n="cta_style_classic">Classic</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer group">
+                                <div class="w-4 h-4 border border-white/20 rounded-full group-hover:border-accent">
+                                </div>
+                                <span class="text-xs font-sans opacity-70" data-i18n="cta_style_modern">Modern</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="button" data-i18n="cta_btn"
+                        class="mt-8 px-8 py-3 bg-accent text-dark font-sans text-xs uppercase tracking-widest hover:bg-white transition-colors">
+                        Send Request
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Background Texture -->
+        <div class="absolute inset-0 opacity-10 pointer-events-none"
+            style="background-image: url('assets/demo3/studio_blueprint.png'); background-size: cover; filter: invert(1);">
+        </div>
+    </section>
+
+    <!-- FOOTER: SIGNATURE -->
+    <!-- FOOTER: CURATOR NOTE -->
+    <footer class="py-32 px-8 md:px-24 bg-bg border-t border-text/5 relative overflow-hidden text-text">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 items-start relative z-10">
+            <!-- COL 1: LOGO -->
+            <div class="md:col-span-1">
+                <img src="assets/demo3/logo_white.png"
+                    class="h-8 w-auto mb-6 opacity-80 mix-blend-difference filter invert" alt="Finishing Expert">
+                <p class="font-serif italic text-lg opacity-60" data-i18n="foot_quote">"Godt håndverk tåler øyets lupe."
+                </p>
+            </div>
+
+            <!-- COL 2: SITEMAP -->
+            <div class="md:col-span-1 space-y-4 font-sans text-xs uppercase tracking-widest opacity-60">
+                <a href="#services" class="block hover:text-accent hover:translate-x-1 transition-all"
+                    data-i18n="foot_exp">Ekspertise</a>
+                <a href="#" class="block hover:text-accent hover:translate-x-1 transition-all"
+                    data-i18n="foot_mat">Materialer</a>
+                <a href="#" class="block hover:text-accent hover:translate-x-1 transition-all"
+                    data-i18n="foot_atelier">Atelier</a>
+                <a href="#contact" class="block hover:text-accent hover:translate-x-1 transition-all"
+                    data-i18n="foot_contact">Kontakt</a>
+            </div>
+
+            <!-- COL 3: INFO -->
+            <div class="md:col-span-1 space-y-4 font-sans text-xs uppercase tracking-widest opacity-60">
+                <p data-i18n="foot_loc">Oslo, Norge</p>
+                <p data-i18n="foot_est">Est. 2026</p>
+                <p data-i18n="foot_cert">Mesterbrev</p>
+            </div>
+
+            <!-- COL 4: SOCIAL -->
+            <div class="md:col-span-1 flex flex-col items-end gap-2">
+                <a href="#"
+                    class="text-xs uppercase tracking-widest border-b border-text/20 pb-1 hover:border-accent hover:text-accent transition-all"
+                    data-i18n="foot_ig">Instagram</a>
+                <a href="#"
+                    class="text-xs uppercase tracking-widest border-b border-text/20 pb-1 hover:border-accent hover:text-accent transition-all"
+                    data-i18n="foot_li">LinkedIn</a>
+            </div>
+        </div>
+
+        <div
+            class="mt-24 pt-8 border-t border-text/5 flex justify-between items-center text-[10px] uppercase tracking-widest opacity-30">
+            <p data-i18n="foot_copy">&copy; The Finishing Expert</p>
+            <p data-i18n="foot_design_text">Designed by <a href="https://marketing-intelligence.io/" target="_blank"
+                    class="hover:text-accent transition-colors">Marketing Intelligence</a></p>
+        </div>
+    </footer>
+
+    </div>
+
+    <!-- LOGIC -->
+    <script>
+        // SHIM: Prevent common.js from crashing
+        window.showcaseConfig = window.showcaseConfig || {};
+
+        const LocalApp = {
+            state: {
+                lang: localStorage.getItem('finish_lang') || 'no',
+                theme: 'gallery' // Hardcoded
+            },
+
+            i18n: {
+                no: {
+                    brand: "FINISH_EXPERT",
+                    hero_before: "TOTAL",
+                    hero_after: "ENTREPRENØR",
+                    serv_title: "VÅRE<br>FAGFELT",
+                    serv_sub: "Presisjon ligger i detaljene. Vi leverer håndverk av museumskvalitet for kresne boliger.",
+                    serv_1: "Malermester",
+                    serv_1_desc: "Støvfri sliping, spraylakkering, og eksklusive matte overflater. Vi bruker kun Jotun Lady Pure Color.",
+                    serv_2: "Flislegging",
+                    serv_2_desc: "Storformat fliser, mikrosement, og presisjonskutt. Våtromssertifisert med 10 års garanti.",
+                    serv_3: "Snekkerglede",
+                    serv_3_desc: "Plassbygde garderober, listerverk, og spesialtilpassede løsninger i eik og valnøtt.",
+                    port_label: "UTVALGT PROSJEKT",
+                    port_title: "VILLA<br>HOLMENKOLLEN",
+                    spec_wall: "Vegger",
+                    spec_floor: "Gulv",
+                    spec_time: "Tid",
+                    btn_case: "SE CASE STUDY",
+                    foot_contact: "KONTAKT OSS",
+                    foot_insta: "INSTAGRAM",
+                    foot_mail: "POST@FINISH.NO",
+
+                    // NEW SECTIONS
+                    mat_title: "Materialbibliotek",
+                    mat_sub: "Utvalgte Overflater",
+                    process_title: "Reisen",
+                    process_step1: "Visjon & Stil",
+                    process_desc1: "Vi definerer ditt estetiske uttrykk. Fargevalg, materialer og mulighetsstudie.",
+                    process_step2: "Grunnlaget",
+                    process_desc2: "Presis tildekking og grunnarbeid. 70% av kvaliteten ligger i det du ikke ser.",
+                    process_step3: "Håndverket",
+                    process_desc3: "Utførelse av mestere. Sprøytemaling, flislegging og snekkerarbeid med millimeterpresisjon.",
+                    process_step4: "Overlevering",
+                    process_desc4: "Sluttkontroll, utvask og levering av FDV-dokumentasjon.",
+                    work_title: "Utvalgte Prosjekter",
+                    work_view: "Se Hele Arkivet",
+                    cta_title: "Klar for<br>Forandring?",
+                    cta_desc: "Hjemmet ditt er ditt fristed. La oss diskutere hvordan vi kan løfte boligen med vår ekspertise.",
+                    cta_form_title: "Be om Befaring",
+                    cta_name: "Navn",
+                    cta_phone: "Telefon",
+                    cta_email: "E-postadresse",
+                    cta_style: "Ønsket Stil:",
+                    cta_btn: "Send Forespørsel",
+
+                    // FOOTER
+                    foot_quote: "\"Godt håndverk tåler øyets lupe.\"",
+                    foot_exp: "Ekspertise",
+                    foot_mat: "Materialer",
+                    foot_atelier: "Atelier",
+                    foot_contact: "Kontakt",
+                    foot_loc: "Oslo, Norge",
+                    foot_est: "Est. 2026",
+                    foot_cert: "Mesterbrev",
+                    foot_ig: "Instagram",
+                    foot_li: "LinkedIn",
+                    foot_copy: "&copy; The Finishing Expert",
+                    foot_design_text: "Designet av <a href='https://marketing-intelligence.io/' target='_blank' class='hover:text-accent transition-colors'>Marketing Intelligence</a>"
+                },
+                en: {
+                    brand: "FINISH_EXPERT",
+                    hero_before: "TOTAL",
+                    hero_after: "CONTRACTOR",
+                    serv_title: "OUR<br>EXPERTISE",
+                    serv_sub: "Precision takes precedence. We deliver museum-grade craftsmanship for discerning residences.",
+                    serv_1: "Master Painter",
+                    serv_1_desc: "Dust-free sanding, spray painting, and exclusive matte finishes. We use only Jotun Lady Pure Color.",
+                    serv_2: "Tiling",
+                    serv_2_desc: "Large-format tiles, microcement, and precision cuts. Wet room certified with 10-year warranty.",
+                    serv_3: "Carpentry",
+                    serv_3_desc: "Custom wardrobes, moldings, and bespoke solutions in oak and walnut.",
+                    port_label: "FEATURED PROJECT",
+                    port_title: "VILLA<br>HOLMENKOLLEN",
+                    spec_wall: "Walls",
+                    spec_floor: "Floors",
+                    spec_time: "Duration",
+                    btn_case: "VIEW CASE STUDY",
+                    foot_contact: "CONTACT US",
+                    foot_insta: "INSTAGRAM",
+                    foot_mail: "MAIL@FINISH.NO",
+
+                    // NEW SECTIONS
+                    mat_title: "Material Library",
+                    mat_sub: "Curated Finishes",
+                    process_title: "The Journey",
+                    process_step1: "Vision & Style",
+                    process_desc1: "We meet to define your aesthetic. Color matching, material selection, and feasibility study.",
+                    process_step2: "The Foundation",
+                    process_desc2: "Precise masking and surface treatment. 70% of the quality lies in what you don't see.",
+                    process_step3: "Artisanal Craft",
+                    process_desc3: "Application by master craftsmen. Spray painting, tiling, and joinery with millimeter precision.",
+                    process_step4: "White Glove",
+                    process_desc4: "Final inspection, cleaning, and digital documentation (FDV) delivery.",
+                    work_title: "Curated Projects",
+                    work_view: "View Full Archive",
+                    cta_title: "Ready for a<br>Change?",
+                    cta_desc: "Your home is your sanctuary. Let's discuss how we can elevate your space with our finishing expertise.",
+                    cta_form_title: "Request Consultation",
+                    cta_name: "Name",
+                    cta_phone: "Phone",
+                    cta_email: "Email Address",
+                    cta_style: "Preferred Style:",
+                    cta_btn: "Send Request",
+
+                    // FOOTER
+                    foot_quote: "\"Quality craftsmanship withstands the loupe.\"",
+                    foot_exp: "Expertise",
+                    foot_mat: "Materials",
+                    foot_atelier: "Studio",
+                    foot_contact: "Contact",
+                    foot_loc: "Oslo, Norway",
+                    foot_est: "Est. 2026",
+                    foot_cert: "Master Craftsman",
+                    foot_ig: "Instagram",
+                    foot_li: "LinkedIn",
+                    foot_copy: "&copy; The Finishing Expert",
+                    foot_design_text: "Designed by <a href='https://marketing-intelligence.io/' target='_blank' class='hover:text-accent transition-colors'>Marketing Intelligence</a>"
+                }
+            },
+
+            init() {
+                this.applyState();
+                this.initSlider();
+
+                // Fade in
+                gsap.to(document.body, { opacity: 1, duration: 1, delay: 0.2 });
+            },
+
+            setLang(lang) {
+                this.state.lang = lang;
+                localStorage.setItem('finish_lang', lang);
+                this.updateText();
+            },
+
+            setTheme(theme) {
+                this.state.theme = theme;
+                localStorage.setItem('finish_theme', theme);
+                document.body.setAttribute('data-theme', theme);
+
+                // Animate background change smoothly
+                gsap.fromTo('body', { opacity: 0.8 }, { opacity: 1, duration: 0.5 });
+            },
+
+            applyState() {
+                document.body.setAttribute('data-theme', this.state.theme);
+                this.updateText();
+            },
+
+            updateText() {
+                const terms = this.i18n[this.state.lang];
+                document.querySelectorAll('[data-i18n]').forEach(el => {
+                    const key = el.getAttribute('data-i18n');
+                    if (terms[key]) el.innerHTML = terms[key];
+                });
+
+                // Update attributes (placeholders etc)
+                document.querySelectorAll('[data-i18n-attr]').forEach(el => {
+                    const [attr, key] = el.getAttribute('data-i18n-attr').split(':');
+                    if (terms[key]) el.setAttribute(attr, terms[key]);
+                });
+            },
+
+            initSlider() {
+                // Slider removed for Grid Layout
+            }
+        };
+
+        // ScrollTrigger Animations
+        document.addEventListener("DOMContentLoaded", () => {
+            LocalApp.init();
+
+            // Parallax for portfolio
+            gsap.to(".slider-image", {
+                scrollTrigger: {
+                    trigger: ".slider-container",
+                    start: "top top",
+                    end: "bottom top",
+                    scrub: true
+                },
+                y: 100
+            });
+
+            // Smart Navbar Color Switching
+            ScrollTrigger.create({
+                trigger: "body",
+                start: "top top",
+                end: "bottom bottom",
+                onUpdate: (self) => {
+                    const navLinks = document.getElementById('nav-links');
+                    const navLogo = document.getElementById('nav-logo');
+
+                    // Check intersections with dark sections
+                    const darkSections = document.querySelectorAll('[data-theme-section="dark"]');
+                    let isOverDark = false;
+
+                    darkSections.forEach(section => {
+                        const rect = section.getBoundingClientRect();
+                        // If Nav (approx top 40px) overlaps with section
+                        if (rect.top <= 40 && rect.bottom >= 40) {
+                            isOverDark = true;
+                        }
+                    });
+
+                    if (isOverDark) {
+                        navLinks.classList.remove('text-text');
+                        navLinks.classList.add('text-white');
+                        navLogo.classList.remove('invert');
+                    } else {
+                        navLinks.classList.add('text-text');
+                        navLinks.classList.remove('text-white');
+                        navLogo.classList.add('invert');
+                    }
+                }
+            });
+        });
+    </script>
+    <!-- GLOBAL CONFIGURATOR (Standardized) -->
+    <div id="theme-panel"
+        class="fixed top-0 right-0 h-full w-80 bg-[#1A1A1B] border-l border-white/10 z-[1000] transform translate-x-full transition-transform duration-500 ease-out p-8 shadow-2xl text-white">
+        <div class="flex justify-between items-center mb-12">
+            <h3 class="font-mono text-sm uppercase tracking-widest opacity-50">Theme Config</h3>
+            <button onclick="App.toggleThemePanel()" aria-label="Lukk konfigurator"
+                class="opacity-50 hover:opacity-100 hover:text-accent transition-opacity">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </svg>
+            </button>
+        </div>
+
+        <div class="space-y-8 overflow-y-auto h-[calc(100vh-150px)] pb-10 custom-scrollbar">
+
+            <!-- SECTION 1: BUSINESS TYPE (DEMO) -->
+            <div>
+                <h4 class="font-mono text-[10px] opacity-50 mb-3 uppercase tracking-widest">1. Select Business</h4>
+                <div class="flex flex-col gap-2">
+                    <button onclick="App.setDemo('demo1')"
+                        class="text-left px-4 py-3 border border-white/10 text-xs font-mono bg-white/5 hover:bg-white/10 hover:border-accent transition-all flex justify-between items-center group">
+                        <span>THE TOTAL CONTRACTOR</span>
+                        <span class="opacity-0 group-hover:opacity-100 text-accent transition-opacity">→</span>
+                    </button>
+                    <button onclick="App.setDemo('demo2')"
+                        class="text-left px-4 py-3 border border-white/10 text-xs font-mono bg-white/5 hover:bg-white/10 hover:border-accent transition-all flex justify-between items-center group">
+                        <span>SERVICE SPECIALIST</span>
+                        <span class="opacity-0 group-hover:opacity-100 text-accent transition-opacity">→</span>
+                    </button>
+                    <button onclick="App.setDemo('demo3')"
+                        class="text-left px-4 py-3 border border-white/10 text-xs font-mono bg-white/5 hover:bg-white/10 hover:border-accent transition-all flex justify-between items-center group">
+                        <span>FINISHING EXPERT</span>
+                        <span class="opacity-0 group-hover:opacity-100 text-accent transition-opacity">→</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- SECTION 2: TEMPLATE MODE -->
+            <div>
+                <h4 class="font-mono text-[10px] opacity-50 mb-3 uppercase tracking-widest">2. Select Layout</h4>
+
+                <!-- Demo 3 Templates Only -->
+                <div class="grid grid-cols-3 gap-2">
+                    <button onclick="App.setTemplate('gallery')"
+                        class="aspect-video border border-white/10 bg-white/5 flex flex-col items-center justify-center gap-1 group hover:border-accent hover:text-accent transition-all">
+                        <div class="w-4 h-2 border border-white/30 group-hover:border-accent"></div>
+                        <span class="text-[8px] font-mono opacity-50 group-hover:text-accent">GALLERY</span>
+                    </button>
+                    <button onclick="App.setTemplate('studio')"
+                        class="aspect-video border border-white/10 bg-white/5 flex flex-col items-center justify-center gap-1 group hover:border-accent hover:text-accent transition-all">
+                        <div class="w-4 h-2 border border-white/30 group-hover:border-accent"></div>
+                        <span class="text-[8px] font-mono opacity-50 group-hover:text-accent">STUDIO</span>
+                    </button>
+                    <button onclick="App.setTemplate('canvas')"
+                        class="aspect-video border border-white/10 bg-white/5 flex flex-col items-center justify-center gap-1 group hover:border-accent hover:text-accent transition-all">
+                        <div class="w-4 h-2 border border-white/30 group-hover:border-accent"></div>
+                        <span class="text-[8px] font-mono opacity-50 group-hover:text-accent">CANVAS</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- SECTION 3: VISUAL STYLE -->
+            <div>
+                <h4 class="font-mono text-[10px] opacity-50 mb-3 uppercase tracking-widest">3. Visual Style</h4>
+                <div class="space-y-2">
+                    <button onclick="LocalApp.setTheme('gallery')"
+                        class="w-full p-3 border border-white/10 flex items-center gap-4 hover:border-accent group transition-all bg-white/5">
+                        <div class="w-6 h-6 bg-[#FCFCFC] border border-[#C19A6B] rounded-full"></div>
+                        <span
+                            class="font-mono text-xs uppercase opacity-70 group-hover:opacity-100 group-hover:text-accent">Gallery
+                            Light</span>
+                    </button>
+                    <button onclick="LocalApp.setTheme('studio')"
+                        class="w-full p-3 border border-white/10 flex items-center gap-4 hover:border-accent group transition-all bg-white/5">
+                        <div class="w-6 h-6 bg-[#002B49] border border-[#0057FF] rounded-full"></div>
+                        <span
+                            class="font-mono text-xs uppercase opacity-70 group-hover:opacity-100 group-hover:text-accent">Studio
+                            Blue</span>
+                    </button>
+                    <button onclick="LocalApp.setTheme('canvas')"
+                        class="w-full p-3 border border-white/10 flex items-center gap-4 hover:border-accent group transition-all bg-white/5">
+                        <div class="w-6 h-6 bg-[#050505] border border-[#D4AF37] rounded-full"></div>
+                        <span
+                            class="font-mono text-xs uppercase opacity-70 group-hover:opacity-100 group-hover:text-accent">Canvas
+                            Dark</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="p-4 bg-white/5 border border-white/10 text-[10px] font-mono opacity-60">
+                <p>Current: <span id="debug-current-template">GALLERY</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="common.js"></script>
+</body>
+
+</html>

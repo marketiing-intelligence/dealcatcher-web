@@ -1,0 +1,130 @@
+{
+  "nav": {
+    "templates": "Templates",
+    "newWebsite": "New Website",
+    "wcagCompliance": "WCAG Compliance",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Web Design for Norway",
+    "titleStart": "Professional websites for",
+    "titleHighlight": "Norwegian businesses",
+    "subtitle": "AI search ready. WCAG compliant. Built to convert visitors into customers. Zero hassle from your side.",
+    "ctaPrimary": "I need a website",
+    "ctaSecondary": "Fix my existing site",
+    "trustLabel": "Built for the future",
+    "trustItems": ["AI Search Optimized", "WCAG 2.0 AA Compliant", "Norwegian Law Ready"]
+  },
+  "whatWeDo": {
+    "badge": "What We Do",
+    "title": "A complete client acquisition system",
+    "subtitle": "Website + Advertising = clients actively searching for your services.",
+    "website": {
+      "title": "Professional Website",
+      "description": "Your digital foundation. A website that looks professional, ranks in AI search results, and converts visitors into paying customers.",
+      "features": [
+        "AI Search Ready (ChatGPT, Perplexity, Google AI)",
+        "WCAG 2.0 AA compliant (Norwegian law)",
+        "Built to convert visitors into clients",
+        "Hosting & maintenance included"
+      ],
+      "priceLabel": "Starting at",
+      "price": "$1,000",
+      "priceSuffix": "+ $50/month"
+    },
+    "ads": {
+      "title": "Google Ads Management",
+      "description": "Accelerate your results. When someone searches \"carpenter Oslo\" or \"plumber Bergen\", your ad appears at the top. Direct leads from people actively looking.",
+      "features": [
+        "Keyword research for your area",
+        "Norwegian ad copywriting",
+        "Monthly optimization & A/B testing",
+        "Performance reports with ROI tracking"
+      ],
+      "priceLabel": "Management fee",
+      "price": "$200",
+      "priceSuffix": "/month + 10% ad spend"
+    },
+    "combined": {
+      "website": "Website",
+      "converts": "Converts visitors",
+      "ads": "Ads",
+      "brings": "Brings visitors",
+      "result": "Clients"
+    }
+  },
+  "whoWeHelp": {
+    "badge": "Who We Help",
+    "title": "Two paths to a stronger online presence",
+    "subtitle": "Whether you need a new website or need to fix accessibility issues, we've got you covered.",
+    "segments": [
+      {
+        "title": "No website yet?",
+        "description": "You're a skilled craftsman, but clients can't find you online. Your competitors with websites are winning jobs that should be yours. AI assistants can't recommend you because you don't exist digitally.",
+        "cta": "Get your professional website",
+        "features": ["AI Search Ready", "WCAG Compliant", "From $1,000"]
+      },
+      {
+        "title": "Website accessibility issues?",
+        "description": "97% of Norwegian websites fail WCAG compliance checks. Your site might be breaking the law without you knowing it. Digdir conducts random audits and publishes results publicly.",
+        "cta": "Get your free WCAG audit",
+        "features": ["Free Audit", "Detailed Report", "Rebuild Option"]
+      }
+    ]
+  },
+  "portfolio": {
+    "badge": "Our Templates",
+    "title": "Designs that convert visitors into customers",
+    "subtitle": "Every template is AI-ready, WCAG compliant, and optimized for Norwegian businesses.",
+    "viewAll": "View all templates",
+    "viewDemo": "View Live Demo"
+  },
+  "whyUs": {
+    "badge": "Why DealCatcher",
+    "title": "The right partner for your online presence",
+    "subtitle": "We're not just another web agency. We build websites that are ready for the future.",
+    "reasons": [
+      {
+        "title": "Built for 2026+",
+        "points": [
+          "AI Search optimization from day one",
+          "Semantic HTML that algorithms understand",
+          "Your business gets recommended by ChatGPT and Google AI"
+        ]
+      },
+      {
+        "title": "Norwegian Law Ready",
+        "points": [
+          "100% WCAG 2.0 AA compliant",
+          "Monthly compliance monitoring",
+          "Zero risk of Digdir fines"
+        ]
+      },
+      {
+        "title": "We Handle Everything",
+        "points": [
+          "15 minutes to fill the brief",
+          "Design, development, hosting, maintenance",
+          "You focus on your craft, we handle the rest"
+        ]
+      }
+    ]
+  },
+  "cta": {
+    "titleStart": "Ready to build your",
+    "titleHighlight": "online presence",
+    "subtitle": "Let's talk about how we can help your business get found online. Book a free consultation or send us a message.",
+    "ctaPrimary": "Get started",
+    "ctaSecondary": "Contact us"
+  },
+  "footer": {
+    "description": "Professional websites for Norwegian businesses. AI-ready, WCAG compliant, built to convert.",
+    "services": "Services",
+    "contact": "Contact",
+    "newWebsite": "New Website",
+    "wcagCompliance": "WCAG Compliance",
+    "copyright": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}

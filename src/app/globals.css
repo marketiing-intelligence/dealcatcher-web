@@ -1,0 +1,223 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* Exclude static demo files from Tailwind source scanning */
+@source not "../../public/demo";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ============================================
+   DealCatcher — Agency Dark Theme
+   Accent: Emerald Green (#10B981)
+   ============================================ */
+
+@theme inline {
+  /* Colors */
+  --color-background: var(--background);
+  --color-background-alt: var(--background-alt);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-glow: var(--accent-glow);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-border-hover: var(--border-hover);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Fonts */
+  --font-clash: var(--font-clash-display);
+  --font-body: var(--font-dm-sans);
+
+  /* Radius */
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+}
+
+:root {
+  --radius: 0.5rem;
+
+  /* Agency Dark - Default (no light mode) */
+  /* Backgrounds */
+  --background: #0A0A0A;
+  --background-alt: #141414;
+  --card: #1A1A1A;
+  --card-foreground: #FAFAFA;
+  --popover: #1A1A1A;
+  --popover-foreground: #FAFAFA;
+
+  /* Text */
+  --foreground: #FAFAFA;
+  --muted: #27272A;
+  --muted-foreground: #A1A1AA;
+
+  /* Accent - EMERALD GREEN */
+  --primary: #10B981;
+  --primary-foreground: #FAFAFA;
+  --accent: #10B981;
+  --accent-foreground: #FAFAFA;
+  --accent-hover: #34D399;
+  --accent-glow: rgba(16, 185, 129, 0.15);
+
+  /* Secondary */
+  --secondary: #1A1A1A;
+  --secondary-foreground: #FAFAFA;
+
+  /* Borders */
+  --border: #27272A;
+  --border-hover: #3F3F46;
+  --input: #27272A;
+  --ring: #10B981;
+
+  /* Destructive */
+  --destructive: #EF4444;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Headlines - Clash Display */
+  h1, h2, h3, h4 {
+    font-family: var(--font-clash-display), system-ui, sans-serif;
+    @apply font-semibold tracking-tight;
+  }
+
+  h1 {
+    @apply text-4xl md:text-6xl lg:text-7xl leading-[1.1];
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl leading-[1.1];
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl leading-[1.2];
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl leading-[1.2];
+  }
+
+  /* Body - DM Sans */
+  p, span, a, li, label, input, textarea, button {
+    font-family: var(--font-dm-sans), system-ui, sans-serif;
+  }
+
+  p {
+    @apply text-base md:text-lg leading-relaxed;
+  }
+}
+
+@layer components {
+  /* Container */
+  .container-custom {
+    @apply mx-auto w-full max-w-7xl px-6 md:px-12 lg:px-16;
+  }
+
+  /* Section spacing */
+  .section {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  /* Primary button with glow */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-8 py-4 text-base font-medium text-primary-foreground transition-all duration-200;
+  }
+
+  .btn-primary:hover {
+    @apply bg-accent-hover -translate-y-0.5;
+    box-shadow: 0 8px 24px var(--accent-glow);
+  }
+
+  /* Secondary button */
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border border-border bg-transparent px-8 py-4 text-base font-medium text-foreground transition-all duration-200;
+  }
+
+  .btn-secondary:hover {
+    @apply border-primary text-primary;
+  }
+
+  /* Card with hover */
+  .card-hover {
+    @apply rounded-xl border border-border bg-card p-8 transition-all duration-300;
+  }
+
+  .card-hover:hover {
+    @apply border-border-hover -translate-y-1;
+  }
+
+  /* Accent glow effect */
+  .glow {
+    box-shadow: 0 0 40px var(--accent-glow);
+  }
+
+  /* Text gradient */
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-accent-hover bg-clip-text text-transparent;
+  }
+}
+
+@layer utilities {
+  /* Fade mask for scroll */
+  .fade-mask {
+    mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+  }
+
+  /* Animation direction */
+  .direction-reverse {
+    animation-direction: reverse;
+  }
+}
+
+/* Marquee animations */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes marquee-vertical {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+  }
+}
+
+.animate-marquee {
+  animation: marquee var(--duration) linear infinite;
+}
+
+.animate-marquee-vertical {
+  animation: marquee-vertical var(--duration) linear infinite;
+}
