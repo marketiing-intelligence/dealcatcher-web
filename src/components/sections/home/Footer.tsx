@@ -87,10 +87,10 @@ export function Footer({ lang, dict }: FooterProps) {
             &copy; {currentYear} DealCatcher. {dict.copyright}
           </p>
           <div className="flex gap-6 text-sm text-muted-foreground">
-            <Link href="#" className="hover:text-foreground transition-colors">
+            <Link href={`/${lang}/privacy`} className="hover:text-foreground transition-colors">
               {dict.privacy}
             </Link>
-            <Link href="#" className="hover:text-foreground transition-colors">
+            <Link href={`/${lang}/terms`} className="hover:text-foreground transition-colors">
               {dict.terms}
             </Link>
           </div>

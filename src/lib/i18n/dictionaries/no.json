@@ -126,5 +126,232 @@
     "copyright": "Alle rettigheter reservert.",
     "privacy": "Personvernerkaering",
     "terms": "Vilkar for Bruk"
+  },
+  "privacy": {
+    "title": "Personvernerkaering",
+    "lastUpdated": "Sist oppdatert: 16. januar 2026",
+    "sections": {
+      "intro": {
+        "title": "Introduksjon",
+        "content": "Rapid Software House sp. z o.o. (\"vi\", \"oss\" eller \"var\") driver nettstedet dealcatcher.io. Denne personvernerklaeringen forklarer hvordan vi samler inn, bruker, utleverer og beskytter informasjonen din nar du besoker nettstedet vart."
+      },
+      "controller": {
+        "title": "Behandlingsansvarlig",
+        "content": "Den behandlingsansvarlige for dine personopplysninger er:",
+        "company": "Rapid Software House sp. z o.o.",
+        "address": "ul. Zlota 75A lok. 7, 00-819 Warszawa, Polen",
+        "krs": "KRS: 0001008811",
+        "nip": "NIP: 5273033283",
+        "email": "E-post: contact@dealcatcher.io"
+      },
+      "dataCollected": {
+        "title": "Informasjon Vi Samler Inn",
+        "intro": "Vi samler inn informasjon som du gir direkte til oss og informasjon som samles inn automatisk:",
+        "contactForm": {
+          "title": "Kontaktskjemadata",
+          "items": ["Navn", "E-postadresse", "Telefonnummer (valgfritt)", "Meldingsinnhold"]
+        },
+        "automatic": {
+          "title": "Automatisk Innsamlet Data",
+          "items": ["IP-adresse", "Nettlesertype og versjon", "Besoke sider og tid brukt", "Henvisende nettsted", "Enhetsinformasjon"]
+        }
+      },
+      "cookies": {
+        "title": "Informasjonskapsler og Analyse",
+        "content": "Vi bruker informasjonskapsler og lignende sporingsteknologier for a samle inn informasjon om nettleseraktivitetene dine. Dette inkluderer:",
+        "types": {
+          "essential": {
+            "title": "Nodvendige Informasjonskapsler",
+            "description": "Nodvendig for at nettstedet skal fungere riktig. Kan ikke deaktiveres."
+          },
+          "analytics": {
+            "title": "Analyseinformasjonskapsler (Google Analytics)",
+            "description": "Hjelper oss a forsta hvordan besokende samhandler med nettstedet vart. Du kan velge bort Google Analytics ved a installere Google Analytics Opt-out Browser Add-on."
+          }
+        },
+        "manage": "Du kan administrere informasjonskapselpreferanser gjennom nettleserinnstillingene. Merk at deaktivering av visse informasjonskapsler kan pavirke nettstedets funksjonalitet."
+      },
+      "purpose": {
+        "title": "Hvordan Vi Bruker Informasjonen Din",
+        "intro": "Vi behandler personopplysningene dine basert pa folgende rettslige grunnlag i henhold til GDPR artikkel 6:",
+        "purposes": [
+          {
+            "title": "For a svare pa henvendelsene dine",
+            "basis": "Rettslig grunnlag: Berettiget interesse (Art. 6(1)(f) GDPR)"
+          },
+          {
+            "title": "For a levere forespurte tjenester",
+            "basis": "Rettslig grunnlag: Kontraktsoppfyllelse (Art. 6(1)(b) GDPR)"
+          },
+          {
+            "title": "For a forbedre nettstedet og tjenestene vare",
+            "basis": "Rettslig grunnlag: Berettiget interesse (Art. 6(1)(f) GDPR)"
+          },
+          {
+            "title": "For a overholde juridiske forpliktelser",
+            "basis": "Rettslig grunnlag: Juridisk forpliktelse (Art. 6(1)(c) GDPR)"
+          }
+        ]
+      },
+      "retention": {
+        "title": "Oppbevaring av Data",
+        "content": "Vi oppbevarer personopplysningene dine bare sa lenge det er nodvendig for a oppfylle formalene de ble samlet inn for:",
+        "periods": [
+          "Kontaktskjemadata: 2 ar fra siste kontakt",
+          "Analysedata: 26 maneder (Google Analytics standard)",
+          "Kontraktsrelaterte data: Kontraktens varighet + 5 ar (lovkrav)"
+        ]
+      },
+      "rights": {
+        "title": "Dine Rettigheter Under GDPR",
+        "intro": "Som registrert har du folgende rettigheter:",
+        "list": [
+          {
+            "title": "Rett til Innsyn",
+            "description": "Du kan be om en kopi av personopplysningene vi har om deg."
+          },
+          {
+            "title": "Rett til Retting",
+            "description": "Du kan be om retting av uriktige personopplysninger."
+          },
+          {
+            "title": "Rett til Sletting",
+            "description": "Du kan be om sletting av personopplysningene dine (\"retten til a bli glemt\")."
+          },
+          {
+            "title": "Rett til Begrensning",
+            "description": "Du kan be om begrensning av behandling under visse omstendigheter."
+          },
+          {
+            "title": "Rett til Dataportabilitet",
+            "description": "Du kan be om dataene dine i et strukturert, maskinlesbart format."
+          },
+          {
+            "title": "Rett til a Protestere",
+            "description": "Du kan protestere mot behandling basert pa berettigede interesser."
+          },
+          {
+            "title": "Rett til a Trekke Tilbake Samtykke",
+            "description": "Der behandlingen er basert pa samtykke, kan du trekke det tilbake nar som helst."
+          }
+        ],
+        "exercise": "For a utove noen av disse rettighetene, vennligst kontakt oss pa contact@dealcatcher.io."
+      },
+      "thirdParty": {
+        "title": "Tredjepartstjenester",
+        "content": "Vi kan dele dataene dine med folgende tredjepartsleverandorer:",
+        "services": [
+          {
+            "name": "Google Analytics",
+            "purpose": "Nettstedsanalyse",
+            "privacy": "https://policies.google.com/privacy"
+          }
+        ]
+      },
+      "transfers": {
+        "title": "Internasjonale Dataoverforsler",
+        "content": "Dataene dine kan overfores til og behandles i land utenfor Det europeiske okonomiske samarbeidsomradet (EOS). Nar dette skjer, sikrer vi at passende sikkerhetstiltak er pa plass, for eksempel standard kontraktsklausuler godkjent av EU-kommisjonen."
+      },
+      "security": {
+        "title": "Datasikkerhet",
+        "content": "Vi implementerer passende tekniske og organisatoriske tiltak for a beskytte personopplysningene dine mot uautorisert tilgang, endring, utlevering eller odeleggelse. Imidlertid er ingen metode for overforsel over internett 100% sikker."
+      },
+      "changes": {
+        "title": "Endringer i Denne Erklaeringen",
+        "content": "Vi kan oppdatere denne personvernerklaeringen fra tid til annen. Vi vil varsle deg om eventuelle endringer ved a legge ut den nye personvernerklaeringen pa denne siden og oppdatere datoen for \"Sist oppdatert\"."
+      },
+      "contact": {
+        "title": "Kontakt Oss",
+        "content": "Hvis du har sporsmal om denne personvernerklaeringen eller onsker a utove rettighetene dine, vennligst kontakt oss:",
+        "email": "E-post: contact@dealcatcher.io",
+        "address": "Adresse: ul. Zlota 75A lok. 7, 00-819 Warszawa, Polen",
+        "complaint": "Du har ogsa rett til a klage til en tilsynsmyndighet. I Norge er dette Datatilsynet."
+      }
+    }
+  },
+  "terms": {
+    "title": "Vilkar for Bruk",
+    "lastUpdated": "Sist oppdatert: 16. januar 2026",
+    "sections": {
+      "intro": {
+        "title": "Introduksjon",
+        "content": "Disse vilkarene for bruk (\"Vilkar\") regulerer din bruk av nettstedet dealcatcher.io og tjenestene levert av Rapid Software House sp. z o.o. Ved a fa tilgang til eller bruke nettstedet vart, godtar du a vaere bundet av disse vilkarene."
+      },
+      "definitions": {
+        "title": "Definisjoner",
+        "items": [
+          {
+            "term": "Tjenesteleverandor",
+            "definition": "Rapid Software House sp. z o.o., ul. Zlota 75A lok. 7, 00-819 Warszawa, Polen, KRS: 0001008811, NIP: 5273033283"
+          },
+          {
+            "term": "Bruker",
+            "definition": "Enhver person eller enhet som far tilgang til eller bruker nettstedet eller tjenestene vare"
+          },
+          {
+            "term": "Nettsted",
+            "definition": "Nettstedet dealcatcher.io og alle dets undersider"
+          },
+          {
+            "term": "Tjenester",
+            "definition": "Nettsteddesign, utvikling, hosting, vedlikehold og Google Ads-administrasjonstjenester tilbudt av tjenesteleverandoren"
+          }
+        ]
+      },
+      "services": {
+        "title": "Vare Tjenester",
+        "content": "DealCatcher tilbyr folgende tjenester til bedrifter:",
+        "list": [
+          "Tilpasset nettstedsdesign og -utvikling",
+          "Malbaserte nettstedslosninger",
+          "Nettstedshosting og vedlikehold",
+          "WCAG-samsvarsrevisjoner og utbedring",
+          "Google Ads-oppsett og -administrasjon"
+        ],
+        "note": "Spesifikke vilkar, priser og leveranser for hver tjeneste defineres i individuelle tjenesteavtaler."
+      },
+      "useOfWebsite": {
+        "title": "Bruk av Nettstedet",
+        "intro": "Nar du bruker nettstedet vart, godtar du a:",
+        "rules": [
+          "Gi noyaktig og fullstendig informasjon i alle skjemaer",
+          "Ikke bruke nettstedet til ulovlige formal",
+          "Ikke forsoke a fa uautorisert tilgang til noen del av nettstedet",
+          "Ikke forstyrre nettstedets funksjon",
+          "Ikke kopiere, endre eller distribuere nettstedinnhold uten tillatelse"
+        ]
+      },
+      "intellectualProperty": {
+        "title": "Immaterielle Rettigheter",
+        "content": "Alt innhold pa dette nettstedet, inkludert men ikke begrenset til tekst, grafikk, logoer, bilder og programvare, er eiendommen til Rapid Software House sp. z o.o. eller dets lisensgivere og er beskyttet av lover om immaterielle rettigheter. Du kan ikke reprodusere, distribuere eller lage avledede verk uten vart uttrykkelige skriftlige samtykke."
+      },
+      "disclaimer": {
+        "title": "Ansvarsfraskrivelse",
+        "content": "Nettstedet og innholdet leveres \"som de er\" uten garantier av noe slag, verken uttrykte eller underforstattes. Vi garanterer ikke at nettstedet vil vaere uavbrutt, feilfritt eller fritt for virus eller andre skadelige komponenter."
+      },
+      "liability": {
+        "title": "Ansvarsbegrensning",
+        "content": "I den grad det er tillatt ved lov, skal Rapid Software House sp. z o.o. ikke vaere ansvarlig for indirekte, tilfeldige, spesielle, folge- eller straffeskader som oppstar av eller er relatert til din bruk av nettstedet. Vart totale ansvar for eventuelle krav som oppstar fra din bruk av nettstedet skal ikke overstige belopet du betalte oss, om noe, i de 12 manedene for kravet."
+      },
+      "thirdParty": {
+        "title": "Tredjepartslenker",
+        "content": "Nettstedet vart kan inneholde lenker til tredjepartsnettstedter. Vi er ikke ansvarlige for innholdet, personvernreglene eller praksisene til tredjepartsnettstedter. Du far tilgang til slike nettstedter pa egen risiko."
+      },
+      "governing": {
+        "title": "Gjeldende Lov",
+        "content": "Disse vilkarene skal reguleres av og tolkes i samsvar med polsk lov. Eventuelle tvister som oppstar fra disse vilkarene skal vaere underlagt den eksklusive jurisdiksjonen til domstolene i Warszawa, Polen."
+      },
+      "changes": {
+        "title": "Endringer i Vilkarene",
+        "content": "Vi forbeholder oss retten til a endre disse vilkarene nar som helst. Endringer vil tre i kraft umiddelbart etter publisering pa nettstedet. Din fortsatte bruk av nettstedet etter eventuelle endringer utgjor aksept av de nye vilkarene."
+      },
+      "contact": {
+        "title": "Kontaktinformasjon",
+        "content": "For sporsmal om disse vilkarene, vennligst kontakt oss:",
+        "company": "Rapid Software House sp. z o.o.",
+        "address": "ul. Zlota 75A lok. 7, 00-819 Warszawa, Polen",
+        "email": "E-post: contact@dealcatcher.io"
+      }
+    }
   }
 }

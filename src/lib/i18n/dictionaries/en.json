@@ -126,5 +126,232 @@
     "copyright": "All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: January 16, 2026",
+    "sections": {
+      "intro": {
+        "title": "Introduction",
+        "content": "Rapid Software House sp. z o.o. (\"we\", \"us\", or \"our\") operates the dealcatcher.io website. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website."
+      },
+      "controller": {
+        "title": "Data Controller",
+        "content": "The data controller responsible for your personal data is:",
+        "company": "Rapid Software House sp. z o.o.",
+        "address": "ul. Zlota 75A lok. 7, 00-819 Warsaw, Poland",
+        "krs": "KRS: 0001008811",
+        "nip": "NIP: 5273033283",
+        "email": "Email: contact@dealcatcher.io"
+      },
+      "dataCollected": {
+        "title": "Information We Collect",
+        "intro": "We collect information that you provide directly to us and information collected automatically:",
+        "contactForm": {
+          "title": "Contact Form Data",
+          "items": ["Name", "Email address", "Phone number (optional)", "Message content"]
+        },
+        "automatic": {
+          "title": "Automatically Collected Data",
+          "items": ["IP address", "Browser type and version", "Pages visited and time spent", "Referring website", "Device information"]
+        }
+      },
+      "cookies": {
+        "title": "Cookies and Analytics",
+        "content": "We use cookies and similar tracking technologies to collect information about your browsing activities. This includes:",
+        "types": {
+          "essential": {
+            "title": "Essential Cookies",
+            "description": "Required for the website to function properly. Cannot be disabled."
+          },
+          "analytics": {
+            "title": "Analytics Cookies (Google Analytics)",
+            "description": "Help us understand how visitors interact with our website. You can opt out of Google Analytics by installing the Google Analytics Opt-out Browser Add-on."
+          }
+        },
+        "manage": "You can manage cookie preferences through your browser settings. Note that disabling certain cookies may affect website functionality."
+      },
+      "purpose": {
+        "title": "How We Use Your Information",
+        "intro": "We process your personal data based on the following legal grounds under GDPR Article 6:",
+        "purposes": [
+          {
+            "title": "To respond to your inquiries",
+            "basis": "Legal basis: Legitimate interest (Art. 6(1)(f) GDPR)"
+          },
+          {
+            "title": "To provide requested services",
+            "basis": "Legal basis: Contract performance (Art. 6(1)(b) GDPR)"
+          },
+          {
+            "title": "To improve our website and services",
+            "basis": "Legal basis: Legitimate interest (Art. 6(1)(f) GDPR)"
+          },
+          {
+            "title": "To comply with legal obligations",
+            "basis": "Legal basis: Legal obligation (Art. 6(1)(c) GDPR)"
+          }
+        ]
+      },
+      "retention": {
+        "title": "Data Retention",
+        "content": "We retain your personal data only for as long as necessary to fulfill the purposes for which it was collected:",
+        "periods": [
+          "Contact form data: 2 years from last contact",
+          "Analytics data: 26 months (Google Analytics default)",
+          "Contract-related data: Duration of contract + 5 years (legal requirement)"
+        ]
+      },
+      "rights": {
+        "title": "Your Rights Under GDPR",
+        "intro": "As a data subject, you have the following rights:",
+        "list": [
+          {
+            "title": "Right of Access",
+            "description": "You can request a copy of your personal data we hold."
+          },
+          {
+            "title": "Right to Rectification",
+            "description": "You can request correction of inaccurate personal data."
+          },
+          {
+            "title": "Right to Erasure",
+            "description": "You can request deletion of your personal data (\"right to be forgotten\")."
+          },
+          {
+            "title": "Right to Restriction",
+            "description": "You can request limitation of processing in certain circumstances."
+          },
+          {
+            "title": "Right to Data Portability",
+            "description": "You can request your data in a structured, machine-readable format."
+          },
+          {
+            "title": "Right to Object",
+            "description": "You can object to processing based on legitimate interests."
+          },
+          {
+            "title": "Right to Withdraw Consent",
+            "description": "Where processing is based on consent, you can withdraw it at any time."
+          }
+        ],
+        "exercise": "To exercise any of these rights, please contact us at contact@dealcatcher.io."
+      },
+      "thirdParty": {
+        "title": "Third-Party Services",
+        "content": "We may share your data with the following third-party service providers:",
+        "services": [
+          {
+            "name": "Google Analytics",
+            "purpose": "Website analytics",
+            "privacy": "https://policies.google.com/privacy"
+          }
+        ]
+      },
+      "transfers": {
+        "title": "International Data Transfers",
+        "content": "Your data may be transferred to and processed in countries outside the European Economic Area (EEA). When this occurs, we ensure appropriate safeguards are in place, such as Standard Contractual Clauses approved by the European Commission."
+      },
+      "security": {
+        "title": "Data Security",
+        "content": "We implement appropriate technical and organizational measures to protect your personal data against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the Internet is 100% secure."
+      },
+      "changes": {
+        "title": "Changes to This Policy",
+        "content": "We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the \"Last updated\" date."
+      },
+      "contact": {
+        "title": "Contact Us",
+        "content": "If you have questions about this Privacy Policy or wish to exercise your rights, please contact us:",
+        "email": "Email: contact@dealcatcher.io",
+        "address": "Address: ul. Zlota 75A lok. 7, 00-819 Warsaw, Poland",
+        "complaint": "You also have the right to lodge a complaint with a supervisory authority. In Poland, this is the President of the Personal Data Protection Office (UODO)."
+      }
+    }
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated: January 16, 2026",
+    "sections": {
+      "intro": {
+        "title": "Introduction",
+        "content": "These Terms of Service (\"Terms\") govern your use of the dealcatcher.io website and services provided by Rapid Software House sp. z o.o. By accessing or using our website, you agree to be bound by these Terms."
+      },
+      "definitions": {
+        "title": "Definitions",
+        "items": [
+          {
+            "term": "Service Provider",
+            "definition": "Rapid Software House sp. z o.o., ul. Zlota 75A lok. 7, 00-819 Warsaw, Poland, KRS: 0001008811, NIP: 5273033283"
+          },
+          {
+            "term": "User",
+            "definition": "Any person or entity accessing or using our website or services"
+          },
+          {
+            "term": "Website",
+            "definition": "The dealcatcher.io website and all its subpages"
+          },
+          {
+            "term": "Services",
+            "definition": "Website design, development, hosting, maintenance, and Google Ads management services offered by the Service Provider"
+          }
+        ]
+      },
+      "services": {
+        "title": "Our Services",
+        "content": "DealCatcher provides the following services to businesses:",
+        "list": [
+          "Custom website design and development",
+          "Template-based website solutions",
+          "Website hosting and maintenance",
+          "WCAG compliance audits and remediation",
+          "Google Ads setup and management"
+        ],
+        "note": "Specific terms, pricing, and deliverables for each service are defined in individual service agreements."
+      },
+      "useOfWebsite": {
+        "title": "Use of Website",
+        "intro": "When using our website, you agree to:",
+        "rules": [
+          "Provide accurate and complete information in any forms",
+          "Not use the website for any unlawful purpose",
+          "Not attempt to gain unauthorized access to any part of the website",
+          "Not interfere with the proper functioning of the website",
+          "Not copy, modify, or distribute website content without permission"
+        ]
+      },
+      "intellectualProperty": {
+        "title": "Intellectual Property",
+        "content": "All content on this website, including but not limited to text, graphics, logos, images, and software, is the property of Rapid Software House sp. z o.o. or its licensors and is protected by intellectual property laws. You may not reproduce, distribute, or create derivative works without our express written consent."
+      },
+      "disclaimer": {
+        "title": "Disclaimer of Warranties",
+        "content": "The website and its content are provided \"as is\" without warranties of any kind, either express or implied. We do not warrant that the website will be uninterrupted, error-free, or free of viruses or other harmful components."
+      },
+      "liability": {
+        "title": "Limitation of Liability",
+        "content": "To the fullest extent permitted by law, Rapid Software House sp. z o.o. shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the website. Our total liability for any claims arising from your use of the website shall not exceed the amount you paid us, if any, in the 12 months preceding the claim."
+      },
+      "thirdParty": {
+        "title": "Third-Party Links",
+        "content": "Our website may contain links to third-party websites. We are not responsible for the content, privacy policies, or practices of any third-party websites. You access such websites at your own risk."
+      },
+      "governing": {
+        "title": "Governing Law",
+        "content": "These Terms shall be governed by and construed in accordance with the laws of Poland. Any disputes arising from these Terms shall be subject to the exclusive jurisdiction of the courts in Warsaw, Poland."
+      },
+      "changes": {
+        "title": "Changes to Terms",
+        "content": "We reserve the right to modify these Terms at any time. Changes will be effective immediately upon posting to the website. Your continued use of the website after any changes constitutes acceptance of the new Terms."
+      },
+      "contact": {
+        "title": "Contact Information",
+        "content": "For questions about these Terms, please contact us:",
+        "company": "Rapid Software House sp. z o.o.",
+        "address": "ul. Zlota 75A lok. 7, 00-819 Warsaw, Poland",
+        "email": "Email: contact@dealcatcher.io"
+      }
+    }
   }
 }
