@@ -5,6 +5,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import "../globals.css";
 import { i18n, type Locale } from "@/lib/i18n/config";
 import { CookieConsentBanner } from "@/components/shared/CookieConsentBanner";
+import { FloatingContact } from "@/components/shared/FloatingContact";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 
 // Body font - DM Sans from Google Fonts
@@ -83,6 +84,11 @@ export default async function LangLayout({
       >
         {children}
         <CookieConsentBanner lang={lang} dict={dict.cookieBanner} />
+        <FloatingContact
+          lang={lang}
+          dict={dict.floatingContact}
+          phoneNumber="+47 XXX XX XXX"
+        />
       </body>
       {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
         <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />

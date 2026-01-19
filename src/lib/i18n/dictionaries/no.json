@@ -6,14 +6,14 @@
     "contact": "Kontakt"
   },
   "hero": {
-    "badge": "Webdesign for Norge",
-    "titleStart": "Profesjonelle nettsider for",
-    "titleHighlight": "norske bedrifter",
-    "subtitle": "AI-sokeklarr. WCAG-kompatibel. Bygget for a konvertere besokende til kunder. Null stress fra din side.",
-    "ctaPrimary": "Jeg trenger en nettside",
-    "ctaSecondary": "Fiks min eksisterende side",
-    "trustLabel": "Bygget for fremtiden",
-    "trustItems": ["AI-sokoptimalisert", "WCAG 2.0 AA Kompatibel", "Klar for norsk lov"]
+    "badge": "Slutt a tape kunder",
+    "titleStart": "Nar noen soker etter din tjeneste —",
+    "titleHighlight": "finner de deg eller konkurrenten din?",
+    "subtitle": "Hver dag uten en profesjonell nettside gar potensielle kunder til konkurrentene dine. Bli funnet pa Google, AI-sok og overalt der kundene dine leter.",
+    "ctaPrimary": "Fa nettsiden min pa 7 dager",
+    "ctaSecondary": "Se hvor mye du taper",
+    "trustLabel": "Stolet pa av norske handverkere",
+    "trustItems": ["47 Nettsider Bygget", "8+ Leads/Maned i Snitt", "14-Dagers Pengene-Tilbake"]
   },
   "whatWeDo": {
     "badge": "Hva Vi Gjor",
@@ -157,11 +157,11 @@
     "legal": "Denne garantien er din rett i henhold til norsk forbrukerlov (Angrerettloven). Du kan trekke deg fra avtalen og motta full refusjon innen 14 dager etter at du har mottatt den fullforte tjenesten."
   },
   "cta": {
-    "titleStart": "Klar til a bygge din",
-    "titleHighlight": "tilstedevaerelse pa nett",
-    "subtitle": "La oss snakke om hvordan vi kan hjelpe bedriften din med a bli funnet pa nett. Bestill en gratis konsultasjon eller send oss en melding.",
-    "ctaPrimary": "Kom i gang",
-    "ctaSecondary": "Kontakt oss"
+    "titleStart": "Slutt a tape kunder til",
+    "titleHighlight": "konkurrentene dine",
+    "subtitle": "Hver dag du venter, finner potensielle kunder konkurrentene dine i stedet. Fa din profesjonelle nettside pa 7 dager uten risiko.",
+    "ctaPrimary": "Fa nettsiden min na",
+    "ctaSecondary": "Vi ringer deg innen 2 timer"
   },
   "footer": {
     "description": "Profesjonelle nettsider for norske bedrifter. AI-klare, WCAG-kompatible, bygget for a konvertere.",
@@ -503,6 +503,109 @@
         "address": "ul. Zlota 75A lok. 7, 00-819 Warszawa, Polen",
         "email": "E-post: contact@dealcatcher.io"
       }
+    }
+  },
+  "floatingContact": {
+    "whatsapp": "WhatsApp",
+    "call": "Ring na",
+    "quickContact": "Legg igjen nummeret ditt, vi ringer tilbake",
+    "phonePlaceholder": "Ditt telefonnummer",
+    "submit": "Ring meg tilbake",
+    "success": "Mottatt!",
+    "callbackPromise": "Vi ringer deg innen 2 timer"
+  },
+  "socialProof": {
+    "badge": "Stolet Pa Av Norske Handverkere",
+    "title": "Ekte resultater fra",
+    "titleHighlight": "ekte bedrifter",
+    "subtitle": "Ikke ta vart ord for det. Se hva norske handverkere og bedriftseiere sier om a jobbe med oss.",
+    "stats": {
+      "websites": { "value": "47", "label": "Nettsider bygget" },
+      "leads": { "value": "156", "label": "Leads generert denne maneden" },
+      "avgLeads": { "value": "8+", "label": "Snitt leads per klient/maned" },
+      "satisfaction": { "value": "100%", "label": "Tilfredshet" }
+    },
+    "testimonials": [
+      {
+        "name": "Petter Hansen",
+        "company": "Hansen Elektro AS",
+        "location": "Bergen",
+        "quote": "Som elektriker hadde jeg ikke tid til markedsforing. DealCatcher bygde nettsiden min pa 5 dager. Fikk min forste kunde fra Google etter bare 2 uker.",
+        "result": "8-10 henvendelser per maned",
+        "date": "Klient siden september 2025"
+      },
+      {
+        "name": "Erik Johansen",
+        "company": "Johansen Rorlegger",
+        "location": "Oslo",
+        "quote": "Jeg var skeptisk til a betale pa forhand, men 14-dagers garantien gjorde det risikofritt. Beste beslutningen jeg tok for bedriften i ar.",
+        "result": "12 nye kunder pa 3 maneder",
+        "date": "Klient siden oktober 2025"
+      },
+      {
+        "name": "Lars Nilsen",
+        "company": "Nilsen Snekker",
+        "location": "Trondheim",
+        "quote": "Endelig en nettside jeg kan vaere stolt av. Kundene mine finner meg pa Google na i stedet for at jeg ma jage etter dem.",
+        "result": "Forste side Google-rangering",
+        "date": "Klient siden november 2025"
+      }
+    ],
+    "cta": "Bli med dem"
+  },
+  "roiCalculator": {
+    "badge": "ROI-Kalkulator",
+    "title": "Beregn dine",
+    "titleHighlight": "potensielle inntekter",
+    "subtitle": "Se hvor mye en profesjonell nettside kan generere for bedriften din.",
+    "avgJobLabel": "Gjennomsnittlig jobbverdi (NOK)",
+    "avgJobPlaceholder": "5000",
+    "monthlyLeadsLabel": "Forventede manedlige leads",
+    "conversionLabel": "Konverteringsrate (%)",
+    "results": {
+      "monthlyRevenue": "Manedlig inntektspotensial",
+      "yearlyRevenue": "Arlig inntektspotensial",
+      "roi": "Avkastning pa Investering",
+      "investmentLabel": "Total investering forste ar",
+      "roiExplanation": "Basert pa dine tall: en kunde betaler for hele nettside-investeringen din"
+    },
+    "cta": "Begynn a generere leads",
+    "disclaimer": "Resultater kan variere. Kalkulatoren viser potensial basert pa bransjegjennomsnitt."
+  },
+  "priceComparison": {
+    "badge": "Transparent Prising",
+    "title": "3x billigere enn byraer,",
+    "titleHighlight": "samme kvalitet",
+    "subtitle": "Sammenlign prisene vare med tradisjonelle webbyraer og frilansere.",
+    "comparison": [
+      {
+        "provider": "Tradisjonelt Byra",
+        "price": "25 000+ NOK",
+        "time": "4-8 uker",
+        "meetings": "5+ moter",
+        "support": "Ekstra kostnad"
+      },
+      {
+        "provider": "Frilanser",
+        "price": "8 000-15 000 NOK",
+        "time": "2-4 uker",
+        "meetings": "Flere samtaler",
+        "support": "Begrenset"
+      },
+      {
+        "provider": "DealCatcher",
+        "price": "10 000 NOK",
+        "time": "5-7 dager",
+        "meetings": "1 samtale",
+        "support": "Inkludert",
+        "highlight": true
+      }
+    ],
+    "labels": {
+      "price": "Pris",
+      "time": "Leveringstid",
+      "meetings": "Moter pakrevd",
+      "support": "Lopende support"
     }
   },
   "withdrawal": {

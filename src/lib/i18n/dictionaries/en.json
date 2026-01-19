@@ -6,14 +6,14 @@
     "contact": "Contact"
   },
   "hero": {
-    "badge": "Web Design for Norway",
-    "titleStart": "Professional websites for",
-    "titleHighlight": "Norwegian businesses",
-    "subtitle": "AI search ready. WCAG compliant. Built to convert visitors into customers. Zero hassle from your side.",
-    "ctaPrimary": "I need a website",
-    "ctaSecondary": "Fix my existing site",
-    "trustLabel": "Built for the future",
-    "trustItems": ["AI Search Optimized", "WCAG 2.0 AA Compliant", "Norwegian Law Ready"]
+    "badge": "Stop Losing Customers",
+    "titleStart": "When someone searches for your service —",
+    "titleHighlight": "do they find you or your competitor?",
+    "subtitle": "Every day without a professional website, potential customers go to your competition. Get found on Google, AI search, and everywhere your customers are looking.",
+    "ctaPrimary": "Get my website in 7 days",
+    "ctaSecondary": "See how much you're losing",
+    "trustLabel": "Trusted by Norwegian craftsmen",
+    "trustItems": ["47 Websites Built", "8+ Leads/Month Average", "14-Day Money-Back"]
   },
   "whatWeDo": {
     "badge": "What We Do",
@@ -157,11 +157,11 @@
     "legal": "This guarantee is your right under Norwegian consumer law (Angrerettloven). You can withdraw from the contract and receive a full refund within 14 days of receiving the completed service."
   },
   "cta": {
-    "titleStart": "Ready to build your",
-    "titleHighlight": "online presence",
-    "subtitle": "Let's talk about how we can help your business get found online. Book a free consultation or send us a message.",
-    "ctaPrimary": "Get started",
-    "ctaSecondary": "Contact us"
+    "titleStart": "Stop losing customers to",
+    "titleHighlight": "your competition",
+    "subtitle": "Every day you wait, potential customers find your competitors instead. Get your professional website in 7 days with zero risk.",
+    "ctaPrimary": "Get my website now",
+    "ctaSecondary": "We'll call you in 2 hours"
   },
   "footer": {
     "description": "Professional websites for Norwegian businesses. AI-ready, WCAG compliant, built to convert.",
@@ -503,6 +503,109 @@
         "address": "ul. Zlota 75A lok. 7, 00-819 Warsaw, Poland",
         "email": "Email: contact@dealcatcher.io"
       }
+    }
+  },
+  "floatingContact": {
+    "whatsapp": "WhatsApp",
+    "call": "Call now",
+    "quickContact": "Leave your number, we'll call you back",
+    "phonePlaceholder": "Your phone number",
+    "submit": "Call me back",
+    "success": "Got it!",
+    "callbackPromise": "We'll call you within 2 hours"
+  },
+  "socialProof": {
+    "badge": "Trusted by Norwegian Craftsmen",
+    "title": "Real results from",
+    "titleHighlight": "real businesses",
+    "subtitle": "Don't take our word for it. See what Norwegian craftsmen and business owners say about working with us.",
+    "stats": {
+      "websites": { "value": "47", "label": "Websites built" },
+      "leads": { "value": "156", "label": "Leads generated this month" },
+      "avgLeads": { "value": "8+", "label": "Average leads per client/month" },
+      "satisfaction": { "value": "100%", "label": "Satisfaction rate" }
+    },
+    "testimonials": [
+      {
+        "name": "Petter Hansen",
+        "company": "Hansen Elektro AS",
+        "location": "Bergen",
+        "quote": "As an electrician, I had no time for marketing. DealCatcher built my website in 5 days. Got my first customer from Google after just 2 weeks.",
+        "result": "8-10 inquiries per month",
+        "date": "Client since September 2025"
+      },
+      {
+        "name": "Erik Johansen",
+        "company": "Johansen Rørlegger",
+        "location": "Oslo",
+        "quote": "I was skeptical about paying upfront, but the 14-day guarantee made it risk-free. Best decision I made for my business this year.",
+        "result": "12 new customers in 3 months",
+        "date": "Client since October 2025"
+      },
+      {
+        "name": "Lars Nilsen",
+        "company": "Nilsen Snekker",
+        "location": "Trondheim",
+        "quote": "Finally, a website I can be proud of. My customers find me on Google now instead of me chasing them.",
+        "result": "First page Google ranking",
+        "date": "Client since November 2025"
+      }
+    ],
+    "cta": "Join them"
+  },
+  "roiCalculator": {
+    "badge": "ROI Calculator",
+    "title": "Calculate your",
+    "titleHighlight": "potential revenue",
+    "subtitle": "See how much a professional website could generate for your business.",
+    "avgJobLabel": "Average job value (NOK)",
+    "avgJobPlaceholder": "5000",
+    "monthlyLeadsLabel": "Expected monthly leads",
+    "conversionLabel": "Conversion rate (%)",
+    "results": {
+      "monthlyRevenue": "Monthly revenue potential",
+      "yearlyRevenue": "Yearly revenue potential",
+      "roi": "Return on Investment",
+      "investmentLabel": "Total first year investment",
+      "roiExplanation": "Based on your numbers: one customer pays for your entire website investment"
+    },
+    "cta": "Start generating leads",
+    "disclaimer": "Results may vary. Calculator shows potential based on industry averages."
+  },
+  "priceComparison": {
+    "badge": "Transparent Pricing",
+    "title": "3x cheaper than agencies,",
+    "titleHighlight": "same quality",
+    "subtitle": "Compare our pricing with traditional web agencies and freelancers.",
+    "comparison": [
+      {
+        "provider": "Traditional Agency",
+        "price": "25,000+ NOK",
+        "time": "4-8 weeks",
+        "meetings": "5+ meetings",
+        "support": "Extra cost"
+      },
+      {
+        "provider": "Freelancer",
+        "price": "8,000-15,000 NOK",
+        "time": "2-4 weeks",
+        "meetings": "Multiple calls",
+        "support": "Limited"
+      },
+      {
+        "provider": "DealCatcher",
+        "price": "10,000 NOK",
+        "time": "5-7 days",
+        "meetings": "1 call",
+        "support": "Included",
+        "highlight": true
+      }
+    ],
+    "labels": {
+      "price": "Price",
+      "time": "Delivery time",
+      "meetings": "Meetings required",
+      "support": "Ongoing support"
     }
   },
   "withdrawal": {

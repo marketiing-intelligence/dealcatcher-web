@@ -34,6 +34,18 @@ const ContactSection = dynamic(
   () => import("@/components/sections/home/ContactSection").then((mod) => mod.ContactSection),
   { ssr: true }
 );
+const SocialProofSection = dynamic(
+  () => import("@/components/sections/home/SocialProofSection").then((mod) => mod.SocialProofSection),
+  { ssr: true }
+);
+const ROICalculator = dynamic(
+  () => import("@/components/sections/home/ROICalculator").then((mod) => mod.ROICalculator),
+  { ssr: true }
+);
+const PriceComparisonSection = dynamic(
+  () => import("@/components/sections/home/PriceComparisonSection").then((mod) => mod.PriceComparisonSection),
+  { ssr: true }
+);
 
 export default async function Home({
   params,
@@ -48,11 +60,14 @@ export default async function Home({
       <Navbar lang={lang} dict={dict} />
       <main className="pt-16 md:pt-20">
         <HeroSection lang={lang} dict={dict.hero} />
+        <SocialProofSection dict={dict.socialProof} />
         <WhatWeDoSection dict={dict.whatWeDo} />
+        <PriceComparisonSection dict={dict.priceComparison} />
+        <GuaranteeSection lang={lang} dict={dict.guarantee} />
         <WhoWeHelpSection lang={lang} dict={dict.whoWeHelp} />
+        <ROICalculator lang={lang} dict={dict.roiCalculator} />
         <PortfolioPreviewSection lang={lang} dict={dict.portfolio} />
         <WhyUsSection dict={dict.whyUs} />
-        <GuaranteeSection lang={lang} dict={dict.guarantee} />
         <ContactSection lang={lang} dict={dict.contactPage} />
         <CTASection lang={lang} dict={dict.cta} />
       </main>
