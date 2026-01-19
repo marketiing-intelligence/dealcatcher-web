@@ -18,6 +18,7 @@ const clashDisplay = localFont({
   variable: "--font-clash-display",
   display: "swap",
   fallback: ["system-ui", "sans-serif"],
+  preload: true,
 });
 
 export async function generateStaticParams() {
