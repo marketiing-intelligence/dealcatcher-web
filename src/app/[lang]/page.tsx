@@ -22,6 +22,10 @@ const WhyUsSection = dynamic(
   () => import("@/components/sections/home/WhyUsSection").then((mod) => mod.WhyUsSection),
   { ssr: true }
 );
+const GuaranteeSection = dynamic(
+  () => import("@/components/sections/home/GuaranteeSection").then((mod) => mod.GuaranteeSection),
+  { ssr: true }
+);
 const CTASection = dynamic(
   () => import("@/components/sections/home/CTASection").then((mod) => mod.CTASection),
   { ssr: true }
@@ -48,6 +52,7 @@ export default async function Home({
         <WhoWeHelpSection lang={lang} dict={dict.whoWeHelp} />
         <PortfolioPreviewSection lang={lang} dict={dict.portfolio} />
         <WhyUsSection dict={dict.whyUs} />
+        <GuaranteeSection lang={lang} dict={dict.guarantee} />
         <ContactSection lang={lang} dict={dict.contactPage} />
         <CTASection lang={lang} dict={dict.cta} />
       </main>

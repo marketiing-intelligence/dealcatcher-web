@@ -103,6 +103,118 @@ export default async function TermsPage({
               </p>
             </section>
 
+            {/* Withdrawal Right (Angrerett) */}
+            {terms.sections.withdrawalRight && (
+              <section className="mb-12 bg-green-500/5 border border-green-500/20 rounded-lg p-6">
+                <h2 className="font-display text-2xl font-semibold text-foreground mb-4">
+                  {terms.sections.withdrawalRight.title}
+                </h2>
+                <p className="text-muted-foreground mb-4">
+                  {terms.sections.withdrawalRight.intro}
+                </p>
+                <p className="text-muted-foreground mb-6">
+                  {terms.sections.withdrawalRight.deadline}
+                </p>
+
+                {/* How to exercise */}
+                <div className="mb-6">
+                  <h3 className="text-lg font-semibold text-foreground mb-2">
+                    {terms.sections.withdrawalRight.howTo.title}
+                  </h3>
+                  <p className="text-muted-foreground mb-2">
+                    {terms.sections.withdrawalRight.howTo.content}
+                  </p>
+                  <ul className="space-y-2">
+                    {terms.sections.withdrawalRight.howTo.methods.map(
+                      (method: string, index: number) => (
+                        <li
+                          key={index}
+                          className="text-muted-foreground flex items-center gap-2"
+                        >
+                          <span className="w-1.5 h-1.5 bg-green-500 rounded-full" />
+                          {method}
+                        </li>
+                      )
+                    )}
+                  </ul>
+                </div>
+
+                {/* Effects */}
+                <div className="mb-6">
+                  <h3 className="text-lg font-semibold text-foreground mb-2">
+                    {terms.sections.withdrawalRight.effects.title}
+                  </h3>
+                  <p className="text-muted-foreground">
+                    {terms.sections.withdrawalRight.effects.content}
+                  </p>
+                </div>
+
+                {/* Exceptions */}
+                <div>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">
+                    {terms.sections.withdrawalRight.exceptions.title}
+                  </h3>
+                  <p className="text-muted-foreground">
+                    {terms.sections.withdrawalRight.exceptions.content}
+                  </p>
+                </div>
+              </section>
+            )}
+
+            {/* Subscription Terms */}
+            {terms.sections.subscriptionTerms && (
+              <section className="mb-12">
+                <h2 className="font-display text-2xl font-semibold text-foreground mb-4">
+                  {terms.sections.subscriptionTerms.title}
+                </h2>
+                <p className="text-muted-foreground mb-6">
+                  {terms.sections.subscriptionTerms.intro}
+                </p>
+
+                <div className="space-y-6">
+                  {/* No Minimum Commitment */}
+                  <div className="bg-card border border-border rounded-lg p-4">
+                    <h3 className="text-lg font-semibold text-foreground mb-2">
+                      {terms.sections.subscriptionTerms.commitment.title}
+                    </h3>
+                    <p className="text-muted-foreground">
+                      {terms.sections.subscriptionTerms.commitment.content}
+                    </p>
+                  </div>
+
+                  {/* Cancellation */}
+                  <div className="bg-card border border-border rounded-lg p-4">
+                    <h3 className="text-lg font-semibold text-foreground mb-2">
+                      {terms.sections.subscriptionTerms.cancellation.title}
+                    </h3>
+                    <p className="text-muted-foreground">
+                      {terms.sections.subscriptionTerms.cancellation.content}
+                    </p>
+                  </div>
+
+                  {/* Auto Renewal */}
+                  <div className="bg-card border border-border rounded-lg p-4">
+                    <h3 className="text-lg font-semibold text-foreground mb-2">
+                      {terms.sections.subscriptionTerms.autoRenewal.title}
+                    </h3>
+                    <p className="text-muted-foreground">
+                      {terms.sections.subscriptionTerms.autoRenewal.content}
+                    </p>
+                  </div>
+
+                  {/* Price Changes */}
+                  <div className="bg-card border border-border rounded-lg p-4">
+                    <h3 className="text-lg font-semibold text-foreground mb-2">
+                      {terms.sections.subscriptionTerms.priceChanges.title}
+                    </h3>
+                    <p className="text-muted-foreground">
+                      {terms.sections.subscriptionTerms.priceChanges.content}
+                    </p>
+                  </div>
+                </div>
+              </section>
+            )}
+
             {/* Use of Website */}
             <section className="mb-12">
               <h2 className="font-display text-2xl font-semibold text-foreground mb-4">
@@ -165,6 +277,18 @@ export default async function TermsPage({
                 {terms.sections.thirdParty.content}
               </p>
             </section>
+
+            {/* Consumer Rights */}
+            {terms.sections.consumerRights && (
+              <section className="mb-12 bg-primary/5 border border-primary/20 rounded-lg p-6">
+                <h2 className="font-display text-2xl font-semibold text-foreground mb-4">
+                  {terms.sections.consumerRights.title}
+                </h2>
+                <p className="text-muted-foreground">
+                  {terms.sections.consumerRights.content}
+                </p>
+              </section>
+            )}
 
             {/* Governing Law */}
             <section className="mb-12">

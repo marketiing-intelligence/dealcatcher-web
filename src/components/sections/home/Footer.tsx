@@ -15,6 +15,8 @@ interface FooterProps {
     copyright: string;
     privacy: string;
     terms: string;
+    cookieSettings?: string;
+    withdrawal?: string;
   };
 }
 
@@ -86,13 +88,30 @@ export function Footer({ lang, dict }: FooterProps) {
           <p className="text-sm text-muted-foreground">
             &copy; {currentYear} DealCatcher. {dict.copyright}
           </p>
-          <div className="flex gap-6 text-sm text-muted-foreground">
+          <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
             <Link href={`/${lang}/privacy`} className="hover:text-foreground transition-colors">
               {dict.privacy}
             </Link>
             <Link href={`/${lang}/terms`} className="hover:text-foreground transition-colors">
               {dict.terms}
             </Link>
+            {dict.withdrawal && (
+              <Link href={`/${lang}/withdrawal`} className="hover:text-foreground transition-colors">
+                {dict.withdrawal}
+              </Link>
+            )}
+            {dict.cookieSettings && (
+              <button
+                type="button"
+                onClick={() => {
+                  localStorage.removeItem("dealcatcher-cookie-consent");
+                  window.location.reload();
+                }}
+                className="hover:text-foreground transition-colors"
+              >
+                {dict.cookieSettings}
+              </button>
+            )}
           </div>
         </div>
       </Container>

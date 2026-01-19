@@ -4,6 +4,8 @@ import localFont from "next/font/local";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import "../globals.css";
 import { i18n, type Locale } from "@/lib/i18n/config";
+import { CookieConsentBanner } from "@/components/shared/CookieConsentBanner";
+import { getDictionary } from "@/lib/i18n/dictionaries";
 
 // Body font - DM Sans from Google Fonts
 const dmSans = DM_Sans({
@@ -72,6 +74,7 @@ export default async function LangLayout({
 }) {
   const { lang: langParam } = await params;
   const lang = langParam as Locale;
+  const dict = await getDictionary(lang);
 
   return (
     <html lang={lang} className="dark">
@@ -79,6 +82,7 @@ export default async function LangLayout({
         className={`${dmSans.variable} ${clashDisplay.variable} min-h-screen bg-background font-sans antialiased`}
       >
         {children}
+        <CookieConsentBanner lang={lang} dict={dict.cookieBanner} />
       </body>
       {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
         <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />

@@ -159,6 +159,15 @@ export default async function PrivacyPage({
                 </div>
               </div>
 
+              {/* Cookie consent info */}
+              {privacy.sections.cookies.consent && (
+                <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 mt-4">
+                  <p className="text-muted-foreground">
+                    {privacy.sections.cookies.consent}
+                  </p>
+                </div>
+              )}
+
               <p className="text-muted-foreground mt-4">
                 {privacy.sections.cookies.manage}
               </p>

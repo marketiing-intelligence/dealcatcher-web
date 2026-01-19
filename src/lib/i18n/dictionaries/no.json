@@ -110,6 +110,52 @@
       }
     ]
   },
+  "guarantee": {
+    "badge": "Risikofritt",
+    "title": "14 Dagers Fornoydhetsgaranti",
+    "subtitle": "Vi bygger nettsiden din forst. Er du ikke fornoyd, betaler du ingenting.",
+    "description": "Vi er sa sikre pa at du vil elske din nye nettside at vi tilbyr full 14-dagers fornoydhetsgaranti. Vi bygger hele nettsiden din, viser deg resultatet, og forst da bestemmer du. Er det ikke det du onsket – ingen betaling krevet.",
+    "features": [
+      {
+        "title": "Se For Du Betaler",
+        "description": "Vi bygger hele nettsiden din og presenterer den for deg for noen betaling forfaller."
+      },
+      {
+        "title": "14 Dager a Bestemme Seg",
+        "description": "Ta deg god tid. Du har 14 dager fra levering til a vurdere om nettsiden oppfyller forventningene dine."
+      },
+      {
+        "title": "Full Refusjon",
+        "description": "Ikke fornoyd? Bare gi oss beskjed og ga – ingen sporsmal, ingen betaling krevet."
+      },
+      {
+        "title": "Revisjoner Inkludert",
+        "description": "Vi jobber med deg for a fa det riktig. Rimelige revisjoner er inkludert uten ekstra kostnad."
+      }
+    ],
+    "howItWorks": {
+      "title": "Slik Fungerer Det",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Vi Bygger",
+          "description": "Fyll ut en brief (15 min) og vi lager hele nettsiden din."
+        },
+        {
+          "step": "2",
+          "title": "Du Vurderer",
+          "description": "Se den ferdige nettsiden din og be om eventuelle endringer du trenger."
+        },
+        {
+          "step": "3",
+          "title": "Du Bestemmer",
+          "description": "Fornoyd? Vi publiserer. Ikke fornoyd? Du gar gratis."
+        }
+      ]
+    },
+    "cta": "Start risikofritt",
+    "legal": "Denne garantien er din rett i henhold til norsk forbrukerlov (Angrerettloven). Du kan trekke deg fra avtalen innen 14 dager etter at du har mottatt den fullforte tjenesten."
+  },
   "cta": {
     "titleStart": "Klar til a bygge din",
     "titleHighlight": "tilstedevaerelse pa nett",
@@ -124,8 +170,30 @@
     "newWebsite": "Ny Nettside",
     "wcagCompliance": "WCAG Samsvar",
     "copyright": "Alle rettigheter reservert.",
-    "privacy": "Personvernerkaering",
-    "terms": "Vilkar for Bruk"
+    "privacy": "Personvernerklæring",
+    "terms": "Vilkar for Bruk",
+    "cookieSettings": "Informasjonskapselinnstillinger",
+    "withdrawal": "Angreskjema"
+  },
+  "cookieBanner": {
+    "title": "Vi verdsetter personvernet ditt",
+    "description": "Vi bruker informasjonskapsler for a forbedre nettleseropplevelsen din og analysere trafikken var. Nodvendige informasjonskapsler er nodvendige for at nettstedet skal fungere. Analyseinformasjonskapsler hjelper oss a forsta hvordan du bruker nettstedet vart.",
+    "acceptAll": "Godta alle",
+    "acceptEssential": "Kun nodvendige",
+    "customize": "Tilpass",
+    "savePreferences": "Lagre preferanser",
+    "categories": {
+      "essential": {
+        "title": "Nodvendige informasjonskapsler",
+        "description": "Disse informasjonskapslene er strengt nodvendige for at nettstedet skal fungere og kan ikke deaktiveres."
+      },
+      "analytics": {
+        "title": "Analyseinformasjonskapsler",
+        "description": "Disse informasjonskapslene hjelper oss a forsta hvordan besokende samhandler med nettstedet vart ved a samle inn anonym informasjon."
+      }
+    },
+    "privacyLink": "Les mer i var",
+    "privacyLinkText": "Personvernerklæring"
   },
   "contactPage": {
     "badge": "Ta Kontakt",
@@ -161,8 +229,8 @@
     }
   },
   "privacy": {
-    "title": "Personvernerkaering",
-    "lastUpdated": "Sist oppdatert: 16. januar 2026",
+    "title": "Personvernerklæring",
+    "lastUpdated": "Sist oppdatert: 19. januar 2026",
     "sections": {
       "intro": {
         "title": "Introduksjon",
@@ -191,18 +259,19 @@
       },
       "cookies": {
         "title": "Informasjonskapsler og Analyse",
-        "content": "Vi bruker informasjonskapsler og lignende sporingsteknologier for a samle inn informasjon om nettleseraktivitetene dine. Dette inkluderer:",
+        "content": "Vi bruker informasjonskapsler og lignende sporingsteknologier for a samle inn informasjon om nettleseraktivitetene dine. Vi vil be om ditt samtykke for vi plasserer ikke-nodvendige informasjonskapsler.",
         "types": {
           "essential": {
             "title": "Nodvendige Informasjonskapsler",
-            "description": "Nodvendig for at nettstedet skal fungere riktig. Kan ikke deaktiveres."
+            "description": "Nodvendig for at nettstedet skal fungere riktig. Disse informasjonskapslene er strengt nodvendige og krever ikke samtykke."
           },
           "analytics": {
             "title": "Analyseinformasjonskapsler (Google Analytics)",
-            "description": "Hjelper oss a forsta hvordan besokende samhandler med nettstedet vart. Du kan velge bort Google Analytics ved a installere Google Analytics Opt-out Browser Add-on."
+            "description": "Hjelper oss a forsta hvordan besokende samhandler med nettstedet vart. Disse informasjonskapslene plasseres kun etter at du gir ditt uttrykkelige samtykke gjennom vart informasjonskapselbanner."
           }
         },
-        "manage": "Du kan administrere informasjonskapselpreferanser gjennom nettleserinnstillingene. Merk at deaktivering av visse informasjonskapsler kan pavirke nettstedets funksjonalitet."
+        "consent": "Nar du forst besoker nettstedet vart, vil du se et informasjonskapselbanner som ber om ditt samtykke. Du kan velge a godta eller avvise analyseinformasjonskapsler. Valget ditt vil bli husket for fremtidige besok.",
+        "manage": "Du kan endre informasjonskapselpreferansene dine nar som helst ved a klikke pa lenken 'Informasjonskapselinnstillinger' i bunnteksten pa nettstedet vart. Du kan ogsa administrere informasjonskapsler gjennom nettleserinnstillingene."
       },
       "purpose": {
         "title": "Hvordan Vi Bruker Informasjonen Din",
@@ -304,7 +373,7 @@
   },
   "terms": {
     "title": "Vilkar for Bruk",
-    "lastUpdated": "Sist oppdatert: 16. januar 2026",
+    "lastUpdated": "Sist oppdatert: 19. januar 2026",
     "sections": {
       "intro": {
         "title": "Introduksjon",
@@ -318,8 +387,12 @@
             "definition": "Rapid Software House sp. z o.o., ul. Zlota 75A lok. 7, 00-819 Warszawa, Polen, KRS: 0001008811, NIP: 5273033283"
           },
           {
-            "term": "Bruker",
+            "term": "Bruker/Kunde",
             "definition": "Enhver person eller enhet som far tilgang til eller bruker nettstedet eller tjenestene vare"
+          },
+          {
+            "term": "Forbruker",
+            "definition": "En fysisk person som handler for formal utenfor sin naringsvirksomhet"
           },
           {
             "term": "Nettsted",
@@ -333,7 +406,7 @@
       },
       "services": {
         "title": "Vare Tjenester",
-        "content": "DealCatcher tilbyr folgende tjenester til bedrifter:",
+        "content": "DealCatcher tilbyr folgende tjenester til bedrifter og enkeltpersoner:",
         "list": [
           "Tilpasset nettstedsdesign og -utvikling",
           "Malbaserte nettstedslosninger",
@@ -342,6 +415,47 @@
           "Google Ads-oppsett og -administrasjon"
         ],
         "note": "Spesifikke vilkar, priser og leveranser for hver tjeneste defineres i individuelle tjenesteavtaler."
+      },
+      "withdrawalRight": {
+        "title": "Angrerett",
+        "intro": "Hvis du er forbruker, har du rett til a trekke deg fra en fjernsalgsavtale innen 14 dager uten a oppgi noen grunn, i samsvar med angrerettloven.",
+        "deadline": "Angrefristen utloper 14 dager fra den dagen den fullforte tjenesten leveres til deg.",
+        "howTo": {
+          "title": "Slik Utover Du Angreretten",
+          "content": "For a utove angreretten ma du informere oss om beslutningen din om a trekke deg fra avtalen ved en utvetydig erklaering. Du kan gjore dette ved:",
+          "methods": [
+            "E-post til: contact@dealcatcher.io",
+            "Bruke angreskjemaet tilgjengelig pa nettstedet vart"
+          ]
+        },
+        "effects": {
+          "title": "Virkninger av Tilbaketrekking",
+          "content": "Hvis du trekker deg fra avtalen, skal vi tilbakebetale alle betalinger mottatt fra deg uten unodik forsinkelse og senest 14 dager fra den dagen vi blir informert om beslutningen din om a trekke deg. Vi vil gjennomfore slik tilbakebetaling med samme betalingsmiddel som du brukte for den opprinnelige transaksjonen, med mindre du uttrykkelig har samtykket til noe annet."
+        },
+        "exceptions": {
+          "title": "Unntak",
+          "content": "Angreretten gjelder ikke hvis du uttrykkelig har samtykket til at tjenesten pabegynnes i angreperioden og erkjent at du vil miste angreretten nar tjenesten er fullt utfort."
+        }
+      },
+      "subscriptionTerms": {
+        "title": "Abonnementsvilkar",
+        "intro": "Denne delen gjelder vare manedlige abonnementstjenester (Basic og Premium hostingplaner).",
+        "commitment": {
+          "title": "Ingen Bindingstid",
+          "content": "Vare manedlige planer har ingen bindingstid. Du kan si opp nar som helst."
+        },
+        "cancellation": {
+          "title": "Oppsigelse",
+          "content": "Du kan si opp abonnementet ditt nar som helst ved a kontakte oss pa contact@dealcatcher.io. Oppsigelsen trer i kraft ved slutten av gjeldende faktureringsperiode. Du vil fortsatt ha tilgang til tjenesten til slutten av den betalte perioden."
+        },
+        "autoRenewal": {
+          "title": "Automatisk Fornyelse",
+          "content": "Abonnementer fornyes automatisk hver maned til de sies opp. Du vil bli belastet ved begynnelsen av hver faktureringsperiode med betalingsmetoden pa fil. Ved a abonnere autoriserer du oss til a belaste gjeldende abonnementsavgift."
+        },
+        "priceChanges": {
+          "title": "Prisendringer",
+          "content": "Vi kan endre abonnementspriser med 30 dagers varsel. Du vil bli varslet via e-post for eventuelle prisendringer trer i kraft. Fortsatt bruk av tjenesten etter prisendringen utgjor aksept av den nye prisen."
+        }
       },
       "useOfWebsite": {
         "title": "Bruk av Nettstedet",
@@ -360,23 +474,27 @@
       },
       "disclaimer": {
         "title": "Ansvarsfraskrivelse",
-        "content": "Nettstedet og innholdet leveres \"som de er\" uten garantier av noe slag, verken uttrykte eller underforstattes. Vi garanterer ikke at nettstedet vil vaere uavbrutt, feilfritt eller fritt for virus eller andre skadelige komponenter."
+        "content": "Nettstedet og innholdet leveres \"som de er\" uten garantier av noe slag, verken uttrykte eller underforstattes. Vi garanterer ikke at nettstedet vil vaere uavbrutt, feilfritt eller fritt for virus eller andre skadelige komponenter. Denne ansvarsfraskrivelsen pavirker ikke dine lovbestemte rettigheter som forbruker."
       },
       "liability": {
         "title": "Ansvarsbegrensning",
-        "content": "I den grad det er tillatt ved lov, skal Rapid Software House sp. z o.o. ikke vaere ansvarlig for indirekte, tilfeldige, spesielle, folge- eller straffeskader som oppstar av eller er relatert til din bruk av nettstedet. Vart totale ansvar for eventuelle krav som oppstar fra din bruk av nettstedet skal ikke overstige belopet du betalte oss, om noe, i de 12 manedene for kravet."
+        "content": "I den grad det er tillatt ved lov, skal Rapid Software House sp. z o.o. ikke vaere ansvarlig for indirekte, tilfeldige, spesielle, folge- eller straffeskader som oppstar av eller er relatert til din bruk av nettstedet. Vart totale ansvar for eventuelle krav som oppstar fra din bruk av nettstedet skal ikke overstige belopet du betalte oss, om noe, i de 12 manedene for kravet. Denne begrensningen gjelder ikke ansvar som ikke kan utelukkes eller begrenses under gjeldende forbrukervernlovgivning."
       },
       "thirdParty": {
         "title": "Tredjepartslenker",
         "content": "Nettstedet vart kan inneholde lenker til tredjepartsnettstedter. Vi er ikke ansvarlige for innholdet, personvernreglene eller praksisene til tredjepartsnettstedter. Du far tilgang til slike nettstedter pa egen risiko."
       },
+      "consumerRights": {
+        "title": "Forbrukerrettigheter",
+        "content": "Hvis du er forbruker, har du lovbestemte rettigheter under norsk lov som ikke kan fraskrives ved avtale. Disse inkluderer rettigheter under forbrukerkjopsloven, angrerettloven og markedsforingsloven. Ingenting i disse vilkarene skal pavirke dine lovbestemte forbrukerrettigheter."
+      },
       "governing": {
-        "title": "Gjeldende Lov",
-        "content": "Disse vilkarene skal reguleres av og tolkes i samsvar med polsk lov. Eventuelle tvister som oppstar fra disse vilkarene skal vaere underlagt den eksklusive jurisdiksjonen til domstolene i Warszawa, Polen."
+        "title": "Gjeldende Lov og Tvister",
+        "content": "Disse vilkarene skal reguleres av og tolkes i samsvar med polsk lov. For bedriftskunder skal eventuelle tvister som oppstar fra disse vilkarene vaere underlagt den eksklusive jurisdiksjonen til domstolene i Warszawa, Polen. Hvis du imidlertid er forbruker bosatt i Norge, beholder du retten til a reise sak i Norge og fa norsk forbrukervernlovgivning til a gjelde for saker omfattet av slik lovgivning, i samsvar med gjeldende EU-regelverk."
       },
       "changes": {
         "title": "Endringer i Vilkarene",
-        "content": "Vi forbeholder oss retten til a endre disse vilkarene nar som helst. Endringer vil tre i kraft umiddelbart etter publisering pa nettstedet. Din fortsatte bruk av nettstedet etter eventuelle endringer utgjor aksept av de nye vilkarene."
+        "content": "Vi forbeholder oss retten til a endre disse vilkarene nar som helst. Vi vil varsle eksisterende kunder om vesentlige endringer via e-post minst 14 dager for de trer i kraft. Endringer vil tre i kraft umiddelbart for nye kunder ved publisering pa nettstedet. Din fortsatte bruk av nettstedet etter eventuelle endringer utgjor aksept av de nye vilkarene."
       },
       "contact": {
         "title": "Kontaktinformasjon",
@@ -385,6 +503,23 @@
         "address": "ul. Zlota 75A lok. 7, 00-819 Warszawa, Polen",
         "email": "E-post: contact@dealcatcher.io"
       }
+    }
+  },
+  "withdrawal": {
+    "title": "Angreskjema",
+    "subtitle": "Bruk dette skjemaet for a trekke deg fra avtalen innen 14 dager",
+    "form": {
+      "recipient": "Til: Rapid Software House sp. z o.o., ul. Zlota 75A lok. 7, 00-819 Warszawa, Polen, contact@dealcatcher.io",
+      "declaration": "Jeg/vi gir herved melding om at jeg/vi trekker meg/oss fra min/var avtale om levering av folgende tjeneste:",
+      "serviceLabel": "Tjenestebeskrivelse",
+      "orderedOnLabel": "Bestilt den / Mottatt den",
+      "nameLabel": "Navn pa forbruker(e)",
+      "addressLabel": "Adresse til forbruker(e)",
+      "dateLabel": "Dato",
+      "signatureLabel": "Signatur (kun ved innsending pa papir)",
+      "submit": "Send tilbaketrekking",
+      "success": "Din tilbaketrekking er sendt. Vi vil behandle den innen 14 dager.",
+      "error": "En feil oppstod. Vennligst prov igjen eller kontakt oss direkte pa contact@dealcatcher.io."
     }
   }
 }

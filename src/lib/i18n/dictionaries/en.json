@@ -110,6 +110,52 @@
       }
     ]
   },
+  "guarantee": {
+    "badge": "Risk-Free",
+    "title": "14-Day Satisfaction Guarantee",
+    "subtitle": "We build your website first. If you're not satisfied, you pay nothing.",
+    "description": "We're so confident you'll love your new website that we offer a full 14-day satisfaction guarantee. We build your complete website, show you the result, and only then you decide. If it's not what you wanted – no payment required.",
+    "features": [
+      {
+        "title": "See Before You Pay",
+        "description": "We build your complete website and present it to you before any payment is due."
+      },
+      {
+        "title": "14 Days to Decide",
+        "description": "Take your time. You have 14 days from delivery to evaluate if the website meets your expectations."
+      },
+      {
+        "title": "Full Refund",
+        "description": "Not satisfied? Simply let us know and walk away – no questions asked, no payment required."
+      },
+      {
+        "title": "Revisions Included",
+        "description": "We'll work with you to get it right. Reasonable revisions are included at no extra cost."
+      }
+    ],
+    "howItWorks": {
+      "title": "How It Works",
+      "steps": [
+        {
+          "step": "1",
+          "title": "We Build",
+          "description": "Fill out a brief (15 min) and we create your complete website."
+        },
+        {
+          "step": "2",
+          "title": "You Review",
+          "description": "See your finished website and request any changes you need."
+        },
+        {
+          "step": "3",
+          "title": "You Decide",
+          "description": "Happy? We go live. Not satisfied? You walk away free."
+        }
+      ]
+    },
+    "cta": "Start risk-free",
+    "legal": "This guarantee is your right under Norwegian consumer law (Angrerettloven). You can withdraw from the contract within 14 days of receiving the completed service."
+  },
   "cta": {
     "titleStart": "Ready to build your",
     "titleHighlight": "online presence",
@@ -125,7 +171,29 @@
     "wcagCompliance": "WCAG Compliance",
     "copyright": "All rights reserved.",
     "privacy": "Privacy Policy",
-    "terms": "Terms of Service"
+    "terms": "Terms of Service",
+    "cookieSettings": "Cookie Settings",
+    "withdrawal": "Withdrawal Form"
+  },
+  "cookieBanner": {
+    "title": "We value your privacy",
+    "description": "We use cookies to enhance your browsing experience and analyze our traffic. Essential cookies are necessary for the website to function. Analytics cookies help us understand how you use our site.",
+    "acceptAll": "Accept all",
+    "acceptEssential": "Essential only",
+    "customize": "Customize",
+    "savePreferences": "Save preferences",
+    "categories": {
+      "essential": {
+        "title": "Essential cookies",
+        "description": "These cookies are strictly necessary for the website to function and cannot be disabled."
+      },
+      "analytics": {
+        "title": "Analytics cookies",
+        "description": "These cookies help us understand how visitors interact with our website by collecting anonymous information."
+      }
+    },
+    "privacyLink": "Learn more in our",
+    "privacyLinkText": "Privacy Policy"
   },
   "contactPage": {
     "badge": "Get in Touch",
@@ -162,7 +230,7 @@
   },
   "privacy": {
     "title": "Privacy Policy",
-    "lastUpdated": "Last updated: January 16, 2026",
+    "lastUpdated": "Last updated: January 19, 2026",
     "sections": {
       "intro": {
         "title": "Introduction",
@@ -191,18 +259,19 @@
       },
       "cookies": {
         "title": "Cookies and Analytics",
-        "content": "We use cookies and similar tracking technologies to collect information about your browsing activities. This includes:",
+        "content": "We use cookies and similar tracking technologies to collect information about your browsing activities. We will ask for your consent before placing any non-essential cookies.",
         "types": {
           "essential": {
             "title": "Essential Cookies",
-            "description": "Required for the website to function properly. Cannot be disabled."
+            "description": "Required for the website to function properly. These cookies are strictly necessary and do not require consent."
           },
           "analytics": {
             "title": "Analytics Cookies (Google Analytics)",
-            "description": "Help us understand how visitors interact with our website. You can opt out of Google Analytics by installing the Google Analytics Opt-out Browser Add-on."
+            "description": "Help us understand how visitors interact with our website. These cookies are only placed after you give your explicit consent through our cookie banner."
           }
         },
-        "manage": "You can manage cookie preferences through your browser settings. Note that disabling certain cookies may affect website functionality."
+        "consent": "When you first visit our website, you will see a cookie banner asking for your consent. You can choose to accept or decline analytics cookies. Your choice will be remembered for future visits.",
+        "manage": "You can change your cookie preferences at any time by clicking the 'Cookie Settings' link in the footer of our website. You can also manage cookies through your browser settings."
       },
       "purpose": {
         "title": "How We Use Your Information",
@@ -298,13 +367,13 @@
         "content": "If you have questions about this Privacy Policy or wish to exercise your rights, please contact us:",
         "email": "Email: contact@dealcatcher.io",
         "address": "Address: ul. Zlota 75A lok. 7, 00-819 Warsaw, Poland",
-        "complaint": "You also have the right to lodge a complaint with a supervisory authority. In Poland, this is the President of the Personal Data Protection Office (UODO)."
+        "complaint": "You also have the right to lodge a complaint with a supervisory authority. If you are located in Norway, you can contact the Norwegian Data Protection Authority (Datatilsynet) at datatilsynet.no. If you are located elsewhere in the EU/EEA, you may contact your local supervisory authority or the President of the Personal Data Protection Office (UODO) in Poland."
       }
     }
   },
   "terms": {
     "title": "Terms of Service",
-    "lastUpdated": "Last updated: January 16, 2026",
+    "lastUpdated": "Last updated: January 19, 2026",
     "sections": {
       "intro": {
         "title": "Introduction",
@@ -318,8 +387,12 @@
             "definition": "Rapid Software House sp. z o.o., ul. Zlota 75A lok. 7, 00-819 Warsaw, Poland, KRS: 0001008811, NIP: 5273033283"
           },
           {
-            "term": "User",
+            "term": "User/Customer",
             "definition": "Any person or entity accessing or using our website or services"
+          },
+          {
+            "term": "Consumer",
+            "definition": "A natural person acting for purposes outside their trade, business, craft or profession"
           },
           {
             "term": "Website",
@@ -333,7 +406,7 @@
       },
       "services": {
         "title": "Our Services",
-        "content": "DealCatcher provides the following services to businesses:",
+        "content": "DealCatcher provides the following services to businesses and individuals:",
         "list": [
           "Custom website design and development",
           "Template-based website solutions",
@@ -342,6 +415,47 @@
           "Google Ads setup and management"
         ],
         "note": "Specific terms, pricing, and deliverables for each service are defined in individual service agreements."
+      },
+      "withdrawalRight": {
+        "title": "Right of Withdrawal (Angrerett)",
+        "intro": "If you are a consumer, you have the right to withdraw from a distance contract within 14 days without giving any reason, in accordance with the Norwegian Consumer Contracts Act (Angrerettloven).",
+        "deadline": "The withdrawal period expires 14 days from the day on which the completed service is delivered to you.",
+        "howTo": {
+          "title": "How to Exercise Your Right of Withdrawal",
+          "content": "To exercise the right of withdrawal, you must inform us of your decision to withdraw from the contract by an unambiguous statement. You can do this by:",
+          "methods": [
+            "Email to: contact@dealcatcher.io",
+            "Using the withdrawal form available on our website"
+          ]
+        },
+        "effects": {
+          "title": "Effects of Withdrawal",
+          "content": "If you withdraw from the contract, we shall reimburse all payments received from you without undue delay and no later than 14 days from the day on which we are informed about your decision to withdraw. We will carry out such reimbursement using the same means of payment as you used for the initial transaction, unless you have expressly agreed otherwise."
+        },
+        "exceptions": {
+          "title": "Exceptions",
+          "content": "The right of withdrawal does not apply if you have expressly consented to the commencement of the service during the withdrawal period and acknowledged that you will lose your right of withdrawal once the service has been fully performed."
+        }
+      },
+      "subscriptionTerms": {
+        "title": "Subscription Terms",
+        "intro": "This section applies to our monthly subscription services (Basic and Premium hosting plans).",
+        "commitment": {
+          "title": "No Minimum Commitment",
+          "content": "Our monthly plans have no minimum commitment period. You can cancel at any time."
+        },
+        "cancellation": {
+          "title": "Cancellation",
+          "content": "You may cancel your subscription at any time by contacting us at contact@dealcatcher.io. Cancellation will take effect at the end of the current billing period. You will continue to have access to the service until the end of the paid period."
+        },
+        "autoRenewal": {
+          "title": "Automatic Renewal",
+          "content": "Subscriptions automatically renew each month until cancelled. You will be charged at the beginning of each billing period using the payment method on file. By subscribing, you authorize us to charge the applicable subscription fee."
+        },
+        "priceChanges": {
+          "title": "Price Changes",
+          "content": "We may change subscription prices with 30 days' notice. You will be notified by email before any price change takes effect. Continued use of the service after the price change constitutes acceptance of the new price."
+        }
       },
       "useOfWebsite": {
         "title": "Use of Website",
@@ -360,23 +474,27 @@
       },
       "disclaimer": {
         "title": "Disclaimer of Warranties",
-        "content": "The website and its content are provided \"as is\" without warranties of any kind, either express or implied. We do not warrant that the website will be uninterrupted, error-free, or free of viruses or other harmful components."
+        "content": "The website and its content are provided \"as is\" without warranties of any kind, either express or implied. We do not warrant that the website will be uninterrupted, error-free, or free of viruses or other harmful components. This disclaimer does not affect your statutory rights as a consumer."
       },
       "liability": {
         "title": "Limitation of Liability",
-        "content": "To the fullest extent permitted by law, Rapid Software House sp. z o.o. shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the website. Our total liability for any claims arising from your use of the website shall not exceed the amount you paid us, if any, in the 12 months preceding the claim."
+        "content": "To the fullest extent permitted by law, Rapid Software House sp. z o.o. shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the website. Our total liability for any claims arising from your use of the website shall not exceed the amount you paid us, if any, in the 12 months preceding the claim. This limitation does not apply to liability that cannot be excluded or limited under applicable consumer protection laws."
       },
       "thirdParty": {
         "title": "Third-Party Links",
         "content": "Our website may contain links to third-party websites. We are not responsible for the content, privacy policies, or practices of any third-party websites. You access such websites at your own risk."
       },
+      "consumerRights": {
+        "title": "Consumer Rights",
+        "content": "If you are a consumer, you have statutory rights under Norwegian law that cannot be waived by contract. These include rights under the Consumer Purchases Act (Forbrukerkjøpsloven), the Consumer Contracts Act (Angrerettloven), and the Marketing Control Act (Markedsføringsloven). Nothing in these Terms shall affect your statutory consumer rights."
+      },
       "governing": {
-        "title": "Governing Law",
-        "content": "These Terms shall be governed by and construed in accordance with the laws of Poland. Any disputes arising from these Terms shall be subject to the exclusive jurisdiction of the courts in Warsaw, Poland."
+        "title": "Governing Law and Disputes",
+        "content": "These Terms shall be governed by and construed in accordance with the laws of Poland. For business customers, any disputes arising from these Terms shall be subject to the exclusive jurisdiction of the courts in Warsaw, Poland. However, if you are a consumer residing in Norway, you retain the right to bring proceedings in Norway and have Norwegian consumer protection laws apply to matters covered by such laws, in accordance with applicable EU regulations."
       },
       "changes": {
         "title": "Changes to Terms",
-        "content": "We reserve the right to modify these Terms at any time. Changes will be effective immediately upon posting to the website. Your continued use of the website after any changes constitutes acceptance of the new Terms."
+        "content": "We reserve the right to modify these Terms at any time. We will notify existing customers of material changes by email at least 14 days before they take effect. Changes will be effective immediately for new customers upon posting to the website. Your continued use of the website after any changes constitutes acceptance of the new Terms."
       },
       "contact": {
         "title": "Contact Information",
@@ -385,6 +503,23 @@
         "address": "ul. Zlota 75A lok. 7, 00-819 Warsaw, Poland",
         "email": "Email: contact@dealcatcher.io"
       }
+    }
+  },
+  "withdrawal": {
+    "title": "Withdrawal Form",
+    "subtitle": "Use this form to withdraw from your contract within 14 days",
+    "form": {
+      "recipient": "To: Rapid Software House sp. z o.o., ul. Zlota 75A lok. 7, 00-819 Warsaw, Poland, contact@dealcatcher.io",
+      "declaration": "I/We hereby give notice that I/We withdraw from my/our contract for the provision of the following service:",
+      "serviceLabel": "Service description",
+      "orderedOnLabel": "Ordered on / Received on",
+      "nameLabel": "Name of consumer(s)",
+      "addressLabel": "Address of consumer(s)",
+      "dateLabel": "Date",
+      "signatureLabel": "Signature (only if submitted on paper)",
+      "submit": "Submit withdrawal",
+      "success": "Your withdrawal has been submitted. We will process it within 14 days.",
+      "error": "An error occurred. Please try again or contact us directly at contact@dealcatcher.io."
     }
   }
 }
