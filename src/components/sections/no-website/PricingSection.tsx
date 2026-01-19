@@ -148,7 +148,7 @@ export function PricingSection() {
                 asChild
                 className={`w-full h-12 text-base font-medium transition-all duration-200 ${
                   pkg.popular
-                    ? "bg-primary text-primary-foreground hover:bg-[#34D399] hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(16,185,129,0.15)]"
+                    ? "bg-primary text-primary-foreground hover:bg-accent-hover hover:-translate-y-0.5 hover:shadow-[0_8px_24px_var(--accent-glow)]"
                     : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
                 }`}
               >

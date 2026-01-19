@@ -90,7 +90,7 @@ const container = {
 };
 
 const heading = {
-  color: "#10B981",
+  color: "#34D399",
   fontSize: "24px",
   fontWeight: "600",
   marginBottom: "24px",

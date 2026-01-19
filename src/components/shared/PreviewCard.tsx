@@ -155,7 +155,7 @@ export function PreviewCard({ item, showPremiumBadge = false }: PreviewCardProps
         >
           <Button
             asChild
-            className="w-full bg-primary text-primary-foreground hover:bg-[#34D399]"
+            className="w-full bg-primary text-primary-foreground hover:bg-accent-hover"
           >
             <a
               href={item.demoUrl}

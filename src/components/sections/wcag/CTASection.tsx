@@ -33,7 +33,7 @@ export function CTASection() {
             <Button
               asChild
               size="lg"
-              className="bg-primary text-primary-foreground hover:bg-[#34D399] h-14 px-8 text-base font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(16,185,129,0.15)]"
+              className="bg-primary text-primary-foreground hover:bg-accent-hover h-14 px-8 text-base font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_var(--accent-glow)]"
             >
               <a href="mailto:hello@dealcatcher.io?subject=Free%20WCAG%20Audit">
                 <Search className="mr-2 h-5 w-5" />
