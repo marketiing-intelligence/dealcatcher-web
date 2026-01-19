@@ -104,7 +104,7 @@ export function PricingSection() {
               key={pkg.name}
               variants={staggerItem}
               className={`relative rounded-2xl border ${
-                pkg.popular ? "border-primary lg:scale-105" : "border-border"
+                pkg.popular ? "border-primary lg:scale-105 lg:-my-4" : "border-border"
               } bg-card p-6 md:p-8 flex flex-col`}
             >
               {pkg.popular && (

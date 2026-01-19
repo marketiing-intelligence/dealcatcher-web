@@ -70,19 +70,19 @@ export function GoogleAdsSection() {
                 Your website converts visitors into clients. Google Ads drives those visitors
                 to your website. Together, they create a complete client acquisition system.
               </p>
-              <div className="flex items-center gap-4 text-sm">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 text-sm">
                 <div className="flex items-center gap-2 text-muted-foreground">
-                  <div className="h-3 w-3 rounded-full bg-primary" />
+                  <div className="h-3 w-3 rounded-full bg-primary flex-shrink-0" />
                   <span>Client searches</span>
                 </div>
-                <ArrowRight className="h-4 w-4 text-muted-foreground" />
+                <ArrowRight className="h-4 w-4 text-muted-foreground hidden sm:block" />
                 <div className="flex items-center gap-2 text-muted-foreground">
-                  <div className="h-3 w-3 rounded-full bg-amber-500" />
+                  <div className="h-3 w-3 rounded-full bg-amber-500 flex-shrink-0" />
                   <span>Sees your ad</span>
                 </div>
-                <ArrowRight className="h-4 w-4 text-muted-foreground" />
+                <ArrowRight className="h-4 w-4 text-muted-foreground hidden sm:block" />
                 <div className="flex items-center gap-2 text-muted-foreground">
-                  <div className="h-3 w-3 rounded-full bg-green-500" />
+                  <div className="h-3 w-3 rounded-full bg-green-500 flex-shrink-0" />
                   <span>Contacts you</span>
                 </div>
               </div>
@@ -108,7 +108,7 @@ export function GoogleAdsSection() {
           whileInView="visible"
           viewport={viewportOnce}
           variants={staggerContainer}
-          className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12"
+          className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12"
         >
           {benefits.map((benefit) => (
             <motion.div

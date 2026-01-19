@@ -198,18 +198,22 @@ export function WhatWeDoSection({ dict }: WhatWeDoSectionProps) {
           variants={staggerItem}
           className="mt-12"
         >
-          <div className="inline-flex items-center gap-4 text-muted-foreground flex-wrap justify-center w-full rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm p-6">
-            <span className="font-medium text-foreground">
-              {dict.combined.website}
-            </span>
-            <ArrowRight className="h-4 w-4 text-primary" />
-            <span>{dict.combined.converts}</span>
+          <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 text-muted-foreground justify-center w-full rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm p-6 text-center sm:text-left">
+            <div className="flex items-center gap-2 sm:gap-4">
+              <span className="font-medium text-foreground">
+                {dict.combined.website}
+              </span>
+              <ArrowRight className="h-4 w-4 text-primary hidden sm:block" />
+              <span className="hidden sm:inline">{dict.combined.converts}</span>
+            </div>
             <span className="text-primary text-xl font-semibold">+</span>
-            <span className="font-medium text-foreground">
-              {dict.combined.ads}
-            </span>
-            <ArrowRight className="h-4 w-4 text-amber-500" />
-            <span>{dict.combined.brings}</span>
+            <div className="flex items-center gap-2 sm:gap-4">
+              <span className="font-medium text-foreground">
+                {dict.combined.ads}
+              </span>
+              <ArrowRight className="h-4 w-4 text-amber-500 hidden sm:block" />
+              <span className="hidden sm:inline">{dict.combined.brings}</span>
+            </div>
             <span className="text-primary text-xl font-semibold">=</span>
             <span className="font-semibold text-transparent bg-gradient-to-r from-primary to-amber-500 bg-clip-text">
               {dict.combined.result}

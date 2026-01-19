@@ -161,11 +161,11 @@ export function HeroSection({ lang, dict }: HeroSectionProps) {
             {/* Stats section with animated counters */}
             <motion.div
               variants={staggerItem}
-              className="grid grid-cols-3 gap-8 mb-16 py-8 border-y border-border/50"
+              className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 mb-16 py-8 border-y border-border/50"
             >
               {stats.map((stat, index) => (
                 <div key={index} className="text-center">
-                  <div className="text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-2">
+                  <div className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-2">
                     <AnimatedCounter
                       value={stat.value}
                       suffix={stat.suffix}

@@ -24,9 +24,9 @@ export function Footer({ lang, dict }: FooterProps) {
   return (
     <footer className="border-t border-border bg-[#0A0A0A] py-12 md:py-16">
       <Container>
-        <div className="grid md:grid-cols-4 gap-10 md:gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {/* Brand */}
-          <div className="md:col-span-2">
+          <div className="col-span-2">
             <Link
               href={`/${lang}`}
               className="text-2xl font-semibold text-foreground"
