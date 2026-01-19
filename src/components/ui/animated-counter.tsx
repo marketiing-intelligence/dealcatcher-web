@@ -29,7 +29,7 @@ export function AnimatedCounter({
     stiffness: 100,
     duration: duration * 1000,
   });
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const isInView = useInView(ref, { once: true, margin: "0px" });
   const [displayValue, setDisplayValue] = useState(direction === "down" ? value : 0);
 
   useEffect(() => {

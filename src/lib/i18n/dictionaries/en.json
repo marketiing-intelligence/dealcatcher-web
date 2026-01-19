@@ -127,6 +127,39 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
   },
+  "contactPage": {
+    "badge": "Get in Touch",
+    "title": "Let's discuss your",
+    "titleHighlight": "project",
+    "subtitle": "Fill out the form and we'll get back to you within 24 hours.",
+    "form": {
+      "name": "Full name",
+      "email": "Email address",
+      "company": "Company (optional)",
+      "message": "Your message...",
+      "gdpr": "I consent to the processing of my personal data in accordance with the",
+      "gdprLink": "Privacy Policy",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "success": "Message sent!",
+      "successMessage": "We'll get back to you as soon as possible.",
+      "error": "An error occurred. Please try again."
+    },
+    "validation": {
+      "nameRequired": "Name is required",
+      "emailInvalid": "Invalid email address",
+      "messageMin": "Message must be at least 10 characters",
+      "gdprRequired": "GDPR consent is required"
+    },
+    "info": {
+      "email": "Email",
+      "emailValue": "hello@dealcatcher.io",
+      "responseTime": "Response time",
+      "responseValue": "Within 24 hours",
+      "location": "Location",
+      "locationValue": "Warsaw, Poland"
+    }
+  },
   "privacy": {
     "title": "Privacy Policy",
     "lastUpdated": "Last updated: January 16, 2026",

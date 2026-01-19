@@ -3,15 +3,28 @@
 import { Container } from "@/components/shared/Container";
 import { Button } from "@/components/ui/button";
 import { GradientText } from "@/components/ui/gradient-text";
-import { TextAnimate } from "@/components/ui/text-reveal";
 import { AnimatedCounter } from "@/components/ui/animated-counter";
 import { ParallaxGlow } from "@/components/ui/parallax";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { staggerContainerSlow, staggerItem } from "@/lib/animations";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import Link from "next/link";
-import { useRef } from "react";
+import { useRef, useEffect, useState } from "react";
 import type { Locale } from "@/lib/i18n/config";
+
+// Hook to detect mobile
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  return isMobile;
+}
 
 interface HeroSectionProps {
   lang: Locale;
@@ -36,14 +49,16 @@ const stats = [
 
 export function HeroSection({ lang, dict }: HeroSectionProps) {
   const containerRef = useRef<HTMLElement>(null);
+  const isMobile = useIsMobile();
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end start"],
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
-  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
+  // Disable parallax on mobile to prevent jank
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", isMobile ? "0%" : "20%"]);
+  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, isMobile ? 1 : 0]);
 
   return (
     <section
@@ -109,11 +124,10 @@ export function HeroSection({ lang, dict }: HeroSectionProps) {
             </motion.div>
 
             {/* Headline with gradient effect */}
-            <motion.div variants={staggerItem} className="mb-8">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-[1.05]">
-                <TextAnimate text={dict.titleStart} className="inline" />
-                {" "}
-                <GradientText animate className="inline-block">
+            <motion.div variants={staggerItem} className="mb-6 md:mb-8">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.1] md:leading-[1.05]">
+                {dict.titleStart}{" "}
+                <GradientText animate className="inline">
                   {dict.titleHighlight}
                 </GradientText>
               </h1>
@@ -122,7 +136,7 @@ export function HeroSection({ lang, dict }: HeroSectionProps) {
             {/* Subheadline */}
             <motion.p
               variants={staggerItem}
-              className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl leading-relaxed"
+              className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8 md:mb-12 max-w-2xl leading-relaxed"
             >
               {dict.subtitle}
             </motion.p>
@@ -179,16 +193,16 @@ export function HeroSection({ lang, dict }: HeroSectionProps) {
 
             {/* Trust indicators */}
             <motion.div variants={staggerItem}>
-              <p className="text-sm text-muted-foreground mb-4">
+              <p className="text-xs sm:text-sm text-muted-foreground mb-3 sm:mb-4">
                 {dict.trustLabel}
               </p>
-              <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
+              <div className="flex flex-wrap gap-2 sm:gap-3 text-xs sm:text-sm text-muted-foreground">
                 {dict.trustItems.map((item) => (
                   <div
                     key={item}
-                    className="flex items-center gap-2 rounded-full border border-border/50 bg-card/50 backdrop-blur-sm px-4 py-2"
+                    className="flex items-center gap-1.5 sm:gap-2 rounded-full border border-border/50 bg-card/50 backdrop-blur-sm px-3 py-1.5 sm:px-4 sm:py-2"
                   >
-                    <CheckCircle2 className="h-4 w-4 text-primary" />
+                    <CheckCircle2 className="h-3 w-3 sm:h-4 sm:w-4 text-primary flex-shrink-0" />
                     <span>{item}</span>
                   </div>
                 ))}

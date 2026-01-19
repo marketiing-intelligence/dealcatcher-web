@@ -5,6 +5,7 @@ import { WhoWeHelpSection } from "@/components/sections/home/WhoWeHelpSection";
 import { PortfolioPreviewSection } from "@/components/sections/home/PortfolioPreviewSection";
 import { WhyUsSection } from "@/components/sections/home/WhyUsSection";
 import { CTASection } from "@/components/sections/home/CTASection";
+import { ContactSection } from "@/components/sections/home/ContactSection";
 import { Footer } from "@/components/sections/home/Footer";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import type { Locale } from "@/lib/i18n/config";
@@ -26,6 +27,7 @@ export default async function Home({
         <WhoWeHelpSection lang={lang} dict={dict.whoWeHelp} />
         <PortfolioPreviewSection lang={lang} dict={dict.portfolio} />
         <WhyUsSection dict={dict.whyUs} />
+        <ContactSection lang={lang} dict={dict.contactPage} />
         <CTASection lang={lang} dict={dict.cta} />
       </main>
       <Footer lang={lang} dict={dict.footer} />

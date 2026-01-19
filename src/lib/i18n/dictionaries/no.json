@@ -127,6 +127,39 @@
     "privacy": "Personvernerkaering",
     "terms": "Vilkar for Bruk"
   },
+  "contactPage": {
+    "badge": "Ta Kontakt",
+    "title": "La oss diskutere",
+    "titleHighlight": "prosjektet ditt",
+    "subtitle": "Fyll ut skjemaet sa tar vi kontakt innen 24 timer.",
+    "form": {
+      "name": "Fullt navn",
+      "email": "E-postadresse",
+      "company": "Firma (valgfritt)",
+      "message": "Din melding...",
+      "gdpr": "Jeg samtykker til behandling av mine personopplysninger i henhold til",
+      "gdprLink": "Personvernerklaeringen",
+      "submit": "Send melding",
+      "sending": "Sender...",
+      "success": "Melding sendt!",
+      "successMessage": "Vi tar kontakt sa snart som mulig.",
+      "error": "En feil oppstod. Vennligst prov igjen."
+    },
+    "validation": {
+      "nameRequired": "Navn er pakrevd",
+      "emailInvalid": "Ugyldig e-postadresse",
+      "messageMin": "Meldingen ma vaere minst 10 tegn",
+      "gdprRequired": "GDPR-samtykke er pakrevd"
+    },
+    "info": {
+      "email": "E-post",
+      "emailValue": "hello@dealcatcher.io",
+      "responseTime": "Svartid",
+      "responseValue": "Innen 24 timer",
+      "location": "Lokasjon",
+      "locationValue": "Warszawa, Polen"
+    }
+  },
   "privacy": {
     "title": "Personvernerkaering",
     "lastUpdated": "Sist oppdatert: 16. januar 2026",
