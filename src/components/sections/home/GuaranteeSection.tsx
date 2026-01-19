@@ -6,7 +6,7 @@ import { SpotlightCard } from "@/components/ui/spotlight";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { staggerContainer, staggerItem, viewportOnce, fadeUp } from "@/lib/animations";
-import { ShieldCheck, Eye, Clock, RefreshCw, ArrowRight, CreditCard, MessageSquareText, Heart } from "lucide-react";
+import { ShieldCheck, Eye, Clock, RefreshCw, ArrowRight, Wallet, MessageCircle, ThumbsUp } from "lucide-react";
 import Link from "next/link";
 import type { Locale } from "@/lib/i18n/config";
 
@@ -35,7 +35,7 @@ interface GuaranteeSectionProps {
 }
 
 const featureIcons = [Eye, Clock, ShieldCheck, RefreshCw];
-const stepIcons = [CreditCard, MessageSquareText, Heart];
+const stepIcons = [Wallet, MessageCircle, ThumbsUp];
 
 export function GuaranteeSection({ lang, dict }: GuaranteeSectionProps) {
   return (
@@ -96,85 +96,56 @@ export function GuaranteeSection({ lang, dict }: GuaranteeSectionProps) {
           variants={fadeUp}
           className="mb-16"
         >
-          <h3 className="text-2xl md:text-3xl font-clash font-semibold text-center mb-12">
+          <h3 className="text-2xl md:text-3xl font-semibold text-center mb-12">
             {dict.howItWorks.title}
           </h3>
 
-          <div className="grid md:grid-cols-3 gap-6 lg:gap-8 relative max-w-5xl mx-auto">
-            {/* Connecting line - desktop only */}
-            <div className="hidden md:block absolute top-[52px] left-[calc(16.67%+32px)] right-[calc(16.67%+32px)] h-1 z-0">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary to-green-500 rounded-full" />
-              <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary to-green-500 rounded-full blur-sm opacity-50" />
-            </div>
-
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={viewportOnce}
+            variants={staggerContainer}
+            className="grid md:grid-cols-3 gap-8"
+          >
             {dict.howItWorks.steps.map((step, index) => {
               const StepIcon = stepIcons[index];
               const isLast = index === dict.howItWorks.steps.length - 1;
 
               return (
-                <motion.div
-                  key={step.step}
-                  initial={{ opacity: 0, y: 30, scale: 0.95 }}
-                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={viewportOnce}
-                  transition={{ delay: index * 0.2, duration: 0.5 }}
-                  className="relative"
-                >
-                  {/* Card background */}
-                  <div className={`
-                    relative rounded-2xl p-6 pt-16 text-center
-                    bg-gradient-to-b from-card/80 to-card/40
-                    border border-border/50
-                    backdrop-blur-sm
-                    transition-all duration-300
-                    hover:border-primary/50 hover:shadow-lg hover:shadow-primary/5
-                    ${isLast ? 'hover:border-green-500/50 hover:shadow-green-500/5' : ''}
-                  `}>
-                    {/* Step circle - positioned above card */}
-                    <div className="absolute -top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
-                      {/* Glow effect */}
-                      <div className={`
-                        absolute inset-0 rounded-full blur-xl opacity-40
-                        ${isLast ? 'bg-green-500' : 'bg-primary'}
-                      `} />
-
-                      {/* Main circle */}
-                      <div className={`
-                        relative h-20 w-20 rounded-full
-                        flex flex-col items-center justify-center
-                        ${isLast
-                          ? 'bg-gradient-to-br from-green-500 to-green-600'
-                          : 'bg-gradient-to-br from-primary to-primary/80'
-                        }
-                        shadow-lg
-                        ${isLast ? 'shadow-green-500/30' : 'shadow-primary/30'}
+                <motion.div key={step.step} variants={staggerItem}>
+                  <SpotlightCard className="h-full text-center">
+                    {/* Step number badge */}
+                    <div className="mb-4 inline-flex items-center gap-2">
+                      <span className={`
+                        inline-flex h-8 w-8 items-center justify-center rounded-full text-sm font-bold
+                        ${isLast ? 'bg-green-500/10 text-green-500' : 'bg-primary/10 text-primary'}
                       `}>
-                        <StepIcon className="h-7 w-7 text-white mb-0.5" />
-                        <span className="text-xs font-bold text-white/80">
-                          {step.step}
-                        </span>
-                      </div>
+                        {step.step}
+                      </span>
+                    </div>
+
+                    {/* Icon */}
+                    <div className={`
+                      mb-6 mx-auto inline-flex h-14 w-14 items-center justify-center rounded-xl relative
+                      ${isLast ? 'bg-green-500/10 text-green-500' : 'bg-primary/10 text-primary'}
+                    `}>
+                      <StepIcon className="h-7 w-7" />
+                      <div className={`
+                        absolute inset-0 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity
+                        ${isLast ? 'bg-green-500/20' : 'bg-primary/20'}
+                      `} />
                     </div>
 
                     {/* Content */}
-                    <h4 className="text-lg md:text-xl font-semibold mb-3 mt-2">
-                      {step.title}
-                    </h4>
-                    <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                    <h4 className="text-xl font-semibold mb-3">{step.title}</h4>
+                    <p className="text-muted-foreground leading-relaxed">
                       {step.description}
                     </p>
-
-                    {/* Arrow indicator on mobile - between cards */}
-                    {index < dict.howItWorks.steps.length - 1 && (
-                      <div className="md:hidden absolute -bottom-4 left-1/2 -translate-x-1/2 z-10">
-                        <ArrowRight className="h-6 w-6 text-primary rotate-90" />
-                      </div>
-                    )}
-                  </div>
+                  </SpotlightCard>
                 </motion.div>
               );
             })}
-          </div>
+          </motion.div>
         </motion.div>
 
         {/* CTA */}
