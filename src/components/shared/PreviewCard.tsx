@@ -126,7 +126,8 @@ export function PreviewCard({ item, showPremiumBadge = false }: PreviewCardProps
             loop
             muted
             playsInline
-            preload="auto"
+            preload="none"
+            poster={item.thumbnail}
             className="w-full h-full object-contain"
           />
         ) : (

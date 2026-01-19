@@ -1,5 +1,13 @@
 import { Variants } from "framer-motion";
 
+// Check if user prefers reduced motion or is on mobile (for performance)
+export const shouldReduceMotion = () => {
+  if (typeof window === "undefined") return false;
+  const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const isMobile = window.innerWidth < 768;
+  return prefersReduced || isMobile;
+};
+
 // Easing curves (as tuples for Framer Motion)
 export const easeOut: [number, number, number, number] = [0.16, 1, 0.3, 1];
 export const easeInOut: [number, number, number, number] = [0.65, 0, 0.35, 1];
