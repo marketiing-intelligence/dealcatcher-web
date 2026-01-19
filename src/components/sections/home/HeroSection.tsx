@@ -14,7 +14,7 @@ import type { Locale } from "@/lib/i18n/config";
 
 // Hook to detect mobile
 function useIsMobile() {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(true); // Default to true for SSR
 
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 768);
@@ -24,6 +24,15 @@ function useIsMobile() {
   }, []);
 
   return isMobile;
+}
+
+// Hook to detect if component has hydrated
+function useHydrated() {
+  const [hydrated, setHydrated] = useState(false);
+  useEffect(() => {
+    setHydrated(true);
+  }, []);
+  return hydrated;
 }
 
 interface HeroSectionProps {
@@ -50,6 +59,7 @@ const stats = [
 export function HeroSection({ lang, dict }: HeroSectionProps) {
   const containerRef = useRef<HTMLElement>(null);
   const isMobile = useIsMobile();
+  const hydrated = useHydrated();
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -60,74 +70,76 @@ export function HeroSection({ lang, dict }: HeroSectionProps) {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", isMobile ? "0%" : "20%"]);
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, isMobile ? 1 : 0]);
 
+  // Skip animations until hydrated for better LCP
+  const shouldAnimate = hydrated && !isMobile;
+
   return (
     <section
       ref={containerRef}
       className="relative min-h-screen flex items-center overflow-hidden"
     >
-      {/* Aurora background effect */}
+      {/* Aurora background effect - only render after hydration */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent" />
 
-        {/* Animated aurora gradient */}
-        <motion.div
-          className="absolute inset-0 opacity-30"
-          style={{
-            background: "repeating-linear-gradient(100deg, var(--primary) 10%, var(--accent-hover) 15%, var(--primary) 20%, var(--accent-hover) 25%, var(--primary) 30%)",
-            backgroundSize: "300% 200%",
-            filter: "blur(60px)",
-            maskImage: "radial-gradient(ellipse at 100% 0%, black 10%, transparent 70%)",
-          }}
-          animate={{
-            backgroundPosition: ["0% 0%", "100% 100%", "0% 0%"],
-          }}
-          transition={{
-            duration: 20,
-            repeat: Infinity,
-            ease: "linear",
-          }}
-        />
+        {/* Animated aurora gradient - only on desktop after hydration */}
+        {shouldAnimate && (
+          <motion.div
+            className="absolute inset-0 opacity-30"
+            style={{
+              background: "repeating-linear-gradient(100deg, var(--primary) 10%, var(--accent-hover) 15%, var(--primary) 20%, var(--accent-hover) 25%, var(--primary) 30%)",
+              backgroundSize: "300% 200%",
+              filter: "blur(60px)",
+              maskImage: "radial-gradient(ellipse at 100% 0%, black 10%, transparent 70%)",
+            }}
+            animate={{
+              backgroundPosition: ["0% 0%", "100% 100%", "0% 0%"],
+            }}
+            transition={{
+              duration: 20,
+              repeat: Infinity,
+              ease: "linear",
+            }}
+          />
+        )}
 
-        {/* Parallax glow orbs */}
-        <ParallaxGlow className="top-1/4 left-1/2 -translate-x-1/2" />
-        <ParallaxGlow className="top-1/3 right-0 translate-x-1/2 opacity-50" />
+        {/* Parallax glow orbs - only on desktop */}
+        {shouldAnimate && (
+          <>
+            <ParallaxGlow className="top-1/4 left-1/2 -translate-x-1/2" />
+            <ParallaxGlow className="top-1/3 right-0 translate-x-1/2 opacity-50" />
+          </>
+        )}
       </div>
 
-      {/* Main content with parallax */}
-      <motion.div style={{ y, opacity }} className="relative z-10 w-full">
+      {/* Main content */}
+      <motion.div
+        style={shouldAnimate ? { y, opacity } : undefined}
+        className="relative z-10 w-full"
+      >
         <Container className="py-20 md:py-32 lg:py-40">
           <motion.div
-            initial="hidden"
-            animate="visible"
+            initial={shouldAnimate ? "hidden" : false}
+            animate={shouldAnimate ? "visible" : false}
             variants={staggerContainerSlow}
             className="max-w-5xl"
           >
             {/* Badge with pulse animation */}
-            <motion.div variants={staggerItem}>
-              <motion.span
-                className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary mb-8"
-                animate={{
-                  boxShadow: [
-                    "0 0 0 0 rgba(16, 185, 129, 0)",
-                    "0 0 0 8px rgba(16, 185, 129, 0.1)",
-                    "0 0 0 0 rgba(16, 185, 129, 0)",
-                  ]
-                }}
-                transition={{ duration: 2, repeat: Infinity }}
-              >
+            <motion.div variants={shouldAnimate ? staggerItem : undefined}>
+              <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary mb-8">
                 <span className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
                 </span>
                 {dict.badge}
-              </motion.span>
+              </span>
             </motion.div>
 
             {/* Headline with gradient effect */}
-            <motion.div variants={staggerItem} className="mb-6 md:mb-8">
+            <motion.div variants={shouldAnimate ? staggerItem : undefined} className="mb-6 md:mb-8">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.1] md:leading-[1.05]">
                 {dict.titleStart}{" "}
-                <GradientText animate className="inline">
+                <GradientText animate={shouldAnimate} className="inline">
                   {dict.titleHighlight}
                 </GradientText>
               </h1>
@@ -135,7 +147,7 @@ export function HeroSection({ lang, dict }: HeroSectionProps) {
 
             {/* Subheadline */}
             <motion.p
-              variants={staggerItem}
+              variants={shouldAnimate ? staggerItem : undefined}
               className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8 md:mb-12 max-w-2xl leading-relaxed"
             >
               {dict.subtitle}
@@ -143,7 +155,7 @@ export function HeroSection({ lang, dict }: HeroSectionProps) {
 
             {/* CTAs with enhanced styling */}
             <motion.div
-              variants={staggerItem}
+              variants={shouldAnimate ? staggerItem : undefined}
               className="flex flex-col sm:flex-row gap-4 mb-16"
             >
               <Button
@@ -174,7 +186,7 @@ export function HeroSection({ lang, dict }: HeroSectionProps) {
 
             {/* Stats section with animated counters */}
             <motion.div
-              variants={staggerItem}
+              variants={shouldAnimate ? staggerItem : undefined}
               className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 mb-16 py-8 border-y border-border/50"
             >
               {stats.map((stat, index) => (
@@ -192,7 +204,7 @@ export function HeroSection({ lang, dict }: HeroSectionProps) {
             </motion.div>
 
             {/* Trust indicators */}
-            <motion.div variants={staggerItem}>
+            <motion.div variants={shouldAnimate ? staggerItem : undefined}>
               <p className="text-xs sm:text-sm text-muted-foreground mb-3 sm:mb-4">
                 {dict.trustLabel}
               </p>
