@@ -112,25 +112,25 @@
   },
   "guarantee": {
     "badge": "Risikofritt",
-    "title": "14 Dagers Fornoydhetsgaranti",
-    "subtitle": "Vi bygger nettsiden din forst. Er du ikke fornoyd, betaler du ingenting.",
-    "description": "Vi er sa sikre pa at du vil elske din nye nettside at vi tilbyr full 14-dagers fornoydhetsgaranti. Vi bygger hele nettsiden din, viser deg resultatet, og forst da bestemmer du. Er det ikke det du onsket – ingen betaling krevet.",
+    "title": "14 Dagers Pengene-Tilbake-Garanti",
+    "subtitle": "Ikke fornoyd med nettsiden din? Fa full refusjon innen 14 dager.",
+    "description": "Vi er sikre pa at du vil elske din nye nettside. Men hvis du av en eller annen grunn ikke er fornoyd etter at vi har levert den, er det bare a kontakte oss innen 14 dager, sa refunderer vi betalingen din i sin helhet. Ingen sporsmal.",
     "features": [
       {
-        "title": "Se For Du Betaler",
-        "description": "Vi bygger hele nettsiden din og presenterer den for deg for noen betaling forfaller."
+        "title": "Full Refusjon Garantert",
+        "description": "Hvis du ikke er fornoyd med nettsiden din, refunderer vi 100% av betalingen innen 14 dager."
       },
       {
-        "title": "14 Dager a Bestemme Seg",
-        "description": "Ta deg god tid. Du har 14 dager fra levering til a vurdere om nettsiden oppfyller forventningene dine."
+        "title": "14 Dager til a Vurdere",
+        "description": "Ta deg god tid til a se over den nye nettsiden din. Du har 14 dager fra levering til a be om refusjon."
       },
       {
-        "title": "Full Refusjon",
-        "description": "Ikke fornoyd? Bare gi oss beskjed og ga – ingen sporsmal, ingen betaling krevet."
+        "title": "Ingen Sporsmal",
+        "description": "Bare send oss en e-post til contact@dealcatcher.io, sa behandler vi refusjonen umiddelbart."
       },
       {
         "title": "Revisjoner Inkludert",
-        "description": "Vi jobber med deg for a fa det riktig. Rimelige revisjoner er inkludert uten ekstra kostnad."
+        "description": "For du ber om refusjon, la oss prove a gjore det riktig. Rimelige revisjoner er inkludert."
       }
     ],
     "howItWorks": {
@@ -138,23 +138,23 @@
       "steps": [
         {
           "step": "1",
-          "title": "Vi Bygger",
-          "description": "Fyll ut en brief (15 min) og vi lager hele nettsiden din."
+          "title": "Du Betaler & Vi Bygger",
+          "description": "Betal pa forhand og vi lager hele nettsiden din basert pa briefen din."
         },
         {
           "step": "2",
           "title": "Du Vurderer",
-          "description": "Se den ferdige nettsiden din og be om eventuelle endringer du trenger."
+          "description": "Vi leverer nettsiden din. Se den over og be om eventuelle endringer du trenger."
         },
         {
           "step": "3",
-          "title": "Du Bestemmer",
-          "description": "Fornoyd? Vi publiserer. Ikke fornoyd? Du gar gratis."
+          "title": "Elsk Den eller Refusjon",
+          "description": "Fornoyd? Vi publiserer. Ikke fornoyd? Fa pengene tilbake innen 14 dager."
         }
       ]
     },
-    "cta": "Start risikofritt",
-    "legal": "Denne garantien er din rett i henhold til norsk forbrukerlov (Angrerettloven). Du kan trekke deg fra avtalen innen 14 dager etter at du har mottatt den fullforte tjenesten."
+    "cta": "Kom i gang",
+    "legal": "Denne garantien er din rett i henhold til norsk forbrukerlov (Angrerettloven). Du kan trekke deg fra avtalen og motta full refusjon innen 14 dager etter at du har mottatt den fullforte tjenesten."
   },
   "cta": {
     "titleStart": "Klar til a bygge din",

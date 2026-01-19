@@ -112,25 +112,25 @@
   },
   "guarantee": {
     "badge": "Risk-Free",
-    "title": "14-Day Satisfaction Guarantee",
-    "subtitle": "We build your website first. If you're not satisfied, you pay nothing.",
-    "description": "We're so confident you'll love your new website that we offer a full 14-day satisfaction guarantee. We build your complete website, show you the result, and only then you decide. If it's not what you wanted – no payment required.",
+    "title": "14-Day Money-Back Guarantee",
+    "subtitle": "Not satisfied with your website? Get a full refund within 14 days.",
+    "description": "We're confident you'll love your new website. But if for any reason you're not satisfied after we deliver it, simply contact us within 14 days and we'll refund your payment in full. No questions asked.",
     "features": [
       {
-        "title": "See Before You Pay",
-        "description": "We build your complete website and present it to you before any payment is due."
+        "title": "Full Refund Guaranteed",
+        "description": "If you're not happy with your website, we'll refund 100% of your payment within 14 days."
       },
       {
-        "title": "14 Days to Decide",
-        "description": "Take your time. You have 14 days from delivery to evaluate if the website meets your expectations."
+        "title": "14 Days to Evaluate",
+        "description": "Take your time to review your new website. You have 14 days from delivery to request a refund."
       },
       {
-        "title": "Full Refund",
-        "description": "Not satisfied? Simply let us know and walk away – no questions asked, no payment required."
+        "title": "No Questions Asked",
+        "description": "Simply email us at contact@dealcatcher.io and we'll process your refund immediately."
       },
       {
         "title": "Revisions Included",
-        "description": "We'll work with you to get it right. Reasonable revisions are included at no extra cost."
+        "description": "Before requesting a refund, let us try to make it right. Reasonable revisions are included."
       }
     ],
     "howItWorks": {
@@ -138,23 +138,23 @@
       "steps": [
         {
           "step": "1",
-          "title": "We Build",
-          "description": "Fill out a brief (15 min) and we create your complete website."
+          "title": "You Pay & We Build",
+          "description": "Pay upfront and we create your complete website based on your brief."
         },
         {
           "step": "2",
           "title": "You Review",
-          "description": "See your finished website and request any changes you need."
+          "description": "We deliver your website. Review it and request any changes you need."
         },
         {
           "step": "3",
-          "title": "You Decide",
-          "description": "Happy? We go live. Not satisfied? You walk away free."
+          "title": "Love It or Refund",
+          "description": "Happy? We go live. Not satisfied? Get your money back within 14 days."
         }
       ]
     },
-    "cta": "Start risk-free",
-    "legal": "This guarantee is your right under Norwegian consumer law (Angrerettloven). You can withdraw from the contract within 14 days of receiving the completed service."
+    "cta": "Get started",
+    "legal": "This guarantee is your right under Norwegian consumer law (Angrerettloven). You can withdraw from the contract and receive a full refund within 14 days of receiving the completed service."
   },
   "cta": {
     "titleStart": "Ready to build your",
