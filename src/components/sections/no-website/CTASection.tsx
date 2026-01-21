@@ -4,10 +4,16 @@ import { Container } from "@/components/shared/Container";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { fadeUp, viewportOnce } from "@/lib/animations";
-import { ArrowRight, Calendar, Mail } from "lucide-react";
-import { CALCOM_BOOKING_URL, CONTACT_EMAIL } from "@/lib/constants";
+import { Calendar, MessageSquare } from "lucide-react";
+import { CALCOM_BOOKING_URL } from "@/lib/constants";
+import Link from "next/link";
+import type { Locale } from "@/lib/i18n/config";
 
-export function CTASection() {
+interface CTASectionProps {
+  lang: Locale;
+}
+
+export function CTASection({ lang }: CTASectionProps) {
   return (
     <section className="py-20 md:py-32 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-t from-primary/5 via-transparent to-transparent" />
@@ -46,10 +52,10 @@ export function CTASection() {
               size="lg"
               className="border-border hover:border-primary hover:text-primary h-14 px-8 text-base font-medium"
             >
-              <a href={`mailto:${CONTACT_EMAIL}`}>
-                <Mail className="mr-2 h-5 w-5" />
+              <Link href={`/${lang}/contact`}>
+                <MessageSquare className="mr-2 h-5 w-5" />
                 Send us a message
-              </a>
+              </Link>
             </Button>
           </div>
 

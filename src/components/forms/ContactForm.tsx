@@ -158,8 +158,8 @@ export function ContactForm({ lang, dict }: ContactFormProps) {
         <Checkbox
           id="gdprConsent"
           checked={gdprConsent as boolean}
-          onChange={(e) =>
-            setValue("gdprConsent", e.target.checked as unknown as true)
+          onCheckedChange={(checked) =>
+            setValue("gdprConsent", checked as unknown as true, { shouldValidate: true })
           }
           error={getErrorMessage("gdprConsent")}
         />

@@ -47,7 +47,7 @@ export default async function WCAGCompliancePage({
         <PricingSection />
         <ProcessSection />
         <TrustSection />
-        <CTASection />
+        <CTASection lang={lang} />
       </main>
       <Footer lang={lang} dict={dict.footer} />
     </>

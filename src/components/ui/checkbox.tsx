@@ -7,11 +7,36 @@ import { Check } from "lucide-react";
 export interface CheckboxProps
   extends Omit<React.InputHTMLAttributes<HTMLInputElement>, "type"> {
   error?: string;
+  onCheckedChange?: (checked: boolean) => void;
 }
 
 const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
-  ({ className, error, ...props }, ref) => {
-    const [checked, setChecked] = React.useState(false);
+  ({ className, error, checked: controlledChecked, onCheckedChange, onChange, ...props }, ref) => {
+    const [internalChecked, setInternalChecked] = React.useState(false);
+    const isControlled = controlledChecked !== undefined;
+    const checked = isControlled ? controlledChecked : internalChecked;
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+      const newChecked = e.target.checked;
+      if (!isControlled) {
+        setInternalChecked(newChecked);
+      }
+      onCheckedChange?.(newChecked);
+      onChange?.(e);
+    };
+
+    const handleClick = () => {
+      const newChecked = !checked;
+      if (!isControlled) {
+        setInternalChecked(newChecked);
+      }
+      onCheckedChange?.(newChecked);
+      // Create synthetic event for onChange
+      const syntheticEvent = {
+        target: { checked: newChecked },
+      } as React.ChangeEvent<HTMLInputElement>;
+      onChange?.(syntheticEvent);
+    };
 
     return (
       <div className="relative">
@@ -20,19 +45,11 @@ const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
           className="sr-only peer"
           ref={ref}
           checked={checked}
-          onChange={(e) => {
-            setChecked(e.target.checked);
-            props.onChange?.(e);
-          }}
+          onChange={handleChange}
           {...props}
         />
         <div
-          onClick={() => {
-            const input = document.getElementById(props.id || "") as HTMLInputElement;
-            if (input) {
-              input.click();
-            }
-          }}
+          onClick={handleClick}
           className={cn(
             "h-5 w-5 rounded border border-white/10 bg-white/5 cursor-pointer",
             "flex items-center justify-center",
