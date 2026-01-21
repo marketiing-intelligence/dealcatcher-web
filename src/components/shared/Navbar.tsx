@@ -5,7 +5,7 @@ import { LanguageSwitcher } from "@/components/shared/LanguageSwitcher";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { Calendar, MessageSquare, Menu, X } from "lucide-react";
+import { Calendar, Menu, X } from "lucide-react";
 import { CALCOM_BOOKING_URL } from "@/lib/constants";
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
 import { cn } from "@/lib/utils";
@@ -43,6 +43,7 @@ export function Navbar({ lang, dict }: NavbarProps) {
     { href: `/${lang}/portfolio`, label: dict.nav.templates },
     { href: `/${lang}/no-website`, label: dict.nav.newWebsite },
     { href: `/${lang}/wcag-compliance`, label: dict.nav.wcagCompliance },
+    { href: `/${lang}/contact`, label: dict.nav.contact },
   ];
 
   return (
@@ -83,16 +84,6 @@ export function Navbar({ lang, dict }: NavbarProps) {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
               </Link>
             ))}
-            <Button
-              asChild
-              variant="ghost"
-              className="text-muted-foreground hover:text-foreground"
-            >
-              <Link href={`/${lang}/contact`}>
-                <MessageSquare className="h-4 w-4 mr-2" />
-                {dict.nav.contact}
-              </Link>
-            </Button>
             <Button
               asChild
               className="relative bg-primary text-primary-foreground overflow-hidden group"
@@ -151,18 +142,8 @@ export function Navbar({ lang, dict }: NavbarProps) {
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: navLinks.length * 0.1 }}
-                  className="flex flex-col gap-2 mt-2"
+                  className="mt-2"
                 >
-                  <Button
-                    asChild
-                    variant="outline"
-                    className="w-full"
-                  >
-                    <Link href={`/${lang}/contact`} onClick={() => setIsOpen(false)}>
-                      <MessageSquare className="h-4 w-4 mr-2" />
-                      {dict.nav.contact}
-                    </Link>
-                  </Button>
                   <Button
                     asChild
                     className="bg-primary text-primary-foreground hover:bg-accent-hover w-full"

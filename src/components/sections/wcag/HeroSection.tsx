@@ -6,8 +6,9 @@ import { AnimatedCounter } from "@/components/ui/animated-counter";
 import { TextAnimate } from "@/components/ui/text-reveal";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { staggerContainerSlow, staggerItem } from "@/lib/animations";
-import { ArrowRight, AlertTriangle, Shield, Scale, FileWarning } from "lucide-react";
+import { ArrowRight, AlertTriangle, Shield, Scale, FileWarning, Calendar } from "lucide-react";
 import { useRef } from "react";
+import { CALCOM_BOOKING_URL } from "@/lib/constants";
 
 // Stats specific to WCAG compliance
 const stats = [
@@ -124,11 +125,11 @@ export function HeroSection() {
                 size="lg"
                 className="group relative bg-primary text-primary-foreground h-14 px-8 text-base font-medium overflow-hidden"
               >
-                <a href="mailto:hello@dealcatcher.io?subject=Free%20WCAG%20Audit">
+                <a href={CALCOM_BOOKING_URL} target="_blank" rel="noopener noreferrer">
                   <span className="absolute inset-0 bg-gradient-to-r from-primary via-accent-hover to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   <span className="relative flex items-center gap-2">
+                    <Calendar className="h-5 w-5" />
                     Get your free WCAG audit
-                    <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
                   </span>
                 </a>
               </Button>
