@@ -11,9 +11,7 @@
     "titleHighlight": "finner de deg eller konkurrenten din?",
     "subtitle": "Hver dag uten en profesjonell nettside gar potensielle kunder til konkurrentene dine. Bli funnet pa Google, AI-sok og overalt der kundene dine leter.",
     "ctaPrimary": "Fa nettsiden min pa 7 dager",
-    "ctaSecondary": "Se hvor mye du taper",
-    "trustLabel": "Stolet pa av norske handverkere",
-    "trustItems": ["47 Nettsider Bygget", "8+ Leads/Maned i Snitt", "14-Dagers Pengene-Tilbake"]
+    "ctaSecondary": "Se hvor mye du taper"
   },
   "whatWeDo": {
     "badge": "Hva Vi Gjor",
@@ -513,45 +511,6 @@
     "submit": "Ring meg tilbake",
     "success": "Mottatt!",
     "callbackPromise": "Vi ringer deg innen 2 timer"
-  },
-  "socialProof": {
-    "badge": "Stolet Pa Av Norske Handverkere",
-    "title": "Ekte resultater fra",
-    "titleHighlight": "ekte bedrifter",
-    "subtitle": "Ikke ta vart ord for det. Se hva norske handverkere og bedriftseiere sier om a jobbe med oss.",
-    "stats": {
-      "websites": { "value": "47", "label": "Nettsider bygget" },
-      "leads": { "value": "156", "label": "Leads generert denne maneden" },
-      "avgLeads": { "value": "8+", "label": "Snitt leads per klient/maned" },
-      "satisfaction": { "value": "100%", "label": "Tilfredshet" }
-    },
-    "testimonials": [
-      {
-        "name": "Petter Hansen",
-        "company": "Hansen Elektro AS",
-        "location": "Bergen",
-        "quote": "Som elektriker hadde jeg ikke tid til markedsforing. DealCatcher bygde nettsiden min pa 5 dager. Fikk min forste kunde fra Google etter bare 2 uker.",
-        "result": "8-10 henvendelser per maned",
-        "date": "Klient siden september 2025"
-      },
-      {
-        "name": "Erik Johansen",
-        "company": "Johansen Rorlegger",
-        "location": "Oslo",
-        "quote": "Jeg var skeptisk til a betale pa forhand, men 14-dagers garantien gjorde det risikofritt. Beste beslutningen jeg tok for bedriften i ar.",
-        "result": "12 nye kunder pa 3 maneder",
-        "date": "Klient siden oktober 2025"
-      },
-      {
-        "name": "Lars Nilsen",
-        "company": "Nilsen Snekker",
-        "location": "Trondheim",
-        "quote": "Endelig en nettside jeg kan vaere stolt av. Kundene mine finner meg pa Google na i stedet for at jeg ma jage etter dem.",
-        "result": "Forste side Google-rangering",
-        "date": "Klient siden november 2025"
-      }
-    ],
-    "cta": "Bli med dem"
   },
   "roiCalculator": {
     "badge": "ROI-Kalkulator",

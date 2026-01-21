@@ -1,6 +1,6 @@
 import { Container } from "@/components/shared/Container";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import type { Locale } from "@/lib/i18n/config";
 
@@ -13,8 +13,6 @@ interface HeroSectionProps {
     subtitle: string;
     ctaPrimary: string;
     ctaSecondary: string;
-    trustLabel: string;
-    trustItems: string[];
   };
 }
 
@@ -106,23 +104,6 @@ export function HeroSection({ lang, dict }: HeroSectionProps) {
               ))}
             </div>
 
-            {/* Trust indicators */}
-            <div>
-              <p className="text-xs sm:text-sm text-muted-foreground mb-3 sm:mb-4">
-                {dict.trustLabel}
-              </p>
-              <div className="flex flex-wrap gap-2 sm:gap-3 text-xs sm:text-sm text-muted-foreground">
-                {dict.trustItems.map((item) => (
-                  <div
-                    key={item}
-                    className="flex items-center gap-1.5 sm:gap-2 rounded-full border border-border/50 bg-card/50 backdrop-blur-sm px-3 py-1.5 sm:px-4 sm:py-2"
-                  >
-                    <CheckCircle2 className="h-3 w-3 sm:h-4 sm:w-4 text-primary flex-shrink-0" />
-                    <span>{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
         </Container>
       </div>
