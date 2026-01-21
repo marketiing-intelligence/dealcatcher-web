@@ -4,7 +4,8 @@ import { Container } from "@/components/shared/Container";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { fadeUp, viewportOnce } from "@/lib/animations";
-import { ArrowRight, Search } from "lucide-react";
+import { ArrowRight, Calendar, Mail } from "lucide-react";
+import { CALCOM_BOOKING_URL, CONTACT_EMAIL } from "@/lib/constants";
 
 export function CTASection() {
   return (
@@ -35,9 +36,20 @@ export function CTASection() {
               size="lg"
               className="bg-primary text-primary-foreground hover:bg-accent-hover h-14 px-8 text-base font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_var(--accent-glow)]"
             >
-              <a href="mailto:hello@dealcatcher.io?subject=Free%20WCAG%20Audit">
-                <Search className="mr-2 h-5 w-5" />
-                Get your free WCAG audit
+              <a href={CALCOM_BOOKING_URL} target="_blank" rel="noopener noreferrer">
+                <Calendar className="mr-2 h-5 w-5" />
+                Book free consultation
+              </a>
+            </Button>
+            <Button
+              asChild
+              variant="outline"
+              size="lg"
+              className="border-border hover:border-primary hover:text-primary h-14 px-8 text-base font-medium"
+            >
+              <a href={`mailto:${CONTACT_EMAIL}`}>
+                <Mail className="mr-2 h-5 w-5" />
+                Send us a message
               </a>
             </Button>
           </div>

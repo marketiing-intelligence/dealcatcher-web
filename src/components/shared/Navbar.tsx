@@ -5,7 +5,8 @@ import { LanguageSwitcher } from "@/components/shared/LanguageSwitcher";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Calendar, Mail, Menu, X } from "lucide-react";
+import { CALCOM_BOOKING_URL, CONTACT_EMAIL } from "@/lib/constants";
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
 import { cn } from "@/lib/utils";
 import type { Locale } from "@/lib/i18n/config";
@@ -87,9 +88,22 @@ export function Navbar({ lang, dict }: NavbarProps) {
               asChild
               className="relative bg-primary text-primary-foreground overflow-hidden group"
             >
-              <a href="mailto:hello@dealcatcher.io">
+              <a href={CALCOM_BOOKING_URL} target="_blank" rel="noopener noreferrer">
                 <span className="absolute inset-0 bg-gradient-to-r from-primary via-accent-hover to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <span className="relative">{dict.nav.contact}</span>
+                <span className="relative flex items-center gap-2">
+                  <Calendar className="h-4 w-4" />
+                  Book a call
+                </span>
+              </a>
+            </Button>
+            <Button
+              asChild
+              variant="ghost"
+              className="text-muted-foreground hover:text-foreground"
+            >
+              <a href={`mailto:${CONTACT_EMAIL}`}>
+                <Mail className="h-4 w-4 mr-2" />
+                Email
               </a>
             </Button>
           </div>
@@ -145,12 +159,26 @@ export function Navbar({ lang, dict }: NavbarProps) {
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: (navLinks.length + 1) * 0.1 }}
+                  className="flex flex-col gap-2 mt-2"
                 >
                   <Button
                     asChild
-                    className="bg-primary text-primary-foreground hover:bg-accent-hover w-full mt-2"
+                    className="bg-primary text-primary-foreground hover:bg-accent-hover w-full"
                   >
-                    <a href="mailto:hello@dealcatcher.io">{dict.nav.contact}</a>
+                    <a href={CALCOM_BOOKING_URL} target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>
+                      <Calendar className="h-4 w-4 mr-2" />
+                      Book a call
+                    </a>
+                  </Button>
+                  <Button
+                    asChild
+                    variant="outline"
+                    className="w-full"
+                  >
+                    <a href={`mailto:${CONTACT_EMAIL}`} onClick={() => setIsOpen(false)}>
+                      <Mail className="h-4 w-4 mr-2" />
+                      Email us
+                    </a>
                   </Button>
                 </motion.div>
               </div>

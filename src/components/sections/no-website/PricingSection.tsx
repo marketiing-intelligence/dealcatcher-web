@@ -6,7 +6,8 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
 import { staggerContainer, staggerItem, viewportOnce } from "@/lib/animations";
-import { Check, ArrowRight, Zap } from "lucide-react";
+import { Check, ArrowRight, Zap, Calendar } from "lucide-react";
+import { CALCOM_BOOKING_URL } from "@/lib/constants";
 
 const packages = [
   {
@@ -152,9 +153,9 @@ export function PricingSection() {
                     : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
                 }`}
               >
-                <a href="mailto:hello@dealcatcher.io">
+                <a href={CALCOM_BOOKING_URL} target="_blank" rel="noopener noreferrer">
+                  <Calendar className="mr-2 h-4 w-4" />
                   {pkg.cta}
-                  <ArrowRight className="ml-2 h-4 w-4" />
                 </a>
               </Button>
             </motion.div>

@@ -3,6 +3,7 @@
 import { Container } from "@/components/shared/Container";
 import Link from "next/link";
 import type { Locale } from "@/lib/i18n/config";
+import { CONTACT_EMAIL } from "@/lib/constants";
 
 interface FooterProps {
   lang: Locale;
@@ -73,10 +74,10 @@ export function Footer({ lang, dict }: FooterProps) {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="mailto:hello@dealcatcher.io"
+                  href={`mailto:${CONTACT_EMAIL}`}
                   className="text-foreground hover:text-primary transition-colors"
                 >
-                  hello@dealcatcher.io
+                  {CONTACT_EMAIL}
                 </a>
               </li>
             </ul>
