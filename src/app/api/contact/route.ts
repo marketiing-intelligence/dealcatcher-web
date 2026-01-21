@@ -12,7 +12,7 @@ export async function POST(request: Request) {
     const resend = new Resend(process.env.RESEND_API_KEY);
     const { error } = await resend.emails.send({
       from: "DealCatcher <noreply@dealcatcher.io>",
-      to: ["hello@dealcatcher.io"],
+      to: ["contact@dealcatcher.io"],
       replyTo: validatedData.email,
       subject:
         lang === "no"

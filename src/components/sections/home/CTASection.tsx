@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { GradientText } from "@/components/ui/gradient-text";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { fadeUp, viewportOnce } from "@/lib/animations";
-import { ArrowRight, Mail, Sparkles } from "lucide-react";
+import { ArrowRight, Calendar, Mail, Sparkles } from "lucide-react";
 import Link from "next/link";
 import { useRef } from "react";
 import type { Locale } from "@/lib/i18n/config";
@@ -129,9 +129,20 @@ export function CTASection({ lang, dict }: CTASectionProps) {
                 asChild
                 variant="outline"
                 size="lg"
+                className="group border-primary/50 hover:border-primary hover:bg-primary/10 h-14 px-8 text-base font-medium bg-white/5 backdrop-blur-sm transition-all duration-300"
+              >
+                <a href="https://cal.dealcatcher.io/marcin-jaworski/discovery-call" target="_blank" rel="noopener noreferrer">
+                  <Calendar className="mr-2 h-5 w-5 transition-transform group-hover:scale-110" />
+                  Book a call
+                </a>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                size="lg"
                 className="group border-white/20 hover:border-primary hover:text-primary h-14 px-8 text-base font-medium bg-white/5 backdrop-blur-sm transition-all duration-300"
               >
-                <a href="mailto:hello@dealcatcher.io">
+                <a href="mailto:contact@dealcatcher.io">
                   <Mail className="mr-2 h-5 w-5 transition-transform group-hover:scale-110" />
                   {dict.ctaSecondary}
                 </a>

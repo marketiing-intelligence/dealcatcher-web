@@ -17,7 +17,7 @@ export async function POST(request: Request) {
       const resend = new Resend(process.env.RESEND_API_KEY);
       await resend.emails.send({
         from: "DealCatcher <noreply@dealcatcher.io>",
-        to: ["hello@dealcatcher.io"],
+        to: ["contact@dealcatcher.io"],
         subject: `[QUICK LEAD] Callback Request - ${phone}`,
         html: `
           <h2>New Quick Contact Lead!</h2>
