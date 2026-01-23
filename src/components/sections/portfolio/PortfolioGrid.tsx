@@ -27,7 +27,7 @@ interface PortfolioGridProps {
       service: string;
       finishing: string;
     };
-    emptyState: string;
+    noResults: string;
   };
 }
 
@@ -81,7 +81,7 @@ export function PortfolioGrid({ dict }: PortfolioGridProps) {
         {filteredItems.length === 0 && (
           <div className="text-center py-12">
             <p className="text-muted-foreground">
-              {dict.emptyState}
+              {dict.noResults}
             </p>
           </div>
         )}

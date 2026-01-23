@@ -8,7 +8,7 @@ import { Sparkles } from "lucide-react";
 interface PortfolioHeroProps {
   dict: {
     badge: string;
-    titleStart: string;
+    title: string;
     titleHighlight: string;
     subtitle: string;
   };
@@ -38,7 +38,7 @@ export function PortfolioHero({ dict }: PortfolioHeroProps) {
             variants={staggerItem}
             className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6"
           >
-            {dict.titleStart}{" "}
+            {dict.title}{" "}
             <span className="text-primary">{dict.titleHighlight}</span>
           </motion.h1>
 
