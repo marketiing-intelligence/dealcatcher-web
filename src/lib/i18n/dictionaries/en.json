@@ -583,5 +583,322 @@
       "success": "Your withdrawal has been submitted. We will process it within 14 days.",
       "error": "An error occurred. Please try again or contact us directly at contact@dealcatcher.io."
     }
+  },
+  "noWebsite": {
+    "hero": {
+      "badge": "For Craftsmen Without a Website",
+      "titleStart": "Your craft deserves to be",
+      "titleHighlight": "found online",
+      "subtitle": "Clients search for carpenters, plumbers, and electricians online every day. If you're not there, you're invisible. Your competitors with websites are winning jobs that should be yours.",
+      "cta": "Get your professional website",
+      "stats": [
+        { "value": 87, "suffix": "%", "label": "of consumers search online first" },
+        { "value": 46, "suffix": "%", "label": "prefer local businesses with websites" },
+        { "value": 3, "suffix": "x", "label": "more leads with a professional site" }
+      ]
+    },
+    "problem": {
+      "badge": "The Problem",
+      "title": "You're invisible to potential clients",
+      "subtitle": "Here's what's happening while you rely only on word of mouth.",
+      "items": [
+        {
+          "title": "Clients search online — you're not visible",
+          "description": "When someone in Oslo searches for 'carpenter near me', your competitors show up. You don't. You're losing jobs to less skilled craftsmen who simply have a website."
+        },
+        {
+          "title": "Competition with websites wins",
+          "description": "A professional website signals credibility. Between two carpenters with similar skills, clients choose the one with online presence. It's that simple."
+        },
+        {
+          "title": "No website = no credibility",
+          "description": "Modern clients expect every legitimate business to have a website. Without one, you look outdated or even untrustworthy, no matter how skilled you are."
+        },
+        {
+          "title": "AI can't recommend you",
+          "description": "ChatGPT, Perplexity, and Google AI are becoming how people find services. They can only recommend businesses with proper websites. Facebook profiles don't count."
+        }
+      ]
+    },
+    "solution": {
+      "badge": "What You Get",
+      "title": "A website that brings clients",
+      "subtitle": "Not just a pretty page. A digital asset that makes you money.",
+      "items": [
+        {
+          "title": "AI Search Ready",
+          "description": "Built so ChatGPT, Perplexity, and Google AI find and recommend your business when clients ask for help.",
+          "features": ["Semantic HTML structure", "Structured data markup", "Content optimized for AI"]
+        },
+        {
+          "title": "Built to Convert",
+          "description": "Strategic design that turns website visitors into paying customers. Every element is intentional.",
+          "features": ["Clear value proposition", "Strong call-to-actions", "Social proof & trust signals"]
+        },
+        {
+          "title": "WCAG Compliant",
+          "description": "100% compliant with Norwegian accessibility law. No risk of fines from Digdir.",
+          "features": ["WCAG 2.0 AA certified", "Monthly compliance checks", "Ongoing monitoring"]
+        },
+        {
+          "title": "Charge Higher Prices",
+          "description": "A professional website builds credibility. Clients trust you more and pay premium rates.",
+          "features": ["Professional image", "Showcase your best work", "Stand out from competition"]
+        },
+        {
+          "title": "Zero Hassle",
+          "description": "15 minutes for the brief. We handle design, development, hosting, and maintenance.",
+          "features": ["Quick 15-min brief", "We do everything", "Ongoing support included"]
+        }
+      ]
+    },
+    "pricing": {
+      "badge": "Pricing",
+      "title": "Choose your path to clients",
+      "subtitle": "Start with a website, add advertising when you're ready to grow faster.",
+      "setupLabel": "setup",
+      "roiHint": "Quick math: If your average job is $500+, the website pays for itself after just 2 new clients.",
+      "packages": [
+        {
+          "name": "Starter",
+          "tagline": "Get online",
+          "description": "Professional website to establish your online presence.",
+          "setup": "$1,000",
+          "monthly": "$50",
+          "monthlyLabel": "/month",
+          "features": ["Professional template design (12 options)", "AI Search optimization", "WCAG 2.0 AA compliant", "Mobile responsive", "Contact form", "Google Analytics setup", "Hosting included", "24/7 uptime monitoring", "Monthly compliance check", "Email support (24h response)"],
+          "cta": "Get Started"
+        },
+        {
+          "name": "Growth",
+          "tagline": "Most popular",
+          "description": "Custom website + premium support for growing businesses.",
+          "setup": "$1,500",
+          "monthly": "$99",
+          "monthlyLabel": "/month",
+          "features": ["Custom design from scratch", "AI Search optimization", "WCAG 2.0 AA compliant", "Mobile responsive", "Contact form + booking system", "Google Analytics + monthly report", "Hosting included", "24/7 uptime monitoring", "Monthly compliance check", "Unlimited content changes", "Add new pages anytime", "Priority support (4h response)"],
+          "cta": "Get Growth",
+          "popular": true
+        },
+        {
+          "name": "Accelerator",
+          "tagline": "Maximum results",
+          "description": "Website + Google Ads = clients actively searching for your services.",
+          "setup": "$1,800",
+          "monthly": "$349",
+          "monthlyLabel": "/month + ad spend",
+          "features": ["Everything in Growth, plus:", "Google Ads campaign setup", "Keyword research for your area", "Ad copywriting in Norwegian", "Monthly campaign optimization", "A/B testing & bid management", "Monthly performance report", "Direct leads from search", "Min. $500/month ad budget"],
+          "cta": "Get Accelerator",
+          "highlight": "Best ROI"
+        }
+      ]
+    },
+    "googleAds": {
+      "badge": "Optional Add-On",
+      "title": "Want clients",
+      "titleHighlight": "faster",
+      "subtitle": "A website brings clients who find you. Google Ads brings clients who are actively searching for your services right now.",
+      "howItWorks": {
+        "title": "Website + Google Ads = Full Pipeline",
+        "description": "Your website converts visitors into clients. Google Ads drives those visitors to your website. Together, they create a complete client acquisition system.",
+        "steps": ["Client searches", "Sees your ad", "Contacts you"]
+      },
+      "example": {
+        "label": "Example search:",
+        "query": "snekker oslo pris",
+        "adLabel": "AD",
+        "adTitle": "Snekker i Oslo — Profesjonelt Håndverk",
+        "adDescription": "Gratis befaring. 20+ års erfaring. Kontakt oss i dag."
+      },
+      "benefits": [
+        { "title": "Appear when they search", "description": "When someone Googles \"snekker Oslo\" or \"elektriker Bergen\", your ad shows at the top." },
+        { "title": "Target your exact area", "description": "Only pay to reach people in your service area. No wasted budget on distant cities." },
+        { "title": "Immediate results", "description": "Unlike SEO, Google Ads brings clients from day one. See calls and inquiries within the first week." },
+        { "title": "Measurable ROI", "description": "Know exactly how many leads came from ads. Monthly reports show what's working." }
+      ],
+      "pricingLabel": "Google Ads management",
+      "pricingValue": "$200",
+      "pricingSuffix": "/month + 10% of ad spend",
+      "pricingNote": "Setup: $300 one-time · Min. ad budget: $500/month",
+      "includedNote": "Already included in the Accelerator package above."
+    },
+    "process": {
+      "badge": "How It Works",
+      "title": "From zero to online in days",
+      "subtitle": "A simple 4-step process. You focus on your craft, we handle the rest.",
+      "steps": [
+        { "number": "01", "title": "Consultation", "description": "Quick call to understand your business, services, and goals. We'll answer your questions and explain the process.", "duration": "15 min" },
+        { "number": "02", "title": "Brief", "description": "You fill out a simple form with your business info, services, and any materials you have (logo, photos). Takes 15 minutes.", "duration": "15 min" },
+        { "number": "03", "title": "Build", "description": "We design and build your website. You'll see a preview and can request changes. Usually 1-2 rounds of feedback.", "duration": "5-7 days" },
+        { "number": "04", "title": "Launch", "description": "We publish your site, set up your domain, configure analytics, and make sure everything works perfectly.", "duration": "1 day" }
+      ]
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Common questions",
+      "subtitle": "Still have questions? Email us at hello@dealcatcher.io",
+      "items": [
+        { "question": "I don't need a website — I have enough work from referrals", "answer": "That's great! But a website lets you choose better jobs and charge higher prices. When clients see your professional online presence, they're willing to pay premium rates. Plus, referrals dry up eventually — a website gives you a consistent stream of new leads." },
+        { "question": "It's too expensive", "answer": "A website pays for itself after 1-2 new clients. If you charge $500+ per job, the $1,000 investment is covered almost immediately. Plus, the monthly plan is less than what you'd pay for a single hour of work — and it includes hosting, maintenance, and compliance monitoring." },
+        { "question": "I don't have time for this", "answer": "We designed the process specifically for busy craftsmen. The brief takes 15 minutes. One 15-minute call. That's it. We handle absolutely everything else — design, development, hosting, domain setup, and ongoing maintenance. You don't need to learn anything technical." },
+        { "question": "I have a Facebook page — isn't that enough?", "answer": "Facebook is a complement, not a replacement for a website. Google doesn't index Facebook profiles well. AI assistants like ChatGPT can't recommend you based on your Facebook page. And many clients expect a 'real' business to have its own website — a Facebook-only presence can look unprofessional." },
+        { "question": "Can I update the website myself?", "answer": "You don't need to. Content changes are included in the Premium plan (unlimited) or available on request for the Basic plan. Just email us what you want changed, and we'll do it within 24 hours. No technical skills required on your end." },
+        { "question": "What if I want to cancel?", "answer": "You can cancel the monthly plan anytime — no questions asked. If you cancel, you keep ownership of your domain. We'll help you migrate to another provider if needed. We're confident you'll stay because the value is obvious, but there's zero lock-in." }
+      ]
+    },
+    "cta": {
+      "title": "Ready to get",
+      "titleHighlight": "found online",
+      "subtitle": "Book a free 15-minute consultation. We'll discuss your business, answer your questions, and show you what your website could look like.",
+      "ctaPrimary": "Book free consultation",
+      "ctaSecondary": "Send us a message",
+      "disclaimer": "No commitment required. We'll never spam you."
+    }
+  },
+  "wcagPage": {
+    "hero": {
+      "badge": "WCAG Compliance Alert",
+      "titleStart": "Your website might be",
+      "titleHighlight": "breaking Norwegian law",
+      "subtitle": "97% of audited Norwegian websites fail accessibility requirements. Digdir conducts random checks and publishes results. Is your website compliant?",
+      "cta": "Get your free WCAG audit",
+      "stats": [
+        { "value": 97, "suffix": "%", "label": "of sites fail accessibility audits" },
+        { "value": 250, "suffix": "+", "label": "audits conducted yearly by Digdir" },
+        { "value": 100, "suffix": "%", "label": "compliance after our fixes" }
+      ],
+      "source": "According to Tilsynet for universell utforming av IKT, 67 out of 69 audited websites (97%) had accessibility violations. The agency conducts approximately 250 audits per year."
+    },
+    "problem": {
+      "badge": "The Problem",
+      "title": "What is WCAG and why does it matter?",
+      "subtitle": "Web Content Accessibility Guidelines (WCAG) ensure websites are usable by people with disabilities. In Norway, it's not optional — it's the law.",
+      "items": [
+        {
+          "title": "Norwegian law requires WCAG 2.0 AA",
+          "description": "The Forskrift om universell utforming av IKT-løsninger mandates that all websites must be accessible. This applies to both public and private sector businesses."
+        },
+        {
+          "title": "Digdir conducts audits and publishes results",
+          "description": "Tilsynet for universell utforming av IKT performs random website audits. Failed audits are published publicly, and you'll receive an order to fix the issues within a deadline."
+        },
+        {
+          "title": "97% of websites fail compliance checks",
+          "description": "The vast majority of Norwegian websites have accessibility issues. Your website likely has problems you're not aware of — most issues are invisible to untrained eyes."
+        },
+        {
+          "title": "Your current site probably has issues",
+          "description": "Common problems include poor color contrast, missing alt texts, keyboard navigation issues, and improper form labels. These affect real users and violate the law."
+        }
+      ]
+    },
+    "solution": {
+      "badge": "The Solution",
+      "title": "We audit, report, and rebuild",
+      "subtitle": "A complete solution to get your website compliant and future-ready.",
+      "items": [
+        {
+          "title": "Free WCAG Audit",
+          "description": "We scan your website and identify every accessibility issue.",
+          "features": ["Automated scanning", "Manual review", "Detailed findings"]
+        },
+        {
+          "title": "Detailed Report",
+          "description": "You receive a clear report with specific problems and their locations.",
+          "features": ["Issue severity", "Exact locations", "Legal implications"]
+        },
+        {
+          "title": "Complete Rebuild",
+          "description": "We build you a new website that's fully compliant from the ground up.",
+          "features": ["WCAG 2.0 AA", "AI Search Ready", "Built to convert"]
+        }
+      ]
+    },
+    "pricing": {
+      "badge": "Pricing",
+      "title": "Get compliant. Get clients.",
+      "subtitle": "Start with a compliant website, add advertising when ready.",
+      "setupLabel": "setup",
+      "auditNote": "Both packages include a free WCAG audit of your current site. No obligation to proceed.",
+      "packages": [
+        {
+          "name": "Compliance",
+          "tagline": "Get legal",
+          "description": "New WCAG-compliant website with premium support.",
+          "setup": "$1,500",
+          "monthly": "$99",
+          "monthlyLabel": "/month",
+          "features": ["Complete website rebuild", "100% WCAG 2.0 AA compliant", "AI Search optimization", "Mobile responsive design", "Contact forms + booking", "Google Analytics setup", "Hosting included", "24/7 uptime monitoring", "Monthly compliance check", "Unlimited content changes", "Priority support (4h)"],
+          "cta": "Start with free audit",
+          "popular": true
+        },
+        {
+          "name": "Compliance + Growth",
+          "tagline": "Maximum impact",
+          "description": "Compliant website + Google Ads to drive immediate traffic.",
+          "setup": "$1,800",
+          "monthly": "$349",
+          "monthlyLabel": "/month + ad spend",
+          "features": ["Everything in Compliance, plus:", "Google Ads campaign setup", "Keyword research for your area", "Ad copywriting in Norwegian", "Monthly campaign optimization", "A/B testing & bid management", "Performance reports with ROI", "Direct leads from search", "Min. $500/month ad budget"],
+          "cta": "Get full package",
+          "highlight": "Best ROI"
+        }
+      ]
+    },
+    "process": {
+      "badge": "How It Works",
+      "title": "From audit to compliance",
+      "subtitle": "A clear 4-step process to make your website legally compliant.",
+      "steps": [
+        { "number": "01", "title": "Free Audit", "description": "We scan your current website for accessibility issues. Automated tools + manual review. You receive a detailed report.", "duration": "2-3 days" },
+        { "number": "02", "title": "Report Review", "description": "We walk you through the findings. You'll understand exactly what's wrong and why it matters for compliance.", "duration": "30 min call" },
+        { "number": "03", "title": "Decision", "description": "You decide whether to proceed with the rebuild. No pressure, no obligation. The audit is completely free.", "duration": "Your pace" },
+        { "number": "04", "title": "Rebuild & Launch", "description": "We build your new, fully compliant website. You review, approve, and we launch. Ongoing compliance monitoring included.", "duration": "7-10 days" }
+      ]
+    },
+    "trust": {
+      "badge": "Why Us",
+      "title": "Your compliance partner",
+      "subtitle": "We don't just build websites. We ensure long-term legal compliance.",
+      "items": [
+        {
+          "title": "We Know Norwegian Law",
+          "points": ["Deep understanding of WCAG 2.0 AA requirements", "Experience with Tilsynet compliance expectations", "Up-to-date with regulatory changes"]
+        },
+        {
+          "title": "Ongoing Compliance",
+          "points": ["Monthly automated compliance scans", "Proactive issue detection", "Updates when regulations change"]
+        },
+        {
+          "title": "Compliance Guarantee",
+          "points": ["100% WCAG 2.0 AA compliant delivery", "We fix any issues we missed for free", "Documentation for audit defense"]
+        }
+      ]
+    },
+    "cta": {
+      "title": "Find out if your website is",
+      "titleHighlight": "compliant",
+      "subtitle": "Request a free WCAG audit. We'll scan your website and send you a detailed report of any accessibility issues. No obligation to proceed.",
+      "ctaPrimary": "Book free consultation",
+      "ctaSecondary": "Send us a message",
+      "disclaimer": "Takes 2-3 days. Completely free. We'll email you the report."
+    }
+  },
+  "portfolioPage": {
+    "hero": {
+      "badge": "Template Gallery",
+      "title": "Premium templates for",
+      "titleHighlight": "Norwegian businesses",
+      "subtitle": "Every design is AI-ready, WCAG compliant, and built to convert visitors into customers. Click any template to see it live."
+    },
+    "grid": {
+      "filterAll": "All Templates",
+      "noResults": "No templates found for this category.",
+      "industryLabels": {
+        "contractor": "Total Contractor",
+        "service": "Service Specialist",
+        "finishing": "Finishing Expert"
+      }
+    }
   }
 }

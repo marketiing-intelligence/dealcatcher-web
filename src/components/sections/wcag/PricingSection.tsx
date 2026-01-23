@@ -6,66 +6,39 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
 import { staggerContainer, staggerItem, viewportOnce } from "@/lib/animations";
-import { Check, ArrowRight, Zap, Calendar } from "lucide-react";
+import { Check, Zap, Calendar } from "lucide-react";
 import { CALCOM_BOOKING_URL } from "@/lib/constants";
 
-const packages = [
-  {
-    name: "Compliance",
-    tagline: "Get legal",
-    description: "New WCAG-compliant website with premium support.",
-    setup: "$1,500",
-    monthly: "$99",
-    monthlyLabel: "/month",
-    features: [
-      "Complete website rebuild",
-      "100% WCAG 2.0 AA compliant",
-      "AI Search optimization",
-      "Mobile responsive design",
-      "Contact forms + booking",
-      "Google Analytics setup",
-      "Hosting included",
-      "24/7 uptime monitoring",
-      "Monthly compliance check",
-      "Unlimited content changes",
-      "Priority support (4h)",
-    ],
-    cta: "Start with free audit",
-    popular: true,
-    highlight: null,
-  },
-  {
-    name: "Compliance + Growth",
-    tagline: "Maximum impact",
-    description: "Compliant website + Google Ads to drive immediate traffic.",
-    setup: "$1,800",
-    monthly: "$349",
-    monthlyLabel: "/month + ad spend",
-    features: [
-      "Everything in Compliance, plus:",
-      "Google Ads campaign setup",
-      "Keyword research for your area",
-      "Ad copywriting in Norwegian",
-      "Monthly campaign optimization",
-      "A/B testing & bid management",
-      "Performance reports with ROI",
-      "Direct leads from search",
-      "Min. $500/month ad budget",
-    ],
-    cta: "Get full package",
-    popular: false,
-    highlight: "Best ROI",
-  },
-];
+interface PricingSectionProps {
+  dict: {
+    badge: string;
+    title: string;
+    subtitle: string;
+    setupLabel: string;
+    auditNote: string;
+    packages: Array<{
+      name: string;
+      tagline: string;
+      description: string;
+      setup: string;
+      monthly: string;
+      monthlyLabel: string;
+      features: string[];
+      cta: string;
+      popular?: boolean;
+      highlight?: string;
+    }>;
+  };
+}
 
-export function PricingSection() {
+export function PricingSection({ dict }: PricingSectionProps) {
   return (
     <section id="pricing" className="py-20 md:py-32 bg-[#141414]">
       <Container>
         <SectionHeading
-          badge="Pricing"
-          title="Get compliant. Get clients."
-          subtitle="Start with a compliant website, add advertising when ready."
+          badge={dict.badge}
+          title={dict.title}
+          subtitle={dict.subtitle}
           align="center"
         />
 
@@ -76,7 +49,7 @@ export function PricingSection() {
           variants={staggerContainer}
           className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto"
         >
-          {packages.map((pkg) => (
+          {dict.packages.map((pkg) => (
             <motion.div
               key={pkg.name}
               variants={staggerItem}
@@ -104,7 +77,7 @@ export function PricingSection() {
               <div className="mb-6">
                 <div className="flex items-baseline gap-1">
                   <span className="text-3xl font-semibold">{pkg.setup}</span>
-                  <span className="text-muted-foreground text-sm">setup</span>
+                  <span className="text-muted-foreground text-sm">{dict.setupLabel}</span>
                 </div>
                 <div className="flex items-baseline gap-1 mt-1">
                   <span className="text-xl font-medium text-primary">{pkg.monthly}</span>
@@ -146,8 +119,7 @@ export function PricingSection() {
           className="mt-12 text-center"
         >
           <p className="text-muted-foreground">
-            Both packages include a <span className="text-foreground font-medium">free WCAG audit</span> of your current site.
-            No obligation to proceed.
+            {dict.auditNote}
           </p>
         </motion.div>
       </Container>

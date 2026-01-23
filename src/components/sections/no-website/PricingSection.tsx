@@ -6,90 +6,39 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
 import { staggerContainer, staggerItem, viewportOnce } from "@/lib/animations";
-import { Check, ArrowRight, Zap, Calendar } from "lucide-react";
+import { Check, Zap, Calendar } from "lucide-react";
 import { CALCOM_BOOKING_URL } from "@/lib/constants";
 
-const packages = [
-  {
-    name: "Starter",
-    tagline: "Get online",
-    description: "Professional website to establish your online presence.",
-    setup: "$1,000",
-    monthly: "$50",
-    monthlyLabel: "/month",
-    features: [
-      "Professional template design (12 options)",
-      "AI Search optimization",
-      "WCAG 2.0 AA compliant",
-      "Mobile responsive",
-      "Contact form",
-      "Google Analytics setup",
-      "Hosting included",
-      "24/7 uptime monitoring",
-      "Monthly compliance check",
-      "Email support (24h response)",
-    ],
-    cta: "Get Started",
-    popular: false,
-    highlight: null,
-  },
-  {
-    name: "Growth",
-    tagline: "Most popular",
-    description: "Custom website + premium support for growing businesses.",
-    setup: "$1,500",
-    monthly: "$99",
-    monthlyLabel: "/month",
-    features: [
-      "Custom design from scratch",
-      "AI Search optimization",
-      "WCAG 2.0 AA compliant",
-      "Mobile responsive",
-      "Contact form + booking system",
-      "Google Analytics + monthly report",
-      "Hosting included",
-      "24/7 uptime monitoring",
-      "Monthly compliance check",
-      "Unlimited content changes",
-      "Add new pages anytime",
-      "Priority support (4h response)",
-    ],
-    cta: "Get Growth",
-    popular: true,
-    highlight: null,
-  },
-  {
-    name: "Accelerator",
-    tagline: "Maximum results",
-    description: "Website + Google Ads = clients actively searching for your services.",
-    setup: "$1,800",
-    monthly: "$349",
-    monthlyLabel: "/month + ad spend",
-    features: [
-      "Everything in Growth, plus:",
-      "Google Ads campaign setup",
-      "Keyword research for your area",
-      "Ad copywriting in Norwegian",
-      "Monthly campaign optimization",
-      "A/B testing & bid management",
-      "Monthly performance report",
-      "Direct leads from search",
-      "Min. $500/month ad budget",
-    ],
-    cta: "Get Accelerator",
-    popular: false,
-    highlight: "Best ROI",
-  },
-];
+interface PricingSectionProps {
+  dict: {
+    badge: string;
+    title: string;
+    subtitle: string;
+    setupLabel: string;
+    roiHint: string;
+    packages: Array<{
+      name: string;
+      tagline: string;
+      description: string;
+      setup: string;
+      monthly: string;
+      monthlyLabel: string;
+      features: string[];
+      cta: string;
+      popular?: boolean;
+      highlight?: string;
+    }>;
+  };
+}
 
-export function PricingSection() {
+export function PricingSection({ dict }: PricingSectionProps) {
   return (
     <section id="pricing" className="py-20 md:py-32 bg-[#141414]">
       <Container>
         <SectionHeading
-          badge="Pricing"
-          title="Choose your path to clients"
-          subtitle="Start with a website, add advertising when you're ready to grow faster."
+          badge={dict.badge}
+          title={dict.title}
+          subtitle={dict.subtitle}
           align="center"
         />
 
@@ -100,7 +49,7 @@ export function PricingSection() {
           variants={staggerContainer}
           className="grid lg:grid-cols-3 gap-6 max-w-6xl mx-auto"
         >
-          {packages.map((pkg) => (
+          {dict.packages.map((pkg) => (
             <motion.div
               key={pkg.name}
               variants={staggerItem}
@@ -128,7 +77,7 @@ export function PricingSection() {
               <div className="mb-6">
                 <div className="flex items-baseline gap-1">
                   <span className="text-3xl font-semibold">{pkg.setup}</span>
-                  <span className="text-muted-foreground text-sm">setup</span>
+                  <span className="text-muted-foreground text-sm">{dict.setupLabel}</span>
                 </div>
                 <div className="flex items-baseline gap-1 mt-1">
                   <span className="text-xl font-medium text-primary">{pkg.monthly}</span>
@@ -171,8 +120,7 @@ export function PricingSection() {
           className="mt-12 text-center"
         >
           <p className="text-muted-foreground">
-            <span className="text-foreground font-medium">Quick math:</span> If your average job is $500+,
-            the website pays for itself after just 2 new clients.
+            {dict.roiHint}
           </p>
         </motion.div>
       </Container>

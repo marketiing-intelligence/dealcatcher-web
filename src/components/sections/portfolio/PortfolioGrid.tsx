@@ -7,7 +7,6 @@ import { motion } from "framer-motion";
 import { staggerContainer, staggerItem, viewportOnce } from "@/lib/animations";
 import {
   portfolioItems,
-  industryLabels,
   type Industry,
 } from "@/lib/portfolio-data";
 import { Filter } from "lucide-react";
@@ -20,7 +19,19 @@ const industries: (Industry | "all")[] = [
   "finishing",
 ];
 
-export function PortfolioGrid() {
+interface PortfolioGridProps {
+  dict: {
+    filterAll: string;
+    industryLabels: {
+      contractor: string;
+      service: string;
+      finishing: string;
+    };
+    emptyState: string;
+  };
+}
+
+export function PortfolioGrid({ dict }: PortfolioGridProps) {
   const [activeFilter, setActiveFilter] = useState<Industry | "all">("all");
 
   const filteredItems =
@@ -46,7 +57,7 @@ export function PortfolioGrid() {
                   : ""
               }
             >
-              {industry === "all" ? "All Templates" : industryLabels[industry]}
+              {industry === "all" ? dict.filterAll : dict.industryLabels[industry]}
             </Button>
           ))}
         </div>
@@ -70,7 +81,7 @@ export function PortfolioGrid() {
         {filteredItems.length === 0 && (
           <div className="text-center py-12">
             <p className="text-muted-foreground">
-              No templates found for this category.
+              {dict.emptyState}
             </p>
           </div>
         )}

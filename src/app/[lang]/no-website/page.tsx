@@ -42,14 +42,14 @@ export default async function NoWebsitePage({
     <>
       <Navbar lang={lang} dict={dict} />
       <main className="pt-16 md:pt-20">
-        <HeroSection />
-        <ProblemSection />
-        <SolutionSection />
-        <PricingSection />
-        <GoogleAdsSection />
-        <ProcessSection />
-        <FAQSection />
-        <CTASection lang={lang} />
+        <HeroSection dict={dict.noWebsite.hero} />
+        <ProblemSection dict={dict.noWebsite.problem} />
+        <SolutionSection dict={dict.noWebsite.solution} />
+        <PricingSection dict={dict.noWebsite.pricing} />
+        <GoogleAdsSection dict={dict.noWebsite.googleAds} />
+        <ProcessSection dict={dict.noWebsite.process} />
+        <FAQSection dict={dict.noWebsite.faq} />
+        <CTASection lang={lang} dict={dict.noWebsite.cta} />
       </main>
       <Footer lang={lang} dict={dict.footer} />
     </>

@@ -6,38 +6,16 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { staggerContainer, staggerItem, viewportOnce } from "@/lib/animations";
 import { useRef } from "react";
 
-const steps = [
-  {
-    number: "01",
-    title: "Consultation",
-    description:
-      "Quick call to understand your business, services, and goals. We'll answer your questions and explain the process.",
-    duration: "15 min",
-  },
-  {
-    number: "02",
-    title: "Brief",
-    description:
-      "You fill out a simple form with your business info, services, and any materials you have (logo, photos). Takes 15 minutes.",
-    duration: "15 min",
-  },
-  {
-    number: "03",
-    title: "Build",
-    description:
-      "We design and build your website. You'll see a preview and can request changes. Usually 1-2 rounds of feedback.",
-    duration: "5-7 days",
-  },
-  {
-    number: "04",
-    title: "Launch",
-    description:
-      "We publish your site, set up your domain, configure analytics, and make sure everything works perfectly.",
-    duration: "1 day",
-  },
-];
+interface ProcessSectionProps {
+  dict: {
+    badge: string;
+    title: string;
+    subtitle: string;
+    steps: Array<{ number: string; title: string; description: string; duration: string }>;
+  };
+}
 
-export function ProcessSection() {
+export function ProcessSection({ dict }: ProcessSectionProps) {
   const containerRef = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress } = useScroll({
@@ -51,9 +29,9 @@ export function ProcessSection() {
     <section className="py-20 md:py-32">
       <Container>
         <SectionHeading
-          badge="How It Works"
-          title="From zero to online in days"
-          subtitle="A simple 4-step process. You focus on your craft, we handle the rest."
+          badge={dict.badge}
+          title={dict.title}
+          subtitle={dict.subtitle}
         />
 
         <div ref={containerRef} className="relative">
@@ -77,7 +55,7 @@ export function ProcessSection() {
             variants={staggerContainer}
             className="grid md:grid-cols-4 gap-8 relative z-10"
           >
-            {steps.map((step, index) => (
+            {dict.steps.map((step, index) => (
               <motion.div key={step.number} variants={staggerItem} className="relative">
                 {/* Step number with glow */}
                 <motion.div

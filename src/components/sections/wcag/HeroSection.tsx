@@ -6,18 +6,25 @@ import { AnimatedCounter } from "@/components/ui/animated-counter";
 import { TextAnimate } from "@/components/ui/text-reveal";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { staggerContainerSlow, staggerItem } from "@/lib/animations";
-import { ArrowRight, AlertTriangle, Shield, Scale, FileWarning, Calendar } from "lucide-react";
+import { AlertTriangle, Shield, Scale, FileWarning, Calendar } from "lucide-react";
 import { useRef } from "react";
 import { CALCOM_BOOKING_URL } from "@/lib/constants";
 
-// Stats specific to WCAG compliance
-const stats = [
-  { value: 97, suffix: "%", label: "of sites fail accessibility audits", icon: FileWarning },
-  { value: 250, suffix: "+", label: "audits conducted yearly by Digdir", icon: Scale },
-  { value: 100, suffix: "%", label: "compliance after our fixes", icon: Shield },
-];
+const statIcons = [FileWarning, Scale, Shield];
 
-export function HeroSection() {
+interface HeroSectionProps {
+  dict: {
+    badge: string;
+    titleStart: string;
+    titleHighlight: string;
+    subtitle: string;
+    cta: string;
+    stats: Array<{ value: number; suffix: string; label: string }>;
+    source: string;
+  };
+}
+
+export function HeroSection({ dict }: HeroSectionProps) {
   const containerRef = useRef<HTMLElement>(null);
 
   const { scrollYProgress } = useScroll({
@@ -94,17 +101,17 @@ export function HeroSection() {
                 transition={{ duration: 2, repeat: Infinity }}
               >
                 <AlertTriangle className="h-4 w-4" />
-                WCAG Compliance Alert
+                {dict.badge}
               </motion.span>
             </motion.div>
 
             {/* Headline */}
             <motion.div variants={staggerItem} className="mb-8">
               <h1 className="text-5xl md:text-6xl lg:text-7xl leading-[1.05]">
-                <TextAnimate text="Your website might be" className="inline" />
+                <TextAnimate text={dict.titleStart} className="inline" />
                 {" "}
                 <span className="text-destructive drop-shadow-[0_0_20px_rgba(239,68,68,0.4)]">
-                  breaking Norwegian law
+                  {dict.titleHighlight}
                 </span>
               </h1>
             </motion.div>
@@ -114,8 +121,7 @@ export function HeroSection() {
               variants={staggerItem}
               className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl leading-relaxed"
             >
-              97% of audited Norwegian websites fail accessibility requirements.
-              Digdir conducts random checks and publishes results. Is your website compliant?
+              {dict.subtitle}
             </motion.p>
 
             {/* CTA with enhanced styling */}
@@ -129,7 +135,7 @@ export function HeroSection() {
                   <span className="absolute inset-0 bg-gradient-to-r from-primary via-accent-hover to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   <span className="relative flex items-center gap-2">
                     <Calendar className="h-5 w-5" />
-                    Get your free WCAG audit
+                    {dict.cta}
                   </span>
                 </a>
               </Button>
@@ -140,8 +146,8 @@ export function HeroSection() {
               variants={staggerItem}
               className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8"
             >
-              {stats.map((stat, index) => {
-                const Icon = stat.icon;
+              {dict.stats.map((stat, index) => {
+                const Icon = statIcons[index];
                 const isWarning = index === 0;
                 return (
                   <div
@@ -180,9 +186,7 @@ export function HeroSection() {
               className="p-6 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm"
             >
               <p className="text-sm text-muted-foreground">
-                <span className="text-foreground font-medium">Source:</span>{" "}
-                According to Tilsynet for universell utforming av IKT, 67 out of 69 audited websites (97%)
-                had accessibility violations. The agency conducts approximately 250 audits per year.
+                {dict.source}
               </p>
             </motion.div>
           </motion.div>

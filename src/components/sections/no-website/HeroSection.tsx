@@ -11,14 +11,20 @@ import { staggerContainerSlow, staggerItem } from "@/lib/animations";
 import { ArrowRight, Search, Users, TrendingUp } from "lucide-react";
 import { useRef } from "react";
 
-// Stats specific to no-website audience
-const stats = [
-  { value: 87, suffix: "%", label: "of consumers search online first", icon: Search },
-  { value: 46, suffix: "%", label: "prefer local businesses with websites", icon: Users },
-  { value: 3, suffix: "x", label: "more leads with a professional site", icon: TrendingUp },
-];
+const statIcons = [Search, Users, TrendingUp];
 
-export function HeroSection() {
+interface HeroSectionProps {
+  dict: {
+    badge: string;
+    titleStart: string;
+    titleHighlight: string;
+    subtitle: string;
+    cta: string;
+    stats: Array<{ value: number; suffix: string; label: string }>;
+  };
+}
+
+export function HeroSection({ dict }: HeroSectionProps) {
   const containerRef = useRef<HTMLElement>(null);
 
   const { scrollYProgress } = useScroll({
@@ -88,17 +94,17 @@ export function HeroSection() {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
                 </span>
-                For Craftsmen Without a Website
+                {dict.badge}
               </motion.span>
             </motion.div>
 
             {/* Headline with gradient effect */}
             <motion.div variants={staggerItem} className="mb-8">
               <h1 className="text-5xl md:text-6xl lg:text-7xl leading-[1.05]">
-                <TextAnimate text="Your craft deserves to be" className="inline" />
+                <TextAnimate text={dict.titleStart} className="inline" />
                 {" "}
                 <GradientText animate className="inline-block">
-                  found online
+                  {dict.titleHighlight}
                 </GradientText>
               </h1>
             </motion.div>
@@ -108,8 +114,7 @@ export function HeroSection() {
               variants={staggerItem}
               className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl leading-relaxed"
             >
-              Clients search for carpenters, plumbers, and electricians online every day.
-              If you're not there, you're invisible. Your competitors with websites are winning jobs that should be yours.
+              {dict.subtitle}
             </motion.p>
 
             {/* CTA with enhanced styling */}
@@ -123,7 +128,7 @@ export function HeroSection() {
                   {/* Glow effect on hover */}
                   <span className="absolute inset-0 bg-gradient-to-r from-primary via-accent-hover to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   <span className="relative flex items-center gap-2">
-                    Get your professional website
+                    {dict.cta}
                     <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
                   </span>
                 </a>
@@ -135,8 +140,8 @@ export function HeroSection() {
               variants={staggerItem}
               className="grid grid-cols-1 md:grid-cols-3 gap-6"
             >
-              {stats.map((stat, index) => {
-                const Icon = stat.icon;
+              {dict.stats.map((stat, index) => {
+                const Icon = statIcons[index];
                 return (
                   <div
                     key={index}

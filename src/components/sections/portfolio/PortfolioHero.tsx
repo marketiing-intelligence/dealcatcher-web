@@ -5,7 +5,16 @@ import { motion } from "framer-motion";
 import { staggerContainerSlow, staggerItem, viewportOnce } from "@/lib/animations";
 import { Sparkles } from "lucide-react";
 
-export function PortfolioHero() {
+interface PortfolioHeroProps {
+  dict: {
+    badge: string;
+    titleStart: string;
+    titleHighlight: string;
+    subtitle: string;
+  };
+}
+
+export function PortfolioHero({ dict }: PortfolioHeroProps) {
   return (
     <section className="pt-12 pb-16 md:pt-20 md:pb-24">
       <Container>
@@ -20,7 +29,7 @@ export function PortfolioHero() {
           <motion.div variants={staggerItem} className="mb-6">
             <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
               <Sparkles className="h-4 w-4" />
-              Template Gallery
+              {dict.badge}
             </span>
           </motion.div>
 
@@ -29,8 +38,8 @@ export function PortfolioHero() {
             variants={staggerItem}
             className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6"
           >
-            Premium templates for{" "}
-            <span className="text-primary">Norwegian businesses</span>
+            {dict.titleStart}{" "}
+            <span className="text-primary">{dict.titleHighlight}</span>
           </motion.h1>
 
           {/* Subtitle */}
@@ -38,8 +47,7 @@ export function PortfolioHero() {
             variants={staggerItem}
             className="text-lg md:text-xl text-muted-foreground leading-relaxed"
           >
-            Every design is AI-ready, WCAG compliant, and built to convert
-            visitors into customers. Click any template to see it live.
+            {dict.subtitle}
           </motion.p>
         </motion.div>
       </Container>

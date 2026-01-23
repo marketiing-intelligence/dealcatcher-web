@@ -583,5 +583,322 @@
       "success": "Din tilbaketrekking er sendt. Vi vil behandle den innen 14 dager.",
       "error": "En feil oppstod. Vennligst prov igjen eller kontakt oss direkte pa contact@dealcatcher.io."
     }
+  },
+  "noWebsite": {
+    "hero": {
+      "badge": "For Handverkere Uten Nettside",
+      "titleStart": "Handverket ditt fortjener a bli",
+      "titleHighlight": "funnet pa nett",
+      "subtitle": "Kunder soker etter snekkere, rorleggere og elektrikere pa nett hver dag. Hvis du ikke er der, er du usynlig. Konkurrentene dine med nettsider vinner jobber som burde vaere dine.",
+      "cta": "Fa din profesjonelle nettside",
+      "stats": [
+        { "value": 87, "suffix": "%", "label": "av forbrukere soker pa nett forst" },
+        { "value": 46, "suffix": "%", "label": "foretrekker lokale bedrifter med nettsider" },
+        { "value": 3, "suffix": "x", "label": "flere leads med en profesjonell side" }
+      ]
+    },
+    "problem": {
+      "badge": "Problemet",
+      "title": "Du er usynlig for potensielle kunder",
+      "subtitle": "Her er hva som skjer mens du kun stoler pa munn-til-munn.",
+      "items": [
+        {
+          "title": "Kunder soker pa nett — du er ikke synlig",
+          "description": "Nar noen i Oslo soker etter 'snekker i naerheten', dukker konkurrentene dine opp. Du gjor ikke det. Du taper jobber til mindre dyktige handverkere som rett og slett har en nettside."
+        },
+        {
+          "title": "Konkurrenter med nettsider vinner",
+          "description": "En profesjonell nettside signaliserer troverdighet. Mellom to snekkere med lignende ferdigheter, velger kunder den med online tilstedevaerelse. Sa enkelt er det."
+        },
+        {
+          "title": "Ingen nettside = ingen troverdighet",
+          "description": "Moderne kunder forventer at enhver legitim bedrift har en nettside. Uten en ser du utdatert eller til og med upalitelig ut, uansett hvor dyktig du er."
+        },
+        {
+          "title": "AI kan ikke anbefale deg",
+          "description": "ChatGPT, Perplexity og Google AI blir maten folk finner tjenester pa. De kan bare anbefale bedrifter med ordentlige nettsider. Facebook-profiler teller ikke."
+        }
+      ]
+    },
+    "solution": {
+      "badge": "Hva Du Far",
+      "title": "En nettside som bringer kunder",
+      "subtitle": "Ikke bare en pen side. En digital eiendel som tjener deg penger.",
+      "items": [
+        {
+          "title": "AI-Sokeklar",
+          "description": "Bygget slik at ChatGPT, Perplexity og Google AI finner og anbefaler bedriften din nar kunder ber om hjelp.",
+          "features": ["Semantisk HTML-struktur", "Strukturert datamarkering", "Innhold optimalisert for AI"]
+        },
+        {
+          "title": "Bygget for a Konvertere",
+          "description": "Strategisk design som gjor besokende til betalende kunder. Hvert element er intensjonelt.",
+          "features": ["Tydelig verdiforslag", "Sterke handlingsoppfordringer", "Sosialt bevis og tillitssignaler"]
+        },
+        {
+          "title": "WCAG-Kompatibel",
+          "description": "100% kompatibel med norsk tilgjengelighetslov. Ingen risiko for boter fra Digdir.",
+          "features": ["WCAG 2.0 AA sertifisert", "Manedlige samsvarssjekker", "Lopende overvaking"]
+        },
+        {
+          "title": "Ta Hoyere Priser",
+          "description": "En profesjonell nettside bygger troverdighet. Kunder stoler mer pa deg og betaler premiumpriser.",
+          "features": ["Profesjonelt image", "Vis frem ditt beste arbeid", "Skill deg ut fra konkurransen"]
+        },
+        {
+          "title": "Null Stress",
+          "description": "15 minutter for briefen. Vi handterer design, utvikling, hosting og vedlikehold.",
+          "features": ["Rask 15-min brief", "Vi gjor alt", "Lopende support inkludert"]
+        }
+      ]
+    },
+    "pricing": {
+      "badge": "Priser",
+      "title": "Velg din vei til kunder",
+      "subtitle": "Start med en nettside, legg til annonsering nar du er klar til a vokse raskere.",
+      "setupLabel": "oppsett",
+      "roiHint": "Rask matte: Hvis gjennomsnittsjobben din er 5 000 kr+, betaler nettsiden seg selv etter bare 2 nye kunder.",
+      "packages": [
+        {
+          "name": "Starter",
+          "tagline": "Kom pa nett",
+          "description": "Profesjonell nettside for a etablere din online tilstedevaerelse.",
+          "setup": "10 000 kr",
+          "monthly": "500 kr",
+          "monthlyLabel": "/maned",
+          "features": ["Profesjonell maldesign (12 valg)", "AI-sokoptimalisering", "WCAG 2.0 AA kompatibel", "Mobiltilpasset", "Kontaktskjema", "Google Analytics oppsett", "Hosting inkludert", "24/7 oppetidsovervaking", "Manedlig samsvarssjekk", "E-poststotte (24t respons)"],
+          "cta": "Kom i Gang"
+        },
+        {
+          "name": "Growth",
+          "tagline": "Mest populaer",
+          "description": "Tilpasset nettside + premiumstotte for voksende bedrifter.",
+          "setup": "15 000 kr",
+          "monthly": "990 kr",
+          "monthlyLabel": "/maned",
+          "features": ["Tilpasset design fra bunnen", "AI-sokoptimalisering", "WCAG 2.0 AA kompatibel", "Mobiltilpasset", "Kontaktskjema + bookingsystem", "Google Analytics + manedlig rapport", "Hosting inkludert", "24/7 oppetidsovervaking", "Manedlig samsvarssjekk", "Ubegrensede innholdsendringer", "Legg til nye sider nar som helst", "Prioritert stotte (4t respons)"],
+          "cta": "Velg Growth",
+          "popular": true
+        },
+        {
+          "name": "Accelerator",
+          "tagline": "Maksimale resultater",
+          "description": "Nettside + Google Ads = kunder som aktivt soker etter dine tjenester.",
+          "setup": "18 000 kr",
+          "monthly": "3 490 kr",
+          "monthlyLabel": "/maned + annonseforbruk",
+          "features": ["Alt i Growth, pluss:", "Google Ads-kampanjeoppsett", "Sokordanalyse for ditt omrade", "Annonsetekst pa norsk", "Manedlig kampanjeoptimalisering", "A/B-testing og budadministrasjon", "Manedlig resultatrapport", "Direkte leads fra sok", "Min. 5 000 kr/maned annonsebudsjett"],
+          "cta": "Velg Accelerator",
+          "highlight": "Best ROI"
+        }
+      ]
+    },
+    "googleAds": {
+      "badge": "Valgfritt Tillegg",
+      "title": "Vil du ha kunder",
+      "titleHighlight": "raskere",
+      "subtitle": "En nettside bringer kunder som finner deg. Google Ads bringer kunder som aktivt soker etter dine tjenester akkurat na.",
+      "howItWorks": {
+        "title": "Nettside + Google Ads = Full Pipeline",
+        "description": "Nettsiden din konverterer besokende til kunder. Google Ads driver de besokende til nettsiden din. Sammen skaper de et komplett kundeanskaffelsessystem.",
+        "steps": ["Kunde soker", "Ser annonsen din", "Kontakter deg"]
+      },
+      "example": {
+        "label": "Eksempelsok:",
+        "query": "snekker oslo pris",
+        "adLabel": "ANNONSE",
+        "adTitle": "Snekker i Oslo — Profesjonelt Handverk",
+        "adDescription": "Gratis befaring. 20+ ars erfaring. Kontakt oss i dag."
+      },
+      "benefits": [
+        { "title": "Dukk opp nar de soker", "description": "Nar noen Googler \"snekker Oslo\" eller \"elektriker Bergen\", vises annonsen din overst." },
+        { "title": "Malrett ditt eksakte omrade", "description": "Betal kun for a na folk i ditt tjenesteomrade. Ikke kast bort budsjettet pa fjerne byer." },
+        { "title": "Umiddelbare resultater", "description": "I motsetning til SEO bringer Google Ads kunder fra dag en. Se samtaler og henvendelser innen forste uke." },
+        { "title": "Malbar ROI", "description": "Vit noyaktig hvor mange leads som kom fra annonser. Manedlige rapporter viser hva som fungerer." }
+      ],
+      "pricingLabel": "Google Ads-administrasjon",
+      "pricingValue": "2 000 kr",
+      "pricingSuffix": "/maned + 10% av annonseforbruk",
+      "pricingNote": "Oppsett: 3 000 kr engangs · Min. annonsebudsjett: 5 000 kr/maned",
+      "includedNote": "Allerede inkludert i Accelerator-pakken over."
+    },
+    "process": {
+      "badge": "Slik Fungerer Det",
+      "title": "Fra null til online pa dager",
+      "subtitle": "En enkel 4-trinns prosess. Du fokuserer pa handverket, vi tar resten.",
+      "steps": [
+        { "number": "01", "title": "Konsultasjon", "description": "Rask samtale for a forsta bedriften din, tjenestene og malene. Vi svarer pa sporsmilene dine og forklarer prosessen.", "duration": "15 min" },
+        { "number": "02", "title": "Brief", "description": "Du fyller ut et enkelt skjema med bedriftsinformasjon, tjenester og materialer du har (logo, bilder). Tar 15 minutter.", "duration": "15 min" },
+        { "number": "03", "title": "Bygg", "description": "Vi designer og bygger nettsiden din. Du ser en forhandsvisning og kan be om endringer. Vanligvis 1-2 runder med tilbakemelding.", "duration": "5-7 dager" },
+        { "number": "04", "title": "Lansering", "description": "Vi publiserer siden din, setter opp domenet, konfigurerer analytics og sorger for at alt fungerer perfekt.", "duration": "1 dag" }
+      ]
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Vanlige sporsmal",
+      "subtitle": "Har du fortsatt sporsmal? Send oss en e-post til hello@dealcatcher.io",
+      "items": [
+        { "question": "Jeg trenger ikke en nettside — jeg har nok arbeid fra anbefalinger", "answer": "Det er flott! Men en nettside lar deg velge bedre jobber og ta hoyere priser. Nar kunder ser din profesjonelle online tilstedevaerelse, er de villige til a betale premiumpriser. Dessuten torker anbefalinger opp til slutt — en nettside gir deg en jevn strom av nye leads." },
+        { "question": "Det er for dyrt", "answer": "En nettside betaler seg selv etter 1-2 nye kunder. Hvis du tar 5 000 kr+ per jobb, er 10 000 kr-investeringen dekket nesten umiddelbart. I tillegg er manedsprisen mindre enn du ville betalt for en enkelt arbeidstime — og den inkluderer hosting, vedlikehold og samsvarsovervaking." },
+        { "question": "Jeg har ikke tid til dette", "answer": "Vi designet prosessen spesielt for travle handverkere. Briefen tar 15 minutter. En 15-minutters samtale. Det er det. Vi handterer absolutt alt annet — design, utvikling, hosting, domeneoppsett og lopende vedlikehold. Du trenger ikke laere noe teknisk." },
+        { "question": "Jeg har en Facebook-side — er ikke det nok?", "answer": "Facebook er et supplement, ikke en erstatning for en nettside. Google indekserer ikke Facebook-profiler godt. AI-assistenter som ChatGPT kan ikke anbefale deg basert pa Facebook-siden din. Og mange kunder forventer at en 'ekte' bedrift har sin egen nettside — en Facebook-only tilstedevaerelse kan se uprofesjonell ut." },
+        { "question": "Kan jeg oppdatere nettsiden selv?", "answer": "Du trenger ikke det. Innholdsendringer er inkludert i Premium-planen (ubegrenset) eller tilgjengelig pa forespursel for Basic-planen. Bare send oss en e-post med hva du vil endre, sa gjor vi det innen 24 timer. Ingen tekniske ferdigheter kreves fra din side." },
+        { "question": "Hva om jeg vil si opp?", "answer": "Du kan si opp manedsplanen nar som helst — ingen sporsmal stilt. Hvis du sier opp, beholder du eierskapet til domenet ditt. Vi hjelper deg med a migrere til en annen leverandor om nodvendig. Vi er sikre pa at du blir fordi verdien er apenbar, men det er null binding." }
+      ]
+    },
+    "cta": {
+      "title": "Klar til a bli",
+      "titleHighlight": "funnet pa nett",
+      "subtitle": "Bestill en gratis 15-minutters konsultasjon. Vi diskuterer bedriften din, svarer pa sporsmilene dine og viser deg hvordan nettsiden din kan se ut.",
+      "ctaPrimary": "Bestill gratis konsultasjon",
+      "ctaSecondary": "Send oss en melding",
+      "disclaimer": "Ingen forpliktelse. Vi spammer deg aldri."
+    }
+  },
+  "wcagPage": {
+    "hero": {
+      "badge": "WCAG Samsvarsvarsel",
+      "titleStart": "Nettsiden din bryter kanskje",
+      "titleHighlight": "norsk lov",
+      "subtitle": "97% av reviderte norske nettsider feiler tilgjengelighetskrav. Digdir gjennomforer tilfeldige kontroller og publiserer resultatene. Er nettsiden din kompatibel?",
+      "cta": "Fa din gratis WCAG-revisjon",
+      "stats": [
+        { "value": 97, "suffix": "%", "label": "av sider feiler tilgjengelighetsrevisjoner" },
+        { "value": 250, "suffix": "+", "label": "revisjoner utfort arlig av Digdir" },
+        { "value": 100, "suffix": "%", "label": "samsvar etter vare fikser" }
+      ],
+      "source": "Ifolge Tilsynet for universell utforming av IKT hadde 67 av 69 reviderte nettsider (97%) tilgjengelighetsbrudd. Tilsynet gjennomforer ca. 250 revisjoner per ar."
+    },
+    "problem": {
+      "badge": "Problemet",
+      "title": "Hva er WCAG og hvorfor betyr det noe?",
+      "subtitle": "Web Content Accessibility Guidelines (WCAG) sikrer at nettsider er brukbare for personer med funksjonsnedsettelser. I Norge er det ikke valgfritt — det er loven.",
+      "items": [
+        {
+          "title": "Norsk lov krever WCAG 2.0 AA",
+          "description": "Forskrift om universell utforming av IKT-losninger palegger at alle nettsider ma vaere tilgjengelige. Dette gjelder bade offentlig og privat sektor."
+        },
+        {
+          "title": "Digdir gjennomforer revisjoner og publiserer resultatene",
+          "description": "Tilsynet for universell utforming av IKT utforer tilfeldige nettstedsrevisjoner. Mislykkede revisjoner publiseres offentlig, og du far et palegge om a fikse problemene innen en frist."
+        },
+        {
+          "title": "97% av nettsider feiler samsvarssjekker",
+          "description": "Det store flertallet av norske nettsider har tilgjengelighetsproblemer. Nettsiden din har sannsynligvis problemer du ikke er klar over — de fleste problemene er usynlige for utrenede oyne."
+        },
+        {
+          "title": "Din navarende side har sannsynligvis problemer",
+          "description": "Vanlige problemer inkluderer darlig fargekontrast, manglende alt-tekster, tastaturnavigasjonsproblemer og uriktige skjemaetiketter. Disse pavirker virkelige brukere og bryter loven."
+        }
+      ]
+    },
+    "solution": {
+      "badge": "Losningen",
+      "title": "Vi reviderer, rapporterer og bygger om",
+      "subtitle": "En komplett losning for a gjore nettsiden din kompatibel og fremtidsklar.",
+      "items": [
+        {
+          "title": "Gratis WCAG-Revisjon",
+          "description": "Vi skanner nettsiden din og identifiserer alle tilgjengelighetsproblemer.",
+          "features": ["Automatisert skanning", "Manuell gjennomgang", "Detaljerte funn"]
+        },
+        {
+          "title": "Detaljert Rapport",
+          "description": "Du mottar en tydelig rapport med spesifikke problemer og deres plasseringer.",
+          "features": ["Alvorlighetsgrad", "Noyaktige plasseringer", "Juridiske konsekvenser"]
+        },
+        {
+          "title": "Fullstendig Ombygging",
+          "description": "Vi bygger deg en ny nettside som er fullt kompatibel fra bunnen av.",
+          "features": ["WCAG 2.0 AA", "AI-sokeklar", "Bygget for a konvertere"]
+        }
+      ]
+    },
+    "pricing": {
+      "badge": "Priser",
+      "title": "Bli kompatibel. Fa kunder.",
+      "subtitle": "Start med en kompatibel nettside, legg til annonsering nar du er klar.",
+      "setupLabel": "oppsett",
+      "auditNote": "Begge pakkene inkluderer en gratis WCAG-revisjon av din navarende side. Ingen forpliktelse til a fortsette.",
+      "packages": [
+        {
+          "name": "Samsvar",
+          "tagline": "Bli lovlig",
+          "description": "Ny WCAG-kompatibel nettside med premiumstotte.",
+          "setup": "15 000 kr",
+          "monthly": "990 kr",
+          "monthlyLabel": "/maned",
+          "features": ["Fullstendig nettsidesombygging", "100% WCAG 2.0 AA kompatibel", "AI-sokoptimalisering", "Mobiltilpasset design", "Kontaktskjemaer + booking", "Google Analytics oppsett", "Hosting inkludert", "24/7 oppetidsovervaking", "Manedlig samsvarssjekk", "Ubegrensede innholdsendringer", "Prioritert stotte (4t)"],
+          "cta": "Start med gratis revisjon",
+          "popular": true
+        },
+        {
+          "name": "Samsvar + Vekst",
+          "tagline": "Maksimal effekt",
+          "description": "Kompatibel nettside + Google Ads for umiddelbar trafikk.",
+          "setup": "18 000 kr",
+          "monthly": "3 490 kr",
+          "monthlyLabel": "/maned + annonseforbruk",
+          "features": ["Alt i Samsvar, pluss:", "Google Ads-kampanjeoppsett", "Sokordanalyse for ditt omrade", "Annonsetekst pa norsk", "Manedlig kampanjeoptimalisering", "A/B-testing og budadministrasjon", "Resultatrapporter med ROI", "Direkte leads fra sok", "Min. 5 000 kr/maned annonsebudsjett"],
+          "cta": "Fa full pakke",
+          "highlight": "Best ROI"
+        }
+      ]
+    },
+    "process": {
+      "badge": "Slik Fungerer Det",
+      "title": "Fra revisjon til samsvar",
+      "subtitle": "En tydelig 4-trinns prosess for a gjore nettsiden din lovlig kompatibel.",
+      "steps": [
+        { "number": "01", "title": "Gratis Revisjon", "description": "Vi skanner din navarende nettside for tilgjengelighetsproblemer. Automatiserte verktoy + manuell gjennomgang. Du mottar en detaljert rapport.", "duration": "2-3 dager" },
+        { "number": "02", "title": "Rapportgjennomgang", "description": "Vi gar gjennom funnene med deg. Du vil forsta noyaktig hva som er galt og hvorfor det betyr noe for samsvar.", "duration": "30 min samtale" },
+        { "number": "03", "title": "Beslutning", "description": "Du bestemmer om du vil fortsette med ombyggingen. Ikke noe press, ingen forpliktelse. Revisjonen er helt gratis.", "duration": "Ditt tempo" },
+        { "number": "04", "title": "Ombygging og Lansering", "description": "Vi bygger din nye, fullt kompatible nettside. Du gjennomgar, godkjenner, og vi lanserer. Lopende samsvarsovervaking inkludert.", "duration": "7-10 dager" }
+      ]
+    },
+    "trust": {
+      "badge": "Hvorfor Oss",
+      "title": "Din samsvarspartner",
+      "subtitle": "Vi bygger ikke bare nettsider. Vi sikrer langsiktig juridisk samsvar.",
+      "items": [
+        {
+          "title": "Vi Kjenner Norsk Lov",
+          "points": ["Dyp forstaelse av WCAG 2.0 AA-krav", "Erfaring med Tilsynets samsvarsforventninger", "Oppdatert med regelverksendringer"]
+        },
+        {
+          "title": "Lopende Samsvar",
+          "points": ["Manedlige automatiserte samsvarsskanninger", "Proaktiv problemdeteksjon", "Oppdateringer nar regelverket endres"]
+        },
+        {
+          "title": "Samsvarsgaranti",
+          "points": ["100% WCAG 2.0 AA kompatibel levering", "Vi fikser eventuelle problemer vi gikk glipp av gratis", "Dokumentasjon for revisjonsforsvar"]
+        }
+      ]
+    },
+    "cta": {
+      "title": "Finn ut om nettsiden din er",
+      "titleHighlight": "kompatibel",
+      "subtitle": "Be om en gratis WCAG-revisjon. Vi skanner nettsiden din og sender deg en detaljert rapport over eventuelle tilgjengelighetsproblemer. Ingen forpliktelse til a fortsette.",
+      "ctaPrimary": "Bestill gratis konsultasjon",
+      "ctaSecondary": "Send oss en melding",
+      "disclaimer": "Tar 2-3 dager. Helt gratis. Vi sender deg rapporten pa e-post."
+    }
+  },
+  "portfolioPage": {
+    "hero": {
+      "badge": "Malgalleri",
+      "title": "Premiummaler for",
+      "titleHighlight": "norske bedrifter",
+      "subtitle": "Hvert design er AI-klart, WCAG-kompatibelt og bygget for a konvertere besokende til kunder. Klikk pa en mal for a se den live."
+    },
+    "grid": {
+      "filterAll": "Alle Maler",
+      "noResults": "Ingen maler funnet for denne kategorien.",
+      "industryLabels": {
+        "contractor": "Totalentreprenor",
+        "service": "Servicespesialist",
+        "finishing": "Overflateekspert"
+      }
+    }
   }
 }

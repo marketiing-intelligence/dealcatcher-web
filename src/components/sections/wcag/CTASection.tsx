@@ -11,9 +11,17 @@ import type { Locale } from "@/lib/i18n/config";
 
 interface CTASectionProps {
   lang: Locale;
+  dict: {
+    title: string;
+    titleHighlight: string;
+    subtitle: string;
+    ctaPrimary: string;
+    ctaSecondary: string;
+    disclaimer: string;
+  };
 }
 
-export function CTASection({ lang }: CTASectionProps) {
+export function CTASection({ lang, dict }: CTASectionProps) {
   return (
     <section className="py-20 md:py-32 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-t from-primary/5 via-transparent to-transparent" />
@@ -28,12 +36,11 @@ export function CTASection({ lang }: CTASectionProps) {
           className="text-center max-w-3xl mx-auto"
         >
           <h2 className="mb-6">
-            Find out if your website is{" "}
-            <span className="text-primary">compliant</span>
+            {dict.title}{" "}
+            <span className="text-primary">{dict.titleHighlight}</span>
           </h2>
           <p className="text-xl text-muted-foreground mb-10 leading-relaxed">
-            Request a free WCAG audit. We'll scan your website and send you a
-            detailed report of any accessibility issues. No obligation to proceed.
+            {dict.subtitle}
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -44,7 +51,7 @@ export function CTASection({ lang }: CTASectionProps) {
             >
               <a href={CALCOM_BOOKING_URL} target="_blank" rel="noopener noreferrer">
                 <Calendar className="mr-2 h-5 w-5" />
-                Book free consultation
+                {dict.ctaPrimary}
               </a>
             </Button>
             <Button
@@ -55,13 +62,13 @@ export function CTASection({ lang }: CTASectionProps) {
             >
               <Link href={`/${lang}/contact`}>
                 <MessageSquare className="mr-2 h-5 w-5" />
-                Send us a message
+                {dict.ctaSecondary}
               </Link>
             </Button>
           </div>
 
           <p className="mt-8 text-sm text-muted-foreground">
-            Takes 2-3 days. Completely free. We'll email you the report.
+            {dict.disclaimer}
           </p>
         </motion.div>
       </Container>

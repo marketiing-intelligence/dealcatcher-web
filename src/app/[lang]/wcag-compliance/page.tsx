@@ -41,13 +41,13 @@ export default async function WCAGCompliancePage({
     <>
       <Navbar lang={lang} dict={dict} />
       <main className="pt-16 md:pt-20">
-        <HeroSection />
-        <ProblemSection />
-        <SolutionSection />
-        <PricingSection />
-        <ProcessSection />
-        <TrustSection />
-        <CTASection lang={lang} />
+        <HeroSection dict={dict.wcagPage.hero} />
+        <ProblemSection dict={dict.wcagPage.problem} />
+        <SolutionSection dict={dict.wcagPage.solution} />
+        <PricingSection dict={dict.wcagPage.pricing} />
+        <ProcessSection dict={dict.wcagPage.process} />
+        <TrustSection dict={dict.wcagPage.trust} />
+        <CTASection lang={lang} dict={dict.wcagPage.cta} />
       </main>
       <Footer lang={lang} dict={dict.footer} />
     </>

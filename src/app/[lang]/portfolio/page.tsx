@@ -36,8 +36,8 @@ export default async function PortfolioPage({
     <>
       <Navbar lang={lang} dict={dict} />
       <main className="pt-16 md:pt-20">
-        <PortfolioHero />
-        <PortfolioGrid />
+        <PortfolioHero dict={dict.portfolioPage.hero} />
+        <PortfolioGrid dict={dict.portfolioPage.grid} />
       </main>
       <Footer lang={lang} dict={dict.footer} />
     </>
