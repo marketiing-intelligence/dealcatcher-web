@@ -884,6 +884,100 @@
       "disclaimer": "Takes 2-3 days. Completely free. We'll email you the report."
     }
   },
+  "reportPage": {
+    "hero": {
+      "badge": "Market Report",
+      "titleSearches": "monthly searches",
+      "titleFor": "for {nicheLower} in {city}",
+      "subtitle": "Every month, thousands of people in {city} open Google looking for a {nicheLower}. This report shows you exactly what they type, who they find instead of you — and what you can do about it."
+    },
+    "metrics": {
+      "keywords": "Keywords analyzed",
+      "avgCpc": "Avg. cost per click",
+      "topClinics": "Top businesses tracked",
+      "mapsShare": "Clicks go to Maps",
+      "explainer": "These are the key numbers from our analysis. \"Cost per click\" is what you'd pay for one visitor if you ran Google Ads. \"Maps\" is the map box Google shows — almost half of all clicks go there."
+    },
+    "keywords": {
+      "badge": "Keyword Analysis",
+      "title": "What people actually type into Google",
+      "subtitle": "When someone needs a {nicheLower}, they don't always type \"{nicheLower}\". Some search for a specific service, others describe their problem. Below are all the real search terms people in {city} use, grouped by intent, and how many times per month.",
+      "volume": "Searches/mo",
+      "competition": "Comp.",
+      "cpc": "Ad cost/click",
+      "groupTotal": "Total searches"
+    },
+    "competition": {
+      "badge": "Competition",
+      "title": "Who shows up when people search",
+      "subtitle": "When someone Googles these words, this is the list of businesses that appear. Google shows two types of results: regular website links (\"Google Search\") and the map box with ratings (\"Google Maps\"). If your business isn't on either list, people find these competitors instead of you.",
+      "organicTitle": "Google Search",
+      "mapsTitle": "Google Maps",
+      "rank": "#",
+      "domain": "Website",
+      "business": "Business",
+      "rating": "Rating",
+      "reviews": "Reviews",
+      "noMaps": "Google does not show Maps results for this keyword — it's a purely informational search. Content marketing (blog posts, guides) is the way to capture this traffic."
+    },
+    "calculator": {
+      "badge": "Revenue Calculator",
+      "title": "Let's put real money numbers to this",
+      "subtitle": "Google Ads lets you pay to appear at the very top of search results — above all the organic listings. Move the sliders below to match your business. The calculator shows how many new clients that could bring, and what that means in revenue.",
+      "patientValueLabel": "What a client is worth to you (NOK)",
+      "budgetLabel": "Monthly ad budget (NOK)",
+      "conversionLabel": "How many inquiries become clients (%)",
+      "resultClicks": "People click your ad",
+      "resultInquiries": "Of those, contact you",
+      "resultPatients": "Become actual clients",
+      "resultRevenue": "That brings in revenue of",
+      "resultRoi": "Return on your ad spend",
+      "disclaimer": "Based on average ad cost of {avgCpc} kr per click and {ctr}% of clicks turning into inquiries (industry average from WordStream)."
+    },
+    "cpc": {
+      "badge": "Advertising Costs",
+      "title": "What would you pay per click?",
+      "subtitle": "In Google Ads, you pay each time someone clicks your ad — this is called \"cost per click\". The chart below shows the price for each search term. The range tells you how competitive the market is."
+    },
+    "seasonality": {
+      "badge": "Timing",
+      "title": "Some months are busier than others",
+      "subtitle": "Demand isn't constant. The chart below shows how many people search for \"{keyword}\" each month. The tall bars = high demand (spend more on ads then). The short bars = quiet months (save your budget). Knowing this pattern lets you spend smarter, not more.",
+      "peak": "Peak",
+      "low": "Low"
+    },
+    "insights": {
+      "badge": "What We Found",
+      "title": "What the top businesses in {city} do differently",
+      "subtitle": "We looked at the businesses that rank highest on Google and asked: what do they have in common? These patterns aren't coincidences — they're the reasons Google puts them first."
+    },
+    "tips": {
+      "badge": "Your Next Steps",
+      "title": "What you can do right now",
+      "subtitle": "Based on everything in this report, here are the most impactful steps you can take — starting with things that are completely free. Each step builds on the one before it."
+    },
+    "cta": {
+      "title": "Want a custom analysis for your business?",
+      "subtitle": "This report covers the general market. We can create a personalized version that analyzes your specific competitors, your website, and recommends exactly what to do first.",
+      "ctaPrimary": "Book free consultation",
+      "ctaSecondary": "Send us a message",
+      "disclaimer": "Free 15-minute call. No obligation. We'll share what we find either way."
+    },
+    "footer": {
+      "title": "Sources & Methodology",
+      "description": "Data collected {dataDate} via Google Ads API (through DataForSEO). Search volumes are 12-month averages. Ad costs reflect real Google Ads auction prices. Competition data comes from live Google search results.",
+      "sourceLabel": "Sources"
+    },
+    "toc": {
+      "keywords": "Keywords",
+      "competition": "Competition",
+      "calculator": "Calculator",
+      "cpc": "Ad costs",
+      "seasonality": "Timing",
+      "insights": "Insights",
+      "tips": "Next steps"
+    }
+  },
   "portfolioPage": {
     "hero": {
       "badge": "Template Gallery",

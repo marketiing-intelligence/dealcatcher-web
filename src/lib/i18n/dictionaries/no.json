@@ -884,6 +884,100 @@
       "disclaimer": "Tar 2-3 dager. Helt gratis. Vi sender deg rapporten pa e-post."
     }
   },
+  "reportPage": {
+    "hero": {
+      "badge": "Markedsrapport",
+      "titleSearches": "månedlige søk",
+      "titleFor": "for {nicheLower} i {city}",
+      "subtitle": "Hver måned åpner tusenvis av mennesker i {city} Google for å finne en {nicheLower}. Denne rapporten viser deg nøyaktig hva de skriver, hvem de finner i stedet for deg — og hva du kan gjøre med det."
+    },
+    "metrics": {
+      "keywords": "Søkeord analysert",
+      "avgCpc": "Gj.snitt annonsekostnad",
+      "topClinics": "Toppvirksomheter sporet",
+      "mapsShare": "Klikk går til kart",
+      "explainer": "Dette er nøkkeltallene fra analysen vår. «Annonsekostnad» er hva du betaler for én besøkende hvis du kjører Google Ads. «Kart» er kartboksen Google viser — nesten halvparten av alle klikk går dit."
+    },
+    "keywords": {
+      "badge": "Søkeordanalyse",
+      "title": "Hva folk faktisk skriver inn i Google",
+      "subtitle": "Når noen trenger en {nicheLower}, skriver de ikke alltid «{nicheLower}». Noen søker etter en bestemt tjeneste, andre beskriver problemet sitt. Her er alle søkeordene folk i {city} bruker, gruppert etter intensjon, og hvor mange ganger per måned.",
+      "volume": "Søk/mnd",
+      "competition": "Konk.",
+      "cpc": "Annonsepris/klikk",
+      "groupTotal": "Totalt antall søk"
+    },
+    "competition": {
+      "badge": "Konkurranse",
+      "title": "Hvem dukker opp når folk søker",
+      "subtitle": "Når noen Googler disse ordene, er dette listen over virksomheter som dukker opp. Google viser to typer resultater: vanlige nettsidelenker («Google Søk») og kartboksen med vurderinger («Google Maps»). Hvis virksomheten din ikke er på noen av listene, finner folk disse konkurrentene i stedet for deg.",
+      "organicTitle": "Google Søk",
+      "mapsTitle": "Google Maps",
+      "rank": "#",
+      "domain": "Nettside",
+      "business": "Virksomhet",
+      "rating": "Vurdering",
+      "reviews": "Anmeldelser",
+      "noMaps": "Google viser ikke Maps-resultater for dette søkeordet — det er et rent informasjonssøk. Innholdsmarkedsføring (blogginnlegg, guider) er veien å gå for å fange denne trafikken."
+    },
+    "calculator": {
+      "badge": "Inntektskalkulator",
+      "title": "La oss sette ekte tall på dette",
+      "subtitle": "Google Ads lar deg betale for å vises helt øverst i søkeresultatene — over alle de vanlige lenkene. Flytt gliderne nedenfor slik at de passer til din virksomhet. Kalkulatoren viser hvor mange nye kunder det kan bringe, og hva det betyr i inntekter.",
+      "patientValueLabel": "Hva en kunde er verdt for deg (NOK)",
+      "budgetLabel": "Månedlig annonsebudsjett (NOK)",
+      "conversionLabel": "Hvor mange henvendelser blir til kunder (%)",
+      "resultClicks": "Folk klikker på annonsen din",
+      "resultInquiries": "Av disse tar kontakt",
+      "resultPatients": "Blir faktiske kunder",
+      "resultRevenue": "Det gir inntekter på",
+      "resultRoi": "Avkastning på annonseutgiften",
+      "disclaimer": "Basert på gjennomsnittlig annonsekostnad på {avgCpc} kr per klikk og at {ctr}% av klikkene fører til henvendelser (bransjegjennomsnitt fra WordStream)."
+    },
+    "cpc": {
+      "badge": "Annonsekostnader",
+      "title": "Hva ville du betalt per klikk?",
+      "subtitle": "I Google Ads betaler du hver gang noen klikker på annonsen din — dette kalles «kostnad per klikk». Diagrammet nedenfor viser prisen for hvert søkeord. Prisforskjellene viser hvor konkurranseutsatt markedet er."
+    },
+    "seasonality": {
+      "badge": "Timing",
+      "title": "Noen måneder er travlere enn andre",
+      "subtitle": "Etterspørselen er ikke konstant. Diagrammet nedenfor viser hvor mange som søker etter «{keyword}» hver måned. Høye søyler = stor etterspørsel (bruk mer på annonser da). Lave søyler = rolige måneder (spar budsjettet). Å kjenne dette mønsteret lar deg bruke pengene smartere, ikke mer.",
+      "peak": "Topp",
+      "low": "Lav"
+    },
+    "insights": {
+      "badge": "Våre funn",
+      "title": "Hva toppaktørene i {city} gjør annerledes",
+      "subtitle": "Vi undersøkte virksomhetene som rangerer høyest på Google og spurte: hva har de til felles? Disse mønstrene er ikke tilfeldigheter — de er grunnene til at Google plasserer dem først."
+    },
+    "tips": {
+      "badge": "Dine neste steg",
+      "title": "Hva du kan gjøre nå",
+      "subtitle": "Basert på alt i denne rapporten, her er de mest effektive stegene du kan ta — fra ting som er helt gratis til betalte tiltak. Hvert steg bygger på det forrige."
+    },
+    "cta": {
+      "title": "Ønsker du en skreddersydd analyse for din virksomhet?",
+      "subtitle": "Denne rapporten dekker det generelle markedet. Vi kan lage en personlig versjon som analyserer dine spesifikke konkurrenter, din nettside, og anbefaler nøyaktig hva du bør gjøre først.",
+      "ctaPrimary": "Bestill gratis konsultasjon",
+      "ctaSecondary": "Send oss en melding",
+      "disclaimer": "Gratis 15-minutters samtale. Ingen forpliktelser. Vi deler det vi finner uansett."
+    },
+    "footer": {
+      "title": "Kilder og metode",
+      "description": "Data innsamlet {dataDate} via Google Ads API (gjennom DataForSEO). Søkevolumer er 12-måneders gjennomsnitt. Annonsekostnader gjenspeiler reelle Google Ads-auksjonspriser. Konkurransedata kommer fra levende Google-søkeresultater.",
+      "sourceLabel": "Kilder"
+    },
+    "toc": {
+      "keywords": "Søkeord",
+      "competition": "Konkurranse",
+      "calculator": "Kalkulator",
+      "cpc": "Annonsekost",
+      "seasonality": "Timing",
+      "insights": "Funn",
+      "tips": "Neste steg"
+    }
+  },
   "portfolioPage": {
     "hero": {
       "badge": "Malgalleri",

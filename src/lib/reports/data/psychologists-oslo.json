@@ -1,0 +1,334 @@
+{
+  "meta": {
+    "niche": "psychologists",
+    "nicheNO": "psykologer",
+    "city": "Oslo",
+    "locationCode": 1010826,
+    "dataDate": "2026-02",
+    "totalSearchVolume": 10090
+  },
+  "metrics": {
+    "keywordCount": 19,
+    "avgCpc": 12.4,
+    "topClinicsCount": 5,
+    "mapsClickShare": 42
+  },
+  "keywordGroups": [
+    {
+      "id": "services",
+      "color": "green",
+      "nameEN": "Therapy services",
+      "nameNO": "Terapitjenester",
+      "descriptionEN": "Direct searches — people typing the name of the service they need. These are the most ready-to-book visitors, and they carry the highest ad cost. If someone in Oslo Googles \"parterapi\" or \"psykologhjelp\", they've already decided they want help.",
+      "descriptionNO": "Direkte søk — folk som skriver inn navnet på tjenesten de trenger. Disse er de mest klare-til-å-bestille besøkende, og de har den høyeste annonsekostnaden. Hvis noen i Oslo Googler «parterapi» eller «psykologhjelp», har de allerede bestemt seg for at de vil ha hjelp.",
+      "totalVolume": 1290,
+      "keywords": [
+        { "keyword": "parterapi", "translation": "couples therapy", "volume": 1000, "competition": "MEDIUM", "cpc": 42.90 },
+        { "keyword": "terapi", "translation": "therapy", "volume": 210, "competition": "MEDIUM", "cpc": 33.88 },
+        { "keyword": "parterapi pris", "translation": "couples therapy price", "volume": 30, "competition": "HIGH", "cpc": 25.85 },
+        { "keyword": "psykologhjelp", "translation": "psychology help", "volume": 20, "competition": "HIGH", "cpc": 38.39 },
+        { "keyword": "angst hjelp", "translation": "anxiety help", "volume": 10, "competition": "HIGH", "cpc": 21.89 },
+        { "keyword": "terapitime", "translation": "therapy session", "volume": 10, "competition": "HIGH", "cpc": 13.97 },
+        { "keyword": "terapi pris", "translation": "therapy price", "volume": 10, "competition": "HIGH", "cpc": 8.36 }
+      ]
+    },
+    {
+      "id": "anxiety",
+      "color": "amber",
+      "nameEN": "Anxiety & anxiety disorders",
+      "nameNO": "Angst og angstlidelser",
+      "descriptionEN": "The largest group by far. These people aren't searching for a psychologist — they're searching for their problem. Someone in Oslo Googling \"sosial angst\" or \"panikkangst\" is often in real pain and highly motivated to get help. The ad costs here are remarkably low (2–7 kr/click) because most clinics don't target these words.",
+      "descriptionNO": "Den klart største gruppen. Disse menneskene søker ikke etter en psykolog — de søker etter problemet sitt. Noen i Oslo som Googler «sosial angst» eller «panikkangst» har ofte mye smerte og er svært motivert for å få hjelp. Annonsekostnadene her er bemerkelsesverdig lave (2–7 kr/klikk) fordi de fleste klinikker ikke sikter mot disse ordene.",
+      "totalVolume": 5490,
+      "keywords": [
+        { "keyword": "angst", "translation": "anxiety", "volume": 4400, "competition": "LOW", "cpc": 4.95 },
+        { "keyword": "sosial angst", "translation": "social anxiety", "volume": 390, "competition": "LOW", "cpc": 7.37 },
+        { "keyword": "panikkangst", "translation": "panic anxiety", "volume": 260, "competition": "MEDIUM", "cpc": 2.64 },
+        { "keyword": "generalisert angst", "translation": "generalized anxiety", "volume": 260, "competition": "LOW", "cpc": 2.20 },
+        { "keyword": "helseangst", "translation": "health anxiety", "volume": 140, "competition": "LOW", "cpc": 5.28 },
+        { "keyword": "sosial angst behandling", "translation": "social anxiety treatment", "volume": 40, "competition": "MEDIUM", "cpc": 5.28 }
+      ]
+    },
+    {
+      "id": "other",
+      "color": "blue",
+      "nameEN": "Stress, grief & self-esteem",
+      "nameNO": "Stress, sorg og selvfølelse",
+      "descriptionEN": "Other common reasons people in Oslo seek psychological help. Important caveat: \"stress\" and \"sorg\" are broad words — not everyone searching them wants a therapist. \"Stress\" also returns non-therapy results (brands, general articles), and \"sorg\" has extreme seasonal spikes tied to cultural events. The real therapy-seeking share of these searches is a fraction of the raw number, but even that fraction represents real demand at very low ad costs.",
+      "descriptionNO": "Andre vanlige grunner til at folk i Oslo søker psykologhjelp. Viktig forbehold: «stress» og «sorg» er brede ord — ikke alle som søker på dem vil ha en terapeut. «Stress» gir også ikke-terapirelaterte resultater (merkevarer, generelle artikler), og «sorg» har ekstreme sesongtopper knyttet til kulturelle hendelser. Den reelle terapisøkende andelen av disse søkene er en brøkdel av rånummeret, men selv den brøkdelen representerer reell etterspørsel til svært lave annonsekostnader.",
+      "totalVolume": 3310,
+      "keywords": [
+        { "keyword": "sorg", "translation": "grief", "volume": 1300, "competition": "LOW", "cpc": 17.71 },
+        { "keyword": "stress", "translation": "stress", "volume": 1300, "competition": "LOW", "cpc": 9.68 },
+        { "keyword": "ADHD utredning", "translation": "ADHD assessment", "volume": 390, "competition": "HIGH", "cpc": 21.67 },
+        { "keyword": "selvfølelse", "translation": "self-esteem", "volume": 140, "competition": "LOW", "cpc": 9.02 },
+        { "keyword": "sinnemestring", "translation": "anger management", "volume": 110, "competition": "MEDIUM", "cpc": 10.34 },
+        { "keyword": "tvangslidelse", "translation": "OCD", "volume": 70, "competition": "LOW", "cpc": 2.75 }
+      ]
+    },
+    {
+      "id": "online",
+      "color": "purple",
+      "nameEN": "Online & national demand",
+      "nameNO": "Online og nasjonal etterspørsel",
+      "descriptionEN": "These keywords are searched across all of Norway — 5,410 searches/month nationally. They represent people seeking online therapy, ADHD assessment, specific anxiety conditions, and evidence-based treatment methods. A psychologist in {city} offering online sessions can capture this entire nationwide audience. These numbers are separate from the local searches above.",
+      "descriptionNO": "Disse søkeordene søkes over hele Norge — 5 410 søk/mnd nasjonalt. De representerer folk som søker nettterapi, ADHD-utredning, spesifikke angstlidelser og evidensbaserte behandlingsmetoder. En psykolog i {city} som tilbyr online-timer kan fange dette nasjonale publikummet. Disse tallene er separate fra de lokale søkene over.",
+      "totalVolume": 5410,
+      "isNational": true,
+      "keywords": [
+        { "keyword": "posttraumatisk stresslidelse", "translation": "PTSD", "volume": 1000, "competition": "LOW", "cpc": 5.72 },
+        { "keyword": "stressmestring", "translation": "stress management", "volume": 720, "competition": "HIGH", "cpc": 9.79 },
+        { "keyword": "adhd voksne", "translation": "ADHD in adults", "volume": 590, "competition": "MEDIUM", "cpc": 4.40 },
+        { "keyword": "eksponeringsterapi", "translation": "exposure therapy", "volume": 590, "competition": "LOW", "cpc": 9.46 },
+        { "keyword": "prestasjonsangst", "translation": "performance anxiety", "volume": 390, "competition": "LOW", "cpc": 4.18 },
+        { "keyword": "har jeg adhd", "translation": "do I have ADHD", "volume": 390, "competition": "MEDIUM", "cpc": 3.19 },
+        { "keyword": "adhd behandling", "translation": "ADHD treatment", "volume": 260, "competition": "LOW", "cpc": 11.11 },
+        { "keyword": "adhd sinneutbrudd", "translation": "ADHD anger outbursts", "volume": 210, "competition": "LOW", "cpc": 17.05 },
+        { "keyword": "angstlidelse", "translation": "anxiety disorder", "volume": 170, "competition": "LOW", "cpc": 4.07 },
+        { "keyword": "høytfungerende angst", "translation": "high-functioning anxiety", "volume": 140, "competition": "LOW", "cpc": 2.09 },
+        { "keyword": "angst for angsten", "translation": "fear of anxiety", "volume": 140, "competition": "MEDIUM", "cpc": 7.37 },
+        { "keyword": "adhd behandling voksne", "translation": "adult ADHD treatment", "volume": 140, "competition": "MEDIUM", "cpc": 7.26 },
+        { "keyword": "behandle stress", "translation": "treat stress", "volume": 110, "competition": "MEDIUM", "cpc": 18.48 },
+        { "keyword": "parterapi på nett", "translation": "couples therapy online", "volume": 90, "competition": "MEDIUM", "cpc": 62.26 },
+        { "keyword": "bekymringsangst", "translation": "worry anxiety", "volume": 70, "competition": "LOW", "cpc": 13.75 },
+        { "keyword": "nettpsykolog", "translation": "online psychologist", "volume": 50, "competition": "HIGH", "cpc": 49.72 },
+        { "keyword": "parterapi online", "translation": "couples therapy online", "volume": 50, "competition": "HIGH", "cpc": 83.05 },
+        { "keyword": "helseangst behandling", "translation": "health anxiety treatment", "volume": 50, "competition": "MEDIUM", "cpc": 13.53 },
+        { "keyword": "kompleks posttraumatisk stresslidelse", "translation": "complex PTSD", "volume": 50, "competition": "LOW", "cpc": 10.12 },
+        { "keyword": "eksponeringsterapi angst", "translation": "exposure therapy for anxiety", "volume": 40, "competition": "MEDIUM", "cpc": 12.43 },
+        { "keyword": "angstmestring", "translation": "anxiety management", "volume": 30, "competition": "MEDIUM", "cpc": 9.68 },
+        { "keyword": "angstterapi", "translation": "anxiety therapy", "volume": 30, "competition": "MEDIUM", "cpc": 19.14 },
+        { "keyword": "tankekjør behandling", "translation": "racing thoughts treatment", "volume": 30, "competition": "LOW", "cpc": 30.80 },
+        { "keyword": "adhd terapi", "translation": "ADHD therapy", "volume": 30, "competition": "HIGH", "cpc": 18.70 },
+        { "keyword": "parterapi nett", "translation": "couples therapy online", "volume": 20, "competition": "HIGH", "cpc": 54.89 },
+        { "keyword": "digital terapi", "translation": "digital therapy", "volume": 10, "competition": "HIGH", "cpc": 62.26 },
+        { "keyword": "parterapi digitalt", "translation": "digital couples therapy", "volume": 10, "competition": "HIGH", "cpc": 62.70 }
+      ]
+    }
+  ],
+  "serpKeywords": [
+    {
+      "keyword": "psykolog oslo",
+      "volume": 0,
+      "organic": [
+        { "rank": 1, "domain": "legelisten.no" },
+        { "rank": 2, "domain": "volvat.no" },
+        { "rank": 3, "domain": "oslopsykologklinikk.no" },
+        { "rank": 4, "domain": "ipr.no" },
+        { "rank": 5, "domain": "psykologvirke.no" }
+      ],
+      "maps": [
+        { "rank": 1, "title": "Lysne Psykolog – Oslo sentrum", "rating": 5.0, "reviews": 3 },
+        { "rank": 2, "title": "Psykolog Ingrid M. Hoisen", "rating": 0, "reviews": 0 },
+        { "rank": 3, "title": "Psykolog Geir Lokling", "rating": 0, "reviews": 0 }
+      ],
+      "insightEN": "Legelisten.no (a free directory) holds #1 — being listed there is essential. No paid search ads, but 2 paid Maps ads exist (Norsk Psykologklinikk, Lysne Psykolog). Most Maps listings have zero reviews — a huge opportunity to stand out.",
+      "insightNO": "Legelisten.no (en gratis katalog) holder #1 — å være registrert der er essensielt. Ingen betalte søkeannonser, men 2 betalte Maps-annonser finnes (Norsk Psykologklinikk, Lysne Psykolog). De fleste Maps-oppføringer har null anmeldelser — en enorm mulighet til å skille seg ut."
+    },
+    {
+      "keyword": "terapeut oslo",
+      "volume": 0,
+      "organic": [
+        { "rank": 1, "domain": "terapeuthuset.com" },
+        { "rank": 2, "domain": "volvat.no" },
+        { "rank": 3, "domain": "legelisten.no" },
+        { "rank": 4, "domain": "ipr.no" },
+        { "rank": 5, "domain": "psykologvirke.no" }
+      ],
+      "maps": [
+        { "rank": 1, "title": "Samtale Oslo", "rating": 0, "reviews": 0 },
+        { "rank": 2, "title": "Lysne Psykolog – Oslo sentrum", "rating": 5.0, "reviews": 3 },
+        { "rank": 3, "title": "Behandlerverket Oslo Sentrum", "rating": 5.0, "reviews": 0 }
+      ],
+      "insightEN": "The most competitive keyword — 6 paid search ads (norskpsykologklinikk.no, psykologvirke.no, lianfjell.no, torshovpsykologene.no, samtalen.no) plus 2 paid Maps ads. Despite this, organic positions are held by directories and chains, not individual advertisers.",
+      "insightNO": "Det mest konkurransepregede søkeordet — 6 betalte søkeannonser (norskpsykologklinikk.no, psykologvirke.no, lianfjell.no, torshovpsykologene.no, samtalen.no) pluss 2 betalte Maps-annonser. Til tross for dette holdes organiske posisjoner av kataloger og kjeder, ikke individuelle annonsører."
+    },
+    {
+      "keyword": "parterapi oslo",
+      "volume": 0,
+      "organic": [
+        { "rank": 1, "domain": "volvat.no" },
+        { "rank": 2, "domain": "psykologvirke.no" },
+        { "rank": 3, "domain": "favne.no" },
+        { "rank": 4, "domain": "ipr.no" },
+        { "rank": 5, "domain": "bufdir.no" }
+      ],
+      "maps": [
+        { "rank": 1, "title": "IPR", "rating": 5.0, "reviews": 28 },
+        { "rank": 2, "title": "Psykologvirke AS", "rating": 4.8, "reviews": 9 },
+        { "rank": 3, "title": "SAMTALEN AS", "rating": 3.9, "reviews": 8 }
+      ],
+      "insightEN": "Zero paid ads anywhere. Volvat's dedicated parterapi landing page ranks #1 organically. A government site (bufdir.no) ranks #5, confirming partly informational intent. Very few Maps reviews (28, 9, 8) — easy to dominate.",
+      "insightNO": "Null betalte annonser noe sted. Volvats dedikerte parterapi-landingsside rangerer #1 organisk. En offentlig side (bufdir.no) rangerer #5, noe som bekrefter delvis informasjonsintensjon. Svært få Maps-anmeldelser (28, 9, 8) — lett å dominere."
+    },
+    {
+      "keyword": "angst",
+      "volume": 4400,
+      "organic": [
+        { "rank": 1, "domain": "helsenorge.no" },
+        { "rank": 2, "domain": "sml.snl.no" },
+        { "rank": 3, "domain": "psykiskhelse.no" },
+        { "rank": 4, "domain": "kognitiv.no" },
+        { "rank": 5, "domain": "tiltakshandboka.no" }
+      ],
+      "maps": [],
+      "insightEN": "Pure informational SERP — all top 5 are health portals (Helsenorge, Store medisinske leksikon, Psykiskhelse.no). No clinics rank here, and Google shows no Maps results for therapy businesses. The opportunity: create a comprehensive anxiety resource page to capture this massive traffic (4,400/mo) and funnel visitors to your booking page.",
+      "insightNO": "Rent informasjonssøk — alle topp 5 er helseportaler (Helsenorge, Store medisinske leksikon, Psykiskhelse.no). Ingen klinikker rangerer her, og Google viser ingen Maps-resultater for terapibedrifter. Muligheten: lag en omfattende angstressursside for å fange denne massive trafikken (4 400/mnd) og lede besøkende til bestillingssiden din."
+    },
+    {
+      "keyword": "parterapi",
+      "volume": 1000,
+      "organic": [
+        { "rank": 1, "domain": "bufdir.no" },
+        { "rank": 2, "domain": "volvat.no" },
+        { "rank": 3, "domain": "tv.nrk.no" },
+        { "rank": 4, "domain": "favne.no" },
+        { "rank": 5, "domain": "ipr.no" }
+      ],
+      "maps": [
+        { "rank": 1, "title": "SAMTALEN AS", "rating": 3.9, "reviews": 8 },
+        { "rank": 2, "title": "Psykologvirke AS", "rating": 4.8, "reviews": 9 },
+        { "rank": 3, "title": "Par- og familieterapeut S. R. Andersen", "rating": 0, "reviews": 0 }
+      ],
+      "insightEN": "A government site (bufdir.no) ranks #1 — people also search for free public therapy. NRK's TV show \"Parterapi\" ranks #3, showing cultural interest. Clinics (Volvat #2, Favne #4, IPR #5) compete from strong positions. 2 paid Maps ads (SAMTALEN, Favne) — the most commercially active Maps keyword.",
+      "insightNO": "En offentlig side (bufdir.no) rangerer #1 — folk søker også etter gratis offentlig terapi. NRKs TV-serie «Parterapi» rangerer #3, noe som viser kulturell interesse. Klinikker (Volvat #2, Favne #4, IPR #5) konkurrerer fra sterke posisjoner. 2 betalte Maps-annonser (SAMTALEN, Favne) — det mest kommersielt aktive Maps-søkeordet."
+    }
+  ],
+  "cpcData": [
+    { "keyword": "parterapi", "cpc": 42.90 },
+    { "keyword": "psykologhjelp", "cpc": 38.39 },
+    { "keyword": "terapi", "cpc": 33.88 },
+    { "keyword": "parterapi pris", "cpc": 25.85 },
+    { "keyword": "angst hjelp", "cpc": 21.89 },
+    { "keyword": "ADHD utredning", "cpc": 21.67 },
+    { "keyword": "sorg", "cpc": 17.71 },
+    { "keyword": "terapitime", "cpc": 13.97 },
+    { "keyword": "sinnemestring", "cpc": 10.34 },
+    { "keyword": "stress", "cpc": 9.68 },
+    { "keyword": "selvfølelse", "cpc": 9.02 },
+    { "keyword": "terapi pris", "cpc": 8.36 },
+    { "keyword": "sosial angst", "cpc": 7.37 },
+    { "keyword": "helseangst", "cpc": 5.28 },
+    { "keyword": "sosial angst behandling", "cpc": 5.28 },
+    { "keyword": "angst", "cpc": 4.95 },
+    { "keyword": "panikkangst", "cpc": 2.64 },
+    { "keyword": "tvangslidelse", "cpc": 2.75 },
+    { "keyword": "generalisert angst", "cpc": 2.20 }
+  ],
+  "seasonality": {
+    "keyword": "parterapi",
+    "months": [
+      { "month": "Jan", "volume": 1300 },
+      { "month": "Feb", "volume": 1000 },
+      { "month": "Mar", "volume": 1000 },
+      { "month": "Apr", "volume": 880 },
+      { "month": "May", "volume": 880 },
+      { "month": "Jun", "volume": 1000 },
+      { "month": "Jul", "volume": 720 },
+      { "month": "Aug", "volume": 880 },
+      { "month": "Sep", "volume": 1000 },
+      { "month": "Oct", "volume": 880 },
+      { "month": "Nov", "volume": 1000 },
+      { "month": "Dec", "volume": 1600 }
+    ],
+    "peakMonths": ["Dec", "Jan"],
+    "lowMonths": ["Jul"],
+    "insightEN": "December is peak (1,600 searches) — holiday stress puts pressure on relationships. January stays high (1,300) as people make New Year's resolutions. July drops to 720 during fellesferie. Smart strategy: increase ad budgets November–January, reduce in summer.",
+    "insightNO": "Desember er høysesong (1 600 søk) — feriestressen legger press på parforhold. Januar forblir høy (1 300) når folk tar nyttårsforsetter. Juli faller til 720 under fellesferie. Smart strategi: øk annonsebudsjettet november–januar, reduser om sommeren."
+  },
+  "insights": [
+    {
+      "icon": "globe",
+      "color": "blue",
+      "titleEN": "Directories capture #1 positions in {city}",
+      "titleNO": "Kataloger tar #1-posisjonene i {city}",
+      "textEN": "Legelisten.no ranks #1 for \"psykolog oslo\", Terapeuthuset.com #1 for \"terapeut oslo\". Registering on these free directories gives instant top-of-page visibility without any ad spend.",
+      "textNO": "Legelisten.no rangerer #1 for «psykolog oslo», Terapeuthuset.com #1 for «terapeut oslo». Registrering på disse gratis katalogene gir umiddelbar topp-synlighet uten annonsekostnad.",
+      "statLabel": "keywords with directory at #1",
+      "statValue": "2/5"
+    },
+    {
+      "icon": "file-text",
+      "color": "amber",
+      "titleEN": "Health chains dominate with dedicated pages",
+      "titleNO": "Helsekjeder dominerer med egne sider",
+      "textEN": "Volvat.no appears in top 3 organic results for 4 of 5 tested keywords. IPR.no appears in 3. Their secret: a dedicated landing page for each service type (parterapi, psykolog, terapeut) — so Google always finds a relevant match.",
+      "textNO": "Volvat.no dukker opp i topp 3 organiske resultater for 4 av 5 testede søkeord. IPR.no dukker opp i 3. Hemmeligheten: en dedikert landingsside for hver tjenestetype (parterapi, psykolog, terapeut) — så Google alltid finner en relevant treff.",
+      "statLabel": "SERPs with Volvat in top 3",
+      "statValue": "4/5"
+    },
+    {
+      "icon": "star",
+      "color": "green",
+      "titleEN": "Very few Google reviews — easy to stand out",
+      "titleNO": "Svært få Google-anmeldelser — lett å skille seg ut",
+      "textEN": "The highest-reviewed Maps listing (IPR) has only 28 reviews. Most top results have fewer than 10, and several have zero. Getting 30+ genuine reviews would immediately make your clinic the best-reviewed practice in Oslo's Maps results.",
+      "textNO": "Den mest anmeldte Maps-oppføringen (IPR) har bare 28 anmeldelser. De fleste toppresultatene har færre enn 10, og flere har null. Å få 30+ ekte anmeldelser vil umiddelbart gjøre klinikken din til den best anmeldte praksisen i Oslos Maps-resultater.",
+      "statLabel": "max reviews in Maps",
+      "statValue": "28"
+    },
+    {
+      "icon": "clock",
+      "color": "purple",
+      "titleEN": "Google Ads competition is low",
+      "titleNO": "Google Ads-konkurransen er lav",
+      "textEN": "Only \"terapeut oslo\" has paid search ads (6 advertisers). The other 4 tested keywords have zero — wide-open ad space. Even where ads exist, organic positions are held by directories and chains, not the advertisers.",
+      "textNO": "Bare «terapeut oslo» har betalte søkeannonser (6 annonsører). De andre 4 testede søkeordene har null — vidåpent annonserom. Selv der annonser finnes, holdes organiske posisjoner av kataloger og kjeder, ikke annonsørene.",
+      "statLabel": "keywords with paid search ads",
+      "statValue": "1/5"
+    }
+  ],
+  "tips": [
+    {
+      "titleEN": "Google Business Profile",
+      "titleNO": "Google Bedriftsprofil",
+      "textEN": "Claim and optimize your Google Business Profile. This is the box that appears in Maps results. Add photos, services, hours, and actively request reviews from patients. The current leader has just 28 reviews — getting 30+ puts you at the very top.",
+      "textNO": "Opprett og optimaliser din Google Bedriftsprofil. Dette er boksen som vises i kartresultater. Legg til bilder, tjenester, åpningstider, og be aktivt om anmeldelser fra pasienter. Den nåværende lederen har bare 28 anmeldelser — å få 30+ setter deg helt i toppen.",
+      "tagEN": "Free — 15 minutes",
+      "tagNO": "Gratis — 15 minutter"
+    },
+    {
+      "titleEN": "Register on directories",
+      "titleNO": "Registrer deg i kataloger",
+      "textEN": "Legelisten.no and Terapeuthuset.com rank #1 for key queries. Creating a free profile on these directories gives you instant visibility on the most visited pages for your keywords — without any ad spend.",
+      "textNO": "Legelisten.no og Terapeuthuset.com rangerer #1 for sentrale søkeord. Å opprette en gratis profil på disse katalogene gir deg umiddelbar synlighet på de mest besøkte sidene for dine søkeord — uten annonsekostnad.",
+      "tagEN": "Free — 30 minutes",
+      "tagNO": "Gratis — 30 minutter"
+    },
+    {
+      "titleEN": "Create dedicated service pages",
+      "titleNO": "Lag dedikerte tjenestesider",
+      "textEN": "Volvat and IPR rank for multiple keywords because they have separate pages for each service. Create dedicated pages for parterapi, angstbehandling, samtaleterapi, etc. — each page targets specific keywords and matches search intent directly.",
+      "textNO": "Volvat og IPR rangerer for flere søkeord fordi de har egne sider for hver tjeneste. Lag dedikerte sider for parterapi, angstbehandling, samtaleterapi osv. — hver side sikter mot spesifikke søkeord og matcher søkeintensjon direkte.",
+      "tagEN": "Free — 2-3 hours each",
+      "tagNO": "Gratis — 2-3 timer per side"
+    },
+    {
+      "titleEN": "Run targeted Google Ads",
+      "titleNO": "Kjør målrettede Google Ads",
+      "textEN": "Only 1 of 5 tested keywords has paid search ads — most of the ad space is wide open. Average CPC is ~12 kr/click (but condition keywords like \"angst\" cost just 2–5 kr). A 5,000 kr/month budget can generate ~400 clicks and potentially 4 new patients. Use the calculator above to estimate your ROI.",
+      "textNO": "Bare 1 av 5 testede søkeord har betalte søkeannonser — det meste av annonserommet er vidåpent. Gjennomsnittlig CPC er ~12 kr/klikk (men tilstandsord som «angst» koster bare 2–5 kr). Et budsjett på 5 000 kr/mnd kan generere ~400 klikk og potensielt 4 nye pasienter. Bruk kalkulatoren over for å estimere din ROI.",
+      "tagEN": "Paid — from 5,000 kr/month",
+      "tagNO": "Betalt — fra 5 000 kr/mnd"
+    }
+  ],
+  "calculator": {
+    "avgCpc": 12.2,
+    "defaultPatientValue": 8000,
+    "defaultBudget": 5000,
+    "defaultConversion": 30,
+    "clickToInquiryRate": 0.035,
+    "benchmarkEN": "Service keywords (parterapi, terapi) cost 34–43 kr/click in Oslo. Condition keywords (angst, stress) cost just 2–10 kr — a potential goldmine for content-savvy clinics.",
+    "benchmarkNO": "Tjenestenøkkelord (parterapi, terapi) koster 34–43 kr/klikk i Oslo. Tilstandssøkeord (angst, stress) koster bare 2–10 kr — en potensiell gullgruve for innholdsbevisste klinikker."
+  },
+  "sources": [
+    { "name": "DataForSEO – Keywords Data API (Google Ads, Oslo)", "url": null },
+    { "name": "DataForSEO – Keywords for Keywords API (Oslo)", "url": null },
+    { "name": "DataForSEO – SERP API (Google organic, Oslo)", "url": null },
+    { "name": "DataForSEO – Maps API (Google Maps, Oslo)", "url": null },
+    { "name": "DataReportal – Digital 2025: Norway", "url": "https://datareportal.com/reports/digital-2025-norway" },
+    { "name": "BrightLocal – Local Pack Click Share Study 2024", "url": "https://www.brightlocal.com/research/" },
+    { "name": "WordStream – Healthcare Industry Benchmarks", "url": "https://www.wordstream.com/blog/ws/2016/02/29/google-adwords-industry-benchmarks" },
+    { "name": "DataForSEO – Keywords Data API (Google Ads, Norway national)", "url": null }
+  ]
+}

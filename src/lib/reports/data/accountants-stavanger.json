@@ -1,0 +1,208 @@
+{
+  "meta": {
+    "niche": "accountants",
+    "nicheNO": "regnskapsførere",
+    "city": "Stavanger",
+    "locationCode": 1010917,
+    "dataDate": "2026-02",
+    "totalSearchVolume": 320
+  },
+  "metrics": {
+    "keywordCount": 10,
+    "avgCpc": 126.3,
+    "topClinicsCount": 5,
+    "mapsClickShare": 44
+  },
+  "keywordGroups": [
+    {
+      "id": "services",
+      "color": "green",
+      "nameEN": "Accounting services & firms",
+      "nameNO": "Regnskapstjenester og -byråer",
+      "descriptionEN": "Direct service searches in Stavanger. \"Regnskap\" and \"revisor\" tie at 50/month each. \"Regnskapsfører\" has the highest CPC in all 5 cities at 454 kr per click — reflecting intense competition in the Rogaland oil capital's business market.",
+      "descriptionNO": "Direkte tjenestesøk i Stavanger. «Regnskap» og «revisor» er like på 50/mnd hver. «Regnskapsfører» har den høyeste CPC-en i alle 5 byer på 454 kr per klikk — som gjenspeiler intens konkurranse i Rogalands oljehovedstads næringsmarked.",
+      "totalVolume": 160,
+      "keywords": [
+        { "keyword": "regnskap", "translation": "accounting", "volume": 50, "competition": "MEDIUM", "cpc": 235.07 },
+        { "keyword": "revisor", "translation": "auditor", "volume": 50, "competition": "LOW", "cpc": 32.34 },
+        { "keyword": "regnskapsfører", "translation": "accountant", "volume": 30, "competition": "HIGH", "cpc": 453.97 },
+        { "keyword": "regnskapsbyrå", "translation": "accounting firm", "volume": 10, "competition": "HIGH", "cpc": 82.17 },
+        { "keyword": "regnskapskontor", "translation": "accounting office", "volume": 10, "competition": "HIGH", "cpc": 7.92 },
+        { "keyword": "skatterådgiver", "translation": "tax advisor", "volume": 10, "competition": "HIGH", "cpc": 54.78 }
+      ]
+    },
+    {
+      "id": "tax",
+      "color": "amber",
+      "nameEN": "Tax season & compliance",
+      "nameNO": "Skattesesong og etterlevelse",
+      "isNational": true,
+      "descriptionEN": "Seasonal tax searches in Stavanger. \"Skattemelding\" drives 2,400 monthly searches — mainly individuals filing their own taxes. Low CPC (36 kr) makes this ideal for content marketing rather than direct advertising.",
+      "descriptionNO": "Sesongbaserte skattesøk i Stavanger. «Skattemelding» driver 2 400 månedlige søk — hovedsakelig privatpersoner som leverer selvangivelsen selv. Lav CPC (36 kr) gjør dette ideelt for innholdsmarkedsføring fremfor direkte annonsering.",
+      "descriptionWarning": "These searches are mostly informational — not direct service intent. Volume is excluded from the total above.",
+      "totalVolume": 2400,
+      "keywords": [
+        { "keyword": "skattemelding", "translation": "tax return", "volume": 2400, "competition": "LOW", "cpc": 36.41 }
+      ]
+    },
+    {
+      "id": "explicit",
+      "color": "blue",
+      "nameEN": "Explicit \"Stavanger\" searches",
+      "nameNO": "Eksplisitte \"Stavanger\"-søk",
+      "descriptionEN": "People searching specifically for accounting in Stavanger. \"Regnskapsfører stavanger\" leads at 90/month — triple the generic \"regnskapsfører\" volume (30), showing strong regional demand from Rogaland and surrounding areas.",
+      "descriptionNO": "Folk som søker spesifikt etter regnskap i Stavanger. «Regnskapsfører stavanger» leder med 90/mnd — tre ganger så mye som det generiske «regnskapsfører»-volumet (30), som viser sterk regional etterspørsel fra Rogaland og omkringliggende områder.",
+      "totalVolume": 160,
+      "keywords": [
+        { "keyword": "regnskapsfører stavanger", "translation": "accountant Stavanger", "volume": 90, "competition": "MEDIUM", "cpc": 94.60 },
+        { "keyword": "revisor stavanger", "translation": "auditor Stavanger", "volume": 40, "competition": "HIGH", "cpc": 33.11 },
+        { "keyword": "regnskapsbyrå stavanger", "translation": "accounting firm Stavanger", "volume": 30, "competition": "MEDIUM", "cpc": 232.76 }
+      ]
+    }
+  ],
+  "serpKeywords": [
+    {
+      "keyword": "regnskapsfører stavanger",
+      "volume": 90,
+      "organic": [
+        { "rank": 1, "domain": "tripletex.no" },
+        { "rank": 2, "domain": "regnskapsførertilbud.no" },
+        { "rank": 3, "domain": "azets.com" },
+        { "rank": 4, "domain": "viewgroup.no" },
+        { "rank": 5, "domain": "amestoaccounthouse.no" }
+      ],
+      "maps": [
+        { "rank": 1, "title": "Addvant Regnskap Stavanger", "rating": 5.0, "reviews": 3 },
+        { "rank": 2, "title": "Jansson & Larsen Regnskap AS", "rating": 5.0, "reviews": 3 },
+        { "rank": 3, "title": "Star Regnskap AS", "rating": 5.0, "reviews": 1 }
+      ],
+      "insightEN": "Software platform Tripletex.no ranks #1 organically — ahead of comparison sites and major chains like Azets. All three Maps results have perfect 5.0 ratings but only 1-3 reviews each. Paid Maps ads appear (VIEW Group, Kallesten) — competitors are already investing in local ads.",
+      "insightNO": "Programvareplattformen Tripletex.no rangerer #1 organisk — foran sammenligningssider og store kjeder som Azets. Alle tre Maps-resultatene har perfekte 5,0-rangeringer, men bare 1-3 anmeldelser hver. Betalte Maps-annonser vises (VIEW Group, Kallesten) — konkurrenter investerer allerede i lokale annonser."
+    }
+  ],
+  "cpcData": [
+    { "keyword": "regnskapsfører", "cpc": 453.97 },
+    { "keyword": "regnskap", "cpc": 235.07 },
+    { "keyword": "regnskapsbyrå stavanger", "cpc": 232.76 },
+    { "keyword": "regnskapsfører stavanger", "cpc": 94.60 },
+    { "keyword": "regnskapsbyrå", "cpc": 82.17 },
+    { "keyword": "skatterådgiver", "cpc": 54.78 },
+    { "keyword": "skattemelding", "cpc": 36.41 },
+    { "keyword": "revisor stavanger", "cpc": 33.11 },
+    { "keyword": "revisor", "cpc": 32.34 },
+    { "keyword": "regnskapskontor", "cpc": 7.92 }
+  ],
+  "seasonality": {
+    "keyword": "regnskapsfører",
+    "months": [
+      { "month": "Jan", "volume": 50 },
+      { "month": "Feb", "volume": 30 },
+      { "month": "Mar", "volume": 30 },
+      { "month": "Apr", "volume": 30 },
+      { "month": "May", "volume": 20 },
+      { "month": "Jun", "volume": 40 },
+      { "month": "Jul", "volume": 30 },
+      { "month": "Aug", "volume": 30 },
+      { "month": "Sep", "volume": 30 },
+      { "month": "Oct", "volume": 30 },
+      { "month": "Nov", "volume": 30 },
+      { "month": "Dec", "volume": 20 }
+    ],
+    "peakMonths": ["Jan", "Jun"],
+    "lowMonths": ["May", "Dec"],
+    "insightEN": "Stavanger's accounting demand is relatively flat, with a January peak (50) as businesses start the new year with fresh accounting needs. June shows a secondary peak (40). May and December are the lowest at 20 — reflecting holiday seasons.",
+    "insightNO": "Stavangers regnskapsetterspørsel er relativt flat, med en januartopp (50) når bedrifter starter det nye året med friske regnskapsbehov. Juni viser en sekundær topp (40). Mai og desember er lavest på 20 — som gjenspeiler feriesesonger."
+  },
+  "insights": [
+    {
+      "icon": "star",
+      "color": "amber",
+      "titleEN": "Perfect ratings but almost no reviews",
+      "titleNO": "Perfekte rangeringer men nesten ingen anmeldelser",
+      "textEN": "All three Maps leaders (Addvant, Jansson & Larsen, Star Regnskap) have 5.0 ratings — but with only 1-3 reviews each. This is a fragile position. Getting 15+ reviews with high ratings would make you the clear Maps leader in Stavanger.",
+      "textNO": "Alle tre Maps-lederne (Addvant, Jansson & Larsen, Star Regnskap) har 5,0-rangeringer — men med bare 1-3 anmeldelser hver. Dette er en skjør posisjon. Å få 15+ anmeldelser med høy rating vil gjøre deg til den klare Maps-lederen i Stavanger.",
+      "statLabel": "Maps leader reviews",
+      "statValue": "3"
+    },
+    {
+      "icon": "globe",
+      "color": "green",
+      "titleEN": "Explicit searches triple the generic volume",
+      "titleNO": "Eksplisitte søk tredobler det generiske volumet",
+      "textEN": "\"Regnskapsfører stavanger\" (90/mo) is three times the generic \"regnskapsfører\" volume in Stavanger (30/mo). People from across Rogaland — including Sandnes, Sola, and Randaberg — actively search for Stavanger-based accountants.",
+      "textNO": "«Regnskapsfører stavanger» (90/mnd) er tre ganger det generiske «regnskapsfører»-volumet i Stavanger (30/mnd). Folk fra hele Rogaland — inkludert Sandnes, Sola og Randaberg — søker aktivt etter Stavanger-baserte regnskapsførere.",
+      "statLabel": "explicit vs generic",
+      "statValue": "90 vs 30"
+    },
+    {
+      "icon": "clock",
+      "color": "purple",
+      "titleEN": "Paid ads already active — market is maturing",
+      "titleNO": "Betalte annonser allerede aktive — markedet modnes",
+      "textEN": "Both organic (Overblikk Regnskap, Azets) and Maps (VIEW Group, Kallesten) paid ads appear for \"regnskapsfører stavanger\". This means competitors are already investing — establishing organic presence now is critical before costs rise further.",
+      "textNO": "Både organiske (Overblikk Regnskap, Azets) og Maps (VIEW Group, Kallesten) betalte annonser vises for «regnskapsfører stavanger». Dette betyr at konkurrenter allerede investerer — å etablere organisk tilstedeværelse nå er kritisk før kostnadene stiger ytterligere.",
+      "statLabel": "paid ads active",
+      "statValue": "4"
+    },
+    {
+      "icon": "file-text",
+      "color": "blue",
+      "titleEN": "No local firm in organic top 5",
+      "titleNO": "Ingen lokalt byrå i organisk topp 5",
+      "textEN": "The organic top 5 is entirely platforms and chains: Tripletex (#1), regnskapsførertilbud.no (#2), Azets (#3), VIEW Group (#4), and Amesto (#5). A dedicated local firm with strong city-specific content can break into these rankings.",
+      "textNO": "Den organiske topp 5 er utelukkende plattformer og kjeder: Tripletex (#1), regnskapsførertilbud.no (#2), Azets (#3), VIEW Group (#4) og Amesto (#5). Et dedikert lokalt byrå med sterkt byspesifikt innhold kan bryte inn i disse rangeringene.",
+      "statLabel": "local firms in top 5",
+      "statValue": "0/5"
+    }
+  ],
+  "tips": [
+    {
+      "titleEN": "Google Business Profile — break the 5.0 tie",
+      "titleNO": "Google Bedriftsprofil — bryt 5,0-uavgjortet",
+      "textEN": "Three firms share 5.0 ratings with 1-3 reviews each. Get 25+ reviews and you'll dominate the map pack by volume alone. Google favors businesses with more reviews when ratings are equal.",
+      "textNO": "Tre byråer deler 5,0-rangeringer med 1-3 anmeldelser hver. Få 25+ anmeldelser og du vil dominere kartpakken bare ved volum. Google favoriserer virksomheter med flere anmeldelser når rangeringene er like.",
+      "tagEN": "Free — 30 minutes",
+      "tagNO": "Gratis — 30 minutter"
+    },
+    {
+      "titleEN": "Create city-specific landing pages",
+      "titleNO": "Lag byspesifikke landingssider",
+      "textEN": "Explicit \"stavanger\" keywords (160/mo) equal generic service searches (160/mo). Create dedicated pages mentioning Stavanger, Rogaland county, Sandnes, and other regional municipalities.",
+      "textNO": "Eksplisitte «stavanger»-søkeord (160/mnd) er like med generiske tjenestesøk (160/mnd). Lag dedikerte sider som nevner Stavanger, Rogaland fylke, Sandnes og andre regionale kommuner.",
+      "tagEN": "Free — 2-3 hours",
+      "tagNO": "Gratis — 2-3 timer"
+    },
+    {
+      "titleEN": "Register on Regnskapsførertilbud.no",
+      "titleNO": "Registrer deg på Regnskapsførertilbud.no",
+      "textEN": "This comparison platform ranks #2 organically for \"regnskapsfører stavanger\". A profile there gives you instant visibility where business owners compare accounting firms.",
+      "textNO": "Denne sammenligningsplattformen rangerer #2 organisk for «regnskapsfører stavanger». En profil der gir deg umiddelbar synlighet der bedriftseiere sammenligner regnskapsbyråer.",
+      "tagEN": "Free — 15 minutes",
+      "tagNO": "Gratis — 15 minutter"
+    },
+    {
+      "titleEN": "Run Google Ads on explicit Stavanger keywords",
+      "titleNO": "Kjør Google Ads på eksplisitte Stavanger-søkeord",
+      "textEN": "\"Regnskapsfører stavanger\" (95 kr/click) and \"revisor stavanger\" (33 kr/click) are much cheaper than the generic \"regnskapsfører\" (454 kr/click). With 8,000 kr/month budget, you can capture ~65 clicks.",
+      "textNO": "«Regnskapsfører stavanger» (95 kr/klikk) og «revisor stavanger» (33 kr/klikk) er mye billigere enn generisk «regnskapsfører» (454 kr/klikk). Med 8 000 kr/mnd budsjett kan du fange ~65 klikk.",
+      "tagEN": "Paid — from 8,000 kr/month",
+      "tagNO": "Betalt — fra 8 000 kr/mnd"
+    }
+  ],
+  "calculator": {
+    "avgCpc": 126.3,
+    "defaultPatientValue": 60000,
+    "defaultBudget": 8000,
+    "defaultConversion": 30,
+    "clickToInquiryRate": 0.04,
+    "benchmarkEN": "Stavanger accounting CPCs range 8–454 kr. Explicit city keywords (33–233 kr) offer better value than generic terms (32–454 kr) — target those first.",
+    "benchmarkNO": "Stavanger regnskap CPC-er varierer 8–454 kr. Eksplisitte bysøkeord (33–233 kr) gir bedre verdi enn generiske termer (32–454 kr) — målrett disse først."
+  },
+  "sources": [
+    { "name": "DataForSEO – Keywords Data API (Google Ads, Stavanger)", "url": null },
+    { "name": "DataForSEO – SERP API (Google organic, Norway)", "url": null },
+    { "name": "DataForSEO – Maps API (Google Maps, Norway)", "url": null },
+    { "name": "DataReportal – Digital 2025: Norway", "url": "https://datareportal.com/reports/digital-2025-norway" },
+    { "name": "BrightLocal – Local Pack Click Share Study 2024", "url": "https://www.brightlocal.com/research/" }
+  ]
+}

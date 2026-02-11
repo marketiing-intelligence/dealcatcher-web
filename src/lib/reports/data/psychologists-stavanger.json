@@ -1,0 +1,270 @@
+{
+  "meta": {
+    "niche": "psychologists",
+    "nicheNO": "psykologer",
+    "city": "Stavanger",
+    "locationCode": 1010917,
+    "dataDate": "2026-02",
+    "totalSearchVolume": 310
+  },
+  "metrics": {
+    "keywordCount": 9,
+    "avgCpc": 18.7,
+    "topClinicsCount": 3,
+    "mapsClickShare": 42
+  },
+  "keywordGroups": [
+    {
+      "id": "services",
+      "color": "green",
+      "nameEN": "Therapy services",
+      "nameNO": "Terapitjenester",
+      "descriptionEN": "Direct service searches — people ready to book. \"Parterapi\" (couples therapy) accounts for two-thirds of this group at 90 searches/month. Ad costs for service keywords are the highest in this report (17–36 kr/click), reflecting strong commercial intent.",
+      "descriptionNO": "Direkte tjenestesøk — folk som er klare til å bestille. «Parterapi» står for to tredjedeler av denne gruppen med 90 søk/måned. Annonsekostnader for tjenestenøkkelord er de høyeste i denne rapporten (17–36 kr/klikk), noe som gjenspeiler sterk kommersiell intensjon.",
+      "totalVolume": 130,
+      "keywords": [
+        { "keyword": "parterapi", "translation": "couples therapy", "volume": 90, "competition": "MEDIUM", "cpc": 36.19 },
+        { "keyword": "terapi", "translation": "therapy", "volume": 20, "competition": "HIGH", "cpc": 17.38 },
+        { "keyword": "parterapi pris", "translation": "couples therapy price", "volume": 10, "competition": "HIGH", "cpc": 30.47 },
+        { "keyword": "angst hjelp", "translation": "anxiety help", "volume": 10, "competition": "HIGH", "cpc": 3.41 }
+      ]
+    },
+    {
+      "id": "anxiety",
+      "color": "amber",
+      "nameEN": "Anxiety & anxiety disorders",
+      "nameNO": "Angst og angstlidelser",
+      "descriptionEN": "People searching for their problem, not a provider. \"Angst\" leads with 90 searches/month. Ad costs are very low (2–12 kr/click) — most Stavanger clinics don't target these condition keywords, leaving the ad space wide open for practices that understand content marketing.",
+      "descriptionNO": "Folk som søker etter problemet sitt, ikke en tilbyder. «Angst» leder med 90 søk/måned. Annonsekostnadene er svært lave (2–12 kr/klikk) — de fleste Stavanger-klinikker sikter ikke mot disse tilstandssøkeordene, noe som lar annonserommet stå vidåpent for praksiser som forstår innholdsmarkedsføring.",
+      "totalVolume": 180,
+      "keywords": [
+        { "keyword": "angst", "translation": "anxiety", "volume": 90, "competition": "MEDIUM", "cpc": 11.55 },
+        { "keyword": "panikkangst", "translation": "panic anxiety", "volume": 30, "competition": "MEDIUM", "cpc": 2.31 },
+        { "keyword": "ADHD utredning", "translation": "ADHD assessment", "volume": 30, "competition": "HIGH", "cpc": 18.15 },
+        { "keyword": "generalisert angst", "translation": "generalized anxiety", "volume": 20, "competition": "LOW", "cpc": 3.63 },
+        { "keyword": "sinnemestring", "translation": "anger management", "volume": 10, "competition": "MEDIUM", "cpc": 12.65 }
+      ]
+    },
+    {
+      "id": "online",
+      "color": "purple",
+      "nameEN": "Online & national demand",
+      "nameNO": "Online og nasjonal etterspørsel",
+      "descriptionEN": "These keywords are searched across all of Norway — 5,410 searches/month nationally. They represent people seeking online therapy, ADHD assessment, specific anxiety conditions, and evidence-based treatment methods. A psychologist in {city} offering online sessions can capture this entire nationwide audience. These numbers are separate from the local searches above.",
+      "descriptionNO": "Disse søkeordene søkes over hele Norge — 5 410 søk/mnd nasjonalt. De representerer folk som søker nettterapi, ADHD-utredning, spesifikke angstlidelser og evidensbaserte behandlingsmetoder. En psykolog i {city} som tilbyr online-timer kan fange dette nasjonale publikummet. Disse tallene er separate fra de lokale søkene over.",
+      "totalVolume": 5410,
+      "isNational": true,
+      "keywords": [
+        { "keyword": "posttraumatisk stresslidelse", "translation": "PTSD", "volume": 1000, "competition": "LOW", "cpc": 5.72 },
+        { "keyword": "stressmestring", "translation": "stress management", "volume": 720, "competition": "HIGH", "cpc": 9.79 },
+        { "keyword": "adhd voksne", "translation": "ADHD in adults", "volume": 590, "competition": "MEDIUM", "cpc": 4.40 },
+        { "keyword": "eksponeringsterapi", "translation": "exposure therapy", "volume": 590, "competition": "LOW", "cpc": 9.46 },
+        { "keyword": "prestasjonsangst", "translation": "performance anxiety", "volume": 390, "competition": "LOW", "cpc": 4.18 },
+        { "keyword": "har jeg adhd", "translation": "do I have ADHD", "volume": 390, "competition": "MEDIUM", "cpc": 3.19 },
+        { "keyword": "adhd behandling", "translation": "ADHD treatment", "volume": 260, "competition": "LOW", "cpc": 11.11 },
+        { "keyword": "adhd sinneutbrudd", "translation": "ADHD anger outbursts", "volume": 210, "competition": "LOW", "cpc": 17.05 },
+        { "keyword": "angstlidelse", "translation": "anxiety disorder", "volume": 170, "competition": "LOW", "cpc": 4.07 },
+        { "keyword": "høytfungerende angst", "translation": "high-functioning anxiety", "volume": 140, "competition": "LOW", "cpc": 2.09 },
+        { "keyword": "angst for angsten", "translation": "fear of anxiety", "volume": 140, "competition": "MEDIUM", "cpc": 7.37 },
+        { "keyword": "adhd behandling voksne", "translation": "adult ADHD treatment", "volume": 140, "competition": "MEDIUM", "cpc": 7.26 },
+        { "keyword": "behandle stress", "translation": "treat stress", "volume": 110, "competition": "MEDIUM", "cpc": 18.48 },
+        { "keyword": "parterapi på nett", "translation": "couples therapy online", "volume": 90, "competition": "MEDIUM", "cpc": 62.26 },
+        { "keyword": "bekymringsangst", "translation": "worry anxiety", "volume": 70, "competition": "LOW", "cpc": 13.75 },
+        { "keyword": "nettpsykolog", "translation": "online psychologist", "volume": 50, "competition": "HIGH", "cpc": 49.72 },
+        { "keyword": "parterapi online", "translation": "couples therapy online", "volume": 50, "competition": "HIGH", "cpc": 83.05 },
+        { "keyword": "helseangst behandling", "translation": "health anxiety treatment", "volume": 50, "competition": "MEDIUM", "cpc": 13.53 },
+        { "keyword": "kompleks posttraumatisk stresslidelse", "translation": "complex PTSD", "volume": 50, "competition": "LOW", "cpc": 10.12 },
+        { "keyword": "eksponeringsterapi angst", "translation": "exposure therapy for anxiety", "volume": 40, "competition": "MEDIUM", "cpc": 12.43 },
+        { "keyword": "angstmestring", "translation": "anxiety management", "volume": 30, "competition": "MEDIUM", "cpc": 9.68 },
+        { "keyword": "angstterapi", "translation": "anxiety therapy", "volume": 30, "competition": "MEDIUM", "cpc": 19.14 },
+        { "keyword": "tankekjør behandling", "translation": "racing thoughts treatment", "volume": 30, "competition": "LOW", "cpc": 30.80 },
+        { "keyword": "adhd terapi", "translation": "ADHD therapy", "volume": 30, "competition": "HIGH", "cpc": 18.70 },
+        { "keyword": "parterapi nett", "translation": "couples therapy online", "volume": 20, "competition": "HIGH", "cpc": 54.89 },
+        { "keyword": "digital terapi", "translation": "digital therapy", "volume": 10, "competition": "HIGH", "cpc": 62.26 },
+        { "keyword": "parterapi digitalt", "translation": "digital couples therapy", "volume": 10, "competition": "HIGH", "cpc": 62.70 }
+      ]
+    }
+  ],
+  "serpKeywords": [
+    {
+      "keyword": "psykolog stavanger",
+      "volume": 0,
+      "organic": [
+        { "rank": 1, "domain": "legelisten.no" },
+        { "rank": 2, "domain": "ledigpsykolog.no" },
+        { "rank": 3, "domain": "stavangerpsykologhus.no" },
+        { "rank": 4, "domain": "stavangerterapihus.no" },
+        { "rank": 5, "domain": "bolgenpsykologkontor.no" }
+      ],
+      "maps": [
+        { "rank": 1, "title": "Stavanger Psykologbehandling", "rating": 0, "reviews": 0 },
+        { "rank": 2, "title": "Marte Bøe Psykolog", "rating": 0, "reviews": 0 },
+        { "rank": 3, "title": "Kristin Engh", "rating": 5.0, "reviews": 1 }
+      ],
+      "insightEN": "Legelisten.no holds #1 (same pattern as Oslo and Bergen). Two local practices with city-named domains rank high: Stavanger Psykologhus (#3) and Stavanger Terapihus (#4). Zero paid search ads. 2 paid Maps ads appear (Stavanger Psykologhus with 10 reviews, Klinikk for Alle with 139 reviews), but organic Maps results are nearly empty — most have zero reviews.",
+      "insightNO": "Legelisten.no holder #1 (samme mønster som Oslo og Bergen). To lokale praksiser med bynavndomener rangerer høyt: Stavanger Psykologhus (#3) og Stavanger Terapihus (#4). Null betalte søkeannonser. 2 betalte Maps-annonser vises (Stavanger Psykologhus med 10 anmeldelser, Klinikk for Alle med 139 anmeldelser), men organiske Maps-resultater er nesten tomme — de fleste har null anmeldelser."
+    },
+    {
+      "keyword": "terapeut stavanger",
+      "volume": 0,
+      "organic": [
+        { "rank": 1, "domain": "stavangerterapihus.no" },
+        { "rank": 2, "domain": "ledigpsykolog.no" },
+        { "rank": 3, "domain": "psykologhegreberg.no" },
+        { "rank": 4, "domain": "ioptstavanger.no" },
+        { "rank": 5, "domain": "stavangerklinikken.no" }
+      ],
+      "maps": [
+        { "rank": 1, "title": "Psykolog Brit Røisli AS", "rating": 5.0, "reviews": 1 },
+        { "rank": 2, "title": "NorKlinikken avd. Stavanger", "rating": 4.8, "reviews": 60 },
+        { "rank": 3, "title": "GPS Gestalt Psykoterapi Stavanger", "rating": 5.0, "reviews": 2 }
+      ],
+      "insightEN": "Stavanger Terapihus holds #1 organic — they appear in all 3 tested SERPs, the only practice with this breadth. Solo practitioner Ellen Hegreberg ranks #3. 2 paid Maps ads from heavyweight clinics (Forusklinikken: 115 reviews, Klinikk for Alle: 214 reviews), but NorKlinikken achieves organic Maps #2 with 60 reviews — proving you don't need to pay for Maps visibility.",
+      "insightNO": "Stavanger Terapihus holder #1 organisk — de dukker opp i alle 3 testede søkeresultater, den eneste praksisen med denne bredden. Solopraktiker Ellen Hegreberg rangerer #3. 2 betalte Maps-annonser fra tungvektsklinikker (Forusklinikken: 115 anmeldelser, Klinikk for Alle: 214 anmeldelser), men NorKlinikken oppnår organisk Maps #2 med 60 anmeldelser — noe som beviser at du ikke trenger å betale for Maps-synlighet."
+    },
+    {
+      "keyword": "parterapi stavanger",
+      "volume": 0,
+      "organic": [
+        { "rank": 1, "domain": "stavangerterapihus.no" },
+        { "rank": 2, "domain": "solapsykologene.no" },
+        { "rank": 3, "domain": "samtalestavanger.no" },
+        { "rank": 4, "domain": "bufdir.no" },
+        { "rank": 5, "domain": "dialogpsykologsenter.no" }
+      ],
+      "maps": [
+        { "rank": 1, "title": "GPS Gestalt Psykoterapi Stavanger", "rating": 5.0, "reviews": 2 },
+        { "rank": 2, "title": "Psykolog Ellen Hegreberg", "rating": 0, "reviews": 0 },
+        { "rank": 3, "title": "Stavanger Psykologhus", "rating": 4.5, "reviews": 10 }
+      ],
+      "insightEN": "Stavanger Terapihus again holds #1 organic. Multiple clinics with keyword-matched domains rank well: Sola Psykologene (#2), Samtale Stavanger (#3), Dialog Psykologsenter (#5). Bufdir.no (#4) confirms partly informational intent. Zero paid ads — neither search nor Maps. The least competitive keyword in Stavanger.",
+      "insightNO": "Stavanger Terapihus holder igjen #1 organisk. Flere klinikker med søkeord-matchede domener rangerer godt: Sola Psykologene (#2), Samtale Stavanger (#3), Dialog Psykologsenter (#5). Bufdir.no (#4) bekrefter delvis informasjonsintensjon. Null betalte annonser — verken søk eller Maps. Det minst konkurransepregede søkeordet i Stavanger."
+    }
+  ],
+  "cpcData": [
+    { "keyword": "parterapi", "cpc": 36.19 },
+    { "keyword": "parterapi pris", "cpc": 30.47 },
+    { "keyword": "ADHD utredning", "cpc": 18.15 },
+    { "keyword": "terapi", "cpc": 17.38 },
+    { "keyword": "sinnemestring", "cpc": 12.65 },
+    { "keyword": "angst", "cpc": 11.55 },
+    { "keyword": "generalisert angst", "cpc": 3.63 },
+    { "keyword": "angst hjelp", "cpc": 3.41 },
+    { "keyword": "panikkangst", "cpc": 2.31 }
+  ],
+  "seasonality": {
+    "keyword": "parterapi",
+    "months": [
+      { "month": "Jan", "volume": 90 },
+      { "month": "Feb", "volume": 50 },
+      { "month": "Mar", "volume": 70 },
+      { "month": "Apr", "volume": 40 },
+      { "month": "May", "volume": 70 },
+      { "month": "Jun", "volume": 90 },
+      { "month": "Jul", "volume": 50 },
+      { "month": "Aug", "volume": 70 },
+      { "month": "Sep", "volume": 90 },
+      { "month": "Oct", "volume": 90 },
+      { "month": "Nov", "volume": 90 },
+      { "month": "Dec", "volume": 210 }
+    ],
+    "peakMonths": ["Dec"],
+    "lowMonths": ["Apr", "Jul"],
+    "insightEN": "December is peak (210 searches) — more than double the monthly average. January and the autumn months (Sep–Nov) hold steady at 90. April and July are the weakest months (40–50), coinciding with Easter and fellesferie. Strategy: run ads October–January, pause in April and July.",
+    "insightNO": "Desember er høysesong (210 søk) — mer enn det dobbelte av månedssnittet. Januar og høstmånedene (sep–nov) holder seg stabile på 90. April og juli er de svakeste månedene (40–50), sammenfallende med påske og fellesferie. Strategi: kjør annonser oktober–januar, pause i april og juli."
+  },
+  "insights": [
+    {
+      "icon": "globe",
+      "color": "blue",
+      "titleEN": "Stavanger Terapihus dominates all 3 SERPs",
+      "titleNO": "Stavanger Terapihus dominerer alle 3 søkeresultatene",
+      "textEN": "Stavanger Terapihus appears in organic results for all 3 tested keywords (#4, #1, #1) — the only practice with this breadth. Their city-focused domain (stavangerterapihus.no) and comprehensive service pages covering parterapi, psykolog, and terapeut give them a structural SEO advantage.",
+      "textNO": "Stavanger Terapihus dukker opp i organiske resultater for alle 3 testede søkeord (#4, #1, #1) — den eneste praksisen med denne bredden. Deres byfokuserte domene (stavangerterapihus.no) og omfattende tjenestesider som dekker parterapi, psykolog og terapeut gir dem en strukturell SEO-fordel.",
+      "statLabel": "SERPs with Stavanger Terapihus",
+      "statValue": "3/3"
+    },
+    {
+      "icon": "clock",
+      "color": "green",
+      "titleEN": "Zero paid search ads on any keyword",
+      "titleNO": "Null betalte søkeannonser på noe søkeord",
+      "textEN": "Not a single paid search ad appears for any of the 3 tested keywords. Some Maps ads exist (Klinikk for Alle, Forusklinikken), but Google search results are completely organic. The first clinic to run search ads in Stavanger will have the ad space entirely to itself.",
+      "textNO": "Ikke en eneste betalt søkeannonse vises for noen av de 3 testede søkeordene. Noen Maps-annonser finnes (Klinikk for Alle, Forusklinikken), men Google-søkeresultatene er helt organiske. Den første klinikken som kjører søkeannonser i Stavanger vil ha annonserommet helt for seg selv.",
+      "statLabel": "keywords with paid search ads",
+      "statValue": "0/3"
+    },
+    {
+      "icon": "star",
+      "color": "amber",
+      "titleEN": "Review gap between paid and organic Maps",
+      "titleNO": "Anmeldelsesgap mellom betalte og organiske Maps",
+      "textEN": "Clinics buying Maps ads have massive review counts: Klinikk for Alle (214 reviews), Forusklinikken (115). But organic Maps results mostly have 0–2 reviews. NorKlinikken is the exception with 60 organic reviews. Getting 15+ genuine reviews puts you ahead of nearly all organic Maps competitors without paying for ads.",
+      "textNO": "Klinikker som kjøper Maps-annonser har massive anmeldelsestall: Klinikk for Alle (214 anmeldelser), Forusklinikken (115). Men organiske Maps-resultater har stort sett 0–2 anmeldelser. NorKlinikken er unntaket med 60 organiske anmeldelser. Å få 15+ ekte anmeldelser setter deg foran nesten alle organiske Maps-konkurrenter uten å betale for annonser.",
+      "statLabel": "max organic Maps reviews",
+      "statValue": "60"
+    },
+    {
+      "icon": "file-text",
+      "color": "purple",
+      "titleEN": "Keyword-matched domains rank well",
+      "titleNO": "Søkeord-matchede domener rangerer godt",
+      "textEN": "Several clinics rank precisely because their domain matches the search query: stavangerterapihus.no (#1 for terapeut), samtalestavanger.no (#3 for parterapi), solapsykologene.no (#2 for parterapi). In Stavanger's small market, a focused domain with city name is a significant ranking factor.",
+      "textNO": "Flere klinikker rangerer nettopp fordi domenet matcher søket: stavangerterapihus.no (#1 for terapeut), samtalestavanger.no (#3 for parterapi), solapsykologene.no (#2 for parterapi). I Stavangers lille marked er et fokusert domene med bynavn en betydelig rangeringsfaktor.",
+      "statLabel": "SERPs with domain-matched results",
+      "statValue": "3/3"
+    }
+  ],
+  "tips": [
+    {
+      "titleEN": "Google Business Profile",
+      "titleNO": "Google Bedriftsprofil",
+      "textEN": "Organic Maps listings in Stavanger mostly have 0–2 reviews. NorKlinikken leads organically with 60 reviews, but most competitors have nearly zero. Getting 15+ genuine reviews puts your clinic ahead of almost everyone — without paying for Maps ads like Klinikk for Alle (214 reviews) does.",
+      "textNO": "Organiske Maps-oppføringer i Stavanger har stort sett 0–2 anmeldelser. NorKlinikken leder organisk med 60 anmeldelser, men de fleste konkurrenter har nesten null. Å få 15+ ekte anmeldelser setter klinikken din foran nesten alle — uten å betale for Maps-annonser slik Klinikk for Alle (214 anmeldelser) gjør.",
+      "tagEN": "Free — 15 minutes",
+      "tagNO": "Gratis — 15 minutter"
+    },
+    {
+      "titleEN": "Register on directories",
+      "titleNO": "Registrer deg i kataloger",
+      "textEN": "Legelisten.no ranks #1 for \"psykolog stavanger\". LedigPsykolog.no (listing 25 practitioners) appears for 2 of 3 keywords. Creating free profiles gives instant visibility on the highest-traffic pages without any ad spend.",
+      "textNO": "Legelisten.no rangerer #1 for «psykolog stavanger». LedigPsykolog.no (som lister 25 behandlere) dukker opp for 2 av 3 søkeord. Å opprette gratis profiler gir umiddelbar synlighet på de mest besøkte sidene uten annonsekostnad.",
+      "tagEN": "Free — 30 minutes",
+      "tagNO": "Gratis — 30 minutter"
+    },
+    {
+      "titleEN": "Create dedicated service pages",
+      "titleNO": "Lag dedikerte tjenestesider",
+      "textEN": "Stavanger Terapihus ranks for all 3 keywords because they have separate service pages. Samtale Stavanger (#3 for parterapi) has a focused, service-specific domain. Build dedicated pages for parterapi, angstbehandling, and other services — each targeting a specific keyword.",
+      "textNO": "Stavanger Terapihus rangerer for alle 3 søkeord fordi de har egne tjenestesider. Samtale Stavanger (#3 for parterapi) har et fokusert, tjenestespesifikt domene. Lag dedikerte sider for parterapi, angstbehandling og andre tjenester — hver rettet mot et spesifikt søkeord.",
+      "tagEN": "Free — 2-3 hours each",
+      "tagNO": "Gratis — 2-3 timer per side"
+    },
+    {
+      "titleEN": "Run targeted Google Ads",
+      "titleNO": "Kjør målrettede Google Ads",
+      "textEN": "Zero paid search ads on any tested keyword — the search ad space is completely untouched. Some clinics pay for Maps ads (Klinikk for Alle, Forusklinikken), but search ads are empty. Average CPC is ~19 kr/click for services, but condition keywords (angst, panikkangst) cost just 2–12 kr. Use the calculator above to estimate your ROI.",
+      "textNO": "Null betalte søkeannonser på noe testet søkeord — søkeannonserommet er helt urørt. Noen klinikker betaler for Maps-annonser (Klinikk for Alle, Forusklinikken), men søkeannonser er tomme. Gjennomsnittlig CPC er ~19 kr/klikk for tjenester, men tilstandsord (angst, panikkangst) koster bare 2–12 kr. Bruk kalkulatoren over for å estimere din ROI.",
+      "tagEN": "Paid — from 3,000 kr/month",
+      "tagNO": "Betalt — fra 3 000 kr/mnd"
+    }
+  ],
+  "calculator": {
+    "avgCpc": 19.0,
+    "defaultPatientValue": 8000,
+    "defaultBudget": 3000,
+    "defaultConversion": 30,
+    "clickToInquiryRate": 0.035,
+    "benchmarkEN": "Service keywords (parterapi, terapi) cost 17–36 kr/click in Stavanger — higher than other Norwegian cities. Condition keywords (angst, panikkangst) cost just 2–12 kr. With zero search ads running, your ads will be the only ones showing.",
+    "benchmarkNO": "Tjenestenøkkelord (parterapi, terapi) koster 17–36 kr/klikk i Stavanger — høyere enn andre norske byer. Tilstandssøkeord (angst, panikkangst) koster bare 2–12 kr. Uten noen søkeannonser som kjører, vil annonsene dine være de eneste som vises."
+  },
+  "sources": [
+    { "name": "DataForSEO – Keywords Data API (Google Ads, Stavanger)", "url": null },
+    { "name": "DataForSEO – SERP API (Google organic, Stavanger)", "url": null },
+    { "name": "DataForSEO – Maps API (Google Maps, Stavanger)", "url": null },
+    { "name": "DataReportal – Digital 2025: Norway", "url": "https://datareportal.com/reports/digital-2025-norway" },
+    { "name": "BrightLocal – Local Pack Click Share Study 2024", "url": "https://www.brightlocal.com/research/" },
+    { "name": "WordStream – Healthcare Industry Benchmarks", "url": "https://www.wordstream.com/blog/ws/2016/02/29/google-adwords-industry-benchmarks" },
+    { "name": "DataForSEO – Keywords Data API (Google Ads, Norway national)", "url": null }
+  ]
+}

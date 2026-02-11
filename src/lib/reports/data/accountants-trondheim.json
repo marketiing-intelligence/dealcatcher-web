@@ -1,0 +1,197 @@
+{
+  "meta": {
+    "niche": "accountants",
+    "nicheNO": "regnskapsførere",
+    "city": "Trondheim",
+    "locationCode": 1010976,
+    "dataDate": "2026-02",
+    "totalSearchVolume": 610
+  },
+  "metrics": {
+    "keywordCount": 11,
+    "avgCpc": 139.8,
+    "topClinicsCount": 5,
+    "mapsClickShare": 44
+  },
+  "keywordGroups": [
+    {
+      "id": "services",
+      "color": "green",
+      "nameEN": "Accounting services & firms",
+      "nameNO": "Regnskapstjenester og -byråer",
+      "descriptionEN": "Direct service searches in Trondheim. \"Regnskap\" and \"revisor\" tie at 110/month each, with \"regnskapsfører\" at 70. CPCs are steep — \"billig regnskapsfører\" ironically costs 354 kr per click, the most expensive keyword in the market.",
+      "descriptionNO": "Direkte tjenestesøk i Trondheim. «Regnskap» og «revisor» er like på 110/mnd hver, med «regnskapsfører» på 70. CPC-ene er bratte — «billig regnskapsfører» koster ironisk nok 354 kr per klikk, det dyreste søkeordet i markedet.",
+      "totalVolume": 360,
+      "keywords": [
+        { "keyword": "regnskap", "translation": "accounting", "volume": 110, "competition": "MEDIUM", "cpc": 147.51 },
+        { "keyword": "revisor", "translation": "auditor", "volume": 110, "competition": "LOW", "cpc": 54.56 },
+        { "keyword": "regnskapsfører", "translation": "accountant", "volume": 70, "competition": "HIGH", "cpc": 323.51 },
+        { "keyword": "årsregnskap", "translation": "annual accounts", "volume": 30, "competition": "MEDIUM", "cpc": 49.72 },
+        { "keyword": "billig regnskapsfører", "translation": "cheap accountant", "volume": 10, "competition": "HIGH", "cpc": 353.76 },
+        { "keyword": "regnskapsbyrå", "translation": "accounting firm", "volume": 10, "competition": "MEDIUM", "cpc": 172.48 },
+        { "keyword": "regnskapskontor", "translation": "accounting office", "volume": 10, "competition": "MEDIUM", "cpc": 30.58 },
+        { "keyword": "regnskapsfører pris", "translation": "accountant price", "volume": 10, "competition": "HIGH", "cpc": 64.68 }
+      ]
+    },
+    {
+      "id": "explicit",
+      "color": "blue",
+      "nameEN": "Explicit \"Trondheim\" searches",
+      "nameNO": "Eksplisitte \"Trondheim\"-søk",
+      "descriptionEN": "People searching specifically for accounting in Trondheim. \"Regnskapsfører trondheim\" leads at 140/month — double the generic \"regnskapsfører\" volume (70), indicating Trondheim draws regional clients from across Trøndelag county.",
+      "descriptionNO": "Folk som søker spesifikt etter regnskap i Trondheim. «Regnskapsfører trondheim» leder med 140/mnd — dobbelt så mye som det generiske «regnskapsfører»-volumet (70), noe som tyder på at Trondheim trekker regionale kunder fra hele Trøndelag fylke.",
+      "totalVolume": 250,
+      "keywords": [
+        { "keyword": "regnskapsfører trondheim", "translation": "accountant Trondheim", "volume": 140, "competition": "HIGH", "cpc": 169.62 },
+        { "keyword": "revisor trondheim", "translation": "auditor Trondheim", "volume": 70, "competition": "HIGH", "cpc": 81.18 },
+        { "keyword": "regnskapsbyrå trondheim", "translation": "accounting firm Trondheim", "volume": 40, "competition": "MEDIUM", "cpc": 89.98 }
+      ]
+    }
+  ],
+  "serpKeywords": [
+    {
+      "keyword": "regnskapsfører trondheim",
+      "volume": 140,
+      "organic": [
+        { "rank": 1, "domain": "regnskapsførertilbud.no" },
+        { "rank": 2, "domain": "tripletex.no" },
+        { "rank": 3, "domain": "midtbyenregnskap.no" },
+        { "rank": 4, "domain": "regnskapsførerlisten.no" },
+        { "rank": 5, "domain": "ecit.com" }
+      ],
+      "maps": [
+        { "rank": 1, "title": "Midtbyen Regnskap AS", "rating": 3.7, "reviews": 0 },
+        { "rank": 2, "title": "Trondheim regnskapskontor AS", "rating": 4.7, "reviews": 0 },
+        { "rank": 3, "title": "Aktiva Råd og Regnskap", "rating": 5.0, "reviews": 0 }
+      ],
+      "insightEN": "Aggregator sites dominate: regnskapsførertilbud.no (#1) and regnskapsførerlisten.no (#4) outrank most accounting firms. Only Midtbyen Regnskap (#3) and ECIT (#5) are actual firms. Maps review counts are unavailable — the landscape is essentially unmapped.",
+      "insightNO": "Aggregatorsider dominerer: regnskapsførertilbud.no (#1) og regnskapsførerlisten.no (#4) rangerer over de fleste regnskapsbyråer. Bare Midtbyen Regnskap (#3) og ECIT (#5) er faktiske byråer. Maps-anmeldelsestall er utilgjengelige — landskapet er i praksis ukartlagt."
+    }
+  ],
+  "cpcData": [
+    { "keyword": "billig regnskapsfører", "cpc": 353.76 },
+    { "keyword": "regnskapsfører", "cpc": 323.51 },
+    { "keyword": "regnskapsbyrå", "cpc": 172.48 },
+    { "keyword": "regnskapsfører trondheim", "cpc": 169.62 },
+    { "keyword": "regnskap", "cpc": 147.51 },
+    { "keyword": "regnskapsbyrå trondheim", "cpc": 89.98 },
+    { "keyword": "revisor trondheim", "cpc": 81.18 },
+    { "keyword": "regnskapsfører pris", "cpc": 64.68 },
+    { "keyword": "revisor", "cpc": 54.56 },
+    { "keyword": "årsregnskap", "cpc": 49.72 },
+    { "keyword": "regnskapskontor", "cpc": 30.58 }
+  ],
+  "seasonality": {
+    "keyword": "regnskapsfører",
+    "months": [
+      { "month": "Jan", "volume": 70 },
+      { "month": "Feb", "volume": 90 },
+      { "month": "Mar", "volume": 110 },
+      { "month": "Apr", "volume": 70 },
+      { "month": "May", "volume": 70 },
+      { "month": "Jun", "volume": 70 },
+      { "month": "Jul", "volume": 30 },
+      { "month": "Aug", "volume": 50 },
+      { "month": "Sep", "volume": 70 },
+      { "month": "Oct", "volume": 70 },
+      { "month": "Nov", "volume": 50 },
+      { "month": "Dec", "volume": 90 }
+    ],
+    "peakMonths": ["Mar", "Feb", "Dec"],
+    "lowMonths": ["Jul", "Aug", "Nov"],
+    "insightEN": "Trondheim's accounting demand peaks in March (110) — aligning with annual accounts deadlines. February and December show secondary peaks (90 each) as businesses prepare filings and year-end accounts. July drops to 30 — typical summer slowdown.",
+    "insightNO": "Trondheims regnskapsetterspørsel topper seg i mars (110) — i tråd med frister for årsregnskap. Februar og desember viser sekundære topper (90 hver) når bedrifter forbereder innleveringer og årsoppgjør. Juli faller til 30 — typisk sommerstillhet."
+  },
+  "insights": [
+    {
+      "icon": "globe",
+      "color": "green",
+      "titleEN": "Explicit searches double the generic volume",
+      "titleNO": "Eksplisitte søk dobler det generiske volumet",
+      "textEN": "\"Regnskapsfører trondheim\" (140/mo) is exactly double the generic \"regnskapsfører\" volume in Trondheim (70/mo). People from across Trøndelag actively search for Trondheim-based accountants — your website must clearly communicate your Trondheim location.",
+      "textNO": "«Regnskapsfører trondheim» (140/mnd) er nøyaktig dobbelt så mye som det generiske «regnskapsfører»-volumet i Trondheim (70/mnd). Folk fra hele Trøndelag søker aktivt etter Trondheim-baserte regnskapsførere — nettsiden din må tydelig kommunisere din Trondheim-beliggenhet.",
+      "statLabel": "explicit vs generic",
+      "statValue": "140 vs 70"
+    },
+    {
+      "icon": "search",
+      "color": "amber",
+      "titleEN": "Aggregators own the SERP — only 2 firms in top 5",
+      "titleNO": "Aggregatorer eier søkeresultatene — bare 2 byråer i topp 5",
+      "textEN": "Regnskapsførertilbud.no (#1), Tripletex (#2), and Regnskapsførerlisten (#4) are all comparison/directory sites. Only Midtbyen Regnskap (#3) and ECIT (#5) are actual accounting firms. A strong SEO strategy can break through the aggregator wall.",
+      "textNO": "Regnskapsførertilbud.no (#1), Tripletex (#2) og Regnskapsførerlisten (#4) er alle sammenlignings-/katalogsider. Bare Midtbyen Regnskap (#3) og ECIT (#5) er faktiske regnskapsbyråer. En sterk SEO-strategi kan bryte gjennom aggregatorveggen.",
+      "statLabel": "real firms in top 5",
+      "statValue": "2/5"
+    },
+    {
+      "icon": "star",
+      "color": "blue",
+      "titleEN": "Maps reviews are essentially zero",
+      "titleNO": "Maps-anmeldelser er i praksis null",
+      "textEN": "All three Maps results show ratings but no visible review counts. Midtbyen Regnskap leads with a 3.7 rating, while Aktiva has a perfect 5.0. Getting 15-20 reviews with high ratings would make you the undisputed Maps leader in Trondheim.",
+      "textNO": "Alle tre Maps-resultatene viser rangeringer, men ingen synlige anmeldelsestall. Midtbyen Regnskap leder med 3,7, mens Aktiva har perfekte 5,0. Å få 15-20 anmeldelser med høy rating vil gjøre deg til den ubestridte Maps-lederen i Trondheim.",
+      "statLabel": "Maps reviews visible",
+      "statValue": "0"
+    },
+    {
+      "icon": "file-text",
+      "color": "purple",
+      "titleEN": "Compare sites appear in SERP features",
+      "titleNO": "Sammenligningssider vises i SERP-funksjoner",
+      "textEN": "Google shows a \"compare sites\" SERP feature for \"regnskapsfører trondheim\" — a special panel that lets users compare accounting firms directly in search results. Being listed there gives instant visibility without needing a top organic rank.",
+      "textNO": "Google viser en «sammenlign sider»-funksjon i søkeresultatene for «regnskapsfører trondheim» — et spesialpanel som lar brukere sammenligne regnskapsbyråer direkte i søkeresultatene. Å bli listet der gir umiddelbar synlighet uten å trenge en topp organisk rangering.",
+      "statLabel": "SERP feature",
+      "statValue": "compare_sites"
+    }
+  ],
+  "tips": [
+    {
+      "titleEN": "Google Business Profile — claim the empty Maps",
+      "titleNO": "Google Bedriftsprofil — ta det tomme Maps-landskapet",
+      "textEN": "The Maps landscape has no visible reviews. Get 20+ reviews with a 4.5+ rating and you'll dominate the map pack for all Trondheim accounting searches.",
+      "textNO": "Maps-landskapet har ingen synlige anmeldelser. Få 20+ anmeldelser med 4,5+ rating og du vil dominere kartpakken for alle Trondheim regnskapssøk.",
+      "tagEN": "Free — 30 minutes",
+      "tagNO": "Gratis — 30 minutter"
+    },
+    {
+      "titleEN": "Create city-specific landing pages",
+      "titleNO": "Lag byspesifikke landingssider",
+      "textEN": "Explicit \"trondheim\" keywords (250/mo) nearly match generic searches (360/mo). Create dedicated pages mentioning Trondheim, Trøndelag county, and nearby municipalities to capture the large regional audience.",
+      "textNO": "Eksplisitte «trondheim»-søkeord (250/mnd) matcher nesten generiske søk (360/mnd). Lag dedikerte sider som nevner Trondheim, Trøndelag fylke og nærliggende kommuner for å fange det store regionale publikummet.",
+      "tagEN": "Free — 2-3 hours",
+      "tagNO": "Gratis — 2-3 timer"
+    },
+    {
+      "titleEN": "Register on Regnskapsførertilbud.no",
+      "titleNO": "Registrer deg på Regnskapsførertilbud.no",
+      "textEN": "This comparison platform ranks #1 organically for \"regnskapsfører trondheim\". A profile there gives you instant visibility where business owners compare accounting firms.",
+      "textNO": "Denne sammenligningsplattformen rangerer #1 organisk for «regnskapsfører trondheim». En profil der gir deg umiddelbar synlighet der bedriftseiere sammenligner regnskapsbyråer.",
+      "tagEN": "Free — 15 minutes",
+      "tagNO": "Gratis — 15 minutter"
+    },
+    {
+      "titleEN": "Run Google Ads on explicit Trondheim keywords",
+      "titleNO": "Kjør Google Ads på eksplisitte Trondheim-søkeord",
+      "textEN": "\"Regnskapsfører trondheim\" (170 kr/click) and \"regnskapsbyrå trondheim\" (90 kr/click) offer high-intent traffic at lower CPCs than generic terms (324-354 kr). With 10,000 kr/month budget, you can capture ~70 clicks.",
+      "textNO": "«Regnskapsfører trondheim» (170 kr/klikk) og «regnskapsbyrå trondheim» (90 kr/klikk) tilbyr høyintensjonstrafikk til lavere CPC-er enn generiske termer (324-354 kr). Med 10 000 kr/mnd budsjett kan du fange ~70 klikk.",
+      "tagEN": "Paid — from 10,000 kr/month",
+      "tagNO": "Betalt — fra 10 000 kr/mnd"
+    }
+  ],
+  "calculator": {
+    "avgCpc": 139.8,
+    "defaultPatientValue": 60000,
+    "defaultBudget": 10000,
+    "defaultConversion": 30,
+    "clickToInquiryRate": 0.04,
+    "benchmarkEN": "Trondheim accounting CPCs range 31–354 kr. Explicit city keywords (82–170 kr) are cheaper than generic terms (148–354 kr) — target those first for better ROI.",
+    "benchmarkNO": "Trondheim regnskap CPC-er varierer 31–354 kr. Eksplisitte bysøkeord (82–170 kr) er billigere enn generiske termer (148–354 kr) — målrett disse først for bedre ROI."
+  },
+  "sources": [
+    { "name": "DataForSEO – Keywords Data API (Google Ads, Trondheim)", "url": null },
+    { "name": "DataForSEO – SERP API (Google organic, Norway)", "url": null },
+    { "name": "DataForSEO – Maps API (Google Maps, Norway)", "url": null },
+    { "name": "DataReportal – Digital 2025: Norway", "url": "https://datareportal.com/reports/digital-2025-norway" },
+    { "name": "BrightLocal – Local Pack Click Share Study 2024", "url": "https://www.brightlocal.com/research/" }
+  ]
+}

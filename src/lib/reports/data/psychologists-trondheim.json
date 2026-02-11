@@ -1,0 +1,278 @@
+{
+  "meta": {
+    "niche": "psychologists",
+    "nicheNO": "psykologer",
+    "city": "Trondheim",
+    "locationCode": 1010976,
+    "dataDate": "2026-02",
+    "totalSearchVolume": 730
+  },
+  "metrics": {
+    "keywordCount": 12,
+    "avgCpc": 12.9,
+    "topClinicsCount": 3,
+    "mapsClickShare": 42
+  },
+  "keywordGroups": [
+    {
+      "id": "services",
+      "color": "green",
+      "nameEN": "Therapy services",
+      "nameNO": "Terapitjenester",
+      "descriptionEN": "Direct searches — people typing the name of the service they need. \"Parterapi\" (couples therapy) dominates with 170 searches/month, making it by far the most popular service keyword in Trondheim. Ad costs for service keywords range from 15 to 33 kr/click.",
+      "descriptionNO": "Direkte søk — folk som skriver inn navnet på tjenesten de trenger. «Parterapi» dominerer med 170 søk/måned, noe som gjør det til det klart mest populære tjenestenøkkelordet i Trondheim. Annonsekostnader for tjenestenøkkelord varierer fra 15 til 33 kr/klikk.",
+      "totalVolume": 210,
+      "keywords": [
+        { "keyword": "parterapi", "translation": "couples therapy", "volume": 170, "competition": "LOW", "cpc": 33.33 },
+        { "keyword": "terapi", "translation": "therapy", "volume": 30, "competition": "MEDIUM", "cpc": 22.22 },
+        { "keyword": "parterapi pris", "translation": "couples therapy price", "volume": 10, "competition": "HIGH", "cpc": 14.85 }
+      ]
+    },
+    {
+      "id": "anxiety",
+      "color": "amber",
+      "nameEN": "Anxiety, stress & mental health",
+      "nameNO": "Angst, stress og psykisk helse",
+      "descriptionEN": "People searching for their problem, not a provider. \"Angst\" and \"stress\" lead with 170 and 110 searches/month. These searchers are often highly motivated to get help. Ad costs are extremely low (2–9 kr/click) because most Trondheim clinics aren't targeting these words — a clear opportunity for content-savvy practices.",
+      "descriptionNO": "Folk som søker etter problemet sitt, ikke en tilbyder. «Angst» og «stress» leder med 170 og 110 søk/måned. Disse søkerne er ofte svært motiverte for å få hjelp. Annonsekostnadene er ekstremt lave (2–9 kr/klikk) fordi de fleste Trondheim-klinikker ikke sikter mot disse ordene — en klar mulighet for innholdsbevisste praksiser.",
+      "descriptionWarningEN": "Note: \"stress\" is a broad keyword — not all searchers want therapy.",
+      "descriptionWarningNO": "Merk: «stress» er et bredt søkeord — ikke alle som søker vil ha terapi.",
+      "totalVolume": 520,
+      "keywords": [
+        { "keyword": "angst", "translation": "anxiety", "volume": 170, "competition": "LOW", "cpc": 3.41 },
+        { "keyword": "stress", "translation": "stress", "volume": 110, "competition": "LOW", "cpc": 3.52 },
+        { "keyword": "sosial angst", "translation": "social anxiety", "volume": 70, "competition": "LOW", "cpc": 9.13 },
+        { "keyword": "ADHD utredning", "translation": "ADHD assessment", "volume": 50, "competition": "HIGH", "cpc": 16.06 },
+        { "keyword": "panikkangst", "translation": "panic anxiety", "volume": 50, "competition": "LOW", "cpc": 1.87 },
+        { "keyword": "helseangst", "translation": "health anxiety", "volume": 30, "competition": "LOW", "cpc": 2.20 },
+        { "keyword": "sinnemestring", "translation": "anger management", "volume": 20, "competition": "MEDIUM", "cpc": 13.86 },
+        { "keyword": "sosial angst behandling", "translation": "social anxiety treatment", "volume": 10, "competition": "HIGH", "cpc": 5.72 },
+        { "keyword": "tvangslidelse", "translation": "OCD", "volume": 10, "competition": "LOW", "cpc": 4.18 }
+      ]
+    },
+    {
+      "id": "online",
+      "color": "purple",
+      "nameEN": "Online & national demand",
+      "nameNO": "Online og nasjonal etterspørsel",
+      "descriptionEN": "These keywords are searched across all of Norway — 5,410 searches/month nationally. They represent people seeking online therapy, ADHD assessment, specific anxiety conditions, and evidence-based treatment methods. A psychologist in {city} offering online sessions can capture this entire nationwide audience. These numbers are separate from the local searches above.",
+      "descriptionNO": "Disse søkeordene søkes over hele Norge — 5 410 søk/mnd nasjonalt. De representerer folk som søker nettterapi, ADHD-utredning, spesifikke angstlidelser og evidensbaserte behandlingsmetoder. En psykolog i {city} som tilbyr online-timer kan fange dette nasjonale publikummet. Disse tallene er separate fra de lokale søkene over.",
+      "totalVolume": 5410,
+      "isNational": true,
+      "keywords": [
+        { "keyword": "posttraumatisk stresslidelse", "translation": "PTSD", "volume": 1000, "competition": "LOW", "cpc": 5.72 },
+        { "keyword": "stressmestring", "translation": "stress management", "volume": 720, "competition": "HIGH", "cpc": 9.79 },
+        { "keyword": "adhd voksne", "translation": "ADHD in adults", "volume": 590, "competition": "MEDIUM", "cpc": 4.40 },
+        { "keyword": "eksponeringsterapi", "translation": "exposure therapy", "volume": 590, "competition": "LOW", "cpc": 9.46 },
+        { "keyword": "prestasjonsangst", "translation": "performance anxiety", "volume": 390, "competition": "LOW", "cpc": 4.18 },
+        { "keyword": "har jeg adhd", "translation": "do I have ADHD", "volume": 390, "competition": "MEDIUM", "cpc": 3.19 },
+        { "keyword": "adhd behandling", "translation": "ADHD treatment", "volume": 260, "competition": "LOW", "cpc": 11.11 },
+        { "keyword": "adhd sinneutbrudd", "translation": "ADHD anger outbursts", "volume": 210, "competition": "LOW", "cpc": 17.05 },
+        { "keyword": "angstlidelse", "translation": "anxiety disorder", "volume": 170, "competition": "LOW", "cpc": 4.07 },
+        { "keyword": "høytfungerende angst", "translation": "high-functioning anxiety", "volume": 140, "competition": "LOW", "cpc": 2.09 },
+        { "keyword": "angst for angsten", "translation": "fear of anxiety", "volume": 140, "competition": "MEDIUM", "cpc": 7.37 },
+        { "keyword": "adhd behandling voksne", "translation": "adult ADHD treatment", "volume": 140, "competition": "MEDIUM", "cpc": 7.26 },
+        { "keyword": "behandle stress", "translation": "treat stress", "volume": 110, "competition": "MEDIUM", "cpc": 18.48 },
+        { "keyword": "parterapi på nett", "translation": "couples therapy online", "volume": 90, "competition": "MEDIUM", "cpc": 62.26 },
+        { "keyword": "bekymringsangst", "translation": "worry anxiety", "volume": 70, "competition": "LOW", "cpc": 13.75 },
+        { "keyword": "nettpsykolog", "translation": "online psychologist", "volume": 50, "competition": "HIGH", "cpc": 49.72 },
+        { "keyword": "parterapi online", "translation": "couples therapy online", "volume": 50, "competition": "HIGH", "cpc": 83.05 },
+        { "keyword": "helseangst behandling", "translation": "health anxiety treatment", "volume": 50, "competition": "MEDIUM", "cpc": 13.53 },
+        { "keyword": "kompleks posttraumatisk stresslidelse", "translation": "complex PTSD", "volume": 50, "competition": "LOW", "cpc": 10.12 },
+        { "keyword": "eksponeringsterapi angst", "translation": "exposure therapy for anxiety", "volume": 40, "competition": "MEDIUM", "cpc": 12.43 },
+        { "keyword": "angstmestring", "translation": "anxiety management", "volume": 30, "competition": "MEDIUM", "cpc": 9.68 },
+        { "keyword": "angstterapi", "translation": "anxiety therapy", "volume": 30, "competition": "MEDIUM", "cpc": 19.14 },
+        { "keyword": "tankekjør behandling", "translation": "racing thoughts treatment", "volume": 30, "competition": "LOW", "cpc": 30.80 },
+        { "keyword": "adhd terapi", "translation": "ADHD therapy", "volume": 30, "competition": "HIGH", "cpc": 18.70 },
+        { "keyword": "parterapi nett", "translation": "couples therapy online", "volume": 20, "competition": "HIGH", "cpc": 54.89 },
+        { "keyword": "digital terapi", "translation": "digital therapy", "volume": 10, "competition": "HIGH", "cpc": 62.26 },
+        { "keyword": "parterapi digitalt", "translation": "digital couples therapy", "volume": 10, "competition": "HIGH", "cpc": 62.70 }
+      ]
+    }
+  ],
+  "serpKeywords": [
+    {
+      "keyword": "psykolog trondheim",
+      "volume": 0,
+      "organic": [
+        { "rank": 1, "domain": "psykologsenter.no" },
+        { "rank": 2, "domain": "ledigpsykolog.no" },
+        { "rank": 3, "domain": "legelisten.no" },
+        { "rank": 4, "domain": "volvat.no" },
+        { "rank": 5, "domain": "trondheimpsykologtjenester.no" }
+      ],
+      "maps": [
+        { "rank": 1, "title": "Psykolog Trondheim Martin Lund Johansen", "rating": 5.0, "reviews": 1 },
+        { "rank": 2, "title": "Psykolog Bror Ranum", "rating": 5.0, "reviews": 1 },
+        { "rank": 3, "title": "Trondheim Psykologsenter AS", "rating": 3.0, "reviews": 1 }
+      ],
+      "insightEN": "Trondheim Psykologsenter holds #1 organic — the only practice appearing in all 3 tested SERPs. Zero paid search ads. Maps results are extremely sparse: the top 3 listings have just 1 review each. No paid Maps ads for this keyword.",
+      "insightNO": "Trondheim Psykologsenter holder #1 organisk — den eneste praksisen som dukker opp i alle 3 testede søkeresultater. Null betalte søkeannonser. Maps-resultatene er ekstremt sparsomme: topp 3-oppføringene har bare 1 anmeldelse hver. Ingen betalte Maps-annonser for dette søkeordet."
+    },
+    {
+      "keyword": "terapeut trondheim",
+      "volume": 0,
+      "organic": [
+        { "rank": 1, "domain": "hilderosand.no" },
+        { "rank": 2, "domain": "psykologsenter.no" },
+        { "rank": 3, "domain": "ledigpsykolog.no" },
+        { "rank": 4, "domain": "psykologmoan.com" },
+        { "rank": 5, "domain": "volvat.no" }
+      ],
+      "maps": [
+        { "rank": 1, "title": "Psykolog Trondheim Martin Lund Johansen", "rating": 5.0, "reviews": 1 },
+        { "rank": 2, "title": "Trondheim Parterapi", "rating": 0, "reviews": 0 },
+        { "rank": 3, "title": "Overtenking.no", "rating": 0, "reviews": 0 }
+      ],
+      "insightEN": "A solo practitioner (Hilde Røsand) holds #1 organic — proving individual therapists can outrank chains in Trondheim. Zero paid search ads. 2 paid Maps ads appear (Axonklinikken, Takt terapeutene), but organic Maps results have almost no reviews — wide open for anyone collecting reviews.",
+      "insightNO": "En solopraktiker (Hilde Røsand) holder #1 organisk — noe som beviser at individuelle terapeuter kan rangere over kjeder i Trondheim. Null betalte søkeannonser. 2 betalte Maps-annonser vises (Axonklinikken, Takt terapeutene), men organiske Maps-resultater har nesten ingen anmeldelser — vidåpent for alle som samler anmeldelser."
+    },
+    {
+      "keyword": "parterapi trondheim",
+      "volume": 0,
+      "organic": [
+        { "rank": 1, "domain": "volvat.no" },
+        { "rank": 2, "domain": "sentrel.no" },
+        { "rank": 3, "domain": "bufdir.no" },
+        { "rank": 4, "domain": "klinikkspiren.no" },
+        { "rank": 5, "domain": "psykologsenter.no" }
+      ],
+      "maps": [
+        { "rank": 1, "title": "Trondheim Parterapi", "rating": 0, "reviews": 0 },
+        { "rank": 2, "title": "Psykolog Trondheim Martin Lund Johansen", "rating": 5.0, "reviews": 1 },
+        { "rank": 3, "title": "Takt terapeutene AS", "rating": 0, "reviews": 0 }
+      ],
+      "insightEN": "The most competitive keyword in Trondheim — 7 paid search ads (vi-klinikken.no, taktterapeutene.no, volvat.no, kry.no, gestalttrondheim.no) plus 2 paid Maps ads. This is where advertisers concentrate their budgets. Volvat holds #1 organic with a dedicated parterapi page. Bufdir.no (#3) confirms partly informational intent.",
+      "insightNO": "Det mest konkurransepregede søkeordet i Trondheim — 7 betalte søkeannonser (vi-klinikken.no, taktterapeutene.no, volvat.no, kry.no, gestalttrondheim.no) pluss 2 betalte Maps-annonser. Det er her annonsørene konsentrerer budsjettene. Volvat holder #1 organisk med en dedikert parterapi-side. Bufdir.no (#3) bekrefter delvis informasjonsintensjon."
+    }
+  ],
+  "cpcData": [
+    { "keyword": "parterapi", "cpc": 33.33 },
+    { "keyword": "terapi", "cpc": 22.22 },
+    { "keyword": "ADHD utredning", "cpc": 16.06 },
+    { "keyword": "parterapi pris", "cpc": 14.85 },
+    { "keyword": "sinnemestring", "cpc": 13.86 },
+    { "keyword": "sosial angst", "cpc": 9.13 },
+    { "keyword": "sosial angst behandling", "cpc": 5.72 },
+    { "keyword": "tvangslidelse", "cpc": 4.18 },
+    { "keyword": "stress", "cpc": 3.52 },
+    { "keyword": "angst", "cpc": 3.41 },
+    { "keyword": "helseangst", "cpc": 2.20 },
+    { "keyword": "panikkangst", "cpc": 1.87 }
+  ],
+  "seasonality": {
+    "keyword": "parterapi",
+    "months": [
+      { "month": "Jan", "volume": 170 },
+      { "month": "Feb", "volume": 140 },
+      { "month": "Mar", "volume": 140 },
+      { "month": "Apr", "volume": 110 },
+      { "month": "May", "volume": 140 },
+      { "month": "Jun", "volume": 110 },
+      { "month": "Jul", "volume": 90 },
+      { "month": "Aug", "volume": 110 },
+      { "month": "Sep", "volume": 170 },
+      { "month": "Oct", "volume": 210 },
+      { "month": "Nov", "volume": 210 },
+      { "month": "Dec", "volume": 390 }
+    ],
+    "peakMonths": ["Dec"],
+    "lowMonths": ["Jul"],
+    "insightEN": "December is peak (390 searches) — holiday stress drives couples to seek help. October–November stays elevated (210/mo) as autumn routines settle in. July drops to 90 during fellesferie. Strategy: concentrate ad spend October–January, reduce in summer months.",
+    "insightNO": "Desember er høysesong (390 søk) — feriestressen driver par til å søke hjelp. Oktober–november forblir høye (210/mnd) når høstrutinene setter inn. Juli faller til 90 under fellesferie. Strategi: konsentrer annonsekostnader oktober–januar, reduser i sommermånedene."
+  },
+  "insights": [
+    {
+      "icon": "globe",
+      "color": "blue",
+      "titleEN": "Trondheim Psykologsenter dominates organic search",
+      "titleNO": "Trondheim Psykologsenter dominerer organisk søk",
+      "textEN": "Trondheim Psykologsenter appears in organic results for all 3 tested keywords — the only practice with this breadth of visibility. Their dedicated city-focused domain (psykologsenter.no) and comprehensive service pages give them a structural SEO advantage.",
+      "textNO": "Trondheim Psykologsenter dukker opp i organiske resultater for alle 3 testede søkeord — den eneste praksisen med denne bredden av synlighet. Deres dedikerte byfokuserte domene (psykologsenter.no) og omfattende tjenestesider gir dem en strukturell SEO-fordel.",
+      "statLabel": "SERPs with Trondheim Psykologsenter",
+      "statValue": "3/3"
+    },
+    {
+      "icon": "clock",
+      "color": "amber",
+      "titleEN": "\"Parterapi\" draws heavy ad competition",
+      "titleNO": "«Parterapi» trekker mye annonsekonkurranse",
+      "textEN": "\"Parterapi trondheim\" has 7 paid search ads and 2 paid Maps ads — advertisers heavily concentrate on this one keyword. But \"psykolog trondheim\" and \"terapeut trondheim\" have zero paid ads. Smart strategy: advertise on the keywords your competitors are ignoring.",
+      "textNO": "«Parterapi trondheim» har 7 betalte søkeannonser og 2 betalte Maps-annonser — annonsørene konsentrerer seg tungt om dette ene søkeordet. Men «psykolog trondheim» og «terapeut trondheim» har null betalte annonser. Smart strategi: annonser på søkeordene konkurrentene dine ignorerer.",
+      "statLabel": "keywords with paid search ads",
+      "statValue": "1/3"
+    },
+    {
+      "icon": "star",
+      "color": "green",
+      "titleEN": "Almost zero Maps reviews — lowest bar in Norway",
+      "titleNO": "Nesten null Maps-anmeldelser — laveste terskel i Norge",
+      "textEN": "The highest-reviewed Maps listing in Trondheim has just 1 review. Compare that to Bergen (184 reviews) or Oslo (28). Getting even 5–10 genuine Google reviews would make your practice the undisputed review leader in Trondheim's Maps results.",
+      "textNO": "Den mest anmeldte Maps-oppføringen i Trondheim har bare 1 anmeldelse. Sammenlign det med Bergen (184 anmeldelser) eller Oslo (28). Å få bare 5–10 ekte Google-anmeldelser vil gjøre praksisen din til den ubestridte anmeldelederen i Trondheims Maps-resultater.",
+      "statLabel": "max reviews in Maps",
+      "statValue": "1"
+    },
+    {
+      "icon": "file-text",
+      "color": "purple",
+      "titleEN": "Solo therapists outrank chains",
+      "titleNO": "Soloterapeuter rangerer over kjeder",
+      "textEN": "Hilde Røsand holds #1 organic for \"terapeut trondheim\". Martin Lund Johansen appears in Maps for all 3 keywords. In Trondheim's smaller market, individual practitioners with optimized websites and Google Business Profiles consistently outperform large health chains.",
+      "textNO": "Hilde Røsand holder #1 organisk for «terapeut trondheim». Martin Lund Johansen dukker opp i Maps for alle 3 søkeord. I Trondheims mindre marked presterer individuelle praktikere med optimaliserte nettsider og Google Bedriftsprofiler konsekvent bedre enn store helsekjeder.",
+      "statLabel": "Maps appearances for solo practitioner",
+      "statValue": "3/3"
+    }
+  ],
+  "tips": [
+    {
+      "titleEN": "Google Business Profile",
+      "titleNO": "Google Bedriftsprofil",
+      "textEN": "The Maps landscape in Trondheim is almost empty — the top listing has just 1 review. Getting 5–10 genuine reviews puts you far ahead of every competitor. Add photos, all your services, and office hours. This is the single highest-impact action you can take.",
+      "textNO": "Maps-landskapet i Trondheim er nesten tomt — toppoppføringen har bare 1 anmeldelse. Å få 5–10 ekte anmeldelser setter deg langt foran alle konkurrenter. Legg til bilder, alle tjenestene dine og åpningstider. Dette er den ene handlingen med størst effekt du kan gjøre.",
+      "tagEN": "Free — 15 minutes",
+      "tagNO": "Gratis — 15 minutter"
+    },
+    {
+      "titleEN": "Register on directories",
+      "titleNO": "Registrer deg i kataloger",
+      "textEN": "Legelisten.no ranks #3 for \"psykolog trondheim\". LedigPsykolog.no (listing 51 practitioners) appears in organic for 2 of 3 keywords. Creating free profiles on these directories gives instant visibility on the most visited pages.",
+      "textNO": "Legelisten.no rangerer #3 for «psykolog trondheim». LedigPsykolog.no (som lister 51 behandlere) dukker opp i organiske resultater for 2 av 3 søkeord. Å opprette gratis profiler på disse katalogene gir umiddelbar synlighet på de mest besøkte sidene.",
+      "tagEN": "Free — 30 minutes",
+      "tagNO": "Gratis — 30 minutter"
+    },
+    {
+      "titleEN": "Create dedicated service pages",
+      "titleNO": "Lag dedikerte tjenestesider",
+      "textEN": "Trondheim Psykologsenter ranks for all 3 keywords because they have broad service coverage. Volvat holds #1 for \"parterapi trondheim\" with a dedicated page. Build separate pages for parterapi, angstbehandling, stressmestring — each targeting a specific keyword cluster.",
+      "textNO": "Trondheim Psykologsenter rangerer for alle 3 søkeord fordi de har bred tjenestedekning. Volvat holder #1 for «parterapi trondheim» med en dedikert side. Lag egne sider for parterapi, angstbehandling, stressmestring — hver rettet mot en spesifikk søkeordklynge.",
+      "tagEN": "Free — 2-3 hours each",
+      "tagNO": "Gratis — 2-3 timer per side"
+    },
+    {
+      "titleEN": "Run targeted Google Ads — but pick your battles",
+      "titleNO": "Kjør målrettede Google Ads — men velg kampene dine",
+      "textEN": "\"Parterapi trondheim\" already has 7 advertisers — it's expensive to compete there. Instead, target \"psykolog trondheim\" and \"terapeut trondheim\" where ad space is completely empty. Condition keywords (angst, stress) cost just 2–9 kr/click. Use the calculator above to estimate your ROI.",
+      "textNO": "«Parterapi trondheim» har allerede 7 annonsører — det er dyrt å konkurrere der. Sikt heller mot «psykolog trondheim» og «terapeut trondheim» der annonserommet er helt tomt. Tilstandsord (angst, stress) koster bare 2–9 kr/klikk. Bruk kalkulatoren over for å estimere din ROI.",
+      "tagEN": "Paid — from 3,000 kr/month",
+      "tagNO": "Betalt — fra 3 000 kr/mnd"
+    }
+  ],
+  "calculator": {
+    "avgCpc": 12.8,
+    "defaultPatientValue": 8000,
+    "defaultBudget": 3000,
+    "defaultConversion": 30,
+    "clickToInquiryRate": 0.035,
+    "benchmarkEN": "Service keywords (parterapi, terapi) cost 22–33 kr/click in Trondheim. Condition keywords (angst, stress) cost just 2–9 kr — and with zero ad competition on 2 of 3 tested keywords, your ads will dominate.",
+    "benchmarkNO": "Tjenestenøkkelord (parterapi, terapi) koster 22–33 kr/klikk i Trondheim. Tilstandssøkeord (angst, stress) koster bare 2–9 kr — og uten annonsekonkurranse på 2 av 3 testede søkeord vil annonsene dine dominere."
+  },
+  "sources": [
+    { "name": "DataForSEO – Keywords Data API (Google Ads, Trondheim)", "url": null },
+    { "name": "DataForSEO – SERP API (Google organic, Trondheim)", "url": null },
+    { "name": "DataForSEO – Maps API (Google Maps, Trondheim)", "url": null },
+    { "name": "DataReportal – Digital 2025: Norway", "url": "https://datareportal.com/reports/digital-2025-norway" },
+    { "name": "BrightLocal – Local Pack Click Share Study 2024", "url": "https://www.brightlocal.com/research/" },
+    { "name": "WordStream – Healthcare Industry Benchmarks", "url": "https://www.wordstream.com/blog/ws/2016/02/29/google-adwords-industry-benchmarks" },
+    { "name": "DataForSEO – Keywords Data API (Google Ads, Norway national)", "url": null }
+  ]
+}

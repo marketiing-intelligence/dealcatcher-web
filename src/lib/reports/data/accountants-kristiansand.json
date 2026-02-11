@@ -1,0 +1,197 @@
+{
+  "meta": {
+    "niche": "accountants",
+    "nicheNO": "regnskapsførere",
+    "city": "Kristiansand",
+    "locationCode": 1010894,
+    "dataDate": "2026-02",
+    "totalSearchVolume": 280
+  },
+  "metrics": {
+    "keywordCount": 11,
+    "avgCpc": 156.7,
+    "topClinicsCount": 5,
+    "mapsClickShare": 44
+  },
+  "keywordGroups": [
+    {
+      "id": "services",
+      "color": "green",
+      "nameEN": "Accounting services & firms",
+      "nameNO": "Regnskapstjenester og -byråer",
+      "descriptionEN": "Direct service searches in Kristiansand. \"Regnskap\" (40) and \"revisor\" (30) lead, with \"regnskapsfører\" at 20. Despite small volumes, CPCs are high — \"årsregnskap\" costs 298 kr per click and \"regnskapsbyrå\" costs 254 kr. The market is small but competitive.",
+      "descriptionNO": "Direkte tjenestesøk i Kristiansand. «Regnskap» (40) og «revisor» (30) leder, med «regnskapsfører» på 20. Til tross for små volumer er CPC-ene høye — «årsregnskap» koster 298 kr per klikk og «regnskapsbyrå» koster 254 kr. Markedet er lite, men konkurranseutsatt.",
+      "totalVolume": 140,
+      "keywords": [
+        { "keyword": "regnskap", "translation": "accounting", "volume": 40, "competition": "MEDIUM", "cpc": 199.65 },
+        { "keyword": "revisor", "translation": "auditor", "volume": 30, "competition": "LOW", "cpc": 98.34 },
+        { "keyword": "regnskapsfører", "translation": "accountant", "volume": 20, "competition": "HIGH", "cpc": 165.88 },
+        { "keyword": "årsregnskap", "translation": "annual accounts", "volume": 10, "competition": "MEDIUM", "cpc": 298.21 },
+        { "keyword": "regnskapsbyrå", "translation": "accounting firm", "volume": 10, "competition": "HIGH", "cpc": 253.55 },
+        { "keyword": "billig regnskapsfører", "translation": "cheap accountant", "volume": 10, "competition": "HIGH", "cpc": 223.30 },
+        { "keyword": "regnskapsfører pris", "translation": "accountant price", "volume": 10, "competition": "HIGH", "cpc": 50.60 },
+        { "keyword": "regnskapshjelp", "translation": "accounting help", "volume": 10, "competition": "HIGH", "cpc": 44.88 }
+      ]
+    },
+    {
+      "id": "explicit",
+      "color": "blue",
+      "nameEN": "Explicit \"Kristiansand\" searches",
+      "nameNO": "Eksplisitte \"Kristiansand\"-søk",
+      "descriptionEN": "People searching specifically for accounting in Kristiansand. \"Regnskapsfører kristiansand\" leads at 70/month — 3.5× the generic \"regnskapsfører\" volume (20), indicating strong regional pull from Agder county and Sørlandet.",
+      "descriptionNO": "Folk som søker spesifikt etter regnskap i Kristiansand. «Regnskapsfører kristiansand» leder med 70/mnd — 3,5× det generiske «regnskapsfører»-volumet (20), noe som indikerer sterk regional tiltrekningskraft fra Agder fylke og Sørlandet.",
+      "totalVolume": 140,
+      "keywords": [
+        { "keyword": "regnskapsfører kristiansand", "translation": "accountant Kristiansand", "volume": 70, "competition": "HIGH", "cpc": 214.39 },
+        { "keyword": "revisor kristiansand", "translation": "auditor Kristiansand", "volume": 40, "competition": "MEDIUM", "cpc": 37.29 },
+        { "keyword": "regnskapsbyrå kristiansand", "translation": "accounting firm Kristiansand", "volume": 30, "competition": "MEDIUM", "cpc": 137.83 }
+      ]
+    }
+  ],
+  "serpKeywords": [
+    {
+      "keyword": "regnskapsfører kristiansand",
+      "volume": 70,
+      "organic": [
+        { "rank": 1, "domain": "regnskapsførertilbud.no" },
+        { "rank": 2, "domain": "gulesider.no" },
+        { "rank": 3, "domain": "merkant.as" },
+        { "rank": 4, "domain": "regnskapsavdeling.no" },
+        { "rank": 5, "domain": "regnskapsførerlisten.no" }
+      ],
+      "maps": [
+        { "rank": 1, "title": "Multi Regnskap Kristiansand", "rating": 4.9, "reviews": 7 },
+        { "rank": 2, "title": "ViTo Regnskap AS", "rating": 5.0, "reviews": 37 },
+        { "rank": 3, "title": "Vital Regnskap As", "rating": 4.3, "reviews": 19 }
+      ],
+      "insightEN": "Two local firms — Merkant (#3, 50 years experience) and Regnskapsavdelingen (#4) — rank in the organic top 5 alongside aggregators. In Maps, ViTo Regnskap dominates with 37 reviews and a 5.0 rating. Paid Maps ads appear (Aider Kristiansand) — the market is active.",
+      "insightNO": "To lokale byråer — Merkant (#3, 50 års erfaring) og Regnskapsavdelingen (#4) — rangerer i den organiske topp 5 sammen med aggregatorer. I Maps dominerer ViTo Regnskap med 37 anmeldelser og 5,0 i rating. Betalte Maps-annonser vises (Aider Kristiansand) — markedet er aktivt."
+    }
+  ],
+  "cpcData": [
+    { "keyword": "årsregnskap", "cpc": 298.21 },
+    { "keyword": "regnskapsbyrå", "cpc": 253.55 },
+    { "keyword": "billig regnskapsfører", "cpc": 223.30 },
+    { "keyword": "regnskapsfører kristiansand", "cpc": 214.39 },
+    { "keyword": "regnskap", "cpc": 199.65 },
+    { "keyword": "regnskapsfører", "cpc": 165.88 },
+    { "keyword": "regnskapsbyrå kristiansand", "cpc": 137.83 },
+    { "keyword": "revisor", "cpc": 98.34 },
+    { "keyword": "regnskapsfører pris", "cpc": 50.60 },
+    { "keyword": "regnskapshjelp", "cpc": 44.88 },
+    { "keyword": "revisor kristiansand", "cpc": 37.29 }
+  ],
+  "seasonality": {
+    "keyword": "regnskapsfører",
+    "months": [
+      { "month": "Jan", "volume": 20 },
+      { "month": "Feb", "volume": 20 },
+      { "month": "Mar", "volume": 20 },
+      { "month": "Apr", "volume": 20 },
+      { "month": "May", "volume": 20 },
+      { "month": "Jun", "volume": 30 },
+      { "month": "Jul", "volume": 10 },
+      { "month": "Aug", "volume": 20 },
+      { "month": "Sep", "volume": 20 },
+      { "month": "Oct", "volume": 10 },
+      { "month": "Nov", "volume": 20 },
+      { "month": "Dec", "volume": 10 }
+    ],
+    "peakMonths": ["Jun"],
+    "lowMonths": ["Jul", "Oct", "Dec"],
+    "insightEN": "Kristiansand's accounting demand is mostly flat at 20/month, with a small June peak (30). July, October, and December drop to 10 — reflecting typical summer, autumn, and holiday slowdowns. The small market means individual variations have outsized impact on percentages.",
+    "insightNO": "Kristiansands regnskapsetterspørsel er stort sett flat på 20/mnd, med en liten juni-topp (30). Juli, oktober og desember faller til 10 — som gjenspeiler typisk sommer-, høst- og ferienedgang. Det lille markedet betyr at individuelle variasjoner har uforholdsmessig stor innvirkning på prosenter."
+  },
+  "insights": [
+    {
+      "icon": "star",
+      "color": "amber",
+      "titleEN": "ViTo Regnskap dominates Maps with 37 reviews",
+      "titleNO": "ViTo Regnskap dominerer Maps med 37 anmeldelser",
+      "textEN": "ViTo Regnskap AS has 37 reviews with a perfect 5.0 rating — more than 5× the next competitor (Multi Regnskap, 7 reviews). This is the strongest Maps presence in the accounting niche across all 5 Norwegian cities we analyzed. To compete, you need 40+ reviews.",
+      "textNO": "ViTo Regnskap AS har 37 anmeldelser med perfekt 5,0 i rating — mer enn 5× neste konkurrent (Multi Regnskap, 7 anmeldelser). Dette er den sterkeste Maps-tilstedeværelsen i regnskapsnisjen på tvers av alle 5 norske byer vi analyserte. For å konkurrere trenger du 40+ anmeldelser.",
+      "statLabel": "ViTo reviews",
+      "statValue": "37"
+    },
+    {
+      "icon": "globe",
+      "color": "green",
+      "titleEN": "Explicit and generic searches are equal",
+      "titleNO": "Eksplisitte og generiske søk er like",
+      "textEN": "Explicit \"kristiansand\" keywords (140/mo) exactly match generic service searches (140/mo). This 1:1 ratio is unique among Norwegian cities — it means half of all potential clients actively specify Kristiansand in their search.",
+      "textNO": "Eksplisitte «kristiansand»-søkeord (140/mnd) matcher nøyaktig generiske tjenestesøk (140/mnd). Dette 1:1-forholdet er unikt blant norske byer — det betyr at halvparten av alle potensielle kunder aktivt spesifiserer Kristiansand i søket sitt.",
+      "statLabel": "explicit : generic ratio",
+      "statValue": "1:1"
+    },
+    {
+      "icon": "file-text",
+      "color": "blue",
+      "titleEN": "Local firms rank alongside aggregators",
+      "titleNO": "Lokale byråer rangerer sammen med aggregatorer",
+      "textEN": "Merkant (#3, 50 years of experience) and Regnskapsavdelingen (#4) rank in the organic top 5 — a rare achievement in the accounting niche where aggregators typically dominate. This shows local content and authority can compete.",
+      "textNO": "Merkant (#3, 50 års erfaring) og Regnskapsavdelingen (#4) rangerer i den organiske topp 5 — en sjelden prestasjon i regnskapsnisjen der aggregatorer typisk dominerer. Dette viser at lokalt innhold og autoritet kan konkurrere.",
+      "statLabel": "local firms in top 5",
+      "statValue": "2/5"
+    },
+    {
+      "icon": "clock",
+      "color": "purple",
+      "titleEN": "Paid ads confirm market activity",
+      "titleNO": "Betalte annonser bekrefter markedsaktivitet",
+      "textEN": "Aider (a national accounting chain) runs paid Maps ads for \"regnskapsfører kristiansand\", and organic paid results also appear. Even in a smaller market, competitors are investing in digital visibility — establishing presence early gives a lasting advantage.",
+      "textNO": "Aider (en nasjonal regnskapskjede) kjører betalte Maps-annonser for «regnskapsfører kristiansand», og organiske betalte resultater vises også. Selv i et mindre marked investerer konkurrenter i digital synlighet — å etablere tilstedeværelse tidlig gir en varig fordel.",
+      "statLabel": "paid ads active",
+      "statValue": "2"
+    }
+  ],
+  "tips": [
+    {
+      "titleEN": "Google Business Profile — challenge ViTo's lead",
+      "titleNO": "Google Bedriftsprofil — utfordre ViTos ledelse",
+      "textEN": "ViTo Regnskap leads with 37 reviews and 5.0 rating. To compete, aim for 40+ reviews. If you already have satisfied clients, send them a Google review link — it only takes 2 minutes per review.",
+      "textNO": "ViTo Regnskap leder med 37 anmeldelser og 5,0 rating. For å konkurrere, sikt mot 40+ anmeldelser. Hvis du allerede har fornøyde kunder, send dem en Google-anmeldelseslenke — det tar bare 2 minutter per anmeldelse.",
+      "tagEN": "Free — 30 minutes",
+      "tagNO": "Gratis — 30 minutter"
+    },
+    {
+      "titleEN": "Create city-specific landing pages",
+      "titleNO": "Lag byspesifikke landingssider",
+      "textEN": "Explicit \"kristiansand\" keywords (140/mo) are half of all search volume. Create dedicated pages mentioning Kristiansand, Agder county, Sørlandet, and nearby municipalities like Vennesla and Søgne.",
+      "textNO": "Eksplisitte «kristiansand»-søkeord (140/mnd) er halvparten av alt søkevolum. Lag dedikerte sider som nevner Kristiansand, Agder fylke, Sørlandet og nærliggende kommuner som Vennesla og Søgne.",
+      "tagEN": "Free — 2-3 hours",
+      "tagNO": "Gratis — 2-3 timer"
+    },
+    {
+      "titleEN": "Register on Regnskapsførertilbud.no",
+      "titleNO": "Registrer deg på Regnskapsførertilbud.no",
+      "textEN": "This comparison platform ranks #1 organically for \"regnskapsfører kristiansand\". A profile there gives you instant visibility where business owners compare accounting firms in Sørlandet.",
+      "textNO": "Denne sammenligningsplattformen rangerer #1 organisk for «regnskapsfører kristiansand». En profil der gir deg umiddelbar synlighet der bedriftseiere i Sørlandet sammenligner regnskapsbyråer.",
+      "tagEN": "Free — 15 minutes",
+      "tagNO": "Gratis — 15 minutter"
+    },
+    {
+      "titleEN": "Run Google Ads on explicit Kristiansand keywords",
+      "titleNO": "Kjør Google Ads på eksplisitte Kristiansand-søkeord",
+      "textEN": "\"Revisor kristiansand\" (37 kr/click) is a bargain compared to generic terms (166–298 kr). \"Regnskapsfører kristiansand\" (214 kr/click) captures the highest-intent traffic. With 6,000 kr/month, you can capture ~45 clicks.",
+      "textNO": "«Revisor kristiansand» (37 kr/klikk) er et kupp sammenlignet med generiske termer (166–298 kr). «Regnskapsfører kristiansand» (214 kr/klikk) fanger trafikken med høyest intensjon. Med 6 000 kr/mnd kan du fange ~45 klikk.",
+      "tagEN": "Paid — from 6,000 kr/month",
+      "tagNO": "Betalt — fra 6 000 kr/mnd"
+    }
+  ],
+  "calculator": {
+    "avgCpc": 156.7,
+    "defaultPatientValue": 60000,
+    "defaultBudget": 6000,
+    "defaultConversion": 30,
+    "clickToInquiryRate": 0.04,
+    "benchmarkEN": "Kristiansand accounting CPCs range 37–298 kr. Explicit city keywords (37–214 kr) offer better value than generic terms (45–298 kr) — target \"revisor kristiansand\" (37 kr) first for maximum ROI.",
+    "benchmarkNO": "Kristiansand regnskap CPC-er varierer 37–298 kr. Eksplisitte bysøkeord (37–214 kr) gir bedre verdi enn generiske termer (45–298 kr) — målrett «revisor kristiansand» (37 kr) først for maksimal ROI."
+  },
+  "sources": [
+    { "name": "DataForSEO – Keywords Data API (Google Ads, Kristiansand)", "url": null },
+    { "name": "DataForSEO – SERP API (Google organic, Norway)", "url": null },
+    { "name": "DataForSEO – Maps API (Google Maps, Norway)", "url": null },
+    { "name": "DataReportal – Digital 2025: Norway", "url": "https://datareportal.com/reports/digital-2025-norway" },
+    { "name": "BrightLocal – Local Pack Click Share Study 2024", "url": "https://www.brightlocal.com/research/" }
+  ]
+}
