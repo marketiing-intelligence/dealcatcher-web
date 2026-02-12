@@ -11,6 +11,7 @@ import type { Locale } from "@/lib/i18n/config";
 interface ReportHeroProps {
   meta: ReportMeta;
   lang: Locale;
+  nicheLower: string;
   dict: {
     badge: string;
     titleSearches: string;
@@ -19,8 +20,7 @@ interface ReportHeroProps {
   };
 }
 
-export function ReportHero({ meta, lang, dict }: ReportHeroProps) {
-  const nicheLower = lang === "no" ? meta.nicheNO : meta.niche;
+export function ReportHero({ meta, lang, nicheLower, dict }: ReportHeroProps) {
   const titleFor = dict.titleFor
     .replaceAll("{nicheLower}", nicheLower)
     .replaceAll("{city}", meta.city);

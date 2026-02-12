@@ -1,0 +1,636 @@
+{
+  "meta": {
+    "niche": "auto-repair",
+    "nicheNO": "bilverksteder",
+    "city": "Trondheim",
+    "locationCode": 1010976,
+    "dataDate": "2026-02",
+    "totalSearchVolume": 2730
+  },
+  "metrics": {
+    "keywordCount": 13,
+    "avgCpc": 17.9,
+    "topClinicsCount": 5,
+    "mapsClickShare": 44
+  },
+  "keywordGroups": [
+    {
+      "id": "services",
+      "color": "green",
+      "nameEN": "Auto repair & maintenance services",
+      "nameNO": "Bilverksted- og vedlikeholdstjenester",
+      "descriptionEN": "Direct service searches — people looking for specific auto repair services. EU-kontroll (720/mo) leads, followed by vinterdekk (480/mo) and bilverksted (390/mo). Tire-related keywords account for 43% of volume. Trondheim's CPC spread is moderate: \"clutch\" costs just 2.64 kr while \"bilservice\" hits 44.33 kr. The average CPC of 17.90 kr is close to Oslo's (18.70 kr), making Trondheim a cost-efficient market for Google Ads.",
+      "descriptionNO": "Direkte tjenestesøk — folk som leter etter spesifikke bilverkstedtjenester. EU-kontroll (720/mnd) leder, etterfulgt av vinterdekk (480/mnd) og bilverksted (390/mnd). Dekkrelaterte søkeord utgjør 43 % av volumet. Trondheims CPC-spenn er moderat: «clutch» koster bare 2,64 kr mens «bilservice» treffer 44,33 kr. Gjennomsnittlig CPC på 17,90 kr er nær Oslos (18,70 kr), noe som gjør Trondheim til et kostnadseffektivt marked for Google Ads.",
+      "totalVolume": 2730,
+      "keywords": [
+        {
+          "keyword": "EU-kontroll",
+          "translation": "vehicle inspection (EU-kontroll)",
+          "volume": 720,
+          "competition": "HIGH",
+          "cpc": 18.59
+        },
+        {
+          "keyword": "vinterdekk",
+          "translation": "winter tires",
+          "volume": 480,
+          "competition": "HIGH",
+          "cpc": 17.27
+        },
+        {
+          "keyword": "bilverksted",
+          "translation": "auto repair shop",
+          "volume": 390,
+          "competition": "MEDIUM",
+          "cpc": 24.53
+        },
+        {
+          "keyword": "dekk",
+          "translation": "tires",
+          "volume": 390,
+          "competition": "HIGH",
+          "cpc": 15.62
+        },
+        {
+          "keyword": "dekkhotell",
+          "translation": "tire storage",
+          "volume": 170,
+          "competition": "MEDIUM",
+          "cpc": 14.63
+        },
+        {
+          "keyword": "clutch",
+          "translation": "clutch",
+          "volume": 170,
+          "competition": "HIGH",
+          "cpc": 2.64
+        },
+        {
+          "keyword": "EU-kontroll pris",
+          "translation": "vehicle inspection price",
+          "volume": 140,
+          "competition": "HIGH",
+          "cpc": 19.36
+        },
+        {
+          "keyword": "sommerdekk",
+          "translation": "summer tires",
+          "volume": 140,
+          "competition": "HIGH",
+          "cpc": 12.43
+        },
+        {
+          "keyword": "bilservice",
+          "translation": "car service",
+          "volume": 40,
+          "competition": "MEDIUM",
+          "cpc": 44.33
+        },
+        {
+          "keyword": "bilglass",
+          "translation": "car glass",
+          "volume": 40,
+          "competition": "LOW",
+          "cpc": 43.56
+        },
+        {
+          "keyword": "eksosanlegg",
+          "translation": "exhaust system",
+          "volume": 30,
+          "competition": "HIGH",
+          "cpc": 13.42
+        },
+        {
+          "keyword": "bilreparasjon",
+          "translation": "car repair",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 21.45
+        },
+        {
+          "keyword": "AC service bil",
+          "translation": "car AC service",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 11.77
+        }
+      ]
+    },
+    {
+      "id": "explicit",
+      "color": "blue",
+      "nameEN": "Explicit \"Trondheim\" searches",
+      "nameNO": "Eksplisitte \"Trondheim\"-søk",
+      "descriptionEN": "Keywords that include \"Trondheim\" in the query. Note: Google Ads does not provide city-level volume for these keywords, so the volumes shown are national (country-wide) figures. \"Bilverksted trondheim\" (880/mo nationally) dominates this group. \"Dekkhotell trondheim\" (590/mo nationally) follows — tire storage demand is strong. Lakkering trondheim has the highest CPC at 56.54 kr, while dekkhotell trondheim is a bargain at 11.55 kr.",
+      "descriptionNO": "Søkeord som inkluderer «Trondheim» i spørringen. Merk: Google Ads gir ikke byspesifikt volum for disse søkeordene, så volumene som vises er nasjonale (landsdekkende) tall. «Bilverksted trondheim» (880/mnd nasjonalt) dominerer denne gruppen. «Dekkhotell trondheim» (590/mnd nasjonalt) følger — etterspørselen etter dekkhotell er sterk. Lakkering trondheim har høyeste CPC på 56,54 kr, mens dekkhotell trondheim er et kupp til 11,55 kr.",
+      "totalVolume": 2280,
+      "keywords": [
+        {
+          "keyword": "bilverksted trondheim",
+          "translation": "auto repair shop Trondheim",
+          "volume": 880,
+          "competition": "MEDIUM",
+          "cpc": 28.05
+        },
+        {
+          "keyword": "dekkhotell trondheim",
+          "translation": "tire storage Trondheim",
+          "volume": 590,
+          "competition": "MEDIUM",
+          "cpc": 11.55
+        },
+        {
+          "keyword": "EU-kontroll trondheim",
+          "translation": "vehicle inspection Trondheim",
+          "volume": 390,
+          "competition": "HIGH",
+          "cpc": 31.57
+        },
+        {
+          "keyword": "dekkskift trondheim",
+          "translation": "tire change Trondheim",
+          "volume": 260,
+          "competition": "MEDIUM",
+          "cpc": 24.09
+        },
+        {
+          "keyword": "bilservice trondheim",
+          "translation": "car service Trondheim",
+          "volume": 50,
+          "competition": "LOW",
+          "cpc": 24.53
+        },
+        {
+          "keyword": "lakkering trondheim",
+          "translation": "car painting Trondheim",
+          "volume": 50,
+          "competition": "MEDIUM",
+          "cpc": 56.54
+        },
+        {
+          "keyword": "bilglass trondheim",
+          "translation": "car glass Trondheim",
+          "volume": 50,
+          "competition": "MEDIUM",
+          "cpc": 43.89
+        },
+        {
+          "keyword": "mekaniker trondheim",
+          "translation": "mechanic Trondheim",
+          "volume": 10,
+          "competition": "MEDIUM",
+          "cpc": 17.05
+        }
+      ],
+      "isNational": true
+    }
+  ],
+  "serpKeywords": [
+    {
+      "keyword": "bilverksted trondheim",
+      "volume": 880,
+      "organic": [
+        {
+          "rank": 5,
+          "domain": "www.bilsmart.no"
+        },
+        {
+          "rank": 6,
+          "domain": "www.meca.no"
+        },
+        {
+          "rank": 7,
+          "domain": "www.mekonomen.no"
+        },
+        {
+          "rank": 13,
+          "domain": "www.snapdrive.no"
+        },
+        {
+          "rank": 14,
+          "domain": "vianor.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "GS Bilverksted Trondheim",
+          "rating": 4.4,
+          "reviews": 87
+        },
+        {
+          "rank": 2,
+          "title": "Winther Auto Service - AutoMester Winther",
+          "rating": 4.8,
+          "reviews": 437
+        },
+        {
+          "rank": 3,
+          "title": "Trondheim Biltest",
+          "rating": 4.4,
+          "reviews": 72
+        }
+      ],
+      "insightEN": "National chains hold mid-page positions: bilsmart.no (#5), meca.no (#6), mekonomen.no (#7), with snapdrive.no (#13) and vianor.no (#14) pushed to page 2. Maps tells the real story — Winther Auto Service (4.8 stars, 437 reviews) at #2 is a review powerhouse, dwarfing GS Bilverksted (#1, 4.4 stars, 87 reviews) and Trondheim Biltest (#3, 4.4 stars, 72 reviews). Despite fewer stars, GS Bilverksted holds the top Maps position — proximity and profile optimization matter.",
+      "insightNO": "Nasjonale kjeder holder midtsideposisjoner: bilsmart.no (#5), meca.no (#6), mekonomen.no (#7), med snapdrive.no (#13) og vianor.no (#14) presset til side 2. Maps forteller den egentlige historien — Winther Auto Service (4,8 stjerner, 437 anmeldelser) på #2 er en anmeldelseskjempe som overgår GS Bilverksted (#1, 4,4 stjerner, 87 anmeldelser) og Trondheim Biltest (#3, 4,4 stjerner, 72 anmeldelser). Til tross for færre stjerner holder GS Bilverksted den øverste Maps-posisjonen — nærhet og profiloptimalisering betyr mye."
+    },
+    {
+      "keyword": "dekkskift trondheim",
+      "volume": 260,
+      "organic": [
+        {
+          "rank": 5,
+          "domain": "vianor.no"
+        },
+        {
+          "rank": 6,
+          "domain": "www.tronderdekk.no"
+        },
+        {
+          "rank": 7,
+          "domain": "dekkproff.no"
+        },
+        {
+          "rank": 10,
+          "domain": "dekkteam.no"
+        },
+        {
+          "rank": 11,
+          "domain": "overaae.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "BestDrive Nyhavna",
+          "rating": 4.4,
+          "reviews": 110
+        },
+        {
+          "rank": 2,
+          "title": "DekkTeam avd. Leangen",
+          "rating": 4.2,
+          "reviews": 172
+        },
+        {
+          "rank": 3,
+          "title": "Dekkservice",
+          "rating": 0,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "Tire specialists own this SERP: vianor.no (#5), tronderdekk.no (#6), dekkproff.no (#7), dekkteam.no (#10). A local player, overaae.no, appears at #11. Maps shows a different landscape: BestDrive Nyhavna (4.4 stars, 110 reviews) leads, DekkTeam avd. Leangen (4.2, 172 reviews) has the most reviews but lower rating, and Dekkservice sits at #3 with 0 stars and 0 reviews — an unclaimed or unoptimized profile. This is a wide-open Maps opportunity.",
+      "insightNO": "Dekkspesialister eier dette SERP-et: vianor.no (#5), tronderdekk.no (#6), dekkproff.no (#7), dekkteam.no (#10). En lokal aktør, overaae.no, dukker opp på #11. Maps viser et annet landskap: BestDrive Nyhavna (4,4 stjerner, 110 anmeldelser) leder, DekkTeam avd. Leangen (4,2, 172 anmeldelser) har flest anmeldelser men lavere rating, og Dekkservice ligger på #3 med 0 stjerner og 0 anmeldelser — en uoppgjort eller uoptimalisert profil. Dette er en helt åpen Maps-mulighet."
+    },
+    {
+      "keyword": "EU-kontroll trondheim",
+      "volume": 390,
+      "organic": [
+        {
+          "rank": 4,
+          "domain": "www.mekonomen.no"
+        },
+        {
+          "rank": 5,
+          "domain": "www.meca.no"
+        },
+        {
+          "rank": 6,
+          "domain": "vianor.no"
+        },
+        {
+          "rank": 8,
+          "domain": "www.bilsmart.no"
+        },
+        {
+          "rank": 9,
+          "domain": "www.snapdrive.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Vinjes Bilverksted (SjekkPunkt)",
+          "rating": 3.7,
+          "reviews": 85
+        },
+        {
+          "rank": 2,
+          "title": "Winther Auto Service - AutoMester Winther",
+          "rating": 4.8,
+          "reviews": 437
+        },
+        {
+          "rank": 3,
+          "title": "Trondheim Biltest",
+          "rating": 4.4,
+          "reviews": 72
+        }
+      ],
+      "insightEN": "At 31.57 kr/click, this is Trondheim's second most expensive explicit keyword (after lakkering trondheim at 56.54 kr). Chains pack the organic results: mekonomen.no (#4), meca.no (#5), vianor.no (#6), bilsmart.no (#8), snapdrive.no (#9). In Maps, Vinjes Bilverksted/SjekkPunkt holds #1 with just 3.7 stars and 85 reviews, while Winther Auto Service (4.8, 437 reviews) sits at #2 again — Winther's higher rating and massive review count aren't enough to beat proximity.",
+      "insightNO": "Med 31,57 kr/klikk er dette Trondheims nest dyreste eksplisitte søkeord (etter lakkering trondheim til 56,54 kr). Kjeder pakker de organiske resultatene: mekonomen.no (#4), meca.no (#5), vianor.no (#6), bilsmart.no (#8), snapdrive.no (#9). I Maps holder Vinjes Bilverksted/SjekkPunkt #1 med bare 3,7 stjerner og 85 anmeldelser, mens Winther Auto Service (4,8, 437 anmeldelser) ligger på #2 igjen — Winthers høyere rating og massive anmeldelsestall er ikke nok til å slå nærhet."
+    },
+    {
+      "keyword": "mekaniker trondheim",
+      "volume": 10,
+      "organic": [
+        {
+          "rank": 5,
+          "domain": "www.meca.no"
+        },
+        {
+          "rank": 6,
+          "domain": "butikk.bildoktoren.no"
+        },
+        {
+          "rank": 7,
+          "domain": "www.bilsmart.no"
+        },
+        {
+          "rank": 9,
+          "domain": "www.mekonomen.no"
+        },
+        {
+          "rank": 10,
+          "domain": "www.1881.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "GS Bilverksted Trondheim",
+          "rating": 4.4,
+          "reviews": 0
+        },
+        {
+          "rank": 2,
+          "title": "Winther Auto Service - AutoMester Winther",
+          "rating": 4.8,
+          "reviews": 0
+        },
+        {
+          "rank": 3,
+          "title": "Trondheim Biltest",
+          "rating": 4.4,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "Very low volume (10/mo) but the SERP shows an interesting mix: meca.no (#5), butikk.bildoktoren.no (#6), bilsmart.no (#7), mekonomen.no (#9), and 1881.no (#10) — the Norwegian directory still ranks for \"mechanic\" searches. All three Maps results show 0 reviews: GS Bilverksted (4.4), Winther Auto Service (4.8), Trondheim Biltest (4.4). The same three workshops dominate across all Trondheim Maps results — they've locked down the local pack.",
+      "insightNO": "Veldig lavt volum (10/mnd) men SERP-et viser en interessant blanding: meca.no (#5), butikk.bildoktoren.no (#6), bilsmart.no (#7), mekonomen.no (#9) og 1881.no (#10) — den norske katalogen rangerer fortsatt for «mekaniker»-søk. Alle tre Maps-resultater viser 0 anmeldelser: GS Bilverksted (4,4), Winther Auto Service (4,8), Trondheim Biltest (4,4). De samme tre verkstedene dominerer i alle Trondheims Maps-resultater — de har låst den lokale pakken."
+    }
+  ],
+  "cpcData": [
+    {
+      "keyword": "lakkering trondheim",
+      "cpc": 56.54
+    },
+    {
+      "keyword": "bilservice",
+      "cpc": 44.33
+    },
+    {
+      "keyword": "bilglass trondheim",
+      "cpc": 43.89
+    },
+    {
+      "keyword": "bilglass",
+      "cpc": 43.56
+    },
+    {
+      "keyword": "EU-kontroll trondheim",
+      "cpc": 31.57
+    },
+    {
+      "keyword": "bilverksted trondheim",
+      "cpc": 28.05
+    },
+    {
+      "keyword": "bilverksted",
+      "cpc": 24.53
+    },
+    {
+      "keyword": "bilservice trondheim",
+      "cpc": 24.53
+    },
+    {
+      "keyword": "dekkskift trondheim",
+      "cpc": 24.09
+    },
+    {
+      "keyword": "bilreparasjon",
+      "cpc": 21.45
+    },
+    {
+      "keyword": "EU-kontroll pris",
+      "cpc": 19.36
+    },
+    {
+      "keyword": "EU-kontroll",
+      "cpc": 18.59
+    },
+    {
+      "keyword": "vinterdekk",
+      "cpc": 17.27
+    },
+    {
+      "keyword": "mekaniker trondheim",
+      "cpc": 17.05
+    },
+    {
+      "keyword": "dekk",
+      "cpc": 15.62
+    },
+    {
+      "keyword": "dekkhotell",
+      "cpc": 14.63
+    },
+    {
+      "keyword": "eksosanlegg",
+      "cpc": 13.42
+    },
+    {
+      "keyword": "sommerdekk",
+      "cpc": 12.43
+    },
+    {
+      "keyword": "AC service bil",
+      "cpc": 11.77
+    },
+    {
+      "keyword": "dekkhotell trondheim",
+      "cpc": 11.55
+    },
+    {
+      "keyword": "clutch",
+      "cpc": 2.64
+    }
+  ],
+  "seasonality": {
+    "keyword": "dekkskift",
+    "months": [
+      {
+        "month": "Jan",
+        "volume": 20
+      },
+      {
+        "month": "Feb",
+        "volume": 10
+      },
+      {
+        "month": "Mar",
+        "volume": 70
+      },
+      {
+        "month": "Apr",
+        "volume": 320
+      },
+      {
+        "month": "May",
+        "volume": 170
+      },
+      {
+        "month": "Jun",
+        "volume": 70
+      },
+      {
+        "month": "Jul",
+        "volume": 30
+      },
+      {
+        "month": "Aug",
+        "volume": 20
+      },
+      {
+        "month": "Sep",
+        "volume": 90
+      },
+      {
+        "month": "Oct",
+        "volume": 1300
+      },
+      {
+        "month": "Nov",
+        "volume": 260
+      },
+      {
+        "month": "Dec",
+        "volume": 20
+      }
+    ],
+    "peakMonths": [
+      "Oct"
+    ],
+    "lowMonths": [
+      "Feb"
+    ],
+    "insightEN": "Tire change demand in Trondheim follows a sharp October spike (1,300 searches) — 130x the February low of just 10 searches. The April spring peak (320) is also notable as drivers switch back to summer tires. Trondheim's October peak is proportionally the largest vs. the rest of the year compared to southern cities. Strategy: launch dekkskift campaigns in mid-September before the October surge, and again in early March. Reduce spend in June–August when demand drops to 20–70 searches.",
+    "insightNO": "Etterspørselen etter dekkskift i Trondheim følger en skarp oktober-topp (1 300 søk) — 130 ganger februar-bunnpunktet på bare 10 søk. April-toppen om våren (320) er også merkbar når bilister bytter tilbake til sommerdekk. Trondheims oktober-topp er proporsjonalt den største sammenlignet med resten av året i forhold til sørlige byer. Strategi: lanser dekkskift-kampanjer i midten av september før oktoberushet, og igjen tidlig i mars. Reduser forbruket i juni–august når etterspørselen faller til 20–70 søk."
+  },
+  "insights": [
+    {
+      "icon": "star",
+      "color": "amber",
+      "titleEN": "Winther Auto Service has 437 reviews — but can't reach Maps #1",
+      "titleNO": "Winther Auto Service har 437 anmeldelser — men kan ikke nå Maps #1",
+      "textEN": "Winther Auto Service (4.8 stars, 437 reviews) is the most-reviewed workshop in any city we analyzed, yet they sit at Maps #2 for \"bilverksted trondheim\" behind GS Bilverksted (4.4 stars, 87 reviews). This proves that Google Maps ranking isn't just about reviews — proximity to the searcher, profile completeness, and category relevance all matter. For new competitors, this means you don't need 400+ reviews to compete.",
+      "textNO": "Winther Auto Service (4,8 stjerner, 437 anmeldelser) er det mest anmeldte verkstedet i alle byer vi analyserte, men de ligger på Maps #2 for «bilverksted trondheim» bak GS Bilverksted (4,4 stjerner, 87 anmeldelser). Dette beviser at Google Maps-rangering ikke bare handler om anmeldelser — nærhet til søkeren, profilkomplettering og kategorirelevans betyr også mye. For nye konkurrenter betyr dette at du ikke trenger 400+ anmeldelser for å konkurrere.",
+      "statLabel": "reviews for #2 Maps shop",
+      "statValue": "437"
+    },
+    {
+      "icon": "tag",
+      "color": "purple",
+      "titleEN": "Dekkhotell trondheim is a bargain at 11.55 kr/click",
+      "titleNO": "Dekkhotell trondheim er et kupp til 11,55 kr/klikk",
+      "textEN": "\"Dekkhotell trondheim\" (590/mo) at 11.55 kr/click is the best value keyword in the entire Trondheim report — high volume, low CPC, and high booking intent. Compare this to \"bilverksted trondheim\" (880/mo, 28.05 kr) or \"EU-kontroll trondheim\" (390/mo, 31.57 kr). A workshop offering tire storage can capture 590 high-intent searches monthly at less than half the CPC of general repair keywords.",
+      "textNO": "«Dekkhotell trondheim» (590/mnd) til 11,55 kr/klikk er det beste verdi-søkeordet i hele Trondheim-rapporten — høyt volum, lav CPC og høy bestillingsintensjon. Sammenlign dette med «bilverksted trondheim» (880/mnd, 28,05 kr) eller «EU-kontroll trondheim» (390/mnd, 31,57 kr). Et verksted som tilbyr dekkhotell kan fange 590 høy-intensjons-søk månedlig til mindre enn halvparten av CPC-en for generelle reparasjonssøkeord.",
+      "statLabel": "CPC for dekkhotell trondheim",
+      "statValue": "11.55 kr"
+    },
+    {
+      "icon": "globe",
+      "color": "green",
+      "titleEN": "Local player tronderdekk.no cracks the organic top 10",
+      "titleNO": "Lokal aktør tronderdekk.no bryter inn i organisk topp 10",
+      "textEN": "While national chains dominate most organic SERPs, tronderdekk.no appears at #6 for \"dekkskift trondheim\" and overaae.no at #11. This shows that local tire specialists can compete organically in Trondheim — particularly for niche keywords. For general \"bilverksted\" searches, chains hold positions 5–14, but the tire-specific SERP is more accessible for independent players.",
+      "textNO": "Mens nasjonale kjeder dominerer de fleste organiske SERP-er, dukker tronderdekk.no opp på #6 for «dekkskift trondheim» og overaae.no på #11. Dette viser at lokale dekkspesialister kan konkurrere organisk i Trondheim — spesielt for nisjesøkeord. For generelle «bilverksted»-søk holder kjeder posisjonene 5–14, men det dekkspesifikke SERP-et er mer tilgjengelig for uavhengige aktører.",
+      "statLabel": "Maps click share",
+      "statValue": "44%"
+    },
+    {
+      "icon": "clock",
+      "color": "blue",
+      "titleEN": "Dekkskift peaks at 1,300 searches in October — 130x the February low",
+      "titleNO": "Dekkskift topper med 1 300 søk i oktober — 130x februar-bunnpunktet",
+      "textEN": "The \"dekkskift\" keyword surges from 10 in February to 1,300 in October — a 130x increase driven by the winter tire changeover. Trondheim's colder climate means the winter rush starts slightly earlier than southern cities. A secondary peak in April (320) captures the spring switch. Workshops that advertise in September capture customers before the October price competition spikes CPC.",
+      "textNO": "Søkeordet «dekkskift» stiger fra 10 i februar til 1 300 i oktober — en 130x økning drevet av skifte til vinterdekk. Trondheims kaldere klima betyr at vinterrushet starter litt tidligere enn i sørlige byer. En sekundær topp i april (320) fanger vårens skifte. Verksteder som annonserer i september fanger kunder før oktobers priskonkurranse driver CPC-en opp.",
+      "statLabel": "Oct vs Feb volume",
+      "statValue": "130x"
+    }
+  ],
+  "tips": [
+    {
+      "titleEN": "Google Business Profile — challenge GS Bilverksted's Maps #1 position",
+      "titleNO": "Google Bedriftsprofil — utfordre GS Bilverksteds Maps #1-posisjon",
+      "textEN": "GS Bilverksted holds Maps #1 for \"bilverksted trondheim\" with 4.4 stars and 87 reviews — strong but beatable. Add categories for EU-kontroll, dekkskift, dekkhotell, bilservice, lakkering — every category helps you appear in different searches. Winther Auto Service proves that 4.8 stars and 437 reviews aren't enough if your profile isn't optimized for proximity. Focus on profile completeness and accurate service areas.",
+      "textNO": "GS Bilverksted holder Maps #1 for «bilverksted trondheim» med 4,4 stjerner og 87 anmeldelser — sterkt men overkommelig. Legg til kategorier for EU-kontroll, dekkskift, dekkhotell, bilservice, lakkering — hver kategori hjelper deg å dukke opp i ulike søk. Winther Auto Service beviser at 4,8 stjerner og 437 anmeldelser ikke er nok hvis profilen din ikke er optimalisert for nærhet. Fokuser på profilkomplettering og nøyaktige tjenesteområder.",
+      "tagEN": "Free — 30 minutes",
+      "tagNO": "Gratis — 30 minutter"
+    },
+    {
+      "titleEN": "Target dekkhotell trondheim — the best-value keyword in the report",
+      "titleNO": "Målrett dekkhotell trondheim — det beste verdi-søkeordet i rapporten",
+      "textEN": "\"Dekkhotell trondheim\" has 590 monthly searches at just 11.55 kr/click — the best volume-to-CPC ratio in the entire Trondheim dataset. Create a dedicated landing page with storage pricing, capacity info, and a booking form. Trondheim's cold winters make tire storage essential — this is a recurring revenue service where one customer can stay for years. A 5,000 kr monthly budget could generate ~430 clicks.",
+      "textNO": "«Dekkhotell trondheim» har 590 månedlige søk til bare 11,55 kr/klikk — det beste volum-til-CPC-forholdet i hele Trondheim-datasettet. Lag en dedikert landingsside med lagringspriser, kapasitetsinformasjon og bestillingsskjema. Trondheims kalde vintre gjør dekkhotell essensielt — dette er en gjentakende inntektstjeneste der én kunde kan bli i årevis. Et månedlig budsjett på 5 000 kr kan generere ~430 klikk.",
+      "tagEN": "Free — 2 hours + Paid from 5,000 kr/month",
+      "tagNO": "Gratis — 2 timer + Betalt fra 5 000 kr/mnd"
+    },
+    {
+      "titleEN": "Create dedicated EU-kontroll page with pricing",
+      "titleNO": "Lag dedikert EU-kontroll-side med priser",
+      "textEN": "EU-kontroll drives the most generic searches (720/mo) and the explicit \"EU-kontroll trondheim\" adds 390/mo at 31.57 kr/click. \"EU-kontroll pris\" (140/mo, 19.36 kr) captures price-comparison shoppers in the final decision stage. A page with transparent pricing, turnaround time, and online booking captures all three keywords. Mekonomen.no leads organically (#4) — match their page structure but add local trust signals.",
+      "textNO": "EU-kontroll driver flest generiske søk (720/mnd) og det eksplisitte «EU-kontroll trondheim» legger til 390/mnd til 31,57 kr/klikk. «EU-kontroll pris» (140/mnd, 19,36 kr) fanger prissammenligningskunder i den siste beslutningsfasen. En side med transparente priser, leveringstid og nettbestilling fanger alle tre søkeordene. Mekonomen.no leder organisk (#4) — match sidestrukturen deres men legg til lokale tillitssignaler.",
+      "tagEN": "Free — 1-2 hours",
+      "tagNO": "Gratis — 1-2 timer"
+    },
+    {
+      "titleEN": "Run seasonal Google Ads for dekkskift in September–October",
+      "titleNO": "Kjør sesongbaserte Google Ads for dekkskift i september–oktober",
+      "textEN": "Dekkskift surges from 90 searches in September to 1,300 in October — a 14x jump in one month. Launch ads in early September at 24.09 kr/click for \"dekkskift trondheim\" (260/mo). Bundle with \"dekkhotell trondheim\" (590/mo, 11.55 kr) — customers switching tires need storage. A 7,000 kr September budget generates ~400 clicks across both keywords before October competition drives prices up.",
+      "textNO": "Dekkskift stiger fra 90 søk i september til 1 300 i oktober — et 14x hopp på én måned. Lanser annonser tidlig i september til 24,09 kr/klikk for «dekkskift trondheim» (260/mnd). Kombiner med «dekkhotell trondheim» (590/mnd, 11,55 kr) — kunder som bytter dekk trenger lagring. Et budsjett på 7 000 kr i september genererer ~400 klikk på tvers av begge søkeord før oktoberkonkurranse driver prisene opp.",
+      "tagEN": "Paid — from 7,000 kr/month",
+      "tagNO": "Betalt — fra 7 000 kr/mnd"
+    }
+  ],
+  "calculator": {
+    "avgCpc": 17.9,
+    "defaultPatientValue": 8000,
+    "defaultBudget": 8000,
+    "defaultConversion": 30,
+    "clickToInquiryRate": 0.045,
+    "benchmarkEN": "Auto repair CPCs in Trondheim range from 2.64 kr (clutch) to 56.54 kr (lakkering trondheim). The average CPC of 17.90 kr is close to Oslo's, making Trondheim a cost-efficient market. Best value: \"dekkhotell trondheim\" (590/mo nationally, 11.55 kr) and \"dekk\" (390/mo, 15.62 kr). A loyal customer is worth ~8,000 kr/year (EU-kontroll 3,000 + service 3,000 + dekk 2,000). At 17.90 kr average CPC, one converted customer pays for ~450 clicks.",
+    "benchmarkNO": "Bilverksted-CPC-er i Trondheim varierer fra 2,64 kr (clutch) til 56,54 kr (lakkering trondheim). Gjennomsnittlig CPC på 17,90 kr er nær Oslos, noe som gjør Trondheim til et kostnadseffektivt marked. Beste verdi: «dekkhotell trondheim» (590/mnd nasjonalt, 11,55 kr) og «dekk» (390/mnd, 15,62 kr). En lojal kunde er verdt ~8 000 kr/år (EU-kontroll 3 000 + service 3 000 + dekk 2 000). Med 17,90 kr gjennomsnittlig CPC betaler én konvertert kunde for ~450 klikk."
+  },
+  "sources": [
+    {
+      "name": "DataForSEO – Keywords Data API (Google Ads, Trondheim)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – SERP API (Google organic, Trondheim)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – Maps API (Google Maps, Trondheim)",
+      "url": null
+    },
+    {
+      "name": "DataReportal – Digital 2025: Norway",
+      "url": "https://datareportal.com/reports/digital-2025-norway"
+    },
+    {
+      "name": "BrightLocal – Local Pack Click Share Study 2024",
+      "url": "https://www.brightlocal.com/research/"
+    }
+  ]
+}

@@ -1,0 +1,648 @@
+{
+  "meta": {
+    "niche": "beauty-salon",
+    "nicheNO": "skjønnhetssalonger",
+    "city": "Tromsø",
+    "locationCode": 1011021,
+    "dataDate": "2026-02",
+    "totalSearchVolume": 480
+  },
+  "metrics": {
+    "keywordCount": 22,
+    "avgCpc": 15.0,
+    "topClinicsCount": 5,
+    "mapsClickShare": 42
+  },
+  "keywordGroups": [
+    {
+      "id": "treatments",
+      "color": "green",
+      "nameEN": "Beauty treatments & services",
+      "nameNO": "Skjønnhetsbehandlinger og -tjenester",
+      "descriptionEN": "Direct treatment searches in Tromsoe. Volumes are small — dermapen leads at just 40/month, with microneedling, laser hair removal, and skincare at 30 each. But CPCs are extreme outliers: \"hårfjerning\" hits 90.53 kr (the highest beauty CPC in all of Norway) and \"ansiktsbehandling\" reaches 43.67 kr. Low volume + high CPCs = intense bidding among the few advertisers targeting Tromsoe.",
+      "descriptionNO": "Direkte behandlingssøk i Tromsø. Volumene er små — dermapen leder med bare 40/mnd, mens microneedling, laser hårfjerning og hudpleie ligger på 30 hver. Men CPC-ene er ekstreme utliggere: «hårfjerning» treffer 90,53 kr (den høyeste skjønnhets-CPC-en i hele Norge) og «ansiktsbehandling» når 43,67 kr. Lavt volum + høye CPC-er = intens budgivning blant de få annonsørene som retter seg mot Tromsø.",
+      "totalVolume": 260,
+      "keywords": [
+        {
+          "keyword": "dermapen",
+          "translation": "dermapen",
+          "volume": 40,
+          "competition": "HIGH",
+          "cpc": 14.96
+        },
+        {
+          "keyword": "microneedling",
+          "translation": "microneedling",
+          "volume": 30,
+          "competition": "HIGH",
+          "cpc": 15.4
+        },
+        {
+          "keyword": "laser hårfjerning",
+          "translation": "laser hair removal",
+          "volume": 30,
+          "competition": "HIGH",
+          "cpc": 20.24
+        },
+        {
+          "keyword": "hudpleie",
+          "translation": "skincare",
+          "volume": 30,
+          "competition": "HIGH",
+          "cpc": 16.39
+        },
+        {
+          "keyword": "pedikyr",
+          "translation": "pedicure",
+          "volume": 20,
+          "competition": "HIGH",
+          "cpc": 6.49
+        },
+        {
+          "keyword": "fotpleie",
+          "translation": "foot care",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 6.27
+        },
+        {
+          "keyword": "fillers",
+          "translation": "fillers",
+          "volume": 10,
+          "competition": "MEDIUM",
+          "cpc": 2.2
+        },
+        {
+          "keyword": "hårfjerning",
+          "translation": "hair removal",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 90.53
+        },
+        {
+          "keyword": "hårfjerning ansikt",
+          "translation": "facial hair removal",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 23.98
+        },
+        {
+          "keyword": "elektrolyse hårfjerning",
+          "translation": "electrolysis hair removal",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 12.65
+        },
+        {
+          "keyword": "kjemisk peeling",
+          "translation": "chemical peel",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 12.76
+        },
+        {
+          "keyword": "ansiktsbehandling",
+          "translation": "facial treatment",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 43.67
+        },
+        {
+          "keyword": "permanent makeup",
+          "translation": "permanent makeup",
+          "volume": 10,
+          "competition": "LOW",
+          "cpc": 2.42
+        },
+        {
+          "keyword": "permanent hår fjerning",
+          "translation": "permanent hair removal",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 17.05
+        },
+        {
+          "keyword": "laser hårfjerning pris",
+          "translation": "laser hair removal price",
+          "volume": 10,
+          "competition": "MEDIUM",
+          "cpc": 8.8
+        },
+        {
+          "keyword": "sukkervoks",
+          "translation": "sugar waxing",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 15.29
+        }
+      ]
+    },
+    {
+      "id": "explicit",
+      "color": "blue",
+      "nameEN": "Explicit \"Tromsø\" searches",
+      "nameNO": "Eksplisitte \"Tromsø\"-søk",
+      "descriptionEN": "People specifically searching for beauty services in Tromsoe. \"Hudpleie tromsø\" and \"vippeextensions tromsø\" tie at 70/month each. City-tagged keywords account for 46% of total volume — a high ratio showing Tromsoe consumers frequently search with the city name, making city-specific SEO and ads essential.",
+      "descriptionNO": "Folk som spesifikt søker etter skjønnhetstjenester i Tromsø. «Hudpleie tromsø» og «vippeextensions tromsø» deler førsteplassen med 70/mnd hver. Byspesifikke søkeord utgjør 46 % av totalvolumet — en høy andel som viser at tromsøværinger ofte søker med bynavn, noe som gjør byspesifikk SEO og annonsering essensielt.",
+      "totalVolume": 220,
+      "keywords": [
+        {
+          "keyword": "hudpleie tromsø",
+          "translation": "skincare Tromsø",
+          "volume": 70,
+          "competition": "LOW",
+          "cpc": 9.13
+        },
+        {
+          "keyword": "vippeextensions tromsø",
+          "translation": "eyelash extensions Tromsø",
+          "volume": 70,
+          "competition": "LOW",
+          "cpc": 11.55
+        },
+        {
+          "keyword": "fillers tromsø",
+          "translation": "fillers Tromsø",
+          "volume": 30,
+          "competition": "MEDIUM",
+          "cpc": 17.49
+        },
+        {
+          "keyword": "ansiktsbehandling tromsø",
+          "translation": "facial treatment Tromsø",
+          "volume": 20,
+          "competition": "MEDIUM",
+          "cpc": 5.39
+        },
+        {
+          "keyword": "laser hårfjerning tromsø",
+          "translation": "laser hair removal Tromsø",
+          "volume": 20,
+          "competition": "MEDIUM",
+          "cpc": 21.45
+        },
+        {
+          "keyword": "skjønnhetssalong tromsø",
+          "translation": "beauty salon Tromsø",
+          "volume": 10,
+          "competition": "LOW",
+          "cpc": 4.73
+        }
+      ]
+    }
+  ],
+  "serpKeywords": [
+    {
+      "keyword": "skjønnhetssalong tromsø",
+      "volume": 30,
+      "organic": [
+        {
+          "rank": 5,
+          "domain": "www.mediva.no"
+        },
+        {
+          "rank": 6,
+          "domain": "www.skinlabtromso.com"
+        },
+        {
+          "rank": 7,
+          "domain": "timma.no"
+        },
+        {
+          "rank": 11,
+          "domain": "www.essensdagspa.no"
+        },
+        {
+          "rank": 12,
+          "domain": "www.bloomed.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Velbehag Medisinsk Hudklinikk",
+          "rating": 5,
+          "reviews": 0
+        },
+        {
+          "rank": 2,
+          "title": "SkinLab Tromsø",
+          "rating": 5,
+          "reviews": 0
+        },
+        {
+          "rank": 3,
+          "title": "Ansikta Medica Tromsø",
+          "rating": 4.6,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "Mediva (#5) and SkinLab Tromsø (#6) are the first salon results, with Timma.no at #7 — further down than in other cities. Maps shows Velbehag Medisinsk Hudklinikk (5.0), SkinLab Tromsø (5.0), and Ansikta Medica (4.6) — all with zero visible reviews. In a city of this size, even 20 reviews could establish clear Maps dominance for beauty salon searches.",
+      "insightNO": "Mediva (#5) og SkinLab Tromsø (#6) er de første salongresultatene, med Timma.no på #7 — lenger ned enn i andre byer. Maps viser Velbehag Medisinsk Hudklinikk (5,0), SkinLab Tromsø (5,0) og Ansikta Medica (4,6) — alle med null synlige anmeldelser. I en by av denne størrelsen kan selv 20 anmeldelser gi klar Maps-dominans for skjønnhetssalongsøk."
+    },
+    {
+      "keyword": "hudpleie tromsø",
+      "volume": 210,
+      "organic": [
+        {
+          "rank": 4,
+          "domain": "www.essensdagspa.no"
+        },
+        {
+          "rank": 5,
+          "domain": "www.volvat.no"
+        },
+        {
+          "rank": 9,
+          "domain": "fixit.no"
+        },
+        {
+          "rank": 10,
+          "domain": "www.mediva.no"
+        },
+        {
+          "rank": 11,
+          "domain": "www.bloomed.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Velbehag Medisinsk Hudklinikk",
+          "rating": 5,
+          "reviews": 166
+        },
+        {
+          "rank": 2,
+          "title": "Essens Dagspa",
+          "rating": 4.6,
+          "reviews": 35
+        },
+        {
+          "rank": 3,
+          "title": "Ansikta Medica Tromsø",
+          "rating": 4.6,
+          "reviews": 34
+        }
+      ],
+      "insightEN": "Essens Dagspa leads organic at #4 for Tromsoe's highest-volume keyword (70/month). Volvat (#5, a major health chain) also appears, which is unusual for beauty keywords. Maps shows Velbehag Medisinsk Hudklinikk with 166 reviews at 5.0 stars — the clear Maps leader. Essens Dagspa follows with 35 reviews (4.6) and Ansikta Medica with 34 (4.6). The gap between Velbehag and everyone else is massive.",
+      "insightNO": "Essens Dagspa leder organisk på #4 for Tromsøs høyeste volum-søkeord (70/mnd). Volvat (#5, en stor helsekjede) vises også, noe som er uvanlig for skjønnhetssøkeord. Maps viser Velbehag Medisinsk Hudklinikk med 166 anmeldelser og 5,0 stjerner — den klare Maps-lederen. Essens Dagspa følger med 35 anmeldelser (4,6) og Ansikta Medica med 34 (4,6). Gapet mellom Velbehag og alle andre er massivt."
+    },
+    {
+      "keyword": "ansiktsbehandling tromsø",
+      "volume": 50,
+      "organic": [
+        {
+          "rank": 4,
+          "domain": "velbehagklinikk.no"
+        },
+        {
+          "rank": 5,
+          "domain": "www.essensdagspa.no"
+        },
+        {
+          "rank": 6,
+          "domain": "www.mediva.no"
+        },
+        {
+          "rank": 10,
+          "domain": "www.ansikta.no"
+        },
+        {
+          "rank": 11,
+          "domain": "www.skinlabtromso.com"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Essens Dagspa",
+          "rating": 4.6,
+          "reviews": 0
+        },
+        {
+          "rank": 2,
+          "title": "Velbehag Medisinsk Hudklinikk",
+          "rating": 5,
+          "reviews": 0
+        },
+        {
+          "rank": 3,
+          "title": "SkinLab Tromsø",
+          "rating": 5,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "Velbehag Klinikk (#4), Essens Dagspa (#5), and Mediva (#6) form the organic top 3 for ansiktsbehandling. Maps shows Essens Dagspa (4.6), Velbehag (5.0), and SkinLab (5.0) — all with zero visible reviews for this specific keyword. Velbehag appears in both organic and Maps across multiple keywords, making it the dominant digital player in Tromsoe's beauty market.",
+      "insightNO": "Velbehag Klinikk (#4), Essens Dagspa (#5) og Mediva (#6) utgjør den organiske topp 3 for ansiktsbehandling. Maps viser Essens Dagspa (4,6), Velbehag (5,0) og SkinLab (5,0) — alle med null synlige anmeldelser for dette spesifikke søkeordet. Velbehag vises både organisk og i Maps på tvers av flere søkeord, noe som gjør den til den dominerende digitale aktøren i Tromsøs skjønnhetsmarked."
+    },
+    {
+      "keyword": "laser hårfjerning tromsø",
+      "volume": 50,
+      "organic": [
+        {
+          "rank": 4,
+          "domain": "www.volvat.no"
+        },
+        {
+          "rank": 5,
+          "domain": "www.skinlabtromso.com"
+        },
+        {
+          "rank": 6,
+          "domain": "velbehagklinikk.no"
+        },
+        {
+          "rank": 7,
+          "domain": "proderma.no"
+        },
+        {
+          "rank": 11,
+          "domain": "www.skinlabtromso.com"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "SkinLab Tromsø",
+          "rating": 5,
+          "reviews": 0
+        },
+        {
+          "rank": 2,
+          "title": "Velbehag Medisinsk Hudklinikk",
+          "rating": 5,
+          "reviews": 0
+        },
+        {
+          "rank": 3,
+          "title": "Ansikta Medica Tromsø",
+          "rating": 4.6,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "Volvat (major health chain) holds #4 organic, followed by SkinLab Tromsø (#5) and Velbehag Klinikk (#6). SkinLab appears twice (at #5 and #11), and also appears in Maps at #1 (5.0 stars). Proderma (#7) is the only other clinic in the top 10. Maps shows SkinLab (5.0), Velbehag (5.0), and Ansikta Medica (4.6) — all with zero visible reviews. The presence of Volvat signals that health chains compete for laser keywords even in smaller cities.",
+      "insightNO": "Volvat (stor helsekjede) holder #4 organisk, etterfulgt av SkinLab Tromsø (#5) og Velbehag Klinikk (#6). SkinLab vises to ganger (på #5 og #11), og vises også i Maps på #1 (5,0 stjerner). Proderma (#7) er den eneste andre klinikken i topp 10. Maps viser SkinLab (5,0), Velbehag (5,0) og Ansikta Medica (4,6) — alle med null synlige anmeldelser. Tilstedeværelsen av Volvat signaliserer at helsekjeder konkurrerer om laser-søkeord selv i mindre byer."
+    }
+  ],
+  "cpcData": [
+    {
+      "keyword": "hårfjerning",
+      "cpc": 90.53
+    },
+    {
+      "keyword": "ansiktsbehandling",
+      "cpc": 43.67
+    },
+    {
+      "keyword": "hårfjerning ansikt",
+      "cpc": 23.98
+    },
+    {
+      "keyword": "laser hårfjerning tromsø",
+      "cpc": 21.45
+    },
+    {
+      "keyword": "laser hårfjerning",
+      "cpc": 20.24
+    },
+    {
+      "keyword": "fillers tromsø",
+      "cpc": 17.49
+    },
+    {
+      "keyword": "permanent hår fjerning",
+      "cpc": 17.05
+    },
+    {
+      "keyword": "hudpleie",
+      "cpc": 16.39
+    },
+    {
+      "keyword": "microneedling",
+      "cpc": 15.4
+    },
+    {
+      "keyword": "sukkervoks",
+      "cpc": 15.29
+    },
+    {
+      "keyword": "dermapen",
+      "cpc": 14.96
+    },
+    {
+      "keyword": "kjemisk peeling",
+      "cpc": 12.76
+    },
+    {
+      "keyword": "elektrolyse hårfjerning",
+      "cpc": 12.65
+    },
+    {
+      "keyword": "vippeextensions tromsø",
+      "cpc": 11.55
+    },
+    {
+      "keyword": "hudpleie tromsø",
+      "cpc": 9.13
+    },
+    {
+      "keyword": "laser hårfjerning pris",
+      "cpc": 8.8
+    },
+    {
+      "keyword": "pedikyr",
+      "cpc": 6.49
+    },
+    {
+      "keyword": "fotpleie",
+      "cpc": 6.27
+    },
+    {
+      "keyword": "ansiktsbehandling tromsø",
+      "cpc": 5.39
+    },
+    {
+      "keyword": "skjønnhetssalong tromsø",
+      "cpc": 4.73
+    },
+    {
+      "keyword": "permanent makeup",
+      "cpc": 2.42
+    },
+    {
+      "keyword": "fillers",
+      "cpc": 2.2
+    }
+  ],
+  "seasonality": {
+    "keyword": "laser hårfjerning",
+    "months": [
+      {
+        "month": "Jan",
+        "volume": 50
+      },
+      {
+        "month": "Feb",
+        "volume": 30
+      },
+      {
+        "month": "Mar",
+        "volume": 40
+      },
+      {
+        "month": "Apr",
+        "volume": 20
+      },
+      {
+        "month": "May",
+        "volume": 20
+      },
+      {
+        "month": "Jun",
+        "volume": 40
+      },
+      {
+        "month": "Jul",
+        "volume": 30
+      },
+      {
+        "month": "Aug",
+        "volume": 40
+      },
+      {
+        "month": "Sep",
+        "volume": 30
+      },
+      {
+        "month": "Oct",
+        "volume": 30
+      },
+      {
+        "month": "Nov",
+        "volume": 30
+      },
+      {
+        "month": "Dec",
+        "volume": 20
+      }
+    ],
+    "peakMonths": [
+      "Jan"
+    ],
+    "lowMonths": [
+      "Apr",
+      "May",
+      "Dec"
+    ],
+    "insightEN": "Laser hair removal in Tromsoe peaks in January at 50 searches — 150% above the April–May and December low of 20. The January peak likely reflects New Year resolutions, while the post-polar-night June bump (40) aligns with the return of long daylight hours. Strategy: concentrate ad spend in January and June–August; scale back in April–May and December when demand halves.",
+    "insightNO": "Laser hårfjerning i Tromsø topper seg i januar med 50 søk — 150 % over bunnpunktet i april–mai og desember på 20. Januartoppen gjenspeiler trolig nyttårsforsetter, mens oppgangen etter mørketiden i juni (40) samsvarer med tilbakekomsten av lange lyse dager. Strategi: konsentrer annonsebudsjettet i januar og juni–august; skaler ned i april–mai og desember når etterspørselen halveres."
+  },
+  "insights": [
+    {
+      "icon": "map-pin",
+      "color": "amber",
+      "titleEN": "Velbehag dominates Maps with 166 reviews — 4.7x the runner-up",
+      "titleNO": "Velbehag dominerer Maps med 166 anmeldelser — 4,7x nestemann",
+      "textEN": "Velbehag Medisinsk Hudklinikk leads \"hudpleie tromsø\" Maps with 166 reviews at a perfect 5.0 stars. Essens Dagspa follows with just 35 reviews (4.6) and Ansikta Medica with 34 (4.6). The 131-review gap makes Velbehag nearly unassailable for the #1 Maps position. For a new competitor, the realistic goal is to challenge for #2-3 by surpassing 40 reviews with a 4.8+ rating.",
+      "textNO": "Velbehag Medisinsk Hudklinikk leder «hudpleie tromsø» Maps med 166 anmeldelser og perfekte 5,0 stjerner. Essens Dagspa følger med bare 35 anmeldelser (4,6) og Ansikta Medica med 34 (4,6). Gapet på 131 anmeldelser gjør Velbehag nesten uangripelig for #1 Maps-posisjonen. For en ny konkurrent er det realistiske målet å utfordre om #2-3 ved å passere 40 anmeldelser med 4,8+ rating.",
+      "statLabel": "Velbehag Maps reviews",
+      "statValue": "166"
+    },
+    {
+      "icon": "globe",
+      "color": "green",
+      "titleEN": "480 searches — small market, but 46% search with city name",
+      "titleNO": "480 søk — lite marked, men 46 % søker med bynavn",
+      "textEN": "Tromsoe generates 480 monthly beauty searches — the smallest of the cities analyzed. But 46% include \"tromsø\" in the search (220 out of 480) — a high local-intent ratio. This means a salon that ranks for city-specific keywords captures an outsized share. With only 22 keywords and 5 competing clinics, the market is highly concentrated.",
+      "textNO": "Tromsø genererer 480 månedlige skjønnhetssøk — det minste av byene som er analysert. Men 46 % inkluderer «tromsø» i søket (220 av 480) — en høy lokal-intensjons-andel. Dette betyr at en salong som rangerer for byspesifikke søkeord fanger en uforholdsmessig stor andel. Med bare 22 søkeord og 5 konkurrerende klinikker er markedet svært konsentrert.",
+      "statLabel": "monthly searches",
+      "statValue": "480"
+    },
+    {
+      "icon": "zap",
+      "color": "red",
+      "titleEN": "90.53 kr for \"hårfjerning\" — Norway's most expensive beauty click",
+      "titleNO": "90,53 kr for «hårfjerning» — Norges dyreste skjønnhetsklikk",
+      "textEN": "The generic keyword \"hårfjerning\" costs 90.53 kr per click in Tromsoe — 6.0x the national average of 15.0 kr and the highest beauty CPC in any Norwegian city. \"Ansiktsbehandling\" is also extreme at 43.67 kr. These are statistical outliers caused by few advertisers bidding on low-volume keywords. Avoid generic high-CPC keywords entirely; target city-specific terms like \"hudpleie tromsø\" (9.13 kr) instead.",
+      "textNO": "Det generiske søkeordet «hårfjerning» koster 90,53 kr per klikk i Tromsø — 6,0x landsgjennomsnittet på 15,0 kr og den høyeste skjønnhets-CPC-en i noen norsk by. «Ansiktsbehandling» er også ekstrem med 43,67 kr. Dette er statistiske utliggere forårsaket av få annonsører som byr på lavvolum-søkeord. Unngå generiske høy-CPC-søkeord helt; målrett byspesifikke termer som «hudpleie tromsø» (9,13 kr) i stedet.",
+      "statLabel": "hårfjerning CPC (record)",
+      "statValue": "90 kr"
+    },
+    {
+      "icon": "star",
+      "color": "blue",
+      "titleEN": "Volvat (health chain) competes for laser keywords in Tromsoe",
+      "titleNO": "Volvat (helsekjede) konkurrerer om laser-søkeord i Tromsø",
+      "textEN": "Volvat, Norway's largest private health chain, ranks #4 organic for \"laser hårfjerning tromsø\" and #5 for \"hudpleie tromsø\". This is unusual — Volvat rarely appears in beauty SERPs in larger cities. In Tromsoe's small market, national health chains compete directly with local salons. The advantage for local salons: stronger Maps presence and local trust signals that Volvat can't match.",
+      "textNO": "Volvat, Norges største private helsekjede, rangerer #4 organisk for «laser hårfjerning tromsø» og #5 for «hudpleie tromsø». Dette er uvanlig — Volvat vises sjelden i skjønnhets-SERP-er i større byer. I Tromsøs lille marked konkurrerer nasjonale helsekjeder direkte med lokale salonger. Fordelen for lokale salonger: sterkere Maps-tilstedeværelse og lokale tillitssignaler som Volvat ikke kan matche.",
+      "statLabel": "Volvat keyword presence",
+      "statValue": "2/4"
+    }
+  ],
+  "tips": [
+    {
+      "titleEN": "Google Business Profile — aim for #2 behind Velbehag",
+      "titleNO": "Google Bedriftsprofil — sikt mot #2 bak Velbehag",
+      "textEN": "Velbehag leads Maps with 166 reviews at 5.0 stars — nearly impossible to overtake quickly. But #2 (Essens Dagspa, 35 reviews) and #3 (Ansikta Medica, 34 reviews) are very reachable. Systematically ask every client for a Google review. Reaching 40+ reviews with a 4.8+ rating would secure the #2 Maps position across most Tromsoe beauty keywords.",
+      "textNO": "Velbehag leder Maps med 166 anmeldelser og 5,0 stjerner — nesten umulig å overta raskt. Men #2 (Essens Dagspa, 35 anmeldelser) og #3 (Ansikta Medica, 34 anmeldelser) er svært oppnåelige. Be systematisk hver kunde om en Google-anmeldelse. Å nå 40+ anmeldelser med 4,8+ rating ville sikret #2 Maps-posisjonen for de fleste Tromsø-skjønnhetssøkeord.",
+      "tagEN": "Free — 15 minutes setup",
+      "tagNO": "Gratis — 15 minutter oppsett"
+    },
+    {
+      "titleEN": "Avoid generic keywords — target city-specific terms only",
+      "titleNO": "Unngå generiske søkeord — målrett kun byspesifikke termer",
+      "textEN": "Generic keywords in Tromsoe have extreme CPCs: \"hårfjerning\" (90 kr), \"ansiktsbehandling\" (43 kr). City-specific keywords are far cheaper: \"hudpleie tromsø\" (70/mo, 9.13 kr), \"ansiktsbehandling tromsø\" (20/mo, 5.39 kr), \"skjønnhetssalong tromsø\" (10/mo, 4.73 kr). Since 46% of searches already include the city name, you lose almost nothing by ignoring generic terms entirely.",
+      "textNO": "Generiske søkeord i Tromsø har ekstreme CPC-er: «hårfjerning» (90 kr), «ansiktsbehandling» (43 kr). Byspesifikke søkeord er langt billigere: «hudpleie tromsø» (70/mnd, 9,13 kr), «ansiktsbehandling tromsø» (20/mnd, 5,39 kr), «skjønnhetssalong tromsø» (10/mnd, 4,73 kr). Siden 46 % av søkene allerede inkluderer bynavnet, mister du nesten ingenting ved å ignorere generiske termer helt.",
+      "tagEN": "Paid — from 2,000 kr/month",
+      "tagNO": "Betalt — fra 2 000 kr/mnd"
+    },
+    {
+      "titleEN": "Create treatment pages — SkinLab and Velbehag rank across multiple keywords",
+      "titleNO": "Lag behandlingssider — SkinLab og Velbehag rangerer på tvers av flere søkeord",
+      "textEN": "SkinLab Tromsø ranks for \"skjønnhetssalong\" (#6) and \"laser hårfjerning\" (#5). Velbehag Klinikk covers \"hudpleie\" (Maps #1), \"ansiktsbehandling\" (#4), and \"laser hårfjerning\" (#6). In a market with only 480 total searches, each additional keyword ranking matters more. Create dedicated pages for hudpleie, laser, and ansiktsbehandling to maximize coverage.",
+      "textNO": "SkinLab Tromsø rangerer for «skjønnhetssalong» (#6) og «laser hårfjerning» (#5). Velbehag Klinikk dekker «hudpleie» (Maps #1), «ansiktsbehandling» (#4) og «laser hårfjerning» (#6). I et marked med bare 480 totale søk betyr hver ekstra søkeord-rangering mer. Lag dedikerte sider for hudpleie, laser og ansiktsbehandling for å maksimere dekningen.",
+      "tagEN": "Free — 2-3 hours per page",
+      "tagNO": "Gratis — 2–3 timer per side"
+    },
+    {
+      "titleEN": "Register on Timma.no — it ranks lower in Tromsoe, but still valuable",
+      "titleNO": "Registrer deg på Timma.no — den rangerer lavere i Tromsø, men er fortsatt verdifull",
+      "textEN": "Timma.no ranks #7 for \"skjønnhetssalong tromsø\" — lower than in other cities where it typically holds #5. But in a market with only 5 competing clinics and 480 monthly searches, every touchpoint helps. Timma is a dedicated beauty booking platform where active clients search for appointments. The signup is free and takes 20 minutes.",
+      "textNO": "Timma.no rangerer #7 for «skjønnhetssalong tromsø» — lavere enn i andre byer der den typisk holder #5. Men i et marked med bare 5 konkurrerende klinikker og 480 månedlige søk hjelper hvert kontaktpunkt. Timma er en dedikert skjønnhetsbookingplattform der aktive kunder søker etter timer. Registreringen er gratis og tar 20 minutter.",
+      "tagEN": "Free — 20 minutes",
+      "tagNO": "Gratis — 20 minutter"
+    }
+  ],
+  "calculator": {
+    "avgCpc": 15.0,
+    "defaultPatientValue": 5000,
+    "defaultBudget": 5000,
+    "defaultConversion": 25,
+    "clickToInquiryRate": 0.04,
+    "benchmarkEN": "Tromsoe beauty CPCs average 15.0 kr, but the range is extreme: from 2.20 kr (fillers) to 90.53 kr (hårfjerning). City-specific keywords are far more affordable (5–17 kr). A repeat client visiting 6-8 times per year is worth 5,000+ kr annually. At 15.0 kr average CPC, stick to city-tagged keywords to keep actual costs well below the inflated average.",
+    "benchmarkNO": "Tromsøs skjønnhets-CPC-er ligger i gjennomsnitt på 15,0 kr, men spredningen er ekstrem: fra 2,20 kr (fillers) til 90,53 kr (hårfjerning). Byspesifikke søkeord er langt rimeligere (5–17 kr). En gjentakende kunde som besøker 6–8 ganger per år er verdt 5 000+ kr årlig. Med 15,0 kr gjennomsnittlig CPC, hold deg til bymerkede søkeord for å holde faktiske kostnader godt under det oppblåste gjennomsnittet."
+  },
+  "sources": [
+    {
+      "name": "DataForSEO – Keywords Data API (Google Ads, Tromsø)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – SERP API (Google organic, Tromsø)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – Maps API (Google Maps, Tromsø)",
+      "url": null
+    },
+    {
+      "name": "DataReportal – Digital 2025: Norway",
+      "url": "https://datareportal.com/reports/digital-2025-norway"
+    },
+    {
+      "name": "BrightLocal – Local Pack Click Share Study 2024",
+      "url": "https://www.brightlocal.com/research/"
+    }
+  ]
+}

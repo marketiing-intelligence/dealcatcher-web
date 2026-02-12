@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/accordion";
 import { formatNumber, formatCpc, competitionColor, groupColorClasses } from "@/lib/reports/helpers";
 import { t } from "@/lib/reports/types";
-import { Search } from "lucide-react";
+import { Search, Globe } from "lucide-react";
 import type { KeywordGroup } from "@/lib/reports/types";
 import type { Locale } from "@/lib/i18n/config";
 
@@ -26,6 +26,8 @@ interface KeywordsSectionProps {
     competition: string;
     cpc: string;
     groupTotal: string;
+    nationalBadge?: string;
+    nationalNote?: string;
   };
   nicheLower: string;
   city: string;
@@ -65,19 +67,31 @@ export function KeywordsSection({ groups, lang, dict, nicheLower, city }: Keywor
             {groups.map((group) => {
               const colors = groupColorClasses(group.color);
               const groupName = lang === "no" ? group.nameNO : group.nameEN;
+              const isNational = group.isNational === true;
 
               return (
                 <AccordionItem key={group.id} value={group.id} className="border-border">
                   <AccordionTrigger className="hover:no-underline py-5">
                     <div className="flex items-center gap-3 flex-1">
-                      <span className={`w-2.5 h-2.5 rounded-full ${colors.dot} shrink-0`} />
+                      <span className={`w-2.5 h-2.5 rounded-full ${isNational ? "bg-amber-400" : colors.dot} shrink-0`} />
                       <span className="font-semibold text-base">{groupName}</span>
-                      <span className={`ml-auto mr-4 text-xs px-2 py-0.5 rounded-full ${colors.bg} ${colors.text} border ${colors.border}`}>
+                      {isNational && dict.nationalBadge && (
+                        <span className="inline-flex items-center gap-1 text-[11px] px-2 py-0.5 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20">
+                          <Globe className="w-3 h-3" />
+                          {dict.nationalBadge}
+                        </span>
+                      )}
+                      <span className={`ml-auto mr-4 text-xs px-2 py-0.5 rounded-full ${isNational ? "bg-amber-500/10 text-amber-400 border-amber-500/20" : `${colors.bg} ${colors.text} ${colors.border}`} border`}>
                         {dict.groupTotal}: {formatNumber(group.totalVolume, lang)}
                       </span>
                     </div>
                   </AccordionTrigger>
                   <AccordionContent>
+                    {isNational && dict.nationalNote && (
+                      <p className="text-xs text-amber-400/80 bg-amber-500/5 border border-amber-500/10 rounded-lg px-3 py-2 mb-4">
+                        {dict.nationalNote}
+                      </p>
+                    )}
                     {t(group, lang, "description") && (
                       <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
                         {t(group, lang, "description")}

@@ -1,0 +1,803 @@
+{
+  "meta": {
+    "niche": "beauty-salon",
+    "nicheNO": "skjønnhetssalonger",
+    "city": "Trondheim",
+    "locationCode": 1010976,
+    "dataDate": "2026-02",
+    "totalSearchVolume": 1920
+  },
+  "metrics": {
+    "keywordCount": 36,
+    "avgCpc": 15.2,
+    "topClinicsCount": 5,
+    "mapsClickShare": 42
+  },
+  "keywordGroups": [
+    {
+      "id": "treatments",
+      "color": "green",
+      "nameEN": "Beauty treatments & services",
+      "nameNO": "Skjønnhetsbehandlinger og -tjenester",
+      "descriptionEN": "Direct treatment searches in Trondheim. Laser hair removal leads at 170/month, followed by microneedling and skincare (140 each). CPCs are notably high for a mid-size city: \"permanent hår fjerning\" hits 33.44 kr and \"voksing\" reaches 29.81 kr — both above Oslo's equivalent CPCs, suggesting aggressive advertiser competition on hair removal keywords.",
+      "descriptionNO": "Direkte behandlingssøk i Trondheim. Laser hårfjerning leder med 170/mnd, etterfulgt av microneedling og hudpleie (140 hver). CPC-ene er merkbart høye for en mellomstor by: «permanent hår fjerning» treffer 33,44 kr og «voksing» når 29,81 kr — begge over Oslos tilsvarende CPC-er, noe som tyder på aggressiv annonsekonkurranse for hårfjerningssøkeord.",
+      "totalVolume": 1400,
+      "keywords": [
+        {
+          "keyword": "laser hårfjerning",
+          "translation": "laser hair removal",
+          "volume": 170,
+          "competition": "HIGH",
+          "cpc": 19.58
+        },
+        {
+          "keyword": "microneedling",
+          "translation": "microneedling",
+          "volume": 140,
+          "competition": "HIGH",
+          "cpc": 18.15
+        },
+        {
+          "keyword": "hudpleie",
+          "translation": "skincare",
+          "volume": 140,
+          "competition": "HIGH",
+          "cpc": 12.32
+        },
+        {
+          "keyword": "dermapen",
+          "translation": "dermapen",
+          "volume": 110,
+          "competition": "HIGH",
+          "cpc": 20.46
+        },
+        {
+          "keyword": "fotpleie",
+          "translation": "foot care",
+          "volume": 110,
+          "competition": "HIGH",
+          "cpc": 8.36
+        },
+        {
+          "keyword": "pedikyr",
+          "translation": "pedicure",
+          "volume": 90,
+          "competition": "MEDIUM",
+          "cpc": 7.7
+        },
+        {
+          "keyword": "manikyr",
+          "translation": "manicure",
+          "volume": 90,
+          "competition": "LOW",
+          "cpc": 12.32
+        },
+        {
+          "keyword": "brasiliansk voksing",
+          "translation": "Brazilian waxing",
+          "volume": 70,
+          "competition": "MEDIUM",
+          "cpc": 18.04
+        },
+        {
+          "keyword": "fillers",
+          "translation": "fillers",
+          "volume": 50,
+          "competition": "HIGH",
+          "cpc": 18.59
+        },
+        {
+          "keyword": "vippeextensions",
+          "translation": "eyelash extensions",
+          "volume": 50,
+          "competition": "HIGH",
+          "cpc": 14.96
+        },
+        {
+          "keyword": "microblading bryn",
+          "translation": "eyebrow microblading",
+          "volume": 50,
+          "competition": "HIGH",
+          "cpc": 5.39
+        },
+        {
+          "keyword": "hårfjerning",
+          "translation": "hair removal",
+          "volume": 40,
+          "competition": "HIGH",
+          "cpc": 6.82
+        },
+        {
+          "keyword": "hårfjerning ansikt",
+          "translation": "facial hair removal",
+          "volume": 40,
+          "competition": "HIGH",
+          "cpc": 23.43
+        },
+        {
+          "keyword": "elektrolyse hårfjerning",
+          "translation": "electrolysis hair removal",
+          "volume": 30,
+          "competition": "HIGH",
+          "cpc": 12.32
+        },
+        {
+          "keyword": "ansiktsbehandling",
+          "translation": "facial treatment",
+          "volume": 30,
+          "competition": "HIGH",
+          "cpc": 10.89
+        },
+        {
+          "keyword": "voksing",
+          "translation": "waxing",
+          "volume": 30,
+          "competition": "HIGH",
+          "cpc": 29.81
+        },
+        {
+          "keyword": "skjønnhetssalong",
+          "translation": "beauty salon",
+          "volume": 20,
+          "competition": "LOW",
+          "cpc": 14.63
+        },
+        {
+          "keyword": "kjemisk peeling",
+          "translation": "chemical peel",
+          "volume": 20,
+          "competition": "HIGH",
+          "cpc": 14.3
+        },
+        {
+          "keyword": "vippebøy",
+          "translation": "lash lift",
+          "volume": 20,
+          "competition": "HIGH",
+          "cpc": 10.34
+        },
+        {
+          "keyword": "permanent makeup",
+          "translation": "permanent makeup",
+          "volume": 20,
+          "competition": "MEDIUM",
+          "cpc": 9.68
+        },
+        {
+          "keyword": "voks hårfjerning",
+          "translation": "wax hair removal",
+          "volume": 20,
+          "competition": "HIGH",
+          "cpc": 28.93
+        },
+        {
+          "keyword": "permanent hår fjerning",
+          "translation": "permanent hair removal",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 33.44
+        },
+        {
+          "keyword": "laser hårfjerning pris",
+          "translation": "laser hair removal price",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 11.11
+        },
+        {
+          "keyword": "hudpleieklinikk",
+          "translation": "skin care clinic",
+          "volume": 10,
+          "competition": "MEDIUM",
+          "cpc": 8.91
+        },
+        {
+          "keyword": "hudbehandlinger",
+          "translation": "skin treatments",
+          "volume": 10,
+          "competition": "MEDIUM",
+          "cpc": 4.4
+        },
+        {
+          "keyword": "ansiktspleie",
+          "translation": "facial care",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 12.98
+        },
+        {
+          "keyword": "sukkervoks",
+          "translation": "sugar waxing",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 9.79
+        }
+      ]
+    },
+    {
+      "id": "explicit",
+      "color": "blue",
+      "nameEN": "Explicit \"Trondheim\" searches",
+      "nameNO": "Eksplisitte \"Trondheim\"-søk",
+      "descriptionEN": "People specifically searching for beauty services in Trondheim. \"Hudpleie trondheim\" leads at 140 searches, followed by \"fillers trondheim\" (90), \"vippeextensions trondheim\" and \"laser hårfjerning trondheim\" (70 each). City-tagged keywords account for 27% of all searches. Trondheim consumers show moderate local-intent compared to smaller cities.",
+      "descriptionNO": "Folk som spesifikt søker etter skjønnhetstjenester i Trondheim. «Hudpleie trondheim» leder med 140 søk, etterfulgt av «fillers trondheim» (90), «vippeextensions trondheim» og «laser hårfjerning trondheim» (70 hver). Byspesifikke søkeord utgjør 27 % av alle søk. Trondheimere viser moderat lokal søkeintensjon sammenlignet med mindre byer.",
+      "totalVolume": 520,
+      "keywords": [
+        {
+          "keyword": "hudpleie trondheim",
+          "translation": "skincare Trondheim",
+          "volume": 140,
+          "competition": "MEDIUM",
+          "cpc": 14.63
+        },
+        {
+          "keyword": "fillers trondheim",
+          "translation": "fillers Trondheim",
+          "volume": 90,
+          "competition": "HIGH",
+          "cpc": 16.61
+        },
+        {
+          "keyword": "vippeextensions trondheim",
+          "translation": "eyelash extensions Trondheim",
+          "volume": 70,
+          "competition": "MEDIUM",
+          "cpc": 8.03
+        },
+        {
+          "keyword": "laser hårfjerning trondheim",
+          "translation": "laser hair removal Trondheim",
+          "volume": 70,
+          "competition": "HIGH",
+          "cpc": 27.39
+        },
+        {
+          "keyword": "ansiktsbehandling trondheim",
+          "translation": "facial treatment Trondheim",
+          "volume": 50,
+          "competition": "HIGH",
+          "cpc": 18.04
+        },
+        {
+          "keyword": "microblading trondheim",
+          "translation": "microblading Trondheim",
+          "volume": 40,
+          "competition": "HIGH",
+          "cpc": 8.8
+        },
+        {
+          "keyword": "skjønnhetssalong trondheim",
+          "translation": "beauty salon Trondheim",
+          "volume": 20,
+          "competition": "HIGH",
+          "cpc": 11.66
+        },
+        {
+          "keyword": "permanent makeup trondheim",
+          "translation": "permanent makeup Trondheim",
+          "volume": 20,
+          "competition": "MEDIUM",
+          "cpc": 9.13
+        },
+        {
+          "keyword": "hårfjerning trondheim",
+          "translation": "hair removal Trondheim",
+          "volume": 20,
+          "competition": "HIGH",
+          "cpc": 23.21
+        }
+      ]
+    }
+  ],
+  "serpKeywords": [
+    {
+      "keyword": "skjønnhetssalong trondheim",
+      "volume": 50,
+      "organic": [
+        {
+          "rank": 5,
+          "domain": "timma.no"
+        },
+        {
+          "rank": 6,
+          "domain": "elaklinikken.no"
+        },
+        {
+          "rank": 7,
+          "domain": "www.trondheimhudpleie.no"
+        },
+        {
+          "rank": 11,
+          "domain": "solsidenspa.no"
+        },
+        {
+          "rank": 12,
+          "domain": "www.selfcareclinic.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Velværerom Hudpleie",
+          "rating": 5,
+          "reviews": 0
+        },
+        {
+          "rank": 2,
+          "title": "Elysian Beauty Lab",
+          "rating": 5,
+          "reviews": 0
+        },
+        {
+          "rank": 3,
+          "title": "All Done For Beauty",
+          "rating": 5,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "Timma.no holds #5, with Ela Klinikken (#6) as the first actual salon. All three Maps positions — Velværerom Hudpleie, Elysian Beauty Lab, and All Done For Beauty — have perfect 5.0 ratings but zero visible reviews. Three perfect-score salons with no reviews means the Maps algorithm is relying entirely on profile quality, not social proof. The first salon to build genuine reviews wins.",
+      "insightNO": "Timma.no holder #5, med Ela Klinikken (#6) som den første faktiske salongen. Alle tre Maps-posisjonene — Velværerom Hudpleie, Elysian Beauty Lab og All Done For Beauty — har perfekte 5,0-ratinger men null synlige anmeldelser. Tre salonger med perfekt poengsum uten anmeldelser betyr at Maps-algoritmen baserer seg helt på profilkvalitet, ikke sosiale bevis. Den første salongen som bygger ekte anmeldelser vinner."
+    },
+    {
+      "keyword": "hudpleie trondheim",
+      "volume": 390,
+      "organic": [
+        {
+          "rank": 4,
+          "domain": "elaklinikken.no"
+        },
+        {
+          "rank": 5,
+          "domain": "www.trondheimhudpleie.no"
+        },
+        {
+          "rank": 9,
+          "domain": "mooiklinikken.no"
+        },
+        {
+          "rank": 10,
+          "domain": "dmkhudklinikk.no"
+        },
+        {
+          "rank": 11,
+          "domain": "solsidenspa.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Velværerom Hudpleie",
+          "rating": 5,
+          "reviews": 0
+        },
+        {
+          "rank": 2,
+          "title": "Drømmehagen Hudpleie AS",
+          "rating": 4.7,
+          "reviews": 0
+        },
+        {
+          "rank": 3,
+          "title": "DMK Hudklinikk AS",
+          "rating": 4.8,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "Ela Klinikken leads organic at #4, followed by Trondheim Hudpleie (#5). Mooi Klinikken (#9) and DMK Hudklinikk (#10) complete the top 10. Velværerom Hudpleie leads Maps (5.0 stars) but shows zero review count, while Drømmehagen Hudpleie (4.7) and DMK Hudklinikk (4.8) also show zero. This is the highest-volume Trondheim keyword at 140/month — and no one has claimed Maps dominance with reviews yet.",
+      "insightNO": "Ela Klinikken leder organisk på #4, etterfulgt av Trondheim Hudpleie (#5). Mooi Klinikken (#9) og DMK Hudklinikk (#10) fullfører topp 10. Velværerom Hudpleie leder Maps (5,0 stjerner) men viser null anmeldelser, mens Drømmehagen Hudpleie (4,7) og DMK Hudklinikk (4,8) også viser null. Dette er Trondheims høyeste volum-søkeord med 140/mnd — og ingen har tatt Maps-dominans med anmeldelser ennå."
+    },
+    {
+      "keyword": "ansiktsbehandling trondheim",
+      "volume": 140,
+      "organic": [
+        {
+          "rank": 4,
+          "domain": "solsidenspa.no"
+        },
+        {
+          "rank": 5,
+          "domain": "velbehagklinikk.no"
+        },
+        {
+          "rank": 9,
+          "domain": "elaklinikken.no"
+        },
+        {
+          "rank": 11,
+          "domain": "dmkhudklinikk.no"
+        },
+        {
+          "rank": 12,
+          "domain": "mooiklinikken.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Velværerom Hudpleie",
+          "rating": 5,
+          "reviews": 22
+        },
+        {
+          "rank": 2,
+          "title": "Drømmehagen Hudpleie AS",
+          "rating": 4.7,
+          "reviews": 29
+        },
+        {
+          "rank": 3,
+          "title": "Mooi Klinikken AS",
+          "rating": 5,
+          "reviews": 49
+        }
+      ],
+      "insightEN": "Ansiktsbehandling trondheim (140/month) shows the only Maps results with visible review counts: Velværerom Hudpleie (22 reviews, 5.0 stars), Drømmehagen Hudpleie (29 reviews, 4.7), and Mooi Klinikken (49 reviews, 5.0). Mooi Klinikken has the most reviews and a perfect rating — the strongest Maps position in Trondheim's beauty market. Solside Spa ranks #4 organically, while Velbehag Klinikk holds #5.",
+      "insightNO": "Ansiktsbehandling trondheim (140/mnd) viser de eneste Maps-resultatene med synlige anmeldelser: Velværerom Hudpleie (22 anmeldelser, 5,0 stjerner), Drømmehagen Hudpleie (29 anmeldelser, 4,7) og Mooi Klinikken (49 anmeldelser, 5,0). Mooi Klinikken har flest anmeldelser og perfekt rating — den sterkeste Maps-posisjonen i Trondheims skjønnhetsmarked. Solside Spa rangerer #4 organisk, mens Velbehag Klinikk holder #5."
+    },
+    {
+      "keyword": "laser hårfjerning trondheim",
+      "volume": 170,
+      "organic": [
+        {
+          "rank": 4,
+          "domain": "elaklinikken.no"
+        },
+        {
+          "rank": 5,
+          "domain": "theskinclinic.no"
+        },
+        {
+          "rank": 6,
+          "domain": "velbehagklinikk.no"
+        },
+        {
+          "rank": 7,
+          "domain": "mooiklinikken.no"
+        },
+        {
+          "rank": 8,
+          "domain": "www.remove.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "The Skin Clinic Trondheim",
+          "rating": 4.8,
+          "reviews": 0
+        },
+        {
+          "rank": 2,
+          "title": "Ela Klinikken AS",
+          "rating": 4.5,
+          "reviews": 0
+        },
+        {
+          "rank": 3,
+          "title": "Remove Hudklinikk Trondheim",
+          "rating": 4.7,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "Ela Klinikken holds #4 organic — the first clinic result — followed by The Skin Clinic (#5) and Velbehag Klinikk (#6). Ela Klinikken and Mooi Klinikken appear across multiple keywords, showing that broad treatment SEO works in Trondheim. Maps shows The Skin Clinic (4.8), Ela Klinikken (4.5), and Remove Hudklinikk (4.7) — all with zero visible reviews. This 70/month keyword has the highest city-specific CPC at 27.39 kr.",
+      "insightNO": "Ela Klinikken holder #4 organisk — det første klinikkresultatet — etterfulgt av The Skin Clinic (#5) og Velbehag Klinikk (#6). Ela Klinikken og Mooi Klinikken vises på tvers av flere søkeord, noe som viser at bred behandlings-SEO fungerer i Trondheim. Maps viser The Skin Clinic (4,8), Ela Klinikken (4,5) og Remove Hudklinikk (4,7) — alle med null synlige anmeldelser. Dette søkeordet på 70/mnd har den høyeste byspesifikke CPC-en på 27,39 kr."
+    }
+  ],
+  "cpcData": [
+    {
+      "keyword": "permanent hår fjerning",
+      "cpc": 33.44
+    },
+    {
+      "keyword": "voksing",
+      "cpc": 29.81
+    },
+    {
+      "keyword": "voks hårfjerning",
+      "cpc": 28.93
+    },
+    {
+      "keyword": "laser hårfjerning trondheim",
+      "cpc": 27.39
+    },
+    {
+      "keyword": "hårfjerning ansikt",
+      "cpc": 23.43
+    },
+    {
+      "keyword": "hårfjerning trondheim",
+      "cpc": 23.21
+    },
+    {
+      "keyword": "dermapen",
+      "cpc": 20.46
+    },
+    {
+      "keyword": "laser hårfjerning",
+      "cpc": 19.58
+    },
+    {
+      "keyword": "fillers",
+      "cpc": 18.59
+    },
+    {
+      "keyword": "microneedling",
+      "cpc": 18.15
+    },
+    {
+      "keyword": "brasiliansk voksing",
+      "cpc": 18.04
+    },
+    {
+      "keyword": "ansiktsbehandling trondheim",
+      "cpc": 18.04
+    },
+    {
+      "keyword": "fillers trondheim",
+      "cpc": 16.61
+    },
+    {
+      "keyword": "vippeextensions",
+      "cpc": 14.96
+    },
+    {
+      "keyword": "skjønnhetssalong",
+      "cpc": 14.63
+    },
+    {
+      "keyword": "hudpleie trondheim",
+      "cpc": 14.63
+    },
+    {
+      "keyword": "kjemisk peeling",
+      "cpc": 14.3
+    },
+    {
+      "keyword": "ansiktspleie",
+      "cpc": 12.98
+    },
+    {
+      "keyword": "hudpleie",
+      "cpc": 12.32
+    },
+    {
+      "keyword": "manikyr",
+      "cpc": 12.32
+    },
+    {
+      "keyword": "elektrolyse hårfjerning",
+      "cpc": 12.32
+    },
+    {
+      "keyword": "skjønnhetssalong trondheim",
+      "cpc": 11.66
+    },
+    {
+      "keyword": "laser hårfjerning pris",
+      "cpc": 11.11
+    },
+    {
+      "keyword": "ansiktsbehandling",
+      "cpc": 10.89
+    },
+    {
+      "keyword": "vippebøy",
+      "cpc": 10.34
+    },
+    {
+      "keyword": "sukkervoks",
+      "cpc": 9.79
+    },
+    {
+      "keyword": "permanent makeup",
+      "cpc": 9.68
+    },
+    {
+      "keyword": "permanent makeup trondheim",
+      "cpc": 9.13
+    },
+    {
+      "keyword": "hudpleieklinikk",
+      "cpc": 8.91
+    },
+    {
+      "keyword": "microblading trondheim",
+      "cpc": 8.8
+    },
+    {
+      "keyword": "fotpleie",
+      "cpc": 8.36
+    },
+    {
+      "keyword": "vippeextensions trondheim",
+      "cpc": 8.03
+    },
+    {
+      "keyword": "pedikyr",
+      "cpc": 7.7
+    },
+    {
+      "keyword": "hårfjerning",
+      "cpc": 6.82
+    },
+    {
+      "keyword": "microblading bryn",
+      "cpc": 5.39
+    },
+    {
+      "keyword": "hudbehandlinger",
+      "cpc": 4.4
+    }
+  ],
+  "seasonality": {
+    "keyword": "laser hårfjerning",
+    "months": [
+      {
+        "month": "Jan",
+        "volume": 170
+      },
+      {
+        "month": "Feb",
+        "volume": 210
+      },
+      {
+        "month": "Mar",
+        "volume": 170
+      },
+      {
+        "month": "Apr",
+        "volume": 140
+      },
+      {
+        "month": "May",
+        "volume": 170
+      },
+      {
+        "month": "Jun",
+        "volume": 170
+      },
+      {
+        "month": "Jul",
+        "volume": 170
+      },
+      {
+        "month": "Aug",
+        "volume": 170
+      },
+      {
+        "month": "Sep",
+        "volume": 210
+      },
+      {
+        "month": "Oct",
+        "volume": 170
+      },
+      {
+        "month": "Nov",
+        "volume": 210
+      },
+      {
+        "month": "Dec",
+        "volume": 140
+      }
+    ],
+    "peakMonths": [
+      "Feb",
+      "Sep",
+      "Nov"
+    ],
+    "lowMonths": [
+      "Apr",
+      "Dec"
+    ],
+    "insightEN": "Laser hair removal in Trondheim shows three demand peaks: February (210), September (210), and November (210) — each 50% above the low months. April and December are the slowest at 140 each. This triple-peak pattern is unique to Trondheim, likely driven by student population cycles. Strategy: run campaigns in Feb, Sep, and Nov; reduce spend in April and December.",
+    "insightNO": "Laser hårfjerning i Trondheim viser tre etterspørselstopper: februar (210), september (210) og november (210) — hver 50 % over bunnmånedene. April og desember er de roligste med 140 hver. Dette trippel-topp-mønsteret er unikt for Trondheim, trolig drevet av studentpopulasjonens sykluser. Strategi: kjør kampanjer i feb, sep og nov; reduser budsjettet i april og desember."
+  },
+  "insights": [
+    {
+      "icon": "star",
+      "color": "amber",
+      "titleEN": "Mooi Klinikken leads Maps with 49 reviews — the clear Trondheim benchmark",
+      "titleNO": "Mooi Klinikken leder Maps med 49 anmeldelser — den klare Trondheim-målestokken",
+      "textEN": "For \"ansiktsbehandling trondheim\" (140/month), Mooi Klinikken leads Maps with 49 reviews and a perfect 5.0 rating. Drømmehagen Hudpleie follows with 29 reviews (4.7), and Velværerom Hudpleie has 22 (5.0). Most other Maps positions show zero reviews. Reaching 50+ reviews with a 4.8+ rating would put you on par with Trondheim's strongest player.",
+      "textNO": "For «ansiktsbehandling trondheim» (140/mnd) leder Mooi Klinikken Maps med 49 anmeldelser og perfekte 5,0 stjerner. Drømmehagen Hudpleie følger med 29 anmeldelser (4,7), og Velværerom Hudpleie har 22 (5,0). De fleste andre Maps-posisjoner viser null anmeldelser. Å nå 50+ anmeldelser med 4,8+ rating ville satt deg på nivå med Trondheims sterkeste aktør.",
+      "statLabel": "top Maps reviews",
+      "statValue": "49"
+    },
+    {
+      "icon": "globe",
+      "color": "green",
+      "titleEN": "1,920 searches with 27% local intent — a mid-size beauty market",
+      "titleNO": "1 920 søk med 27 % lokal intensjon — et mellomstort skjønnhetsmarked",
+      "textEN": "Trondheim generates 1,920 monthly beauty searches. Of these, 520 include the city name — a 27% local-intent ratio. \"Hudpleie trondheim\" (140), \"fillers trondheim\" (90), and \"vippeextensions trondheim\" (70) lead. Google Ads targeting city-specific keywords can still capture a meaningful share of this mid-size market.",
+      "textNO": "Trondheim genererer 1 920 månedlige skjønnhetssøk. Av disse inkluderer 520 bynavnet — en lokal-intensjons-andel på 27 %. «Hudpleie trondheim» (140), «fillers trondheim» (90) og «vippeextensions trondheim» (70) leder. Google Ads rettet mot byspesifikke søkeord kan fortsatt fange en meningsfull del av dette mellomstore markedet.",
+      "statLabel": "monthly searches",
+      "statValue": "1,920"
+    },
+    {
+      "icon": "zap",
+      "color": "red",
+      "titleEN": "Hair removal CPCs exceed Oslo's — advertisers bid aggressively",
+      "titleNO": "Hårfjernings-CPC-er overstiger Oslos — annonsører byr aggressivt",
+      "textEN": "\"Permanent hår fjerning\" costs 33.44 kr/click in Trondheim vs. 27.28 kr in Oslo. \"Voksing\" reaches 29.81 kr vs. Oslo's 19.69 kr. \"Hårfjerning trondheim\" hits 28.60 kr. These premium CPCs in a smaller city signal fewer advertisers but intense bidding among them. Consider targeting adjacent keywords like \"hudpleie trondheim\" (13.09 kr) for better value.",
+      "textNO": "«Permanent hår fjerning» koster 33,44 kr/klikk i Trondheim mot 27,28 kr i Oslo. «Voksing» når 29,81 kr mot Oslos 19,69 kr. «Hårfjerning trondheim» treffer 28,60 kr. Disse premium-CPC-ene i en mindre by signaliserer færre annonsører men intens budgivning mellom dem. Vurder å målrette tilgrensende søkeord som «hudpleie trondheim» (13,09 kr) for bedre verdi.",
+      "statLabel": "highest CPC vs Oslo",
+      "statValue": "+23%"
+    },
+    {
+      "icon": "clock",
+      "color": "blue",
+      "titleEN": "Ela Klinikken dominates organically across multiple keywords",
+      "titleNO": "Ela Klinikken dominerer organisk på tvers av flere søkeord",
+      "textEN": "Ela Klinikken ranks in the top 10 for \"skjønnhetssalong trondheim\" (#6), \"hudpleie trondheim\" (#4), and \"laser hårfjerning trondheim\" (#4). This multi-keyword visibility shows the power of consistent SEO across treatments. Similarly, Mooi Klinikken and Solside Spa appear across multiple results. A salon targeting 3+ treatment pages could replicate this strategy.",
+      "textNO": "Ela Klinikken rangerer i topp 10 for «skjønnhetssalong trondheim» (#6), «hudpleie trondheim» (#4) og «laser hårfjerning trondheim» (#4). Denne fler-søkeords-synligheten viser kraften av konsekvent SEO på tvers av behandlinger. Tilsvarende vises Mooi Klinikken og Solside Spa på tvers av flere resultater. En salong som sikter mot 3+ behandlingssider kan kopiere denne strategien.",
+      "statLabel": "Ela Klinikken top-10 keywords",
+      "statValue": "3"
+    }
+  ],
+  "tips": [
+    {
+      "titleEN": "Google Business Profile — surpass Mooi Klinikken's 49 reviews",
+      "titleNO": "Google Bedriftsprofil — overgå Mooi Kliniikkens 49 anmeldelser",
+      "textEN": "Mooi Klinikken leads Trondheim's Maps with 49 reviews at 5.0 stars. Drømmehagen follows with 29. Most other Maps results show zero reviews. Systematically ask every client for a Google review after treatment. Reaching 50+ reviews with a 4.8+ rating would put you level with the city's strongest Maps presence — and ahead of 90% of competitors.",
+      "textNO": "Mooi Klinikken leder Trondheims Maps med 49 anmeldelser og 5,0 stjerner. Drømmehagen følger med 29. De fleste andre Maps-resultater viser null anmeldelser. Be systematisk hver kunde om en Google-anmeldelse etter behandling. Å nå 50+ anmeldelser med 4,8+ rating ville satt deg på nivå med byens sterkeste Maps-tilstedeværelse — og foran 90 % av konkurrentene.",
+      "tagEN": "Free — 15 minutes setup",
+      "tagNO": "Gratis — 15 minutter oppsett"
+    },
+    {
+      "titleEN": "Register on Timma.no — the booking platform already ranking",
+      "titleNO": "Registrer deg på Timma.no — bookingplattformen som allerede rangerer",
+      "textEN": "Timma.no ranks #5 for \"skjønnhetssalong trondheim\" and is a dedicated beauty booking platform. In a market where organic positions are limited, having a presence on Timma gives you an extra listing in the search results. This is especially valuable in Trondheim where 27% of searches include the city name — high-intent bookers.",
+      "textNO": "Timma.no rangerer #5 for «skjønnhetssalong trondheim» og er en dedikert skjønnhetsbookingplattform. I et marked der organiske posisjoner er begrenset, gir tilstedeværelse på Timma deg en ekstra oppføring i søkeresultatene. Dette er spesielt verdifullt i Trondheim der 27 % av søkene inkluderer bynavnet — søkere med høy bestillingsintensjon.",
+      "tagEN": "Free — 20 minutes",
+      "tagNO": "Gratis — 20 minutter"
+    },
+    {
+      "titleEN": "Build treatment pages like Ela Klinikken — target 3+ keywords",
+      "titleNO": "Lag behandlingssider som Ela Klinikken — sikt mot 3+ søkeord",
+      "textEN": "Ela Klinikken ranks in the top 6 for three different beauty keywords because they have dedicated treatment content. Create separate pages for \"hudpleie\" (140/mo), \"laser hårfjerning\" (170/mo), and \"ansiktsbehandling\" (30/mo). Each page targets a different audience and keyword cluster, multiplying your organic visibility from one domain.",
+      "textNO": "Ela Klinikken rangerer i topp 6 for tre forskjellige skjønnhetssøkeord fordi de har dedikert behandlingsinnhold. Lag separate sider for «hudpleie» (140/mnd), «laser hårfjerning» (170/mnd) og «ansiktsbehandling» (30/mnd). Hver side treffer en annen målgruppe og søkeord-klynge, og multipliserer din organiske synlighet fra ett domene.",
+      "tagEN": "Free — 2-3 hours per page",
+      "tagNO": "Gratis — 2–3 timer per side"
+    },
+    {
+      "titleEN": "Avoid expensive hair removal keywords — target hudpleie first",
+      "titleNO": "Unngå dyre hårfjerningssøkeord — målrett hudpleie først",
+      "textEN": "Trondheim's hair removal CPCs are premium: \"permanent hår fjerning\" (33.44 kr), \"voksing\" (29.81 kr), \"hårfjerning trondheim\" (23.21 kr). Instead, start with \"hudpleie trondheim\" (140 searches, 14.63 kr), \"vippeextensions trondheim\" (70, 8.03 kr), or \"microblading bryn\" (50, 5.39 kr). Build conversion data on affordable keywords before scaling to premium ones.",
+      "textNO": "Trondheims hårfjernings-CPC-er er premium: «permanent hår fjerning» (33,44 kr), «voksing» (29,81 kr), «hårfjerning trondheim» (23,21 kr). Start heller med «hudpleie trondheim» (140 søk, 14,63 kr), «vippeextensions trondheim» (70, 8,03 kr) eller «microblading bryn» (50, 5,39 kr). Bygg konverteringsdata på rimelige søkeord før du skalerer til premium-søkeord.",
+      "tagEN": "Paid — from 3,000 kr/month",
+      "tagNO": "Betalt — fra 3 000 kr/mnd"
+    }
+  ],
+  "calculator": {
+    "avgCpc": 15.2,
+    "defaultPatientValue": 5000,
+    "defaultBudget": 5000,
+    "defaultConversion": 25,
+    "clickToInquiryRate": 0.04,
+    "benchmarkEN": "Trondheim beauty CPCs range from 4.40 kr (hudbehandlinger) to 33.44 kr (permanent hår fjerning), averaging 15.2 kr — slightly above Oslo's 14.6 kr. Hair removal keywords are particularly expensive. A repeat client visiting 6-8 times per year is worth 5,000+ kr annually. At 15.2 kr average CPC, you need just 1 in 4 inquiries to convert for strong ROI.",
+    "benchmarkNO": "Trondheims skjønnhets-CPC-er spenner fra 4,40 kr (hudbehandlinger) til 33,44 kr (permanent hår fjerning), med et gjennomsnitt på 15,2 kr — litt over Oslos 14,6 kr. Hårfjerningssøkeord er spesielt dyre. En gjentakende kunde som besøker 6–8 ganger per år er verdt 5 000+ kr årlig. Med 15,2 kr gjennomsnittlig CPC trenger du bare 1 av 4 henvendelser til å konvertere for sterk ROI."
+  },
+  "sources": [
+    {
+      "name": "DataForSEO – Keywords Data API (Google Ads, Trondheim)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – SERP API (Google organic, Trondheim)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – Maps API (Google Maps, Trondheim)",
+      "url": null
+    },
+    {
+      "name": "DataReportal – Digital 2025: Norway",
+      "url": "https://datareportal.com/reports/digital-2025-norway"
+    },
+    {
+      "name": "BrightLocal – Local Pack Click Share Study 2024",
+      "url": "https://www.brightlocal.com/research/"
+    }
+  ]
+}

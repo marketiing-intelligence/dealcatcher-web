@@ -1,0 +1,486 @@
+{
+  "meta": {
+    "niche": "day-spa",
+    "nicheNO": "dagspa og wellness",
+    "city": "Kristiansand",
+    "locationCode": 1010894,
+    "dataDate": "2026-02",
+    "totalSearchVolume": 1280
+  },
+  "metrics": {
+    "keywordCount": 8,
+    "avgCpc": 7.6,
+    "topClinicsCount": 5,
+    "mapsClickShare": 42
+  },
+  "keywordGroups": [
+    {
+      "id": "services",
+      "color": "green",
+      "nameEN": "Spa & wellness services",
+      "nameNO": "Spa- og wellnesstjenester",
+      "descriptionEN": "All measurable spa demand in Kristiansand comes from generic service searches — no city-specific keywords register volume. \"Massasje\" leads with 390/mo, followed by \"thai massasje\" (260/mo) and \"spa\" (210/mo). Together, massage and Thai massage account for 51% of total volume. CPCs are moderate: from 5.72 kr (thai massasje, dampbad) to 15.51 kr (spa hotell). The 7.6 kr average CPC is among the lowest in Norwegian spa markets.",
+      "descriptionNO": "All målbar spa-etterspørsel i Kristiansand kommer fra generiske tjenestesøk — ingen byspesifikke søkeord registrerer volum. «Massasje» leder med 390/mnd, etterfulgt av «thai massasje» (260/mnd) og «spa» (210/mnd). Sammen utgjør massasje og thai massasje 51 % av totalvolumet. CPC-ene er moderate: fra 5,72 kr (thai massasje, dampbad) til 15,51 kr (spa hotell). Gjennomsnittlig CPC på 7,6 kr er blant de laveste i norske spa-markeder.",
+      "totalVolume": 1280,
+      "keywords": [
+        {
+          "keyword": "massasje",
+          "translation": "massage",
+          "volume": 390,
+          "competition": "MEDIUM",
+          "cpc": 6.93
+        },
+        {
+          "keyword": "thai massasje",
+          "translation": "Thai massage",
+          "volume": 260,
+          "competition": "LOW",
+          "cpc": 5.72
+        },
+        {
+          "keyword": "spa",
+          "translation": "spa",
+          "volume": 210,
+          "competition": "LOW",
+          "cpc": 8.03
+        },
+        {
+          "keyword": "badstue",
+          "translation": "sauna",
+          "volume": 140,
+          "competition": "HIGH",
+          "cpc": 7.48
+        },
+        {
+          "keyword": "jacuzzi",
+          "translation": "jacuzzi",
+          "volume": 140,
+          "competition": "HIGH",
+          "cpc": 6.82
+        },
+        {
+          "keyword": "spa hotell",
+          "translation": "spa hotel",
+          "volume": 90,
+          "competition": "MEDIUM",
+          "cpc": 15.51
+        },
+        {
+          "keyword": "fotmassasje",
+          "translation": "foot massage",
+          "volume": 40,
+          "competition": "HIGH",
+          "cpc": 8.91
+        },
+        {
+          "keyword": "dampbad",
+          "translation": "steam bath",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 5.72
+        }
+      ]
+    },
+    {
+      "id": "explicit",
+      "color": "blue",
+      "nameEN": "Explicit \"Kristiansand\" searches",
+      "nameNO": "Eksplisitte \"Kristiansand\"-søk",
+      "descriptionEN": "No explicit \"Kristiansand\" spa keywords register measurable search volume in Google Ads data. However, SERP results for city-specific queries (spa kristiansand, massasje kristiansand, etc.) are fully populated — meaning people do search, but volumes fall below Google's reporting threshold. This is common in smaller markets and actually represents an opportunity: there's real demand with almost zero ad competition.",
+      "descriptionNO": "Ingen eksplisitte «Kristiansand»-spa-søkeord registrerer målbart søkevolum i Google Ads-data. Men SERP-resultater for byspesifikke søk (spa kristiansand, massasje kristiansand osv.) er fullt befolket — noe som betyr at folk faktisk søker, men volumene faller under Googles rapporteringsterskel. Dette er vanlig i mindre markeder og representerer faktisk en mulighet: det er reell etterspørsel med tilnærmet null annonsekonkurranse.",
+      "totalVolume": 0,
+      "keywords": []
+    }
+  ],
+  "serpKeywords": [
+    {
+      "keyword": "spa kristiansand",
+      "volume": 0,
+      "organic": [
+        {
+          "rank": 5,
+          "domain": "www.aquarama.no"
+        },
+        {
+          "rank": 6,
+          "domain": "no.tripadvisor.com"
+        },
+        {
+          "rank": 7,
+          "domain": "www.visitnorway.no"
+        },
+        {
+          "rank": 8,
+          "domain": "www.aquarama.no"
+        },
+        {
+          "rank": 9,
+          "domain": "www.booking.com"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Mira Spa Massage",
+          "rating": 4.3,
+          "reviews": 62
+        },
+        {
+          "rank": 2,
+          "title": "Renates Dagspa AS",
+          "rating": 4.7,
+          "reviews": 204
+        },
+        {
+          "rank": 3,
+          "title": "Aquarama",
+          "rating": 4.3,
+          "reviews": 2340
+        }
+      ],
+      "insightEN": "Aquarama dominates both organic (#5 and #8) and Maps (#3 with a massive 2,340 reviews and 4.3 stars) — a municipal swimming and wellness centre that acts as the default \"spa\" in Kristiansand. Renates Dagspa AS holds Maps #2 with 204 reviews and 4.7 stars — the top dedicated spa business. Mira Spa Massage sits at Maps #1 with 62 reviews (4.3 stars). The gap between Aquarama (2,340 reviews) and all other spas shows how a non-traditional competitor can dominate the Maps landscape.",
+      "insightNO": "Aquarama dominerer både organisk (#5 og #8) og Maps (#3 med massive 2 340 anmeldelser og 4,3 stjerner) — et kommunalt svømme- og wellnesssenter som fungerer som standard-«spa» i Kristiansand. Renates Dagspa AS holder Maps #2 med 204 anmeldelser og 4,7 stjerner — den ledende dedikerte spa-bedriften. Mira Spa Massage sitter på Maps #1 med 62 anmeldelser (4,3 stjerner). Gapet mellom Aquarama (2 340 anmeldelser) og alle andre spaer viser hvordan en utradisjonell konkurrent kan dominere Maps-landskapet."
+    },
+    {
+      "keyword": "badstue kristiansand",
+      "volume": 0,
+      "organic": [
+        {
+          "rank": 5,
+          "domain": "www.smeigedagsauna.no"
+        },
+        {
+          "rank": 6,
+          "domain": "www.blaud.no"
+        },
+        {
+          "rank": 7,
+          "domain": "www.smeigedagsauna.no"
+        },
+        {
+          "rank": 8,
+          "domain": "krsferiesenter.no"
+        },
+        {
+          "rank": 9,
+          "domain": "www.facebook.com"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Blaud Sauna - Odderøya/Nodeviga",
+          "rating": 4.8,
+          "reviews": 42
+        },
+        {
+          "rank": 2,
+          "title": "Smeigedag Sauna Kristiansand Bystranda",
+          "rating": 4.5,
+          "reviews": 4
+        },
+        {
+          "rank": 3,
+          "title": "Blaud Sauna - Kristiansand Gjestehavn",
+          "rating": 0,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "Sauna-specific businesses own organic: smeigedagsauna.no holds both #5 and #7, blaud.no ranks #6. Maps shows Blaud Sauna at #1 and #3 (two locations: Odderoya/Nodeviga with 4.8 stars and 42 reviews, Gjestehavn with no reviews yet). Smeigedag Sauna at #2 has only 4 reviews. The review bar is low — 42 reviews puts you at the top. This is a niche where a small investment in review collection immediately pays off in Maps visibility.",
+      "insightNO": "Badstuspesifikke bedrifter eier organisk: smeigedagsauna.no holder både #5 og #7, blaud.no rangerer #6. Maps viser Blaud Sauna på #1 og #3 (to steder: Odderoya/Nodeviga med 4,8 stjerner og 42 anmeldelser, Gjestehavn uten anmeldelser ennå). Smeigedag Sauna på #2 har bare 4 anmeldelser. Anmeldelsesterskelen er lav — 42 anmeldelser plasserer deg på toppen. Dette er en nisje der en liten investering i anmeldelsesinnsamling umiddelbart lønner seg i Maps-synlighet."
+    },
+    {
+      "keyword": "dagspa kristiansand",
+      "volume": 0,
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "renates.no"
+        },
+        {
+          "rank": 2,
+          "domain": "www.facebook.com"
+        },
+        {
+          "rank": 3,
+          "domain": "fixit.no"
+        },
+        {
+          "rank": 4,
+          "domain": "no.tripadvisor.com"
+        },
+        {
+          "rank": 5,
+          "domain": "www.aquarama.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Renates Dagspa AS",
+          "rating": 4.7,
+          "reviews": 0
+        },
+        {
+          "rank": 2,
+          "title": "Renates Hud & Make-up AS",
+          "rating": 4.8,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "A rare case: an actual spa business ranks #1 organically. renates.no holds the top position for \"dagspa kristiansand\", followed by facebook.com (#2) and fixit.no (#3). Maps shows Renates Dagspa AS at #1 (4.7 stars) with a secondary listing, Renates Hud & Make-up AS, at #2 (4.8 stars). One business effectively controls both the #1 organic and #1-#2 Maps positions — a model other Kristiansand spas should study and replicate with their own niche focus.",
+      "insightNO": "Et sjeldent tilfelle: en faktisk spa-bedrift rangerer #1 organisk. renates.no holder toppposisjonen for «dagspa kristiansand», etterfulgt av facebook.com (#2) og fixit.no (#3). Maps viser Renates Dagspa AS på #1 (4,7 stjerner) med en sekundær oppføring, Renates Hud & Make-up AS, på #2 (4,8 stjerner). Én bedrift kontrollerer effektivt både #1 organisk og #1-#2 Maps-posisjoner — en modell andre Kristiansand-spaer bør studere og replisere med sitt eget nisjefokus."
+    },
+    {
+      "keyword": "massasje kristiansand",
+      "volume": 0,
+      "organic": [
+        {
+          "rank": 5,
+          "domain": "www.miraspamassage.no"
+        },
+        {
+          "rank": 6,
+          "domain": "www.sentrumklinikken.no"
+        },
+        {
+          "rank": 7,
+          "domain": "timma.no"
+        },
+        {
+          "rank": 11,
+          "domain": "www.klinikknyhud.no"
+        },
+        {
+          "rank": 12,
+          "domain": "www.velvaerekrs.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Mira Spa Massage",
+          "rating": 4.3,
+          "reviews": 62
+        },
+        {
+          "rank": 2,
+          "title": "Kristiansand Thaimassasje",
+          "rating": 4.8,
+          "reviews": 28
+        },
+        {
+          "rank": 3,
+          "title": "Velvære Sør AS",
+          "rating": 4.8,
+          "reviews": 17
+        }
+      ],
+      "insightEN": "Independent massage businesses hold strong organic positions: miraspamassage.no (#5), sentrumklinikken.no (#6), and timma.no (#7). Maps shows Mira Spa Massage at #1 (4.3 stars, 62 reviews), Kristiansand Thaimassasje at #2 (4.8 stars, 28 reviews), and Velvaere Sor at #3 (4.8 stars, 17 reviews). The review counts are modest — 62 reviews leads the market. This is one of the least competitive Maps landscapes in Norway, making it ideal for businesses starting their review-building journey.",
+      "insightNO": "Uavhengige massasjebedrifter har sterke organiske posisjoner: miraspamassage.no (#5), sentrumklinikken.no (#6) og timma.no (#7). Maps viser Mira Spa Massage på #1 (4,3 stjerner, 62 anmeldelser), Kristiansand Thaimassasje på #2 (4,8 stjerner, 28 anmeldelser) og Velvaere Sor på #3 (4,8 stjerner, 17 anmeldelser). Anmeldelsestallene er beskjedne — 62 anmeldelser leder markedet. Dette er et av de minst konkurransedyktige Maps-landskapene i Norge, noe som gjør det ideelt for bedrifter som starter sin anmeldelsesbyggingsreise."
+    }
+  ],
+  "cpcData": [
+    {
+      "keyword": "spa hotell",
+      "cpc": 15.51
+    },
+    {
+      "keyword": "fotmassasje",
+      "cpc": 8.91
+    },
+    {
+      "keyword": "spa",
+      "cpc": 8.03
+    },
+    {
+      "keyword": "badstue",
+      "cpc": 7.48
+    },
+    {
+      "keyword": "massasje",
+      "cpc": 6.93
+    },
+    {
+      "keyword": "jacuzzi",
+      "cpc": 6.82
+    },
+    {
+      "keyword": "thai massasje",
+      "cpc": 5.72
+    },
+    {
+      "keyword": "dampbad",
+      "cpc": 5.72
+    }
+  ],
+  "seasonality": {
+    "keyword": "spa",
+    "months": [
+      {
+        "month": "Jan",
+        "volume": 210
+      },
+      {
+        "month": "Feb",
+        "volume": 210
+      },
+      {
+        "month": "Mar",
+        "volume": 260
+      },
+      {
+        "month": "Apr",
+        "volume": 170
+      },
+      {
+        "month": "May",
+        "volume": 140
+      },
+      {
+        "month": "Jun",
+        "volume": 170
+      },
+      {
+        "month": "Jul",
+        "volume": 210
+      },
+      {
+        "month": "Aug",
+        "volume": 170
+      },
+      {
+        "month": "Sep",
+        "volume": 170
+      },
+      {
+        "month": "Oct",
+        "volume": 260
+      },
+      {
+        "month": "Nov",
+        "volume": 170
+      },
+      {
+        "month": "Dec",
+        "volume": 210
+      }
+    ],
+    "peakMonths": [
+      "Mar",
+      "Oct"
+    ],
+    "lowMonths": [
+      "May"
+    ],
+    "insightEN": "Kristiansand shows a dual-peak pattern: March and October both hit 260/mo, while May drops to the lowest point at 140/mo — a 46% decrease from peak. The spring dip (May) is unusual compared to other Norwegian cities where winter months are typically lowest. July shows a mid-summer bounce to 210/mo, possibly driven by tourists visiting the Sorlandet coast. Strategy: increase ad spend in March and October when demand peaks, and consider tourist-targeted campaigns during summer months.",
+    "insightNO": "Kristiansand viser et dobbelt toppmønster: mars og oktober treffer begge 260/mnd, mens mai faller til det laveste punktet med 140/mnd — en 46 % nedgang fra toppen. Vårdippet (mai) er uvanlig sammenlignet med andre norske byer der vintermånedene typisk er lavest. Juli viser et midt-sommerhopp til 210/mnd, muligens drevet av turister som besøker Sorlandskysten. Strategi: okt annonseforbruket i mars og oktober når ettersporselen topper seg, og vurder turistrettede kampanjer i sommermanedene."
+  },
+  "insights": [
+    {
+      "icon": "globe",
+      "color": "green",
+      "titleEN": "1,280 searches — a small but low-competition market",
+      "titleNO": "1 280 sok — et lite, men lavkonkurranse marked",
+      "textEN": "Kristiansand's spa market generates 1,280 monthly searches across just 8 keywords — all generic, with no measurable city-specific volume. But the SERP data tells a different story: Google serves full results for \"spa kristiansand\", \"massasje kristiansand\", and other city queries. Real demand exists below Google's reporting threshold, and the low CPC (7.6 kr average) confirms minimal advertiser competition. This is a market where small budgets can capture outsized visibility.",
+      "textNO": "Kristiansands spa-marked genererer 1 280 manedlige sok pa tvers av bare 8 sokeord — alle generiske, uten malbart byspesifikt volum. Men SERP-dataene forteller en annen historie: Google viser fulle resultater for «spa kristiansand», «massasje kristiansand» og andre bysok. Reell ettersporsel finnes under Googles rapporteringsterskel, og den lave CPC-en (7,6 kr gjennomsnitt) bekrefter minimal annonsorkonkurranse. Dette er et marked der sma budsjetter kan oppna uforholdsmessig stor synlighet.",
+      "statLabel": "monthly searches",
+      "statValue": "1,280"
+    },
+    {
+      "icon": "star",
+      "color": "amber",
+      "titleEN": "Aquarama: 2,340 reviews — the unconventional spa competitor",
+      "titleNO": "Aquarama: 2 340 anmeldelser — den ukonvensjonelle spa-konkurrenten",
+      "textEN": "Aquarama, a municipal swimming and wellness centre, holds Maps #3 for \"spa kristiansand\" with a staggering 2,340 reviews at 4.3 stars. This is the highest review count in any Norwegian spa Maps result across all cities we've analyzed. Renates Dagspa AS at #2 has 204 reviews (4.7 stars) — the top dedicated spa. For context, the #1 result Mira Spa Massage has just 62 reviews. Competing with Aquarama on review count is unrealistic, but matching Renates at 200+ reviews is achievable.",
+      "textNO": "Aquarama, et kommunalt svomme- og wellnesssenter, holder Maps #3 for «spa kristiansand» med svimlende 2 340 anmeldelser og 4,3 stjerner. Dette er det hoyeste anmeldelsestallet i noe norsk spa Maps-resultat pa tvers av alle byer vi har analysert. Renates Dagspa AS pa #2 har 204 anmeldelser (4,7 stjerner) — det ledende dedikerte spaet. For kontekst har #1-resultatet Mira Spa Massage bare 62 anmeldelser. A konkurrere med Aquarama pa anmeldelsestall er urealistisk, men a matche Renates pa 200+ anmeldelser er oppnaelig.",
+      "statLabel": "reviews for Aquarama",
+      "statValue": "2,340"
+    },
+    {
+      "icon": "zap",
+      "color": "blue",
+      "titleEN": "Renates Dagspa owns organic #1 — proof that dedicated spas can win",
+      "titleNO": "Renates Dagspa eier organisk #1 — bevis pa at dedikerte spaer kan vinne",
+      "textEN": "renates.no ranks #1 organically for \"dagspa kristiansand\" and holds Maps positions #1 and #2 (through a secondary listing). For \"spa kristiansand\", miraspamassage.no (#5) and independent clinics outrank tourism portals. Unlike larger cities where visitnorway.no and tripadvisor.com dominate top positions, Kristiansand's organic SERPs are accessible to local businesses with strong SEO.",
+      "textNO": "renates.no rangerer #1 organisk for «dagspa kristiansand» og holder Maps-posisjon #1 og #2 (gjennom en sekundaer oppforing). For «spa kristiansand» utrangerer miraspamassage.no (#5) og uavhengige klinikker turistportaler. I motsetning til storre byer der visitnorway.no og tripadvisor.com dominerer toppposisjoner, er Kristiansands organiske SERP-er tilgjengelige for lokale bedrifter med sterk SEO.",
+      "statLabel": "organic #1 position",
+      "statValue": "renates.no"
+    },
+    {
+      "icon": "tag",
+      "color": "purple",
+      "titleEN": "7.6 kr average CPC — among Norway's cheapest spa markets",
+      "titleNO": "7,6 kr gjennomsnittlig CPC — blant Norges billigste spa-markeder",
+      "textEN": "Kristiansand's 7.6 kr average CPC is the second-lowest in this report — only Tromso (6.7 kr) is cheaper. It's well below Oslo (8.0 kr), Bergen (9.2 kr), Drammen (9.4 kr), and Stavanger (9.9 kr). The CPC range spans from 5.72 kr (thai massasje, dampbad) to 15.51 kr (spa hotell). With almost zero advertiser competition on city-specific terms, a 3,000 kr/month budget could effectively own the paid search space for spa services in Kristiansand.",
+      "textNO": "Kristiansands gjennomsnittlige CPC pa 7,6 kr er den nest laveste i denne rapporten — bare Tromso (6,7 kr) er billigere. Den ligger godt under Oslo (8,0 kr), Bergen (9,2 kr), Drammen (9,4 kr) og Stavanger (9,9 kr). CPC-spennet gar fra 5,72 kr (thai massasje, dampbad) til 15,51 kr (spa hotell). Med tilnaermet null annonsorkonkurranse pa byspesifikke sokeord, kan et budsjett pa 3 000 kr/mnd effektivt eie det betalte sokerommet for spa-tjenester i Kristiansand.",
+      "statLabel": "average CPC",
+      "statValue": "7.6 kr"
+    }
+  ],
+  "tips": [
+    {
+      "titleEN": "Google Business Profile — 62 reviews is enough to lead Maps",
+      "titleNO": "Google Bedriftsprofil — 62 anmeldelser er nok til a lede Maps",
+      "textEN": "Mira Spa Massage leads Maps for both \"spa kristiansand\" and \"massasje kristiansand\" with just 62 reviews. Kristiansand Thaimassasje sits at #2 with only 28 reviews. Excluding Aquarama (a municipal centre), the review threshold for Maps leadership is remarkably low. Getting to 50-70 reviews with a 4.5+ rating would place you among the top 2-3 visible results across all spa-related keywords in Kristiansand.",
+      "textNO": "Mira Spa Massage leder Maps for bade «spa kristiansand» og «massasje kristiansand» med bare 62 anmeldelser. Kristiansand Thaimassasje sitter pa #2 med bare 28 anmeldelser. Bortsett fra Aquarama (et kommunalt senter) er anmeldelsesterskelen for Maps-lederskap bemerkelsesverdig lav. A na 50-70 anmeldelser med 4,5+ rating ville plassert deg blant topp 2-3 synlige resultater pa tvers av alle spa-relaterte sokeord i Kristiansand.",
+      "tagEN": "Free — 30 minutes",
+      "tagNO": "Gratis — 30 minutter"
+    },
+    {
+      "titleEN": "Study the Renates Dagspa model — one business, two Maps listings",
+      "titleNO": "Studer Renates Dagspa-modellen — en bedrift, to Maps-oppforinger",
+      "textEN": "Renates Dagspa AS holds Maps #1 and #2 for \"dagspa kristiansand\" through two listings (Renates Dagspa AS and Renates Hud & Make-up AS), and organic #1 through renates.no. If your spa offers distinct services (e.g., massage and beauty treatments), consider separate Google Business listings for each. This multiplies your Maps visibility without any ad spend. Renates proves this works in Kristiansand's low-competition environment.",
+      "textNO": "Renates Dagspa AS holder Maps #1 og #2 for «dagspa kristiansand» gjennom to oppforinger (Renates Dagspa AS og Renates Hud & Make-up AS), og organisk #1 gjennom renates.no. Hvis spaet ditt tilbyr distinkte tjenester (f.eks. massasje og skjonnhetsbehandlinger), vurder separate Google Business-oppforinger for hver. Dette multipliserer Maps-synligheten uten noe annonseforbruk. Renates beviser at dette fungerer i Kristiansands lavkonkurransemiljo.",
+      "tagEN": "Free — 1 hour",
+      "tagNO": "Gratis — 1 time"
+    },
+    {
+      "titleEN": "Create city-specific landing pages — no competitor targets them",
+      "titleNO": "Lag byspesifikke landingssider — ingen konkurrent retter seg mot dem",
+      "textEN": "With zero measurable volume for \"Kristiansand\" keywords, most spas likely skip city-targeted content. But Google serves full SERPs for these queries — renates.no ranks #1 for \"dagspa kristiansand\" precisely because it has dedicated content. Create pages targeting \"massasje kristiansand\", \"spa kristiansand\", and \"thai massasje kristiansand\". With virtually no competition, even basic on-page SEO could secure top-5 organic positions.",
+      "textNO": "Med null malbart volum for «Kristiansand»-sokeord hopper de fleste spaer sannsynligvis over byrettet innhold. Men Google viser fulle SERP-er for disse sokene — renates.no rangerer #1 for «dagspa kristiansand» nettopp fordi den har dedikert innhold. Lag sider som retter seg mot «massasje kristiansand», «spa kristiansand» og «thai massasje kristiansand». Med tilnaermet ingen konkurranse kan selv grunnleggende on-page SEO sikre topp-5 organiske posisjoner.",
+      "tagEN": "Free — 2-3 hours per page",
+      "tagNO": "Gratis — 2-3 timer per side"
+    },
+    {
+      "titleEN": "Start Google Ads at just 3,000 kr/month — enough to dominate",
+      "titleNO": "Start Google Ads med bare 3 000 kr/mnd — nok til a dominere",
+      "textEN": "At 7.6 kr average CPC and near-zero advertiser competition on city keywords, a 3,000 kr/month budget generates ~395 clicks. Target \"massasje\" (390/mo, 6.93 kr), \"thai massasje\" (260/mo, 5.72 kr), and \"spa\" (210/mo, 8.03 kr). These three keywords alone represent 860 monthly searches. In a market this small, even a modest budget gives you meaningful coverage of total search demand.",
+      "textNO": "Med 7,6 kr gjennomsnittlig CPC og tilnaermet null annonsorkonkurranse pa bysokeord genererer et budsjett pa 3 000 kr/mnd ~395 klikk. Rett deg mot «massasje» (390/mnd, 6,93 kr), «thai massasje» (260/mnd, 5,72 kr) og «spa» (210/mnd, 8,03 kr). Disse tre sokeordene alene representerer 860 manedlige sok. I et marked sa lite gir selv et beskjedent budsjett deg meningsfull dekning av total sokeetterspørsel.",
+      "tagEN": "Paid — from 3,000 kr/month",
+      "tagNO": "Betalt — fra 3 000 kr/mnd"
+    }
+  ],
+  "calculator": {
+    "avgCpc": 7.6,
+    "defaultPatientValue": 3000,
+    "defaultBudget": 5000,
+    "defaultConversion": 20,
+    "clickToInquiryRate": 0.035,
+    "benchmarkEN": "Spa CPCs in Kristiansand range from 5.72 kr (thai massasje, dampbad) to 15.51 kr (spa hotell). With only 8 keywords and near-zero competition on city-specific terms, this is one of the most affordable spa advertising markets in Norway. A repeat spa customer visiting 2-3 times per year at 1,000-1,500 kr per visit is worth ~3,000 kr annually. At 7.6 kr average CPC, acquiring a loyal customer costs less than a single treatment session.",
+    "benchmarkNO": "Spa-CPC-er i Kristiansand varierer fra 5,72 kr (thai massasje, dampbad) til 15,51 kr (spa hotell). Med bare 8 sokeord og tilnaermet null konkurranse pa byspesifikke sokeord er dette et av de mest rimelige spa-annonseringsmarkedene i Norge. En gjentakende spa-kunde som besoker 2-3 ganger per ar til 1 000-1 500 kr per besok er verdt ~3 000 kr arlig. Med 7,6 kr gjennomsnittlig CPC koster det a skaffe en lojal kunde mindre enn en enkelt behandling."
+  },
+  "sources": [
+    {
+      "name": "DataForSEO – Keywords Data API (Google Ads, Kristiansand)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – SERP API (Google organic, Kristiansand)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – Maps API (Google Maps, Kristiansand)",
+      "url": null
+    },
+    {
+      "name": "DataReportal – Digital 2025: Norway",
+      "url": "https://datareportal.com/reports/digital-2025-norway"
+    },
+    {
+      "name": "BrightLocal – Local Pack Click Share Study 2024",
+      "url": "https://www.brightlocal.com/research/"
+    }
+  ]
+}

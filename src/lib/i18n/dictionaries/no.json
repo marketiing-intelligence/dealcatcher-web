@@ -889,7 +889,7 @@
       "badge": "Markedsrapport",
       "titleSearches": "månedlige søk",
       "titleFor": "for {nicheLower} i {city}",
-      "subtitle": "Hver måned åpner tusenvis av mennesker i {city} Google for å finne en {nicheLower}. Denne rapporten viser deg nøyaktig hva de skriver, hvem de finner i stedet for deg — og hva du kan gjøre med det."
+      "subtitle": "Hver måned søker tusenvis av mennesker i {city} etter {nicheLower} på Google. Denne rapporten viser deg nøyaktig hva de skriver, hvem de finner i stedet for deg — og hva du kan gjøre med det."
     },
     "metrics": {
       "keywords": "Søkeord analysert",
@@ -901,11 +901,13 @@
     "keywords": {
       "badge": "Søkeordanalyse",
       "title": "Hva folk faktisk skriver inn i Google",
-      "subtitle": "Når noen trenger en {nicheLower}, skriver de ikke alltid «{nicheLower}». Noen søker etter en bestemt tjeneste, andre beskriver problemet sitt. Her er alle søkeordene folk i {city} bruker, gruppert etter intensjon, og hvor mange ganger per måned.",
+      "subtitle": "Når folk søker etter {nicheLower}, skriver de ikke alltid «{nicheLower}». Noen søker etter en bestemt tjeneste, andre beskriver problemet sitt. Her er alle søkeordene folk i {city} bruker, gruppert etter intensjon, og hvor mange ganger per måned.",
       "volume": "Søk/mnd",
       "competition": "Konk.",
       "cpc": "Annonsepris/klikk",
-      "groupTotal": "Totalt antall søk"
+      "groupTotal": "Totalt antall søk",
+      "nationalBadge": "Landsdekkende",
+      "nationalNote": "Dette er nasjonale søkevolumer — folk over hele Norge som søker etter tjenester spesifikt i denne byen. Ikke inkludert i totalen ovenfor."
     },
     "competition": {
       "badge": "Konkurranse",
@@ -942,7 +944,7 @@
     "seasonality": {
       "badge": "Timing",
       "title": "Noen måneder er travlere enn andre",
-      "subtitle": "Etterspørselen er ikke konstant. Diagrammet nedenfor viser hvor mange som søker etter «{keyword}» hver måned. Høye søyler = stor etterspørsel (bruk mer på annonser da). Lave søyler = rolige måneder (spar budsjettet). Å kjenne dette mønsteret lar deg bruke pengene smartere, ikke mer.",
+      "subtitle": "Etterspørselen er ikke konstant. Diagrammet følger ett søkeord — «{keyword}» — for å vise sesongmønsteret. Høye søyler = stor etterspørsel (bruk mer på annonser da). Lave søyler = rolige måneder (spar budsjettet). Det samme mønsteret gjelder vanligvis for det bredere markedet.",
       "peak": "Topp",
       "low": "Lav"
     },

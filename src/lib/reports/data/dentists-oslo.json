@@ -223,8 +223,8 @@
     {
       "icon": "clock",
       "color": "purple",
-      "titleEN": "Condition keywords cost 80% less than service keywords",
-      "titleNO": "Tilstandssøkeord koster 80 % mindre enn tjenestesøkeord",
+      "titleEN": "Condition keywords cost 65% less than service keywords",
+      "titleNO": "Tilstandssøkeord koster 65 % mindre enn tjenestesøkeord",
       "textEN": "Service keywords average 29 kr/click while condition keywords average just 10 kr/click. \"Periodontitt\" (1,300 searches, 12.54 kr) and \"tannkjøttsykdom\" (260 searches, 5.39 kr) represent high-intent patients seeking treatment at a fraction of the cost of targeting \"tannbleking\" or \"invisalign\" directly.",
       "textNO": "Tjenestesøkeord koster gjennomsnittlig 29 kr/klikk mens tilstandssøkeord koster bare 10 kr/klikk. «Periodontitt» (1 300 søk, 12,54 kr) og «tannkjøttsykdom» (260 søk, 5,39 kr) representerer pasienter med høy intensjon som søker behandling til en brøkdel av kostnaden for å målrette «tannbleking» eller «invisalign» direkte.",
       "statLabel": "avg CPC for conditions",

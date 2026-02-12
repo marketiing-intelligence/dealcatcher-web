@@ -5,7 +5,7 @@
     "city": "Bergen",
     "locationCode": 1010921,
     "dataDate": "2026-02",
-    "totalSearchVolume": 1670
+    "totalSearchVolume": 1660
   },
   "metrics": {
     "keywordCount": 19,
@@ -21,7 +21,7 @@
       "nameNO": "Tannlegetjenester og behandlinger",
       "descriptionEN": "Direct service searches — people looking for specific dental treatments in Bergen. \"Tannbleking\" (390) leads slightly over \"invisalign\" (320), reflecting strong cosmetic demand. CPCs range from 4.51 kr (tannfylling) to 46.20 kr (tannsjekk).",
       "descriptionNO": "Direkte tjenestesøk — folk som leter etter spesifikke tannbehandlinger i Bergen. «Tannbleking» (390) leder litt over «invisalign» (320), noe som reflekterer sterk kosmetisk etterspørsel. CPC-er varierer fra 4,51 kr (tannfylling) til 46,20 kr (tannsjekk).",
-      "totalVolume": 910,
+      "totalVolume": 900,
       "keywords": [
         { "keyword": "tannbleking", "translation": "teeth whitening", "volume": 390, "competition": "HIGH", "cpc": 18.48 },
         { "keyword": "invisalign", "translation": "Invisalign (clear aligners)", "volume": 320, "competition": "MEDIUM", "cpc": 20.57 },

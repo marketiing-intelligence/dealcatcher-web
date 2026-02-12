@@ -1,0 +1,537 @@
+{
+  "meta": {
+    "niche": "day-spa",
+    "nicheNO": "dagspa og wellness",
+    "city": "Tromsø",
+    "locationCode": 1011021,
+    "dataDate": "2026-02",
+    "totalSearchVolume": 2630
+  },
+  "metrics": {
+    "keywordCount": 13,
+    "avgCpc": 6.7,
+    "topClinicsCount": 5,
+    "mapsClickShare": 42
+  },
+  "keywordGroups": [
+    {
+      "id": "services",
+      "color": "green",
+      "nameEN": "Spa & wellness services",
+      "nameNO": "Spa- og wellnesstjenester",
+      "descriptionEN": "Generic wellness service searches in Tromso. Unusually, \"spa\" leads at 480/mo — outpacing both \"massasje\" and \"thai massasje\" (140/mo each). This spa-first pattern is unique among Norwegian cities, likely reflecting Tromso's tourism-driven demand for hotel and resort spa experiences. CPCs are remarkably low: thai massasje costs just 0.66 kr/click, spa is 2.64 kr, and wellness has a 0 kr CPC (zero advertiser competition). The 6.7 kr average is pulled up by jacuzzi (11.11 kr) and fotmassasje (7.70 kr).",
+      "descriptionNO": "Generiske wellnesstjenestesok i Tromso. Uvanlig nok leder «spa» med 480/mnd — foran bade «massasje» og «thai massasje» (140/mnd hver). Dette spa-forst-monsteret er unikt blant norske byer, og gjenspeiler sannsynligvis Tromsos turistdrevne ettersporsel etter hotell- og resort-spaopplevelser. CPC-ene er bemerkelsesverdig lave: thai massasje koster bare 0,66 kr/klikk, spa er 2,64 kr, og wellness har 0 kr CPC (null annonsorkonkurranse). Gjennomsnittet pa 6,7 kr trekkes opp av jacuzzi (11,11 kr) og fotmassasje (7,70 kr).",
+      "totalVolume": 1050,
+      "keywords": [
+        {
+          "keyword": "spa",
+          "translation": "spa",
+          "volume": 480,
+          "competition": "LOW",
+          "cpc": 2.64
+        },
+        {
+          "keyword": "massasje",
+          "translation": "massage",
+          "volume": 140,
+          "competition": "HIGH",
+          "cpc": 4.18
+        },
+        {
+          "keyword": "thai massasje",
+          "translation": "Thai massage",
+          "volume": 140,
+          "competition": "LOW",
+          "cpc": 0.66
+        },
+        {
+          "keyword": "badstue",
+          "translation": "sauna",
+          "volume": 110,
+          "competition": "HIGH",
+          "cpc": 5.94
+        },
+        {
+          "keyword": "jacuzzi",
+          "translation": "jacuzzi",
+          "volume": 110,
+          "competition": "HIGH",
+          "cpc": 11.11
+        },
+        {
+          "keyword": "fotmassasje",
+          "translation": "foot massage",
+          "volume": 30,
+          "competition": "HIGH",
+          "cpc": 7.7
+        },
+        {
+          "keyword": "spa hotell",
+          "translation": "spa hotel",
+          "volume": 20,
+          "competition": "MEDIUM",
+          "cpc": 6.05
+        },
+        {
+          "keyword": "wellness",
+          "translation": "wellness",
+          "volume": 20,
+          "competition": "LOW",
+          "cpc": 0
+        }
+      ]
+    },
+    {
+      "id": "explicit",
+      "color": "blue",
+      "nameEN": "Explicit \"Tromsø\" searches",
+      "nameNO": "Eksplisitte \"Tromsø\"-søk",
+      "descriptionEN": "People searching with \"Tromso\" included — the highest-intent group. At 1,580 monthly searches, the explicit group is 1.5x larger than generic services. \"Massasje tromso\" and \"spa tromso\" tie at 590/mo each — together they account for 75% of explicit demand. \"Spa tromso\" at 14.30 kr is the most expensive keyword, while \"thai massasje tromso\" (210/mo at 4.51 kr) offers the best value. The city's Arctic tourism means many searchers are visitors, not just residents.",
+      "descriptionNO": "Folk som soker med «Tromso» inkludert — gruppen med hoyest intensjon. Med 1 580 manedlige sok er den eksplisitte gruppen 1,5x storre enn generiske tjenester. «Massasje tromso» og «spa tromso» ligger likt pa 590/mnd hver — sammen utgjor de 75 % av eksplisitt ettersporsel. «Spa tromso» til 14,30 kr er det dyreste sokeordet, mens «thai massasje tromso» (210/mnd til 4,51 kr) gir best verdi. Byens arktiske turisme betyr at mange sokere er besokende, ikke bare innbyggere.",
+      "totalVolume": 1580,
+      "keywords": [
+        {
+          "keyword": "massasje tromsø",
+          "translation": "massage Tromsø",
+          "volume": 590,
+          "competition": "LOW",
+          "cpc": 5.72
+        },
+        {
+          "keyword": "spa tromsø",
+          "translation": "spa Tromsø",
+          "volume": 590,
+          "competition": "MEDIUM",
+          "cpc": 14.3
+        },
+        {
+          "keyword": "thai massasje tromsø",
+          "translation": "Thai massage Tromsø",
+          "volume": 210,
+          "competition": "LOW",
+          "cpc": 4.51
+        },
+        {
+          "keyword": "badstue tromsø",
+          "translation": "sauna Tromsø",
+          "volume": 170,
+          "competition": "LOW",
+          "cpc": 3.41
+        },
+        {
+          "keyword": "spa hotell tromsø",
+          "translation": "spa hotel Tromsø",
+          "volume": 20,
+          "competition": "MEDIUM",
+          "cpc": 4.29
+        }
+      ]
+    }
+  ],
+  "serpKeywords": [
+    {
+      "keyword": "spa tromsø",
+      "volume": 1300,
+      "organic": [
+        {
+          "rank": 5,
+          "domain": "no.tripadvisor.com"
+        },
+        {
+          "rank": 6,
+          "domain": "www.stelisabeth.no"
+        },
+        {
+          "rank": 7,
+          "domain": "entertromso.no"
+        },
+        {
+          "rank": 8,
+          "domain": "truestory.no"
+        },
+        {
+          "rank": 12,
+          "domain": "balansespa.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Essens Dagspa",
+          "rating": 4.6,
+          "reviews": 35
+        },
+        {
+          "rank": 2,
+          "title": "Seasons SPA",
+          "rating": 4.8,
+          "reviews": 24
+        },
+        {
+          "rank": 3,
+          "title": "Sauna Pust Tromsø",
+          "rating": 4.5,
+          "reviews": 381
+        }
+      ],
+      "insightEN": "A competitive organic landscape. tripadvisor.com (#5), stelisabeth.no (#6 — a hotel spa), entertromso.no (#7 — a tourism portal), and truestory.no (#8) fill the top positions. balansespa.no at #12 is the only independent day spa in the SERP. Maps tells a more promising story: Sauna Pust Tromso at #3 has a massive 381 reviews (4.5 stars), Essens Dagspa leads at #1 (4.6 stars, 35 reviews), and Seasons SPA at #2 has 4.8 stars with 24 reviews. The 381-review count for Pust is extraordinary for a city this size.",
+      "insightNO": "Et konkurransedyktig organisk landskap. tripadvisor.com (#5), stelisabeth.no (#6 — et hotellspa), entertromso.no (#7 — en turistportal) og truestory.no (#8) fyller topposisjonene. balansespa.no pa #12 er det eneste uavhengige dagsspaet i SERP-en. Maps forteller en mer lovende historie: Sauna Pust Tromso pa #3 har massive 381 anmeldelser (4,5 stjerner), Essens Dagspa leder pa #1 (4,6 stjerner, 35 anmeldelser), og Seasons SPA pa #2 har 4,8 stjerner med 24 anmeldelser. Anmeldelsestallet pa 381 for Pust er ekstraordinaert for en by av denne storrelsen."
+    },
+    {
+      "keyword": "badstue tromsø",
+      "volume": 480,
+      "organic": [
+        {
+          "rank": 5,
+          "domain": "www.pust.io"
+        },
+        {
+          "rank": 6,
+          "domain": "vervetadventures.no"
+        },
+        {
+          "rank": 7,
+          "domain": "www.visittromso.no"
+        },
+        {
+          "rank": 8,
+          "domain": "www.tromsobadet.no"
+        },
+        {
+          "rank": 9,
+          "domain": "www.pust.io"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Sauna Pust Tromsø",
+          "rating": 4.5,
+          "reviews": 381
+        },
+        {
+          "rank": 2,
+          "title": "Pust Tromsø AS",
+          "rating": 4.6,
+          "reviews": 39
+        },
+        {
+          "rank": 3,
+          "title": "The HotSpot Sauna",
+          "rating": 3.9,
+          "reviews": 43
+        }
+      ],
+      "insightEN": "Sauna Pust completely dominates. pust.io holds organic #5 and #9, while its Maps listing (Sauna Pust Tromso) sits at #1 with 381 reviews — one of the highest spa review counts in Norway, behind Kristiansand's Aquarama (2,340) and Oslo's KOK Sauna (452). Pust Tromso AS at Maps #2 (4.6 stars, 39 reviews) is a secondary listing for the same brand. The HotSpot Sauna at #3 has 43 reviews but a lower 3.9 rating. Tourism portals (visittromso.no #7, tromsobadet.no #8) fill middle organic positions.",
+      "insightNO": "Sauna Pust dominerer fullstendig. pust.io holder organisk #5 og #9, mens Maps-oppforingen (Sauna Pust Tromso) sitter pa #1 med 381 anmeldelser — et av de hoyeste spa-anmeldelsestallene i Norge, bak Kristiansands Aquarama (2 340) og Oslos KOK Sauna (452). Pust Tromso AS pa Maps #2 (4,6 stjerner, 39 anmeldelser) er en sekundaer oppforing for samme merke. The HotSpot Sauna pa #3 har 43 anmeldelser men en lavere 3,9 rating. Turistportaler (visittromso.no #7, tromsobadet.no #8) fyller midtre organiske posisjoner."
+    },
+    {
+      "keyword": "dagspa tromsø",
+      "volume": 10,
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "www.essensdagspa.no"
+        },
+        {
+          "rank": 2,
+          "domain": "fixit.no"
+        },
+        {
+          "rank": 3,
+          "domain": "www.facebook.com"
+        },
+        {
+          "rank": 4,
+          "domain": "www.essensbeauty.no"
+        },
+        {
+          "rank": 5,
+          "domain": "balansespa.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Essens Dagspa",
+          "rating": 4.6,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "Low volume (10/mo) but a remarkable organic result: essensdagspa.no holds the #1 position — the only city in this report where a dedicated day spa ranks first organically for its category keyword. essensbeauty.no (#4) and balansespa.no (#5) show strong independent spa presence. Maps shows only Essens Dagspa at #1 (4.6 stars) with no other results — minimal competition for Maps visibility in the \"dagspa\" space.",
+      "insightNO": "Lavt volum (10/mnd) men et bemerkelsesvervdig organisk resultat: essensdagspa.no holder #1-posisjonen — den eneste byen i denne rapporten der et dedikert dagspa rangerer forst organisk for sitt kategorisokeord. essensbeauty.no (#4) og balansespa.no (#5) viser sterk uavhengig spa-tilstedevarelse. Maps viser bare Essens Dagspa pa #1 (4,6 stjerner) uten andre resultater — minimal konkurranse for Maps-synlighet i «dagspa»-rommet."
+    },
+    {
+      "keyword": "massasje tromsø",
+      "volume": 1600,
+      "organic": [
+        {
+          "rank": 5,
+          "domain": "www.nordbyklinikken.no"
+        },
+        {
+          "rank": 6,
+          "domain": "balansespa.no"
+        },
+        {
+          "rank": 7,
+          "domain": "www.essensdagspa.no"
+        },
+        {
+          "rank": 12,
+          "domain": "timma.no"
+        },
+        {
+          "rank": 13,
+          "domain": "www.kna-massasje.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Health Care Thaimassage & Spa",
+          "rating": 4.1,
+          "reviews": 0
+        },
+        {
+          "rank": 2,
+          "title": "Essens Dagspa",
+          "rating": 4.6,
+          "reviews": 0
+        },
+        {
+          "rank": 3,
+          "title": "Balanse Helsespa",
+          "rating": 4.2,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "Tromso's largest explicit keyword (590/mo, tied with spa tromso). Independent clinics outperform platforms: nordbyklinikken.no (#5), balansespa.no (#6), and essensdagspa.no (#7) all rank above timma.no (#12). This is the strongest organic showing for independent businesses in any Norwegian city. Maps shows Health Care Thaimassage & Spa at #1 (4.1 stars), Essens Dagspa at #2 (4.6 stars), and Balanse Helsespa at #3 (4.2 stars) — all with hidden review counts. Essens Dagspa appears in Maps for 3 of 4 keywords, the strongest cross-keyword presence in Tromso.",
+      "insightNO": "Tromsos storste eksplisitte sokeord (590/mnd, likt med spa tromso). Uavhengige klinikker utkonkurrerer plattformer: nordbyklinikken.no (#5), balansespa.no (#6) og essensdagspa.no (#7) rangerer alle over timma.no (#12). Dette er den sterkeste organiske prestasjonen for uavhengige bedrifter i noen norsk by. Maps viser Health Care Thaimassage & Spa pa #1 (4,1 stjerner), Essens Dagspa pa #2 (4,6 stjerner) og Balanse Helsespa pa #3 (4,2 stjerner) — alle med skjulte anmeldelsestall. Essens Dagspa dukker opp i Maps for 3 av 4 sokeord, den sterkeste synligheten pa tvers av sokeord i Tromso."
+    }
+  ],
+  "cpcData": [
+    {
+      "keyword": "spa tromsø",
+      "cpc": 14.3
+    },
+    {
+      "keyword": "jacuzzi",
+      "cpc": 11.11
+    },
+    {
+      "keyword": "fotmassasje",
+      "cpc": 7.7
+    },
+    {
+      "keyword": "spa hotell",
+      "cpc": 6.05
+    },
+    {
+      "keyword": "badstue",
+      "cpc": 5.94
+    },
+    {
+      "keyword": "massasje tromsø",
+      "cpc": 5.72
+    },
+    {
+      "keyword": "thai massasje tromsø",
+      "cpc": 4.51
+    },
+    {
+      "keyword": "spa hotell tromsø",
+      "cpc": 4.29
+    },
+    {
+      "keyword": "massasje",
+      "cpc": 4.18
+    },
+    {
+      "keyword": "badstue tromsø",
+      "cpc": 3.41
+    },
+    {
+      "keyword": "spa",
+      "cpc": 2.64
+    },
+    {
+      "keyword": "thai massasje",
+      "cpc": 0.66
+    },
+    {
+      "keyword": "wellness",
+      "cpc": 0
+    }
+  ],
+  "seasonality": {
+    "keyword": "spa",
+    "months": [
+      {
+        "month": "Jan",
+        "volume": 880
+      },
+      {
+        "month": "Feb",
+        "volume": 720
+      },
+      {
+        "month": "Mar",
+        "volume": 1000
+      },
+      {
+        "month": "Apr",
+        "volume": 480
+      },
+      {
+        "month": "May",
+        "volume": 210
+      },
+      {
+        "month": "Jun",
+        "volume": 320
+      },
+      {
+        "month": "Jul",
+        "volume": 210
+      },
+      {
+        "month": "Aug",
+        "volume": 260
+      },
+      {
+        "month": "Sep",
+        "volume": 210
+      },
+      {
+        "month": "Oct",
+        "volume": 320
+      },
+      {
+        "month": "Nov",
+        "volume": 480
+      },
+      {
+        "month": "Dec",
+        "volume": 720
+      }
+    ],
+    "peakMonths": [
+      "Mar"
+    ],
+    "lowMonths": [
+      "May",
+      "Jul",
+      "Sep"
+    ],
+    "insightEN": "Tromso shows the most dramatic seasonality in this report. March peaks at 1,000/mo, while summer months (May, July, September) drop to just 210/mo — a 376% peak-to-trough variation. The March peak coincides with peak Northern Lights season, when tourist numbers surge. A secondary winter buildup runs November (480/mo) through January (880/mo), also aligning with aurora tourism. Strategy: push maximum ad spend in January-March when tourist-driven demand peaks, scale back dramatically in May-September, and ramp up again from October.",
+    "insightNO": "Tromso viser den mest dramatiske sesongvariasjonen i denne rapporten. Mars topper seg pa 1 000/mnd, mens sommermanedene (mai, juli, september) faller til bare 210/mnd — en 376 % variasjon fra topp til bunn. Marstoppen sammenfaller med hoysesongen for nordlys, nar turisttallene oker kraftig. En sekundaer vinteroppbygging gar fra november (480/mnd) gjennom januar (880/mnd), ogsa i trad med nordlysturisme. Strategi: bruk maksimalt annonseforbruk i januar-mars nar turistdrevet ettersporsel topper seg, skaler dramatisk ned i mai-september, og okt igjen fra oktober."
+  },
+  "insights": [
+    {
+      "icon": "globe",
+      "color": "green",
+      "titleEN": "2,630 searches — tourism-driven spa demand in the Arctic capital",
+      "titleNO": "2 630 sok — turistdrevet spa-ettersporsel i Arktis' hovedstad",
+      "textEN": "Tromso's spa market generates 2,630 monthly searches across 13 keywords. For a city of ~77,000 residents, this is notable — driven by Northern Lights tourists seeking indoor wellness experiences. \"Spa\" (480/mo generic, 590/mo explicit) and \"massasje\" (140/mo generic, 590/mo explicit) tie as the primary explicit search terms. The spa-first pattern among generic searches is unique to Tromso, consistent with tourists searching for hotel/resort spa experiences.",
+      "textNO": "Tromsos spa-marked genererer 2 630 manedlige sok pa tvers av 13 sokeord. For en by med ~77 000 innbyggere er dette bemerkelsesverdig — drevet av nordlysturister som soker innendors velvaereopplevelser. «Spa» (480/mnd generisk, 590/mnd eksplisitt) og «massasje» (140/mnd generisk, 590/mnd eksplisitt) deler forsteeplassen som eksplisitte sokeord. Spa-forst-monsteret blant generiske sok er unikt for Tromso, konsistent med turister som soker etter hotell-/resort-spaopplevelser.",
+      "statLabel": "monthly searches",
+      "statValue": "2,630"
+    },
+    {
+      "icon": "star",
+      "color": "amber",
+      "titleEN": "Sauna Pust: 381 reviews — an Arctic Maps powerhouse",
+      "titleNO": "Sauna Pust: 381 anmeldelser — en arktisk Maps-kraftstasjon",
+      "textEN": "Sauna Pust Tromso holds 381 reviews (4.5 stars) — one of the highest spa review counts in Norway, behind Kristiansand's Aquarama (2,340) and Oslo's KOK Sauna (452). It appears in Maps for both \"spa tromso\" and \"badstue tromso\", dominating the sauna niche. For context, the next closest competitor (The HotSpot Sauna) has just 43 reviews. For massage businesses, the bar is much lower: Essens Dagspa leads with 35 reviews. Building to 50+ reviews would establish Maps leadership in the massage/spa segment.",
+      "textNO": "Sauna Pust Tromso har 381 anmeldelser (4,5 stjerner) — et av de hoyeste spa-anmeldelsestallene i Norge, bak Kristiansands Aquarama (2 340) og Oslos KOK Sauna (452). Den dukker opp i Maps for bade «spa tromso» og «badstue tromso», og dominerer badstuenisjen. For kontekst har den naermeste konkurrenten (The HotSpot Sauna) bare 43 anmeldelser. For massasjebedrifter er terskelen mye lavere: Essens Dagspa leder med 35 anmeldelser. A bygge til 50+ anmeldelser ville etablert Maps-lederskap i massasje-/spa-segmentet.",
+      "statLabel": "reviews for Sauna Pust",
+      "statValue": "381"
+    },
+    {
+      "icon": "zap",
+      "color": "blue",
+      "titleEN": "Independent spas dominate organic — platforms barely exist",
+      "titleNO": "Uavhengige spaer dominerer organisk — plattformer finnes knapt",
+      "textEN": "Unlike every other Norwegian city, booking platforms barely appear in Tromso's SERPs. timma.no ranks only #12 for \"massasje tromso\" — far below independent businesses like nordbyklinikken.no (#5), balansespa.no (#6), and essensdagspa.no (#7). Essens Dagspa appears in 3 of 4 SERPs and 3 of 4 Maps results, proving that a strong local SEO strategy can dominate a smaller market without platform dependency.",
+      "textNO": "I motsetning til alle andre norske byer dukker bookingplattformer knapt opp i Tromsos SERP-er. timma.no rangerer bare #12 for «massasje tromso» — langt under uavhengige bedrifter som nordbyklinikken.no (#5), balansespa.no (#6) og essensdagspa.no (#7). Essens Dagspa dukker opp i 3 av 4 SERP-er og 3 av 4 Maps-resultater, noe som beviser at en sterk lokal SEO-strategi kan dominere et mindre marked uten plattformavhengighet.",
+      "statLabel": "SERPs where Essens Dagspa appears",
+      "statValue": "3/4"
+    },
+    {
+      "icon": "clock",
+      "color": "purple",
+      "titleEN": "376% seasonal swing — March peak aligns with Northern Lights",
+      "titleNO": "376 % sesongsvingning — marstopp sammenfaller med nordlys",
+      "textEN": "Tromso's spa demand swings from 210/mo (May, July, September) to 1,000/mo (March) — a 376% variation, the largest of any Norwegian spa market. The peak aligns precisely with Northern Lights season (November-March), when Tromso receives its highest tourist volumes. A spa in Tromso that doesn't adjust marketing spend seasonally leaves 60-70% of its potential winter traffic untapped.",
+      "textNO": "Tromsos spa-ettersporsel svinger fra 210/mnd (mai, juli, september) til 1 000/mnd (mars) — en 376 % variasjon, den storste av noe norsk spa-marked. Toppen sammenfaller presist med nordlyssesongen (november-mars), nar Tromso mottar sine hoyeste turistvolumer. Et spa i Tromso som ikke justerer markedsforingsforbruket sesongmessig lar 60-70 % av potensiell vintertrafikk vaere uutnyttet.",
+      "statLabel": "peak-to-trough variation",
+      "statValue": "376%"
+    }
+  ],
+  "tips": [
+    {
+      "titleEN": "Google Business Profile — target 50+ reviews to compete with Essens Dagspa",
+      "titleNO": "Google Bedriftsprofil — sikt mot 50+ anmeldelser for a konkurrere med Essens Dagspa",
+      "textEN": "Sauna Pust dominates with 381 reviews, but in the massage/spa segment, the bar is much lower. Essens Dagspa leads with 35 reviews, Seasons SPA has 24, and Health Care Thaimassage has zero visible reviews at Maps #1 for massage. Getting to 50 reviews with a 4.5+ rating would establish you as the most credible massage/spa business in Tromso's Maps. Ask tourist customers — they're often willing to leave reviews during their trip.",
+      "textNO": "Sauna Pust dominerer med 381 anmeldelser, men i massasje-/spa-segmentet er terskelen mye lavere. Essens Dagspa leder med 35 anmeldelser, Seasons SPA har 24, og Health Care Thaimassage har null synlige anmeldelser pa Maps #1 for massasje. A na 50 anmeldelser med 4,5+ rating ville etablert deg som den mest troverdige massasje-/spa-bedriften i Tromsos Maps. Spor turistkunder — de er ofte villige til a legge igjen anmeldelser under reisen.",
+      "tagEN": "Free — 30 minutes",
+      "tagNO": "Gratis — 30 minutter"
+    },
+    {
+      "titleEN": "Create English-language content — tourists drive your peak demand",
+      "titleNO": "Lag innhold pa engelsk — turister driver toppettersporselen din",
+      "textEN": "Tromso's 376% seasonal swing maps directly to Northern Lights tourism (November-March). Many of these searchers are international visitors who search in English. Create bilingual service pages targeting both \"spa tromso\" and \"spa Tromso Norway\" / \"massage Tromso\". Include practical tourist info: location relative to hotels, opening hours, online booking availability. International tourists book differently than locals — make the process frictionless.",
+      "textNO": "Tromsos 376 % sesongsvingning kartlegger direkte til nordlysturisme (november-mars). Mange av disse sokerne er internasjonale besokende som soker pa engelsk. Lag tospraklige tjenestesider rettet mot bade «spa tromso» og «spa Tromso Norway» / «massage Tromso». Inkluder praktisk turistinfo: beliggenhet i forhold til hoteller, apningstider, tilgjengelighet for nettbooking. Internasjonale turister booker annerledes enn lokale — gjor prosessen friksjonsfri.",
+      "tagEN": "Free — 2-3 hours",
+      "tagNO": "Gratis — 2-3 timer"
+    },
+    {
+      "titleEN": "Study the Essens Dagspa model — cross-keyword Maps dominance",
+      "titleNO": "Studer Essens Dagspa-modellen — Maps-dominans pa tvers av sokeord",
+      "textEN": "Essens Dagspa appears in Maps for 3 of 4 tested keywords (spa, dagspa, massasje) and ranks in organic results for 2 of them. They achieve this through proper Google Business category setup and dedicated domain (essensdagspa.no). Add every relevant category to your profile: dagspa, massasje, spa, wellness. Each category expands your Maps visibility without additional cost.",
+      "textNO": "Essens Dagspa dukker opp i Maps for 3 av 4 testede sokeord (spa, dagspa, massasje) og rangerer i organiske resultater for 2 av dem. De oppnar dette gjennom riktig oppsett av Google Business-kategorier og dedikert domene (essensdagspa.no). Legg til alle relevante kategorier i profilen din: dagspa, massasje, spa, wellness. Hver kategori utvider Maps-synligheten uten ekstra kostnad.",
+      "tagEN": "Free — 30 minutes",
+      "tagNO": "Gratis — 30 minutter"
+    },
+    {
+      "titleEN": "Seasonal Google Ads — 3x budget in January-March, pause in summer",
+      "titleNO": "Sesongbasert Google Ads — 3x budsjett i januar-mars, pause om sommeren",
+      "textEN": "At 6.7 kr average CPC, a 5,000 kr/month year-round budget generates ~746 clicks. But Tromso's extreme seasonality means a smarter approach: allocate 10,000 kr/month in January-March (capturing ~1,493 clicks/month during 880-1,000/mo search volume) and 2,000 kr/month in May-September (~299 clicks during 210/mo volume). Target \"massasje tromso\" (5.72 kr) and \"thai massasje tromso\" (4.51 kr) for maximum click volume.",
+      "textNO": "Med 6,7 kr gjennomsnittlig CPC genererer et budsjett pa 5 000 kr/mnd gjennom hele aret ~746 klikk. Men Tromsos ekstreme sesongvariasjon betyr en smartere tilnaerming: bruk 10 000 kr/mnd i januar-mars (fanger ~1 493 klikk/mnd under 880-1 000/mnd sokevolum) og 2 000 kr/mnd i mai-september (~299 klikk under 210/mnd volum). Rett deg mot «massasje tromso» (5,72 kr) og «thai massasje tromso» (4,51 kr) for maksimalt klikkvolum.",
+      "tagEN": "Paid — from 5,000 kr/month average",
+      "tagNO": "Betalt — fra 5 000 kr/mnd i gjennomsnitt"
+    }
+  ],
+  "calculator": {
+    "avgCpc": 6.7,
+    "defaultPatientValue": 3000,
+    "defaultBudget": 5000,
+    "defaultConversion": 20,
+    "clickToInquiryRate": 0.035,
+    "benchmarkEN": "Spa CPCs in Tromso range from 0 kr (wellness — zero competition) to 14.30 kr (spa tromso). Thai massage keywords are exceptionally cheap: 0.66 kr for generic and 4.51 kr for city-specific. A repeat spa customer visiting 2-3 times per year at 1,000-1,500 kr per visit is worth ~3,000 kr annually. At 6.7 kr average CPC, Tromso offers Norway's most affordable spa advertising market — especially for Thai massage where a single booking covers the ad cost of hundreds of clicks.",
+    "benchmarkNO": "Spa-CPC-er i Tromso varierer fra 0 kr (wellness — null konkurranse) til 14,30 kr (spa tromso). Thai massasje-sokeord er eksepsjonelt billige: 0,66 kr for generisk og 4,51 kr for byspesifikt. En gjentakende spa-kunde som besoker 2-3 ganger per ar til 1 000-1 500 kr per besok er verdt ~3 000 kr arlig. Med 6,7 kr gjennomsnittlig CPC tilbyr Tromso Norges mest rimelige spa-annonseringsmarked — saerlig for thai massasje der en enkelt booking dekker annonsekostnaden for hundrevis av klikk."
+  },
+  "sources": [
+    {
+      "name": "DataForSEO – Keywords Data API (Google Ads, Tromsø)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – SERP API (Google organic, Tromsø)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – Maps API (Google Maps, Tromsø)",
+      "url": null
+    },
+    {
+      "name": "DataReportal – Digital 2025: Norway",
+      "url": "https://datareportal.com/reports/digital-2025-norway"
+    },
+    {
+      "name": "BrightLocal – Local Pack Click Share Study 2024",
+      "url": "https://www.brightlocal.com/research/"
+    }
+  ]
+}

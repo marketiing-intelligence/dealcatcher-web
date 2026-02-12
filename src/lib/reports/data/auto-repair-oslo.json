@@ -1,0 +1,670 @@
+{
+  "meta": {
+    "niche": "auto-repair",
+    "nicheNO": "bilverksteder",
+    "city": "Oslo",
+    "locationCode": 1010826,
+    "dataDate": "2026-02",
+    "totalSearchVolume": 19790
+  },
+  "metrics": {
+    "keywordCount": 16,
+    "avgCpc": 18.7,
+    "topClinicsCount": 5,
+    "mapsClickShare": 44
+  },
+  "keywordGroups": [
+    {
+      "id": "services",
+      "color": "green",
+      "nameEN": "Auto repair & maintenance services",
+      "nameNO": "Bilverksted- og vedlikeholdstjenester",
+      "descriptionEN": "Direct service searches — people looking for specific auto repair services. EU-kontroll (5,400/mo) and tire-related keywords (dekk, vinterdekk, dekkskift, dekkhotell) dominate, accounting for 72% of volume. CPC range is extreme: \"clutch\" costs just 3.30 kr while \"bilreparasjon\" costs 100 kr per click — the most expensive keyword in the entire report. Smart keyword selection is critical.",
+      "descriptionNO": "Direkte tjenestesøk — folk som leter etter spesifikke bilverkstedtjenester. EU-kontroll (5 400/mnd) og dekkrelaterte søkeord (dekk, vinterdekk, dekkskift, dekkhotell) dominerer og utgjør 72 % av volumet. CPC-spennet er ekstremt: «clutch» koster bare 3,30 kr mens «bilreparasjon» koster 100 kr per klikk — det dyreste søkeordet i hele rapporten. Smart valg av søkeord er avgjørende.",
+      "totalVolume": 19790,
+      "keywords": [
+        {
+          "keyword": "EU-kontroll",
+          "translation": "vehicle inspection (EU-kontroll)",
+          "volume": 5400,
+          "competition": "HIGH",
+          "cpc": 23.98
+        },
+        {
+          "keyword": "dekk",
+          "translation": "tires",
+          "volume": 2400,
+          "competition": "HIGH",
+          "cpc": 15.62
+        },
+        {
+          "keyword": "vinterdekk",
+          "translation": "winter tires",
+          "volume": 2400,
+          "competition": "HIGH",
+          "cpc": 16.72
+        },
+        {
+          "keyword": "bilverksted",
+          "translation": "auto repair shop",
+          "volume": 1900,
+          "competition": "MEDIUM",
+          "cpc": 22.55
+        },
+        {
+          "keyword": "dekkskift",
+          "translation": "tire change",
+          "volume": 1900,
+          "competition": "MEDIUM",
+          "cpc": 14.41
+        },
+        {
+          "keyword": "dekkhotell",
+          "translation": "tire storage",
+          "volume": 1300,
+          "competition": "MEDIUM",
+          "cpc": 21.89
+        },
+        {
+          "keyword": "clutch",
+          "translation": "clutch",
+          "volume": 1300,
+          "competition": "HIGH",
+          "cpc": 3.3
+        },
+        {
+          "keyword": "EU-kontroll pris",
+          "translation": "vehicle inspection price",
+          "volume": 1000,
+          "competition": "HIGH",
+          "cpc": 20.02
+        },
+        {
+          "keyword": "sommerdekk",
+          "translation": "summer tires",
+          "volume": 1000,
+          "competition": "HIGH",
+          "cpc": 9.68
+        },
+        {
+          "keyword": "mekaniker",
+          "translation": "mechanic",
+          "volume": 480,
+          "competition": "LOW",
+          "cpc": 9.79
+        },
+        {
+          "keyword": "bilservice",
+          "translation": "car service",
+          "volume": 210,
+          "competition": "MEDIUM",
+          "cpc": 49.28
+        },
+        {
+          "keyword": "bilglass",
+          "translation": "car glass",
+          "volume": 210,
+          "competition": "MEDIUM",
+          "cpc": 37.18
+        },
+        {
+          "keyword": "eksosanlegg",
+          "translation": "exhaust system",
+          "volume": 170,
+          "competition": "HIGH",
+          "cpc": 10.56
+        },
+        {
+          "keyword": "lakkering bil",
+          "translation": "car painting",
+          "volume": 50,
+          "competition": "HIGH",
+          "cpc": 13.64
+        },
+        {
+          "keyword": "AC service bil",
+          "translation": "car AC service",
+          "volume": 50,
+          "competition": "LOW",
+          "cpc": 43.78
+        },
+        {
+          "keyword": "bilreparasjon",
+          "translation": "car repair",
+          "volume": 20,
+          "competition": "HIGH",
+          "cpc": 100.1
+        }
+      ]
+    },
+    {
+      "id": "explicit",
+      "color": "blue",
+      "nameEN": "Explicit \"Oslo\" searches",
+      "nameNO": "Eksplisitte \"Oslo\"-søk",
+      "descriptionEN": "Keywords that include \"Oslo\" in the query. Note: Google Ads does not provide city-level volume for these keywords, so the volumes shown are national (country-wide) figures. \"Bilverksted oslo\" (1,000/mo nationally) and \"dekkskift oslo\" (880/mo nationally) lead the group. EU-kontroll oslo has the highest CPC at 39.27 kr — nearly double the generic \"EU-kontroll\" (24 kr) — because adding \"Oslo\" signals immediate booking intent.",
+      "descriptionNO": "Søkeord som inkluderer «Oslo» i spørringen. Merk: Google Ads gir ikke byspesifikt volum for disse søkeordene, så volumene som vises er nasjonale (landsdekkende) tall. «Bilverksted oslo» (1 000/mnd nasjonalt) og «dekkskift oslo» (880/mnd nasjonalt) leder gruppen. EU-kontroll oslo har den høyeste CPC-en på 39,27 kr — nesten dobbelt så mye som generisk «EU-kontroll» (24 kr) — fordi å legge til «Oslo» signaliserer umiddelbar bestillingsintensjon.",
+      "totalVolume": 3410,
+      "keywords": [
+        {
+          "keyword": "bilverksted oslo",
+          "translation": "auto repair shop Oslo",
+          "volume": 1000,
+          "competition": "MEDIUM",
+          "cpc": 26.07
+        },
+        {
+          "keyword": "dekkskift oslo",
+          "translation": "tire change Oslo",
+          "volume": 880,
+          "competition": "MEDIUM",
+          "cpc": 18.81
+        },
+        {
+          "keyword": "dekkhotell oslo",
+          "translation": "tire storage Oslo",
+          "volume": 720,
+          "competition": "HIGH",
+          "cpc": 22.44
+        },
+        {
+          "keyword": "EU-kontroll oslo",
+          "translation": "vehicle inspection Oslo",
+          "volume": 590,
+          "competition": "HIGH",
+          "cpc": 39.27
+        },
+        {
+          "keyword": "bilservice oslo",
+          "translation": "car service Oslo",
+          "volume": 70,
+          "competition": "LOW",
+          "cpc": 10.56
+        },
+        {
+          "keyword": "bilglass oslo",
+          "translation": "car glass Oslo",
+          "volume": 70,
+          "competition": "MEDIUM",
+          "cpc": 30.25
+        },
+        {
+          "keyword": "mekaniker oslo",
+          "translation": "mechanic Oslo",
+          "volume": 50,
+          "competition": "MEDIUM",
+          "cpc": 35.42
+        },
+        {
+          "keyword": "lakkering oslo",
+          "translation": "car painting Oslo",
+          "volume": 30,
+          "competition": "MEDIUM",
+          "cpc": 19.91
+        }
+      ],
+      "isNational": true
+    }
+  ],
+  "serpKeywords": [
+    {
+      "keyword": "bilverksted oslo",
+      "volume": 1000,
+      "organic": [
+        {
+          "rank": 4,
+          "domain": "www.bilsmart.no"
+        },
+        {
+          "rank": 5,
+          "domain": "www.meca.no"
+        },
+        {
+          "rank": 6,
+          "domain": "www.snapdrive.no"
+        },
+        {
+          "rank": 11,
+          "domain": "www.mekonomen.no"
+        },
+        {
+          "rank": 12,
+          "domain": "vianor.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Bilverksted Sentrum AS",
+          "rating": 4.8,
+          "reviews": 56
+        },
+        {
+          "rank": 2,
+          "title": "Ringen Bilverksted Oslo - Bilverksted - Eu Kontroll - Service - Dekkskift",
+          "rating": 4,
+          "reviews": 143
+        },
+        {
+          "rank": 3,
+          "title": "Øivinds Bil og Dekk",
+          "rating": 4.8,
+          "reviews": 43
+        }
+      ],
+      "insightEN": "National chains dominate organic results: bilsmart.no (#4), meca.no (#5), snapdrive.no (#6), mekonomen.no (#11). Independent workshops are almost invisible organically. But Maps tells a different story — Bilverksted Sentrum AS (4.8 stars, 56 reviews) and Ringen Bilverksted (4.0 stars, 143 reviews) hold the top positions. Ringen has the most reviews but a lower rating — a 4.5+ star competitor with 50+ reviews has a real opening here.",
+      "insightNO": "Nasjonale kjeder dominerer organiske resultater: bilsmart.no (#4), meca.no (#5), snapdrive.no (#6), mekonomen.no (#11). Uavhengige verksteder er nesten usynlige organisk. Men Maps forteller en annen historie — Bilverksted Sentrum AS (4,8 stjerner, 56 anmeldelser) og Ringen Bilverksted (4,0 stjerner, 143 anmeldelser) holder toppposisjonene. Ringen har flest anmeldelser men lavere rating — en konkurrent med 4,5+ stjerner og 50+ anmeldelser har en reell åpning her."
+    },
+    {
+      "keyword": "dekkskift oslo",
+      "volume": 880,
+      "organic": [
+        {
+          "rank": 4,
+          "domain": "vianor.no"
+        },
+        {
+          "rank": 5,
+          "domain": "dekkproff.no"
+        },
+        {
+          "rank": 11,
+          "domain": "oljeskiftexpressen.no"
+        },
+        {
+          "rank": 12,
+          "domain": "mobildekk.no"
+        },
+        {
+          "rank": 13,
+          "domain": "dekkteam.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Øivinds Bil og Dekk",
+          "rating": 4.8,
+          "reviews": 0
+        },
+        {
+          "rank": 2,
+          "title": "Bilverksted Sentrum AS",
+          "rating": 4.8,
+          "reviews": 0
+        },
+        {
+          "rank": 3,
+          "title": "Oljeskiftexpressen",
+          "rating": 4.7,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "Tire specialists own this keyword: vianor.no (#4), dekkproff.no (#5), mobildekk.no (#12), dekkteam.no (#13). Unlike general auto repair, this SERP favors niche players over chains. All three Maps results show 0 reviews — this is a wide-open Maps market. Any workshop that actively collects reviews for tire change services would immediately stand out.",
+      "insightNO": "Dekkspesialister eier dette søkeordet: vianor.no (#4), dekkproff.no (#5), mobildekk.no (#12), dekkteam.no (#13). I motsetning til generell bilreparasjon favoriserer dette SERP-et nisjespillere over kjeder. Alle tre Maps-resultater viser 0 anmeldelser — dette er et helt åpent Maps-marked. Ethvert verksted som aktivt samler anmeldelser for dekkskift-tjenester ville umiddelbart skille seg ut."
+    },
+    {
+      "keyword": "EU-kontroll oslo",
+      "volume": 590,
+      "organic": [
+        {
+          "rank": 4,
+          "domain": "www.mekonomen.no"
+        },
+        {
+          "rank": 5,
+          "domain": "www.bilsmart.no"
+        },
+        {
+          "rank": 6,
+          "domain": "www.meca.no"
+        },
+        {
+          "rank": 11,
+          "domain": "vianor.no"
+        },
+        {
+          "rank": 12,
+          "domain": "bilexperten.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Bilverksted Sentrum AS",
+          "rating": 4.8,
+          "reviews": 0
+        },
+        {
+          "rank": 2,
+          "title": "Ringen Bilverksted Oslo - Bilverksted - Eu Kontroll - Service - Dekkskift",
+          "rating": 4,
+          "reviews": 0
+        },
+        {
+          "rank": 3,
+          "title": "Oslo Bilverksted AS",
+          "rating": 4.6,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "The most expensive explicit keyword at 39.27 kr/click — 63% more than generic \"EU-kontroll\" (24 kr). Mekonomen leads organically (#4) over bilsmart.no (#5) and meca.no (#6). Maps results again show 0 reviews across the board. Bilverksted Sentrum AS appears in Maps for 3 of 4 tested keywords — they're dominating the local pack without a single visible review.",
+      "insightNO": "Det dyreste eksplisitte søkeordet med 39,27 kr/klikk — 63 % mer enn generisk «EU-kontroll» (24 kr). Mekonomen leder organisk (#4) foran bilsmart.no (#5) og meca.no (#6). Maps-resultater viser igjen 0 anmeldelser over hele linjen. Bilverksted Sentrum AS dukker opp i Maps for 3 av 4 testede søkeord — de dominerer lokalpakken uten en eneste synlig anmeldelse."
+    },
+    {
+      "keyword": "mekaniker oslo",
+      "volume": 50,
+      "organic": [
+        {
+          "rank": 5,
+          "domain": "www.bilsmart.no"
+        },
+        {
+          "rank": 6,
+          "domain": "www.mekonomen.no"
+        },
+        {
+          "rank": 7,
+          "domain": "www.meca.no"
+        },
+        {
+          "rank": 9,
+          "domain": "www.snapdrive.no"
+        },
+        {
+          "rank": 10,
+          "domain": "www.gulesider.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Bilverksted Sentrum AS",
+          "rating": 4.8,
+          "reviews": 0
+        },
+        {
+          "rank": 2,
+          "title": "Oslo Bilverksted AS",
+          "rating": 4.6,
+          "reviews": 0
+        },
+        {
+          "rank": 3,
+          "title": "Oslo Bilservice AS",
+          "rating": 4.6,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "Low volume (50/mo) but very high CPC (35.42 kr) — this keyword captures people who want a personal mechanic, not just a chain. National chains dominate again: bilsmart.no (#5), mekonomen.no (#6), meca.no (#7), snapdrive.no (#9). Gulesider.no (#10) appears here — the yellow pages still rank for generic \"mechanic\" searches. Bilverksted Sentrum AS leads Maps once more (4.8 stars) across yet another keyword.",
+      "insightNO": "Lavt volum (50/mnd) men veldig høy CPC (35,42 kr) — dette søkeordet fanger folk som vil ha en personlig mekaniker, ikke bare en kjede. Nasjonale kjeder dominerer igjen: bilsmart.no (#5), mekonomen.no (#6), meca.no (#7), snapdrive.no (#9). Gulesider.no (#10) dukker opp her — gule sider rangerer fortsatt for generiske «mekaniker»-søk. Bilverksted Sentrum AS leder Maps igjen (4,8 stjerner) på nok et søkeord."
+    }
+  ],
+  "cpcData": [
+    {
+      "keyword": "bilreparasjon",
+      "cpc": 100.1
+    },
+    {
+      "keyword": "bilservice",
+      "cpc": 49.28
+    },
+    {
+      "keyword": "AC service bil",
+      "cpc": 43.78
+    },
+    {
+      "keyword": "EU-kontroll oslo",
+      "cpc": 39.27
+    },
+    {
+      "keyword": "bilglass",
+      "cpc": 37.18
+    },
+    {
+      "keyword": "mekaniker oslo",
+      "cpc": 35.42
+    },
+    {
+      "keyword": "bilglass oslo",
+      "cpc": 30.25
+    },
+    {
+      "keyword": "bilverksted oslo",
+      "cpc": 26.07
+    },
+    {
+      "keyword": "EU-kontroll",
+      "cpc": 23.98
+    },
+    {
+      "keyword": "bilverksted",
+      "cpc": 22.55
+    },
+    {
+      "keyword": "dekkhotell oslo",
+      "cpc": 22.44
+    },
+    {
+      "keyword": "dekkhotell",
+      "cpc": 21.89
+    },
+    {
+      "keyword": "EU-kontroll pris",
+      "cpc": 20.02
+    },
+    {
+      "keyword": "lakkering oslo",
+      "cpc": 19.91
+    },
+    {
+      "keyword": "dekkskift oslo",
+      "cpc": 18.81
+    },
+    {
+      "keyword": "vinterdekk",
+      "cpc": 16.72
+    },
+    {
+      "keyword": "dekk",
+      "cpc": 15.62
+    },
+    {
+      "keyword": "dekkskift",
+      "cpc": 14.41
+    },
+    {
+      "keyword": "lakkering bil",
+      "cpc": 13.64
+    },
+    {
+      "keyword": "eksosanlegg",
+      "cpc": 10.56
+    },
+    {
+      "keyword": "bilservice oslo",
+      "cpc": 10.56
+    },
+    {
+      "keyword": "mekaniker",
+      "cpc": 9.79
+    },
+    {
+      "keyword": "sommerdekk",
+      "cpc": 9.68
+    },
+    {
+      "keyword": "clutch",
+      "cpc": 3.3
+    }
+  ],
+  "seasonality": {
+    "keyword": "dekkskift",
+    "months": [
+      {
+        "month": "Jan",
+        "volume": 260
+      },
+      {
+        "month": "Feb",
+        "volume": 210
+      },
+      {
+        "month": "Mar",
+        "volume": 880
+      },
+      {
+        "month": "Apr",
+        "volume": 3600
+      },
+      {
+        "month": "May",
+        "volume": 1900
+      },
+      {
+        "month": "Jun",
+        "volume": 590
+      },
+      {
+        "month": "Jul",
+        "volume": 320
+      },
+      {
+        "month": "Aug",
+        "volume": 210
+      },
+      {
+        "month": "Sep",
+        "volume": 880
+      },
+      {
+        "month": "Oct",
+        "volume": 9900
+      },
+      {
+        "month": "Nov",
+        "volume": 1900
+      },
+      {
+        "month": "Dec",
+        "volume": 320
+      }
+    ],
+    "peakMonths": [
+      "Oct"
+    ],
+    "lowMonths": [
+      "Feb",
+      "Aug"
+    ],
+    "insightEN": "Tire change demand has a massive October spike (9,900 searches) — 47x the August low of 210. This is driven by Norway's winter tire deadline. A secondary peak hits March–April (880–3,600) as drivers switch back to summer tires. Strategy: launch dekkskift ad campaigns in mid-September before the October rush, and again in early March. Reduce spend in June–August when demand is minimal.",
+    "insightNO": "Etterspørselen etter dekkskift har en massiv oktober-topp (9 900 søk) — 47 ganger august-bunnpunktet på 210. Dette drives av Norges frist for vinterdekk. En sekundær topp treffer mars–april (880–3 600) når bilister bytter tilbake til sommerdekk. Strategi: lanser dekkskift-annonsekampanjer i midten av september før oktoberushet, og igjen tidlig i mars. Reduser forbruket i juni–august når etterspørselen er minimal."
+  },
+  "insights": [
+    {
+      "icon": "map-pin",
+      "color": "amber",
+      "titleEN": "Bilverksted Sentrum AS dominates Maps — with minimal reviews",
+      "titleNO": "Bilverksted Sentrum AS dominerer Maps — med minimalt antall anmeldelser",
+      "textEN": "Bilverksted Sentrum AS (4.8 stars, 56 reviews) appears in Maps top 3 for 3 of 4 tested keywords: \"bilverksted oslo\", \"EU-kontroll oslo\", and \"mekaniker oslo\". Despite having just 56 reviews, they outrank competitors with more reviews (Ringen has 143). A well-optimized Google Business Profile with high ratings beats raw review count in this niche.",
+      "textNO": "Bilverksted Sentrum AS (4,8 stjerner, 56 anmeldelser) dukker opp i Maps topp 3 for 3 av 4 testede søkeord: «bilverksted oslo», «EU-kontroll oslo» og «mekaniker oslo». Til tross for bare 56 anmeldelser utrangerer de konkurrenter med flere anmeldelser (Ringen har 143). En godt optimalisert Google Bedriftsprofil med høy rating slår rå anmeldelsesvolum i denne nisjen.",
+      "statLabel": "Maps keywords for #1 shop",
+      "statValue": "3/4"
+    },
+    {
+      "icon": "zap",
+      "color": "red",
+      "titleEN": "\"Bilreparasjon\" costs 100 kr per click — 30x the cheapest keyword",
+      "titleNO": "«Bilreparasjon» koster 100 kr per klikk — 30x det billigste søkeordet",
+      "textEN": "The CPC spread in auto repair is extreme. \"Bilreparasjon\" (100.10 kr), \"bilservice\" (49.28 kr), and \"AC service bil\" (43.78 kr) are premium keywords. Meanwhile, \"clutch\" (3.30 kr, 1,300/mo) and \"dekkskift\" (14.41 kr, 1,900/mo) offer high volume at a fraction of the cost. Targeting cheaper keywords first is the smart entry strategy.",
+      "textNO": "CPC-spennet i bilverksted-nisjen er ekstremt. «Bilreparasjon» (100,10 kr), «bilservice» (49,28 kr) og «AC service bil» (43,78 kr) er premiumsøkeord. Samtidig tilbyr «clutch» (3,30 kr, 1 300/mnd) og «dekkskift» (14,41 kr, 1 900/mnd) høyt volum til en brøkdel av prisen. Å målrette billigere søkeord først er den smarte inngangsstrategien.",
+      "statLabel": "highest CPC",
+      "statValue": "100 kr"
+    },
+    {
+      "icon": "globe",
+      "color": "green",
+      "titleEN": "National chains own organic — independents own Maps",
+      "titleNO": "Nasjonale kjeder eier organisk — uavhengige eier Maps",
+      "textEN": "bilsmart.no, meca.no, mekonomen.no, and snapdrive.no appear across all organic SERPs. But in Maps, it's local independents: Bilverksted Sentrum AS, Ringen Bilverksted, Øivinds Bil og Dekk. For independent workshops, Maps is where you compete — not organic search. Invest in Google Business Profile optimization over SEO.",
+      "textNO": "bilsmart.no, meca.no, mekonomen.no og snapdrive.no dukker opp i alle organiske SERP-er. Men i Maps er det lokale uavhengige: Bilverksted Sentrum AS, Ringen Bilverksted, Øivinds Bil og Dekk. For uavhengige verksteder er Maps der du konkurrerer — ikke organisk søk. Invester i Google Bedriftsprofil-optimalisering fremfor SEO.",
+      "statLabel": "Maps click share",
+      "statValue": "44%"
+    },
+    {
+      "icon": "clock",
+      "color": "blue",
+      "titleEN": "Dekkskift peaks at 9,900 searches in October",
+      "titleNO": "Dekkskift topper med 9 900 søk i oktober",
+      "textEN": "The \"dekkskift\" keyword surges from 210 in August to 9,900 in October — a 47x increase driven by the winter tire changeover. This creates a short, intense booking window. Workshops that advertise in September (before the rush) capture customers at lower CPCs, while October competition drives prices up as everyone bids on the same keywords.",
+      "textNO": "Søkeordet «dekkskift» stiger fra 210 i august til 9 900 i oktober — en 47x økning drevet av skifte til vinterdekk. Dette skaper et kort, intenst bestillingsvindu. Verksteder som annonserer i september (før rushet) fanger kunder til lavere CPC-er, mens oktoberkonkurranse driver prisene opp når alle byr på de samme søkeordene.",
+      "statLabel": "Oct vs Aug volume",
+      "statValue": "47x"
+    }
+  ],
+  "tips": [
+    {
+      "titleEN": "Google Business Profile — list every service as a category",
+      "titleNO": "Google Bedriftsprofil — list alle tjenester som kategorier",
+      "textEN": "Bilverksted Sentrum AS ranks in Maps top 3 for 3 of 4 keywords because their profile covers multiple services. Add categories for EU-kontroll, dekkskift, dekkhotell, bilservice, AC service, lakkering — every category helps you appear in different searches. Enable online booking, add photos of your workshop, and set accurate opening hours.",
+      "textNO": "Bilverksted Sentrum AS rangerer i Maps topp 3 for 3 av 4 søkeord fordi profilen deres dekker flere tjenester. Legg til kategorier for EU-kontroll, dekkskift, dekkhotell, bilservice, AC-service, lakkering — hver kategori hjelper deg å dukke opp i ulike søk. Aktiver nettbestilling, legg til bilder av verkstedet, og sett nøyaktige åpningstider.",
+      "tagEN": "Free — 30 minutes",
+      "tagNO": "Gratis — 30 minutter"
+    },
+    {
+      "titleEN": "Create dedicated service pages (EU-kontroll, dekkskift, dekkhotell)",
+      "titleNO": "Lag dedikerte tjenestesider (EU-kontroll, dekkskift, dekkhotell)",
+      "textEN": "The top 3 services account for 72% of search volume: EU-kontroll (5,400/mo), dekk/vinterdekk (4,800/mo combined), and dekkskift (1,900/mo). Each deserves its own landing page with pricing, booking CTA, and local keywords (e.g., \"EU-kontroll oslo\"). National chains rank well because they have dedicated pages per service — independent workshops can do the same.",
+      "textNO": "Topp 3-tjenester utgjør 72 % av søkevolumet: EU-kontroll (5 400/mnd), dekk/vinterdekk (4 800/mnd sammenlagt) og dekkskift (1 900/mnd). Hver fortjener sin egen landingsside med priser, bestillings-CTA og lokale søkeord (f.eks. «EU-kontroll oslo»). Nasjonale kjeder rangerer godt fordi de har dedikerte sider per tjeneste — uavhengige verksteder kan gjøre det samme.",
+      "tagEN": "Free — 2-3 hours per page",
+      "tagNO": "Gratis — 2-3 timer per side"
+    },
+    {
+      "titleEN": "Publish EU-kontroll prices — match the search intent",
+      "titleNO": "Publiser EU-kontroll-priser — match søkeintensjonen",
+      "textEN": "\"EU-kontroll pris\" has 1,000 monthly searches at 20 kr/click. People searching for prices are in the final decision stage. A page with clear pricing, what's included, and an online booking option directly matches this intent. This is the same strategy that works for dentists — transparent pricing builds trust and captures price-comparison searches.",
+      "textNO": "«EU-kontroll pris» har 1 000 månedlige søk til 20 kr/klikk. Folk som søker etter priser er i den siste beslutningsfasen. En side med tydelige priser, hva som er inkludert, og mulighet for nettbestilling matcher denne intensjonen direkte. Dette er den samme strategien som fungerer for tannleger — transparent prising bygger tillit og fanger prissammenligning-søk.",
+      "tagEN": "Free — 1 hour",
+      "tagNO": "Gratis — 1 time"
+    },
+    {
+      "titleEN": "Run seasonal Google Ads campaigns for dekkskift",
+      "titleNO": "Kjør sesongbaserte Google Ads-kampanjer for dekkskift",
+      "textEN": "Dekkskift surges to 9,900 searches in October. Launch ads in mid-September at 14.41 kr/click before competitors bid up prices. Target \"dekkskift oslo\" (880/mo, 18.81 kr) and \"dekkhotell oslo\" (720/mo, 22.44 kr) together — customers switching tires often need storage too. A 8,000 kr September budget could generate ~430 clicks before the October rush.",
+      "textNO": "Dekkskift stiger til 9 900 søk i oktober. Lanser annonser i midten av september til 14,41 kr/klikk før konkurrenter byr opp prisene. Målrett «dekkskift oslo» (880/mnd, 18,81 kr) og «dekkhotell oslo» (720/mnd, 22,44 kr) sammen — kunder som bytter dekk trenger ofte lagring også. Et budsjett på 8 000 kr i september kan generere ~430 klikk før oktoberushet.",
+      "tagEN": "Paid — from 8,000 kr/month",
+      "tagNO": "Betalt — fra 8 000 kr/mnd"
+    }
+  ],
+  "calculator": {
+    "avgCpc": 18.7,
+    "defaultPatientValue": 8000,
+    "defaultBudget": 8000,
+    "defaultConversion": 30,
+    "clickToInquiryRate": 0.045,
+    "benchmarkEN": "Auto repair CPCs range from 3.30 kr (clutch) to 100.10 kr (bilreparasjon). Tire and EU-kontroll keywords (14–24 kr) offer the best volume-to-cost ratio. A loyal customer is worth ~8,000 kr/year (EU-kontroll 3,000 + service 3,000 + dekk 2,000). At 18.7 kr average CPC, one converted customer pays for ~430 clicks.",
+    "benchmarkNO": "Bilverksted-CPC-er varierer fra 3,30 kr (clutch) til 100,10 kr (bilreparasjon). Dekk- og EU-kontroll-søkeord (14–24 kr) gir det beste forholdet mellom volum og kostnad. En lojal kunde er verdt ~8 000 kr/år (EU-kontroll 3 000 + service 3 000 + dekk 2 000). Med 18,7 kr gjennomsnittlig CPC betaler én konvertert kunde for ~430 klikk."
+  },
+  "sources": [
+    {
+      "name": "DataForSEO – Keywords Data API (Google Ads, Oslo)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – SERP API (Google organic, Oslo)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – Maps API (Google Maps, Oslo)",
+      "url": null
+    },
+    {
+      "name": "DataReportal – Digital 2025: Norway",
+      "url": "https://datareportal.com/reports/digital-2025-norway"
+    },
+    {
+      "name": "BrightLocal – Local Pack Click Share Study 2024",
+      "url": "https://www.brightlocal.com/research/"
+    }
+  ]
+}

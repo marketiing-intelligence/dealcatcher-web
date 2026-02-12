@@ -1,0 +1,620 @@
+{
+  "meta": {
+    "niche": "day-spa",
+    "nicheNO": "dagspa og wellness",
+    "city": "Stavanger",
+    "locationCode": 1010917,
+    "dataDate": "2026-02",
+    "totalSearchVolume": 4860
+  },
+  "metrics": {
+    "keywordCount": 19,
+    "avgCpc": 9.9,
+    "topClinicsCount": 5,
+    "mapsClickShare": 42
+  },
+  "keywordGroups": [
+    {
+      "id": "services",
+      "color": "green",
+      "nameEN": "Spa & wellness services",
+      "nameNO": "Spa- og wellnesstjenester",
+      "descriptionEN": "Direct wellness service searches in Stavanger. \"Massasje\" leads with 720 searches/month, followed by \"thai massasje\" at 480/mo — together they account for 51% of service volume. CPCs show a wide range: spa behandling costs just 0.99 kr/click (near-zero competition) while spa hotell commands 20.68 kr. The 9.9 kr average CPC is among the higher Norwegian spa markets, driven up by premium keywords like spa hotell and hot tub (16.61 kr).",
+      "descriptionNO": "Direkte søk etter wellnesstjenester i Stavanger. «Massasje» leder med 720 søk/mnd, etterfulgt av «thai massasje» på 480/mnd — sammen utgjør de 51 % av tjenestevolumet. CPC-ene viser et bredt spenn: spa behandling koster bare 0,99 kr/klikk (tilnærmet null konkurranse) mens spa hotell ligger på 20,68 kr. Gjennomsnittlig CPC på 9,9 kr er blant de høyere norske spa-markedene, drevet opp av premiumsøkeord som spa hotell og hot tub (16,61 kr).",
+      "totalVolume": 2350,
+      "keywords": [
+        {
+          "keyword": "massasje",
+          "translation": "massage",
+          "volume": 720,
+          "competition": "HIGH",
+          "cpc": 9.57
+        },
+        {
+          "keyword": "thai massasje",
+          "translation": "Thai massage",
+          "volume": 480,
+          "competition": "LOW",
+          "cpc": 7.81
+        },
+        {
+          "keyword": "spa",
+          "translation": "spa",
+          "volume": 390,
+          "competition": "LOW",
+          "cpc": 12.65
+        },
+        {
+          "keyword": "badstue",
+          "translation": "sauna",
+          "volume": 260,
+          "competition": "HIGH",
+          "cpc": 6.16
+        },
+        {
+          "keyword": "jacuzzi",
+          "translation": "jacuzzi",
+          "volume": 210,
+          "competition": "HIGH",
+          "cpc": 6.93
+        },
+        {
+          "keyword": "spa hotell",
+          "translation": "spa hotel",
+          "volume": 140,
+          "competition": "HIGH",
+          "cpc": 20.68
+        },
+        {
+          "keyword": "fotmassasje",
+          "translation": "foot massage",
+          "volume": 70,
+          "competition": "HIGH",
+          "cpc": 10.45
+        },
+        {
+          "keyword": "hot tub",
+          "translation": "hot tub",
+          "volume": 30,
+          "competition": "HIGH",
+          "cpc": 16.61
+        },
+        {
+          "keyword": "wellness",
+          "translation": "wellness",
+          "volume": 20,
+          "competition": "LOW",
+          "cpc": 2.42
+        },
+        {
+          "keyword": "dampbad",
+          "translation": "steam bath",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 13.64
+        },
+        {
+          "keyword": "spa behandling",
+          "translation": "spa treatment",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 0.99
+        },
+        {
+          "keyword": "sportsmassasje",
+          "translation": "sports massage",
+          "volume": 10,
+          "competition": "MEDIUM",
+          "cpc": 7.15
+        }
+      ]
+    },
+    {
+      "id": "explicit",
+      "color": "blue",
+      "nameEN": "Explicit \"Stavanger\" searches",
+      "nameNO": "Eksplisitte \"Stavanger\"-søk",
+      "descriptionEN": "People searching with \"Stavanger\" included — the highest-intent group. At 2,510 monthly searches, the explicit group roughly matches the service group. \"Thai massasje stavanger\" and \"massasje stavanger\" tie at 880/mo each, followed by \"badstue stavanger\" at 480/mo. Notable outlier: \"wellness stavanger\" has just 10 searches but a staggering 30.47 kr CPC — the most expensive keyword in the entire report.",
+      "descriptionNO": "Folk som søker med «Stavanger» inkludert — gruppen med høyest intensjon. Med 2 510 månedlige søk er den eksplisitte gruppen omtrent like stor som tjenestegruppen. «Thai massasje stavanger» og «massasje stavanger» ligger likt på 880/mnd hver, etterfulgt av «badstue stavanger» på 480/mnd. Bemerkelsesverdig avvik: «wellness stavanger» har bare 10 søk men en svimlende CPC på 30,47 kr — det dyreste søkeordet i hele rapporten.",
+      "totalVolume": 2510,
+      "keywords": [
+        {
+          "keyword": "thai massasje stavanger",
+          "translation": "Thai massage Stavanger",
+          "volume": 880,
+          "competition": "LOW",
+          "cpc": 8.69
+        },
+        {
+          "keyword": "massasje stavanger",
+          "translation": "massage Stavanger",
+          "volume": 880,
+          "competition": "MEDIUM",
+          "cpc": 9.35
+        },
+        {
+          "keyword": "badstue stavanger",
+          "translation": "sauna Stavanger",
+          "volume": 480,
+          "competition": "LOW",
+          "cpc": 10.78
+        },
+        {
+          "keyword": "spa stavanger",
+          "translation": "spa Stavanger",
+          "volume": 210,
+          "competition": "MEDIUM",
+          "cpc": 14.63
+        },
+        {
+          "keyword": "spa hotell stavanger",
+          "translation": "spa hotel Stavanger",
+          "volume": 40,
+          "competition": "HIGH",
+          "cpc": 16.28
+        },
+        {
+          "keyword": "wellness stavanger",
+          "translation": "wellness Stavanger",
+          "volume": 10,
+          "competition": "LOW",
+          "cpc": 30.47
+        },
+        {
+          "keyword": "spa behandling stavanger",
+          "translation": "spa treatment Stavanger",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 15.73
+        }
+      ]
+    }
+  ],
+  "serpKeywords": [
+    {
+      "keyword": "spa stavanger",
+      "volume": 880,
+      "organic": [
+        {
+          "rank": 5,
+          "domain": "no.tripadvisor.com"
+        },
+        {
+          "rank": 6,
+          "domain": "www.solastrandhotel.no"
+        },
+        {
+          "rank": 7,
+          "domain": "www.visitnorway.no"
+        },
+        {
+          "rank": 9,
+          "domain": "www.fablounge.no"
+        },
+        {
+          "rank": 13,
+          "domain": "www.solastrandhotel.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Wan Sabai Thai spa & Massage Ltd",
+          "rating": 4.5,
+          "reviews": 0
+        },
+        {
+          "rank": 2,
+          "title": "The Best Thai spa massasje",
+          "rating": 4.8,
+          "reviews": 0
+        },
+        {
+          "rank": 3,
+          "title": "Squeeze Stavanger Sentrum",
+          "rating": 4.9,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "Tourism and hotel dominance. tripadvisor.com (#5) and solastrandhotel.no (#6 and #13) take multiple organic spots, while visitnorway.no ranks #7. Only fablounge.no (#9) represents an independent spa. Maps tells a different story: Squeeze Stavanger Sentrum leads with a strong 4.9 stars, while The Best Thai spa massasje holds 4.8 stars at #2. All three Maps results have hidden review counts — early review-building would create immediate competitive advantage.",
+      "insightNO": "Turisme- og hotelldominans. tripadvisor.com (#5) og solastrandhotel.no (#6 og #13) tar flere organiske plasser, mens visitnorway.no rangerer #7. Bare fablounge.no (#9) representerer et uavhengig spa. Maps forteller en annen historie: Squeeze Stavanger Sentrum leder med sterke 4,9 stjerner, mens The Best Thai spa massasje har 4,8 stjerner på #2. Alle tre Maps-resultatene har skjulte anmeldelsestall — tidlig anmeldelsesbygging ville skapt umiddelbar konkurransefordel."
+    },
+    {
+      "keyword": "badstue stavanger",
+      "volume": 1000,
+      "organic": [
+        {
+          "rank": 5,
+          "domain": "www.dampsauna.no"
+        },
+        {
+          "rank": 6,
+          "domain": "booksauna.no"
+        },
+        {
+          "rank": 7,
+          "domain": "www.visitnorway.no"
+        },
+        {
+          "rank": 8,
+          "domain": "www.facebook.com"
+        },
+        {
+          "rank": 9,
+          "domain": "saunastavanger.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Damp AS",
+          "rating": 4.5,
+          "reviews": 79
+        },
+        {
+          "rank": 2,
+          "title": "Booksauna Aya Sauna and Vega Sauna",
+          "rating": 4.3,
+          "reviews": 0
+        },
+        {
+          "rank": 3,
+          "title": "Booksauna Timo og Thor sauna",
+          "rating": 4.6,
+          "reviews": 48
+        }
+      ],
+      "insightEN": "Sauna businesses own this space (480/mo). dampsauna.no (#5) and saunastavanger.no (#9) both rank organically, with booksauna.no (#6) as a booking platform. Maps shows Damp AS at #1 (4.5 stars, 79 reviews) — the highest review count in Stavanger's entire spa SERP data. Booksauna Timo og Thor at #3 has 48 reviews and 4.6 stars. The sauna niche is the most review-active segment in Stavanger, setting a benchmark of ~80 reviews for Maps leadership.",
+      "insightNO": "Badstubedrifter eier dette søkerommet (480/mnd). dampsauna.no (#5) og saunastavanger.no (#9) rangerer begge organisk, med booksauna.no (#6) som bookingplattform. Maps viser Damp AS på #1 (4,5 stjerner, 79 anmeldelser) — det høyeste anmeldelsestallet i hele Stavangers spa-SERP-data. Booksauna Timo og Thor på #3 har 48 anmeldelser og 4,6 stjerner. Badstuenisjen er det mest anmeldelsesaktive segmentet i Stavanger, og setter en referanse på ~80 anmeldelser for Maps-lederskap."
+    },
+    {
+      "keyword": "dagspa stavanger",
+      "volume": 0,
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "no.tripadvisor.com"
+        },
+        {
+          "rank": 2,
+          "domain": "www.solastrandhotel.no"
+        },
+        {
+          "rank": 7,
+          "domain": "www.gauselspa.no"
+        },
+        {
+          "rank": 8,
+          "domain": "www.fablounge.no"
+        },
+        {
+          "rank": 9,
+          "domain": "www.visitnorway.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "The Best Thai spa massasje",
+          "rating": 4.8,
+          "reviews": 0
+        },
+        {
+          "rank": 2,
+          "title": "Wan Sabai Thai spa & Massage Ltd",
+          "rating": 4.5,
+          "reviews": 0
+        },
+        {
+          "rank": 3,
+          "title": "San Sabai Thai Massasje",
+          "rating": 4.9,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "Zero measurable search volume, yet Google serves full SERP results. tripadvisor.com (#1) and solastrandhotel.no (#2) dominate organic positions. Actual day-spa businesses start lower: gauselspa.no (#7) and fablounge.no (#8). Maps shows Thai massage providers dominating: The Best Thai spa massasje (#1, 4.8 stars), Wan Sabai (#2, 4.5 stars), and San Sabai (#3, 4.9 stars) — all with hidden review counts. Thai spas clearly own the \"dagspa\" Maps space in Stavanger.",
+      "insightNO": "Null målbart søkevolum, men Google viser fulle SERP-resultater. tripadvisor.com (#1) og solastrandhotel.no (#2) dominerer organiske posisjoner. Faktiske dagspa-bedrifter starter lavere: gauselspa.no (#7) og fablounge.no (#8). Maps viser at thai-massasjeleverandører dominerer: The Best Thai spa massasje (#1, 4,8 stjerner), Wan Sabai (#2, 4,5 stjerner) og San Sabai (#3, 4,9 stjerner) — alle med skjulte anmeldelsestall. Thai-spaer eier tydelig «dagspa»-Maps-rommet i Stavanger."
+    },
+    {
+      "keyword": "massasje stavanger",
+      "volume": 2400,
+      "organic": [
+        {
+          "rank": 5,
+          "domain": "www.fablounge.no"
+        },
+        {
+          "rank": 6,
+          "domain": "timma.no"
+        },
+        {
+          "rank": 7,
+          "domain": "www.solastrandhotel.no"
+        },
+        {
+          "rank": 12,
+          "domain": "www.vaulenkiropraktorklinikk.no"
+        },
+        {
+          "rank": 13,
+          "domain": "www.sansabai.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Good Massage",
+          "rating": 5,
+          "reviews": 11
+        },
+        {
+          "rank": 2,
+          "title": "The Best Thai spa massasje",
+          "rating": 4.8,
+          "reviews": 159
+        },
+        {
+          "rank": 3,
+          "title": "Squeeze Stavanger Sentrum",
+          "rating": 4.9,
+          "reviews": 80
+        }
+      ],
+      "insightEN": "Stavanger's largest explicit keyword (880/mo, tied with thai massasje stavanger). fablounge.no ranks #5 — the top independent spa. timma.no follows at #6, with solastrandhotel.no (#7) rounding out the hotel-spa presence. Maps is where the action is: The Best Thai spa massasje leads at #2 with 159 reviews and 4.8 stars — far ahead of any other spa in Stavanger. Squeeze Stavanger Sentrum (#3) holds 4.9 stars with 80 reviews. Good Massage (#1) has a perfect 5.0 but only 11 reviews. The 159-review benchmark sets the target for Maps dominance.",
+      "insightNO": "Stavangers største eksplisitte søkeord (880/mnd, likt med thai massasje stavanger). fablounge.no rangerer #5 — det ledende uavhengige spaet. timma.no følger på #6, med solastrandhotel.no (#7) som avrunder hotell-spa-tilstedeværelsen. Maps er der det skjer: The Best Thai spa massasje leder på #2 med 159 anmeldelser og 4,8 stjerner — langt foran ethvert annet spa i Stavanger. Squeeze Stavanger Sentrum (#3) har 4,9 stjerner med 80 anmeldelser. Good Massage (#1) har perfekte 5,0 men bare 11 anmeldelser. Referanseverdien på 159 anmeldelser setter målet for Maps-dominans."
+    }
+  ],
+  "cpcData": [
+    {
+      "keyword": "wellness stavanger",
+      "cpc": 30.47
+    },
+    {
+      "keyword": "spa hotell",
+      "cpc": 20.68
+    },
+    {
+      "keyword": "hot tub",
+      "cpc": 16.61
+    },
+    {
+      "keyword": "spa hotell stavanger",
+      "cpc": 16.28
+    },
+    {
+      "keyword": "spa behandling stavanger",
+      "cpc": 15.73
+    },
+    {
+      "keyword": "spa stavanger",
+      "cpc": 14.63
+    },
+    {
+      "keyword": "dampbad",
+      "cpc": 13.64
+    },
+    {
+      "keyword": "spa",
+      "cpc": 12.65
+    },
+    {
+      "keyword": "badstue stavanger",
+      "cpc": 10.78
+    },
+    {
+      "keyword": "fotmassasje",
+      "cpc": 10.45
+    },
+    {
+      "keyword": "massasje",
+      "cpc": 9.57
+    },
+    {
+      "keyword": "massasje stavanger",
+      "cpc": 9.35
+    },
+    {
+      "keyword": "thai massasje stavanger",
+      "cpc": 8.69
+    },
+    {
+      "keyword": "thai massasje",
+      "cpc": 7.81
+    },
+    {
+      "keyword": "sportsmassasje",
+      "cpc": 7.15
+    },
+    {
+      "keyword": "jacuzzi",
+      "cpc": 6.93
+    },
+    {
+      "keyword": "badstue",
+      "cpc": 6.16
+    },
+    {
+      "keyword": "wellness",
+      "cpc": 2.42
+    },
+    {
+      "keyword": "spa behandling",
+      "cpc": 0.99
+    }
+  ],
+  "seasonality": {
+    "keyword": "spa",
+    "months": [
+      {
+        "month": "Jan",
+        "volume": 390
+      },
+      {
+        "month": "Feb",
+        "volume": 320
+      },
+      {
+        "month": "Mar",
+        "volume": 390
+      },
+      {
+        "month": "Apr",
+        "volume": 390
+      },
+      {
+        "month": "May",
+        "volume": 390
+      },
+      {
+        "month": "Jun",
+        "volume": 390
+      },
+      {
+        "month": "Jul",
+        "volume": 260
+      },
+      {
+        "month": "Aug",
+        "volume": 390
+      },
+      {
+        "month": "Sep",
+        "volume": 390
+      },
+      {
+        "month": "Oct",
+        "volume": 320
+      },
+      {
+        "month": "Nov",
+        "volume": 320
+      },
+      {
+        "month": "Dec",
+        "volume": 390
+      }
+    ],
+    "peakMonths": [
+      "Jan",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Aug",
+      "Sep",
+      "Dec"
+    ],
+    "lowMonths": [
+      "Jul"
+    ],
+    "insightEN": "Stavanger's spa demand is exceptionally flat — most months sit at 390/mo, with only July dipping to 260/mo (a 33% drop). This makes Stavanger one of the most seasonally stable spa markets in Norway. The July dip aligns with summer holidays when residents leave the city. Strategy: maintain steady ad spend year-round and slightly reduce budget only in July. There's no significant winter peak to chase, unlike Oslo's January–March surge.",
+    "insightNO": "Stavangers spa-etterspørsel er eksepsjonelt flat — de fleste måneder ligger på 390/mnd, med bare juli som dipper til 260/mnd (et 33 % fall). Dette gjør Stavanger til et av de mest sesongstabile spa-markedene i Norge. Juli-dippet sammenfaller med sommerferien når innbyggerne forlater byen. Strategi: oppretthold jevnt annonseforbruk gjennom året og reduser budsjettet bare marginalt i juli. Det er ingen betydelig vintertopp å jage, i motsetning til Oslos januar–mars-oppgang."
+  },
+  "insights": [
+    {
+      "icon": "globe",
+      "color": "green",
+      "titleEN": "4,860 searches — Thai massage and massage tie in Stavanger's spa market",
+      "titleNO": "4 860 søk — thai massasje og massasje deler førsteplassen i Stavangers spa-marked",
+      "textEN": "Stavanger's spa market generates 4,860 monthly searches across 19 keywords. What stands out: \"thai massasje stavanger\" and \"massasje stavanger\" tie at 880/mo each — together they account for 70% of all explicit demand. \"Spa stavanger\" follows at 210/mo and \"badstue stavanger\" at 480/mo. Thai massage and general massage are the primary demand drivers. Any spa offering these services has a built-in advantage in this market.",
+      "textNO": "Stavangers spa-marked genererer 4 860 månedlige søk på tvers av 19 søkeord. Det som skiller seg ut: «thai massasje stavanger» og «massasje stavanger» ligger likt på 880/mnd hver — sammen utgjør de 70 % av all eksplisitt etterspørsel. «Spa stavanger» følger med 210/mnd og «badstue stavanger» med 480/mnd. Thai massasje og generell massasje er de primære etterspørselsdriverne. Ethvert spa som tilbyr disse tjenestene har en innebygd fordel i dette markedet.",
+      "statLabel": "monthly searches",
+      "statValue": "4,860"
+    },
+    {
+      "icon": "star",
+      "color": "amber",
+      "titleEN": "The Best Thai spa: 159 reviews — Stavanger's Maps leader",
+      "titleNO": "The Best Thai spa: 159 anmeldelser — Stavangers Maps-leder",
+      "textEN": "The Best Thai spa massasje appears in Maps for 3 of 4 tested keywords with 4.8 stars and 159 reviews — the highest review count for any massage business in Stavanger. Squeeze Stavanger Sentrum follows with 80 reviews and 4.9 stars. In the sauna niche, Damp AS leads with 79 reviews. The review threshold for Maps competitiveness in Stavanger: ~80 reviews for massage, ~50 for sauna.",
+      "textNO": "The Best Thai spa massasje dukker opp i Maps for 3 av 4 testede søkeord med 4,8 stjerner og 159 anmeldelser — det høyeste anmeldelsestallet for noen massasjebedrift i Stavanger. Squeeze Stavanger Sentrum følger med 80 anmeldelser og 4,9 stjerner. I badstuenisjen leder Damp AS med 79 anmeldelser. Anmeldelsesterskelen for Maps-konkurranseevne i Stavanger: ~80 anmeldelser for massasje, ~50 for badstue.",
+      "statLabel": "reviews for top Maps result",
+      "statValue": "159"
+    },
+    {
+      "icon": "zap",
+      "color": "blue",
+      "titleEN": "Hotel spas and tourism portals dominate organic — Maps is your battlefield",
+      "titleNO": "Hotellspaer og turistportaler dominerer organisk — Maps er din slagmark",
+      "textEN": "solastrandhotel.no appears in 3 of 4 organic SERPs, tripadvisor.com in 2, and visitnorway.no in 2. Independent spas struggle organically — only fablounge.no breaks into the top 10 for two keywords. But Maps favours actual spa businesses: Thai massage providers hold the top positions across most keywords. For Stavanger spas, investing in Google Business Profile optimization yields faster results than competing for organic positions against hotel chains.",
+      "textNO": "solastrandhotel.no dukker opp i 3 av 4 organiske SERP-er, tripadvisor.com i 2, og visitnorway.no i 2. Uavhengige spaer sliter organisk — bare fablounge.no bryter inn i topp 10 for to søkeord. Men Maps favoriserer faktiske spa-bedrifter: thai-massasjeleverandører holder toppposisjonene på tvers av de fleste søkeord. For Stavanger-spaer gir investering i Google Bedriftsprofil-optimalisering raskere resultater enn å konkurrere om organiske posisjoner mot hotellkjeder.",
+      "statLabel": "SERPs with hotel-spa presence",
+      "statValue": "3/4"
+    },
+    {
+      "icon": "tag",
+      "color": "purple",
+      "titleEN": "CPC extremes: 0.99 kr to 30.47 kr — pick your battles wisely",
+      "titleNO": "CPC-ekstremer: 0,99 kr til 30,47 kr — velg kampene dine klokt",
+      "textEN": "Stavanger has the second-widest CPC spread in this report (after Drammen's 1.32–36.85 kr range). \"Spa behandling\" costs just 0.99 kr/click, while \"wellness stavanger\" commands 30.47 kr — a 31x difference. The sweet spot: \"thai massasje stavanger\" (880/mo at 8.69 kr) and \"massasje stavanger\" (880/mo at 9.35 kr) offer solid volume at reasonable cost. The more expensive \"spa behandling stavanger\" (15.73 kr) and \"spa hotell stavanger\" (16.28 kr) should wait until you've maxed out the cheaper, higher-volume keywords.",
+      "textNO": "Stavanger har det nest bredeste CPC-spennet i denne rapporten (etter Drammens 1,32–36,85 kr-spenn). «Spa behandling» koster bare 0,99 kr/klikk, mens «wellness stavanger» ligger på 30,47 kr — en 31x forskjell. Det optimale: «thai massasje stavanger» (880/mnd til 8,69 kr) og «massasje stavanger» (880/mnd til 9,35 kr) gir solid volum til rimelig kostnad. De dyrere «spa behandling stavanger» (15,73 kr) og «spa hotell stavanger» (16,28 kr) bør vente til du har maksimert de billigere søkeordene med høyere volum.",
+      "statLabel": "CPC range",
+      "statValue": "0.99–30.47 kr"
+    }
+  ],
+  "tips": [
+    {
+      "titleEN": "Google Business Profile — target 80+ reviews to match Squeeze Stavanger",
+      "titleNO": "Google Bedriftsprofil — sikt mot 80+ anmeldelser for å matche Squeeze Stavanger",
+      "textEN": "The Best Thai spa massasje leads with 159 reviews, Squeeze Stavanger Sentrum has 80, and Damp AS has 79. Most other Maps results show zero visible reviews. Getting to 80+ reviews puts you in the top tier for Maps visibility across massage, spa, and sauna keywords. Add all service categories to your profile (massasje, spa, badstue, thai massasje) to appear in multiple search results from one listing.",
+      "textNO": "The Best Thai spa massasje leder med 159 anmeldelser, Squeeze Stavanger Sentrum har 80, og Damp AS har 79. De fleste andre Maps-resultater viser null synlige anmeldelser. Å nå 80+ anmeldelser plasserer deg i toppsjiktet for Maps-synlighet på tvers av massasje-, spa- og badstuesøkeord. Legg til alle tjenestekategorier i profilen din (massasje, spa, badstue, thai massasje) for å vises i flere søkeresultater fra én oppføring.",
+      "tagEN": "Free — 30 minutes",
+      "tagNO": "Gratis — 30 minutter"
+    },
+    {
+      "titleEN": "List on Booksauna.no — it ranks #6 for badstue stavanger",
+      "titleNO": "List deg på Booksauna.no — den rangerer #6 for badstue stavanger",
+      "textEN": "booksauna.no ranks #6 for \"badstue stavanger\" (480/mo) and controls Maps positions #2 and #3 through Booksauna-branded listings. If you offer sauna services, listing on this platform gives you immediate visibility. For massage, timma.no ranks #6 for \"massasje stavanger\" (880/mo). Two platform listings cover 1,360 monthly searches — more than half of all explicit demand.",
+      "textNO": "booksauna.no rangerer #6 for «badstue stavanger» (480/mnd) og kontrollerer Maps-posisjon #2 og #3 gjennom Booksauna-merkede oppføringer. Tilbyr du badstuetjenester, gir listing på denne plattformen deg umiddelbar synlighet. For massasje rangerer timma.no #6 for «massasje stavanger» (880/mnd). To plattformoppføringer dekker 1 360 månedlige søk — mer enn halvparten av all eksplisitt etterspørsel.",
+      "tagEN": "Free — 1 hour",
+      "tagNO": "Gratis — 1 time"
+    },
+    {
+      "titleEN": "Create a dedicated Thai massage page — it's Stavanger's #1 keyword",
+      "titleNO": "Lag en dedikert thai massasje-side — det er Stavangers #1 søkeord",
+      "textEN": "\"Thai massasje stavanger\" (880/mo) ties with \"massasje stavanger\" as the largest explicit keyword. Yet no Thai massage business ranks in the organic top 5 for this keyword. A dedicated page targeting \"thai massasje stavanger\" with service details, pricing, and booking would fill a gap that no competitor currently occupies organically.",
+      "textNO": "«Thai massasje stavanger» (880/mnd) deler førsteplassen med «massasje stavanger» som det største eksplisitte søkeordet. Likevel rangerer ingen thai-massasjebedrift i organisk topp 5 for dette søkeordet. En dedikert side som retter seg mot «thai massasje stavanger» med tjenestedetaljer, priser og booking ville fylt et gap som ingen konkurrent for øyeblikket eier organisk.",
+      "tagEN": "Free — 2-3 hours",
+      "tagNO": "Gratis — 2-3 timer"
+    },
+    {
+      "titleEN": "Start Google Ads with Thai massage — 880 searches at 8.69 kr",
+      "titleNO": "Start Google Ads med thai massasje — 880 søk til 8,69 kr",
+      "textEN": "\"Thai massasje stavanger\" (880/mo, 8.69 kr/click) delivers the best ROI in Stavanger. A 5,000 kr/month budget generates ~575 clicks. Compare: \"spa stavanger\" (210/mo, 14.63 kr) yields only ~342 clicks, and \"badstue stavanger\" (480/mo, 10.78 kr) yields ~464 clicks for the same spend. Thai massage gives you the most clicks per krone among all high-volume explicit keywords.",
+      "textNO": "«Thai massasje stavanger» (880/mnd, 8,69 kr/klikk) gir best ROI i Stavanger. Et budsjett på 5 000 kr/mnd genererer ~575 klikk. Sammenlign: «spa stavanger» (210/mnd, 14,63 kr) gir bare ~342 klikk, og «badstue stavanger» (480/mnd, 10,78 kr) gir ~464 klikk for samme beløp. Thai massasje gir deg flest klikk per krone blant alle eksplisitte søkeord med høyt volum.",
+      "tagEN": "Paid — from 5,000 kr/month",
+      "tagNO": "Betalt — fra 5 000 kr/mnd"
+    }
+  ],
+  "calculator": {
+    "avgCpc": 9.9,
+    "defaultPatientValue": 3000,
+    "defaultBudget": 5000,
+    "defaultConversion": 20,
+    "clickToInquiryRate": 0.035,
+    "benchmarkEN": "Spa CPCs in Stavanger range from 0.99 kr (spa behandling) to 30.47 kr (wellness stavanger). Thai massage keywords (7.81–8.69 kr) offer the best volume-to-cost ratio. A repeat spa customer visiting 2-3 times per year at 1,000–1,500 kr per visit is worth ~3,000 kr annually. At 9.9 kr average CPC, customer acquisition costs remain well below a single spa session, making paid advertising highly profitable for spas that convert visitors into regulars.",
+    "benchmarkNO": "Spa-CPC-er i Stavanger varierer fra 0,99 kr (spa behandling) til 30,47 kr (wellness stavanger). Thai massasje-søkeord (7,81–8,69 kr) gir det beste forholdet mellom volum og kostnad. En gjentakende spa-kunde som besøker 2-3 ganger per år til 1 000–1 500 kr per besøk er verdt ~3 000 kr årlig. Med 9,9 kr gjennomsnittlig CPC forblir kundeanskaffelseskostnadene godt under en enkelt spa-behandling, noe som gjør betalt annonsering svært lønnsomt for spaer som konverterer besøkende til faste kunder."
+  },
+  "sources": [
+    {
+      "name": "DataForSEO – Keywords Data API (Google Ads, Stavanger)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – SERP API (Google organic, Stavanger)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – Maps API (Google Maps, Stavanger)",
+      "url": null
+    },
+    {
+      "name": "DataReportal – Digital 2025: Norway",
+      "url": "https://datareportal.com/reports/digital-2025-norway"
+    },
+    {
+      "name": "BrightLocal – Local Pack Click Share Study 2024",
+      "url": "https://www.brightlocal.com/research/"
+    }
+  ]
+}

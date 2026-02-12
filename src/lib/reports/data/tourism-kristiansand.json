@@ -1,0 +1,555 @@
+{
+  "meta": {
+    "niche": "tourism",
+    "nicheNO": "turisme og opplevelser",
+    "city": "Kristiansand",
+    "locationCode": 1010894,
+    "dataDate": "2026-02",
+    "totalSearchVolume": 510
+  },
+  "metrics": {
+    "keywordCount": 11,
+    "avgCpc": 7.1,
+    "topClinicsCount": 5,
+    "mapsClickShare": 38
+  },
+  "keywordGroups": [
+    {
+      "id": "activities",
+      "color": "green",
+      "nameEN": "Activities & experiences",
+      "nameNO": "Aktiviteter og opplevelser",
+      "descriptionEN": "All of Kristiansand's 510 monthly tourism searches fall into this single group — the discovery and explicit city-branded groups show zero volume. Go-kart leads at 210/mo (just 0.99 kr CPC — the cheapest click in this report), followed by escape room (170/mo at 3.85 kr). The outlier is \"teambuilding\" at 76.56 kr/click — 77x more expensive than go-kart, revealing the corporate premium even in a small market. Gift keywords (gave opplevelse 17.05 kr, gavekort opplevelse 18.59 kr) suggest a gift-buying segment worth targeting.",
+      "descriptionNO": "Alle Kristiansands 510 månedlige turismesøk faller i denne ene gruppen — oppdagelses- og eksplisitt bymerket-gruppene viser null volum. Go-kart leder med 210/mnd (bare 0,99 kr CPC — det billigste klikket i denne rapporten), etterfulgt av escape room (170/mnd til 3,85 kr). Uteliggeren er «teambuilding» til 76,56 kr/klikk — 77x dyrere enn go-kart, noe som avslører bedriftspremien selv i et lite marked. Gavesøkeord (gave opplevelse 17,05 kr, gavekort opplevelse 18,59 kr) antyder et gavekjøpssegment verdt å målrette.",
+      "totalVolume": 510,
+      "keywords": [
+        {
+          "keyword": "go-kart",
+          "translation": "go-kart",
+          "volume": 210,
+          "competition": "MEDIUM",
+          "cpc": 0.99
+        },
+        {
+          "keyword": "escape room",
+          "translation": "escape room",
+          "volume": 170,
+          "competition": "LOW",
+          "cpc": 3.85
+        },
+        {
+          "keyword": "klatring",
+          "translation": "climbing",
+          "volume": 30,
+          "competition": "LOW",
+          "cpc": 4.62
+        },
+        {
+          "keyword": "teambuilding",
+          "translation": "team building",
+          "volume": 20,
+          "competition": "MEDIUM",
+          "cpc": 76.56
+        },
+        {
+          "keyword": "zipline",
+          "translation": "zipline",
+          "volume": 20,
+          "competition": "HIGH",
+          "cpc": 3.52
+        },
+        {
+          "keyword": "opplevelse",
+          "translation": "experience",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 30.58
+        },
+        {
+          "keyword": "opplevelser",
+          "translation": "experiences",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 25.85
+        },
+        {
+          "keyword": "ølsmaking",
+          "translation": "beer tasting",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 6.6
+        },
+        {
+          "keyword": "vinsmaking",
+          "translation": "wine tasting",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 3.19
+        },
+        {
+          "keyword": "gave opplevelse",
+          "translation": "experience gift",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 17.05
+        },
+        {
+          "keyword": "gavekort opplevelse",
+          "translation": "experience gift card",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 18.59
+        }
+      ]
+    },
+    {
+      "id": "discovery",
+      "color": "amber",
+      "nameEN": "\"What to do\" searches",
+      "nameNO": "\"Hva kan man gjøre\"-søk",
+      "descriptionEN": "No discovery-phase keywords register measurable volume in Kristiansand. Searches like \"ting å gjøre\" and \"fritidsaktiviteter\" show zero local volume — Kristiansand searchers appear to go directly to specific activities (go-kart, escape room) or use city-branded queries that show up in SERP data but not in the keyword volume tools. This pattern suggests a market where demand is driven by locals who already know what they want, rather than tourists exploring options.",
+      "descriptionNO": "Ingen oppdagelsesfase-søkeord registrerer målbart volum i Kristiansand. Søk som «ting å gjøre» og «fritidsaktiviteter» viser null lokalt volum — Kristiansand-søkere ser ut til å gå direkte til spesifikke aktiviteter (go-kart, escape room) eller bruke bymerkede søk som dukker opp i SERP-data men ikke i søkeordvolumverktøyene. Dette mønsteret antyder et marked der etterspørselen drives av lokale som allerede vet hva de vil, fremfor turister som utforsker alternativer.",
+      "totalVolume": 0,
+      "keywords": []
+    },
+    {
+      "id": "explicit",
+      "color": "blue",
+      "nameEN": "Explicit \"Kristiansand\" searches",
+      "nameNO": "Eksplisitte \"Kristiansand\"-søk",
+      "descriptionEN": "No explicit \"Kristiansand\"-branded keywords register measurable volume in keyword tools. However, SERP data confirms these searches do happen — Google returns rich organic and Maps results for queries like \"ting å gjøre i kristiansand\" and \"aktiviteter kristiansand\". The volume is below the reporting threshold (<10/mo) for individual keywords. This doesn't mean zero demand — it means the market is fragmented across many low-volume long-tail queries rather than concentrated in a few high-volume terms.",
+      "descriptionNO": "Ingen eksplisitte «Kristiansand»-merkede søkeord registrerer målbart volum i søkeordverktøy. SERP-data bekrefter imidlertid at disse søkene finner sted — Google returnerer rike organiske og Maps-resultater for søk som «ting å gjøre i kristiansand» og «aktiviteter kristiansand». Volumet er under rapporteringsgrensen (<10/mnd) for individuelle søkeord. Dette betyr ikke null etterspørsel — det betyr at markedet er fragmentert på tvers av mange lavvolum long-tail-søk fremfor konsentrert i noen få høyvolumtermer.",
+      "totalVolume": 0,
+      "keywords": [],
+      "isNational": true
+    }
+  ],
+  "serpKeywords": [
+    {
+      "keyword": "ting å gjøre i kristiansand",
+      "volume": 0,
+      "organic": [
+        {
+          "rank": 2,
+          "domain": "no.tripadvisor.com"
+        },
+        {
+          "rank": 3,
+          "domain": "www.visitsorlandet.com"
+        },
+        {
+          "rank": 4,
+          "domain": "www.norwegian.com"
+        },
+        {
+          "rank": 7,
+          "domain": "www.visitsorlandet.com"
+        },
+        {
+          "rank": 8,
+          "domain": "no.tripadvisor.com"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Kristiansand Dyrepark",
+          "rating": 4.5,
+          "reviews": 0
+        },
+        {
+          "rank": 2,
+          "title": "Kristiansand museum",
+          "rating": 4.4,
+          "reviews": 0
+        },
+        {
+          "rank": 3,
+          "title": "Kristiansand domkirke",
+          "rating": 4.6,
+          "reviews": 1045
+        }
+      ],
+      "insightEN": "Despite below-threshold keyword volume, Google delivers strong results: tripadvisor.com (#2) and visitsorlandet.com (#3, #7) dominate — Kristiansand routes through the regional Sorlandet tourism portal rather than a city-specific one. norwegian.com (#4) appears as in Stavanger. Maps reveals Kristiansand's flagship attraction: Kristiansand Dyrepark (4.5 stars) at #1 — Norway's most popular family theme park. Kristiansand domkirke (#3, 4.6 stars, 1,045 reviews) provides the only visible review count.",
+      "insightNO": "Til tross for søkeordvolum under terskelen leverer Google sterke resultater: tripadvisor.com (#2) og visitsorlandet.com (#3, #7) dominerer — Kristiansand rutes gjennom den regionale Sørlandet-turistportalen i stedet for en byspesifikk. norwegian.com (#4) dukker opp som i Stavanger. Maps avslører Kristiansands flaggskipattraksjon: Kristiansand Dyrepark (4,5 stjerner) på #1 — Norges mest populære familietemapark. Kristiansand domkirke (#3, 4,6 stjerner, 1 045 anmeldelser) gir det eneste synlige anmeldelsestallet."
+    },
+    {
+      "keyword": "aktiviteter kristiansand",
+      "volume": 0,
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "no.tripadvisor.com"
+        },
+        {
+          "rank": 2,
+          "domain": "www.visitsorlandet.com"
+        },
+        {
+          "rank": 8,
+          "domain": "www.getyourguide.com"
+        },
+        {
+          "rank": 9,
+          "domain": "www.momondo.no"
+        },
+        {
+          "rank": 10,
+          "domain": "thyr.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Sørlandet Klatresenter",
+          "rating": 4.8,
+          "reviews": 222
+        },
+        {
+          "rank": 2,
+          "title": "Leo's Lekeland",
+          "rating": 4.1,
+          "reviews": 514
+        },
+        {
+          "rank": 3,
+          "title": "Sport og Moro",
+          "rating": 4.5,
+          "reviews": 118
+        }
+      ],
+      "insightEN": "tripadvisor.com (#1) and visitsorlandet.com (#2) hold the top positions. A niche player breaks through: thyr.no (#10) — an activity-focused site that cracks the top 10 despite portal dominance. getyourguide.com (#8) and momondo.no (#9) show that international booking platforms compete in Kristiansand. Maps favors bookable activity venues: Sorlandet Klatresenter (4.8 stars, 222 reviews), Leo's Lekeland (4.1 stars, 514 reviews), and Sport og Moro (4.5 stars, 118 reviews). Leo's Lekeland has the most reviews — family entertainment dominates.",
+      "insightNO": "tripadvisor.com (#1) og visitsorlandet.com (#2) holder toppposisjonene. En nisjespiller bryter igjennom: thyr.no (#10) — et aktivitetsfokusert nettsted som knekker topp 10 til tross for portaldominans. getyourguide.com (#8) og momondo.no (#9) viser at internasjonale bookingplattformer konkurrerer i Kristiansand. Maps favoriserer bookbare aktivitetssteder: Sørlandet Klatresenter (4,8 stjerner, 222 anmeldelser), Leo's Lekeland (4,1 stjerner, 514 anmeldelser) og Sport og Moro (4,5 stjerner, 118 anmeldelser). Leo's Lekeland har flest anmeldelser — familieunderholdning dominerer."
+    },
+    {
+      "keyword": "opplevelser kristiansand",
+      "volume": 0,
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "no.tripadvisor.com"
+        },
+        {
+          "rank": 2,
+          "domain": "www.visitsorlandet.com"
+        },
+        {
+          "rank": 3,
+          "domain": "www.norwegian.com"
+        },
+        {
+          "rank": 4,
+          "domain": "no.tripadvisor.com"
+        },
+        {
+          "rank": 6,
+          "domain": "www.dehistoriske.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Natural History Museum and Botanical Garden, University of Agder",
+          "rating": 4.5,
+          "reviews": 257
+        },
+        {
+          "rank": 2,
+          "title": "Visit Sørlandet AS",
+          "rating": 3.8,
+          "reviews": 10
+        },
+        {
+          "rank": 3,
+          "title": "BURSDAGSGÅRDEN - naturlige opplevelser",
+          "rating": 5,
+          "reviews": 31
+        }
+      ],
+      "insightEN": "All top 5 organic results are portals: tripadvisor.com (#1), visitsorlandet.com (#2), norwegian.com (#3), tripadvisor.com again (#4), and dehistoriske.no (#6). No individual experience provider ranks organically. Maps tells a more interesting story: Natural History Museum (4.5 stars, 257 reviews) leads, but BURSDAGSGARDEN (#3) holds a perfect 5.0 rating with 31 reviews — a small niche provider winning through review quality. Visit Sorlandet AS itself appears at #2 Maps with a low 3.8 rating (10 reviews).",
+      "insightNO": "Alle topp 5 organiske resultater er portaler: tripadvisor.com (#1), visitsorlandet.com (#2), norwegian.com (#3), tripadvisor.com igjen (#4) og dehistoriske.no (#6). Ingen enkelt opplevelsesleverandør rangerer organisk. Maps forteller en mer interessant historie: Naturhistorisk museum (4,5 stjerner, 257 anmeldelser) leder, men BURSDAGSGARDEN (#3) holder perfekte 5,0 med 31 anmeldelser — en liten nisjeleverandør som vinner gjennom anmeldelseskvalitet. Visit Sørlandet AS selv dukker opp på #2 Maps med lave 3,8 stjerner (10 anmeldelser)."
+    },
+    {
+      "keyword": "guidet tur kristiansand",
+      "volume": 0,
+      "organic": [
+        {
+          "rank": 2,
+          "domain": "no.tripadvisor.com"
+        },
+        {
+          "rank": 3,
+          "domain": "www.visitsorlandet.com"
+        },
+        {
+          "rank": 4,
+          "domain": "www.visitnorway.no"
+        },
+        {
+          "rank": 5,
+          "domain": "guidepool.no"
+        },
+        {
+          "rank": 6,
+          "domain": "www.vestagdermuseet.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Nature Norway: RIB Speed Sightseeing",
+          "rating": 5,
+          "reviews": 0
+        },
+        {
+          "rank": 2,
+          "title": "DNT Sør",
+          "rating": 4.7,
+          "reviews": 0
+        },
+        {
+          "rank": 3,
+          "title": "City Train",
+          "rating": 2,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "Low volume but revealing competitive dynamics: visitsorlandet.com (#3), visitnorway.no (#4), and guidepool.no (#5) rank organically. guidepool.no is a niche guide marketplace breaking into the top 5 — unique among all cities we analyzed. Maps shows Nature Norway: RIB Speed Sightseeing (perfect 5.0) at #1 alongside DNT Sor (4.7 stars) at #2. City Train at #3 has a concerning 2.0 star rating — the lowest Maps rating in any Kristiansand result. The guided tour market in Kristiansand is virtually uncontested.",
+      "insightNO": "Lavt volum men avslørende konkurransedynamikk: visitsorlandet.com (#3), visitnorway.no (#4) og guidepool.no (#5) rangerer organisk. guidepool.no er en nisjeguidemarkedsplass som bryter inn i topp 5 — unikt blant alle byene vi analyserte. Maps viser Nature Norway: RIB Speed Sightseeing (perfekte 5,0) på #1 sammen med DNT Sør (4,7 stjerner) på #2. City Train på #3 har en bekymringsfull 2,0-rating — den laveste Maps-ratingen i noe Kristiansand-resultat. Markedet for guidede turer i Kristiansand er praktisk talt ubestridt."
+    }
+  ],
+  "cpcData": [
+    {
+      "keyword": "teambuilding",
+      "cpc": 76.56
+    },
+    {
+      "keyword": "opplevelse",
+      "cpc": 30.58
+    },
+    {
+      "keyword": "opplevelser",
+      "cpc": 25.85
+    },
+    {
+      "keyword": "gavekort opplevelse",
+      "cpc": 18.59
+    },
+    {
+      "keyword": "gave opplevelse",
+      "cpc": 17.05
+    },
+    {
+      "keyword": "ølsmaking",
+      "cpc": 6.6
+    },
+    {
+      "keyword": "klatring",
+      "cpc": 4.62
+    },
+    {
+      "keyword": "escape room",
+      "cpc": 3.85
+    },
+    {
+      "keyword": "zipline",
+      "cpc": 3.52
+    },
+    {
+      "keyword": "vinsmaking",
+      "cpc": 3.19
+    },
+    {
+      "keyword": "go-kart",
+      "cpc": 0.99
+    }
+  ],
+  "seasonality": {
+    "keyword": "ting å gjøre",
+    "months": [
+      {
+        "month": "Jan",
+        "volume": 10
+      },
+      {
+        "month": "Feb",
+        "volume": 10
+      },
+      {
+        "month": "Mar",
+        "volume": 10
+      },
+      {
+        "month": "Apr",
+        "volume": 10
+      },
+      {
+        "month": "May",
+        "volume": 10
+      },
+      {
+        "month": "Jun",
+        "volume": 10
+      },
+      {
+        "month": "Jul",
+        "volume": 10
+      },
+      {
+        "month": "Aug",
+        "volume": 10
+      },
+      {
+        "month": "Sep",
+        "volume": 10
+      },
+      {
+        "month": "Oct",
+        "volume": 10
+      },
+      {
+        "month": "Nov",
+        "volume": 10
+      },
+      {
+        "month": "Dec",
+        "volume": 10
+      }
+    ],
+    "peakMonths": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ],
+    "lowMonths": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ],
+    "insightEN": "\"Ting å gjøre\" searches in Kristiansand show a perfectly flat line at 10/mo every month — no seasonal variation at all. This is the data floor (minimum reportable volume), meaning the actual pattern is likely hidden below the measurement threshold. Given Kristiansand's identity as a summer destination (Sorlandet is Norway's Riviera), real demand almost certainly spikes June–August but the volumes are too low to capture the variation. Strategy: assume summer peak demand and align campaigns with the Dyrepark season (typically May–September).",
+    "insightNO": "«Ting å gjøre»-søk i Kristiansand viser en perfekt flat linje på 10/mnd hver måned — ingen sesongvariasjon i det hele tatt. Dette er datagulvet (minste rapporterbare volum), noe som betyr at det faktiske mønsteret sannsynligvis er skjult under måleterskelen. Gitt Kristiansands identitet som sommerreisemål (Sørlandet er Norges riviera) øker reell etterspørsel nesten sikkert juni–august, men volumene er for lave til å fange variasjonen. Strategi: anta sommer-toppetterspørsel og tilpass kampanjer til Dyrepark-sesongen (typisk mai–september)."
+  },
+  "insights": [
+    {
+      "icon": "zap",
+      "color": "red",
+      "titleEN": "Teambuilding at 76.56 kr/click — 77x the cost of go-kart (0.99 kr)",
+      "titleNO": "Teambuilding til 76,56 kr/klikk — 77x kostnaden for go-kart (0,99 kr)",
+      "textEN": "Even in Kristiansand's micro-market (510 total searches), the corporate premium persists: \"teambuilding\" costs 76.56 kr/click versus go-kart at just 0.99 kr. The 77x price gap is the largest corporate-leisure ratio we've seen across any city. Gift keywords form a distinct mid-tier: \"opplevelse\" (30.58 kr), \"opplevelser\" (25.85 kr), \"gavekort opplevelse\" (18.59 kr). This three-tier pricing (leisure <5 kr, gifts 17-31 kr, corporate 77 kr) creates clear budget segmentation.",
+      "textNO": "Selv i Kristiansands mikromarked (510 totale søk) vedvarer bedriftspremien: «teambuilding» koster 76,56 kr/klikk mot go-kart til bare 0,99 kr. Det 77x prisgapet er det største bedrift-fritid-forholdet vi har sett i noen by. Gavesøkeord danner et distinkt mellomsjikt: «opplevelse» (30,58 kr), «opplevelser» (25,85 kr), «gavekort opplevelse» (18,59 kr). Denne tretrinns-prisingen (fritid <5 kr, gaver 17-31 kr, bedrift 77 kr) skaper tydelig budsjettsegmentering.",
+      "statLabel": "corporate CPC",
+      "statValue": "77 kr"
+    },
+    {
+      "icon": "globe",
+      "color": "green",
+      "titleEN": "510 monthly searches — a micro-market with ultra-low competition",
+      "titleNO": "510 månedlige søk — et mikromarked med ultralavt konkurranse",
+      "textEN": "Kristiansand's 510 monthly tourism searches is just 3.8% of Oslo's local volume (13,380). But the advantage is minimal competition: no explicit city-branded keywords register volume, yet SERP results show rich Maps packs with 3 results per keyword. At 7.1 kr average CPC — the lowest of any city — every click is cheap. Go-kart (0.99 kr) and escape room (3.85 kr) are remarkably affordable entry points for Google Ads testing.",
+      "textNO": "Kristiansands 510 månedlige turismesøk er bare 3,8 % av Oslos lokale volum (13 380). Men fordelen er minimal konkurranse: ingen eksplisitte bymerkede søkeord registrerer volum, men SERP-resultater viser rike Maps-pakker med 3 resultater per søkeord. Med 7,1 kr gjennomsnittlig CPC — den laveste av noen by — er hvert klikk billig. Go-kart (0,99 kr) og escape room (3,85 kr) er bemerkelsesverdig rimelige inngangspunkter for Google Ads-testing.",
+      "statLabel": "monthly searches",
+      "statValue": "510"
+    },
+    {
+      "icon": "map-pin",
+      "color": "amber",
+      "titleEN": "Kristiansand Dyrepark dominates Maps — but activity venues win for specific keywords",
+      "titleNO": "Kristiansand Dyrepark dominerer Maps — men aktivitetssteder vinner for spesifikke søkeord",
+      "textEN": "Kristiansand Dyrepark (4.5 stars) appears as Maps #1 for \"ting å gjøre i kristiansand\" — no surprise for Norway's most famous family park. But for \"aktiviteter kristiansand\", Maps shows activity venues: Sorlandet Klatresenter (4.8 stars, 222 reviews), Leo's Lekeland (4.1, 514 reviews), and Sport og Moro (4.5, 118 reviews). Leo's Lekeland has the highest review count, showing family entertainment venues invest heavily in reviews.",
+      "textNO": "Kristiansand Dyrepark (4,5 stjerner) dukker opp som Maps #1 for «ting å gjøre i kristiansand» — ingen overraskelse for Norges mest kjente familiepark. Men for «aktiviteter kristiansand» viser Maps aktivitetssteder: Sørlandet Klatresenter (4,8 stjerner, 222 anmeldelser), Leo's Lekeland (4,1, 514 anmeldelser) og Sport og Moro (4,5, 118 anmeldelser). Leo's Lekeland har det høyeste anmeldelsestallet, noe som viser at familieunderholdningssteder investerer tungt i anmeldelser.",
+      "statLabel": "Maps click share",
+      "statValue": "38%"
+    },
+    {
+      "icon": "star",
+      "color": "blue",
+      "titleEN": "Go-kart and escape room: 380 combined searches at under 4 kr/click average",
+      "titleNO": "Go-kart og escape room: 380 kombinerte søk til under 4 kr/klikk i snitt",
+      "textEN": "Go-kart (210/mo at 0.99 kr) and escape room (170/mo at 3.85 kr) together represent 75% of Kristiansand's entire search volume at an average CPC of just 2.30 kr. These are among the cheapest tourism clicks in Norway. With a 5,000 kr budget targeting only these two keywords, you'd get ~2,174 clicks per month — more than the total market volume. The key challenge isn't cost, it's reaching searchers in this small but concentrated market.",
+      "textNO": "Go-kart (210/mnd til 0,99 kr) og escape room (170/mnd til 3,85 kr) representerer sammen 75 % av Kristiansands totale søkevolum til en gjennomsnittlig CPC på bare 2,30 kr. Dette er blant de billigste turismeklikkene i Norge. Med et budsjett på 5 000 kr målrettet mot bare disse to søkeordene vil du få ~2 174 klikk per måned — mer enn det totale markedsvolumet. Hovedutfordringen er ikke kostnad, det er å nå søkere i dette lille men konsentrerte markedet."
+    }
+  ],
+  "tips": [
+    {
+      "titleEN": "Google Business Profile — compete in Kristiansand's low-competition Maps",
+      "titleNO": "Google Bedriftsprofil — konkurrer i Kristiansands lavkonkurranse-Maps",
+      "textEN": "Sorlandet Klatresenter holds a 4.8 rating with 222 reviews and ranks #1 for \"aktiviteter kristiansand\" in Maps. BURSDAGSGARDEN has a perfect 5.0 in \"opplevelser\" Maps. With few competitors in Maps, even 50-100 reviews with a 4.5+ rating can secure top positions. Add every relevant category: activity center, escape room, family entertainment. The guided tour Maps space has only Nature Norway (5.0) and DNT Sor (4.7) — there's room for new entrants.",
+      "textNO": "Sørlandet Klatresenter holder 4,8 stjerner med 222 anmeldelser og rangerer #1 for «aktiviteter kristiansand» i Maps. BURSDAGSGARDEN har perfekte 5,0 i «opplevelser» Maps. Med få konkurrenter i Maps kan selv 50-100 anmeldelser med 4,5+ rating sikre topposisjoner. Legg til hver relevant kategori: aktivitetssenter, escape room, familieunderholdning. Guidet tur Maps-rommet har bare Nature Norway (5,0) og DNT Sør (4,7) — det er plass for nye aktører.",
+      "tagEN": "Free — 30 minutes",
+      "tagNO": "Gratis — 30 minutter"
+    },
+    {
+      "titleEN": "List on VisitSorlandet, TripAdvisor, and GetYourGuide",
+      "titleNO": "List deg på VisitSørlandet, TripAdvisor og GetYourGuide",
+      "textEN": "visitsorlandet.com (not a Kristiansand-specific portal) and tripadvisor.com appear in organic top 3 for every tested keyword. getyourguide.com (#8 for \"aktiviteter kristiansand\") and momondo.no (#9) show international booking platforms have entered this market. Listing on all three gives you visibility in a market where no individual provider ranks in the organic top 5. thyr.no (#10) proves niche activity sites can break through.",
+      "textNO": "visitsorlandet.com (ikke en Kristiansand-spesifikk portal) og tripadvisor.com dukker opp i organisk topp 3 for hvert testet søkeord. getyourguide.com (#8 for «aktiviteter kristiansand») og momondo.no (#9) viser at internasjonale bookingplattformer har entret dette markedet. Listing på alle tre gir deg synlighet i et marked der ingen enkeltleverandør rangerer i organisk topp 5. thyr.no (#10) beviser at nisjeaktivitetssider kan bryte igjennom.",
+      "tagEN": "Free — 1-2 hours",
+      "tagNO": "Gratis — 1-2 timer"
+    },
+    {
+      "titleEN": "Create a dedicated \"activities in Kristiansand\" landing page",
+      "titleNO": "Lag en dedikert «aktiviteter i Kristiansand»-landingsside",
+      "textEN": "Kristiansand has zero explicit city-branded keyword volume — meaning Google doesn't associate enough local content with city-specific searches. A dedicated landing page targeting \"ting å gjøre i kristiansand\" and \"aktiviteter kristiansand\" could fill this gap. The SERP data shows Google still serves rich results for these queries, but no individual activity provider ranks organically. First mover advantage is significant in markets this small.",
+      "textNO": "Kristiansand har null eksplisitt bymerket søkeordvolum — noe som betyr at Google ikke assosierer nok lokalt innhold med byspesifikke søk. En dedikert landingsside som målretter «ting å gjøre i kristiansand» og «aktiviteter kristiansand» kan fylle dette gapet. SERP-dataene viser at Google fortsatt leverer rike resultater for disse søkene, men ingen enkelt aktivitetsleverandør rangerer organisk. Førstemoverfordel er betydelig i markeder så små som dette.",
+      "tagEN": "Free — 2-3 hours per page",
+      "tagNO": "Gratis — 2-3 timer per side"
+    },
+    {
+      "titleEN": "Start Google Ads at sub-5 kr CPCs — test cheaply before scaling",
+      "titleNO": "Start Google Ads med under 5 kr CPC — test billig før skalering",
+      "textEN": "With go-kart at 0.99 kr/click and escape room at 3.85 kr/click, Kristiansand offers the cheapest tourism ad entry point in Norway. A test budget of just 1,000 kr/month targeting these two keywords generates ~350-1,000 clicks — potentially more than the actual monthly search demand. Start small, measure conversion rates, then decide whether to increase budget or add higher-CPC keywords like opplevelse (30.58 kr). The low cost makes A/B testing landing pages practically free.",
+      "textNO": "Med go-kart til 0,99 kr/klikk og escape room til 3,85 kr/klikk tilbyr Kristiansand det billigste turismeannonse-inngangspunktet i Norge. Et testbudsjett på bare 1 000 kr/mnd målrettet mot disse to søkeordene genererer ~350-1 000 klikk — potensielt mer enn den faktiske månedlige søkeetterspørselen. Start lite, mål konverteringsrater, og beslutt deretter om du skal øke budsjettet eller legge til høyere-CPC-søkeord som opplevelse (30,58 kr). Den lave kostnaden gjør A/B-testing av landingssider praktisk talt gratis.",
+      "tagEN": "Paid — from 1,000 kr/month",
+      "tagNO": "Betalt — fra 1 000 kr/mnd"
+    }
+  ],
+  "calculator": {
+    "avgCpc": 7.1,
+    "defaultPatientValue": 2000,
+    "defaultBudget": 5000,
+    "defaultConversion": 20,
+    "clickToInquiryRate": 0.035,
+    "benchmarkEN": "Kristiansand has the lowest average CPC of any city at 7.1 kr, but this masks a three-tier market: leisure (go-kart 0.99 kr, escape room 3.85 kr), gifts (gave opplevelse 17.05 kr, gavekort opplevelse 18.59 kr), and corporate (teambuilding 76.56 kr). Target the leisure tier for a true average of ~2-4 kr/click. An average booking value of 2,000 kr (2-4 people x 500 kr) means one converted group covers 500-2,000 clicks at leisure CPCs — exceptional ROI potential.",
+    "benchmarkNO": "Kristiansand har den laveste gjennomsnittlige CPC-en av noen by på 7,1 kr, men dette skjuler et tretrinnsmarked: fritid (go-kart 0,99 kr, escape room 3,85 kr), gaver (gave opplevelse 17,05 kr, gavekort opplevelse 18,59 kr) og bedrift (teambuilding 76,56 kr). Målrett fritidstrinnet for et reelt snitt på ~2-4 kr/klikk. En gjennomsnittlig bestillingsverdi på 2 000 kr (2-4 personer x 500 kr) betyr at én konvertert gruppe dekker 500-2 000 klikk med fritids-CPC-er — eksepsjonelt ROI-potensial."
+  },
+  "sources": [
+    {
+      "name": "DataForSEO – Keywords Data API (Google Ads, Kristiansand)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – SERP API (Google organic, Kristiansand)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – Maps API (Google Maps, Kristiansand)",
+      "url": null
+    },
+    {
+      "name": "DataReportal – Digital 2025: Norway",
+      "url": "https://datareportal.com/reports/digital-2025-norway"
+    },
+    {
+      "name": "BrightLocal – Local Pack Click Share Study 2024",
+      "url": "https://www.brightlocal.com/research/"
+    }
+  ]
+}

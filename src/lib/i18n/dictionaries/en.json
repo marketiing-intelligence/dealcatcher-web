@@ -889,7 +889,7 @@
       "badge": "Market Report",
       "titleSearches": "monthly searches",
       "titleFor": "for {nicheLower} in {city}",
-      "subtitle": "Every month, thousands of people in {city} open Google looking for a {nicheLower}. This report shows you exactly what they type, who they find instead of you — and what you can do about it."
+      "subtitle": "Every month, thousands of people in {city} search Google for {nicheLower}. This report shows you exactly what they type, who they find instead of you — and what you can do about it."
     },
     "metrics": {
       "keywords": "Keywords analyzed",
@@ -901,11 +901,13 @@
     "keywords": {
       "badge": "Keyword Analysis",
       "title": "What people actually type into Google",
-      "subtitle": "When someone needs a {nicheLower}, they don't always type \"{nicheLower}\". Some search for a specific service, others describe their problem. Below are all the real search terms people in {city} use, grouped by intent, and how many times per month.",
+      "subtitle": "When searching for {nicheLower}, people don't always type \"{nicheLower}\". Some search for a specific service, others describe their problem. Below are all the real search terms people in {city} use, grouped by intent, and how many times per month.",
       "volume": "Searches/mo",
       "competition": "Comp.",
       "cpc": "Ad cost/click",
-      "groupTotal": "Total searches"
+      "groupTotal": "Total searches",
+      "nationalBadge": "Nationwide",
+      "nationalNote": "These are national search volumes — people across Norway searching for services specifically in this city. Not included in the total above."
     },
     "competition": {
       "badge": "Competition",
@@ -942,7 +944,7 @@
     "seasonality": {
       "badge": "Timing",
       "title": "Some months are busier than others",
-      "subtitle": "Demand isn't constant. The chart below shows how many people search for \"{keyword}\" each month. The tall bars = high demand (spend more on ads then). The short bars = quiet months (save your budget). Knowing this pattern lets you spend smarter, not more.",
+      "subtitle": "Demand isn't constant. This chart tracks one keyword — \"{keyword}\" — to show seasonal patterns. Tall bars = high demand (spend more on ads then). Short bars = quiet months (save your budget). The same pattern typically applies across the broader market.",
       "peak": "Peak",
       "low": "Low"
     },

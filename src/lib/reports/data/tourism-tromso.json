@@ -1,0 +1,600 @@
+{
+  "meta": {
+    "niche": "tourism",
+    "nicheNO": "turisme og opplevelser",
+    "city": "Tromsø",
+    "locationCode": 1011021,
+    "dataDate": "2026-02",
+    "totalSearchVolume": 380
+  },
+  "metrics": {
+    "keywordCount": 10,
+    "avgCpc": 7.1,
+    "topClinicsCount": 5,
+    "mapsClickShare": 38
+  },
+  "keywordGroups": [
+    {
+      "id": "activities",
+      "color": "green",
+      "nameEN": "Activities & experiences",
+      "nameNO": "Aktiviteter og opplevelser",
+      "descriptionEN": "Generic activity searches in Tromso total just 380/mo. \"Aktiviteter\" leads at 170/mo but with an almost-free CPC of 0.11 kr — the cheapest keyword across all cities. Escape room (90/mo at 9.68 kr) is the only keyword above minimal CPC. The standout is fjordcruise at 32.45 kr/click — the most expensive activity keyword, reflecting Tromso's arctic fjord tourism identity. \"Opplevelser\" costs 36.74 kr, the highest experience-keyword CPC of any city, suggesting strong competition for the premium experience market in Northern Norway.",
+      "descriptionNO": "Generiske aktivitetssøk i Tromso totalt bare 380/mnd. «Aktiviteter» leder med 170/mnd men med en nesten gratis CPC på 0,11 kr — det billigste søkeordet på tvers av alle byer. Escape room (90/mnd til 9,68 kr) er det eneste søkeordet over minimal CPC. Det som skiller seg ut er fjordcruise til 32,45 kr/klikk — det dyreste aktivitetssøkeordet, noe som reflekterer Tromsøs arktiske fjordturismeidentitet. «Opplevelser» koster 36,74 kr, den høyeste opplevelsessøkeord-CPC-en i noen by, noe som antyder sterk konkurranse om premiumopplevelsesmarkedet i Nord-Norge.",
+      "totalVolume": 380,
+      "keywords": [
+        {
+          "keyword": "aktiviteter",
+          "translation": "activities",
+          "volume": 170,
+          "competition": "LOW",
+          "cpc": 0.11
+        },
+        {
+          "keyword": "escape room",
+          "translation": "escape room",
+          "volume": 90,
+          "competition": "LOW",
+          "cpc": 9.68
+        },
+        {
+          "keyword": "klatring",
+          "translation": "climbing",
+          "volume": 30,
+          "competition": "MEDIUM",
+          "cpc": 2.97
+        },
+        {
+          "keyword": "fjordcruise",
+          "translation": "fjord cruise",
+          "volume": 20,
+          "competition": "HIGH",
+          "cpc": 32.45
+        },
+        {
+          "keyword": "zipline",
+          "translation": "zipline",
+          "volume": 20,
+          "competition": "MEDIUM",
+          "cpc": 2.53
+        },
+        {
+          "keyword": "opplevelse",
+          "translation": "experience",
+          "volume": 10,
+          "competition": "MEDIUM",
+          "cpc": 22.22
+        },
+        {
+          "keyword": "opplevelser",
+          "translation": "experiences",
+          "volume": 10,
+          "competition": "MEDIUM",
+          "cpc": 36.74
+        },
+        {
+          "keyword": "teambuilding",
+          "translation": "team building",
+          "volume": 10,
+          "competition": "MEDIUM",
+          "cpc": 21.01
+        },
+        {
+          "keyword": "nordlys tur",
+          "translation": "northern lights tour",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 3.41
+        },
+        {
+          "keyword": "gave opplevelse",
+          "translation": "experience gift",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 19.36
+        }
+      ]
+    },
+    {
+      "id": "discovery",
+      "color": "amber",
+      "nameEN": "\"What to do\" searches",
+      "nameNO": "\"Hva kan man gjøre\"-søk",
+      "descriptionEN": "Zero discovery-phase keyword volume in Tromso. Like Kristiansand, searches for \"ting å gjøre\" and \"fritidsaktiviteter\" don't register measurable local volume. This makes sense for Tromso: visitors are typically international tourists who plan Arctic experiences in advance, not locals browsing for weekend activities. Demand flows directly to explicit city-branded searches or specific activity types (northern lights, fjord cruises).",
+      "descriptionNO": "Null oppdagelsesfase-søkeordvolum i Tromsø. Som Kristiansand registrerer søk etter «ting å gjøre» og «fritidsaktiviteter» ikke målbart lokalt volum. Dette gir mening for Tromsø: besøkende er typisk internasjonale turister som planlegger arktiske opplevelser på forhånd, ikke lokale som søker etter helgeaktiviteter. Etterspørselen flyter direkte til eksplisitte bymerkede søk eller spesifikke aktivitetstyper (nordlys, fjordcruise).",
+      "totalVolume": 0,
+      "keywords": []
+    },
+    {
+      "id": "explicit",
+      "color": "blue",
+      "nameEN": "Explicit \"Tromsø\" searches",
+      "nameNO": "Eksplisitte \"Tromsø\"-søk",
+      "descriptionEN": "Explicit Tromso-branded searches total 840/mo nationally — 2.2x the local keywords (380/mo). Note: Google Ads reports these as national volumes, not Tromso-specific. \"Ting å gjøre i tromso\" leads at 480/mo (10.01 kr CPC), followed by \"aktiviteter tromso\" (260/mo at 11.88 kr). Unlike southern cities where escape room dominates, Tromso's top keywords are discovery-oriented (\"things to do\", \"activities\") rather than activity-specific. \"Opplevelser tromso\" (70/mo) and \"sightseeing tromso\" (20/mo) round out the list. The CPCs are consistent at 10-14 kr, without the extreme corporate spikes seen elsewhere — no \"teambuilding tromso\" keyword exists.",
+      "descriptionNO": "Eksplisitte Tromsø-merkede søk utgjør totalt 840/mnd nasjonalt — 2,2x de lokale søkeordene (380/mnd). Merk: Google Ads rapporterer disse som nasjonale volumer, ikke Tromsø-spesifikke. «Ting å gjøre i tromsø» leder med 480/mnd (10,01 kr CPC), etterfulgt av «aktiviteter tromsø» (260/mnd til 11,88 kr). I motsetning til sørlige byer der escape room dominerer, er Tromsøs toppsøkeord oppdagelsesorienterte («ting å gjøre», «aktiviteter») fremfor aktivitetsspesifikke. «Opplevelser tromsø» (70/mnd) og «sightseeing tromsø» (20/mnd) runder av listen. CPC-ene er konsekvente på 10-14 kr, uten de ekstreme bedriftstoppene sett andre steder — ingen «teambuilding tromsø»-søkeord eksisterer.",
+      "totalVolume": 840,
+      "keywords": [
+        {
+          "keyword": "ting å gjøre i tromsø",
+          "translation": "things to do in Tromsø",
+          "volume": 480,
+          "competition": "HIGH",
+          "cpc": 10.01
+        },
+        {
+          "keyword": "aktiviteter tromsø",
+          "translation": "activities Tromsø",
+          "volume": 260,
+          "competition": "MEDIUM",
+          "cpc": 11.88
+        },
+        {
+          "keyword": "opplevelser tromsø",
+          "translation": "experiences Tromsø",
+          "volume": 70,
+          "competition": "HIGH",
+          "cpc": 14.3
+        },
+        {
+          "keyword": "sightseeing tromsø",
+          "translation": "sightseeing Tromsø",
+          "volume": 20,
+          "competition": "HIGH",
+          "cpc": 4.62
+        },
+        {
+          "keyword": "utflukter tromsø",
+          "translation": "excursions Tromsø",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 12.54
+        }
+      ],
+      "isNational": true
+    }
+  ],
+  "serpKeywords": [
+    {
+      "keyword": "ting å gjøre i tromsø",
+      "volume": 480,
+      "organic": [
+        {
+          "rank": 2,
+          "domain": "www.visittromso.no"
+        },
+        {
+          "rank": 3,
+          "domain": "no.tripadvisor.com"
+        },
+        {
+          "rank": 4,
+          "domain": "no.tripadvisor.com"
+        },
+        {
+          "rank": 8,
+          "domain": "www.norwegian.com"
+        },
+        {
+          "rank": 9,
+          "domain": "www.norwegian.travel"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Polarmuseet i Tromsø",
+          "rating": 4.4,
+          "reviews": 0
+        },
+        {
+          "rank": 2,
+          "title": "Polaria",
+          "rating": 4.1,
+          "reviews": 0
+        },
+        {
+          "rank": 3,
+          "title": "Tromsø arktisk-alpine botanisk hage",
+          "rating": 4.6,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "The highest-volume keyword (480/mo). visittromso.no holds #2 while tripadvisor.com takes both #3 and #4 — double-ranking for the tourism portal. norwegian.com (#8) and norwegian.travel (#9) show airline influence on tourism SERPs, similar to Stavanger. Maps reveals Tromso's Arctic character: Polarmuseet (4.4 stars), Polaria (4.1 stars), and Tromso arktisk-alpine botanisk hage (4.6 stars) — all science/nature museums. No commercial activity provider appears in Maps for this broad discovery keyword.",
+      "insightNO": "Det høyeste volumsøkeordet (480/mnd). visittromso.no holder #2 mens tripadvisor.com tar både #3 og #4 — dobbeltrangering for turistportalen. norwegian.com (#8) og norwegian.travel (#9) viser flyselskapets innflytelse på turisme-SERP-er, likt Stavanger. Maps avslører Tromsøs arktiske karakter: Polarmuseet (4,4 stjerner), Polaria (4,1 stjerner) og Tromsø arktisk-alpine botanisk hage (4,6 stjerner) — alle vitenskap-/naturmuseer. Ingen kommersiell aktivitetsleverandør dukker opp i Maps for dette brede oppdagelsessøkeordet."
+    },
+    {
+      "keyword": "aktiviteter tromsø",
+      "volume": 260,
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "no.tripadvisor.com"
+        },
+        {
+          "rank": 2,
+          "domain": "www.visittromso.no"
+        },
+        {
+          "rank": 3,
+          "domain": "www.norwegian.com"
+        },
+        {
+          "rank": 8,
+          "domain": "no.tripadvisor.com"
+        },
+        {
+          "rank": 9,
+          "domain": "www.tromsosportevent.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Tromsø sport- og Eventsenter AS",
+          "rating": 4.4,
+          "reviews": 0
+        },
+        {
+          "rank": 2,
+          "title": "Tromsø Outdoor",
+          "rating": 4.7,
+          "reviews": 0
+        },
+        {
+          "rank": 3,
+          "title": "Nordnorsk vitensenter",
+          "rating": 4.5,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "tripadvisor.com (#1, #8) and visittromso.no (#2) lead the organic results. Notably, tromsosportevent.no (#9) — a niche sports event site — breaks into the top 10, unique to Tromso. norwegian.com (#3) confirms airline dominance in tourism SERPs. Maps shows activity-focused venues: Tromso sport- og Eventsenter (4.4 stars), Tromso Outdoor (4.7 stars), and Nordnorsk vitensenter (4.5 stars). Tromso Outdoor's 4.7 rating suggests outdoor adventure companies perform well in Maps.",
+      "insightNO": "tripadvisor.com (#1, #8) og visittromso.no (#2) leder de organiske resultatene. Bemerkelsesverdig er at tromsosportevent.no (#9) — et nisje-sportsevent-nettsted — bryter inn i topp 10, unikt for Tromsø. norwegian.com (#3) bekrefter flyselskapsdominans i turisme-SERP-er. Maps viser aktivitetsfokuserte steder: Tromsø sport- og Eventsenter (4,4 stjerner), Tromsø Outdoor (4,7 stjerner) og Nordnorsk vitensenter (4,5 stjerner). Tromsø Outdoors 4,7-rating antyder at utendørseventyrbedrifter presterer godt i Maps."
+    },
+    {
+      "keyword": "opplevelser tromsø",
+      "volume": 70,
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "www.visittromso.no"
+        },
+        {
+          "rank": 2,
+          "domain": "no.tripadvisor.com"
+        },
+        {
+          "rank": 3,
+          "domain": "truestory.no"
+        },
+        {
+          "rank": 4,
+          "domain": "www.visitnorway.no"
+        },
+        {
+          "rank": 5,
+          "domain": "www.tromsosentrum.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Polaria",
+          "rating": 4.1,
+          "reviews": 6445
+        },
+        {
+          "rank": 2,
+          "title": "Polarmuseet i Tromsø",
+          "rating": 4.4,
+          "reviews": 4920
+        },
+        {
+          "rank": 3,
+          "title": "Tromsø arktisk-alpine botanisk hage",
+          "rating": 4.6,
+          "reviews": 1668
+        }
+      ],
+      "insightEN": "All top 5 organic positions are portals: visittromso.no (#1), tripadvisor.com (#2), truestory.no (#3), visitnorway.no (#4), and tromsøsentrum.no (#5). No individual provider ranks organically. But Maps reveals massive review engagement: Polaria (4.1 stars, 6,445 reviews), Polarmuseet (4.4, 4,920 reviews), and Botanisk hage (4.6, 1,668 reviews). Polaria's 6,445 reviews is the second-highest single Maps result across all cities — behind only Stavanger's Gamle Stavanger (8,785 reviews). Arctic tourism drives exceptional review volumes.",
+      "insightNO": "Alle topp 5 organiske posisjoner er portaler: visittromso.no (#1), tripadvisor.com (#2), truestory.no (#3), visitnorway.no (#4) og tromsøsentrum.no (#5). Ingen enkeltleverandør rangerer organisk. Men Maps avslører massivt anmeldelsesengasjement: Polaria (4,1 stjerner, 6 445 anmeldelser), Polarmuseet (4,4, 4 920 anmeldelser) og Botanisk hage (4,6, 1 668 anmeldelser). Polarias 6 445 anmeldelser er det nest høyeste enkelt Maps-resultatet på tvers av alle byer — kun bak Stavangers Gamle Stavanger (8 785 anmeldelser). Arktisk turisme driver eksepsjonelle anmeldelsesvolumer."
+    },
+    {
+      "keyword": "guidet tur tromsø",
+      "volume": 0,
+      "organic": [
+        {
+          "rank": 4,
+          "domain": "www.visittromso.no"
+        },
+        {
+          "rank": 5,
+          "domain": "www.arcticguideservice.com"
+        },
+        {
+          "rank": 6,
+          "domain": "www.visittromso.no"
+        },
+        {
+          "rank": 7,
+          "domain": "no.tripadvisor.com"
+        },
+        {
+          "rank": 8,
+          "domain": "www.hellotickets.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Arctic Guide Service AS - Tromsø",
+          "rating": 4,
+          "reviews": 158
+        },
+        {
+          "rank": 2,
+          "title": "GuideGunnar Tromsø",
+          "rating": 4.6,
+          "reviews": 96
+        },
+        {
+          "rank": 3,
+          "title": "Arctic Circle Tours Tromsø",
+          "rating": 4.9,
+          "reviews": 209
+        }
+      ],
+      "insightEN": "Low volume but revealing: visittromso.no (#4, #6) and arcticguideservice.com (#5) rank organically — a niche guide company breaking into the top 5. hellotickets.no (#8) shows international ticketing platforms compete in Tromso. Maps is the standout: Arctic Circle Tours Tromso (4.9 stars, 209 reviews) holds #3 Maps but has the highest combined rating+reviews. GuideGunnar Tromso (4.6, 96 reviews) and Arctic Guide Service (4.0, 158 reviews) complete the pack. The guide tour market in Tromso is highly competitive — all three providers have 95+ reviews.",
+      "insightNO": "Lavt volum men avslørende: visittromso.no (#4, #6) og arcticguideservice.com (#5) rangerer organisk — et nisjeguideselskap som bryter inn i topp 5. hellotickets.no (#8) viser at internasjonale billettplattformer konkurrerer i Tromsø. Maps er det fremtredende: Arctic Circle Tours Tromsø (4,9 stjerner, 209 anmeldelser) holder #3 Maps men har den høyeste kombinerte rating+anmeldelser. GuideGunnar Tromsø (4,6, 96 anmeldelser) og Arctic Guide Service (4,0, 158 anmeldelser) fullfører pakken. Guidemarkedet i Tromsø er svært konkurransedyktig — alle tre leverandørene har 95+ anmeldelser."
+    }
+  ],
+  "cpcData": [
+    {
+      "keyword": "opplevelser",
+      "cpc": 36.74
+    },
+    {
+      "keyword": "fjordcruise",
+      "cpc": 32.45
+    },
+    {
+      "keyword": "opplevelse",
+      "cpc": 22.22
+    },
+    {
+      "keyword": "teambuilding",
+      "cpc": 21.01
+    },
+    {
+      "keyword": "gave opplevelse",
+      "cpc": 19.36
+    },
+    {
+      "keyword": "opplevelser tromsø",
+      "cpc": 14.3
+    },
+    {
+      "keyword": "utflukter tromsø",
+      "cpc": 12.54
+    },
+    {
+      "keyword": "aktiviteter tromsø",
+      "cpc": 11.88
+    },
+    {
+      "keyword": "ting å gjøre i tromsø",
+      "cpc": 10.01
+    },
+    {
+      "keyword": "escape room",
+      "cpc": 9.68
+    },
+    {
+      "keyword": "sightseeing tromsø",
+      "cpc": 4.62
+    },
+    {
+      "keyword": "nordlys tur",
+      "cpc": 3.41
+    },
+    {
+      "keyword": "klatring",
+      "cpc": 2.97
+    },
+    {
+      "keyword": "zipline",
+      "cpc": 2.53
+    },
+    {
+      "keyword": "aktiviteter",
+      "cpc": 0.11
+    }
+  ],
+  "seasonality": {
+    "keyword": "ting å gjøre",
+    "months": [
+      {
+        "month": "Jan",
+        "volume": 10
+      },
+      {
+        "month": "Feb",
+        "volume": 10
+      },
+      {
+        "month": "Mar",
+        "volume": 10
+      },
+      {
+        "month": "Apr",
+        "volume": 10
+      },
+      {
+        "month": "May",
+        "volume": 10
+      },
+      {
+        "month": "Jun",
+        "volume": 10
+      },
+      {
+        "month": "Jul",
+        "volume": 10
+      },
+      {
+        "month": "Aug",
+        "volume": 10
+      },
+      {
+        "month": "Sep",
+        "volume": 10
+      },
+      {
+        "month": "Oct",
+        "volume": 10
+      },
+      {
+        "month": "Nov",
+        "volume": 10
+      },
+      {
+        "month": "Dec",
+        "volume": 10
+      }
+    ],
+    "peakMonths": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ],
+    "lowMonths": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ],
+    "insightEN": "\"Ting å gjøre\" searches in Tromso show a flat 10/mo line — the data floor, identical to Kristiansand and Drammen. But Tromso's real seasonality is unique among Norwegian cities: Arctic tourism peaks in winter (northern lights season, December–February) and summer (midnight sun, June–August), creating a twin-peak pattern that the generic keyword data can't capture. Strategy: run year-round campaigns since Tromso has two distinct tourist seasons, each attracting different visitor segments.",
+    "insightNO": "«Ting å gjøre»-søk i Tromsø viser en flat 10/mnd-linje — datagulvet, identisk med Kristiansand og Drammen. Men Tromsøs reelle sesongvariasjoner er unike blant norske byer: arktisk turisme topper seg om vinteren (nordlyssesong, desember–februar) og sommeren (midnattssol, juni–august), noe som skaper et tvillingtopp-mønster som de generiske søkeorddataene ikke kan fange. Strategi: kjør kampanjer hele året siden Tromsø har to distinkte turistsesonger, hver med ulike besøkssegmenter."
+  },
+  "insights": [
+    {
+      "icon": "zap",
+      "color": "red",
+      "titleEN": "Opplevelser at 36.74 kr/click — Arctic premium without the corporate spike",
+      "titleNO": "Opplevelser til 36,74 kr/klikk — arktisk premie uten bedriftstoppen",
+      "textEN": "Tromso's most expensive keywords aren't corporate — they're experience-oriented: \"opplevelser\" (36.74 kr), \"fjordcruise\" (32.45 kr), \"opplevelse\" (22.22 kr), and \"teambuilding\" (21.01 kr). The teambuilding CPC of 21 kr is the lowest of any city (Oslo: 118 kr, Bergen: 120 kr). Instead, premium pricing concentrates on Arctic experience keywords. This \"Arctic premium\" reflects international tourists willing to pay more for unique Northern Norway experiences like fjord cruises and northern lights tours.",
+      "textNO": "Tromsøs dyreste søkeord er ikke bedriftsorienterte — de er opplevelsesorienterte: «opplevelser» (36,74 kr), «fjordcruise» (32,45 kr), «opplevelse» (22,22 kr) og «teambuilding» (21,01 kr). Teambuilding-CPC-en på 21 kr er den laveste av noen by (Oslo: 118 kr, Bergen: 120 kr). I stedet konsentreres premiumprisingen på arktiske opplevelsessøkeord. Denne «arktiske premien» reflekterer internasjonale turister som er villige til å betale mer for unike Nord-Norge-opplevelser som fjordcruise og nordlysturer.",
+      "statLabel": "experience CPC",
+      "statValue": "37 kr"
+    },
+    {
+      "icon": "globe",
+      "color": "green",
+      "titleEN": "380 local monthly searches — plus 840 national-volume keywords",
+      "titleNO": "380 lokale månedlige søk — pluss 840 nasjonalvolum-søkeord",
+      "textEN": "Tromso's local tourism market totals just 380/mo, with explicit \"Tromso\" keywords adding 840/mo nationally. But these Norwegian-language numbers dramatically understate the market: Tromso receives 700,000+ tourists annually, most searching in English. Norwegian-language data captures primarily domestic demand. At 7.1 kr average CPC, Tromso is affordably priced. The real opportunity lies in English-language campaigns targeting international visitors, where competition for Arctic experience keywords is likely fierce but the audience is massive.",
+      "textNO": "Tromsøs lokale turismemarked utgjør bare 380/mnd, med eksplisitte «Tromsø»-søkeord som legger til 840/mnd nasjonalt. Men disse norskspråklige tallene undervurderer markedet dramatisk: Tromsø mottar 700 000+ turister årlig, de fleste søker på engelsk. Norskspråklige data fanger primært innenlandsk etterspørsel. Med 7,1 kr gjennomsnittlig CPC er Tromsø rimelig priset. Den virkelige muligheten ligger i engelskspråklige kampanjer rettet mot internasjonale besøkende, der konkurransen om arktiske opplevelsessøkeord sannsynligvis er hard men publikummet er massivt.",
+      "statLabel": "local monthly searches",
+      "statValue": "380"
+    },
+    {
+      "icon": "map-pin",
+      "color": "amber",
+      "titleEN": "Polaria has 6,445 reviews — Arctic attractions rival major city landmarks",
+      "titleNO": "Polaria har 6 445 anmeldelser — arktiske attraksjoner rivaliserer store bylandemerker",
+      "textEN": "Polaria's 6,445 reviews (4.1 stars) makes it one of the most-reviewed tourism Maps results in Norway — second only to Stavanger's Gamle Stavanger (8,785 reviews). Polarmuseet follows with 4,920 reviews (4.4 stars). These Arctic attractions generate review volumes rivaling major capital-city landmarks, driven by international tourist traffic. For guided tour providers, Arctic Circle Tours Tromso (4.9, 209 reviews) shows how high ratings beat sheer volume — their 4.9 outperforms Arctic Guide Service's 4.0 despite fewer reviews.",
+      "textNO": "Polarias 6 445 anmeldelser (4,1 stjerner) gjør det til et av de mest anmeldte turisme Maps-resultatene i Norge — kun bak Stavangers Gamle Stavanger (8 785 anmeldelser). Polarmuseet følger med 4 920 anmeldelser (4,4 stjerner). Disse arktiske attraksjonene genererer anmeldelsesvolumer som rivaliserer store hovedstadslandemerker, drevet av internasjonal turisttrafikk. For guideleverandører viser Arctic Circle Tours Tromsø (4,9, 209 anmeldelser) hvordan høy rating slår rent volum — deres 4,9 utkonkurrerer Arctic Guide Services 4,0 til tross for færre anmeldelser.",
+      "statLabel": "Maps click share",
+      "statValue": "38%"
+    },
+    {
+      "icon": "clock",
+      "color": "purple",
+      "titleEN": "Twin tourist seasons — winter (northern lights) and summer (midnight sun)",
+      "titleNO": "Tvillingturistsesonger — vinter (nordlys) og sommer (midnattssol)",
+      "textEN": "Unlike every other Norwegian city which peaks in summer only, Tromso has two distinct tourism seasons: northern lights (October–March) and midnight sun (May–August). The keyword \"nordlys tur\" (10/mo at just 3.41 kr) appears in Norwegian data but the English equivalents are likely much higher-volume. This dual seasonality means year-round advertising potential — something no other city in this report offers. Fjordcruise (32.45 kr) and opplevelser (36.74 kr) are relevant across both seasons.",
+      "textNO": "I motsetning til alle andre norske byer som kun topper seg om sommeren, har Tromsø to distinkte turistsesonger: nordlys (oktober–mars) og midnattssol (mai–august). Søkeordet «nordlys tur» (10/mnd til bare 3,41 kr) dukker opp i norske data, men de engelske ekvivalentene har sannsynligvis mye høyere volum. Denne doble sesongvariasjonen betyr annonsepotensial hele året — noe ingen annen by i denne rapporten tilbyr. Fjordcruise (32,45 kr) og opplevelser (36,74 kr) er relevante på tvers av begge sesongene."
+    }
+  ],
+  "tips": [
+    {
+      "titleEN": "Google Business Profile — compete in Tromso's high-review Maps landscape",
+      "titleNO": "Google Bedriftsprofil — konkurrer i Tromsøs høy-anmeldelses Maps-landskap",
+      "textEN": "Tromso's Maps landscape has exceptionally high review counts: Polaria (6,445), Polarmuseet (4,920), Botanisk hage (1,668). For activity providers, Tromso Outdoor (4.7 stars) and Tromso sport- og Eventsenter (4.4 stars) show that adventure/outdoor companies can win Maps without museum-scale reviews. Arctic Circle Tours (4.9, 209 reviews) dominates the guided tour space. Target 100+ reviews with a 4.5+ rating to be competitive. Add Arctic-specific categories: northern lights tour, fjord cruise, outdoor adventure.",
+      "textNO": "Tromsøs Maps-landskap har eksepsjonelt høye anmeldelsestall: Polaria (6 445), Polarmuseet (4 920), Botanisk hage (1 668). For aktivitetsleverandører viser Tromsø Outdoor (4,7 stjerner) og Tromsø sport- og Eventsenter (4,4 stjerner) at eventyr-/utendørsbedrifter kan vinne Maps uten museums-skala anmeldelser. Arctic Circle Tours (4,9, 209 anmeldelser) dominerer guidet tur-rommet. Mål 100+ anmeldelser med 4,5+ rating for å være konkurransedyktig. Legg til arktisk-spesifikke kategorier: nordlystur, fjordcruise, utendørseventyr.",
+      "tagEN": "Free — 30 minutes",
+      "tagNO": "Gratis — 30 minutter"
+    },
+    {
+      "titleEN": "List on VisitTromso.no, TripAdvisor, and TrueStory.no",
+      "titleNO": "List deg på VisitTromso.no, TripAdvisor og TrueStory.no",
+      "textEN": "visittromso.no and tripadvisor.com dominate organic top 3 for every tested keyword. truestory.no (#3 for \"opplevelser tromso\") is an experience platform that consistently ranks across multiple Norwegian cities. tromsøsentrum.no (#5) offers another local listing opportunity. arcticguideservice.com (#5 for \"guidet tur\") is the only individual guide company ranking organically — showing that niche tour operators can compete against portals in Tromso.",
+      "textNO": "visittromso.no og tripadvisor.com dominerer organisk topp 3 for hvert testet søkeord. truestory.no (#3 for «opplevelser tromsø») er en opplevelsesplattform som konsekvent rangerer på tvers av flere norske byer. tromsøsentrum.no (#5) tilbyr en annen lokal listingsmulighet. arcticguideservice.com (#5 for «guidet tur») er det eneste individuelle guideselskapet som rangerer organisk — noe som viser at nisjetouroperatører kan konkurrere mot portaler i Tromsø.",
+      "tagEN": "Free — 1-2 hours",
+      "tagNO": "Gratis — 1-2 timer"
+    },
+    {
+      "titleEN": "Create English-language landing pages for international tourists",
+      "titleNO": "Lag engelskspråklige landingssider for internasjonale turister",
+      "textEN": "Tromso's 380 local monthly searches (plus 840 national) vastly understate the real market. With 700,000+ annual tourists (mostly international), English-language keywords like \"things to do in Tromso\", \"northern lights tour Tromso\", and \"Tromso fjord cruise\" likely have 10-50x the Norwegian volume. Creating dedicated English landing pages for each Arctic experience type taps into this massive international demand that Norwegian competitors may overlook.",
+      "textNO": "Tromsøs 380 lokale månedlige søk (pluss 840 nasjonale) undervurderer det virkelige markedet betydelig. Med 700 000+ årlige turister (flest internasjonale) har engelskspråklige søkeord som «things to do in Tromso», «northern lights tour Tromso» og «Tromso fjord cruise» sannsynligvis 10-50x det norske volumet. Å lage dedikerte engelske landingssider for hver arktisk opplevelsestype utnytter denne massive internasjonale etterspørselen som norske konkurrenter kan overse.",
+      "tagEN": "Free — 2-3 hours per page",
+      "tagNO": "Gratis — 2-3 timer per side"
+    },
+    {
+      "titleEN": "Run year-round campaigns — exploit Tromso's dual tourist seasons",
+      "titleNO": "Kjør kampanjer hele året — utnytt Tromsøs doble turistsesonger",
+      "textEN": "Most Norwegian tourism markets justify ads only May–August. Tromso is the exception: northern lights (Oct–Mar) and midnight sun (May–Aug) create year-round demand. At 7.1 kr average CPC, a 5,000 kr/month budget generates ~704 clicks. Focus on fjordcruise and opplevelser keywords year-round (32-37 kr, premium but high-intent), and add nordlys tur (3.41 kr — a bargain) during winter months. The dual-season advantage means your ad investment works 12 months, not 4.",
+      "textNO": "De fleste norske turistmarkeder rettferdiggjør annonser bare mai–august. Tromsø er unntaket: nordlys (okt–mars) og midnattssol (mai–aug) skaper etterspørsel hele året. Med 7,1 kr gjennomsnittlig CPC genererer et budsjett på 5 000 kr/mnd ~704 klikk. Fokuser på fjordcruise og opplevelser-søkeord hele året (32-37 kr, premium men høy intensjon), og legg til nordlys tur (3,41 kr — et kupp) i vintermånedene. Dobbeltsesongsfordelen betyr at annonseinvesteringen din jobber 12 måneder, ikke 4.",
+      "tagEN": "Paid — from 5,000 kr/month",
+      "tagNO": "Betalt — fra 5 000 kr/mnd"
+    }
+  ],
+  "calculator": {
+    "avgCpc": 7.1,
+    "defaultPatientValue": 2000,
+    "defaultBudget": 5000,
+    "defaultConversion": 20,
+    "clickToInquiryRate": 0.035,
+    "benchmarkEN": "Tromso tourism CPCs show an \"Arctic premium\" pattern: experience keywords (opplevelser 36.74 kr, fjordcruise 32.45 kr) are expensive, while generic activity keywords (aktiviteter 0.11 kr, klatring 2.97 kr) are almost free. The blended average of 7.1 kr is pulled down by the ultra-cheap generic terms. Target city-branded keywords (ting å gjøre i tromso 10.01 kr, aktiviteter tromso 11.88 kr) for consistent ~10-12 kr/click. An average Arctic experience booking of 2,000 kr means one converted group covers 167-200 clicks.",
+    "benchmarkNO": "Tromsø turisme-CPC-er viser et «arktisk premie»-mønster: opplevelsessøkeord (opplevelser 36,74 kr, fjordcruise 32,45 kr) er dyre, mens generiske aktivitetssøkeord (aktiviteter 0,11 kr, klatring 2,97 kr) er nesten gratis. Det blandede gjennomsnittet på 7,1 kr trekkes ned av de ultrabillige generiske termene. Målrett bymerkede søkeord (ting å gjøre i tromsø 10,01 kr, aktiviteter tromsø 11,88 kr) for konsekvente ~10-12 kr/klikk. En gjennomsnittlig arktisk opplevelsesbestilling på 2 000 kr betyr at én konvertert gruppe dekker 167-200 klikk."
+  },
+  "sources": [
+    {
+      "name": "DataForSEO – Keywords Data API (Google Ads, Tromsø)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – SERP API (Google organic, Tromsø)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – Maps API (Google Maps, Tromsø)",
+      "url": null
+    },
+    {
+      "name": "DataReportal – Digital 2025: Norway",
+      "url": "https://datareportal.com/reports/digital-2025-norway"
+    },
+    {
+      "name": "BrightLocal – Local Pack Click Share Study 2024",
+      "url": "https://www.brightlocal.com/research/"
+    }
+  ]
+}

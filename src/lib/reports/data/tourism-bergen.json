@@ -1,0 +1,733 @@
+{
+  "meta": {
+    "niche": "tourism",
+    "nicheNO": "turisme og opplevelser",
+    "city": "Bergen",
+    "locationCode": 1010921,
+    "dataDate": "2026-02",
+    "totalSearchVolume": 3520
+  },
+  "metrics": {
+    "keywordCount": 20,
+    "avgCpc": 15.3,
+    "topClinicsCount": 5,
+    "mapsClickShare": 38
+  },
+  "keywordGroups": [
+    {
+      "id": "activities",
+      "color": "green",
+      "nameEN": "Activities & experiences",
+      "nameNO": "Aktiviteter og opplevelser",
+      "descriptionEN": "Direct activity searches — people looking for specific experiences. Generic \"aktiviteter\" leads at 880/mo (6.93 kr CPC), followed by go-kart (720/mo) and escape room (480/mo). The corporate keyword outlier is massive: \"teambuilding aktiviteter\" costs 314.27 kr/click — the most expensive keyword in the entire Bergen report by far. \"Teambuilding\" at 120.34 kr/click confirms the corporate premium. Leisure activities (go-kart 2.64 kr, paintball 1.98 kr, rafting 0.11 kr) average under 3 kr/click — some of the cheapest tourism clicks in Norway.",
+      "descriptionNO": "Direkte aktivitetssøk — folk som leter etter spesifikke opplevelser. Generiske «aktiviteter» leder med 880/mnd (6,93 kr CPC), etterfulgt av go-kart (720/mnd) og escape room (480/mnd). Bedriftssøkeordet skiller seg enormt ut: «teambuilding aktiviteter» koster 314,27 kr/klikk — det dyreste søkeordet i hele Bergen-rapporten med enorm margin. «Teambuilding» til 120,34 kr/klikk bekrefter bedriftspremien. Fritidsaktiviteter (go-kart 2,64 kr, paintball 1,98 kr, rafting 0,11 kr) koster i snitt under 3 kr/klikk — blant de billigste turismeklikkene i Norge.",
+      "totalVolume": 3460,
+      "keywords": [
+        {
+          "keyword": "aktiviteter",
+          "translation": "activities",
+          "volume": 880,
+          "competition": "LOW",
+          "cpc": 6.93
+        },
+        {
+          "keyword": "go-kart",
+          "translation": "go-kart",
+          "volume": 720,
+          "competition": "HIGH",
+          "cpc": 2.64
+        },
+        {
+          "keyword": "escape room",
+          "translation": "escape room",
+          "volume": 480,
+          "competition": "MEDIUM",
+          "cpc": 12.32
+        },
+        {
+          "keyword": "fjordcruise",
+          "translation": "fjord cruise",
+          "volume": 210,
+          "competition": "MEDIUM",
+          "cpc": 24.09
+        },
+        {
+          "keyword": "rafting",
+          "translation": "rafting",
+          "volume": 210,
+          "competition": "LOW",
+          "cpc": 0.11
+        },
+        {
+          "keyword": "zipline",
+          "translation": "zipline",
+          "volume": 210,
+          "competition": "HIGH",
+          "cpc": 11.55
+        },
+        {
+          "keyword": "klatring",
+          "translation": "climbing",
+          "volume": 170,
+          "competition": "LOW",
+          "cpc": 4.84
+        },
+        {
+          "keyword": "paintball",
+          "translation": "paintball",
+          "volume": 170,
+          "competition": "LOW",
+          "cpc": 1.98
+        },
+        {
+          "keyword": "teambuilding",
+          "translation": "team building",
+          "volume": 110,
+          "competition": "MEDIUM",
+          "cpc": 120.34
+        },
+        {
+          "keyword": "hundekjøring",
+          "translation": "dog sledding",
+          "volume": 90,
+          "competition": "MEDIUM",
+          "cpc": 30.91
+        },
+        {
+          "keyword": "opplevelse",
+          "translation": "experience",
+          "volume": 40,
+          "competition": "MEDIUM",
+          "cpc": 20.68
+        },
+        {
+          "keyword": "opplevelser",
+          "translation": "experiences",
+          "volume": 40,
+          "competition": "MEDIUM",
+          "cpc": 21.01
+        },
+        {
+          "keyword": "vinsmaking",
+          "translation": "wine tasting",
+          "volume": 40,
+          "competition": "HIGH",
+          "cpc": 9.46
+        },
+        {
+          "keyword": "ølsmaking",
+          "translation": "beer tasting",
+          "volume": 30,
+          "competition": "HIGH",
+          "cpc": 21.67
+        },
+        {
+          "keyword": "teambuilding aktiviteter",
+          "translation": "team building activities",
+          "volume": 30,
+          "competition": "HIGH",
+          "cpc": 314.27
+        },
+        {
+          "keyword": "nordlys tur",
+          "translation": "northern lights tour",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 12.87
+        },
+        {
+          "keyword": "gave opplevelse",
+          "translation": "experience gift",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 20.79
+        },
+        {
+          "keyword": "gavekort opplevelse",
+          "translation": "experience gift card",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 36.74
+        }
+      ]
+    },
+    {
+      "id": "discovery",
+      "color": "amber",
+      "nameEN": "\"What to do\" searches",
+      "nameNO": "\"Hva kan man gjøre\"-søk",
+      "descriptionEN": "Discovery-phase searches from people deciding what to do. Extremely low volumes (20–40/mo) but high intent — these searchers have no provider in mind yet. \"Fritidsaktiviteter\" (40/mo) has a surprisingly high CPC of 61.60 kr — over 12x the cost of \"ting å gjøre\" (5.06 kr) — suggesting corporate event planners also search this term. With only 60 total monthly searches, this group is tiny but reveals an untapped opportunity for content targeting undecided visitors.",
+      "descriptionNO": "Søk i oppdagelsesfasen fra folk som bestemmer seg for hva de vil gjøre. Svært lave volumer (20–40/mnd) men høy intensjon — disse søkerne har ingen leverandør i tankene ennå. «Fritidsaktiviteter» (40/mnd) har en overraskende høy CPC på 61,60 kr — over 12x kostnaden for «ting å gjøre» (5,06 kr) — noe som tyder på at bedriftsarrangører også bruker dette søkeordet. Med bare 60 totale månedlige søk er denne gruppen liten, men avslører en uutnyttet mulighet for innhold rettet mot ubestemte besøkende.",
+      "totalVolume": 60,
+      "keywords": [
+        {
+          "keyword": "fritidsaktiviteter",
+          "translation": "leisure activities",
+          "volume": 40,
+          "competition": "LOW",
+          "cpc": 61.6
+        },
+        {
+          "keyword": "ting å gjøre",
+          "translation": "things to do",
+          "volume": 20,
+          "competition": "LOW",
+          "cpc": 5.06
+        }
+      ]
+    },
+    {
+      "id": "explicit",
+      "color": "blue",
+      "nameEN": "Explicit \"Bergen\" searches",
+      "nameNO": "Eksplisitte \"Bergen\"-søk",
+      "descriptionEN": "People searching with \"Bergen\" included — ready to book. Note: Google Ads reports these as national volumes, not Bergen-specific. \"Escape room bergen\" dominates at 1,900/mo (7.26 kr CPC), followed by \"ting å gjøre i bergen\" (1,300/mo). \"Teambuilding bergen\" (210/mo) has the most extreme CPC at 188.54 kr — each click costs more than many monthly software subscriptions. At 4,750/mo, this group has higher volume than the local keywords (3,520/mo), showing Bergen searchers strongly prefer location-specific queries over generic terms.",
+      "descriptionNO": "Folk som søker med «Bergen» inkludert — klare til å bestille. Merk: Google Ads rapporterer disse som nasjonale volumer, ikke Bergen-spesifikke. «Escape room bergen» dominerer med 1 900/mnd (7,26 kr CPC), etterfulgt av «ting å gjøre i bergen» (1 300/mnd). «Teambuilding bergen» (210/mnd) har den mest ekstreme CPC-en på 188,54 kr — hvert klikk koster mer enn mange månedlige programvareabonnementer. Med 4 750/mnd har denne gruppen høyere volum enn de lokale søkeordene (3 520/mnd), noe som viser at Bergen-søkere sterkt foretrekker stedsspesifikke søk fremfor generiske termer.",
+      "totalVolume": 4750,
+      "keywords": [
+        {
+          "keyword": "escape room bergen",
+          "translation": "escape room Bergen",
+          "volume": 1900,
+          "competition": "MEDIUM",
+          "cpc": 7.26
+        },
+        {
+          "keyword": "ting å gjøre i bergen",
+          "translation": "things to do in Bergen",
+          "volume": 1300,
+          "competition": "MEDIUM",
+          "cpc": 9.57
+        },
+        {
+          "keyword": "aktiviteter bergen",
+          "translation": "activities Bergen",
+          "volume": 720,
+          "competition": "MEDIUM",
+          "cpc": 11.77
+        },
+        {
+          "keyword": "opplevelser bergen",
+          "translation": "experiences Bergen",
+          "volume": 320,
+          "competition": "HIGH",
+          "cpc": 13.42
+        },
+        {
+          "keyword": "sightseeing bergen",
+          "translation": "sightseeing Bergen",
+          "volume": 260,
+          "competition": "HIGH",
+          "cpc": 6.71
+        },
+        {
+          "keyword": "teambuilding bergen",
+          "translation": "team building Bergen",
+          "volume": 210,
+          "competition": "HIGH",
+          "cpc": 188.54
+        },
+        {
+          "keyword": "utflukter bergen",
+          "translation": "excursions Bergen",
+          "volume": 20,
+          "competition": "MEDIUM",
+          "cpc": 12.21
+        },
+        {
+          "keyword": "guidet tur bergen",
+          "translation": "guided tour Bergen",
+          "volume": 10,
+          "competition": "MEDIUM",
+          "cpc": 4.51
+        },
+        {
+          "keyword": "firmatur bergen",
+          "translation": "company trip Bergen",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 41.58
+        }
+      ],
+      "isNational": true
+    }
+  ],
+  "serpKeywords": [
+    {
+      "keyword": "ting å gjøre i bergen",
+      "volume": 1300,
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "www.visitbergen.com"
+        },
+        {
+          "rank": 2,
+          "domain": "no.tripadvisor.com"
+        },
+        {
+          "rank": 5,
+          "domain": "www.utdanningibergen.no"
+        },
+        {
+          "rank": 7,
+          "domain": "www.visitbergen.com"
+        },
+        {
+          "rank": 8,
+          "domain": "www.barnibyen.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Bryggen",
+          "rating": 4.7,
+          "reviews": 0
+        },
+        {
+          "rank": 2,
+          "title": "Bergenhus Festning",
+          "rating": 4.4,
+          "reviews": 0
+        },
+        {
+          "rank": 3,
+          "title": "Bryggens Museum - Bymuseet i Bergen",
+          "rating": 4.3,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "The highest-volume discovery keyword for Bergen (1,300/mo). visitbergen.com holds both #1 and #7, while tripadvisor.com takes #2 — the classic tourism portal duopoly. Notably, barnibyen.no (#8) breaks through with family-oriented content, signaling a niche content strategy that works. Maps shows Bergen's iconic landmarks: Bryggen (4.7 stars), Bergenhus Festning (4.4 stars), and Bryggens Museum (4.3 stars) — all cultural/historical attractions rather than bookable activity providers.",
+      "insightNO": "Det høyeste volumsøkeordet for Bergen (1 300/mnd). visitbergen.com holder både #1 og #7, mens tripadvisor.com tar #2 — det klassiske turistportal-duopolet. Bemerkelsesverdig er at barnibyen.no (#8) bryter igjennom med familierettet innhold, noe som signaliserer en nisjeinnholdsstrategi som fungerer. Maps viser Bergens ikoniske landemerker: Bryggen (4,7 stjerner), Bergenhus Festning (4,4 stjerner) og Bryggens Museum (4,3 stjerner) — alle kultur-/historiske attraksjoner fremfor bookbare aktivitetsleverandører."
+    },
+    {
+      "keyword": "aktiviteter bergen",
+      "volume": 720,
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "no.tripadvisor.com"
+        },
+        {
+          "rank": 6,
+          "domain": "www.visitbergen.com"
+        },
+        {
+          "rank": 7,
+          "domain": "www.barnibyen.no"
+        },
+        {
+          "rank": 8,
+          "domain": "www.bergensentrum.no"
+        },
+        {
+          "rank": 9,
+          "domain": "www.utdanningibergen.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Fangene på Fortet Bergen",
+          "rating": 4.6,
+          "reviews": 0
+        },
+        {
+          "rank": 2,
+          "title": "Megazone Bergen",
+          "rating": 4.7,
+          "reviews": 0
+        },
+        {
+          "rank": 3,
+          "title": "Bergen Boblefotball",
+          "rating": 4.8,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "tripadvisor.com claims #1 for this keyword (720/mo), pushing visitbergen.com down to #6 — a reversal of the typical pattern. Local players bergensentrum.no (#8) and utdanningibergen.no (#9) crack the top 10, showing Bergen's local web ecosystem is more competitive than most Norwegian cities. Maps favors activity venues: Fangene på Fortet Bergen (4.6 stars), Megazone Bergen (4.7 stars), and Bergen Boblefotball (4.8 stars) — all bookable experiences with strong ratings.",
+      "insightNO": "tripadvisor.com tar #1 for dette søkeordet (720/mnd) og presser visitbergen.com ned til #6 — en reversering av det typiske mønsteret. Lokale aktører bergensentrum.no (#8) og utdanningibergen.no (#9) bryter inn i topp 10, noe som viser at Bergens lokale nettøkosystem er mer konkurransedyktig enn de fleste norske byer. Maps favoriserer aktivitetssteder: Fangene på Fortet Bergen (4,6 stjerner), Megazone Bergen (4,7 stjerner) og Bergen Boblefotball (4,8 stjerner) — alle bookbare opplevelser med sterke vurderinger."
+    },
+    {
+      "keyword": "opplevelser bergen",
+      "volume": 320,
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "www.visitbergen.com"
+        },
+        {
+          "rank": 2,
+          "domain": "no.tripadvisor.com"
+        },
+        {
+          "rank": 3,
+          "domain": "www.bergensentrum.no"
+        },
+        {
+          "rank": 4,
+          "domain": "www.dehistoriske.no"
+        },
+        {
+          "rank": 5,
+          "domain": "youwish.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Opplevelse AS",
+          "rating": 5,
+          "reviews": 0
+        },
+        {
+          "rank": 2,
+          "title": "Bryggen",
+          "rating": 4.7,
+          "reviews": 0
+        },
+        {
+          "rank": 3,
+          "title": "Bryggens Museum - Bymuseet i Bergen",
+          "rating": 4.3,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "All top 5 organic results are portals: visitbergen.com (#1), tripadvisor.com (#2), bergensentrum.no (#3), dehistoriske.no (#4), and youwish.no (#5). No individual experience provider ranks organically. But Maps tells a different story: \"Opplevelse AS\" holds #1 with a perfect 5.0 rating — a small provider winning through review quality alone. Bryggen (4.7 stars) at #2 confirms Bergen's heritage tourism pull even in experience-focused searches.",
+      "insightNO": "Alle topp 5 organiske resultater er portaler: visitbergen.com (#1), tripadvisor.com (#2), bergensentrum.no (#3), dehistoriske.no (#4) og youwish.no (#5). Ingen enkelt opplevelsesleverandør rangerer organisk. Men Maps forteller en annen historie: «Opplevelse AS» holder #1 med perfekte 5,0 stjerner — en liten leverandør som vinner gjennom anmeldelseskvalitet alene. Bryggen (4,7 stjerner) på #2 bekrefter Bergens kulturturismedragning selv i opplevelsefokuserte søk."
+    },
+    {
+      "keyword": "guidet tur bergen",
+      "volume": 10,
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "www.visitbergen.com"
+        },
+        {
+          "rank": 2,
+          "domain": "no.tripadvisor.com"
+        },
+        {
+          "rank": 3,
+          "domain": "www.visitbergen.com"
+        },
+        {
+          "rank": 4,
+          "domain": "bergenguideservice.no"
+        },
+        {
+          "rank": 5,
+          "domain": "www.visitnorway.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Guided Fjord Tours",
+          "rating": 4.4,
+          "reviews": 31
+        },
+        {
+          "rank": 2,
+          "title": "Norway Mountain Guides",
+          "rating": 5,
+          "reviews": 172
+        },
+        {
+          "rank": 3,
+          "title": "Twentytour",
+          "rating": 4.8,
+          "reviews": 640
+        }
+      ],
+      "insightEN": "Low volume (10/mo) but the only keyword where a niche guide service ranks organically: bergenguideservice.no (#4), with visitbergen.com holding both #1 and #3. Maps reveals the guide tour competitive landscape: Twentytour leads with 640 reviews (4.8 stars), Norway Mountain Guides has a perfect 5.0 with 172 reviews, and Guided Fjord Tours sits at #1 Maps despite only 31 reviews (4.4 stars). For guided tours, positioning as a Maps #1 result matters more than review volume.",
+      "insightNO": "Lavt volum (10/mnd) men det eneste søkeordet der en nisjeguide rangerer organisk: bergenguideservice.no (#4), med visitbergen.com på både #1 og #3. Maps avslører konkurranselandskapet for guidede turer: Twentytour leder med 640 anmeldelser (4,8 stjerner), Norway Mountain Guides har perfekte 5,0 med 172 anmeldelser, og Guided Fjord Tours sitter på #1 Maps til tross for bare 31 anmeldelser (4,4 stjerner). For guidede turer betyr plassering som #1 Maps-resultat mer enn anmeldelsesvolum."
+    }
+  ],
+  "cpcData": [
+    {
+      "keyword": "teambuilding aktiviteter",
+      "cpc": 314.27
+    },
+    {
+      "keyword": "teambuilding bergen",
+      "cpc": 188.54
+    },
+    {
+      "keyword": "teambuilding",
+      "cpc": 120.34
+    },
+    {
+      "keyword": "fritidsaktiviteter",
+      "cpc": 61.6
+    },
+    {
+      "keyword": "firmatur bergen",
+      "cpc": 41.58
+    },
+    {
+      "keyword": "gavekort opplevelse",
+      "cpc": 36.74
+    },
+    {
+      "keyword": "hundekjøring",
+      "cpc": 30.91
+    },
+    {
+      "keyword": "fjordcruise",
+      "cpc": 24.09
+    },
+    {
+      "keyword": "ølsmaking",
+      "cpc": 21.67
+    },
+    {
+      "keyword": "opplevelser",
+      "cpc": 21.01
+    },
+    {
+      "keyword": "gave opplevelse",
+      "cpc": 20.79
+    },
+    {
+      "keyword": "opplevelse",
+      "cpc": 20.68
+    },
+    {
+      "keyword": "opplevelser bergen",
+      "cpc": 13.42
+    },
+    {
+      "keyword": "nordlys tur",
+      "cpc": 12.87
+    },
+    {
+      "keyword": "escape room",
+      "cpc": 12.32
+    },
+    {
+      "keyword": "utflukter bergen",
+      "cpc": 12.21
+    },
+    {
+      "keyword": "aktiviteter bergen",
+      "cpc": 11.77
+    },
+    {
+      "keyword": "zipline",
+      "cpc": 11.55
+    },
+    {
+      "keyword": "ting å gjøre i bergen",
+      "cpc": 9.57
+    },
+    {
+      "keyword": "vinsmaking",
+      "cpc": 9.46
+    },
+    {
+      "keyword": "escape room bergen",
+      "cpc": 7.26
+    },
+    {
+      "keyword": "aktiviteter",
+      "cpc": 6.93
+    },
+    {
+      "keyword": "sightseeing bergen",
+      "cpc": 6.71
+    },
+    {
+      "keyword": "ting å gjøre",
+      "cpc": 5.06
+    },
+    {
+      "keyword": "klatring",
+      "cpc": 4.84
+    },
+    {
+      "keyword": "guidet tur bergen",
+      "cpc": 4.51
+    },
+    {
+      "keyword": "go-kart",
+      "cpc": 2.64
+    },
+    {
+      "keyword": "paintball",
+      "cpc": 1.98
+    },
+    {
+      "keyword": "rafting",
+      "cpc": 0.11
+    }
+  ],
+  "seasonality": {
+    "keyword": "ting å gjøre",
+    "months": [
+      {
+        "month": "Jan",
+        "volume": 20
+      },
+      {
+        "month": "Feb",
+        "volume": 30
+      },
+      {
+        "month": "Mar",
+        "volume": 20
+      },
+      {
+        "month": "Apr",
+        "volume": 20
+      },
+      {
+        "month": "May",
+        "volume": 30
+      },
+      {
+        "month": "Jun",
+        "volume": 30
+      },
+      {
+        "month": "Jul",
+        "volume": 40
+      },
+      {
+        "month": "Aug",
+        "volume": 30
+      },
+      {
+        "month": "Sep",
+        "volume": 20
+      },
+      {
+        "month": "Oct",
+        "volume": 20
+      },
+      {
+        "month": "Nov",
+        "volume": 20
+      },
+      {
+        "month": "Dec",
+        "volume": 10
+      }
+    ],
+    "peakMonths": [
+      "Jul"
+    ],
+    "lowMonths": [
+      "Dec"
+    ],
+    "insightEN": "\"Ting å gjøre\" searches in Bergen peak in July (40/mo) and dip to just 10/mo in December — a 4x seasonal swing. Unlike Oslo where late winter drives planning searches, Bergen's peak aligns with peak summer tourism season. May–August forms the high corridor (30–40/mo) when tourists actually arrive. February shows a small secondary bump (30/mo) — likely early planners. Strategy: launch campaigns in May to capture summer tourists, scale back October–December, and use the February bump for early-bird offers.",
+    "insightNO": "«Ting å gjøre»-søk i Bergen topper seg i juli (40/mnd) og faller til bare 10/mnd i desember — en 4x sesongsvingning. I motsetning til Oslo der sen vinter driver planleggingssøk, sammenfaller Bergens topp med høysesongen for sommerturisme. Mai–august danner den høye korridoren (30–40/mnd) når turister faktisk ankommer. Februar viser en liten sekundær topp (30/mnd) — sannsynligvis tidlige planleggere. Strategi: lanser kampanjer i mai for å fange sommerturister, skaler ned oktober–desember, og bruk februartoppen til tidligbestillingstilbud."
+  },
+  "insights": [
+    {
+      "icon": "zap",
+      "color": "red",
+      "titleEN": "Teambuilding aktiviteter costs 314 kr per click — the most expensive tourism keyword in Bergen",
+      "titleNO": "Teambuilding aktiviteter koster 314 kr per klikk — det dyreste turismesøkeordet i Bergen",
+      "textEN": "Corporate keywords reveal extreme CPCs in Bergen: \"teambuilding aktiviteter\" (314.27 kr), \"teambuilding bergen\" (188.54 kr), \"teambuilding\" (120.34 kr), and \"firmatur bergen\" (41.58 kr). These 4 keywords average 166 kr/click — while leisure keywords like go-kart (2.64 kr), paintball (1.98 kr), and rafting (0.11 kr) average under 2 kr/click. The gap between corporate and leisure is 80x+ in Bergen, even wider than Oslo's 30x gap.",
+      "textNO": "Bedriftssøkeord avslører ekstreme CPC-er i Bergen: «teambuilding aktiviteter» (314,27 kr), «teambuilding bergen» (188,54 kr), «teambuilding» (120,34 kr) og «firmatur bergen» (41,58 kr). Disse 4 søkeordene koster i snitt 166 kr/klikk — mens fritidssøkeord som go-kart (2,64 kr), paintball (1,98 kr) og rafting (0,11 kr) koster i snitt under 2 kr/klikk. Gapet mellom bedrift og fritid er 80x+ i Bergen, enda større enn Oslos 30x-gap.",
+      "statLabel": "corporate CPC average",
+      "statValue": "166 kr"
+    },
+    {
+      "icon": "globe",
+      "color": "green",
+      "titleEN": "3,520 local monthly searches — plus 4,750 national-volume keywords",
+      "titleNO": "3 520 lokale månedlige søk — pluss 4 750 nasjonalvolum-søkeord",
+      "textEN": "Bergen's local tourism market (activities + discovery) totals 3,520/mo — roughly 26% of Oslo's local volume (13,380). On top of that, explicit \"Bergen\" keywords add 4,750/mo nationally. \"Escape room bergen\" (1,900/mo national) is the single largest keyword, followed by \"ting å gjøre i bergen\" (1,300/mo). At 15.3 kr average CPC (inflated by corporate keywords), excluding teambuilding terms brings the leisure average to ~8 kr/click.",
+      "textNO": "Bergens lokale turismemarked (aktiviteter + oppdagelse) utgjør 3 520/mnd — omtrent 26 % av Oslos lokale volum (13 380). I tillegg kommer eksplisitte «Bergen»-søkeord med 4 750/mnd nasjonalt. «Escape room bergen» (1 900/mnd nasjonalt) er det enkelt største søkeordet, etterfulgt av «ting å gjøre i bergen» (1 300/mnd). Med 15,3 kr gjennomsnittlig CPC (oppblåst av bedriftssøkeord) bringer ekskludering av teambuilding-termer fritidssnittet ned til ~8 kr/klikk.",
+      "statLabel": "local monthly searches",
+      "statValue": "3,520"
+    },
+    {
+      "icon": "map-pin",
+      "color": "amber",
+      "titleEN": "Bergen's Maps results favor bookable activity venues over landmarks",
+      "titleNO": "Bergens Maps-resultater favoriserer bookbare aktivitetssteder over landemerker",
+      "textEN": "For \"aktiviteter bergen\", Maps shows Fangene på Fortet Bergen (4.6 stars), Megazone Bergen (4.7 stars), and Bergen Boblefotball (4.8 stars) — all bookable activity providers. This contrasts with \"ting å gjøre i bergen\" where Maps shows cultural landmarks (Bryggen, Bergenhus Festning). Activity providers win Maps for action-oriented keywords. Twentytour dominates guided tours with 640 reviews, proving review collection is decisive in Bergen's tour market.",
+      "textNO": "For «aktiviteter bergen» viser Maps Fangene på Fortet Bergen (4,6 stjerner), Megazone Bergen (4,7 stjerner) og Bergen Boblefotball (4,8 stjerner) — alle bookbare aktivitetsleverandører. Dette kontrasterer med «ting å gjøre i bergen» der Maps viser kulturelle landemerker (Bryggen, Bergenhus Festning). Aktivitetsleverandører vinner Maps for handlingsorienterte søkeord. Twentytour dominerer guidede turer med 640 anmeldelser, noe som beviser at anmeldelsesinnsamling er avgjørende i Bergens turmarked.",
+      "statLabel": "Maps click share",
+      "statValue": "38%"
+    },
+    {
+      "icon": "star",
+      "color": "blue",
+      "titleEN": "Escape room bergen: 1,900 searches at just 7.26 kr/click",
+      "titleNO": "Escape room bergen: 1 900 søk til bare 7,26 kr/klikk",
+      "textEN": "\"Escape room bergen\" is the single largest keyword in the report (1,900/mo national volume) at a CPC of just 7.26 kr — remarkably cheap for this volume. The generic \"escape room\" adds 480/mo locally (12.32 kr CPC), making escape rooms 14% of the local market. Despite Bergen having 5.2x fewer national escape room searches than Oslo (9,900/mo), the CPC is actually 32% cheaper. If you run an escape room in Bergen, these keywords should be your primary Google Ads targets.",
+      "textNO": "«Escape room bergen» er det enkelt største søkeordet i rapporten (1 900/mnd nasjonalt volum) til en CPC på bare 7,26 kr — bemerkelsesverdig billig for dette volumet. Det generiske «escape room» legger til 480/mnd lokalt (12,32 kr CPC), noe som gjør escape rooms til 14 % av det lokale markedet. Til tross for at Bergen har 5,2x færre nasjonale escape room-søk enn Oslo (9 900/mnd), er CPC-en faktisk 32 % billigere. Hvis du driver escape room i Bergen, bør disse søkeordene være dine primære Google Ads-mål."
+    }
+  ],
+  "tips": [
+    {
+      "titleEN": "Google Business Profile — add activity-specific categories",
+      "titleNO": "Google Bedriftsprofil — legg til aktivitetsspesifikke kategorier",
+      "textEN": "Bergen Boblefotball holds a 4.8 rating and appears in Maps for \"aktiviteter bergen\" (720 monthly searches). Megazone Bergen (4.7 stars) and Fangene på Fortet Bergen (4.6 stars) also rank for this keyword. Add every relevant category to your profile: escape room, team building, activity center, entertainment venue. Twentytour dominates \"guidet tur\" with 640 reviews, proving that active review collection wins Maps visibility in Bergen's competitive tourism market.",
+      "textNO": "Bergen Boblefotball holder 4,8 stjerner og dukker opp i Maps for «aktiviteter bergen» (720 månedlige søk). Megazone Bergen (4,7 stjerner) og Fangene på Fortet Bergen (4,6 stjerner) rangerer også for dette søkeordet. Legg til hver relevant kategori i profilen din: escape room, teambuilding, aktivitetssenter, underholdningssted. Twentytour dominerer «guidet tur» med 640 anmeldelser, noe som beviser at aktiv innsamling av anmeldelser vinner Maps-synlighet i Bergens konkurransedyktige turismemarked.",
+      "tagEN": "Free — 30 minutes",
+      "tagNO": "Gratis — 30 minutter"
+    },
+    {
+      "titleEN": "List on VisitBergen, TripAdvisor, and BarniByenBergen.no",
+      "titleNO": "List deg på VisitBergen, TripAdvisor og BarniByenBergen.no",
+      "textEN": "visitbergen.com and tripadvisor.com appear in organic top 3 for every tested keyword. barnibyen.no breaks into the top 10 for \"ting å gjøre i bergen\" — indicating Bergen has a strong family tourism segment. Listing your activity on these platforms gives you visibility where thousands of monthly searchers are already looking. bergensentrum.no also ranks for multiple keywords, making it another valuable listing opportunity.",
+      "textNO": "visitbergen.com og tripadvisor.com dukker opp i organisk topp 3 for hvert testet søkeord. barnibyen.no bryter inn i topp 10 for «ting å gjøre i bergen» — noe som indikerer at Bergen har et sterkt familieturismesegment. Å liste aktiviteten din på disse plattformene gir deg synlighet der tusenvis av månedlige søkere allerede leter. bergensentrum.no rangerer også for flere søkeord, noe som gjør det til en annen verdifull listingsmulighet.",
+      "tagEN": "Free — 1-2 hours",
+      "tagNO": "Gratis — 1-2 timer"
+    },
+    {
+      "titleEN": "Create dedicated landing pages for each activity type",
+      "titleNO": "Lag dedikerte landingssider for hver aktivitetstype",
+      "textEN": "\"Escape room bergen\" (1,900/mo), \"ting å gjøre i bergen\" (1,300/mo), and \"aktiviteter bergen\" (720/mo) each target different search intents. A single \"our activities\" page cannot rank for all three. bergensentrum.no ranks for both \"aktiviteter bergen\" (#8) and \"opplevelser bergen\" (#3) with separate content, proving that focused pages outperform generic listings even against tourism portal dominance.",
+      "textNO": "«Escape room bergen» (1 900/mnd), «ting å gjøre i bergen» (1 300/mnd) og «aktiviteter bergen» (720/mnd) retter seg mot ulike søkeintensjoner. En enkelt «våre aktiviteter»-side kan ikke rangere for alle tre. bergensentrum.no rangerer for både «aktiviteter bergen» (#8) og «opplevelser bergen» (#3) med separat innhold, noe som beviser at fokuserte sider utkonkurrerer generiske oppføringer selv mot turistportaldominans.",
+      "tagEN": "Free — 2-3 hours per page",
+      "tagNO": "Gratis — 2-3 timer per side"
+    },
+    {
+      "titleEN": "Target escape room + leisure keywords first — skip corporate terms",
+      "titleNO": "Målrett escape room + fritidssøkeord først — hopp over bedriftssøkeord",
+      "textEN": "Leisure keywords (escape room bergen 7.26 kr, go-kart 2.64 kr, paintball 1.98 kr, rafting 0.11 kr) average ~3 kr/click. Corporate keywords (teambuilding aktiviteter 314.27 kr, teambuilding bergen 188.54 kr) average ~166 kr/click. A 5,000 kr/month budget targeting leisure keywords generates ~1,667 clicks. The same budget on corporate terms? Just 30 clicks. Bergen's leisure CPCs are among the cheapest in Norway — maximize volume first.",
+      "textNO": "Fritidssøkeord (escape room bergen 7,26 kr, go-kart 2,64 kr, paintball 1,98 kr, rafting 0,11 kr) koster i snitt ~3 kr/klikk. Bedriftssøkeord (teambuilding aktiviteter 314,27 kr, teambuilding bergen 188,54 kr) koster i snitt ~166 kr/klikk. Et budsjett på 5 000 kr/mnd målrettet mot fritidssøkeord genererer ~1 667 klikk. Samme budsjett på bedriftssøkeord? Bare 30 klikk. Bergens fritids-CPC-er er blant de billigste i Norge — maksimer volumet først.",
+      "tagEN": "Paid — from 5,000 kr/month",
+      "tagNO": "Betalt — fra 5 000 kr/mnd"
+    }
+  ],
+  "calculator": {
+    "avgCpc": 15.3,
+    "defaultPatientValue": 2000,
+    "defaultBudget": 5000,
+    "defaultConversion": 20,
+    "clickToInquiryRate": 0.035,
+    "benchmarkEN": "Bergen tourism CPCs have the widest corporate-leisure gap in Norway: \"teambuilding aktiviteter\" costs 314.27 kr/click while rafting costs just 0.11 kr. The blended average of 15.3 kr is heavily skewed by corporate keywords. Target leisure keywords for a realistic average of ~3-8 kr/click. An average booking value of 2,000 kr (2-4 people x 500 kr) means one converted group covers 250-667 clicks at leisure CPCs.",
+    "benchmarkNO": "Bergen turisme-CPC-er har det bredeste bedrift-fritid-gapet i Norge: «teambuilding aktiviteter» koster 314,27 kr/klikk mens rafting koster bare 0,11 kr. Det blandede gjennomsnittet på 15,3 kr er sterkt skjevt av bedriftssøkeord. Målrett fritidssøkeord for et realistisk snitt på ~3-8 kr/klikk. En gjennomsnittlig bestillingsverdi på 2 000 kr (2-4 personer x 500 kr) betyr at én konvertert gruppe dekker 250-667 klikk med fritids-CPC-er."
+  },
+  "sources": [
+    {
+      "name": "DataForSEO – Keywords Data API (Google Ads, Bergen)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – SERP API (Google organic, Bergen)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – Maps API (Google Maps, Bergen)",
+      "url": null
+    },
+    {
+      "name": "DataReportal – Digital 2025: Norway",
+      "url": "https://datareportal.com/reports/digital-2025-norway"
+    },
+    {
+      "name": "BrightLocal – Local Pack Click Share Study 2024",
+      "url": "https://www.brightlocal.com/research/"
+    }
+  ]
+}

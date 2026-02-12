@@ -1,0 +1,270 @@
+{
+  "meta": {
+    "niche": "auto-repair",
+    "nicheNO": "bilverksteder",
+    "city": "Tromsø",
+    "locationCode": 1011021,
+    "dataDate": "2026-02",
+    "totalSearchVolume": 0
+  },
+  "metrics": {
+    "keywordCount": 0,
+    "avgCpc": 0,
+    "topClinicsCount": 5,
+    "mapsClickShare": 44
+  },
+  "keywordGroups": [
+    {
+      "id": "services",
+      "color": "green",
+      "nameEN": "Auto repair & maintenance services",
+      "nameNO": "Bilverksted- og vedlikeholdstjenester",
+      "totalVolume": 0,
+      "keywords": []
+    },
+    {
+      "id": "explicit",
+      "color": "blue",
+      "nameEN": "Explicit \"Tromsø\" searches",
+      "nameNO": "Eksplisitte \"Tromsø\"-søk",
+      "totalVolume": 0,
+      "keywords": []
+    }
+  ],
+  "serpKeywords": [
+    {
+      "keyword": "bilverksted tromsø",
+      "volume": 0,
+      "organic": [
+        {
+          "rank": 5,
+          "domain": "www.meca.no"
+        },
+        {
+          "rank": 6,
+          "domain": "www.bilsmart.no"
+        },
+        {
+          "rank": 10,
+          "domain": "autospeed.no"
+        },
+        {
+          "rank": 11,
+          "domain": "www.srtromso.no"
+        },
+        {
+          "rank": 12,
+          "domain": "www.mekonomen.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Tromsø Bil & Båtelektro AS (Mekonomen)",
+          "rating": 4.4,
+          "reviews": 0
+        },
+        {
+          "rank": 2,
+          "title": "Bilservice Tromsdalen AS",
+          "rating": 4.8,
+          "reviews": 0
+        },
+        {
+          "rank": 3,
+          "title": "Rybka Auto-Service AS / MECA",
+          "rating": 4.8,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "",
+      "insightNO": ""
+    },
+    {
+      "keyword": "dekkskift tromsø",
+      "volume": 0,
+      "organic": [
+        {
+          "rank": 4,
+          "domain": "easytire.no"
+        },
+        {
+          "rank": 6,
+          "domain": "vianor.no"
+        },
+        {
+          "rank": 7,
+          "domain": "dekkteam.no"
+        },
+        {
+          "rank": 8,
+          "domain": "www.facebook.com"
+        },
+        {
+          "rank": 9,
+          "domain": "harila.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Dekksentralen AS",
+          "rating": 4.5,
+          "reviews": 121
+        },
+        {
+          "rank": 2,
+          "title": "Vianor Tromsø",
+          "rating": 4.6,
+          "reviews": 216
+        },
+        {
+          "rank": 3,
+          "title": "Tromsdalen Dekk og Oljeservice - Dekkpartner",
+          "rating": 4.8,
+          "reviews": 55
+        }
+      ],
+      "insightEN": "",
+      "insightNO": ""
+    },
+    {
+      "keyword": "EU-kontroll tromsø",
+      "volume": 0,
+      "organic": [
+        {
+          "rank": 8,
+          "domain": "www.meca.no"
+        },
+        {
+          "rank": 9,
+          "domain": "www.bilsmart.no"
+        },
+        {
+          "rank": 10,
+          "domain": "www.mekonomen.no"
+        },
+        {
+          "rank": 11,
+          "domain": "vianor.no"
+        },
+        {
+          "rank": 15,
+          "domain": "autospeed.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Tromsø Bil & Båtelektro AS (Mekonomen)",
+          "rating": 4.4,
+          "reviews": 0
+        },
+        {
+          "rank": 2,
+          "title": "NAF Senter Tromsø",
+          "rating": 4.2,
+          "reviews": 0
+        },
+        {
+          "rank": 3,
+          "title": "Auto Speed AS",
+          "rating": 4.8,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "",
+      "insightNO": ""
+    },
+    {
+      "keyword": "mekaniker tromsø",
+      "volume": 0,
+      "organic": [
+        {
+          "rank": 4,
+          "domain": "www.meca.no"
+        },
+        {
+          "rank": 5,
+          "domain": "www.mekonomen.no"
+        },
+        {
+          "rank": 6,
+          "domain": "autospeed.no"
+        },
+        {
+          "rank": 7,
+          "domain": "www.gulesider.no"
+        },
+        {
+          "rank": 8,
+          "domain": "www.finn.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Tromsø Bil & Båtelektro AS (Mekonomen)",
+          "rating": 4.4,
+          "reviews": 93
+        },
+        {
+          "rank": 2,
+          "title": "Bilservice Tromsdalen AS",
+          "rating": 4.8,
+          "reviews": 40
+        },
+        {
+          "rank": 3,
+          "title": "Rybka Auto-Service AS / MECA",
+          "rating": 4.8,
+          "reviews": 26
+        }
+      ],
+      "insightEN": "",
+      "insightNO": ""
+    }
+  ],
+  "cpcData": [],
+  "seasonality": {
+    "keyword": "dekkskift",
+    "months": [],
+    "peakMonths": [],
+    "lowMonths": [],
+    "insightEN": "",
+    "insightNO": ""
+  },
+  "insights": [],
+  "tips": [],
+  "calculator": {
+    "avgCpc": 0,
+    "defaultPatientValue": 8000,
+    "defaultBudget": 8000,
+    "defaultConversion": 30,
+    "clickToInquiryRate": 0.045,
+    "benchmarkEN": "",
+    "benchmarkNO": ""
+  },
+  "sources": [
+    {
+      "name": "DataForSEO – Keywords Data API (Google Ads, Tromsø)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – SERP API (Google organic, Tromsø)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – Maps API (Google Maps, Tromsø)",
+      "url": null
+    },
+    {
+      "name": "DataReportal – Digital 2025: Norway",
+      "url": "https://datareportal.com/reports/digital-2025-norway"
+    },
+    {
+      "name": "BrightLocal – Local Pack Click Share Study 2024",
+      "url": "https://www.brightlocal.com/research/"
+    }
+  ]
+}

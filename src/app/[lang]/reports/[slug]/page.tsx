@@ -20,6 +20,16 @@ import { getReportData, getAllReportSlugs } from "@/lib/reports";
 import { i18n, type Locale } from "@/lib/i18n/config";
 import type { Metadata } from "next";
 
+const nicheNames: Record<string, string> = {
+  psychologists: "psychologists",
+  dentists: "dentists",
+  accountants: "accountants",
+  "beauty-salon": "beauty salons",
+  "day-spa": "day spas & saunas",
+  "auto-repair": "auto repair shops",
+  tourism: "tourism & experiences",
+};
+
 interface PageProps {
   params: Promise<{ lang: Locale; slug: string }>;
 }
@@ -43,7 +53,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   if (!data) return {};
 
-  const niche = lang === "no" ? data.meta.nicheNO : data.meta.niche;
+  const niche = lang === "no" ? data.meta.nicheNO : (nicheNames[data.meta.niche] ?? data.meta.niche);
   const nicheCapitalized = niche.charAt(0).toUpperCase() + niche.slice(1);
 
   const title =
@@ -79,7 +89,7 @@ export default async function ReportPage({ params }: PageProps) {
 
   if (!data) notFound();
 
-  const nicheLower = lang === "no" ? data.meta.nicheNO : data.meta.niche;
+  const nicheLower = lang === "no" ? data.meta.nicheNO : (nicheNames[data.meta.niche] ?? data.meta.niche);
   const rd = dict.reportPage;
 
   return (
@@ -87,7 +97,7 @@ export default async function ReportPage({ params }: PageProps) {
       <Navbar lang={lang} dict={dict} />
       <main className="pt-16 md:pt-20">
         <ReportToc dict={rd.toc} />
-        <ReportHero meta={data.meta} lang={lang} dict={rd.hero} />
+        <ReportHero meta={data.meta} lang={lang} nicheLower={nicheLower} dict={rd.hero} />
         <MetricsStrip metrics={data.metrics} dict={rd.metrics} />
         <KeywordsSection
           groups={data.keywordGroups}

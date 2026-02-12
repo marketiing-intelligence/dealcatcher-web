@@ -1,0 +1,740 @@
+{
+  "meta": {
+    "niche": "day-spa",
+    "nicheNO": "dagspa og wellness",
+    "city": "Oslo",
+    "locationCode": 1010826,
+    "dataDate": "2026-02",
+    "totalSearchVolume": 40320
+  },
+  "metrics": {
+    "keywordCount": 30,
+    "avgCpc": 8.0,
+    "topClinicsCount": 5,
+    "mapsClickShare": 42
+  },
+  "keywordGroups": [
+    {
+      "id": "services",
+      "color": "green",
+      "nameEN": "Spa & wellness services",
+      "nameNO": "Spa- og wellnesstjenester",
+      "descriptionEN": "Direct wellness service searches. \"Massasje\" and \"thai massasje\" each generate 6,600 searches/month — together they account for 52% of total service volume. CPCs are remarkably low: thai massasje costs just 3.63 kr/click while spa opplevelse costs 16.61 kr. The low CPC average (8.0 kr) makes this one of the cheapest niches to advertise in across all Oslo markets we've analyzed.",
+      "descriptionNO": "Direkte søk etter wellnesstjenester. «Massasje» og «thai massasje» genererer hver 6 600 søk/mnd — sammen utgjør de 52 % av totalt tjenestevolum. CPC-er er bemerkelsesverdig lave: thai massasje koster bare 3,63 kr/klikk mens spa opplevelse koster 16,61 kr. Den lave gjennomsnittlige CPC-en (8,0 kr) gjør dette til en av de billigste nisjene å annonsere i på tvers av alle Oslo-markeder vi har analysert.",
+      "totalVolume": 25520,
+      "keywords": [
+        {
+          "keyword": "massasje",
+          "translation": "massage",
+          "volume": 6600,
+          "competition": "HIGH",
+          "cpc": 8.69
+        },
+        {
+          "keyword": "thai massasje",
+          "translation": "Thai massage",
+          "volume": 6600,
+          "competition": "LOW",
+          "cpc": 3.63
+        },
+        {
+          "keyword": "spa",
+          "translation": "spa",
+          "volume": 4400,
+          "competition": "LOW",
+          "cpc": 10.67
+        },
+        {
+          "keyword": "badstue",
+          "translation": "sauna",
+          "volume": 2900,
+          "competition": "HIGH",
+          "cpc": 8.14
+        },
+        {
+          "keyword": "jacuzzi",
+          "translation": "jacuzzi",
+          "volume": 1900,
+          "competition": "HIGH",
+          "cpc": 7.37
+        },
+        {
+          "keyword": "spa hotell",
+          "translation": "spa hotel",
+          "volume": 1600,
+          "competition": "HIGH",
+          "cpc": 12.54
+        },
+        {
+          "keyword": "fotmassasje",
+          "translation": "foot massage",
+          "volume": 590,
+          "competition": "HIGH",
+          "cpc": 10.89
+        },
+        {
+          "keyword": "hammam",
+          "translation": "hammam",
+          "volume": 210,
+          "competition": "LOW",
+          "cpc": 2.2
+        },
+        {
+          "keyword": "hot tub",
+          "translation": "hot tub",
+          "volume": 210,
+          "competition": "HIGH",
+          "cpc": 11.66
+        },
+        {
+          "keyword": "wellness",
+          "translation": "wellness",
+          "volume": 140,
+          "competition": "LOW",
+          "cpc": 5.06
+        },
+        {
+          "keyword": "aromaterapi",
+          "translation": "aromatherapy",
+          "volume": 110,
+          "competition": "HIGH",
+          "cpc": 10.89
+        },
+        {
+          "keyword": "sportsmassasje",
+          "translation": "sports massage",
+          "volume": 70,
+          "competition": "HIGH",
+          "cpc": 16.72
+        },
+        {
+          "keyword": "dypvevsmassasje",
+          "translation": "deep tissue massage",
+          "volume": 50,
+          "competition": "MEDIUM",
+          "cpc": 8.47
+        },
+        {
+          "keyword": "dampbad",
+          "translation": "steam bath",
+          "volume": 30,
+          "competition": "HIGH",
+          "cpc": 3.96
+        },
+        {
+          "keyword": "dagspa",
+          "translation": "day spa",
+          "volume": 30,
+          "competition": "HIGH",
+          "cpc": 5.83
+        },
+        {
+          "keyword": "spa behandling",
+          "translation": "spa treatment",
+          "volume": 20,
+          "competition": "MEDIUM",
+          "cpc": 13.64
+        },
+        {
+          "keyword": "spa pakke",
+          "translation": "spa package",
+          "volume": 20,
+          "competition": "HIGH",
+          "cpc": 12.87
+        },
+        {
+          "keyword": "spa opplevelse",
+          "translation": "spa experience",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 16.61
+        },
+        {
+          "keyword": "spa dag",
+          "translation": "spa day",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 10.56
+        },
+        {
+          "keyword": "spa gave",
+          "translation": "spa gift",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 26.62
+        },
+        {
+          "keyword": "avslappende massasje",
+          "translation": "relaxing massage",
+          "volume": 10,
+          "competition": "MEDIUM",
+          "cpc": 8.8
+        }
+      ]
+    },
+    {
+      "id": "explicit",
+      "color": "blue",
+      "nameEN": "Explicit \"Oslo\" searches",
+      "nameNO": "Eksplisitte \"Oslo\"-søk",
+      "descriptionEN": "People searching with \"Oslo\" included — the highest-intent group. At 14,800 monthly searches, this group captures over a third of total market volume. \"Massasje oslo\" leads at 4,400/mo, \"thai massasje oslo\" and \"badstue oslo\" each add 3,600/mo, and \"spa oslo\" another 2,400/mo. These searchers are ready to book — they've already chosen the city, they just need the provider.",
+      "descriptionNO": "Folk som søker med «Oslo» inkludert — gruppen med høyest intensjon. Med 14 800 månedlige søk fanger denne gruppen over en tredjedel av totalt markedsvolum. «Massasje oslo» leder med 4 400/mnd, «thai massasje oslo» og «badstue oslo» legger til 3 600/mnd hver, og «spa oslo» ytterligere 2 400/mnd. Disse søkerne er klare til å bestille — de har allerede valgt byen, de trenger bare leverandøren.",
+      "totalVolume": 14800,
+      "keywords": [
+        {
+          "keyword": "massasje oslo",
+          "translation": "massage Oslo",
+          "volume": 4400,
+          "competition": "HIGH",
+          "cpc": 8.69
+        },
+        {
+          "keyword": "thai massasje oslo",
+          "translation": "Thai massage Oslo",
+          "volume": 3600,
+          "competition": "LOW",
+          "cpc": 6.6
+        },
+        {
+          "keyword": "badstue oslo",
+          "translation": "sauna Oslo",
+          "volume": 3600,
+          "competition": "MEDIUM",
+          "cpc": 9.9
+        },
+        {
+          "keyword": "spa oslo",
+          "translation": "spa Oslo",
+          "volume": 2400,
+          "competition": "MEDIUM",
+          "cpc": 6.82
+        },
+        {
+          "keyword": "spa hotell oslo",
+          "translation": "spa hotel Oslo",
+          "volume": 590,
+          "competition": "HIGH",
+          "cpc": 15.18
+        },
+        {
+          "keyword": "hammam oslo",
+          "translation": "hammam Oslo",
+          "volume": 90,
+          "competition": "LOW",
+          "cpc": 2.64
+        },
+        {
+          "keyword": "dagspa oslo",
+          "translation": "day spa Oslo",
+          "volume": 50,
+          "competition": "HIGH",
+          "cpc": 6.49
+        },
+        {
+          "keyword": "wellness oslo",
+          "translation": "wellness Oslo",
+          "volume": 50,
+          "competition": "MEDIUM",
+          "cpc": 9.02
+        },
+        {
+          "keyword": "spa behandling oslo",
+          "translation": "spa treatment Oslo",
+          "volume": 20,
+          "competition": "HIGH",
+          "cpc": 11
+        }
+      ]
+    }
+  ],
+  "serpKeywords": [
+    {
+      "keyword": "spa oslo",
+      "volume": 4400,
+      "organic": [
+        {
+          "rank": 5,
+          "domain": "www.visitoslo.com"
+        },
+        {
+          "rank": 6,
+          "domain": "no.tripadvisor.com"
+        },
+        {
+          "rank": 7,
+          "domain": "thewell.no"
+        },
+        {
+          "rank": 8,
+          "domain": "thethief.com"
+        },
+        {
+          "rank": 9,
+          "domain": "truestory.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Bristol Spa",
+          "rating": 4.3,
+          "reviews": 15
+        },
+        {
+          "rank": 2,
+          "title": "KOK Oslo Sauna, Langkaia",
+          "rating": 4.8,
+          "reviews": 452
+        },
+        {
+          "rank": 3,
+          "title": "Vera's Studio - Massasje, Oslo",
+          "rating": 5,
+          "reviews": 149
+        }
+      ],
+      "insightEN": "Tourism portals dominate: visitoslo.com (#5) and tripadvisor.com (#6) outrank actual spa businesses. The first real spa (thewell.no) appears at #7. Maps tells a different story — KOK Oslo Sauna leads with 4.8 stars and 452 reviews, while Vera's Studio Massasje holds a perfect 5.0 with 149 reviews. For individual spas, Maps is the primary battleground, not organic search.",
+      "insightNO": "Turistportaler dominerer: visitoslo.com (#5) og tripadvisor.com (#6) utrangerer faktiske spa-bedrifter. Det første virkelige spaet (thewell.no) dukker opp på #7. Maps forteller en annen historie — KOK Oslo Sauna leder med 4,8 stjerner og 452 anmeldelser, mens Vera's Studio Massasje holder perfekte 5,0 med 149 anmeldelser. For enkeltstående spaer er Maps den primære slagmarken, ikke organisk søk."
+    },
+    {
+      "keyword": "badstue oslo",
+      "volume": 5400,
+      "organic": [
+        {
+          "rank": 8,
+          "domain": "oslobadstuforening.no"
+        },
+        {
+          "rank": 9,
+          "domain": "www.salted.no"
+        },
+        {
+          "rank": 10,
+          "domain": "koknorge.no"
+        },
+        {
+          "rank": 14,
+          "domain": "www.visitoslo.com"
+        },
+        {
+          "rank": 15,
+          "domain": "www.klimaoslo.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Oslo Badstuforening, Sukkerbiten",
+          "rating": 4.7,
+          "reviews": 0
+        },
+        {
+          "rank": 2,
+          "title": "Oslo Badstuforening, Langkaia",
+          "rating": 4.7,
+          "reviews": 0
+        },
+        {
+          "rank": 3,
+          "title": "KOK Oslo Sauna, Langkaia",
+          "rating": 4.8,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "A high-volume keyword (3,600/mo) and sauna-specific businesses own it. Oslo Badstuforening holds both #1 and #2 Maps positions (Sukkerbiten and Langkaia locations, both 4.7 stars). Organically, oslobadstuforening.no ranks #8 and koknorge.no #10 — niche domains beat generic wellness sites. No Maps results show visible review counts, creating an opening for any sauna business that actively collects reviews.",
+      "insightNO": "Et høyvolum-søkeord (3 600/mnd) og badstuspesifikke bedrifter eier det. Oslo Badstuforening holder både #1 og #2 Maps-posisjoner (Sukkerbiten og Langkaia, begge 4,7 stjerner). Organisk rangerer oslobadstuforening.no #8 og koknorge.no #10 — nisjedomener slår generelle wellnesssider. Ingen Maps-resultater viser synlige anmeldelsestall, noe som skaper en åpning for enhver badstubedrift som aktivt samler anmeldelser."
+    },
+    {
+      "keyword": "dagspa oslo",
+      "volume": 110,
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "www.visitoslo.com"
+        },
+        {
+          "rank": 2,
+          "domain": "no.tripadvisor.com"
+        },
+        {
+          "rank": 7,
+          "domain": "thethief.com"
+        },
+        {
+          "rank": 9,
+          "domain": "sonspa.no"
+        },
+        {
+          "rank": 10,
+          "domain": "www.bisletbadogtrening.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Bristol Spa",
+          "rating": 4.3,
+          "reviews": 15
+        },
+        {
+          "rank": 2,
+          "title": "DaiKai Wellness Retreats",
+          "rating": 4.3,
+          "reviews": 270
+        },
+        {
+          "rank": 3,
+          "title": "FLOATING.no ~ Zero Gravity Spa",
+          "rating": 4.8,
+          "reviews": 211
+        }
+      ],
+      "insightEN": "Low volume (110/mo) but high intent — \"dagspa\" is someone planning a spa day, not just browsing. visitoslo.com ranks #1 and tripadvisor.com #2, both editorial content. Actual spas start at #7 (thethief.com) and #9 (sonspa.no). Maps shows FLOATING.no (4.8 stars, 211 reviews) and DaiKai Wellness Retreats (4.3 stars, 270 reviews) — review counts here are the highest across all spa keywords.",
+      "insightNO": "Lavt volum (110/mnd) men høy intensjon — «dagspa» er noen som planlegger en spa-dag, ikke bare surfer. visitoslo.com rangerer #1 og tripadvisor.com #2, begge redaksjonelt innhold. Faktiske spaer starter på #7 (thethief.com) og #9 (sonspa.no). Maps viser FLOATING.no (4,8 stjerner, 211 anmeldelser) og DaiKai Wellness Retreats (4,3 stjerner, 270 anmeldelser) — anmeldelsestallene her er de høyeste på tvers av alle spa-søkeord."
+    },
+    {
+      "keyword": "massasje oslo",
+      "volume": 6600,
+      "organic": [
+        {
+          "rank": 6,
+          "domain": "timma.no"
+        },
+        {
+          "rank": 7,
+          "domain": "www.oslomassasje.no"
+        },
+        {
+          "rank": 8,
+          "domain": "letsdeal.no"
+        },
+        {
+          "rank": 9,
+          "domain": "no.tripadvisor.com"
+        },
+        {
+          "rank": 14,
+          "domain": "daikai.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Vera's Studio - Massasje, Oslo",
+          "rating": 5,
+          "reviews": 0
+        },
+        {
+          "rank": 2,
+          "title": "HARMONY MASSASJE",
+          "rating": 4.8,
+          "reviews": 0
+        },
+        {
+          "rank": 3,
+          "title": "Maria Andersen - veiledning for kropp, sinn og sjel",
+          "rating": 5,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "The largest explicit keyword in the report (4,400/mo). Booking platforms dominate organic: timma.no (#6) and letsdeal.no (#8) outrank most independent spas. Only oslomassasje.no (#7) and daikai.no (#14) are direct massage businesses. Maps shows Vera's Studio Massasje (5.0 stars) and HARMONY MASSASJE (4.8 stars) — both with hidden review counts. A dedicated \"massasje oslo\" landing page with booking integration is essential to compete.",
+      "insightNO": "Det største eksplisitte søkeordet i rapporten (4 400/mnd). Bookingplattformer dominerer organisk: timma.no (#6) og letsdeal.no (#8) utrangerer de fleste uavhengige spaer. Bare oslomassasje.no (#7) og daikai.no (#14) er direkte massasjebedrifter. Maps viser Vera's Studio Massasje (5,0 stjerner) og HARMONY MASSASJE (4,8 stjerner) — begge med skjulte anmeldelsestall. En dedikert «massasje oslo»-landingsside med bookingintegrasjon er essensielt for å konkurrere."
+    }
+  ],
+  "cpcData": [
+    {
+      "keyword": "spa gave",
+      "cpc": 26.62
+    },
+    {
+      "keyword": "sportsmassasje",
+      "cpc": 16.72
+    },
+    {
+      "keyword": "spa opplevelse",
+      "cpc": 16.61
+    },
+    {
+      "keyword": "spa hotell oslo",
+      "cpc": 15.18
+    },
+    {
+      "keyword": "spa behandling",
+      "cpc": 13.64
+    },
+    {
+      "keyword": "spa pakke",
+      "cpc": 12.87
+    },
+    {
+      "keyword": "spa hotell",
+      "cpc": 12.54
+    },
+    {
+      "keyword": "hot tub",
+      "cpc": 11.66
+    },
+    {
+      "keyword": "spa behandling oslo",
+      "cpc": 11
+    },
+    {
+      "keyword": "fotmassasje",
+      "cpc": 10.89
+    },
+    {
+      "keyword": "aromaterapi",
+      "cpc": 10.89
+    },
+    {
+      "keyword": "spa",
+      "cpc": 10.67
+    },
+    {
+      "keyword": "spa dag",
+      "cpc": 10.56
+    },
+    {
+      "keyword": "badstue oslo",
+      "cpc": 9.9
+    },
+    {
+      "keyword": "wellness oslo",
+      "cpc": 9.02
+    },
+    {
+      "keyword": "avslappende massasje",
+      "cpc": 8.8
+    },
+    {
+      "keyword": "massasje",
+      "cpc": 8.69
+    },
+    {
+      "keyword": "massasje oslo",
+      "cpc": 8.69
+    },
+    {
+      "keyword": "dypvevsmassasje",
+      "cpc": 8.47
+    },
+    {
+      "keyword": "badstue",
+      "cpc": 8.14
+    },
+    {
+      "keyword": "jacuzzi",
+      "cpc": 7.37
+    },
+    {
+      "keyword": "spa oslo",
+      "cpc": 6.82
+    },
+    {
+      "keyword": "thai massasje oslo",
+      "cpc": 6.6
+    },
+    {
+      "keyword": "dagspa oslo",
+      "cpc": 6.49
+    },
+    {
+      "keyword": "dagspa",
+      "cpc": 5.83
+    },
+    {
+      "keyword": "wellness",
+      "cpc": 5.06
+    },
+    {
+      "keyword": "dampbad",
+      "cpc": 3.96
+    },
+    {
+      "keyword": "thai massasje",
+      "cpc": 3.63
+    },
+    {
+      "keyword": "hammam oslo",
+      "cpc": 2.64
+    },
+    {
+      "keyword": "hammam",
+      "cpc": 2.2
+    }
+  ],
+  "seasonality": {
+    "keyword": "spa",
+    "months": [
+      {
+        "month": "Jan",
+        "volume": 5400
+      },
+      {
+        "month": "Feb",
+        "volume": 5400
+      },
+      {
+        "month": "Mar",
+        "volume": 5400
+      },
+      {
+        "month": "Apr",
+        "volume": 4400
+      },
+      {
+        "month": "May",
+        "volume": 3600
+      },
+      {
+        "month": "Jun",
+        "volume": 3600
+      },
+      {
+        "month": "Jul",
+        "volume": 3600
+      },
+      {
+        "month": "Aug",
+        "volume": 3600
+      },
+      {
+        "month": "Sep",
+        "volume": 3600
+      },
+      {
+        "month": "Oct",
+        "volume": 4400
+      },
+      {
+        "month": "Nov",
+        "volume": 4400
+      },
+      {
+        "month": "Dec",
+        "volume": 4400
+      }
+    ],
+    "peakMonths": [
+      "Jan",
+      "Feb",
+      "Mar"
+    ],
+    "lowMonths": [
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep"
+    ],
+    "insightEN": "Spa demand peaks January–March (5,400/mo) — post-holiday self-care and New Year wellness resolutions drive searches up 50% above the summer low. Summer months (May–September) drop to 3,600/mo as people shift to outdoor activities. A secondary bump appears October–December (4,400/mo), likely driven by gift-giving season and pre-Christmas spa packages. Strategy: push ad spend hardest in Q1, offer gift card campaigns in November–December.",
+    "insightNO": "Spa-etterspørselen topper seg januar–mars (5 400/mnd) — egenpleie etter ferien og nyttårsforsetter for velvære driver søk opp 50 % over sommerbunnpunktet. Sommermånedene (mai–september) faller til 3 600/mnd når folk skifter til utendørsaktiviteter. En sekundær oppgang vises oktober–desember (4 400/mnd), sannsynligvis drevet av gavesesongen og spa-pakker før jul. Strategi: push annonseforbruk hardest i Q1, tilby gavekort-kampanjer i november–desember."
+  },
+  "insights": [
+    {
+      "icon": "globe",
+      "color": "green",
+      "titleEN": "40,320 searches — the largest market we've analyzed in Oslo",
+      "titleNO": "40 320 søk — det største markedet vi har analysert i Oslo",
+      "textEN": "Oslo's spa and wellness market generates 40,320 monthly searches across 30 keywords — more than auto repair (19,790), beauty salons (12,520), and psychologists (10,090) combined. \"Massasje oslo\" alone (4,400/mo) outpaces the entire accountant market (3,430/mo). At just 8.0 kr average CPC, this is also the cheapest market to advertise in.",
+      "textNO": "Oslos spa- og wellnessmarked genererer 40 320 månedlige søk på tvers av 30 søkeord — mer enn bilverksteder (19 790), skjønnhetssalonger (12 520) og psykologer (10 090) til sammen. «Massasje oslo» alene (4 400/mnd) overgår hele regnskapsmarkedet (3 430/mnd). Med bare 8,0 kr gjennomsnittlig CPC er dette også det billigste markedet å annonsere i.",
+      "statLabel": "monthly searches",
+      "statValue": "40,320"
+    },
+    {
+      "icon": "star",
+      "color": "amber",
+      "titleEN": "KOK Oslo Sauna: 452 reviews and rising",
+      "titleNO": "KOK Oslo Sauna: 452 anmeldelser og stigende",
+      "textEN": "KOK Oslo Sauna (4.8 stars, 452 reviews) appears in Maps for both \"spa oslo\" and \"badstue oslo\" — two major explicit keywords (2,400 + 3,600 = 6,000/mo combined). Their strategy: high review count, premium rating, and multi-keyword presence. For context, the next competitor with visible reviews is DaiKai at 270. Building to 200+ reviews is the threshold for Maps competitiveness in this niche.",
+      "textNO": "KOK Oslo Sauna (4,8 stjerner, 452 anmeldelser) dukker opp i Maps for både «spa oslo» og «badstue oslo» — to store eksplisitte søkeord (2 400 + 3 600 = 6 000/mnd sammenlagt). Strategien: høyt anmeldelsestall, premiumrating og tilstedeværelse på flere søkeord. For kontekst har den neste konkurrenten med synlige anmeldelser, DaiKai, 270. Å bygge til 200+ anmeldelser er terskelen for Maps-konkurranseevne i denne nisjen.",
+      "statLabel": "reviews for top Maps result",
+      "statValue": "452"
+    },
+    {
+      "icon": "zap",
+      "color": "blue",
+      "titleEN": "Booking platforms outrank most spas organically",
+      "titleNO": "Bookingplattformer utrangerer de fleste spaer organisk",
+      "textEN": "timma.no (#6 for \"massasje oslo\"), letsdeal.no (#8), and tripadvisor.com appear across multiple SERPs. These platforms capture searchers before they ever see your website. You have two options: list your business on these platforms to capture platform traffic, or outrank them with a dedicated service page and strong domain authority.",
+      "textNO": "timma.no (#6 for «massasje oslo»), letsdeal.no (#8) og tripadvisor.com dukker opp i flere SERP-er. Disse plattformene fanger søkere før de noensinne ser nettsiden din. Du har to alternativer: list bedriften din på disse plattformene for å fange plattformtrafikk, eller utranker dem med en dedikert tjenesteside og sterk domeneautoritet.",
+      "statLabel": "SERPs with booking platforms",
+      "statValue": "3/4"
+    },
+    {
+      "icon": "tag",
+      "color": "purple",
+      "titleEN": "Thai massage: highest volume, lowest CPC",
+      "titleNO": "Thai massasje: høyest volum, lavest CPC",
+      "textEN": "\"Thai massasje\" (6,600/mo, 3.63 kr/click) and \"thai massasje oslo\" (3,600/mo, 6.60 kr/click) combine for 10,200 monthly searches at under 5 kr average CPC. This is the best value keyword pair in the entire report. For spas that offer Thai massage, this should be the first ad campaign target.",
+      "textNO": "«Thai massasje» (6 600/mnd, 3,63 kr/klikk) og «thai massasje oslo» (3 600/mnd, 6,60 kr/klikk) gir til sammen 10 200 månedlige søk til under 5 kr gjennomsnittlig CPC. Dette er det beste verdi-søkeordparet i hele rapporten. For spaer som tilbyr thai-massasje bør dette være det første annonsekampanjemålet.",
+      "statLabel": "CPC for thai massasje",
+      "statValue": "3.63 kr"
+    }
+  ],
+  "tips": [
+    {
+      "titleEN": "Google Business Profile — build reviews across multiple categories",
+      "titleNO": "Google Bedriftsprofil — bygg anmeldelser på tvers av flere kategorier",
+      "textEN": "KOK Oslo Sauna (452 reviews) appears in Maps for 2 of 4 tested keywords. Add categories for all your services: spa, massasje, badstue, wellness, dagspa. Each category helps you show up in different search results. Vera's Studio holds a perfect 5.0 star rating with 149 reviews — proof that quality ratings plus consistent reviews drive Maps visibility.",
+      "textNO": "KOK Oslo Sauna (452 anmeldelser) dukker opp i Maps for 2 av 4 testede søkeord. Legg til kategorier for alle tjenestene dine: spa, massasje, badstue, wellness, dagspa. Hver kategori hjelper deg å vises i ulike søkeresultater. Vera's Studio holder perfekte 5,0 stjerner med 149 anmeldelser — bevis på at kvalitetsratinger pluss konsekvente anmeldelser driver Maps-synlighet.",
+      "tagEN": "Free — 30 minutes",
+      "tagNO": "Gratis — 30 minutter"
+    },
+    {
+      "titleEN": "List on Timma.no and TripAdvisor — they outrank your website",
+      "titleNO": "List deg på Timma.no og TripAdvisor — de utrangerer nettsiden din",
+      "textEN": "timma.no ranks #6 for \"massasje oslo\" (4,400/mo), letsdeal.no ranks #8, and tripadvisor.com appears in 3 of 4 SERPs. These platforms capture customers before they see your site. A Timma listing with online booking and a TripAdvisor presence gives you immediate visibility in channels where 40,320 monthly searchers are already looking.",
+      "textNO": "timma.no rangerer #6 for «massasje oslo» (4 400/mnd), letsdeal.no rangerer #8, og tripadvisor.com dukker opp i 3 av 4 SERP-er. Disse plattformene fanger kunder før de ser nettsiden din. En Timma-oppføring med nettbestilling og en TripAdvisor-tilstedeværelse gir deg umiddelbar synlighet i kanaler der 40 320 månedlige søkere allerede leter.",
+      "tagEN": "Free — 1 hour",
+      "tagNO": "Gratis — 1 time"
+    },
+    {
+      "titleEN": "Create separate pages for massasje, badstue, and spa treatments",
+      "titleNO": "Lag separate sider for massasje, badstue og spabehandlinger",
+      "textEN": "The top 4 keywords each target different services: massasje (6,600/mo), spa (4,400/mo), badstue (2,900/mo), dagspa (110/mo). A single \"our services\" page cannot rank for all of these. Dedicated pages with specific content, pricing, and booking for each service type is how niche operators like oslobadstuforening.no (#8 for badstue) and oslomassasje.no (#7 for massasje) win organic positions.",
+      "textNO": "Topp 4-søkeordene retter seg mot ulike tjenester: massasje (6 600/mnd), spa (4 400/mnd), badstue (2 900/mnd), dagspa (110/mnd). En enkelt «våre tjenester»-side kan ikke rangere for alle disse. Dedikerte sider med spesifikt innhold, priser og booking for hver tjenestetype er hvordan nisjeoperatører som oslobadstuforening.no (#8 for badstue) og oslomassasje.no (#7 for massasje) vinner organiske posisjoner.",
+      "tagEN": "Free — 2-3 hours per page",
+      "tagNO": "Gratis — 2-3 timer per side"
+    },
+    {
+      "titleEN": "Start Google Ads with Thai massage — best ROI in the market",
+      "titleNO": "Start Google Ads med thai-massasje — best ROI i markedet",
+      "textEN": "\"Thai massasje oslo\" (3,600/mo, 6.60 kr/click) is the highest-volume, lowest-CPC explicit keyword in this report. A 5,000 kr/month budget would generate ~758 clicks. Compare that to \"spa hotell oslo\" (590/mo, 15.18 kr) which yields ~329 clicks for the same budget. Start with the cheapest high-volume keywords, then scale to premium terms.",
+      "textNO": "«Thai massasje oslo» (3 600/mnd, 6,60 kr/klikk) er det høyeste-volum, laveste-CPC eksplisitte søkeordet i denne rapporten. Et budsjett på 5 000 kr/mnd ville generere ~758 klikk. Sammenlign med «spa hotell oslo» (590/mnd, 15,18 kr) som gir ~329 klikk for samme budsjett. Start med de billigste høyvolum-søkeordene, skaler deretter til premiumsøkeord.",
+      "tagEN": "Paid — from 5,000 kr/month",
+      "tagNO": "Betalt — fra 5 000 kr/mnd"
+    }
+  ],
+  "calculator": {
+    "avgCpc": 8.0,
+    "defaultPatientValue": 3000,
+    "defaultBudget": 5000,
+    "defaultConversion": 20,
+    "clickToInquiryRate": 0.035,
+    "benchmarkEN": "Spa CPCs range from 2.20 kr (hammam) to 26.62 kr (spa gave). Thai massage keywords (3.63–6.60 kr) offer the best volume-to-cost ratio in the entire Oslo market. A repeat spa customer visiting 2-3 times per year at 1,000–1,500 kr per visit is worth ~3,000 kr annually. At 8.0 kr average CPC, acquiring one loyal customer costs less than a single spa session.",
+    "benchmarkNO": "Spa-CPC-er varierer fra 2,20 kr (hammam) til 26,62 kr (spa gave). Thai massasje-søkeord (3,63–6,60 kr) gir det beste forholdet mellom volum og kostnad i hele Oslo-markedet. En gjentakende spa-kunde som besøker 2-3 ganger per år til 1 000–1 500 kr per besøk er verdt ~3 000 kr årlig. Med 8,0 kr gjennomsnittlig CPC koster det å skaffe én lojal kunde mindre enn en enkelt spa-behandling."
+  },
+  "sources": [
+    {
+      "name": "DataForSEO – Keywords Data API (Google Ads, Oslo)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – SERP API (Google organic, Oslo)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – Maps API (Google Maps, Oslo)",
+      "url": null
+    },
+    {
+      "name": "DataReportal – Digital 2025: Norway",
+      "url": "https://datareportal.com/reports/digital-2025-norway"
+    },
+    {
+      "name": "BrightLocal – Local Pack Click Share Study 2024",
+      "url": "https://www.brightlocal.com/research/"
+    }
+  ]
+}

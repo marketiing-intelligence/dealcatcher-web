@@ -5,11 +5,11 @@
     "city": "Oslo",
     "locationCode": 1010826,
     "dataDate": "2026-02",
-    "totalSearchVolume": 3430
+    "totalSearchVolume": 2320
   },
   "metrics": {
-    "keywordCount": 19,
-    "avgCpc": 182.8,
+    "keywordCount": 11,
+    "avgCpc": 256.3,
     "topClinicsCount": 5,
     "mapsClickShare": 44
   },
@@ -23,17 +23,83 @@
       "descriptionNO": "Direkte tjenestesøk i Oslo. «Regnskap» (720) og «regnskapsfører» (590) leder — sammen utgjør de 56 % av tjenestevolumet. CPC-er er ekstremt høye: «regnskapsfører» koster 420 kr per klikk, noe som gjenspeiler den høye livstidsverdien til hver regnskapskunde.",
       "totalVolume": 2320,
       "keywords": [
-        { "keyword": "regnskap", "translation": "accounting", "volume": 720, "competition": "HIGH", "cpc": 255.53 },
-        { "keyword": "regnskapsfører", "translation": "accountant", "volume": 590, "competition": "HIGH", "cpc": 420.42 },
-        { "keyword": "revisor", "translation": "auditor", "volume": 590, "competition": "MEDIUM", "cpc": 91.85 },
-        { "keyword": "årsregnskap", "translation": "annual accounts", "volume": 170, "competition": "HIGH", "cpc": 370.70 },
-        { "keyword": "regnskapsbyrå", "translation": "accounting firm", "volume": 70, "competition": "HIGH", "cpc": 295.90 },
-        { "keyword": "regnskapskontor", "translation": "accounting office", "volume": 50, "competition": "MEDIUM", "cpc": 118.91 },
-        { "keyword": "regnskapsfører pris", "translation": "accountant price", "volume": 40, "competition": "HIGH", "cpc": 133.10 },
-        { "keyword": "skatterådgiver", "translation": "tax advisor", "volume": 40, "competition": "HIGH", "cpc": 53.68 },
-        { "keyword": "billig regnskapsfører", "translation": "cheap accountant", "volume": 20, "competition": "HIGH", "cpc": 345.73 },
-        { "keyword": "regnskapstjenester", "translation": "accounting services", "volume": 20, "competition": "HIGH", "cpc": 174.68 },
-        { "keyword": "regnskapshjelp", "translation": "accounting help", "volume": 10, "competition": "HIGH", "cpc": 81.29 }
+        {
+          "keyword": "regnskap",
+          "translation": "accounting",
+          "volume": 720,
+          "competition": "HIGH",
+          "cpc": 255.53
+        },
+        {
+          "keyword": "regnskapsfører",
+          "translation": "accountant",
+          "volume": 590,
+          "competition": "HIGH",
+          "cpc": 420.42
+        },
+        {
+          "keyword": "revisor",
+          "translation": "auditor",
+          "volume": 590,
+          "competition": "MEDIUM",
+          "cpc": 91.85
+        },
+        {
+          "keyword": "årsregnskap",
+          "translation": "annual accounts",
+          "volume": 170,
+          "competition": "HIGH",
+          "cpc": 370.7
+        },
+        {
+          "keyword": "regnskapsbyrå",
+          "translation": "accounting firm",
+          "volume": 70,
+          "competition": "HIGH",
+          "cpc": 295.9
+        },
+        {
+          "keyword": "regnskapskontor",
+          "translation": "accounting office",
+          "volume": 50,
+          "competition": "MEDIUM",
+          "cpc": 118.91
+        },
+        {
+          "keyword": "regnskapsfører pris",
+          "translation": "accountant price",
+          "volume": 40,
+          "competition": "HIGH",
+          "cpc": 133.1
+        },
+        {
+          "keyword": "skatterådgiver",
+          "translation": "tax advisor",
+          "volume": 40,
+          "competition": "HIGH",
+          "cpc": 53.68
+        },
+        {
+          "keyword": "billig regnskapsfører",
+          "translation": "cheap accountant",
+          "volume": 20,
+          "competition": "HIGH",
+          "cpc": 345.73
+        },
+        {
+          "keyword": "regnskapstjenester",
+          "translation": "accounting services",
+          "volume": 20,
+          "competition": "HIGH",
+          "cpc": 174.68
+        },
+        {
+          "keyword": "regnskapshjelp",
+          "translation": "accounting help",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 81.29
+        }
       ]
     },
     {
@@ -47,9 +113,27 @@
       "descriptionWarning": "These searches are mostly informational — not direct service intent. Volume is excluded from the total above.",
       "totalVolume": 29280,
       "keywords": [
-        { "keyword": "skattemelding", "translation": "tax return", "volume": 27100, "competition": "LOW", "cpc": 22.88 },
-        { "keyword": "lønn", "translation": "salary/payroll", "volume": 1300, "competition": "LOW", "cpc": 39.71 },
-        { "keyword": "selvangivelse", "translation": "tax self-assessment", "volume": 880, "competition": "LOW", "cpc": 13.31 }
+        {
+          "keyword": "skattemelding",
+          "translation": "tax return",
+          "volume": 27100,
+          "competition": "LOW",
+          "cpc": 22.88
+        },
+        {
+          "keyword": "lønn",
+          "translation": "salary/payroll",
+          "volume": 1300,
+          "competition": "LOW",
+          "cpc": 39.71
+        },
+        {
+          "keyword": "selvangivelse",
+          "translation": "tax self-assessment",
+          "volume": 880,
+          "competition": "LOW",
+          "cpc": 13.31
+        }
       ]
     },
     {
@@ -57,16 +141,48 @@
       "color": "blue",
       "nameEN": "Explicit \"Oslo\" searches",
       "nameNO": "Eksplisitte \"Oslo\"-søk",
-      "descriptionEN": "People specifically searching for accounting services in Oslo. Three keywords share the lead at 320/month: \"regnskapsfører oslo\", \"regnskapsbyrå oslo\", and \"regnskap oslo\". These are the highest-intent keywords — someone typing a city name is ready to choose a provider.",
-      "descriptionNO": "Folk som spesifikt søker etter regnskapstjenester i Oslo. Tre søkeord deler ledelsen med 320/mnd: «regnskapsfører oslo», «regnskapsbyrå oslo» og «regnskap oslo». Dette er søkeordene med høyest intensjon — den som skriver inn bynavn er klar til å velge en leverandør.",
+      "descriptionEN": "People specifically searching for accounting services in Oslo. Three keywords share the lead at 320/month: \"regnskapsfører oslo\", \"regnskapsbyrå oslo\", and \"regnskap oslo\". These are the highest-intent keywords — someone typing a city name is ready to choose a provider. Note: these volumes are national (Google Ads does not break them down by city), so they reflect searches from all of Norway, not just Oslo residents.",
+      "descriptionNO": "Folk som spesifikt søker etter regnskapstjenester i Oslo. Tre søkeord deler ledelsen med 320/mnd: «regnskapsfører oslo», «regnskapsbyrå oslo» og «regnskap oslo». Dette er søkeordene med høyest intensjon — den som skriver inn bynavn er klar til å velge en leverandør. Merk: disse volumene er nasjonale (Google Ads bryter dem ikke ned etter by), så de gjenspeiler søk fra hele Norge, ikke bare Oslo-innbyggere.",
+      "descriptionWarning": "These are national search volumes (Google Ads has no city-level data for explicit keywords). Volume is excluded from the total above.",
       "totalVolume": 1110,
       "keywords": [
-        { "keyword": "regnskapsfører oslo", "translation": "accountant Oslo", "volume": 320, "competition": "HIGH", "cpc": 236.72 },
-        { "keyword": "regnskapsbyrå oslo", "translation": "accounting firm Oslo", "volume": 320, "competition": "MEDIUM", "cpc": 185.24 },
-        { "keyword": "regnskap oslo", "translation": "accounting Oslo", "volume": 320, "competition": "MEDIUM", "cpc": 185.24 },
-        { "keyword": "revisor oslo", "translation": "auditor Oslo", "volume": 140, "competition": "HIGH", "cpc": 109.34 },
-        { "keyword": "billig regnskapsfører oslo", "translation": "cheap accountant Oslo", "volume": 10, "competition": "HIGH", "cpc": 339.57 }
-      ]
+        {
+          "keyword": "regnskapsfører oslo",
+          "translation": "accountant Oslo",
+          "volume": 320,
+          "competition": "HIGH",
+          "cpc": 236.72
+        },
+        {
+          "keyword": "regnskapsbyrå oslo",
+          "translation": "accounting firm Oslo",
+          "volume": 320,
+          "competition": "MEDIUM",
+          "cpc": 185.24
+        },
+        {
+          "keyword": "regnskap oslo",
+          "translation": "accounting Oslo",
+          "volume": 320,
+          "competition": "MEDIUM",
+          "cpc": 185.24
+        },
+        {
+          "keyword": "revisor oslo",
+          "translation": "auditor Oslo",
+          "volume": 140,
+          "competition": "HIGH",
+          "cpc": 109.34
+        },
+        {
+          "keyword": "billig regnskapsfører oslo",
+          "translation": "cheap accountant Oslo",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 339.57
+        }
+      ],
+      "isNational": true
     }
   ],
   "serpKeywords": [
@@ -74,60 +190,191 @@
       "keyword": "regnskapsfører oslo",
       "volume": 320,
       "organic": [
-        { "rank": 1, "domain": "fiken.no" },
-        { "rank": 2, "domain": "noyaktig.no" },
-        { "rank": 3, "domain": "viewgroup.no" },
-        { "rank": 4, "domain": "azets.com" },
-        { "rank": 5, "domain": "riktigregnskap.no" }
+        {
+          "rank": 1,
+          "domain": "fiken.no"
+        },
+        {
+          "rank": 2,
+          "domain": "noyaktig.no"
+        },
+        {
+          "rank": 3,
+          "domain": "viewgroup.no"
+        },
+        {
+          "rank": 4,
+          "domain": "azets.com"
+        },
+        {
+          "rank": 5,
+          "domain": "riktigregnskap.no"
+        }
       ],
       "maps": [
-        { "rank": 1, "title": "Axis Regnskap AS", "rating": 4.7, "reviews": 21 },
-        { "rank": 2, "title": "Fiken", "rating": 4.9, "reviews": 1824 },
-        { "rank": 3, "title": "Unikum Regnskap AS", "rating": 5.0, "reviews": 13 }
+        {
+          "rank": 1,
+          "title": "Axis Regnskap AS",
+          "rating": 4.7,
+          "reviews": 21
+        },
+        {
+          "rank": 2,
+          "title": "Fiken",
+          "rating": 4.9,
+          "reviews": 1824
+        },
+        {
+          "rank": 3,
+          "title": "Unikum Regnskap AS",
+          "rating": 5.0,
+          "reviews": 13
+        }
       ],
       "insightEN": "Fiken (accounting software) ranks #1 organically AND #2 in Maps with 1,824 reviews — but it's not a traditional accounting firm. Actual firms (Nøyaktig, VIEW Group, Riktig Regnskap) hold positions #2-5. Maps reviews are extremely low for real firms (13-21), making review leadership very achievable.",
       "insightNO": "Fiken (regnskapsprogramvare) rangerer #1 organisk OG #2 i Maps med 1 824 anmeldelser — men det er ikke et tradisjonelt regnskapsbyrå. Faktiske byråer (Nøyaktig, VIEW Group, Riktig Regnskap) holder posisjon #2-5. Maps-anmeldelser er ekstremt lave for reelle byråer (13-21), noe som gjør anmeldelseslederskap svært oppnåelig."
     }
   ],
   "cpcData": [
-    { "keyword": "regnskapsfører", "cpc": 420.42 },
-    { "keyword": "årsregnskap", "cpc": 370.70 },
-    { "keyword": "billig regnskapsfører", "cpc": 345.73 },
-    { "keyword": "billig regnskapsfører oslo", "cpc": 339.57 },
-    { "keyword": "regnskapsbyrå", "cpc": 295.90 },
-    { "keyword": "regnskap", "cpc": 255.53 },
-    { "keyword": "regnskapsfører oslo", "cpc": 236.72 },
-    { "keyword": "regnskapsbyrå oslo", "cpc": 185.24 },
-    { "keyword": "regnskap oslo", "cpc": 185.24 },
-    { "keyword": "regnskapstjenester", "cpc": 174.68 },
-    { "keyword": "regnskapsfører pris", "cpc": 133.10 },
-    { "keyword": "regnskapskontor", "cpc": 118.91 },
-    { "keyword": "revisor oslo", "cpc": 109.34 },
-    { "keyword": "revisor", "cpc": 91.85 },
-    { "keyword": "regnskapshjelp", "cpc": 81.29 },
-    { "keyword": "skatterådgiver", "cpc": 53.68 },
-    { "keyword": "lønn", "cpc": 39.71 },
-    { "keyword": "skattemelding", "cpc": 22.88 },
-    { "keyword": "selvangivelse", "cpc": 13.31 }
+    {
+      "keyword": "regnskapsfører",
+      "cpc": 420.42
+    },
+    {
+      "keyword": "årsregnskap",
+      "cpc": 370.7
+    },
+    {
+      "keyword": "billig regnskapsfører",
+      "cpc": 345.73
+    },
+    {
+      "keyword": "billig regnskapsfører oslo",
+      "cpc": 339.57
+    },
+    {
+      "keyword": "regnskapsbyrå",
+      "cpc": 295.9
+    },
+    {
+      "keyword": "regnskap",
+      "cpc": 255.53
+    },
+    {
+      "keyword": "regnskapsfører oslo",
+      "cpc": 236.72
+    },
+    {
+      "keyword": "regnskapsbyrå oslo",
+      "cpc": 185.24
+    },
+    {
+      "keyword": "regnskap oslo",
+      "cpc": 185.24
+    },
+    {
+      "keyword": "regnskapstjenester",
+      "cpc": 174.68
+    },
+    {
+      "keyword": "regnskapsfører pris",
+      "cpc": 133.1
+    },
+    {
+      "keyword": "regnskapskontor",
+      "cpc": 118.91
+    },
+    {
+      "keyword": "revisor oslo",
+      "cpc": 109.34
+    },
+    {
+      "keyword": "revisor",
+      "cpc": 91.85
+    },
+    {
+      "keyword": "regnskapshjelp",
+      "cpc": 81.29
+    },
+    {
+      "keyword": "skatterådgiver",
+      "cpc": 53.68
+    },
+    {
+      "keyword": "lønn",
+      "cpc": 39.71
+    },
+    {
+      "keyword": "skattemelding",
+      "cpc": 22.88
+    },
+    {
+      "keyword": "selvangivelse",
+      "cpc": 13.31
+    }
   ],
   "seasonality": {
     "keyword": "regnskapsfører",
     "months": [
-      { "month": "Jan", "volume": 720 },
-      { "month": "Feb", "volume": 880 },
-      { "month": "Mar", "volume": 720 },
-      { "month": "Apr", "volume": 720 },
-      { "month": "May", "volume": 480 },
-      { "month": "Jun", "volume": 590 },
-      { "month": "Jul", "volume": 320 },
-      { "month": "Aug", "volume": 390 },
-      { "month": "Sep", "volume": 590 },
-      { "month": "Oct", "volume": 480 },
-      { "month": "Nov", "volume": 390 },
-      { "month": "Dec", "volume": 320 }
+      {
+        "month": "Jan",
+        "volume": 720
+      },
+      {
+        "month": "Feb",
+        "volume": 880
+      },
+      {
+        "month": "Mar",
+        "volume": 720
+      },
+      {
+        "month": "Apr",
+        "volume": 720
+      },
+      {
+        "month": "May",
+        "volume": 480
+      },
+      {
+        "month": "Jun",
+        "volume": 590
+      },
+      {
+        "month": "Jul",
+        "volume": 320
+      },
+      {
+        "month": "Aug",
+        "volume": 390
+      },
+      {
+        "month": "Sep",
+        "volume": 590
+      },
+      {
+        "month": "Oct",
+        "volume": 480
+      },
+      {
+        "month": "Nov",
+        "volume": 390
+      },
+      {
+        "month": "Dec",
+        "volume": 320
+      }
     ],
-    "peakMonths": ["Jan", "Feb", "Mar", "Apr"],
-    "lowMonths": ["Jul", "Dec"],
+    "peakMonths": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr"
+    ],
+    "lowMonths": [
+      "Jul",
+      "Dec"
+    ],
     "insightEN": "Accounting demand peaks in Q1 as businesses finalize previous year's books and prepare for tax season. February hits 880 — 175% above July's low of 320. Strategy: concentrate ad spend January–April, scale back in July and December.",
     "insightNO": "Regnskapsetterspørsel topper seg i Q1 når bedrifter avslutter fjorårets regnskap og forbereder seg til skattesesongen. Februar treffer 880 — 175 % over julis bunnpunkt på 320. Strategi: konsentrer annonsebudsjettet januar–april, reduser i juli og desember."
   },
@@ -157,8 +404,8 @@
       "color": "blue",
       "titleEN": "Three keywords share the #1 explicit spot",
       "titleNO": "Tre søkeord deler #1 eksplisitt-plassen",
-      "textEN": "\"Regnskapsfører oslo\", \"regnskapsbyrå oslo\", and \"regnskap oslo\" all have 320 monthly searches. This means potential clients use multiple terms — your Google Ads campaigns should target all three, not just one.",
-      "textNO": "«Regnskapsfører oslo», «regnskapsbyrå oslo» og «regnskap oslo» har alle 320 månedlige søk. Dette betyr at potensielle kunder bruker flere begreper — Google Ads-kampanjene dine bør målrette alle tre, ikke bare ett.",
+      "textEN": "\"Regnskapsfører oslo\", \"regnskapsbyrå oslo\", and \"regnskap oslo\" all have 320 monthly searches nationwide. This means potential clients use multiple terms — your Google Ads campaigns should target all three, not just one. (These are national volumes — Google Ads does not break city-name keywords down by location.)",
+      "textNO": "«Regnskapsfører oslo», «regnskapsbyrå oslo» og «regnskap oslo» har alle 320 månedlige søk på landsbasis. Dette betyr at potensielle kunder bruker flere begreper — Google Ads-kampanjene dine bør målrette alle tre, ikke bare ett. (Dette er nasjonale volumer — Google Ads bryter ikke ned bynavn-søkeord etter lokasjon.)",
       "statLabel": "equal volume keywords",
       "statValue": "3 × 320"
     },
@@ -185,16 +432,16 @@
     {
       "titleEN": "Create a skattemelding content hub",
       "titleNO": "Lag en skattemelding-innholdssentral",
-      "textEN": "27,100 people search \"skattemelding\" in Oslo every month, spiking to 201,000 in March. A comprehensive guide answering common tax questions positions you as the expert — and captures visitors who may need professional help. At 23 kr/click CPC, this traffic is 18x cheaper than service keywords.",
-      "textNO": "27 100 personer søker «skattemelding» i Oslo hver måned, topper seg til 201 000 i mars. En omfattende guide som svarer på vanlige skattespørsmål posisjonerer deg som eksperten — og fanger besøkende som kan trenge profesjonell hjelp. Med 23 kr/klikk CPC er denne trafikken 18 ganger billigere enn tjenestesøkeord.",
+      "textEN": "27,100 people search \"skattemelding\" across Norway every month, spiking to 201,000 in March. A comprehensive guide answering common tax questions positions you as the expert — and captures visitors who may need professional help. At 23 kr/click CPC, this traffic is 18x cheaper than service keywords.",
+      "textNO": "27 100 personer søker «skattemelding» i hele Norge hver måned, topper seg til 201 000 i mars. En omfattende guide som svarer på vanlige skattespørsmål posisjonerer deg som eksperten — og fanger besøkende som kan trenge profesjonell hjelp. Med 23 kr/klikk CPC er denne trafikken 18 ganger billigere enn tjenestesøkeord.",
       "tagEN": "Free — 3-4 hours",
       "tagNO": "Gratis — 3-4 timer"
     },
     {
       "titleEN": "Target explicit city keywords in Google Ads",
       "titleNO": "Målrett eksplisitte bysøkeord i Google Ads",
-      "textEN": "\"Regnskapsfører oslo\" (237 kr/click) is 44% cheaper than generic \"regnskapsfører\" (420 kr/click), with the same intent. Target all three 320-volume city keywords plus \"revisor oslo\" for maximum reach at lower cost.",
-      "textNO": "«Regnskapsfører oslo» (237 kr/klikk) er 44 % billigere enn generisk «regnskapsfører» (420 kr/klikk), med samme intensjon. Målrett alle tre 320-volum bysøkeordene pluss «revisor oslo» for maksimal rekkevidde til lavere kostnad.",
+      "textEN": "\"Regnskapsfører oslo\" (237 kr/click) is 44% cheaper than generic \"regnskapsfører\" (420 kr/click), with the same high intent. Target all three city keywords plus \"revisor oslo\" for maximum reach at lower cost. (Note: city-keyword volumes are national figures.)",
+      "textNO": "«Regnskapsfører oslo» (237 kr/klikk) er 44 % billigere enn generisk «regnskapsfører» (420 kr/klikk), med samme høye intensjon. Målrett alle tre bysøkeordene pluss «revisor oslo» for maksimal rekkevidde til lavere kostnad. (Merk: bysøkeord-volumer er nasjonale tall.)",
       "tagEN": "Paid — from 15,000 kr/month",
       "tagNO": "Betalt — fra 15 000 kr/mnd"
     },
@@ -208,7 +455,7 @@
     }
   ],
   "calculator": {
-    "avgCpc": 182.8,
+    "avgCpc": 256.3,
     "defaultPatientValue": 60000,
     "defaultBudget": 15000,
     "defaultConversion": 30,
@@ -217,10 +464,25 @@
     "benchmarkNO": "Regnskaps-CPC-er (91–420 kr) er 10–20 ganger høyere enn helsebransjer. Men én kunde verdt 60 000 kr/år betyr at du bare trenger å konvertere 1 av 4 henvendelser for å se sterk ROI."
   },
   "sources": [
-    { "name": "DataForSEO – Keywords Data API (Google Ads, Oslo)", "url": null },
-    { "name": "DataForSEO – SERP API (Google organic, Norway)", "url": null },
-    { "name": "DataForSEO – Maps API (Google Maps, Norway)", "url": null },
-    { "name": "DataReportal – Digital 2025: Norway", "url": "https://datareportal.com/reports/digital-2025-norway" },
-    { "name": "BrightLocal – Local Pack Click Share Study 2024", "url": "https://www.brightlocal.com/research/" }
+    {
+      "name": "DataForSEO – Keywords Data API (Google Ads, Oslo)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – SERP API (Google organic, Norway)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – Maps API (Google Maps, Norway)",
+      "url": null
+    },
+    {
+      "name": "DataReportal – Digital 2025: Norway",
+      "url": "https://datareportal.com/reports/digital-2025-norway"
+    },
+    {
+      "name": "BrightLocal – Local Pack Click Share Study 2024",
+      "url": "https://www.brightlocal.com/research/"
+    }
   ]
 }

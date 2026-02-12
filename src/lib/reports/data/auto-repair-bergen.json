@@ -1,0 +1,647 @@
+{
+  "meta": {
+    "niche": "auto-repair",
+    "nicheNO": "bilverksteder",
+    "city": "Bergen",
+    "locationCode": 1010921,
+    "dataDate": "2026-02",
+    "totalSearchVolume": 5050
+  },
+  "metrics": {
+    "keywordCount": 15,
+    "avgCpc": 25.8,
+    "topClinicsCount": 5,
+    "mapsClickShare": 44
+  },
+  "keywordGroups": [
+    {
+      "id": "services",
+      "color": "green",
+      "nameEN": "Auto repair & maintenance services",
+      "nameNO": "Bilverksted- og vedlikeholdstjenester",
+      "descriptionEN": "Direct service searches — people looking for specific auto repair services. EU-kontroll (1,000/mo) and tire-related keywords (dekk, vinterdekk, dekkskift, sommerdekk) account for 64% of volume. Bergen's CPC spread is wide: \"clutch\" costs just 2.86 kr while \"bilglass\" hits 65.56 kr — the priciest keyword in the dataset. Dekkskift at 50.38 kr is notably more expensive than in Oslo (14.41 kr), making smart keyword selection even more critical here.",
+      "descriptionNO": "Direkte tjenestesøk — folk som leter etter spesifikke bilverkstedtjenester. EU-kontroll (1 000/mnd) og dekkrelaterte søkeord (dekk, vinterdekk, dekkskift, sommerdekk) utgjør 64 % av volumet. Bergens CPC-spenn er bredt: «clutch» koster bare 2,86 kr mens «bilglass» treffer 65,56 kr — det dyreste søkeordet i datasettet. Dekkskift til 50,38 kr er merkbart dyrere enn i Oslo (14,41 kr), noe som gjør smart valg av søkeord enda viktigere her.",
+      "totalVolume": 5050,
+      "keywords": [
+        {
+          "keyword": "EU-kontroll",
+          "translation": "vehicle inspection (EU-kontroll)",
+          "volume": 1000,
+          "competition": "HIGH",
+          "cpc": 26.73
+        },
+        {
+          "keyword": "dekk",
+          "translation": "tires",
+          "volume": 880,
+          "competition": "HIGH",
+          "cpc": 24.2
+        },
+        {
+          "keyword": "bilverksted",
+          "translation": "auto repair shop",
+          "volume": 720,
+          "competition": "LOW",
+          "cpc": 29.26
+        },
+        {
+          "keyword": "vinterdekk",
+          "translation": "winter tires",
+          "volume": 720,
+          "competition": "HIGH",
+          "cpc": 20.68
+        },
+        {
+          "keyword": "dekkskift",
+          "translation": "tire change",
+          "volume": 390,
+          "competition": "MEDIUM",
+          "cpc": 50.38
+        },
+        {
+          "keyword": "clutch",
+          "translation": "clutch",
+          "volume": 320,
+          "competition": "HIGH",
+          "cpc": 2.86
+        },
+        {
+          "keyword": "dekkhotell",
+          "translation": "tire storage",
+          "volume": 260,
+          "competition": "HIGH",
+          "cpc": 37.73
+        },
+        {
+          "keyword": "sommerdekk",
+          "translation": "summer tires",
+          "volume": 260,
+          "competition": "HIGH",
+          "cpc": 11.66
+        },
+        {
+          "keyword": "EU-kontroll pris",
+          "translation": "vehicle inspection price",
+          "volume": 210,
+          "competition": "HIGH",
+          "cpc": 30.58
+        },
+        {
+          "keyword": "mekaniker",
+          "translation": "mechanic",
+          "volume": 140,
+          "competition": "LOW",
+          "cpc": 4.73
+        },
+        {
+          "keyword": "bilglass",
+          "translation": "car glass",
+          "volume": 50,
+          "competition": "MEDIUM",
+          "cpc": 65.56
+        },
+        {
+          "keyword": "eksosanlegg",
+          "translation": "exhaust system",
+          "volume": 50,
+          "competition": "HIGH",
+          "cpc": 5.17
+        },
+        {
+          "keyword": "bilservice",
+          "translation": "car service",
+          "volume": 30,
+          "competition": "MEDIUM",
+          "cpc": 49.17
+        },
+        {
+          "keyword": "lakkering bil",
+          "translation": "car painting",
+          "volume": 10,
+          "competition": "MEDIUM",
+          "cpc": 15.73
+        },
+        {
+          "keyword": "AC service bil",
+          "translation": "car AC service",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 43.34
+        }
+      ]
+    },
+    {
+      "id": "explicit",
+      "color": "blue",
+      "nameEN": "Explicit \"Bergen\" searches",
+      "nameNO": "Eksplisitte \"Bergen\"-søk",
+      "descriptionEN": "Keywords that include \"Bergen\" in the query. Note: Google Ads does not provide city-level volume for these keywords, so the volumes shown are national (country-wide) figures. \"Bilverksted bergen\" (590/mo nationally) leads, followed by \"dekkhotell bergen\" (390/mo nationally) and \"EU-kontroll bergen\" (260/mo nationally). EU-kontroll bergen has the highest CPC at 52.80 kr — nearly double the generic \"EU-kontroll\" (26.73 kr). Adding the city name signals immediate booking intent and advertisers pay a premium for it.",
+      "descriptionNO": "Søkeord som inkluderer «Bergen» i spørringen. Merk: Google Ads gir ikke byspesifikt volum for disse søkeordene, så volumene som vises er nasjonale (landsdekkende) tall. «Bilverksted bergen» (590/mnd nasjonalt) leder, etterfulgt av «dekkhotell bergen» (390/mnd nasjonalt) og «EU-kontroll bergen» (260/mnd nasjonalt). EU-kontroll bergen har den høyeste CPC-en på 52,80 kr — nesten dobbelt så mye som generisk «EU-kontroll» (26,73 kr). Å legge til bynavnet signaliserer umiddelbar bestillingsintensjon, og annonsører betaler en premie for det.",
+      "totalVolume": 1570,
+      "keywords": [
+        {
+          "keyword": "bilverksted bergen",
+          "translation": "auto repair shop Bergen",
+          "volume": 590,
+          "competition": "HIGH",
+          "cpc": 29.81
+        },
+        {
+          "keyword": "dekkhotell bergen",
+          "translation": "tire storage Bergen",
+          "volume": 390,
+          "competition": "HIGH",
+          "cpc": 35.09
+        },
+        {
+          "keyword": "EU-kontroll bergen",
+          "translation": "vehicle inspection Bergen",
+          "volume": 260,
+          "competition": "HIGH",
+          "cpc": 52.8
+        },
+        {
+          "keyword": "dekkskift bergen",
+          "translation": "tire change Bergen",
+          "volume": 210,
+          "competition": "HIGH",
+          "cpc": 48.51
+        },
+        {
+          "keyword": "bilservice bergen",
+          "translation": "car service Bergen",
+          "volume": 50,
+          "competition": "LOW",
+          "cpc": 36.96
+        },
+        {
+          "keyword": "lakkering bergen",
+          "translation": "car painting Bergen",
+          "volume": 40,
+          "competition": "MEDIUM",
+          "cpc": 20.79
+        },
+        {
+          "keyword": "bilglass bergen",
+          "translation": "car glass Bergen",
+          "volume": 30,
+          "competition": "HIGH",
+          "cpc": 37.4
+        }
+      ],
+      "isNational": true
+    }
+  ],
+  "serpKeywords": [
+    {
+      "keyword": "bilverksted bergen",
+      "volume": 590,
+      "organic": [
+        {
+          "rank": 8,
+          "domain": "www.bilsmart.no"
+        },
+        {
+          "rank": 9,
+          "domain": "www.meca.no"
+        },
+        {
+          "rank": 10,
+          "domain": "www.mekonomen.no"
+        },
+        {
+          "rank": 15,
+          "domain": "www.snapdrive.no"
+        },
+        {
+          "rank": 16,
+          "domain": "fixbil.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Snap Drive Sentrum",
+          "rating": 4.4,
+          "reviews": 59
+        },
+        {
+          "rank": 2,
+          "title": "Fixbil Møllendalsveien",
+          "rating": 4.6,
+          "reviews": 68
+        },
+        {
+          "rank": 3,
+          "title": "Fondenes Auto",
+          "rating": 3.5,
+          "reviews": 38
+        }
+      ],
+      "insightEN": "National chains are pushed further down in Bergen than in Oslo: bilsmart.no (#8), meca.no (#9), mekonomen.no (#10), snapdrive.no (#15). This creates more organic real estate for local players — fixbil.no already appears at #16. In Maps, Fixbil Møllendalsveien (4.6 stars, 68 reviews) outrates Snap Drive Sentrum (4.4, 59 reviews) but sits in #2. Fondenes Auto holds #3 with just 3.5 stars and 38 reviews — a weak spot any well-reviewed competitor can exploit.",
+      "insightNO": "Nasjonale kjeder er presset lenger ned i Bergen enn i Oslo: bilsmart.no (#8), meca.no (#9), mekonomen.no (#10), snapdrive.no (#15). Dette skaper mer organisk plass for lokale aktører — fixbil.no dukker allerede opp på #16. I Maps har Fixbil Møllendalsveien (4,6 stjerner, 68 anmeldelser) bedre rating enn Snap Drive Sentrum (4,4, 59 anmeldelser) men ligger på #2. Fondenes Auto holder #3 med bare 3,5 stjerner og 38 anmeldelser — en svakhet enhver godt anmeldt konkurrent kan utnytte."
+    },
+    {
+      "keyword": "dekkskift bergen",
+      "volume": 210,
+      "organic": [
+        {
+          "rank": 4,
+          "domain": "dekkproff.no"
+        },
+        {
+          "rank": 5,
+          "domain": "vianor.no"
+        },
+        {
+          "rank": 6,
+          "domain": "www.dekkpartner.no"
+        },
+        {
+          "rank": 9,
+          "domain": "dekkproff.no"
+        },
+        {
+          "rank": 13,
+          "domain": "smartdekk.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Hjulmakeren AS",
+          "rating": 4.4,
+          "reviews": 63
+        },
+        {
+          "rank": 2,
+          "title": "Smart Dekk AS",
+          "rating": 4.5,
+          "reviews": 45
+        },
+        {
+          "rank": 3,
+          "title": "BestDrive Bergen Minde",
+          "rating": 4.2,
+          "reviews": 176
+        }
+      ],
+      "insightEN": "Tire specialists own this SERP: dekkproff.no (#4), vianor.no (#5), dekkpartner.no (#6), smartdekk.no (#13). Unlike the general \"bilverksted\" keyword, niche players dominate over chains here. Maps competition is fierce — BestDrive Bergen Minde leads in reviews (176) but has the lowest rating (4.2). Smart Dekk AS (4.5 stars, 45 reviews) shows that high ratings can outweigh review volume. Hjulmakeren AS holds #1 with 4.4 stars and 63 reviews.",
+      "insightNO": "Dekkspesialister eier dette SERP-et: dekkproff.no (#4), vianor.no (#5), dekkpartner.no (#6), smartdekk.no (#13). I motsetning til det generelle «bilverksted»-søkeordet dominerer nisjespillere over kjeder her. Maps-konkurransen er hard — BestDrive Bergen Minde leder i anmeldelser (176) men har lavest rating (4,2). Smart Dekk AS (4,5 stjerner, 45 anmeldelser) viser at høy rating kan veie opp for anmeldelsesvolum. Hjulmakeren AS holder #1 med 4,4 stjerner og 63 anmeldelser."
+    },
+    {
+      "keyword": "EU-kontroll bergen",
+      "volume": 260,
+      "organic": [
+        {
+          "rank": 4,
+          "domain": "www.bilsmart.no"
+        },
+        {
+          "rank": 5,
+          "domain": "www.meca.no"
+        },
+        {
+          "rank": 6,
+          "domain": "vianor.no"
+        },
+        {
+          "rank": 7,
+          "domain": "www.mekonomen.no"
+        },
+        {
+          "rank": 8,
+          "domain": "fixbil.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Snap Drive Sentrum",
+          "rating": 4.4,
+          "reviews": 0
+        },
+        {
+          "rank": 2,
+          "title": "Fondenes Auto",
+          "rating": 3.5,
+          "reviews": 0
+        },
+        {
+          "rank": 3,
+          "title": "Fixbil Møllendalsveien",
+          "rating": 4.6,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "The most expensive explicit keyword at 52.80 kr/click — nearly double the generic \"EU-kontroll\" (26.73 kr). Chains pack the organic top: bilsmart.no (#4), meca.no (#5), vianor.no (#6), mekonomen.no (#7), fixbil.no (#8). Maps results show 0 reviews across all three — Snap Drive Sentrum (4.4), Fondenes Auto (3.5), and Fixbil Møllendalsveien (4.6). Fixbil has the best rating but sits at #3 — review collection could flip this ranking.",
+      "insightNO": "Det dyreste eksplisitte søkeordet med 52,80 kr/klikk — nesten dobbelt så mye som generisk «EU-kontroll» (26,73 kr). Kjeder pakker den organiske toppen: bilsmart.no (#4), meca.no (#5), vianor.no (#6), mekonomen.no (#7), fixbil.no (#8). Maps-resultater viser 0 anmeldelser for alle tre — Snap Drive Sentrum (4,4), Fondenes Auto (3,5) og Fixbil Møllendalsveien (4,6). Fixbil har best rating men ligger på #3 — anmeldelsesinnsamling kan snu denne rangeringen."
+    },
+    {
+      "keyword": "mekaniker bergen",
+      "volume": 20,
+      "organic": [
+        {
+          "rank": 5,
+          "domain": "www.bilsmart.no"
+        },
+        {
+          "rank": 9,
+          "domain": "www.mekonomen.no"
+        },
+        {
+          "rank": 10,
+          "domain": "bergenmekaniske.no"
+        },
+        {
+          "rank": 11,
+          "domain": "www.meca.no"
+        },
+        {
+          "rank": 12,
+          "domain": "www.automester.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Fondenes Auto",
+          "rating": 3.5,
+          "reviews": 38
+        },
+        {
+          "rank": 2,
+          "title": "Fixbil Møllendalsveien",
+          "rating": 4.6,
+          "reviews": 68
+        },
+        {
+          "rank": 3,
+          "title": "Snap Drive Sentrum",
+          "rating": 4.4,
+          "reviews": 59
+        }
+      ],
+      "insightEN": "Low volume (20/mo) but chains still dominate organic: bilsmart.no (#5), mekonomen.no (#9), meca.no (#11), automester.no (#12). A local player, bergenmekaniske.no, cracks the top 10 at #10 — a rarity. In Maps, Fondenes Auto (3.5 stars, 38 reviews) holds #1 despite the lowest rating, with Fixbil Møllendalsveien (4.6, 68 reviews) at #2 and Snap Drive Sentrum (4.4, 59 reviews) at #3. The same three shops rotate across all Bergen Maps results, suggesting a small competitive field.",
+      "insightNO": "Lavt volum (20/mnd) men kjeder dominerer fortsatt organisk: bilsmart.no (#5), mekonomen.no (#9), meca.no (#11), automester.no (#12). En lokal aktør, bergenmekaniske.no, bryter inn i topp 10 på #10 — en sjeldenhet. I Maps holder Fondenes Auto (3,5 stjerner, 38 anmeldelser) #1 til tross for lavest rating, med Fixbil Møllendalsveien (4,6, 68 anmeldelser) på #2 og Snap Drive Sentrum (4,4, 59 anmeldelser) på #3. De samme tre verkstedene roterer i alle Bergens Maps-resultater, noe som tyder på et lite konkurransefelt."
+    }
+  ],
+  "cpcData": [
+    {
+      "keyword": "bilglass",
+      "cpc": 65.56
+    },
+    {
+      "keyword": "EU-kontroll bergen",
+      "cpc": 52.8
+    },
+    {
+      "keyword": "dekkskift",
+      "cpc": 50.38
+    },
+    {
+      "keyword": "bilservice",
+      "cpc": 49.17
+    },
+    {
+      "keyword": "dekkskift bergen",
+      "cpc": 48.51
+    },
+    {
+      "keyword": "AC service bil",
+      "cpc": 43.34
+    },
+    {
+      "keyword": "dekkhotell",
+      "cpc": 37.73
+    },
+    {
+      "keyword": "bilglass bergen",
+      "cpc": 37.4
+    },
+    {
+      "keyword": "bilservice bergen",
+      "cpc": 36.96
+    },
+    {
+      "keyword": "dekkhotell bergen",
+      "cpc": 35.09
+    },
+    {
+      "keyword": "EU-kontroll pris",
+      "cpc": 30.58
+    },
+    {
+      "keyword": "bilverksted bergen",
+      "cpc": 29.81
+    },
+    {
+      "keyword": "bilverksted",
+      "cpc": 29.26
+    },
+    {
+      "keyword": "EU-kontroll",
+      "cpc": 26.73
+    },
+    {
+      "keyword": "dekk",
+      "cpc": 24.2
+    },
+    {
+      "keyword": "lakkering bergen",
+      "cpc": 20.79
+    },
+    {
+      "keyword": "vinterdekk",
+      "cpc": 20.68
+    },
+    {
+      "keyword": "lakkering bil",
+      "cpc": 15.73
+    },
+    {
+      "keyword": "sommerdekk",
+      "cpc": 11.66
+    },
+    {
+      "keyword": "eksosanlegg",
+      "cpc": 5.17
+    },
+    {
+      "keyword": "mekaniker",
+      "cpc": 4.73
+    },
+    {
+      "keyword": "clutch",
+      "cpc": 2.86
+    }
+  ],
+  "seasonality": {
+    "keyword": "dekkskift",
+    "months": [
+      {
+        "month": "Jan",
+        "volume": 50
+      },
+      {
+        "month": "Feb",
+        "volume": 10
+      },
+      {
+        "month": "Mar",
+        "volume": 110
+      },
+      {
+        "month": "Apr",
+        "volume": 590
+      },
+      {
+        "month": "May",
+        "volume": 320
+      },
+      {
+        "month": "Jun",
+        "volume": 140
+      },
+      {
+        "month": "Jul",
+        "volume": 50
+      },
+      {
+        "month": "Aug",
+        "volume": 20
+      },
+      {
+        "month": "Sep",
+        "volume": 170
+      },
+      {
+        "month": "Oct",
+        "volume": 2400
+      },
+      {
+        "month": "Nov",
+        "volume": 720
+      },
+      {
+        "month": "Dec",
+        "volume": 90
+      }
+    ],
+    "peakMonths": [
+      "Oct"
+    ],
+    "lowMonths": [
+      "Feb"
+    ],
+    "insightEN": "Tire change demand in Bergen follows the classic Norwegian pattern with a massive October spike (2,400 searches) — 240x the February low of just 10 searches. A secondary spring peak in April (590) catches the summer tire switch. Bergen's winter peak is proportionally even sharper than Oslo's — strategy: launch ad campaigns in mid-September before the October rush, and again in early March. Summer months (Jun–Aug) drop to 20–140 searches — reduce spend dramatically.",
+    "insightNO": "Etterspørselen etter dekkskift i Bergen følger det klassiske norske mønsteret med en massiv oktober-topp (2 400 søk) — 240 ganger februar-bunnpunktet på bare 10 søk. En sekundær vårtopp i april (590) fanger bytte til sommerdekk. Bergens vintertopp er proporsjonalt enda skarpere enn Oslos — strategi: lanser annonsekampanjer i midten av september før oktoberushet, og igjen tidlig i mars. Sommermånedene (jun–aug) faller til 20–140 søk — reduser forbruket dramatisk."
+  },
+  "insights": [
+    {
+      "icon": "map-pin",
+      "color": "amber",
+      "titleEN": "Only 3 workshops rotate across all Bergen Maps results",
+      "titleNO": "Bare 3 verksteder roterer i alle Bergens Maps-resultater",
+      "textEN": "Snap Drive Sentrum (4.4 stars, 59 reviews), Fixbil Møllendalsveien (4.6 stars, 68 reviews), and Fondenes Auto (3.5 stars, 38 reviews) appear across all 4 tested keywords. This is a remarkably small competitive field — in Oslo, different workshops appear for different keywords. A new Bergen workshop with a well-optimized Google Business Profile and 50+ reviews at 4.5+ stars could break into the top 3 quickly.",
+      "textNO": "Snap Drive Sentrum (4,4 stjerner, 59 anmeldelser), Fixbil Møllendalsveien (4,6 stjerner, 68 anmeldelser) og Fondenes Auto (3,5 stjerner, 38 anmeldelser) dukker opp i alle 4 testede søkeord. Dette er et bemerkelsesverdig lite konkurransefelt — i Oslo dukker ulike verksteder opp for ulike søkeord. Et nytt bergensverksted med en godt optimalisert Google Bedriftsprofil og 50+ anmeldelser med 4,5+ stjerner kan bryte inn i topp 3 raskt.",
+      "statLabel": "shops in all Maps results",
+      "statValue": "3"
+    },
+    {
+      "icon": "zap",
+      "color": "red",
+      "titleEN": "\"Bilglass\" costs 65.56 kr per click — 23x the cheapest keyword",
+      "titleNO": "«Bilglass» koster 65,56 kr per klikk — 23x det billigste søkeordet",
+      "textEN": "Bergen's CPC landscape is extreme. \"Bilglass\" (65.56 kr), \"EU-kontroll bergen\" (52.80 kr), and \"dekkskift\" (50.38 kr) are premium keywords. Meanwhile, \"clutch\" (2.86 kr, 320/mo) and \"mekaniker\" (4.73 kr, 140/mo) offer volume at a fraction of the cost. Bergen's average CPC (25.80 kr) is 38% higher than Oslo's (18.70 kr) — budget-conscious workshops should prioritize lower-CPC keywords.",
+      "textNO": "Bergens CPC-landskap er ekstremt. «Bilglass» (65,56 kr), «EU-kontroll bergen» (52,80 kr) og «dekkskift» (50,38 kr) er premiumsøkeord. Samtidig tilbyr «clutch» (2,86 kr, 320/mnd) og «mekaniker» (4,73 kr, 140/mnd) volum til en brøkdel av prisen. Bergens gjennomsnittlige CPC (25,80 kr) er 38 % høyere enn Oslos (18,70 kr) — budsjettbevisste verksteder bør prioritere søkeord med lavere CPC.",
+      "statLabel": "highest CPC",
+      "statValue": "65.56 kr"
+    },
+    {
+      "icon": "globe",
+      "color": "green",
+      "titleEN": "Chains pushed to page 2 — Bergen's organic space is more open",
+      "titleNO": "Kjeder presset til side 2 — Bergens organiske plass er mer åpen",
+      "textEN": "National chains rank lower in Bergen than Oslo: bilsmart.no sits at #8 (vs #4 in Oslo), mekonomen.no at #10 (vs #11), snapdrive.no at #15 (vs #6). This opens organic opportunities for local workshops. Fixbil.no at #16 and bergenmekaniske.no at #10 already show local players breaking through — a focused SEO strategy targeting \"bilverksted bergen\" could realistically reach page 1.",
+      "textNO": "Nasjonale kjeder rangerer lavere i Bergen enn i Oslo: bilsmart.no ligger på #8 (vs #4 i Oslo), mekonomen.no på #10 (vs #11), snapdrive.no på #15 (vs #6). Dette åpner organiske muligheter for lokale verksteder. Fixbil.no på #16 og bergenmekaniske.no på #10 viser allerede at lokale aktører bryter gjennom — en fokusert SEO-strategi rettet mot «bilverksted bergen» kan realistisk nå side 1.",
+      "statLabel": "Maps click share",
+      "statValue": "44%"
+    },
+    {
+      "icon": "clock",
+      "color": "blue",
+      "titleEN": "Dekkskift peaks at 2,400 searches in October — 240x the February low",
+      "titleNO": "Dekkskift topper med 2 400 søk i oktober — 240x februar-bunnpunktet",
+      "textEN": "Bergen's \"dekkskift\" surges from just 10 searches in February to 2,400 in October — the sharpest seasonal swing of any Norwegian city in our data. The November tail (720) is also significant, suggesting Bergen customers book later than other cities. Workshops should extend their dekkskift advertising through November and book extra staff for the Oct–Nov window.",
+      "textNO": "Bergens «dekkskift» stiger fra bare 10 søk i februar til 2 400 i oktober — den skarpeste sesongsvingningen av alle norske byer i våre data. November-halen (720) er også betydelig, noe som tyder på at bergenskunder bestiller senere enn andre byer. Verksteder bør forlenge dekkskift-annonseringen gjennom november og bestille ekstra personale for okt–nov-vinduet.",
+      "statLabel": "Oct vs Feb volume",
+      "statValue": "240x"
+    }
+  ],
+  "tips": [
+    {
+      "titleEN": "Google Business Profile — outrank Fondenes Auto's 3.5 stars",
+      "titleNO": "Google Bedriftsprofil — utranker Fondenes Autos 3,5 stjerner",
+      "textEN": "Fondenes Auto holds Maps #1 or #3 across multiple keywords with just 3.5 stars and 38 reviews — the weakest Maps leader of any city we analyzed. A workshop with 4.5+ stars and 50+ reviews has a clear path to overtake them. Add categories for EU-kontroll, dekkskift, dekkhotell, bilservice — every service category helps you appear in more searches. Enable online booking and add photos of your workshop.",
+      "textNO": "Fondenes Auto holder Maps #1 eller #3 for flere søkeord med bare 3,5 stjerner og 38 anmeldelser — den svakeste Maps-lederen i alle byer vi analyserte. Et verksted med 4,5+ stjerner og 50+ anmeldelser har en klar vei til å overta. Legg til kategorier for EU-kontroll, dekkskift, dekkhotell, bilservice — hver tjenestekategori hjelper deg å dukke opp i flere søk. Aktiver nettbestilling og legg til bilder av verkstedet.",
+      "tagEN": "Free — 30 minutes",
+      "tagNO": "Gratis — 30 minutter"
+    },
+    {
+      "titleEN": "Create dedicated service pages (EU-kontroll, dekkhotell, dekkskift)",
+      "titleNO": "Lag dedikerte tjenestesider (EU-kontroll, dekkhotell, dekkskift)",
+      "textEN": "The top 3 services account for 65% of Bergen's local search volume: EU-kontroll (1,000/mo), dekk/vinterdekk (1,600/mo combined), and dekkhotell (260/mo local). Each deserves its own landing page with pricing, booking CTA, and local keywords. The explicit keyword \"dekkhotell bergen\" (390/mo nationally) also shows strong demand — a dedicated page could capture high-intent traffic at 35.09 kr/click.",
+      "textNO": "Topp 3-tjenester utgjør 65 % av Bergens lokale søkevolum: EU-kontroll (1 000/mnd), dekk/vinterdekk (1 600/mnd sammenlagt) og dekkhotell (260/mnd lokalt). Hver fortjener sin egen landingsside med priser, bestillings-CTA og lokale søkeord. Det eksplisitte søkeordet «dekkhotell bergen» (390/mnd nasjonalt) viser også sterk etterspørsel — en dedikert side kan fange høy-intensjons-trafikk til 35,09 kr/klikk.",
+      "tagEN": "Free — 2-3 hours per page",
+      "tagNO": "Gratis — 2-3 timer per side"
+    },
+    {
+      "titleEN": "Publish EU-kontroll prices — match Bergen's price-comparison intent",
+      "titleNO": "Publiser EU-kontroll-priser — match Bergens prissammenligningsintensjon",
+      "textEN": "\"EU-kontroll pris\" has 210 monthly searches in Bergen at 30.58 kr/click — a 14% premium over generic EU-kontroll (26.73 kr). People searching for prices are in the final decision stage. A page with transparent pricing, what's included, and a booking button directly captures this intent. Bergen's EU-kontroll CPC is 12% higher than Oslo's — competition for this keyword is heating up.",
+      "textNO": "«EU-kontroll pris» har 210 månedlige søk i Bergen til 30,58 kr/klikk — en 14 % premie over generisk EU-kontroll (26,73 kr). Folk som søker etter priser er i den siste beslutningsfasen. En side med transparente priser, hva som er inkludert, og en bestillingsknapp fanger denne intensjonen direkte. Bergens EU-kontroll-CPC er 12 % høyere enn Oslos — konkurransen om dette søkeordet tiltar.",
+      "tagEN": "Free — 1 hour",
+      "tagNO": "Gratis — 1 time"
+    },
+    {
+      "titleEN": "Run seasonal Google Ads for dekkskift + dekkhotell together",
+      "titleNO": "Kjør sesongbaserte Google Ads for dekkskift + dekkhotell sammen",
+      "textEN": "Dekkskift surges to 2,400 searches in October and dekkhotell bergen stays strong at 390/mo year-round. Launch ads in mid-September targeting \"dekkskift bergen\" (210/mo, 48.51 kr) and \"dekkhotell bergen\" (390/mo, 35.09 kr) as a bundle — customers changing tires often need storage. Bergen's dekkskift CPC is 3.5x Oslo's, so focus budget on dekkhotell (lower CPC, steady demand). A 10,000 kr September budget could generate ~240 clicks.",
+      "textNO": "Dekkskift stiger til 2 400 søk i oktober og dekkhotell bergen holder seg sterk på 390/mnd gjennom hele året. Lanser annonser i midten av september rettet mot «dekkskift bergen» (210/mnd, 48,51 kr) og «dekkhotell bergen» (390/mnd, 35,09 kr) som en pakke — kunder som bytter dekk trenger ofte lagring. Bergens dekkskift-CPC er 3,5x Oslos, så fokuser budsjettet på dekkhotell (lavere CPC, jevn etterspørsel). Et budsjett på 10 000 kr i september kan generere ~240 klikk.",
+      "tagEN": "Paid — from 10,000 kr/month",
+      "tagNO": "Betalt — fra 10 000 kr/mnd"
+    }
+  ],
+  "calculator": {
+    "avgCpc": 25.8,
+    "defaultPatientValue": 8000,
+    "defaultBudget": 8000,
+    "defaultConversion": 30,
+    "clickToInquiryRate": 0.045,
+    "benchmarkEN": "Auto repair CPCs in Bergen range from 2.86 kr (clutch) to 65.56 kr (bilglass). Bergen's average CPC (25.80 kr) is 38% higher than Oslo, making keyword selection critical. Tire and EU-kontroll keywords (20–27 kr) offer the best volume-to-cost ratio. A loyal customer is worth ~8,000 kr/year (EU-kontroll 3,000 + service 3,000 + dekk 2,000). At 25.80 kr average CPC, one converted customer pays for ~310 clicks.",
+    "benchmarkNO": "Bilverksted-CPC-er i Bergen varierer fra 2,86 kr (clutch) til 65,56 kr (bilglass). Bergens gjennomsnittlige CPC (25,80 kr) er 38 % høyere enn Oslo, noe som gjør valg av søkeord avgjørende. Dekk- og EU-kontroll-søkeord (20–27 kr) gir det beste forholdet mellom volum og kostnad. En lojal kunde er verdt ~8 000 kr/år (EU-kontroll 3 000 + service 3 000 + dekk 2 000). Med 25,80 kr gjennomsnittlig CPC betaler én konvertert kunde for ~310 klikk."
+  },
+  "sources": [
+    {
+      "name": "DataForSEO – Keywords Data API (Google Ads, Bergen)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – SERP API (Google organic, Bergen)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – Maps API (Google Maps, Bergen)",
+      "url": null
+    },
+    {
+      "name": "DataReportal – Digital 2025: Norway",
+      "url": "https://datareportal.com/reports/digital-2025-norway"
+    },
+    {
+      "name": "BrightLocal – Local Pack Click Share Study 2024",
+      "url": "https://www.brightlocal.com/research/"
+    }
+  ]
+}

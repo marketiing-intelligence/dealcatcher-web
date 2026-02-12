@@ -1,0 +1,607 @@
+{
+  "meta": {
+    "niche": "auto-repair",
+    "nicheNO": "bilverksteder",
+    "city": "Drammen",
+    "locationCode": 1010853,
+    "dataDate": "2026-02",
+    "totalSearchVolume": 820
+  },
+  "metrics": {
+    "keywordCount": 11,
+    "avgCpc": 22.8,
+    "topClinicsCount": 5,
+    "mapsClickShare": 44
+  },
+  "keywordGroups": [
+    {
+      "id": "services",
+      "color": "green",
+      "nameEN": "Auto repair & maintenance services",
+      "nameNO": "Bilverksted- og vedlikeholdstjenester",
+      "descriptionEN": "Direct service searches — people looking for specific auto repair services. Bilverksted (210/mo) and EU-kontroll (210/mo) share the top position — unusual, as EU-kontroll dominates in every other city. Dekk (140/mo) follows. The CPC spread is extreme: \"clutch\" costs just 2.20 kr while \"mekaniker\" hits 51.15 kr — a 23x gap. Drammen's average CPC of 22.80 kr is the second-highest after Bergen, making it a surprisingly expensive market for its size.",
+      "descriptionNO": "Direkte tjenestesøk — folk som leter etter spesifikke bilverkstedtjenester. Bilverksted (210/mnd) og EU-kontroll (210/mnd) deler toppposisjonen — uvanlig, ettersom EU-kontroll dominerer i alle andre byer. Dekk (140/mnd) følger. CPC-spennet er ekstremt: «clutch» koster bare 2,20 kr mens «mekaniker» treffer 51,15 kr — et 23x gap. Drammens gjennomsnittlige CPC på 22,80 kr er den nest høyeste etter Bergen, noe som gjør det til et overraskende dyrt marked for sin størrelse.",
+      "totalVolume": 820,
+      "keywords": [
+        {
+          "keyword": "bilverksted",
+          "translation": "auto repair shop",
+          "volume": 210,
+          "competition": "MEDIUM",
+          "cpc": 23.1
+        },
+        {
+          "keyword": "EU-kontroll",
+          "translation": "vehicle inspection (EU-kontroll)",
+          "volume": 210,
+          "competition": "HIGH",
+          "cpc": 27.61
+        },
+        {
+          "keyword": "dekk",
+          "translation": "tires",
+          "volume": 140,
+          "competition": "HIGH",
+          "cpc": 14.08
+        },
+        {
+          "keyword": "vinterdekk",
+          "translation": "winter tires",
+          "volume": 70,
+          "competition": "HIGH",
+          "cpc": 14.52
+        },
+        {
+          "keyword": "dekkhotell",
+          "translation": "tire storage",
+          "volume": 40,
+          "competition": "MEDIUM",
+          "cpc": 32.56
+        },
+        {
+          "keyword": "sommerdekk",
+          "translation": "summer tires",
+          "volume": 40,
+          "competition": "HIGH",
+          "cpc": 17.71
+        },
+        {
+          "keyword": "EU-kontroll pris",
+          "translation": "vehicle inspection price",
+          "volume": 30,
+          "competition": "HIGH",
+          "cpc": 41.25
+        },
+        {
+          "keyword": "clutch",
+          "translation": "clutch",
+          "volume": 30,
+          "competition": "HIGH",
+          "cpc": 2.2
+        },
+        {
+          "keyword": "mekaniker",
+          "translation": "mechanic",
+          "volume": 20,
+          "competition": "LOW",
+          "cpc": 51.15
+        },
+        {
+          "keyword": "bilglass",
+          "translation": "car glass",
+          "volume": 20,
+          "competition": "MEDIUM",
+          "cpc": 17.16
+        },
+        {
+          "keyword": "lakkering bil",
+          "translation": "car painting",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 34.65
+        }
+      ]
+    },
+    {
+      "id": "explicit",
+      "color": "blue",
+      "nameEN": "Explicit \"Drammen\" searches",
+      "nameNO": "Eksplisitte \"Drammen\"-søk",
+      "descriptionEN": "Keywords that include \"Drammen\" in the query. Note: Google Ads does not provide city-level volume for these keywords, so the volumes shown are national (country-wide) figures. Explicit keywords total 1,840/mo nationally — a strong signal that Drammen searchers actively specify their city. \"Bilverksted drammen\" (590/mo nationally) and \"EU-kontroll drammen\" (390/mo nationally) lead. EU-kontroll drammen at 38.17 kr/click is the priciest explicit keyword. \"Bilservice drammen\" (140/mo nationally, 29.37 kr) shows unusually high volume for this keyword compared to other cities.",
+      "descriptionNO": "Søkeord som inkluderer «Drammen» i spørringen. Merk: Google Ads gir ikke byspesifikt volum for disse søkeordene, så volumene som vises er nasjonale (landsdekkende) tall. Eksplisitte søkeord utgjør totalt 1 840/mnd nasjonalt — et sterkt signal om at Drammen-søkere aktivt spesifiserer byen sin. «Bilverksted drammen» (590/mnd nasjonalt) og «EU-kontroll drammen» (390/mnd nasjonalt) leder. EU-kontroll drammen til 38,17 kr/klikk er det dyreste eksplisitte søkeordet. «Bilservice drammen» (140/mnd nasjonalt, 29,37 kr) viser uvanlig høyt volum for dette søkeordet sammenlignet med andre byer.",
+      "totalVolume": 1840,
+      "keywords": [
+        {
+          "keyword": "bilverksted drammen",
+          "translation": "auto repair shop Drammen",
+          "volume": 590,
+          "competition": "MEDIUM",
+          "cpc": 29.26
+        },
+        {
+          "keyword": "EU-kontroll drammen",
+          "translation": "vehicle inspection Drammen",
+          "volume": 390,
+          "competition": "HIGH",
+          "cpc": 38.17
+        },
+        {
+          "keyword": "dekkhotell drammen",
+          "translation": "tire storage Drammen",
+          "volume": 320,
+          "competition": "MEDIUM",
+          "cpc": 20.57
+        },
+        {
+          "keyword": "dekkskift drammen",
+          "translation": "tire change Drammen",
+          "volume": 260,
+          "competition": "MEDIUM",
+          "cpc": 15.95
+        },
+        {
+          "keyword": "bilservice drammen",
+          "translation": "car service Drammen",
+          "volume": 140,
+          "competition": "MEDIUM",
+          "cpc": 29.37
+        },
+        {
+          "keyword": "bilglass drammen",
+          "translation": "car glass Drammen",
+          "volume": 110,
+          "competition": "MEDIUM",
+          "cpc": 26.07
+        },
+        {
+          "keyword": "lakkering drammen",
+          "translation": "car painting Drammen",
+          "volume": 30,
+          "competition": "HIGH",
+          "cpc": 11.66
+        }
+      ],
+      "isNational": true
+    }
+  ],
+  "serpKeywords": [
+    {
+      "keyword": "bilverksted drammen",
+      "volume": 590,
+      "organic": [
+        {
+          "rank": 5,
+          "domain": "www.bilsmart.no"
+        },
+        {
+          "rank": 6,
+          "domain": "normannbilverksted.no"
+        },
+        {
+          "rank": 11,
+          "domain": "www.mekonomen.no"
+        },
+        {
+          "rank": 12,
+          "domain": "www.ekelundbilservice.no"
+        },
+        {
+          "rank": 13,
+          "domain": "www.meca.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Mekonomen Bilverksted Drammen (avd. AutoCo)",
+          "rating": 4,
+          "reviews": 0
+        },
+        {
+          "rank": 2,
+          "title": "Palmberg Bilverksted AS",
+          "rating": 4,
+          "reviews": 0
+        },
+        {
+          "rank": 3,
+          "title": "Gyldenløve Bilservice AS (tidligere Drammen Gummiservice)",
+          "rating": 4.1,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "bilsmart.no (#5) leads organic, with a local player normannbilverksted.no at #6 — ahead of mekonomen.no (#11), ekelundbilservice.no (#12), and meca.no (#13). Two local independents cracking the top positions is unusual. Maps shows 0 reviews for all three results: Mekonomen Bilverksted Drammen (4.0), Palmberg Bilverksted AS (4.0), and Gyldenløve Bilservice AS (4.1). All three have nearly identical ratings — reviews would be the tiebreaker. The Maps field is wide open.",
+      "insightNO": "bilsmart.no (#5) leder organisk, med en lokal aktør normannbilverksted.no på #6 — foran mekonomen.no (#11), ekelundbilservice.no (#12) og meca.no (#13). To lokale uavhengige som bryter inn i toppposisjonene er uvanlig. Maps viser 0 anmeldelser for alle tre resultatene: Mekonomen Bilverksted Drammen (4,0), Palmberg Bilverksted AS (4,0) og Gyldenløve Bilservice AS (4,1). Alle tre har nesten identisk rating — anmeldelser ville vært avgjørende. Maps-feltet er helt åpent."
+    },
+    {
+      "keyword": "dekkskift drammen",
+      "volume": 260,
+      "organic": [
+        {
+          "rank": 4,
+          "domain": "vianor.no"
+        },
+        {
+          "rank": 9,
+          "domain": "dekkteam.no"
+        },
+        {
+          "rank": 11,
+          "domain": "www.dekkmesteren.no"
+        },
+        {
+          "rank": 12,
+          "domain": "www.lundsenter.no"
+        },
+        {
+          "rank": 13,
+          "domain": "bilringen.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Bilringen AS",
+          "rating": 4.7,
+          "reviews": 156
+        },
+        {
+          "rank": 2,
+          "title": "Lund Oljesenter AS / Dekkpartner Drammen / LUNDSENTER",
+          "rating": 4.6,
+          "reviews": 173
+        },
+        {
+          "rank": 3,
+          "title": "Sharif Dekksenter Drammen",
+          "rating": 4.7,
+          "reviews": 60
+        }
+      ],
+      "insightEN": "Tire specialists dominate: vianor.no (#4), dekkteam.no (#9), dekkmesteren.no (#11), lundsenter.no (#12), bilringen.no (#13). Maps is the strongest competitive landscape in Drammen — Bilringen AS (4.7 stars, 156 reviews), Lund Oljesenter/Dekkpartner Drammen (4.6, 173 reviews), and Sharif Dekksenter (4.7, 60 reviews) all have high ratings and significant review counts. This is the most competitive dekkskift Maps result of any city we analyzed.",
+      "insightNO": "Dekkspesialister dominerer: vianor.no (#4), dekkteam.no (#9), dekkmesteren.no (#11), lundsenter.no (#12), bilringen.no (#13). Maps er det sterkeste konkurranselandskapet i Drammen — Bilringen AS (4,7 stjerner, 156 anmeldelser), Lund Oljesenter/Dekkpartner Drammen (4,6, 173 anmeldelser) og Sharif Dekksenter (4,7, 60 anmeldelser) har alle høye ratinger og betydelig antall anmeldelser. Dette er det mest konkurranseutsatte dekkskift Maps-resultatet av alle byer vi analyserte."
+    },
+    {
+      "keyword": "EU-kontroll drammen",
+      "volume": 390,
+      "organic": [
+        {
+          "rank": 9,
+          "domain": "www.mekonomen.no"
+        },
+        {
+          "rank": 10,
+          "domain": "vianor.no"
+        },
+        {
+          "rank": 11,
+          "domain": "www.meca.no"
+        },
+        {
+          "rank": 12,
+          "domain": "www.bilsmart.no"
+        },
+        {
+          "rank": 15,
+          "domain": "www.snapdrive.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Gyldenløve Bilservice AS (tidligere Drammen Gummiservice)",
+          "rating": 4.1,
+          "reviews": 173
+        },
+        {
+          "rank": 2,
+          "title": "Mekonomen Bilverksted Drammen (avd. AutoCo)",
+          "rating": 4,
+          "reviews": 125
+        },
+        {
+          "rank": 3,
+          "title": "Cash & Drive (SjekkPunkt)",
+          "rating": 4.3,
+          "reviews": 97
+        }
+      ],
+      "insightEN": "National chains are pushed further down for EU-kontroll in Drammen than any other city: mekonomen.no at #9, vianor.no at #10, meca.no at #11, bilsmart.no at #12, snapdrive.no at #15. This is the weakest chain showing of any city. Maps tells a different story — Gyldenløve Bilservice (4.1, 173 reviews) leads, Mekonomen Drammen (4.0, 125 reviews) at #2, and Cash & Drive/SjekkPunkt (4.3, 97 reviews) at #3. All three have strong review counts, making Maps harder to crack here.",
+      "insightNO": "Nasjonale kjeder er presset lenger ned for EU-kontroll i Drammen enn i alle andre byer: mekonomen.no på #9, vianor.no på #10, meca.no på #11, bilsmart.no på #12, snapdrive.no på #15. Dette er det svakeste kjedevisningen av alle byer. Maps forteller en annen historie — Gyldenløve Bilservice (4,1, 173 anmeldelser) leder, Mekonomen Drammen (4,0, 125 anmeldelser) på #2, og Cash & Drive/SjekkPunkt (4,3, 97 anmeldelser) på #3. Alle tre har sterke anmeldelsestall, noe som gjør Maps vanskeligere å bryte inn i her."
+    },
+    {
+      "keyword": "mekaniker drammen",
+      "volume": 0,
+      "organic": [
+        {
+          "rank": 4,
+          "domain": "www.meca.no"
+        },
+        {
+          "rank": 5,
+          "domain": "www.bilsmart.no"
+        },
+        {
+          "rank": 6,
+          "domain": "normannbilverksted.no"
+        },
+        {
+          "rank": 7,
+          "domain": "www.gulesider.no"
+        },
+        {
+          "rank": 8,
+          "domain": "sjekkpunkt.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Gyldenløve Bilservice AS (tidligere Drammen Gummiservice)",
+          "rating": 4.1,
+          "reviews": 173
+        },
+        {
+          "rank": 2,
+          "title": "Mekonomen Bilverksted Drammen (avd. AutoCo)",
+          "rating": 4,
+          "reviews": 125
+        },
+        {
+          "rank": 3,
+          "title": "Palmberg Bilverksted AS",
+          "rating": 4,
+          "reviews": 56
+        }
+      ],
+      "insightEN": "Zero measurable volume (0/mo) but organic results show a healthy local presence: meca.no (#4), bilsmart.no (#5), normannbilverksted.no (#6), gulesider.no (#7), sjekkpunkt.no (#8). Two local players rank among chains. Maps is dominated by established workshops: Gyldenløve Bilservice (4.1, 173 reviews), Mekonomen Drammen (4.0, 125 reviews), Palmberg Bilverksted (4.0, 56 reviews). These three rotate across all Drammen Maps results — strong review counts make this a harder market to break into.",
+      "insightNO": "Null målbart volum (0/mnd) men organiske resultater viser et sunt lokalt nærvær: meca.no (#4), bilsmart.no (#5), normannbilverksted.no (#6), gulesider.no (#7), sjekkpunkt.no (#8). To lokale aktører rangerer blant kjedene. Maps domineres av etablerte verksteder: Gyldenløve Bilservice (4,1, 173 anmeldelser), Mekonomen Drammen (4,0, 125 anmeldelser), Palmberg Bilverksted (4,0, 56 anmeldelser). Disse tre roterer i alle Drammens Maps-resultater — sterke anmeldelsestall gjør dette til et vanskeligere marked å bryte inn i."
+    }
+  ],
+  "cpcData": [
+    {
+      "keyword": "mekaniker",
+      "cpc": 51.15
+    },
+    {
+      "keyword": "EU-kontroll pris",
+      "cpc": 41.25
+    },
+    {
+      "keyword": "EU-kontroll drammen",
+      "cpc": 38.17
+    },
+    {
+      "keyword": "lakkering bil",
+      "cpc": 34.65
+    },
+    {
+      "keyword": "dekkhotell",
+      "cpc": 32.56
+    },
+    {
+      "keyword": "bilservice drammen",
+      "cpc": 29.37
+    },
+    {
+      "keyword": "bilverksted drammen",
+      "cpc": 29.26
+    },
+    {
+      "keyword": "EU-kontroll",
+      "cpc": 27.61
+    },
+    {
+      "keyword": "bilglass drammen",
+      "cpc": 26.07
+    },
+    {
+      "keyword": "bilverksted",
+      "cpc": 23.1
+    },
+    {
+      "keyword": "dekkhotell drammen",
+      "cpc": 20.57
+    },
+    {
+      "keyword": "sommerdekk",
+      "cpc": 17.71
+    },
+    {
+      "keyword": "bilglass",
+      "cpc": 17.16
+    },
+    {
+      "keyword": "dekkskift drammen",
+      "cpc": 15.95
+    },
+    {
+      "keyword": "vinterdekk",
+      "cpc": 14.52
+    },
+    {
+      "keyword": "dekk",
+      "cpc": 14.08
+    },
+    {
+      "keyword": "lakkering drammen",
+      "cpc": 11.66
+    },
+    {
+      "keyword": "clutch",
+      "cpc": 2.2
+    }
+  ],
+  "seasonality": {
+    "keyword": "dekkskift",
+    "months": [
+      {
+        "month": "Jan",
+        "volume": 10
+      },
+      {
+        "month": "Feb",
+        "volume": 10
+      },
+      {
+        "month": "Mar",
+        "volume": 20
+      },
+      {
+        "month": "Apr",
+        "volume": 210
+      },
+      {
+        "month": "May",
+        "volume": 70
+      },
+      {
+        "month": "Jun",
+        "volume": 20
+      },
+      {
+        "month": "Jul",
+        "volume": 10
+      },
+      {
+        "month": "Aug",
+        "volume": 10
+      },
+      {
+        "month": "Sep",
+        "volume": 20
+      },
+      {
+        "month": "Oct",
+        "volume": 390
+      },
+      {
+        "month": "Nov",
+        "volume": 70
+      },
+      {
+        "month": "Dec",
+        "volume": 10
+      }
+    ],
+    "peakMonths": [
+      "Oct"
+    ],
+    "lowMonths": [
+      "Jan",
+      "Feb",
+      "Jul",
+      "Aug",
+      "Dec"
+    ],
+    "insightEN": "Tire change demand in Drammen peaks in October (390 searches) — 39x the low of just 10 (Jan, Feb, Jul, Aug, Dec). Drammen has five flat-bottom months — the longest off-season of any city. The April spring peak (210) is actually stronger than the November tail (70), suggesting Drammen drivers prioritize summer tire switches. Strategy: run dekkskift campaigns Sep–Oct for winter and Mar–Apr for summer. Skip Dec–Feb and Jun–Aug entirely.",
+    "insightNO": "Etterspørselen etter dekkskift i Drammen topper i oktober (390 søk) — 39 ganger bunnpunktet på bare 10 (jan, feb, jul, aug, des). Drammen har fem flate bunnmåneder — den lengste lavsesong av alle byer. April-vårtoppen (210) er faktisk sterkere enn november-halen (70), noe som tyder på at drammensbilister prioriterer sommerdekk-bytte. Strategi: kjør dekkskift-kampanjer sep–okt for vinter og mar–apr for sommer. Hopp over des–feb og jun–aug helt."
+  },
+  "insights": [
+    {
+      "icon": "map-pin",
+      "color": "amber",
+      "titleEN": "Gyldenløve Bilservice dominates Maps with 173 reviews — but only 4.1 stars",
+      "titleNO": "Gyldenløve Bilservice dominerer Maps med 173 anmeldelser — men bare 4,1 stjerner",
+      "textEN": "Gyldenløve Bilservice AS leads Maps for \"EU-kontroll drammen\" and \"mekaniker drammen\" with 173 reviews but just 4.1 stars. In the dekkskift Maps, Lund Oljesenter also has 173 reviews. Drammen's Maps are review-heavy — the average top-3 shop has 115 reviews, compared to 55 in Oslo. Competing here requires actively building a review base. However, ratings are relatively low (4.0–4.3) — a shop with 4.5+ stars and 100+ reviews could claim the top.",
+      "textNO": "Gyldenløve Bilservice AS leder Maps for «EU-kontroll drammen» og «mekaniker drammen» med 173 anmeldelser men bare 4,1 stjerner. I dekkskift-Maps har Lund Oljesenter også 173 anmeldelser. Drammens Maps er anmeldelsestunge — gjennomsnittet for topp-3-verksted har 115 anmeldelser, sammenlignet med 55 i Oslo. Å konkurrere her krever aktiv oppbygging av anmeldelsesbase. Imidlertid er ratingene relativt lave (4,0–4,3) — et verksted med 4,5+ stjerner og 100+ anmeldelser kan ta toppen.",
+      "statLabel": "avg reviews for top Maps shops",
+      "statValue": "115"
+    },
+    {
+      "icon": "zap",
+      "color": "red",
+      "titleEN": "Drammen searchers overwhelmingly specify the city name in queries",
+      "titleNO": "Drammen-søkere spesifiserer bynavnet i overveldende grad",
+      "textEN": "Drammen's explicit keywords total 1,840/mo in national volume — the strongest city-name search signal of any city we analyzed. This likely reflects Drammen's proximity to Oslo — searchers specify \"Drammen\" to avoid Oslo results. Every ad, landing page, and business listing must prominently feature \"Drammen\" to capture this behavior. Generic keywords without the city name will miss a large share of potential customers.",
+      "textNO": "Drammens eksplisitte søkeord utgjør totalt 1 840/mnd i nasjonalt volum — det sterkeste bynavn-søkesignalet av alle byer vi analyserte. Denne ekstreme andelen gjenspeiler trolig Drammens nærhet til Oslo — søkere spesifiserer «Drammen» for å unngå Oslo-resultater. Hver annonse, landingsside og bedriftsoppføring må tydelig inneholde «Drammen» for å fange denne adferden. Generiske søkeord uten bynavn vil gå glipp av en stor andel potensielle kunder.",
+      "statLabel": "explicit keyword volume (national)",
+      "statValue": "1,840/mo"
+    },
+    {
+      "icon": "globe",
+      "color": "green",
+      "titleEN": "Chains pushed to page 2 for EU-kontroll — weakest chain presence of any city",
+      "titleNO": "Kjeder presset til side 2 for EU-kontroll — svakest kjedenærvær av alle byer",
+      "textEN": "For \"EU-kontroll drammen\", the first chain appears at position #9 (mekonomen.no). bilsmart.no sits at #12, snapdrive.no at #15. This is the weakest chain showing of any city — creating significant organic opportunity for local workshops. normannbilverksted.no at #6 for \"bilverksted drammen\" and bilringen.no at #13 for \"dekkskift drammen\" show local players already exploiting this gap.",
+      "textNO": "For «EU-kontroll drammen» dukker den første kjeden opp på posisjon #9 (mekonomen.no). bilsmart.no ligger på #12, snapdrive.no på #15. Dette er det svakeste kjedenærværet av alle byer — noe som skaper betydelig organisk mulighet for lokale verksteder. normannbilverksted.no på #6 for «bilverksted drammen» og bilringen.no på #13 for «dekkskift drammen» viser at lokale aktører allerede utnytter dette gapet.",
+      "statLabel": "Maps click share",
+      "statValue": "44%"
+    },
+    {
+      "icon": "clock",
+      "color": "blue",
+      "titleEN": "April dekkskift (210) outperforms November (70) — spring is bigger than fall tail",
+      "titleNO": "April dekkskift (210) overgår november (70) — våren er større enn høstens hale",
+      "textEN": "Drammen is unique: the April spring peak (210 searches) is 3x the November tail (70). In most cities, November carries 30-50% of the October peak. This suggests Drammen's closeness to Oslo means drivers switch to summer tires earlier — or that November demand is captured by Oslo-targeted searches. Practical takeaway: run a strong March–April campaign, and don't over-invest in November.",
+      "textNO": "Drammen er unik: april-vårtoppen (210 søk) er 3 ganger november-halen (70). I de fleste byer utgjør november 30-50 % av oktobertoppen. Dette tyder på at Drammens nærhet til Oslo betyr at bilister bytter til sommerdekk tidligere — eller at november-etterspørselen fanges av Oslo-målrettede søk. Praktisk takeaway: kjør en sterk mars–april-kampanje, og ikke overinvester i november.",
+      "statLabel": "Apr vs Nov volume",
+      "statValue": "3x"
+    }
+  ],
+  "tips": [
+    {
+      "titleEN": "Google Business Profile — aim for 4.5+ stars to beat the 4.0–4.1 competition",
+      "titleNO": "Google Bedriftsprofil — sikt mot 4,5+ stjerner for å slå 4,0–4,1-konkurrentene",
+      "textEN": "Drammen's Maps leaders all have moderate ratings: Gyldenløve Bilservice (4.1), Mekonomen Drammen (4.0), Palmberg Bilverksted (4.0). None exceed 4.3 stars. A workshop with 4.5+ stars would immediately differentiate. However, review counts are high (56–173), so you need volume too. Add all service categories, enable booking, and start a systematic review collection process. Target 100+ reviews in your first year.",
+      "textNO": "Drammens Maps-ledere har alle moderate ratinger: Gyldenløve Bilservice (4,1), Mekonomen Drammen (4,0), Palmberg Bilverksted (4,0). Ingen overstiger 4,3 stjerner. Et verksted med 4,5+ stjerner ville umiddelbart skille seg ut. Imidlertid er anmeldelsestallene høye (56–173), så du trenger volum også. Legg til alle tjenestekategorier, aktiver bestilling, og start en systematisk anmeldelsesinnsamlingsprosess. Sikt mot 100+ anmeldelser i ditt første år.",
+      "tagEN": "Free — 30 minutes",
+      "tagNO": "Gratis — 30 minutter"
+    },
+    {
+      "titleEN": "Include \"Drammen\" in every page — searchers demand city specificity",
+      "titleNO": "Inkluder «Drammen» på hver side — søkere krever byspesifisitet",
+      "textEN": "Drammen searchers heavily specify the city name — explicit keywords total 1,840/mo nationally, likely because proximity to Oslo makes searchers specify their city to avoid irrelevant results. Create separate pages for \"bilverksted drammen\", \"EU-kontroll drammen\", \"dekkskift drammen\", \"dekkhotell drammen\", \"bilservice drammen\". Each of these explicit keywords has 140–590 monthly searches nationally. normannbilverksted.no already ranks #6 organically — proving local SEO works here.",
+      "textNO": "Drammen-søkere spesifiserer bynavnet i stor grad — eksplisitte søkeord utgjør totalt 1 840/mnd nasjonalt, trolig fordi nærheten til Oslo får søkere til å spesifisere byen sin for å unngå irrelevante resultater. Lag separate sider for «bilverksted drammen», «EU-kontroll drammen», «dekkskift drammen», «dekkhotell drammen», «bilservice drammen». Hvert av disse eksplisitte søkeordene har 140–590 månedlige søk nasjonalt. normannbilverksted.no rangerer allerede #6 organisk — noe som beviser at lokal SEO fungerer her.",
+      "tagEN": "Free — 2-3 hours per page",
+      "tagNO": "Gratis — 2-3 timer per side"
+    },
+    {
+      "titleEN": "Publish EU-kontroll prices — capture the most expensive explicit keyword",
+      "titleNO": "Publiser EU-kontroll-priser — fang det dyreste eksplisitte søkeordet",
+      "textEN": "\"EU-kontroll drammen\" (390/mo, 38.17 kr) and \"EU-kontroll pris\" (30/mo, 41.25 kr) together represent 420 monthly price-intent searches. At 38–41 kr/click, these are expensive keywords — but organic ranking is achievable since chains start at position #9. A pricing page with transparent rates and online booking could rank on page 1 organically, avoiding the high CPC entirely. Match the content depth of mekonomen.no but add local trust signals.",
+      "textNO": "«EU-kontroll drammen» (390/mnd, 38,17 kr) og «EU-kontroll pris» (30/mnd, 41,25 kr) representerer til sammen 420 månedlige prisintensjonssøk. Med 38–41 kr/klikk er disse dyre søkeord — men organisk rangering er oppnåelig siden kjeder starter på posisjon #9. En prisside med transparente priser og nettbestilling kan rangere på side 1 organisk og unngå den høye CPC-en helt. Match innholdsdybden til mekonomen.no men legg til lokale tillitssignaler.",
+      "tagEN": "Free — 1-2 hours",
+      "tagNO": "Gratis — 1-2 timer"
+    },
+    {
+      "titleEN": "Run Google Ads in two seasonal bursts — fall and spring",
+      "titleNO": "Kjør Google Ads i to sesongbaserte støt — høst og vår",
+      "textEN": "Drammen's dekkskift demand has two clear peaks: October (390) and April (210). The April peak is unusually strong — 3x November (70). Run \"dekkskift drammen\" (260/mo, 15.95 kr) and \"dekkhotell drammen\" (320/mo, 20.57 kr) campaigns in Sep–Oct and Mar–Apr. Skip the 5 dead months entirely. A 6,000 kr budget across two seasonal bursts (3,000 kr each) could generate ~330 clicks at blended ~18 kr/click.",
+      "textNO": "Drammens dekkskift-etterspørsel har to tydelige topper: oktober (390) og april (210). April-toppen er uvanlig sterk — 3 ganger november (70). Kjør «dekkskift drammen» (260/mnd, 15,95 kr) og «dekkhotell drammen» (320/mnd, 20,57 kr) kampanjer i sep–okt og mar–apr. Hopp over de 5 døde månedene helt. Et budsjett på 6 000 kr fordelt på to sesongstøt (3 000 kr hver) kan generere ~330 klikk til en blandet ~18 kr/klikk.",
+      "tagEN": "Paid — from 6,000 kr/month",
+      "tagNO": "Betalt — fra 6 000 kr/mnd"
+    }
+  ],
+  "calculator": {
+    "avgCpc": 22.8,
+    "defaultPatientValue": 8000,
+    "defaultBudget": 8000,
+    "defaultConversion": 30,
+    "clickToInquiryRate": 0.045,
+    "benchmarkEN": "Auto repair CPCs in Drammen range from 2.20 kr (clutch) to 51.15 kr (mekaniker). Drammen's average CPC (22.80 kr) is the second-highest after Bergen, reflecting intense local competition despite the small market. Best value: \"dekkskift drammen\" (260/mo nationally, 15.95 kr) and \"dekk\" (140/mo, 14.08 kr). A loyal customer is worth ~8,000 kr/year (EU-kontroll 3,000 + service 3,000 + dekk 2,000). At 22.80 kr average CPC, one converted customer pays for ~350 clicks.",
+    "benchmarkNO": "Bilverksted-CPC-er i Drammen varierer fra 2,20 kr (clutch) til 51,15 kr (mekaniker). Drammens gjennomsnittlige CPC (22,80 kr) er den nest høyeste etter Bergen, noe som gjenspeiler intens lokal konkurranse til tross for det lille markedet. Beste verdi: «dekkskift drammen» (260/mnd nasjonalt, 15,95 kr) og «dekk» (140/mnd, 14,08 kr). En lojal kunde er verdt ~8 000 kr/år (EU-kontroll 3 000 + service 3 000 + dekk 2 000). Med 22,80 kr gjennomsnittlig CPC betaler én konvertert kunde for ~350 klikk."
+  },
+  "sources": [
+    {
+      "name": "DataForSEO – Keywords Data API (Google Ads, Drammen)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – SERP API (Google organic, Drammen)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – Maps API (Google Maps, Drammen)",
+      "url": null
+    },
+    {
+      "name": "DataReportal – Digital 2025: Norway",
+      "url": "https://datareportal.com/reports/digital-2025-norway"
+    },
+    {
+      "name": "BrightLocal – Local Pack Click Share Study 2024",
+      "url": "https://www.brightlocal.com/research/"
+    }
+  ]
+}

@@ -123,10 +123,10 @@
       "color": "amber",
       "titleEN": "Moderate review counts — achievable to compete",
       "titleNO": "Moderate anmeldelsestall — oppnåelig å konkurrere",
-      "textEN": "Oris Dental leads Maps with 206 reviews, followed by Arkaden Tannhelse (130) and Colosseum (120). This is far below Oslo levels (1,500+). Getting 150+ reviews would make your clinic competitive for Maps top 3 in Stavanger.",
-      "textNO": "Oris Dental leder Maps med 206 anmeldelser, etterfulgt av Arkaden Tannhelse (130) og Colosseum (120). Dette er langt under Oslo-nivåer (1 500+). Å få 150+ anmeldelser vil gjøre klinikken din konkurransedyktig for Maps topp 3 i Stavanger.",
-      "statLabel": "reviews for Maps top",
-      "statValue": "206"
+      "textEN": "Arkaden Tannhelse ranks #1 in Maps with 130 reviews, Colosseum #2 (120 reviews), and Oris Dental #3 with the most reviews overall (206). These counts are far below Oslo levels (1,500+). Getting 150+ reviews would make your clinic competitive for Maps top 3 in Stavanger.",
+      "textNO": "Arkaden Tannhelse rangerer #1 i Maps med 130 anmeldelser, Colosseum #2 (120 anmeldelser) og Oris Dental #3 med flest anmeldelser totalt (206). Disse tallene er langt under Oslo-nivåer (1 500+). Å få 150+ anmeldelser vil gjøre klinikken din konkurransedyktig for Maps topp 3 i Stavanger.",
+      "statLabel": "reviews for Maps #1",
+      "statValue": "130"
     },
     {
       "icon": "globe",
@@ -151,8 +151,8 @@
     {
       "icon": "clock",
       "color": "purple",
-      "titleEN": "Condition keywords cost 50% less",
-      "titleNO": "Tilstandssøkeord koster 50 % mindre",
+      "titleEN": "Condition keywords cost 57% less",
+      "titleNO": "Tilstandssøkeord koster 57 % mindre",
       "textEN": "Service keywords average 23 kr/click while condition keywords average 10 kr. \"Periodontitt\" (110 searches, 9.46 kr) is the standout — urgent intent at low cost.",
       "textNO": "Tjenestesøkeord koster gjennomsnittlig 23 kr/klikk mens tilstandssøkeord koster 10 kr. «Periodontitt» (110 søk, 9,46 kr) skiller seg ut — akutt intensjon til lav kostnad.",
       "statLabel": "avg CPC for conditions",
@@ -163,8 +163,8 @@
     {
       "titleEN": "Google Business Profile — target 150+ reviews",
       "titleNO": "Google Bedriftsprofil — sikt mot 150+ anmeldelser",
-      "textEN": "Stavanger's Maps leader has 206 reviews. At 3-4 new reviews per week, you can reach 150 in under a year. Add all service categories, photos, and enable online booking to maximize your profile's visibility.",
-      "textNO": "Stavangers Maps-leder har 206 anmeldelser. Med 3-4 nye anmeldelser per uke kan du nå 150 på under ett år. Legg til alle tjenestekategorier, bilder, og aktiver online-bestilling for å maksimere profilens synlighet.",
+      "textEN": "Stavanger's Maps top 3 have 130, 120, and 206 reviews — far lower than Oslo (1,500+). At 3-4 new reviews per week, you can reach 150 in under a year. Add all service categories, photos, and enable online booking to maximize your profile's visibility.",
+      "textNO": "Stavangers Maps topp 3 har 130, 120 og 206 anmeldelser — langt lavere enn Oslo (1 500+). Med 3-4 nye anmeldelser per uke kan du nå 150 på under ett år. Legg til alle tjenestekategorier, bilder, og aktiver online-bestilling for å maksimere profilens synlighet.",
       "tagEN": "Free — 30 minutes",
       "tagNO": "Gratis — 30 minutter"
     },

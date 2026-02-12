@@ -1,0 +1,601 @@
+{
+  "meta": {
+    "niche": "tourism",
+    "nicheNO": "turisme og opplevelser",
+    "city": "Drammen",
+    "locationCode": 1010853,
+    "dataDate": "2026-02",
+    "totalSearchVolume": 240
+  },
+  "metrics": {
+    "keywordCount": 10,
+    "avgCpc": 13.8,
+    "topClinicsCount": 5,
+    "mapsClickShare": 38
+  },
+  "keywordGroups": [
+    {
+      "id": "activities",
+      "color": "green",
+      "nameEN": "Activities & experiences",
+      "nameNO": "Aktiviteter og opplevelser",
+      "descriptionEN": "Generic activity searches are minimal in Drammen — just 230/mo total. Go-kart leads at 90/mo (3.19 kr CPC) and escape room follows at 70/mo (7.92 kr). What makes Drammen unique: \"firmatur\" (company trip) at 94.82 kr/click is the most expensive keyword, even higher than the typical \"teambuilding\" premium seen in other cities. Low-volume experience keywords carry surprisingly high CPCs: nordlys tur (30.69 kr), opplevelser (27.39 kr), hundekjoring (23.43 kr). This suggests advertisers from Oslo's spillover market are bidding on these terms.",
+      "descriptionNO": "Generiske aktivitetssøk er minimale i Drammen — bare 230/mnd totalt. Go-kart leder med 90/mnd (3,19 kr CPC) og escape room følger med 70/mnd (7,92 kr). Det som gjør Drammen unikt: «firmatur» (firmatur) til 94,82 kr/klikk er det dyreste søkeordet, enda høyere enn den typiske «teambuilding»-premien sett i andre byer. Lavvolum opplevelsessøkeord har overraskende høye CPC-er: nordlys tur (30,69 kr), opplevelser (27,39 kr), hundekjøring (23,43 kr). Dette antyder at annonsører fra Oslos overlappingsmarked byr på disse termene.",
+      "totalVolume": 230,
+      "keywords": [
+        {
+          "keyword": "go-kart",
+          "translation": "go-kart",
+          "volume": 90,
+          "competition": "MEDIUM",
+          "cpc": 3.19
+        },
+        {
+          "keyword": "escape room",
+          "translation": "escape room",
+          "volume": 70,
+          "competition": "LOW",
+          "cpc": 7.92
+        },
+        {
+          "keyword": "opplevelser",
+          "translation": "experiences",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 27.39
+        },
+        {
+          "keyword": "vinsmaking",
+          "translation": "wine tasting",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 19.25
+        },
+        {
+          "keyword": "hundekjøring",
+          "translation": "dog sledding",
+          "volume": 10,
+          "competition": "MEDIUM",
+          "cpc": 23.43
+        },
+        {
+          "keyword": "nordlys tur",
+          "translation": "northern lights tour",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 30.69
+        },
+        {
+          "keyword": "gave opplevelse",
+          "translation": "experience gift",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 19.8
+        },
+        {
+          "keyword": "gavekort opplevelse",
+          "translation": "experience gift card",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 18.48
+        },
+        {
+          "keyword": "firmatur",
+          "translation": "company trip",
+          "volume": 10,
+          "competition": "MEDIUM",
+          "cpc": 94.82
+        }
+      ]
+    },
+    {
+      "id": "discovery",
+      "color": "amber",
+      "nameEN": "\"What to do\" searches",
+      "nameNO": "\"Hva kan man gjøre\"-søk",
+      "descriptionEN": "Only one discovery keyword registers volume: \"ting å gjøre\" at 10/mo with a 12.87 kr CPC — lower than Oslo (21.89 kr) but notably higher than Bergen (5.06 kr). The relatively high CPC for such low volume suggests limited supply of relevant landing pages, pushing bids up. The near-complete absence of discovery searches means Drammen users either search with city names directly or find activities through Oslo-area recommendations rather than local discovery.",
+      "descriptionNO": "Bare ett oppdagelsessøkeord registrerer volum: «ting å gjøre» med 10/mnd og 12,87 kr CPC — merkbart høyere enn samme søkeord i Bergen (5,06 kr). Den relativt høye CPC-en for så lavt volum antyder begrenset tilbud av relevante landingssider, noe som presser budene opp. Det nesten komplette fraværet av oppdagelsessøk betyr at Drammen-brukere enten søker med bynavn direkte eller finner aktiviteter gjennom Oslo-område-anbefalinger fremfor lokal oppdagelse.",
+      "totalVolume": 10,
+      "keywords": [
+        {
+          "keyword": "ting å gjøre",
+          "translation": "things to do",
+          "volume": 10,
+          "competition": "LOW",
+          "cpc": 12.87
+        }
+      ]
+    },
+    {
+      "id": "explicit",
+      "color": "blue",
+      "nameEN": "Explicit \"Drammen\" searches",
+      "nameNO": "Eksplisitte \"Drammen\"-søk",
+      "descriptionEN": "Explicit Drammen-branded searches total 900/mo nationally — 3.75x the local keywords (240/mo). Note: Google Ads reports these as national volumes, not Drammen-specific. \"Ting å gjøre i drammen\" leads at 320/mo (7.15 kr), with \"aktiviteter drammen\" (260/mo) and \"escape room drammen\" (260/mo) tied for second. \"Teambuilding drammen\" (30/mo at 42.46 kr) carries the corporate premium, though lower than in larger cities. The three top keywords are remarkably balanced in volume (260-320/mo), suggesting diversified demand rather than a single dominant keyword.",
+      "descriptionNO": "Eksplisitte Drammen-merkede søk utgjør totalt 900/mnd nasjonalt — 3,75x de lokale søkeordene (240/mnd). Merk: Google Ads rapporterer disse som nasjonale volumer, ikke Drammen-spesifikke. «Ting å gjøre i drammen» leder med 320/mnd (7,15 kr), med «aktiviteter drammen» (260/mnd) og «escape room drammen» (260/mnd) delt på andreplass. «Teambuilding drammen» (30/mnd til 42,46 kr) har bedriftspremien, selv om den er lavere enn i større byer. De tre toppkeywordene er bemerkelsesverdig balanserte i volum (260-320/mnd), noe som antyder diversifisert etterspørsel fremfor ett enkelt dominerende søkeord.",
+      "totalVolume": 900,
+      "keywords": [
+        {
+          "keyword": "ting å gjøre i drammen",
+          "translation": "things to do in Drammen",
+          "volume": 320,
+          "competition": "LOW",
+          "cpc": 7.15
+        },
+        {
+          "keyword": "aktiviteter drammen",
+          "translation": "activities Drammen",
+          "volume": 260,
+          "competition": "LOW",
+          "cpc": 10.23
+        },
+        {
+          "keyword": "escape room drammen",
+          "translation": "escape room Drammen",
+          "volume": 260,
+          "competition": "LOW",
+          "cpc": 12.1
+        },
+        {
+          "keyword": "opplevelser drammen",
+          "translation": "experiences Drammen",
+          "volume": 30,
+          "competition": "HIGH",
+          "cpc": 9.35
+        },
+        {
+          "keyword": "teambuilding drammen",
+          "translation": "team building Drammen",
+          "volume": 30,
+          "competition": "HIGH",
+          "cpc": 42.46
+        }
+      ],
+      "isNational": true
+    }
+  ],
+  "serpKeywords": [
+    {
+      "keyword": "ting å gjøre i drammen",
+      "volume": 320,
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "no.tripadvisor.com"
+        },
+        {
+          "rank": 2,
+          "domain": "www.drammen.no"
+        },
+        {
+          "rank": 3,
+          "domain": "no.tripadvisor.com"
+        },
+        {
+          "rank": 4,
+          "domain": "www.strawberry.no"
+        },
+        {
+          "rank": 8,
+          "domain": "luckybowl.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Spiralen",
+          "rating": 4.7,
+          "reviews": 3274
+        },
+        {
+          "rank": 2,
+          "title": "Drammens Museum",
+          "rating": 4.3,
+          "reviews": 248
+        },
+        {
+          "rank": 3,
+          "title": "Drammen park",
+          "rating": 4.6,
+          "reviews": 1006
+        }
+      ],
+      "insightEN": "tripadvisor.com holds #1 and #3, but uniquely, drammen.no (the city's official site) ranks #2 — the only city where the municipal website outranks tourism portals. strawberry.no (#4, a hotel chain) suggests accommodation providers compete for tourism searches. luckybowl.no (#8) is a niche activity venue breaking into the top 10. Maps reveals Drammen's iconic attractions: Spiralen (4.7 stars, 3,274 reviews) — a spiral tunnel with panoramic views — dominates, followed by Drammens Museum (4.3, 248 reviews) and Drammen Park (4.6, 1,006 reviews).",
+      "insightNO": "tripadvisor.com holder #1 og #3, men unikt nok rangerer drammen.no (byens offisielle nettside) #2 — den eneste byen der kommunens nettside utrangerer turistportaler. strawberry.no (#4, en hotellkjede) antyder at overnattingsleverandører konkurrerer om turismesøk. luckybowl.no (#8) er et nisjeaktivitetssted som bryter inn i topp 10. Maps avslører Drammens ikoniske attraksjoner: Spiralen (4,7 stjerner, 3 274 anmeldelser) — en spiraltunnel med panoramautsikt — dominerer, etterfulgt av Drammens Museum (4,3, 248 anmeldelser) og Drammen park (4,6, 1 006 anmeldelser)."
+    },
+    {
+      "keyword": "aktiviteter drammen",
+      "volume": 260,
+      "organic": [
+        {
+          "rank": 5,
+          "domain": "www.drammen.no"
+        },
+        {
+          "rank": 6,
+          "domain": "no.tripadvisor.com"
+        },
+        {
+          "rank": 8,
+          "domain": "www.visitdrammen.no"
+        },
+        {
+          "rank": 9,
+          "domain": "www.drammen.kommune.no"
+        },
+        {
+          "rank": 10,
+          "domain": "www.drammen.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Lekeland Drammen AS med TRIGGER laserspill senter (egne åpningstider)",
+          "rating": 4.1,
+          "reviews": 549
+        },
+        {
+          "rank": 2,
+          "title": "Byen Vår Drammen AS",
+          "rating": 4.7,
+          "reviews": 14
+        },
+        {
+          "rank": 3,
+          "title": "Trigger Drammen",
+          "rating": 4.4,
+          "reviews": 98
+        }
+      ],
+      "insightEN": "The organic landscape here is unusual: drammen.no (#5), tripadvisor.com (#6), visitdrammen.no (#8), and the municipal drammen.kommune.no (#9) all rank — Drammen has the most government/city presence in organic results of any city. No tourism portal holds a top-3 position. Maps shows family-oriented activity venues: Lekeland Drammen (4.1 stars, 549 reviews) at #1, Byen Var Drammen (4.7, 14 reviews) at #2, and Trigger Drammen (4.4, 98 reviews) at #3. Lekeland's 549 reviews dominate the activity space.",
+      "insightNO": "Det organiske landskapet her er uvanlig: drammen.no (#5), tripadvisor.com (#6), visitdrammen.no (#8) og kommunale drammen.kommune.no (#9) rangerer alle — Drammen har mest statlig/kommunal tilstedeværelse i organiske resultater av noen by. Ingen turistportal holder en topp-3-posisjon. Maps viser familieorienterte aktivitetssteder: Lekeland Drammen (4,1 stjerner, 549 anmeldelser) på #1, Byen Vår Drammen (4,7, 14 anmeldelser) på #2 og Trigger Drammen (4,4, 98 anmeldelser) på #3. Lekelands 549 anmeldelser dominerer aktivitetsrommet."
+    },
+    {
+      "keyword": "opplevelser drammen",
+      "volume": 30,
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "www.drammen.no"
+        },
+        {
+          "rank": 2,
+          "domain": "no.tripadvisor.com"
+        },
+        {
+          "rank": 3,
+          "domain": "www.visitdrammen.no"
+        },
+        {
+          "rank": 4,
+          "domain": "www.strawberry.no"
+        },
+        {
+          "rank": 5,
+          "domain": "www.visitnorway.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Drammens Museum",
+          "rating": 4.3,
+          "reviews": 248
+        },
+        {
+          "rank": 2,
+          "title": "Byen Vår Drammen AS",
+          "rating": 4.7,
+          "reviews": 14
+        },
+        {
+          "rank": 3,
+          "title": "Spiralen",
+          "rating": 4.7,
+          "reviews": 3274
+        }
+      ],
+      "insightEN": "drammen.no holds #1 organic, beating tripadvisor.com (#2) and visitdrammen.no (#3) — the municipal site dominates again. strawberry.no (#4) and visitnorway.no (#5) round out the top 5. For this low-volume keyword (30/mo), Drammen's local web ecosystem is unusually strong. Maps shows Drammens Museum (4.3, 248 reviews) at #1, Byen Var Drammen (4.7, 14 reviews) at #2, and Spiralen (4.7, 3,274 reviews) at #3. Spiralen's massive 3,274 reviews make it the anchor attraction of the city.",
+      "insightNO": "drammen.no holder #1 organisk og slår tripadvisor.com (#2) og visitdrammen.no (#3) — den kommunale siden dominerer igjen. strawberry.no (#4) og visitnorway.no (#5) runder av topp 5. For dette lavvolumsøkeordet (30/mnd) er Drammens lokale nettøkosystem uvanlig sterkt. Maps viser Drammens Museum (4,3, 248 anmeldelser) på #1, Byen Vår Drammen (4,7, 14 anmeldelser) på #2 og Spiralen (4,7, 3 274 anmeldelser) på #3. Spiralens massive 3 274 anmeldelser gjør den til byens ankerattraksjon."
+    },
+    {
+      "keyword": "guidet tur drammen",
+      "volume": 0,
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "www.visitdrammen.no"
+        },
+        {
+          "rank": 2,
+          "domain": "no.tripadvisor.com"
+        },
+        {
+          "rank": 3,
+          "domain": "www.visitdrammen.no"
+        },
+        {
+          "rank": 4,
+          "domain": "www.getyourguide.com"
+        },
+        {
+          "rank": 5,
+          "domain": "www.drammen.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "DNT Drammen og Omegn",
+          "rating": 4.3,
+          "reviews": 0
+        },
+        {
+          "rank": 2,
+          "title": "Risdalstårnet",
+          "rating": 4.6,
+          "reviews": 0
+        },
+        {
+          "rank": 3,
+          "title": "VisitDrammen",
+          "rating": 5,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "Zero measurable volume, but Google still returns full results. visitdrammen.no holds both #1 and #3 — the dedicated tourism site double-ranks. getyourguide.com (#4) shows international booking platforms reach even Drammen. Maps shows DNT Drammen og Omegn (4.3, hiking organization), Risdalstarnet (4.6, observation tower), and VisitDrammen (perfect 5.0) — all nature/outdoor focused. The guided tour market in Drammen is essentially untapped by commercial providers.",
+      "insightNO": "Null målbart volum, men Google returnerer fortsatt fulle resultater. visitdrammen.no holder både #1 og #3 — den dedikerte turistsiden dobbeltrangerer. getyourguide.com (#4) viser at internasjonale bookingplattformer når selv Drammen. Maps viser DNT Drammen og Omegn (4,3, turorganisasjon), Risdalstårnet (4,6, utkikkstårn) og VisitDrammen (perfekte 5,0) — alle natur-/utendørsfokusert. Markedet for guidede turer i Drammen er i praksis uutnyttet av kommersielle leverandører."
+    }
+  ],
+  "cpcData": [
+    {
+      "keyword": "firmatur",
+      "cpc": 94.82
+    },
+    {
+      "keyword": "teambuilding drammen",
+      "cpc": 42.46
+    },
+    {
+      "keyword": "nordlys tur",
+      "cpc": 30.69
+    },
+    {
+      "keyword": "opplevelser",
+      "cpc": 27.39
+    },
+    {
+      "keyword": "hundekjøring",
+      "cpc": 23.43
+    },
+    {
+      "keyword": "gave opplevelse",
+      "cpc": 19.8
+    },
+    {
+      "keyword": "vinsmaking",
+      "cpc": 19.25
+    },
+    {
+      "keyword": "gavekort opplevelse",
+      "cpc": 18.48
+    },
+    {
+      "keyword": "ting å gjøre",
+      "cpc": 12.87
+    },
+    {
+      "keyword": "escape room drammen",
+      "cpc": 12.1
+    },
+    {
+      "keyword": "aktiviteter drammen",
+      "cpc": 10.23
+    },
+    {
+      "keyword": "opplevelser drammen",
+      "cpc": 9.35
+    },
+    {
+      "keyword": "escape room",
+      "cpc": 7.92
+    },
+    {
+      "keyword": "ting å gjøre i drammen",
+      "cpc": 7.15
+    },
+    {
+      "keyword": "go-kart",
+      "cpc": 3.19
+    }
+  ],
+  "seasonality": {
+    "keyword": "ting å gjøre",
+    "months": [
+      {
+        "month": "Jan",
+        "volume": 10
+      },
+      {
+        "month": "Feb",
+        "volume": 10
+      },
+      {
+        "month": "Mar",
+        "volume": 10
+      },
+      {
+        "month": "Apr",
+        "volume": 10
+      },
+      {
+        "month": "May",
+        "volume": 10
+      },
+      {
+        "month": "Jun",
+        "volume": 10
+      },
+      {
+        "month": "Jul",
+        "volume": 10
+      },
+      {
+        "month": "Aug",
+        "volume": 10
+      },
+      {
+        "month": "Sep",
+        "volume": 10
+      },
+      {
+        "month": "Oct",
+        "volume": 10
+      },
+      {
+        "month": "Nov",
+        "volume": 10
+      },
+      {
+        "month": "Dec",
+        "volume": 10
+      }
+    ],
+    "peakMonths": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ],
+    "lowMonths": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ],
+    "insightEN": "\"Ting å gjøre\" searches in Drammen show a flat 10/mo every month — identical to Kristiansand's pattern. This is the data floor (minimum reportable volume), meaning seasonal variation exists but falls below the measurement threshold. Given Drammen's proximity to Oslo (40 min by train), local demand likely follows Oslo's Feb–Mar planning peak and summer tourism season. Strategy: align campaigns with Oslo's seasonal patterns since Drammen's tourism market is largely driven by Oslo-area overflow and day-trippers.",
+    "insightNO": "«Ting å gjøre»-søk i Drammen viser en flat 10/mnd hver måned — identisk med Kristiansands mønster. Dette er datagulvet (minste rapporterbare volum), noe som betyr at sesongvariasjon eksisterer men faller under måleterskelen. Gitt Drammens nærhet til Oslo (40 min med tog) følger lokal etterspørsel sannsynligvis Oslos feb–mars planleggingstopp og sommerturismesesong. Strategi: tilpass kampanjer til Oslos sesongmønstre siden Drammens turismemarked i stor grad drives av Oslo-områdets overflow og dagsturister."
+  },
+  "insights": [
+    {
+      "icon": "zap",
+      "color": "red",
+      "titleEN": "Firmatur at 94.82 kr/click — corporate premium even in Drammen's small market",
+      "titleNO": "Firmatur til 94,82 kr/klikk — bedriftspremie selv i Drammens lille marked",
+      "textEN": "\"Firmatur\" (94.82 kr) and \"teambuilding drammen\" (42.46 kr) are the two most expensive keywords despite minimal volume (10-30/mo each). The firmatur CPC is remarkably close to Oslo's (105.49 kr), suggesting corporate travel planners bid nationally — not locally. This means even small-market providers face Oslo-level competition for corporate keywords. In contrast, leisure keywords like go-kart (3.19 kr) and \"ting å gjøre i drammen\" (7.15 kr) remain affordable.",
+      "textNO": "«Firmatur» (94,82 kr) og «teambuilding drammen» (42,46 kr) er de to dyreste søkeordene til tross for minimalt volum (10-30/mnd hver). Firmatur-CPC-en er bemerkelsesverdig nær Oslos (105,49 kr), noe som antyder at bedriftsreiseplanleggere byr nasjonalt — ikke lokalt. Dette betyr at selv småmarkedsleverandører møter Oslo-nivå konkurranse for bedriftssøkeord. Fritidssøkeord som go-kart (3,19 kr) og «ting å gjøre i drammen» (7,15 kr) forblir derimot rimelige.",
+      "statLabel": "firmatur CPC",
+      "statValue": "95 kr"
+    },
+    {
+      "icon": "globe",
+      "color": "green",
+      "titleEN": "240 local monthly searches — plus 900 national-volume keywords",
+      "titleNO": "240 lokale månedlige søk — pluss 900 nasjonalvolum-søkeord",
+      "textEN": "Drammen's local tourism market totals just 240/mo — 1.8% of Oslo's local volume (13,380). But the explicit Drammen-branded group adds 900/mo nationally — 3.75x the local volume, the highest ratio of any market. At 13.8 kr average CPC, Drammen sits between the ultra-cheap Kristiansand (7.1 kr) and pricier Bergen (15.3 kr). The three top national keywords are unusually balanced: 320, 260, 260/mo — no single keyword dominates like \"escape room oslo\" does in Oslo.",
+      "textNO": "Drammens lokale turismemarked utgjør bare 240/mnd — 1,8 % av Oslos lokale volum (13 380). Men den eksplisitte Drammen-merkede gruppen legger til 900/mnd nasjonalt — 3,75x det lokale volumet, det høyeste forholdet av noe marked. Med 13,8 kr gjennomsnittlig CPC ligger Drammen mellom ultrabillige Kristiansand (7,1 kr) og dyrere Bergen (15,3 kr). De tre beste nasjonale søkeordene er uvanlig balanserte: 320, 260, 260/mnd — ingen enkelt søkeord dominerer slik «escape room oslo» gjør i Oslo.",
+      "statLabel": "local monthly searches",
+      "statValue": "240"
+    },
+    {
+      "icon": "map-pin",
+      "color": "amber",
+      "titleEN": "Spiralen dominates with 3,274 reviews — Drammen's clear Maps anchor",
+      "titleNO": "Spiralen dominerer med 3 274 anmeldelser — Drammens klare Maps-anker",
+      "textEN": "Spiralen (4.7 stars, 3,274 reviews) appears in Maps for multiple keywords and is Drammen's most-reviewed attraction by far. Drammen Park (4.6, 1,006 reviews) is second. For activity-specific searches, Lekeland Drammen leads with 549 reviews but a lower 4.1 rating. Trigger Drammen (4.4, 98 reviews) also appears. The city site drammen.no uniquely ranks #1-2 organically for multiple keywords — no other city sees municipal websites outranking tourism portals this consistently.",
+      "textNO": "Spiralen (4,7 stjerner, 3 274 anmeldelser) dukker opp i Maps for flere søkeord og er Drammens mest anmeldte attraksjon med god margin. Drammen park (4,6, 1 006 anmeldelser) er nummer to. For aktivitetsspesifikke søk leder Lekeland Drammen med 549 anmeldelser men en lavere 4,1-rating. Trigger Drammen (4,4, 98 anmeldelser) dukker også opp. Bysiden drammen.no rangerer unikt #1-2 organisk for flere søkeord — ingen annen by ser kommunale nettsider utrangere turistportaler så konsekvent.",
+      "statLabel": "Maps click share",
+      "statValue": "38%"
+    },
+    {
+      "icon": "star",
+      "color": "blue",
+      "titleEN": "Three keywords at 260-320/mo each — Drammen's balanced demand profile",
+      "titleNO": "Tre søkeord med 260-320/mnd hver — Drammens balanserte etterspørselsprofil",
+      "textEN": "\"Ting å gjøre i drammen\" (320/mo at 7.15 kr), \"aktiviteter drammen\" (260/mo at 10.23 kr), and \"escape room drammen\" (260/mo at 12.10 kr) form a remarkably even top 3 among the national-volume keywords. No single keyword takes more than 36% of the national group. This is unique: every other city has one dominant keyword (escape room in Oslo/Bergen/Stavanger). For advertisers, this means you need to target all three keywords rather than relying on a single high-volume term.",
+      "textNO": "«Ting å gjøre i drammen» (320/mnd til 7,15 kr), «aktiviteter drammen» (260/mnd til 10,23 kr) og «escape room drammen» (260/mnd til 12,10 kr) danner en bemerkelsesverdig jevn topp 3 blant nasjonalvolum-søkeordene. Ingen enkelt søkeord tar mer enn 36 % av den nasjonale gruppen. Dette er unikt: hver annen by har ett dominerende søkeord (escape room i Oslo/Bergen/Stavanger). For annonsører betyr dette at du må målrette alle tre søkeord i stedet for å stole på én enkelt høyvolumterm."
+    }
+  ],
+  "tips": [
+    {
+      "titleEN": "Google Business Profile — leverage Drammen's low Maps competition",
+      "titleNO": "Google Bedriftsprofil — utnytt Drammens lave Maps-konkurranse",
+      "textEN": "Trigger Drammen (4.4 stars, 98 reviews) appears in Maps for \"aktiviteter drammen\" despite relatively few reviews — showing how low the competition bar is. Lekeland Drammen leads with 549 reviews at 4.1 stars. Byen Var Drammen holds 4.7 stars with just 14 reviews. In a market this small, reaching 100+ reviews with a 4.5+ rating virtually guarantees Maps visibility. Add all relevant categories to maximize keyword coverage.",
+      "textNO": "Trigger Drammen (4,4 stjerner, 98 anmeldelser) dukker opp i Maps for «aktiviteter drammen» til tross for relativt få anmeldelser — noe som viser hvor lav konkurranseterskelen er. Lekeland Drammen leder med 549 anmeldelser til 4,1 stjerner. Byen Vår Drammen holder 4,7 stjerner med bare 14 anmeldelser. I et marked så lite som dette garanterer 100+ anmeldelser med 4,5+ rating praktisk talt Maps-synlighet. Legg til alle relevante kategorier for å maksimere søkeorddekning.",
+      "tagEN": "Free — 30 minutes",
+      "tagNO": "Gratis — 30 minutter"
+    },
+    {
+      "titleEN": "Get listed on drammen.no and VisitDrammen.no",
+      "titleNO": "Bli listet på drammen.no og VisitDrammen.no",
+      "textEN": "drammen.no ranks #1-2 organically for 2 of 4 tested keywords — the municipal website is the dominant organic player in Drammen, not the tourism portals. visitdrammen.no also ranks for multiple keywords. Getting listed on both city resources gives you visibility where the majority of organic traffic flows. strawberry.no (a hotel chain) ranking for \"ting å gjøre\" suggests partnering with local hotels for cross-promotion could tap into accommodation-driven tourism searches.",
+      "textNO": "drammen.no rangerer #1-2 organisk for 2 av 4 testede søkeord — den kommunale nettsiden er den dominerende organiske spilleren i Drammen, ikke turistportalene. visitdrammen.no rangerer også for flere søkeord. Å bli listet på begge byressursene gir deg synlighet der majoriteten av organisk trafikk flyter. strawberry.no (en hotellkjede) som rangerer for «ting å gjøre» antyder at samarbeid med lokale hoteller for krysspromotering kan utnytte overnattingsdrevne turismesøk.",
+      "tagEN": "Free — 1-2 hours",
+      "tagNO": "Gratis — 1-2 timer"
+    },
+    {
+      "titleEN": "Create landing pages targeting all three balanced keywords",
+      "titleNO": "Lag landingssider som målretter alle tre balanserte søkeord",
+      "textEN": "Unlike other cities where one keyword dominates, Drammen has three nearly equal keywords (320, 260, 260/mo). Creating separate landing pages for \"ting å gjøre i drammen\", \"aktiviteter drammen\", and \"escape room drammen\" targets different search intents. luckybowl.no (#8 for \"ting å gjøre i drammen\") proves niche activity venues can rank organically in Drammen's less competitive SERP landscape.",
+      "textNO": "I motsetning til andre byer der ett søkeord dominerer, har Drammen tre nesten like søkeord (320, 260, 260/mnd). Å lage separate landingssider for «ting å gjøre i drammen», «aktiviteter drammen» og «escape room drammen» målretter ulike søkeintensjoner. luckybowl.no (#8 for «ting å gjøre i drammen») beviser at nisjeaktivitetssteder kan rangere organisk i Drammens mindre konkurransedyktige SERP-landskap.",
+      "tagEN": "Free — 2-3 hours per page",
+      "tagNO": "Gratis — 2-3 timer per side"
+    },
+    {
+      "titleEN": "Target the balanced top 3 keywords — avoid firmatur premium",
+      "titleNO": "Målrett de balanserte topp 3-søkeordene — unngå firmatur-premien",
+      "textEN": "The top 3 city-branded keywords (ting å gjøre i drammen 7.15 kr, aktiviteter drammen 10.23 kr, escape room drammen 12.10 kr) average ~10 kr/click. At 5,000 kr/month, you get ~500 clicks spread across 840/mo of combined search volume. \"Firmatur\" at 94.82 kr and \"teambuilding drammen\" at 42.46 kr should be avoided until ROI is proven on leisure terms. Drammen's proximity to Oslo means even small conversions compete against Oslo-priced alternatives.",
+      "textNO": "De 3 beste bymerkede søkeordene (ting å gjøre i drammen 7,15 kr, aktiviteter drammen 10,23 kr, escape room drammen 12,10 kr) koster i snitt ~10 kr/klikk. Med 5 000 kr/mnd får du ~500 klikk fordelt på 840/mnd av kombinert søkevolum. «Firmatur» til 94,82 kr og «teambuilding drammen» til 42,46 kr bør unngås til ROI er bevist på fritidstermer. Drammens nærhet til Oslo betyr at selv små konverteringer konkurrerer mot Oslo-prisede alternativer.",
+      "tagEN": "Paid — from 5,000 kr/month",
+      "tagNO": "Betalt — fra 5 000 kr/mnd"
+    }
+  ],
+  "calculator": {
+    "avgCpc": 13.8,
+    "defaultPatientValue": 2000,
+    "defaultBudget": 5000,
+    "defaultConversion": 20,
+    "clickToInquiryRate": 0.035,
+    "benchmarkEN": "Drammen tourism CPCs cluster in two tiers: city-branded leisure keywords (ting å gjøre i drammen 7.15 kr, aktiviteter drammen 10.23 kr, escape room drammen 12.10 kr) average ~10 kr/click, while corporate keywords (firmatur 94.82 kr, teambuilding drammen 42.46 kr) are 4-10x higher. The blended average of 13.8 kr is moderately inflated by corporate terms. An average booking value of 2,000 kr means one converted group covers 165-280 clicks.",
+    "benchmarkNO": "Drammen turisme-CPC-er klynger seg i to sjikt: bymerkede fritidssøkeord (ting å gjøre i drammen 7,15 kr, aktiviteter drammen 10,23 kr, escape room drammen 12,10 kr) koster i snitt ~10 kr/klikk, mens bedriftssøkeord (firmatur 94,82 kr, teambuilding drammen 42,46 kr) er 4-10x høyere. Det blandede gjennomsnittet på 13,8 kr er moderat oppblåst av bedriftstermer. En gjennomsnittlig bestillingsverdi på 2 000 kr betyr at én konvertert gruppe dekker 165-280 klikk."
+  },
+  "sources": [
+    {
+      "name": "DataForSEO – Keywords Data API (Google Ads, Drammen)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – SERP API (Google organic, Drammen)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – Maps API (Google Maps, Drammen)",
+      "url": null
+    },
+    {
+      "name": "DataReportal – Digital 2025: Norway",
+      "url": "https://datareportal.com/reports/digital-2025-norway"
+    },
+    {
+      "name": "BrightLocal – Local Pack Click Share Study 2024",
+      "url": "https://www.brightlocal.com/research/"
+    }
+  ]
+}

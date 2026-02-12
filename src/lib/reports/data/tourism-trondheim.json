@@ -1,0 +1,278 @@
+{
+  "meta": {
+    "niche": "tourism",
+    "nicheNO": "turisme og opplevelser",
+    "city": "Trondheim",
+    "locationCode": 1010976,
+    "dataDate": "2026-02",
+    "totalSearchVolume": 0
+  },
+  "metrics": {
+    "keywordCount": 0,
+    "avgCpc": 0,
+    "topClinicsCount": 5,
+    "mapsClickShare": 38
+  },
+  "keywordGroups": [
+    {
+      "id": "activities",
+      "color": "green",
+      "nameEN": "Activities & experiences",
+      "nameNO": "Aktiviteter og opplevelser",
+      "totalVolume": 0,
+      "keywords": []
+    },
+    {
+      "id": "discovery",
+      "color": "amber",
+      "nameEN": "\"What to do\" searches",
+      "nameNO": "\"Hva kan man gjøre\"-søk",
+      "totalVolume": 0,
+      "keywords": []
+    },
+    {
+      "id": "explicit",
+      "color": "blue",
+      "nameEN": "Explicit \"Trondheim\" searches",
+      "nameNO": "Eksplisitte \"Trondheim\"-søk",
+      "totalVolume": 0,
+      "keywords": []
+    }
+  ],
+  "serpKeywords": [
+    {
+      "keyword": "ting å gjøre i trondheim",
+      "volume": 0,
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "visittrondheim.no"
+        },
+        {
+          "rank": 2,
+          "domain": "no.tripadvisor.com"
+        },
+        {
+          "rank": 3,
+          "domain": "midtbyen.no"
+        },
+        {
+          "rank": 4,
+          "domain": "www.norwegian.com"
+        },
+        {
+          "rank": 6,
+          "domain": "trondelag.com"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Nidarosdomen",
+          "rating": 4.7,
+          "reviews": 11170
+        },
+        {
+          "rank": 2,
+          "title": "Gamle bybro",
+          "rating": 4.7,
+          "reviews": 5805
+        },
+        {
+          "rank": 3,
+          "title": "Walk of Peace",
+          "rating": 4.8,
+          "reviews": 12
+        }
+      ],
+      "insightEN": "",
+      "insightNO": ""
+    },
+    {
+      "keyword": "aktiviteter trondheim",
+      "volume": 0,
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "no.tripadvisor.com"
+        },
+        {
+          "rank": 6,
+          "domain": "visittrondheim.no"
+        },
+        {
+          "rank": 7,
+          "domain": "trdevents.no"
+        },
+        {
+          "rank": 8,
+          "domain": "trondelag.com"
+        },
+        {
+          "rank": 9,
+          "domain": "visittrondheim.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Vitensenteret",
+          "rating": 4.5,
+          "reviews": 0
+        },
+        {
+          "rank": 2,
+          "title": "Walk of Peace",
+          "rating": 4.8,
+          "reviews": 0
+        },
+        {
+          "rank": 3,
+          "title": "Arena Trondheim",
+          "rating": 4.1,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "",
+      "insightNO": ""
+    },
+    {
+      "keyword": "opplevelser trondheim",
+      "volume": 0,
+      "organic": [
+        {
+          "rank": 2,
+          "domain": "visittrondheim.no"
+        },
+        {
+          "rank": 3,
+          "domain": "no.tripadvisor.com"
+        },
+        {
+          "rank": 4,
+          "domain": "youwish.no"
+        },
+        {
+          "rank": 5,
+          "domain": "midtbyen.no"
+        },
+        {
+          "rank": 6,
+          "domain": "trdevents.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Nidarosdomen",
+          "rating": 4.7,
+          "reviews": 11170
+        },
+        {
+          "rank": 2,
+          "title": "Riksregaliene",
+          "rating": 4.3,
+          "reviews": 62
+        },
+        {
+          "rank": 3,
+          "title": "Vitensenteret",
+          "rating": 4.5,
+          "reviews": 240
+        }
+      ],
+      "insightEN": "",
+      "insightNO": ""
+    },
+    {
+      "keyword": "guidet tur trondheim",
+      "volume": 0,
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "visittrondheim.no"
+        },
+        {
+          "rank": 2,
+          "domain": "www.trondheimguiding.com"
+        },
+        {
+          "rank": 3,
+          "domain": "trondheim-guide.com"
+        },
+        {
+          "rank": 4,
+          "domain": "www.trondheimguideservice.no"
+        },
+        {
+          "rank": 5,
+          "domain": "www.trondheimforyou.com"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Trondheim Guide Service & Sykkelguide",
+          "rating": 4.2,
+          "reviews": 11
+        },
+        {
+          "rank": 2,
+          "title": "Trondheim by Boat",
+          "rating": 4.6,
+          "reviews": 35
+        },
+        {
+          "rank": 3,
+          "title": "Nidaros Guide",
+          "rating": 0,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "",
+      "insightNO": ""
+    }
+  ],
+  "cpcData": [],
+  "seasonality": {
+    "keyword": "ting å gjøre",
+    "months": [],
+    "peakMonths": [],
+    "lowMonths": [],
+    "insightEN": "",
+    "insightNO": ""
+  },
+  "insights": [],
+  "tips": [],
+  "calculator": {
+    "avgCpc": 0,
+    "defaultPatientValue": 2000,
+    "defaultBudget": 5000,
+    "defaultConversion": 20,
+    "clickToInquiryRate": 0.035,
+    "benchmarkEN": "",
+    "benchmarkNO": ""
+  },
+  "sources": [
+    {
+      "name": "DataForSEO – Keywords Data API (Google Ads, Trondheim)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – SERP API (Google organic, Trondheim)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – Maps API (Google Maps, Trondheim)",
+      "url": null
+    },
+    {
+      "name": "DataReportal – Digital 2025: Norway",
+      "url": "https://datareportal.com/reports/digital-2025-norway"
+    },
+    {
+      "name": "BrightLocal – Local Pack Click Share Study 2024",
+      "url": "https://www.brightlocal.com/research/"
+    }
+  ]
+}

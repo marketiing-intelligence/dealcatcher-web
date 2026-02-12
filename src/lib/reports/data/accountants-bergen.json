@@ -5,11 +5,11 @@
     "city": "Bergen",
     "locationCode": 1010921,
     "dataDate": "2026-02",
-    "totalSearchVolume": 800
+    "totalSearchVolume": 470
   },
   "metrics": {
-    "keywordCount": 13,
-    "avgCpc": 153.7,
+    "keywordCount": 8,
+    "avgCpc": 177.2,
     "topClinicsCount": 5,
     "mapsClickShare": 44
   },
@@ -23,14 +23,62 @@
       "descriptionNO": "Direkte tjenestesøk i Bergen. «Regnskap» (170) og «revisor» (140) leder, med «regnskapsfører» (110) like bak. Som i Oslo er CPC-ene høye — «regnskapsfører» koster 375 kr per klikk. Markedet er mindre enn Oslo, men fortsatt konkurranseutsatt.",
       "totalVolume": 470,
       "keywords": [
-        { "keyword": "regnskap", "translation": "accounting", "volume": 170, "competition": "MEDIUM", "cpc": 165.66 },
-        { "keyword": "revisor", "translation": "auditor", "volume": 140, "competition": "LOW", "cpc": 43.34 },
-        { "keyword": "regnskapsfører", "translation": "accountant", "volume": 110, "competition": "HIGH", "cpc": 374.55 },
-        { "keyword": "regnskapsbyrå", "translation": "accounting firm", "volume": 10, "competition": "MEDIUM", "cpc": 281.38 },
-        { "keyword": "regnskapskontor", "translation": "accounting office", "volume": 10, "competition": "HIGH", "cpc": 81.29 },
-        { "keyword": "regnskapsfører pris", "translation": "accountant price", "volume": 10, "competition": "HIGH", "cpc": 81.18 },
-        { "keyword": "regnskapshjelp", "translation": "accounting help", "volume": 10, "competition": "HIGH", "cpc": 281.49 },
-        { "keyword": "skatterådgiver", "translation": "tax advisor", "volume": 10, "competition": "MEDIUM", "cpc": 61.38 }
+        {
+          "keyword": "regnskap",
+          "translation": "accounting",
+          "volume": 170,
+          "competition": "MEDIUM",
+          "cpc": 165.66
+        },
+        {
+          "keyword": "revisor",
+          "translation": "auditor",
+          "volume": 140,
+          "competition": "LOW",
+          "cpc": 43.34
+        },
+        {
+          "keyword": "regnskapsfører",
+          "translation": "accountant",
+          "volume": 110,
+          "competition": "HIGH",
+          "cpc": 374.55
+        },
+        {
+          "keyword": "regnskapsbyrå",
+          "translation": "accounting firm",
+          "volume": 10,
+          "competition": "MEDIUM",
+          "cpc": 281.38
+        },
+        {
+          "keyword": "regnskapskontor",
+          "translation": "accounting office",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 81.29
+        },
+        {
+          "keyword": "regnskapsfører pris",
+          "translation": "accountant price",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 81.18
+        },
+        {
+          "keyword": "regnskapshjelp",
+          "translation": "accounting help",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 281.49
+        },
+        {
+          "keyword": "skatterådgiver",
+          "translation": "tax advisor",
+          "volume": 10,
+          "competition": "MEDIUM",
+          "cpc": 61.38
+        }
       ]
     },
     {
@@ -44,8 +92,20 @@
       "descriptionWarning": "These searches are mostly informational — not direct service intent. Volume is excluded from the total above.",
       "totalVolume": 5720,
       "keywords": [
-        { "keyword": "skattemelding", "translation": "tax return", "volume": 5400, "competition": "LOW", "cpc": 24.31 },
-        { "keyword": "lønn", "translation": "salary/payroll", "volume": 320, "competition": "LOW", "cpc": 52.14 }
+        {
+          "keyword": "skattemelding",
+          "translation": "tax return",
+          "volume": 5400,
+          "competition": "LOW",
+          "cpc": 24.31
+        },
+        {
+          "keyword": "lønn",
+          "translation": "salary/payroll",
+          "volume": 320,
+          "competition": "LOW",
+          "cpc": 52.14
+        }
       ]
     },
     {
@@ -53,14 +113,34 @@
       "color": "blue",
       "nameEN": "Explicit \"Bergen\" searches",
       "nameNO": "Eksplisitte \"Bergen\"-søk",
-      "descriptionEN": "People searching specifically for accounting in Bergen. \"Regnskapsfører bergen\" leads at 210/month — nearly double the generic \"regnskapsfører\" volume (110), indicating Bergen draws regional clients from Vestland county.",
-      "descriptionNO": "Folk som søker spesifikt etter regnskap i Bergen. «Regnskapsfører bergen» leder med 210/mnd — nesten dobbelt så mye som det generiske «regnskapsfører»-volumet (110), noe som tyder på at Bergen trekker regionale kunder fra Vestland fylke.",
+      "descriptionEN": "People searching specifically for accounting in Bergen. \"Regnskapsfører bergen\" leads at 210/month nationwide. These are the highest-intent keywords — someone typing a city name is ready to choose a provider. Note: these volumes are national (Google Ads does not break them down by city), so they cannot be directly compared to the city-level generic volumes above.",
+      "descriptionNO": "Folk som søker spesifikt etter regnskap i Bergen. «Regnskapsfører bergen» leder med 210/mnd på landsbasis. Dette er søkeordene med høyest intensjon — den som skriver inn bynavn er klar til å velge en leverandør. Merk: disse volumene er nasjonale (Google Ads bryter dem ikke ned etter by), så de kan ikke sammenlignes direkte med de bybaserte generiske volumene ovenfor.",
+      "descriptionWarning": "These are national search volumes (Google Ads has no city-level data for explicit keywords). Volume is excluded from the total above.",
       "totalVolume": 330,
       "keywords": [
-        { "keyword": "regnskapsfører bergen", "translation": "accountant Bergen", "volume": 210, "competition": "LOW", "cpc": 217.69 },
-        { "keyword": "revisor bergen", "translation": "auditor Bergen", "volume": 70, "competition": "HIGH", "cpc": 107.69 },
-        { "keyword": "regnskapsbyrå bergen", "translation": "accounting firm Bergen", "volume": 50, "competition": "MEDIUM", "cpc": 226.60 }
-      ]
+        {
+          "keyword": "regnskapsfører bergen",
+          "translation": "accountant Bergen",
+          "volume": 210,
+          "competition": "LOW",
+          "cpc": 217.69
+        },
+        {
+          "keyword": "revisor bergen",
+          "translation": "auditor Bergen",
+          "volume": 70,
+          "competition": "HIGH",
+          "cpc": 107.69
+        },
+        {
+          "keyword": "regnskapsbyrå bergen",
+          "translation": "accounting firm Bergen",
+          "volume": 50,
+          "competition": "MEDIUM",
+          "cpc": 226.6
+        }
+      ],
+      "isNational": true
     }
   ],
   "serpKeywords": [
@@ -68,54 +148,171 @@
       "keyword": "regnskapsfører bergen",
       "volume": 210,
       "organic": [
-        { "rank": 1, "domain": "storetvedt.no" },
-        { "rank": 2, "domain": "tripletex.no" },
-        { "rank": 3, "domain": "okonomihuset.no" },
-        { "rank": 4, "domain": "azets.com" },
-        { "rank": 5, "domain": "devoldconsulting.no" }
+        {
+          "rank": 1,
+          "domain": "storetvedt.no"
+        },
+        {
+          "rank": 2,
+          "domain": "tripletex.no"
+        },
+        {
+          "rank": 3,
+          "domain": "okonomihuset.no"
+        },
+        {
+          "rank": 4,
+          "domain": "azets.com"
+        },
+        {
+          "rank": 5,
+          "domain": "devoldconsulting.no"
+        }
       ],
       "maps": [
-        { "rank": 1, "title": "Storetvedt Regnskapsbyrå AS", "rating": 5.0, "reviews": 1 },
-        { "rank": 2, "title": "Headwind Økonomi AS", "rating": 4.7, "reviews": 7 },
-        { "rank": 3, "title": "VIEW Group - Bergen", "rating": 2.7, "reviews": 10 }
+        {
+          "rank": 1,
+          "title": "Storetvedt Regnskapsbyrå AS",
+          "rating": 5.0,
+          "reviews": 1
+        },
+        {
+          "rank": 2,
+          "title": "Headwind Økonomi AS",
+          "rating": 4.7,
+          "reviews": 7
+        },
+        {
+          "rank": 3,
+          "title": "VIEW Group - Bergen",
+          "rating": 2.7,
+          "reviews": 10
+        }
       ],
       "insightEN": "A local firm (Storetvedt) ranks #1 organically — ahead of software giants Tripletex (#2) and Azets (#4). Maps reviews are almost nonexistent: the leader has just 1 review. Paid Maps ads appear (Accountor Vest, VIEW Group) — competitors are already investing in local ads.",
       "insightNO": "Et lokalt byrå (Storetvedt) rangerer #1 organisk — foran programvaregigantene Tripletex (#2) og Azets (#4). Maps-anmeldelser er nesten fraværende: lederen har bare 1 anmeldelse. Betalte Maps-annonser vises (Accountor Vest, VIEW Group) — konkurrenter investerer allerede i lokale annonser."
     }
   ],
   "cpcData": [
-    { "keyword": "regnskapsfører", "cpc": 374.55 },
-    { "keyword": "regnskapshjelp", "cpc": 281.49 },
-    { "keyword": "regnskapsbyrå", "cpc": 281.38 },
-    { "keyword": "regnskapsbyrå bergen", "cpc": 226.60 },
-    { "keyword": "regnskapsfører bergen", "cpc": 217.69 },
-    { "keyword": "regnskap", "cpc": 165.66 },
-    { "keyword": "revisor bergen", "cpc": 107.69 },
-    { "keyword": "regnskapskontor", "cpc": 81.29 },
-    { "keyword": "regnskapsfører pris", "cpc": 81.18 },
-    { "keyword": "skatterådgiver", "cpc": 61.38 },
-    { "keyword": "lønn", "cpc": 52.14 },
-    { "keyword": "revisor", "cpc": 43.34 },
-    { "keyword": "skattemelding", "cpc": 24.31 }
+    {
+      "keyword": "regnskapsfører",
+      "cpc": 374.55
+    },
+    {
+      "keyword": "regnskapshjelp",
+      "cpc": 281.49
+    },
+    {
+      "keyword": "regnskapsbyrå",
+      "cpc": 281.38
+    },
+    {
+      "keyword": "regnskapsbyrå bergen",
+      "cpc": 226.6
+    },
+    {
+      "keyword": "regnskapsfører bergen",
+      "cpc": 217.69
+    },
+    {
+      "keyword": "regnskap",
+      "cpc": 165.66
+    },
+    {
+      "keyword": "revisor bergen",
+      "cpc": 107.69
+    },
+    {
+      "keyword": "regnskapskontor",
+      "cpc": 81.29
+    },
+    {
+      "keyword": "regnskapsfører pris",
+      "cpc": 81.18
+    },
+    {
+      "keyword": "skatterådgiver",
+      "cpc": 61.38
+    },
+    {
+      "keyword": "lønn",
+      "cpc": 52.14
+    },
+    {
+      "keyword": "revisor",
+      "cpc": 43.34
+    },
+    {
+      "keyword": "skattemelding",
+      "cpc": 24.31
+    }
   ],
   "seasonality": {
     "keyword": "regnskapsfører",
     "months": [
-      { "month": "Jan", "volume": 140 },
-      { "month": "Feb", "volume": 90 },
-      { "month": "Mar", "volume": 110 },
-      { "month": "Apr", "volume": 210 },
-      { "month": "May", "volume": 140 },
-      { "month": "Jun", "volume": 90 },
-      { "month": "Jul", "volume": 90 },
-      { "month": "Aug", "volume": 90 },
-      { "month": "Sep", "volume": 90 },
-      { "month": "Oct", "volume": 90 },
-      { "month": "Nov", "volume": 140 },
-      { "month": "Dec", "volume": 140 }
+      {
+        "month": "Jan",
+        "volume": 140
+      },
+      {
+        "month": "Feb",
+        "volume": 90
+      },
+      {
+        "month": "Mar",
+        "volume": 110
+      },
+      {
+        "month": "Apr",
+        "volume": 210
+      },
+      {
+        "month": "May",
+        "volume": 140
+      },
+      {
+        "month": "Jun",
+        "volume": 90
+      },
+      {
+        "month": "Jul",
+        "volume": 90
+      },
+      {
+        "month": "Aug",
+        "volume": 90
+      },
+      {
+        "month": "Sep",
+        "volume": 90
+      },
+      {
+        "month": "Oct",
+        "volume": 90
+      },
+      {
+        "month": "Nov",
+        "volume": 140
+      },
+      {
+        "month": "Dec",
+        "volume": 140
+      }
     ],
-    "peakMonths": ["Apr", "Jan", "May", "Nov", "Dec"],
-    "lowMonths": ["Jun", "Jul", "Aug", "Sep", "Oct"],
+    "peakMonths": [
+      "Apr",
+      "Jan",
+      "May",
+      "Nov",
+      "Dec"
+    ],
+    "lowMonths": [
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct"
+    ],
     "insightEN": "Bergen's accounting demand peaks in April (210) — one month later than Oslo's February peak. This aligns with annual accounts deadlines. January and year-end (Nov-Dec) show secondary peaks as businesses plan ahead. Summer months flatten at 90.",
     "insightNO": "Bergens regnskapsetterspørsel topper seg i april (210) — én måned senere enn Oslos februartopp. Dette samsvarer med frister for årsregnskap. Januar og årets slutt (nov-des) viser sekundære topper når bedrifter planlegger fremover. Sommermånedene flater ut på 90."
   },
@@ -133,12 +330,12 @@
     {
       "icon": "globe",
       "color": "green",
-      "titleEN": "Explicit searches nearly double generic volume",
-      "titleNO": "Eksplisitte søk er nesten dobbelt så høye som generiske",
-      "textEN": "\"Regnskapsfører bergen\" (210/mo) significantly exceeds generic \"regnskapsfører\" in Bergen (110/mo). This means people from across Vestland county actively search for Bergen-based accountants — your website must clearly communicate your Bergen location.",
-      "textNO": "«Regnskapsfører bergen» (210/mnd) overstiger betydelig generisk «regnskapsfører» i Bergen (110/mnd). Dette betyr at folk fra hele Vestland fylke aktivt søker etter Bergen-baserte regnskapsførere — nettsiden din må tydelig kommunisere din Bergen-beliggenhet.",
-      "statLabel": "explicit vs generic",
-      "statValue": "210 vs 110"
+      "titleEN": "Strong demand for Bergen-specific keywords",
+      "titleNO": "Sterk etterspørsel etter Bergen-spesifikke søkeord",
+      "textEN": "\"Regnskapsfører bergen\" has 210 monthly searches nationwide — showing clear demand for Bergen-based accountants from people across Vestland county. (Note: this is a national figure, while the generic \"regnskapsfører\" volume of 110 is Bergen-only, so the two are not directly comparable.) Your website must clearly communicate your Bergen location to capture this intent.",
+      "textNO": "«Regnskapsfører bergen» har 210 månedlige søk på landsbasis — som viser klar etterspørsel etter Bergen-baserte regnskapsførere fra folk i hele Vestland fylke. (Merk: dette er et nasjonalt tall, mens det generiske «regnskapsfører»-volumet på 110 er kun for Bergen, så de to er ikke direkte sammenlignbare.) Nettsiden din må tydelig kommunisere din Bergen-beliggenhet for å fange denne intensjonen.",
+      "statLabel": "explicit nationwide volume",
+      "statValue": "210/mo"
     },
     {
       "icon": "file-text",
@@ -173,8 +370,8 @@
     {
       "titleEN": "Create city-specific landing pages",
       "titleNO": "Lag byspesifikke landingssider",
-      "textEN": "Explicit \"bergen\" keywords (330/mo) outperform generic searches (470/mo). Create dedicated pages mentioning Bergen, Vestland county, and nearby municipalities to capture regional searchers.",
-      "textNO": "Eksplisitte «bergen»-søkeord (330/mnd) overgår generiske søk (470/mnd). Lag dedikerte sider som nevner Bergen, Vestland fylke og nærliggende kommuner for å fange regionale søkere.",
+      "textEN": "Explicit \"bergen\" keywords total 330 searches/month nationwide — a strong signal that people across Vestland actively seek Bergen-based accountants. Create dedicated pages mentioning Bergen, Vestland county, and nearby municipalities to capture these regional searchers.",
+      "textNO": "Eksplisitte «bergen»-søkeord har totalt 330 søk/mnd på landsbasis — et sterkt signal om at folk i hele Vestland aktivt søker Bergen-baserte regnskapsførere. Lag dedikerte sider som nevner Bergen, Vestland fylke og nærliggende kommuner for å fange disse regionale søkerne.",
       "tagEN": "Free — 2-3 hours",
       "tagNO": "Gratis — 2-3 timer"
     },
@@ -189,14 +386,14 @@
     {
       "titleEN": "Run Google Ads on explicit Bergen keywords",
       "titleNO": "Kjør Google Ads på eksplisitte Bergen-søkeord",
-      "textEN": "\"Regnskapsfører bergen\" (218 kr/click) and \"revisor bergen\" (108 kr/click) offer high-intent traffic. With 15,000 kr/month budget, you can capture ~80 clicks and generate 3+ client inquiries.",
-      "textNO": "«Regnskapsfører bergen» (218 kr/klikk) og «revisor bergen» (108 kr/klikk) tilbyr høyintensjonstrafikk. Med 15 000 kr/mnd budsjett kan du fange ~80 klikk og generere 3+ kundehenvendelser.",
+      "textEN": "\"Regnskapsfører bergen\" (218 kr/click) and \"revisor bergen\" (108 kr/click) offer high-intent traffic at lower CPCs than generic terms. With a 15,000 kr/month budget, you can capture ~80 clicks and generate 3+ client inquiries. (Note: keyword volumes are national figures, but ads geo-targeted to Bergen will reach the relevant audience.)",
+      "textNO": "«Regnskapsfører bergen» (218 kr/klikk) og «revisor bergen» (108 kr/klikk) tilbyr høyintensjonstrafikk til lavere CPC-er enn generiske termer. Med 15 000 kr/mnd budsjett kan du fange ~80 klikk og generere 3+ kundehenvendelser. (Merk: søkeordvolumene er nasjonale tall, men annonser geografisk målrettet mot Bergen vil nå den relevante målgruppen.)",
       "tagEN": "Paid — from 15,000 kr/month",
       "tagNO": "Betalt — fra 15 000 kr/mnd"
     }
   ],
   "calculator": {
-    "avgCpc": 153.7,
+    "avgCpc": 177.2,
     "defaultPatientValue": 60000,
     "defaultBudget": 12000,
     "defaultConversion": 30,
@@ -205,10 +402,25 @@
     "benchmarkNO": "Bergen regnskap CPC-er varierer 43–375 kr. Eksplisitte bysøkeord (108–227 kr) er billigere enn generiske termer (165–375 kr) — målrett disse først for bedre ROI."
   },
   "sources": [
-    { "name": "DataForSEO – Keywords Data API (Google Ads, Bergen)", "url": null },
-    { "name": "DataForSEO – SERP API (Google organic, Norway)", "url": null },
-    { "name": "DataForSEO – Maps API (Google Maps, Norway)", "url": null },
-    { "name": "DataReportal – Digital 2025: Norway", "url": "https://datareportal.com/reports/digital-2025-norway" },
-    { "name": "BrightLocal – Local Pack Click Share Study 2024", "url": "https://www.brightlocal.com/research/" }
+    {
+      "name": "DataForSEO – Keywords Data API (Google Ads, Bergen)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – SERP API (Google organic, Norway)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – Maps API (Google Maps, Norway)",
+      "url": null
+    },
+    {
+      "name": "DataReportal – Digital 2025: Norway",
+      "url": "https://datareportal.com/reports/digital-2025-norway"
+    },
+    {
+      "name": "BrightLocal – Local Pack Click Share Study 2024",
+      "url": "https://www.brightlocal.com/research/"
+    }
   ]
 }

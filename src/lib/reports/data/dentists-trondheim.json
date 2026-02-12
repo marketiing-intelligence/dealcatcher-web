@@ -151,8 +151,8 @@
     {
       "icon": "clock",
       "color": "purple",
-      "titleEN": "Condition keywords cost 55% less",
-      "titleNO": "Tilstandssøkeord koster 55 % mindre",
+      "titleEN": "Condition keywords cost 67% less",
+      "titleNO": "Tilstandssøkeord koster 67 % mindre",
       "textEN": "Service keywords average 24 kr/click while condition keywords average 8 kr. \"Periodontitt\" (210 searches, 8.91 kr) is the best-value keyword — high volume, low cost, urgent intent.",
       "textNO": "Tjenestesøkeord koster gjennomsnittlig 24 kr/klikk mens tilstandssøkeord koster 8 kr. «Periodontitt» (210 søk, 8,91 kr) er det beste verdi-søkeordet — høyt volum, lav kostnad, akutt intensjon.",
       "statLabel": "avg CPC for conditions",
