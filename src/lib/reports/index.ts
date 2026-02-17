@@ -79,6 +79,16 @@ const reportLoaders: Record<string, () => Promise<ReportData>> = {
     import("./data/tourism-drammen.json").then((m) => m.default as ReportData),
   "tourism-tromso": () =>
     import("./data/tourism-tromso.json").then((m) => m.default as ReportData),
+  "cleaning-oslo": () =>
+    import("./data/cleaning-oslo.json").then((m) => m.default as ReportData),
+  "cleaning-bergen": () =>
+    import("./data/cleaning-bergen.json").then((m) => m.default as ReportData),
+  "cleaning-trondheim": () =>
+    import("./data/cleaning-trondheim.json").then((m) => m.default as ReportData),
+  "cleaning-stavanger": () =>
+    import("./data/cleaning-stavanger.json").then((m) => m.default as ReportData),
+  "cleaning-kristiansand": () =>
+    import("./data/cleaning-kristiansand.json").then((m) => m.default as ReportData),
 };
 
 export async function getReportData(slug: string): Promise<ReportData | null> {

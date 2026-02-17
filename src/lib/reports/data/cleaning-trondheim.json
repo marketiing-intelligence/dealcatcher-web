@@ -1,0 +1,538 @@
+{
+  "meta": {
+    "niche": "cleaning",
+    "nicheNO": "renholdsfirmaer",
+    "city": "Trondheim",
+    "locationCode": 1010976,
+    "dataDate": "2026-02",
+    "totalSearchVolume": 520
+  },
+  "metrics": {
+    "keywordCount": 13,
+    "avgCpc": 65.2,
+    "topClinicsCount": 5,
+    "mapsClickShare": 42
+  },
+  "keywordGroups": [
+    {
+      "id": "services",
+      "color": "green",
+      "nameEN": "Cleaning services",
+      "nameNO": "Rengjøringstjenester",
+      "descriptionEN": "General cleaning service searches in the Trondheim area. Flyttevask (move-out cleaning) dominates with 110/month at 75 kr CPC, reflecting Trondheim's student-heavy rental market. Generic terms like \"rengjøring\" (70/mo) and \"renhold\" (40/mo) have lower CPCs (21–36 kr), while \"flyttevask pris\" (30/mo, 57 kr) signals price-comparison intent. Niche services like gulvvask and teppevask have minimal CPCs (3 kr) — low competition but also low volume.",
+      "descriptionNO": "Generelle rengjøringstjenestesøk i Trondheim-området. Flyttevask dominerer med 110/mnd og 75 kr CPC, noe som gjenspeiler Trondheims studenttunge leiemarked. Generiske termer som «rengjøring» (70/mnd) og «renhold» (40/mnd) har lavere CPC-er (21–36 kr), mens «flyttevask pris» (30/mnd, 57 kr) signaliserer prissammenligningsintensjon. Nisjetjenester som gulvvask og teppevask har minimale CPC-er (3 kr) — lav konkurranse, men også lavt volum.",
+      "totalVolume": 310,
+      "keywords": [
+        {
+          "keyword": "flyttevask",
+          "translation": "move-out cleaning",
+          "volume": 110,
+          "competition": "HIGH",
+          "cpc": 75.02
+        },
+        {
+          "keyword": "rengjøring",
+          "translation": "cleaning",
+          "volume": 70,
+          "competition": "HIGH",
+          "cpc": 21.89
+        },
+        {
+          "keyword": "renhold",
+          "translation": "cleaning/maintenance",
+          "volume": 40,
+          "competition": "MEDIUM",
+          "cpc": 35.86
+        },
+        {
+          "keyword": "flyttevask pris",
+          "translation": "move-out cleaning price",
+          "volume": 30,
+          "competition": "HIGH",
+          "cpc": 57.2
+        },
+        {
+          "keyword": "gulvvask",
+          "translation": "floor cleaning",
+          "volume": 20,
+          "competition": "HIGH",
+          "cpc": 3.08
+        },
+        {
+          "keyword": "renholdsfirma",
+          "translation": "cleaning company",
+          "volume": 10,
+          "competition": "MEDIUM",
+          "cpc": 49.17
+        },
+        {
+          "keyword": "rengjøringsbyrå",
+          "translation": "cleaning agency",
+          "volume": 10,
+          "competition": "MEDIUM",
+          "cpc": 34.1
+        },
+        {
+          "keyword": "teppevask",
+          "translation": "carpet cleaning",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 3.08
+        },
+        {
+          "keyword": "rengjøring pris",
+          "translation": "cleaning price",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 12.87
+        }
+      ]
+    },
+    {
+      "id": "explicit",
+      "color": "blue",
+      "nameEN": "Explicit \"Trondheim\" searches",
+      "nameNO": "Eksplisitte \"Trondheim\"-søk",
+      "descriptionEN": "People specifically searching for cleaning services in Trondheim. \"Flyttevask trondheim\" dominates with 170 monthly searches and the highest CPC in the entire dataset at 103.51 kr — a clear signal that this keyword drives the most competitive, highest-intent traffic. The remaining explicit keywords add 40 searches at 47–69 kr CPC. Anyone typing \"trondheim\" is ready to hire.",
+      "descriptionNO": "Folk som spesifikt søker etter rengjøringstjenester i Trondheim. «Flyttevask trondheim» dominerer med 170 månedlige søk og høyest CPC i hele datasettet på 103,51 kr — et tydelig signal om at dette søkeordet driver den mest konkurranseutsatte trafikken med høyest intensjon. De resterende eksplisitte søkeordene legger til 40 søk til 47–69 kr CPC. Den som skriver «trondheim» er klar til å ansette.",
+      "totalVolume": 210,
+      "keywords": [
+        {
+          "keyword": "flyttevask trondheim",
+          "translation": "move-out cleaning Trondheim",
+          "volume": 170,
+          "competition": "HIGH",
+          "cpc": 103.51
+        },
+        {
+          "keyword": "rengjøring trondheim",
+          "translation": "cleaning Trondheim",
+          "volume": 20,
+          "competition": "HIGH",
+          "cpc": 47.41
+        },
+        {
+          "keyword": "renholdsfirma trondheim",
+          "translation": "cleaning company Trondheim",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 69.19
+        },
+        {
+          "keyword": "renhold trondheim",
+          "translation": "cleaning Trondheim",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 69.19
+        }
+      ]
+    }
+  ],
+  "serpKeywords": [
+    {
+      "keyword": "renholdsfirma trondheim",
+      "volume": 10,
+      "organic": [
+        {
+          "rank": 4,
+          "domain": "www.vaskesmart.no"
+        },
+        {
+          "rank": 5,
+          "domain": "trondervask.no"
+        },
+        {
+          "rank": 6,
+          "domain": "kinesrenhold.no"
+        },
+        {
+          "rank": 12,
+          "domain": "www.gulesider.no"
+        },
+        {
+          "rank": 13,
+          "domain": "trondheimrenholdsservice.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Flyttevask trondheim",
+          "rating": 0,
+          "reviews": 0
+        },
+        {
+          "rank": 2,
+          "title": "Lijo Renhold AS",
+          "rating": 4.8,
+          "reviews": 0
+        },
+        {
+          "rank": 3,
+          "title": "Rent Miljø Renhold AS",
+          "rating": 5,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "The #1 Maps result is a GMB listing named \"Flyttevask trondheim\" with 0 reviews — keyword stuffing in the business name, no actual customer signals. Organic results don't start until position #4 (vaskesmart.no, a national aggregator). trondervask.no (#5) and kinesrenhold.no (#6) are the only local companies. gulesider.no (#12) and trondheimrenholdsservice.no (#13) appear far down. At 69 kr CPC, the gap between paid and organic visibility is wide.",
+      "insightNO": "#1 Maps-resultatet er en GMB-oppføring kalt «Flyttevask trondheim» med 0 anmeldelser — søkeordstupping i bedriftsnavnet, ingen faktiske kundesignaler. Organiske resultater starter ikke før posisjon #4 (vaskesmart.no, en nasjonal aggregator). trondervask.no (#5) og kinesrenhold.no (#6) er de eneste lokale firmaene. gulesider.no (#12) og trondheimrenholdsservice.no (#13) dukker opp langt nede. Med 69 kr CPC er gapet mellom betalt og organisk synlighet stort."
+    },
+    {
+      "keyword": "kontorrengjøring trondheim",
+      "volume": 0,
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "multiklart.no"
+        },
+        {
+          "rank": 2,
+          "domain": "jkrenhold.no"
+        },
+        {
+          "rank": 3,
+          "domain": "www.vaskeeksperten.no"
+        },
+        {
+          "rank": 4,
+          "domain": "midtnorskvask.no"
+        },
+        {
+          "rank": 5,
+          "domain": "yoopies.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Vaskehjelp AS",
+          "rating": 3.8,
+          "reviews": 21
+        },
+        {
+          "rank": 2,
+          "title": "Flyttevask trondheim",
+          "rating": 0,
+          "reviews": 0
+        },
+        {
+          "rank": 3,
+          "title": "Leo & Co Renhold AS",
+          "rating": 3.8,
+          "reviews": 4
+        }
+      ],
+      "insightEN": "B2B keyword with zero search volume but revealing competitive landscape. multiklart.no leads organically — a specialized commercial cleaning firm. jkrenhold.no (#2) appears across multiple Norwegian cities, showing national reach. Vaskehjelp AS leads Maps with 21 reviews at 3.8 stars — the highest review count in all of Trondheim's cleaning Maps results. Yet 21 reviews is remarkably low for a market leader; in Bergen, Hvitvask AS has 62.",
+      "insightNO": "B2B-søkeord med null søkevolum, men som avslører konkurranselandskapet. multiklart.no leder organisk — et spesialisert rengjøringsfirma for næring. jkrenhold.no (#2) dukker opp i flere norske byer, noe som viser nasjonal rekkevidde. Vaskehjelp AS leder Maps med 21 anmeldelser og 3,8 stjerner — det høyeste antallet anmeldelser i hele Trondheims renholds-Maps. Likevel er 21 anmeldelser bemerkelsesverdig lavt for en markedsleder; i Bergen har Hvitvask AS 62."
+    },
+    {
+      "keyword": "trappevask trondheim",
+      "volume": 0,
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "trappvask.no"
+        },
+        {
+          "rank": 2,
+          "domain": "trappevasktrondheim.no"
+        },
+        {
+          "rank": 3,
+          "domain": "trondheimrenholdsservice.no"
+        },
+        {
+          "rank": 4,
+          "domain": "www.proff.no"
+        },
+        {
+          "rank": 5,
+          "domain": "www.facebook.com"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Trappvask AS",
+          "rating": 3.9,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "Keyword-match domains dominate completely: trappvask.no (#1) and trappevasktrondheim.no (#2) rank purely on domain name matching the search query. trondheimrenholdsservice.no (#3) adds local relevance. proff.no (#4) and facebook.com (#5) indicate weak competition — when a business directory and a social media platform outrank cleaning companies, there's a massive SEO opportunity. Only one Maps result (Trappvask AS, 3.9 stars, 0 reviews) even appears.",
+      "insightNO": "Søkeordmatch-domener dominerer fullstendig: trappvask.no (#1) og trappevasktrondheim.no (#2) rangerer utelukkende på domenenavn som matcher søket. trondheimrenholdsservice.no (#3) legger til lokal relevans. proff.no (#4) og facebook.com (#5) indikerer svak konkurranse — når en bedriftskatalog og en sosial medieplattform rangerer over renholdsfirmaer, finnes det en massiv SEO-mulighet. Bare ett Maps-resultat (Trappvask AS, 3,9 stjerner, 0 anmeldelser) vises i det hele tatt."
+    },
+    {
+      "keyword": "flyttevask trondheim",
+      "volume": 170,
+      "organic": [
+        {
+          "rank": 3,
+          "domain": "trondheimsflyttevask.no"
+        },
+        {
+          "rank": 4,
+          "domain": "citymaid.no"
+        },
+        {
+          "rank": 5,
+          "domain": "trondervask.no"
+        },
+        {
+          "rank": 6,
+          "domain": "www.flyttesmart.no"
+        },
+        {
+          "rank": 7,
+          "domain": "www.lykkehjemme.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Flyttevask trondheim",
+          "rating": 0,
+          "reviews": 0
+        },
+        {
+          "rank": 2,
+          "title": "Søppeltaxi Trondheim",
+          "rating": 2.3,
+          "reviews": 0
+        },
+        {
+          "rank": 3,
+          "title": "Lykke Hjemme",
+          "rating": 4.7,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "Trondheim's highest-volume keyword at 170/month. trondheimsflyttevask.no ranks #3 with a pure keyword-match domain. citymaid.no (#4) is the only national chain. trondervask.no (#5) also appeared for \"renholdsfirma trondheim\" — consistent cross-keyword visibility. Maps is nearly empty: #1 is \"Flyttevask trondheim\" with 0 reviews, #2 is Søppeltaxi Trondheim (a junk removal company, 2.3 stars), and #3 is Lykke Hjemme (4.7 stars, 0 reviews). Any cleaning company with 5+ reviews could own this Maps Pack.",
+      "insightNO": "Trondheims mest søkte søkeord med 170/mnd. trondheimsflyttevask.no rangerer #3 med et rent søkeordmatch-domene. citymaid.no (#4) er den eneste nasjonale kjeden. trondervask.no (#5) dukket også opp for «renholdsfirma trondheim» — konsistent synlighet på tvers av søkeord. Maps er nærmest tom: #1 er «Flyttevask trondheim» med 0 anmeldelser, #2 er Søppeltaxi Trondheim (et firma for avfallshåndtering, 2,3 stjerner), og #3 er Lykke Hjemme (4,7 stjerner, 0 anmeldelser). Ethvert renholdsfirma med 5+ anmeldelser kunne eid denne Maps-pakken."
+    }
+  ],
+  "cpcData": [
+    {
+      "keyword": "flyttevask trondheim",
+      "cpc": 103.51
+    },
+    {
+      "keyword": "flyttevask",
+      "cpc": 75.02
+    },
+    {
+      "keyword": "renholdsfirma trondheim",
+      "cpc": 69.19
+    },
+    {
+      "keyword": "renhold trondheim",
+      "cpc": 69.19
+    },
+    {
+      "keyword": "flyttevask pris",
+      "cpc": 57.2
+    },
+    {
+      "keyword": "renholdsfirma",
+      "cpc": 49.17
+    },
+    {
+      "keyword": "rengjøring trondheim",
+      "cpc": 47.41
+    },
+    {
+      "keyword": "renhold",
+      "cpc": 35.86
+    },
+    {
+      "keyword": "rengjøringsbyrå",
+      "cpc": 34.1
+    },
+    {
+      "keyword": "rengjøring",
+      "cpc": 21.89
+    },
+    {
+      "keyword": "rengjøring pris",
+      "cpc": 12.87
+    },
+    {
+      "keyword": "gulvvask",
+      "cpc": 3.08
+    },
+    {
+      "keyword": "teppevask",
+      "cpc": 3.08
+    }
+  ],
+  "seasonality": {
+    "keyword": "flyttevask",
+    "months": [
+      {
+        "month": "Jan",
+        "volume": 70
+      },
+      {
+        "month": "Feb",
+        "volume": 90
+      },
+      {
+        "month": "Mar",
+        "volume": 140
+      },
+      {
+        "month": "Apr",
+        "volume": 90
+      },
+      {
+        "month": "May",
+        "volume": 110
+      },
+      {
+        "month": "Jun",
+        "volume": 140
+      },
+      {
+        "month": "Jul",
+        "volume": 140
+      },
+      {
+        "month": "Aug",
+        "volume": 140
+      },
+      {
+        "month": "Sep",
+        "volume": 110
+      },
+      {
+        "month": "Oct",
+        "volume": 70
+      },
+      {
+        "month": "Nov",
+        "volume": 70
+      },
+      {
+        "month": "Dec",
+        "volume": 40
+      }
+    ],
+    "peakMonths": [
+      "Mar",
+      "Jun",
+      "Jul",
+      "Aug"
+    ],
+    "lowMonths": [
+      "Dec"
+    ],
+    "insightEN": "Flyttevask demand shows a dual-peak pattern driven by Trondheim's NTNU student market. The first peak hits in March (140) as spring-semester tenants give notice and graduate students prepare to leave. Demand dips in April before surging again June–August (140 each) during the summer moving season. September (110) sees a secondary bump as new students settle in. December is the low point at 40 — 71% below peak months. Strategy: ramp up ad spend in February–March and May–July to catch both waves, and scale down November–December.",
+    "insightNO": "Etterspørselen etter flyttevask viser et dobbelttopp-mønster drevet av Trondheims NTNU-studentmarked. Den første toppen kommer i mars (140) når vårsemester-leietakere sier opp og masterstudenter forbereder seg på å flytte ut. Etterspørselen faller i april før den stiger igjen juni–august (140 hver) i sommerens flyttesesong. September (110) gir en sekundær økning når nye studenter flytter inn. Desember er bunnpunktet med 40 — 71 % under toppmånedene. Strategi: øk annonsebudsjettet i februar–mars og mai–juli for å fange begge bølgene, og skaler ned i november–desember."
+  },
+  "insights": [
+    {
+      "icon": "map-pin",
+      "color": "amber",
+      "titleEN": "Maps pack near-empty — #1 listing has 0 reviews",
+      "titleNO": "Local Pack tilnærmet tom — #1-oppføringen har 0 anmeldelser",
+      "textEN": "The #1 Maps result for \"flyttevask trondheim\" (170/month) is a GMB listing named \"Flyttevask trondheim\" with 0 stars and 0 reviews. The same listing also appears at #1 for \"renholdsfirma trondheim\" — again with zero reviews. The highest review count anywhere in Trondheim's cleaning Maps is Vaskehjelp AS with just 21 reviews at 3.8 stars. For context, Oslo and Bergen beauty salons need 60–80+ reviews to lead Maps. In Trondheim's cleaning market, 10–15 genuine reviews could make you the undisputed Maps leader across every cleaning keyword.",
+      "textNO": "Det øverste Maps-resultatet for «flyttevask trondheim» (170/mnd) er en GMB-oppføring kalt «Flyttevask trondheim» med 0 stjerner og 0 anmeldelser. Den samme oppføringen dukker også opp som #1 for «renholdsfirma trondheim» — igjen med null anmeldelser. Det høyeste antallet anmeldelser i hele Trondheims renholds-Maps er Vaskehjelp AS med bare 21 anmeldelser og 3,8 stjerner. Til sammenligning trenger skjønnhetssalonger i Oslo og Bergen 60–80+ anmeldelser for å lede Maps. I Trondheims renholdsmarked kan 10–15 ekte anmeldelser gjøre deg til den udiskutable Maps-lederen på tvers av alle renholdsssøkeord.",
+      "statLabel": "reviews needed to lead Maps",
+      "statValue": "~10"
+    },
+    {
+      "icon": "users",
+      "color": "blue",
+      "titleEN": "NTNU student market creates unique seasonality",
+      "titleNO": "NTNU-studentmarkedet skaper unik sesongvariasjon",
+      "textEN": "Trondheim is Norway's biggest student city with 42,000+ NTNU students. This directly shapes cleaning demand: March peaks as spring-semester leases end, June–August surges during summer moves, and September ticks up when 10,000+ new students arrive. The dual-peak pattern (Mar + Jun–Aug) is distinct from Oslo and Bergen, where demand follows a single summer curve. Cleaning companies that target student housing, Studentsamskipnaden partnerships, and semester-timed marketing will capture demand that competitors miss entirely.",
+      "textNO": "Trondheim er Norges største studentby med over 42 000 NTNU-studenter. Dette påvirker renholdsetterspørselen direkte: mars topper seg når vårsemesterleieforhold avsluttes, juni–august stiger under sommerflyttinger, og september øker når 10 000+ nye studenter ankommer. Dobbelttopp-mønsteret (mars + juni–august) er ulikt Oslo og Bergen, der etterspørselen følger en enkel sommerkurve. Renholdsfirmaer som retter seg mot studentboliger, Studentsamskipnaden-samarbeid og semestertilpasset markedsføring vil fange etterspørsel som konkurrentene går helt glipp av.",
+      "statLabel": "NTNU students",
+      "statValue": "42,000+"
+    },
+    {
+      "icon": "globe",
+      "color": "green",
+      "titleEN": "Keyword-match domains dominate the SERPs",
+      "titleNO": "Søkeordmatch-domener dominerer søkeresultatene",
+      "textEN": "A clear pattern in Trondheim: domains that exactly match search queries outperform established brands. trondheimsflyttevask.no ranks #3 for \"flyttevask trondheim\" (170/mo). trappvask.no and trappevasktrondheim.no hold #1 and #2 for \"trappevask trondheim.\" Even the #1 Maps listing is named \"Flyttevask trondheim\" — pure keyword matching. This signals that Google still rewards exact-match signals heavily in Trondheim's low-competition cleaning market. A microsite or service page with the right keyword in the URL and title can rank quickly.",
+      "textNO": "Et tydelig mønster i Trondheim: domener som nøyaktig matcher søkeord, utkonkurrerer etablerte merker. trondheimsflyttevask.no rangerer #3 for «flyttevask trondheim» (170/mnd). trappvask.no og trappevasktrondheim.no holder #1 og #2 for «trappevask trondheim». Selv #1 Maps-oppføringen heter «Flyttevask trondheim» — ren søkeordmatching. Dette signaliserer at Google fortsatt belønner eksakt-match-signaler tungt i Trondheims lavkonkurranse renholdsmarked. En mikroside eller tjenesteside med riktig søkeord i URL-en og tittelen kan rangere raskt.",
+      "statLabel": "keyword-match domains in top 3",
+      "statValue": "4"
+    },
+    {
+      "icon": "tag",
+      "color": "purple",
+      "titleEN": "CPC moderate overall, but flyttevask trondheim hits 103 kr",
+      "titleNO": "CPC moderat totalt, men flyttevask trondheim når 103 kr",
+      "textEN": "The average CPC across all 13 keywords is 65.2 kr — higher than beauty (14.6 kr) but lower than healthcare niches. However, the spread is extreme: niche services like gulvvask and teppevask cost just 3 kr per click, while \"flyttevask trondheim\" costs 103.51 kr. This 34x difference means budget allocation is critical. Broad keywords like \"rengjøring\" (21 kr) offer affordable traffic, but the high-intent \"flyttevask trondheim\" at 103 kr demands precise conversion tracking to maintain ROI.",
+      "textNO": "Gjennomsnittlig CPC på tvers av alle 13 søkeord er 65,2 kr — høyere enn skjønnhet (14,6 kr), men lavere enn helsebransjer. Spredningen er derimot ekstrem: nisjetjenester som gulvvask og teppevask koster bare 3 kr per klikk, mens «flyttevask trondheim» koster 103,51 kr. Denne 34-ganger forskjellen betyr at budsjettallokering er kritisk. Brede søkeord som «rengjøring» (21 kr) gir rimelig trafikk, men det høyintensive «flyttevask trondheim» til 103 kr krever presis konverteringssporing for å opprettholde ROI.",
+      "statLabel": "avg CPC",
+      "statValue": "65.2 kr"
+    }
+  ],
+  "tips": [
+    {
+      "titleEN": "Google Business Profile — the bar has never been lower",
+      "titleNO": "Google Bedriftsprofil — listen har aldri vært lavere",
+      "textEN": "The #1 Maps result for Trondheim's biggest cleaning keyword (\"flyttevask trondheim\", 170/mo) has 0 reviews. The entire cleaning Local Pack across all keywords has almost no reviews — the leader is Vaskehjelp AS with just 21 reviews at 3.8 stars. Ask every customer for a Google review after the job. 10–15 reviews with a 4.5+ rating would put you at #1 in Maps for virtually every cleaning keyword in Trondheim. No other Norwegian city offers this kind of Maps opportunity.",
+      "textNO": "Nr. 1 Maps-resultatet for Trondheims største renholdsssøkeord («flyttevask trondheim», 170/mnd) har 0 anmeldelser. Hele renholds-Local Pack-en på tvers av alle søkeord har nesten ingen anmeldelser — lederen er Vaskehjelp AS med bare 21 anmeldelser og 3,8 stjerner. Be hver kunde om en Google-anmeldelse etter utført jobb. 10–15 anmeldelser med 4,5+ rating ville plassert deg på #1 i Maps for praktisk talt alle renholdsssøkeord i Trondheim. Ingen annen norsk by tilbyr denne typen Maps-mulighet.",
+      "tagEN": "Free — 15 minutes setup",
+      "tagNO": "Gratis — 15 minutter oppsett"
+    },
+    {
+      "titleEN": "Target the NTNU student market directly",
+      "titleNO": "Målrett NTNU-studentmarkedet direkte",
+      "textEN": "42,000+ NTNU students drive Trondheim's flyttevask demand. Partner with Studentsamskipnaden (SiT) for visibility in student housing. Post on Trondheim student Facebook groups and Under Dusken (student newspaper) in February and July — right before the two moving peaks. Offer student discounts with NTNU ID verification. A \"Studentpakke flyttevask\" landing page targeting \"flyttevask trondheim\" + student-related long-tails could capture a segment that no competitor is currently addressing.",
+      "textNO": "Over 42 000 NTNU-studenter driver Trondheims flyttevask-etterspørsel. Samarbeid med Studentsamskipnaden (SiT) for synlighet i studentboliger. Post i Trondheims student-Facebook-grupper og Under Dusken (studentavisen) i februar og juli — rett før de to flyttetoppene. Tilby studentrabatt med NTNU-ID-verifisering. En «Studentpakke flyttevask»-landingsside rettet mot «flyttevask trondheim» + studentrelaterte long-tails kan fange et segment som ingen konkurrent adresserer i dag.",
+      "tagEN": "Low cost — partnership + landing page",
+      "tagNO": "Lav kostnad — samarbeid + landingsside"
+    },
+    {
+      "titleEN": "Create service-specific landing pages",
+      "titleNO": "Lag tjenestespesifikke landingssider",
+      "textEN": "Keyword-match domains dominate Trondheim's cleaning SERPs: trappvask.no (#1), trappevasktrondheim.no (#2), trondheimsflyttevask.no (#3 for the biggest keyword). You don't need separate domains — dedicated pages on your main site work too. Create landing pages for \"/flyttevask-trondheim\" (170/mo), \"/kontorrengjoring-trondheim\" (B2B contracts), and \"/trappevask-trondheim\" (niche microsite territory). Match the URL, H1, and title tag to the exact keyword. In this low-competition market, on-page SEO alone can get you to page 1.",
+      "textNO": "Søkeordmatch-domener dominerer Trondheims renholds-SERP-er: trappvask.no (#1), trappevasktrondheim.no (#2), trondheimsflyttevask.no (#3 for det største søkeordet). Du trenger ikke egne domener — dedikerte sider på hovednettstedet fungerer også. Lag landingssider for «/flyttevask-trondheim» (170/mnd), «/kontorrengjoring-trondheim» (B2B-kontrakter), og «/trappevask-trondheim» (nisjeområde). Match URL, H1 og title-tag med det eksakte søkeordet. I dette lavkonkurransemarkedet kan on-page SEO alene bringe deg til side 1.",
+      "tagEN": "Free — 2–3 hours per page",
+      "tagNO": "Gratis — 2–3 timer per side"
+    },
+    {
+      "titleEN": "Google Ads: start broad, scale to flyttevask",
+      "titleNO": "Google Ads: start bredt, skaler til flyttevask",
+      "textEN": "The CPC spread is extreme: \"rengjøring\" costs 21 kr/click while \"flyttevask trondheim\" costs 103 kr. Start with the cheaper keywords (rengjøring, renhold, gulvvask at 3–36 kr) to test your landing page conversion rate. Once you know your cost per lead, scale into \"flyttevask trondheim\" (170/mo, 103 kr) during peak months (Mar, Jun–Aug). At 103 kr CPC and 4% click-to-inquiry rate, you need roughly 2,500 kr in ad spend to generate one lead — profitable only if your average job value exceeds 5,000 kr. Schedule ads to pause in December when volume drops to 40.",
+      "textNO": "CPC-spredningen er ekstrem: «rengjøring» koster 21 kr/klikk mens «flyttevask trondheim» koster 103 kr. Start med de billigere søkeordene (rengjøring, renhold, gulvvask til 3–36 kr) for å teste konverteringsraten på landingssiden din. Når du vet hva en henvendelse koster, skaler inn «flyttevask trondheim» (170/mnd, 103 kr) i toppmånedene (mars, juni–august). Med 103 kr CPC og 4 % klikk-til-henvendelse-rate trenger du ca. 2 500 kr i annonsekostnader for å generere en henvendelse — lønnsomt bare hvis gjennomsnittlig jobbverdi overstiger 5 000 kr. Sett annonser på pause i desember når volumet faller til 40.",
+      "tagEN": "Paid — from 5,000 kr/month",
+      "tagNO": "Betalt — fra 5 000 kr/mnd"
+    }
+  ],
+  "calculator": {
+    "avgCpc": 65.2,
+    "defaultPatientValue": 60000,
+    "defaultBudget": 5000,
+    "defaultConversion": 20,
+    "clickToInquiryRate": 0.04,
+    "benchmarkEN": "Cleaning CPCs in Trondheim range from 3 kr (niche services) to 103 kr (flyttevask trondheim). A commercial cleaning contract (kontorrengjøring) is worth 60,000+ kr/year in recurring revenue. At 65.2 kr average CPC, you need roughly 1 in 5 inquiries to convert into an annual contract to see strong ROI. Residential jobs are lower-value individually (3,000–6,000 kr) but high-frequency during peak months.",
+    "benchmarkNO": "Renholds-CPC-er i Trondheim varierer fra 3 kr (nisjetjenester) til 103 kr (flyttevask trondheim). En kontorrengjøringskontrakt er verdt 60 000+ kr/år i gjentakende inntekter. Med 65,2 kr gjennomsnittlig CPC trenger du omtrent 1 av 5 henvendelser til å konvertere til en årskontrakt for å oppnå sterk ROI. Boligjobber er lavere i verdi enkeltvis (3 000–6 000 kr), men har høy frekvens i toppmånedene."
+  },
+  "sources": [
+    {
+      "name": "DataForSEO – Keywords Data API (Google Ads, Trondheim)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – SERP API (Google organic, Trondheim)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – Maps API (Google Maps, Trondheim)",
+      "url": null
+    },
+    {
+      "name": "DataReportal – Digital 2025: Norway",
+      "url": "https://datareportal.com/reports/digital-2025-norway"
+    },
+    {
+      "name": "BrightLocal – Local Pack Click Share Study 2024",
+      "url": "https://www.brightlocal.com/research/"
+    }
+  ]
+}

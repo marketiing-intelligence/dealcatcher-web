@@ -1,0 +1,530 @@
+{
+  "meta": {
+    "niche": "cleaning",
+    "nicheNO": "renholdsfirmaer",
+    "city": "Stavanger",
+    "locationCode": 1010917,
+    "dataDate": "2026-02",
+    "totalSearchVolume": 270
+  },
+  "metrics": {
+    "keywordCount": 11,
+    "avgCpc": 73.5,
+    "topClinicsCount": 5,
+    "mapsClickShare": 42
+  },
+  "keywordGroups": [
+    {
+      "id": "services",
+      "color": "green",
+      "nameEN": "Cleaning services",
+      "nameNO": "Rengjøringstjenester",
+      "descriptionEN": "Generic cleaning service searches from Stavanger users. \"Rengjøring\" leads at 40/month (25 kr CPC), followed by \"flyttevask\" at 30/month (70 kr). The spread between cheapest (gulvvask at 6 kr) and most expensive (flyttevask at 70 kr) shows that move-out cleaning carries far higher commercial intent than general terms. \"Trappevask\" has LOW competition at just 8 kr CPC — an easy organic win for companies willing to create a dedicated service page.",
+      "descriptionNO": "Generiske rengjøringsrelaterte søk fra brukere i Stavanger. «Rengjøring» leder med 40/mnd (25 kr CPC), etterfulgt av «flyttevask» med 30/mnd (70 kr). Spredningen mellom billigste (gulvvask på 6 kr) og dyreste (flyttevask på 70 kr) viser at flyttevask har langt høyere kommersiell intensjon enn generelle termer. «Trappevask» har LAV konkurranse med bare 8 kr CPC — en enkel organisk gevinst for firmaer som lager en dedikert tjenesteside.",
+      "totalVolume": 140,
+      "keywords": [
+        {
+          "keyword": "rengjøring",
+          "translation": "cleaning",
+          "volume": 40,
+          "competition": "HIGH",
+          "cpc": 25.08
+        },
+        {
+          "keyword": "flyttevask",
+          "translation": "move-out cleaning",
+          "volume": 30,
+          "competition": "HIGH",
+          "cpc": 69.52
+        },
+        {
+          "keyword": "renhold",
+          "translation": "cleaning/maintenance",
+          "volume": 20,
+          "competition": "HIGH",
+          "cpc": 24.2
+        },
+        {
+          "keyword": "fasadevask",
+          "translation": "facade cleaning",
+          "volume": 20,
+          "competition": "HIGH",
+          "cpc": 49.39
+        },
+        {
+          "keyword": "trappevask",
+          "translation": "stairwell cleaning",
+          "volume": 10,
+          "competition": "LOW",
+          "cpc": 8.36
+        },
+        {
+          "keyword": "gulvvask",
+          "translation": "floor cleaning",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 6.05
+        },
+        {
+          "keyword": "flyttevask pris",
+          "translation": "move-out cleaning price",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 26.95
+        }
+      ]
+    },
+    {
+      "id": "explicit",
+      "color": "blue",
+      "nameEN": "Explicit \"Stavanger\" searches",
+      "nameNO": "Eksplisitte \"Stavanger\"-søk",
+      "descriptionEN": "People specifically searching for cleaning services in Stavanger. At 130/month, explicit city searches make up 48% of total volume — an unusually high ratio that signals strong local buying intent. \"Vinduspuss stavanger\" stands out with a 310 kr CPC, the most expensive cleaning keyword in all of Norway. \"Flyttevask stavanger\" and \"renhold stavanger\" tie at 40/month each, forming the core of Stavanger commercial cleaning demand.",
+      "descriptionNO": "Folk som spesifikt søker etter rengjøringstjenester i Stavanger. Med 130/mnd utgjør eksplisitte bysøk 48 % av totalt volum — et uvanlig høyt forholdstall som signaliserer sterk lokal kjøpsintenjon. «Vinduspuss stavanger» skiller seg ut med en CPC på 310 kr, det dyreste rengjøringssøkeordet i hele Norge. «Flyttevask stavanger» og «renhold stavanger» ligger likt på 40/mnd hver, og utgjør kjernen av Stavangers kommersielle rengjøringsetterspørsel.",
+      "totalVolume": 130,
+      "keywords": [
+        {
+          "keyword": "flyttevask stavanger",
+          "translation": "move-out cleaning Stavanger",
+          "volume": 40,
+          "competition": "HIGH",
+          "cpc": 70.95
+        },
+        {
+          "keyword": "renhold stavanger",
+          "translation": "cleaning Stavanger",
+          "volume": 40,
+          "competition": "MEDIUM",
+          "cpc": 52.58
+        },
+        {
+          "keyword": "vinduspuss stavanger",
+          "translation": "window cleaning Stavanger",
+          "volume": 30,
+          "competition": "LOW",
+          "cpc": 310.2
+        },
+        {
+          "keyword": "rengjøring stavanger",
+          "translation": "cleaning Stavanger",
+          "volume": 20,
+          "competition": "HIGH",
+          "cpc": 30.8
+        }
+      ]
+    }
+  ],
+  "serpKeywords": [
+    {
+      "keyword": "renholdsfirma stavanger",
+      "volume": 10,
+      "organic": [
+        {
+          "rank": 4,
+          "domain": "www.vaskesmart.no"
+        },
+        {
+          "rank": 5,
+          "domain": "renholdsbyra.no"
+        },
+        {
+          "rank": 6,
+          "domain": "www.gulesider.no"
+        },
+        {
+          "rank": 7,
+          "domain": "grundigrenhold.no"
+        },
+        {
+          "rank": 8,
+          "domain": "evask.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Stavanger Renholdsbyrå AS",
+          "rating": 4.2,
+          "reviews": 0
+        },
+        {
+          "rank": 2,
+          "title": "Lima Renhold AS",
+          "rating": 5,
+          "reviews": 0
+        },
+        {
+          "rank": 3,
+          "title": "Allrent AS",
+          "rating": 4.3,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "Fragmented organic results — no local Stavanger company ranks above #4. National directories (Gule Sider at #6) and aggregators (vaskesmart.no, renholdsbyra.no) fill the top spots. Stavanger Renholdsbyrå AS leads Maps at #1, but with 0 visible reviews here. The gap between directory dominance and weak local organic presence means a well-optimized local website could break into the top 3.",
+      "insightNO": "Fragmenterte organiske resultater — ingen lokal Stavanger-bedrift rangerer over #4. Nasjonale kataloger (Gule Sider på #6) og aggregatorer (vaskesmart.no, renholdsbyra.no) fyller topplasseringene. Stavanger Renholdsbyrå AS leder Maps på #1, men med 0 synlige anmeldelser her. Gapet mellom katalogdominans og svak lokal organisk tilstedeværelse betyr at en godt optimalisert lokal nettside kan bryte inn i topp 3."
+    },
+    {
+      "keyword": "kontorrengjøring stavanger",
+      "volume": 0,
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "jkrenhold.no"
+        },
+        {
+          "rank": 2,
+          "domain": "www.vaskeeksperten.no"
+        },
+        {
+          "rank": 3,
+          "domain": "sevvo.no"
+        },
+        {
+          "rank": 4,
+          "domain": "stavanger.smartms.no"
+        },
+        {
+          "rank": 5,
+          "domain": "yoopies.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Stavanger Renholdsbyrå AS",
+          "rating": 4.2,
+          "reviews": 24
+        },
+        {
+          "rank": 2,
+          "title": "Allrent AS",
+          "rating": 4.3,
+          "reviews": 3
+        },
+        {
+          "rank": 3,
+          "title": "Brilliant Renhold AS",
+          "rating": 4.6,
+          "reviews": 17
+        }
+      ],
+      "insightEN": "Zero search volume but a fully populated SERP — Google shows results from related queries. jkrenhold.no ranks #1 organically, indicating a well-optimized B2B cleaning site. Stavanger Renholdsbyrå AS leads Maps with 24 reviews, while Brilliant Renhold AS at #3 has 17 reviews with a higher 4.6-star rating. For office cleaning, Maps visibility matters more than organic — commercial clients check reviews before signing annual contracts.",
+      "insightNO": "Null søkevolum, men en fullt befolket SERP — Google viser resultater fra relaterte søk. jkrenhold.no rangerer #1 organisk, noe som indikerer en godt optimalisert B2B-rengjøringsside. Stavanger Renholdsbyrå AS leder Maps med 24 anmeldelser, mens Brilliant Renhold AS på #3 har 17 anmeldelser med en høyere rating på 4,6 stjerner. For kontorrengjøring betyr Maps-synlighet mer enn organisk — kommersielle kunder sjekker anmeldelser før de signerer årskontrakter."
+    },
+    {
+      "keyword": "trappevask stavanger",
+      "volume": 0,
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "jkrenhold.no"
+        },
+        {
+          "rank": 2,
+          "domain": "www.vaskeeksperten.no"
+        },
+        {
+          "rank": 3,
+          "domain": "evask.no"
+        },
+        {
+          "rank": 4,
+          "domain": "citymaid.no"
+        },
+        {
+          "rank": 5,
+          "domain": "trappevask24.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Stavanger Renholdsbyrå AS",
+          "rating": 4.2,
+          "reviews": 24
+        },
+        {
+          "rank": 2,
+          "title": "Allrent AS",
+          "rating": 4.3,
+          "reviews": 3
+        },
+        {
+          "rank": 3,
+          "title": "Sevvo AS",
+          "rating": 4.8,
+          "reviews": 13
+        }
+      ],
+      "insightEN": "Stavanger Renholdsbyrå AS appears in Maps #1 again — their third Maps appearance across four keywords. jkrenhold.no holds #1 organic here too, confirming their strong SEO for specialized cleaning services. Sevvo AS at Maps #3 has a strong 4.8-star rating with 13 reviews. trappevask24.no at organic #5 shows that niche-specific domains (exact-match keyword domains) still rank well for specialized cleaning services in smaller markets.",
+      "insightNO": "Stavanger Renholdsbyrå AS vises på Maps #1 igjen — deres tredje Maps-opptreden på tvers av fire søkeord. jkrenhold.no holder #1 organisk her også, noe som bekrefter deres sterke SEO for spesialiserte rengjøringstjenester. Sevvo AS på Maps #3 har en sterk rating på 4,8 stjerner med 13 anmeldelser. trappevask24.no på organisk #5 viser at nisjespesifikke domener (eksakt-match søkeordsdomener) fortsatt rangerer godt for spesialiserte rengjøringstjenester i mindre markeder."
+    },
+    {
+      "keyword": "flyttevask stavanger",
+      "volume": 40,
+      "organic": [
+        {
+          "rank": 4,
+          "domain": "mittanbud.no"
+        },
+        {
+          "rank": 5,
+          "domain": "citymaid.no"
+        },
+        {
+          "rank": 6,
+          "domain": "renholdsbyra.no"
+        },
+        {
+          "rank": 7,
+          "domain": "www.flytteman.no"
+        },
+        {
+          "rank": 9,
+          "domain": "nentor.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Stavanger Renholdsbyrå AS",
+          "rating": 4.2,
+          "reviews": 24
+        },
+        {
+          "rank": 2,
+          "title": "Flyttevask Stavanger",
+          "rating": 3,
+          "reviews": 2
+        },
+        {
+          "rank": 3,
+          "title": "Allrent AS",
+          "rating": 4.3,
+          "reviews": 3
+        }
+      ],
+      "insightEN": "The highest-volume explicit keyword (40/month, 71 kr CPC). Mittanbud.no (bidding platform) holds #4 organically — many Stavanger residents use bidding portals for move-out cleaning. Citymaid.no (#5) is a national chain competing with local players. Stavanger Renholdsbyrå AS leads Maps yet again (#1, 24 reviews), while \"Flyttevask Stavanger\" at #2 has just 2 reviews at 3.0 stars — a weak competitor that can be overtaken with 10+ reviews.",
+      "insightNO": "Det eksplisitte søkeordet med høyest volum (40/mnd, 71 kr CPC). Mittanbud.no (anbudsplattform) holder #4 organisk — mange Stavanger-innbyggere bruker anbudsportaler for flyttevask. Citymaid.no (#5) er en nasjonal kjede som konkurrerer med lokale aktører. Stavanger Renholdsbyrå AS leder Maps nok en gang (#1, 24 anmeldelser), mens «Flyttevask Stavanger» på #2 har bare 2 anmeldelser med 3,0 stjerner — en svak konkurrent som kan forbigås med 10+ anmeldelser."
+    }
+  ],
+  "cpcData": [
+    {
+      "keyword": "vinduspuss stavanger",
+      "cpc": 310.2
+    },
+    {
+      "keyword": "flyttevask stavanger",
+      "cpc": 70.95
+    },
+    {
+      "keyword": "flyttevask",
+      "cpc": 69.52
+    },
+    {
+      "keyword": "renhold stavanger",
+      "cpc": 52.58
+    },
+    {
+      "keyword": "fasadevask",
+      "cpc": 49.39
+    },
+    {
+      "keyword": "rengjøring stavanger",
+      "cpc": 30.8
+    },
+    {
+      "keyword": "flyttevask pris",
+      "cpc": 26.95
+    },
+    {
+      "keyword": "rengjøring",
+      "cpc": 25.08
+    },
+    {
+      "keyword": "renhold",
+      "cpc": 24.2
+    },
+    {
+      "keyword": "trappevask",
+      "cpc": 8.36
+    },
+    {
+      "keyword": "gulvvask",
+      "cpc": 6.05
+    }
+  ],
+  "seasonality": {
+    "keyword": "flyttevask",
+    "months": [
+      {
+        "month": "Jan",
+        "volume": 40
+      },
+      {
+        "month": "Feb",
+        "volume": 20
+      },
+      {
+        "month": "Mar",
+        "volume": 30
+      },
+      {
+        "month": "Apr",
+        "volume": 50
+      },
+      {
+        "month": "May",
+        "volume": 50
+      },
+      {
+        "month": "Jun",
+        "volume": 50
+      },
+      {
+        "month": "Jul",
+        "volume": 30
+      },
+      {
+        "month": "Aug",
+        "volume": 30
+      },
+      {
+        "month": "Sep",
+        "volume": 30
+      },
+      {
+        "month": "Oct",
+        "volume": 20
+      },
+      {
+        "month": "Nov",
+        "volume": 20
+      },
+      {
+        "month": "Dec",
+        "volume": 20
+      }
+    ],
+    "peakMonths": [
+      "Apr",
+      "May",
+      "Jun"
+    ],
+    "lowMonths": [
+      "Feb",
+      "Oct",
+      "Nov",
+      "Dec"
+    ],
+    "insightEN": "Classic spring cleaning pattern: demand peaks April–June at 50/month, 150% above the winter low of 20/month (Feb, Oct–Dec). Stavanger's oil sector drives a secondary factor — corporate office turnover and relocations tend to cluster in spring and early summer. Strategy: concentrate ad spend in Q2, pre-book recurring commercial contracts in January before the spring rush, and reduce spend in Q4 when demand drops by 60%.",
+    "insightNO": "Klassisk vårrengjøringsmønster: etterspørselen topper seg april–juni med 50/mnd, 150 % over vinterbunnen på 20/mnd (feb, okt–des). Stavangers oljesektor driver en sekundær faktor — bedriftskontorskifter og flyttinger klynger seg typisk i vår og tidlig sommer. Strategi: konsentrer annonsebudsjettet i Q2, forhånds-signer faste bedriftskontrakter i januar før vårkjøringen, og reduser budsjettet i Q4 når etterspørselen faller med 60 %."
+  },
+  "insights": [
+    {
+      "icon": "map-pin",
+      "color": "amber",
+      "titleEN": "Stavanger Renholdsbyrå AS dominates Maps across all keywords",
+      "titleNO": "Stavanger Renholdsbyrå AS dominerer Maps på tvers av alle søkeord",
+      "textEN": "Stavanger Renholdsbyrå AS holds Maps #1 for 3 out of 4 analyzed keywords (kontorrengjøring, trappevask, flyttevask) with a consistent 4.2-star rating and 24 reviews. No other Stavanger cleaning company appears in more than two Maps results. Their multi-keyword dominance means they capture the lion's share of the 42% Maps click share. To compete, you need 25+ reviews and a higher rating — their 4.2 stars leave room to overtake them on quality signals.",
+      "textNO": "Stavanger Renholdsbyrå AS holder Maps #1 for 3 av 4 analyserte søkeord (kontorrengjøring, trappevask, flyttevask) med en konsekvent rating på 4,2 stjerner og 24 anmeldelser. Ingen annen renholdsbedrift i Stavanger vises i mer enn to Maps-resultater. Deres flersøkeords-dominans betyr at de fanger størstedelen av de 42 % Maps-klikkene. For å konkurrere trenger du 25+ anmeldelser og en høyere rating — deres 4,2 stjerner gir rom for å forbigå dem på kvalitetssignaler.",
+      "statLabel": "Maps #1 appearances",
+      "statValue": "3/4"
+    },
+    {
+      "icon": "zap",
+      "color": "red",
+      "titleEN": "Vinduspuss stavanger: 310 kr CPC — most expensive cleaning keyword in Norway",
+      "titleNO": "Vinduspuss stavanger: 310 kr CPC — dyreste rengjøringssøkeordet i Norge",
+      "textEN": "\"Vinduspuss stavanger\" costs 310.20 kr per click — over 4x the average CPC (73.5 kr) and the highest single cleaning keyword we've found across all Norwegian cities. For comparison, Oslo's \"vinduspuss oslo\" is 44 kr. Despite LOW competition classification, the extreme CPC signals that the few advertisers bidding are willing to pay premium prices, likely because window cleaning contracts in Stavanger's oil-wealth market are highly profitable. Organic ranking for this keyword is worth hundreds of kroner per click saved.",
+      "textNO": "«Vinduspuss stavanger» koster 310,20 kr per klikk — over 4x gjennomsnittlig CPC (73,5 kr) og det dyreste enkeltsøkeordet innen rengjøring vi har funnet på tvers av alle norske byer. Til sammenligning koster Oslos «vinduspuss oslo» 44 kr. Til tross for LAV konkurranseklassifisering signaliserer den ekstreme CPC-en at de få annonsorene som byr er villige til å betale premiumpriser, trolig fordi vinduspusskontrakter i Stavangers oljevelstandsmarked er svært lønnsomme. Organisk rangering for dette søkeordet er verdt hundrevis av kroner per spart klikk.",
+      "statLabel": "CPC per click",
+      "statValue": "310 kr"
+    },
+    {
+      "icon": "target",
+      "color": "blue",
+      "titleEN": "Small market, but 48% are explicit city searches — high local intent",
+      "titleNO": "Lite marked, men 48 % er eksplisitte bysøk — høy lokal intensjon",
+      "textEN": "Stavanger's 270 monthly searches is small compared to Oslo (3,520) or Bergen. But 130 of those 270 searches (48%) include \"stavanger\" in the query — nearly half the market is actively specifying the city. In Oslo, explicit city searches make up only 38% of volume. This means Stavanger searchers are further along in their buying journey: they know what they want and where they want it. A well-optimized Google Business Profile captures this high-intent traffic at zero ad cost.",
+      "textNO": "Stavangers 270 månedlige søk er lite sammenlignet med Oslo (3 520) eller Bergen. Men 130 av disse 270 søkene (48 %) inkluderer «stavanger» i søket — nesten halvparten av markedet spesifiserer aktivt byen. I Oslo utgjør eksplisitte bysøk bare 38 % av volumet. Dette betyr at Stavanger-søkere er lenger i kjøpsreisen: de vet hva de vil ha og hvor de vil ha det. En godt optimalisert Google Bedriftsprofil fanger denne høyintensjons-trafikken uten annonsekostnader.",
+      "statLabel": "explicit city search ratio",
+      "statValue": "48%"
+    },
+    {
+      "icon": "star",
+      "color": "green",
+      "titleEN": "Brilliant Renhold AS — competitive Maps challenger with 4.6 stars",
+      "titleNO": "Brilliant Renhold AS — konkurransedyktig Maps-utfordrer med 4,6 stjerner",
+      "textEN": "Brilliant Renhold AS appears at Maps #3 for \"kontorrengjøring stavanger\" with 17 reviews and a 4.6-star rating — the highest rating among any Stavanger cleaning company in our analysis. While Stavanger Renholdsbyrå AS leads on volume (24 reviews), Brilliant's higher quality score signals an emerging competitor. In Google's Maps algorithm, a 4.6-star rating with 17 reviews can outperform a 4.2-star listing with 24 reviews as the gap closes. This is the company to watch.",
+      "textNO": "Brilliant Renhold AS vises på Maps #3 for «kontorrengjøring stavanger» med 17 anmeldelser og en rating på 4,6 stjerner — den høyeste ratingen blant noen renholdsbedrift i Stavanger i vår analyse. Mens Stavanger Renholdsbyrå AS leder på volum (24 anmeldelser), signaliserer Brilliants høyere kvalitetsscore en fremvoksende konkurrent. I Googles Maps-algoritme kan en rating på 4,6 stjerner med 17 anmeldelser utkonkurrere en 4,2-stjerners oppføring med 24 anmeldelser etter hvert som gapet lukkes. Dette er firmaet å følge med på.",
+      "statLabel": "Brilliant rating",
+      "statValue": "4.6★"
+    }
+  ],
+  "tips": [
+    {
+      "titleEN": "Google Business Profile — overtake Stavanger Renholdsbyrå with reviews",
+      "titleNO": "Google Bedriftsprofil — forbigå Stavanger Renholdsbyrå med anmeldelser",
+      "textEN": "Stavanger Renholdsbyrå AS leads Maps across 3/4 keywords with just 24 reviews at 4.2 stars. That's a low bar. Systematically ask every client for a Google review after completed work — especially after move-out cleanings and office contracts. Reaching 30+ reviews with 4.5+ stars would likely displace them from the #1 Maps position across multiple keywords. Their 4.2-star rating is a clear weakness you can exploit with better service quality.",
+      "textNO": "Stavanger Renholdsbyrå AS leder Maps på tvers av 3/4 søkeord med bare 24 anmeldelser og 4,2 stjerner. Det er en lav terskel. Be systematisk hver kunde om en Google-anmeldelse etter utført arbeid — spesielt etter flyttevask og kontorkontrakter. Å nå 30+ anmeldelser med 4,5+ stjerner ville sannsynligvis forskyve dem fra #1 Maps-posisjonen på tvers av flere søkeord. Deres rating på 4,2 stjerner er en tydelig svakhet du kan utnytte med bedre tjenestekvalitet.",
+      "tagEN": "Free — 15 minutes setup",
+      "tagNO": "Gratis — 15 minutter oppsett"
+    },
+    {
+      "titleEN": "Vinduspuss: invest in organic SEO to avoid 310 kr clicks",
+      "titleNO": "Vinduspuss: invester i organisk SEO for å unngå klikk til 310 kr",
+      "textEN": "\"Vinduspuss stavanger\" has LOW competition but a 310 kr CPC — the most extreme cost-per-click in any Norwegian cleaning market. At that price, 10 clicks cost 3,100 kr with no guarantee of conversion. Instead, create a dedicated \"vinduspuss stavanger\" landing page optimized for local SEO. With LOW organic competition, a well-structured page with local schema markup, customer testimonials, and area-specific content could reach page 1 within 2–3 months. Each organic click saves you 310 kr.",
+      "textNO": "«Vinduspuss stavanger» har LAV konkurranse, men en CPC på 310 kr — den mest ekstreme klikkprisen i noe norsk rengjøringsmarked. Med den prisen koster 10 klikk 3 100 kr uten garanti for konvertering. Lag i stedet en dedikert «vinduspuss stavanger»-landingsside optimalisert for lokal SEO. Med LAV organisk konkurranse kan en godt strukturert side med lokal schema-markup, kundeomtaler og områdespesifikt innhold nå side 1 innen 2–3 måneder. Hvert organisk klikk sparer deg 310 kr.",
+      "tagEN": "Free — 3–4 hours one-time",
+      "tagNO": "Gratis — 3–4 timer engangsarbeid"
+    },
+    {
+      "titleEN": "Create service-specific landing pages for each cleaning type",
+      "titleNO": "Lag tjenestespesifikke landingssider for hver rengjøringstype",
+      "textEN": "jkrenhold.no ranks #1 organically for both \"kontorrengjøring stavanger\" and \"trappevask stavanger\" because they have dedicated service pages. Create separate pages for flyttevask, kontorrengjøring, trappevask, vinduspuss, and fasadevask — each targeting its own keyword cluster. With only 11 keywords in the total market, five well-optimized pages could capture visibility across the entire Stavanger cleaning market. Include city-specific references (Forus, Hundvåg, Storhaug) on each page.",
+      "textNO": "jkrenhold.no rangerer #1 organisk for både «kontorrengjøring stavanger» og «trappevask stavanger» fordi de har dedikerte tjenestesider. Lag separate sider for flyttevask, kontorrengjøring, trappevask, vinduspuss og fasadevask — hver rettet mot sin egen søkeordsklynge. Med bare 11 søkeord i totalmarkedet kan fem godt optimaliserte sider fange synlighet på tvers av hele Stavangers rengjøringsmarked. Inkluder bydelsspesifikke referanser (Forus, Hundvåg, Storhaug) på hver side.",
+      "tagEN": "Free — 2–3 hours per page",
+      "tagNO": "Gratis — 2–3 timer per side"
+    },
+    {
+      "titleEN": "Partner with local moving companies and property managers",
+      "titleNO": "Samarbeid med lokale flyttebyråer og eiendomsforvaltere",
+      "textEN": "Mittanbud.no ranks #4 for \"flyttevask stavanger\" (40/month) — many Stavanger residents find cleaning through bidding platforms and moving companies. Instead of competing for clicks, build referral partnerships with local movers (flytteman.no already ranks #7) and property management firms in Forus and the oil corridor. A single property management contract can deliver 10–20 recurring move-out cleanings per year at zero acquisition cost. Stavanger's compact oil-industry market makes relationship-based sales more effective than in larger cities.",
+      "textNO": "Mittanbud.no rangerer #4 for «flyttevask stavanger» (40/mnd) — mange Stavanger-innbyggere finner rengjøring gjennom anbudsplattformer og flyttebyråer. I stedet for å konkurrere om klikk, bygg henvisningspartnerskap med lokale flyttebyråer (flytteman.no rangerer allerede #7) og eiendomsforvaltere i Forus og oljekorridoren. En enkelt eiendomsforvaltningskontrakt kan levere 10–20 gjentakende flyttevasker per år til null anskaffelseskostnad. Stavangers kompakte oljeindustrimarked gjør relasjonsbasert salg mer effektivt enn i større byer.",
+      "tagEN": "Free — ongoing relationship building",
+      "tagNO": "Gratis — løpende relasjonsbygging"
+    }
+  ],
+  "calculator": {
+    "avgCpc": 73.5,
+    "defaultPatientValue": 60000,
+    "defaultBudget": 5000,
+    "defaultConversion": 20,
+    "clickToInquiryRate": 0.04,
+    "benchmarkEN": "Cleaning CPCs in Stavanger range from 6 kr (gulvvask) to 310 kr (vinduspuss stavanger), averaging 73.5 kr. A regular commercial cleaning contract is worth 60,000+ kr annually. At 73.5 kr average CPC, a 5,000 kr monthly budget generates approximately 68 clicks. With a 4% inquiry rate and 20% close rate, that means roughly 1 new contract per 2 months — but a single annual office contract pays for an entire year of ad spend.",
+    "benchmarkNO": "Rengjørings-CPC-er i Stavanger varierer fra 6 kr (gulvvask) til 310 kr (vinduspuss stavanger), med et gjennomsnitt på 73,5 kr. En fast kommersiell rengjøringskontrakt er verdt 60 000+ kr årlig. Med 73,5 kr gjennomsnittlig CPC gir et månedlig budsjett på 5 000 kr omtrent 68 klikk. Med 4 % henvendelsesrate og 20 % lukkegrad betyr det omtrent 1 ny kontrakt per 2 måneder — men en enkelt årlig kontorkontrakt betaler for et helt år med annonsering."
+  },
+  "sources": [
+    {
+      "name": "DataForSEO – Keywords Data API (Google Ads, Stavanger)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – SERP API (Google organic, Stavanger)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – Maps API (Google Maps, Stavanger)",
+      "url": null
+    },
+    {
+      "name": "DataReportal – Digital 2025: Norway",
+      "url": "https://datareportal.com/reports/digital-2025-norway"
+    },
+    {
+      "name": "BrightLocal – Local Pack Click Share Study 2024",
+      "url": "https://www.brightlocal.com/research/"
+    }
+  ]
+}

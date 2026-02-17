@@ -965,6 +965,22 @@
       "ctaSecondary": "Send us a message",
       "disclaimer": "Free 15-minute call. No obligation. We'll share what we find either way."
     },
+    "leadForm": {
+      "badge": "Personalized Report",
+      "title": "Want this analysis for your specific business?",
+      "subtitle": "This report covers the general market. Tell us your details and we'll create a version that analyzes your website, your competitors, and your positioning — completely free.",
+      "emailPlaceholder": "Your email",
+      "websitePlaceholder": "Your website (e.g. yourcompany.no)",
+      "cityPlaceholder": "Your city",
+      "gdpr": "I consent to DealCatcher processing my data to prepare a report.",
+      "gdprLink": "Privacy Policy",
+      "submit": "Send me a personalized report",
+      "success": "We got it!",
+      "successMessage": "We'll look at your website and local market, and send you a personalized analysis within 48 hours.",
+      "error": "Something went wrong. Try again or email us at contact@dealcatcher.io.",
+      "validationEmail": "Enter a valid email address",
+      "validationRequired": "This field is required"
+    },
     "footer": {
       "title": "Sources & Methodology",
       "description": "Data collected {dataDate} via Google Ads API (through DataForSEO). Search volumes are 12-month averages. Ad costs reflect real Google Ads auction prices. Competition data comes from live Google search results.",

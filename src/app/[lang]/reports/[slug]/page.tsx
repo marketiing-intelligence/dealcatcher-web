@@ -11,7 +11,7 @@ import {
   SeasonalitySection,
   InsightsSection,
   TipsSection,
-  ReportCta,
+  ReportLeadForm,
   ReportFooter,
   ReportToc,
 } from "@/components/sections/report";
@@ -28,6 +28,7 @@ const nicheNames: Record<string, string> = {
   "day-spa": "day spas & saunas",
   "auto-repair": "auto repair shops",
   tourism: "tourism & experiences",
+  cleaning: "cleaning services",
 };
 
 interface PageProps {
@@ -106,6 +107,14 @@ export default async function ReportPage({ params }: PageProps) {
           nicheLower={nicheLower}
           city={data.meta.city}
         />
+        <ReportLeadForm
+          lang={lang}
+          reportSlug={slug}
+          reportNiche={nicheLower}
+          reportCity={data.meta.city}
+          defaultCity={data.meta.city}
+          dict={rd.leadForm}
+        />
         <CompetitionSection
           serpKeywords={data.serpKeywords}
           lang={lang}
@@ -129,7 +138,14 @@ export default async function ReportPage({ params }: PageProps) {
           dict={rd.insights}
         />
         <TipsSection tips={data.tips} lang={lang} dict={rd.tips} />
-        <ReportCta lang={lang} dict={rd.cta} />
+        <ReportLeadForm
+          lang={lang}
+          reportSlug={slug}
+          reportNiche={nicheLower}
+          reportCity={data.meta.city}
+          defaultCity={data.meta.city}
+          dict={rd.leadForm}
+        />
         <ReportFooter
           sources={data.sources}
           dataDate={data.meta.dataDate}

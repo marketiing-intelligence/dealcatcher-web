@@ -8,5 +8,6 @@ export { SeasonalitySection } from "./SeasonalitySection";
 export { InsightsSection } from "./InsightsSection";
 export { TipsSection } from "./TipsSection";
 export { ReportCta } from "./ReportCta";
+export { ReportLeadForm } from "./ReportLeadForm";
 export { ReportFooter } from "./ReportFooter";
 export { ReportToc } from "./ReportToc";

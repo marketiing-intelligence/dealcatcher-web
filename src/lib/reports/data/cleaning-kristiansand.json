@@ -1,0 +1,476 @@
+{
+  "meta": {
+    "niche": "cleaning",
+    "nicheNO": "renholdsfirmaer",
+    "city": "Kristiansand",
+    "locationCode": 1010894,
+    "dataDate": "2026-02",
+    "totalSearchVolume": 110
+  },
+  "metrics": {
+    "keywordCount": 6,
+    "avgCpc": 50.0,
+    "topClinicsCount": 5,
+    "mapsClickShare": 42
+  },
+  "keywordGroups": [
+    {
+      "id": "services",
+      "color": "green",
+      "nameEN": "Cleaning services",
+      "nameNO": "Rengjøringstjenester",
+      "totalVolume": 60,
+      "keywords": [
+        {
+          "keyword": "flyttevask",
+          "translation": "move-out cleaning",
+          "volume": 20,
+          "competition": "HIGH",
+          "cpc": 45.65
+        },
+        {
+          "keyword": "fasadevask",
+          "translation": "facade cleaning",
+          "volume": 20,
+          "competition": "HIGH",
+          "cpc": 75.24
+        },
+        {
+          "keyword": "gulvvask",
+          "translation": "floor cleaning",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 9.24
+        },
+        {
+          "keyword": "flyttevask pris",
+          "translation": "move-out cleaning price",
+          "volume": 10,
+          "competition": "HIGH",
+          "cpc": 36.3
+        }
+      ],
+      "descriptionEN": "Generic cleaning service searches geolocated to Kristiansand. Flyttevask (move-out cleaning) and fasadevask (facade cleaning) tie at 20 searches/month each. The standout: fasadevask commands 75 kr CPC — the most expensive keyword in the entire Kristiansand cleaning market, signaling high commercial value for a niche service. Gulvvask at 9 kr CPC is the cheapest entry point.",
+      "descriptionNO": "Generiske rengjøringssøk geolokalisert til Kristiansand. Flyttevask og fasadevask deler førsteplassen med 20 søk/mnd hver. Det som skiller seg ut: fasadevask har en CPC på 75 kr — det dyreste søkeordet i hele Kristiansands renholdsmarked, noe som signaliserer høy kommersiell verdi for en nisjetjeneste. Gulvvask til 9 kr CPC er det billigste inngangspunktet."
+    },
+    {
+      "id": "explicit",
+      "color": "blue",
+      "nameEN": "Explicit \"Kristiansand\" searches",
+      "nameNO": "Eksplisitte \"Kristiansand\"-søk",
+      "totalVolume": 50,
+      "keywords": [
+        {
+          "keyword": "flyttevask kristiansand",
+          "translation": "move-out cleaning Kristiansand",
+          "volume": 30,
+          "competition": "HIGH",
+          "cpc": 62.81
+        },
+        {
+          "keyword": "rengjøring kristiansand",
+          "translation": "cleaning Kristiansand",
+          "volume": 20,
+          "competition": "MEDIUM",
+          "cpc": 37.4
+        }
+      ],
+      "descriptionEN": "People specifically searching for cleaning services in Kristiansand. \"Flyttevask kristiansand\" leads with 30 monthly searches and a 63 kr CPC — the highest-volume keyword in the entire market. \"Rengjøring kristiansand\" follows with 20 searches at a lower 37 kr CPC. These city-name searches signal the highest intent: someone typing \"Kristiansand\" is ready to hire.",
+      "descriptionNO": "Folk som spesifikt søker etter rengjøringstjenester i Kristiansand. «Flyttevask kristiansand» leder med 30 månedlige søk og en CPC på 63 kr — det mest søkte enkeltordet i hele markedet. «Rengjøring kristiansand» følger med 20 søk til en lavere CPC på 37 kr. Disse bynavnsøkene signaliserer den høyeste intensjonen: den som skriver «Kristiansand» er klar til å bestille."
+    }
+  ],
+  "serpKeywords": [
+    {
+      "keyword": "renholdsfirma kristiansand",
+      "volume": 10,
+      "organic": [
+        {
+          "rank": 4,
+          "domain": "www.vaskesmart.no"
+        },
+        {
+          "rank": 5,
+          "domain": "www.gulesider.no"
+        },
+        {
+          "rank": 9,
+          "domain": "www.rentogpentservice.no"
+        },
+        {
+          "rank": 10,
+          "domain": "cares.no"
+        },
+        {
+          "rank": 11,
+          "domain": "utvendigrenhold.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "UTVENDIG RENHOLD AS",
+          "rating": 4.9,
+          "reviews": 0
+        },
+        {
+          "rank": 2,
+          "title": "Renglede.no AS",
+          "rating": 4.8,
+          "reviews": 0
+        },
+        {
+          "rank": 3,
+          "title": "Cares avd. Kristiansand",
+          "rating": 0,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "Vaskesmart.no (comparison platform) holds #4 and Gule Sider (Yellow Pages) #5 — directories dominate the top positions, not local businesses. UTVENDIG RENHOLD AS leads Maps at 4.9 stars but with 0 reviews in this SERP. The market is wide open: no local cleaning company has established organic authority for this keyword.",
+      "insightNO": "Vaskesmart.no (sammenligningsplattform) holder #4 og Gule Sider #5 — kataloger dominerer toppposisjonene, ikke lokale bedrifter. UTVENDIG RENHOLD AS leder Maps med 4,9 stjerner, men med 0 anmeldelser i denne SERP-en. Markedet er vidåpent: ingen lokalt renholdsfirma har etablert organisk autoritet for dette søkeordet."
+    },
+    {
+      "keyword": "kontorrengjøring kristiansand",
+      "volume": 0,
+      "organic": [
+        {
+          "rank": 4,
+          "domain": "www.vaskeeksperten.no"
+        },
+        {
+          "rank": 5,
+          "domain": "jkrenhold.no"
+        },
+        {
+          "rank": 6,
+          "domain": "mittanbud.no"
+        },
+        {
+          "rank": 7,
+          "domain": "yoopies.no"
+        },
+        {
+          "rank": 8,
+          "domain": "jkrenhold.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "UTVENDIG RENHOLD AS",
+          "rating": 4.9,
+          "reviews": 269
+        },
+        {
+          "rank": 2,
+          "title": "Rengjøring- Vaskebyrå- UQ Anna Maria",
+          "rating": 4.5,
+          "reviews": 41
+        },
+        {
+          "rank": 3,
+          "title": "Cares avd. Kristiansand",
+          "rating": 0,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "UTVENDIG RENHOLD AS dominates Maps with 269 reviews at 4.9 stars — by far the highest review count in any cleaning SERP across all five cities we analyzed. The runner-up (UQ Anna Maria) has just 41. JK Renhold appears twice in organic results (#5 and #8), showing a national chain with strong SEO. Mitt Anbud (#6) is a marketplace, not a competitor.",
+      "insightNO": "UTVENDIG RENHOLD AS dominerer Maps med 269 anmeldelser og 4,9 stjerner — det desidert høyeste antallet anmeldelser i noen renhold-SERP på tvers av alle fem byene vi analyserte. Nummer to (UQ Anna Maria) har bare 41. JK Renhold vises to ganger i organiske resultater (#5 og #8), noe som viser en nasjonal kjede med sterk SEO. Mitt Anbud (#6) er en markedsplass, ikke en konkurrent."
+    },
+    {
+      "keyword": "trappevask kristiansand",
+      "volume": 0,
+      "organic": [
+        {
+          "rank": 2,
+          "domain": "jkrenhold.no"
+        },
+        {
+          "rank": 3,
+          "domain": "artarenhold.no"
+        },
+        {
+          "rank": 4,
+          "domain": "citymaid.no"
+        },
+        {
+          "rank": 5,
+          "domain": "jkrenhold.no"
+        },
+        {
+          "rank": 6,
+          "domain": "www.vulinservice.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Cares avd. Kristiansand",
+          "rating": 0,
+          "reviews": 0
+        },
+        {
+          "rank": 2,
+          "title": "Vulin Service",
+          "rating": 5,
+          "reviews": 0
+        },
+        {
+          "rank": 3,
+          "title": "Rengjøringsservice Anno 1975 AS",
+          "rating": 4,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "JK Renhold holds two organic positions (#2 and #5) — a national chain squeezing out local companies in a keyword with zero measured volume. Citymaid (#4) is another national player. All three Maps results have 0 reviews, making this the easiest Local Pack to crack: even 5 reviews would give you a significant edge over every competitor.",
+      "insightNO": "JK Renhold holder to organiske posisjoner (#2 og #5) — en nasjonal kjede som presser ut lokale selskaper i et søkeord med null målt volum. Citymaid (#4) er en annen nasjonal aktør. Alle tre Maps-resultatene har 0 anmeldelser, noe som gjør dette til den enkleste Local Pack å erobre: selv 5 anmeldelser ville gitt deg et betydelig forsprang over alle konkurrenter."
+    },
+    {
+      "keyword": "flyttevask kristiansand",
+      "volume": 30,
+      "organic": [
+        {
+          "rank": 4,
+          "domain": "elitevask.no"
+        },
+        {
+          "rank": 5,
+          "domain": "mittanbud.no"
+        },
+        {
+          "rank": 6,
+          "domain": "brabo.no"
+        },
+        {
+          "rank": 8,
+          "domain": "aprlager.no"
+        },
+        {
+          "rank": 9,
+          "domain": "citymaid.no"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "ELITE VASK AS",
+          "rating": 3.3,
+          "reviews": 0
+        },
+        {
+          "rank": 2,
+          "title": "GRETCHEN BØGWALD RENHOLD Flyttevask -Kristiansand",
+          "rating": 5,
+          "reviews": 0
+        },
+        {
+          "rank": 3,
+          "title": "Renglede.no AS",
+          "rating": 4.8,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "The highest-volume keyword in Kristiansand (30/month, 63 kr CPC). Elite Vask leads Maps with a weak 3.3-star rating and 0 reviews — the lowest rating for a #1 Maps position in any cleaning SERP we analyzed. Mitt Anbud (#5) and Citymaid (#9) are national platforms, not local competitors. A local company with a strong GBP profile could easily overtake this SERP.",
+      "insightNO": "Det mest søkte søkeordet i Kristiansand (30/mnd, 63 kr CPC). Elite Vask leder Maps med en svak 3,3-stjerners vurdering og 0 anmeldelser — den laveste ratingen for en #1 Maps-posisjon i noen renhold-SERP vi analyserte. Mitt Anbud (#5) og Citymaid (#9) er nasjonale plattformer, ikke lokale konkurrenter. Et lokalt selskap med en sterk GBP-profil kan enkelt ta over denne SERP-en."
+    }
+  ],
+  "cpcData": [
+    {
+      "keyword": "fasadevask",
+      "cpc": 75.24
+    },
+    {
+      "keyword": "flyttevask kristiansand",
+      "cpc": 62.81
+    },
+    {
+      "keyword": "flyttevask",
+      "cpc": 45.65
+    },
+    {
+      "keyword": "rengjøring kristiansand",
+      "cpc": 37.4
+    },
+    {
+      "keyword": "flyttevask pris",
+      "cpc": 36.3
+    },
+    {
+      "keyword": "gulvvask",
+      "cpc": 9.24
+    }
+  ],
+  "seasonality": {
+    "keyword": "flyttevask",
+    "months": [
+      {
+        "month": "Jan",
+        "volume": 20
+      },
+      {
+        "month": "Feb",
+        "volume": 10
+      },
+      {
+        "month": "Mar",
+        "volume": 10
+      },
+      {
+        "month": "Apr",
+        "volume": 20
+      },
+      {
+        "month": "May",
+        "volume": 30
+      },
+      {
+        "month": "Jun",
+        "volume": 30
+      },
+      {
+        "month": "Jul",
+        "volume": 30
+      },
+      {
+        "month": "Aug",
+        "volume": 10
+      },
+      {
+        "month": "Sep",
+        "volume": 10
+      },
+      {
+        "month": "Oct",
+        "volume": 10
+      },
+      {
+        "month": "Nov",
+        "volume": 10
+      },
+      {
+        "month": "Dec",
+        "volume": 10
+      }
+    ],
+    "peakMonths": [
+      "May",
+      "Jun",
+      "Jul"
+    ],
+    "lowMonths": [
+      "Feb",
+      "Mar",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ],
+    "insightEN": "Flyttevask demand in Kristiansand is heavily seasonal: searches triple from 10 to 30 during May–July (peak moving season) and drop back to 10 for the remaining seven months. This is the most seasonal pattern of any cleaning market we analyzed — effectively a summer-only market. Strategy: concentrate all ad spend in May–July to capture the surge, pause or reduce to minimal budgets the rest of the year.",
+    "insightNO": "Etterspørselen etter flyttevask i Kristiansand er sterkt sesongbetont: søkene tredobles fra 10 til 30 i mai–juli (høysesong for flytting) og faller tilbake til 10 de resterende syv månedene. Dette er det mest sesongpregede mønsteret i noe renholdsmarked vi analyserte — i praksis et sommermarked. Strategi: konsentrer hele annonsebudsjettet i mai–juli for å fange opp bølgen, og pause eller reduser til minimumsbudsjett resten av året."
+  },
+  "insights": [
+    {
+      "icon": "star",
+      "color": "amber",
+      "titleEN": "UTVENDIG RENHOLD AS: 269 reviews at 4.9 stars — record-breaking dominance",
+      "titleNO": "UTVENDIG RENHOLD AS: 269 anmeldelser med 4,9 stjerner — rekorddominans",
+      "textEN": "UTVENDIG RENHOLD AS holds 269 Google reviews at 4.9 stars for \"kontorrengjøring kristiansand\" — by far the highest review count in any cleaning SERP across all five Norwegian cities we analyzed. The runner-up in the same SERP has just 41 reviews. This is exceptional social proof that would take years to match head-on. The opportunity: target sub-niches (flyttevask, trappevask) where their presence is weaker.",
+      "textNO": "UTVENDIG RENHOLD AS har 269 Google-anmeldelser med 4,9 stjerner for «kontorrengjøring kristiansand» — det desidert høyeste antallet anmeldelser i noen renhold-SERP på tvers av alle fem norske byene vi analyserte. Nummer to i samme SERP har bare 41 anmeldelser. Dette er eksepsjonelt sosialt bevis som det vil ta år å matche direkte. Muligheten: målrett undernisjer (flyttevask, trappevask) der tilstedeværelsen deres er svakere.",
+      "statLabel": "reviews (Maps record)",
+      "statValue": "269"
+    },
+    {
+      "icon": "target",
+      "color": "green",
+      "titleEN": "Smallest market (110/mo) — but lowest competition makes it easiest to win",
+      "titleNO": "Minste markedet (110/mnd) — men lavest konkurranse gjør det enklest å vinne",
+      "textEN": "With just 110 monthly searches across 6 keywords, Kristiansand is the smallest cleaning market of the five cities. But the flip side: most Maps results have 0 reviews, organic SERPs are filled with directories (Gule Sider, Mitt Anbud) rather than strong local competitors, and no single company dominates across keywords. A focused local SEO and Google Ads effort can capture outsized market share here.",
+      "textNO": "Med bare 110 månedlige søk fordelt på 6 søkeord er Kristiansand det minste renholdsmarkedet av de fem byene. Men baksiden av medaljen: de fleste Maps-resultatene har 0 anmeldelser, organiske SERP-er er fylt med kataloger (Gule Sider, Mitt Anbud) i stedet for sterke lokale konkurrenter, og ingen enkeltbedrift dominerer på tvers av søkeord. En fokusert lokal SEO- og Google Ads-innsats kan gi uforholdsmessig stor markedsandel her.",
+      "statLabel": "monthly searches (total)",
+      "statValue": "110"
+    },
+    {
+      "icon": "trending-up",
+      "color": "purple",
+      "titleEN": "Fasadevask at 75 kr CPC — the premium niche keyword",
+      "titleNO": "Fasadevask til 75 kr CPC — det dyreste nisjesøkeordet",
+      "textEN": "Fasadevask (facade cleaning) commands the highest CPC in Kristiansand at 75 kr — 50% more expensive than the next keyword (flyttevask kristiansand at 63 kr). This signals that facade cleaning customers have unusually high lifetime value, likely due to recurring annual contracts for commercial buildings and housing associations. Despite only 20 searches/month, each click represents a potential multi-year contract.",
+      "textNO": "Fasadevask har den høyeste CPC-en i Kristiansand på 75 kr — 50 % dyrere enn det nest høyeste søkeordet (flyttevask kristiansand til 63 kr). Dette signaliserer at fasadevaskkunder har uvanlig høy livstidsverdi, sannsynligvis på grunn av gjentakende årlige kontrakter for næringsbygg og borettslag. Til tross for bare 20 søk/mnd, representerer hvert klikk en potensiell flerårig kontrakt.",
+      "statLabel": "CPC (highest)",
+      "statValue": "75 kr"
+    },
+    {
+      "icon": "globe",
+      "color": "blue",
+      "titleEN": "JK Renhold appears in multiple SERPs — national reach in a small market",
+      "titleNO": "JK Renhold dukker opp i flere SERP-er — nasjonal rekkevidde i et lite marked",
+      "textEN": "JK Renhold (jkrenhold.no) holds positions in both \"kontorrengjøring kristiansand\" (#5, #8) and \"trappevask kristiansand\" (#2, #5) — appearing four times across two keywords. Combined with Citymaid in organic results, national chains are filling a vacuum left by weak local players. This confirms that Kristiansand's local cleaning market is underdeveloped: a local company with dedicated city-specific content can outrank these national pages.",
+      "textNO": "JK Renhold (jkrenhold.no) holder posisjoner i både «kontorrengjøring kristiansand» (#5, #8) og «trappevask kristiansand» (#2, #5) — og dukker opp fire ganger på tvers av to søkeord. Sammen med Citymaid i organiske resultater fyller nasjonale kjeder et vakuum som svake lokale aktører har etterlatt. Dette bekrefter at Kristiansands lokale renholdsmarked er underutviklet: et lokalt selskap med dedikert byspesifikt innhold kan rangere over disse nasjonale sidene."
+    }
+  ],
+  "tips": [
+    {
+      "titleEN": "Google Business Profile — own the sub-niches around the 269-review giant",
+      "titleNO": "Google Bedriftsprofil — ta eierskap over undernisjer rundt 269-anmeldelsesgiganten",
+      "textEN": "UTVENDIG RENHOLD AS has 269 reviews — competing head-on is a multi-year project. But their dominance is concentrated in kontorrengjøring. For flyttevask kristiansand (30/month), the Maps leader has just 3.3 stars and 0 reviews. For trappevask, all three Maps results have 0 reviews. Ask every customer for a Google review. Even 10–15 reviews with 4.5+ stars would make you the clear Maps leader for these sub-niches.",
+      "textNO": "UTVENDIG RENHOLD AS har 269 anmeldelser — å konkurrere direkte er et flerårsprosjekt. Men deres dominans er konsentrert i kontorrengjøring. For flyttevask kristiansand (30/mnd) har Maps-lederen bare 3,3 stjerner og 0 anmeldelser. For trappevask har alle tre Maps-resultatene 0 anmeldelser. Be hver kunde om en Google-anmeldelse. Selv 10–15 anmeldelser med 4,5+ stjerner ville gjort deg til den klare Maps-lederen i disse undernisje.",
+      "tagEN": "Free — 15 minutes setup",
+      "tagNO": "Gratis — 15 minutter oppsett"
+    },
+    {
+      "titleEN": "Seasonal Google Ads — spend only May through July",
+      "titleNO": "Sesongbasert Google Ads — bruk kun mai til juli",
+      "textEN": "Kristiansand's cleaning market triples in May–July (30 searches/month) and flatlines the rest of the year (10/month). Running ads year-round wastes 70% of your budget on low-demand months. Set up campaigns for May 1 – July 31 only, targeting \"flyttevask kristiansand\" (63 kr CPC) and \"rengjøring kristiansand\" (37 kr CPC). A 5,000 kr/month budget during these three months equals ~100 clicks and an estimated 4 inquiries.",
+      "textNO": "Kristiansands renholdsmarked tredobles i mai–juli (30 søk/mnd) og flater ut resten av året (10/mnd). Å kjøre annonser hele året sløser bort 70 % av budsjettet på lavetterspørselsmåneder. Sett opp kampanjer kun for 1. mai – 31. juli, rettet mot «flyttevask kristiansand» (63 kr CPC) og «rengjøring kristiansand» (37 kr CPC). Et budsjett på 5 000 kr/mnd i disse tre månedene gir ~100 klikk og anslagsvis 4 henvendelser.",
+      "tagEN": "Paid — from 5,000 kr/month (seasonal)",
+      "tagNO": "Betalt — fra 5 000 kr/mnd (sesongbasert)"
+    },
+    {
+      "titleEN": "Create a city-specific cleaning page to outrank national chains",
+      "titleNO": "Lag en byspesifikk renholdsside for å rangere over nasjonale kjeder",
+      "textEN": "JK Renhold and Citymaid rank for Kristiansand keywords using generic national pages — not Kristiansand-specific content. Create a dedicated landing page targeting \"renholdsfirma kristiansand\", \"flyttevask kristiansand\", and \"rengjøring kristiansand\" with local references (Posebyen, Lund, Vågsbygd) and Kristiansand-specific pricing. Google rewards locally relevant content over generic national pages.",
+      "textNO": "JK Renhold og Citymaid rangerer for Kristiansand-søkeord med generiske nasjonale sider — ikke Kristiansand-spesifikt innhold. Lag en dedikert landingsside rettet mot «renholdsfirma kristiansand», «flyttevask kristiansand» og «rengjøring kristiansand» med lokale referanser (Posebyen, Lund, Vågsbygd) og Kristiansand-spesifikke priser. Google belønner lokalt relevant innhold over generiske nasjonale sider.",
+      "tagEN": "Free — 2–3 hours",
+      "tagNO": "Gratis — 2–3 timer"
+    },
+    {
+      "titleEN": "Target the facade cleaning niche — high value, low competition",
+      "titleNO": "Målrett fasadevask-nisjen — høy verdi, lav konkurranse",
+      "textEN": "Fasadevask has the highest CPC (75 kr) in Kristiansand, signaling that advertisers value these clicks highly — because facade cleaning contracts are recurring and high-ticket. Despite this, the keyword has only 20 searches/month and no strong local Maps presence. Create a service page for facade cleaning in Kristiansand targeting borettslag (housing associations) and commercial buildings. One contract can be worth 50,000+ kr/year.",
+      "textNO": "Fasadevask har den høyeste CPC-en (75 kr) i Kristiansand, noe som signaliserer at annonsører verdsetter disse klikkene høyt — fordi fasadevaskkontrakter er gjentakende og har høy ordrestørrelse. Til tross for dette har søkeordet bare 20 søk/mnd og ingen sterk lokal Maps-tilstedeværelse. Lag en tjenesteside for fasadevask i Kristiansand rettet mot borettslag og næringsbygg. Én kontrakt kan være verdt 50 000+ kr/år.",
+      "tagEN": "Free — 1–2 hours + niche positioning",
+      "tagNO": "Gratis — 1–2 timer + nisjeposisjonering"
+    }
+  ],
+  "calculator": {
+    "avgCpc": 50.0,
+    "defaultPatientValue": 60000,
+    "defaultBudget": 5000,
+    "defaultConversion": 20,
+    "clickToInquiryRate": 0.04,
+    "benchmarkEN": "Cleaning CPCs in Kristiansand range from 9–75 kr (avg. 50 kr). The real value lies in annual contracts: a single kontorrengjøring or fasadevask client on a recurring contract is worth 60,000+ kr/year. At 50 kr average CPC, converting just 1 inquiry into an annual contract pays for months of ad spend.",
+    "benchmarkNO": "Renhold-CPC-er i Kristiansand varierer fra 9–75 kr (snitt 50 kr). Den virkelige verdien ligger i årskontrakter: én enkelt kontorrengjørings- eller fasadevaskkunde på en løpende avtale er verdt 60 000+ kr/år. Med 50 kr gjennomsnittlig CPC dekker én konvertert henvendelse til en årskontrakt flere måneders annonsekostnader."
+  },
+  "sources": [
+    {
+      "name": "DataForSEO – Keywords Data API (Google Ads, Kristiansand)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – SERP API (Google organic, Kristiansand)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – Maps API (Google Maps, Kristiansand)",
+      "url": null
+    },
+    {
+      "name": "DataReportal – Digital 2025: Norway",
+      "url": "https://datareportal.com/reports/digital-2025-norway"
+    },
+    {
+      "name": "BrightLocal – Local Pack Click Share Study 2024",
+      "url": "https://www.brightlocal.com/research/"
+    }
+  ]
+}

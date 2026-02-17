@@ -965,6 +965,22 @@
       "ctaSecondary": "Send oss en melding",
       "disclaimer": "Gratis 15-minutters samtale. Ingen forpliktelser. Vi deler det vi finner uansett."
     },
+    "leadForm": {
+      "badge": "Personlig rapport",
+      "title": "Vil du ha denne analysen for din virksomhet?",
+      "subtitle": "Denne rapporten dekker det generelle markedet. Oppgi dine detaljer, så lager vi en versjon som analyserer din nettside, dine konkurrenter og din posisjonering — helt gratis.",
+      "emailPlaceholder": "Din e-postadresse",
+      "websitePlaceholder": "Din nettside (f.eks. dinfirma.no)",
+      "cityPlaceholder": "Din by",
+      "gdpr": "Jeg samtykker til at DealCatcher behandler mine data for å utarbeide en rapport.",
+      "gdprLink": "Personvernerklæring",
+      "submit": "Send meg en personlig rapport",
+      "success": "Vi har mottatt det!",
+      "successMessage": "Vi skal se på nettsiden din og det lokale markedet, og sende deg en personlig analyse innen 48 timer.",
+      "error": "Noe gikk galt. Prøv igjen eller send oss en e-post til contact@dealcatcher.io.",
+      "validationEmail": "Oppgi en gyldig e-postadresse",
+      "validationRequired": "Dette feltet er påkrevd"
+    },
     "footer": {
       "title": "Kilder og metode",
       "description": "Data innsamlet {dataDate} via Google Ads API (gjennom DataForSEO). Søkevolumer er 12-måneders gjennomsnitt. Annonsekostnader gjenspeiler reelle Google Ads-auksjonspriser. Konkurransedata kommer fra levende Google-søkeresultater.",
