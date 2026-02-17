@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/accordion";
 import { formatNumber, formatCpc, competitionColor, groupColorClasses } from "@/lib/reports/helpers";
 import { t } from "@/lib/reports/types";
-import { Search, Globe } from "lucide-react";
+import { Search, Globe, AlertTriangle } from "lucide-react";
 import type { KeywordGroup } from "@/lib/reports/types";
 import type { Locale } from "@/lib/i18n/config";
 
@@ -31,12 +31,15 @@ interface KeywordsSectionProps {
   };
   nicheLower: string;
   city: string;
+  disclaimer?: string;
 }
 
-export function KeywordsSection({ groups, lang, dict, nicheLower, city }: KeywordsSectionProps) {
+export function KeywordsSection({ groups, lang, dict, nicheLower, city, disclaimer }: KeywordsSectionProps) {
   const subtitle = dict.subtitle
     .replaceAll("{nicheLower}", nicheLower)
     .replaceAll("{city}", city);
+
+  const hasRestricted = groups.some((g) => g.keywords.some((kw) => kw.adRestricted));
 
   return (
     <section id="keywords" className="py-20 md:py-28">
@@ -55,6 +58,21 @@ export function KeywordsSection({ groups, lang, dict, nicheLower, city }: Keywor
           <h2 className="mb-4">{dict.title}</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">{subtitle}</p>
         </motion.div>
+
+        {disclaimer && hasRestricted && (
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={viewportOnce}
+            variants={fadeUp}
+            className="max-w-3xl mx-auto mb-6"
+          >
+            <div className="flex gap-3 items-start p-4 rounded-lg border border-amber-500/20 bg-amber-500/5 text-sm text-amber-200/80 leading-relaxed">
+              <AlertTriangle className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
+              <p>{disclaimer}</p>
+            </div>
+          </motion.div>
+        )}
 
         <motion.div
           initial="hidden"
@@ -112,8 +130,15 @@ export function KeywordsSection({ groups, lang, dict, nicheLower, city }: Keywor
                         </thead>
                         <tbody>
                           {group.keywords.map((kw) => (
-                            <tr key={kw.keyword} className="border-b border-border/50 last:border-0">
-                              <td className="py-2.5 pr-4 font-mono text-foreground">{kw.keyword}</td>
+                            <tr key={kw.keyword} className={`border-b border-border/50 last:border-0 ${kw.adRestricted ? "opacity-60" : ""}`}>
+                              <td className="py-2.5 pr-4 font-mono text-foreground">
+                                <span className="inline-flex items-center gap-1.5">
+                                  {kw.keyword}
+                                  {kw.adRestricted && (
+                                    <AlertTriangle className="w-3.5 h-3.5 text-amber-400 shrink-0" aria-label="Ad restrictions may apply" />
+                                  )}
+                                </span>
+                              </td>
                               {lang === "en" && (
                                 <td className="py-2.5 pr-4 text-muted-foreground hidden sm:table-cell">{kw.translation}</td>
                               )}

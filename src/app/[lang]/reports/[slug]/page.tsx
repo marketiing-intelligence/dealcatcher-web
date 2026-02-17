@@ -17,6 +17,7 @@ import {
 } from "@/components/sections/report";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { getReportData, getAllReportSlugs } from "@/lib/reports";
+import { t } from "@/lib/reports/types";
 import { i18n, type Locale } from "@/lib/i18n/config";
 import type { Metadata } from "next";
 
@@ -106,6 +107,7 @@ export default async function ReportPage({ params }: PageProps) {
           dict={rd.keywords}
           nicheLower={nicheLower}
           city={data.meta.city}
+          disclaimer={t(data.meta, lang, "disclaimer") || undefined}
         />
         <ReportLeadForm
           lang={lang}

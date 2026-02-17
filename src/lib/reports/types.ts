@@ -7,6 +7,8 @@ export interface ReportMeta {
   locationCode: number;
   dataDate: string;
   totalSearchVolume: number;
+  disclaimerEN?: string;
+  disclaimerNO?: string;
 }
 
 export interface ReportMetrics {
@@ -22,6 +24,7 @@ export interface Keyword {
   volume: number;
   competition: "LOW" | "MEDIUM" | "HIGH";
   cpc: number;
+  adRestricted?: boolean;
 }
 
 export interface KeywordGroup {
