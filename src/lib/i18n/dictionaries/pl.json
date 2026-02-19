@@ -26,7 +26,7 @@
         "Hosting i utrzymanie w cenie"
       ],
       "priceLabel": "Od",
-      "price": "4 000 zł",
+      "price": "3 000 zł",
       "priceSuffix": "+ 200 zł/mies."
     },
     "ads": {
@@ -59,7 +59,7 @@
         "title": "Nie masz jeszcze strony?",
         "description": "Jesteś świetnym fachowcem, ale klienci nie mogą Cię znaleźć w internecie. Twoja konkurencja ze stronami zgarnia zlecenia, które powinny być Twoje. Asystenci AI nie mogą Cię polecać, bo cyfrowo nie istniejesz.",
         "cta": "Chcę profesjonalną stronę",
-        "features": ["Gotowa na AI Search", "Responsywna", "Od 4 000 zł"]
+        "features": ["Gotowa na AI Search", "Responsywna", "Od 3 000 zł"]
       },
       {
         "title": "Masz stronę, ale nie działa?",
@@ -553,7 +553,7 @@
       },
       {
         "provider": "DealCatcher",
-        "price": "4 000 zł",
+        "price": "3 000 zł",
         "time": "5-7 dni",
         "meetings": "1 rozmowa",
         "support": "W cenie",
@@ -663,7 +663,7 @@
           "name": "Starter",
           "tagline": "Zaistniej online",
           "description": "Profesjonalna strona, która buduje Twoją obecność w sieci.",
-          "setup": "4 000 zł",
+          "setup": "3 000 zł",
           "monthly": "200 zł",
           "monthlyLabel": "/mies.",
           "features": ["Profesjonalny projekt z szablonu (12 opcji)", "Optymalizacja pod AI Search", "Responsywna na każdym urządzeniu", "Formularz kontaktowy", "Google Analytics", "Hosting w cenie", "Monitoring dostępności 24/7", "Wsparcie mailowe (odpowiedź do 24h)"],
@@ -739,7 +739,7 @@
       "subtitle": "Masz jeszcze pytania? Napisz do nas na hello@dealcatcher.io",
       "items": [
         { "question": "Nie potrzebuję strony — mam wystarczająco dużo zleceń z poleceń", "answer": "Świetnie! Ale strona pozwala Ci wybierać lepsze zlecenia i brać wyższe stawki. Kiedy klienci widzą Twoją profesjonalną obecność online, są gotowi płacić więcej. Poza tym polecenia kiedyś się kończą — strona daje Ci stały dopływ nowych zapytań." },
-        { "question": "To za drogo", "answer": "Strona zwraca się po 2-3 nowych klientach. Jeśli bierzesz 1500+ zł za zlecenie, inwestycja 4000 zł zwraca się niemal natychmiast. Miesięczna opłata to mniej niż jedna godzina Twojej pracy — a obejmuje hosting, utrzymanie i wsparcie." },
+        { "question": "To za drogo", "answer": "Strona zwraca się po 2-3 nowych klientach. Jeśli bierzesz 1500+ zł za zlecenie, inwestycja 3000 zł zwraca się niemal natychmiast. Miesięczna opłata to mniej niż jedna godzina Twojej pracy — a obejmuje hosting, utrzymanie i wsparcie." },
         { "question": "Nie mam na to czasu", "answer": "Zaprojektowaliśmy proces specjalnie dla zapracowanych fachowców. Brief zajmuje 15 minut. Jedna rozmowa 15 minut. To wszystko. Robimy absolutnie wszystko — projekt, kod, hosting, konfiguracja domeny i utrzymanie. Nie musisz uczyć się niczego technicznego." },
         { "question": "Mam stronę na Facebooku — czy to nie wystarczy?", "answer": "Facebook to uzupełnienie, nie zamiennik strony. Google słabo indeksuje profile na Facebooku. Asystenci AI jak ChatGPT nie mogą Cię polecić na podstawie Facebooka. Wielu klientów oczekuje, że \"prawdziwa\" firma ma własną stronę — sam Facebook może wyglądać nieprofesjonalnie." },
         { "question": "Czy mogę sam aktualizować stronę?", "answer": "Nie musisz. Zmiany treści są wliczone w plan Growth (bez limitu) lub dostępne na życzenie w planie Starter. Napisz nam co chcesz zmienić, a zrobimy to w ciągu 24 godzin. Żadnych umiejętności technicznych nie potrzeba." },

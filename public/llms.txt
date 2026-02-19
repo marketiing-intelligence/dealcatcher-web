@@ -12,7 +12,7 @@
 
 ## Pricing
 
-- Starter: From 10,000 NOK / 4,000 PLN (one-time) + hosting from 500 NOK / 200 PLN per month
+- Starter: From 10,000 NOK / 3,000 PLN (one-time) + hosting from 500 NOK / 200 PLN per month
 - Growth: From 15,000 NOK / 6,000 PLN (one-time) + hosting from 1,000 NOK / 400 PLN per month
 - Accelerator: From 18,000 NOK / 7,000 PLN (one-time) + hosting from 3,500 NOK / 1,400 PLN per month
 

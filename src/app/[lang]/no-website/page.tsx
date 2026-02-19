@@ -27,7 +27,7 @@ export async function generateMetadata({
   const descriptions: Record<Locale, string> = {
     en: "Get found online by clients searching for carpenters, plumbers, and electricians. AI-ready, WCAG compliant websites starting at $1,000.",
     no: "Bli funnet pa nett av kunder som soker etter snekkere, rorleggere og elektrikere. AI-klare, WCAG-kompatible nettsider fra 10 000 kr.",
-    pl: "Zostań znaleziony w internecie przez klientów szukających Twoich usług. Profesjonalne strony gotowe na AI od 4 000 zł.",
+    pl: "Zostań znaleziony w internecie przez klientów szukających Twoich usług. Profesjonalne strony gotowe na AI od 3 000 zł.",
   };
 
   return {

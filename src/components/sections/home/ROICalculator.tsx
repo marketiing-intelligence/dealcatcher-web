@@ -49,7 +49,7 @@ const localeConfig: Record<
 > = {
   en: { defaultAvgJob: 5000, minAvgJob: 1000, maxAvgJob: 50000, stepAvgJob: 500, investmentSetup: 10000, investmentMonthly: 500, numberLocale: "en-US" },
   no: { defaultAvgJob: 5000, minAvgJob: 1000, maxAvgJob: 50000, stepAvgJob: 500, investmentSetup: 10000, investmentMonthly: 500, numberLocale: "nb-NO" },
-  pl: { defaultAvgJob: 1500, minAvgJob: 200, maxAvgJob: 20000, stepAvgJob: 100, investmentSetup: 4000, investmentMonthly: 200, numberLocale: "pl-PL" },
+  pl: { defaultAvgJob: 1500, minAvgJob: 200, maxAvgJob: 20000, stepAvgJob: 100, investmentSetup: 3000, investmentMonthly: 200, numberLocale: "pl-PL" },
 };
 
 export function ROICalculator({ lang, dict }: ROICalculatorProps) {
