@@ -528,6 +528,9 @@
       "investmentLabel": "Total investering forste ar",
       "roiExplanation": "Basert pa dine tall: en kunde betaler for hele nettside-investeringen din"
     },
+    "inputsHeading": "Dine tall",
+    "resultsHeading": "Din potensielle inntekt",
+    "currency": "NOK",
     "cta": "Begynn a generere leads",
     "disclaimer": "Resultater kan variere. Kalkulatoren viser potensial basert pa bransjegjennomsnitt."
   },
@@ -563,8 +566,8 @@
     "labels": {
       "price": "Pris",
       "time": "Leveringstid",
-      "meetings": "Moter pakrevd",
-      "support": "Lopende support"
+      "meetings": "Møter",
+      "support": "Support"
     }
   },
   "withdrawal": {

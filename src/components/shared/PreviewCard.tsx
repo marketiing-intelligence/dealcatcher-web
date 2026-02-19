@@ -7,16 +7,24 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import type { PortfolioItem } from "@/lib/portfolio-data";
+import type { Locale } from "@/lib/i18n/config";
+
+const viewDemoLabels: Record<Locale, string> = {
+  en: "View Live Demo",
+  no: "Se Live Demo",
+  pl: "Zobacz Demo",
+};
 
 interface PreviewCardProps {
   item: PortfolioItem;
+  lang?: Locale;
   showPremiumBadge?: boolean;
 }
 
 const ROTATION_RANGE = 10;
 const HALF_ROTATION_RANGE = ROTATION_RANGE / 2;
 
-export function PreviewCard({ item, showPremiumBadge = false }: PreviewCardProps) {
+export function PreviewCard({ item, lang, showPremiumBadge = false }: PreviewCardProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
   const hasVideo = !!item.previewVideo;
@@ -163,7 +171,7 @@ export function PreviewCard({ item, showPremiumBadge = false }: PreviewCardProps
               rel="noopener noreferrer"
             >
               <ExternalLink className="h-4 w-4 mr-2" />
-              View Live Demo
+              {lang ? viewDemoLabels[lang] : "View Live Demo"}
             </a>
           </Button>
         </motion.div>

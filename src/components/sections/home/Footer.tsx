@@ -12,7 +12,7 @@ interface FooterProps {
     services: string;
     contact: string;
     newWebsite: string;
-    wcagCompliance: string;
+    wcagCompliance?: string;
     copyright: string;
     privacy: string;
     terms: string;
@@ -55,14 +55,16 @@ export function Footer({ lang, dict }: FooterProps) {
                   {dict.newWebsite}
                 </Link>
               </li>
-              <li>
-                <Link
-                  href={`/${lang}/wcag-compliance`}
-                  className="text-foreground hover:text-primary transition-colors"
-                >
-                  {dict.wcagCompliance}
-                </Link>
-              </li>
+              {dict.wcagCompliance && (
+                <li>
+                  <Link
+                    href={`/${lang}/wcag-compliance`}
+                    className="text-foreground hover:text-primary transition-colors"
+                  >
+                    {dict.wcagCompliance}
+                  </Link>
+                </li>
+              )}
             </ul>
           </div>
 

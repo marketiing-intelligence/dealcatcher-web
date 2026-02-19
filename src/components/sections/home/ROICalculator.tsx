@@ -16,6 +16,9 @@ interface ROICalculatorProps {
     title: string;
     titleHighlight: string;
     subtitle: string;
+    inputsHeading: string;
+    resultsHeading: string;
+    currency: string;
     avgJobLabel: string;
     avgJobPlaceholder: string;
     monthlyLeadsLabel: string;
@@ -32,19 +35,37 @@ interface ROICalculatorProps {
   };
 }
 
+const localeConfig: Record<
+  Locale,
+  {
+    defaultAvgJob: number;
+    minAvgJob: number;
+    maxAvgJob: number;
+    stepAvgJob: number;
+    investmentSetup: number;
+    investmentMonthly: number;
+    numberLocale: string;
+  }
+> = {
+  en: { defaultAvgJob: 5000, minAvgJob: 1000, maxAvgJob: 50000, stepAvgJob: 500, investmentSetup: 10000, investmentMonthly: 500, numberLocale: "en-US" },
+  no: { defaultAvgJob: 5000, minAvgJob: 1000, maxAvgJob: 50000, stepAvgJob: 500, investmentSetup: 10000, investmentMonthly: 500, numberLocale: "nb-NO" },
+  pl: { defaultAvgJob: 1500, minAvgJob: 200, maxAvgJob: 20000, stepAvgJob: 100, investmentSetup: 4000, investmentMonthly: 200, numberLocale: "pl-PL" },
+};
+
 export function ROICalculator({ lang, dict }: ROICalculatorProps) {
-  const [avgJobValue, setAvgJobValue] = useState(5000);
+  const config = localeConfig[lang];
+  const [avgJobValue, setAvgJobValue] = useState(config.defaultAvgJob);
   const [monthlyLeads, setMonthlyLeads] = useState(10);
   const [conversionRate, setConversionRate] = useState(30);
 
   const monthlyCustomers = Math.round(monthlyLeads * (conversionRate / 100));
   const monthlyRevenue = monthlyCustomers * avgJobValue;
   const yearlyRevenue = monthlyRevenue * 12;
-  const investment = 10000 + 500 * 12; // Website + 12 months hosting
+  const investment = config.investmentSetup + config.investmentMonthly * 12;
   const roi = Math.round((yearlyRevenue / investment) * 100);
 
   const formatNumber = (num: number) =>
-    num.toLocaleString(lang === "no" ? "nb-NO" : "en-US");
+    num.toLocaleString(config.numberLocale);
 
   return (
     <section className="py-20 md:py-32 bg-gradient-to-b from-[#141414] to-[#0A0A0A] relative overflow-hidden">
@@ -86,7 +107,7 @@ export function ROICalculator({ lang, dict }: ROICalculatorProps) {
             <div className="bg-card border border-border rounded-2xl p-6 md:p-8">
               <h3 className="text-lg font-semibold mb-6 flex items-center gap-2">
                 <Zap className="w-5 h-5 text-primary" />
-                {lang === "no" ? "Dine tall" : "Your Numbers"}
+                {dict.inputsHeading}
               </h3>
 
               <div className="space-y-6">
@@ -98,15 +119,15 @@ export function ROICalculator({ lang, dict }: ROICalculatorProps) {
                   <div className="flex items-center gap-3">
                     <input
                       type="range"
-                      min="1000"
-                      max="50000"
-                      step="500"
+                      min={config.minAvgJob}
+                      max={config.maxAvgJob}
+                      step={config.stepAvgJob}
                       value={avgJobValue}
                       onChange={(e) => setAvgJobValue(Number(e.target.value))}
                       className="flex-1 h-2 bg-background rounded-lg appearance-none cursor-pointer accent-primary"
                     />
-                    <span className="w-24 text-right font-mono text-primary font-semibold">
-                      {formatNumber(avgJobValue)} NOK
+                    <span className="w-28 text-right font-mono text-primary font-semibold">
+                      {formatNumber(avgJobValue)} {dict.currency}
                     </span>
                   </div>
                 </div>
@@ -125,7 +146,7 @@ export function ROICalculator({ lang, dict }: ROICalculatorProps) {
                       onChange={(e) => setMonthlyLeads(Number(e.target.value))}
                       className="flex-1 h-2 bg-background rounded-lg appearance-none cursor-pointer accent-primary"
                     />
-                    <span className="w-24 text-right font-mono text-primary font-semibold">
+                    <span className="w-28 text-right font-mono text-primary font-semibold">
                       {monthlyLeads}
                     </span>
                   </div>
@@ -146,7 +167,7 @@ export function ROICalculator({ lang, dict }: ROICalculatorProps) {
                       onChange={(e) => setConversionRate(Number(e.target.value))}
                       className="flex-1 h-2 bg-background rounded-lg appearance-none cursor-pointer accent-primary"
                     />
-                    <span className="w-24 text-right font-mono text-primary font-semibold">
+                    <span className="w-28 text-right font-mono text-primary font-semibold">
                       {conversionRate}%
                     </span>
                   </div>
@@ -158,28 +179,28 @@ export function ROICalculator({ lang, dict }: ROICalculatorProps) {
             <div className="bg-gradient-to-br from-primary/10 to-green-500/10 border border-primary/20 rounded-2xl p-6 md:p-8">
               <h3 className="text-lg font-semibold mb-6 flex items-center gap-2">
                 <TrendingUp className="w-5 h-5 text-green-500" />
-                {lang === "no" ? "Din potensielle inntekt" : "Your Potential Revenue"}
+                {dict.resultsHeading}
               </h3>
 
               <div className="space-y-4">
                 <div className="flex justify-between items-center py-3 border-b border-border/50">
                   <span className="text-muted-foreground">{dict.results.monthlyRevenue}</span>
                   <span className="text-xl font-bold text-foreground">
-                    {formatNumber(monthlyRevenue)} NOK
+                    {formatNumber(monthlyRevenue)} {dict.currency}
                   </span>
                 </div>
 
                 <div className="flex justify-between items-center py-3 border-b border-border/50">
                   <span className="text-muted-foreground">{dict.results.yearlyRevenue}</span>
                   <span className="text-2xl font-bold text-green-500">
-                    {formatNumber(yearlyRevenue)} NOK
+                    {formatNumber(yearlyRevenue)} {dict.currency}
                   </span>
                 </div>
 
                 <div className="flex justify-between items-center py-3 border-b border-border/50">
                   <span className="text-muted-foreground">{dict.results.investmentLabel}</span>
                   <span className="text-lg font-semibold text-muted-foreground">
-                    {formatNumber(investment)} NOK
+                    {formatNumber(investment)} {dict.currency}
                   </span>
                 </div>
 

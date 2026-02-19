@@ -528,6 +528,9 @@
       "investmentLabel": "Total first year investment",
       "roiExplanation": "Based on your numbers: one customer pays for your entire website investment"
     },
+    "inputsHeading": "Your Numbers",
+    "resultsHeading": "Your Potential Revenue",
+    "currency": "NOK",
     "cta": "Start generating leads",
     "disclaimer": "Results may vary. Calculator shows potential based on industry averages."
   },
@@ -562,9 +565,9 @@
     ],
     "labels": {
       "price": "Price",
-      "time": "Delivery time",
-      "meetings": "Meetings required",
-      "support": "Ongoing support"
+      "time": "Timeline",
+      "meetings": "Meetings",
+      "support": "Support"
     }
   },
   "withdrawal": {

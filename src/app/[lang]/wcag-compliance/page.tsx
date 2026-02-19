@@ -1,3 +1,4 @@
+import { redirect } from "next/navigation";
 import { Navbar } from "@/components/shared/Navbar";
 import { HeroSection } from "@/components/sections/wcag/HeroSection";
 import { ProblemSection } from "@/components/sections/wcag/ProblemSection";
@@ -9,6 +10,7 @@ import { CTASection } from "@/components/sections/wcag/CTASection";
 import { Footer } from "@/components/sections/home/Footer";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import type { Locale } from "@/lib/i18n/config";
+import { getAlternates } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -16,6 +18,10 @@ export async function generateMetadata({
   params: Promise<{ lang: Locale }>;
 }) {
   const { lang } = await params;
+
+  if (lang === "pl") {
+    return { title: "DealCatcher" };
+  }
 
   return {
     title:
@@ -26,6 +32,7 @@ export async function generateMetadata({
       lang === "no"
         ? "97% av norske nettsider feiler tilgjengelighetsrevisjoner. Fa en gratis WCAG-revisjon og laer hvordan du blir kompatibel med norsk lov."
         : "97% of Norwegian websites fail accessibility audits. Get a free WCAG audit and learn how to become compliant with Norwegian law.",
+    alternates: getAlternates(lang, "/wcag-compliance", ["en", "no"]),
   };
 }
 
@@ -35,11 +42,19 @@ export default async function WCAGCompliancePage({
   params: Promise<{ lang: Locale }>;
 }) {
   const { lang } = await params;
-  const dict = await getDictionary(lang);
+
+  // WCAG page doesn't exist for Polish market — redirect to homepage
+  if (lang === "pl") {
+    redirect(`/pl`);
+  }
+
+  // After redirect guard, lang is "en" | "no" — both have wcagPage
+  const wcagLang = lang as "en" | "no";
+  const dict = await getDictionary(wcagLang) as any;
 
   return (
     <>
-      <Navbar lang={lang} dict={dict} />
+      <Navbar lang={wcagLang} dict={dict} />
       <main className="pt-16 md:pt-20">
         <HeroSection dict={dict.wcagPage.hero} />
         <ProblemSection dict={dict.wcagPage.problem} />
@@ -47,9 +62,9 @@ export default async function WCAGCompliancePage({
         <PricingSection dict={dict.wcagPage.pricing} />
         <ProcessSection dict={dict.wcagPage.process} />
         <TrustSection dict={dict.wcagPage.trust} />
-        <CTASection lang={lang} dict={dict.wcagPage.cta} />
+        <CTASection lang={wcagLang} dict={dict.wcagPage.cta} />
       </main>
-      <Footer lang={lang} dict={dict.footer} />
+      <Footer lang={wcagLang} dict={dict.footer} />
     </>
   );
 }

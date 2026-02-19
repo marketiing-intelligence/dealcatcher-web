@@ -2,6 +2,7 @@ import { Navbar } from "@/components/shared/Navbar";
 import { Footer } from "@/components/sections/home/Footer";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import type { Locale } from "@/lib/i18n/config";
+import { getAlternates } from "@/lib/seo";
 import { WithdrawalForm } from "@/components/forms/WithdrawalForm";
 
 export async function generateMetadata({
@@ -11,15 +12,21 @@ export async function generateMetadata({
 }) {
   const { lang } = await params;
 
+  const titles: Record<Locale, string> = {
+    en: "Withdrawal Form | DealCatcher",
+    no: "Angreskjema | DealCatcher",
+    pl: "Formularz Odstąpienia | DealCatcher",
+  };
+  const descriptions: Record<Locale, string> = {
+    en: "Use this form to withdraw from your contract within 14 days under consumer law.",
+    no: "Bruk dette skjemaet for a trekke deg fra avtalen innen 14 dager i henhold til angrerettloven.",
+    pl: "Użyj tego formularza, aby odstąpić od umowy w ciągu 14 dni zgodnie z ustawą o prawach konsumenta.",
+  };
+
   return {
-    title:
-      lang === "no"
-        ? "Angreskjema | DealCatcher"
-        : "Withdrawal Form | DealCatcher",
-    description:
-      lang === "no"
-        ? "Bruk dette skjemaet for a trekke deg fra avtalen innen 14 dager i henhold til angrerettloven."
-        : "Use this form to withdraw from your contract within 14 days under consumer law.",
+    title: titles[lang],
+    description: descriptions[lang],
+    alternates: getAlternates(lang, "/withdrawal"),
   };
 }
 

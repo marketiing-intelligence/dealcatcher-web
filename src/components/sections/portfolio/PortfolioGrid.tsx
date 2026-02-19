@@ -6,9 +6,10 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { staggerContainer, staggerItem, viewportOnce } from "@/lib/animations";
 import {
-  portfolioItems,
+  getPortfolioItems,
   type Industry,
 } from "@/lib/portfolio-data";
+import type { Locale } from "@/lib/i18n/config";
 import { Filter } from "lucide-react";
 import { useState } from "react";
 
@@ -20,6 +21,7 @@ const industries: (Industry | "all")[] = [
 ];
 
 interface PortfolioGridProps {
+  lang: Locale;
   dict: {
     filterAll: string;
     industryLabels: {
@@ -31,13 +33,14 @@ interface PortfolioGridProps {
   };
 }
 
-export function PortfolioGrid({ dict }: PortfolioGridProps) {
+export function PortfolioGrid({ lang, dict }: PortfolioGridProps) {
   const [activeFilter, setActiveFilter] = useState<Industry | "all">("all");
+  const localizedItems = getPortfolioItems(lang);
 
   const filteredItems =
     activeFilter === "all"
-      ? portfolioItems
-      : portfolioItems.filter((item) => item.industry === activeFilter);
+      ? localizedItems
+      : localizedItems.filter((item) => item.industry === activeFilter);
 
   return (
     <section className="pb-20 md:pb-32">
@@ -72,7 +75,7 @@ export function PortfolioGrid({ dict }: PortfolioGridProps) {
         >
           {filteredItems.map((item) => (
             <motion.div key={item.id} variants={staggerItem} layout>
-              <PreviewCard item={item} showPremiumBadge />
+              <PreviewCard item={item} lang={lang} showPremiumBadge />
             </motion.div>
           ))}
         </motion.div>

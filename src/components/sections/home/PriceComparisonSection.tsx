@@ -87,42 +87,40 @@ export function PriceComparisonSection({ dict }: PriceComparisonSectionProps) {
               </h3>
 
               <div className="space-y-4">
-                <div className="flex justify-between items-center py-2 border-b border-border/50">
-                  <span className="text-muted-foreground text-sm">{dict.labels.price}</span>
-                  <span className={`font-semibold ${item.highlight ? "text-primary text-lg" : "text-foreground"}`}>
+                <div className="flex justify-between items-baseline gap-3 py-2 border-b border-border/50">
+                  <span className="text-muted-foreground text-sm shrink-0">{dict.labels.price}</span>
+                  <span className={`font-semibold whitespace-nowrap text-right ${item.highlight ? "text-primary text-lg" : "text-foreground"}`}>
                     {item.price}
                   </span>
                 </div>
 
-                <div className="flex justify-between items-center py-2 border-b border-border/50">
-                  <span className="text-muted-foreground text-sm">{dict.labels.time}</span>
-                  <span className={`font-medium ${item.highlight ? "text-green-500" : "text-foreground"}`}>
+                <div className="flex justify-between items-baseline gap-3 py-2 border-b border-border/50">
+                  <span className="text-muted-foreground text-sm shrink-0">{dict.labels.time}</span>
+                  <span className={`font-medium whitespace-nowrap text-right ${item.highlight ? "text-green-500" : "text-foreground"}`}>
                     {item.time}
                   </span>
                 </div>
 
-                <div className="flex justify-between items-center py-2 border-b border-border/50">
-                  <span className="text-muted-foreground text-sm">{dict.labels.meetings}</span>
-                  <span className={`font-medium ${item.highlight ? "text-green-500" : "text-foreground"}`}>
+                <div className="flex justify-between items-baseline gap-3 py-2 border-b border-border/50">
+                  <span className="text-muted-foreground text-sm shrink-0">{dict.labels.meetings}</span>
+                  <span className={`font-medium whitespace-nowrap text-right ${item.highlight ? "text-green-500" : "text-foreground"}`}>
                     {item.meetings}
                   </span>
                 </div>
 
-                <div className="flex justify-between items-center py-2">
-                  <span className="text-muted-foreground text-sm">{dict.labels.support}</span>
-                  <span className="font-medium flex items-center gap-1">
+                <div className="flex justify-between items-center gap-3 py-2">
+                  <span className="text-muted-foreground text-sm shrink-0">{dict.labels.support}</span>
+                  <span className="font-medium flex items-center gap-1 whitespace-nowrap">
                     {item.highlight ? (
                       <>
                         <Check className="w-4 h-4 text-green-500" />
                         <span className="text-green-500">{item.support}</span>
                       </>
-                    ) : item.support === "Limited" || item.support === "Extra cost" ? (
+                    ) : (
                       <>
                         <X className="w-4 h-4 text-red-500" />
                         <span className="text-red-500">{item.support}</span>
                       </>
-                    ) : (
-                      <span className="text-foreground">{item.support}</span>
                     )}
                   </span>
                 </div>

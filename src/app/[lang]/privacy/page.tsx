@@ -2,6 +2,7 @@ import { Navbar } from "@/components/shared/Navbar";
 import { Footer } from "@/components/sections/home/Footer";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import type { Locale } from "@/lib/i18n/config";
+import { getAlternates } from "@/lib/seo";
 import Link from "next/link";
 
 export async function generateMetadata({
@@ -11,15 +12,21 @@ export async function generateMetadata({
 }) {
   const { lang } = await params;
 
+  const titles: Record<Locale, string> = {
+    en: "Privacy Policy | DealCatcher",
+    no: "Personvernerklæring | DealCatcher",
+    pl: "Polityka Prywatności | DealCatcher",
+  };
+  const descriptions: Record<Locale, string> = {
+    en: "Read our privacy policy to understand how we collect, use, and protect your personal information.",
+    no: "Les vår personvernerklæring for å forstå hvordan vi samler inn, bruker og beskytter dine personopplysninger.",
+    pl: "Przeczytaj naszą politykę prywatności, aby zrozumieć jak zbieramy, wykorzystujemy i chronimy Twoje dane osobowe.",
+  };
+
   return {
-    title:
-      lang === "no"
-        ? "Personvernerklæring | DealCatcher"
-        : "Privacy Policy | DealCatcher",
-    description:
-      lang === "no"
-        ? "Les vår personvernerklæring for å forstå hvordan vi samler inn, bruker og beskytter dine personopplysninger."
-        : "Read our privacy policy to understand how we collect, use, and protect your personal information.",
+    title: titles[lang],
+    description: descriptions[lang],
+    alternates: getAlternates(lang, "/privacy"),
   };
 }
 

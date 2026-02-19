@@ -19,6 +19,7 @@ import { getDictionary } from "@/lib/i18n/dictionaries";
 import { getReportData, getAllReportSlugs } from "@/lib/reports";
 import { t } from "@/lib/reports/types";
 import { i18n, type Locale } from "@/lib/i18n/config";
+import { getAlternates } from "@/lib/seo";
 import type { Metadata } from "next";
 
 const nicheNames: Record<string, string> = {
@@ -68,15 +69,18 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       ? `${data.meta.totalSearchVolume} månedlige søk for ${niche} i ${data.meta.city}. Se søkeord, konkurrenter og CPC-data.`
       : `${data.meta.totalSearchVolume} monthly searches for ${niche} in ${data.meta.city}. See keywords, competitors, and CPC data.`;
 
+  const localeMap: Record<Locale, string> = { en: "en_US", no: "nb_NO", pl: "pl_PL" };
+
   return {
     title,
     description,
+    alternates: getAlternates(lang, `/reports/${slug}`),
     openGraph: {
       title,
       description,
       url: `https://dealcatcher.io/${lang}/reports/${slug}`,
       siteName: "DealCatcher",
-      locale: lang === "no" ? "nb_NO" : "en_US",
+      locale: localeMap[lang],
       type: "article",
     },
   };

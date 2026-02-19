@@ -4,21 +4,22 @@ import { getAllReportSlugs } from "@/lib/reports";
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://dealcatcher.io";
 
-  // Define all routes
-  const routes = [
-    "",
-    "/no-website",
-    "/wcag",
-  ];
-
   // Define all locales
-  const locales = ["en", "no"];
+  const locales = ["en", "no", "pl"];
+
+  // Routes per locale — PL doesn't have WCAG
+  const routesByLocale: Record<string, string[]> = {
+    en: ["", "/no-website", "/wcag", "/portfolio", "/contact"],
+    no: ["", "/no-website", "/wcag", "/portfolio", "/contact"],
+    pl: ["", "/no-website", "/portfolio", "/contact"],
+  };
 
   // Generate sitemap entries for all routes and locales
   const entries: MetadataRoute.Sitemap = [];
 
-  for (const route of routes) {
-    for (const locale of locales) {
+  for (const locale of locales) {
+    const routes = routesByLocale[locale] || ["", "/no-website"];
+    for (const route of routes) {
       entries.push({
         url: `${baseUrl}/${locale}${route}`,
         lastModified: new Date(),

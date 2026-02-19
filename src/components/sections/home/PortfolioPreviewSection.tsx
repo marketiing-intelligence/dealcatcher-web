@@ -11,7 +11,7 @@ import {
   viewportOnce,
   fadeUp,
 } from "@/lib/animations";
-import { featuredPortfolioItems } from "@/lib/portfolio-data";
+import { getFeaturedPortfolioItems } from "@/lib/portfolio-data";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import type { Locale } from "@/lib/i18n/config";
@@ -47,9 +47,9 @@ export function PortfolioPreviewSection({
           variants={staggerContainer}
           className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12"
         >
-          {featuredPortfolioItems.map((item) => (
+          {getFeaturedPortfolioItems(lang).map((item) => (
             <motion.div key={item.id} variants={staggerItem}>
-              <PreviewCard item={item} showPremiumBadge />
+              <PreviewCard item={item} lang={lang} showPremiumBadge />
             </motion.div>
           ))}
         </motion.div>

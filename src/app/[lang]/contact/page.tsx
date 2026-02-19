@@ -7,6 +7,7 @@ import { GradientText } from "@/components/ui/gradient-text";
 import { Mail, Clock, MapPin } from "lucide-react";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { i18n, type Locale } from "@/lib/i18n/config";
+import { getAlternates } from "@/lib/seo";
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
@@ -19,19 +20,22 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { lang } = await params;
 
-  const titles = {
+  const titles: Record<Locale, string> = {
     en: "Contact | DealCatcher",
     no: "Kontakt | DealCatcher",
+    pl: "Kontakt | DealCatcher",
   };
 
-  const descriptions = {
+  const descriptions: Record<Locale, string> = {
     en: "Get in touch with us. We'll respond within 24 hours.",
     no: "Ta kontakt med oss. Vi svarer innen 24 timer.",
+    pl: "Skontaktuj się z nami. Odpowiemy w ciągu 24 godzin.",
   };
 
   return {
     title: titles[lang],
     description: descriptions[lang],
+    alternates: getAlternates(lang, "/contact"),
   };
 }
 

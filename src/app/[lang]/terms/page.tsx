@@ -2,6 +2,7 @@ import { Navbar } from "@/components/shared/Navbar";
 import { Footer } from "@/components/sections/home/Footer";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import type { Locale } from "@/lib/i18n/config";
+import { getAlternates } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -10,15 +11,21 @@ export async function generateMetadata({
 }) {
   const { lang } = await params;
 
+  const titles: Record<Locale, string> = {
+    en: "Terms of Service | DealCatcher",
+    no: "Vilkår for Bruk | DealCatcher",
+    pl: "Regulamin | DealCatcher",
+  };
+  const descriptions: Record<Locale, string> = {
+    en: "Read our terms of service for using DealCatcher's services and website.",
+    no: "Les våre vilkår for bruk av DealCatcher sine tjenester og nettsted.",
+    pl: "Przeczytaj regulamin korzystania z usług i strony DealCatcher.",
+  };
+
   return {
-    title:
-      lang === "no"
-        ? "Vilkår for Bruk | DealCatcher"
-        : "Terms of Service | DealCatcher",
-    description:
-      lang === "no"
-        ? "Les våre vilkår for bruk av DealCatcher sine tjenester og nettsted."
-        : "Read our terms of service for using DealCatcher's services and website.",
+    title: titles[lang],
+    description: descriptions[lang],
+    alternates: getAlternates(lang, "/terms"),
   };
 }
 

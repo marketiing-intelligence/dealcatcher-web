@@ -1,0 +1,887 @@
+{
+  "nav": {
+    "templates": "Szablony",
+    "newWebsite": "Nowa Strona",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "badge": "Przestań tracić klientów",
+    "titleStart": "Kiedy ktoś szuka Twoich usług w Google —",
+    "titleHighlight": "znajduje Ciebie, czy Twoją konkurencję?",
+    "subtitle": "Każdego dnia bez profesjonalnej strony internetowej potencjalni klienci trafiają do konkurencji. Zaistniej w Google, wyszukiwarkach AI i wszędzie tam, gdzie klienci Cię szukają.",
+    "ctaPrimary": "Chcę stronę w 7 dni",
+    "ctaSecondary": "Sprawdź ile tracisz"
+  },
+  "whatWeDo": {
+    "badge": "Co robimy",
+    "title": "Kompletny system pozyskiwania klientów",
+    "subtitle": "Strona internetowa + Reklama = klienci, którzy aktywnie szukają Twoich usług.",
+    "website": {
+      "title": "Profesjonalna Strona WWW",
+      "description": "Twój cyfrowy fundament. Strona, która wygląda profesjonalnie, jest widoczna w wyszukiwarkach AI i zamienia odwiedzających w płacących klientów.",
+      "features": [
+        "Gotowa na AI Search (ChatGPT, Perplexity, Google AI)",
+        "Responsywna na każdym urządzeniu",
+        "Zaprojektowana pod konwersję",
+        "Hosting i utrzymanie w cenie"
+      ],
+      "priceLabel": "Od",
+      "price": "4 000 zł",
+      "priceSuffix": "+ 200 zł/mies."
+    },
+    "ads": {
+      "title": "Prowadzenie Google Ads",
+      "description": "Przyspiesz wyniki. Kiedy ktoś szuka \"hydraulik Warszawa\" albo \"dentysta Kraków\", Twoja reklama pojawia się na górze. Klienci, którzy aktywnie szukają Twoich usług.",
+      "features": [
+        "Dobór słów kluczowych dla Twojego rynku",
+        "Tworzenie tekstów reklamowych",
+        "Miesięczna optymalizacja i testy A/B",
+        "Raporty z wynikami i zwrotem z inwestycji"
+      ],
+      "priceLabel": "Obsługa",
+      "price": "800 zł",
+      "priceSuffix": "/mies. + 10% budżetu rek."
+    },
+    "combined": {
+      "website": "Strona",
+      "converts": "Konwertuje odwiedzających",
+      "ads": "Reklama",
+      "brings": "Przyciąga odwiedzających",
+      "result": "Klienci"
+    }
+  },
+  "whoWeHelp": {
+    "badge": "Dla kogo",
+    "title": "Dwie drogi do silnej obecności online",
+    "subtitle": "Niezależnie czy potrzebujesz nowej strony, czy chcesz poprawić istniejącą — pomożemy.",
+    "segments": [
+      {
+        "title": "Nie masz jeszcze strony?",
+        "description": "Jesteś świetnym fachowcem, ale klienci nie mogą Cię znaleźć w internecie. Twoja konkurencja ze stronami zgarnia zlecenia, które powinny być Twoje. Asystenci AI nie mogą Cię polecać, bo cyfrowo nie istniejesz.",
+        "cta": "Chcę profesjonalną stronę",
+        "features": ["Gotowa na AI Search", "Responsywna", "Od 4 000 zł"]
+      },
+      {
+        "title": "Masz stronę, ale nie działa?",
+        "description": "Twoja strona wygląda przestarzale, nie działa na telefonach albo nie przekonuje klientów? Większość stron firm nie jest zoptymalizowana pod wyszukiwarki i konwersję. Zbudujemy Ci nową, która naprawdę pracuje.",
+        "cta": "Porozmawiajmy o Twojej stronie",
+        "features": ["Bezpłatna konsultacja", "Szczegółowa analiza", "Propozycja redesignu"]
+      }
+    ]
+  },
+  "portfolio": {
+    "badge": "Nasze szablony",
+    "title": "Projekty, które zamieniają odwiedzających w klientów",
+    "subtitle": "Każdy szablon jest gotowy na wyszukiwarki AI i zoptymalizowany pod konwersję.",
+    "viewAll": "Zobacz wszystkie szablony",
+    "viewDemo": "Zobacz demo"
+  },
+  "whyUs": {
+    "badge": "Dlaczego DealCatcher",
+    "title": "Odpowiedni partner dla Twojej obecności online",
+    "subtitle": "Nie jesteśmy kolejną agencją. Tworzymy strony gotowe na przyszłość.",
+    "reasons": [
+      {
+        "title": "Gotowe na 2026+",
+        "points": [
+          "Optymalizacja pod AI Search od pierwszego dnia",
+          "Semantyczny HTML, który rozumieją algorytmy",
+          "Twoja firma polecana przez ChatGPT i Google AI"
+        ]
+      },
+      {
+        "title": "Zbudowane pod konwersję",
+        "points": [
+          "Strategiczna architektura strony",
+          "Jasne wezwania do działania (CTA)",
+          "Formularze, booking, click-to-call"
+        ]
+      },
+      {
+        "title": "Zajmujemy się wszystkim",
+        "points": [
+          "15 minut na wypełnienie briefu",
+          "Projekt, kod, hosting, utrzymanie",
+          "Ty skupiasz się na swoim fachu — resztą zajmujemy się my"
+        ]
+      }
+    ]
+  },
+  "guarantee": {
+    "badge": "Bez ryzyka",
+    "title": "14 dni na zwrot pieniędzy",
+    "subtitle": "Nie podoba Ci się strona? Zwrócimy 100% wpłaty w ciągu 14 dni.",
+    "description": "Jesteśmy pewni, że pokochasz swoją nową stronę. Ale gdyby z jakiegokolwiek powodu nie spełniała Twoich oczekiwań, po prostu napisz do nas w ciągu 14 dni, a zwrócimy pełną kwotę. Bez pytań.",
+    "features": [
+      {
+        "title": "Pełny zwrot gwarantowany",
+        "description": "Nie jesteś zadowolony? Zwracamy 100% wpłaty w ciągu 14 dni."
+      },
+      {
+        "title": "14 dni na ocenę",
+        "description": "Masz pełne 14 dni od dostarczenia strony na podjęcie decyzji."
+      },
+      {
+        "title": "Bez zbędnych pytań",
+        "description": "Napisz do nas na contact@dealcatcher.io, a przetworzymy zwrot natychmiast."
+      },
+      {
+        "title": "Poprawki w cenie",
+        "description": "Zanim poprosisz o zwrot, daj nam szansę to naprawić. Rozsądne poprawki są wliczone."
+      }
+    ],
+    "howItWorks": {
+      "title": "Jak to działa",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Płacisz — my budujemy",
+          "description": "Płatność z góry. Tworzymy kompletną stronę na podstawie Twojego briefu."
+        },
+        {
+          "step": "2",
+          "title": "Sprawdzasz",
+          "description": "Dostarczamy stronę. Oceniasz i zgłaszasz ewentualne zmiany."
+        },
+        {
+          "step": "3",
+          "title": "Kochasz albo zwrot",
+          "description": "Podoba się? Publikujemy. Nie? Zwracamy pieniądze w ciągu 14 dni."
+        }
+      ]
+    },
+    "cta": "Zaczynamy",
+    "legal": "Ta gwarancja wynika z Twojego prawa jako konsumenta zgodnie z polską ustawą o prawach konsumenta. Możesz odstąpić od umowy i otrzymać pełny zwrot w ciągu 14 dni od otrzymania ukończonej usługi."
+  },
+  "cta": {
+    "titleStart": "Przestań tracić klientów na rzecz",
+    "titleHighlight": "konkurencji",
+    "subtitle": "Każdy dzień bez profesjonalnej strony to potencjalni klienci, którzy trafiają do konkurencji. Zamów stronę w 7 dni z gwarancją zwrotu pieniędzy.",
+    "ctaPrimary": "Zamów stronę teraz",
+    "ctaSecondary": "Oddzwonimy w 2 godziny"
+  },
+  "footer": {
+    "description": "Profesjonalne strony internetowe dla polskich firm. Gotowe na AI, zoptymalizowane pod konwersję.",
+    "services": "Usługi",
+    "contact": "Kontakt",
+    "newWebsite": "Nowa strona",
+    "copyright": "Wszelkie prawa zastrzeżone.",
+    "privacy": "Polityka prywatności",
+    "terms": "Regulamin",
+    "cookieSettings": "Ustawienia cookies",
+    "withdrawal": "Formularz odstąpienia"
+  },
+  "cookieBanner": {
+    "title": "Szanujemy Twoją prywatność",
+    "description": "Używamy plików cookies, aby poprawić Twoje wrażenia z przeglądania i analizować ruch. Niezbędne pliki cookies są konieczne do działania strony. Analityczne pomagają nam zrozumieć, jak korzystasz z naszej witryny.",
+    "acceptAll": "Akceptuję wszystkie",
+    "acceptEssential": "Tylko niezbędne",
+    "customize": "Dostosuj",
+    "savePreferences": "Zapisz preferencje",
+    "categories": {
+      "essential": {
+        "title": "Niezbędne cookies",
+        "description": "Te pliki cookies są absolutnie niezbędne do działania strony i nie można ich wyłączyć."
+      },
+      "analytics": {
+        "title": "Analityczne cookies",
+        "description": "Te pliki cookies pomagają nam zrozumieć, jak odwiedzający korzystają z naszej strony, zbierając anonimowe informacje."
+      }
+    },
+    "privacyLink": "Dowiedz się więcej w naszej",
+    "privacyLinkText": "Polityce prywatności"
+  },
+  "contactPage": {
+    "badge": "Napisz do nas",
+    "title": "Porozmawiajmy o Twoim",
+    "titleHighlight": "projekcie",
+    "subtitle": "Wypełnij formularz, a odezwiemy się w ciągu 24 godzin.",
+    "form": {
+      "name": "Imię i nazwisko",
+      "email": "Adres e-mail",
+      "company": "Firma (opcjonalnie)",
+      "message": "Twoja wiadomość...",
+      "gdpr": "Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z",
+      "gdprLink": "Polityką prywatności",
+      "submit": "Wyślij wiadomość",
+      "sending": "Wysyłanie...",
+      "success": "Wiadomość wysłana!",
+      "successMessage": "Odezwiemy się najszybciej jak to możliwe.",
+      "error": "Wystąpił błąd. Spróbuj ponownie."
+    },
+    "validation": {
+      "nameRequired": "Imię jest wymagane",
+      "emailInvalid": "Nieprawidłowy adres e-mail",
+      "messageMin": "Wiadomość musi mieć co najmniej 10 znaków",
+      "gdprRequired": "Wymagana jest zgoda na przetwarzanie danych"
+    },
+    "info": {
+      "email": "E-mail",
+      "emailValue": "hello@dealcatcher.io",
+      "responseTime": "Czas odpowiedzi",
+      "responseValue": "Do 24 godzin",
+      "location": "Lokalizacja",
+      "locationValue": "Warszawa, Polska"
+    }
+  },
+  "privacy": {
+    "title": "Polityka prywatności",
+    "lastUpdated": "Ostatnia aktualizacja: 19 lutego 2026",
+    "sections": {
+      "intro": {
+        "title": "Wprowadzenie",
+        "content": "Rapid Software House sp. z o.o. (\"my\", \"nas\" lub \"nasz\") prowadzi stronę dealcatcher.io. Niniejsza Polityka prywatności wyjaśnia, jak zbieramy, wykorzystujemy, ujawniamy i zabezpieczamy Twoje dane osobowe podczas korzystania z naszej strony."
+      },
+      "controller": {
+        "title": "Administrator danych",
+        "content": "Administratorem Twoich danych osobowych jest:",
+        "company": "Rapid Software House sp. z o.o.",
+        "address": "ul. Złota 75A lok. 7, 00-819 Warszawa",
+        "krs": "KRS: 0001008811",
+        "nip": "NIP: 5273033283",
+        "email": "E-mail: contact@dealcatcher.io"
+      },
+      "dataCollected": {
+        "title": "Jakie dane zbieramy",
+        "intro": "Zbieramy dane, które podajesz nam bezpośrednio, oraz dane zbierane automatycznie:",
+        "contactForm": {
+          "title": "Dane z formularza kontaktowego",
+          "items": ["Imię i nazwisko", "Adres e-mail", "Numer telefonu (opcjonalnie)", "Treść wiadomości"]
+        },
+        "automatic": {
+          "title": "Dane zbierane automatycznie",
+          "items": ["Adres IP", "Typ i wersja przeglądarki", "Odwiedzone strony i czas spędzony", "Strona odsyłająca", "Informacje o urządzeniu"]
+        }
+      },
+      "cookies": {
+        "title": "Pliki cookies i analityka",
+        "content": "Używamy plików cookies i podobnych technologii śledzenia do zbierania informacji o Twojej aktywności. Przed umieszczeniem jakichkolwiek niezbędnych plików cookies poprosimy o Twoją zgodę.",
+        "types": {
+          "essential": {
+            "title": "Niezbędne cookies",
+            "description": "Wymagane do prawidłowego działania strony. Nie wymagają zgody."
+          },
+          "analytics": {
+            "title": "Analityczne cookies (Google Analytics)",
+            "description": "Pomagają nam zrozumieć, jak odwiedzający korzystają z naszej strony. Umieszczane tylko po wyrażeniu zgody."
+          }
+        },
+        "consent": "Przy pierwszej wizycie na naszej stronie zobaczysz baner z prośbą o zgodę na pliki cookies. Możesz zaakceptować lub odrzucić analityczne cookies. Twój wybór zostanie zapamiętany.",
+        "manage": "Możesz zmienić preferencje dotyczące cookies w każdej chwili, klikając link 'Ustawienia cookies' w stopce naszej strony. Możesz też zarządzać cookies w ustawieniach przeglądarki."
+      },
+      "purpose": {
+        "title": "Jak wykorzystujemy Twoje dane",
+        "intro": "Przetwarzamy Twoje dane osobowe na następujących podstawach prawnych zgodnie z art. 6 RODO:",
+        "purposes": [
+          {
+            "title": "Odpowiadanie na zapytania",
+            "basis": "Podstawa prawna: Prawnie uzasadniony interes (art. 6 ust. 1 lit. f RODO)"
+          },
+          {
+            "title": "Świadczenie usług",
+            "basis": "Podstawa prawna: Wykonanie umowy (art. 6 ust. 1 lit. b RODO)"
+          },
+          {
+            "title": "Ulepszanie strony i usług",
+            "basis": "Podstawa prawna: Prawnie uzasadniony interes (art. 6 ust. 1 lit. f RODO)"
+          },
+          {
+            "title": "Spełnienie obowiązków prawnych",
+            "basis": "Podstawa prawna: Obowiązek prawny (art. 6 ust. 1 lit. c RODO)"
+          }
+        ]
+      },
+      "retention": {
+        "title": "Okres przechowywania danych",
+        "content": "Przechowujemy Twoje dane osobowe tylko tak długo, jak jest to niezbędne do realizacji celów, dla których zostały zebrane:",
+        "periods": [
+          "Dane z formularza kontaktowego: 2 lata od ostatniego kontaktu",
+          "Dane analityczne: 26 miesięcy (domyślnie Google Analytics)",
+          "Dane związane z umową: czas trwania umowy + 5 lat (wymóg prawny)"
+        ]
+      },
+      "rights": {
+        "title": "Twoje prawa wynikające z RODO",
+        "intro": "Jako osoba, której dane dotyczą, masz następujące prawa:",
+        "list": [
+          {
+            "title": "Prawo dostępu",
+            "description": "Możesz żądać kopii swoich danych osobowych, które posiadamy."
+          },
+          {
+            "title": "Prawo do sprostowania",
+            "description": "Możesz żądać poprawienia nieprawidłowych danych osobowych."
+          },
+          {
+            "title": "Prawo do usunięcia",
+            "description": "Możesz żądać usunięcia swoich danych osobowych (\"prawo do bycia zapomnianym\")."
+          },
+          {
+            "title": "Prawo do ograniczenia",
+            "description": "Możesz żądać ograniczenia przetwarzania w określonych okolicznościach."
+          },
+          {
+            "title": "Prawo do przenoszenia danych",
+            "description": "Możesz żądać swoich danych w ustrukturyzowanym, nadającym się do odczytu maszynowego formacie."
+          },
+          {
+            "title": "Prawo do sprzeciwu",
+            "description": "Możesz sprzeciwić się przetwarzaniu opartemu na prawnie uzasadnionym interesie."
+          },
+          {
+            "title": "Prawo do cofnięcia zgody",
+            "description": "W przypadku gdy przetwarzanie opiera się na zgodzie, możesz ją cofnąć w każdej chwili."
+          }
+        ],
+        "exercise": "Aby skorzystać z tych praw, skontaktuj się z nami pod adresem contact@dealcatcher.io."
+      },
+      "thirdParty": {
+        "title": "Usługi zewnętrzne",
+        "content": "Możemy udostępniać Twoje dane następującym dostawcom usług zewnętrznych:",
+        "services": [
+          {
+            "name": "Google Analytics",
+            "purpose": "Analityka strony",
+            "privacy": "https://policies.google.com/privacy"
+          }
+        ]
+      },
+      "transfers": {
+        "title": "Międzynarodowe przekazywanie danych",
+        "content": "Twoje dane mogą być przekazywane i przetwarzane w krajach poza Europejskim Obszarem Gospodarczym (EOG). W takim przypadku zapewniamy odpowiednie zabezpieczenia, takie jak Standardowe Klauzule Umowne zatwierdzone przez Komisję Europejską."
+      },
+      "security": {
+        "title": "Bezpieczeństwo danych",
+        "content": "Wdrażamy odpowiednie środki techniczne i organizacyjne w celu ochrony Twoich danych osobowych przed nieautoryzowanym dostępem, zmianą, ujawnieniem lub zniszczeniem. Żadna metoda transmisji przez Internet nie jest jednak w 100% bezpieczna."
+      },
+      "changes": {
+        "title": "Zmiany w Polityce",
+        "content": "Możemy aktualizować niniejszą Politykę prywatności. Poinformujemy Cię o zmianach, publikując nową Politykę na tej stronie i aktualizując datę \"Ostatnia aktualizacja\"."
+      },
+      "contact": {
+        "title": "Kontakt",
+        "content": "Jeśli masz pytania dotyczące niniejszej Polityki prywatności lub chcesz skorzystać ze swoich praw, skontaktuj się z nami:",
+        "email": "E-mail: contact@dealcatcher.io",
+        "address": "Adres: ul. Złota 75A lok. 7, 00-819 Warszawa",
+        "complaint": "Masz również prawo złożyć skargę do organu nadzorczego. W Polsce jest to Prezes Urzędu Ochrony Danych Osobowych (UODO), ul. Stawki 2, 00-193 Warszawa, uodo.gov.pl."
+      }
+    }
+  },
+  "terms": {
+    "title": "Regulamin",
+    "lastUpdated": "Ostatnia aktualizacja: 19 lutego 2026",
+    "sections": {
+      "intro": {
+        "title": "Wprowadzenie",
+        "content": "Niniejszy Regulamin reguluje korzystanie ze strony dealcatcher.io oraz usług świadczonych przez Rapid Software House sp. z o.o. Korzystając z naszej strony, akceptujesz postanowienia niniejszego Regulaminu."
+      },
+      "definitions": {
+        "title": "Definicje",
+        "items": [
+          {
+            "term": "Usługodawca",
+            "definition": "Rapid Software House sp. z o.o., ul. Złota 75A lok. 7, 00-819 Warszawa, KRS: 0001008811, NIP: 5273033283"
+          },
+          {
+            "term": "Użytkownik/Klient",
+            "definition": "Każda osoba lub podmiot korzystający z naszej strony lub usług"
+          },
+          {
+            "term": "Konsument",
+            "definition": "Osoba fizyczna dokonująca czynności prawnej niezwiązanej bezpośrednio z jej działalnością gospodarczą lub zawodową"
+          },
+          {
+            "term": "Strona",
+            "definition": "Strona internetowa dealcatcher.io wraz ze wszystkimi podstronami"
+          },
+          {
+            "term": "Usługi",
+            "definition": "Usługi projektowania, tworzenia, hostingu i utrzymania stron internetowych oraz prowadzenia kampanii Google Ads"
+          }
+        ]
+      },
+      "services": {
+        "title": "Nasze usługi",
+        "content": "DealCatcher świadczy następujące usługi:",
+        "list": [
+          "Projektowanie i tworzenie stron internetowych na zamówienie",
+          "Strony internetowe na bazie szablonów",
+          "Hosting i utrzymanie stron",
+          "Konfiguracja i prowadzenie kampanii Google Ads"
+        ],
+        "note": "Szczegółowe warunki, cennik i zakres każdej usługi określone są w indywidualnych umowach."
+      },
+      "withdrawalRight": {
+        "title": "Prawo odstąpienia od umowy",
+        "intro": "Jeśli jesteś konsumentem, przysługuje Ci prawo do odstąpienia od umowy zawartej na odległość w terminie 14 dni bez podania przyczyny, zgodnie z ustawą z dnia 30 maja 2014 r. o prawach konsumenta.",
+        "deadline": "Termin do odstąpienia od umowy wygasa po upływie 14 dni od dnia dostarczenia ukończonej usługi.",
+        "howTo": {
+          "title": "Jak skorzystać z prawa odstąpienia",
+          "content": "Aby skorzystać z prawa odstąpienia od umowy, musisz nas poinformować o swojej decyzji w drodze jednoznacznego oświadczenia. Możesz to zrobić:",
+          "methods": [
+            "E-mailem na adres: contact@dealcatcher.io",
+            "Korzystając z formularza odstąpienia dostępnego na naszej stronie"
+          ]
+        },
+        "effects": {
+          "title": "Skutki odstąpienia",
+          "content": "W przypadku odstąpienia od umowy zwrócimy Ci wszystkie otrzymane płatności niezwłocznie, nie później niż w terminie 14 dni od dnia, w którym zostaliśmy poinformowani o Twojej decyzji o odstąpieniu. Zwrotu płatności dokonamy przy użyciu takiego samego sposobu zapłaty, jakiego użyłeś/użyłaś przy pierwotnej transakcji, chyba że wyraźnie się zgodzisz na inne rozwiązanie."
+        },
+        "exceptions": {
+          "title": "Wyjątki",
+          "content": "Prawo odstąpienia nie przysługuje, jeżeli wyraźnie wyraziłeś/wyraziłaś zgodę na rozpoczęcie świadczenia usługi w okresie odstąpienia i przyjąłeś/przyjęłaś do wiadomości, że utracisz prawo odstąpienia po pełnym wykonaniu usługi."
+        }
+      },
+      "subscriptionTerms": {
+        "title": "Warunki subskrypcji",
+        "intro": "Ta sekcja dotyczy naszych miesięcznych planów subskrypcyjnych (hosting Basic i Premium).",
+        "commitment": {
+          "title": "Brak minimalnego okresu zobowiązania",
+          "content": "Nasze plany miesięczne nie mają minimalnego okresu zobowiązania. Możesz zrezygnować w dowolnym momencie."
+        },
+        "cancellation": {
+          "title": "Rezygnacja",
+          "content": "Możesz zrezygnować z subskrypcji w dowolnym momencie, kontaktując się z nami pod adresem contact@dealcatcher.io. Rezygnacja wchodzi w życie z końcem bieżącego okresu rozliczeniowego. Dostęp do usługi zachowujesz do końca opłaconego okresu."
+        },
+        "autoRenewal": {
+          "title": "Automatyczne odnowienie",
+          "content": "Subskrypcje odnawiają się automatycznie co miesiąc do momentu rezygnacji. Opłata zostanie pobrana na początku każdego okresu rozliczeniowego. Subskrybując, upoważniasz nas do pobierania opłaty subskrypcyjnej."
+        },
+        "priceChanges": {
+          "title": "Zmiany cen",
+          "content": "Możemy zmienić ceny subskrypcji z 30-dniowym wyprzedzeniem. Zostaniesz poinformowany/a e-mailem przed wejściem zmiany w życie. Kontynuowanie korzystania z usługi po zmianie ceny oznacza akceptację nowej ceny."
+        }
+      },
+      "useOfWebsite": {
+        "title": "Korzystanie ze strony",
+        "intro": "Korzystając z naszej strony, zobowiązujesz się do:",
+        "rules": [
+          "Podawania prawdziwych i kompletnych informacji w formularzach",
+          "Niekorzystania ze strony w celach niezgodnych z prawem",
+          "Niepodejmowania prób uzyskania nieautoryzowanego dostępu do jakiejkolwiek części strony",
+          "Nieingerowania w prawidłowe działanie strony",
+          "Niekopiowania, niemodyfikowania i nierozsyłania treści strony bez zgody"
+        ]
+      },
+      "intellectualProperty": {
+        "title": "Własność intelektualna",
+        "content": "Wszystkie treści na tej stronie, w tym między innymi teksty, grafiki, logotypy, obrazy i oprogramowanie, stanowią własność Rapid Software House sp. z o.o. lub jej licencjodawców i są chronione prawem własności intelektualnej. Nie możesz ich kopiować, rozpowszechniać ani tworzyć dzieł zależnych bez naszej pisemnej zgody."
+      },
+      "disclaimer": {
+        "title": "Wyłączenie gwarancji",
+        "content": "Strona i jej treści są udostępniane \"tak jak są\", bez jakichkolwiek gwarancji, wyraźnych ani dorozumianych. Nie gwarantujemy, że strona będzie działać bez przerw, wolna od błędów czy wirusów. Niniejsze wyłączenie nie narusza Twoich praw ustawowych jako konsumenta."
+      },
+      "liability": {
+        "title": "Ograniczenie odpowiedzialności",
+        "content": "W maksymalnym zakresie dozwolonym przez prawo Rapid Software House sp. z o.o. nie ponosi odpowiedzialności za jakiekolwiek szkody pośrednie, uboczne, szczególne, wynikowe lub odszkodowania represyjne. Nasze łączna odpowiedzialność nie przekroczy kwoty, jaką nam zapłaciłeś/zapłaciłaś w ciągu 12 miesięcy poprzedzających roszczenie. Ograniczenie to nie dotyczy odpowiedzialności, której nie można wyłączyć lub ograniczyć na mocy obowiązujących przepisów o ochronie konsumentów."
+      },
+      "thirdParty": {
+        "title": "Linki zewnętrzne",
+        "content": "Nasza strona może zawierać linki do stron zewnętrznych. Nie ponosimy odpowiedzialności za ich treść, politykę prywatności ani praktyki. Korzystasz z nich na własne ryzyko."
+      },
+      "consumerRights": {
+        "title": "Prawa konsumenta",
+        "content": "Jeśli jesteś konsumentem, przysługują Ci prawa ustawowe wynikające z polskiego prawa, których nie można wyłączyć umownie. Obejmują one prawa wynikające z ustawy o prawach konsumenta, Kodeksu cywilnego oraz ustawy o ochronie konkurencji i konsumentów. Żadne postanowienie niniejszego Regulaminu nie narusza Twoich praw ustawowych."
+      },
+      "governing": {
+        "title": "Prawo właściwe i spory",
+        "content": "Niniejszy Regulamin podlega prawu polskiemu i zgodnie z nim jest interpretowany. Dla klientów biznesowych wszelkie spory wynikające z niniejszego Regulaminu podlegają wyłącznej jurysdykcji sądów w Warszawie. Jeżeli jesteś konsumentem, zachowujesz prawo do wniesienia powództwa przed sąd właściwy ze względu na miejsce zamieszkania, zgodnie z obowiązującymi przepisami."
+      },
+      "changes": {
+        "title": "Zmiany Regulaminu",
+        "content": "Zastrzegamy sobie prawo do zmiany niniejszego Regulaminu. Obecnych klientów poinformujemy o istotnych zmianach e-mailem co najmniej 14 dni przed ich wejściem w życie. Zmiany wchodzą w życie natychmiast dla nowych klientów od momentu publikacji na stronie."
+      },
+      "contact": {
+        "title": "Dane kontaktowe",
+        "content": "W razie pytań dotyczących niniejszego Regulaminu, skontaktuj się z nami:",
+        "company": "Rapid Software House sp. z o.o.",
+        "address": "ul. Złota 75A lok. 7, 00-819 Warszawa",
+        "email": "E-mail: contact@dealcatcher.io"
+      }
+    }
+  },
+  "floatingContact": {
+    "whatsapp": "WhatsApp",
+    "call": "Zadzwoń",
+    "quickContact": "Zostaw numer — oddzwonimy",
+    "phonePlaceholder": "Twój numer telefonu",
+    "submit": "Oddzwońcie",
+    "success": "Mamy to!",
+    "callbackPromise": "Oddzwonimy w ciągu 2 godzin"
+  },
+  "roiCalculator": {
+    "badge": "Kalkulator ROI",
+    "title": "Oblicz swój",
+    "titleHighlight": "potencjalny przychód",
+    "subtitle": "Zobacz, ile może Ci przynieść profesjonalna strona internetowa.",
+    "avgJobLabel": "Średnia wartość zlecenia (PLN)",
+    "avgJobPlaceholder": "1500",
+    "monthlyLeadsLabel": "Oczekiwana liczba zapytań miesięcznie",
+    "conversionLabel": "Współczynnik konwersji (%)",
+    "results": {
+      "monthlyRevenue": "Potencjalny przychód miesięczny",
+      "yearlyRevenue": "Potencjalny przychód roczny",
+      "roi": "Zwrot z inwestycji",
+      "investmentLabel": "Łączna inwestycja w pierwszym roku",
+      "roiExplanation": "Na podstawie Twoich danych: jeden klient zwraca Ci inwestycję w stronę"
+    },
+    "inputsHeading": "Twoje dane",
+    "resultsHeading": "Twój potencjalny przychód",
+    "currency": "PLN",
+    "cta": "Zacznij pozyskiwać klientów",
+    "disclaimer": "Wyniki mogą się różnić. Kalkulator pokazuje potencjał na podstawie średnich branżowych."
+  },
+  "priceComparison": {
+    "badge": "Przejrzyste ceny",
+    "title": "3x taniej niż agencje,",
+    "titleHighlight": "ta sama jakość",
+    "subtitle": "Porównaj nasze ceny z tradycyjnymi agencjami i freelancerami.",
+    "comparison": [
+      {
+        "provider": "Tradycyjna agencja",
+        "price": "15 000 - 30 000 zł",
+        "time": "4-8 tygodni",
+        "meetings": "5+ spotkań",
+        "support": "Za dopłatą"
+      },
+      {
+        "provider": "Freelancer",
+        "price": "3 000 - 8 000 zł",
+        "time": "2-4 tygodnie",
+        "meetings": "Wiele rozmów",
+        "support": "Ograniczone"
+      },
+      {
+        "provider": "DealCatcher",
+        "price": "4 000 zł",
+        "time": "5-7 dni",
+        "meetings": "1 rozmowa",
+        "support": "W cenie",
+        "highlight": true
+      }
+    ],
+    "labels": {
+      "price": "Cena",
+      "time": "Realizacja",
+      "meetings": "Spotkania",
+      "support": "Wsparcie"
+    }
+  },
+  "withdrawal": {
+    "title": "Formularz odstąpienia",
+    "subtitle": "Skorzystaj z tego formularza, aby odstąpić od umowy w ciągu 14 dni",
+    "form": {
+      "recipient": "Do: Rapid Software House sp. z o.o., ul. Złota 75A lok. 7, 00-819 Warszawa, contact@dealcatcher.io",
+      "declaration": "Niniejszym informuję/informujemy o moim/naszym odstąpieniu od umowy o świadczenie następującej usługi:",
+      "serviceLabel": "Opis usługi",
+      "orderedOnLabel": "Data zamówienia / otrzymania",
+      "nameLabel": "Imię i nazwisko konsumenta(-ów)",
+      "addressLabel": "Adres konsumenta(-ów)",
+      "dateLabel": "Data",
+      "signatureLabel": "Podpis (tylko w przypadku przesyłania na papierze)",
+      "submit": "Wyślij formularz odstąpienia",
+      "success": "Twoje odstąpienie zostało przesłane. Przetworzymy je w ciągu 14 dni.",
+      "error": "Wystąpił błąd. Spróbuj ponownie lub skontaktuj się z nami bezpośrednio pod adresem contact@dealcatcher.io."
+    }
+  },
+  "noWebsite": {
+    "hero": {
+      "badge": "Dla firm bez strony",
+      "titleStart": "Twój fach zasługuje, żeby być",
+      "titleHighlight": "widocznym w internecie",
+      "subtitle": "Klienci każdego dnia szukają w Google stolarzy, hydraulików, dentystów i innych fachowców. Jeśli Cię tam nie ma — jesteś niewidzialny. Konkurencja ze stronami wygrywa zlecenia, które powinny być Twoje.",
+      "cta": "Zamów profesjonalną stronę",
+      "stats": [
+        { "value": 87, "suffix": "%", "label": "konsumentów szuka w internecie" },
+        { "value": 46, "suffix": "%", "label": "preferuje firmy ze stroną www" },
+        { "value": 3, "suffix": "x", "label": "więcej zapytań z profesjonalną stroną" }
+      ]
+    },
+    "problem": {
+      "badge": "Problem",
+      "title": "Jesteś niewidzialny dla potencjalnych klientów",
+      "subtitle": "Oto co się dzieje, kiedy polegasz tylko na poleceniach.",
+      "items": [
+        {
+          "title": "Klienci szukają w Google — Ciebie tam nie ma",
+          "description": "Kiedy ktoś w Twoim mieście szuka \"stolarz blisko mnie\" — wyskakuje konkurencja. Ty nie. Tracisz zlecenia na rzecz mniej doświadczonych fachowców, którzy po prostu mają stronę."
+        },
+        {
+          "title": "Konkurencja ze stroną wygrywa",
+          "description": "Profesjonalna strona to sygnał wiarygodności. Między dwoma fachowcami o podobnych umiejętnościach klient wybierze tego z lepszą obecnością online. To takie proste."
+        },
+        {
+          "title": "Brak strony = brak zaufania",
+          "description": "Współcześni klienci oczekują, że każda poważna firma ma stronę internetową. Bez niej wyglądasz na przestarzałego lub nawet niewiarygodnego — niezależnie od Twoich umiejętności."
+        },
+        {
+          "title": "AI nie może Cię polecić",
+          "description": "ChatGPT, Perplexity i Google AI to coraz popularniejszy sposób szukania usług. Mogą polecać tylko firmy z własnymi stronami. Profil na Facebooku się nie liczy."
+        }
+      ]
+    },
+    "solution": {
+      "badge": "Co dostajesz",
+      "title": "Stronę, która przynosi klientów",
+      "subtitle": "Nie tylko ładną stronę. Cyfrowy zasób, który zarabia pieniądze.",
+      "items": [
+        {
+          "title": "Gotowa na AI Search",
+          "description": "Zbudowana tak, żeby ChatGPT, Perplexity i Google AI znajdywały i polecały Twoją firmę.",
+          "features": ["Semantyczna struktura HTML", "Dane strukturalne (schema.org)", "Treści zoptymalizowane pod AI"]
+        },
+        {
+          "title": "Zaprojektowana pod konwersję",
+          "description": "Strategiczny design, który zamienia odwiedzających w płacących klientów. Każdy element jest przemyślany.",
+          "features": ["Jasna propozycja wartości", "Silne wezwania do działania", "Social proof i sygnały zaufania"]
+        },
+        {
+          "title": "Responsywna na każdym urządzeniu",
+          "description": "Idealnie wygląda na telefonie, tablecie i komputerze. Ponad 60% ruchu pochodzi z urządzeń mobilnych.",
+          "features": ["Mobile-first design", "Szybkie ładowanie", "Testowana cross-browser"]
+        },
+        {
+          "title": "Możesz podnieść ceny",
+          "description": "Profesjonalna strona buduje wiarygodność. Klienci bardziej Ci ufają i są gotowi płacić więcej.",
+          "features": ["Profesjonalny wizerunek", "Prezentacja najlepszych realizacji", "Wyróżnienie na tle konkurencji"]
+        },
+        {
+          "title": "Zero zachodu",
+          "description": "15 minut na brief. Resztą — projektem, kodem, hostingiem i utrzymaniem — zajmujemy się my.",
+          "features": ["Szybki 15-minutowy brief", "Robimy wszystko", "Wsparcie w cenie"]
+        }
+      ]
+    },
+    "pricing": {
+      "badge": "Cennik",
+      "title": "Wybierz drogę do klientów",
+      "subtitle": "Zacznij od strony, dodaj reklamę gdy będziesz gotowy rosnąć szybciej.",
+      "setupLabel": "jednorazowo",
+      "roiHint": "Prosta matematyka: Jeśli średnie zlecenie to 1500+ zł, strona zwraca się po zaledwie 3 nowych klientach.",
+      "packages": [
+        {
+          "name": "Starter",
+          "tagline": "Zaistniej online",
+          "description": "Profesjonalna strona, która buduje Twoją obecność w sieci.",
+          "setup": "4 000 zł",
+          "monthly": "200 zł",
+          "monthlyLabel": "/mies.",
+          "features": ["Profesjonalny projekt z szablonu (12 opcji)", "Optymalizacja pod AI Search", "Responsywna na każdym urządzeniu", "Formularz kontaktowy", "Google Analytics", "Hosting w cenie", "Monitoring dostępności 24/7", "Wsparcie mailowe (odpowiedź do 24h)"],
+          "cta": "Wybieram Starter"
+        },
+        {
+          "name": "Growth",
+          "tagline": "Najpopularniejszy",
+          "description": "Strona na zamówienie + premium support dla rozwijających się firm.",
+          "setup": "6 000 zł",
+          "monthly": "400 zł",
+          "monthlyLabel": "/mies.",
+          "features": ["Projekt na zamówienie od zera", "Optymalizacja pod AI Search", "Responsywna na każdym urządzeniu", "Formularz kontaktowy + system rezerwacji", "Google Analytics + raport miesięczny", "Hosting w cenie", "Monitoring dostępności 24/7", "Nielimitowane zmiany treści", "Dodawanie nowych podstron", "Priorytetowe wsparcie (odp. do 4h)"],
+          "cta": "Wybieram Growth",
+          "popular": true
+        },
+        {
+          "name": "Accelerator",
+          "tagline": "Maksymalne wyniki",
+          "description": "Strona + Google Ads = klienci, którzy aktywnie szukają Twoich usług.",
+          "setup": "7 000 zł",
+          "monthly": "1 400 zł",
+          "monthlyLabel": "/mies. + budżet rek.",
+          "features": ["Wszystko z Growth, plus:", "Konfiguracja kampanii Google Ads", "Dobór słów kluczowych dla Twojego rynku", "Tworzenie tekstów reklamowych", "Miesięczna optymalizacja kampanii", "Testy A/B i zarządzanie stawkami", "Raport wyników z ROI", "Bezpośrednie leady z wyszukiwarki", "Min. 2 000 zł/mies. budżet reklamowy"],
+          "cta": "Wybieram Accelerator",
+          "highlight": "Najlepszy ROI"
+        }
+      ]
+    },
+    "googleAds": {
+      "badge": "Opcjonalny dodatek",
+      "title": "Chcesz klientów",
+      "titleHighlight": "szybciej",
+      "subtitle": "Strona przyciąga klientów, którzy Cię znajdą. Google Ads przyciąga klientów, którzy właśnie teraz szukają Twoich usług.",
+      "howItWorks": {
+        "title": "Strona + Google Ads = pełny pipeline",
+        "description": "Twoja strona zamienia odwiedzających w klientów. Google Ads kieruje tych odwiedzających na Twoją stronę. Razem tworzą kompletny system pozyskiwania klientów.",
+        "steps": ["Klient szuka", "Widzi Twoją reklamę", "Kontaktuje się"]
+      },
+      "example": {
+        "label": "Przykładowe wyszukiwanie:",
+        "query": "hydraulik Warszawa cennik",
+        "adLabel": "REKLAMA",
+        "adTitle": "Hydraulik Warszawa — Szybko i Profesjonalnie",
+        "adDescription": "Darmowa wycena. 15+ lat doświadczenia. Zadzwoń teraz."
+      },
+      "benefits": [
+        { "title": "Pojawiasz się gdy szukają", "description": "Kiedy ktoś wpisuje w Google \"hydraulik Warszawa\" albo \"dentysta Kraków\", Twoja reklama wyświetla się na górze." },
+        { "title": "Celujesz w swój rejon", "description": "Płacisz tylko za dotarcie do ludzi w Twoim rejonie. Żadnych zmarnowanych pieniędzy na odległe miasta." },
+        { "title": "Natychmiastowe wyniki", "description": "W przeciwieństwie do SEO, Google Ads przynosi klientów od pierwszego dnia. Telefony i zapytania już w pierwszym tygodniu." },
+        { "title": "Mierzalny zwrot z inwestycji", "description": "Wiesz dokładnie, ile leadów przyszło z reklam. Miesięczne raporty pokazują, co działa." }
+      ],
+      "pricingLabel": "Prowadzenie Google Ads",
+      "pricingValue": "800 zł",
+      "pricingSuffix": "/mies. + 10% budżetu reklamowego",
+      "pricingNote": "Konfiguracja: 1 200 zł jednorazowo · Min. budżet reklamowy: 2 000 zł/mies.",
+      "includedNote": "Już zawarte w pakiecie Accelerator powyżej."
+    },
+    "process": {
+      "badge": "Jak to działa",
+      "title": "Od zera do online w kilka dni",
+      "subtitle": "Prosty 4-krokowy proces. Ty skupiasz się na swoim fachu, my zajmujemy się resztą.",
+      "steps": [
+        { "number": "01", "title": "Konsultacja", "description": "Szybka rozmowa, żeby zrozumieć Twój biznes, usługi i cele. Odpowiemy na pytania i wytłumaczymy proces.", "duration": "15 min" },
+        { "number": "02", "title": "Brief", "description": "Wypełniasz prosty formularz z informacjami o firmie, usługach i materiałami (logo, zdjęcia). Zajmuje 15 minut.", "duration": "15 min" },
+        { "number": "03", "title": "Budowa", "description": "Projektujemy i budujemy Twoją stronę. Zobaczysz podgląd i możesz zgłosić poprawki. Zazwyczaj 1-2 rundy feedbacku.", "duration": "5-7 dni" },
+        { "number": "04", "title": "Publikacja", "description": "Publikujemy stronę, konfigurujemy domenę i analitykę. Upewniamy się, że wszystko działa idealnie.", "duration": "1 dzień" }
+      ]
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Częste pytania",
+      "subtitle": "Masz jeszcze pytania? Napisz do nas na hello@dealcatcher.io",
+      "items": [
+        { "question": "Nie potrzebuję strony — mam wystarczająco dużo zleceń z poleceń", "answer": "Świetnie! Ale strona pozwala Ci wybierać lepsze zlecenia i brać wyższe stawki. Kiedy klienci widzą Twoją profesjonalną obecność online, są gotowi płacić więcej. Poza tym polecenia kiedyś się kończą — strona daje Ci stały dopływ nowych zapytań." },
+        { "question": "To za drogo", "answer": "Strona zwraca się po 2-3 nowych klientach. Jeśli bierzesz 1500+ zł za zlecenie, inwestycja 4000 zł zwraca się niemal natychmiast. Miesięczna opłata to mniej niż jedna godzina Twojej pracy — a obejmuje hosting, utrzymanie i wsparcie." },
+        { "question": "Nie mam na to czasu", "answer": "Zaprojektowaliśmy proces specjalnie dla zapracowanych fachowców. Brief zajmuje 15 minut. Jedna rozmowa 15 minut. To wszystko. Robimy absolutnie wszystko — projekt, kod, hosting, konfiguracja domeny i utrzymanie. Nie musisz uczyć się niczego technicznego." },
+        { "question": "Mam stronę na Facebooku — czy to nie wystarczy?", "answer": "Facebook to uzupełnienie, nie zamiennik strony. Google słabo indeksuje profile na Facebooku. Asystenci AI jak ChatGPT nie mogą Cię polecić na podstawie Facebooka. Wielu klientów oczekuje, że \"prawdziwa\" firma ma własną stronę — sam Facebook może wyglądać nieprofesjonalnie." },
+        { "question": "Czy mogę sam aktualizować stronę?", "answer": "Nie musisz. Zmiany treści są wliczone w plan Growth (bez limitu) lub dostępne na życzenie w planie Starter. Napisz nam co chcesz zmienić, a zrobimy to w ciągu 24 godzin. Żadnych umiejętności technicznych nie potrzeba." },
+        { "question": "Co jeśli chcę zrezygnować?", "answer": "Możesz zrezygnować z planu miesięcznego w dowolnym momencie — bez pytań. Jeśli zrezygnujesz, zachowujesz własność domeny. Pomożemy Ci przenieść stronę do innego dostawcy. Nie ma żadnego lock-in." }
+      ]
+    },
+    "cta": {
+      "title": "Gotowy żeby być",
+      "titleHighlight": "widocznym online",
+      "subtitle": "Umów bezpłatną 15-minutową konsultację. Omówimy Twój biznes, odpowiemy na pytania i pokażemy jak mogłaby wyglądać Twoja strona.",
+      "ctaPrimary": "Umów bezpłatną konsultację",
+      "ctaSecondary": "Napisz do nas",
+      "disclaimer": "Bez zobowiązań. Nigdy nie wyślemy Ci spamu."
+    }
+  },
+  "reportPage": {
+    "hero": {
+      "badge": "Raport rynkowy",
+      "titleSearches": "wyszukiwań miesięcznie",
+      "titleFor": "dla {nicheLower} w {city}",
+      "subtitle": "Co miesiąc tysiące ludzi w {city} szuka w Google frazy {nicheLower}. Ten raport pokazuje, co dokładnie wpisują, kogo znajdują zamiast Ciebie — i co możesz z tym zrobić."
+    },
+    "metrics": {
+      "keywords": "Zbadanych słów kluczowych",
+      "avgCpc": "Średni koszt kliknięcia",
+      "topClinics": "Śledzonych firm",
+      "mapsShare": "Kliknięć idzie w Mapy",
+      "explainer": "To kluczowe liczby z naszej analizy. \"Koszt kliknięcia\" to ile zapłaciłbyś za jednego odwiedzającego, gdybyś uruchomił Google Ads. \"Mapy\" to ramka z mapą, którą Google pokazuje — prawie połowa kliknięć trafia tam."
+    },
+    "keywords": {
+      "badge": "Analiza słów kluczowych",
+      "title": "Co ludzie wpisują w Google",
+      "subtitle": "Szukając {nicheLower}, ludzie nie zawsze wpisują \"{nicheLower}\". Jedni szukają konkretnej usługi, inni opisują swój problem. Poniżej wszystkie realne frazy używane przez ludzi w {city}, pogrupowane według intencji, z liczbą wyszukiwań miesięcznie.",
+      "volume": "Szukań/mies.",
+      "competition": "Konk.",
+      "cpc": "Koszt kliknięcia",
+      "groupTotal": "Łączne wyszukiwania",
+      "nationalBadge": "Ogólnopolskie",
+      "nationalNote": "To są ogólnopolskie wolumeny wyszukiwań — ludzie z całej Polski szukający usług w tym mieście. Nie wliczone do sumy powyżej."
+    },
+    "competition": {
+      "badge": "Konkurencja",
+      "title": "Kto się wyświetla, kiedy ludzie szukają",
+      "subtitle": "Kiedy ktoś wpisuje te frazy w Google, oto lista firm, które się pojawiają. Google pokazuje dwa rodzaje wyników: zwykłe linki do stron (\"Google Search\") i ramkę z mapą z ocenami (\"Google Maps\"). Jeśli Twojej firmy nie ma na żadnej liście, ludzie znajdują tych konkurentów zamiast Ciebie.",
+      "organicTitle": "Google Search",
+      "mapsTitle": "Google Maps",
+      "rank": "#",
+      "domain": "Strona",
+      "business": "Firma",
+      "rating": "Ocena",
+      "reviews": "Opinie",
+      "noMaps": "Google nie pokazuje wyników Maps dla tego słowa kluczowego — to czysto informacyjne wyszukiwanie. Content marketing (artykuły, poradniki) to sposób na pozyskanie tego ruchu."
+    },
+    "calculator": {
+      "badge": "Kalkulator przychodów",
+      "title": "Policzmy to w złotówkach",
+      "subtitle": "Google Ads pozwala zapłacić za pojawienie się na samej górze wyników wyszukiwania — nad wszystkimi organicznymi wynikami. Przesuń suwaki, żeby dopasować do swojego biznesu. Kalkulator pokaże ilu nowych klientów to może przynieść i ile to oznacza w przychodach.",
+      "patientValueLabel": "Ile wart jest klient (PLN)",
+      "budgetLabel": "Miesięczny budżet reklamowy (PLN)",
+      "conversionLabel": "Ile zapytań staje się klientami (%)",
+      "resultClicks": "Osób kliknie Twoją reklamę",
+      "resultInquiries": "Z nich skontaktuje się",
+      "resultPatients": "Stanie się klientami",
+      "resultRevenue": "To przyniesie przychód",
+      "resultRoi": "Zwrot z wydatków na reklamę",
+      "disclaimer": "Na podstawie średniego kosztu kliknięcia {avgCpc} zł i {ctr}% kliknięć zamieniających się w zapytania (średnia branżowa z WordStream)."
+    },
+    "cpc": {
+      "badge": "Koszty reklamy",
+      "title": "Ile zapłacisz za kliknięcie?",
+      "subtitle": "W Google Ads płacisz za każde kliknięcie w Twoją reklamę — to tzw. \"koszt kliknięcia\" (CPC). Wykres poniżej pokazuje cenę dla każdej frazy. Rozstrzał cen mówi, jak konkurencyjny jest rynek."
+    },
+    "seasonality": {
+      "badge": "Sezonowość",
+      "title": "Niektóre miesiące są bardziej intensywne",
+      "subtitle": "Popyt nie jest stały. Ten wykres śledzi jedno słowo kluczowe — \"{keyword}\" — żeby pokazać wzorce sezonowe. Wysokie słupki = duży popyt (wtedy wydawaj więcej na reklamy). Niskie słupki = spokojne miesiące (oszczędzaj budżet). Ten sam wzorzec zazwyczaj dotyczy całego rynku.",
+      "peak": "Szczyt",
+      "low": "Dół"
+    },
+    "insights": {
+      "badge": "Co odkryliśmy",
+      "title": "Co najlepsze firmy w {city} robią inaczej",
+      "subtitle": "Przyjrzeliśmy się firmom, które rankują najwyżej w Google i zapytaliśmy: co mają wspólnego? Te wzorce nie są przypadkowe — to powody, dla których Google stawia je na pierwszym miejscu."
+    },
+    "tips": {
+      "badge": "Twoje kolejne kroki",
+      "title": "Co możesz zrobić już teraz",
+      "subtitle": "Na podstawie wszystkiego w tym raporcie — oto najbardziej opłacalne kroki, jakie możesz podjąć. Zaczynamy od rzeczy całkowicie darmowych. Każdy krok buduje na poprzednim."
+    },
+    "cta": {
+      "title": "Chcesz spersonalizowaną analizę swojej firmy?",
+      "subtitle": "Ten raport obejmuje ogólny rynek. Możemy stworzyć wersję spersonalizowaną, która analizuje Twoich konkretnych konkurentów, Twoją stronę i rekomenduje od czego zacząć.",
+      "ctaPrimary": "Umów bezpłatną konsultację",
+      "ctaSecondary": "Napisz do nas",
+      "disclaimer": "Bezpłatna 15-minutowa rozmowa. Bez zobowiązań. Podzielimy się tym co znajdziemy."
+    },
+    "leadForm": {
+      "badge": "Spersonalizowany raport",
+      "title": "Chcesz tę analizę dla swojej firmy?",
+      "subtitle": "Ten raport obejmuje ogólny rynek. Podaj swoje dane, a stworzymy wersję, która analizuje Twoją stronę, Twoich konkurentów i Twoją pozycję — całkowicie za darmo.",
+      "emailPlaceholder": "Twój e-mail",
+      "websitePlaceholder": "Twoja strona (np. twojafirma.pl)",
+      "cityPlaceholder": "Twoje miasto",
+      "gdpr": "Wyrażam zgodę na przetwarzanie moich danych przez DealCatcher w celu przygotowania raportu.",
+      "gdprLink": "Polityka prywatności",
+      "submit": "Wyślij mi spersonalizowany raport",
+      "success": "Mamy to!",
+      "successMessage": "Przyjrzymy się Twojej stronie i lokalnemu rynkowi, a spersonalizowaną analizę wyślemy w ciągu 48 godzin.",
+      "error": "Coś poszło nie tak. Spróbuj ponownie lub napisz do nas na contact@dealcatcher.io.",
+      "validationEmail": "Podaj prawidłowy adres e-mail",
+      "validationRequired": "To pole jest wymagane"
+    },
+    "footer": {
+      "title": "Źródła i metodologia",
+      "description": "Dane zebrane {dataDate} przez Google Ads API (za pośrednictwem DataForSEO). Wolumeny wyszukiwań to średnie z 12 miesięcy. Koszty reklam odzwierciedlają realne ceny aukcji Google Ads. Dane o konkurencji pochodzą z aktualnych wyników wyszukiwania Google.",
+      "sourceLabel": "Źródła"
+    },
+    "toc": {
+      "keywords": "Słowa kluczowe",
+      "competition": "Konkurencja",
+      "calculator": "Kalkulator",
+      "cpc": "Koszty reklam",
+      "seasonality": "Sezonowość",
+      "insights": "Wnioski",
+      "tips": "Kolejne kroki"
+    }
+  },
+  "portfolioPage": {
+    "hero": {
+      "badge": "Galeria szablonów",
+      "title": "Profesjonalne szablony dla",
+      "titleHighlight": "polskich firm",
+      "subtitle": "Każdy projekt jest gotowy na wyszukiwarki AI i zoptymalizowany pod konwersję odwiedzających w klientów. Kliknij dowolny szablon, żeby zobaczyć go na żywo."
+    },
+    "grid": {
+      "filterAll": "Wszystkie szablony",
+      "noResults": "Nie znaleziono szablonów dla tej kategorii.",
+      "industryLabels": {
+        "contractor": "Generalny wykonawca",
+        "service": "Specjalista usługowy",
+        "finishing": "Wykończenia"
+      }
+    }
+  }
+}

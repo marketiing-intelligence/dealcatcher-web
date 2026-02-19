@@ -10,6 +10,7 @@ import { CTASection } from "@/components/sections/no-website/CTASection";
 import { Footer } from "@/components/sections/home/Footer";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import type { Locale } from "@/lib/i18n/config";
+import { getAlternates } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -18,15 +19,21 @@ export async function generateMetadata({
 }) {
   const { lang } = await params;
 
+  const titles: Record<Locale, string> = {
+    en: "Professional Websites for Norwegian Craftsmen | DealCatcher",
+    no: "Profesjonelle Nettsider for Norske Handverkere | DealCatcher",
+    pl: "Profesjonalne Strony Internetowe dla Twojej Firmy | DealCatcher",
+  };
+  const descriptions: Record<Locale, string> = {
+    en: "Get found online by clients searching for carpenters, plumbers, and electricians. AI-ready, WCAG compliant websites starting at $1,000.",
+    no: "Bli funnet pa nett av kunder som soker etter snekkere, rorleggere og elektrikere. AI-klare, WCAG-kompatible nettsider fra 10 000 kr.",
+    pl: "Zostań znaleziony w internecie przez klientów szukających Twoich usług. Profesjonalne strony gotowe na AI od 4 000 zł.",
+  };
+
   return {
-    title:
-      lang === "no"
-        ? "Profesjonelle Nettsider for Norske Handverkere | DealCatcher"
-        : "Professional Websites for Norwegian Craftsmen | DealCatcher",
-    description:
-      lang === "no"
-        ? "Bli funnet pa nett av kunder som soker etter snekkere, rorleggere og elektrikere. AI-klare, WCAG-kompatible nettsider fra 10 000 kr."
-        : "Get found online by clients searching for carpenters, plumbers, and electricians. AI-ready, WCAG compliant websites starting at $1,000.",
+    title: titles[lang],
+    description: descriptions[lang],
+    alternates: getAlternates(lang, "/no-website"),
   };
 }
 

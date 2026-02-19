@@ -4,6 +4,12 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import type { Locale } from "@/lib/i18n/config";
 
+const languages: { code: Locale; label: string }[] = [
+  { code: "en", label: "EN" },
+  { code: "no", label: "NO" },
+  { code: "pl", label: "PL" },
+];
+
 interface LanguageSwitcherProps {
   currentLang: Locale;
 }
@@ -11,29 +17,32 @@ interface LanguageSwitcherProps {
 export function LanguageSwitcher({ currentLang }: LanguageSwitcherProps) {
   const pathname = usePathname();
 
-  const switchTo = currentLang === "en" ? "no" : "en";
-  const newPath = pathname.replace(`/${currentLang}`, `/${switchTo}`);
-
   return (
-    <Link
-      href={newPath}
-      className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-border hover:border-primary/50 transition-colors text-sm font-medium"
-    >
-      <span
-        className={
-          currentLang === "en" ? "text-primary" : "text-muted-foreground"
-        }
-      >
-        EN
-      </span>
-      <span className="text-muted-foreground">/</span>
-      <span
-        className={
-          currentLang === "no" ? "text-primary" : "text-muted-foreground"
-        }
-      >
-        NO
-      </span>
-    </Link>
+    <div className="flex items-center gap-1 px-2 py-1.5 rounded-full border border-border">
+      {languages.map((lang, index) => {
+        const newPath = pathname.replace(`/${currentLang}`, `/${lang.code}`);
+        const isActive = currentLang === lang.code;
+
+        return (
+          <span key={lang.code} className="flex items-center">
+            {index > 0 && (
+              <span className="text-muted-foreground/40 mx-0.5">/</span>
+            )}
+            {isActive ? (
+              <span className="text-primary text-sm font-medium px-1">
+                {lang.label}
+              </span>
+            ) : (
+              <Link
+                href={newPath}
+                className="text-muted-foreground hover:text-foreground transition-colors text-sm font-medium px-1"
+              >
+                {lang.label}
+              </Link>
+            )}
+          </span>
+        );
+      })}
+    </div>
   );
 }

@@ -4,7 +4,7 @@ import { Container } from "@/components/shared/Container";
 import { LanguageSwitcher } from "@/components/shared/LanguageSwitcher";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Calendar, Menu, X } from "lucide-react";
 import { CALCOM_BOOKING_URL } from "@/lib/constants";
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
@@ -17,11 +17,17 @@ interface NavbarProps {
     nav: {
       templates: string;
       newWebsite: string;
-      wcagCompliance: string;
+      wcagCompliance?: string;
       contact: string;
     };
   };
 }
+
+const bookCallLabels: Record<Locale, string> = {
+  en: "Book a call",
+  no: "Book en samtale",
+  pl: "Umów rozmowę",
+};
 
 export function Navbar({ lang, dict }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,7 +48,9 @@ export function Navbar({ lang, dict }: NavbarProps) {
   const navLinks = [
     { href: `/${lang}/portfolio`, label: dict.nav.templates },
     { href: `/${lang}/no-website`, label: dict.nav.newWebsite },
-    { href: `/${lang}/wcag-compliance`, label: dict.nav.wcagCompliance },
+    ...(dict.nav.wcagCompliance
+      ? [{ href: `/${lang}/wcag-compliance`, label: dict.nav.wcagCompliance }]
+      : []),
     { href: `/${lang}/contact`, label: dict.nav.contact },
   ];
 
@@ -92,7 +100,7 @@ export function Navbar({ lang, dict }: NavbarProps) {
                 <span className="absolute inset-0 bg-gradient-to-r from-primary via-accent-hover to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <span className="relative flex items-center gap-2">
                   <Calendar className="h-4 w-4" />
-                  Book a call
+                  {bookCallLabels[lang]}
                 </span>
               </a>
             </Button>
@@ -150,7 +158,7 @@ export function Navbar({ lang, dict }: NavbarProps) {
                   >
                     <a href={CALCOM_BOOKING_URL} target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>
                       <Calendar className="h-4 w-4 mr-2" />
-                      Book a call
+                      {bookCallLabels[lang]}
                     </a>
                   </Button>
                 </motion.div>
