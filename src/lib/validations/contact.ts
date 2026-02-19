@@ -14,7 +14,7 @@ export const contactSchema = z.object({
 export type ContactFormData = z.infer<typeof contactSchema>;
 
 // Validation messages for i18n
-export const getValidationMessages = (lang: "en" | "no") => {
+export const getValidationMessages = (lang: "en" | "no" | "pl") => {
   const messages = {
     en: {
       nameRequired: "Name is required",
@@ -27,6 +27,12 @@ export const getValidationMessages = (lang: "en" | "no") => {
       emailInvalid: "Ugyldig e-postadresse",
       messageMin: "Meldingen må være minst 10 tegn",
       gdprRequired: "GDPR-samtykke er påkrevd",
+    },
+    pl: {
+      nameRequired: "Imię jest wymagane",
+      emailInvalid: "Nieprawidłowy adres e-mail",
+      messageMin: "Wiadomość musi mieć co najmniej 10 znaków",
+      gdprRequired: "Zgoda RODO jest wymagana",
     },
   };
   return messages[lang];

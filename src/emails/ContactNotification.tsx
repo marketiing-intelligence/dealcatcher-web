@@ -17,7 +17,7 @@ interface ContactNotificationProps {
     company?: string;
     message: string;
   };
-  lang?: "en" | "no";
+  lang?: "en" | "no" | "pl";
 }
 
 export default function ContactNotification({
@@ -40,6 +40,14 @@ export default function ContactNotification({
       email: "E-post:",
       company: "Firma:",
       message: "Melding:",
+    },
+    pl: {
+      preview: `Nowa wiadomość od ${data.name}`,
+      heading: "Nowe zgłoszenie z formularza kontaktowego",
+      name: "Imię i nazwisko:",
+      email: "E-mail:",
+      company: "Firma:",
+      message: "Wiadomość:",
     },
   };
 
