@@ -17,7 +17,9 @@ export async function POST(request: Request) {
       subject:
         lang === "no"
           ? `Ny melding fra ${validatedData.name}`
-          : `New message from ${validatedData.name}`,
+          : lang === "pl"
+            ? `Nowa wiadomość od ${validatedData.name}`
+            : `New message from ${validatedData.name}`,
       react: ContactNotification({ data: validatedData, lang }),
     });
 

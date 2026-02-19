@@ -46,10 +46,14 @@ export function FloatingContact({ lang, dict, phoneNumber }: FloatingContactProp
     setIsSubmitting(false);
   };
 
+  const whatsappMessages: Record<Locale, string> = {
+    no: "Hei! Jeg er interessert i en nettside for bedriften min.",
+    pl: "Cześć! Interesuje mnie strona internetowa dla mojej firmy.",
+    en: "Hi! I'm interested in a website for my business.",
+  };
+
   const whatsappUrl = `https://wa.me/${phoneNumber.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-    lang === "no"
-      ? "Hei! Jeg er interessert i en nettside for bedriften min."
-      : "Hi! I'm interested in a website for my business."
+    whatsappMessages[lang]
   )}`;
 
   const callUrl = `tel:${phoneNumber}`;
