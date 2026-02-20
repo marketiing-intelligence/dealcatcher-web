@@ -111,12 +111,9 @@ export function ConfiguratorsSection({ lang, dict }: ConfiguratorsSectionProps) 
         >
           {dict.types.map((type, index) => {
             const Icon = icons[index];
-            const isCustom = index === 1;
-
             return (
               <motion.div key={type.title} variants={staggerItem} className="h-full">
-                <ConfiguratorCard
-                  className={`h-full ${isCustom ? "border-dashed border-cyan-500/30" : ""}`}
+                <ConfiguratorCard className="h-full"
                 >
                   <div className="p-7 md:p-8 h-full flex flex-col">
                     {/* Icon */}
