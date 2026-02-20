@@ -107,16 +107,16 @@ export function ConfiguratorsSection({ lang, dict }: ConfiguratorsSectionProps) 
           whileInView="visible"
           viewport={viewportOnce}
           variants={staggerContainer}
-          className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto"
+          className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto items-stretch"
         >
           {dict.types.map((type, index) => {
             const Icon = icons[index];
             const isCustom = index === 1;
 
             return (
-              <motion.div key={type.title} variants={staggerItem}>
+              <motion.div key={type.title} variants={staggerItem} className="h-full">
                 <ConfiguratorCard
-                  className={isCustom ? "border-dashed border-cyan-500/30" : ""}
+                  className={`h-full ${isCustom ? "border-dashed border-cyan-500/30" : ""}`}
                 >
                   <div className="p-7 md:p-8 h-full flex flex-col">
                     {/* Icon */}
