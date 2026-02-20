@@ -55,7 +55,7 @@
     "badge": "Interactive Tools",
     "title": "A website that works for you",
     "titleHighlight": "24/7",
-    "subtitle": "Product configurators and price calculators that automate quotes and capture leads — even while you sleep. Your customer configures, calculates — you get a ready lead.",
+    "subtitle": "Product configurators that automate quotes and capture leads — even while you sleep. Your customer configures — you get a ready lead.",
     "types": [
       {
         "title": "Product Configurator",
@@ -63,13 +63,8 @@
         "examples": "Blinds, awnings, custom furniture, windows, gates, fences"
       },
       {
-        "title": "Price Calculator",
-        "description": "Customers enter square metres, scope of work, or number of items — and instantly get an estimate. You get a lead with specific needs, not an empty form.",
-        "examples": "HVAC, landscaping, renovations, cleaning, solar"
-      },
-      {
         "title": "Custom Tool",
-        "description": "3D configurator, savings calculator, project planner — if you can describe it, we can build it. No limits.",
+        "description": "3D configurator, project planner, quoting tool — if you can describe it, we can build it. No limits.",
         "examples": "Describe what you need — we'll quote for free"
       }
     ],

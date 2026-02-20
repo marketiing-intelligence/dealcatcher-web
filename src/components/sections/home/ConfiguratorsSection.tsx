@@ -3,7 +3,7 @@
 import { Container } from "@/components/shared/Container";
 import { motion, useMotionValue, useMotionTemplate } from "framer-motion";
 import { staggerContainer, staggerItem, viewportOnce } from "@/lib/animations";
-import { SlidersHorizontal, Calculator, Sparkles, ArrowRight } from "lucide-react";
+import { SlidersHorizontal, Sparkles, ArrowRight } from "lucide-react";
 
 interface ConfiguratorsSectionProps {
   lang: string;
@@ -22,7 +22,7 @@ interface ConfiguratorsSectionProps {
   };
 }
 
-const icons = [SlidersHorizontal, Calculator, Sparkles];
+const icons = [SlidersHorizontal, Sparkles];
 const ACCENT = "6, 182, 212"; // cyan-500
 
 function ConfiguratorCard({
@@ -107,11 +107,11 @@ export function ConfiguratorsSection({ lang, dict }: ConfiguratorsSectionProps) 
           whileInView="visible"
           viewport={viewportOnce}
           variants={staggerContainer}
-          className="grid md:grid-cols-3 gap-6"
+          className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto"
         >
           {dict.types.map((type, index) => {
             const Icon = icons[index];
-            const isCustom = index === 2;
+            const isCustom = index === 1;
 
             return (
               <motion.div key={type.title} variants={staggerItem}>

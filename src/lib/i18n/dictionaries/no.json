@@ -55,7 +55,7 @@
     "badge": "Interaktive verktoy",
     "title": "En nettside som jobber for deg",
     "titleHighlight": "24/7",
-    "subtitle": "Produktkonfiguratorer og priskalkulatorer som automatiserer pristilbud og fanger opp henvendelser — selv mens du sover. Kunden konfigurerer, regner ut — du far en ferdig lead.",
+    "subtitle": "Produktkonfiguratorer som automatiserer pristilbud og fanger opp henvendelser — selv mens du sover. Kunden konfigurerer — du far en ferdig lead.",
     "types": [
       {
         "title": "Produktkonfigurator",
@@ -63,13 +63,8 @@
         "examples": "Persienner, markiser, mobler pa bestilling, vinduer, porter, gjerder"
       },
       {
-        "title": "Priskalkulator",
-        "description": "Kunden oppgir kvadratmeter, arbeidsomfang eller antall elementer — og far et estimat med en gang. Du far en lead med konkrete behov, ikke et tomt skjema.",
-        "examples": "Klimaanlegg, hagearbeid, oppussing, rengjoring, solenergi"
-      },
-      {
         "title": "Skreddersydd verktoy",
-        "description": "3D-konfigurator, sparekalkulator, prosjektplanlegger — hvis du kan beskrive det, kan vi bygge det. Ingen begrensninger.",
+        "description": "3D-konfigurator, prosjektplanlegger, tilbudsverktoy — hvis du kan beskrive det, kan vi bygge det. Ingen begrensninger.",
         "examples": "Beskriv hva du trenger — vi gir gratis pristilbud"
       }
     ],
