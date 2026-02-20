@@ -44,7 +44,7 @@ export async function generateMetadata({
   const descriptions: Record<Locale, string> = {
     en: "AI-ready, WCAG compliant websites that convert visitors into customers. Built for Norwegian craftsmen and businesses.",
     no: "AI-klare, WCAG-kompatible nettsider som konverterer besokende til kunder. Bygget for norske handverkere og bedrifter.",
-    pl: "Profesjonalne strony internetowe gotowe na AI, które zamieniają odwiedzających w klientów. Tworzenie stron WWW i kampanie Google Ads dla polskich firm.",
+    pl: "Profesjonalne strony internetowe z konfiguratorami i kalkulatorami cenowymi. Tworzenie stron WWW, konfiguratory online i kampanie Google Ads dla polskich firm.",
   };
 
   const keywords: Record<Locale, string[]> = {
@@ -65,10 +65,12 @@ export async function generateMetadata({
     pl: [
       "tworzenie stron internetowych",
       "strona internetowa dla firmy",
-      "projektowanie stron www",
+      "konfigurator online",
+      "kalkulator cenowy na stronę",
+      "konfigurator produktów",
       "kampanie google ads",
-      "agencja interaktywna",
-      "pozycjonowanie stron",
+      "strona z konfiguratorem",
+      "interaktywne narzędzia na stronę",
     ],
   };
 

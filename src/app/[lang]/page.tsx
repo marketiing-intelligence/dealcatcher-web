@@ -34,6 +34,10 @@ const ROICalculator = dynamic(
   () => import("@/components/sections/home/ROICalculator").then((mod) => mod.ROICalculator),
   { ssr: true }
 );
+const ConfiguratorsSection = dynamic(
+  () => import("@/components/sections/home/ConfiguratorsSection").then((mod) => mod.ConfiguratorsSection),
+  { ssr: true }
+);
 const PriceComparisonSection = dynamic(
   () => import("@/components/sections/home/PriceComparisonSection").then((mod) => mod.PriceComparisonSection),
   { ssr: true }
@@ -53,6 +57,7 @@ export default async function Home({
       <main className="pt-16 md:pt-20">
         <HeroSection lang={lang} dict={dict.hero} />
         <WhatWeDoSection dict={dict.whatWeDo} />
+        <ConfiguratorsSection lang={lang} dict={dict.configurators} />
         <PriceComparisonSection dict={dict.priceComparison} />
         <GuaranteeSection lang={lang} dict={dict.guarantee} />
         <WhoWeHelpSection lang={lang} dict={dict.whoWeHelp} />

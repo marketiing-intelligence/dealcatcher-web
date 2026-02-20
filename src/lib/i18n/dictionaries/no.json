@@ -51,6 +51,31 @@
       "result": "Kunder"
     }
   },
+  "configurators": {
+    "badge": "Interaktive verktoy",
+    "title": "En nettside som jobber for deg",
+    "titleHighlight": "24/7",
+    "subtitle": "Produktkonfiguratorer og priskalkulatorer som automatiserer pristilbud og fanger opp henvendelser — selv mens du sover. Kunden konfigurerer, regner ut — du far en ferdig lead.",
+    "types": [
+      {
+        "title": "Produktkonfigurator",
+        "description": "Kunden velger parametere — storrelse, materiale, farge, variant — og ser prisen i sanntid. Du far en ferdig henvendelse med noyaktig spesifikasjon i stedet for \"kan jeg fa et tilbud\".",
+        "examples": "Persienner, markiser, mobler pa bestilling, vinduer, porter, gjerder"
+      },
+      {
+        "title": "Priskalkulator",
+        "description": "Kunden oppgir kvadratmeter, arbeidsomfang eller antall elementer — og far et estimat med en gang. Du far en lead med konkrete behov, ikke et tomt skjema.",
+        "examples": "Klimaanlegg, hagearbeid, oppussing, rengjoring, solenergi"
+      },
+      {
+        "title": "Skreddersydd verktoy",
+        "description": "3D-konfigurator, sparekalkulator, prosjektplanlegger — hvis du kan beskrive det, kan vi bygge det. Ingen begrensninger.",
+        "examples": "Beskriv hva du trenger — vi gir gratis pristilbud"
+      }
+    ],
+    "cta": "La oss snakke om din konfigurator",
+    "ctaNote": "Har du en uvanlig ide? Ta kontakt — vi gir gratis pristilbud."
+  },
   "whoWeHelp": {
     "badge": "Hvem Vi Hjelper",
     "title": "To veier til en sterkere tilstedevaerelse pa nett",

@@ -21,7 +21,7 @@
       "description": "Twój cyfrowy fundament. Strona, która wygląda profesjonalnie, jest widoczna w wyszukiwarkach AI i zamienia odwiedzających w płacących klientów.",
       "features": [
         "Gotowa na AI Search (ChatGPT, Perplexity, Google AI)",
-        "Responsywna na każdym urządzeniu",
+        "Konfiguratory i kalkulatory cenowe",
         "Zaprojektowana pod konwersję",
         "Hosting i utrzymanie w cenie"
       ],
@@ -49,6 +49,31 @@
       "brings": "Przyciąga odwiedzających",
       "result": "Klienci"
     }
+  },
+  "configurators": {
+    "badge": "Interaktywne narzędzia",
+    "title": "Strona, która pracuje za Ciebie",
+    "titleHighlight": "24/7",
+    "subtitle": "Konfiguratory i kalkulatory cenowe, które automatyzują wyceny i zbierają zapytania — nawet gdy śpisz. Twój klient sam konfiguruje, sam liczy — Ty dostajesz gotowego leada.",
+    "types": [
+      {
+        "title": "Konfigurator produktu",
+        "description": "Klient wybiera parametry — rozmiar, materiał, kolor, wariant — i widzi cenę na żywo. Dostajesz gotowe zapytanie z dokładną specyfikacją zamiast \"proszę o wycenę\".",
+        "examples": "Rolety, markizy, meble na wymiar, okna, bramy, ogrodzenia"
+      },
+      {
+        "title": "Kalkulator wycen",
+        "description": "Klient podaje metraż, zakres prac lub liczbę elementów — od razu dostaje orientacyjną wycenę. Ty dostajesz leada z konkretnymi potrzebami, nie z pustym formularzem.",
+        "examples": "Klimatyzacja, ogrodnictwo, remonty, sprzątanie, fotowoltaika"
+      },
+      {
+        "title": "Narzędzie na zamówienie",
+        "description": "Konfigurator 3D, kalkulator oszczędności, planer projektów — jeśli potrafisz to opisać, my potrafimy to zbudować. Bez limitów.",
+        "examples": "Opisz co potrzebujesz — wycenimy bezpłatnie"
+      }
+    ],
+    "cta": "Porozmawiajmy o Twoim konfiguratorze",
+    "ctaNote": "Masz niestandardowy pomysł? Napisz — wycenimy bezpłatnie."
   },
   "whoWeHelp": {
     "badge": "Dla kogo",
@@ -92,7 +117,7 @@
       {
         "title": "Zbudowane pod konwersję",
         "points": [
-          "Strategiczna architektura strony",
+          "Konfiguratory i kalkulatory, które zbierają leady",
           "Jasne wezwania do działania (CTA)",
           "Formularze, booking, click-to-call"
         ]
@@ -676,7 +701,7 @@
           "setup": "6 000 zł",
           "monthly": "400 zł",
           "monthlyLabel": "/mies.",
-          "features": ["Projekt na zamówienie od zera", "Optymalizacja pod AI Search", "Responsywna na każdym urządzeniu", "Formularz kontaktowy + system rezerwacji", "Google Analytics + raport miesięczny", "Hosting w cenie", "Monitoring dostępności 24/7", "Nielimitowane zmiany treści", "Dodawanie nowych podstron", "Priorytetowe wsparcie (odp. do 4h)"],
+          "features": ["Projekt na zamówienie od zera", "Konfigurator produktu lub kalkulator cenowy", "Optymalizacja pod AI Search", "Responsywna na każdym urządzeniu", "Formularz kontaktowy + system rezerwacji", "Google Analytics + raport miesięczny", "Hosting w cenie", "Monitoring dostępności 24/7", "Nielimitowane zmiany treści", "Dodawanie nowych podstron", "Priorytetowe wsparcie (odp. do 4h)"],
           "cta": "Wybieram Growth",
           "popular": true
         },
