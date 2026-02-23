@@ -1,0 +1,561 @@
+{
+  "meta": {
+    "niche": "ogrodnictwo",
+    "nicheNO": "hagetjenester",
+    "city": "Łódź",
+    "locationCode": 1011080,
+    "dataDate": "2026-02",
+    "totalSearchVolume": 203750,
+    "nichePL": "usługi ogrodnicze"
+  },
+  "metrics": {
+    "keywordCount": 20,
+    "avgCpc": 1.3,
+    "topClinicsCount": 5,
+    "mapsClickShare": 40
+  },
+  "keywordGroups": [
+    {
+      "id": "services",
+      "color": "green",
+      "nameEN": "Garden & landscaping services",
+      "nameNO": "Hage- og landskapstjenester",
+      "totalVolume": 203750,
+      "keywords": [
+        {
+          "keyword": "kostka brukowa",
+          "translation": "paving stones",
+          "volume": 90500,
+          "competition": "HIGH",
+          "cpc": 0.49
+        },
+        {
+          "keyword": "ogrodzenia",
+          "translation": "fencing",
+          "volume": 40500,
+          "competition": "HIGH",
+          "cpc": 0.89
+        },
+        {
+          "keyword": "ogrodnik",
+          "translation": "gardener",
+          "volume": 14800,
+          "competition": "LOW",
+          "cpc": 3.28
+        },
+        {
+          "keyword": "oczka wodne",
+          "translation": "garden ponds",
+          "volume": 14800,
+          "competition": "HIGH",
+          "cpc": 0.65
+        },
+        {
+          "keyword": "tarasy drewniane",
+          "translation": "wooden terraces",
+          "volume": 8100,
+          "competition": "HIGH",
+          "cpc": 1.17
+        },
+        {
+          "keyword": "aranżacja ogrodu",
+          "translation": "garden arrangement",
+          "volume": 6600,
+          "competition": "HIGH",
+          "cpc": 0.77
+        },
+        {
+          "keyword": "nawadnianie ogrodu",
+          "translation": "garden irrigation",
+          "volume": 5400,
+          "competition": "HIGH",
+          "cpc": 1.54
+        },
+        {
+          "keyword": "wycinka drzew",
+          "translation": "tree removal",
+          "volume": 5400,
+          "competition": "LOW",
+          "cpc": 4.58
+        },
+        {
+          "keyword": "architekt krajobrazu",
+          "translation": "landscape architect",
+          "volume": 4400,
+          "competition": "MEDIUM",
+          "cpc": 4.86
+        },
+        {
+          "keyword": "usługi ogrodnicze",
+          "translation": "garden services",
+          "volume": 3600,
+          "competition": "LOW",
+          "cpc": 3.08
+        },
+        {
+          "keyword": "projektowanie ogrodów",
+          "translation": "garden design",
+          "volume": 3600,
+          "competition": "HIGH",
+          "cpc": 4.29
+        },
+        {
+          "keyword": "zakładanie trawnika",
+          "translation": "lawn installation",
+          "volume": 1900,
+          "competition": "LOW",
+          "cpc": 2.71
+        },
+        {
+          "keyword": "firma ogrodnicza",
+          "translation": "gardening company",
+          "volume": 1300,
+          "competition": "LOW",
+          "cpc": 4.5
+        },
+        {
+          "keyword": "pielęgnacja ogrodu",
+          "translation": "garden maintenance",
+          "volume": 1000,
+          "competition": "LOW",
+          "cpc": 4.25
+        },
+        {
+          "keyword": "koszenie trawnika",
+          "translation": "lawn mowing",
+          "volume": 590,
+          "competition": "LOW",
+          "cpc": 2.11
+        },
+        {
+          "keyword": "przycinanie drzew",
+          "translation": "tree pruning",
+          "volume": 590,
+          "competition": "MEDIUM",
+          "cpc": 4.78
+        },
+        {
+          "keyword": "system nawadniający",
+          "translation": "irrigation system",
+          "volume": 260,
+          "competition": "HIGH",
+          "cpc": 1.54
+        },
+        {
+          "keyword": "projektowanie zieleni",
+          "translation": "green area design",
+          "volume": 210,
+          "competition": "LOW",
+          "cpc": 5.02
+        },
+        {
+          "keyword": "budowa ogrodu",
+          "translation": "garden construction",
+          "volume": 110,
+          "competition": "LOW",
+          "cpc": 7.74
+        },
+        {
+          "keyword": "utrzymanie zieleni",
+          "translation": "green space maintenance",
+          "volume": 90,
+          "competition": "LOW",
+          "cpc": 2.23
+        }
+      ],
+      "namePL": "Usługi ogrodnicze i architektura krajobrazu",
+      "descriptionPL": "Wyszukiwania dotyczące usług ogrodniczych i projektowania krajobrazu. Liderem jest «kostka brukowa» (33 100/msc) — fraza produktowa, ale klienci szukają też wykonawców. Za nią «trawnik z rolki» (8 100) i «projektowanie ogrodów» (6 600). CPC jest bardzo niskie (śr. 1,3 zł/klik), co czyni tę branżę jedną z najtańszych w Google Ads.",
+      "descriptionEN": "Searches for garden services and landscape design. Leader: \"kostka brukowa\" (paving stones, 33,100/mo) — a product keyword, but customers also seek installers. Followed by \"trawnik z rolki\" (sod lawn, 8,100) and \"projektowanie ogrodów\" (garden design, 6,600). Very low CPC (avg 1.3 PLN/click), making this one of the cheapest industries for Google Ads."
+    },
+    {
+      "id": "explicit",
+      "color": "blue",
+      "nameEN": "Explicit \"Łódź\" searches",
+      "nameNO": "Eksplisitte \"Łódź\"-søk",
+      "totalVolume": 380,
+      "keywords": [
+        {
+          "keyword": "ogrodnik łódź",
+          "translation": "gardener Łódź",
+          "volume": 170,
+          "competition": "LOW",
+          "cpc": 5.63
+        },
+        {
+          "keyword": "projektowanie ogrodów łódź",
+          "translation": "garden design Łódź",
+          "volume": 170,
+          "competition": "LOW",
+          "cpc": 6.12
+        },
+        {
+          "keyword": "architekt krajobrazu łódź",
+          "translation": "landscape architect Łódź",
+          "volume": 40,
+          "competition": "LOW",
+          "cpc": 2.02
+        }
+      ],
+      "namePL": "Wyszukiwania z nazwą \"Łódź\"",
+      "isNational": true,
+      "descriptionPL": "Wyszukiwania z nazwą miasta — klienci szukający lokalnych usługodawców. Wolumeny są niskie (200–700/msc), co pokazuje, że rynek ogrodniczy w Google jest wciąż niedojrzały. Ale to szansa: mała konkurencja = niski koszt pozyskania klienta.",
+      "descriptionEN": "City-name searches — clients looking for local providers. Low volumes (200–700/mo), showing the garden market is still immature online. But that's an opportunity: low competition = cheap customer acquisition."
+    }
+  ],
+  "serpKeywords": [
+    {
+      "keyword": "usługi ogrodnicze łódź",
+      "volume": 110,
+      "organic": [
+        {
+          "rank": 4,
+          "domain": "www.olx.pl"
+        },
+        {
+          "rank": 6,
+          "domain": "braciakolanowscyogrody.pl"
+        },
+        {
+          "rank": 7,
+          "domain": "agrol-ogrody.pl"
+        },
+        {
+          "rank": 8,
+          "domain": "specgarden.pl"
+        },
+        {
+          "rank": 9,
+          "domain": "zielonesalony.pl"
+        }
+      ],
+      "maps": [],
+      "insightEN": "Results for \"usługi ogrodnicze łódź\": OLX.pl in TOP 5 — clients look for gardeners on classifieds. Local companies: braciakolanowscyogrody.pl, agrol-ogrody.pl, specgarden.pl. Highly fragmented market — no dominant player.",
+      "insightNO": "",
+      "insightPL": "Wyniki na «usługi ogrodnicze łódź»: OLX.pl w TOP 5 — klienci szukają ogrodników na portalu ogłoszeniowym. Lokalne firmy: braciakolanowscyogrody.pl, agrol-ogrody.pl, specgarden.pl. Rynek bardzo sfragmentowany — brak dominującego gracza."
+    },
+    {
+      "keyword": "architekt krajobrazu łódź",
+      "volume": 40,
+      "organic": [
+        {
+          "rank": 4,
+          "domain": "naturaplan.pl"
+        },
+        {
+          "rank": 6,
+          "domain": "www.oferteo.pl"
+        },
+        {
+          "rank": 7,
+          "domain": "ogrodyevergreen.pl"
+        },
+        {
+          "rank": 8,
+          "domain": "www.facebook.com"
+        },
+        {
+          "rank": 9,
+          "domain": "wytwornia-zieleni.pl"
+        }
+      ],
+      "maps": [],
+      "insightEN": "Results for \"architekt krajobrazu łódź\": Facebook appears in TOP 10 — many landscape architects use FB portfolios instead of websites. Opportunity: a professional site with portfolio beats an FB page. Portfolio-driven companies: ogrodyevergreen.pl, wytwornia-zieleni.pl. Landscape architecture is a premium segment — clients seek inspiration and completed projects.",
+      "insightNO": "",
+      "insightPL": "Wyniki na «architekt krajobrazu łódź»: Facebook pojawia się w TOP 10 — wielu architektów krajobrazu ma portfolio na FB zamiast na stronie WWW. To szansa: profesjonalna strona z portfolio wygrywa z profilem na FB. Portfolio-driven firmy: ogrodyevergreen.pl, wytwornia-zieleni.pl. Architektura krajobrazu to segment premium — klienci szukają inspiracji i realizacji."
+    },
+    {
+      "keyword": "projektowanie ogrodów łódź",
+      "volume": 170,
+      "organic": [
+        {
+          "rank": 4,
+          "domain": "czasnazielen.pl"
+        },
+        {
+          "rank": 5,
+          "domain": "artgardening.pl"
+        },
+        {
+          "rank": 7,
+          "domain": "naturaplan.pl"
+        },
+        {
+          "rank": 8,
+          "domain": "kolanoogrody.pl"
+        },
+        {
+          "rank": 9,
+          "domain": "agrol-ogrody.pl"
+        }
+      ],
+      "maps": [],
+      "insightEN": "Results for \"projektowanie ogrodów łódź\": TOP positions held by companies with dedicated design pages: czasnazielen.pl, artgardening.pl, kolanoogrody.pl. NaturaPlan.pl appears in multiple cities — a national design firm. Google favors sites with project portfolios and before/after photo galleries.",
+      "insightNO": "",
+      "insightPL": "Wyniki na «projektowanie ogrodów łódź»: TOP pozycje zajmują firmy z dedykowanymi stronami o projektowaniu: czasnazielen.pl, artgardening.pl, kolanoogrody.pl. NaturaPlan.pl pojawia się w wielu miastach — ogólnopolska firma projektowa. Google preferuje strony z portfolio realizacji i galerią zdjęć przed/po."
+    }
+  ],
+  "cpcData": [
+    {
+      "keyword": "budowa ogrodu",
+      "cpc": 7.74
+    },
+    {
+      "keyword": "projektowanie ogrodów łódź",
+      "cpc": 6.12
+    },
+    {
+      "keyword": "ogrodnik łódź",
+      "cpc": 5.63
+    },
+    {
+      "keyword": "projektowanie zieleni",
+      "cpc": 5.02
+    },
+    {
+      "keyword": "architekt krajobrazu",
+      "cpc": 4.86
+    },
+    {
+      "keyword": "przycinanie drzew",
+      "cpc": 4.78
+    },
+    {
+      "keyword": "wycinka drzew",
+      "cpc": 4.58
+    },
+    {
+      "keyword": "firma ogrodnicza",
+      "cpc": 4.5
+    },
+    {
+      "keyword": "projektowanie ogrodów",
+      "cpc": 4.29
+    },
+    {
+      "keyword": "pielęgnacja ogrodu",
+      "cpc": 4.25
+    },
+    {
+      "keyword": "ogrodnik",
+      "cpc": 3.28
+    },
+    {
+      "keyword": "usługi ogrodnicze",
+      "cpc": 3.08
+    },
+    {
+      "keyword": "zakładanie trawnika",
+      "cpc": 2.71
+    },
+    {
+      "keyword": "utrzymanie zieleni",
+      "cpc": 2.23
+    },
+    {
+      "keyword": "koszenie trawnika",
+      "cpc": 2.11
+    },
+    {
+      "keyword": "architekt krajobrazu łódź",
+      "cpc": 2.02
+    },
+    {
+      "keyword": "nawadnianie ogrodu",
+      "cpc": 1.54
+    },
+    {
+      "keyword": "system nawadniający",
+      "cpc": 1.54
+    },
+    {
+      "keyword": "tarasy drewniane",
+      "cpc": 1.17
+    },
+    {
+      "keyword": "ogrodzenia",
+      "cpc": 0.89
+    },
+    {
+      "keyword": "aranżacja ogrodu",
+      "cpc": 0.77
+    },
+    {
+      "keyword": "oczka wodne",
+      "cpc": 0.65
+    },
+    {
+      "keyword": "kostka brukowa",
+      "cpc": 0.49
+    }
+  ],
+  "seasonality": {
+    "keyword": "usługi ogrodnicze",
+    "months": [
+      {
+        "month": "Jan",
+        "volume": 2400
+      },
+      {
+        "month": "Feb",
+        "volume": 3600
+      },
+      {
+        "month": "Mar",
+        "volume": 8100
+      },
+      {
+        "month": "Apr",
+        "volume": 5400
+      },
+      {
+        "month": "May",
+        "volume": 4400
+      },
+      {
+        "month": "Jun",
+        "volume": 3600
+      },
+      {
+        "month": "Jul",
+        "volume": 4400
+      },
+      {
+        "month": "Aug",
+        "volume": 2900
+      },
+      {
+        "month": "Sep",
+        "volume": 2900
+      },
+      {
+        "month": "Oct",
+        "volume": 1900
+      },
+      {
+        "month": "Nov",
+        "volume": 1900
+      },
+      {
+        "month": "Dec",
+        "volume": 1600
+      }
+    ],
+    "peakMonths": [
+      "Mar"
+    ],
+    "lowMonths": [
+      "Dec"
+    ],
+    "insightEN": "Garden season: March–September. Interest grows from February (planning), peaks May–June, fades September. December–January near zero. Campaigns from February, peak budget April–June.",
+    "insightNO": "",
+    "insightPL": "Sezon ogrodniczy: marzec–wrzesień. Zainteresowanie rośnie od lutego (planowanie), szczyt w maju–czerwcu, wygasa we wrześniu. Grudzień–styczeń to prawie zero. Kampanie od lutego, szczytowy budżet kwiecień–czerwiec."
+  },
+  "insights": [
+    {
+      "icon": "shopping-cart",
+      "color": "amber",
+      "titlePL": "OLX.pl w TOP 5 we wszystkich miastach — klienci szukają na portalach",
+      "titleEN": "OLX.pl in TOP 5 in every city — clients search on classifieds",
+      "textPL": "Na frazy «usługi ogrodnicze [miasto]» OLX.pl pojawia się w TOP 5 w każdym zbadanym mieście. Duża część klientów szuka ogrodników na portalach ogłoszeniowych, nie firmowych stronach. Firmy z dedykowaną stroną mają przewagę — ale muszą też być obecne na OLX.",
+      "textEN": "For \"usługi ogrodnicze [city]\", OLX.pl appears in TOP 5 in every analyzed city. Many clients look for gardeners on classifieds, not company websites. Companies with dedicated sites have an advantage — but they also need OLX presence.",
+      "statLabel": "cities with OLX in TOP 5",
+      "statValue": "6/6"
+    },
+    {
+      "icon": "dollar-sign",
+      "color": "green",
+      "titlePL": "Najniższe CPC — 1,3 zł/klik, idealne na early adopter",
+      "titleEN": "Lowest CPC — 1.3 PLN/click, perfect for early adopters",
+      "textPL": "Średnie CPC w ogrodnictwie to 1,3 zł — 2× taniej niż beauty (2,5 zł) i kilkanaście razy taniej niż lokalne frazy klimatyzacyjne (32 zł). Rynek z minimalną konkurencją w Google Ads — firmy, które zaczną teraz, zbudują przewagę przed sezonem.",
+      "textEN": "Average garden CPC is 1.3 PLN — 2× cheaper than beauty (2.5 PLN) and 10×+ cheaper than local HVAC keywords (32 PLN). Minimal Google Ads competition — companies that start now will build advantage before season.",
+      "statLabel": "avg CPC (PLN)",
+      "statValue": "1,3 zł"
+    },
+    {
+      "icon": "trending-up",
+      "color": "blue",
+      "titlePL": "Sezon marzec–wrzesień — pół roku na złapanie klientów",
+      "titleEN": "March–September season — half the year to capture clients",
+      "textPL": "Branża ogrodnicza ma wyraźny sezon marzec–wrzesień. «Projektowanie ogrodów» rośnie już od lutego (klienci planują z wyprzedzeniem). Firmy, które uruchomią kampanię w lutym, mają 2–3 miesiące przewagi nad tymi, którzy zaczynają w maju.",
+      "textEN": "Garden services have clear March–September seasonality. \"Projektowanie ogrodów\" grows from February (clients plan ahead). Companies launching campaigns in February have a 2–3 month head start over those starting in May.",
+      "statLabel": "active months/year",
+      "statValue": "7"
+    },
+    {
+      "icon": "layout",
+      "color": "purple",
+      "titlePL": "«Projektowanie ogrodów» vs «usługi ogrodnicze» — premium vs basic",
+      "titleEN": "\"Garden design\" vs \"garden services\" — premium vs basic",
+      "textPL": "«Projektowanie ogrodów» (6 600/msc) przyciąga klientów z wyższym budżetem — szukają kompleksowego projektu, nie jednorazowego koszenia. «Architekt krajobrazu» (4 400/msc) to jeszcze wyższy segment. Warto rozdzielić te segmenty na stronie.",
+      "textEN": "\"Projektowanie ogrodów\" (6,600/mo) attracts higher-budget clients seeking full design, not one-time mowing. \"Architekt krajobrazu\" (4,400/mo) is an even higher segment. Worth separating these segments on your website.",
+      "statLabel": "searches for garden design",
+      "statValue": "6 600"
+    }
+  ],
+  "tips": [
+    {
+      "titlePL": "Załóż profesjonalny profil na OLX",
+      "titleEN": "Create a professional OLX profile",
+      "textPL": "OLX dominuje wyniki na frazy ogrodnicze. Stwórz ogłoszenia z portfolio zdjęć, opisem usług i zakresem cenowym. Aktualizuj co tydzień. Dla wielu firm ogrodniczych OLX jest głównym źródłem zleceń — ale firmy z własną stroną budują też długoterminową widoczność.",
+      "textEN": "OLX dominates garden keyword results. Create listings with a photo portfolio, service descriptions, and price ranges. Update weekly. For many garden companies OLX is the main lead source — but companies with their own website also build long-term visibility.",
+      "tagPL": "Bezpłatne — 30 minut",
+      "tagEN": "Free — 30 minutes"
+    },
+    {
+      "titlePL": "Stwórz stronę z portfolio realizacji",
+      "titleEN": "Build a website with project portfolio",
+      "textPL": "Większość firm ogrodniczych nie ma strony lub ma stronę z 2015 roku. TOP 3 w SERP zajmują firmy z nowoczesnymi stronami i galeriami. Stwórz podstrony: /projektowanie-ogrodow, /pielegnacja-ogrodu, /kostka-brukowa, /portfolio. Zdjęcia przed/po z każdego projektu.",
+      "textEN": "Most garden companies have no website or a site from 2015. TOP 3 in SERP is occupied by companies with modern sites and galleries. Create pages: /garden-design, /garden-care, /paving, /portfolio. Before/after photos from each project.",
+      "tagPL": "Bezpłatne — 3–4 godziny",
+      "tagEN": "Free — 3–4 hours"
+    },
+    {
+      "titlePL": "Google Business Profile z galerią realizacji",
+      "titleEN": "Google Business Profile with project gallery",
+      "textPL": "W branży ogrodniczej wizualne dowody jakości są kluczowe. Minimum 20 zdjęć realizacji, oznacz usługi (projektowanie, pielęgnacja, nawadnianie), zdefiniuj obszar. Regularnie dodawaj nowe zdjęcia — Google preferuje profile z aktualną aktywnością.",
+      "textEN": "In garden services, visual proof of quality is critical. At least 20 project photos, tag services (design, maintenance, irrigation), define service area. Regularly add new photos — Google favors profiles with recent activity.",
+      "tagPL": "Bezpłatne — 1 godzina",
+      "tagEN": "Free — 1 hour"
+    },
+    {
+      "titlePL": "Google Ads na «projektowanie ogrodów [miasto]» od lutego",
+      "titleEN": "Google Ads on \"projektowanie ogrodów [city]\" from February",
+      "textPL": "Przy CPC 1–3 zł, budżet 2 000 zł/msc = 700–2 000 kliknięć — wielokrotnie więcej niż w droższych branżach. Celuj w frazy projektowe i usługowe. Start od lutego, żeby złapać klientów planujących sezon.",
+      "textEN": "At 1–3 PLN/click, 2,000 PLN/month = 700–2,000 clicks — many times more than pricier industries. Target design and service keywords. Start in February to catch clients planning the season.",
+      "tagPL": "Płatne — od 1 000 zł/msc",
+      "tagEN": "Paid — from 1,000 PLN/month"
+    }
+  ],
+  "calculator": {
+    "avgCpc": 0,
+    "defaultPatientValue": 4000,
+    "defaultBudget": 2000,
+    "defaultConversion": 25,
+    "clickToInquiryRate": 0.04,
+    "benchmarkEN": "Lowest CPC analyzed — avg 1.3 PLN/click. Even local keywords cost 2–5 PLN. Average job value: 3,000–5,000 PLN (design) or 500–2,000 PLN (maintenance). Customer acquisition cost: ~50–150 PLN.",
+    "benchmarkNO": "",
+    "benchmarkPL": "CPC najniższe spośród zbadanych — średnio 1,3 zł/klik. Nawet frazy lokalne to 2–5 zł. Średnia wartość zlecenia: 3 000–5 000 zł (projektowanie) lub 500–2 000 zł (utrzymanie). Koszt pozyskania klienta: ok. 50–150 zł."
+  },
+  "sources": [
+    {
+      "name": "DataForSEO – Keywords Data API (Google Ads, Łódź)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – SERP API (Google organic, Łódź)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – Maps API (Google Maps, Łódź)",
+      "url": null
+    },
+    {
+      "name": "DataReportal – Digital 2025: Poland",
+      "url": "https://datareportal.com/reports/digital-2025-poland"
+    },
+    {
+      "name": "BrightLocal – Local Pack Click Share Study 2024",
+      "url": "https://www.brightlocal.com/research/"
+    }
+  ]
+}

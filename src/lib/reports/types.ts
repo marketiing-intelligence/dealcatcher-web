@@ -3,12 +3,14 @@ import type { Locale } from "@/lib/i18n/config";
 export interface ReportMeta {
   niche: string;
   nicheNO: string;
+  nichePL?: string;
   city: string;
   locationCode: number;
   dataDate: string;
   totalSearchVolume: number;
   disclaimerEN?: string;
   disclaimerNO?: string;
+  disclaimerPL?: string;
 }
 
 export interface ReportMetrics {
@@ -31,11 +33,14 @@ export interface KeywordGroup {
   id: string;
   color: "green" | "blue" | "amber" | "purple";
   nameEN: string;
-  nameNO: string;
+  nameNO?: string;
+  namePL?: string;
   descriptionEN?: string;
   descriptionNO?: string;
+  descriptionPL?: string;
   descriptionWarningEN?: string;
   descriptionWarningNO?: string;
+  descriptionWarningPL?: string;
   totalVolume: number;
   isNational?: boolean;
   keywords: Keyword[];
@@ -59,7 +64,8 @@ export interface SerpKeyword {
   organic: SerpResult[];
   maps: MapsResult[];
   insightEN: string;
-  insightNO: string;
+  insightNO?: string;
+  insightPL?: string;
 }
 
 export interface CpcDataItem {
@@ -78,27 +84,33 @@ export interface Seasonality {
   peakMonths: string[];
   lowMonths: string[];
   insightEN: string;
-  insightNO: string;
+  insightNO?: string;
+  insightPL?: string;
 }
 
 export interface Insight {
   icon: string;
   color: string;
   titleEN: string;
-  titleNO: string;
+  titleNO?: string;
+  titlePL?: string;
   textEN: string;
-  textNO: string;
+  textNO?: string;
+  textPL?: string;
   statLabel: string;
   statValue: string;
 }
 
 export interface Tip {
   titleEN: string;
-  titleNO: string;
+  titleNO?: string;
+  titlePL?: string;
   textEN: string;
-  textNO: string;
+  textNO?: string;
+  textPL?: string;
   tagEN: string;
-  tagNO: string;
+  tagNO?: string;
+  tagPL?: string;
 }
 
 export interface CalculatorDefaults {
@@ -108,7 +120,8 @@ export interface CalculatorDefaults {
   defaultConversion: number;
   clickToInquiryRate: number;
   benchmarkEN: string;
-  benchmarkNO: string;
+  benchmarkNO?: string;
+  benchmarkPL?: string;
 }
 
 export interface ReportSource {
@@ -129,9 +142,13 @@ export interface ReportData {
   sources: ReportSource[];
 }
 
-// Helper to get bilingual text
+// Helper to get bilingual/trilingual text
+// Fallback chain: PL → EN, NO → NO, EN → EN
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function t(obj: any, lang: Locale, field: string): string {
-  const key = lang === "no" ? `${field}NO` : `${field}EN`;
-  return obj[key] ?? "";
+  let key: string;
+  if (lang === "no") key = `${field}NO`;
+  else if (lang === "pl") key = `${field}PL`;
+  else key = `${field}EN`;
+  return obj[key] ?? obj[`${field}EN`] ?? "";
 }

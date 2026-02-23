@@ -89,6 +89,43 @@ const reportLoaders: Record<string, () => Promise<ReportData>> = {
     import("./data/cleaning-stavanger.json").then((m) => m.default as ReportData),
   "cleaning-kristiansand": () =>
     import("./data/cleaning-kristiansand.json").then((m) => m.default as ReportData),
+  // ── Polish reports ──────────────────────────────────────
+  "klimatyzacja-warszawa": () =>
+    import("./data/klimatyzacja-warszawa.json").then((m) => m.default as ReportData),
+  "klimatyzacja-krakow": () =>
+    import("./data/klimatyzacja-krakow.json").then((m) => m.default as ReportData),
+  "klimatyzacja-wroclaw": () =>
+    import("./data/klimatyzacja-wroclaw.json").then((m) => m.default as ReportData),
+  "klimatyzacja-poznan": () =>
+    import("./data/klimatyzacja-poznan.json").then((m) => m.default as ReportData),
+  "klimatyzacja-gdansk": () =>
+    import("./data/klimatyzacja-gdansk.json").then((m) => m.default as ReportData),
+  "klimatyzacja-lodz": () =>
+    import("./data/klimatyzacja-lodz.json").then((m) => m.default as ReportData),
+  "beauty-pl-warszawa": () =>
+    import("./data/beauty-pl-warszawa.json").then((m) => m.default as ReportData),
+  "beauty-pl-krakow": () =>
+    import("./data/beauty-pl-krakow.json").then((m) => m.default as ReportData),
+  "beauty-pl-wroclaw": () =>
+    import("./data/beauty-pl-wroclaw.json").then((m) => m.default as ReportData),
+  "beauty-pl-poznan": () =>
+    import("./data/beauty-pl-poznan.json").then((m) => m.default as ReportData),
+  "beauty-pl-gdansk": () =>
+    import("./data/beauty-pl-gdansk.json").then((m) => m.default as ReportData),
+  "beauty-pl-lodz": () =>
+    import("./data/beauty-pl-lodz.json").then((m) => m.default as ReportData),
+  "ogrodnictwo-warszawa": () =>
+    import("./data/ogrodnictwo-warszawa.json").then((m) => m.default as ReportData),
+  "ogrodnictwo-krakow": () =>
+    import("./data/ogrodnictwo-krakow.json").then((m) => m.default as ReportData),
+  "ogrodnictwo-wroclaw": () =>
+    import("./data/ogrodnictwo-wroclaw.json").then((m) => m.default as ReportData),
+  "ogrodnictwo-poznan": () =>
+    import("./data/ogrodnictwo-poznan.json").then((m) => m.default as ReportData),
+  "ogrodnictwo-gdansk": () =>
+    import("./data/ogrodnictwo-gdansk.json").then((m) => m.default as ReportData),
+  "ogrodnictwo-lodz": () =>
+    import("./data/ogrodnictwo-lodz.json").then((m) => m.default as ReportData),
 };
 
 export async function getReportData(slug: string): Promise<ReportData | null> {

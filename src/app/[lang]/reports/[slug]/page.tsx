@@ -56,18 +56,25 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   if (!data) return {};
 
-  const niche = lang === "no" ? data.meta.nicheNO : (nicheNames[data.meta.niche] ?? data.meta.niche);
+  const niche =
+    lang === "no" ? data.meta.nicheNO
+    : lang === "pl" && data.meta.nichePL ? data.meta.nichePL
+    : (nicheNames[data.meta.niche] ?? data.meta.niche);
   const nicheCapitalized = niche.charAt(0).toUpperCase() + niche.slice(1);
 
   const title =
     lang === "no"
       ? `Markedsrapport: ${nicheCapitalized} i ${data.meta.city} | DealCatcher`
-      : `Market Report: ${nicheCapitalized} in ${data.meta.city} | DealCatcher`;
+      : lang === "pl"
+        ? `Raport rynkowy: ${nicheCapitalized} w ${data.meta.city} | DealCatcher`
+        : `Market Report: ${nicheCapitalized} in ${data.meta.city} | DealCatcher`;
 
   const description =
     lang === "no"
       ? `${data.meta.totalSearchVolume} månedlige søk for ${niche} i ${data.meta.city}. Se søkeord, konkurrenter og CPC-data.`
-      : `${data.meta.totalSearchVolume} monthly searches for ${niche} in ${data.meta.city}. See keywords, competitors, and CPC data.`;
+      : lang === "pl"
+        ? `${data.meta.totalSearchVolume} wyszukiwań miesięcznie dla ${niche} w ${data.meta.city}. Słowa kluczowe, konkurencja i koszty reklam.`
+        : `${data.meta.totalSearchVolume} monthly searches for ${niche} in ${data.meta.city}. See keywords, competitors, and CPC data.`;
 
   const localeMap: Record<Locale, string> = { en: "en_US", no: "nb_NO", pl: "pl_PL" };
 
@@ -95,7 +102,10 @@ export default async function ReportPage({ params }: PageProps) {
 
   if (!data) notFound();
 
-  const nicheLower = lang === "no" ? data.meta.nicheNO : (nicheNames[data.meta.niche] ?? data.meta.niche);
+  const nicheLower =
+    lang === "no" ? data.meta.nicheNO
+    : lang === "pl" && data.meta.nichePL ? data.meta.nichePL
+    : (nicheNames[data.meta.niche] ?? data.meta.niche);
   const rd = dict.reportPage;
 
   return (

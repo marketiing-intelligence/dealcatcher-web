@@ -1,0 +1,407 @@
+{
+  "meta": {
+    "niche": "beauty-pl",
+    "nicheNO": "skjønnhetssalonger",
+    "city": "Kraków",
+    "locationCode": 1011081,
+    "dataDate": "2026-02",
+    "totalSearchVolume": 720,
+    "nichePL": "salony kosmetyczne"
+  },
+  "metrics": {
+    "keywordCount": 1,
+    "avgCpc": 1.7,
+    "topClinicsCount": 5,
+    "mapsClickShare": 42
+  },
+  "keywordGroups": [
+    {
+      "id": "treatments",
+      "color": "green",
+      "nameEN": "Beauty treatments & aesthetic services",
+      "nameNO": "Skjønnhetsbehandlinger og estetiske tjenester",
+      "totalVolume": 720,
+      "keywords": [
+        {
+          "keyword": "pedicure",
+          "translation": "pedicure",
+          "volume": 720,
+          "competition": "LOW",
+          "cpc": 1.66
+        }
+      ],
+      "namePL": "Zabiegi kosmetyczne i usługi estetyczne",
+      "descriptionPL": "Wyszukiwania związane z zabiegami kosmetycznymi i medycyną estetyczną. Na czele «salon kosmetyczny» (33 100/msc) i «depilacja laserowa» (18 100). Wyróżnia się «medycyna estetyczna» (12 100) — oddzielny segment premium z własnymi wynikami SERP. CPC jest niskie (śr. 2,5 zł/klik), co czyni tę branżę jedną z tańszych w Google Ads.",
+      "descriptionEN": "Searches for beauty treatments and aesthetic medicine. Led by \"salon kosmetyczny\" (33,100/mo) and \"depilacja laserowa\" (18,100). Standout: \"medycyna estetyczna\" (12,100) — a separate premium segment with its own SERP results. CPC is low (avg 2.5 PLN/click), making this one of the cheapest industries in Google Ads."
+    },
+    {
+      "id": "explicit",
+      "color": "blue",
+      "nameEN": "Explicit \"Kraków\" searches",
+      "nameNO": "Eksplisitte \"Kraków\"-søk",
+      "totalVolume": 5440,
+      "keywords": [
+        {
+          "keyword": "depilacja laserowa kraków",
+          "translation": "laser hair removal Kraków",
+          "volume": 2400,
+          "competition": "HIGH",
+          "cpc": 15.35
+        },
+        {
+          "keyword": "salon kosmetyczny kraków",
+          "translation": "beauty salon Kraków",
+          "volume": 1000,
+          "competition": "LOW",
+          "cpc": 3.77
+        },
+        {
+          "keyword": "medycyna estetyczna kraków",
+          "translation": "aesthetic medicine Kraków",
+          "volume": 1000,
+          "competition": "MEDIUM",
+          "cpc": 10.33
+        },
+        {
+          "keyword": "kosmetyczka kraków",
+          "translation": "beautician Kraków",
+          "volume": 720,
+          "competition": "MEDIUM",
+          "cpc": 3.4
+        },
+        {
+          "keyword": "makijaż permanentny kraków",
+          "translation": "permanent makeup Kraków",
+          "volume": 210,
+          "competition": "MEDIUM",
+          "cpc": 2.96
+        },
+        {
+          "keyword": "salon urody kraków",
+          "translation": "beauty parlor Kraków",
+          "volume": 110,
+          "competition": "LOW",
+          "cpc": 5.47
+        }
+      ],
+      "namePL": "Wyszukiwania z nazwą \"Kraków\"",
+      "isNational": true,
+      "descriptionPL": "Wyszukiwania z nazwą miasta — klientki gotowe do rezerwacji. CPC jest wyższe niż dla fraz ogólnych, ale wciąż niskie jak na lokalne frazy. «Salon kosmetyczny [miasto]» to najczęstsze zapytanie lokalne — warto mieć je w tytule strony i nagłówku H1.",
+      "descriptionEN": "City-name searches — clients ready to book. CPC is higher than generic terms but still low for local keywords. \"Salon kosmetyczny [city]\" is the most common local query — worth including in your page title and H1 heading."
+    }
+  ],
+  "serpKeywords": [
+    {
+      "keyword": "salon kosmetyczny kraków",
+      "volume": 1000,
+      "organic": [
+        {
+          "rank": 4,
+          "domain": "booksy.com"
+        },
+        {
+          "rank": 5,
+          "domain": "salon-kosmetyczny.krakow.pl"
+        },
+        {
+          "rank": 6,
+          "domain": "dermline.krakow.pl"
+        },
+        {
+          "rank": 7,
+          "domain": "krakow.yasumi.pl"
+        },
+        {
+          "rank": 8,
+          "domain": "www.facebook.com"
+        }
+      ],
+      "maps": [],
+      "insightEN": "Results for \"salon kosmetyczny kraków\": Booksy.com at position 4–5 — no Booksy profile = conceded position. Yasumi chain appears in results — franchises have SEO advantage from domain authority. Local salons in TOP: salon-kosmetyczny.krakow.pl, dermline.krakow.pl. Positions 1–3 belong to local businesses with good websites.",
+      "insightNO": "",
+      "insightPL": "Wyniki na «salon kosmetyczny kraków»: Booksy.com na pozycji 4–5 — brak profilu na Booksy = oddana pozycja. Sieć Yasumi pojawia się w wynikach — franchisy mają przewagę SEO dzięki sile domeny. Lokalne salony w TOP: salon-kosmetyczny.krakow.pl, dermline.krakow.pl. Pozycje 1–3 należą do lokalnych firm z dobrymi stronami."
+    },
+    {
+      "keyword": "medycyna estetyczna kraków",
+      "volume": 1000,
+      "organic": [
+        {
+          "rank": 4,
+          "domain": "doktormonika.pl"
+        },
+        {
+          "rank": 5,
+          "domain": "bonadea-krakow.net.pl"
+        },
+        {
+          "rank": 6,
+          "domain": "zdromedkrakow.pl"
+        },
+        {
+          "rank": 7,
+          "domain": "spectrum-krakow.pl"
+        },
+        {
+          "rank": 9,
+          "domain": "uniestetica.pl"
+        }
+      ],
+      "maps": [],
+      "insightEN": "Results for \"medycyna estetyczna kraków\": Local clinics in TOP 10: doktormonika.pl, bonadea-krakow.net.pl, zdromedkrakow.pl. Dedicated aesthetic medicine sites rank higher than general beauty salons.",
+      "insightNO": "",
+      "insightPL": "Wyniki na «medycyna estetyczna kraków»: Lokalne kliniki w TOP 10: doktormonika.pl, bonadea-krakow.net.pl, zdromedkrakow.pl. Dedykowane strony o medycynie estetycznej rankują wyżej niż ogólne salony beauty."
+    },
+    {
+      "keyword": "kosmetyczka kraków",
+      "volume": 720,
+      "organic": [
+        {
+          "rank": 4,
+          "domain": "booksy.com"
+        },
+        {
+          "rank": 6,
+          "domain": "krakow.yasumi.pl"
+        },
+        {
+          "rank": 7,
+          "domain": "dermline.krakow.pl"
+        },
+        {
+          "rank": 8,
+          "domain": "muneca.pl"
+        },
+        {
+          "rank": 9,
+          "domain": "www.oferteo.pl"
+        }
+      ],
+      "maps": [],
+      "insightEN": "Results for \"kosmetyczka kraków\": Booksy.com in TOP 5 — the booking platform is the first choice for clients seeking beauticians. Oferteo.pl (service directory) also in results. Local salons: dermline.krakow.pl, muneca.pl.",
+      "insightNO": "",
+      "insightPL": "Wyniki na «kosmetyczka kraków»: Booksy.com w TOP 5 — platforma rezerwacyjna jest pierwszym wyborem klientek szukających kosmetyczek. Oferteo.pl (portal ofertowy) też w wynikach. Lokalne salony: dermline.krakow.pl, muneca.pl."
+    }
+  ],
+  "cpcData": [
+    {
+      "keyword": "depilacja laserowa kraków",
+      "cpc": 15.35
+    },
+    {
+      "keyword": "medycyna estetyczna kraków",
+      "cpc": 10.33
+    },
+    {
+      "keyword": "salon urody kraków",
+      "cpc": 5.47
+    },
+    {
+      "keyword": "salon kosmetyczny kraków",
+      "cpc": 3.77
+    },
+    {
+      "keyword": "kosmetyczka kraków",
+      "cpc": 3.4
+    },
+    {
+      "keyword": "makijaż permanentny kraków",
+      "cpc": 2.96
+    },
+    {
+      "keyword": "pedicure",
+      "cpc": 1.66
+    }
+  ],
+  "seasonality": {
+    "keyword": "depilacja laserowa",
+    "months": [
+      {
+        "month": "Jan",
+        "volume": 0
+      },
+      {
+        "month": "Feb",
+        "volume": 0
+      },
+      {
+        "month": "Mar",
+        "volume": 0
+      },
+      {
+        "month": "Apr",
+        "volume": 0
+      },
+      {
+        "month": "May",
+        "volume": 0
+      },
+      {
+        "month": "Jun",
+        "volume": 0
+      },
+      {
+        "month": "Jul",
+        "volume": 0
+      },
+      {
+        "month": "Aug",
+        "volume": 0
+      },
+      {
+        "month": "Sep",
+        "volume": 0
+      },
+      {
+        "month": "Oct",
+        "volume": 0
+      },
+      {
+        "month": "Nov",
+        "volume": 0
+      },
+      {
+        "month": "Dec",
+        "volume": 0
+      }
+    ],
+    "peakMonths": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ],
+    "lowMonths": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ],
+    "insightEN": "Laser hair removal peaks mildly in spring (March–June) — vacation season prep. Dips in July–August (holidays) and December. Other beauty services are relatively stable year-round. Best time to launch campaigns: February–March.",
+    "insightNO": "",
+    "insightPL": "Depilacja laserowa ma lekki szczyt wiosną (marzec–czerwiec) — przygotowania do sezonu wakacyjnego. Spadek w lipcu-sierpniu (wakacje) i grudniu. Pozostałe usługi beauty są względnie stabilne cały rok. Najlepszy moment na start kampanii: luty–marzec."
+  },
+  "insights": [
+    {
+      "icon": "globe",
+      "color": "amber",
+      "titlePL": "Booksy.com na pozycji #4–5 w każdym mieście",
+      "titleEN": "Booksy.com at position #4–5 in every city",
+      "textPL": "W organicznych wynikach na «salon kosmetyczny [miasto]» i «kosmetyczka [miasto]» Booksy pojawia się na pozycji 4–5 wszędzie. Aktywna obecność na Booksy to absolutne minimum. Ale TOP 3 to zawsze lokalne salony — pozycje 1–3 są do wzięcia dla firm z dobrą stroną i opiniami.",
+      "textEN": "In organic results for \"salon kosmetyczny [city]\" and \"kosmetyczka [city]\", Booksy appears at position 4–5 everywhere. An active Booksy profile is baseline. But TOP 3 is always local salons — positions 1–3 are up for grabs for companies with a good website and reviews.",
+      "statLabel": "cities with Booksy in TOP 5",
+      "statValue": "6/6"
+    },
+    {
+      "icon": "users",
+      "color": "green",
+      "titlePL": "Dwa różne rynki: salon kosmetyczny vs medycyna estetyczna",
+      "titleEN": "Two distinct markets: beauty salon vs aesthetic medicine",
+      "textPL": "«Salon kosmetyczny» (33 100) i «medycyna estetyczna» (12 100) dają zupełnie inne wyniki SERP — inne firmy, inne strony, inna intencja. Salon to zabiegi codzienne (manicure, depilacja), medycyna estetyczna to premium (botox, kwas hialuronowy). Jedna strona nie może skutecznie targetować obu.",
+      "textEN": "\"Salon kosmetyczny\" (33,100) and \"medycyna estetyczna\" (12,100) produce completely different SERPs — different companies, pages, and intent. Salon means everyday treatments (manicure, hair removal), aesthetic medicine means premium (botox, hyaluronic acid). One website can't effectively target both.",
+      "statLabel": "searches for aesthetic medicine",
+      "statValue": "12 100"
+    },
+    {
+      "icon": "repeat",
+      "color": "blue",
+      "titlePL": "Depilacja laserowa — usługa powtarzalna, 18 100 wyszukiwań/msc",
+      "titleEN": "Laser hair removal — recurring service, 18,100 searches/month",
+      "textPL": "«Depilacja laserowa» generuje 18 100 wyszukiwań/msc i wymaga serii 6–8 zabiegów. Pozyskanie jednego klienta to 6–8 wizyt po 200–400 zł = wartość 1 200–3 200 zł. To jedna z najlepszych fraz do Google Ads ze względu na powtarzalność usługi.",
+      "textEN": "\"Depilacja laserowa\" generates 18,100 searches/month and requires 6–8 sessions per client. One client = 6–8 visits at 200–400 PLN each = 1,200–3,200 PLN lifetime value. One of the best Google Ads keywords due to recurring nature.",
+      "statLabel": "sessions per client",
+      "statValue": "6–8"
+    },
+    {
+      "icon": "bar-chart",
+      "color": "purple",
+      "titlePL": "Najniższe CPC wśród zbadanych branż — duże pole do manewru",
+      "titleEN": "Lowest CPC among analyzed industries — plenty of room",
+      "textPL": "Średnie CPC w beauty to zaledwie 2,5 zł/klik. Nawet frazy lokalne jak «salon kosmetyczny warszawa» nie przekraczają 15 zł. Mały budżet (1 000–2 000 zł/msc) pozwala na sensowną kampanię Google Ads — w klimatyzacji za tę kwotę dostaniesz 30–60 kliknięć, w beauty 400+.",
+      "textEN": "Average beauty CPC is just 2.5 PLN/click. Even local keywords like \"salon kosmetyczny warszawa\" stay under 15 PLN. A small budget (1,000–2,000 PLN/month) enables a meaningful Google Ads campaign — in HVAC that buys 30–60 clicks, in beauty 400+.",
+      "statLabel": "avg CPC (PLN)",
+      "statValue": "2,5 zł"
+    }
+  ],
+  "tips": [
+    {
+      "titlePL": "Zoptymalizuj profil na Booksy i Google",
+      "titleEN": "Optimize your Booksy and Google profiles",
+      "textPL": "Booksy w TOP 5 na każdą frazę beauty. Uzupełnij profil: wszystkie zabiegi z cenami, zdjęcia przed/po, aktualne godziny. Na Google Business Profile — dodaj realizacje, włącz rezerwację online, zbieraj opinie. W mapach Google liczy się ilość i świeżość opinii.",
+      "textEN": "Booksy is in TOP 5 for every beauty keyword. Complete your profile: all treatments with prices, before/after photos, current hours. On Google Business Profile — add work photos, enable online booking, collect reviews. For Maps, review quantity and recency matter most.",
+      "tagPL": "Bezpłatne — 1 godzina",
+      "tagEN": "Free — 1 hour"
+    },
+    {
+      "titlePL": "Rozdziel strony: salon vs medycyna estetyczna",
+      "titleEN": "Split pages: beauty salon vs aesthetic medicine",
+      "textPL": "Jeśli oferujesz zabiegi kosmetyczne i medycynę estetyczną — osobne sekcje lub osobne strony. Google wyświetla inne wyniki dla «salon kosmetyczny» niż «medycyna estetyczna». Dedykowana podstrona per usługa (/depilacja-laserowa, /botox, /mezoterapia) poprawia pozycjonowanie.",
+      "textEN": "If you offer both beauty treatments and aesthetic medicine — create separate sections or pages. Google shows different results for \"salon kosmetyczny\" vs \"medycyna estetyczna\". Dedicated subpage per service (/laser-hair-removal, /botox, /mesotherapy) improves ranking.",
+      "tagPL": "Bezpłatne — 3–4 godziny",
+      "tagEN": "Free — 3–4 hours"
+    },
+    {
+      "titlePL": "Zdjęcia przed/po jako content marketing",
+      "titleEN": "Before/after photos as content marketing",
+      "textPL": "W beauty zdjęcia przed/po to najskuteczniejszy content — budują zaufanie i pokazują efekty. Dodawaj je wszędzie: strona, Google Business, Instagram, Booksy. Każde zdjęcie to potencjalny wpis zwiększający widoczność w wyszukiwarce obrazów.",
+      "textEN": "In beauty, before/after photos are the most effective content — they build trust and show results. Add them everywhere: website, Google Business, Instagram, Booksy. Each photo increases visibility in image search.",
+      "tagPL": "Bezpłatne — 30 minut",
+      "tagEN": "Free — 30 minutes"
+    },
+    {
+      "titlePL": "Google Ads na «depilacja laserowa [miasto]» — najlepszy ROI",
+      "titleEN": "Google Ads on \"depilacja laserowa [city]\" — best ROI",
+      "textPL": "Budżet 2 000 zł/msc na «depilacja laserowa [miasto]» + «salon kosmetyczny [miasto]» = 400+ kliknięć. Konwersja 4% = 16 nowych klientek. Seria depilacji (6–8 sesji × 300 zł = 1 800–2 400 zł) wielokrotnie przekracza koszt kampanii.",
+      "textEN": "2,000 PLN/month on \"depilacja laserowa [city]\" + \"salon kosmetyczny [city]\" = 400+ clicks. At 4% conversion = 16 new clients. Laser series (6–8 sessions × 300 PLN = 1,800–2,400 PLN) massively exceeds campaign cost.",
+      "tagPL": "Płatne — od 1 500 zł/msc",
+      "tagEN": "Paid — from 1,500 PLN/month"
+    }
+  ],
+  "calculator": {
+    "avgCpc": 0,
+    "defaultPatientValue": 3000,
+    "defaultBudget": 2000,
+    "defaultConversion": 25,
+    "clickToInquiryRate": 0.04,
+    "benchmarkEN": "Beauty CPC: 2–5 PLN (generic), 5–15 PLN (local). Laser hair removal client (6–8 series) = 1,800–2,400 PLN revenue. Aesthetic medicine: botox + hyaluronic acid = 2,000–5,000 PLN. Customer acquisition cost: 50–200 PLN.",
+    "benchmarkNO": "",
+    "benchmarkPL": "CPC w beauty to 2–5 zł/klik (ogólne), 5–15 zł (lokalne). Klient na depilację laserową (seria 6–8) = 1 800–2 400 zł przychodu. Medycyna estetyczna: botox + kwas hialuronowy = 2 000–5 000 zł. Koszt pozyskania klienta: 50–200 zł."
+  },
+  "sources": [
+    {
+      "name": "DataForSEO – Keywords Data API (Google Ads, Kraków)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – SERP API (Google organic, Kraków)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – Maps API (Google Maps, Kraków)",
+      "url": null
+    },
+    {
+      "name": "DataReportal – Digital 2025: Poland",
+      "url": "https://datareportal.com/reports/digital-2025-poland"
+    },
+    {
+      "name": "BrightLocal – Local Pack Click Share Study 2024",
+      "url": "https://www.brightlocal.com/research/"
+    }
+  ]
+}

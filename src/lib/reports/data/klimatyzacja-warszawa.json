@@ -1,0 +1,583 @@
+{
+  "meta": {
+    "niche": "klimatyzacja",
+    "nicheNO": "klimaanlegg",
+    "city": "Warszawa",
+    "locationCode": 1011078,
+    "dataDate": "2026-02",
+    "totalSearchVolume": 210930,
+    "nichePL": "klimatyzacja"
+  },
+  "metrics": {
+    "keywordCount": 20,
+    "avgCpc": 2.5,
+    "topClinicsCount": 5,
+    "mapsClickShare": 46
+  },
+  "keywordGroups": [
+    {
+      "id": "services",
+      "color": "green",
+      "nameEN": "HVAC installation & service",
+      "nameNO": "Klimaanlegg installasjon og service",
+      "totalVolume": 210930,
+      "keywords": [
+        {
+          "keyword": "pompa ciepła",
+          "translation": "heat pump",
+          "volume": 60500,
+          "competition": "HIGH",
+          "cpc": 2.19
+        },
+        {
+          "keyword": "klimatyzator",
+          "translation": "air conditioner unit",
+          "volume": 40500,
+          "competition": "HIGH",
+          "cpc": 1.62
+        },
+        {
+          "keyword": "klimatyzacja",
+          "translation": "air conditioning",
+          "volume": 33100,
+          "competition": "HIGH",
+          "cpc": 2.47
+        },
+        {
+          "keyword": "rekuperacja",
+          "translation": "heat recovery ventilation",
+          "volume": 27100,
+          "competition": "HIGH",
+          "cpc": 1.78
+        },
+        {
+          "keyword": "serwis klimatyzacji",
+          "translation": "AC service",
+          "volume": 8100,
+          "competition": "LOW",
+          "cpc": 8.02
+        },
+        {
+          "keyword": "klimatyzacja do domu",
+          "translation": "home air conditioning",
+          "volume": 8100,
+          "competition": "HIGH",
+          "cpc": 2.67
+        },
+        {
+          "keyword": "montaż klimatyzacji",
+          "translation": "AC installation",
+          "volume": 5400,
+          "competition": "MEDIUM",
+          "cpc": 9.88
+        },
+        {
+          "keyword": "klimatyzacja do mieszkania",
+          "translation": "apartment AC",
+          "volume": 5400,
+          "competition": "HIGH",
+          "cpc": 3.32
+        },
+        {
+          "keyword": "wentylacja mechaniczna",
+          "translation": "mechanical ventilation",
+          "volume": 5400,
+          "competition": "HIGH",
+          "cpc": 1.62
+        },
+        {
+          "keyword": "klimatyzacja przenośna",
+          "translation": "portable AC",
+          "volume": 3600,
+          "competition": "HIGH",
+          "cpc": 1.01
+        },
+        {
+          "keyword": "klimatyzacja domowa",
+          "translation": "home AC system",
+          "volume": 3600,
+          "competition": "HIGH",
+          "cpc": 2.31
+        },
+        {
+          "keyword": "klimatyzacja split",
+          "translation": "split AC",
+          "volume": 2900,
+          "competition": "HIGH",
+          "cpc": 2.11
+        },
+        {
+          "keyword": "pompa ciepła powietrze woda",
+          "translation": "air-to-water heat pump",
+          "volume": 2400,
+          "competition": "HIGH",
+          "cpc": 1.58
+        },
+        {
+          "keyword": "klimatyzacja multisplit",
+          "translation": "multi-split AC",
+          "volume": 1300,
+          "competition": "HIGH",
+          "cpc": 1.58
+        },
+        {
+          "keyword": "czyszczenie klimatyzacji",
+          "translation": "AC cleaning",
+          "volume": 1300,
+          "competition": "HIGH",
+          "cpc": 3.2
+        },
+        {
+          "keyword": "klimatyzacja cena",
+          "translation": "AC price",
+          "volume": 1000,
+          "competition": "HIGH",
+          "cpc": 2.47
+        },
+        {
+          "keyword": "ile kosztuje klimatyzacja",
+          "translation": "how much does AC cost",
+          "volume": 720,
+          "competition": "HIGH",
+          "cpc": 3.2
+        },
+        {
+          "keyword": "przegląd klimatyzacji",
+          "translation": "AC inspection",
+          "volume": 480,
+          "competition": "LOW",
+          "cpc": 10.45
+        },
+        {
+          "keyword": "klimatyzacja najtaniej",
+          "translation": "cheapest AC",
+          "volume": 20,
+          "competition": "HIGH",
+          "cpc": 1.86
+        },
+        {
+          "keyword": "klimatyzacja biuro",
+          "translation": "office AC",
+          "volume": 10,
+          "competition": "MEDIUM",
+          "cpc": 6.48
+        }
+      ],
+      "namePL": "Montaż i serwis klimatyzacji",
+      "descriptionPL": "Wyszukiwania związane z montażem, serwisem i zakupem klimatyzacji. Absolutnym liderem jest fraza «pompa ciepła» z 60 500 wyszukiwań/msc — niemal 3× więcej niż samo «klimatyzacja» (33 100). To pokazuje, jak silnie polski rynek przesunął się w stronę pomp ciepła. CPC waha się od 1 zł (klimatyzacja przenośna) do 10 zł (przegląd klimatyzacji). Frazy serwisowe są zaskakująco drogie — to sygnał niskiej konkurencji w Google Ads i dużej wartości klienta.",
+      "descriptionEN": "Searches for AC installation, service, and purchase. The clear leader is \"pompa ciepła\" (heat pump) with 60,500 monthly searches — nearly 3× more than \"klimatyzacja\" itself (33,100). This shows how strongly the Polish market has shifted toward heat pumps. CPC ranges from 1 PLN (portable AC) to 10 PLN (AC inspection). Service keywords are surprisingly expensive — signaling low Google Ads competition and high customer value."
+    },
+    {
+      "id": "explicit",
+      "color": "blue",
+      "nameEN": "Explicit \"Warszawa\" searches",
+      "nameNO": "Eksplisitte \"Warszawa\"-søk",
+      "totalVolume": 6610,
+      "keywords": [
+        {
+          "keyword": "klimatyzacja warszawa",
+          "translation": "air conditioning Warszawa",
+          "volume": 3600,
+          "competition": "MEDIUM",
+          "cpc": 32.04
+        },
+        {
+          "keyword": "montaż klimatyzacji warszawa",
+          "translation": "AC installation Warszawa",
+          "volume": 1300,
+          "competition": "MEDIUM",
+          "cpc": 36.65
+        },
+        {
+          "keyword": "serwis klimatyzacji warszawa",
+          "translation": "AC service Warszawa",
+          "volume": 1000,
+          "competition": "LOW",
+          "cpc": 22.6
+        },
+        {
+          "keyword": "pompa ciepła warszawa",
+          "translation": "heat pump Warszawa",
+          "volume": 390,
+          "competition": "LOW",
+          "cpc": 16.44
+        },
+        {
+          "keyword": "rekuperacja warszawa",
+          "translation": "heat recovery Warszawa",
+          "volume": 320,
+          "competition": "MEDIUM",
+          "cpc": 9.11
+        }
+      ],
+      "namePL": "Wyszukiwania z nazwą \"Warszawa\"",
+      "isNational": true,
+      "descriptionPL": "Wyszukiwania z nazwą miasta w frazie — klienci gotowi do zakupu usługi lokalnie. CPC jest 5–15× wyższe niż dla fraz ogólnych (np. «klimatyzacja warszawa» = 32 zł vs «klimatyzacja» = 2,47 zł). Te frazy stanowią niewielki procent wolumenu, ale generują najcenniejszy ruch.",
+      "descriptionEN": "Searches including the city name — buyers ready to hire locally. CPC is 5–15× higher than generic terms (e.g. \"klimatyzacja warszawa\" = 32 PLN vs \"klimatyzacja\" = 2.47 PLN). Small share of total volume, but the most valuable traffic."
+    }
+  ],
+  "serpKeywords": [
+    {
+      "keyword": "klimatyzacja warszawa",
+      "volume": 3600,
+      "organic": [
+        {
+          "rank": 5,
+          "domain": "aero7.pl"
+        },
+        {
+          "rank": 6,
+          "domain": "www.mediaexpert.pl"
+        },
+        {
+          "rank": 7,
+          "domain": "www.klimatyzacjawentklima.pl"
+        },
+        {
+          "rank": 8,
+          "domain": "www.climapolska.com.pl"
+        },
+        {
+          "rank": 9,
+          "domain": "strefaklimy.pl"
+        }
+      ],
+      "maps": [],
+      "insightEN": "Results for \"klimatyzacja warszawa\": Aero7.pl — national leader ranks high across multiple cities. Local companies in TOP 10: www.klimatyzacjawentklima.pl, www.climapolska.com.pl, strefaklimy.pl. MediaExpert (retail) also in results — but doesn't compete on services.",
+      "insightNO": "",
+      "insightPL": "Wyniki na «klimatyzacja warszawa»: Aero7.pl — ogólnopolski lider rankuje wysoko w wielu miastach. Lokalne firmy w TOP 10: www.klimatyzacjawentklima.pl, www.climapolska.com.pl, strefaklimy.pl. MediaExpert (sprzedaż detaliczna) też w wynikach — ale nie konkuruje na usługi."
+    },
+    {
+      "keyword": "montaż klimatyzacji warszawa",
+      "volume": 1300,
+      "organic": [
+        {
+          "rank": 5,
+          "domain": "aero7.pl"
+        },
+        {
+          "rank": 6,
+          "domain": "www.mediaexpert.pl"
+        },
+        {
+          "rank": 7,
+          "domain": "www.klimatyzacjawentklima.pl"
+        },
+        {
+          "rank": 8,
+          "domain": "www.olx.pl"
+        },
+        {
+          "rank": 9,
+          "domain": "strefaklimy.pl"
+        }
+      ],
+      "maps": [],
+      "insightEN": "Results for \"montaż klimatyzacji warszawa\": Aero7.pl (national player) appears in TOP 10. MediaExpert sells units but doesn't install — their ranking is an opening for installers with a dedicated page. Local companies in TOP 10: www.klimatyzacjawentklima.pl, strefaklimy.pl.",
+      "insightNO": "",
+      "insightPL": "Wyniki na «montaż klimatyzacji warszawa»: Aero7.pl (ogólnopolski gracz) pojawia się w TOP 10. MediaExpert sprzedaje urządzenia, ale nie montuje — ich pozycja to szansa dla montażystów z dedykowaną stroną. Lokalne firmy w TOP 10: www.klimatyzacjawentklima.pl, strefaklimy.pl."
+    },
+    {
+      "keyword": "serwis klimatyzacji warszawa",
+      "volume": 1000,
+      "organic": [
+        {
+          "rank": 6,
+          "domain": "www.klimatyzacjawentklima.pl"
+        },
+        {
+          "rank": 7,
+          "domain": "szoruj.pl"
+        },
+        {
+          "rank": 8,
+          "domain": "ac-pro.pl"
+        },
+        {
+          "rank": 10,
+          "domain": "www.oferteo.pl"
+        },
+        {
+          "rank": 11,
+          "domain": "www.climapolska.com.pl"
+        }
+      ],
+      "maps": [],
+      "insightEN": "Results for \"serwis klimatyzacji warszawa\": organic positions start from #6. Oferteo.pl (directory) appears — confirms demand for service comparison. Specialized service providers: www.klimatyzacjawentklima.pl, szoruj.pl, ac-pro.pl. Fewer players than installation — less competition.",
+      "insightNO": "",
+      "insightPL": "Wyniki na «serwis klimatyzacji warszawa»: pozycje organiczne zaczynają się od #6. Oferteo.pl (portal) pojawia się w wynikach — potwierdza zapotrzebowanie na porównywanie ofert serwisowych. Wyspecjalizowane serwisy: www.klimatyzacjawentklima.pl, szoruj.pl, ac-pro.pl. Mniej graczy niż w montażu — mniejsza konkurencja."
+    }
+  ],
+  "cpcData": [
+    {
+      "keyword": "montaż klimatyzacji warszawa",
+      "cpc": 36.65
+    },
+    {
+      "keyword": "klimatyzacja warszawa",
+      "cpc": 32.04
+    },
+    {
+      "keyword": "serwis klimatyzacji warszawa",
+      "cpc": 22.6
+    },
+    {
+      "keyword": "pompa ciepła warszawa",
+      "cpc": 16.44
+    },
+    {
+      "keyword": "przegląd klimatyzacji",
+      "cpc": 10.45
+    },
+    {
+      "keyword": "montaż klimatyzacji",
+      "cpc": 9.88
+    },
+    {
+      "keyword": "rekuperacja warszawa",
+      "cpc": 9.11
+    },
+    {
+      "keyword": "serwis klimatyzacji",
+      "cpc": 8.02
+    },
+    {
+      "keyword": "klimatyzacja biuro",
+      "cpc": 6.48
+    },
+    {
+      "keyword": "klimatyzacja do mieszkania",
+      "cpc": 3.32
+    },
+    {
+      "keyword": "czyszczenie klimatyzacji",
+      "cpc": 3.2
+    },
+    {
+      "keyword": "ile kosztuje klimatyzacja",
+      "cpc": 3.2
+    },
+    {
+      "keyword": "klimatyzacja do domu",
+      "cpc": 2.67
+    },
+    {
+      "keyword": "klimatyzacja",
+      "cpc": 2.47
+    },
+    {
+      "keyword": "klimatyzacja cena",
+      "cpc": 2.47
+    },
+    {
+      "keyword": "klimatyzacja domowa",
+      "cpc": 2.31
+    },
+    {
+      "keyword": "pompa ciepła",
+      "cpc": 2.19
+    },
+    {
+      "keyword": "klimatyzacja split",
+      "cpc": 2.11
+    },
+    {
+      "keyword": "klimatyzacja najtaniej",
+      "cpc": 1.86
+    },
+    {
+      "keyword": "rekuperacja",
+      "cpc": 1.78
+    },
+    {
+      "keyword": "klimatyzator",
+      "cpc": 1.62
+    },
+    {
+      "keyword": "wentylacja mechaniczna",
+      "cpc": 1.62
+    },
+    {
+      "keyword": "pompa ciepła powietrze woda",
+      "cpc": 1.58
+    },
+    {
+      "keyword": "klimatyzacja multisplit",
+      "cpc": 1.58
+    },
+    {
+      "keyword": "klimatyzacja przenośna",
+      "cpc": 1.01
+    }
+  ],
+  "seasonality": {
+    "keyword": "klimatyzacja",
+    "months": [
+      {
+        "month": "Jan",
+        "volume": 22200
+      },
+      {
+        "month": "Feb",
+        "volume": 22200
+      },
+      {
+        "month": "Mar",
+        "volume": 33100
+      },
+      {
+        "month": "Apr",
+        "volume": 49500
+      },
+      {
+        "month": "May",
+        "volume": 33100
+      },
+      {
+        "month": "Jun",
+        "volume": 74000
+      },
+      {
+        "month": "Jul",
+        "volume": 60500
+      },
+      {
+        "month": "Aug",
+        "volume": 33100
+      },
+      {
+        "month": "Sep",
+        "volume": 22200
+      },
+      {
+        "month": "Oct",
+        "volume": 14800
+      },
+      {
+        "month": "Nov",
+        "volume": 14800
+      },
+      {
+        "month": "Dec",
+        "volume": 12100
+      }
+    ],
+    "peakMonths": [
+      "Jun"
+    ],
+    "lowMonths": [
+      "Dec"
+    ],
+    "insightEN": "AC season runs March–August. Peak in June (74,000 searches), December is the minimum (12,100). Growth starts in March — the time to launch campaigns. Companies starting ads only in June lose 2–3 months of visibility-building.",
+    "insightNO": "",
+    "insightPL": "Sezon klimatyzacyjny to marzec–sierpień. Szczyt w czerwcu (74 000 wyszukiwań), grudzień to minimum (12 100). Wzrost od marca — moment na uruchomienie kampanii. Firmy zaczynające reklamę dopiero w czerwcu tracą 2–3 miesiące budowania widoczności."
+  },
+  "insights": [
+    {
+      "icon": "flame",
+      "color": "amber",
+      "titlePL": "Pompy ciepła zdominowały rynek — 60 500 wyszukiwań/msc",
+      "titleEN": "Heat pumps dominate the market — 60,500 searches/month",
+      "textPL": "Fraza «pompa ciepła» generuje 60 500 wyszukiwań miesięcznie — niemal 3× więcej niż «klimatyzacja» (33 100). Dochodzi «rekuperacja» z 27 100 i «wentylacja mechaniczna» z 5 400. Polski rynek HVAC nie ogranicza się do chłodzenia — klienci szukają kompleksowych rozwiązań grzewczo-wentylacyjnych.",
+      "textEN": "\"Pompa ciepła\" (heat pump) generates 60,500 searches/month — nearly 3× more than \"klimatyzacja\" (33,100). Add \"rekuperacja\" (27,100) and \"wentylacja mechaniczna\" (5,400). The Polish HVAC market has moved beyond cooling — customers want integrated heating and ventilation.",
+      "statLabel": "searches/mo for heat pumps",
+      "statValue": "60 500"
+    },
+    {
+      "icon": "trending-up",
+      "color": "green",
+      "titlePL": "Sezonowość 6:1 — czerwiec rekordowy, grudzień martwy",
+      "titleEN": "6:1 seasonality — June peaks, December flatlines",
+      "textPL": "«Klimatyzacja» osiąga szczyt w czerwcu (74 000) i minimum w grudniu (12 100) — stosunek 6:1. Wzrost zaczyna się w marcu (+50% m/m), a największy skok to kwiecień→czerwiec. Budżet reklamowy powinien podążać: start kampanii w marcu, szczyt wydatków maj–lipiec, ograniczenie od września.",
+      "textEN": "\"Klimatyzacja\" peaks in June (74,000) and bottoms in December (12,100) — a 6:1 ratio. Growth starts in March (+50% MoM), biggest jump April→June. Ad budgets should follow: launch in March, peak spend May–July, scale down from September.",
+      "statLabel": "peak vs low ratio",
+      "statValue": "6:1"
+    },
+    {
+      "icon": "dollar-sign",
+      "color": "blue",
+      "titlePL": "Lokalne frazy kosztują 13× więcej — ale przynoszą klientów",
+      "titleEN": "Local keywords cost 13× more — but deliver customers",
+      "textPL": "«Klimatyzacja» kosztuje 2,47 zł/klik, ale «klimatyzacja warszawa» to 32 zł — 13× różnicy. «Montaż klimatyzacji» to 9,88 zł, z miastem nawet 37 zł. Te frazy mają niski wolumen (1–4 tys.), ale bardzo precyzyjną intencję: ktoś szuka montażysty tu i teraz.",
+      "textEN": "\"Klimatyzacja\" costs 2.47 PLN/click, but \"klimatyzacja warszawa\" is 32 PLN — a 13× gap. \"Montaż klimatyzacji\" is 9.88 PLN, with a city name up to 37 PLN. Low volume (1–4K), but extremely precise intent: someone seeking an installer right now.",
+      "statLabel": "local vs generic CPC",
+      "statValue": "13×"
+    },
+    {
+      "icon": "globe",
+      "color": "purple",
+      "titlePL": "MediaExpert i OLX w TOP 10 — szansa dla lokalnych firm",
+      "titleEN": "Retail chains in TOP 10 — opportunity for local companies",
+      "textPL": "W wynikach organicznych pojawiają się MediaExpert.pl, OLX.pl i Oferteo.pl — portale, które nie montują klimatyzacji. Lokalne firmy mogą to wykorzystać: dedykowana strona «montaż klimatyzacji [miasto]» z cenami i opiniami może wyprzedzić portal, który ma tylko listę produktów.",
+      "textEN": "Organic SERPs include MediaExpert.pl, OLX.pl, and Oferteo.pl — portals that don't install AC. Local companies can exploit this: a dedicated \"AC installation [city]\" page with pricing and reviews can outrank a product listing page.",
+      "statLabel": "retail sites in TOP 10",
+      "statValue": "2–3"
+    }
+  ],
+  "tips": [
+    {
+      "titlePL": "Optymalizuj Google Business Profile",
+      "titleEN": "Optimize your Google Business Profile",
+      "textPL": "Pełne kategorie: Montaż klimatyzacji, Serwis klimatyzacji, Pompy ciepła, Wentylacja. Zdjęcia realizacji, godziny otwarcia, zakres obsługiwanego obszaru. Przycisk «Zadzwoń» i regularne posty z ofertami sezonowymi. 46% kliknięć na frazy HVAC trafia w wyniki map — to twój najważniejszy kanał.",
+      "textEN": "Full categories: AC installation, AC service, Heat pumps, Ventilation. Work photos, business hours, service area. Enable \"Call\" button and post seasonal offers regularly. 46% of HVAC keyword clicks go to Maps results — this is your most important channel.",
+      "tagPL": "Bezpłatne — 30 minut",
+      "tagEN": "Free — 30 minutes"
+    },
+    {
+      "titlePL": "Stwórz dedykowane podstrony per usługa",
+      "titleEN": "Create dedicated landing pages per service",
+      "textPL": "Nie wystarczy jedna strona «Oferta». Osobne podstrony: montaż klimatyzacji, serwis klimatyzacji, pompy ciepła, rekuperacja. Na każdej: opis, orientacyjne ceny, galeria realizacji, formularz kontaktowy. Google nagradza trafność — strona o montażu rankuje wyżej na «montaż klimatyzacji» niż ogólna oferta.",
+      "textEN": "A single \"Services\" page isn't enough. Create separate pages: AC installation, AC service, heat pumps, ventilation. Each with: description, indicative pricing, gallery, contact form. Google rewards relevance — an installation page ranks higher for \"AC installation\" than a generic services page.",
+      "tagPL": "Bezpłatne — 2–3 godziny",
+      "tagEN": "Free — 2–3 hours"
+    },
+    {
+      "titlePL": "Celuj w frazy serwisowe — tańsze i mniej konkurencyjne",
+      "titleEN": "Target service/maintenance keywords — cheaper, less competitive",
+      "textPL": "Większość firm celuje w «klimatyzacja [miasto]» i «montaż klimatyzacji [miasto]». Prawie nikt nie targetuje «serwis klimatyzacji [miasto]» (CPC 22 zł vs 37 zł za montaż) ani «przegląd klimatyzacji» (10 zł). Klient serwisowy wraca co roku — jedna relacja to wieloletni przychód.",
+      "textEN": "Most companies target \"klimatyzacja [city]\" and \"AC installation [city]\". Almost nobody targets \"serwis klimatyzacji [city]\" (CPC 22 PLN vs 37 PLN for installation) or \"przegląd klimatyzacji\" (10 PLN). Service customers return annually — one relationship means years of revenue.",
+      "tagPL": "Bezpłatne — 1 godzina",
+      "tagEN": "Free — 1 hour"
+    },
+    {
+      "titlePL": "Google Ads na frazy lokalne w sezonie (marzec–sierpień)",
+      "titleEN": "Google Ads on local keywords in season (March–August)",
+      "textPL": "Przy budżecie 3 000 zł/msc na «klimatyzacja [miasto]» + «montaż klimatyzacji [miasto]» — ok. 100 kliknięć. Konwersja 4%, średnia wartość zlecenia 6 000 zł = 4 nowi klienci i 24 000 zł przychodu. Kalkulatorem powyżej przeliczymy dokładniej.",
+      "textEN": "With 3,000 PLN/month on \"klimatyzacja [city]\" + \"montaż klimatyzacji [city]\" — ~100 clicks. At 4% conversion and 6,000 PLN avg job value = 4 new customers and 24,000 PLN revenue. Use the calculator above for your budget.",
+      "tagPL": "Płatne — od 2 000 zł/msc",
+      "tagEN": "Paid — from 2,000 PLN/month"
+    }
+  ],
+  "calculator": {
+    "avgCpc": 0,
+    "defaultPatientValue": 6000,
+    "defaultBudget": 3000,
+    "defaultConversion": 25,
+    "clickToInquiryRate": 0.04,
+    "benchmarkEN": "Generic keywords (klimatyzacja, pompa ciepła) cost 1–3 PLN/click. City keywords cost 22–37 PLN — but convert much higher. Service/maintenance keywords cost 8–10 PLN and offer the best ROI: service customers return annually.",
+    "benchmarkNO": "",
+    "benchmarkPL": "Ogólne frazy (klimatyzacja, pompa ciepła) kosztują 1–3 zł/klik. Frazy z miastem to 22–37 zł — ale z dużo wyższą konwersją. Frazy serwisowe (serwis, przegląd) to 8–10 zł i dają najlepszy zwrot: klient serwisowy wraca co roku."
+  },
+  "sources": [
+    {
+      "name": "DataForSEO – Keywords Data API (Google Ads, Warszawa)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – SERP API (Google organic, Warszawa)",
+      "url": null
+    },
+    {
+      "name": "DataForSEO – Maps API (Google Maps, Warszawa)",
+      "url": null
+    },
+    {
+      "name": "DataReportal – Digital 2025: Poland",
+      "url": "https://datareportal.com/reports/digital-2025-poland"
+    },
+    {
+      "name": "BrightLocal – Local Pack Click Share Study 2024",
+      "url": "https://www.brightlocal.com/research/"
+    }
+  ]
+}
