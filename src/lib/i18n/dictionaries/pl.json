@@ -798,7 +798,7 @@
       "cpc": "Koszt kliknięcia",
       "groupTotal": "Łączne wyszukiwania",
       "nationalBadge": "Ogólnopolskie",
-      "nationalNote": "To są ogólnopolskie wolumeny wyszukiwań — ludzie z całej Polski szukający usług w tym mieście. Nie wliczone do sumy powyżej."
+      "nationalNote": "Wolumeny wyszukiwań na poziomie ogólnopolskim — Google Ads nie udostępnia danych na poziomie miasta dla tego rynku. Dane SERP (konkurencja) są lokalne."
     },
     "competition": {
       "badge": "Konkurencja",

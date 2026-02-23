@@ -106,6 +106,7 @@ export default async function ReportPage({ params }: PageProps) {
     lang === "no" ? data.meta.nicheNO
     : lang === "pl" && data.meta.nichePL ? data.meta.nichePL
     : (nicheNames[data.meta.niche] ?? data.meta.niche);
+  const currency = data.meta.currency ?? "kr";
   const rd = dict.reportPage;
 
   return (
@@ -114,10 +115,11 @@ export default async function ReportPage({ params }: PageProps) {
       <main className="pt-16 md:pt-20">
         <ReportToc dict={rd.toc} />
         <ReportHero meta={data.meta} lang={lang} nicheLower={nicheLower} dict={rd.hero} />
-        <MetricsStrip metrics={data.metrics} dict={rd.metrics} />
+        <MetricsStrip metrics={data.metrics} currency={currency} dict={rd.metrics} />
         <KeywordsSection
           groups={data.keywordGroups}
           lang={lang}
+          currency={currency}
           dict={rd.keywords}
           nicheLower={nicheLower}
           city={data.meta.city}
@@ -139,9 +141,10 @@ export default async function ReportPage({ params }: PageProps) {
         <ReportCalculator
           calculator={data.calculator}
           lang={lang}
+          currency={currency}
           dict={rd.calculator}
         />
-        <CpcSection cpcData={data.cpcData} lang={lang} nicheLower={nicheLower} dict={rd.cpc} />
+        <CpcSection cpcData={data.cpcData} lang={lang} currency={currency} nicheLower={nicheLower} dict={rd.cpc} />
         <SeasonalitySection
           seasonality={data.seasonality}
           lang={lang}

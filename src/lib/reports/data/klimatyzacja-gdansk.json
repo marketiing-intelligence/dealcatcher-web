@@ -5,12 +5,13 @@
     "city": "Gdańsk",
     "locationCode": 1011076,
     "dataDate": "2026-02",
-    "totalSearchVolume": 210930,
-    "nichePL": "klimatyzacja"
+    "totalSearchVolume": 115530,
+    "nichePL": "klimatyzacja",
+    "currency": "zł"
   },
   "metrics": {
-    "keywordCount": 20,
-    "avgCpc": 2.5,
+    "keywordCount": 16,
+    "avgCpc": 5.97,
     "topClinicsCount": 5,
     "mapsClickShare": 46
   },
@@ -20,15 +21,8 @@
       "color": "green",
       "nameEN": "HVAC installation & service",
       "nameNO": "Klimaanlegg installasjon og service",
-      "totalVolume": 210930,
+      "totalVolume": 115530,
       "keywords": [
-        {
-          "keyword": "pompa ciepła",
-          "translation": "heat pump",
-          "volume": 60500,
-          "competition": "HIGH",
-          "cpc": 2.19
-        },
         {
           "keyword": "klimatyzator",
           "translation": "air conditioner unit",
@@ -42,13 +36,6 @@
           "volume": 33100,
           "competition": "HIGH",
           "cpc": 2.47
-        },
-        {
-          "keyword": "rekuperacja",
-          "translation": "heat recovery ventilation",
-          "volume": 27100,
-          "competition": "HIGH",
-          "cpc": 1.78
         },
         {
           "keyword": "serwis klimatyzacji",
@@ -79,13 +66,6 @@
           "cpc": 3.32
         },
         {
-          "keyword": "wentylacja mechaniczna",
-          "translation": "mechanical ventilation",
-          "volume": 5400,
-          "competition": "HIGH",
-          "cpc": 1.62
-        },
-        {
           "keyword": "klimatyzacja przenośna",
           "translation": "portable AC",
           "volume": 3600,
@@ -105,13 +85,6 @@
           "volume": 2900,
           "competition": "HIGH",
           "cpc": 2.11
-        },
-        {
-          "keyword": "pompa ciepła powietrze woda",
-          "translation": "air-to-water heat pump",
-          "volume": 2400,
-          "competition": "HIGH",
-          "cpc": 1.58
         },
         {
           "keyword": "klimatyzacja multisplit",
@@ -164,15 +137,16 @@
         }
       ],
       "namePL": "Montaż i serwis klimatyzacji",
-      "descriptionPL": "Wyszukiwania związane z montażem, serwisem i zakupem klimatyzacji. Absolutnym liderem jest fraza «pompa ciepła» z 60 500 wyszukiwań/msc — niemal 3× więcej niż samo «klimatyzacja» (33 100). To pokazuje, jak silnie polski rynek przesunął się w stronę pomp ciepła. CPC waha się od 1 zł (klimatyzacja przenośna) do 10 zł (przegląd klimatyzacji). Frazy serwisowe są zaskakująco drogie — to sygnał niskiej konkurencji w Google Ads i dużej wartości klienta.",
-      "descriptionEN": "Searches for AC installation, service, and purchase. The clear leader is \"pompa ciepła\" (heat pump) with 60,500 monthly searches — nearly 3× more than \"klimatyzacja\" itself (33,100). This shows how strongly the Polish market has shifted toward heat pumps. CPC ranges from 1 PLN (portable AC) to 10 PLN (AC inspection). Service keywords are surprisingly expensive — signaling low Google Ads competition and high customer value."
+      "descriptionPL": "Wyszukiwania związane z montażem, serwisem i zakupem klimatyzacji. Liderem jest «klimatyzator» z 40 500 wyszukiwań/msc, następnie «klimatyzacja» (33 100) i «serwis klimatyzacji» (8 100). CPC waha się od 1 zł (klimatyzacja przenośna) do 10 zł (przegląd klimatyzacji). Frazy serwisowe są zaskakująco drogie — sygnał niskiej konkurencji w Google Ads i dużej wartości klienta.",
+      "descriptionEN": "Searches for AC installation, service, and purchase. The leader is \"klimatyzator\" (air conditioner) with 40,500 monthly searches, followed by \"klimatyzacja\" (33,100) and \"serwis klimatyzacji\" (8,100). CPC ranges from 1 PLN (portable AC) to 10 PLN (AC inspection). Service keywords are surprisingly expensive — signaling low Google Ads competition and high customer value.",
+      "isNational": true
     },
     {
       "id": "explicit",
       "color": "blue",
       "nameEN": "Explicit \"Gdańsk\" searches",
       "nameNO": "Eksplisitte \"Gdańsk\"-søk",
-      "totalVolume": 1420,
+      "totalVolume": 1120,
       "keywords": [
         {
           "keyword": "klimatyzacja gdańsk",
@@ -189,25 +163,11 @@
           "cpc": 2.83
         },
         {
-          "keyword": "pompa ciepła gdańsk",
-          "translation": "heat pump Gdańsk",
-          "volume": 210,
-          "competition": "LOW",
-          "cpc": 18.14
-        },
-        {
           "keyword": "montaż klimatyzacji gdańsk",
           "translation": "AC installation Gdańsk",
           "volume": 170,
           "competition": "LOW",
           "cpc": 30.5
-        },
-        {
-          "keyword": "rekuperacja gdańsk",
-          "translation": "heat recovery Gdańsk",
-          "volume": 90,
-          "competition": "MEDIUM",
-          "cpc": 13.53
         },
         {
           "keyword": "klimatyzacja domowa gdańsk",
@@ -258,16 +218,8 @@
       "cpc": 30.5
     },
     {
-      "keyword": "pompa ciepła gdańsk",
-      "cpc": 18.14
-    },
-    {
       "keyword": "klimatyzacja gdańsk",
       "cpc": 15.88
-    },
-    {
-      "keyword": "rekuperacja gdańsk",
-      "cpc": 13.53
     },
     {
       "keyword": "przegląd klimatyzacji",
@@ -322,10 +274,6 @@
       "cpc": 2.31
     },
     {
-      "keyword": "pompa ciepła",
-      "cpc": 2.19
-    },
-    {
       "keyword": "klimatyzacja split",
       "cpc": 2.11
     },
@@ -334,20 +282,8 @@
       "cpc": 1.86
     },
     {
-      "keyword": "rekuperacja",
-      "cpc": 1.78
-    },
-    {
       "keyword": "klimatyzator",
       "cpc": 1.62
-    },
-    {
-      "keyword": "wentylacja mechaniczna",
-      "cpc": 1.62
-    },
-    {
-      "keyword": "pompa ciepła powietrze woda",
-      "cpc": 1.58
     },
     {
       "keyword": "klimatyzacja multisplit",
@@ -424,12 +360,12 @@
     {
       "icon": "flame",
       "color": "amber",
-      "titlePL": "Pompy ciepła zdominowały rynek — 60 500 wyszukiwań/msc",
-      "titleEN": "Heat pumps dominate the market — 60,500 searches/month",
-      "textPL": "Fraza «pompa ciepła» generuje 60 500 wyszukiwań miesięcznie — niemal 3× więcej niż «klimatyzacja» (33 100). Dochodzi «rekuperacja» z 27 100 i «wentylacja mechaniczna» z 5 400. Polski rynek HVAC nie ogranicza się do chłodzenia — klienci szukają kompleksowych rozwiązań grzewczo-wentylacyjnych.",
-      "textEN": "\"Pompa ciepła\" (heat pump) generates 60,500 searches/month — nearly 3× more than \"klimatyzacja\" (33,100). Add \"rekuperacja\" (27,100) and \"wentylacja mechaniczna\" (5,400). The Polish HVAC market has moved beyond cooling — customers want integrated heating and ventilation.",
-      "statLabel": "searches/mo for heat pumps",
-      "statValue": "60 500"
+      "titlePL": "211 tys. wyszukiwań/msc — sektor klimatyzacji w Polsce rośnie",
+      "titleEN": "211K searches/month — Poland's AC sector is booming",
+      "textPL": "Sam «klimatyzator» generuje 40 500 wyszukiwań miesięcznie, «klimatyzacja» — 33 100, a «serwis klimatyzacji» — 8 100. Do tego frazy produktowe (split, multisplit, przenośna) i serwisowe (czyszczenie, przegląd). Rynek jest duży i rozproszony — lokalne firmy mogą konkurować ceną i szybkością reakcji.",
+      "textEN": "\"Klimatyzator\" alone generates 40,500 searches/month, \"klimatyzacja\" — 33,100, and \"serwis klimatyzacji\" — 8,100. Add product queries (split, multisplit, portable) and service queries (cleaning, inspection). The market is large and fragmented — local companies can compete on price and response speed.",
+      "statLabel": "searches/mo total",
+      "statValue": "115K+"
     },
     {
       "icon": "trending-up",
@@ -466,16 +402,16 @@
     {
       "titlePL": "Optymalizuj Google Business Profile",
       "titleEN": "Optimize your Google Business Profile",
-      "textPL": "Pełne kategorie: Montaż klimatyzacji, Serwis klimatyzacji, Pompy ciepła, Wentylacja. Zdjęcia realizacji, godziny otwarcia, zakres obsługiwanego obszaru. Przycisk «Zadzwoń» i regularne posty z ofertami sezonowymi. 46% kliknięć na frazy HVAC trafia w wyniki map — to twój najważniejszy kanał.",
-      "textEN": "Full categories: AC installation, AC service, Heat pumps, Ventilation. Work photos, business hours, service area. Enable \"Call\" button and post seasonal offers regularly. 46% of HVAC keyword clicks go to Maps results — this is your most important channel.",
+      "textPL": "Pełne kategorie: Montaż klimatyzacji, Serwis klimatyzacji, Czyszczenie klimatyzacji. Zdjęcia realizacji, godziny otwarcia, zakres obsługiwanego obszaru. Przycisk «Zadzwoń» i regularne posty z ofertami sezonowymi. 46% kliknięć na frazy klimatyzacyjne trafia w wyniki map — to twój najważniejszy kanał.",
+      "textEN": "Full categories: AC installation, AC service, AC cleaning. Work photos, business hours, service area. Enable \"Call\" button and post seasonal offers regularly. 46% of AC keyword clicks go to Maps results — this is your most important channel.",
       "tagPL": "Bezpłatne — 30 minut",
       "tagEN": "Free — 30 minutes"
     },
     {
       "titlePL": "Stwórz dedykowane podstrony per usługa",
       "titleEN": "Create dedicated landing pages per service",
-      "textPL": "Nie wystarczy jedna strona «Oferta». Osobne podstrony: montaż klimatyzacji, serwis klimatyzacji, pompy ciepła, rekuperacja. Na każdej: opis, orientacyjne ceny, galeria realizacji, formularz kontaktowy. Google nagradza trafność — strona o montażu rankuje wyżej na «montaż klimatyzacji» niż ogólna oferta.",
-      "textEN": "A single \"Services\" page isn't enough. Create separate pages: AC installation, AC service, heat pumps, ventilation. Each with: description, indicative pricing, gallery, contact form. Google rewards relevance — an installation page ranks higher for \"AC installation\" than a generic services page.",
+      "textPL": "Nie wystarczy jedna strona «Oferta». Osobne podstrony: montaż klimatyzacji, serwis klimatyzacji, czyszczenie klimatyzacji, klimatyzacja do domu vs do biura. Na każdej: opis, orientacyjne ceny, galeria realizacji, formularz kontaktowy. Google nagradza trafność — strona o montażu rankuje wyżej na «montaż klimatyzacji» niż ogólna oferta.",
+      "textEN": "A single \"Services\" page isn't enough. Create separate pages: AC installation, AC service, AC cleaning, residential vs commercial AC. Each with: description, indicative pricing, gallery, contact form. Google rewards relevance — an installation page ranks higher for \"AC installation\" than a generic services page.",
       "tagPL": "Bezpłatne — 2–3 godziny",
       "tagEN": "Free — 2–3 hours"
     },
@@ -497,14 +433,14 @@
     }
   ],
   "calculator": {
-    "avgCpc": 0,
+    "avgCpc": 14.17,
     "defaultPatientValue": 6000,
     "defaultBudget": 3000,
     "defaultConversion": 25,
     "clickToInquiryRate": 0.04,
-    "benchmarkEN": "Generic keywords (klimatyzacja, pompa ciepła) cost 1–3 PLN/click. City keywords cost 22–37 PLN — but convert much higher. Service/maintenance keywords cost 8–10 PLN and offer the best ROI: service customers return annually.",
+    "benchmarkEN": "Generic keywords (klimatyzacja, klimatyzator) cost 1–3 PLN/click. City keywords cost 22–37 PLN — but convert much higher. Service/maintenance keywords cost 8–10 PLN and offer the best ROI: service customers return annually.",
     "benchmarkNO": "",
-    "benchmarkPL": "Ogólne frazy (klimatyzacja, pompa ciepła) kosztują 1–3 zł/klik. Frazy z miastem to 22–37 zł — ale z dużo wyższą konwersją. Frazy serwisowe (serwis, przegląd) to 8–10 zł i dają najlepszy zwrot: klient serwisowy wraca co roku."
+    "benchmarkPL": "Ogólne frazy (klimatyzacja, klimatyzator) kosztują 1–3 zł/klik. Frazy z miastem to 22–37 zł — ale z dużo wyższą konwersją. Frazy serwisowe (serwis, przegląd) to 8–10 zł i dają najlepszy zwrot: klient serwisowy wraca co roku."
   },
   "sources": [
     {

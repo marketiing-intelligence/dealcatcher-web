@@ -18,6 +18,7 @@ import type { Locale } from "@/lib/i18n/config";
 interface KeywordsSectionProps {
   groups: KeywordGroup[];
   lang: Locale;
+  currency: string;
   dict: {
     badge: string;
     title: string;
@@ -34,7 +35,7 @@ interface KeywordsSectionProps {
   disclaimer?: string;
 }
 
-export function KeywordsSection({ groups, lang, dict, nicheLower, city, disclaimer }: KeywordsSectionProps) {
+export function KeywordsSection({ groups, lang, currency, dict, nicheLower, city, disclaimer }: KeywordsSectionProps) {
   const subtitle = dict.subtitle
     .replaceAll("{nicheLower}", nicheLower)
     .replaceAll("{city}", city);
@@ -84,7 +85,7 @@ export function KeywordsSection({ groups, lang, dict, nicheLower, city, disclaim
           <Accordion type="multiple" defaultValue={[groups[0]?.id ?? ""]}>
             {groups.map((group) => {
               const colors = groupColorClasses(group.color);
-              const groupName = lang === "no" ? group.nameNO : group.nameEN;
+              const groupName = t(group, lang, "name");
               const isNational = group.isNational === true;
 
               return (
@@ -148,7 +149,7 @@ export function KeywordsSection({ groups, lang, dict, nicheLower, city, disclaim
                                   {kw.competition}
                                 </span>
                               </td>
-                              <td className="py-2.5 text-right font-mono">{formatCpc(kw.cpc, lang)}</td>
+                              <td className="py-2.5 text-right font-mono">{formatCpc(kw.cpc, lang, currency)}</td>
                             </tr>
                           ))}
                         </tbody>

@@ -1,11 +1,12 @@
 import type { Locale } from "@/lib/i18n/config";
 
 export function formatNumber(num: number, lang: Locale): string {
+  if (lang === "pl") return num.toLocaleString("pl-PL");
   return num.toLocaleString(lang === "no" ? "nb-NO" : "en-US");
 }
 
-export function formatCpc(cpc: number, lang: Locale): string {
-  return `${cpc.toFixed(2)} kr`;
+export function formatCpc(cpc: number, _lang: Locale, currency = "kr"): string {
+  return `${cpc.toFixed(2)} ${currency}`;
 }
 
 export function competitionColor(level: "LOW" | "MEDIUM" | "HIGH"): string {

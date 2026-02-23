@@ -6,7 +6,8 @@
     "locationCode": 1011076,
     "dataDate": "2026-02",
     "totalSearchVolume": 282200,
-    "nichePL": "salony kosmetyczne"
+    "nichePL": "salony kosmetyczne",
+    "currency": "zł"
   },
   "metrics": {
     "keywordCount": 19,
@@ -158,7 +159,8 @@
       ],
       "namePL": "Zabiegi kosmetyczne i usługi estetyczne",
       "descriptionPL": "Wyszukiwania związane z zabiegami kosmetycznymi i medycyną estetyczną. Na czele «salon kosmetyczny» (33 100/msc) i «depilacja laserowa» (18 100). Wyróżnia się «medycyna estetyczna» (12 100) — oddzielny segment premium z własnymi wynikami SERP. CPC jest niskie (śr. 2,5 zł/klik), co czyni tę branżę jedną z tańszych w Google Ads.",
-      "descriptionEN": "Searches for beauty treatments and aesthetic medicine. Led by \"salon kosmetyczny\" (33,100/mo) and \"depilacja laserowa\" (18,100). Standout: \"medycyna estetyczna\" (12,100) — a separate premium segment with its own SERP results. CPC is low (avg 2.5 PLN/click), making this one of the cheapest industries in Google Ads."
+      "descriptionEN": "Searches for beauty treatments and aesthetic medicine. Led by \"salon kosmetyczny\" (33,100/mo) and \"depilacja laserowa\" (18,100). Standout: \"medycyna estetyczna\" (12,100) — a separate premium segment with its own SERP results. CPC is low (avg 2.5 PLN/click), making this one of the cheapest industries in Google Ads.",
+      "isNational": true
     },
     {
       "id": "explicit",
@@ -491,7 +493,7 @@
     }
   ],
   "calculator": {
-    "avgCpc": 0,
+    "avgCpc": 5.3,
     "defaultPatientValue": 3000,
     "defaultBudget": 2000,
     "defaultConversion": 25,

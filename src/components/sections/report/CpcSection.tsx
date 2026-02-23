@@ -11,6 +11,7 @@ import type { Locale } from "@/lib/i18n/config";
 interface CpcSectionProps {
   cpcData: CpcDataItem[];
   lang: Locale;
+  currency: string;
   nicheLower: string;
   dict: {
     badge: string;
@@ -19,7 +20,7 @@ interface CpcSectionProps {
   };
 }
 
-export function CpcSection({ cpcData, lang, nicheLower, dict }: CpcSectionProps) {
+export function CpcSection({ cpcData, lang, currency, nicheLower, dict }: CpcSectionProps) {
   const maxCpc = Math.max(...cpcData.map((d) => d.cpc));
   const subtitle = dict.subtitle.replaceAll("{nicheLower}", nicheLower);
 
@@ -66,7 +67,7 @@ export function CpcSection({ cpcData, lang, nicheLower, dict }: CpcSectionProps)
                   />
                 </div>
                 <span className="w-16 text-sm font-mono text-primary font-semibold text-right shrink-0">
-                  {formatCpc(item.cpc, lang)}
+                  {formatCpc(item.cpc, lang, currency)}
                 </span>
               </motion.div>
             );

@@ -8,6 +8,7 @@ export interface ReportMeta {
   locationCode: number;
   dataDate: string;
   totalSearchVolume: number;
+  currency?: string;
   disclaimerEN?: string;
   disclaimerNO?: string;
   disclaimerPL?: string;

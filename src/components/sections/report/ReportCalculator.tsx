@@ -7,12 +7,14 @@ import { fadeUp, viewportOnce } from "@/lib/animations";
 import { Calculator, TrendingUp } from "lucide-react";
 import { formatNumber } from "@/lib/reports/helpers";
 import { cn } from "@/lib/utils";
+import { t } from "@/lib/reports/types";
 import type { CalculatorDefaults } from "@/lib/reports/types";
 import type { Locale } from "@/lib/i18n/config";
 
 interface ReportCalculatorProps {
   calculator: CalculatorDefaults;
   lang: Locale;
+  currency: string;
   dict: {
     badge: string;
     title: string;
@@ -29,7 +31,7 @@ interface ReportCalculatorProps {
   };
 }
 
-export function ReportCalculator({ calculator, lang, dict }: ReportCalculatorProps) {
+export function ReportCalculator({ calculator, lang, currency, dict }: ReportCalculatorProps) {
   const [patientValue, setPatientValue] = useState(calculator.defaultPatientValue);
   const [budget, setBudget] = useState(calculator.defaultBudget);
   const [conversion, setConversion] = useState(calculator.defaultConversion);
@@ -91,7 +93,7 @@ export function ReportCalculator({ calculator, lang, dict }: ReportCalculatorPro
                       className="flex-1 h-2 bg-background rounded-lg appearance-none cursor-pointer accent-primary"
                     />
                     <span className="w-28 text-right font-mono text-primary font-semibold text-sm">
-                      {fn(patientValue)} kr
+                      {fn(patientValue)} {currency}
                     </span>
                   </div>
                 </div>
@@ -112,7 +114,7 @@ export function ReportCalculator({ calculator, lang, dict }: ReportCalculatorPro
                       className="flex-1 h-2 bg-background rounded-lg appearance-none cursor-pointer accent-primary"
                     />
                     <span className="w-28 text-right font-mono text-primary font-semibold text-sm">
-                      {fn(budget)} kr
+                      {fn(budget)} {currency}
                     </span>
                   </div>
                 </div>
@@ -142,7 +144,7 @@ export function ReportCalculator({ calculator, lang, dict }: ReportCalculatorPro
               {/* Benchmark */}
               <div className="mt-6 p-3 rounded-lg bg-primary/5 border border-primary/10">
                 <p className="text-xs text-muted-foreground">
-                  {lang === "no" ? calculator.benchmarkNO : calculator.benchmarkEN}
+                  {t(calculator, lang, "benchmark")}
                 </p>
               </div>
             </div>
@@ -151,7 +153,7 @@ export function ReportCalculator({ calculator, lang, dict }: ReportCalculatorPro
             <div className="bg-gradient-to-br from-primary/10 to-green-500/10 border border-primary/20 rounded-2xl p-6 md:p-8">
               <h3 className="text-lg font-semibold mb-6 flex items-center gap-2">
                 <TrendingUp className="w-5 h-5 text-green-500" />
-                {lang === "no" ? "Resultater" : "Results"}
+                {lang === "no" ? "Resultater" : lang === "pl" ? "Wyniki" : "Results"}
               </h3>
 
               <div className="space-y-3">
@@ -160,7 +162,7 @@ export function ReportCalculator({ calculator, lang, dict }: ReportCalculatorPro
                 <ResultRow label={dict.resultPatients} value={fn(monthlyPatients)} highlight />
 
                 <div className="pt-3 border-t border-border/50">
-                  <ResultRow label={dict.resultRevenue} value={`${fn(monthlyRevenue)} kr`} large />
+                  <ResultRow label={dict.resultRevenue} value={`${fn(monthlyRevenue)} ${currency}`} large />
                 </div>
 
                 <div className="flex justify-between items-center py-3 bg-green-500/20 rounded-lg px-4 -mx-2">

@@ -8,6 +8,7 @@ import type { ReportMetrics } from "@/lib/reports/types";
 
 interface MetricsStripProps {
   metrics: ReportMetrics;
+  currency: string;
   dict: {
     keywords: string;
     avgCpc: string;
@@ -17,10 +18,10 @@ interface MetricsStripProps {
   };
 }
 
-export function MetricsStrip({ metrics, dict }: MetricsStripProps) {
+export function MetricsStrip({ metrics, currency, dict }: MetricsStripProps) {
   const items = [
     { icon: Search, value: metrics.keywordCount.toString(), label: dict.keywords },
-    { icon: DollarSign, value: `${metrics.avgCpc.toFixed(2)} kr`, label: dict.avgCpc },
+    { icon: DollarSign, value: `${metrics.avgCpc.toFixed(2)} ${currency}`, label: dict.avgCpc },
     { icon: Building2, value: metrics.topClinicsCount.toString(), label: dict.topClinics },
     { icon: MapPin, value: `${metrics.mapsClickShare}%`, label: dict.mapsShare },
   ];
