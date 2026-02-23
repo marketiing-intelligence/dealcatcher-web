@@ -2,16 +2,17 @@
   "meta": {
     "niche": "klimatyzacja",
     "nicheNO": "klimaanlegg",
+    "nicheEN": "HVAC & air conditioning",
     "city": "Wrocław",
-    "locationCode": 1011085,
+    "locationCode": 1011243,
     "dataDate": "2026-02",
-    "totalSearchVolume": 115530,
-    "nichePL": "klimatyzacja",
-    "currency": "zł"
+    "totalSearchVolume": 7380,
+    "currency": "zł",
+    "nichePL": "klimatyzacja"
   },
   "metrics": {
-    "keywordCount": 16,
-    "avgCpc": 5.81,
+    "keywordCount": 17,
+    "avgCpc": 6.9,
     "topClinicsCount": 5,
     "mapsClickShare": 46
   },
@@ -21,164 +22,141 @@
       "color": "green",
       "nameEN": "HVAC installation & service",
       "nameNO": "Klimaanlegg installasjon og service",
-      "totalVolume": 115530,
+      "totalVolume": 5280,
       "keywords": [
-        {
-          "keyword": "klimatyzator",
-          "translation": "air conditioner unit",
-          "volume": 40500,
-          "competition": "HIGH",
-          "cpc": 1.62
-        },
         {
           "keyword": "klimatyzacja",
           "translation": "air conditioning",
-          "volume": 33100,
+          "volume": 1600,
           "competition": "HIGH",
-          "cpc": 2.47
+          "cpc": 2.59
+        },
+        {
+          "keyword": "klimatyzator",
+          "translation": "air conditioner unit",
+          "volume": 1600,
+          "competition": "HIGH",
+          "cpc": 1.66
         },
         {
           "keyword": "serwis klimatyzacji",
           "translation": "AC service",
-          "volume": 8100,
+          "volume": 480,
           "competition": "LOW",
-          "cpc": 8.02
-        },
-        {
-          "keyword": "klimatyzacja do domu",
-          "translation": "home air conditioning",
-          "volume": 8100,
-          "competition": "HIGH",
-          "cpc": 2.67
-        },
-        {
-          "keyword": "montaż klimatyzacji",
-          "translation": "AC installation",
-          "volume": 5400,
-          "competition": "MEDIUM",
-          "cpc": 9.88
-        },
-        {
-          "keyword": "klimatyzacja do mieszkania",
-          "translation": "apartment AC",
-          "volume": 5400,
-          "competition": "HIGH",
-          "cpc": 3.32
-        },
-        {
-          "keyword": "klimatyzacja przenośna",
-          "translation": "portable AC",
-          "volume": 3600,
-          "competition": "HIGH",
-          "cpc": 1.01
+          "cpc": 7.45
         },
         {
           "keyword": "klimatyzacja domowa",
           "translation": "home AC system",
-          "volume": 3600,
-          "competition": "HIGH",
-          "cpc": 2.31
-        },
-        {
-          "keyword": "klimatyzacja split",
-          "translation": "split AC",
-          "volume": 2900,
-          "competition": "HIGH",
-          "cpc": 2.11
-        },
-        {
-          "keyword": "klimatyzacja multisplit",
-          "translation": "multi-split AC",
-          "volume": 1300,
-          "competition": "HIGH",
-          "cpc": 1.58
-        },
-        {
-          "keyword": "czyszczenie klimatyzacji",
-          "translation": "AC cleaning",
-          "volume": 1300,
-          "competition": "HIGH",
-          "cpc": 3.2
-        },
-        {
-          "keyword": "klimatyzacja cena",
-          "translation": "AC price",
-          "volume": 1000,
+          "volume": 390,
           "competition": "HIGH",
           "cpc": 2.47
         },
         {
+          "keyword": "montaż klimatyzacji",
+          "translation": "AC installation",
+          "volume": 260,
+          "competition": "MEDIUM",
+          "cpc": 14.05
+        },
+        {
+          "keyword": "klimatyzacja do domu",
+          "translation": "home air conditioning",
+          "volume": 210,
+          "competition": "HIGH",
+          "cpc": 2.83
+        },
+        {
+          "keyword": "klimatyzacja przenośna",
+          "translation": "portable AC",
+          "volume": 210,
+          "competition": "HIGH",
+          "cpc": 1.54
+        },
+        {
+          "keyword": "klimatyzacja split",
+          "translation": "split AC",
+          "volume": 170,
+          "competition": "HIGH",
+          "cpc": 2.47
+        },
+        {
+          "keyword": "klimatyzacja do mieszkania",
+          "translation": "apartment AC",
+          "volume": 140,
+          "competition": "HIGH",
+          "cpc": 4.62
+        },
+        {
+          "keyword": "klimatyzacja multisplit",
+          "translation": "multi-split AC",
+          "volume": 70,
+          "competition": "HIGH",
+          "cpc": 1.7
+        },
+        {
+          "keyword": "czyszczenie klimatyzacji",
+          "translation": "AC cleaning",
+          "volume": 70,
+          "competition": "HIGH",
+          "cpc": 2.15
+        },
+        {
+          "keyword": "klimatyzacja cena",
+          "translation": "AC price",
+          "volume": 50,
+          "competition": "HIGH",
+          "cpc": 2.43
+        },
+        {
           "keyword": "ile kosztuje klimatyzacja",
           "translation": "how much does AC cost",
-          "volume": 720,
+          "volume": 30,
           "competition": "HIGH",
-          "cpc": 3.2
-        },
-        {
-          "keyword": "przegląd klimatyzacji",
-          "translation": "AC inspection",
-          "volume": 480,
-          "competition": "LOW",
-          "cpc": 10.45
-        },
-        {
-          "keyword": "klimatyzacja najtaniej",
-          "translation": "cheapest AC",
-          "volume": 20,
-          "competition": "HIGH",
-          "cpc": 1.86
-        },
-        {
-          "keyword": "klimatyzacja biuro",
-          "translation": "office AC",
-          "volume": 10,
-          "competition": "MEDIUM",
-          "cpc": 6.48
+          "cpc": 3.44
         }
       ],
       "namePL": "Montaż i serwis klimatyzacji",
-      "descriptionPL": "Wyszukiwania związane z montażem, serwisem i zakupem klimatyzacji. Liderem jest «klimatyzator» z 40 500 wyszukiwań/msc, następnie «klimatyzacja» (33 100) i «serwis klimatyzacji» (8 100). CPC waha się od 1 zł (klimatyzacja przenośna) do 10 zł (przegląd klimatyzacji). Frazy serwisowe są zaskakująco drogie — sygnał niskiej konkurencji w Google Ads i dużej wartości klienta.",
-      "descriptionEN": "Searches for AC installation, service, and purchase. The leader is \"klimatyzator\" (air conditioner) with 40,500 monthly searches, followed by \"klimatyzacja\" (33,100) and \"serwis klimatyzacji\" (8,100). CPC ranges from 1 PLN (portable AC) to 10 PLN (AC inspection). Service keywords are surprisingly expensive — signaling low Google Ads competition and high customer value.",
-      "isNational": true
+      "descriptionPL": "Wyszukiwania związane z montażem, serwisem i zakupem klimatyzacji. Liderem jest «klimatyzator» z 40 500 wyszukiwań/msc (ogólnopolsko), następnie «klimatyzacja» (33 100) i «serwis klimatyzacji» (8 100). CPC waha się od 1 zł (klimatyzacja przenośna) do 10 zł (przegląd klimatyzacji). Frazy serwisowe są zaskakująco drogie — sygnał niskiej konkurencji w Google Ads i dużej wartości klienta.",
+      "descriptionEN": "Searches for AC installation, service, and purchase. The leader is \"klimatyzator\" (air conditioner) with 40,500 monthly searches (nationally), followed by \"klimatyzacja\" (33,100) and \"serwis klimatyzacji\" (8,100). CPC ranges from 1 PLN (portable AC) to 10 PLN (AC inspection). Service keywords are surprisingly expensive — signaling low Google Ads competition and high customer value."
     },
     {
       "id": "explicit",
       "color": "blue",
       "nameEN": "Explicit \"Wrocław\" searches",
       "nameNO": "Eksplisitte \"Wrocław\"-søk",
-      "totalVolume": 3760,
+      "totalVolume": 2100,
       "keywords": [
         {
           "keyword": "klimatyzacja wrocław",
           "translation": "air conditioning Wrocław",
-          "volume": 2400,
+          "volume": 1300,
           "competition": "MEDIUM",
-          "cpc": 14.62
+          "cpc": 16.12
         },
         {
           "keyword": "montaż klimatyzacji wrocław",
           "translation": "AC installation Wrocław",
-          "volume": 720,
+          "volume": 390,
           "competition": "MEDIUM",
-          "cpc": 16.85
+          "cpc": 19.44
         },
         {
           "keyword": "serwis klimatyzacji wrocław",
           "translation": "AC service Wrocław",
-          "volume": 590,
-          "competition": "MEDIUM",
-          "cpc": 13.04
+          "volume": 390,
+          "competition": "HIGH",
+          "cpc": 12.96
         },
         {
           "keyword": "klimatyzacja domowa wrocław",
           "translation": "home AC Wrocław",
-          "volume": 50,
+          "volume": 20,
           "competition": "LOW",
           "cpc": 8.99
         }
       ],
       "namePL": "Wyszukiwania z nazwą \"Wrocław\"",
-      "isNational": true,
       "descriptionPL": "Wyszukiwania z nazwą miasta w frazie — klienci gotowi do zakupu usługi lokalnie. CPC jest 5–15× wyższe niż dla fraz ogólnych (np. «klimatyzacja warszawa» = 32 zł vs «klimatyzacja» = 2,47 zł). Te frazy stanowią niewielki procent wolumenu, ale generują najcenniejszy ruch.",
       "descriptionEN": "Searches including the city name — buyers ready to hire locally. CPC is 5–15× higher than generic terms (e.g. \"klimatyzacja warszawa\" = 32 PLN vs \"klimatyzacja\" = 2.47 PLN). Small share of total volume, but the most valuable traffic."
     }
@@ -186,115 +164,168 @@
   "serpKeywords": [
     {
       "keyword": "klimatyzacja wrocław",
-      "volume": 2400,
+      "volume": 1300,
       "organic": [
         {
-          "rank": 4,
-          "domain": "wroclaw-klimatyzacja.pl"
-        },
-        {
           "rank": 5,
-          "domain": "www.cymex.pl"
+          "domain": "wroclaw-klimatyzacja.pl"
         },
         {
           "rank": 6,
-          "domain": "klimat-ok.wroclaw.pl"
-        },
-        {
-          "rank": 8,
-          "domain": "aero7.pl"
+          "domain": "www.cymex.pl"
         },
         {
           "rank": 9,
-          "domain": "kriskonklimatyzacja.pl"
-        }
-      ],
-      "maps": [],
-      "insightEN": "Results for \"klimatyzacja wrocław\": Aero7.pl — national leader ranks high across multiple cities. Companies with local domains (wroclaw-klimatyzacja.pl, klimat-ok.wroclaw.pl) hold top positions — Google favors local signals.",
-      "insightNO": "",
-      "insightPL": "Wyniki na «klimatyzacja wrocław»: Aero7.pl — ogólnopolski lider rankuje wysoko w wielu miastach. Firmy z domenami lokalnymi (wroclaw-klimatyzacja.pl, klimat-ok.wroclaw.pl) zajmują czołowe pozycje — Google premiuje sygnały lokalne."
-    },
-    {
-      "keyword": "montaż klimatyzacji wrocław",
-      "volume": 720,
-      "organic": [
-        {
-          "rank": 4,
-          "domain": "wroclaw-klimatyzacja.pl"
+          "domain": "klimat-ok.wroclaw.pl"
         },
         {
-          "rank": 5,
-          "domain": "aero7.pl"
-        },
-        {
-          "rank": 7,
+          "rank": 13,
           "domain": "www.mediaexpert.pl"
         },
         {
-          "rank": 8,
+          "rank": 14,
+          "domain": "czystyklimat.pl"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Novamat - Pompy ciepła | Ogrzewanie podłogowe | Klimatyzacja",
+          "rating": 4.6,
+          "reviews": 62
+        },
+        {
+          "rank": 2,
+          "title": "Trodos Instalacje Wrocław | Montaż Klimatyzacji | Naprawa, Serwis, Przegląd",
+          "rating": 5,
+          "reviews": 24
+        },
+        {
+          "rank": 3,
+          "title": "Kalt-tech",
+          "rating": 5,
+          "reviews": 92
+        }
+      ],
+      "insightEN": "Results for \"klimatyzacja wrocław\": Companies with local domains (wroclaw-klimatyzacja.pl, klimat-ok.wroclaw.pl) hold top positions — Google favors local signals. MediaExpert (retail) also in results — but doesn't compete on services.",
+      "insightNO": "",
+      "insightPL": "Wyniki na «klimatyzacja wrocław»: Firmy z domenami lokalnymi (wroclaw-klimatyzacja.pl, klimat-ok.wroclaw.pl) zajmują czołowe pozycje — Google premiuje sygnały lokalne. MediaExpert (sprzedaż detaliczna) też w wynikach — ale nie konkuruje na usługi."
+    },
+    {
+      "keyword": "montaż klimatyzacji wrocław",
+      "volume": 390,
+      "organic": [
+        {
+          "rank": 5,
+          "domain": "wroclaw-klimatyzacja.pl"
+        },
+        {
+          "rank": 6,
+          "domain": "www.mediaexpert.pl"
+        },
+        {
+          "rank": 11,
+          "domain": "aero7.pl"
+        },
+        {
+          "rank": 12,
           "domain": "klimat-ok.wroclaw.pl"
         },
         {
-          "rank": 9,
+          "rank": 13,
           "domain": "klimaflow.pl"
         }
       ],
-      "maps": [],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Novamat - Pompy ciepła | Ogrzewanie podłogowe | Klimatyzacja",
+          "rating": 4.6,
+          "reviews": 62
+        },
+        {
+          "rank": 2,
+          "title": "Trodos Instalacje Wrocław | Montaż Klimatyzacji | Naprawa, Serwis, Przegląd",
+          "rating": 5,
+          "reviews": 24
+        },
+        {
+          "rank": 3,
+          "title": "Kalt-tech",
+          "rating": 5,
+          "reviews": 92
+        }
+      ],
       "insightEN": "Results for \"montaż klimatyzacji wrocław\": Aero7.pl (national player) appears in TOP 10. MediaExpert sells units but doesn't install — their ranking is an opening for installers with a dedicated page. Local companies in TOP 10: wroclaw-klimatyzacja.pl, klimat-ok.wroclaw.pl, klimaflow.pl.",
       "insightNO": "",
       "insightPL": "Wyniki na «montaż klimatyzacji wrocław»: Aero7.pl (ogólnopolski gracz) pojawia się w TOP 10. MediaExpert sprzedaje urządzenia, ale nie montuje — ich pozycja to szansa dla montażystów z dedykowaną stroną. Lokalne firmy w TOP 10: wroclaw-klimatyzacja.pl, klimat-ok.wroclaw.pl, klimaflow.pl."
     },
     {
       "keyword": "serwis klimatyzacji wrocław",
-      "volume": 590,
+      "volume": 390,
       "organic": [
         {
-          "rank": 5,
+          "rank": 6,
           "domain": "wroclaw-klimatyzacja.pl"
         },
         {
-          "rank": 6,
+          "rank": 7,
           "domain": "www.autoklimatyzacja.wroclaw.pl"
         },
         {
-          "rank": 7,
-          "domain": "autoklimaserwis.pl"
+          "rank": 12,
+          "domain": "rsserwis.pl"
         },
         {
-          "rank": 8,
+          "rank": 13,
           "domain": "www.klima24h.pl"
         },
         {
-          "rank": 9,
+          "rank": 14,
           "domain": "klima-kar.wroclaw.pl"
         }
       ],
-      "maps": [],
-      "insightEN": "Results for \"serwis klimatyzacji wrocław\": organic positions start from #5. Specialized service providers: wroclaw-klimatyzacja.pl, www.autoklimatyzacja.wroclaw.pl, autoklimaserwis.pl. Fewer players than installation — less competition.",
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Kalt-tech",
+          "rating": 5,
+          "reviews": 92
+        },
+        {
+          "rank": 2,
+          "title": "Trodos Instalacje Wrocław | Montaż Klimatyzacji | Naprawa, Serwis, Przegląd",
+          "rating": 5,
+          "reviews": 24
+        },
+        {
+          "rank": 3,
+          "title": "Novamat - Pompy ciepła | Ogrzewanie podłogowe | Klimatyzacja",
+          "rating": 4.6,
+          "reviews": 62
+        }
+      ],
+      "insightEN": "Results for \"serwis klimatyzacji wrocław\": organic positions start from #6. Specialized service providers: wroclaw-klimatyzacja.pl, www.autoklimatyzacja.wroclaw.pl, rsserwis.pl. Fewer players than installation — less competition.",
       "insightNO": "",
-      "insightPL": "Wyniki na «serwis klimatyzacji wrocław»: pozycje organiczne zaczynają się od #5. Wyspecjalizowane serwisy: wroclaw-klimatyzacja.pl, www.autoklimatyzacja.wroclaw.pl, autoklimaserwis.pl. Mniej graczy niż w montażu — mniejsza konkurencja."
+      "insightPL": "Wyniki na «serwis klimatyzacji wrocław»: pozycje organiczne zaczynają się od #6. Wyspecjalizowane serwisy: wroclaw-klimatyzacja.pl, www.autoklimatyzacja.wroclaw.pl, rsserwis.pl. Mniej graczy niż w montażu — mniejsza konkurencja."
     }
   ],
   "cpcData": [
     {
       "keyword": "montaż klimatyzacji wrocław",
-      "cpc": 16.85
+      "cpc": 19.44
     },
     {
       "keyword": "klimatyzacja wrocław",
-      "cpc": 14.62
-    },
-    {
-      "keyword": "serwis klimatyzacji wrocław",
-      "cpc": 13.04
-    },
-    {
-      "keyword": "przegląd klimatyzacji",
-      "cpc": 10.45
+      "cpc": 16.12
     },
     {
       "keyword": "montaż klimatyzacji",
-      "cpc": 9.88
+      "cpc": 14.05
+    },
+    {
+      "keyword": "serwis klimatyzacji wrocław",
+      "cpc": 12.96
     },
     {
       "keyword": "klimatyzacja domowa wrocław",
@@ -302,59 +333,51 @@
     },
     {
       "keyword": "serwis klimatyzacji",
-      "cpc": 8.02
-    },
-    {
-      "keyword": "klimatyzacja biuro",
-      "cpc": 6.48
+      "cpc": 7.45
     },
     {
       "keyword": "klimatyzacja do mieszkania",
-      "cpc": 3.32
-    },
-    {
-      "keyword": "czyszczenie klimatyzacji",
-      "cpc": 3.2
+      "cpc": 4.62
     },
     {
       "keyword": "ile kosztuje klimatyzacja",
-      "cpc": 3.2
+      "cpc": 3.44
     },
     {
       "keyword": "klimatyzacja do domu",
-      "cpc": 2.67
+      "cpc": 2.83
     },
     {
       "keyword": "klimatyzacja",
+      "cpc": 2.59
+    },
+    {
+      "keyword": "klimatyzacja domowa",
+      "cpc": 2.47
+    },
+    {
+      "keyword": "klimatyzacja split",
       "cpc": 2.47
     },
     {
       "keyword": "klimatyzacja cena",
-      "cpc": 2.47
+      "cpc": 2.43
     },
     {
-      "keyword": "klimatyzacja domowa",
-      "cpc": 2.31
-    },
-    {
-      "keyword": "klimatyzacja split",
-      "cpc": 2.11
-    },
-    {
-      "keyword": "klimatyzacja najtaniej",
-      "cpc": 1.86
-    },
-    {
-      "keyword": "klimatyzator",
-      "cpc": 1.62
+      "keyword": "czyszczenie klimatyzacji",
+      "cpc": 2.15
     },
     {
       "keyword": "klimatyzacja multisplit",
-      "cpc": 1.58
+      "cpc": 1.7
+    },
+    {
+      "keyword": "klimatyzator",
+      "cpc": 1.66
     },
     {
       "keyword": "klimatyzacja przenośna",
-      "cpc": 1.01
+      "cpc": 1.54
     }
   ],
   "seasonality": {
@@ -362,55 +385,56 @@
     "months": [
       {
         "month": "Jan",
-        "volume": 22200
+        "volume": 1000
       },
       {
         "month": "Feb",
-        "volume": 22200
+        "volume": 1000
       },
       {
         "month": "Mar",
-        "volume": 33100
+        "volume": 1900
       },
       {
         "month": "Apr",
-        "volume": 49500
+        "volume": 2400
       },
       {
         "month": "May",
-        "volume": 33100
+        "volume": 1600
       },
       {
         "month": "Jun",
-        "volume": 74000
+        "volume": 3600
       },
       {
         "month": "Jul",
-        "volume": 60500
+        "volume": 3600
       },
       {
         "month": "Aug",
-        "volume": 33100
+        "volume": 1600
       },
       {
         "month": "Sep",
-        "volume": 22200
+        "volume": 1300
       },
       {
         "month": "Oct",
-        "volume": 14800
+        "volume": 1000
       },
       {
         "month": "Nov",
-        "volume": 14800
+        "volume": 880
       },
       {
         "month": "Dec",
-        "volume": 12100
+        "volume": 590
       }
     ],
     "peakMonths": [
-      "Jun"
+      "Jun",
+      "Jul"
     ],
     "lowMonths": [
       "Dec"
@@ -423,12 +447,12 @@
     {
       "icon": "flame",
       "color": "amber",
-      "titlePL": "211 tys. wyszukiwań/msc — sektor klimatyzacji w Polsce rośnie",
-      "titleEN": "211K searches/month — Poland's AC sector is booming",
-      "textPL": "Sam «klimatyzator» generuje 40 500 wyszukiwań miesięcznie, «klimatyzacja» — 33 100, a «serwis klimatyzacji» — 8 100. Do tego frazy produktowe (split, multisplit, przenośna) i serwisowe (czyszczenie, przegląd). Rynek jest duży i rozproszony — lokalne firmy mogą konkurować ceną i szybkością reakcji.",
-      "textEN": "\"Klimatyzator\" alone generates 40,500 searches/month, \"klimatyzacja\" — 33,100, and \"serwis klimatyzacji\" — 8,100. Add product queries (split, multisplit, portable) and service queries (cleaning, inspection). The market is large and fragmented — local companies can compete on price and response speed.",
+      "titlePL": "Sektor klimatyzacji w Polsce rośnie — ponad 100 tys. wyszukiwań/msc",
+      "titleEN": "Poland's AC sector is booming — 100K+ searches/month",
+      "textPL": "Sam «klimatyzator» generuje 40 500 wyszukiwań miesięcznie (ogólnopolsko), «klimatyzacja» — 33 100, a «serwis klimatyzacji» — 8 100. Do tego frazy produktowe (split, multisplit, przenośna) i serwisowe (czyszczenie, przegląd). Rynek jest duży i rozproszony — lokalne firmy mogą konkurować ceną i szybkością reakcji.",
+      "textEN": "\"Klimatyzator\" alone generates 40,500 searches/month (nationally), \"klimatyzacja\" — 33,100, and \"serwis klimatyzacji\" — 8,100. Add product queries (split, multisplit, portable) and service queries (cleaning, inspection). The market is large and fragmented — local companies can compete on price and response speed.",
       "statLabel": "searches/mo total",
-      "statValue": "115K+"
+      "statValue": "100K+"
     },
     {
       "icon": "trending-up",
@@ -496,7 +520,7 @@
     }
   ],
   "calculator": {
-    "avgCpc": 13.38,
+    "avgCpc": 0,
     "defaultPatientValue": 6000,
     "defaultBudget": 3000,
     "defaultConversion": 25,

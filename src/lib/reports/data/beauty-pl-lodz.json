@@ -2,16 +2,17 @@
   "meta": {
     "niche": "beauty-pl",
     "nicheNO": "skjønnhetssalonger",
+    "nicheEN": "beauty salons & aesthetic medicine",
     "city": "Łódź",
-    "locationCode": 1011080,
+    "locationCode": 1011320,
     "dataDate": "2026-02",
-    "totalSearchVolume": 140,
-    "nichePL": "salony kosmetyczne",
-    "currency": "zł"
+    "totalSearchVolume": 9150,
+    "currency": "zł",
+    "nichePL": "salony kosmetyczne"
   },
   "metrics": {
-    "keywordCount": 1,
-    "avgCpc": 0.7,
+    "keywordCount": 24,
+    "avgCpc": 2.4,
     "topClinicsCount": 5,
     "mapsClickShare": 42
   },
@@ -21,30 +22,190 @@
       "color": "green",
       "nameEN": "Beauty treatments & aesthetic services",
       "nameNO": "Skjønnhetsbehandlinger og estetiske tjenester",
-      "totalVolume": 140,
+      "totalVolume": 7690,
       "keywords": [
+        {
+          "keyword": "kosmetyczka",
+          "translation": "beautician / cosmetician",
+          "volume": 1000,
+          "competition": "HIGH",
+          "cpc": 1.01
+        },
+        {
+          "keyword": "kwas hialuronowy",
+          "translation": "hyaluronic acid",
+          "volume": 1000,
+          "competition": "LOW",
+          "cpc": 0.73
+        },
+        {
+          "keyword": "laminacja brwi",
+          "translation": "brow lamination",
+          "volume": 720,
+          "competition": "HIGH",
+          "cpc": 0.85
+        },
+        {
+          "keyword": "endermologia",
+          "translation": "endermology",
+          "volume": 720,
+          "competition": "HIGH",
+          "cpc": 3.77
+        },
+        {
+          "keyword": "salon kosmetyczny",
+          "translation": "beauty salon",
+          "volume": 590,
+          "competition": "LOW",
+          "cpc": 1.26
+        },
         {
           "keyword": "pedicure",
           "translation": "pedicure",
-          "volume": 140,
+          "volume": 590,
           "competition": "LOW",
-          "cpc": 0.65
+          "cpc": 0.77
+        },
+        {
+          "keyword": "depilacja laserowa",
+          "translation": "laser hair removal",
+          "volume": 480,
+          "competition": "HIGH",
+          "cpc": 5.43
+        },
+        {
+          "keyword": "mezoterapia",
+          "translation": "mesotherapy",
+          "volume": 480,
+          "competition": "HIGH",
+          "cpc": 2.43
+        },
+        {
+          "keyword": "mikrodermabrazja",
+          "translation": "microdermabrasion",
+          "volume": 390,
+          "competition": "HIGH",
+          "cpc": 1.42
+        },
+        {
+          "keyword": "medycyna estetyczna",
+          "translation": "aesthetic medicine",
+          "volume": 260,
+          "competition": "LOW",
+          "cpc": 2.07
+        },
+        {
+          "keyword": "lifting twarzy",
+          "translation": "face lift",
+          "volume": 260,
+          "competition": "HIGH",
+          "cpc": 2.15
+        },
+        {
+          "keyword": "makijaż permanentny",
+          "translation": "permanent makeup",
+          "volume": 260,
+          "competition": "MEDIUM",
+          "cpc": 3.12
+        },
+        {
+          "keyword": "manicure hybrydowy",
+          "translation": "gel manicure",
+          "volume": 260,
+          "competition": "HIGH",
+          "cpc": 0.61
+        },
+        {
+          "keyword": "lipoliza",
+          "translation": "lipolysis",
+          "volume": 210,
+          "competition": "MEDIUM",
+          "cpc": 1.26
+        },
+        {
+          "keyword": "salon urody",
+          "translation": "beauty parlor",
+          "volume": 170,
+          "competition": "LOW",
+          "cpc": 1.94
+        },
+        {
+          "keyword": "oczyszczanie twarzy",
+          "translation": "facial cleansing",
+          "volume": 140,
+          "competition": "HIGH",
+          "cpc": 3.04
+        },
+        {
+          "keyword": "przedłużanie rzęs",
+          "translation": "eyelash extensions",
+          "volume": 110,
+          "competition": "HIGH",
+          "cpc": 0.89
+        },
+        {
+          "keyword": "peeling chemiczny",
+          "translation": "chemical peel",
+          "volume": 50,
+          "competition": "HIGH",
+          "cpc": 2.47
         }
       ],
       "namePL": "Zabiegi kosmetyczne i usługi estetyczne",
       "descriptionPL": "Wyszukiwania związane z zabiegami kosmetycznymi i medycyną estetyczną. Na czele «salon kosmetyczny» (33 100/msc) i «depilacja laserowa» (18 100). Wyróżnia się «medycyna estetyczna» (12 100) — oddzielny segment premium z własnymi wynikami SERP. CPC jest niskie (śr. 2,5 zł/klik), co czyni tę branżę jedną z tańszych w Google Ads.",
-      "descriptionEN": "Searches for beauty treatments and aesthetic medicine. Led by \"salon kosmetyczny\" (33,100/mo) and \"depilacja laserowa\" (18,100). Standout: \"medycyna estetyczna\" (12,100) — a separate premium segment with its own SERP results. CPC is low (avg 2.5 PLN/click), making this one of the cheapest industries in Google Ads.",
-      "isNational": true
+      "descriptionEN": "Searches for beauty treatments and aesthetic medicine. Led by \"salon kosmetyczny\" (33,100/mo) and \"depilacja laserowa\" (18,100). Standout: \"medycyna estetyczna\" (12,100) — a separate premium segment with its own SERP results. CPC is low (avg 2.5 PLN/click), making this one of the cheapest industries in Google Ads."
     },
     {
       "id": "explicit",
       "color": "blue",
       "nameEN": "Explicit \"Łódź\" searches",
       "nameNO": "Eksplisitte \"Łódź\"-søk",
-      "totalVolume": 0,
-      "keywords": [],
+      "totalVolume": 1460,
+      "keywords": [
+        {
+          "keyword": "depilacja laserowa łódź",
+          "translation": "laser hair removal Łódź",
+          "volume": 590,
+          "competition": "HIGH",
+          "cpc": 7.25
+        },
+        {
+          "keyword": "medycyna estetyczna łódź",
+          "translation": "aesthetic medicine Łódź",
+          "volume": 320,
+          "competition": "MEDIUM",
+          "cpc": 5.75
+        },
+        {
+          "keyword": "salon kosmetyczny łódź",
+          "translation": "beauty salon Łódź",
+          "volume": 260,
+          "competition": "MEDIUM",
+          "cpc": 4.09
+        },
+        {
+          "keyword": "kosmetyczka łódź",
+          "translation": "beautician Łódź",
+          "volume": 210,
+          "competition": "LOW",
+          "cpc": 1.94
+        },
+        {
+          "keyword": "makijaż permanentny łódź",
+          "translation": "permanent makeup Łódź",
+          "volume": 70,
+          "competition": "MEDIUM",
+          "cpc": 1.7
+        },
+        {
+          "keyword": "salon urody łódź",
+          "translation": "beauty parlor Łódź",
+          "volume": 10,
+          "competition": "MEDIUM",
+          "cpc": 3.93
+        }
+      ],
       "namePL": "Wyszukiwania z nazwą \"Łódź\"",
-      "isNational": true,
       "descriptionPL": "Wyszukiwania z nazwą miasta — klientki gotowe do rezerwacji. CPC jest wyższe niż dla fraz ogólnych, ale wciąż niskie jak na lokalne frazy. «Salon kosmetyczny [miasto]» to najczęstsze zapytanie lokalne — warto mieć je w tytule strony i nagłówku H1.",
       "descriptionEN": "City-name searches — clients ready to book. CPC is higher than generic terms but still low for local keywords. \"Salon kosmetyczny [city]\" is the most common local query — worth including in your page title and H1 heading."
     }
@@ -52,99 +213,248 @@
   "serpKeywords": [
     {
       "keyword": "salon kosmetyczny łódź",
-      "volume": 0,
+      "volume": 260,
       "organic": [
         {
-          "rank": 4,
-          "domain": "booksy.com"
-        },
-        {
           "rank": 5,
-          "domain": "lodz.yasumi.pl"
+          "domain": "booksy.com"
         },
         {
           "rank": 6,
           "domain": "alfabetpiekna.pl"
         },
         {
-          "rank": 7,
+          "rank": 11,
+          "domain": "lodzwidzew.yasumi.pl"
+        },
+        {
+          "rank": 12,
           "domain": "uroda-estetic.pl"
         },
         {
-          "rank": 8,
-          "domain": "www.facebook.com"
+          "rank": 13,
+          "domain": "elitte.pl"
         }
       ],
-      "maps": [],
-      "insightEN": "Results for \"salon kosmetyczny łódź\": Booksy.com at position 4–5 — no Booksy profile = conceded position. Yasumi chain appears in results — franchises have SEO advantage from domain authority. Local salons in TOP: alfabetpiekna.pl, uroda-estetic.pl. Positions 1–3 belong to local businesses with good websites.",
+      "maps": [
+        {
+          "rank": 1,
+          "title": "MOON stylizacja rzęs, brwi i paznokci",
+          "rating": 5,
+          "reviews": 14
+        },
+        {
+          "rank": 2,
+          "title": "Anatomy of beauty",
+          "rating": 5,
+          "reviews": 95
+        },
+        {
+          "rank": 3,
+          "title": "Frangipani Studio Urody",
+          "rating": 4.8,
+          "reviews": 24
+        }
+      ],
+      "insightEN": "Results for \"salon kosmetyczny łódź\": Booksy.com at position 4–5 — no Booksy profile = conceded position. Yasumi chain appears in results — franchises have SEO advantage from domain authority. Local salons in TOP: alfabetpiekna.pl, uroda-estetic.pl, elitte.pl. Positions 1–3 belong to local businesses with good websites.",
       "insightNO": "",
-      "insightPL": "Wyniki na «salon kosmetyczny łódź»: Booksy.com na pozycji 4–5 — brak profilu na Booksy = oddana pozycja. Sieć Yasumi pojawia się w wynikach — franchisy mają przewagę SEO dzięki sile domeny. Lokalne salony w TOP: alfabetpiekna.pl, uroda-estetic.pl. Pozycje 1–3 należą do lokalnych firm z dobrymi stronami."
+      "insightPL": "Wyniki na «salon kosmetyczny łódź»: Booksy.com na pozycji 4–5 — brak profilu na Booksy = oddana pozycja. Sieć Yasumi pojawia się w wynikach — franchisy mają przewagę SEO dzięki sile domeny. Lokalne salony w TOP: alfabetpiekna.pl, uroda-estetic.pl, elitte.pl. Pozycje 1–3 należą do lokalnych firm z dobrymi stronami."
     },
     {
       "keyword": "medycyna estetyczna łódź",
-      "volume": 0,
+      "volume": 320,
       "organic": [
         {
-          "rank": 4,
+          "rank": 5,
           "domain": "www.velvetclinic.pl"
         },
         {
-          "rank": 5,
-          "domain": "novoderm.pl"
+          "rank": 6,
+          "domain": "www.klinikapawlikowski.pl"
         },
         {
-          "rank": 6,
+          "rank": 11,
           "domain": "booksy.com"
         },
         {
-          "rank": 7,
-          "domain": "drmagdzinska.com"
+          "rank": 12,
+          "domain": "salvemedica.pl"
         },
         {
-          "rank": 8,
-          "domain": "salvemedica.pl"
+          "rank": 13,
+          "domain": "tazbirclinic.com"
         }
       ],
-      "maps": [],
-      "insightEN": "Results for \"medycyna estetyczna łódź\": Local clinics in TOP 10: www.velvetclinic.pl, novoderm.pl, drmagdzinska.com. Dedicated aesthetic medicine sites rank higher than general beauty salons.",
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Klinika Miracki Łódź",
+          "rating": 4.8,
+          "reviews": 43
+        },
+        {
+          "rank": 2,
+          "title": "Dermoklinika Centrum Medyczne s.c.",
+          "rating": 4.1,
+          "reviews": 87
+        },
+        {
+          "rank": 3,
+          "title": "MedycynaEstetyczna.info Lekarz Katarzyna Nielepkowicz",
+          "rating": 5,
+          "reviews": 6
+        }
+      ],
+      "insightEN": "Results for \"medycyna estetyczna łódź\": Local clinics in TOP 10: www.velvetclinic.pl, www.klinikapawlikowski.pl, salvemedica.pl. Dedicated aesthetic medicine sites rank higher than general beauty salons.",
       "insightNO": "",
-      "insightPL": "Wyniki na «medycyna estetyczna łódź»: Lokalne kliniki w TOP 10: www.velvetclinic.pl, novoderm.pl, drmagdzinska.com. Dedykowane strony o medycynie estetycznej rankują wyżej niż ogólne salony beauty."
+      "insightPL": "Wyniki na «medycyna estetyczna łódź»: Lokalne kliniki w TOP 10: www.velvetclinic.pl, www.klinikapawlikowski.pl, salvemedica.pl. Dedykowane strony o medycynie estetycznej rankują wyżej niż ogólne salony beauty."
     },
     {
       "keyword": "kosmetyczka łódź",
-      "volume": 0,
+      "volume": 210,
       "organic": [
         {
-          "rank": 4,
+          "rank": 5,
           "domain": "booksy.com"
         },
         {
-          "rank": 6,
-          "domain": "beauty2you.pl"
-        },
-        {
-          "rank": 7,
+          "rank": 11,
           "domain": "uroda-estetic.pl"
         },
         {
-          "rank": 8,
+          "rank": 12,
           "domain": "www.oferteo.pl"
         },
         {
-          "rank": 9,
-          "domain": "lodz.yasumi.pl"
+          "rank": 13,
+          "domain": "lodzwidzew.yasumi.pl"
+        },
+        {
+          "rank": 14,
+          "domain": "alfabetpiekna.pl"
         }
       ],
-      "maps": [],
-      "insightEN": "Results for \"kosmetyczka łódź\": Booksy.com in TOP 5 — the booking platform is the first choice for clients seeking beauticians. Oferteo.pl (service directory) also in results. Local salons: beauty2you.pl, uroda-estetic.pl.",
+      "maps": [
+        {
+          "rank": 1,
+          "title": "MOON stylizacja rzęs, brwi i paznokci",
+          "rating": 5,
+          "reviews": 14
+        },
+        {
+          "rank": 2,
+          "title": "Anatomy of beauty",
+          "rating": 5,
+          "reviews": 95
+        },
+        {
+          "rank": 3,
+          "title": "Frangipani Studio Urody",
+          "rating": 4.8,
+          "reviews": 24
+        }
+      ],
+      "insightEN": "Results for \"kosmetyczka łódź\": Booksy.com in TOP 5 — the booking platform is the first choice for clients seeking beauticians. Oferteo.pl (service directory) also in results. Local salons: uroda-estetic.pl, alfabetpiekna.pl.",
       "insightNO": "",
-      "insightPL": "Wyniki na «kosmetyczka łódź»: Booksy.com w TOP 5 — platforma rezerwacyjna jest pierwszym wyborem klientek szukających kosmetyczek. Oferteo.pl (portal ofertowy) też w wynikach. Lokalne salony: beauty2you.pl, uroda-estetic.pl."
+      "insightPL": "Wyniki na «kosmetyczka łódź»: Booksy.com w TOP 5 — platforma rezerwacyjna jest pierwszym wyborem klientek szukających kosmetyczek. Oferteo.pl (portal ofertowy) też w wynikach. Lokalne salony: uroda-estetic.pl, alfabetpiekna.pl."
     }
   ],
   "cpcData": [
     {
+      "keyword": "depilacja laserowa łódź",
+      "cpc": 7.25
+    },
+    {
+      "keyword": "medycyna estetyczna łódź",
+      "cpc": 5.75
+    },
+    {
+      "keyword": "depilacja laserowa",
+      "cpc": 5.43
+    },
+    {
+      "keyword": "salon kosmetyczny łódź",
+      "cpc": 4.09
+    },
+    {
+      "keyword": "salon urody łódź",
+      "cpc": 3.93
+    },
+    {
+      "keyword": "endermologia",
+      "cpc": 3.77
+    },
+    {
+      "keyword": "makijaż permanentny",
+      "cpc": 3.12
+    },
+    {
+      "keyword": "oczyszczanie twarzy",
+      "cpc": 3.04
+    },
+    {
+      "keyword": "peeling chemiczny",
+      "cpc": 2.47
+    },
+    {
+      "keyword": "mezoterapia",
+      "cpc": 2.43
+    },
+    {
+      "keyword": "lifting twarzy",
+      "cpc": 2.15
+    },
+    {
+      "keyword": "medycyna estetyczna",
+      "cpc": 2.07
+    },
+    {
+      "keyword": "salon urody",
+      "cpc": 1.94
+    },
+    {
+      "keyword": "kosmetyczka łódź",
+      "cpc": 1.94
+    },
+    {
+      "keyword": "makijaż permanentny łódź",
+      "cpc": 1.7
+    },
+    {
+      "keyword": "mikrodermabrazja",
+      "cpc": 1.42
+    },
+    {
+      "keyword": "salon kosmetyczny",
+      "cpc": 1.26
+    },
+    {
+      "keyword": "lipoliza",
+      "cpc": 1.26
+    },
+    {
+      "keyword": "kosmetyczka",
+      "cpc": 1.01
+    },
+    {
+      "keyword": "przedłużanie rzęs",
+      "cpc": 0.89
+    },
+    {
+      "keyword": "laminacja brwi",
+      "cpc": 0.85
+    },
+    {
       "keyword": "pedicure",
-      "cpc": 0.65
+      "cpc": 0.77
+    },
+    {
+      "keyword": "kwas hialuronowy",
+      "cpc": 0.73
+    },
+    {
+      "keyword": "manicure hybrydowy",
+      "cpc": 0.61
     }
   ],
   "seasonality": {
@@ -152,80 +462,61 @@
     "months": [
       {
         "month": "Jan",
-        "volume": 0
+        "volume": 590
       },
       {
         "month": "Feb",
-        "volume": 0
+        "volume": 480
       },
       {
         "month": "Mar",
-        "volume": 0
+        "volume": 590
       },
       {
         "month": "Apr",
-        "volume": 0
+        "volume": 480
       },
       {
         "month": "May",
-        "volume": 0
+        "volume": 390
       },
       {
         "month": "Jun",
-        "volume": 0
+        "volume": 390
       },
       {
         "month": "Jul",
-        "volume": 0
+        "volume": 320
       },
       {
         "month": "Aug",
-        "volume": 0
+        "volume": 320
       },
       {
         "month": "Sep",
-        "volume": 0
+        "volume": 390
       },
       {
         "month": "Oct",
-        "volume": 0
+        "volume": 480
       },
       {
         "month": "Nov",
-        "volume": 0
+        "volume": 590
       },
       {
         "month": "Dec",
-        "volume": 0
+        "volume": 390
       }
     ],
     "peakMonths": [
       "Jan",
-      "Feb",
       "Mar",
-      "Apr",
-      "May",
-      "Jun",
-      "Jul",
-      "Aug",
-      "Sep",
-      "Oct",
-      "Nov",
-      "Dec"
+      "Nov"
     ],
     "lowMonths": [
-      "Jan",
-      "Feb",
-      "Mar",
-      "Apr",
-      "May",
-      "Jun",
       "Jul",
-      "Aug",
-      "Sep",
-      "Oct",
-      "Nov",
-      "Dec"
+      "Aug"
     ],
     "insightEN": "Laser hair removal peaks mildly in spring (March–June) — vacation season prep. Dips in July–August (holidays) and December. Other beauty services are relatively stable year-round. Best time to launch campaigns: February–March.",
     "insightNO": "",
@@ -308,7 +599,7 @@
     }
   ],
   "calculator": {
-    "avgCpc": 0.7,
+    "avgCpc": 0,
     "defaultPatientValue": 3000,
     "defaultBudget": 2000,
     "defaultConversion": 25,

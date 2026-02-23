@@ -2,16 +2,17 @@
   "meta": {
     "niche": "beauty-pl",
     "nicheNO": "skjønnhetssalonger",
+    "nicheEN": "beauty salons & aesthetic medicine",
     "city": "Wrocław",
-    "locationCode": 1011085,
+    "locationCode": 1011243,
     "dataDate": "2026-02",
-    "totalSearchVolume": 282200,
-    "nichePL": "salony kosmetyczne",
-    "currency": "zł"
+    "totalSearchVolume": 15100,
+    "currency": "zł",
+    "nichePL": "salony kosmetyczne"
   },
   "metrics": {
-    "keywordCount": 19,
-    "avgCpc": 2.5,
+    "keywordCount": 24,
+    "avgCpc": 4.1,
     "topClinicsCount": 5,
     "mapsClickShare": 42
   },
@@ -21,199 +22,190 @@
       "color": "green",
       "nameEN": "Beauty treatments & aesthetic services",
       "nameNO": "Skjønnhetsbehandlinger og estetiske tjenester",
-      "totalVolume": 282200,
+      "totalVolume": 12770,
       "keywords": [
         {
           "keyword": "kosmetyczka",
           "translation": "beautician / cosmetician",
-          "volume": 40500,
+          "volume": 1900,
           "competition": "HIGH",
           "cpc": 1.13
         },
         {
           "keyword": "kwas hialuronowy",
           "translation": "hyaluronic acid",
-          "volume": 33100,
+          "volume": 1600,
           "competition": "LOW",
-          "cpc": 1.7
+          "cpc": 2.02
         },
         {
           "keyword": "laminacja brwi",
           "translation": "brow lamination",
-          "volume": 33100,
+          "volume": 1300,
           "competition": "HIGH",
-          "cpc": 1.34
-        },
-        {
-          "keyword": "pedicure",
-          "translation": "pedicure",
-          "volume": 22200,
-          "competition": "LOW",
-          "cpc": 1.86
-        },
-        {
-          "keyword": "endermologia",
-          "translation": "endermology",
-          "volume": 22200,
-          "competition": "HIGH",
-          "cpc": 3.4
+          "cpc": 1.82
         },
         {
           "keyword": "salon kosmetyczny",
           "translation": "beauty salon",
-          "volume": 18100,
+          "volume": 880,
           "competition": "LOW",
-          "cpc": 3.04
+          "cpc": 2.55
         },
         {
           "keyword": "depilacja laserowa",
           "translation": "laser hair removal",
-          "volume": 18100,
+          "volume": 880,
           "competition": "HIGH",
-          "cpc": 7.69
+          "cpc": 12.39
         },
         {
           "keyword": "mezoterapia",
           "translation": "mesotherapy",
-          "volume": 14800,
+          "volume": 880,
           "competition": "HIGH",
-          "cpc": 2.67
+          "cpc": 2.15
+        },
+        {
+          "keyword": "pedicure",
+          "translation": "pedicure",
+          "volume": 880,
+          "competition": "LOW",
+          "cpc": 1.82
+        },
+        {
+          "keyword": "endermologia",
+          "translation": "endermology",
+          "volume": 880,
+          "competition": "HIGH",
+          "cpc": 2.23
         },
         {
           "keyword": "mikrodermabrazja",
           "translation": "microdermabrasion",
-          "volume": 12100,
+          "volume": 590,
           "competition": "HIGH",
-          "cpc": 1.98
+          "cpc": 2.19
         },
         {
           "keyword": "lifting twarzy",
           "translation": "face lift",
-          "volume": 12100,
+          "volume": 590,
           "competition": "HIGH",
-          "cpc": 3.04
+          "cpc": 4.13
         },
         {
           "keyword": "medycyna estetyczna",
           "translation": "aesthetic medicine",
-          "volume": 9900,
+          "volume": 480,
           "competition": "LOW",
-          "cpc": 4.01
+          "cpc": 2.39
         },
         {
           "keyword": "makijaż permanentny",
           "translation": "permanent makeup",
-          "volume": 8100,
-          "competition": "LOW",
-          "cpc": 3.73
-        },
-        {
-          "keyword": "manicure hybrydowy",
-          "translation": "gel manicure",
-          "volume": 8100,
-          "competition": "HIGH",
-          "cpc": 1.62
-        },
-        {
-          "keyword": "botox",
-          "translation": "botox",
-          "volume": 6600,
-          "competition": "LOW",
-          "cpc": 0.45
+          "volume": 390,
+          "competition": "MEDIUM",
+          "cpc": 13.49
         },
         {
           "keyword": "lipoliza",
           "translation": "lipolysis",
-          "volume": 6600,
+          "volume": 390,
           "competition": "MEDIUM",
-          "cpc": 2.75
+          "cpc": 2.11
         },
         {
-          "keyword": "oczyszczanie twarzy",
-          "translation": "facial cleansing",
-          "volume": 5400,
+          "keyword": "manicure hybrydowy",
+          "translation": "gel manicure",
+          "volume": 320,
           "competition": "HIGH",
-          "cpc": 2.59
-        },
-        {
-          "keyword": "przedłużanie rzęs",
-          "translation": "eyelash extensions",
-          "volume": 4400,
-          "competition": "MEDIUM",
-          "cpc": 1.62
+          "cpc": 3.48
         },
         {
           "keyword": "salon urody",
           "translation": "beauty parlor",
-          "volume": 4400,
+          "volume": 320,
           "competition": "LOW",
-          "cpc": 2.43
+          "cpc": 5.06
+        },
+        {
+          "keyword": "oczyszczanie twarzy",
+          "translation": "facial cleansing",
+          "volume": 210,
+          "competition": "HIGH",
+          "cpc": 1.74
+        },
+        {
+          "keyword": "przedłużanie rzęs",
+          "translation": "eyelash extensions",
+          "volume": 170,
+          "competition": "HIGH",
+          "cpc": 0.49
         },
         {
           "keyword": "peeling chemiczny",
           "translation": "chemical peel",
-          "volume": 2400,
+          "volume": 110,
           "competition": "HIGH",
-          "cpc": 1.42
+          "cpc": 1.34
         }
       ],
       "namePL": "Zabiegi kosmetyczne i usługi estetyczne",
       "descriptionPL": "Wyszukiwania związane z zabiegami kosmetycznymi i medycyną estetyczną. Na czele «salon kosmetyczny» (33 100/msc) i «depilacja laserowa» (18 100). Wyróżnia się «medycyna estetyczna» (12 100) — oddzielny segment premium z własnymi wynikami SERP. CPC jest niskie (śr. 2,5 zł/klik), co czyni tę branżę jedną z tańszych w Google Ads.",
-      "descriptionEN": "Searches for beauty treatments and aesthetic medicine. Led by \"salon kosmetyczny\" (33,100/mo) and \"depilacja laserowa\" (18,100). Standout: \"medycyna estetyczna\" (12,100) — a separate premium segment with its own SERP results. CPC is low (avg 2.5 PLN/click), making this one of the cheapest industries in Google Ads.",
-      "isNational": true
+      "descriptionEN": "Searches for beauty treatments and aesthetic medicine. Led by \"salon kosmetyczny\" (33,100/mo) and \"depilacja laserowa\" (18,100). Standout: \"medycyna estetyczna\" (12,100) — a separate premium segment with its own SERP results. CPC is low (avg 2.5 PLN/click), making this one of the cheapest industries in Google Ads."
     },
     {
       "id": "explicit",
       "color": "blue",
       "nameEN": "Explicit \"Wrocław\" searches",
       "nameNO": "Eksplisitte \"Wrocław\"-søk",
-      "totalVolume": 4380,
+      "totalVolume": 2330,
       "keywords": [
         {
           "keyword": "depilacja laserowa wrocław",
           "translation": "laser hair removal Wrocław",
-          "volume": 1900,
-          "competition": "MEDIUM",
-          "cpc": 14.42
+          "volume": 1000,
+          "competition": "HIGH",
+          "cpc": 16.52
         },
         {
           "keyword": "medycyna estetyczna wrocław",
           "translation": "aesthetic medicine Wrocław",
-          "volume": 1000,
-          "competition": "MEDIUM",
-          "cpc": 3.32
-        },
-        {
-          "keyword": "salon kosmetyczny wrocław",
-          "translation": "beauty salon Wrocław",
-          "volume": 590,
+          "volume": 480,
           "competition": "MEDIUM",
           "cpc": 3.48
         },
         {
           "keyword": "kosmetyczka wrocław",
           "translation": "beautician Wrocław",
-          "volume": 590,
+          "volume": 390,
           "competition": "MEDIUM",
-          "cpc": 3.24
+          "cpc": 3.28
+        },
+        {
+          "keyword": "salon kosmetyczny wrocław",
+          "translation": "beauty salon Wrocław",
+          "volume": 320,
+          "competition": "MEDIUM",
+          "cpc": 3.2
         },
         {
           "keyword": "makijaż permanentny wrocław",
           "translation": "permanent makeup Wrocław",
-          "volume": 210,
+          "volume": 110,
           "competition": "MEDIUM",
-          "cpc": 8.38
+          "cpc": 8.46
         },
         {
           "keyword": "salon urody wrocław",
           "translation": "beauty parlor Wrocław",
-          "volume": 90,
-          "competition": "MEDIUM",
-          "cpc": 3.36
+          "volume": 30,
+          "competition": "LOW",
+          "cpc": 5.26
         }
       ],
       "namePL": "Wyszukiwania z nazwą \"Wrocław\"",
-      "isNational": true,
       "descriptionPL": "Wyszukiwania z nazwą miasta — klientki gotowe do rezerwacji. CPC jest wyższe niż dla fraz ogólnych, ale wciąż niskie jak na lokalne frazy. «Salon kosmetyczny [miasto]» to najczęstsze zapytanie lokalne — warto mieć je w tytule strony i nagłówku H1.",
       "descriptionEN": "City-name searches — clients ready to book. CPC is higher than generic terms but still low for local keywords. \"Salon kosmetyczny [city]\" is the most common local query — worth including in your page title and H1 heading."
     }
@@ -221,186 +213,239 @@
   "serpKeywords": [
     {
       "keyword": "salon kosmetyczny wrocław",
-      "volume": 590,
+      "volume": 320,
       "organic": [
         {
-          "rank": 4,
+          "rank": 5,
           "domain": "booksy.com"
         },
         {
-          "rank": 5,
+          "rank": 6,
           "domain": "bionikaurody.pl"
         },
         {
-          "rank": 6,
+          "rank": 10,
           "domain": "www.poczuciepiekna.pl"
         },
         {
-          "rank": 7,
-          "domain": "instytutbeautyderm.pl"
+          "rank": 11,
+          "domain": "kbstudiowroclaw.pl"
         },
         {
-          "rank": 9,
-          "domain": "www.salonkosmetycznywroclaw.pl"
+          "rank": 13,
+          "domain": "salonlamaddalena.pl"
         }
       ],
-      "maps": [],
-      "insightEN": "Results for \"salon kosmetyczny wrocław\": Booksy.com at position 4–5 — no Booksy profile = conceded position. Local salons in TOP: bionikaurody.pl, www.poczuciepiekna.pl, instytutbeautyderm.pl. Positions 1–3 belong to local businesses with good websites.",
+      "maps": [
+        {
+          "rank": 1,
+          "title": "BAGIŃSKA",
+          "rating": 4.9,
+          "reviews": 89
+        },
+        {
+          "rank": 2,
+          "title": "OSI salon kosmetyczny",
+          "rating": 4.6,
+          "reviews": 67
+        },
+        {
+          "rank": 3,
+          "title": "ADEN Beauty Clinic",
+          "rating": 4.8,
+          "reviews": 285
+        }
+      ],
+      "insightEN": "Results for \"salon kosmetyczny wrocław\": Booksy.com at position 4–5 — no Booksy profile = conceded position. Local salons in TOP: bionikaurody.pl, www.poczuciepiekna.pl, kbstudiowroclaw.pl. Positions 1–3 belong to local businesses with good websites.",
       "insightNO": "",
-      "insightPL": "Wyniki na «salon kosmetyczny wrocław»: Booksy.com na pozycji 4–5 — brak profilu na Booksy = oddana pozycja. Lokalne salony w TOP: bionikaurody.pl, www.poczuciepiekna.pl, instytutbeautyderm.pl. Pozycje 1–3 należą do lokalnych firm z dobrymi stronami."
+      "insightPL": "Wyniki na «salon kosmetyczny wrocław»: Booksy.com na pozycji 4–5 — brak profilu na Booksy = oddana pozycja. Lokalne salony w TOP: bionikaurody.pl, www.poczuciepiekna.pl, kbstudiowroclaw.pl. Pozycje 1–3 należą do lokalnych firm z dobrymi stronami."
     },
     {
       "keyword": "medycyna estetyczna wrocław",
-      "volume": 1000,
+      "volume": 480,
       "organic": [
         {
-          "rank": 4,
-          "domain": "www.nowaestetyka.pl"
-        },
-        {
           "rank": 5,
-          "domain": "dermamed.com.pl"
+          "domain": "www.znanylekarz.pl"
         },
         {
           "rank": 6,
-          "domain": "mmclinic.pl"
-        },
-        {
-          "rank": 7,
           "domain": "www.arsestetica.pl"
         },
         {
-          "rank": 8,
-          "domain": "www.znanylekarz.pl"
+          "rank": 10,
+          "domain": "mmclinic.pl"
+        },
+        {
+          "rank": 11,
+          "domain": "dermamed.com.pl"
+        },
+        {
+          "rank": 13,
+          "domain": "www.nowaestetyka.pl"
         }
       ],
-      "maps": [],
-      "insightEN": "Results for \"medycyna estetyczna wrocław\": ZnanyLekarz.pl (doctor directory) appears — patients search for aesthetic medicine doctors as medical specialists. Local clinics in TOP 10: www.nowaestetyka.pl, dermamed.com.pl, mmclinic.pl. Dedicated aesthetic medicine sites rank higher than general beauty salons.",
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Dermamed OVO - Medycyna Estetyczna i Laseroterapia",
+          "rating": 5,
+          "reviews": 10
+        },
+        {
+          "rank": 2,
+          "title": "Centrum Dermatologii Estetycznej Bagłaj",
+          "rating": 4.2,
+          "reviews": 44
+        },
+        {
+          "rank": 3,
+          "title": "Medycyna estetyczna - Centrum Piękna Wrocław",
+          "rating": 0,
+          "reviews": 0
+        }
+      ],
+      "insightEN": "Results for \"medycyna estetyczna wrocław\": ZnanyLekarz.pl (doctor directory) appears — patients search for aesthetic medicine doctors as medical specialists. Local clinics in TOP 10: www.arsestetica.pl, mmclinic.pl, dermamed.com.pl. Dedicated aesthetic medicine sites rank higher than general beauty salons.",
       "insightNO": "",
-      "insightPL": "Wyniki na «medycyna estetyczna wrocław»: ZnanyLekarz.pl pojawia się w wynikach — pacjenci szukają lekarzy medycyny estetycznej jak specjalistów medycznych. Lokalne kliniki w TOP 10: www.nowaestetyka.pl, dermamed.com.pl, mmclinic.pl. Dedykowane strony o medycynie estetycznej rankują wyżej niż ogólne salony beauty."
+      "insightPL": "Wyniki na «medycyna estetyczna wrocław»: ZnanyLekarz.pl pojawia się w wynikach — pacjenci szukają lekarzy medycyny estetycznej jak specjalistów medycznych. Lokalne kliniki w TOP 10: www.arsestetica.pl, mmclinic.pl, dermamed.com.pl. Dedykowane strony o medycynie estetycznej rankują wyżej niż ogólne salony beauty."
     },
     {
       "keyword": "kosmetyczka wrocław",
-      "volume": 590,
+      "volume": 390,
       "organic": [
         {
-          "rank": 4,
+          "rank": 5,
           "domain": "booksy.com"
         },
         {
           "rank": 6,
+          "domain": "balibeauty.pl"
+        },
+        {
+          "rank": 11,
+          "domain": "www.poczuciepiekna.pl"
+        },
+        {
+          "rank": 12,
           "domain": "instytutbeautyderm.pl"
         },
         {
-          "rank": 7,
+          "rank": 13,
           "domain": "bionikaurody.pl"
-        },
-        {
-          "rank": 8,
-          "domain": "contourclinic.pl"
-        },
-        {
-          "rank": 9,
-          "domain": "balibeauty.pl"
         }
       ],
-      "maps": [],
-      "insightEN": "Results for \"kosmetyczka wrocław\": Booksy.com in TOP 5 — the booking platform is the first choice for clients seeking beauticians. Local salons: instytutbeautyderm.pl, bionikaurody.pl, contourclinic.pl.",
+      "maps": [
+        {
+          "rank": 1,
+          "title": "BAGIŃSKA",
+          "rating": 4.9,
+          "reviews": 89
+        },
+        {
+          "rank": 2,
+          "title": "Face Room Kosmetologia Inwazyjna Ira Anikina",
+          "rating": 5,
+          "reviews": 16
+        },
+        {
+          "rank": 3,
+          "title": "Kosmetyczka i Depilacja Laserowa - Całka Beauty Małgorzata Całka",
+          "rating": 5,
+          "reviews": 4
+        }
+      ],
+      "insightEN": "Results for \"kosmetyczka wrocław\": Booksy.com in TOP 5 — the booking platform is the first choice for clients seeking beauticians. Local salons: balibeauty.pl, www.poczuciepiekna.pl, instytutbeautyderm.pl.",
       "insightNO": "",
-      "insightPL": "Wyniki na «kosmetyczka wrocław»: Booksy.com w TOP 5 — platforma rezerwacyjna jest pierwszym wyborem klientek szukających kosmetyczek. Lokalne salony: instytutbeautyderm.pl, bionikaurody.pl, contourclinic.pl."
+      "insightPL": "Wyniki na «kosmetyczka wrocław»: Booksy.com w TOP 5 — platforma rezerwacyjna jest pierwszym wyborem klientek szukających kosmetyczek. Lokalne salony: balibeauty.pl, www.poczuciepiekna.pl, instytutbeautyderm.pl."
     }
   ],
   "cpcData": [
     {
       "keyword": "depilacja laserowa wrocław",
-      "cpc": 14.42
-    },
-    {
-      "keyword": "makijaż permanentny wrocław",
-      "cpc": 8.38
-    },
-    {
-      "keyword": "depilacja laserowa",
-      "cpc": 7.69
-    },
-    {
-      "keyword": "medycyna estetyczna",
-      "cpc": 4.01
+      "cpc": 16.52
     },
     {
       "keyword": "makijaż permanentny",
-      "cpc": 3.73
+      "cpc": 13.49
     },
     {
-      "keyword": "salon kosmetyczny wrocław",
-      "cpc": 3.48
+      "keyword": "depilacja laserowa",
+      "cpc": 12.39
     },
     {
-      "keyword": "endermologia",
-      "cpc": 3.4
+      "keyword": "makijaż permanentny wrocław",
+      "cpc": 8.46
     },
     {
       "keyword": "salon urody wrocław",
-      "cpc": 3.36
-    },
-    {
-      "keyword": "medycyna estetyczna wrocław",
-      "cpc": 3.32
-    },
-    {
-      "keyword": "kosmetyczka wrocław",
-      "cpc": 3.24
-    },
-    {
-      "keyword": "salon kosmetyczny",
-      "cpc": 3.04
-    },
-    {
-      "keyword": "lifting twarzy",
-      "cpc": 3.04
-    },
-    {
-      "keyword": "lipoliza",
-      "cpc": 2.75
-    },
-    {
-      "keyword": "mezoterapia",
-      "cpc": 2.67
-    },
-    {
-      "keyword": "oczyszczanie twarzy",
-      "cpc": 2.59
+      "cpc": 5.26
     },
     {
       "keyword": "salon urody",
-      "cpc": 2.43
+      "cpc": 5.06
     },
     {
-      "keyword": "mikrodermabrazja",
-      "cpc": 1.98
-    },
-    {
-      "keyword": "pedicure",
-      "cpc": 1.86
-    },
-    {
-      "keyword": "kwas hialuronowy",
-      "cpc": 1.7
+      "keyword": "lifting twarzy",
+      "cpc": 4.13
     },
     {
       "keyword": "manicure hybrydowy",
-      "cpc": 1.62
+      "cpc": 3.48
     },
     {
-      "keyword": "przedłużanie rzęs",
-      "cpc": 1.62
+      "keyword": "medycyna estetyczna wrocław",
+      "cpc": 3.48
     },
     {
-      "keyword": "peeling chemiczny",
-      "cpc": 1.42
+      "keyword": "kosmetyczka wrocław",
+      "cpc": 3.28
+    },
+    {
+      "keyword": "salon kosmetyczny wrocław",
+      "cpc": 3.2
+    },
+    {
+      "keyword": "salon kosmetyczny",
+      "cpc": 2.55
+    },
+    {
+      "keyword": "medycyna estetyczna",
+      "cpc": 2.39
+    },
+    {
+      "keyword": "endermologia",
+      "cpc": 2.23
+    },
+    {
+      "keyword": "mikrodermabrazja",
+      "cpc": 2.19
+    },
+    {
+      "keyword": "mezoterapia",
+      "cpc": 2.15
+    },
+    {
+      "keyword": "lipoliza",
+      "cpc": 2.11
+    },
+    {
+      "keyword": "kwas hialuronowy",
+      "cpc": 2.02
     },
     {
       "keyword": "laminacja brwi",
+      "cpc": 1.82
+    },
+    {
+      "keyword": "pedicure",
+      "cpc": 1.82
+    },
+    {
+      "keyword": "oczyszczanie twarzy",
+      "cpc": 1.74
+    },
+    {
+      "keyword": "peeling chemiczny",
       "cpc": 1.34
     },
     {
@@ -408,8 +453,8 @@
       "cpc": 1.13
     },
     {
-      "keyword": "botox",
-      "cpc": 0.45
+      "keyword": "przedłużanie rzęs",
+      "cpc": 0.49
     }
   ],
   "seasonality": {
@@ -417,63 +462,60 @@
     "months": [
       {
         "month": "Jan",
-        "volume": 22200
+        "volume": 880
       },
       {
         "month": "Feb",
-        "volume": 22200
+        "volume": 880
       },
       {
         "month": "Mar",
-        "volume": 22200
+        "volume": 1300
       },
       {
         "month": "Apr",
-        "volume": 18100
+        "volume": 880
       },
       {
         "month": "May",
-        "volume": 18100
+        "volume": 720
       },
       {
         "month": "Jun",
-        "volume": 18100
+        "volume": 880
       },
       {
         "month": "Jul",
-        "volume": 18100
+        "volume": 720
       },
       {
         "month": "Aug",
-        "volume": 14800
+        "volume": 720
       },
       {
         "month": "Sep",
-        "volume": 14800
+        "volume": 880
       },
       {
         "month": "Oct",
-        "volume": 14800
+        "volume": 880
       },
       {
         "month": "Nov",
-        "volume": 18100
+        "volume": 1000
       },
       {
         "month": "Dec",
-        "volume": 14800
+        "volume": 880
       }
     ],
     "peakMonths": [
-      "Jan",
-      "Feb",
       "Mar"
     ],
     "lowMonths": [
-      "Aug",
-      "Sep",
-      "Oct",
-      "Dec"
+      "May",
+      "Jul",
+      "Aug"
     ],
     "insightEN": "Laser hair removal peaks mildly in spring (March–June) — vacation season prep. Dips in July–August (holidays) and December. Other beauty services are relatively stable year-round. Best time to launch campaigns: February–March.",
     "insightNO": "",
@@ -556,7 +598,7 @@
     }
   ],
   "calculator": {
-    "avgCpc": 6.03,
+    "avgCpc": 0,
     "defaultPatientValue": 3000,
     "defaultBudget": 2000,
     "defaultConversion": 25,

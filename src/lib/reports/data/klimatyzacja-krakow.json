@@ -2,16 +2,17 @@
   "meta": {
     "niche": "klimatyzacja",
     "nicheNO": "klimaanlegg",
+    "nicheEN": "HVAC & air conditioning",
     "city": "Kraków",
-    "locationCode": 1011081,
+    "locationCode": 1011367,
     "dataDate": "2026-02",
-    "totalSearchVolume": 115530,
-    "nichePL": "klimatyzacja",
-    "currency": "zł"
+    "totalSearchVolume": 9490,
+    "currency": "zł",
+    "nichePL": "klimatyzacja"
   },
   "metrics": {
-    "keywordCount": 16,
-    "avgCpc": 5.53,
+    "keywordCount": 15,
+    "avgCpc": 9.3,
     "topClinicsCount": 5,
     "mapsClickShare": 46
   },
@@ -21,157 +22,127 @@
       "color": "green",
       "nameEN": "HVAC installation & service",
       "nameNO": "Klimaanlegg installasjon og service",
-      "totalVolume": 115530,
+      "totalVolume": 5410,
       "keywords": [
         {
           "keyword": "klimatyzator",
           "translation": "air conditioner unit",
-          "volume": 40500,
+          "volume": 1900,
           "competition": "HIGH",
-          "cpc": 1.62
+          "cpc": 2.15
         },
         {
           "keyword": "klimatyzacja",
           "translation": "air conditioning",
-          "volume": 33100,
+          "volume": 1600,
           "competition": "HIGH",
-          "cpc": 2.47
+          "cpc": 5.02
         },
         {
           "keyword": "serwis klimatyzacji",
           "translation": "AC service",
-          "volume": 8100,
-          "competition": "LOW",
-          "cpc": 8.02
+          "volume": 480,
+          "competition": "MEDIUM",
+          "cpc": 12.6
         },
         {
           "keyword": "klimatyzacja do domu",
           "translation": "home air conditioning",
-          "volume": 8100,
+          "volume": 390,
           "competition": "HIGH",
-          "cpc": 2.67
+          "cpc": 3.97
         },
         {
           "keyword": "montaż klimatyzacji",
           "translation": "AC installation",
-          "volume": 5400,
+          "volume": 260,
           "competition": "MEDIUM",
-          "cpc": 9.88
-        },
-        {
-          "keyword": "klimatyzacja do mieszkania",
-          "translation": "apartment AC",
-          "volume": 5400,
-          "competition": "HIGH",
-          "cpc": 3.32
+          "cpc": 9.03
         },
         {
           "keyword": "klimatyzacja przenośna",
           "translation": "portable AC",
-          "volume": 3600,
+          "volume": 210,
           "competition": "HIGH",
           "cpc": 1.01
         },
         {
-          "keyword": "klimatyzacja domowa",
-          "translation": "home AC system",
-          "volume": 3600,
+          "keyword": "klimatyzacja do mieszkania",
+          "translation": "apartment AC",
+          "volume": 170,
           "competition": "HIGH",
-          "cpc": 2.31
+          "cpc": 3.85
         },
         {
           "keyword": "klimatyzacja split",
           "translation": "split AC",
-          "volume": 2900,
+          "volume": 170,
           "competition": "HIGH",
-          "cpc": 2.11
+          "cpc": 5.83
         },
         {
           "keyword": "klimatyzacja multisplit",
           "translation": "multi-split AC",
-          "volume": 1300,
+          "volume": 70,
           "competition": "HIGH",
-          "cpc": 1.58
+          "cpc": 2.88
         },
         {
-          "keyword": "czyszczenie klimatyzacji",
-          "translation": "AC cleaning",
-          "volume": 1300,
-          "competition": "HIGH",
-          "cpc": 3.2
+          "keyword": "klimatyzacja domowa",
+          "translation": "home AC system",
+          "volume": 70,
+          "competition": "LOW",
+          "cpc": 1.66
         },
         {
           "keyword": "klimatyzacja cena",
           "translation": "AC price",
-          "volume": 1000,
+          "volume": 50,
           "competition": "HIGH",
-          "cpc": 2.47
+          "cpc": 3.81
         },
         {
           "keyword": "ile kosztuje klimatyzacja",
           "translation": "how much does AC cost",
-          "volume": 720,
+          "volume": 40,
           "competition": "HIGH",
-          "cpc": 3.2
-        },
-        {
-          "keyword": "przegląd klimatyzacji",
-          "translation": "AC inspection",
-          "volume": 480,
-          "competition": "LOW",
-          "cpc": 10.45
-        },
-        {
-          "keyword": "klimatyzacja najtaniej",
-          "translation": "cheapest AC",
-          "volume": 20,
-          "competition": "HIGH",
-          "cpc": 1.86
-        },
-        {
-          "keyword": "klimatyzacja biuro",
-          "translation": "office AC",
-          "volume": 10,
-          "competition": "MEDIUM",
-          "cpc": 6.48
+          "cpc": 3.04
         }
       ],
       "namePL": "Montaż i serwis klimatyzacji",
-      "descriptionPL": "Wyszukiwania związane z montażem, serwisem i zakupem klimatyzacji. Liderem jest «klimatyzator» z 40 500 wyszukiwań/msc, następnie «klimatyzacja» (33 100) i «serwis klimatyzacji» (8 100). CPC waha się od 1 zł (klimatyzacja przenośna) do 10 zł (przegląd klimatyzacji). Frazy serwisowe są zaskakująco drogie — sygnał niskiej konkurencji w Google Ads i dużej wartości klienta.",
-      "descriptionEN": "Searches for AC installation, service, and purchase. The leader is \"klimatyzator\" (air conditioner) with 40,500 monthly searches, followed by \"klimatyzacja\" (33,100) and \"serwis klimatyzacji\" (8,100). CPC ranges from 1 PLN (portable AC) to 10 PLN (AC inspection). Service keywords are surprisingly expensive — signaling low Google Ads competition and high customer value.",
-      "isNational": true
+      "descriptionPL": "Wyszukiwania związane z montażem, serwisem i zakupem klimatyzacji. Liderem jest «klimatyzator» z 40 500 wyszukiwań/msc (ogólnopolsko), następnie «klimatyzacja» (33 100) i «serwis klimatyzacji» (8 100). CPC waha się od 1 zł (klimatyzacja przenośna) do 10 zł (przegląd klimatyzacji). Frazy serwisowe są zaskakująco drogie — sygnał niskiej konkurencji w Google Ads i dużej wartości klienta.",
+      "descriptionEN": "Searches for AC installation, service, and purchase. The leader is \"klimatyzator\" (air conditioner) with 40,500 monthly searches (nationally), followed by \"klimatyzacja\" (33,100) and \"serwis klimatyzacji\" (8,100). CPC ranges from 1 PLN (portable AC) to 10 PLN (AC inspection). Service keywords are surprisingly expensive — signaling low Google Ads competition and high customer value."
     },
     {
       "id": "explicit",
       "color": "blue",
       "nameEN": "Explicit \"Kraków\" searches",
       "nameNO": "Eksplisitte \"Kraków\"-søk",
-      "totalVolume": 5200,
+      "totalVolume": 4080,
       "keywords": [
         {
           "keyword": "klimatyzacja kraków",
           "translation": "air conditioning Kraków",
-          "volume": 3600,
+          "volume": 2900,
           "competition": "LOW",
-          "cpc": 16.08
+          "cpc": 16.32
         },
         {
           "keyword": "montaż klimatyzacji kraków",
           "translation": "AC installation Kraków",
-          "volume": 880,
+          "volume": 590,
           "competition": "LOW",
-          "cpc": 14.3
+          "cpc": 16.48
         },
         {
           "keyword": "serwis klimatyzacji kraków",
           "translation": "AC service Kraków",
-          "volume": 720,
-          "competition": "LOW",
-          "cpc": 12.11
+          "volume": 590,
+          "competition": "MEDIUM",
+          "cpc": 11.62
         }
       ],
       "namePL": "Wyszukiwania z nazwą \"Kraków\"",
-      "isNational": true,
       "descriptionPL": "Wyszukiwania z nazwą miasta w frazie — klienci gotowi do zakupu usługi lokalnie. CPC jest 5–15× wyższe niż dla fraz ogólnych (np. «klimatyzacja warszawa» = 32 zł vs «klimatyzacja» = 2,47 zł). Te frazy stanowią niewielki procent wolumenu, ale generują najcenniejszy ruch.",
       "descriptionEN": "Searches including the city name — buyers ready to hire locally. CPC is 5–15× higher than generic terms (e.g. \"klimatyzacja warszawa\" = 32 PLN vs \"klimatyzacja\" = 2.47 PLN). Small share of total volume, but the most valuable traffic."
     }
@@ -179,167 +150,208 @@
   "serpKeywords": [
     {
       "keyword": "klimatyzacja kraków",
-      "volume": 3600,
+      "volume": 2900,
       "organic": [
         {
-          "rank": 5,
+          "rank": 8,
           "domain": "klima-krakow.pl"
         },
         {
-          "rank": 6,
+          "rank": 10,
           "domain": "aero7.pl"
         },
         {
-          "rank": 7,
+          "rank": 15,
           "domain": "www.ahs-krakow.pl"
         },
         {
-          "rank": 8,
-          "domain": "klimaprofi.com.pl"
+          "rank": 16,
+          "domain": "klimasoft.pl"
         },
         {
-          "rank": 9,
-          "domain": "klimasoft.pl"
+          "rank": 17,
+          "domain": "sklep.klimman.com.pl"
         }
       ],
-      "maps": [],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "KLIMACIK montaż klimatyzacji Kraków do domu biura",
+          "rating": 5,
+          "reviews": 0
+        },
+        {
+          "rank": 2,
+          "title": "El-Instal Jakub Sikora - Elektryk, Klimatyzacja",
+          "rating": 5,
+          "reviews": 0
+        },
+        {
+          "rank": 3,
+          "title": "Klimatyzacja w Krakowie | Rekuperacja • Wentylacja Mechaniczna",
+          "rating": 5,
+          "reviews": 0
+        }
+      ],
       "insightEN": "Results for \"klimatyzacja kraków\": Aero7.pl — national leader ranks high across multiple cities. Companies with local domains (klima-krakow.pl, www.ahs-krakow.pl) hold top positions — Google favors local signals.",
       "insightNO": "",
       "insightPL": "Wyniki na «klimatyzacja kraków»: Aero7.pl — ogólnopolski lider rankuje wysoko w wielu miastach. Firmy z domenami lokalnymi (klima-krakow.pl, www.ahs-krakow.pl) zajmują czołowe pozycje — Google premiuje sygnały lokalne."
     },
     {
       "keyword": "montaż klimatyzacji kraków",
-      "volume": 880,
+      "volume": 590,
       "organic": [
         {
-          "rank": 7,
+          "rank": 6,
           "domain": "klima-krakow.pl"
         },
         {
-          "rank": 9,
-          "domain": "aero7.pl"
-        },
-        {
-          "rank": 10,
+          "rank": 7,
           "domain": "www.mediaexpert.pl"
         },
         {
-          "rank": 12,
-          "domain": "klimaprofi.com.pl"
-        },
-        {
-          "rank": 13,
-          "domain": "www.facebook.com"
-        }
-      ],
-      "maps": [],
-      "insightEN": "Results for \"montaż klimatyzacji kraków\": Aero7.pl (national player) appears in TOP 10. MediaExpert sells units but doesn't install — their ranking is an opening for installers with a dedicated page. Local companies in TOP 10: klima-krakow.pl, klimaprofi.com.pl.",
-      "insightNO": "",
-      "insightPL": "Wyniki na «montaż klimatyzacji kraków»: Aero7.pl (ogólnopolski gracz) pojawia się w TOP 10. MediaExpert sprzedaje urządzenia, ale nie montuje — ich pozycja to szansa dla montażystów z dedykowaną stroną. Lokalne firmy w TOP 10: klima-krakow.pl, klimaprofi.com.pl."
-    },
-    {
-      "keyword": "serwis klimatyzacji kraków",
-      "volume": 720,
-      "organic": [
-        {
-          "rank": 5,
-          "domain": "dreamcar.pl"
-        },
-        {
-          "rank": 6,
-          "domain": "www.kalor.pl"
-        },
-        {
-          "rank": 7,
-          "domain": "www.irmarserwis.pl"
-        },
-        {
           "rank": 8,
-          "domain": "allhappy.pl"
+          "domain": "aero7.pl"
         },
         {
           "rank": 9,
-          "domain": "realklim.pl"
+          "domain": "sklep.klimman.com.pl"
+        },
+        {
+          "rank": 13,
+          "domain": "klimaprofi.com.pl"
         }
       ],
-      "maps": [],
-      "insightEN": "Results for \"serwis klimatyzacji kraków\": organic positions start from #5. Specialized service providers: dreamcar.pl, www.kalor.pl, www.irmarserwis.pl. Fewer players than installation — less competition.",
+      "maps": [
+        {
+          "rank": 1,
+          "title": "KLIMACIK montaż klimatyzacji Kraków do domu biura",
+          "rating": 5,
+          "reviews": 24
+        },
+        {
+          "rank": 2,
+          "title": "El-Instal Jakub Sikora - Elektryk, Klimatyzacja",
+          "rating": 5,
+          "reviews": 41
+        },
+        {
+          "rank": 3,
+          "title": "Klimatyzacja w Krakowie | Rekuperacja • Wentylacja Mechaniczna",
+          "rating": 5,
+          "reviews": 20
+        }
+      ],
+      "insightEN": "Results for \"montaż klimatyzacji kraków\": Aero7.pl (national player) appears in TOP 10. MediaExpert sells units but doesn't install — their ranking is an opening for installers with a dedicated page. Local companies in TOP 10: klima-krakow.pl, sklep.klimman.com.pl, klimaprofi.com.pl.",
       "insightNO": "",
-      "insightPL": "Wyniki na «serwis klimatyzacji kraków»: pozycje organiczne zaczynają się od #5. Wyspecjalizowane serwisy: dreamcar.pl, www.kalor.pl, www.irmarserwis.pl. Mniej graczy niż w montażu — mniejsza konkurencja."
+      "insightPL": "Wyniki na «montaż klimatyzacji kraków»: Aero7.pl (ogólnopolski gracz) pojawia się w TOP 10. MediaExpert sprzedaje urządzenia, ale nie montuje — ich pozycja to szansa dla montażystów z dedykowaną stroną. Lokalne firmy w TOP 10: klima-krakow.pl, sklep.klimman.com.pl, klimaprofi.com.pl."
+    },
+    {
+      "keyword": "serwis klimatyzacji kraków",
+      "volume": 590,
+      "organic": [
+        {
+          "rank": 7,
+          "domain": "www.kalor.pl"
+        },
+        {
+          "rank": 9,
+          "domain": "dreamcar.pl"
+        },
+        {
+          "rank": 10,
+          "domain": "www.irmarserwis.pl"
+        },
+        {
+          "rank": 11,
+          "domain": "auto-complex.eu"
+        },
+        {
+          "rank": 15,
+          "domain": "klimasoft.pl"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Serwis Opon - Wymiana opon, Wulkanizacja, Klimatyzacja",
+          "rating": 4.1,
+          "reviews": 39
+        },
+        {
+          "rank": 2,
+          "title": "El-Instal Jakub Sikora - Elektryk, Klimatyzacja",
+          "rating": 5,
+          "reviews": 41
+        },
+        {
+          "rank": 3,
+          "title": "Klimatyzacja w Krakowie | Rekuperacja • Wentylacja Mechaniczna",
+          "rating": 5,
+          "reviews": 20
+        }
+      ],
+      "insightEN": "Results for \"serwis klimatyzacji kraków\": organic positions start from #7. Specialized service providers: www.kalor.pl, dreamcar.pl, www.irmarserwis.pl. Fewer players than installation — less competition.",
+      "insightNO": "",
+      "insightPL": "Wyniki na «serwis klimatyzacji kraków»: pozycje organiczne zaczynają się od #7. Wyspecjalizowane serwisy: www.kalor.pl, dreamcar.pl, www.irmarserwis.pl. Mniej graczy niż w montażu — mniejsza konkurencja."
     }
   ],
   "cpcData": [
     {
-      "keyword": "klimatyzacja kraków",
-      "cpc": 16.08
-    },
-    {
       "keyword": "montaż klimatyzacji kraków",
-      "cpc": 14.3
+      "cpc": 16.48
     },
     {
-      "keyword": "serwis klimatyzacji kraków",
-      "cpc": 12.11
-    },
-    {
-      "keyword": "przegląd klimatyzacji",
-      "cpc": 10.45
-    },
-    {
-      "keyword": "montaż klimatyzacji",
-      "cpc": 9.88
+      "keyword": "klimatyzacja kraków",
+      "cpc": 16.32
     },
     {
       "keyword": "serwis klimatyzacji",
-      "cpc": 8.02
+      "cpc": 12.6
     },
     {
-      "keyword": "klimatyzacja biuro",
-      "cpc": 6.48
+      "keyword": "serwis klimatyzacji kraków",
+      "cpc": 11.62
     },
     {
-      "keyword": "klimatyzacja do mieszkania",
-      "cpc": 3.32
-    },
-    {
-      "keyword": "czyszczenie klimatyzacji",
-      "cpc": 3.2
-    },
-    {
-      "keyword": "ile kosztuje klimatyzacja",
-      "cpc": 3.2
-    },
-    {
-      "keyword": "klimatyzacja do domu",
-      "cpc": 2.67
-    },
-    {
-      "keyword": "klimatyzacja",
-      "cpc": 2.47
-    },
-    {
-      "keyword": "klimatyzacja cena",
-      "cpc": 2.47
-    },
-    {
-      "keyword": "klimatyzacja domowa",
-      "cpc": 2.31
+      "keyword": "montaż klimatyzacji",
+      "cpc": 9.03
     },
     {
       "keyword": "klimatyzacja split",
-      "cpc": 2.11
+      "cpc": 5.83
     },
     {
-      "keyword": "klimatyzacja najtaniej",
-      "cpc": 1.86
+      "keyword": "klimatyzacja",
+      "cpc": 5.02
     },
     {
-      "keyword": "klimatyzator",
-      "cpc": 1.62
+      "keyword": "klimatyzacja do domu",
+      "cpc": 3.97
+    },
+    {
+      "keyword": "klimatyzacja do mieszkania",
+      "cpc": 3.85
+    },
+    {
+      "keyword": "klimatyzacja cena",
+      "cpc": 3.81
+    },
+    {
+      "keyword": "ile kosztuje klimatyzacja",
+      "cpc": 3.04
     },
     {
       "keyword": "klimatyzacja multisplit",
-      "cpc": 1.58
+      "cpc": 2.88
+    },
+    {
+      "keyword": "klimatyzator",
+      "cpc": 2.15
+    },
+    {
+      "keyword": "klimatyzacja domowa",
+      "cpc": 1.66
     },
     {
       "keyword": "klimatyzacja przenośna",
@@ -351,51 +363,51 @@
     "months": [
       {
         "month": "Jan",
-        "volume": 22200
+        "volume": 1000
       },
       {
         "month": "Feb",
-        "volume": 22200
+        "volume": 1600
       },
       {
         "month": "Mar",
-        "volume": 33100
+        "volume": 1900
       },
       {
         "month": "Apr",
-        "volume": 49500
+        "volume": 2900
       },
       {
         "month": "May",
-        "volume": 33100
+        "volume": 1900
       },
       {
         "month": "Jun",
-        "volume": 74000
+        "volume": 4400
       },
       {
         "month": "Jul",
-        "volume": 60500
+        "volume": 2900
       },
       {
         "month": "Aug",
-        "volume": 33100
+        "volume": 1600
       },
       {
         "month": "Sep",
-        "volume": 22200
+        "volume": 1000
       },
       {
         "month": "Oct",
-        "volume": 14800
+        "volume": 720
       },
       {
         "month": "Nov",
-        "volume": 14800
+        "volume": 720
       },
       {
         "month": "Dec",
-        "volume": 12100
+        "volume": 480
       }
     ],
     "peakMonths": [
@@ -412,12 +424,12 @@
     {
       "icon": "flame",
       "color": "amber",
-      "titlePL": "211 tys. wyszukiwań/msc — sektor klimatyzacji w Polsce rośnie",
-      "titleEN": "211K searches/month — Poland's AC sector is booming",
-      "textPL": "Sam «klimatyzator» generuje 40 500 wyszukiwań miesięcznie, «klimatyzacja» — 33 100, a «serwis klimatyzacji» — 8 100. Do tego frazy produktowe (split, multisplit, przenośna) i serwisowe (czyszczenie, przegląd). Rynek jest duży i rozproszony — lokalne firmy mogą konkurować ceną i szybkością reakcji.",
-      "textEN": "\"Klimatyzator\" alone generates 40,500 searches/month, \"klimatyzacja\" — 33,100, and \"serwis klimatyzacji\" — 8,100. Add product queries (split, multisplit, portable) and service queries (cleaning, inspection). The market is large and fragmented — local companies can compete on price and response speed.",
+      "titlePL": "Sektor klimatyzacji w Polsce rośnie — ponad 100 tys. wyszukiwań/msc",
+      "titleEN": "Poland's AC sector is booming — 100K+ searches/month",
+      "textPL": "Sam «klimatyzator» generuje 40 500 wyszukiwań miesięcznie (ogólnopolsko), «klimatyzacja» — 33 100, a «serwis klimatyzacji» — 8 100. Do tego frazy produktowe (split, multisplit, przenośna) i serwisowe (czyszczenie, przegląd). Rynek jest duży i rozproszony — lokalne firmy mogą konkurować ceną i szybkością reakcji.",
+      "textEN": "\"Klimatyzator\" alone generates 40,500 searches/month (nationally), \"klimatyzacja\" — 33,100, and \"serwis klimatyzacji\" — 8,100. Add product queries (split, multisplit, portable) and service queries (cleaning, inspection). The market is large and fragmented — local companies can compete on price and response speed.",
       "statLabel": "searches/mo total",
-      "statValue": "115K+"
+      "statValue": "100K+"
     },
     {
       "icon": "trending-up",
@@ -485,7 +497,7 @@
     }
   ],
   "calculator": {
-    "avgCpc": 14.16,
+    "avgCpc": 0,
     "defaultPatientValue": 6000,
     "defaultBudget": 3000,
     "defaultConversion": 25,

@@ -2,16 +2,17 @@
   "meta": {
     "niche": "beauty-pl",
     "nicheNO": "skjønnhetssalonger",
+    "nicheEN": "beauty salons & aesthetic medicine",
     "city": "Kraków",
-    "locationCode": 1011081,
+    "locationCode": 1011367,
     "dataDate": "2026-02",
-    "totalSearchVolume": 720,
-    "nichePL": "salony kosmetyczne",
-    "currency": "zł"
+    "totalSearchVolume": 17820,
+    "currency": "zł",
+    "nichePL": "salony kosmetyczne"
   },
   "metrics": {
-    "keywordCount": 1,
-    "avgCpc": 1.7,
+    "keywordCount": 25,
+    "avgCpc": 4.4,
     "topClinicsCount": 5,
     "mapsClickShare": 42
   },
@@ -21,73 +22,197 @@
       "color": "green",
       "nameEN": "Beauty treatments & aesthetic services",
       "nameNO": "Skjønnhetsbehandlinger og estetiske tjenester",
-      "totalVolume": 720,
+      "totalVolume": 14720,
       "keywords": [
+        {
+          "keyword": "kosmetyczka",
+          "translation": "beautician / cosmetician",
+          "volume": 1900,
+          "competition": "HIGH",
+          "cpc": 1.17
+        },
+        {
+          "keyword": "kwas hialuronowy",
+          "translation": "hyaluronic acid",
+          "volume": 1600,
+          "competition": "LOW",
+          "cpc": 0.73
+        },
+        {
+          "keyword": "laminacja brwi",
+          "translation": "brow lamination",
+          "volume": 1600,
+          "competition": "HIGH",
+          "cpc": 1.3
+        },
+        {
+          "keyword": "salon kosmetyczny",
+          "translation": "beauty salon",
+          "volume": 1300,
+          "competition": "LOW",
+          "cpc": 3.69
+        },
+        {
+          "keyword": "endermologia",
+          "translation": "endermology",
+          "volume": 1300,
+          "competition": "HIGH",
+          "cpc": 5.14
+        },
+        {
+          "keyword": "depilacja laserowa",
+          "translation": "laser hair removal",
+          "volume": 1000,
+          "competition": "HIGH",
+          "cpc": 11.22
+        },
         {
           "keyword": "pedicure",
           "translation": "pedicure",
-          "volume": 720,
+          "volume": 1000,
           "competition": "LOW",
-          "cpc": 1.66
+          "cpc": 2.11
+        },
+        {
+          "keyword": "mezoterapia",
+          "translation": "mesotherapy",
+          "volume": 880,
+          "competition": "HIGH",
+          "cpc": 2.67
+        },
+        {
+          "keyword": "mikrodermabrazja",
+          "translation": "microdermabrasion",
+          "volume": 720,
+          "competition": "HIGH",
+          "cpc": 2.23
+        },
+        {
+          "keyword": "medycyna estetyczna",
+          "translation": "aesthetic medicine",
+          "volume": 480,
+          "competition": "LOW",
+          "cpc": 4.94
+        },
+        {
+          "keyword": "lifting twarzy",
+          "translation": "face lift",
+          "volume": 480,
+          "competition": "HIGH",
+          "cpc": 3.16
+        },
+        {
+          "keyword": "makijaż permanentny",
+          "translation": "permanent makeup",
+          "volume": 480,
+          "competition": "MEDIUM",
+          "cpc": 3.12
+        },
+        {
+          "keyword": "manicure hybrydowy",
+          "translation": "gel manicure",
+          "volume": 480,
+          "competition": "MEDIUM",
+          "cpc": 0.61
+        },
+        {
+          "keyword": "botox",
+          "translation": "botox",
+          "volume": 390,
+          "competition": "LOW",
+          "cpc": 0.32
+        },
+        {
+          "keyword": "lipoliza",
+          "translation": "lipolysis",
+          "volume": 320,
+          "competition": "MEDIUM",
+          "cpc": 3.85
+        },
+        {
+          "keyword": "salon urody",
+          "translation": "beauty parlor",
+          "volume": 260,
+          "competition": "LOW",
+          "cpc": 2.31
+        },
+        {
+          "keyword": "oczyszczanie twarzy",
+          "translation": "facial cleansing",
+          "volume": 210,
+          "competition": "HIGH",
+          "cpc": 4.01
+        },
+        {
+          "keyword": "przedłużanie rzęs",
+          "translation": "eyelash extensions",
+          "volume": 210,
+          "competition": "HIGH",
+          "cpc": 1.34
+        },
+        {
+          "keyword": "peeling chemiczny",
+          "translation": "chemical peel",
+          "volume": 110,
+          "competition": "HIGH",
+          "cpc": 1.05
         }
       ],
       "namePL": "Zabiegi kosmetyczne i usługi estetyczne",
       "descriptionPL": "Wyszukiwania związane z zabiegami kosmetycznymi i medycyną estetyczną. Na czele «salon kosmetyczny» (33 100/msc) i «depilacja laserowa» (18 100). Wyróżnia się «medycyna estetyczna» (12 100) — oddzielny segment premium z własnymi wynikami SERP. CPC jest niskie (śr. 2,5 zł/klik), co czyni tę branżę jedną z tańszych w Google Ads.",
-      "descriptionEN": "Searches for beauty treatments and aesthetic medicine. Led by \"salon kosmetyczny\" (33,100/mo) and \"depilacja laserowa\" (18,100). Standout: \"medycyna estetyczna\" (12,100) — a separate premium segment with its own SERP results. CPC is low (avg 2.5 PLN/click), making this one of the cheapest industries in Google Ads.",
-      "isNational": true
+      "descriptionEN": "Searches for beauty treatments and aesthetic medicine. Led by \"salon kosmetyczny\" (33,100/mo) and \"depilacja laserowa\" (18,100). Standout: \"medycyna estetyczna\" (12,100) — a separate premium segment with its own SERP results. CPC is low (avg 2.5 PLN/click), making this one of the cheapest industries in Google Ads."
     },
     {
       "id": "explicit",
       "color": "blue",
       "nameEN": "Explicit \"Kraków\" searches",
       "nameNO": "Eksplisitte \"Kraków\"-søk",
-      "totalVolume": 5440,
+      "totalVolume": 3100,
       "keywords": [
         {
           "keyword": "depilacja laserowa kraków",
           "translation": "laser hair removal Kraków",
-          "volume": 2400,
+          "volume": 1300,
           "competition": "HIGH",
-          "cpc": 15.35
+          "cpc": 17.66
         },
         {
           "keyword": "salon kosmetyczny kraków",
           "translation": "beauty salon Kraków",
-          "volume": 1000,
-          "competition": "LOW",
-          "cpc": 3.77
+          "volume": 590,
+          "competition": "MEDIUM",
+          "cpc": 4.58
         },
         {
           "keyword": "medycyna estetyczna kraków",
           "translation": "aesthetic medicine Kraków",
-          "volume": 1000,
+          "volume": 590,
           "competition": "MEDIUM",
-          "cpc": 10.33
+          "cpc": 12.35
         },
         {
           "keyword": "kosmetyczka kraków",
           "translation": "beautician Kraków",
-          "volume": 720,
+          "volume": 480,
           "competition": "MEDIUM",
-          "cpc": 3.4
+          "cpc": 3.36
         },
         {
           "keyword": "makijaż permanentny kraków",
           "translation": "permanent makeup Kraków",
-          "volume": 210,
-          "competition": "MEDIUM",
-          "cpc": 2.96
+          "volume": 90,
+          "competition": "HIGH",
+          "cpc": 2.59
         },
         {
           "keyword": "salon urody kraków",
           "translation": "beauty parlor Kraków",
-          "volume": 110,
-          "competition": "LOW",
-          "cpc": 5.47
+          "volume": 50,
+          "competition": "MEDIUM",
+          "cpc": 7.98
         }
       ],
       "namePL": "Wyszukiwania z nazwą \"Kraków\"",
-      "isNational": true,
       "descriptionPL": "Wyszukiwania z nazwą miasta — klientki gotowe do rezerwacji. CPC jest wyższe niż dla fraz ogólnych, ale wciąż niskie jak na lokalne frazy. «Salon kosmetyczny [miasto]» to najczęstsze zapytanie lokalne — warto mieć je w tytule strony i nagłówku H1.",
       "descriptionEN": "City-name searches — clients ready to book. CPC is higher than generic terms but still low for local keywords. \"Salon kosmetyczny [city]\" is the most common local query — worth including in your page title and H1 heading."
     }
@@ -95,123 +220,252 @@
   "serpKeywords": [
     {
       "keyword": "salon kosmetyczny kraków",
-      "volume": 1000,
+      "volume": 590,
       "organic": [
         {
-          "rank": 4,
+          "rank": 5,
           "domain": "booksy.com"
         },
         {
-          "rank": 5,
-          "domain": "salon-kosmetyczny.krakow.pl"
-        },
-        {
           "rank": 6,
-          "domain": "dermline.krakow.pl"
-        },
-        {
-          "rank": 7,
           "domain": "krakow.yasumi.pl"
         },
         {
-          "rank": 8,
-          "domain": "www.facebook.com"
+          "rank": 7,
+          "domain": "estetica.pl"
+        },
+        {
+          "rank": 11,
+          "domain": "gabinetswan.pl"
+        },
+        {
+          "rank": 12,
+          "domain": "dermline.krakow.pl"
         }
       ],
-      "maps": [],
-      "insightEN": "Results for \"salon kosmetyczny kraków\": Booksy.com at position 4–5 — no Booksy profile = conceded position. Yasumi chain appears in results — franchises have SEO advantage from domain authority. Local salons in TOP: salon-kosmetyczny.krakow.pl, dermline.krakow.pl. Positions 1–3 belong to local businesses with good websites.",
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Empire of Beauty",
+          "rating": 4.8,
+          "reviews": 1207
+        },
+        {
+          "rank": 2,
+          "title": "Femmes Studio",
+          "rating": 4.9,
+          "reviews": 124
+        },
+        {
+          "rank": 3,
+          "title": "Studio Trio",
+          "rating": 4.7,
+          "reviews": 78
+        }
+      ],
+      "insightEN": "Results for \"salon kosmetyczny kraków\": Booksy.com at position 4–5 — no Booksy profile = conceded position. Yasumi chain appears in results — franchises have SEO advantage from domain authority. Local salons in TOP: estetica.pl, gabinetswan.pl, dermline.krakow.pl. Positions 1–3 belong to local businesses with good websites.",
       "insightNO": "",
-      "insightPL": "Wyniki na «salon kosmetyczny kraków»: Booksy.com na pozycji 4–5 — brak profilu na Booksy = oddana pozycja. Sieć Yasumi pojawia się w wynikach — franchisy mają przewagę SEO dzięki sile domeny. Lokalne salony w TOP: salon-kosmetyczny.krakow.pl, dermline.krakow.pl. Pozycje 1–3 należą do lokalnych firm z dobrymi stronami."
+      "insightPL": "Wyniki na «salon kosmetyczny kraków»: Booksy.com na pozycji 4–5 — brak profilu na Booksy = oddana pozycja. Sieć Yasumi pojawia się w wynikach — franchisy mają przewagę SEO dzięki sile domeny. Lokalne salony w TOP: estetica.pl, gabinetswan.pl, dermline.krakow.pl. Pozycje 1–3 należą do lokalnych firm z dobrymi stronami."
     },
     {
       "keyword": "medycyna estetyczna kraków",
-      "volume": 1000,
+      "volume": 590,
       "organic": [
-        {
-          "rank": 4,
-          "domain": "doktormonika.pl"
-        },
         {
           "rank": 5,
           "domain": "bonadea-krakow.net.pl"
         },
         {
           "rank": 6,
-          "domain": "zdromedkrakow.pl"
+          "domain": "doktormonika.pl"
         },
         {
           "rank": 7,
-          "domain": "spectrum-krakow.pl"
+          "domain": "drparadowski.pl"
         },
         {
-          "rank": 9,
-          "domain": "uniestetica.pl"
+          "rank": 11,
+          "domain": "instytut.bielenda.pl"
+        },
+        {
+          "rank": 12,
+          "domain": "klinikajaneczko.pl"
         }
       ],
-      "maps": [],
-      "insightEN": "Results for \"medycyna estetyczna kraków\": Local clinics in TOP 10: doktormonika.pl, bonadea-krakow.net.pl, zdromedkrakow.pl. Dedicated aesthetic medicine sites rank higher than general beauty salons.",
+      "maps": [
+        {
+          "rank": 1,
+          "title": "LEA Clinic",
+          "rating": 4.3,
+          "reviews": 31
+        },
+        {
+          "rank": 2,
+          "title": "DER MED Centrum dermatologii, medycyny estetycznej, chirurgii plastycznej i ginekologii estetycznej",
+          "rating": 4.4,
+          "reviews": 163
+        },
+        {
+          "rank": 3,
+          "title": "MEDICOR Specjalistyczne Centrum Medyczne",
+          "rating": 4.5,
+          "reviews": 115
+        }
+      ],
+      "insightEN": "Results for \"medycyna estetyczna kraków\": Local clinics in TOP 10: bonadea-krakow.net.pl, doktormonika.pl, drparadowski.pl. Dedicated aesthetic medicine sites rank higher than general beauty salons.",
       "insightNO": "",
-      "insightPL": "Wyniki na «medycyna estetyczna kraków»: Lokalne kliniki w TOP 10: doktormonika.pl, bonadea-krakow.net.pl, zdromedkrakow.pl. Dedykowane strony o medycynie estetycznej rankują wyżej niż ogólne salony beauty."
+      "insightPL": "Wyniki na «medycyna estetyczna kraków»: Lokalne kliniki w TOP 10: bonadea-krakow.net.pl, doktormonika.pl, drparadowski.pl. Dedykowane strony o medycynie estetycznej rankują wyżej niż ogólne salony beauty."
     },
     {
       "keyword": "kosmetyczka kraków",
-      "volume": 720,
+      "volume": 480,
       "organic": [
         {
-          "rank": 4,
+          "rank": 5,
           "domain": "booksy.com"
         },
         {
-          "rank": 6,
+          "rank": 10,
           "domain": "krakow.yasumi.pl"
         },
         {
-          "rank": 7,
+          "rank": 11,
           "domain": "dermline.krakow.pl"
         },
         {
-          "rank": 8,
-          "domain": "muneca.pl"
+          "rank": 12,
+          "domain": "www.facebook.com"
         },
         {
-          "rank": 9,
-          "domain": "www.oferteo.pl"
+          "rank": 13,
+          "domain": "muneca.pl"
         }
       ],
-      "maps": [],
-      "insightEN": "Results for \"kosmetyczka kraków\": Booksy.com in TOP 5 — the booking platform is the first choice for clients seeking beauticians. Oferteo.pl (service directory) also in results. Local salons: dermline.krakow.pl, muneca.pl.",
+      "maps": [
+        {
+          "rank": 1,
+          "title": "SeeMe Beauty Salon",
+          "rating": 4.6,
+          "reviews": 150
+        },
+        {
+          "rank": 2,
+          "title": "Botanica by Katarzyna Grzyb - Salon kosmetyczny",
+          "rating": 5,
+          "reviews": 1
+        },
+        {
+          "rank": 3,
+          "title": "PANI STUDIO",
+          "rating": 5,
+          "reviews": 371
+        }
+      ],
+      "insightEN": "Results for \"kosmetyczka kraków\": Booksy.com in TOP 5 — the booking platform is the first choice for clients seeking beauticians. Local salons: dermline.krakow.pl, muneca.pl.",
       "insightNO": "",
-      "insightPL": "Wyniki na «kosmetyczka kraków»: Booksy.com w TOP 5 — platforma rezerwacyjna jest pierwszym wyborem klientek szukających kosmetyczek. Oferteo.pl (portal ofertowy) też w wynikach. Lokalne salony: dermline.krakow.pl, muneca.pl."
+      "insightPL": "Wyniki na «kosmetyczka kraków»: Booksy.com w TOP 5 — platforma rezerwacyjna jest pierwszym wyborem klientek szukających kosmetyczek. Lokalne salony: dermline.krakow.pl, muneca.pl."
     }
   ],
   "cpcData": [
     {
       "keyword": "depilacja laserowa kraków",
-      "cpc": 15.35
+      "cpc": 17.66
     },
     {
       "keyword": "medycyna estetyczna kraków",
-      "cpc": 10.33
+      "cpc": 12.35
+    },
+    {
+      "keyword": "depilacja laserowa",
+      "cpc": 11.22
     },
     {
       "keyword": "salon urody kraków",
-      "cpc": 5.47
+      "cpc": 7.98
+    },
+    {
+      "keyword": "endermologia",
+      "cpc": 5.14
+    },
+    {
+      "keyword": "medycyna estetyczna",
+      "cpc": 4.94
     },
     {
       "keyword": "salon kosmetyczny kraków",
-      "cpc": 3.77
+      "cpc": 4.58
+    },
+    {
+      "keyword": "oczyszczanie twarzy",
+      "cpc": 4.01
+    },
+    {
+      "keyword": "lipoliza",
+      "cpc": 3.85
+    },
+    {
+      "keyword": "salon kosmetyczny",
+      "cpc": 3.69
     },
     {
       "keyword": "kosmetyczka kraków",
-      "cpc": 3.4
+      "cpc": 3.36
+    },
+    {
+      "keyword": "lifting twarzy",
+      "cpc": 3.16
+    },
+    {
+      "keyword": "makijaż permanentny",
+      "cpc": 3.12
+    },
+    {
+      "keyword": "mezoterapia",
+      "cpc": 2.67
     },
     {
       "keyword": "makijaż permanentny kraków",
-      "cpc": 2.96
+      "cpc": 2.59
+    },
+    {
+      "keyword": "salon urody",
+      "cpc": 2.31
+    },
+    {
+      "keyword": "mikrodermabrazja",
+      "cpc": 2.23
     },
     {
       "keyword": "pedicure",
-      "cpc": 1.66
+      "cpc": 2.11
+    },
+    {
+      "keyword": "przedłużanie rzęs",
+      "cpc": 1.34
+    },
+    {
+      "keyword": "laminacja brwi",
+      "cpc": 1.3
+    },
+    {
+      "keyword": "kosmetyczka",
+      "cpc": 1.17
+    },
+    {
+      "keyword": "peeling chemiczny",
+      "cpc": 1.05
+    },
+    {
+      "keyword": "kwas hialuronowy",
+      "cpc": 0.73
+    },
+    {
+      "keyword": "manicure hybrydowy",
+      "cpc": 0.61
+    },
+    {
+      "keyword": "botox",
+      "cpc": 0.32
     }
   ],
   "seasonality": {
@@ -219,79 +473,60 @@
     "months": [
       {
         "month": "Jan",
-        "volume": 0
+        "volume": 1300
       },
       {
         "month": "Feb",
-        "volume": 0
+        "volume": 1300
       },
       {
         "month": "Mar",
-        "volume": 0
+        "volume": 1300
       },
       {
         "month": "Apr",
-        "volume": 0
+        "volume": 880
       },
       {
         "month": "May",
-        "volume": 0
+        "volume": 1000
       },
       {
         "month": "Jun",
-        "volume": 0
+        "volume": 880
       },
       {
         "month": "Jul",
-        "volume": 0
+        "volume": 720
       },
       {
         "month": "Aug",
-        "volume": 0
+        "volume": 880
       },
       {
         "month": "Sep",
-        "volume": 0
+        "volume": 880
       },
       {
         "month": "Oct",
-        "volume": 0
+        "volume": 880
       },
       {
         "month": "Nov",
-        "volume": 0
+        "volume": 1000
       },
       {
         "month": "Dec",
-        "volume": 0
+        "volume": 720
       }
     ],
     "peakMonths": [
       "Jan",
       "Feb",
-      "Mar",
-      "Apr",
-      "May",
-      "Jun",
-      "Jul",
-      "Aug",
-      "Sep",
-      "Oct",
-      "Nov",
-      "Dec"
+      "Mar"
     ],
     "lowMonths": [
-      "Jan",
-      "Feb",
-      "Mar",
-      "Apr",
-      "May",
-      "Jun",
       "Jul",
-      "Aug",
-      "Sep",
-      "Oct",
-      "Nov",
       "Dec"
     ],
     "insightEN": "Laser hair removal peaks mildly in spring (March–June) — vacation season prep. Dips in July–August (holidays) and December. Other beauty services are relatively stable year-round. Best time to launch campaigns: February–March.",
@@ -375,7 +610,7 @@
     }
   ],
   "calculator": {
-    "avgCpc": 6.88,
+    "avgCpc": 0,
     "defaultPatientValue": 3000,
     "defaultBudget": 2000,
     "defaultConversion": 25,

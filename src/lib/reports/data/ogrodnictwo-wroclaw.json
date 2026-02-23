@@ -2,16 +2,17 @@
   "meta": {
     "niche": "ogrodnictwo",
     "nicheNO": "hagetjenester",
+    "nicheEN": "garden services & landscaping",
     "city": "Wrocław",
-    "locationCode": 1011085,
+    "locationCode": 1011243,
     "dataDate": "2026-02",
-    "totalSearchVolume": 203750,
-    "nichePL": "usługi ogrodnicze",
-    "currency": "zł"
+    "totalSearchVolume": 6350,
+    "currency": "zł",
+    "nichePL": "usługi ogrodnicze"
   },
   "metrics": {
     "keywordCount": 20,
-    "avgCpc": 1.3,
+    "avgCpc": 1.2,
     "topClinicsCount": 5,
     "mapsClickShare": 40
   },
@@ -21,206 +22,162 @@
       "color": "green",
       "nameEN": "Garden & landscaping services",
       "nameNO": "Hage- og landskapstjenester",
-      "totalVolume": 203750,
+      "totalVolume": 5870,
       "keywords": [
         {
           "keyword": "kostka brukowa",
           "translation": "paving stones",
-          "volume": 90500,
+          "volume": 2400,
           "competition": "HIGH",
-          "cpc": 0.49
+          "cpc": 0.28
         },
         {
           "keyword": "ogrodzenia",
           "translation": "fencing",
-          "volume": 40500,
-          "competition": "HIGH",
-          "cpc": 0.89
-        },
-        {
-          "keyword": "ogrodnik",
-          "translation": "gardener",
-          "volume": 14800,
-          "competition": "LOW",
-          "cpc": 3.28
-        },
-        {
-          "keyword": "oczka wodne",
-          "translation": "garden ponds",
-          "volume": 14800,
+          "volume": 1300,
           "competition": "HIGH",
           "cpc": 0.65
         },
         {
+          "keyword": "oczka wodne",
+          "translation": "garden ponds",
+          "volume": 590,
+          "competition": "MEDIUM",
+          "cpc": 0.97
+        },
+        {
           "keyword": "tarasy drewniane",
           "translation": "wooden terraces",
-          "volume": 8100,
+          "volume": 320,
           "competition": "HIGH",
-          "cpc": 1.17
-        },
-        {
-          "keyword": "aranżacja ogrodu",
-          "translation": "garden arrangement",
-          "volume": 6600,
-          "competition": "HIGH",
-          "cpc": 0.77
-        },
-        {
-          "keyword": "nawadnianie ogrodu",
-          "translation": "garden irrigation",
-          "volume": 5400,
-          "competition": "HIGH",
-          "cpc": 1.54
-        },
-        {
-          "keyword": "wycinka drzew",
-          "translation": "tree removal",
-          "volume": 5400,
-          "competition": "LOW",
-          "cpc": 4.58
+          "cpc": 1.34
         },
         {
           "keyword": "architekt krajobrazu",
           "translation": "landscape architect",
-          "volume": 4400,
+          "volume": 210,
           "competition": "MEDIUM",
-          "cpc": 4.86
+          "cpc": 3.4
         },
         {
-          "keyword": "usługi ogrodnicze",
-          "translation": "garden services",
-          "volume": 3600,
+          "keyword": "nawadnianie ogrodu",
+          "translation": "garden irrigation",
+          "volume": 210,
+          "competition": "HIGH",
+          "cpc": 2.15
+        },
+        {
+          "keyword": "aranżacja ogrodu",
+          "translation": "garden arrangement",
+          "volume": 210,
+          "competition": "MEDIUM",
+          "cpc": 0.57
+        },
+        {
+          "keyword": "wycinka drzew",
+          "translation": "tree removal",
+          "volume": 170,
           "competition": "LOW",
-          "cpc": 3.08
+          "cpc": 5.26
         },
         {
           "keyword": "projektowanie ogrodów",
           "translation": "garden design",
-          "volume": 3600,
+          "volume": 140,
           "competition": "HIGH",
-          "cpc": 4.29
+          "cpc": 2.59
+        },
+        {
+          "keyword": "usługi ogrodnicze",
+          "translation": "garden services",
+          "volume": 110,
+          "competition": "LOW",
+          "cpc": 2.31
         },
         {
           "keyword": "zakładanie trawnika",
           "translation": "lawn installation",
-          "volume": 1900,
+          "volume": 90,
           "competition": "LOW",
-          "cpc": 2.71
+          "cpc": 3.6
         },
         {
           "keyword": "firma ogrodnicza",
           "translation": "gardening company",
-          "volume": 1300,
+          "volume": 50,
           "competition": "LOW",
-          "cpc": 4.5
-        },
-        {
-          "keyword": "pielęgnacja ogrodu",
-          "translation": "garden maintenance",
-          "volume": 1000,
-          "competition": "LOW",
-          "cpc": 4.25
-        },
-        {
-          "keyword": "koszenie trawnika",
-          "translation": "lawn mowing",
-          "volume": 590,
-          "competition": "LOW",
-          "cpc": 2.11
+          "cpc": 0.12
         },
         {
           "keyword": "przycinanie drzew",
           "translation": "tree pruning",
-          "volume": 590,
-          "competition": "MEDIUM",
-          "cpc": 4.78
-        },
-        {
-          "keyword": "system nawadniający",
-          "translation": "irrigation system",
-          "volume": 260,
-          "competition": "HIGH",
-          "cpc": 1.54
-        },
-        {
-          "keyword": "projektowanie zieleni",
-          "translation": "green area design",
-          "volume": 210,
+          "volume": 40,
           "competition": "LOW",
-          "cpc": 5.02
+          "cpc": 2.63
         },
         {
-          "keyword": "budowa ogrodu",
-          "translation": "garden construction",
-          "volume": 110,
+          "keyword": "pielęgnacja ogrodu",
+          "translation": "garden maintenance",
+          "volume": 30,
           "competition": "LOW",
-          "cpc": 7.74
-        },
-        {
-          "keyword": "utrzymanie zieleni",
-          "translation": "green space maintenance",
-          "volume": 90,
-          "competition": "LOW",
-          "cpc": 2.23
+          "cpc": 2.27
         }
       ],
       "namePL": "Usługi ogrodnicze i architektura krajobrazu",
       "descriptionPL": "Wyszukiwania dotyczące usług ogrodniczych i projektowania krajobrazu. Liderem jest «kostka brukowa» (33 100/msc) — fraza produktowa, ale klienci szukają też wykonawców. Za nią «trawnik z rolki» (8 100) i «projektowanie ogrodów» (6 600). CPC jest bardzo niskie (śr. 1,3 zł/klik), co czyni tę branżę jedną z najtańszych w Google Ads.",
-      "descriptionEN": "Searches for garden services and landscape design. Leader: \"kostka brukowa\" (paving stones, 33,100/mo) — a product keyword, but customers also seek installers. Followed by \"trawnik z rolki\" (sod lawn, 8,100) and \"projektowanie ogrodów\" (garden design, 6,600). Very low CPC (avg 1.3 PLN/click), making this one of the cheapest industries for Google Ads.",
-      "isNational": true
+      "descriptionEN": "Searches for garden services and landscape design. Leader: \"kostka brukowa\" (paving stones, 33,100/mo) — a product keyword, but customers also seek installers. Followed by \"trawnik z rolki\" (sod lawn, 8,100) and \"projektowanie ogrodów\" (garden design, 6,600). Very low CPC (avg 1.3 PLN/click), making this one of the cheapest industries for Google Ads."
     },
     {
       "id": "explicit",
       "color": "blue",
       "nameEN": "Explicit \"Wrocław\" searches",
       "nameNO": "Eksplisitte \"Wrocław\"-søk",
-      "totalVolume": 1010,
+      "totalVolume": 480,
       "keywords": [
         {
           "keyword": "projektowanie ogrodów wrocław",
           "translation": "garden design Wrocław",
-          "volume": 260,
+          "volume": 170,
           "competition": "LOW",
-          "cpc": 3.69
-        },
-        {
-          "keyword": "usługi ogrodnicze wrocław",
-          "translation": "garden services Wrocław",
-          "volume": 210,
-          "competition": "LOW",
-          "cpc": 3.24
+          "cpc": 1.13
         },
         {
           "keyword": "firma ogrodnicza wrocław",
           "translation": "gardening company Wrocław",
-          "volume": 170,
+          "volume": 90,
           "competition": "LOW",
-          "cpc": 6.32
+          "cpc": 4.46
         },
         {
-          "keyword": "architekt krajobrazu wrocław",
-          "translation": "landscape architect Wrocław",
-          "volume": 140,
+          "keyword": "usługi ogrodnicze wrocław",
+          "translation": "garden services Wrocław",
+          "volume": 70,
           "competition": "LOW",
-          "cpc": 7.29
+          "cpc": 3.81
         },
         {
           "keyword": "ogrodnik wrocław",
           "translation": "gardener Wrocław",
-          "volume": 140,
+          "volume": 70,
           "competition": "MEDIUM",
-          "cpc": 1.46
+          "cpc": 2.19
+        },
+        {
+          "keyword": "architekt krajobrazu wrocław",
+          "translation": "landscape architect Wrocław",
+          "volume": 50,
+          "competition": "LOW",
+          "cpc": 9.48
         },
         {
           "keyword": "pielęgnacja ogrodu wrocław",
           "translation": "garden maintenance Wrocław",
-          "volume": 90,
+          "volume": 30,
           "competition": "LOW",
           "cpc": 7.29
         }
       ],
       "namePL": "Wyszukiwania z nazwą \"Wrocław\"",
-      "isNational": true,
       "descriptionPL": "Wyszukiwania z nazwą miasta — klienci szukający lokalnych usługodawców. Wolumeny są niskie (200–700/msc), co pokazuje, że rynek ogrodniczy w Google jest wciąż niedojrzały. Ale to szansa: mała konkurencja = niski koszt pozyskania klienta.",
       "descriptionEN": "City-name searches — clients looking for local providers. Low volumes (200–700/mo), showing the garden market is still immature online. But that's an opportunity: low competition = cheap customer acquisition."
     }
@@ -228,199 +185,232 @@
   "serpKeywords": [
     {
       "keyword": "usługi ogrodnicze wrocław",
-      "volume": 210,
+      "volume": 70,
       "organic": [
         {
-          "rank": 4,
+          "rank": 6,
+          "domain": "greenpolis.pl"
+        },
+        {
+          "rank": 7,
           "domain": "www.olx.pl"
         },
         {
-          "rank": 5,
-          "domain": "greenpolis.pl"
-        },
-        {
-          "rank": 6,
+          "rank": 8,
           "domain": "www.ogrodymaskulanis.pl"
         },
         {
-          "rank": 7,
-          "domain": "ogrodygocko.pl"
-        },
-        {
-          "rank": 9,
+          "rank": 10,
           "domain": "www.lipowaaleja.com.pl"
+        },
+        {
+          "rank": 14,
+          "domain": "ogrodygocko.pl"
         }
       ],
-      "maps": [],
-      "insightEN": "Results for \"usługi ogrodnicze wrocław\": OLX.pl in TOP 5 — clients look for gardeners on classifieds. Local companies: greenpolis.pl, www.ogrodymaskulanis.pl, ogrodygocko.pl. Highly fragmented market — no dominant player.",
-      "insightNO": "",
-      "insightPL": "Wyniki na «usługi ogrodnicze wrocław»: OLX.pl w TOP 5 — klienci szukają ogrodników na portalu ogłoszeniowym. Lokalne firmy: greenpolis.pl, www.ogrodymaskulanis.pl, ogrodygocko.pl. Rynek bardzo sfragmentowany — brak dominującego gracza."
-    },
-    {
-      "keyword": "architekt krajobrazu wrocław",
-      "volume": 140,
-      "organic": [
-        {
-          "rank": 4,
-          "domain": "sztukakraj.pl"
-        },
-        {
-          "rank": 5,
-          "domain": "verdeart.pl"
-        },
-        {
-          "rank": 6,
-          "domain": "nowackakrajobrazy.pl"
-        },
-        {
-          "rank": 7,
-          "domain": "architekturaharmonii.pl"
-        },
-        {
-          "rank": 8,
-          "domain": "www.landscaper.pl"
-        }
-      ],
-      "maps": [],
-      "insightEN": "Results for \"architekt krajobrazu wrocław\": Portfolio-driven companies: sztukakraj.pl, verdeart.pl, nowackakrajobrazy.pl. Landscape architecture is a premium segment — clients seek inspiration and completed projects.",
-      "insightNO": "",
-      "insightPL": "Wyniki na «architekt krajobrazu wrocław»: Portfolio-driven firmy: sztukakraj.pl, verdeart.pl, nowackakrajobrazy.pl. Architektura krajobrazu to segment premium — klienci szukają inspiracji i realizacji."
-    },
-    {
-      "keyword": "projektowanie ogrodów wrocław",
-      "volume": 260,
-      "organic": [
+      "maps": [
         {
           "rank": 1,
-          "domain": "www.ogrodnikwroclawski.pl"
+          "title": "Perfekcyjne Ogrody",
+          "rating": 5,
+          "reviews": 13
         },
         {
           "rank": 2,
-          "domain": "greenpolis.pl"
+          "title": "Usługi Ogrodnicze Floris Ogrody Sp. z o.o.",
+          "rating": 4.6,
+          "reviews": 20
         },
         {
           "rank": 3,
+          "title": "Rock Garden-usługi ogrodnicze",
+          "rating": 5,
+          "reviews": 2
+        }
+      ],
+      "insightEN": "Results for \"usługi ogrodnicze wrocław\": OLX.pl in TOP 5 — clients look for gardeners on classifieds. Local companies: greenpolis.pl, www.ogrodymaskulanis.pl, www.lipowaaleja.com.pl. Highly fragmented market — no dominant player.",
+      "insightNO": "",
+      "insightPL": "Wyniki na «usługi ogrodnicze wrocław»: OLX.pl w TOP 5 — klienci szukają ogrodników na portalu ogłoszeniowym. Lokalne firmy: greenpolis.pl, www.ogrodymaskulanis.pl, www.lipowaaleja.com.pl. Rynek bardzo sfragmentowany — brak dominującego gracza."
+    },
+    {
+      "keyword": "architekt krajobrazu wrocław",
+      "volume": 50,
+      "organic": [
+        {
+          "rank": 6,
+          "domain": "verdeart.pl"
+        },
+        {
+          "rank": 7,
+          "domain": "sztukakraj.pl"
+        },
+        {
+          "rank": 8,
+          "domain": "ikropka.eu"
+        },
+        {
+          "rank": 9,
+          "domain": "www.landscaper.pl"
+        },
+        {
+          "rank": 11,
+          "domain": "nowackakrajobrazy.pl"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "WARSZTAT KRAJOBRAZU Pracownia Architektury Krajobrazu Joanna Lewandowska",
+          "rating": 4.7,
+          "reviews": 15
+        },
+        {
+          "rank": 2,
+          "title": "Inwentaryzacja zieleni - Projektowanie ogrodów -Sztuka Krajobrazu Joanna Kowalska",
+          "rating": 5,
+          "reviews": 19
+        },
+        {
+          "rank": 3,
+          "title": "Perfekcyjne Ogrody",
+          "rating": 5,
+          "reviews": 13
+        }
+      ],
+      "insightEN": "Results for \"architekt krajobrazu wrocław\": Portfolio-driven companies: verdeart.pl, sztukakraj.pl, ikropka.eu. Landscape architecture is a premium segment — clients seek inspiration and completed projects.",
+      "insightNO": "",
+      "insightPL": "Wyniki na «architekt krajobrazu wrocław»: Portfolio-driven firmy: verdeart.pl, sztukakraj.pl, ikropka.eu. Architektura krajobrazu to segment premium — klienci szukają inspiracji i realizacji."
+    },
+    {
+      "keyword": "projektowanie ogrodów wrocław",
+      "volume": 170,
+      "organic": [
+        {
+          "rank": 4,
+          "domain": "greenpolis.pl"
+        },
+        {
+          "rank": 5,
           "domain": "www.lipowaaleja.com.pl"
         },
         {
-          "rank": 4,
+          "rank": 6,
+          "domain": "www.ogrodnikwroclawski.pl"
+        },
+        {
+          "rank": 7,
           "domain": "ogrodomania.info.pl"
         },
         {
-          "rank": 6,
-          "domain": "formio.pl"
+          "rank": 10,
+          "domain": "malgorzata-buczak.pl"
         }
       ],
-      "maps": [],
-      "insightEN": "Results for \"projektowanie ogrodów wrocław\": TOP positions held by companies with dedicated design pages: www.ogrodnikwroclawski.pl, greenpolis.pl, www.lipowaaleja.com.pl. Google favors sites with project portfolios and before/after photo galleries.",
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Inwentaryzacja zieleni - Projektowanie ogrodów -Sztuka Krajobrazu Joanna Kowalska",
+          "rating": 5,
+          "reviews": 19
+        },
+        {
+          "rank": 2,
+          "title": "Usługi ogrodnicze, projektowanie ogrodów Wrocław - GreenPolis",
+          "rating": 5,
+          "reviews": 41
+        },
+        {
+          "rank": 3,
+          "title": "Ogrody Relaksu | Karolina Iwankiewicz",
+          "rating": 5,
+          "reviews": 14
+        }
+      ],
+      "insightEN": "Results for \"projektowanie ogrodów wrocław\": TOP positions held by companies with dedicated design pages: greenpolis.pl, www.lipowaaleja.com.pl, www.ogrodnikwroclawski.pl. Google favors sites with project portfolios and before/after photo galleries.",
       "insightNO": "",
-      "insightPL": "Wyniki na «projektowanie ogrodów wrocław»: TOP pozycje zajmują firmy z dedykowanymi stronami o projektowaniu: www.ogrodnikwroclawski.pl, greenpolis.pl, www.lipowaaleja.com.pl. Google preferuje strony z portfolio realizacji i galerią zdjęć przed/po."
+      "insightPL": "Wyniki na «projektowanie ogrodów wrocław»: TOP pozycje zajmują firmy z dedykowanymi stronami o projektowaniu: greenpolis.pl, www.lipowaaleja.com.pl, www.ogrodnikwroclawski.pl. Google preferuje strony z portfolio realizacji i galerią zdjęć przed/po."
     }
   ],
   "cpcData": [
     {
-      "keyword": "budowa ogrodu",
-      "cpc": 7.74
-    },
-    {
       "keyword": "architekt krajobrazu wrocław",
-      "cpc": 7.29
+      "cpc": 9.48
     },
     {
       "keyword": "pielęgnacja ogrodu wrocław",
       "cpc": 7.29
     },
     {
-      "keyword": "firma ogrodnicza wrocław",
-      "cpc": 6.32
-    },
-    {
-      "keyword": "projektowanie zieleni",
-      "cpc": 5.02
-    },
-    {
-      "keyword": "architekt krajobrazu",
-      "cpc": 4.86
-    },
-    {
-      "keyword": "przycinanie drzew",
-      "cpc": 4.78
-    },
-    {
       "keyword": "wycinka drzew",
-      "cpc": 4.58
+      "cpc": 5.26
     },
     {
-      "keyword": "firma ogrodnicza",
-      "cpc": 4.5
-    },
-    {
-      "keyword": "projektowanie ogrodów",
-      "cpc": 4.29
-    },
-    {
-      "keyword": "pielęgnacja ogrodu",
-      "cpc": 4.25
-    },
-    {
-      "keyword": "projektowanie ogrodów wrocław",
-      "cpc": 3.69
-    },
-    {
-      "keyword": "ogrodnik",
-      "cpc": 3.28
+      "keyword": "firma ogrodnicza wrocław",
+      "cpc": 4.46
     },
     {
       "keyword": "usługi ogrodnicze wrocław",
-      "cpc": 3.24
-    },
-    {
-      "keyword": "usługi ogrodnicze",
-      "cpc": 3.08
+      "cpc": 3.81
     },
     {
       "keyword": "zakładanie trawnika",
-      "cpc": 2.71
+      "cpc": 3.6
     },
     {
-      "keyword": "utrzymanie zieleni",
-      "cpc": 2.23
+      "keyword": "architekt krajobrazu",
+      "cpc": 3.4
     },
     {
-      "keyword": "koszenie trawnika",
-      "cpc": 2.11
+      "keyword": "przycinanie drzew",
+      "cpc": 2.63
     },
     {
-      "keyword": "nawadnianie ogrodu",
-      "cpc": 1.54
+      "keyword": "projektowanie ogrodów",
+      "cpc": 2.59
     },
     {
-      "keyword": "system nawadniający",
-      "cpc": 1.54
+      "keyword": "usługi ogrodnicze",
+      "cpc": 2.31
+    },
+    {
+      "keyword": "pielęgnacja ogrodu",
+      "cpc": 2.27
     },
     {
       "keyword": "ogrodnik wrocław",
-      "cpc": 1.46
+      "cpc": 2.19
+    },
+    {
+      "keyword": "nawadnianie ogrodu",
+      "cpc": 2.15
     },
     {
       "keyword": "tarasy drewniane",
-      "cpc": 1.17
+      "cpc": 1.34
     },
     {
-      "keyword": "ogrodzenia",
-      "cpc": 0.89
-    },
-    {
-      "keyword": "aranżacja ogrodu",
-      "cpc": 0.77
+      "keyword": "projektowanie ogrodów wrocław",
+      "cpc": 1.13
     },
     {
       "keyword": "oczka wodne",
+      "cpc": 0.97
+    },
+    {
+      "keyword": "ogrodzenia",
       "cpc": 0.65
     },
     {
+      "keyword": "aranżacja ogrodu",
+      "cpc": 0.57
+    },
+    {
       "keyword": "kostka brukowa",
-      "cpc": 0.49
+      "cpc": 0.28
+    },
+    {
+      "keyword": "firma ogrodnicza",
+      "cpc": 0.12
     }
   ],
   "seasonality": {
@@ -428,51 +418,51 @@
     "months": [
       {
         "month": "Jan",
-        "volume": 2400
+        "volume": 70
       },
       {
         "month": "Feb",
-        "volume": 3600
+        "volume": 110
       },
       {
         "month": "Mar",
-        "volume": 8100
+        "volume": 210
       },
       {
         "month": "Apr",
-        "volume": 5400
+        "volume": 140
       },
       {
         "month": "May",
-        "volume": 4400
+        "volume": 110
       },
       {
         "month": "Jun",
-        "volume": 3600
+        "volume": 140
       },
       {
         "month": "Jul",
-        "volume": 4400
+        "volume": 110
       },
       {
         "month": "Aug",
-        "volume": 2900
+        "volume": 170
       },
       {
         "month": "Sep",
-        "volume": 2900
+        "volume": 90
       },
       {
         "month": "Oct",
-        "volume": 1900
+        "volume": 70
       },
       {
         "month": "Nov",
-        "volume": 1900
+        "volume": 90
       },
       {
         "month": "Dec",
-        "volume": 1600
+        "volume": 50
       }
     ],
     "peakMonths": [
@@ -562,7 +552,7 @@
     }
   ],
   "calculator": {
-    "avgCpc": 4.88,
+    "avgCpc": 0,
     "defaultPatientValue": 4000,
     "defaultBudget": 2000,
     "defaultConversion": 25,

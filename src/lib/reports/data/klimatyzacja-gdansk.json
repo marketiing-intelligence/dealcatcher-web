@@ -2,16 +2,17 @@
   "meta": {
     "niche": "klimatyzacja",
     "nicheNO": "klimaanlegg",
+    "nicheEN": "HVAC & air conditioning",
     "city": "Gdańsk",
-    "locationCode": 1011076,
+    "locationCode": 1011475,
     "dataDate": "2026-02",
-    "totalSearchVolume": 115530,
-    "nichePL": "klimatyzacja",
-    "currency": "zł"
+    "totalSearchVolume": 2930,
+    "currency": "zł",
+    "nichePL": "klimatyzacja"
   },
   "metrics": {
-    "keywordCount": 16,
-    "avgCpc": 5.97,
+    "keywordCount": 17,
+    "avgCpc": 5.1,
     "topClinicsCount": 5,
     "mapsClickShare": 46
   },
@@ -21,164 +22,141 @@
       "color": "green",
       "nameEN": "HVAC installation & service",
       "nameNO": "Klimaanlegg installasjon og service",
-      "totalVolume": 115530,
+      "totalVolume": 2430,
       "keywords": [
         {
           "keyword": "klimatyzator",
           "translation": "air conditioner unit",
-          "volume": 40500,
+          "volume": 880,
           "competition": "HIGH",
-          "cpc": 1.62
+          "cpc": 1.9
         },
         {
           "keyword": "klimatyzacja",
           "translation": "air conditioning",
-          "volume": 33100,
+          "volume": 590,
           "competition": "HIGH",
-          "cpc": 2.47
+          "cpc": 3.48
         },
         {
           "keyword": "serwis klimatyzacji",
           "translation": "AC service",
-          "volume": 8100,
+          "volume": 260,
           "competition": "LOW",
-          "cpc": 8.02
+          "cpc": 5.59
         },
         {
           "keyword": "klimatyzacja do domu",
           "translation": "home air conditioning",
-          "volume": 8100,
+          "volume": 170,
           "competition": "HIGH",
-          "cpc": 2.67
+          "cpc": 5.63
         },
         {
           "keyword": "montaż klimatyzacji",
           "translation": "AC installation",
-          "volume": 5400,
+          "volume": 140,
           "competition": "MEDIUM",
-          "cpc": 9.88
+          "cpc": 9.36
         },
         {
           "keyword": "klimatyzacja do mieszkania",
           "translation": "apartment AC",
-          "volume": 5400,
-          "competition": "HIGH",
-          "cpc": 3.32
-        },
-        {
-          "keyword": "klimatyzacja przenośna",
-          "translation": "portable AC",
-          "volume": 3600,
-          "competition": "HIGH",
-          "cpc": 1.01
-        },
-        {
-          "keyword": "klimatyzacja domowa",
-          "translation": "home AC system",
-          "volume": 3600,
-          "competition": "HIGH",
-          "cpc": 2.31
+          "volume": 110,
+          "competition": "MEDIUM",
+          "cpc": 3.97
         },
         {
           "keyword": "klimatyzacja split",
           "translation": "split AC",
-          "volume": 2900,
+          "volume": 70,
           "competition": "HIGH",
-          "cpc": 2.11
+          "cpc": 1.66
         },
         {
-          "keyword": "klimatyzacja multisplit",
-          "translation": "multi-split AC",
-          "volume": 1300,
-          "competition": "HIGH",
-          "cpc": 1.58
+          "keyword": "klimatyzacja przenośna",
+          "translation": "portable AC",
+          "volume": 70,
+          "competition": "MEDIUM",
+          "cpc": 0.85
         },
         {
-          "keyword": "czyszczenie klimatyzacji",
-          "translation": "AC cleaning",
-          "volume": 1300,
-          "competition": "HIGH",
-          "cpc": 3.2
+          "keyword": "klimatyzacja domowa",
+          "translation": "home AC system",
+          "volume": 50,
+          "competition": "MEDIUM",
+          "cpc": 5.51
         },
         {
           "keyword": "klimatyzacja cena",
           "translation": "AC price",
-          "volume": 1000,
+          "volume": 30,
           "competition": "HIGH",
-          "cpc": 2.47
+          "cpc": 2.67
+        },
+        {
+          "keyword": "klimatyzacja multisplit",
+          "translation": "multi-split AC",
+          "volume": 20,
+          "competition": "HIGH",
+          "cpc": 0.61
+        },
+        {
+          "keyword": "czyszczenie klimatyzacji",
+          "translation": "AC cleaning",
+          "volume": 20,
+          "competition": "HIGH",
+          "cpc": 0.12
         },
         {
           "keyword": "ile kosztuje klimatyzacja",
           "translation": "how much does AC cost",
-          "volume": 720,
+          "volume": 10,
           "competition": "HIGH",
-          "cpc": 3.2
+          "cpc": 4.21
         },
         {
           "keyword": "przegląd klimatyzacji",
           "translation": "AC inspection",
-          "volume": 480,
-          "competition": "LOW",
-          "cpc": 10.45
-        },
-        {
-          "keyword": "klimatyzacja najtaniej",
-          "translation": "cheapest AC",
-          "volume": 20,
-          "competition": "HIGH",
-          "cpc": 1.86
-        },
-        {
-          "keyword": "klimatyzacja biuro",
-          "translation": "office AC",
           "volume": 10,
-          "competition": "MEDIUM",
-          "cpc": 6.48
+          "competition": "HIGH",
+          "cpc": 35.72
         }
       ],
       "namePL": "Montaż i serwis klimatyzacji",
-      "descriptionPL": "Wyszukiwania związane z montażem, serwisem i zakupem klimatyzacji. Liderem jest «klimatyzator» z 40 500 wyszukiwań/msc, następnie «klimatyzacja» (33 100) i «serwis klimatyzacji» (8 100). CPC waha się od 1 zł (klimatyzacja przenośna) do 10 zł (przegląd klimatyzacji). Frazy serwisowe są zaskakująco drogie — sygnał niskiej konkurencji w Google Ads i dużej wartości klienta.",
-      "descriptionEN": "Searches for AC installation, service, and purchase. The leader is \"klimatyzator\" (air conditioner) with 40,500 monthly searches, followed by \"klimatyzacja\" (33,100) and \"serwis klimatyzacji\" (8,100). CPC ranges from 1 PLN (portable AC) to 10 PLN (AC inspection). Service keywords are surprisingly expensive — signaling low Google Ads competition and high customer value.",
-      "isNational": true
+      "descriptionPL": "Wyszukiwania związane z montażem, serwisem i zakupem klimatyzacji. Liderem jest «klimatyzator» z 40 500 wyszukiwań/msc (ogólnopolsko), następnie «klimatyzacja» (33 100) i «serwis klimatyzacji» (8 100). CPC waha się od 1 zł (klimatyzacja przenośna) do 10 zł (przegląd klimatyzacji). Frazy serwisowe są zaskakująco drogie — sygnał niskiej konkurencji w Google Ads i dużej wartości klienta.",
+      "descriptionEN": "Searches for AC installation, service, and purchase. The leader is \"klimatyzator\" (air conditioner) with 40,500 monthly searches (nationally), followed by \"klimatyzacja\" (33,100) and \"serwis klimatyzacji\" (8,100). CPC ranges from 1 PLN (portable AC) to 10 PLN (AC inspection). Service keywords are surprisingly expensive — signaling low Google Ads competition and high customer value."
     },
     {
       "id": "explicit",
       "color": "blue",
       "nameEN": "Explicit \"Gdańsk\" searches",
       "nameNO": "Eksplisitte \"Gdańsk\"-søk",
-      "totalVolume": 1120,
+      "totalVolume": 500,
       "keywords": [
         {
           "keyword": "klimatyzacja gdańsk",
           "translation": "air conditioning Gdańsk",
-          "volume": 590,
-          "competition": "MEDIUM",
-          "cpc": 15.88
+          "volume": 260,
+          "competition": "HIGH",
+          "cpc": 13.36
         },
         {
           "keyword": "serwis klimatyzacji gdańsk",
           "translation": "AC service Gdańsk",
-          "volume": 320,
-          "competition": "MEDIUM",
-          "cpc": 2.83
+          "volume": 170,
+          "competition": "HIGH",
+          "cpc": 2.31
         },
         {
           "keyword": "montaż klimatyzacji gdańsk",
           "translation": "AC installation Gdańsk",
-          "volume": 170,
-          "competition": "LOW",
-          "cpc": 30.5
-        },
-        {
-          "keyword": "klimatyzacja domowa gdańsk",
-          "translation": "home AC Gdańsk",
-          "volume": 40,
-          "competition": "LOW",
-          "cpc": 7.45
+          "volume": 70,
+          "competition": "MEDIUM",
+          "cpc": 33.86
         }
       ],
       "namePL": "Wyszukiwania z nazwą \"Gdańsk\"",
-      "isNational": true,
       "descriptionPL": "Wyszukiwania z nazwą miasta w frazie — klienci gotowi do zakupu usługi lokalnie. CPC jest 5–15× wyższe niż dla fraz ogólnych (np. «klimatyzacja warszawa» = 32 zł vs «klimatyzacja» = 2,47 zł). Te frazy stanowią niewielki procent wolumenu, ale generują najcenniejszy ruch.",
       "descriptionEN": "Searches including the city name — buyers ready to hire locally. CPC is 5–15× higher than generic terms (e.g. \"klimatyzacja warszawa\" = 32 PLN vs \"klimatyzacja\" = 2.47 PLN). Small share of total volume, but the most valuable traffic."
     }
@@ -186,112 +164,220 @@
   "serpKeywords": [
     {
       "keyword": "klimatyzacja gdańsk",
-      "volume": 590,
-      "organic": [],
-      "maps": [],
-      "insightEN": "No organic results for \"klimatyzacja gdańsk\" at time of analysis. This may indicate low organic competition — an opportunity to quickly enter TOP 10 with a well-optimized page.",
+      "volume": 260,
+      "organic": [
+        {
+          "rank": 6,
+          "domain": "www.klimatyzacjetrojmiasto.pl"
+        },
+        {
+          "rank": 7,
+          "domain": "aero7.pl"
+        },
+        {
+          "rank": 12,
+          "domain": "dm-instal.pl"
+        },
+        {
+          "rank": 13,
+          "domain": "klimainvest.pl"
+        },
+        {
+          "rank": 14,
+          "domain": "bffserwis.pl"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "TakiMamyKlimat.pl - Montaż Klimatyzacji Gdańsk, Sopot, Gdynia",
+          "rating": 4.9,
+          "reviews": 30
+        },
+        {
+          "rank": 2,
+          "title": "Tomex",
+          "rating": 3.6,
+          "reviews": 20
+        },
+        {
+          "rank": 3,
+          "title": "Enviklim- Montaż klimatyzacji, wentylacji, pomp ciepła",
+          "rating": 4.8,
+          "reviews": 67
+        }
+      ],
+      "insightEN": "Results for \"klimatyzacja gdańsk\": Aero7.pl — national leader ranks high across multiple cities. Local companies in TOP 10: www.klimatyzacjetrojmiasto.pl, dm-instal.pl, klimainvest.pl.",
       "insightNO": "",
-      "insightPL": "Brak wyników organicznych dla «klimatyzacja gdańsk» w momencie analizy. To może oznaczać niską konkurencję w wynikach organicznych — szansa na szybkie pojawienie się w TOP 10 z dobrze zoptymalizowaną stroną."
+      "insightPL": "Wyniki na «klimatyzacja gdańsk»: Aero7.pl — ogólnopolski lider rankuje wysoko w wielu miastach. Lokalne firmy w TOP 10: www.klimatyzacjetrojmiasto.pl, dm-instal.pl, klimainvest.pl."
     },
     {
       "keyword": "montaż klimatyzacji gdańsk",
-      "volume": 170,
-      "organic": [],
-      "maps": [],
-      "insightEN": "No organic results for \"montaż klimatyzacji gdańsk\" at time of analysis. This may indicate low organic competition — an opportunity to quickly enter TOP 10 with a well-optimized page.",
+      "volume": 70,
+      "organic": [
+        {
+          "rank": 5,
+          "domain": "aero7.pl"
+        },
+        {
+          "rank": 6,
+          "domain": "dm-instal.pl"
+        },
+        {
+          "rank": 8,
+          "domain": "www.maxklima.pl"
+        },
+        {
+          "rank": 9,
+          "domain": "takimamyklimat.pl"
+        },
+        {
+          "rank": 10,
+          "domain": "www.klimatyzacjetrojmiasto.pl"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "TakiMamyKlimat.pl - Montaż Klimatyzacji Gdańsk, Sopot, Gdynia",
+          "rating": 4.9,
+          "reviews": 30
+        },
+        {
+          "rank": 2,
+          "title": "Tomex",
+          "rating": 3.6,
+          "reviews": 20
+        },
+        {
+          "rank": 3,
+          "title": "Enviklim- Montaż klimatyzacji, wentylacji, pomp ciepła",
+          "rating": 4.8,
+          "reviews": 67
+        }
+      ],
+      "insightEN": "Results for \"montaż klimatyzacji gdańsk\": Aero7.pl (national player) appears in TOP 10. Local companies in TOP 10: dm-instal.pl, www.maxklima.pl, takimamyklimat.pl.",
       "insightNO": "",
-      "insightPL": "Brak wyników organicznych dla «montaż klimatyzacji gdańsk» w momencie analizy. To może oznaczać niską konkurencję w wynikach organicznych — szansa na szybkie pojawienie się w TOP 10 z dobrze zoptymalizowaną stroną."
+      "insightPL": "Wyniki na «montaż klimatyzacji gdańsk»: Aero7.pl (ogólnopolski gracz) pojawia się w TOP 10. Lokalne firmy w TOP 10: dm-instal.pl, www.maxklima.pl, takimamyklimat.pl."
     },
     {
       "keyword": "serwis klimatyzacji gdańsk",
-      "volume": 320,
-      "organic": [],
-      "maps": [],
-      "insightEN": "No organic results for \"serwis klimatyzacji gdańsk\" at time of analysis. This may indicate low organic competition — an opportunity to quickly enter TOP 10 with a well-optimized page.",
+      "volume": 170,
+      "organic": [
+        {
+          "rank": 9,
+          "domain": "klimainvest.pl"
+        },
+        {
+          "rank": 10,
+          "domain": "www.serwis77.pl"
+        },
+        {
+          "rank": 15,
+          "domain": "bffserwis.pl"
+        },
+        {
+          "rank": 16,
+          "domain": "www.klimatyzacjetrojmiasto.pl"
+        },
+        {
+          "rank": 17,
+          "domain": "tomex-klimatyzacja.pl"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Serwis77 Warsztat samochodowy",
+          "rating": 4.5,
+          "reviews": 1135
+        },
+        {
+          "rank": 2,
+          "title": "SERWIS KLIMATYZACJI GDAŃSK",
+          "rating": 4.6,
+          "reviews": 16
+        },
+        {
+          "rank": 3,
+          "title": "Serwis RAF-CAR Auto Mechanik",
+          "rating": 4.7,
+          "reviews": 454
+        }
+      ],
+      "insightEN": "Results for \"serwis klimatyzacji gdańsk\": organic positions start from #9. Specialized service providers: klimainvest.pl, www.serwis77.pl, bffserwis.pl. Fewer players than installation — less competition.",
       "insightNO": "",
-      "insightPL": "Brak wyników organicznych dla «serwis klimatyzacji gdańsk» w momencie analizy. To może oznaczać niską konkurencję w wynikach organicznych — szansa na szybkie pojawienie się w TOP 10 z dobrze zoptymalizowaną stroną."
+      "insightPL": "Wyniki na «serwis klimatyzacji gdańsk»: pozycje organiczne zaczynają się od #9. Wyspecjalizowane serwisy: klimainvest.pl, www.serwis77.pl, bffserwis.pl. Mniej graczy niż w montażu — mniejsza konkurencja."
     }
   ],
   "cpcData": [
     {
+      "keyword": "przegląd klimatyzacji",
+      "cpc": 35.72
+    },
+    {
       "keyword": "montaż klimatyzacji gdańsk",
-      "cpc": 30.5
+      "cpc": 33.86
     },
     {
       "keyword": "klimatyzacja gdańsk",
-      "cpc": 15.88
-    },
-    {
-      "keyword": "przegląd klimatyzacji",
-      "cpc": 10.45
+      "cpc": 13.36
     },
     {
       "keyword": "montaż klimatyzacji",
-      "cpc": 9.88
-    },
-    {
-      "keyword": "serwis klimatyzacji",
-      "cpc": 8.02
-    },
-    {
-      "keyword": "klimatyzacja domowa gdańsk",
-      "cpc": 7.45
-    },
-    {
-      "keyword": "klimatyzacja biuro",
-      "cpc": 6.48
-    },
-    {
-      "keyword": "klimatyzacja do mieszkania",
-      "cpc": 3.32
-    },
-    {
-      "keyword": "czyszczenie klimatyzacji",
-      "cpc": 3.2
-    },
-    {
-      "keyword": "ile kosztuje klimatyzacja",
-      "cpc": 3.2
-    },
-    {
-      "keyword": "serwis klimatyzacji gdańsk",
-      "cpc": 2.83
+      "cpc": 9.36
     },
     {
       "keyword": "klimatyzacja do domu",
-      "cpc": 2.67
+      "cpc": 5.63
     },
     {
-      "keyword": "klimatyzacja",
-      "cpc": 2.47
-    },
-    {
-      "keyword": "klimatyzacja cena",
-      "cpc": 2.47
+      "keyword": "serwis klimatyzacji",
+      "cpc": 5.59
     },
     {
       "keyword": "klimatyzacja domowa",
+      "cpc": 5.51
+    },
+    {
+      "keyword": "ile kosztuje klimatyzacja",
+      "cpc": 4.21
+    },
+    {
+      "keyword": "klimatyzacja do mieszkania",
+      "cpc": 3.97
+    },
+    {
+      "keyword": "klimatyzacja",
+      "cpc": 3.48
+    },
+    {
+      "keyword": "klimatyzacja cena",
+      "cpc": 2.67
+    },
+    {
+      "keyword": "serwis klimatyzacji gdańsk",
       "cpc": 2.31
     },
     {
-      "keyword": "klimatyzacja split",
-      "cpc": 2.11
-    },
-    {
-      "keyword": "klimatyzacja najtaniej",
-      "cpc": 1.86
-    },
-    {
       "keyword": "klimatyzator",
-      "cpc": 1.62
+      "cpc": 1.9
     },
     {
-      "keyword": "klimatyzacja multisplit",
-      "cpc": 1.58
+      "keyword": "klimatyzacja split",
+      "cpc": 1.66
     },
     {
       "keyword": "klimatyzacja przenośna",
-      "cpc": 1.01
+      "cpc": 0.85
+    },
+    {
+      "keyword": "klimatyzacja multisplit",
+      "cpc": 0.61
+    },
+    {
+      "keyword": "czyszczenie klimatyzacji",
+      "cpc": 0.12
     }
   ],
   "seasonality": {
@@ -299,55 +385,55 @@
     "months": [
       {
         "month": "Jan",
-        "volume": 22200
+        "volume": 390
       },
       {
         "month": "Feb",
-        "volume": 22200
+        "volume": 390
       },
       {
         "month": "Mar",
-        "volume": 33100
+        "volume": 590
       },
       {
         "month": "Apr",
-        "volume": 49500
+        "volume": 1000
       },
       {
         "month": "May",
-        "volume": 33100
+        "volume": 720
       },
       {
         "month": "Jun",
-        "volume": 74000
+        "volume": 1000
       },
       {
         "month": "Jul",
-        "volume": 60500
+        "volume": 1300
       },
       {
         "month": "Aug",
-        "volume": 33100
+        "volume": 720
       },
       {
         "month": "Sep",
-        "volume": 22200
+        "volume": 590
       },
       {
         "month": "Oct",
-        "volume": 14800
+        "volume": 320
       },
       {
         "month": "Nov",
-        "volume": 14800
+        "volume": 320
       },
       {
         "month": "Dec",
-        "volume": 12100
+        "volume": 260
       }
     ],
     "peakMonths": [
-      "Jun"
+      "Jul"
     ],
     "lowMonths": [
       "Dec"
@@ -360,12 +446,12 @@
     {
       "icon": "flame",
       "color": "amber",
-      "titlePL": "211 tys. wyszukiwań/msc — sektor klimatyzacji w Polsce rośnie",
-      "titleEN": "211K searches/month — Poland's AC sector is booming",
-      "textPL": "Sam «klimatyzator» generuje 40 500 wyszukiwań miesięcznie, «klimatyzacja» — 33 100, a «serwis klimatyzacji» — 8 100. Do tego frazy produktowe (split, multisplit, przenośna) i serwisowe (czyszczenie, przegląd). Rynek jest duży i rozproszony — lokalne firmy mogą konkurować ceną i szybkością reakcji.",
-      "textEN": "\"Klimatyzator\" alone generates 40,500 searches/month, \"klimatyzacja\" — 33,100, and \"serwis klimatyzacji\" — 8,100. Add product queries (split, multisplit, portable) and service queries (cleaning, inspection). The market is large and fragmented — local companies can compete on price and response speed.",
+      "titlePL": "Sektor klimatyzacji w Polsce rośnie — ponad 100 tys. wyszukiwań/msc",
+      "titleEN": "Poland's AC sector is booming — 100K+ searches/month",
+      "textPL": "Sam «klimatyzator» generuje 40 500 wyszukiwań miesięcznie (ogólnopolsko), «klimatyzacja» — 33 100, a «serwis klimatyzacji» — 8 100. Do tego frazy produktowe (split, multisplit, przenośna) i serwisowe (czyszczenie, przegląd). Rynek jest duży i rozproszony — lokalne firmy mogą konkurować ceną i szybkością reakcji.",
+      "textEN": "\"Klimatyzator\" alone generates 40,500 searches/month (nationally), \"klimatyzacja\" — 33,100, and \"serwis klimatyzacji\" — 8,100. Add product queries (split, multisplit, portable) and service queries (cleaning, inspection). The market is large and fragmented — local companies can compete on price and response speed.",
       "statLabel": "searches/mo total",
-      "statValue": "115K+"
+      "statValue": "100K+"
     },
     {
       "icon": "trending-up",
@@ -433,7 +519,7 @@
     }
   ],
   "calculator": {
-    "avgCpc": 14.17,
+    "avgCpc": 0,
     "defaultPatientValue": 6000,
     "defaultBudget": 3000,
     "defaultConversion": 25,

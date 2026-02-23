@@ -2,16 +2,17 @@
   "meta": {
     "niche": "beauty-pl",
     "nicheNO": "skjønnhetssalonger",
+    "nicheEN": "beauty salons & aesthetic medicine",
     "city": "Gdańsk",
-    "locationCode": 1011076,
+    "locationCode": 1011475,
     "dataDate": "2026-02",
-    "totalSearchVolume": 282200,
-    "nichePL": "salony kosmetyczne",
-    "currency": "zł"
+    "totalSearchVolume": 9160,
+    "currency": "zł",
+    "nichePL": "salony kosmetyczne"
   },
   "metrics": {
-    "keywordCount": 19,
-    "avgCpc": 2.5,
+    "keywordCount": 22,
+    "avgCpc": 3.7,
     "topClinicsCount": 5,
     "mapsClickShare": 42
   },
@@ -21,199 +22,176 @@
       "color": "green",
       "nameEN": "Beauty treatments & aesthetic services",
       "nameNO": "Skjønnhetsbehandlinger og estetiske tjenester",
-      "totalVolume": 282200,
+      "totalVolume": 7780,
       "keywords": [
         {
           "keyword": "kosmetyczka",
           "translation": "beautician / cosmetician",
-          "volume": 40500,
+          "volume": 1000,
           "competition": "HIGH",
           "cpc": 1.13
         },
         {
-          "keyword": "kwas hialuronowy",
-          "translation": "hyaluronic acid",
-          "volume": 33100,
-          "competition": "LOW",
-          "cpc": 1.7
-        },
-        {
-          "keyword": "laminacja brwi",
-          "translation": "brow lamination",
-          "volume": 33100,
-          "competition": "HIGH",
-          "cpc": 1.34
-        },
-        {
-          "keyword": "pedicure",
-          "translation": "pedicure",
-          "volume": 22200,
+          "keyword": "medycyna estetyczna",
+          "translation": "aesthetic medicine",
+          "volume": 880,
           "competition": "LOW",
           "cpc": 1.86
         },
         {
-          "keyword": "endermologia",
-          "translation": "endermology",
-          "volume": 22200,
+          "keyword": "laminacja brwi",
+          "translation": "brow lamination",
+          "volume": 880,
           "competition": "HIGH",
-          "cpc": 3.4
+          "cpc": 1.09
+        },
+        {
+          "keyword": "pedicure",
+          "translation": "pedicure",
+          "volume": 720,
+          "competition": "LOW",
+          "cpc": 1.13
         },
         {
           "keyword": "salon kosmetyczny",
           "translation": "beauty salon",
-          "volume": 18100,
+          "volume": 590,
           "competition": "LOW",
-          "cpc": 3.04
-        },
-        {
-          "keyword": "depilacja laserowa",
-          "translation": "laser hair removal",
-          "volume": 18100,
-          "competition": "HIGH",
-          "cpc": 7.69
+          "cpc": 3.0
         },
         {
           "keyword": "mezoterapia",
           "translation": "mesotherapy",
-          "volume": 14800,
-          "competition": "HIGH",
-          "cpc": 2.67
-        },
-        {
-          "keyword": "mikrodermabrazja",
-          "translation": "microdermabrasion",
-          "volume": 12100,
-          "competition": "HIGH",
-          "cpc": 1.98
-        },
-        {
-          "keyword": "lifting twarzy",
-          "translation": "face lift",
-          "volume": 12100,
+          "volume": 590,
           "competition": "HIGH",
           "cpc": 3.04
         },
         {
-          "keyword": "medycyna estetyczna",
-          "translation": "aesthetic medicine",
-          "volume": 9900,
-          "competition": "LOW",
-          "cpc": 4.01
+          "keyword": "endermologia",
+          "translation": "endermology",
+          "volume": 590,
+          "competition": "HIGH",
+          "cpc": 5.51
+        },
+        {
+          "keyword": "depilacja laserowa",
+          "translation": "laser hair removal",
+          "volume": 480,
+          "competition": "HIGH",
+          "cpc": 6.52
+        },
+        {
+          "keyword": "mikrodermabrazja",
+          "translation": "microdermabrasion",
+          "volume": 390,
+          "competition": "HIGH",
+          "cpc": 2.19
+        },
+        {
+          "keyword": "lifting twarzy",
+          "translation": "face lift",
+          "volume": 320,
+          "competition": "HIGH",
+          "cpc": 2.79
         },
         {
           "keyword": "makijaż permanentny",
           "translation": "permanent makeup",
-          "volume": 8100,
+          "volume": 260,
           "competition": "LOW",
-          "cpc": 3.73
+          "cpc": 3.04
         },
         {
           "keyword": "manicure hybrydowy",
           "translation": "gel manicure",
-          "volume": 8100,
+          "volume": 260,
           "competition": "HIGH",
-          "cpc": 1.62
-        },
-        {
-          "keyword": "botox",
-          "translation": "botox",
-          "volume": 6600,
-          "competition": "LOW",
-          "cpc": 0.45
+          "cpc": 0.81
         },
         {
           "keyword": "lipoliza",
           "translation": "lipolysis",
-          "volume": 6600,
+          "volume": 260,
           "competition": "MEDIUM",
-          "cpc": 2.75
-        },
-        {
-          "keyword": "oczyszczanie twarzy",
-          "translation": "facial cleansing",
-          "volume": 5400,
-          "competition": "HIGH",
-          "cpc": 2.59
-        },
-        {
-          "keyword": "przedłużanie rzęs",
-          "translation": "eyelash extensions",
-          "volume": 4400,
-          "competition": "MEDIUM",
-          "cpc": 1.62
+          "cpc": 3.85
         },
         {
           "keyword": "salon urody",
           "translation": "beauty parlor",
-          "volume": 4400,
+          "volume": 210,
           "competition": "LOW",
-          "cpc": 2.43
+          "cpc": 1.34
+        },
+        {
+          "keyword": "oczyszczanie twarzy",
+          "translation": "facial cleansing",
+          "volume": 140,
+          "competition": "HIGH",
+          "cpc": 2.55
+        },
+        {
+          "keyword": "przedłużanie rzęs",
+          "translation": "eyelash extensions",
+          "volume": 140,
+          "competition": "HIGH",
+          "cpc": 1.21
         },
         {
           "keyword": "peeling chemiczny",
           "translation": "chemical peel",
-          "volume": 2400,
+          "volume": 70,
           "competition": "HIGH",
-          "cpc": 1.42
+          "cpc": 1.74
         }
       ],
       "namePL": "Zabiegi kosmetyczne i usługi estetyczne",
       "descriptionPL": "Wyszukiwania związane z zabiegami kosmetycznymi i medycyną estetyczną. Na czele «salon kosmetyczny» (33 100/msc) i «depilacja laserowa» (18 100). Wyróżnia się «medycyna estetyczna» (12 100) — oddzielny segment premium z własnymi wynikami SERP. CPC jest niskie (śr. 2,5 zł/klik), co czyni tę branżę jedną z tańszych w Google Ads.",
-      "descriptionEN": "Searches for beauty treatments and aesthetic medicine. Led by \"salon kosmetyczny\" (33,100/mo) and \"depilacja laserowa\" (18,100). Standout: \"medycyna estetyczna\" (12,100) — a separate premium segment with its own SERP results. CPC is low (avg 2.5 PLN/click), making this one of the cheapest industries in Google Ads.",
-      "isNational": true
+      "descriptionEN": "Searches for beauty treatments and aesthetic medicine. Led by \"salon kosmetyczny\" (33,100/mo) and \"depilacja laserowa\" (18,100). Standout: \"medycyna estetyczna\" (12,100) — a separate premium segment with its own SERP results. CPC is low (avg 2.5 PLN/click), making this one of the cheapest industries in Google Ads."
     },
     {
       "id": "explicit",
       "color": "blue",
       "nameEN": "Explicit \"Gdańsk\" searches",
       "nameNO": "Eksplisitte \"Gdańsk\"-søk",
-      "totalVolume": 2600,
+      "totalVolume": 1380,
       "keywords": [
         {
           "keyword": "depilacja laserowa gdańsk",
           "translation": "laser hair removal Gdańsk",
-          "volume": 1000,
+          "volume": 590,
           "competition": "HIGH",
-          "cpc": 16.32
+          "cpc": 19.72
         },
         {
           "keyword": "medycyna estetyczna gdańsk",
           "translation": "aesthetic medicine Gdańsk",
-          "volume": 720,
+          "volume": 390,
           "competition": "LOW",
-          "cpc": 3.81
-        },
-        {
-          "keyword": "salon kosmetyczny gdańsk",
-          "translation": "beauty salon Gdańsk",
-          "volume": 320,
-          "competition": "LOW",
-          "cpc": 3.93
+          "cpc": 4.62
         },
         {
           "keyword": "kosmetyczka gdańsk",
           "translation": "beautician Gdańsk",
-          "volume": 320,
+          "volume": 170,
           "competition": "MEDIUM",
-          "cpc": 3.12
+          "cpc": 3.2
+        },
+        {
+          "keyword": "salon kosmetyczny gdańsk",
+          "translation": "beauty salon Gdańsk",
+          "volume": 140,
+          "competition": "MEDIUM",
+          "cpc": 4.33
         },
         {
           "keyword": "makijaż permanentny gdańsk",
           "translation": "permanent makeup Gdańsk",
-          "volume": 170,
-          "competition": "LOW",
-          "cpc": 3.6
-        },
-        {
-          "keyword": "salon urody gdańsk",
-          "translation": "beauty parlor Gdańsk",
-          "volume": 70,
-          "competition": "LOW",
-          "cpc": 1.01
+          "volume": 90,
+          "competition": "MEDIUM",
+          "cpc": 3.81
         }
       ],
       "namePL": "Wyszukiwania z nazwą \"Gdańsk\"",
-      "isNational": true,
       "descriptionPL": "Wyszukiwania z nazwą miasta — klientki gotowe do rezerwacji. CPC jest wyższe niż dla fraz ogólnych, ale wciąż niskie jak na lokalne frazy. «Salon kosmetyczny [miasto]» to najczęstsze zapytanie lokalne — warto mieć je w tytule strony i nagłówku H1.",
       "descriptionEN": "City-name searches — clients ready to book. CPC is higher than generic terms but still low for local keywords. \"Salon kosmetyczny [city]\" is the most common local query — worth including in your page title and H1 heading."
     }
@@ -221,132 +199,240 @@
   "serpKeywords": [
     {
       "keyword": "salon kosmetyczny gdańsk",
-      "volume": 320,
-      "organic": [],
-      "maps": [],
-      "insightEN": "No organic results for \"salon kosmetyczny gdańsk\" at time of analysis. With low organic visibility, a Google Ads campaign can provide immediate visibility for this keyword.",
+      "volume": 140,
+      "organic": [
+        {
+          "rank": 5,
+          "domain": "booksy.com"
+        },
+        {
+          "rank": 6,
+          "domain": "madison.yasumi.pl"
+        },
+        {
+          "rank": 11,
+          "domain": "esteespa.pl"
+        },
+        {
+          "rank": 12,
+          "domain": "spaosowa.pl"
+        },
+        {
+          "rank": 13,
+          "domain": "zawszepiekna.eu"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Yasumi Gdańsk Madison - Instytut Zdrowia i Urody",
+          "rating": 4.8,
+          "reviews": 210
+        },
+        {
+          "rank": 2,
+          "title": "Salon Kosmetyczny Lili Marlene",
+          "rating": 5,
+          "reviews": 45
+        },
+        {
+          "rank": 3,
+          "title": "Beauty Garden | Salon Urody Gdańsk",
+          "rating": 4.8,
+          "reviews": 114
+        }
+      ],
+      "insightEN": "Results for \"salon kosmetyczny gdańsk\": Booksy.com at position 4–5 — no Booksy profile = conceded position. Yasumi chain appears in results — franchises have SEO advantage from domain authority. Local salons in TOP: esteespa.pl, spaosowa.pl, zawszepiekna.eu. Positions 1–3 belong to local businesses with good websites.",
       "insightNO": "",
-      "insightPL": "Brak wyników organicznych dla «salon kosmetyczny gdańsk» w momencie badania. Przy niskiej widoczności organicznej kampania Google Ads może zapewnić natychmiastową widoczność na tę frazę."
+      "insightPL": "Wyniki na «salon kosmetyczny gdańsk»: Booksy.com na pozycji 4–5 — brak profilu na Booksy = oddana pozycja. Sieć Yasumi pojawia się w wynikach — franchisy mają przewagę SEO dzięki sile domeny. Lokalne salony w TOP: esteespa.pl, spaosowa.pl, zawszepiekna.eu. Pozycje 1–3 należą do lokalnych firm z dobrymi stronami."
     },
     {
       "keyword": "medycyna estetyczna gdańsk",
-      "volume": 720,
-      "organic": [],
-      "maps": [],
-      "insightEN": "No organic results for \"medycyna estetyczna gdańsk\" at time of analysis. With low organic visibility, a Google Ads campaign can provide immediate visibility for this keyword.",
+      "volume": 390,
+      "organic": [
+        {
+          "rank": 5,
+          "domain": "www.klinikadobosz.pl"
+        },
+        {
+          "rank": 6,
+          "domain": "www.znanylekarz.pl"
+        },
+        {
+          "rank": 10,
+          "domain": "clinicanova.pl"
+        },
+        {
+          "rank": 12,
+          "domain": "drmarcinnowak.pl"
+        },
+        {
+          "rank": 13,
+          "domain": "clinicadermatologica.pl"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Centrum Medyczne dr n. med. Alicja Rustowska-Rogowska i Partnerzy",
+          "rating": 3.9,
+          "reviews": 325
+        },
+        {
+          "rank": 2,
+          "title": "Dec Clinic Gdańsk- medycyna estetyczna,laser frakcyjny, HIFU,Wonder Body",
+          "rating": 3.7,
+          "reviews": 6
+        },
+        {
+          "rank": 3,
+          "title": "Aestheticslab - lek. Olga Kałużna Medycyna Estetyczna",
+          "rating": 5,
+          "reviews": 4
+        }
+      ],
+      "insightEN": "Results for \"medycyna estetyczna gdańsk\": ZnanyLekarz.pl (doctor directory) appears — patients search for aesthetic medicine doctors as medical specialists. Local clinics in TOP 10: www.klinikadobosz.pl, clinicanova.pl, drmarcinnowak.pl. Dedicated aesthetic medicine sites rank higher than general beauty salons.",
       "insightNO": "",
-      "insightPL": "Brak wyników organicznych dla «medycyna estetyczna gdańsk» w momencie badania. Przy niskiej widoczności organicznej kampania Google Ads może zapewnić natychmiastową widoczność na tę frazę."
+      "insightPL": "Wyniki na «medycyna estetyczna gdańsk»: ZnanyLekarz.pl pojawia się w wynikach — pacjenci szukają lekarzy medycyny estetycznej jak specjalistów medycznych. Lokalne kliniki w TOP 10: www.klinikadobosz.pl, clinicanova.pl, drmarcinnowak.pl. Dedykowane strony o medycynie estetycznej rankują wyżej niż ogólne salony beauty."
     },
     {
       "keyword": "kosmetyczka gdańsk",
-      "volume": 320,
-      "organic": [],
-      "maps": [],
-      "insightEN": "No organic results for \"kosmetyczka gdańsk\" at time of analysis. With low organic visibility, a Google Ads campaign can provide immediate visibility for this keyword.",
+      "volume": 170,
+      "organic": [
+        {
+          "rank": 5,
+          "domain": "booksy.com"
+        },
+        {
+          "rank": 6,
+          "domain": "gdansk.yasumi.pl"
+        },
+        {
+          "rank": 11,
+          "domain": "spaosowa.pl"
+        },
+        {
+          "rank": 12,
+          "domain": "www.gabinetbeata.pl"
+        },
+        {
+          "rank": 13,
+          "domain": "esteespa.pl"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Salon Joel",
+          "rating": 4.7,
+          "reviews": 186
+        },
+        {
+          "rank": 2,
+          "title": "Beauty Garden | Salon Urody Gdańsk",
+          "rating": 4.8,
+          "reviews": 114
+        },
+        {
+          "rank": 3,
+          "title": "Elli Spa",
+          "rating": 5,
+          "reviews": 9
+        }
+      ],
+      "insightEN": "Results for \"kosmetyczka gdańsk\": Booksy.com in TOP 5 — the booking platform is the first choice for clients seeking beauticians. Local salons: spaosowa.pl, www.gabinetbeata.pl, esteespa.pl.",
       "insightNO": "",
-      "insightPL": "Brak wyników organicznych dla «kosmetyczka gdańsk» w momencie badania. Przy niskiej widoczności organicznej kampania Google Ads może zapewnić natychmiastową widoczność na tę frazę."
+      "insightPL": "Wyniki na «kosmetyczka gdańsk»: Booksy.com w TOP 5 — platforma rezerwacyjna jest pierwszym wyborem klientek szukających kosmetyczek. Lokalne salony: spaosowa.pl, www.gabinetbeata.pl, esteespa.pl."
     }
   ],
   "cpcData": [
     {
       "keyword": "depilacja laserowa gdańsk",
-      "cpc": 16.32
+      "cpc": 19.72
     },
     {
       "keyword": "depilacja laserowa",
-      "cpc": 7.69
-    },
-    {
-      "keyword": "medycyna estetyczna",
-      "cpc": 4.01
-    },
-    {
-      "keyword": "salon kosmetyczny gdańsk",
-      "cpc": 3.93
-    },
-    {
-      "keyword": "medycyna estetyczna gdańsk",
-      "cpc": 3.81
-    },
-    {
-      "keyword": "makijaż permanentny",
-      "cpc": 3.73
-    },
-    {
-      "keyword": "makijaż permanentny gdańsk",
-      "cpc": 3.6
+      "cpc": 6.52
     },
     {
       "keyword": "endermologia",
-      "cpc": 3.4
+      "cpc": 5.51
     },
     {
-      "keyword": "kosmetyczka gdańsk",
-      "cpc": 3.12
+      "keyword": "medycyna estetyczna gdańsk",
+      "cpc": 4.62
     },
     {
-      "keyword": "salon kosmetyczny",
-      "cpc": 3.04
-    },
-    {
-      "keyword": "lifting twarzy",
-      "cpc": 3.04
+      "keyword": "salon kosmetyczny gdańsk",
+      "cpc": 4.33
     },
     {
       "keyword": "lipoliza",
-      "cpc": 2.75
+      "cpc": 3.85
+    },
+    {
+      "keyword": "makijaż permanentny gdańsk",
+      "cpc": 3.81
+    },
+    {
+      "keyword": "kosmetyczka gdańsk",
+      "cpc": 3.2
     },
     {
       "keyword": "mezoterapia",
-      "cpc": 2.67
+      "cpc": 3.04
+    },
+    {
+      "keyword": "makijaż permanentny",
+      "cpc": 3.04
+    },
+    {
+      "keyword": "salon kosmetyczny",
+      "cpc": 3.0
+    },
+    {
+      "keyword": "lifting twarzy",
+      "cpc": 2.79
     },
     {
       "keyword": "oczyszczanie twarzy",
-      "cpc": 2.59
-    },
-    {
-      "keyword": "salon urody",
-      "cpc": 2.43
+      "cpc": 2.55
     },
     {
       "keyword": "mikrodermabrazja",
-      "cpc": 1.98
+      "cpc": 2.19
     },
     {
-      "keyword": "pedicure",
+      "keyword": "medycyna estetyczna",
       "cpc": 1.86
     },
     {
-      "keyword": "kwas hialuronowy",
-      "cpc": 1.7
+      "keyword": "peeling chemiczny",
+      "cpc": 1.74
     },
     {
-      "keyword": "manicure hybrydowy",
-      "cpc": 1.62
+      "keyword": "salon urody",
+      "cpc": 1.34
     },
     {
       "keyword": "przedłużanie rzęs",
-      "cpc": 1.62
-    },
-    {
-      "keyword": "peeling chemiczny",
-      "cpc": 1.42
-    },
-    {
-      "keyword": "laminacja brwi",
-      "cpc": 1.34
+      "cpc": 1.21
     },
     {
       "keyword": "kosmetyczka",
       "cpc": 1.13
     },
     {
-      "keyword": "salon urody gdańsk",
-      "cpc": 1.01
+      "keyword": "pedicure",
+      "cpc": 1.13
     },
     {
-      "keyword": "botox",
-      "cpc": 0.45
+      "keyword": "laminacja brwi",
+      "cpc": 1.09
+    },
+    {
+      "keyword": "manicure hybrydowy",
+      "cpc": 0.81
     }
   ],
   "seasonality": {
@@ -354,62 +440,58 @@
     "months": [
       {
         "month": "Jan",
-        "volume": 22200
+        "volume": 590
       },
       {
         "month": "Feb",
-        "volume": 22200
+        "volume": 590
       },
       {
         "month": "Mar",
-        "volume": 22200
+        "volume": 720
       },
       {
         "month": "Apr",
-        "volume": 18100
+        "volume": 590
       },
       {
         "month": "May",
-        "volume": 18100
+        "volume": 480
       },
       {
         "month": "Jun",
-        "volume": 18100
+        "volume": 390
       },
       {
         "month": "Jul",
-        "volume": 18100
+        "volume": 480
       },
       {
         "month": "Aug",
-        "volume": 14800
+        "volume": 590
       },
       {
         "month": "Sep",
-        "volume": 14800
+        "volume": 480
       },
       {
         "month": "Oct",
-        "volume": 14800
+        "volume": 590
       },
       {
         "month": "Nov",
-        "volume": 18100
+        "volume": 480
       },
       {
         "month": "Dec",
-        "volume": 14800
+        "volume": 390
       }
     ],
     "peakMonths": [
-      "Jan",
-      "Feb",
       "Mar"
     ],
     "lowMonths": [
-      "Aug",
-      "Sep",
-      "Oct",
+      "Jun",
       "Dec"
     ],
     "insightEN": "Laser hair removal peaks mildly in spring (March–June) — vacation season prep. Dips in July–August (holidays) and December. Other beauty services are relatively stable year-round. Best time to launch campaigns: February–March.",
@@ -493,7 +575,7 @@
     }
   ],
   "calculator": {
-    "avgCpc": 5.3,
+    "avgCpc": 0,
     "defaultPatientValue": 3000,
     "defaultBudget": 2000,
     "defaultConversion": 25,

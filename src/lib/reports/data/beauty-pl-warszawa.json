@@ -2,16 +2,17 @@
   "meta": {
     "niche": "beauty-pl",
     "nicheNO": "skjønnhetssalonger",
+    "nicheEN": "beauty salons & aesthetic medicine",
     "city": "Warszawa",
-    "locationCode": 1011078,
+    "locationCode": 1011419,
     "dataDate": "2026-02",
-    "totalSearchVolume": 282200,
-    "nichePL": "salony kosmetyczne",
-    "currency": "zł"
+    "totalSearchVolume": 57580,
+    "currency": "zł",
+    "nichePL": "salony kosmetyczne"
   },
   "metrics": {
-    "keywordCount": 19,
-    "avgCpc": 2.5,
+    "keywordCount": 25,
+    "avgCpc": 4.2,
     "topClinicsCount": 5,
     "mapsClickShare": 42
   },
@@ -21,199 +22,197 @@
       "color": "green",
       "nameEN": "Beauty treatments & aesthetic services",
       "nameNO": "Skjønnhetsbehandlinger og estetiske tjenester",
-      "totalVolume": 282200,
+      "totalVolume": 51750,
       "keywords": [
         {
           "keyword": "kosmetyczka",
           "translation": "beautician / cosmetician",
-          "volume": 40500,
+          "volume": 6600,
           "competition": "HIGH",
-          "cpc": 1.13
+          "cpc": 1.21
         },
         {
           "keyword": "kwas hialuronowy",
           "translation": "hyaluronic acid",
-          "volume": 33100,
+          "volume": 5400,
           "competition": "LOW",
-          "cpc": 1.7
+          "cpc": 1.5
         },
         {
           "keyword": "laminacja brwi",
           "translation": "brow lamination",
-          "volume": 33100,
+          "volume": 5400,
           "competition": "HIGH",
-          "cpc": 1.34
+          "cpc": 1.46
         },
         {
           "keyword": "pedicure",
           "translation": "pedicure",
-          "volume": 22200,
+          "volume": 4400,
           "competition": "LOW",
-          "cpc": 1.86
+          "cpc": 2.51
         },
         {
           "keyword": "endermologia",
           "translation": "endermology",
-          "volume": 22200,
+          "volume": 4400,
           "competition": "HIGH",
-          "cpc": 3.4
-        },
-        {
-          "keyword": "salon kosmetyczny",
-          "translation": "beauty salon",
-          "volume": 18100,
-          "competition": "LOW",
-          "cpc": 3.04
+          "cpc": 3.48
         },
         {
           "keyword": "depilacja laserowa",
           "translation": "laser hair removal",
-          "volume": 18100,
+          "volume": 3600,
           "competition": "HIGH",
-          "cpc": 7.69
+          "cpc": 13.16
         },
         {
           "keyword": "mezoterapia",
           "translation": "mesotherapy",
-          "volume": 14800,
+          "volume": 3600,
           "competition": "HIGH",
-          "cpc": 2.67
+          "cpc": 4.41
+        },
+        {
+          "keyword": "salon kosmetyczny",
+          "translation": "beauty salon",
+          "volume": 2900,
+          "competition": "LOW",
+          "cpc": 4.25
         },
         {
           "keyword": "mikrodermabrazja",
           "translation": "microdermabrasion",
-          "volume": 12100,
+          "volume": 2400,
           "competition": "HIGH",
-          "cpc": 1.98
-        },
-        {
-          "keyword": "lifting twarzy",
-          "translation": "face lift",
-          "volume": 12100,
-          "competition": "HIGH",
-          "cpc": 3.04
+          "cpc": 2.11
         },
         {
           "keyword": "medycyna estetyczna",
           "translation": "aesthetic medicine",
-          "volume": 9900,
+          "volume": 1900,
           "competition": "LOW",
-          "cpc": 4.01
+          "cpc": 7.37
+        },
+        {
+          "keyword": "lifting twarzy",
+          "translation": "face lift",
+          "volume": 1900,
+          "competition": "HIGH",
+          "cpc": 4.41
         },
         {
           "keyword": "makijaż permanentny",
           "translation": "permanent makeup",
-          "volume": 8100,
+          "volume": 1600,
           "competition": "LOW",
-          "cpc": 3.73
+          "cpc": 3.08
         },
         {
           "keyword": "manicure hybrydowy",
           "translation": "gel manicure",
-          "volume": 8100,
+          "volume": 1600,
           "competition": "HIGH",
-          "cpc": 1.62
+          "cpc": 3.24
         },
         {
           "keyword": "botox",
           "translation": "botox",
-          "volume": 6600,
+          "volume": 1300,
           "competition": "LOW",
-          "cpc": 0.45
+          "cpc": 0.53
         },
         {
           "keyword": "lipoliza",
           "translation": "lipolysis",
-          "volume": 6600,
+          "volume": 1300,
           "competition": "MEDIUM",
-          "cpc": 2.75
-        },
-        {
-          "keyword": "oczyszczanie twarzy",
-          "translation": "facial cleansing",
-          "volume": 5400,
-          "competition": "HIGH",
-          "cpc": 2.59
-        },
-        {
-          "keyword": "przedłużanie rzęs",
-          "translation": "eyelash extensions",
-          "volume": 4400,
-          "competition": "MEDIUM",
-          "cpc": 1.62
+          "cpc": 3.28
         },
         {
           "keyword": "salon urody",
           "translation": "beauty parlor",
-          "volume": 4400,
+          "volume": 1300,
           "competition": "LOW",
-          "cpc": 2.43
+          "cpc": 3.32
+        },
+        {
+          "keyword": "oczyszczanie twarzy",
+          "translation": "facial cleansing",
+          "volume": 880,
+          "competition": "HIGH",
+          "cpc": 4.37
+        },
+        {
+          "keyword": "przedłużanie rzęs",
+          "translation": "eyelash extensions",
+          "volume": 880,
+          "competition": "MEDIUM",
+          "cpc": 2.92
         },
         {
           "keyword": "peeling chemiczny",
           "translation": "chemical peel",
-          "volume": 2400,
+          "volume": 390,
           "competition": "HIGH",
-          "cpc": 1.42
+          "cpc": 1.86
         }
       ],
       "namePL": "Zabiegi kosmetyczne i usługi estetyczne",
       "descriptionPL": "Wyszukiwania związane z zabiegami kosmetycznymi i medycyną estetyczną. Na czele «salon kosmetyczny» (33 100/msc) i «depilacja laserowa» (18 100). Wyróżnia się «medycyna estetyczna» (12 100) — oddzielny segment premium z własnymi wynikami SERP. CPC jest niskie (śr. 2,5 zł/klik), co czyni tę branżę jedną z tańszych w Google Ads.",
-      "descriptionEN": "Searches for beauty treatments and aesthetic medicine. Led by \"salon kosmetyczny\" (33,100/mo) and \"depilacja laserowa\" (18,100). Standout: \"medycyna estetyczna\" (12,100) — a separate premium segment with its own SERP results. CPC is low (avg 2.5 PLN/click), making this one of the cheapest industries in Google Ads.",
-      "isNational": true
+      "descriptionEN": "Searches for beauty treatments and aesthetic medicine. Led by \"salon kosmetyczny\" (33,100/mo) and \"depilacja laserowa\" (18,100). Standout: \"medycyna estetyczna\" (12,100) — a separate premium segment with its own SERP results. CPC is low (avg 2.5 PLN/click), making this one of the cheapest industries in Google Ads."
     },
     {
       "id": "explicit",
       "color": "blue",
       "nameEN": "Explicit \"Warszawa\" searches",
       "nameNO": "Eksplisitte \"Warszawa\"-søk",
-      "totalVolume": 9450,
+      "totalVolume": 5830,
       "keywords": [
         {
           "keyword": "depilacja laserowa warszawa",
           "translation": "laser hair removal Warszawa",
-          "volume": 3600,
+          "volume": 2400,
           "competition": "HIGH",
-          "cpc": 15.07
+          "cpc": 15.75
         },
         {
           "keyword": "medycyna estetyczna warszawa",
           "translation": "aesthetic medicine Warszawa",
-          "volume": 1900,
+          "volume": 1000,
           "competition": "MEDIUM",
-          "cpc": 10.29
+          "cpc": 12.39
         },
         {
           "keyword": "salon kosmetyczny warszawa",
           "translation": "beauty salon Warszawa",
-          "volume": 1600,
+          "volume": 880,
           "competition": "MEDIUM",
-          "cpc": 4.29
+          "cpc": 7.21
         },
         {
           "keyword": "kosmetyczka warszawa",
           "translation": "beautician Warszawa",
-          "volume": 880,
+          "volume": 590,
           "competition": "HIGH",
-          "cpc": 2.51
+          "cpc": 2.35
         },
         {
           "keyword": "makijaż permanentny warszawa",
           "translation": "permanent makeup Warszawa",
-          "volume": 880,
+          "volume": 480,
           "competition": "MEDIUM",
-          "cpc": 3.97
+          "cpc": 4.41
         },
         {
           "keyword": "salon urody warszawa",
           "translation": "beauty parlor Warszawa",
-          "volume": 590,
+          "volume": 480,
           "competition": "LOW",
-          "cpc": 4.13
+          "cpc": 8.42
         }
       ],
       "namePL": "Wyszukiwania z nazwą \"Warszawa\"",
-      "isNational": true,
       "descriptionPL": "Wyszukiwania z nazwą miasta — klientki gotowe do rezerwacji. CPC jest wyższe niż dla fraz ogólnych, ale wciąż niskie jak na lokalne frazy. «Salon kosmetyczny [miasto]» to najczęstsze zapytanie lokalne — warto mieć je w tytule strony i nagłówku H1.",
       "descriptionEN": "City-name searches — clients ready to book. CPC is higher than generic terms but still low for local keywords. \"Salon kosmetyczny [city]\" is the most common local query — worth including in your page title and H1 heading."
     }
@@ -221,15 +220,11 @@
   "serpKeywords": [
     {
       "keyword": "salon kosmetyczny warszawa",
-      "volume": 1600,
+      "volume": 880,
       "organic": [
         {
-          "rank": 4,
-          "domain": "booksy.com"
-        },
-        {
           "rank": 5,
-          "domain": "berjamedica.pl"
+          "domain": "booksy.com"
         },
         {
           "rank": 6,
@@ -237,29 +232,48 @@
         },
         {
           "rank": 7,
-          "domain": "bezpiecznakosmetyka.pl"
+          "domain": "www.healthybeauty.pl"
         },
         {
-          "rank": 8,
-          "domain": "www.healthybeauty.pl"
+          "rank": 12,
+          "domain": "www.salonurodyelegante.pl"
+        },
+        {
+          "rank": 13,
+          "domain": "bezpiecznakosmetyka.pl"
         }
       ],
-      "maps": [],
-      "insightEN": "Results for \"salon kosmetyczny warszawa\": Booksy.com at position 4–5 — no Booksy profile = conceded position. Local salons in TOP: berjamedica.pl, elleclinic.pl, bezpiecznakosmetyka.pl. Positions 1–3 belong to local businesses with good websites.",
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Samui SPA",
+          "rating": 4.9,
+          "reviews": 442
+        },
+        {
+          "rank": 2,
+          "title": "Pracownia Urody",
+          "rating": 4.7,
+          "reviews": 15
+        },
+        {
+          "rank": 3,
+          "title": "Paradise Beauty Zone",
+          "rating": 4.3,
+          "reviews": 11
+        }
+      ],
+      "insightEN": "Results for \"salon kosmetyczny warszawa\": Booksy.com at position 4–5 — no Booksy profile = conceded position. Local salons in TOP: elleclinic.pl, www.healthybeauty.pl, www.salonurodyelegante.pl. Positions 1–3 belong to local businesses with good websites.",
       "insightNO": "",
-      "insightPL": "Wyniki na «salon kosmetyczny warszawa»: Booksy.com na pozycji 4–5 — brak profilu na Booksy = oddana pozycja. Lokalne salony w TOP: berjamedica.pl, elleclinic.pl, bezpiecznakosmetyka.pl. Pozycje 1–3 należą do lokalnych firm z dobrymi stronami."
+      "insightPL": "Wyniki na «salon kosmetyczny warszawa»: Booksy.com na pozycji 4–5 — brak profilu na Booksy = oddana pozycja. Lokalne salony w TOP: elleclinic.pl, www.healthybeauty.pl, www.salonurodyelegante.pl. Pozycje 1–3 należą do lokalnych firm z dobrymi stronami."
     },
     {
       "keyword": "medycyna estetyczna warszawa",
-      "volume": 1900,
+      "volume": 1000,
       "organic": [
         {
-          "rank": 4,
+          "rank": 5,
           "domain": "klinikaambroziak.pl"
-        },
-        {
-          "rank": 6,
-          "domain": "www.modelki-medycynaestetyczna.pl"
         },
         {
           "rank": 7,
@@ -271,145 +285,187 @@
         },
         {
           "rank": 9,
-          "domain": "artisanclinic.pl"
+          "domain": "damian-cme.pl"
+        },
+        {
+          "rank": 13,
+          "domain": "projektskora.pl"
         }
       ],
-      "maps": [],
-      "insightEN": "Results for \"medycyna estetyczna warszawa\": ZnanyLekarz.pl (doctor directory) appears — patients search for aesthetic medicine doctors as medical specialists. Local clinics in TOP 10: klinikaambroziak.pl, www.modelki-medycynaestetyczna.pl, primeclinic.pl. Dedicated aesthetic medicine sites rank higher than general beauty salons.",
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Dr Beata Dethloff",
+          "rating": 4.1,
+          "reviews": 79
+        },
+        {
+          "rank": 2,
+          "title": "Klinika Projekt Skóra",
+          "rating": 4.6,
+          "reviews": 182
+        },
+        {
+          "rank": 3,
+          "title": "inMEDICA Medycyna Estetyczna - Klinika Pniewski",
+          "rating": 4.4,
+          "reviews": 20
+        }
+      ],
+      "insightEN": "Results for \"medycyna estetyczna warszawa\": ZnanyLekarz.pl (doctor directory) appears — patients search for aesthetic medicine doctors as medical specialists. Local clinics in TOP 10: klinikaambroziak.pl, primeclinic.pl, damian-cme.pl. Dedicated aesthetic medicine sites rank higher than general beauty salons.",
       "insightNO": "",
-      "insightPL": "Wyniki na «medycyna estetyczna warszawa»: ZnanyLekarz.pl pojawia się w wynikach — pacjenci szukają lekarzy medycyny estetycznej jak specjalistów medycznych. Lokalne kliniki w TOP 10: klinikaambroziak.pl, www.modelki-medycynaestetyczna.pl, primeclinic.pl. Dedykowane strony o medycynie estetycznej rankują wyżej niż ogólne salony beauty."
+      "insightPL": "Wyniki na «medycyna estetyczna warszawa»: ZnanyLekarz.pl pojawia się w wynikach — pacjenci szukają lekarzy medycyny estetycznej jak specjalistów medycznych. Lokalne kliniki w TOP 10: klinikaambroziak.pl, primeclinic.pl, damian-cme.pl. Dedykowane strony o medycynie estetycznej rankują wyżej niż ogólne salony beauty."
     },
     {
       "keyword": "kosmetyczka warszawa",
-      "volume": 880,
+      "volume": 590,
       "organic": [
         {
           "rank": 5,
           "domain": "booksy.com"
         },
         {
-          "rank": 7,
+          "rank": 11,
           "domain": "bezpiecznakosmetyka.pl"
         },
         {
-          "rank": 8,
+          "rank": 12,
+          "domain": "alga.waw.pl"
+        },
+        {
+          "rank": 13,
           "domain": "www.healthybeauty.pl"
         },
         {
-          "rank": 9,
-          "domain": "www.oferteo.pl"
-        },
-        {
-          "rank": 10,
+          "rank": 14,
           "domain": "strefapiekna.warszawa.pl"
         }
       ],
-      "maps": [],
-      "insightEN": "Results for \"kosmetyczka warszawa\": Booksy.com in TOP 5 — the booking platform is the first choice for clients seeking beauticians. Oferteo.pl (service directory) also in results. Local salons: bezpiecznakosmetyka.pl, www.healthybeauty.pl, strefapiekna.warszawa.pl.",
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Samui SPA",
+          "rating": 4.9,
+          "reviews": 442
+        },
+        {
+          "rank": 2,
+          "title": "Pracownia Urody",
+          "rating": 4.7,
+          "reviews": 15
+        },
+        {
+          "rank": 3,
+          "title": "GK Expert Urody",
+          "rating": 4.7,
+          "reviews": 99
+        }
+      ],
+      "insightEN": "Results for \"kosmetyczka warszawa\": Booksy.com in TOP 5 — the booking platform is the first choice for clients seeking beauticians. Local salons: bezpiecznakosmetyka.pl, alga.waw.pl, www.healthybeauty.pl.",
       "insightNO": "",
-      "insightPL": "Wyniki na «kosmetyczka warszawa»: Booksy.com w TOP 5 — platforma rezerwacyjna jest pierwszym wyborem klientek szukających kosmetyczek. Oferteo.pl (portal ofertowy) też w wynikach. Lokalne salony: bezpiecznakosmetyka.pl, www.healthybeauty.pl, strefapiekna.warszawa.pl."
+      "insightPL": "Wyniki na «kosmetyczka warszawa»: Booksy.com w TOP 5 — platforma rezerwacyjna jest pierwszym wyborem klientek szukających kosmetyczek. Lokalne salony: bezpiecznakosmetyka.pl, alga.waw.pl, www.healthybeauty.pl."
     }
   ],
   "cpcData": [
     {
       "keyword": "depilacja laserowa warszawa",
-      "cpc": 15.07
-    },
-    {
-      "keyword": "medycyna estetyczna warszawa",
-      "cpc": 10.29
+      "cpc": 15.75
     },
     {
       "keyword": "depilacja laserowa",
-      "cpc": 7.69
+      "cpc": 13.16
     },
     {
-      "keyword": "salon kosmetyczny warszawa",
-      "cpc": 4.29
+      "keyword": "medycyna estetyczna warszawa",
+      "cpc": 12.39
     },
     {
       "keyword": "salon urody warszawa",
-      "cpc": 4.13
+      "cpc": 8.42
     },
     {
       "keyword": "medycyna estetyczna",
-      "cpc": 4.01
+      "cpc": 7.37
     },
     {
-      "keyword": "makijaż permanentny warszawa",
-      "cpc": 3.97
-    },
-    {
-      "keyword": "makijaż permanentny",
-      "cpc": 3.73
-    },
-    {
-      "keyword": "endermologia",
-      "cpc": 3.4
-    },
-    {
-      "keyword": "salon kosmetyczny",
-      "cpc": 3.04
-    },
-    {
-      "keyword": "lifting twarzy",
-      "cpc": 3.04
-    },
-    {
-      "keyword": "lipoliza",
-      "cpc": 2.75
+      "keyword": "salon kosmetyczny warszawa",
+      "cpc": 7.21
     },
     {
       "keyword": "mezoterapia",
-      "cpc": 2.67
+      "cpc": 4.41
+    },
+    {
+      "keyword": "lifting twarzy",
+      "cpc": 4.41
+    },
+    {
+      "keyword": "makijaż permanentny warszawa",
+      "cpc": 4.41
     },
     {
       "keyword": "oczyszczanie twarzy",
-      "cpc": 2.59
+      "cpc": 4.37
     },
     {
-      "keyword": "kosmetyczka warszawa",
-      "cpc": 2.51
+      "keyword": "salon kosmetyczny",
+      "cpc": 4.25
+    },
+    {
+      "keyword": "endermologia",
+      "cpc": 3.48
     },
     {
       "keyword": "salon urody",
-      "cpc": 2.43
+      "cpc": 3.32
     },
     {
-      "keyword": "mikrodermabrazja",
-      "cpc": 1.98
+      "keyword": "lipoliza",
+      "cpc": 3.28
+    },
+    {
+      "keyword": "manicure hybrydowy",
+      "cpc": 3.24
+    },
+    {
+      "keyword": "makijaż permanentny",
+      "cpc": 3.08
+    },
+    {
+      "keyword": "przedłużanie rzęs",
+      "cpc": 2.92
     },
     {
       "keyword": "pedicure",
+      "cpc": 2.51
+    },
+    {
+      "keyword": "kosmetyczka warszawa",
+      "cpc": 2.35
+    },
+    {
+      "keyword": "mikrodermabrazja",
+      "cpc": 2.11
+    },
+    {
+      "keyword": "peeling chemiczny",
       "cpc": 1.86
     },
     {
       "keyword": "kwas hialuronowy",
-      "cpc": 1.7
-    },
-    {
-      "keyword": "manicure hybrydowy",
-      "cpc": 1.62
-    },
-    {
-      "keyword": "przedłużanie rzęs",
-      "cpc": 1.62
-    },
-    {
-      "keyword": "peeling chemiczny",
-      "cpc": 1.42
+      "cpc": 1.5
     },
     {
       "keyword": "laminacja brwi",
-      "cpc": 1.34
+      "cpc": 1.46
     },
     {
       "keyword": "kosmetyczka",
-      "cpc": 1.13
+      "cpc": 1.21
     },
     {
       "keyword": "botox",
-      "cpc": 0.45
+      "cpc": 0.53
     }
   ],
   "seasonality": {
@@ -417,62 +473,58 @@
     "months": [
       {
         "month": "Jan",
-        "volume": 22200
+        "volume": 4400
       },
       {
         "month": "Feb",
-        "volume": 22200
+        "volume": 5400
       },
       {
         "month": "Mar",
-        "volume": 22200
+        "volume": 5400
       },
       {
         "month": "Apr",
-        "volume": 18100
+        "volume": 3600
       },
       {
         "month": "May",
-        "volume": 18100
+        "volume": 3600
       },
       {
         "month": "Jun",
-        "volume": 18100
+        "volume": 2900
       },
       {
         "month": "Jul",
-        "volume": 18100
+        "volume": 3600
       },
       {
         "month": "Aug",
-        "volume": 14800
+        "volume": 2900
       },
       {
         "month": "Sep",
-        "volume": 14800
+        "volume": 2900
       },
       {
         "month": "Oct",
-        "volume": 14800
+        "volume": 3600
       },
       {
         "month": "Nov",
-        "volume": 18100
+        "volume": 3600
       },
       {
         "month": "Dec",
-        "volume": 14800
+        "volume": 2400
       }
     ],
     "peakMonths": [
-      "Jan",
       "Feb",
       "Mar"
     ],
     "lowMonths": [
-      "Aug",
-      "Sep",
-      "Oct",
       "Dec"
     ],
     "insightEN": "Laser hair removal peaks mildly in spring (March–June) — vacation season prep. Dips in July–August (holidays) and December. Other beauty services are relatively stable year-round. Best time to launch campaigns: February–March.",
@@ -556,7 +608,7 @@
     }
   ],
   "calculator": {
-    "avgCpc": 6.71,
+    "avgCpc": 0,
     "defaultPatientValue": 3000,
     "defaultBudget": 2000,
     "defaultConversion": 25,

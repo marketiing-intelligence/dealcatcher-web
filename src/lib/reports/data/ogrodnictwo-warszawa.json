@@ -2,16 +2,17 @@
   "meta": {
     "niche": "ogrodnictwo",
     "nicheNO": "hagetjenester",
+    "nicheEN": "garden services & landscaping",
     "city": "Warszawa",
-    "locationCode": 1011078,
+    "locationCode": 1011419,
     "dataDate": "2026-02",
-    "totalSearchVolume": 203750,
-    "nichePL": "usługi ogrodnicze",
-    "currency": "zł"
+    "totalSearchVolume": 28140,
+    "currency": "zł",
+    "nichePL": "usługi ogrodnicze"
   },
   "metrics": {
-    "keywordCount": 20,
-    "avgCpc": 1.3,
+    "keywordCount": 23,
+    "avgCpc": 1.8,
     "topClinicsCount": 5,
     "mapsClickShare": 40
   },
@@ -21,206 +22,183 @@
       "color": "green",
       "nameEN": "Garden & landscaping services",
       "nameNO": "Hage- og landskapstjenester",
-      "totalVolume": 203750,
+      "totalVolume": 27310,
       "keywords": [
         {
           "keyword": "kostka brukowa",
           "translation": "paving stones",
-          "volume": 90500,
+          "volume": 9900,
           "competition": "HIGH",
-          "cpc": 0.49
+          "cpc": 0.73
         },
         {
           "keyword": "ogrodzenia",
           "translation": "fencing",
-          "volume": 40500,
+          "volume": 6600,
           "competition": "HIGH",
-          "cpc": 0.89
-        },
-        {
-          "keyword": "ogrodnik",
-          "translation": "gardener",
-          "volume": 14800,
-          "competition": "LOW",
-          "cpc": 3.28
+          "cpc": 0.97
         },
         {
           "keyword": "oczka wodne",
           "translation": "garden ponds",
-          "volume": 14800,
-          "competition": "HIGH",
-          "cpc": 0.65
+          "volume": 2400,
+          "competition": "MEDIUM",
+          "cpc": 0.69
+        },
+        {
+          "keyword": "ogrodnik",
+          "translation": "gardener",
+          "volume": 1900,
+          "competition": "LOW",
+          "cpc": 5.99
         },
         {
           "keyword": "tarasy drewniane",
           "translation": "wooden terraces",
-          "volume": 8100,
+          "volume": 1300,
           "competition": "HIGH",
-          "cpc": 1.17
-        },
-        {
-          "keyword": "aranżacja ogrodu",
-          "translation": "garden arrangement",
-          "volume": 6600,
-          "competition": "HIGH",
-          "cpc": 0.77
+          "cpc": 2.63
         },
         {
           "keyword": "nawadnianie ogrodu",
           "translation": "garden irrigation",
-          "volume": 5400,
+          "volume": 880,
           "competition": "HIGH",
-          "cpc": 1.54
+          "cpc": 1.21
         },
         {
           "keyword": "wycinka drzew",
           "translation": "tree removal",
-          "volume": 5400,
-          "competition": "LOW",
-          "cpc": 4.58
+          "volume": 880,
+          "competition": "MEDIUM",
+          "cpc": 5.51
+        },
+        {
+          "keyword": "aranżacja ogrodu",
+          "translation": "garden arrangement",
+          "volume": 880,
+          "competition": "MEDIUM",
+          "cpc": 0.45
         },
         {
           "keyword": "architekt krajobrazu",
           "translation": "landscape architect",
-          "volume": 4400,
+          "volume": 720,
           "competition": "MEDIUM",
-          "cpc": 4.86
+          "cpc": 6.07
         },
         {
           "keyword": "usługi ogrodnicze",
           "translation": "garden services",
-          "volume": 3600,
+          "volume": 590,
           "competition": "LOW",
-          "cpc": 3.08
+          "cpc": 3.48
         },
         {
           "keyword": "projektowanie ogrodów",
           "translation": "garden design",
-          "volume": 3600,
-          "competition": "HIGH",
-          "cpc": 4.29
+          "volume": 590,
+          "competition": "MEDIUM",
+          "cpc": 5.22
         },
         {
           "keyword": "zakładanie trawnika",
           "translation": "lawn installation",
-          "volume": 1900,
+          "volume": 320,
           "competition": "LOW",
-          "cpc": 2.71
+          "cpc": 1.38
         },
         {
           "keyword": "firma ogrodnicza",
           "translation": "gardening company",
-          "volume": 1300,
-          "competition": "LOW",
-          "cpc": 4.5
-        },
-        {
-          "keyword": "pielęgnacja ogrodu",
-          "translation": "garden maintenance",
-          "volume": 1000,
-          "competition": "LOW",
-          "cpc": 4.25
-        },
-        {
-          "keyword": "koszenie trawnika",
-          "translation": "lawn mowing",
-          "volume": 590,
-          "competition": "LOW",
-          "cpc": 2.11
+          "volume": 170,
+          "competition": "MEDIUM",
+          "cpc": 3.44
         },
         {
           "keyword": "przycinanie drzew",
           "translation": "tree pruning",
-          "volume": 590,
-          "competition": "MEDIUM",
-          "cpc": 4.78
-        },
-        {
-          "keyword": "system nawadniający",
-          "translation": "irrigation system",
-          "volume": 260,
-          "competition": "HIGH",
-          "cpc": 1.54
+          "volume": 90,
+          "competition": "LOW",
+          "cpc": 2.23
         },
         {
           "keyword": "projektowanie zieleni",
           "translation": "green area design",
-          "volume": 210,
+          "volume": 50,
           "competition": "LOW",
-          "cpc": 5.02
+          "cpc": 0.12
         },
         {
-          "keyword": "budowa ogrodu",
-          "translation": "garden construction",
-          "volume": 110,
-          "competition": "LOW",
-          "cpc": 7.74
+          "keyword": "system nawadniający",
+          "translation": "irrigation system",
+          "volume": 30,
+          "competition": "HIGH",
+          "cpc": 1.62
         },
         {
           "keyword": "utrzymanie zieleni",
           "translation": "green space maintenance",
-          "volume": 90,
+          "volume": 10,
           "competition": "LOW",
-          "cpc": 2.23
+          "cpc": 2.75
         }
       ],
       "namePL": "Usługi ogrodnicze i architektura krajobrazu",
       "descriptionPL": "Wyszukiwania dotyczące usług ogrodniczych i projektowania krajobrazu. Liderem jest «kostka brukowa» (33 100/msc) — fraza produktowa, ale klienci szukają też wykonawców. Za nią «trawnik z rolki» (8 100) i «projektowanie ogrodów» (6 600). CPC jest bardzo niskie (śr. 1,3 zł/klik), co czyni tę branżę jedną z najtańszych w Google Ads.",
-      "descriptionEN": "Searches for garden services and landscape design. Leader: \"kostka brukowa\" (paving stones, 33,100/mo) — a product keyword, but customers also seek installers. Followed by \"trawnik z rolki\" (sod lawn, 8,100) and \"projektowanie ogrodów\" (garden design, 6,600). Very low CPC (avg 1.3 PLN/click), making this one of the cheapest industries for Google Ads.",
-      "isNational": true
+      "descriptionEN": "Searches for garden services and landscape design. Leader: \"kostka brukowa\" (paving stones, 33,100/mo) — a product keyword, but customers also seek installers. Followed by \"trawnik z rolki\" (sod lawn, 8,100) and \"projektowanie ogrodów\" (garden design, 6,600). Very low CPC (avg 1.3 PLN/click), making this one of the cheapest industries for Google Ads."
     },
     {
       "id": "explicit",
       "color": "blue",
       "nameEN": "Explicit \"Warszawa\" searches",
       "nameNO": "Eksplisitte \"Warszawa\"-søk",
-      "totalVolume": 1490,
+      "totalVolume": 830,
       "keywords": [
         {
           "keyword": "ogrodnik warszawa",
           "translation": "gardener Warszawa",
-          "volume": 390,
-          "competition": "LOW",
-          "cpc": 1.98
-        },
-        {
-          "keyword": "usługi ogrodnicze warszawa",
-          "translation": "garden services Warszawa",
-          "volume": 320,
-          "competition": "LOW",
-          "cpc": 3.93
+          "volume": 260,
+          "competition": "MEDIUM",
+          "cpc": 1.82
         },
         {
           "keyword": "projektowanie ogrodów warszawa",
           "translation": "garden design Warszawa",
-          "volume": 320,
+          "volume": 210,
           "competition": "LOW",
-          "cpc": 5.35
+          "cpc": 5.91
+        },
+        {
+          "keyword": "usługi ogrodnicze warszawa",
+          "translation": "garden services Warszawa",
+          "volume": 170,
+          "competition": "MEDIUM",
+          "cpc": 4.5
         },
         {
           "keyword": "architekt krajobrazu warszawa",
           "translation": "landscape architect Warszawa",
-          "volume": 210,
+          "volume": 70,
           "competition": "LOW",
-          "cpc": 6.07
+          "cpc": 8.59
         },
         {
           "keyword": "firma ogrodnicza warszawa",
           "translation": "gardening company Warszawa",
-          "volume": 140,
-          "competition": "LOW",
-          "cpc": 6.28
+          "volume": 70,
+          "competition": "MEDIUM",
+          "cpc": 6.56
         },
         {
           "keyword": "pielęgnacja ogrodu warszawa",
           "translation": "garden maintenance Warszawa",
-          "volume": 110,
+          "volume": 50,
           "competition": "LOW",
-          "cpc": 6.16
+          "cpc": 6.28
         }
       ],
       "namePL": "Wyszukiwania z nazwą \"Warszawa\"",
-      "isNational": true,
       "descriptionPL": "Wyszukiwania z nazwą miasta — klienci szukający lokalnych usługodawców. Wolumeny są niskie (200–700/msc), co pokazuje, że rynek ogrodniczy w Google jest wciąż niedojrzały. Ale to szansa: mała konkurencja = niski koszt pozyskania klienta.",
       "descriptionEN": "City-name searches — clients looking for local providers. Low volumes (200–700/mo), showing the garden market is still immature online. But that's an opportunity: low competition = cheap customer acquisition."
     }
@@ -228,199 +206,244 @@
   "serpKeywords": [
     {
       "keyword": "usługi ogrodnicze warszawa",
-      "volume": 320,
+      "volume": 170,
       "organic": [
         {
-          "rank": 4,
-          "domain": "www.olx.pl"
-        },
-        {
-          "rank": 5,
+          "rank": 1,
           "domain": "zrobimywszystko.pl"
         },
         {
-          "rank": 7,
-          "domain": "danygarden.pl"
+          "rank": 2,
+          "domain": "www.olx.pl"
         },
         {
-          "rank": 8,
-          "domain": "ogrodygrass.pl"
+          "rank": 3,
+          "domain": "firmakrzak.com"
         },
         {
-          "rank": 9,
-          "domain": "ogrody-warszawa.pl"
+          "rank": 5,
+          "domain": "ogrodydt.pl"
+        },
+        {
+          "rank": 6,
+          "domain": "lasiogrod.eu"
         }
       ],
-      "maps": [],
-      "insightEN": "Results for \"usługi ogrodnicze warszawa\": OLX.pl in TOP 5 — clients look for gardeners on classifieds. Local companies: zrobimywszystko.pl, danygarden.pl, ogrodygrass.pl. Highly fragmented market — no dominant player.",
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Wycinka drzew",
+          "rating": 5,
+          "reviews": 69
+        },
+        {
+          "rank": 2,
+          "title": "RUDIDOM SPÓLKA Z O.O.",
+          "rating": 5,
+          "reviews": 255
+        },
+        {
+          "rank": 3,
+          "title": "Wycinka drzew Warszawa - Drzewny Majster",
+          "rating": 5,
+          "reviews": 54
+        }
+      ],
+      "insightEN": "Results for \"usługi ogrodnicze warszawa\": OLX.pl in TOP 5 — clients look for gardeners on classifieds. Local companies: zrobimywszystko.pl, firmakrzak.com, ogrodydt.pl. Highly fragmented market — no dominant player.",
       "insightNO": "",
-      "insightPL": "Wyniki na «usługi ogrodnicze warszawa»: OLX.pl w TOP 5 — klienci szukają ogrodników na portalu ogłoszeniowym. Lokalne firmy: zrobimywszystko.pl, danygarden.pl, ogrodygrass.pl. Rynek bardzo sfragmentowany — brak dominującego gracza."
+      "insightPL": "Wyniki na «usługi ogrodnicze warszawa»: OLX.pl w TOP 5 — klienci szukają ogrodników na portalu ogłoszeniowym. Lokalne firmy: zrobimywszystko.pl, firmakrzak.com, ogrodydt.pl. Rynek bardzo sfragmentowany — brak dominującego gracza."
     },
     {
       "keyword": "architekt krajobrazu warszawa",
-      "volume": 210,
+      "volume": 70,
       "organic": [
         {
-          "rank": 4,
+          "rank": 5,
           "domain": "zielonawizja.pl"
         },
         {
-          "rank": 5,
-          "domain": "hibnerstudio.pl"
-        },
-        {
           "rank": 6,
-          "domain": "www.projektogrodu.com.pl"
-        },
-        {
-          "rank": 7,
-          "domain": "pracowniaarchitekturykrajobrazu.com"
-        },
-        {
-          "rank": 9,
           "domain": "naturaplan.pl"
+        },
+        {
+          "rank": 11,
+          "domain": "www.groszyk.com.pl"
+        },
+        {
+          "rank": 12,
+          "domain": "ogrodosfera.pl"
+        },
+        {
+          "rank": 13,
+          "domain": "krajobraz.com.pl"
         }
       ],
-      "maps": [],
-      "insightEN": "Results for \"architekt krajobrazu warszawa\": Portfolio-driven companies: zielonawizja.pl, hibnerstudio.pl, www.projektogrodu.com.pl. Landscape architecture is a premium segment — clients seek inspiration and completed projects.",
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Avangardens Architektura Krajobrazu",
+          "rating": 4.7,
+          "reviews": 40
+        },
+        {
+          "rank": 2,
+          "title": "Pielęgnacja roślin | Kwiaty do biura | Rośliny biurowe | Serwis kwiatowy",
+          "rating": 5,
+          "reviews": 10
+        },
+        {
+          "rank": 3,
+          "title": "Projektowanie, Zakładanie Ogrodów Warszawa - Art Area",
+          "rating": 5,
+          "reviews": 7
+        }
+      ],
+      "insightEN": "Results for \"architekt krajobrazu warszawa\": Portfolio-driven companies: zielonawizja.pl, www.groszyk.com.pl, ogrodosfera.pl. Landscape architecture is a premium segment — clients seek inspiration and completed projects.",
       "insightNO": "",
-      "insightPL": "Wyniki na «architekt krajobrazu warszawa»: Portfolio-driven firmy: zielonawizja.pl, hibnerstudio.pl, www.projektogrodu.com.pl. Architektura krajobrazu to segment premium — klienci szukają inspiracji i realizacji."
+      "insightPL": "Wyniki na «architekt krajobrazu warszawa»: Portfolio-driven firmy: zielonawizja.pl, www.groszyk.com.pl, ogrodosfera.pl. Architektura krajobrazu to segment premium — klienci szukają inspiracji i realizacji."
     },
     {
       "keyword": "projektowanie ogrodów warszawa",
-      "volume": 320,
+      "volume": 210,
       "organic": [
         {
-          "rank": 4,
+          "rank": 5,
           "domain": "marzewska.pl"
         },
         {
-          "rank": 5,
+          "rank": 6,
           "domain": "ogrody-projektowanie.pl"
         },
         {
-          "rank": 6,
-          "domain": "hibnerstudio.pl"
-        },
-        {
-          "rank": 7,
+          "rank": 9,
           "domain": "www.citygarden.waw.pl"
         },
         {
-          "rank": 8,
-          "domain": "inspiracje.com.pl"
+          "rank": 10,
+          "domain": "gardenandpleasure.pl"
+        },
+        {
+          "rank": 14,
+          "domain": "brzozowisko.com"
         }
       ],
-      "maps": [],
-      "insightEN": "Results for \"projektowanie ogrodów warszawa\": TOP positions held by companies with dedicated design pages: marzewska.pl, ogrody-projektowanie.pl, hibnerstudio.pl. Google favors sites with project portfolios and before/after photo galleries.",
+      "maps": [
+        {
+          "rank": 1,
+          "title": "Avangardens Architektura Krajobrazu",
+          "rating": 4.7,
+          "reviews": 40
+        },
+        {
+          "rank": 2,
+          "title": "Małgorzata Marzewska - Projektowanie Ogrodów - Warszawa",
+          "rating": 4.8,
+          "reviews": 5
+        },
+        {
+          "rank": 3,
+          "title": "Projektowanie, Zakładanie Ogrodów Warszawa - Art Area",
+          "rating": 5,
+          "reviews": 7
+        }
+      ],
+      "insightEN": "Results for \"projektowanie ogrodów warszawa\": TOP positions held by companies with dedicated design pages: marzewska.pl, ogrody-projektowanie.pl, www.citygarden.waw.pl. Google favors sites with project portfolios and before/after photo galleries.",
       "insightNO": "",
-      "insightPL": "Wyniki na «projektowanie ogrodów warszawa»: TOP pozycje zajmują firmy z dedykowanymi stronami o projektowaniu: marzewska.pl, ogrody-projektowanie.pl, hibnerstudio.pl. Google preferuje strony z portfolio realizacji i galerią zdjęć przed/po."
+      "insightPL": "Wyniki na «projektowanie ogrodów warszawa»: TOP pozycje zajmują firmy z dedykowanymi stronami o projektowaniu: marzewska.pl, ogrody-projektowanie.pl, www.citygarden.waw.pl. Google preferuje strony z portfolio realizacji i galerią zdjęć przed/po."
     }
   ],
   "cpcData": [
     {
-      "keyword": "budowa ogrodu",
-      "cpc": 7.74
+      "keyword": "architekt krajobrazu warszawa",
+      "cpc": 8.59
     },
     {
       "keyword": "firma ogrodnicza warszawa",
-      "cpc": 6.28
+      "cpc": 6.56
     },
     {
       "keyword": "pielęgnacja ogrodu warszawa",
-      "cpc": 6.16
-    },
-    {
-      "keyword": "architekt krajobrazu warszawa",
-      "cpc": 6.07
-    },
-    {
-      "keyword": "projektowanie ogrodów warszawa",
-      "cpc": 5.35
-    },
-    {
-      "keyword": "projektowanie zieleni",
-      "cpc": 5.02
+      "cpc": 6.28
     },
     {
       "keyword": "architekt krajobrazu",
-      "cpc": 4.86
-    },
-    {
-      "keyword": "przycinanie drzew",
-      "cpc": 4.78
-    },
-    {
-      "keyword": "wycinka drzew",
-      "cpc": 4.58
-    },
-    {
-      "keyword": "firma ogrodnicza",
-      "cpc": 4.5
-    },
-    {
-      "keyword": "projektowanie ogrodów",
-      "cpc": 4.29
-    },
-    {
-      "keyword": "pielęgnacja ogrodu",
-      "cpc": 4.25
-    },
-    {
-      "keyword": "usługi ogrodnicze warszawa",
-      "cpc": 3.93
+      "cpc": 6.07
     },
     {
       "keyword": "ogrodnik",
-      "cpc": 3.28
+      "cpc": 5.99
+    },
+    {
+      "keyword": "projektowanie ogrodów warszawa",
+      "cpc": 5.91
+    },
+    {
+      "keyword": "wycinka drzew",
+      "cpc": 5.51
+    },
+    {
+      "keyword": "projektowanie ogrodów",
+      "cpc": 5.22
+    },
+    {
+      "keyword": "usługi ogrodnicze warszawa",
+      "cpc": 4.5
     },
     {
       "keyword": "usługi ogrodnicze",
-      "cpc": 3.08
+      "cpc": 3.48
     },
     {
-      "keyword": "zakładanie trawnika",
-      "cpc": 2.71
+      "keyword": "firma ogrodnicza",
+      "cpc": 3.44
     },
     {
       "keyword": "utrzymanie zieleni",
-      "cpc": 2.23
-    },
-    {
-      "keyword": "koszenie trawnika",
-      "cpc": 2.11
-    },
-    {
-      "keyword": "ogrodnik warszawa",
-      "cpc": 1.98
-    },
-    {
-      "keyword": "nawadnianie ogrodu",
-      "cpc": 1.54
-    },
-    {
-      "keyword": "system nawadniający",
-      "cpc": 1.54
+      "cpc": 2.75
     },
     {
       "keyword": "tarasy drewniane",
-      "cpc": 1.17
+      "cpc": 2.63
+    },
+    {
+      "keyword": "przycinanie drzew",
+      "cpc": 2.23
+    },
+    {
+      "keyword": "ogrodnik warszawa",
+      "cpc": 1.82
+    },
+    {
+      "keyword": "system nawadniający",
+      "cpc": 1.62
+    },
+    {
+      "keyword": "zakładanie trawnika",
+      "cpc": 1.38
+    },
+    {
+      "keyword": "nawadnianie ogrodu",
+      "cpc": 1.21
     },
     {
       "keyword": "ogrodzenia",
-      "cpc": 0.89
-    },
-    {
-      "keyword": "aranżacja ogrodu",
-      "cpc": 0.77
-    },
-    {
-      "keyword": "oczka wodne",
-      "cpc": 0.65
+      "cpc": 0.97
     },
     {
       "keyword": "kostka brukowa",
-      "cpc": 0.49
+      "cpc": 0.73
+    },
+    {
+      "keyword": "oczka wodne",
+      "cpc": 0.69
+    },
+    {
+      "keyword": "aranżacja ogrodu",
+      "cpc": 0.45
+    },
+    {
+      "keyword": "projektowanie zieleni",
+      "cpc": 0.12
     }
   ],
   "seasonality": {
@@ -428,51 +451,51 @@
     "months": [
       {
         "month": "Jan",
-        "volume": 2400
+        "volume": 390
       },
       {
         "month": "Feb",
-        "volume": 3600
+        "volume": 480
       },
       {
         "month": "Mar",
-        "volume": 8100
+        "volume": 1300
       },
       {
         "month": "Apr",
-        "volume": 5400
+        "volume": 720
       },
       {
         "month": "May",
-        "volume": 4400
+        "volume": 720
       },
       {
         "month": "Jun",
-        "volume": 3600
+        "volume": 480
       },
       {
         "month": "Jul",
-        "volume": 4400
+        "volume": 480
       },
       {
         "month": "Aug",
-        "volume": 2900
+        "volume": 390
       },
       {
         "month": "Sep",
-        "volume": 2900
+        "volume": 480
       },
       {
         "month": "Oct",
-        "volume": 1900
+        "volume": 320
       },
       {
         "month": "Nov",
-        "volume": 1900
+        "volume": 260
       },
       {
         "month": "Dec",
-        "volume": 1600
+        "volume": 170
       }
     ],
     "peakMonths": [
@@ -562,7 +585,7 @@
     }
   ],
   "calculator": {
-    "avgCpc": 4.96,
+    "avgCpc": 0,
     "defaultPatientValue": 4000,
     "defaultBudget": 2000,
     "defaultConversion": 25,

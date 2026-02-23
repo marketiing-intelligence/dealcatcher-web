@@ -2,16 +2,17 @@
   "meta": {
     "niche": "klimatyzacja",
     "nicheNO": "klimaanlegg",
+    "nicheEN": "HVAC & air conditioning",
     "city": "Łódź",
-    "locationCode": 1011080,
+    "locationCode": 1011320,
     "dataDate": "2026-02",
-    "totalSearchVolume": 115530,
-    "nichePL": "klimatyzacja",
-    "currency": "zł"
+    "totalSearchVolume": 3640,
+    "currency": "zł",
+    "nichePL": "klimatyzacja"
   },
   "metrics": {
-    "keywordCount": 16,
-    "avgCpc": 3.92,
+    "keywordCount": 14,
+    "avgCpc": 4.1,
     "topClinicsCount": 5,
     "mapsClickShare": 46
   },
@@ -21,135 +22,120 @@
       "color": "green",
       "nameEN": "HVAC installation & service",
       "nameNO": "Klimaanlegg installasjon og service",
-      "totalVolume": 115530,
+      "totalVolume": 2540,
       "keywords": [
-        {
-          "keyword": "klimatyzator",
-          "translation": "air conditioner unit",
-          "volume": 40500,
-          "competition": "HIGH",
-          "cpc": 1.62
-        },
         {
           "keyword": "klimatyzacja",
           "translation": "air conditioning",
-          "volume": 33100,
-          "competition": "HIGH",
-          "cpc": 2.47
-        },
-        {
-          "keyword": "serwis klimatyzacji",
-          "translation": "AC service",
-          "volume": 8100,
-          "competition": "LOW",
-          "cpc": 8.02
-        },
-        {
-          "keyword": "klimatyzacja do domu",
-          "translation": "home air conditioning",
-          "volume": 8100,
-          "competition": "HIGH",
-          "cpc": 2.67
-        },
-        {
-          "keyword": "montaż klimatyzacji",
-          "translation": "AC installation",
-          "volume": 5400,
-          "competition": "MEDIUM",
-          "cpc": 9.88
-        },
-        {
-          "keyword": "klimatyzacja do mieszkania",
-          "translation": "apartment AC",
-          "volume": 5400,
-          "competition": "HIGH",
-          "cpc": 3.32
-        },
-        {
-          "keyword": "klimatyzacja przenośna",
-          "translation": "portable AC",
-          "volume": 3600,
-          "competition": "HIGH",
-          "cpc": 1.01
-        },
-        {
-          "keyword": "klimatyzacja domowa",
-          "translation": "home AC system",
-          "volume": 3600,
-          "competition": "HIGH",
-          "cpc": 2.31
-        },
-        {
-          "keyword": "klimatyzacja split",
-          "translation": "split AC",
-          "volume": 2900,
+          "volume": 880,
           "competition": "HIGH",
           "cpc": 2.11
         },
         {
-          "keyword": "klimatyzacja multisplit",
-          "translation": "multi-split AC",
-          "volume": 1300,
+          "keyword": "klimatyzator",
+          "translation": "air conditioner unit",
+          "volume": 880,
           "competition": "HIGH",
-          "cpc": 1.58
+          "cpc": 1.66
         },
         {
-          "keyword": "czyszczenie klimatyzacji",
-          "translation": "AC cleaning",
-          "volume": 1300,
+          "keyword": "klimatyzacja do domu",
+          "translation": "home air conditioning",
+          "volume": 260,
           "competition": "HIGH",
-          "cpc": 3.2
+          "cpc": 1.66
+        },
+        {
+          "keyword": "montaż klimatyzacji",
+          "translation": "AC installation",
+          "volume": 140,
+          "competition": "MEDIUM",
+          "cpc": 5.71
+        },
+        {
+          "keyword": "klimatyzacja do mieszkania",
+          "translation": "apartment AC",
+          "volume": 90,
+          "competition": "MEDIUM",
+          "cpc": 3.36
+        },
+        {
+          "keyword": "klimatyzacja przenośna",
+          "translation": "portable AC",
+          "volume": 90,
+          "competition": "HIGH",
+          "cpc": 1.09
+        },
+        {
+          "keyword": "klimatyzacja split",
+          "translation": "split AC",
+          "volume": 70,
+          "competition": "HIGH",
+          "cpc": 0.81
+        },
+        {
+          "keyword": "klimatyzacja domowa",
+          "translation": "home AC system",
+          "volume": 50,
+          "competition": "MEDIUM",
+          "cpc": 1.34
         },
         {
           "keyword": "klimatyzacja cena",
           "translation": "AC price",
-          "volume": 1000,
+          "volume": 30,
           "competition": "HIGH",
-          "cpc": 2.47
+          "cpc": 2.39
         },
         {
-          "keyword": "ile kosztuje klimatyzacja",
-          "translation": "how much does AC cost",
-          "volume": 720,
+          "keyword": "czyszczenie klimatyzacji",
+          "translation": "AC cleaning",
+          "volume": 30,
           "competition": "HIGH",
-          "cpc": 3.2
+          "cpc": 0.89
         },
         {
-          "keyword": "przegląd klimatyzacji",
-          "translation": "AC inspection",
-          "volume": 480,
-          "competition": "LOW",
-          "cpc": 10.45
-        },
-        {
-          "keyword": "klimatyzacja najtaniej",
-          "translation": "cheapest AC",
+          "keyword": "klimatyzacja multisplit",
+          "translation": "multi-split AC",
           "volume": 20,
           "competition": "HIGH",
-          "cpc": 1.86
-        },
-        {
-          "keyword": "klimatyzacja biuro",
-          "translation": "office AC",
-          "volume": 10,
-          "competition": "MEDIUM",
-          "cpc": 6.48
+          "cpc": 1.05
         }
       ],
       "namePL": "Montaż i serwis klimatyzacji",
-      "descriptionPL": "Wyszukiwania związane z montażem, serwisem i zakupem klimatyzacji. Liderem jest «klimatyzator» z 40 500 wyszukiwań/msc, następnie «klimatyzacja» (33 100) i «serwis klimatyzacji» (8 100). CPC waha się od 1 zł (klimatyzacja przenośna) do 10 zł (przegląd klimatyzacji). Frazy serwisowe są zaskakująco drogie — sygnał niskiej konkurencji w Google Ads i dużej wartości klienta.",
-      "descriptionEN": "Searches for AC installation, service, and purchase. The leader is \"klimatyzator\" (air conditioner) with 40,500 monthly searches, followed by \"klimatyzacja\" (33,100) and \"serwis klimatyzacji\" (8,100). CPC ranges from 1 PLN (portable AC) to 10 PLN (AC inspection). Service keywords are surprisingly expensive — signaling low Google Ads competition and high customer value.",
-      "isNational": true
+      "descriptionPL": "Wyszukiwania związane z montażem, serwisem i zakupem klimatyzacji. Liderem jest «klimatyzator» z 40 500 wyszukiwań/msc (ogólnopolsko), następnie «klimatyzacja» (33 100) i «serwis klimatyzacji» (8 100). CPC waha się od 1 zł (klimatyzacja przenośna) do 10 zł (przegląd klimatyzacji). Frazy serwisowe są zaskakująco drogie — sygnał niskiej konkurencji w Google Ads i dużej wartości klienta.",
+      "descriptionEN": "Searches for AC installation, service, and purchase. The leader is \"klimatyzator\" (air conditioner) with 40,500 monthly searches (nationally), followed by \"klimatyzacja\" (33,100) and \"serwis klimatyzacji\" (8,100). CPC ranges from 1 PLN (portable AC) to 10 PLN (AC inspection). Service keywords are surprisingly expensive — signaling low Google Ads competition and high customer value."
     },
     {
       "id": "explicit",
       "color": "blue",
       "nameEN": "Explicit \"Łódź\" searches",
       "nameNO": "Eksplisitte \"Łódź\"-søk",
-      "totalVolume": 0,
-      "keywords": [],
+      "totalVolume": 1100,
+      "keywords": [
+        {
+          "keyword": "klimatyzacja łódź",
+          "translation": "air conditioning Łódź",
+          "volume": 720,
+          "competition": "MEDIUM",
+          "cpc": 7.13
+        },
+        {
+          "keyword": "serwis klimatyzacji łódź",
+          "translation": "AC service Łódź",
+          "volume": 210,
+          "competition": "MEDIUM",
+          "cpc": 4.21
+        },
+        {
+          "keyword": "montaż klimatyzacji łódź",
+          "translation": "AC installation Łódź",
+          "volume": 170,
+          "competition": "LOW",
+          "cpc": 20.82
+        }
+      ],
       "namePL": "Wyszukiwania z nazwą \"Łódź\"",
-      "isNational": true,
       "descriptionPL": "Wyszukiwania z nazwą miasta w frazie — klienci gotowi do zakupu usługi lokalnie. CPC jest 5–15× wyższe niż dla fraz ogólnych (np. «klimatyzacja warszawa» = 32 zł vs «klimatyzacja» = 2,47 zł). Te frazy stanowią niewielki procent wolumenu, ale generują najcenniejszy ruch.",
       "descriptionEN": "Searches including the city name — buyers ready to hire locally. CPC is 5–15× higher than generic terms (e.g. \"klimatyzacja warszawa\" = 32 PLN vs \"klimatyzacja\" = 2.47 PLN). Small share of total volume, but the most valuable traffic."
     }
@@ -157,159 +143,208 @@
   "serpKeywords": [
     {
       "keyword": "klimatyzacja łódź",
-      "volume": 0,
+      "volume": 720,
       "organic": [
-        {
-          "rank": 4,
-          "domain": "ascold.pl"
-        },
-        {
-          "rank": 5,
-          "domain": "aero7.pl"
-        },
         {
           "rank": 6,
           "domain": "klimatyzacja.lodz.pl"
         },
         {
-          "rank": 8,
-          "domain": "www.ac-klimat.pl"
-        },
-        {
-          "rank": 9,
-          "domain": "www.mediaexpert.pl"
-        }
-      ],
-      "maps": [],
-      "insightEN": "Results for \"klimatyzacja łódź\": Aero7.pl — national leader ranks high across multiple cities. Local companies in TOP 10: ascold.pl, klimatyzacja.lodz.pl, www.ac-klimat.pl. MediaExpert (retail) also in results — but doesn't compete on services.",
-      "insightNO": "",
-      "insightPL": "Wyniki na «klimatyzacja łódź»: Aero7.pl — ogólnopolski lider rankuje wysoko w wielu miastach. Lokalne firmy w TOP 10: ascold.pl, klimatyzacja.lodz.pl, www.ac-klimat.pl. MediaExpert (sprzedaż detaliczna) też w wynikach — ale nie konkuruje na usługi."
-    },
-    {
-      "keyword": "montaż klimatyzacji łódź",
-      "volume": 0,
-      "organic": [
-        {
-          "rank": 5,
+          "rank": 7,
           "domain": "www.mediaexpert.pl"
         },
         {
-          "rank": 6,
+          "rank": 13,
           "domain": "aero7.pl"
         },
         {
-          "rank": 7,
+          "rank": 14,
           "domain": "ascold.pl"
         },
         {
-          "rank": 8,
-          "domain": "jmklimatyzacja.pl"
-        },
-        {
-          "rank": 9,
+          "rank": 15,
           "domain": "www.ac-klimat.pl"
         }
       ],
-      "maps": [],
-      "insightEN": "Results for \"montaż klimatyzacji łódź\": Aero7.pl (national player) appears in TOP 10. MediaExpert sells units but doesn't install — their ranking is an opening for installers with a dedicated page. Local companies in TOP 10: ascold.pl, jmklimatyzacja.pl, www.ac-klimat.pl.",
+      "maps": [
+        {
+          "rank": 1,
+          "title": "iClim klimatyzacja Łódź - montaż klimatyzacji i pomp ciepła w Łodzi",
+          "rating": 5,
+          "reviews": 97
+        },
+        {
+          "rank": 2,
+          "title": "Mój Klimat Maciej Błaszczyk – montaż instalacji elektrycznych i hydraulicznych",
+          "rating": 5,
+          "reviews": 3
+        },
+        {
+          "rank": 3,
+          "title": "\"Sov-Air\" HVAC Solutions - Generalny wykonawca instalacji sanitarnych i HVAC/Badania szczelności Łódź",
+          "rating": 5,
+          "reviews": 76
+        }
+      ],
+      "insightEN": "Results for \"klimatyzacja łódź\": Aero7.pl — national leader ranks high across multiple cities. Local companies in TOP 10: klimatyzacja.lodz.pl, ascold.pl, www.ac-klimat.pl. MediaExpert (retail) also in results — but doesn't compete on services.",
       "insightNO": "",
-      "insightPL": "Wyniki na «montaż klimatyzacji łódź»: Aero7.pl (ogólnopolski gracz) pojawia się w TOP 10. MediaExpert sprzedaje urządzenia, ale nie montuje — ich pozycja to szansa dla montażystów z dedykowaną stroną. Lokalne firmy w TOP 10: ascold.pl, jmklimatyzacja.pl, www.ac-klimat.pl."
+      "insightPL": "Wyniki na «klimatyzacja łódź»: Aero7.pl — ogólnopolski lider rankuje wysoko w wielu miastach. Lokalne firmy w TOP 10: klimatyzacja.lodz.pl, ascold.pl, www.ac-klimat.pl. MediaExpert (sprzedaż detaliczna) też w wynikach — ale nie konkuruje na usługi."
+    },
+    {
+      "keyword": "montaż klimatyzacji łódź",
+      "volume": 170,
+      "organic": [
+        {
+          "rank": 6,
+          "domain": "www.mediaexpert.pl"
+        },
+        {
+          "rank": 7,
+          "domain": "aero7.pl"
+        },
+        {
+          "rank": 9,
+          "domain": "ascold.pl"
+        },
+        {
+          "rank": 13,
+          "domain": "www.ac-klimat.pl"
+        },
+        {
+          "rank": 14,
+          "domain": "recool.pl"
+        }
+      ],
+      "maps": [
+        {
+          "rank": 1,
+          "title": "iClim klimatyzacja Łódź - montaż klimatyzacji i pomp ciepła w Łodzi",
+          "rating": 5,
+          "reviews": 97
+        },
+        {
+          "rank": 2,
+          "title": "Install-Klima – Montaż i Serwis Klimatyzacji",
+          "rating": 5,
+          "reviews": 8
+        },
+        {
+          "rank": 3,
+          "title": "Mój Klimat Maciej Błaszczyk – montaż instalacji elektrycznych i hydraulicznych",
+          "rating": 5,
+          "reviews": 3
+        }
+      ],
+      "insightEN": "Results for \"montaż klimatyzacji łódź\": Aero7.pl (national player) appears in TOP 10. MediaExpert sells units but doesn't install — their ranking is an opening for installers with a dedicated page. Local companies in TOP 10: ascold.pl, www.ac-klimat.pl, recool.pl.",
+      "insightNO": "",
+      "insightPL": "Wyniki na «montaż klimatyzacji łódź»: Aero7.pl (ogólnopolski gracz) pojawia się w TOP 10. MediaExpert sprzedaje urządzenia, ale nie montuje — ich pozycja to szansa dla montażystów z dedykowaną stroną. Lokalne firmy w TOP 10: ascold.pl, www.ac-klimat.pl, recool.pl."
     },
     {
       "keyword": "serwis klimatyzacji łódź",
-      "volume": 0,
+      "volume": 210,
       "organic": [
         {
           "rank": 5,
           "domain": "klimatyzacja-lodz.info.pl"
         },
         {
-          "rank": 6,
+          "rank": 11,
           "domain": "dobrymechanik.pl"
         },
         {
-          "rank": 7,
-          "domain": "autoklimaserwis.pl"
+          "rank": 12,
+          "domain": "www.hofek.pl"
         },
         {
-          "rank": 8,
-          "domain": "www.klimatyzacjasamochodowalodz.pl"
+          "rank": 13,
+          "domain": "www.autoteam.com.pl"
         },
         {
-          "rank": 9,
-          "domain": "iclim.pl"
+          "rank": 14,
+          "domain": "chlodnice.info.pl"
         }
       ],
-      "maps": [],
-      "insightEN": "Results for \"serwis klimatyzacji łódź\": organic positions start from #5. Specialized service providers: klimatyzacja-lodz.info.pl, dobrymechanik.pl, autoklimaserwis.pl. Fewer players than installation — less competition.",
+      "maps": [
+        {
+          "rank": 1,
+          "title": "iClim klimatyzacja Łódź - montaż klimatyzacji i pomp ciepła w Łodzi",
+          "rating": 5,
+          "reviews": 97
+        },
+        {
+          "rank": 2,
+          "title": "Install-Klima – Montaż i Serwis Klimatyzacji",
+          "rating": 5,
+          "reviews": 8
+        },
+        {
+          "rank": 3,
+          "title": "Auto Serwis Zibbart",
+          "rating": 4.4,
+          "reviews": 113
+        }
+      ],
+      "insightEN": "Results for \"serwis klimatyzacji łódź\": organic positions start from #5. Specialized service providers: klimatyzacja-lodz.info.pl, dobrymechanik.pl, www.hofek.pl. Fewer players than installation — less competition.",
       "insightNO": "",
-      "insightPL": "Wyniki na «serwis klimatyzacji łódź»: pozycje organiczne zaczynają się od #5. Wyspecjalizowane serwisy: klimatyzacja-lodz.info.pl, dobrymechanik.pl, autoklimaserwis.pl. Mniej graczy niż w montażu — mniejsza konkurencja."
+      "insightPL": "Wyniki na «serwis klimatyzacji łódź»: pozycje organiczne zaczynają się od #5. Wyspecjalizowane serwisy: klimatyzacja-lodz.info.pl, dobrymechanik.pl, www.hofek.pl. Mniej graczy niż w montażu — mniejsza konkurencja."
     }
   ],
   "cpcData": [
     {
-      "keyword": "przegląd klimatyzacji",
-      "cpc": 10.45
+      "keyword": "montaż klimatyzacji łódź",
+      "cpc": 20.82
+    },
+    {
+      "keyword": "klimatyzacja łódź",
+      "cpc": 7.13
     },
     {
       "keyword": "montaż klimatyzacji",
-      "cpc": 9.88
+      "cpc": 5.71
     },
     {
-      "keyword": "serwis klimatyzacji",
-      "cpc": 8.02
-    },
-    {
-      "keyword": "klimatyzacja biuro",
-      "cpc": 6.48
+      "keyword": "serwis klimatyzacji łódź",
+      "cpc": 4.21
     },
     {
       "keyword": "klimatyzacja do mieszkania",
-      "cpc": 3.32
-    },
-    {
-      "keyword": "czyszczenie klimatyzacji",
-      "cpc": 3.2
-    },
-    {
-      "keyword": "ile kosztuje klimatyzacja",
-      "cpc": 3.2
-    },
-    {
-      "keyword": "klimatyzacja do domu",
-      "cpc": 2.67
-    },
-    {
-      "keyword": "klimatyzacja",
-      "cpc": 2.47
+      "cpc": 3.36
     },
     {
       "keyword": "klimatyzacja cena",
-      "cpc": 2.47
+      "cpc": 2.39
     },
     {
-      "keyword": "klimatyzacja domowa",
-      "cpc": 2.31
-    },
-    {
-      "keyword": "klimatyzacja split",
+      "keyword": "klimatyzacja",
       "cpc": 2.11
     },
     {
-      "keyword": "klimatyzacja najtaniej",
-      "cpc": 1.86
-    },
-    {
       "keyword": "klimatyzator",
-      "cpc": 1.62
+      "cpc": 1.66
     },
     {
-      "keyword": "klimatyzacja multisplit",
-      "cpc": 1.58
+      "keyword": "klimatyzacja do domu",
+      "cpc": 1.66
+    },
+    {
+      "keyword": "klimatyzacja domowa",
+      "cpc": 1.34
     },
     {
       "keyword": "klimatyzacja przenośna",
-      "cpc": 1.01
+      "cpc": 1.09
+    },
+    {
+      "keyword": "klimatyzacja multisplit",
+      "cpc": 1.05
+    },
+    {
+      "keyword": "czyszczenie klimatyzacji",
+      "cpc": 0.89
+    },
+    {
+      "keyword": "klimatyzacja split",
+      "cpc": 0.81
     }
   ],
   "seasonality": {
@@ -317,55 +352,57 @@
     "months": [
       {
         "month": "Jan",
-        "volume": 22200
+        "volume": 390
       },
       {
         "month": "Feb",
-        "volume": 22200
+        "volume": 480
       },
       {
         "month": "Mar",
-        "volume": 33100
+        "volume": 720
       },
       {
         "month": "Apr",
-        "volume": 49500
+        "volume": 1600
       },
       {
         "month": "May",
-        "volume": 33100
+        "volume": 1000
       },
       {
         "month": "Jun",
-        "volume": 74000
+        "volume": 1600
       },
       {
         "month": "Jul",
-        "volume": 60500
+        "volume": 1600
       },
       {
         "month": "Aug",
-        "volume": 33100
+        "volume": 720
       },
       {
         "month": "Sep",
-        "volume": 22200
+        "volume": 590
       },
       {
         "month": "Oct",
-        "volume": 14800
+        "volume": 390
       },
       {
         "month": "Nov",
-        "volume": 14800
+        "volume": 390
       },
       {
         "month": "Dec",
-        "volume": 12100
+        "volume": 320
       }
     ],
     "peakMonths": [
-      "Jun"
+      "Apr",
+      "Jun",
+      "Jul"
     ],
     "lowMonths": [
       "Dec"
@@ -378,12 +415,12 @@
     {
       "icon": "flame",
       "color": "amber",
-      "titlePL": "211 tys. wyszukiwań/msc — sektor klimatyzacji w Polsce rośnie",
-      "titleEN": "211K searches/month — Poland's AC sector is booming",
-      "textPL": "Sam «klimatyzator» generuje 40 500 wyszukiwań miesięcznie, «klimatyzacja» — 33 100, a «serwis klimatyzacji» — 8 100. Do tego frazy produktowe (split, multisplit, przenośna) i serwisowe (czyszczenie, przegląd). Rynek jest duży i rozproszony — lokalne firmy mogą konkurować ceną i szybkością reakcji.",
-      "textEN": "\"Klimatyzator\" alone generates 40,500 searches/month, \"klimatyzacja\" — 33,100, and \"serwis klimatyzacji\" — 8,100. Add product queries (split, multisplit, portable) and service queries (cleaning, inspection). The market is large and fragmented — local companies can compete on price and response speed.",
+      "titlePL": "Sektor klimatyzacji w Polsce rośnie — ponad 100 tys. wyszukiwań/msc",
+      "titleEN": "Poland's AC sector is booming — 100K+ searches/month",
+      "textPL": "Sam «klimatyzator» generuje 40 500 wyszukiwań miesięcznie (ogólnopolsko), «klimatyzacja» — 33 100, a «serwis klimatyzacji» — 8 100. Do tego frazy produktowe (split, multisplit, przenośna) i serwisowe (czyszczenie, przegląd). Rynek jest duży i rozproszony — lokalne firmy mogą konkurować ceną i szybkością reakcji.",
+      "textEN": "\"Klimatyzator\" alone generates 40,500 searches/month (nationally), \"klimatyzacja\" — 33,100, and \"serwis klimatyzacji\" — 8,100. Add product queries (split, multisplit, portable) and service queries (cleaning, inspection). The market is large and fragmented — local companies can compete on price and response speed.",
       "statLabel": "searches/mo total",
-      "statValue": "115K+"
+      "statValue": "100K+"
     },
     {
       "icon": "trending-up",
@@ -451,7 +488,7 @@
     }
   ],
   "calculator": {
-    "avgCpc": 3.92,
+    "avgCpc": 0,
     "defaultPatientValue": 6000,
     "defaultBudget": 3000,
     "defaultConversion": 25,
