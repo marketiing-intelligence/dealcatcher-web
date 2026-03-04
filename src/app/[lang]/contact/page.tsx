@@ -137,8 +137,12 @@ export default async function ContactPage({
                 {/* Company Info */}
                 <div className="text-sm text-muted-foreground space-y-1 pt-4">
                   <p className="font-medium text-foreground">DealCatcher</p>
-                  <p>Rapid Software House sp. z o.o.</p>
-                  <p>NIP: 5273033283</p>
+                  <p>AI SCALING SYSTEMS sp. z o.o.</p>
+                  <p>Aleje Jerozolimskie 109 / 70</p>
+                  <p>02-011 Warszawa, Polska</p>
+                  <p className="pt-2">NIP: 7011297183</p>
+                  <p>REGON: 543861552</p>
+                  <p>KRS: 0001221058</p>
                 </div>
               </div>
             </div>

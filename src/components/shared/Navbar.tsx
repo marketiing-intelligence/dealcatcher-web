@@ -3,9 +3,15 @@
 import { Container } from "@/components/shared/Container";
 import { LanguageSwitcher } from "@/components/shared/LanguageSwitcher";
 import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+} from "@/components/ui/dropdown-menu";
 import Link from "next/link";
 import { useState } from "react";
-import { Calendar, Menu, X } from "lucide-react";
+import { Calendar, Menu, X, ChevronDown } from "lucide-react";
 import { CALCOM_BOOKING_URL } from "@/lib/constants";
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
 import { cn } from "@/lib/utils";
@@ -15,9 +21,16 @@ interface NavbarProps {
   lang: Locale;
   dict: {
     nav: {
-      templates: string;
+      services: string;
+      portfolio: string;
       newWebsite: string;
       wcagCompliance?: string;
+      freePrototype: string;
+      configurators: string;
+      googleAds: string;
+      auditMarketing: string;
+      customerDatabase: string;
+      customTools: string;
       contact: string;
     };
   };
@@ -45,13 +58,13 @@ export function Navbar({ lang, dict }: NavbarProps) {
     setIsScrolled(latest > 50);
   });
 
-  const navLinks = [
-    { href: `/${lang}/portfolio`, label: dict.nav.templates },
+  const serviceLinks = [
     { href: `/${lang}/no-website`, label: dict.nav.newWebsite },
-    ...(dict.nav.wcagCompliance
-      ? [{ href: `/${lang}/wcag-compliance`, label: dict.nav.wcagCompliance }]
-      : []),
-    { href: `/${lang}/contact`, label: dict.nav.contact },
+    { href: `/${lang}/konfiguratory`, label: dict.nav.configurators },
+    { href: `/${lang}/google-ads`, label: dict.nav.googleAds },
+    { href: `/${lang}/audyt-marketingowy`, label: dict.nav.auditMarketing },
+    { href: `/${lang}/baza-klientow`, label: dict.nav.customerDatabase },
+    { href: `/${lang}/narzedzia-na-miare`, label: dict.nav.customTools },
   ];
 
   return (
@@ -82,16 +95,34 @@ export function Navbar({ lang, dict }: NavbarProps) {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="relative text-muted-foreground hover:text-foreground transition-colors group"
-              >
-                {link.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
-              </Link>
-            ))}
+            <DropdownMenu>
+              <DropdownMenuTrigger suppressHydrationWarning>
+                {dict.nav.services}
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="start">
+                {serviceLinks.map((link) => (
+                  <DropdownMenuItem key={link.href} asChild>
+                    <Link href={link.href}>
+                      {link.label}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+            <Link
+              href={`/${lang}/portfolio`}
+              className="relative text-muted-foreground hover:text-foreground transition-colors group"
+            >
+              {dict.nav.portfolio}
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+            </Link>
+            <Link
+              href={`/${lang}/contact`}
+              className="relative text-muted-foreground hover:text-foreground transition-colors group"
+            >
+              {dict.nav.contact}
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+            </Link>
             <Button
               asChild
               className="relative bg-primary text-primary-foreground overflow-hidden group"
@@ -130,26 +161,55 @@ export function Navbar({ lang, dict }: NavbarProps) {
           >
             <Container className="py-4">
               <div className="flex flex-col gap-2">
-                {navLinks.map((link, index) => (
-                  <motion.div
-                    key={link.href}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: index * 0.1 }}
+                {/* Services Submenu */}
+                <motion.div
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0 }}
+                >
+                  <MobileServicesMenu
+                    lang={lang}
+                    serviceLinks={serviceLinks}
+                    servicesLabel={dict.nav.services}
+                    onLinkClick={() => setIsOpen(false)}
+                  />
+                </motion.div>
+
+                {/* Portfolio Link */}
+                <motion.div
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.1 }}
+                >
+                  <Link
+                    href={`/${lang}/portfolio`}
+                    className="flex items-center text-foreground py-3 px-4 rounded-lg hover:bg-white/5 transition-colors"
+                    onClick={() => setIsOpen(false)}
                   >
-                    <Link
-                      href={link.href}
-                      className="flex items-center text-foreground py-3 px-4 rounded-lg hover:bg-white/5 transition-colors"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      {link.label}
-                    </Link>
-                  </motion.div>
-                ))}
+                    {dict.nav.portfolio}
+                  </Link>
+                </motion.div>
+
+                {/* Contact Link */}
+                <motion.div
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.2 }}
+                >
+                  <Link
+                    href={`/${lang}/contact`}
+                    className="flex items-center text-foreground py-3 px-4 rounded-lg hover:bg-white/5 transition-colors"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {dict.nav.contact}
+                  </Link>
+                </motion.div>
+
+                {/* Book Call Button */}
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: navLinks.length * 0.1 }}
+                  transition={{ delay: 0.3 }}
                   className="mt-2"
                 >
                   <Button
@@ -162,10 +222,12 @@ export function Navbar({ lang, dict }: NavbarProps) {
                     </a>
                   </Button>
                 </motion.div>
+
+                {/* Language Switcher */}
                 <motion.div
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: (navLinks.length + 1) * 0.1 }}
+                  transition={{ delay: 0.4 }}
                   className="py-2 px-4"
                 >
                   <LanguageSwitcher currentLang={lang} />
@@ -176,5 +238,63 @@ export function Navbar({ lang, dict }: NavbarProps) {
         )}
       </AnimatePresence>
     </motion.nav>
+  );
+}
+
+// Mobile Services Submenu Component
+interface MobileServicesMenuProps {
+  lang: Locale;
+  serviceLinks: Array<{ href: string; label: string }>;
+  servicesLabel: string;
+  onLinkClick: () => void;
+}
+
+function MobileServicesMenu({
+  serviceLinks,
+  servicesLabel,
+  onLinkClick,
+}: MobileServicesMenuProps) {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  return (
+    <div>
+      <button
+        type="button"
+        onClick={() => setIsExpanded(!isExpanded)}
+        className="flex items-center justify-between w-full text-foreground py-3 px-4 rounded-lg hover:bg-white/5 transition-colors"
+      >
+        <span>{servicesLabel}</span>
+        <ChevronDown
+          className={cn(
+            "h-4 w-4 transition-transform duration-200",
+            isExpanded && "rotate-180"
+          )}
+        />
+      </button>
+      <AnimatePresence>
+        {isExpanded && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            className="pl-4 overflow-hidden"
+          >
+            {serviceLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="flex items-center text-muted-foreground py-2 px-4 rounded-lg hover:bg-white/5 hover:text-foreground transition-colors"
+                onClick={() => {
+                  setIsExpanded(false);
+                  onLinkClick();
+                }}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
   );
 }

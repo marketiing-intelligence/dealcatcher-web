@@ -1,8 +1,16 @@
 {
   "nav": {
-    "templates": "Templates",
+    "services": "Services",
+    "portfolio": "Portfolio",
     "newWebsite": "New Website",
     "wcagCompliance": "WCAG Compliance",
+    "freePrototype": "Free Prototype",
+    "configurators": "Configurators",
+    "googleAds": "Google Ads",
+    "auditMarketing": "Marketing Audit",
+    "customerDatabase": "B2B Client Database",
+    "customTools": "Custom Tools",
+    "salesMaterials": "Sales Materials",
     "contact": "Contact"
   },
   "hero": {
@@ -71,6 +79,268 @@
     "cta": "Let's talk about your configurator",
     "ctaNote": "Have an unusual idea? Get in touch — we'll quote for free."
   },
+  "googleAdsService": {
+    "hero": {
+      "badge": "Google Ads",
+      "titleStart": "Clients search on Google —",
+      "titleHighlight": "find them first",
+      "subtitle": "When someone types \"plumber Warsaw\" or \"dentist Krakow\", your ad appears at the top. Instant traffic, measurable results, only from your area.",
+      "cta": "Start Google Ads campaign",
+      "stats": [
+        {
+          "value": 92,
+          "suffix": "%",
+          "label": "of clients search for services on Google"
+        },
+        {
+          "value": 65,
+          "suffix": "%",
+          "label": "click on paid ads at the top"
+        },
+        {
+          "value": 200,
+          "suffix": "%",
+          "label": "average return on investment"
+        }
+      ]
+    },
+    "problem": {
+      "badge": "Problem",
+      "title": "You're wasting money on poorly run campaigns",
+      "subtitle": "Most small businesses waste their ad budget because they don't know how Google Ads works.",
+      "items": [
+        {
+          "title": "Spending budget on wrong keywords",
+          "description": "You pay for clicks from people who aren't your customers. Someone searches \"dentist jobs\" instead of \"dentist Krakow appointment\", and you pay for a worthless click."
+        },
+        {
+          "title": "Competition outbids you",
+          "description": "Without optimization, you pay more per click than competitors. Google rewards better-optimized ads with lower cost per click."
+        },
+        {
+          "title": "Low ad quality = high costs",
+          "description": "Poor Quality Score means you pay 2-3x more for the same positions as competitors. It's like buying expensive gas because you neglected your car."
+        },
+        {
+          "title": "Don't know what works (no tracking)",
+          "description": "You spend 2000 PLN monthly but don't know how many inquiries came in, which words work, and which burn cash. Shooting in the dark."
+        }
+      ]
+    },
+    "solution": {
+      "badge": "Our Service",
+      "title": "Professional Google Ads campaign management",
+      "subtitle": "We handle everything — from keyword research to monthly reports.",
+      "items": [
+        {
+          "title": "Professional keyword research",
+          "description": "We choose phrases typed by people ready to pay, not just \"information seekers\". We research competition, costs, and user intent.",
+          "features": [
+            "Search intent analysis",
+            "Negative phrase exclusion",
+            "Local targeting (city/district)"
+          ]
+        },
+        {
+          "title": "Campaign setup & optimization",
+          "description": "We build campaigns from scratch: ad groups, extensions, bids, schedules. We optimize Quality Score to pay less per click.",
+          "features": [
+            "Campaign structure for conversion",
+            "Ad extensions (phone, location)",
+            "A/B testing of texts and headlines"
+          ]
+        },
+        {
+          "title": "Transparent reporting and ROI tracking",
+          "description": "You know exactly how much you spent, how many inquiries came, and how much you earned. Monthly reports show what works and what we'll change next month.",
+          "features": [
+            "Real-time dashboard",
+            "Conversion tracking (calls, forms)",
+            "Monthly report with recommendations"
+          ]
+        }
+      ]
+    },
+    "pricing": {
+      "badge": "Pricing",
+      "title": "Simple, predictable pricing",
+      "subtitle": "You pay a fixed fee for management + ad budget you set yourself.",
+      "setupLabel": "one-time",
+      "monthlyLabel": "/mo",
+      "budgetNote": "Min. ad budget: 2,000 PLN/month",
+      "roiHint": "Typical client recovers management cost after 2-3 new inquiries. The rest is profit.",
+      "packages": [
+        {
+          "name": "Starter",
+          "tagline": "For small businesses",
+          "description": "One locally targeted campaign. Perfect to start.",
+          "setup": "1,200 PLN",
+          "monthly": "800 PLN",
+          "monthlyLabel": "/mo",
+          "budgetInfo": "+ 10% of ad budget",
+          "features": [
+            "1 Google Search campaign",
+            "Up to 20 keywords",
+            "1 city/region targeting",
+            "Basic extensions (phone, location)",
+            "Monthly report (email)",
+            "Optimization once per month",
+            "Conversion tracking (phone + form)"
+          ],
+          "cta": "Choose Starter"
+        },
+        {
+          "name": "Professional",
+          "tagline": "Most popular",
+          "description": "Multi-campaign strategy with aggressive optimization and A/B tests.",
+          "setup": "2,000 PLN",
+          "monthly": "1,400 PLN",
+          "monthlyLabel": "/mo",
+          "budgetInfo": "+ 10% of ad budget",
+          "features": [
+            "Up to 3 campaigns (Search + Display/GDN)",
+            "Unlimited keywords",
+            "Multi-city targeting",
+            "Full extensions + callouts",
+            "Real-time analytics dashboard",
+            "Optimization every 2 weeks",
+            "A/B testing of headlines and texts",
+            "Monthly call + report"
+          ],
+          "cta": "Choose Professional",
+          "popular": true
+        },
+        {
+          "name": "Enterprise",
+          "tagline": "For growing businesses",
+          "description": "Full-scale management with remarketing, advanced targeting, and dedicated manager.",
+          "setup": "3,500 PLN",
+          "monthly": "2,500 PLN",
+          "monthlyLabel": "/mo",
+          "budgetInfo": "+ 10% of ad budget",
+          "features": [
+            "Unlimited campaigns (Search + Display + YouTube)",
+            "Remarketing (recovering abandoned visits)",
+            "Advanced targeting (demographics, interests)",
+            "Dedicated landing pages for campaigns",
+            "Dedicated account manager",
+            "Real-time optimization",
+            "Weekly reports + monthly call",
+            "CRM integration (optional)"
+          ],
+          "cta": "Choose Enterprise",
+          "highlight": "Best ROI"
+        }
+      ]
+    },
+    "benefits": {
+      "badge": "Benefits",
+      "title": "Why Google Ads works for local businesses",
+      "subtitle": "Unlike SEO, Google Ads brings clients from day one.",
+      "items": [
+        {
+          "title": "Appear when they search",
+          "description": "Your ad shows exactly when someone types \"plumber Warsaw emergency\". Not cold calling — people with a problem actively seeking a solution."
+        },
+        {
+          "title": "Target your area",
+          "description": "You only pay for displays within 10 km of your location (or specific districts). Zero wasted money on people outside your range."
+        },
+        {
+          "title": "Immediate results",
+          "description": "SEO takes months. Google Ads starts bringing inquiries in the first week. Perfect for businesses that need clients now, not in six months."
+        },
+        {
+          "title": "Measurable return on investment",
+          "description": "You know exactly how much you spent and how many inquiries came. Monthly reports show ROI in numbers — not in \"impressions\" or \"reach\"."
+        }
+      ]
+    },
+    "process": {
+      "badge": "How it works",
+      "title": "From audit to first clients",
+      "subtitle": "Simple 5-step process. Campaign launches in 7-10 days.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Audit & research",
+          "description": "We research your market, competition, and keywords. We set budget and campaign goals.",
+          "duration": "2-3 days"
+        },
+        {
+          "number": "02",
+          "title": "Campaign setup",
+          "description": "We create campaign structure, write ad texts, set targeting and extensions.",
+          "duration": "3-4 days"
+        },
+        {
+          "number": "03",
+          "title": "Tracking & tests",
+          "description": "We install conversion tracking (calls, forms). We launch campaign with careful test budget.",
+          "duration": "1 day"
+        },
+        {
+          "number": "04",
+          "title": "Optimization",
+          "description": "For first 2 weeks we intensively test, disable weak words, raise bids on converting ones.",
+          "duration": "2 weeks"
+        },
+        {
+          "number": "05",
+          "title": "Reporting",
+          "description": "Every month you get a report: how much spent, how many inquiries came, what ROI, what we'll change next month.",
+          "duration": "Monthly"
+        }
+      ]
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Frequently asked questions",
+      "subtitle": "Didn't find an answer? Write to us — hello@dealcatcher.io",
+      "items": [
+        {
+          "question": "What's the minimum ad budget?",
+          "answer": "Minimum 2,000 PLN/month for ads (~65 PLN daily). Smaller budget doesn't allow collecting data for optimization and competing for good positions. You can increase budget anytime."
+        },
+        {
+          "question": "How long does setup take?",
+          "answer": "7-10 business days from signing contract and paying setup fee. Campaign launches after installing tracking and your approval of ad texts."
+        },
+        {
+          "question": "Do you guarantee results?",
+          "answer": "We don't guarantee specific number of leads (it depends on your market, budget, and competition). We guarantee professional setup, continuous optimization, and full transparency of results. If campaign doesn't bring leads after 3 months, we analyze what's not working and propose a fix plan."
+        },
+        {
+          "question": "Will I have access to Google Ads account?",
+          "answer": "Yes. Campaign runs on your Google Ads account (not ours). You have full 24/7 access. If you ever cancel service, campaign and data stay with you."
+        },
+        {
+          "question": "What if I want to change budget mid-month?",
+          "answer": "You can increase or decrease ad budget anytime. Management fee (800/1400/2500 PLN) doesn't change, only % of ad budget changes."
+        },
+        {
+          "question": "How does Google Ads differ from SEO?",
+          "answer": "SEO (organic ranking) takes months and requires content, links, technical optimization. Results are free but you have to wait. Google Ads you pay per click, but results come immediately. Ideal solution: Google Ads for quick leads + SEO for long-term traffic."
+        },
+        {
+          "question": "Do I need a landing page or is a normal website enough?",
+          "answer": "Normal website is enough (must be well-made with clear CTA). In Professional and Enterprise packages we can create dedicated landing page optimized for specific campaign — this improves conversion by 30-50%."
+        },
+        {
+          "question": "What happens if I cancel?",
+          "answer": "You can cancel anytime (30 days notice). Campaign and Google Ads account stay with you. We'll transfer full documentation and passwords. No lock-in."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Start acquiring clients from",
+      "titleHighlight": "Google Ads",
+      "subtitle": "Book a free consultation. We'll discuss your market, show potential, and quote campaign without obligation.",
+      "ctaPrimary": "Book free consultation",
+      "ctaSecondary": "Free campaign audit",
+      "disclaimer": "Already have a Google Ads campaign that's not working? We'll do a free audit and show what can be improved."
+    }
+  },
   "whoWeHelp": {
     "badge": "Who We Help",
     "title": "Two paths to a stronger online presence",
@@ -80,13 +350,21 @@
         "title": "No website yet?",
         "description": "You're a skilled craftsman, but clients can't find you online. Your competitors with websites are winning jobs that should be yours. AI assistants can't recommend you because you don't exist digitally.",
         "cta": "Get your professional website",
-        "features": ["AI Search Ready", "WCAG Compliant", "From $1,000"]
+        "features": [
+          "AI Search Ready",
+          "WCAG Compliant",
+          "From $1,000"
+        ]
       },
       {
         "title": "Website accessibility issues?",
         "description": "97% of Norwegian websites fail WCAG compliance checks. Your site might be breaking the law without you knowing it. Digdir conducts random audits and publishes results publicly.",
         "cta": "Get your free WCAG audit",
-        "features": ["Free Audit", "Detailed Report", "Rebuild Option"]
+        "features": [
+          "Free Audit",
+          "Detailed Report",
+          "Rebuild Option"
+        ]
       }
     ]
   },
@@ -239,7 +517,7 @@
     },
     "info": {
       "email": "Email",
-      "emailValue": "hello@dealcatcher.io",
+      "emailValue": "contact@dealcatcher.io",
       "responseTime": "Response time",
       "responseValue": "Within 24 hours",
       "location": "Location",
@@ -252,15 +530,16 @@
     "sections": {
       "intro": {
         "title": "Introduction",
-        "content": "Rapid Software House sp. z o.o. (\"we\", \"us\", or \"our\") operates the dealcatcher.io website. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website."
+        "content": "AI SCALING SYSTEMS sp. z o.o. (\"we\", \"us\", or \"our\") operates the dealcatcher.io website. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website."
       },
       "controller": {
         "title": "Data Controller",
         "content": "The data controller responsible for your personal data is:",
-        "company": "Rapid Software House sp. z o.o.",
-        "address": "ul. Zlota 75A lok. 7, 00-819 Warsaw, Poland",
-        "krs": "KRS: 0001008811",
-        "nip": "NIP: 5273033283",
+        "company": "AI SCALING SYSTEMS sp. z o.o.",
+        "address": "Aleje Jerozolimskie 109 / 70, 02-011 Warsaw, Poland",
+        "krs": "KRS: 0001221058",
+        "nip": "NIP: 7011297183",
+        "regon": "REGON: 543861552",
         "email": "Email: contact@dealcatcher.io"
       },
       "dataCollected": {
@@ -268,11 +547,22 @@
         "intro": "We collect information that you provide directly to us and information collected automatically:",
         "contactForm": {
           "title": "Contact Form Data",
-          "items": ["Name", "Email address", "Phone number (optional)", "Message content"]
+          "items": [
+            "Name",
+            "Email address",
+            "Phone number (optional)",
+            "Message content"
+          ]
         },
         "automatic": {
           "title": "Automatically Collected Data",
-          "items": ["IP address", "Browser type and version", "Pages visited and time spent", "Referring website", "Device information"]
+          "items": [
+            "IP address",
+            "Browser type and version",
+            "Pages visited and time spent",
+            "Referring website",
+            "Device information"
+          ]
         }
       },
       "cookies": {
@@ -395,14 +685,14 @@
     "sections": {
       "intro": {
         "title": "Introduction",
-        "content": "These Terms of Service (\"Terms\") govern your use of the dealcatcher.io website and services provided by Rapid Software House sp. z o.o. By accessing or using our website, you agree to be bound by these Terms."
+        "content": "These Terms of Service (\"Terms\") govern your use of the dealcatcher.io website and services provided by AI SCALING SYSTEMS sp. z o.o. By accessing or using our website, you agree to be bound by these Terms."
       },
       "definitions": {
         "title": "Definitions",
         "items": [
           {
             "term": "Service Provider",
-            "definition": "Rapid Software House sp. z o.o., ul. Zlota 75A lok. 7, 00-819 Warsaw, Poland, KRS: 0001008811, NIP: 5273033283"
+            "definition": "AI SCALING SYSTEMS sp. z o.o., Aleje Jerozolimskie 109 / 70, 02-011 Warsaw, Poland, KRS: 0001221058, NIP: 7011297183, REGON: 543861552"
           },
           {
             "term": "User/Customer",
@@ -488,7 +778,7 @@
       },
       "intellectualProperty": {
         "title": "Intellectual Property",
-        "content": "All content on this website, including but not limited to text, graphics, logos, images, and software, is the property of Rapid Software House sp. z o.o. or its licensors and is protected by intellectual property laws. You may not reproduce, distribute, or create derivative works without our express written consent."
+        "content": "All content on this website, including but not limited to text, graphics, logos, images, and software, is the property of AI SCALING SYSTEMS sp. z o.o. or its licensors and is protected by intellectual property laws. You may not reproduce, distribute, or create derivative works without our express written consent."
       },
       "disclaimer": {
         "title": "Disclaimer of Warranties",
@@ -496,7 +786,7 @@
       },
       "liability": {
         "title": "Limitation of Liability",
-        "content": "To the fullest extent permitted by law, Rapid Software House sp. z o.o. shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the website. Our total liability for any claims arising from your use of the website shall not exceed the amount you paid us, if any, in the 12 months preceding the claim. This limitation does not apply to liability that cannot be excluded or limited under applicable consumer protection laws."
+        "content": "To the fullest extent permitted by law, AI SCALING SYSTEMS sp. z o.o. shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the website. Our total liability for any claims arising from your use of the website shall not exceed the amount you paid us, if any, in the 12 months preceding the claim. This limitation does not apply to liability that cannot be excluded or limited under applicable consumer protection laws."
       },
       "thirdParty": {
         "title": "Third-Party Links",
@@ -517,8 +807,8 @@
       "contact": {
         "title": "Contact Information",
         "content": "For questions about these Terms, please contact us:",
-        "company": "Rapid Software House sp. z o.o.",
-        "address": "ul. Zlota 75A lok. 7, 00-819 Warsaw, Poland",
+        "company": "AI SCALING SYSTEMS sp. z o.o.",
+        "address": "Aleje Jerozolimskie 109 / 70, 02-011 Warsaw, Poland",
         "email": "Email: contact@dealcatcher.io"
       }
     }
@@ -594,7 +884,7 @@
     "title": "Withdrawal Form",
     "subtitle": "Use this form to withdraw from your contract within 14 days",
     "form": {
-      "recipient": "To: Rapid Software House sp. z o.o., ul. Zlota 75A lok. 7, 00-819 Warsaw, Poland, contact@dealcatcher.io",
+      "recipient": "To: AI SCALING SYSTEMS sp. z o.o., Aleje Jerozolimskie 109 / 70, 02-011 Warsaw, Poland, contact@dealcatcher.io",
       "declaration": "I/We hereby give notice that I/We withdraw from my/our contract for the provision of the following service:",
       "serviceLabel": "Service description",
       "orderedOnLabel": "Ordered on / Received on",
@@ -615,9 +905,21 @@
       "subtitle": "Clients search for carpenters, plumbers, and electricians online every day. If you're not there, you're invisible. Your competitors with websites are winning jobs that should be yours.",
       "cta": "Get your professional website",
       "stats": [
-        { "value": 87, "suffix": "%", "label": "of consumers search online first" },
-        { "value": 46, "suffix": "%", "label": "prefer local businesses with websites" },
-        { "value": 3, "suffix": "x", "label": "more leads with a professional site" }
+        {
+          "value": 87,
+          "suffix": "%",
+          "label": "of consumers search online first"
+        },
+        {
+          "value": 46,
+          "suffix": "%",
+          "label": "prefer local businesses with websites"
+        },
+        {
+          "value": 3,
+          "suffix": "x",
+          "label": "more leads with a professional site"
+        }
       ]
     },
     "problem": {
@@ -651,27 +953,47 @@
         {
           "title": "AI Search Ready",
           "description": "Built so ChatGPT, Perplexity, and Google AI find and recommend your business when clients ask for help.",
-          "features": ["Semantic HTML structure", "Structured data markup", "Content optimized for AI"]
+          "features": [
+            "Semantic HTML structure",
+            "Structured data markup",
+            "Content optimized for AI"
+          ]
         },
         {
           "title": "Built to Convert",
           "description": "Strategic design that turns website visitors into paying customers. Every element is intentional.",
-          "features": ["Clear value proposition", "Strong call-to-actions", "Social proof & trust signals"]
+          "features": [
+            "Clear value proposition",
+            "Strong call-to-actions",
+            "Social proof & trust signals"
+          ]
         },
         {
           "title": "WCAG Compliant",
           "description": "100% compliant with Norwegian accessibility law. No risk of fines from Digdir.",
-          "features": ["WCAG 2.0 AA certified", "Monthly compliance checks", "Ongoing monitoring"]
+          "features": [
+            "WCAG 2.0 AA certified",
+            "Monthly compliance checks",
+            "Ongoing monitoring"
+          ]
         },
         {
           "title": "Charge Higher Prices",
           "description": "A professional website builds credibility. Clients trust you more and pay premium rates.",
-          "features": ["Professional image", "Showcase your best work", "Stand out from competition"]
+          "features": [
+            "Professional image",
+            "Showcase your best work",
+            "Stand out from competition"
+          ]
         },
         {
           "title": "Zero Hassle",
           "description": "15 minutes for the brief. We handle design, development, hosting, and maintenance.",
-          "features": ["Quick 15-min brief", "We do everything", "Ongoing support included"]
+          "features": [
+            "Quick 15-min brief",
+            "We do everything",
+            "Ongoing support included"
+          ]
         }
       ]
     },
@@ -689,7 +1011,18 @@
           "setup": "$1,000",
           "monthly": "$50",
           "monthlyLabel": "/month",
-          "features": ["Professional template design (12 options)", "AI Search optimization", "WCAG 2.0 AA compliant", "Mobile responsive", "Contact form", "Google Analytics setup", "Hosting included", "24/7 uptime monitoring", "Monthly compliance check", "Email support (24h response)"],
+          "features": [
+            "Professional template design (12 options)",
+            "AI Search optimization",
+            "WCAG 2.0 AA compliant",
+            "Mobile responsive",
+            "Contact form",
+            "Google Analytics setup",
+            "Hosting included",
+            "24/7 uptime monitoring",
+            "Monthly compliance check",
+            "Email support (24h response)"
+          ],
           "cta": "Get Started"
         },
         {
@@ -699,7 +1032,20 @@
           "setup": "$1,500",
           "monthly": "$99",
           "monthlyLabel": "/month",
-          "features": ["Custom design from scratch", "AI Search optimization", "WCAG 2.0 AA compliant", "Mobile responsive", "Contact form + booking system", "Google Analytics + monthly report", "Hosting included", "24/7 uptime monitoring", "Monthly compliance check", "Unlimited content changes", "Add new pages anytime", "Priority support (4h response)"],
+          "features": [
+            "Custom design from scratch",
+            "AI Search optimization",
+            "WCAG 2.0 AA compliant",
+            "Mobile responsive",
+            "Contact form + booking system",
+            "Google Analytics + monthly report",
+            "Hosting included",
+            "24/7 uptime monitoring",
+            "Monthly compliance check",
+            "Unlimited content changes",
+            "Add new pages anytime",
+            "Priority support (4h response)"
+          ],
           "cta": "Get Growth",
           "popular": true
         },
@@ -710,7 +1056,17 @@
           "setup": "$1,800",
           "monthly": "$349",
           "monthlyLabel": "/month + ad spend",
-          "features": ["Everything in Growth, plus:", "Google Ads campaign setup", "Keyword research for your area", "Ad copywriting in Norwegian", "Monthly campaign optimization", "A/B testing & bid management", "Monthly performance report", "Direct leads from search", "Min. $500/month ad budget"],
+          "features": [
+            "Everything in Growth, plus:",
+            "Google Ads campaign setup",
+            "Keyword research for your area",
+            "Ad copywriting in Norwegian",
+            "Monthly campaign optimization",
+            "A/B testing & bid management",
+            "Monthly performance report",
+            "Direct leads from search",
+            "Min. $500/month ad budget"
+          ],
           "cta": "Get Accelerator",
           "highlight": "Best ROI"
         }
@@ -724,7 +1080,11 @@
       "howItWorks": {
         "title": "Website + Google Ads = Full Pipeline",
         "description": "Your website converts visitors into clients. Google Ads drives those visitors to your website. Together, they create a complete client acquisition system.",
-        "steps": ["Client searches", "Sees your ad", "Contacts you"]
+        "steps": [
+          "Client searches",
+          "Sees your ad",
+          "Contacts you"
+        ]
       },
       "example": {
         "label": "Example search:",
@@ -734,10 +1094,22 @@
         "adDescription": "Gratis befaring. 20+ års erfaring. Kontakt oss i dag."
       },
       "benefits": [
-        { "title": "Appear when they search", "description": "When someone Googles \"snekker Oslo\" or \"elektriker Bergen\", your ad shows at the top." },
-        { "title": "Target your exact area", "description": "Only pay to reach people in your service area. No wasted budget on distant cities." },
-        { "title": "Immediate results", "description": "Unlike SEO, Google Ads brings clients from day one. See calls and inquiries within the first week." },
-        { "title": "Measurable ROI", "description": "Know exactly how many leads came from ads. Monthly reports show what's working." }
+        {
+          "title": "Appear when they search",
+          "description": "When someone Googles \"snekker Oslo\" or \"elektriker Bergen\", your ad shows at the top."
+        },
+        {
+          "title": "Target your exact area",
+          "description": "Only pay to reach people in your service area. No wasted budget on distant cities."
+        },
+        {
+          "title": "Immediate results",
+          "description": "Unlike SEO, Google Ads brings clients from day one. See calls and inquiries within the first week."
+        },
+        {
+          "title": "Measurable ROI",
+          "description": "Know exactly how many leads came from ads. Monthly reports show what's working."
+        }
       ],
       "pricingLabel": "Google Ads management",
       "pricingValue": "$200",
@@ -750,10 +1122,30 @@
       "title": "From zero to online in days",
       "subtitle": "A simple 4-step process. You focus on your craft, we handle the rest.",
       "steps": [
-        { "number": "01", "title": "Consultation", "description": "Quick call to understand your business, services, and goals. We'll answer your questions and explain the process.", "duration": "15 min" },
-        { "number": "02", "title": "Brief", "description": "You fill out a simple form with your business info, services, and any materials you have (logo, photos). Takes 15 minutes.", "duration": "15 min" },
-        { "number": "03", "title": "Build", "description": "We design and build your website. You'll see a preview and can request changes. Usually 1-2 rounds of feedback.", "duration": "5-7 days" },
-        { "number": "04", "title": "Launch", "description": "We publish your site, set up your domain, configure analytics, and make sure everything works perfectly.", "duration": "1 day" }
+        {
+          "number": "01",
+          "title": "Consultation",
+          "description": "Quick call to understand your business, services, and goals. We'll answer your questions and explain the process.",
+          "duration": "15 min"
+        },
+        {
+          "number": "02",
+          "title": "Brief",
+          "description": "You fill out a simple form with your business info, services, and any materials you have (logo, photos). Takes 15 minutes.",
+          "duration": "15 min"
+        },
+        {
+          "number": "03",
+          "title": "Build",
+          "description": "We design and build your website. You'll see a preview and can request changes. Usually 1-2 rounds of feedback.",
+          "duration": "5-7 days"
+        },
+        {
+          "number": "04",
+          "title": "Launch",
+          "description": "We publish your site, set up your domain, configure analytics, and make sure everything works perfectly.",
+          "duration": "1 day"
+        }
       ]
     },
     "faq": {
@@ -761,12 +1153,30 @@
       "title": "Common questions",
       "subtitle": "Still have questions? Email us at hello@dealcatcher.io",
       "items": [
-        { "question": "I don't need a website — I have enough work from referrals", "answer": "That's great! But a website lets you choose better jobs and charge higher prices. When clients see your professional online presence, they're willing to pay premium rates. Plus, referrals dry up eventually — a website gives you a consistent stream of new leads." },
-        { "question": "It's too expensive", "answer": "A website pays for itself after 1-2 new clients. If you charge $500+ per job, the $1,000 investment is covered almost immediately. Plus, the monthly plan is less than what you'd pay for a single hour of work — and it includes hosting, maintenance, and compliance monitoring." },
-        { "question": "I don't have time for this", "answer": "We designed the process specifically for busy craftsmen. The brief takes 15 minutes. One 15-minute call. That's it. We handle absolutely everything else — design, development, hosting, domain setup, and ongoing maintenance. You don't need to learn anything technical." },
-        { "question": "I have a Facebook page — isn't that enough?", "answer": "Facebook is a complement, not a replacement for a website. Google doesn't index Facebook profiles well. AI assistants like ChatGPT can't recommend you based on your Facebook page. And many clients expect a 'real' business to have its own website — a Facebook-only presence can look unprofessional." },
-        { "question": "Can I update the website myself?", "answer": "You don't need to. Content changes are included in the Premium plan (unlimited) or available on request for the Basic plan. Just email us what you want changed, and we'll do it within 24 hours. No technical skills required on your end." },
-        { "question": "What if I want to cancel?", "answer": "You can cancel the monthly plan anytime — no questions asked. If you cancel, you keep ownership of your domain. We'll help you migrate to another provider if needed. We're confident you'll stay because the value is obvious, but there's zero lock-in." }
+        {
+          "question": "I don't need a website — I have enough work from referrals",
+          "answer": "That's great! But a website lets you choose better jobs and charge higher prices. When clients see your professional online presence, they're willing to pay premium rates. Plus, referrals dry up eventually — a website gives you a consistent stream of new leads."
+        },
+        {
+          "question": "It's too expensive",
+          "answer": "A website pays for itself after 1-2 new clients. If you charge $500+ per job, the $1,000 investment is covered almost immediately. Plus, the monthly plan is less than what you'd pay for a single hour of work — and it includes hosting, maintenance, and compliance monitoring."
+        },
+        {
+          "question": "I don't have time for this",
+          "answer": "We designed the process specifically for busy craftsmen. The brief takes 15 minutes. One 15-minute call. That's it. We handle absolutely everything else — design, development, hosting, domain setup, and ongoing maintenance. You don't need to learn anything technical."
+        },
+        {
+          "question": "I have a Facebook page — isn't that enough?",
+          "answer": "Facebook is a complement, not a replacement for a website. Google doesn't index Facebook profiles well. AI assistants like ChatGPT can't recommend you based on your Facebook page. And many clients expect a 'real' business to have its own website — a Facebook-only presence can look unprofessional."
+        },
+        {
+          "question": "Can I update the website myself?",
+          "answer": "You don't need to. Content changes are included in the Premium plan (unlimited) or available on request for the Basic plan. Just email us what you want changed, and we'll do it within 24 hours. No technical skills required on your end."
+        },
+        {
+          "question": "What if I want to cancel?",
+          "answer": "You can cancel the monthly plan anytime — no questions asked. If you cancel, you keep ownership of your domain. We'll help you migrate to another provider if needed. We're confident you'll stay because the value is obvious, but there's zero lock-in."
+        }
       ]
     },
     "cta": {
@@ -786,9 +1196,21 @@
       "subtitle": "97% of audited Norwegian websites fail accessibility requirements. Digdir conducts random checks and publishes results. Is your website compliant?",
       "cta": "Get your free WCAG audit",
       "stats": [
-        { "value": 97, "suffix": "%", "label": "of sites fail accessibility audits" },
-        { "value": 250, "suffix": "+", "label": "audits conducted yearly by Digdir" },
-        { "value": 100, "suffix": "%", "label": "compliance after our fixes" }
+        {
+          "value": 97,
+          "suffix": "%",
+          "label": "of sites fail accessibility audits"
+        },
+        {
+          "value": 250,
+          "suffix": "+",
+          "label": "audits conducted yearly by Digdir"
+        },
+        {
+          "value": 100,
+          "suffix": "%",
+          "label": "compliance after our fixes"
+        }
       ],
       "source": "According to Tilsynet for universell utforming av IKT, 67 out of 69 audited websites (97%) had accessibility violations. The agency conducts approximately 250 audits per year."
     },
@@ -823,17 +1245,29 @@
         {
           "title": "Free WCAG Audit",
           "description": "We scan your website and identify every accessibility issue.",
-          "features": ["Automated scanning", "Manual review", "Detailed findings"]
+          "features": [
+            "Automated scanning",
+            "Manual review",
+            "Detailed findings"
+          ]
         },
         {
           "title": "Detailed Report",
           "description": "You receive a clear report with specific problems and their locations.",
-          "features": ["Issue severity", "Exact locations", "Legal implications"]
+          "features": [
+            "Issue severity",
+            "Exact locations",
+            "Legal implications"
+          ]
         },
         {
           "title": "Complete Rebuild",
           "description": "We build you a new website that's fully compliant from the ground up.",
-          "features": ["WCAG 2.0 AA", "AI Search Ready", "Built to convert"]
+          "features": [
+            "WCAG 2.0 AA",
+            "AI Search Ready",
+            "Built to convert"
+          ]
         }
       ]
     },
@@ -851,7 +1285,19 @@
           "setup": "$1,500",
           "monthly": "$99",
           "monthlyLabel": "/month",
-          "features": ["Complete website rebuild", "100% WCAG 2.0 AA compliant", "AI Search optimization", "Mobile responsive design", "Contact forms + booking", "Google Analytics setup", "Hosting included", "24/7 uptime monitoring", "Monthly compliance check", "Unlimited content changes", "Priority support (4h)"],
+          "features": [
+            "Complete website rebuild",
+            "100% WCAG 2.0 AA compliant",
+            "AI Search optimization",
+            "Mobile responsive design",
+            "Contact forms + booking",
+            "Google Analytics setup",
+            "Hosting included",
+            "24/7 uptime monitoring",
+            "Monthly compliance check",
+            "Unlimited content changes",
+            "Priority support (4h)"
+          ],
           "cta": "Start with free audit",
           "popular": true
         },
@@ -862,7 +1308,17 @@
           "setup": "$1,800",
           "monthly": "$349",
           "monthlyLabel": "/month + ad spend",
-          "features": ["Everything in Compliance, plus:", "Google Ads campaign setup", "Keyword research for your area", "Ad copywriting in Norwegian", "Monthly campaign optimization", "A/B testing & bid management", "Performance reports with ROI", "Direct leads from search", "Min. $500/month ad budget"],
+          "features": [
+            "Everything in Compliance, plus:",
+            "Google Ads campaign setup",
+            "Keyword research for your area",
+            "Ad copywriting in Norwegian",
+            "Monthly campaign optimization",
+            "A/B testing & bid management",
+            "Performance reports with ROI",
+            "Direct leads from search",
+            "Min. $500/month ad budget"
+          ],
           "cta": "Get full package",
           "highlight": "Best ROI"
         }
@@ -873,10 +1329,30 @@
       "title": "From audit to compliance",
       "subtitle": "A clear 4-step process to make your website legally compliant.",
       "steps": [
-        { "number": "01", "title": "Free Audit", "description": "We scan your current website for accessibility issues. Automated tools + manual review. You receive a detailed report.", "duration": "2-3 days" },
-        { "number": "02", "title": "Report Review", "description": "We walk you through the findings. You'll understand exactly what's wrong and why it matters for compliance.", "duration": "30 min call" },
-        { "number": "03", "title": "Decision", "description": "You decide whether to proceed with the rebuild. No pressure, no obligation. The audit is completely free.", "duration": "Your pace" },
-        { "number": "04", "title": "Rebuild & Launch", "description": "We build your new, fully compliant website. You review, approve, and we launch. Ongoing compliance monitoring included.", "duration": "7-10 days" }
+        {
+          "number": "01",
+          "title": "Free Audit",
+          "description": "We scan your current website for accessibility issues. Automated tools + manual review. You receive a detailed report.",
+          "duration": "2-3 days"
+        },
+        {
+          "number": "02",
+          "title": "Report Review",
+          "description": "We walk you through the findings. You'll understand exactly what's wrong and why it matters for compliance.",
+          "duration": "30 min call"
+        },
+        {
+          "number": "03",
+          "title": "Decision",
+          "description": "You decide whether to proceed with the rebuild. No pressure, no obligation. The audit is completely free.",
+          "duration": "Your pace"
+        },
+        {
+          "number": "04",
+          "title": "Rebuild & Launch",
+          "description": "We build your new, fully compliant website. You review, approve, and we launch. Ongoing compliance monitoring included.",
+          "duration": "7-10 days"
+        }
       ]
     },
     "trust": {
@@ -886,15 +1362,27 @@
       "items": [
         {
           "title": "We Know Norwegian Law",
-          "points": ["Deep understanding of WCAG 2.0 AA requirements", "Experience with Tilsynet compliance expectations", "Up-to-date with regulatory changes"]
+          "points": [
+            "Deep understanding of WCAG 2.0 AA requirements",
+            "Experience with Tilsynet compliance expectations",
+            "Up-to-date with regulatory changes"
+          ]
         },
         {
           "title": "Ongoing Compliance",
-          "points": ["Monthly automated compliance scans", "Proactive issue detection", "Updates when regulations change"]
+          "points": [
+            "Monthly automated compliance scans",
+            "Proactive issue detection",
+            "Updates when regulations change"
+          ]
         },
         {
           "title": "Compliance Guarantee",
-          "points": ["100% WCAG 2.0 AA compliant delivery", "We fix any issues we missed for free", "Documentation for audit defense"]
+          "points": [
+            "100% WCAG 2.0 AA compliant delivery",
+            "We fix any issues we missed for free",
+            "Documentation for audit defense"
+          ]
         }
       ]
     },
@@ -905,6 +1393,228 @@
       "ctaPrimary": "Book free consultation",
       "ctaSecondary": "Send us a message",
       "disclaimer": "Takes 2-3 days. Completely free. We'll email you the report."
+    }
+  },
+  "konfiguratory": {
+    "hero": {
+      "badge": "Product Configurators",
+      "titleStart": "A configurator that turns",
+      "titleHighlight": "questions into orders",
+      "subtitle": "Instead of wasting hours emailing quotes back and forth, give your clients a tool that shows price and specifications in 2 minutes. More orders, zero manual work.",
+      "cta": "See configurator examples",
+      "stats": [
+        {
+          "value": 73,
+          "suffix": "%",
+          "label": "of clients want to know the price immediately"
+        },
+        {
+          "value": 65,
+          "suffix": "%",
+          "label": "abandon contact without a quick quote"
+        },
+        {
+          "value": 4,
+          "suffix": "x",
+          "label": "more conversions with a configurator"
+        }
+      ]
+    },
+    "problem": {
+      "badge": "The Problem",
+      "title": "You lose clients before you can respond",
+      "subtitle": "When each quote means 5 emails back and forth, your competition already has the order.",
+      "items": [
+        {
+          "title": "Dozens of emails asking about prices",
+          "description": "\"How much for a 150x180 blind in white?\" \"What about motorized?\" \"In beige?\" You answer 20 questions like this daily. Each takes 15 minutes. That's 5 hours a week on manual quotes."
+        },
+        {
+          "title": "Client disappears before seeing the price",
+          "description": "67% of people abandon an inquiry if the response takes more than a few hours. Your client emails at 9 PM, you see it at 9 AM — but they already ordered from a competitor who had a configurator."
+        },
+        {
+          "title": "Competition already has automated quotes",
+          "description": "Companies selling kitchens, custom furniture, windows, or solar systems automated this long ago. The client gets specifications and price instantly. You're still sending emails."
+        },
+        {
+          "title": "Manual quotes = errors and wasted time",
+          "description": "You forget to add installation, miscalculate dimensions, or the client asks \"What about a different color?\" You start over. A configurator calculates automatically — no errors, 24/7."
+        }
+      ]
+    },
+    "solution": {
+      "badge": "The Solution",
+      "title": "3 types of configurators for different businesses",
+      "subtitle": "Choose the tool that fits what you sell.",
+      "items": [
+        {
+          "title": "Product Configurator",
+          "description": "Client selects dimensions, material, color, add-ons — sees the price live. Perfect for custom products.",
+          "features": [
+            "Dimensions, colors, materials",
+            "Real-time pricing",
+            "Selection visualization",
+            "PDF specification sheet",
+            "CRM/email integration"
+          ]
+        },
+        {
+          "title": "Service Calculator",
+          "description": "Client answers questions (area, type of work, location) — gets an estimated quote. For services.",
+          "features": [
+            "Multiple-choice questions",
+            "Conditional logic (if X, show Y)",
+            "Estimated quote with range",
+            "Lead capture (email, phone)",
+            "Automatic summary email"
+          ]
+        },
+        {
+          "title": "Industry Tool",
+          "description": "Custom solution: PVC window configurator, solar calculator, 3D kitchen designer. Built for your business.",
+          "features": [
+            "Full industry customization",
+            "3D visualization (optional)",
+            "Warehouse/price integration",
+            "White-label (your brand)",
+            "API for your systems"
+          ]
+        }
+      ]
+    },
+    "pricing": {
+      "badge": "Process & Pricing",
+      "title": "Each configurator is priced individually",
+      "subtitle": "We start with workshops to understand your process and provide precise pricing.",
+      "setupLabel": "initial workshop",
+      "roiHint": "The workshop is free and without obligation. After the workshop, you'll receive a detailed quote tailored to your case.",
+      "packages": [
+        {
+          "name": "Collaboration Process",
+          "tagline": "Starts with workshops",
+          "description": "Each configurator is a unique case. We start with a deep understanding of your product and sales process.",
+          "setup": "Free",
+          "monthly": "Quote after workshop",
+          "monthlyLabel": "",
+          "features": [
+            "Discovery workshop (1-2h, remote or on-site)",
+            "Analysis of your quoting process",
+            "Product/service parameter mapping",
+            "Prototype of pricing logic",
+            "Detailed project quote",
+            "Technology and integration proposal",
+            "Implementation timeline (typically 3-8 weeks)"
+          ],
+          "cta": "Schedule workshop",
+          "popular": true
+        }
+      ]
+    },
+    "examples": {
+      "badge": "Examples",
+      "title": "Configurators in action",
+      "subtitle": "Real projects automating sales 24/7.",
+      "items": [
+        {
+          "industry": "Automotive",
+          "title": "Mirco — FIA Racing Seats",
+          "description": "Polish racing seat manufacturer (30 years on market) had a problem: high returns due to errors in email/phone orders. We built a 3D configurator with real-time visualization. Customer selects model, material (Alcantara +€1250), stitch color, logo, graphics — sees seat and price instantly. Result: 400+ partners (tuning shops EU/UK), 27% of motorsport influencers interested in collaboration, 3 sales channels running in parallel. Returns dropped 73% because customers see exactly what they're buying. ROI in 2 months.",
+          "url": "https://www.marketing-intelligence.io/case-study/mirco",
+          "image": "/images/examples/mirco-configurator.png",
+          "testimonial": {
+            "quote": "I came with the problem of declining sales and zero idea what to do next. After two months I had a complete system: database of 400 potential partners across Europe, configurator that solves the returns problem, and three complete strategies for new sales channels. Everything ready to implement.",
+            "author": "Mirek Macura",
+            "role": "Owner, Mirco"
+          }
+        },
+        {
+          "industry": "E-commerce / Personalization",
+          "title": "Premium memorial candle configurator with personalization",
+          "description": "Memorial candle distributor commissioned us to create an online configurator allowing customers to design their own memorial candle: size, text, font, color, alignment selection. Real-time 3D preview with rotation capability. Integration with production system (export to .gbl file).",
+          "url": "#",
+          "image": "/images/examples/candle-configurator.jpg",
+          "aspectRatio": "7/2"
+        }
+      ]
+    },
+    "process": {
+      "badge": "How It Works",
+      "title": "From idea to working tool",
+      "subtitle": "Simple process. You provide product knowledge, we build the configurator.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Discovery",
+          "description": "We discuss your product/service, parameters, pricing formulas, and purchase flow. We understand what clients need to make a decision.",
+          "duration": "1-2 hours"
+        },
+        {
+          "number": "02",
+          "title": "Design",
+          "description": "We design the configurator interface: what questions, in what order, how to visualize selections. We show you a mockup for approval.",
+          "duration": "3-5 days"
+        },
+        {
+          "number": "03",
+          "title": "Development",
+          "description": "We code the logic, pricing formula, and integrations (email, CRM, PDF). You get a test link — check that everything works.",
+          "duration": "7-14 days"
+        },
+        {
+          "number": "04",
+          "title": "Launch",
+          "description": "We publish the configurator on your domain, set up analytics, and teach you how to read leads. We monitor the first weeks.",
+          "duration": "1-2 days"
+        }
+      ]
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Common questions",
+      "subtitle": "Didn't find your answer? Email: hello@dealcatcher.io",
+      "items": [
+        {
+          "question": "How much does it cost?",
+          "answer": "Each configurator is priced individually — scope can vary significantly depending on logic complexity, number of parameters, and required integrations. We start with a free workshop where we understand your pricing logic, map parameters, and provide an exact quote."
+        },
+        {
+          "question": "How long does implementation take?",
+          "answer": "Typically 3-8 weeks from accepted proposal. Simple product configurators take about 3-4 weeks. Complex systems with integrations (CRM, ERP, warehouse systems) may take 6-8 weeks. We set the precise timeline during the workshop."
+        },
+        {
+          "question": "Can I edit prices and parameters myself?",
+          "answer": "Yes — in most cases we provide a simple admin panel that lets you edit prices, parameters, and text yourself. The scope of editing functionality depends on the complexity of the pricing logic. Minor changes (price updates, text) you can always do yourself."
+        },
+        {
+          "question": "What if a client abandons the configurator halfway?",
+          "answer": "We capture contact information at the beginning (email, optional phone). If a client abandons — you get a lead with what they selected. You can follow up with an offer."
+        },
+        {
+          "question": "Does the configurator work on phones?",
+          "answer": "Yes. All our configurators are responsive. >60% of users access from mobile, so it's standard."
+        },
+        {
+          "question": "What integrations do you support?",
+          "answer": "Email (automatic summaries), CRM (HubSpot, Pipedrive, Salesforce, Monday, custom via API), Google Analytics, Facebook Pixel, warehouse/ERP systems, payment gateways. If you have a specific system — ask during the workshop."
+        },
+        {
+          "question": "What if I have a very specific product?",
+          "answer": "That's actually our strength. We've built configurators for racing seats, awnings, kitchens, solar systems, security doors. If you can describe your product/service and pricing logic — we'll build a configurator."
+        },
+        {
+          "question": "How does the discovery workshop work?",
+          "answer": "It's a 1-2 hour session (remote or at your location) where we discuss your sales and pricing process. We ask about product/service parameters, pricing formulas, and integrations you need. After the workshop you receive a detailed proposal with pricing and timeline."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Let's talk about",
+      "titleHighlight": "your configurator",
+      "subtitle": "Book a free 30-minute consultation. We'll show examples, answer questions, and quote a solution for your business.",
+      "ctaPrimary": "Book free consultation",
+      "ctaSecondary": "Send us a message",
+      "disclaimer": "No obligation. Zero spam. We only talk to serious businesses."
     }
   },
   "reportPage": {
@@ -1019,21 +1729,1207 @@
       "tips": "Next steps"
     }
   },
+  "aiSearch": {
+    "badge": "AI Search",
+    "title": "Your customers already search in ChatGPT",
+    "subtitle": "Your business is invisible.",
+    "stats": [
+      {
+        "value": 9,
+        "suffix": ".3M",
+        "label": "people use ChatGPT monthly"
+      },
+      {
+        "value": 83,
+        "suffix": "%",
+        "label": "of AI searches = zero clicks"
+      },
+      {
+        "value": 5,
+        "suffix": "x",
+        "label": "higher conversion from AI"
+      },
+      {
+        "value": 527,
+        "suffix": "%",
+        "label": "AI traffic growth in the last year"
+      }
+    ],
+    "problems": [
+      {
+        "title": "AI doesn't know your business",
+        "description": "Without proper site structure — ChatGPT won't recommend you."
+      },
+      {
+        "title": "83% of searches = zero clicks",
+        "description": "AI Overview answers instead of sending traffic to your site."
+      },
+      {
+        "title": "Your website doesn't speak AI",
+        "description": "A regular website isn't enough. AI needs structured data to find you."
+      },
+      {
+        "title": "Google My Business isn't enough",
+        "description": "ChatGPT doesn't read business profiles. You need a website."
+      }
+    ]
+  },
+  "industries": {
+    "badge": "Industries",
+    "title": "AI-ready websites for your industry",
+    "subtitle": "This is how your customers search in ChatGPT:",
+    "tabs": [
+      {
+        "name": "Law Firms",
+        "queries": [
+          "Best divorce lawyer in my city?",
+          "Top law firm for inheritance cases",
+          "How much does a business attorney cost?"
+        ],
+        "stat": "70%+ of clients find their lawyer via Google"
+      },
+      {
+        "name": "Clinics & Practices",
+        "queries": [
+          "Best dentist near me with good reviews",
+          "Top dermatologist private practice",
+          "Aesthetic medicine clinic ranking"
+        ],
+        "stat": "65% of patients search for doctors online"
+      },
+      {
+        "name": "E-commerce",
+        "queries": [
+          "Best natural cosmetics online store",
+          "Where to buy Scandinavian furniture online?",
+          "Top electronics stores ranking"
+        ],
+        "stat": "43% of shoppers check AI recommendations"
+      },
+      {
+        "name": "Hotels & Tourism",
+        "queries": [
+          "Best family hotel in the mountains",
+          "Recommended guesthouses with pool",
+          "Where to stay in the city centre?"
+        ],
+        "stat": "58% of travelers use AI for trip planning"
+      },
+      {
+        "name": "Accounting Firms",
+        "queries": [
+          "Best accounting firm for freelancers",
+          "How much does a bookkeeper cost?",
+          "Online accounting for e-commerce"
+        ],
+        "stat": "72% of owners search for accountants online"
+      }
+    ]
+  },
+  "faq": {
+    "badge": "FAQ",
+    "title": "Frequently asked questions",
+    "subtitle": "Can't find your answer? Contact us — hello@dealcatcher.io",
+    "items": [
+      {
+        "question": "What is AI Search and why does it matter?",
+        "answer": "More and more people search for services through ChatGPT, Perplexity, and Google AI Overview instead of traditional Google. These tools recommend businesses that have properly built websites. If your site isn't ready — you simply don't exist for those users."
+      },
+      {
+        "question": "What makes a website \"AI-ready\"?",
+        "answer": "Technically: semantic HTML, structured data (schema.org), content written around user questions, fast loading. In practice: ChatGPT and Google AI can read your site and recommend your business in their answers."
+      },
+      {
+        "question": "How long does it take to build a website?",
+        "answer": "5-7 business days from receiving the brief. The brief takes 15 minutes to fill out."
+      },
+      {
+        "question": "Can I get a refund if I don't like the website?",
+        "answer": "Yes. You have 14 days for a full refund — no questions asked. It's your consumer right."
+      },
+      {
+        "question": "I already have a website — can you make it AI-ready?",
+        "answer": "Yes, we do redesigns of existing websites. We start with a free consultation to assess what needs to change."
+      },
+      {
+        "question": "How much does it cost?",
+        "answer": "Website from NOK 9,900 + NOK 490/mo for hosting and maintenance. Google Ads from NOK 2,900/mo + 10% of ad budget. Details in the pricing section above."
+      }
+    ]
+  },
   "portfolioPage": {
     "hero": {
-      "badge": "Template Gallery",
-      "title": "Premium templates for",
-      "titleHighlight": "Norwegian businesses",
-      "subtitle": "Every design is AI-ready, WCAG compliant, and built to convert visitors into customers. Click any template to see it live."
+      "badge": "Portfolio",
+      "title": "Projects for",
+      "titleHighlight": "your business",
+      "subtitle": "Ready-made templates for quick start. Full B2B implementations from scratch. Everything optimized for sales and conversion."
     },
     "grid": {
-      "filterAll": "All Templates",
+      "templatesHeading": "Website Templates",
+      "filterAll": "All",
       "noResults": "No templates found for this category.",
+      "caseStudiesHeading": "Case Studies",
       "industryLabels": {
         "contractor": "Total Contractor",
         "service": "Service Specialist",
         "finishing": "Finishing Expert"
       }
+    }
+  },
+  "audytMarketingowy": {
+    "hero": {
+      "badge": "Audit & Strategi",
+      "titleStart": "Marketingaudit som viser",
+      "titleHighlight": "hvor du taper kunder",
+      "subtitle": "Diagnostikk av markedsføringen din + konkret reparasjonsplan. Tall, problemer, anbefalinger.",
+      "cta": "Se eksempel",
+      "stats": [
+        {
+          "value": 73,
+          "suffix": "%",
+          "label": "bedrifter kaster bort annonsebudsjett"
+        },
+        {
+          "value": 4,
+          "suffix": "x",
+          "label": "ROI etter implementering"
+        },
+        {
+          "value": 14,
+          "suffix": " dager",
+          "label": "gjennomsnittlig audit-tid"
+        }
+      ]
+    },
+    "problem": {
+      "badge": "Problem",
+      "title": "Markedsføring uten plan = kaste penger",
+      "subtitle": "De fleste bedrifter bruker penger på annonser fordi \"konkurrenter også gjør det\". Resultat? Spredt budsjett, ingen målbare mål.",
+      "items": [
+        {
+          "title": "Du bruker på annonser uten klar plan",
+          "description": "Google Ads + Facebook + Instagram + LinkedIn. Litt overalt, ingenting ordentlig."
+        },
+        {
+          "title": "Du vet ikke hvilken kanal som fungerer",
+          "description": "Du føler at annonser \"gir noe\", men kan ikke si hva en kunde fra hver kilde koster."
+        },
+        {
+          "title": "Konkurrenter passerer deg online",
+          "description": "Du ser at konkurrenter er høyere i Google, har bedre nettsider, bedre kampanjer."
+        },
+        {
+          "title": "Mangler målbare markedsføringsmål",
+          "description": "\"Vi vil ha flere leads\" er ikke et mål. Mål: 50 leads/md fra Google Ads ved CPA ≤ 200 kr."
+        }
+      ]
+    },
+    "solution": {
+      "badge": "Løsning",
+      "title": "Hva du får i auditten",
+      "subtitle": "Komplett diagnostikk + handlingsplan. Du vet hva du skal fikse, i hvilken rekkefølge og med hvilket budsjett.",
+      "items": [
+        {
+          "title": "Discovery Workshop",
+          "description": "Strategic workshop with your team — identify goals, analyze competition, define ICP.",
+          "features": [
+            "Current situation analysis",
+            "Competition mapping",
+            "Ideal customer profile (ICP)",
+            "Acquisition channels",
+            "ROI measurement framework"
+          ]
+        },
+        {
+          "title": "Strategic Report",
+          "description": "Document with analysis, recommendations and action plan for the next 3-6 months.",
+          "features": [
+            "All channels audit",
+            "Spend vs results analysis",
+            "Customer journey map",
+            "Action prioritization",
+            "Implementation roadmap"
+          ]
+        },
+        {
+          "title": "Measurement Framework",
+          "description": "KPI system and dashboards that show if marketing works — no guessing.",
+          "features": [
+            "KPI per channel",
+            "Metrics dashboard",
+            "Attribution model",
+            "Conversion tracking",
+            "Monthly reporting"
+          ]
+        }
+      ]
+    },
+    "pricing": {
+      "badge": "Pris",
+      "title": "Audit tilpasset virksomhetens størrelse",
+      "subtitle": "Omfanget avhenger av kompleksiteten i virksomheten din. Etter briefing prissetter vi individuelt.",
+      "setupLabel": "engangssum",
+      "roiHint": "Auditten betaler seg tilbake første måned. Typisk klient sparer 30-50% av annonsebudsjettet.",
+      "packages": [
+        {
+          "name": "Marketingaudit",
+          "tagline": "Mest populær",
+          "description": "Discovery workshop + full konkurranseanalyse + kanalstrategi + ROI-rammeverk. PDF-rapport (~25 sider) + implementeringssesjon.",
+          "setup": "4 999 – 9 999 kr",
+          "monthly": "",
+          "monthlyLabel": "",
+          "features": [
+            "Discovery workshop (1-2t, eksternt eller hos deg)",
+            "Konkurranseanalyse (5-10 aktører)",
+            "ICP-profiling",
+            "Kjøpsveikartlegging",
+            "Kanalstrategi (prioriteter + budsjetter)",
+            "ROI-rammeverk",
+            "PDF-rapport (~25 sider)",
+            "Implementeringssesjon (45 min)"
+          ],
+          "cta": "Bestill briefing",
+          "popular": true
+        }
+      ]
+    },
+    "examples": {
+      "badge": "Case study",
+      "title": "Hvordan audit fungerer i praksis",
+      "subtitle": "Eksempel: Polsk produsent av racingstoler, 30 år i markedet, null online-strategi.",
+      "items": [
+        {
+          "industry": "B2B Automotive",
+          "title": "Mirco — Fra kaos til 3 salgskanaler",
+          "description": "Problem: Mirco hadde fallende salg, null markedsføringsstrategi. Vi gjorde EU/UK-markedsaudit, identifiserte 3 distribusjonskanaler. Resultat: 27% influencere interessert, 400 potensielle partnere, 3 parallelle salgskanaler. ROI på 2 måneder.",
+          "url": "https://www.marketing-intelligence.io/case-study/mirco",
+          "image": "/images/examples/mirco-audit.png",
+          "testimonial": {
+            "quote": "Jeg kom med problem med fallende salg og null idé om hva jeg skulle gjøre. Etter to måneder hadde jeg et ferdig system: database med 400 potensielle partnere i hele Europa, konfigurator og tre komplette strategier for nye salgskanaler.",
+            "author": "Mirek Macura",
+            "role": "Eier, Mirco"
+          }
+        }
+      ]
+    },
+    "process": {
+      "badge": "Prosess",
+      "title": "Hvordan auditten fungerer",
+      "subtitle": "Fire trinn fra briefing til ferdig strategi. Gjennomsnittlig 4-7 arbeidsdager.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Briefing",
+          "description": "Vi diskuterer virksomheten din, nåværende markedsføringsaktiviteter, budsjett, mål.",
+          "duration": "1t"
+        },
+        {
+          "number": "02",
+          "title": "Analyse",
+          "description": "Vi analyserer dataene dine, sjekker konkurrenter, kartlegger markedet.",
+          "duration": "2-3 dager"
+        },
+        {
+          "number": "03",
+          "title": "Strategisk workshop",
+          "description": "Felles sesjon hvor vi diskuterer funn, bygger ICP, velger kanaler. Dette er nøkkelen til auditten.",
+          "duration": "1.5-2t"
+        },
+        {
+          "number": "04",
+          "title": "Rapport + implementering",
+          "description": "Du får PDF-rapport med diagnose, anbefalinger, handlingsplan (med tidslinje og budsjetter).",
+          "duration": "2-3 dager"
+        }
+      ]
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Ofte stilte spørsmål",
+      "subtitle": "Fant du ikke svar? Skriv: hello@dealcatcher.io",
+      "items": [
+        {
+          "question": "Hvor lang tid tar auditten?",
+          "answer": "Vanligvis 4-7 arbeidsdager fra briefing til rapport. Hvis du trenger raskere — vi kan levere på 48-72t, men da blir auditten mer fokusert."
+        },
+        {
+          "question": "Hva hvis jeg ikke har Google Analytics eller kampanjer?",
+          "answer": "Ikke noe problem. Auditten blir da mer markedsfokusert (konkurranseanalyse, kanaler, ICP) og mindre datadrevet. Du får fortsatt vite hva du skal gjøre."
+        },
+        {
+          "question": "Implementerer dere strategien etter auditten?",
+          "answer": "Det gjør vi ikke som standard (audit = analyse + plan, ikke utførelse). Men hvis du trenger noen til å implementere — vi kan hjelpe. Etter auditten får du tilbud på implementering."
+        },
+        {
+          "question": "Når ser jeg ROI?",
+          "answer": "Auditten genererer ikke direkte inntekter — det er diagnostikk og plan. ROI ser du etter implementering av anbefalingene. Typisk klient sparer 30-50% av annonsebudsjettet første måned."
+        },
+        {
+          "question": "For hvem er IKKE denne auditten?",
+          "answer": "Hvis du har testede kanaler, god ROI, velfungerende markedsføring — trenger du ikke audit. Audit er fornuftig når noe ikke stemmer: budsjettet øker men resultatene står stille, du vet ikke hva du skal bruke penger på, konkurrenter passerer deg online."
+        },
+        {
+          "question": "Hva kommer konkret i rapporten?",
+          "answer": "1) Diagnose av nåværende tilstand. 2) Konkurranseanalyse. 3) ICP. 4) Kanalstrategi (hvilke kanaler, i hvilken rekkefølge, med hvilket budsjett). 5) ROI-rammeverk. 6) Handlingsplan med implementering (tidslinje, budsjetter, suksessmålinger)."
+        }
+      ]
+    },
+    "cta": {
+      "title": "La oss snakke om",
+      "titleHighlight": "markedsføringen din",
+      "subtitle": "Bestill en gratis 30-minutters briefing. Vi viser eksempler på audits, svarer på spørsmål og gir pristilbud for din virksomhet.",
+      "ctaPrimary": "Bestill gratis briefing",
+      "ctaSecondary": "Send oss en melding",
+      "disclaimer": "Ingen forpliktelse. Null spam. Vi snakker kun med seriøse bedrifter."
+    }
+  },
+  "bazaKlientow": {
+    "hero": {
+      "badge": "Lead Generation B2B",
+      "titleStart": "400+ B2B leads ready",
+      "titleHighlight": "for contact in 7 days",
+      "subtitle": "Company registers aren't enough. You call reception, waste time. We deliver B2B contact data ready for cold outreach.",
+      "cta": "See case study",
+      "stats": [
+        {
+          "value": 400,
+          "suffix": "+",
+          "label": "leads generert (Mirco)"
+        },
+        {
+          "value": 95,
+          "suffix": "%",
+          "label": "nøyaktighet kontaktdata"
+        },
+        {
+          "value": 7,
+          "suffix": " dager",
+          "label": "gj.snitt leveringstid"
+        }
+      ]
+    },
+    "problem": {
+      "badge": "Problem",
+      "title": "Firmaregister er ikke nok",
+      "subtitle": "De fleste B2B-databaser gir bare firmanavn og org.nr. Null navn, null e-post, null beslutningstakere.",
+      "items": [
+        {
+          "title": "Firmaregister gir ikke navn eller e-post",
+          "description": "Du kjøpte database med 5000 bedrifter for 500 kr. Flott, men hva nå? Du må ringe hver, spørre hvem som bestemmer, samle kontakter. Det er en uke rent arbeid."
+        },
+        {
+          "title": "Data er utdatert eller ufullstendig",
+          "description": "Telefon til firma ugyldig. E-post bouncer. Eier jobber ikke der lenger. Du kjøper database, bruker 30% — resten er søppeldata."
+        },
+        {
+          "title": "Mangler kvalifisering av leads",
+          "description": "Ikke alle bedrifter i bransje X er din kunde. Noen har budsjett, andre ikke."
+        },
+        {
+          "title": "For mye tid på cold calling",
+          "description": "20 anrop for å nå 1 beslutningstaker er ikke skalerbar prosess."
+        }
+      ]
+    },
+    "solution": {
+      "badge": "Solution",
+      "title": "Database ready for cold outreach",
+      "subtitle": "Custom scrapers + AI qualification + enrichment. You get verified B2B contact data.",
+      "items": [
+        {
+          "title": "Custom Scraping",
+          "description": "We build dedicated scrapers for your market — Europe, UK, USA. No API limits.",
+          "features": [
+            "Any market (EU, UK, US)",
+            "B2B and B2C niches",
+            "Data from directories, maps, industry portals",
+            "Monthly updates",
+            "Data ownership (not subscription)"
+          ]
+        },
+        {
+          "title": "AI-Powered Qualification",
+          "description": "You won't get 10,000 unverified companies — you'll get 400 verified leads with complete contact data.",
+          "features": [
+            "Filtering by company size",
+            "Competition exclusion",
+            "Social media enrichment",
+            "Activity verification",
+            "Potential score (lead scoring)"
+          ]
+        },
+        {
+          "title": "Contact Enrichment",
+          "description": "For each company: contact data, email, phone. Ready for cold outreach.",
+          "features": [
+            "Email (verified)",
+            "Direct phone",
+            "LinkedIn profiles",
+            "GDPR-compliant sources",
+            "Actuality verification"
+          ]
+        }
+      ]
+    },
+    "pricing": {
+      "badge": "Pricing",
+      "title": "You pay for quality, not quantity",
+      "subtitle": "Priced individually after briefing. Depends on database size, target markets and qualification complexity.",
+      "setupLabel": "engangssum",
+      "roiHint": "I gjennomsnitt er 70-80% av leads fra våre databaser first-time kontakter (ingen har skrevet kaldt til dem før).",
+      "packages": [
+        {
+          "name": "B2B Client Database",
+          "tagline": "Custom scraping + enrichment",
+          "description": "We build database from scratch based on your Ideal Customer Profile. Scrape, qualify, enrich. You get CSV ready for import to Instantly/Lemlist.",
+          "setup": "Priced after briefing",
+          "monthly": "",
+          "monthlyLabel": "",
+          "features": [
+            "Briefing: ICP + markets + qualification criteria",
+            "Custom scraping (Google Maps, directories, LinkedIn)",
+            "AI qualification",
+            "Contact data enrichment",
+            "Email enrichment + verification",
+            "Phone (if publicly available)",
+            "CSV export (ready for Instantly/Lemlist/CRM)",
+            "Documentation (sources, accuracy, date)"
+          ],
+          "cta": "Book briefing",
+          "popular": true
+        }
+      ]
+    },
+    "examples": {
+      "badge": "Case study",
+      "title": "Hvordan vi bygget 400+ leads database på 7 dager",
+      "subtitle": "Mirco: polsk produsent av racingstoler søkte handelspartnere i EU/UK. Null kontakter, null database.",
+      "items": [
+        {
+          "industry": "B2B Automotive",
+          "title": "Mirco — Database of 400 tuning shops EU/UK",
+          "description": "Problem: Mirco sold only via Allegro and own website. Zero trade partners. Owner had no time to call through Europe. We did: custom scraping Google Maps + industry catalogs (EU + UK). AI qualification. Enrichment: contact data from public sources (BRREG for Norway, Companies House UK, LinkedIn). Email: extracted + verified. Result: 400+ verified leads with complete contact data. 27% open rate on first cold email campaign. 7 business days from brief to CSV delivery.",
+          "url": "https://www.marketing-intelligence.io/case-study/mirco",
+          "image": "/images/examples/mirco-database.png",
+          "testimonial": {
+            "quote": "Etter to måneder hadde jeg et ferdig system: database med 400 potensielle partnere i hele Europa, konfigurator som løser retur-problemet, og tre komplette strategier for nye salgskanaler.",
+            "author": "Mirek Macura",
+            "role": "Eier, Mirco"
+          }
+        }
+      ]
+    },
+    "process": {
+      "badge": "Prosess",
+      "title": "Fra briefing til ferdig database",
+      "subtitle": "Fire trinn. Gjennomsnittlig 7-14 arbeidsdager (avhenger av databasestørrelse og markeder).",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Måldefinisjon",
+          "description": "Vi diskuterer din Ideelle Kundeprofil (ICP): bransje, lokasjon, bedriftsstørrelse. Setter kvalifiseringskriterier.",
+          "duration": "1t"
+        },
+        {
+          "number": "02",
+          "title": "Scraping + kvalifisering",
+          "description": "Vi samler rådata (Google Maps, kataloger, LinkedIn). AI gjennomgår hver bedrift og forkaster inaktive/feil. Bare de som passer ICP blir igjen.",
+          "duration": "3-7 dager"
+        },
+        {
+          "number": "03",
+          "title": "Anrikning (beslutningstakere)",
+          "description": "For hver bedrift finner vi hvem som bestemmer (eier, manager). Kilder: BRREG (NO), Companies House (UK), LinkedIn. Samler e-post (extracted + verified).",
+          "duration": "2-5 dager"
+        },
+        {
+          "number": "04",
+          "title": "Levering + dokumentasjon",
+          "description": "Du får CSV med alle felt (firma, org.nr, beslutningstaker, e-post, telefon, lokasjon, scrape-dato). Pluss dokumentasjon (kilder, nøyaktighet, % verifisering).",
+          "duration": "1 dag"
+        }
+      ]
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Ofte stilte spørsmål",
+      "subtitle": "Fant du ikke svar? Skriv: hello@dealcatcher.io",
+      "items": [
+        {
+          "question": "Hvor nøyaktige er dataene?",
+          "answer": "E-postverifiseringsrate: ~95%. Beslutningstaker-nøyaktighet: ~85-90% (for Norge/UK høyere pga. BRREG/Companies House). Telefoner: ~70% dekning."
+        },
+        {
+          "question": "Hvilke markeder støtter dere?",
+          "answer": "EU (alle land), UK, Norge, USA. Fungerer best på: Norge (BRREG = 95% nøyaktighet), UK (Companies House), Tyskland, Frankrike."
+        },
+        {
+          "question": "Kan dere oppdatere databasen månedlig?",
+          "answer": "Ja. De fleste klienter gjør det én gang per kvartal eller halvår (bedrifter endrer seg ikke så raskt). Men hvis du trenger månedlige oppdateringer — vi kan sette det opp som recurring service."
+        },
+        {
+          "question": "Er dette lovlig (GDPR)?",
+          "answer": "Ja. Vi samler bare offentlig tilgjengelige data (Google Maps, firmanettsider, handelsregistre). Cold outreach til B2B-bedrifter (til firmae-post, i forretningsøyemed) er lovlig i EU så lenge du gir opt-out — noe Instantly/Lemlist sikrer."
+        },
+        {
+          "question": "Hva hvis jeg trenger svært nisjemålgruppe?",
+          "answer": "Det er faktisk vår sterke side. Vi har bygget databaser for: tuning-butikker EU (Mirco), klinikker for estetisk medisin PL, restaureringsverksteder UK, elektriske grossister DE."
+        },
+        {
+          "question": "Hvilket format på leveranse?",
+          "answer": "CSV (klar til import i Instantly, Lemlist, HubSpot, Pipedrive, Monday, Google Sheets). Kolonner: Company Name, Org.nr/VAT, Decision Maker (Name), Email, Phone, Website, Address, Industry, Employee Count (hvis tilgjengelig), Scrape Date, Source."
+        }
+      ]
+    },
+    "cta": {
+      "title": "La oss snakke om",
+      "titleHighlight": "din leads-database",
+      "subtitle": "Bestill en gratis 30-minutters briefing. Vi viser eksempler på databaser, svarer på spørsmål og gir pristilbud for din ICP.",
+      "ctaPrimary": "Bestill gratis briefing",
+      "ctaSecondary": "Send oss en melding",
+      "disclaimer": "Ingen forpliktelse. Null spam. Vi snakker kun med seriøse bedrifter."
+    }
+  },
+  "narzedziaNaMiare": {
+    "hero": {
+      "badge": "Custom Tools",
+      "titleStart": "Fra kalkulatorer til B2B-portaler —",
+      "titleHighlight": "verktøy skreddersydd",
+      "subtitle": "Excel er ikke nok. Klare SaaS passer ikke. Du trenger noe unikt for din virksomhet. Vi bygger dedikerte verktøy som automatiserer prosesser og øker salget.",
+      "cta": "Se eksempler",
+      "stats": [
+        {
+          "value": 60,
+          "suffix": "%",
+          "label": "tidsbesparelse etter automat."
+        },
+        {
+          "value": 4,
+          "suffix": " uker",
+          "label": "gj.snitt impl.tid (MVP)"
+        }
+      ]
+    },
+    "problem": {
+      "badge": "Problem",
+      "title": "Klare løsninger passer ikke",
+      "subtitle": "SaaS er generiske. Din virksomhet er unik. Du prøver å presse prosesser inn i klare verktøy i stedet for å bygge verktøy for prosessen.",
+      "items": [
+        {
+          "title": "Excel er ikke nok lenger",
+          "description": "Du starter dagen med å oppdatere 5 ark. Formler ødelegges. Samarbeid umulig (hvem har nyeste versjon?). Dette er ikke skalerbar system."
+        },
+        {
+          "title": "Klare SaaS passer ikke prosessen din",
+          "description": "Du betaler 200 €/md for verktøy du bruker 30% av. Mangler nøkkelfunksjoner. Workarounds og manuelt arbeid fyller hullene."
+        },
+        {
+          "title": "Integrasjoner er dyre og upålitelige",
+          "description": "Du vil koble CRM med lager og regnskapssystem. Zapier koster formue og krasjer regelmessig. Data forsvinner mellom systemene."
+        },
+        {
+          "title": "Du trenger noe unikt",
+          "description": "Prosessen din er spesifikk. Kundene dine har unike behov. Klare løsninger gir ikke deg konkurransefortrinn — alle kan kjøpe dem."
+        }
+      ]
+    },
+    "solution": {
+      "badge": "Løsning",
+      "title": "4 kategorier verktøy vi bygger",
+      "subtitle": "Fra enkle kalkulatorer til komplekse B2B-portaler. Alt tilpasset, alt etter dine behov.",
+      "items": [
+        {
+          "title": "Calculators & Simulators",
+          "description": "ROI, quotes, option comparison — tools that sell for you.",
+          "features": [
+            "ROI calculator for your service",
+            "Real-time pricing",
+            "Package/variant comparison",
+            "Lead capture + email with result",
+            "Conversion tracking"
+          ]
+        },
+        {
+          "title": "Web Applications",
+          "description": "From booking systems to CRM — tools tailored to your workflow.",
+          "features": [
+            "Booking & reservations",
+            "B2B customer portals",
+            "Mini-CRM for management",
+            "Integrations (email, payments, API)",
+            "Mobile-first design"
+          ]
+        },
+        {
+          "title": "Dashboards & Panels",
+          "description": "Metrics, reports, management — everything in one place instead of 5 tools.",
+          "features": [
+            "Real-time KPI dashboard",
+            "Automatic reports (PDF, email)",
+            "Team/project management",
+            "Google Analytics, CRM integration",
+            "Custom views per role"
+          ]
+        }
+      ]
+    },
+    "pricing": {
+      "badge": "Pris",
+      "title": "Workshop → Prototype → Implementering",
+      "subtitle": "Hvert verktøy prissettes individuelt. Vi starter med workshop for å forstå prosessen din og nøyaktig prissette prosjektet.",
+      "setupLabel": "innledende workshop",
+      "roiHint": "Workshopen er gratis og uten forpliktelse. Etter workshop får du detaljert pristilbud tilpasset prosjektomfang.",
+      "packages": [
+        {
+          "name": "Samarbeidsprosess",
+          "tagline": "Fra workshop til fungerende verktøy",
+          "description": "Hvert verktøy er unikt tilfelle. Vi starter med grundig forståelse av prosessen og forretningsbehovene dine.",
+          "setup": "Gratis",
+          "monthly": "Pris etter workshop",
+          "monthlyLabel": "",
+          "features": [
+            "Discovery workshop (1-2t, eksternt eller hos deg)",
+            "Kartlegging av forretningsprosess",
+            "Identifisering av flaskehalser og behov",
+            "Prototype/mockup av verktøy (til godkjenning)",
+            "Detaljert pristilbud + tidslinje",
+            "Teknologiforslag og integrasjoner",
+            "Bygging av MVP (4-8 uker) + iterasjoner",
+            "Hosting + teknisk support (valgfritt)"
+          ],
+          "cta": "Bestill workshop",
+          "popular": true
+        }
+      ]
+    },
+    "examples": {
+      "badge": "Eksempler",
+      "title": "Verktøy vi har bygget",
+      "subtitle": "Fra travel app til B2B-portaler for hundrevis av partnere. Hver løsning skreddersydd for spesifikke behov.",
+      "items": [
+        {
+          "industry": "SaaS / Travel",
+          "title": "Travel App — Kundereiseadministrasjon",
+          "description": "Problem: reisebyrå administrerte bestillinger via Excel og e-post. Kaos, feil, ingen synlighet for kunder. Vi bygget webapp hvor hver kunde har innlogging, ser bestillinger, itineraries, dokumenter. Byrået administrerer alt fra ett panel. Integrasjon med Gmail, Google Calendar, PDF-generering. Resultat: 60% tidsbesparelse på kundeservice, null feil i bestillinger.",
+          "url": "#",
+          "image": "/images/examples/travel-app.png"
+        },
+        {
+          "industry": "E-commerce / FMCG / Compliance",
+          "title": "ROP Calculator — Packaging Fees 2026-2028",
+          "description": "For Polish e-commerce and FMCG companies, we created an ROP calculator (Extended Producer Responsibility). The tool calculates annual packaging costs for 2026-2028, compares materials (cardboard/plastic/glass), shows savings when switching materials, and generates PDF report. Pure frontend, zero backend costs.",
+          "url": "#",
+          "image": "/images/examples/rop-calculator.jpg",
+          "aspectRatio": "4/1"
+        }
+      ]
+    },
+    "process": {
+      "badge": "Prosess",
+      "title": "Fra idé til fungerende verktøy",
+      "subtitle": "Iterativ prosess. Vi starter med MVP (Minimum Viable Product), så utvider vi.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Discovery workshop",
+          "description": "Vi diskuterer forretningsprosessen din, problemer, behov. Identifiserer hva verktøyet må gjøre (must-have) vs hva som ville vært fint (nice-to-have).",
+          "duration": "1-2t"
+        },
+        {
+          "number": "02",
+          "title": "Prototype/Mockup",
+          "description": "Vi designer verktøyets grensesnitt (hvordan det ser ut, hvordan bruker samhandler). Viser deg mockup/prototype til godkjenning.",
+          "duration": "3-7 dager"
+        },
+        {
+          "number": "03",
+          "title": "Bygging av MVP",
+          "description": "Vi koder enkleste versjonen som løser kjerneproblemet ditt. MVP = fungerer, gjør det viktigste, men uten bells & whistles. Du tester, gir feedback, vi itererer.",
+          "duration": "4-8 uker"
+        },
+        {
+          "number": "04",
+          "title": "Iterasjoner & Launch",
+          "description": "Vi utvider verktøyet (ekstra funksjoner, integrasjoner, UX-forbedringer). Implementerer i produksjon. Lærer deg hvordan du bruker det. Valgfritt: hosting + teknisk support.",
+          "duration": "2-4 uker"
+        }
+      ]
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Ofte stilte spørsmål",
+      "subtitle": "Fant du ikke svar? Skriv: hello@dealcatcher.io",
+      "items": [
+        {
+          "question": "Hvor mye koster det?",
+          "answer": "Avhenger av kompleksitet. Enkel kalkulator: 3-5k kr. Webapp med integrasjoner: 15-30k kr. B2B-portal for hundrevis av brukere: 40-80k kr. Du får nøyaktig pris etter workshop."
+        },
+        {
+          "question": "Hvor lang tid tar implementering?",
+          "answer": "MVP tar vanligvis 4-8 uker. Full implementering med alle funksjoner: 8-16 uker (avhenger av kompleksitet). Vi jobber iterativt — først leverer vi fungerende MVP, så utvider vi."
+        },
+        {
+          "question": "Kan jeg redigere verktøyet selv?",
+          "answer": "Avhenger av type. For kalkulatorer og enkle apper — vi leverer admin-panel hvor du kan redigere parametere, tekster, priser. For komplekse systemer — endringer gjøres av programmerere."
+        },
+        {
+          "question": "Hva hvis kravene endres underveis?",
+          "answer": "Det er normalt — de fleste prosjekter utvikler seg underveis i byggingen. Derfor jobber vi iterativt (MVP → feedback → utvidelse). Små endringer (andre tekster, ekstra felt) inkluderer vi. Store (ny funksjonalitet) prissetter vi separat."
+        },
+        {
+          "question": "Hvem hoster verktøyet?",
+          "answer": "Tre alternativer: 1) Vi hoster (månedlig abonnement, vi håndterer alt). 2) Du hoster (vi leverer kode, ditt team administrerer). 3) Sammen (vi setter opp, du betaler direkte for servere f.eks. AWS). Vanligvis anbefaler vi alternativ 1."
+        },
+        {
+          "question": "Hvilke teknologier bruker dere?",
+          "answer": "Next.js + React (frontend), Node.js / Python (backend), PostgreSQL / MongoDB (database), AWS / Vercel (hosting). For enkle verktøy: bare frontend (statisk HTML/JS). Vi velger teknologi for prosjektet."
+        },
+        {
+          "question": "Lager dere mobilapper (iOS/Android)?",
+          "answer": "Vi bygger ikke native mobilapper (iOS/Android). Men de fleste verktøyene våre er Progressive Web Apps (PWA) — fungerer i nettleser, men ser ut og oppfører seg som mobilapper. 90% av tilfellene er PWA nok."
+        }
+      ]
+    },
+    "cta": {
+      "title": "La oss snakke om",
+      "titleHighlight": "ditt verktøy",
+      "subtitle": "Bestill en gratis 30-minutters konsultasjon. Vi viser eksempler, svarer på spørsmål og gir pristilbud for din virksomhet.",
+      "ctaPrimary": "Bestill gratis konsultasjon",
+      "ctaSecondary": "Send oss en melding",
+      "disclaimer": "Ingen forpliktelse. Null spam. Vi snakker kun med seriøse bedrifter."
+    }
+  },
+  "materialySprzedazowe": {
+    "hero": {
+      "badge": "Sales Materials & Copywriting",
+      "titleStart": "Salgskopi som låter som deg,",
+      "titleHighlight": "ikke som AI",
+      "subtitle": "Nordmenn oppdager AI-generert kopi på én kilometer. Dine B2B-kunder også. Vi skriver salgsmateriell som låter naturlig og konverterer.",
+      "cta": "Se case study",
+      "stats": [
+        {
+          "value": 27,
+          "suffix": "%",
+          "label": "conversion rate influencere (Mirco)"
+        },
+        {
+          "value": 3,
+          "suffix": "x",
+          "label": "kommunikasjonsrammeverk (ulike kanaler)"
+        },
+        {
+          "value": 400,
+          "suffix": "+",
+          "label": "leads fra kald kampanje (Mirco)"
+        }
+      ]
+    },
+    "problem": {
+      "badge": "Problem",
+      "title": "AI-generert kopi låter kunstig",
+      "subtitle": "ChatGPT skriver raskt, men låter som mal. Nordmenn oppdager dette. Dine B2B-kunder også. Resultat? E-post går til spam (mentalt eller bokstavelig talt).",
+      "items": [
+        {
+          "title": "AI-generert kopi låter som mal",
+          "description": "\"Hei! Jeg så profilen din og tenkte at...\" — alle vet at dette er AI. Nordmenn er spesielt følsomme (Janteloven-kultur: null hype, null oversalg). Slik e-post går i søpla."
+        },
+        {
+          "title": "Nordmenn (og andre) oppdager kunstighet",
+          "description": "Perfekt struktur. Elevator pitch i første avsnitt. CTA på slutten. Alt dette skriker \"automatisering\". Folk vil føle at du skriver til dem, ikke til database med 1000 kontakter."
+        },
+        {
+          "title": "Du har ikke tid til å skrive",
+          "description": "Du har 200 leads å ta deg av. Hver trenger personlig e-post. Alene ville du sittet en uke. Delegering til AI gir mal. Delegering til tekstforfatter som ikke kjenner virksomheten din gir generikk."
+        },
+        {
+          "title": "Hver kanal trenger annen tone",
+          "description": "Kald e-post til B2B er ikke det samme som melding til influencer. Ikke det samme som tilbud til retail. Én tone of voice fungerer ikke overalt. Du trenger kommunikasjonsrammeverk for hvert segment."
+        }
+      ]
+    },
+    "solution": {
+      "badge": "Løsning",
+      "title": "Kopi som låter som deg",
+      "subtitle": "Vi skriver salgsmateriell under din tone of voice, ditt produkt, ditt segment. Uten AI-sounding bullshit.",
+      "items": [
+        {
+          "title": "Cold Email Sequences",
+          "description": "3-5 email sequences that sound like you, not like a LinkedIn template.",
+          "features": [
+            "Framework tailored to segment (influencers/B2B/retail)",
+            "A/B testing versions",
+            "Follow-up timing strategy",
+            "Converting CTAs",
+            "PL/NO/EN versions"
+          ]
+        },
+        {
+          "title": "Sales Messaging Frameworks",
+          "description": "Not one email — complete communication framework for different segments and channels.",
+          "features": [
+            "3-5 frameworks for different personas",
+            "Value proposition per segment",
+            "Objection handling",
+            "Tone of voice guide",
+            "Examples for each channel"
+          ]
+        },
+        {
+          "title": "Landing Page Copy",
+          "description": "Sales copy for landing pages — without AI sound, with data and case studies.",
+          "features": [
+            "Hero section with measurable numbers",
+            "Problem-solution structure",
+            "Social proof + case studies",
+            "FAQ handling objections",
+            "CTA strategy (not aggressive)"
+          ]
+        }
+      ]
+    },
+    "pricing": {
+      "badge": "Pris",
+      "title": "Per-prosjekt eller retainer",
+      "subtitle": "Du kan bestille engangsprosjekt (f.eks. cold email-kampanje) eller månedlig retainer (kontinuerlig levering av materialer).",
+      "setupLabel": "engangssum",
+      "roiHint": "De fleste klienter starter med engangsprosjekt (cold email sequence eller landing page). Hvis det fungerer — går de over til retainer (fast tekstforfatter på hånd).",
+      "packages": [
+        {
+          "name": "Copywriting per-prosjekt",
+          "tagline": "Engangsprosjekt",
+          "description": "Du bestiller konkret leveranse: cold email sequence, landing page copy, pitch deck, materialer for partnere. Vi leverer ferdig kopi + revisjoner.",
+          "setup": "1 999 – 7 999 kr",
+          "monthly": "",
+          "monthlyLabel": "",
+          "features": [
+            "Briefing (ditt produkt, ICP, tone of voice)",
+            "Research (konkurrenter, kanal, beste praksis)",
+            "Utkast-kopi (første versjon til gjennomgang)",
+            "2 runder revisjoner (rettelser + feedback)",
+            "Endelig versjon (klar til bruk)",
+            "Dokumentasjon (f.eks. instruksjon hvordan bruke rammeverk)",
+            "Tidslinje: 5-10 arbeidsdager"
+          ],
+          "cta": "Bestill briefing",
+          "popular": false
+        },
+        {
+          "name": "Copywriting retainer",
+          "tagline": "Månedlig samarbeid",
+          "description": "Fast tekstforfatter på hånd. Hver måned leverer vi X materialer (e-post, landing pages, innlegg, pitch decks). Prioritet i køen.",
+          "setup": "",
+          "monthly": "1 999 – 4 999 kr",
+          "monthlyLabel": "/md",
+          "features": [
+            "Avtalt timepakke månedlig",
+            "Prioritert behandling (maks 24t til utkast)",
+            "Ubegrensede revisjoner (innenfor pakken)",
+            "Alle kanaler (e-post, landing pages, salgsmateriell)",
+            "Tilgang til tekstforfatter via Slack/e-post",
+            "Månedlig rapportering (hva vi gjorde, ytelse hvis du måler)",
+            "Kan kanselleres når som helst (30 dagers oppsigelse)"
+          ],
+          "cta": "Bestill briefing",
+          "popular": true
+        }
+      ]
+    },
+    "examples": {
+      "badge": "Case study",
+      "title": "Hvordan vi skrev kopi for 3 salgskanaler",
+      "subtitle": "Mirco: racingstoler. Motorsport-influencere ≠ tuning-butikker ≠ restaureringsverksteder. Samme produkt, 3 forskjellige språk.",
+      "items": [
+        {
+          "industry": "B2B Automotive",
+          "title": "Mirco — 3 kommunikasjonsrammeverk",
+          "description": "Problem: Mirco hadde 1 produkt (FIA racingstoler), men 3 forskjellige kundesegmenter: 1) Motorsport-influencere (trenger produkt for innhold, provisjon, markedsføringsstøtte). 2) Tuning-butikker (søker margin, salgsstøtte, white-label). 3) Restaureringsverksteder (ønsker premium produkt for krevende kunder). Vi gjorde: 3 separate kommunikasjonsrammeverk (cold email sequences + pitch materials). Hver kanal har sitt språk, sine pain points, sin value prop. Resultat: 27% influencere interessert (Framework I), 400 tuning-butikker lagt til database (Framework II), 15% verksteder svarte på kalde e-poster (Framework III). Åpningsrater: 45-60% (fordi det ikke låter som mal).",
+          "url": "https://www.marketing-intelligence.io/case-study/mirco",
+          "image": "/images/examples/mirco-copy.png",
+          "testimonial": {
+            "quote": "Jeg kom med problem med fallende salg og null idé om hva jeg skulle gjøre. Etter to måneder hadde jeg et ferdig system: database med 400 potensielle partnere i hele Europa, konfigurator og tre komplette strategier for nye salgskanaler.",
+            "author": "Mirek Macura",
+            "role": "Eier, Mirco"
+          }
+        }
+      ]
+    },
+    "process": {
+      "badge": "Prosess",
+      "title": "Fra brief til ferdig kopi",
+      "subtitle": "Enkel prosess: brief → research → utkast → revisjoner → levering.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Brief",
+          "description": "Vi diskuterer produktet/tjenesten din, Ideell Kundeprofil (ICP), tone of voice, distribusjonskanal. Setter hva vi skriver nøyaktig (kald e-post, landing page, pitch deck).",
+          "duration": "30-60 min"
+        },
+        {
+          "number": "02",
+          "title": "Research",
+          "description": "Vi sjekker konkurrenter (hvordan de kommuniserer), kanal (hva som fungerer i cold email / landing pages), beste praksis. Hvis det er Norge — tilpasser vi til Janteloven-kultur (null hype, undersalg, åpenhet).",
+          "duration": "1-2 dager"
+        },
+        {
+          "number": "03",
+          "title": "Utkast",
+          "description": "Vi skriver første versjon av kopi. Sender til deg for gjennomgang. Du samler feedback (hva endres, hva beholdes). Vanligvis etter 1 revisjon er det klart.",
+          "duration": "2-4 dager"
+        },
+        {
+          "number": "04",
+          "title": "Levering",
+          "description": "Vi leverer endelig versjon + dokumentasjon (f.eks. hvordan bruke rammeverk, hvordan personalisere e-post). Hvis det er e-postkampanje — leverer vi i format klart til Instantly/Lemlist.",
+          "duration": "1 dag"
+        }
+      ]
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Ofte stilte spørsmål",
+      "subtitle": "Fant du ikke svar? Skriv: hello@dealcatcher.io",
+      "items": [
+        {
+          "question": "Hvor mange revisjonsrunder får jeg?",
+          "answer": "Per-prosjekt: 2 revisjonsrunder (de fleste klienter avslutter etter 1). Retainer: ubegrensede revisjoner innenfor timepakke. Revisjon er rettelser i eksisterende kopi (endring CTA, annen struktur, andre ord). Hvis du vil helt ny kopi (annet tilnærming) — det er nytt prosjekt."
+        },
+        {
+          "question": "Skriver dere på norsk?",
+          "answer": "Ja. Norsk forretningskultur (Janteloven) krever spesifikk tilnærming: null hype, undersalg i stedet for oversalg, åpenhet, gi leser autonomi. Vi har erfaring med å skrive kalde e-poster til norske bedrifter (Framework I for Mirco fungerte utmerket)."
+        },
+        {
+          "question": "Hva hvis jeg trenger endringer senere?",
+          "answer": "Per-prosjekt: mindre endringer (skrivefeil, prisoppdatering) gjør vi gratis i 30 dager. Større endringer (ny seksjon, annen struktur) er separat pris. Retainer: alle endringer inngår i månedlig pakke — du har tekstforfatter på hånd."
+        },
+        {
+          "question": "Skriver dere også kopi til Google Ads / Facebook Ads?",
+          "answer": "Ja. Annonsekopi er separat tjeneste (korte tekster, men krever A/B-testing og optimalisering). Vanligvis gjør vi dette som del av retainer (månedlig leverer vi X varianter annonsekopi, du tester, vi rapporterer hva som fungerer)."
+        },
+        {
+          "question": "Hvordan måler jeg ytelsen til kopi?",
+          "answer": "Avhenger av kanal. Kald e-post: åpningsrate, svarrate, møte booket rate. Landing page: konverteringsrate, tid på side, bounce rate. Salgsmateriell (pitch decks): feedback fra partnere, hvor mange av dem signerte avtale. Vi leverer kopi — du måler ytelse. Vi kan hjelpe med oppsett av tracking (f.eks. UTM-parametere, Google Analytics)."
+        },
+        {
+          "question": "Hva hvis jeg har svært nisjeproduk?",
+          "answer": "Det er faktisk vår sterke side. Vi har skrevet kopi for: FIA racingstoler, B2B-scrapers, ROI-kalkulatorer, travel app, influencer-portaler. Hvis du kan beskrive produktet og ICP — skriver vi kopi som selger."
+        }
+      ]
+    },
+    "cta": {
+      "title": "La oss snakke om",
+      "titleHighlight": "din kopi",
+      "subtitle": "Bestill en gratis 30-minutters briefing. Vi viser eksempler, svarer på spørsmål og gir pristilbud for din virksomhet.",
+      "ctaPrimary": "Bestill gratis briefing",
+      "ctaSecondary": "Send oss en melding",
+      "disclaimer": "Ingen forpliktelse. Null spam. Vi snakker kun med seriøse bedrifter."
+    }
+  },
+  "mircoCaseStudy": {
+    "backToPortfolio": "Back to portfolio",
+    "badge": "Case Study",
+    "hero": {
+      "title": "How we built a racing seat manufacturer",
+      "titleHighlight": "a complete partner acquisition system in 2 months",
+      "description": "Mirco — a Polish racing seat manufacturer with a 30-year history — came with declining sales and no plan for new channels. Left with a database of 400+ distributors, product configurator, and affiliate portal.",
+      "companyDetails": [
+        "Racing seat manufacturer",
+        "Since 1995 (~30 years)",
+        "Skoczów, Poland",
+        "~15 employees"
+      ],
+      "stats": [
+        { "value": "400+", "label": "distributors in database" },
+        { "value": "27%", "label": "influencers interested" },
+        { "value": "3", "label": "new sales channels" },
+        { "value": "2 mo.", "label": "delivery time" }
+      ]
+    },
+    "problem": {
+      "title": "The Problem",
+      "challenges": [
+        {
+          "title": "Declining sales:",
+          "description": "Downward trend, existing channels exhausted. Mirek saw the problem but didn't know how to reverse it without external help."
+        },
+        {
+          "title": "Lack of strategy:",
+          "description": "Mirek is a manufacturer — knows seats, not marketing. Had an idea for a premium brand, made a logo, but the project stalled."
+        },
+        {
+          "title": "Return problem:",
+          "description": "Custom seat ordering process via email and phone was complicated. Customers returned seats because something didn't match — color, material, dimensions."
+        },
+        {
+          "title": "Untapped potential:",
+          "description": "Mirco has its own sewing facility and can customize everything. This advantage wasn't being used as a sales tool."
+        }
+      ]
+    },
+    "discovery": {
+      "title": "Discovery",
+      "questionsHeading": "Questions we asked:",
+      "questions": [
+        "What do you sell? What seat models?",
+        "Who buys? Who are your distributors?",
+        "How do distributors resell?",
+        "Can you customize products?",
+        "What sells best and why?"
+      ],
+      "discoveriesHeading": "Key discoveries:",
+      "discoveries": [
+        "FIA-homologated seats sell better than gaming seats",
+        "Mirco can customize absolutely everything (own sewing facility)",
+        "Mirek didn't know his ICP — we mapped it based on existing distributors",
+        "Between cheap Chinese seats and premium Recaro is a niche for Mirco"
+      ]
+    },
+    "execution": {
+      "title": "What we built",
+      "subtitle": "Phased approach",
+      "phases": [
+        {
+          "number": "PHASE 2",
+          "heading": "Potential partner database",
+          "description": "Built scraper searching through every EU country + UK. Mapped competition (Polish, Chinese, Recaro). Research: where competition sells their seats. Aggregation and deduplication of results.",
+          "result": "400+ companies (tuning shops in EU and UK). Each record: company name, country, decision maker, email, business description. Outreach system: Instantly, Pipedrive, automation with human-in-the-loop."
+        },
+        {
+          "number": "PHASE 3",
+          "heading": "UVP workshop",
+          "description": "Discovered market niche: Cheap Chinese (low price, low quality, long delivery) vs Mirco (EU quality + full customization + fast delivery) vs Premium Recaro (highest quality, very expensive, status).",
+          "result": "Key decision: Paused outreach campaign. First build configurator that solves return problem and provides unique value for partners."
+        },
+        {
+          "number": "PHASE 4",
+          "heading": "Seat configurator",
+          "description": "Tool that turns problem (returns) into market advantage (customization as USP). Full personalization: Seat model, material (separate for each part), thread colors, logo (custom, in different places), shell color, accessories.",
+          "result": "Zero errors: Customer sees real-time visualization. Value for distributors: Distributor can implement configurator for free."
+        },
+        {
+          "number": "PHASE 5",
+          "heading": "Influencer channel",
+          "description": "Hypothesis: motorsport influencers can sell seats to their followers. Test on 100 influencers — 27% were interested in partnership. Panel for influencers: Discount codes, traffic and conversion statistics, earnings tracking, payout history. Admin panel: Full sales control, statistics, analytics, management.",
+          "result": "Model: Influencer earns only when sold. Mirco pays for marketing only when it works."
+        }
+      ],
+      "strategyHeading": "3 Sales Networks",
+      "networks": [
+        {
+          "title": "Influencers → B2C",
+          "description": "Drifters, tuners, motorsport YouTubers sell seats to their followers through discount codes. 100 influencers in test, 27% interested in partnership. Affiliate portal with tracker."
+        },
+        {
+          "title": "Tuning shops → B2B",
+          "description": "Distributors and tuning shops across Europe sell seats as part of their offering. 400+ companies in database (EU + UK). Configurator for embedding. Ready cold email campaigns."
+        },
+        {
+          "title": "Workshops → Custom Cars",
+          "description": "Companies doing restomods, custom builds, and classic car restoration. 23 companies in restoration segment. High-margin premium segment. Customization as main USP."
+        }
+      ]
+    },
+    "results": {
+      "title": "Results",
+      "deliverables": [
+        "Distributor database — 400+ companies in EU and UK (tuning shops)",
+        "Outreach system — Instantly + Pipedrive + automation",
+        "Competition analysis — Poland, China, Recaro — where they sell",
+        "Seat configurator — Ready for implementation, full customization",
+        "Affiliate portal — Ready for implementation, tracking, payouts",
+        "Influencer test — 27% interested (from sample of 100)",
+        "Custom cars/retro database — 23 companies in restoration segment",
+        "Strategy + sales process — For 3 segments"
+      ],
+      "testimonial": {
+        "quote": "I came with the problem of declining sales and zero plan for what's next. After two months I had a ready system: database of 400 potential partners across Europe, configurator that solves the return problem, and three complete strategies for new sales channels. Everything ready for implementation.",
+        "name": "Mirek Macura",
+        "role": "Owner, Mirco"
+      }
+    },
+    "cta": {
+      "title": "Have a similar problem?",
+      "description": "Have a product, sales stalled, don't know how to reach new partners? Let's talk 15 minutes. We'll tell you straight if we see opportunities.",
+      "primaryButton": "Schedule free call",
+      "secondaryButton": "View full case study"
+    }
+  },
+  "konfiguratorFormularz": {
+    "hero": {
+      "title": "Product configurator",
+      "titleHighlight": "that sells itself",
+      "description": "Customer sees what their custom product looks like — live, in 3D, every combination. No guessing, no \"you'll see it in 2 days via email\". A configurator that turns viewers into buyers.",
+      "steps": [
+        {
+          "title": "Fill out the form",
+          "description": "Tell us about your product and customization options — takes only 5 minutes"
+        },
+        {
+          "title": "Schedule consultation call",
+          "description": "We'll learn about your business, see which product combinations you need"
+        },
+        {
+          "title": "Receive quote + roadmap",
+          "description": "You'll get a detailed configurator plan and implementation timeline"
+        }
+      ]
+    },
+    "form": {
+      "heading": "Tell us about your product"
+    },
+    "faq": {
+      "title": "Frequently asked",
+      "titleHighlight": "questions",
+      "subtitle": "Everything you need to know about the consultation process",
+      "items": [
+        {
+          "question": "Does the form commit me to anything?",
+          "answer": "No, filling out the form is just the first step — zero commitments, zero upfront payments. After submission we'll schedule a consultation call, show how configurator can work in your business, and present a quote. Only then you decide if we move forward."
+        },
+        {
+          "question": "What happens after I fill out the form?",
+          "answer": "We'll contact you within 24h (business days). We'll schedule a consultation call (15–30 min) where we learn about your product, customization options, and business goals for the configurator. Then you receive quote + implementation plan."
+        },
+        {
+          "question": "What's the consultation call like?",
+          "answer": "It's a workshop conversation, not a sales call. We ask about your product: What are customization options? Who buys? How many combinations need to be shown? Where do customers order (store, distributors)? Do you need system integration? Based on this we price and plan the configurator."
+        },
+        {
+          "question": "How long does the whole process take?",
+          "answer": "From form to quote: 2–3 days. From quote acceptance to finished configurator: 4–12 weeks (depends on complexity). Simple configurators (color + text) take 4 weeks. Advanced with 3D and integrations — 8–12 weeks. Exact timeline you get on consultation."
+        },
+        {
+          "question": "Do I need to have ready photos/descriptions of the product?",
+          "answer": "No, for consultation it's enough to tell about the product and customization options. Photos, descriptions, specifications we'll collect later, before project start. If you have them — great, we'll use them. If not — we'll advise what to prepare."
+        },
+        {
+          "question": "What do I get after the consultation call?",
+          "answer": "Detailed quote (what configurator costs for your product), implementation timeline (how many weeks building takes), feature list (what exactly you get), examples (similar configurators we built). Everything in writing, no surprises."
+        },
+        {
+          "question": "What if I change my mind after consultation?",
+          "answer": "That's okay! Consultation is free and without commitments. If quote doesn't fit budget, or configurator isn't what you need — you just say thanks and we end there. No pressure, no weird questions."
+        }
+      ]
+    },
+    "examples": {
+      "title": "Configurators we",
+      "titleHighlight": "built",
+      "subtitle": "See our latest implementations",
+      "cta": "View case study",
+      "items": [
+        {
+          "title": "Mirco — Racing Seat Configurator",
+          "description": "3D configurator with real-time preview. Customer chooses model, material, thread color, logo, accessories — sees result live. Integrated with production system (export to .gbl).",
+          "image": "/images/examples/mirco-configurator.png",
+          "url": "/case-study/mirco"
+        },
+        {
+          "title": "Premium Candle Configurator — 3D Preview",
+          "description": "Configurator with 3D visualization in real-time. Customer designs their candle: size, text, font, color, alignment. Integrated with production, export to .gbl.",
+          "image": "/images/examples/candle-configurator1.png",
+          "url": "/case-study/candle-configurator"
+        }
+      ]
     }
   }
 }

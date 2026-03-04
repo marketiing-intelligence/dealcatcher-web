@@ -6,6 +6,7 @@ import { easeOut } from "@/lib/animations";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import type { PortfolioItem } from "@/lib/portfolio-data";
 import type { Locale } from "@/lib/i18n/config";
 
@@ -13,6 +14,12 @@ const viewDemoLabels: Record<Locale, string> = {
   en: "View Live Demo",
   no: "Se Live Demo",
   pl: "Zobacz Demo",
+};
+
+const readMoreLabels: Record<Locale, string> = {
+  en: "Read More",
+  no: "Les mer",
+  pl: "Przeczytaj więcej",
 };
 
 interface PreviewCardProps {
@@ -165,14 +172,20 @@ export function PreviewCard({ item, lang, showPremiumBadge = false }: PreviewCar
             asChild
             className="w-full bg-primary text-primary-foreground hover:bg-accent-hover"
           >
-            <a
-              href={item.demoUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <ExternalLink className="h-4 w-4 mr-2" />
-              {lang ? viewDemoLabels[lang] : "View Live Demo"}
-            </a>
+            {item.industry === "case-study" ? (
+              <Link href={lang ? `/${lang}${item.demoUrl}` : item.demoUrl}>
+                {lang ? readMoreLabels[lang] : "Read More"}
+              </Link>
+            ) : (
+              <a
+                href={item.demoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ExternalLink className="h-4 w-4 mr-2" />
+                {lang ? viewDemoLabels[lang] : "View Live Demo"}
+              </a>
+            )}
           </Button>
         </motion.div>
       </div>

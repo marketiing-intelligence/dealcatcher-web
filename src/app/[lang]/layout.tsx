@@ -71,6 +71,11 @@ export async function generateMetadata({
       "kampanie google ads",
       "strona z konfiguratorem",
       "interaktywne narzędzia na stronę",
+      "aeo",
+      "ai seo",
+      "pozycjonowanie w ai",
+      "strona gotowa na ai",
+      "ai search optimization",
     ],
   };
 
@@ -112,10 +117,40 @@ export default async function LangLayout({
       "@context": "https://schema.org",
       "@type": "Organization",
       name: "DealCatcher",
-      legalName: "Rapid Software House sp. z o.o.",
+      legalName: "AI SCALING SYSTEMS sp. z o.o.",
       url: "https://dealcatcher.io",
       email: "contact@dealcatcher.io",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Aleje Jerozolimskie 109 / 70",
+        postalCode: "02-011",
+        addressLocality: "Warszawa",
+        addressCountry: "PL",
+      },
+      vatID: "PL7011297183",
       description: "Professional websites for Norwegian and Polish businesses. AI-ready, WCAG compliant, built to convert.",
+      sameAs: [
+        "https://www.linkedin.com/company/dealcatcher-io",
+      ],
+      areaServed: [
+        { "@type": "Country", name: "Norway" },
+        { "@type": "Country", name: "Poland" },
+      ],
+      knowsAbout: [
+        "Web Design",
+        "AI Search Optimization",
+        "Answer Engine Optimization",
+        "Google Ads",
+        "WCAG Compliance",
+        "Structured Data",
+        "Schema.org",
+      ],
+      serviceType: [
+        "Website Development",
+        "AI-Ready Web Design",
+        "Google Ads Management",
+        "Search Engine Optimization",
+      ],
     },
     {
       "@context": "https://schema.org",

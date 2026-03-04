@@ -13,7 +13,7 @@ import type { Locale } from "@/lib/i18n/config";
 import { Filter } from "lucide-react";
 import { useState } from "react";
 
-const industries: (Industry | "all")[] = [
+const industries: ("all" | "contractor" | "service" | "finishing")[] = [
   "all",
   "contractor",
   "service",
@@ -23,7 +23,9 @@ const industries: (Industry | "all")[] = [
 interface PortfolioGridProps {
   lang: Locale;
   dict: {
+    templatesHeading: string;
     filterAll: string;
+    caseStudiesHeading: string;
     industryLabels: {
       contractor: string;
       service: string;
@@ -34,17 +36,26 @@ interface PortfolioGridProps {
 }
 
 export function PortfolioGrid({ lang, dict }: PortfolioGridProps) {
-  const [activeFilter, setActiveFilter] = useState<Industry | "all">("all");
+  const [activeFilter, setActiveFilter] = useState<"all" | "contractor" | "service" | "finishing">("all");
   const localizedItems = getPortfolioItems(lang);
 
-  const filteredItems =
+  // Separate templates from case studies
+  const templateItems = localizedItems.filter((item) => item.industry !== "case-study");
+  const caseStudyItems = localizedItems.filter((item) => item.industry === "case-study");
+
+  const filteredTemplates =
     activeFilter === "all"
-      ? localizedItems
-      : localizedItems.filter((item) => item.industry === activeFilter);
+      ? templateItems
+      : templateItems.filter((item) => item.industry === activeFilter);
 
   return (
     <section className="pb-20 md:pb-32">
       <Container>
+        {/* Templates Section Heading */}
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+          {dict.templatesHeading}
+        </h2>
+
         {/* Filters */}
         <div className="flex flex-wrap items-center justify-center gap-2 mb-12">
           <Filter className="h-4 w-4 text-muted-foreground mr-2" />
@@ -65,7 +76,7 @@ export function PortfolioGrid({ lang, dict }: PortfolioGridProps) {
           ))}
         </div>
 
-        {/* Grid */}
+        {/* Templates Grid */}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -73,7 +84,7 @@ export function PortfolioGrid({ lang, dict }: PortfolioGridProps) {
           variants={staggerContainer}
           className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
-          {filteredItems.map((item) => (
+          {filteredTemplates.map((item) => (
             <motion.div key={item.id} variants={staggerItem} layout>
               <PreviewCard item={item} lang={lang} showPremiumBadge />
             </motion.div>
@@ -81,11 +92,33 @@ export function PortfolioGrid({ lang, dict }: PortfolioGridProps) {
         </motion.div>
 
         {/* Empty state */}
-        {filteredItems.length === 0 && (
+        {filteredTemplates.length === 0 && (
           <div className="text-center py-12">
             <p className="text-muted-foreground">
               {dict.noResults}
             </p>
+          </div>
+        )}
+
+        {/* Case Studies Section */}
+        {caseStudyItems.length > 0 && (
+          <div className="mt-32">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+              {dict.caseStudiesHeading}
+            </h2>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={viewportOnce}
+              variants={staggerContainer}
+              className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+            >
+              {caseStudyItems.map((item) => (
+                <motion.div key={item.id} variants={staggerItem}>
+                  <PreviewCard item={item} lang={lang} showPremiumBadge={false} />
+                </motion.div>
+              ))}
+            </motion.div>
           </div>
         )}
       </Container>

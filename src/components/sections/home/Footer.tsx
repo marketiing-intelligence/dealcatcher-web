@@ -65,6 +65,62 @@ export function Footer({ lang, dict }: FooterProps) {
                   </Link>
                 </li>
               )}
+              <li>
+                <Link
+                  href={`/${lang}/formularz`}
+                  className="text-foreground hover:text-primary transition-colors"
+                >
+                  Darmowy prototyp
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={`/${lang}/konfiguratory`}
+                  className="text-foreground hover:text-primary transition-colors"
+                >
+                  Konfiguratory
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={`/${lang}/google-ads`}
+                  className="text-foreground hover:text-primary transition-colors"
+                >
+                  Google Ads
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={`/${lang}/audyt-marketingowy`}
+                  className="text-foreground hover:text-primary transition-colors"
+                >
+                  Audyt marketingowy
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={`/${lang}/baza-klientow`}
+                  className="text-foreground hover:text-primary transition-colors"
+                >
+                  Baza klientów B2B
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={`/${lang}/narzedzia-na-miare`}
+                  className="text-foreground hover:text-primary transition-colors"
+                >
+                  Narzędzia na miarę
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={`/${lang}/portfolio`}
+                  className="text-foreground hover:text-primary transition-colors"
+                >
+                  Portfolio
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -90,6 +146,8 @@ export function Footer({ lang, dict }: FooterProps) {
         <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
             &copy; {currentYear} DealCatcher. {dict.copyright}
+            <br />
+            NIP: 7011297183 | KRS: 0001221058 | REGON: 543861552
           </p>
           <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
             <Link href={`/${lang}/privacy`} className="hover:text-foreground transition-colors">

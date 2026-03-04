@@ -1,6 +1,6 @@
 import type { Locale } from "@/lib/i18n/config";
 
-export type Industry = "contractor" | "service" | "finishing";
+export type Industry = "contractor" | "service" | "finishing" | "case-study";
 export type Template =
   | "standard"
   | "swiss"
@@ -31,12 +31,13 @@ export const industryLabels: Record<Industry, string> = {
   contractor: "Total Contractor",
   service: "Service Specialist",
   finishing: "Finishing Expert",
+  "case-study": "Case Study",
 };
 
 const industryLabelsByLocale: Record<Locale, Record<Industry, string>> = {
-  en: { contractor: "Total Contractor", service: "Service Specialist", finishing: "Finishing Expert" },
-  no: { contractor: "Totalentreprenør", service: "Servicespesialist", finishing: "Overflateekspert" },
-  pl: { contractor: "Generalny wykonawca", service: "Specjalista usługowy", finishing: "Wykończenia" },
+  en: { contractor: "Total Contractor", service: "Service Specialist", finishing: "Finishing Expert", "case-study": "Case Study" },
+  no: { contractor: "Totalentreprenør", service: "Servicespesialist", finishing: "Overflateekspert", "case-study": "Casestudie" },
+  pl: { contractor: "Generalny wykonawca", service: "Specjalista usługowy", finishing: "Wykończenia", "case-study": "Case Study" },
 };
 
 // Placeholder images - replace with actual screenshots later
@@ -50,7 +51,7 @@ const placeholders = {
   gallery: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&h=500&fit=crop",
 };
 
-const itemTranslations: Record<string, Record<Locale, { description: string; features: string[] }>> = {
+const itemTranslations: Record<string, Record<Locale, { title?: string; description: string; features: string[] }>> = {
   "swiss-contractor": {
     en: { description: "Museum-grade layout with strict Swiss grid. 4-corner navigation, grayscale-to-color hover effects.", features: ["Swiss Grid", "4-Corner Nav", "Art House Design"] },
     no: { description: "Museumskvalitet med streng sveitsisk rutenett. 4-hjørne navigasjon, gråtone-til-farge hover-effekter.", features: ["Sveitsisk Rutenett", "4-hjørne Nav", "Art House Design"] },
@@ -80,6 +81,26 @@ const itemTranslations: Record<string, Record<Locale, { description: string; fea
     en: { description: "Museum-grade presentation for finishing experts. Serif typography, gold accents.", features: ["Museum Grade", "Serif Typography", "Gold Accents"] },
     no: { description: "Museumskvalitet presentasjon for overflateeksperter. Serif typografi, gullaksenter.", features: ["Museumskvalitet", "Serif Typografi", "Gullaksenter"] },
     pl: { description: "Muzealna prezentacja dla ekspertów wykończeniowych. Typografia szeryfowa, złote akcenty.", features: ["Klasa Muzealna", "Typografia Szeryfowa", "Złote Akcenty"] },
+  },
+  "mirco-case-study": {
+    en: { title: "Mirco — Full B2B Growth System", description: "Complete B2B growth system: influencer portal, sales messaging, lead database, marketing strategy — all built from scratch in 8 weeks.", features: ["400+ B2B Leads", "3 Sales Frameworks", "Influencer Portal"] },
+    no: { title: "Mirco — Komplett B2B-vekstsystem", description: "Komplett B2B-vekstsystem: influencer-portal, salgsbudskap, kundebase, markedsstrategi — alt bygget fra bunnen av på 8 uker.", features: ["400+ B2B-leads", "3 Salgsrammer", "Influencer-portal"] },
+    pl: { title: "Mirco — Kompletny System Wzrostu B2B", description: "Kompletny system wzrostu B2B: portal dla influencerów, strategia sprzedaży, baza leadów, strategia marketingowa — wszystko zbudowane od zera w 8 tygodni.", features: ["400+ leadów B2B", "3 strategie sprzedażowe", "Portal dla influencerów"] },
+  },
+  "candle-configurator": {
+    en: { title: "Premium Candle Configurator — 3D Real-time Preview", description: "3D configurator for premium memorial candles with real-time preview. Customers design their own candle: size, text, font, color, alignment. Integrated with production system (export to .gbl file).", features: ["3D Real-time Preview", "Production Integration", "Custom Personalization"] },
+    no: { title: "Premium Minnelys-konfigurator — 3D Sanntidsforhåndsvisning", description: "3D-konfigurator for premium minnelys med sanntidsforhåndsvisning. Kunder designer sitt eget lys: størrelse, tekst, skrift, farge, justering. Integrert med produksjonssystem (eksport til .gbl-fil).", features: ["3D Sanntidsforhåndsvisning", "Produksjonsintegrasjon", "Tilpasset Personalisering"] },
+    pl: { title: "Konfigurator Zniczy Premium — Podgląd 3D Real-time", description: "Konfigurator 3D dla premium zniczy z podglądem w czasie rzeczywistym. Klienci projektują własny znicz: rozmiar, tekst, czcionka, kolor, wyrównanie. Zintegrowany z systemem produkcji (eksport do pliku .gbl).", features: ["Podgląd 3D Real-time", "Integracja z Produkcją", "Personalizacja na Zamówienie"] },
+  },
+  "rop-calculator": {
+    en: { title: "ROP Calculator — Packaging Fee Calculator 2026-2028", description: "Packaging fee calculator (EPR) for Polish e-commerce and FMCG companies. Calculates annual packaging costs 2026-2028, compares materials (cardboard/plastic/glass), shows savings when switching materials, generates PDF reports. Pure frontend, zero backend costs.", features: ["2026-2028 Cost Projection", "Material Comparison", "PDF Export"] },
+    no: { title: "ROP-kalkulator — Emballasjeavgiftskalkulator 2026-2028", description: "Emballasjeavgiftskalkulator (EPR) for polske e-handels- og FMCG-bedrifter. Beregner årlige emballasjekostnader 2026-2028, sammenligner materialer (papp/plast/glass), viser besparelser ved materialbytte, genererer PDF-rapporter. Ren frontend, ingen backendkostnader.", features: ["2026-2028 Kostnadsframskriving", "Materialsammenligning", "PDF-eksport"] },
+    pl: { title: "Kalkulator ROP — Opłaty za Opakowania 2026-2028", description: "Kalkulator opłat ROP (Rozszerzona Odpowiedzialność Producenta) dla polskich firm e-commerce i FMCG. Wylicza roczne koszty opakowań 2026-2028, porównuje materiały (karton/plastik/szkło), pokazuje oszczędności przy zamianie materiału, generuje raport PDF. Pure frontend, zero kosztów backend.", features: ["Projekcja Kosztów 2026-2028", "Porównanie Materiałów", "Eksport do PDF"] },
+  },
+  "wieruszow-travel": {
+    en: { title: "TravelPL — Complete Digital System for Travel Agency", description: "Complete digital transformation for Polish coach tour operator: professional website showcasing 12 tours, mobile PWA travel guide for trip participants, and Google Ads campaigns. From zero online presence to modern digital travel agency.", features: ["Website + Mobile App", "Google Ads Campaigns", "PWA Travel Guide"] },
+    no: { title: "TravelPL — Komplett digitalt system for reisebyrå", description: "Komplett digital transformasjon for polsk bussreisebyrå: profesjonell nettside med 12 reiser, mobil PWA-reiseguide for deltakere og Google Ads-kampanjer. Fra null online tilstedeværelse til moderne digitalt reisebyrå.", features: ["Nettside + Mobil app", "Google Ads-kampanjer", "PWA Reiseguide"] },
+    pl: { title: "TravelPL — Kompletny System Cyfrowy dla Biura Podróży", description: "Kompletna transformacja cyfrowa dla biura podróży organizującego wycieczki autokarowe: profesjonalna strona www z 12 wycieczkami, aplikacja mobilna PWA dla uczestników wycieczek oraz kampanie Google Ads. Od zera do nowoczesnego biura podróży online.", features: ["Strona www + Aplikacja", "Kampanie Google Ads", "PWA Przewodnik"] },
   },
 };
 
@@ -161,6 +182,54 @@ export const portfolioItems: PortfolioItem[] = [
     demoUrl: "/demo/gallery.html",
     features: ["Museum Grade", "Serif Typography", "Gold Accents"],
     isPremium: true,
+  },
+  {
+    id: "mirco-case-study",
+    title: "Mirco — Full B2B Growth System",
+    description: "Complete B2B growth system: influencer portal, sales messaging, lead database, marketing strategy — all built from scratch in 8 weeks.",
+    industry: "case-study",
+    industryLabel: "Case Study",
+    template: "canvas",
+    thumbnail: "/images/examples/mirco-configurator.png",
+    demoUrl: "/case-study/mirco",
+    features: ["400+ B2B Leads", "3 Sales Frameworks", "Influencer Portal"],
+    isPremium: false,
+  },
+  {
+    id: "candle-configurator",
+    title: "Premium Candle Configurator — 3D Real-time Preview",
+    description: "3D configurator for premium memorial candles with real-time preview. Customers design their own candle: size, text, font, color, alignment. Integrated with production system (export to .gbl file).",
+    industry: "case-study",
+    industryLabel: "Case Study",
+    template: "canvas",
+    thumbnail: "/images/examples/candle-configurator1.png",
+    demoUrl: "/case-study/candle-configurator",
+    features: ["3D Real-time Preview", "Production Integration", "Custom Personalization"],
+    isPremium: false,
+  },
+  {
+    id: "rop-calculator",
+    title: "ROP Calculator — Packaging Fee Calculator 2026-2028",
+    description: "Packaging fee calculator (EPR) for Polish e-commerce and FMCG companies. Calculates annual packaging costs 2026-2028, compares materials (cardboard/plastic/glass), shows savings when switching materials, generates PDF reports. Pure frontend, zero backend costs.",
+    industry: "case-study",
+    industryLabel: "Case Study",
+    template: "canvas",
+    thumbnail: "/images/examples/kalkulator1.png",
+    demoUrl: "/case-study/rop-calculator",
+    features: ["2026-2028 Cost Projection", "Material Comparison", "PDF Export"],
+    isPremium: false,
+  },
+  {
+    id: "wieruszow-travel",
+    title: "TravelPL — Complete Digital System for Travel Agency",
+    description: "Complete digital transformation for Polish coach tour operator: professional website showcasing 12 tours, mobile PWA travel guide for trip participants, and Google Ads campaigns. From zero online presence to modern digital travel agency.",
+    industry: "case-study",
+    industryLabel: "Case Study",
+    template: "canvas",
+    thumbnail: "/images/examples/travel.png",
+    demoUrl: "/case-study/wieruszow-travel",
+    features: ["Website + Mobile App", "Google Ads Campaigns", "PWA Travel Guide"],
+    isPremium: false,
   },
 ];
 

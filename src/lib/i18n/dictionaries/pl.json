@@ -1,7 +1,16 @@
 {
   "nav": {
-    "templates": "Szablony",
+    "services": "Usługi",
+    "portfolio": "Portfolio",
     "newWebsite": "Nowa Strona",
+    "wcagCompliance": "Dostępność WCAG",
+    "freePrototype": "Darmowy Prototyp",
+    "configurators": "Konfiguratory",
+    "googleAds": "Google Ads",
+    "auditMarketing": "Audyt marketingowy",
+    "customerDatabase": "Baza klientów B2B",
+    "customTools": "Narzędzia na miarę",
+    "salesMaterials": "Materiały sprzedażowe",
     "contact": "Kontakt"
   },
   "hero": {
@@ -70,6 +79,268 @@
     "cta": "Porozmawiajmy o Twoim konfiguratorze",
     "ctaNote": "Masz niestandardowy pomysł? Napisz — wycenimy bezpłatnie."
   },
+  "googleAdsService": {
+    "hero": {
+      "badge": "Google Ads",
+      "titleStart": "Klienci szukają w Google —",
+      "titleHighlight": "znajdź ich pierwsi",
+      "subtitle": "Kiedy ktoś wpisuje \"hydraulik Warszawa\" albo \"dentysta Kraków\", Twoja reklama wyświetla się na górze wyników. Natychmiastowy ruch, mierzalne wyniki, tylko z Twojego rejonu.",
+      "cta": "Zacznij kampanię Google Ads",
+      "stats": [
+        {
+          "value": 92,
+          "suffix": "%",
+          "label": "klientów szuka usług w Google"
+        },
+        {
+          "value": 65,
+          "suffix": "%",
+          "label": "klika w płatne reklamy na górze"
+        },
+        {
+          "value": 200,
+          "suffix": "%",
+          "label": "średni zwrot z inwestycji"
+        }
+      ]
+    },
+    "problem": {
+      "badge": "Problem",
+      "title": "Tracisz pieniądze na źle prowadzonych kampaniach",
+      "subtitle": "Większość małych firm marnotrawia budżet reklamowy, bo nie wie jak Google Ads działa.",
+      "items": [
+        {
+          "title": "Wydajesz budżet na złe słowa kluczowe",
+          "description": "Płacisz za kliknięcia od ludzi, którzy nie są Twoimi klientami. Ktoś szuka \"dentysta praca\" zamiast \"dentysta Kraków wizyta\", a Ty płacisz za bezwartościowe kliknięcie."
+        },
+        {
+          "title": "Konkurencja przebija Twoje stawki",
+          "description": "Bez optymalizacji wydajesz więcej za to samo kliknięcie niż konkurencja. Google nagradza lepiej zoptymalizowane reklamy niższą ceną za kliknięcie."
+        },
+        {
+          "title": "Niska jakość reklam = wysokie koszty",
+          "description": "Słaby Quality Score oznacza, że płacisz 2-3x więcej za te same pozycje co konkurencja. To jak kupować droższą benzynę, bo zaniedbałeś auto."
+        },
+        {
+          "title": "Nie wiesz co działa (brak śledzenia)",
+          "description": "Wydajesz 2000 zł miesięcznie, ale nie wiesz ile zapytań przyszło, które słowa działają, a które spalają kasę. Strzelasz w ciemno."
+        }
+      ]
+    },
+    "solution": {
+      "badge": "Nasza obsługa",
+      "title": "Profesjonalne zarządzanie kampaniami Google Ads",
+      "subtitle": "Zajmujemy się wszystkim — od researchu słów kluczowych po miesięczne raporty.",
+      "items": [
+        {
+          "title": "Profesjonalny research słów kluczowych",
+          "description": "Wybieramy frazy, które wpisują ludzie gotowi zapłacić, nie tylko \"poszukiwacze informacji\". Badamy konkurencję, koszty i intencję użytkownika.",
+          "features": [
+            "Analiza intencji wyszukiwania",
+            "Wykluczenie fraz negatywnych",
+            "Targetowanie lokalne (miasto/dzielnica)"
+          ]
+        },
+        {
+          "title": "Konfiguracja i optymalizacja kampanii",
+          "description": "Stawiamy kampanie od zera: grupy reklam, rozszerzenia, stawki, harmonogram. Optymalizujemy Quality Score żeby płacić mniej za kliknięcie.",
+          "features": [
+            "Struktura kampanii pod konwersję",
+            "Rozszerzenia reklam (telefon, lokalizacja)",
+            "Testy A/B tekstów i nagłówków"
+          ]
+        },
+        {
+          "title": "Przejrzyste raportowanie i śledzenie ROI",
+          "description": "Wiesz dokładnie ile wydałeś, ile zapytań przyszło i ile zarobiłeś. Miesięczne raporty pokazują co działa i co zmienimy w następnym miesiącu.",
+          "features": [
+            "Dashboard w czasie rzeczywistym",
+            "Śledzenie konwersji (telefony, formularze)",
+            "Miesięczny raport z rekomendacjami"
+          ]
+        }
+      ]
+    },
+    "pricing": {
+      "badge": "Cennik",
+      "title": "Proste, przewidywalne ceny",
+      "subtitle": "Płacisz stałą kwotę za obsługę + budżet reklamowy który sam ustalasz.",
+      "setupLabel": "jednorazowo",
+      "monthlyLabel": "/mies.",
+      "budgetNote": "Min. budżet reklamowy: 2 000 zł/mies.",
+      "roiHint": "Typowy klient odzyskuje koszt obsługi po 2-3 nowych zapytaniach. Reszta to zysk.",
+      "packages": [
+        {
+          "name": "Starter",
+          "tagline": "Dla małych firm",
+          "description": "Jedna kampania targetowana lokalnie. Idealna na start.",
+          "setup": "1 200 zł",
+          "monthly": "800 zł",
+          "monthlyLabel": "/mies.",
+          "budgetInfo": "+ 10% budżetu reklamowego",
+          "features": [
+            "1 kampania Google Search",
+            "Do 20 słów kluczowych",
+            "Targetowanie 1 miasto/region",
+            "Podstawowe rozszerzenia (telefon, lokalizacja)",
+            "Raport miesięczny (e-mail)",
+            "Optymalizacja raz w miesiącu",
+            "Śledzenie konwersji (telefon + formularz)"
+          ],
+          "cta": "Wybieram Starter"
+        },
+        {
+          "name": "Professional",
+          "tagline": "Najpopularniejszy",
+          "description": "Wielokampaniowa strategia z agresywną optymalizacją i testami A/B.",
+          "setup": "2 000 zł",
+          "monthly": "1 400 zł",
+          "monthlyLabel": "/mies.",
+          "budgetInfo": "+ 10% budżetu reklamowego",
+          "features": [
+            "Do 3 kampanii (Search + Display/GDN)",
+            "Nieograniczone słowa kluczowe",
+            "Targetowanie wielomiejskie",
+            "Pełne rozszerzenia + callouts",
+            "Dashboard analytics w czasie rzeczywistym",
+            "Optymalizacja co 2 tygodnie",
+            "Testy A/B nagłówków i tekstów",
+            "Miesięczna rozmowa + raport"
+          ],
+          "cta": "Wybieram Professional",
+          "popular": true
+        },
+        {
+          "name": "Enterprise",
+          "tagline": "Dla rosnących firm",
+          "description": "Pełnoskalowa obsługa z remarketingiem, targetowaniem zaawansowanym i dedykowanym managerem.",
+          "setup": "3 500 zł",
+          "monthly": "2 500 zł",
+          "monthlyLabel": "/mies.",
+          "budgetInfo": "+ 10% budżetu reklamowego",
+          "features": [
+            "Nieograniczone kampanie (Search + Display + YouTube)",
+            "Remarketing (odzyskiwanie porzuconych wizyt)",
+            "Targetowanie zaawansowane (demografia, zainteresowania)",
+            "Landing page dedykowane do kampanii",
+            "Dedykowany account manager",
+            "Optymalizacja w czasie rzeczywistym",
+            "Cotygodniowe raporty + comiesięczny call",
+            "Integracja z CRM (opcjonalnie)"
+          ],
+          "cta": "Wybieram Enterprise",
+          "highlight": "Najlepszy ROI"
+        }
+      ]
+    },
+    "benefits": {
+      "badge": "Korzyści",
+      "title": "Dlaczego Google Ads działa dla lokalnych firm",
+      "subtitle": "W przeciwieństwie do SEO, Google Ads przynosi klientów od pierwszego dnia.",
+      "items": [
+        {
+          "title": "Pojaw się kiedy szukają",
+          "description": "Twoja reklama wyświetla się dokładnie wtedy, gdy ktoś wpisuje \"hydraulik Warszawa awaria\". To nie cold calling — to ludzie z problemem, którzy aktywnie szukają rozwiązania."
+        },
+        {
+          "title": "Targetuj swój rejon",
+          "description": "Płacisz tylko za wyświetlenia w promieniu 10 km od Twojej siedziby (albo konkretnych dzielnic). Zero zmarnowanych pieniędzy na ludzi spoza zasięgu."
+        },
+        {
+          "title": "Natychmiastowe wyniki",
+          "description": "SEO trwa miesiące. Google Ads zaczyna przynosić zapytania w pierwszym tygodniu. Idealne dla firm, które potrzebują klientów teraz, nie za pół roku."
+        },
+        {
+          "title": "Mierzalny zwrot z inwestycji",
+          "description": "Wiesz dokładnie ile wydałeś i ile zapytań przyszło. Miesięczne raporty pokazują ROI w liczbach — nie w \"wrażeniach\" czy \"zasięgu\"."
+        }
+      ]
+    },
+    "process": {
+      "badge": "Jak to działa",
+      "title": "Od audytu do pierwszych klientów",
+      "subtitle": "Prosty 5-krokowy proces. Kampania rusza w 7-10 dni.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Audyt i research",
+          "description": "Badamy Twój rynek, konkurencję i słowa kluczowe. Ustalamy budżet i cele kampanii.",
+          "duration": "2-3 dni"
+        },
+        {
+          "number": "02",
+          "title": "Konfiguracja kampanii",
+          "description": "Tworzymy strukturę kampanii, piszemy teksty reklam, ustawiamy targetowanie i rozszerzenia.",
+          "duration": "3-4 dni"
+        },
+        {
+          "number": "03",
+          "title": "Tracking i testy",
+          "description": "Instalujemy śledzenie konwersji (telefony, formularze). Uruchamiamy kampanię z ostrożnym budżetem testowym.",
+          "duration": "1 dzień"
+        },
+        {
+          "number": "04",
+          "title": "Optymalizacja",
+          "description": "Przez pierwsze 2 tygodnie intensywnie testujemy, wyłączamy słabe słowa, podnosimy stawki na te które konwertują.",
+          "duration": "2 tyg."
+        },
+        {
+          "number": "05",
+          "title": "Raportowanie",
+          "description": "Co miesiąc dostajesz raport: ile wydano, ile zapytań przyszło, jaki ROI, co zmienimy w następnym miesiącu.",
+          "duration": "Comiesięczne"
+        }
+      ]
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Najczęstsze pytania",
+      "subtitle": "Nie znalazłeś odpowiedzi? Napisz — hello@dealcatcher.io",
+      "items": [
+        {
+          "question": "Jaki minimalny budżet reklamowy?",
+          "answer": "Minimum 2 000 zł/mies. na reklamę (to ~65 zł dziennie). Mniejszy budżet nie pozwala zebrać danych do optymalizacji i konkurować o dobre pozycje. Budżet możesz podnieść w każdej chwili."
+        },
+        {
+          "question": "Ile czasu zajmuje setup?",
+          "answer": "7-10 dni roboczych od momentu podpisania umowy i opłacenia setup fee. Kampania rusza po zainstalowaniu trackingu i Twojej akceptacji tekstów reklam."
+        },
+        {
+          "question": "Czy gwarantujecie wyniki?",
+          "answer": "Nie gwarantujemy konkretnej liczby leadów (to zależy od Twojego rynku, budżetu i konkurencji). Gwarantujemy profesjonalną konfigurację, ciągłą optymalizację i pełną transparentność wyników. Jeśli kampania nie przynosi leadów po 3 miesiącach, analizujemy co nie działa i proponujemy plan naprawczy."
+        },
+        {
+          "question": "Czy będę miał dostęp do konta Google Ads?",
+          "answer": "Tak. Kampania jest prowadzona na Twoim koncie Google Ads (nie naszym). Masz pełny dostęp 24/7. Jeśli kiedykolwiek zrezygnujesz z obsługi, kampania i dane zostają z Tobą."
+        },
+        {
+          "question": "Co jeśli chcę zmienić budżet w trakcie miesiąca?",
+          "answer": "Możesz podnieść lub obniżyć budżet reklamowy w każdej chwili. Opłata za obsługę (800 zł / 1400 zł / 2500 zł) nie zmienia się, zmienia się tylko % od budżetu reklamowego."
+        },
+        {
+          "question": "Czym różni się Google Ads od SEO?",
+          "answer": "SEO (pozycjonowanie organiczne) trwa miesiące i wymaga treści, linków, optymalizacji technicznej. Wyniki są darmowe, ale trzeba czekać. Google Ads płacisz za kliknięcie, ale wyniki przychodzą od razu. Idealne rozwiązanie: Google Ads na szybkie leady + SEO na długoterminowy ruch."
+        },
+        {
+          "question": "Czy potrzebuję landing page czy wystarczy normalna strona?",
+          "answer": "Normalna strona wystarczy (musi być dobrze zrobiona z jasnym CTA). W pakiecie Professional i Enterprise możemy stworzyć dedykowany landing page zoptymalizowany pod konkretną kampanię — to poprawia konwersję o 30-50%."
+        },
+        {
+          "question": "Co się stanie jak zrezygnuję?",
+          "answer": "Możesz zrezygnować w każdej chwili (30 dni wypowiedzenia). Kampania i konto Google Ads zostają z Tobą. Przekażemy pełną dokumentację i hasła. Nie ma żadnego lock-in."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Zacznij pozyskiwać klientów z",
+      "titleHighlight": "Google Ads",
+      "subtitle": "Umów bezpłatną konsultację. Omówimy Twój rynek, pokażemy potencjał i wycenimy kampanię bez zobowiązań.",
+      "ctaPrimary": "Umów bezpłatną konsultację",
+      "ctaSecondary": "Bezpłatny audyt kampanii",
+      "disclaimer": "Masz już kampanię Google Ads która nie działa? Zrobimy darmowy audyt i pokażemy co można poprawić."
+    }
+  },
   "whoWeHelp": {
     "badge": "Dla kogo",
     "title": "Dwie drogi do silnej obecności online",
@@ -79,13 +350,21 @@
         "title": "Nie masz jeszcze strony?",
         "description": "Jesteś świetnym fachowcem, ale klienci nie mogą Cię znaleźć w internecie. Twoja konkurencja ze stronami zgarnia zlecenia, które powinny być Twoje. Asystenci AI nie mogą Cię polecać, bo cyfrowo nie istniejesz.",
         "cta": "Chcę profesjonalną stronę",
-        "features": ["Gotowa na AI Search", "Responsywna", "Od 3 000 zł"]
+        "features": [
+          "Gotowa na AI Search",
+          "Responsywna",
+          "Od 3 000 zł"
+        ]
       },
       {
         "title": "Masz stronę, ale nie działa?",
         "description": "Twoja strona wygląda przestarzale, nie działa na telefonach albo nie przekonuje klientów? Większość stron firm nie jest zoptymalizowana pod wyszukiwarki i konwersję. Zbudujemy Ci nową, która naprawdę pracuje.",
         "cta": "Porozmawiajmy o Twojej stronie",
-        "features": ["Bezpłatna konsultacja", "Szczegółowa analiza", "Propozycja redesignu"]
+        "features": [
+          "Bezpłatna konsultacja",
+          "Szczegółowa analiza",
+          "Propozycja redesignu"
+        ]
       }
     ]
   },
@@ -237,7 +516,7 @@
     },
     "info": {
       "email": "E-mail",
-      "emailValue": "hello@dealcatcher.io",
+      "emailValue": "contact@dealcatcher.io",
       "responseTime": "Czas odpowiedzi",
       "responseValue": "Do 24 godzin",
       "location": "Lokalizacja",
@@ -250,15 +529,16 @@
     "sections": {
       "intro": {
         "title": "Wprowadzenie",
-        "content": "Rapid Software House sp. z o.o. (\"my\", \"nas\" lub \"nasz\") prowadzi stronę dealcatcher.io. Niniejsza Polityka prywatności wyjaśnia, jak zbieramy, wykorzystujemy, ujawniamy i zabezpieczamy Twoje dane osobowe podczas korzystania z naszej strony."
+        "content": "AI SCALING SYSTEMS sp. z o.o. (\"my\", \"nas\" lub \"nasz\") prowadzi stronę dealcatcher.io. Niniejsza Polityka prywatności wyjaśnia, jak zbieramy, wykorzystujemy, ujawniamy i zabezpieczamy Twoje dane osobowe podczas korzystania z naszej strony."
       },
       "controller": {
         "title": "Administrator danych",
         "content": "Administratorem Twoich danych osobowych jest:",
-        "company": "Rapid Software House sp. z o.o.",
-        "address": "ul. Złota 75A lok. 7, 00-819 Warszawa",
-        "krs": "KRS: 0001008811",
-        "nip": "NIP: 5273033283",
+        "company": "AI SCALING SYSTEMS sp. z o.o.",
+        "address": "Aleje Jerozolimskie 109 / 70, 02-011 Warszawa",
+        "krs": "KRS: 0001221058",
+        "nip": "NIP: 7011297183",
+        "regon": "REGON: 543861552",
         "email": "E-mail: contact@dealcatcher.io"
       },
       "dataCollected": {
@@ -266,11 +546,22 @@
         "intro": "Zbieramy dane, które podajesz nam bezpośrednio, oraz dane zbierane automatycznie:",
         "contactForm": {
           "title": "Dane z formularza kontaktowego",
-          "items": ["Imię i nazwisko", "Adres e-mail", "Numer telefonu (opcjonalnie)", "Treść wiadomości"]
+          "items": [
+            "Imię i nazwisko",
+            "Adres e-mail",
+            "Numer telefonu (opcjonalnie)",
+            "Treść wiadomości"
+          ]
         },
         "automatic": {
           "title": "Dane zbierane automatycznie",
-          "items": ["Adres IP", "Typ i wersja przeglądarki", "Odwiedzone strony i czas spędzony", "Strona odsyłająca", "Informacje o urządzeniu"]
+          "items": [
+            "Adres IP",
+            "Typ i wersja przeglądarki",
+            "Odwiedzone strony i czas spędzony",
+            "Strona odsyłająca",
+            "Informacje o urządzeniu"
+          ]
         }
       },
       "cookies": {
@@ -393,14 +684,14 @@
     "sections": {
       "intro": {
         "title": "Wprowadzenie",
-        "content": "Niniejszy Regulamin reguluje korzystanie ze strony dealcatcher.io oraz usług świadczonych przez Rapid Software House sp. z o.o. Korzystając z naszej strony, akceptujesz postanowienia niniejszego Regulaminu."
+        "content": "Niniejszy Regulamin reguluje korzystanie ze strony dealcatcher.io oraz usług świadczonych przez AI SCALING SYSTEMS sp. z o.o. Korzystając z naszej strony, akceptujesz postanowienia niniejszego Regulaminu."
       },
       "definitions": {
         "title": "Definicje",
         "items": [
           {
             "term": "Usługodawca",
-            "definition": "Rapid Software House sp. z o.o., ul. Złota 75A lok. 7, 00-819 Warszawa, KRS: 0001008811, NIP: 5273033283"
+            "definition": "AI SCALING SYSTEMS sp. z o.o., Aleje Jerozolimskie 109 / 70, 02-011 Warszawa, KRS: 0001221058, NIP: 7011297183, REGON: 543861552"
           },
           {
             "term": "Użytkownik/Klient",
@@ -485,7 +776,7 @@
       },
       "intellectualProperty": {
         "title": "Własność intelektualna",
-        "content": "Wszystkie treści na tej stronie, w tym między innymi teksty, grafiki, logotypy, obrazy i oprogramowanie, stanowią własność Rapid Software House sp. z o.o. lub jej licencjodawców i są chronione prawem własności intelektualnej. Nie możesz ich kopiować, rozpowszechniać ani tworzyć dzieł zależnych bez naszej pisemnej zgody."
+        "content": "Wszystkie treści na tej stronie, w tym między innymi teksty, grafiki, logotypy, obrazy i oprogramowanie, stanowią własność AI SCALING SYSTEMS sp. z o.o. lub jej licencjodawców i są chronione prawem własności intelektualnej. Nie możesz ich kopiować, rozpowszechniać ani tworzyć dzieł zależnych bez naszej pisemnej zgody."
       },
       "disclaimer": {
         "title": "Wyłączenie gwarancji",
@@ -493,7 +784,7 @@
       },
       "liability": {
         "title": "Ograniczenie odpowiedzialności",
-        "content": "W maksymalnym zakresie dozwolonym przez prawo Rapid Software House sp. z o.o. nie ponosi odpowiedzialności za jakiekolwiek szkody pośrednie, uboczne, szczególne, wynikowe lub odszkodowania represyjne. Nasze łączna odpowiedzialność nie przekroczy kwoty, jaką nam zapłaciłeś/zapłaciłaś w ciągu 12 miesięcy poprzedzających roszczenie. Ograniczenie to nie dotyczy odpowiedzialności, której nie można wyłączyć lub ograniczyć na mocy obowiązujących przepisów o ochronie konsumentów."
+        "content": "W maksymalnym zakresie dozwolonym przez prawo AI SCALING SYSTEMS sp. z o.o. nie ponosi odpowiedzialności za jakiekolwiek szkody pośrednie, uboczne, szczególne, wynikowe lub odszkodowania represyjne. Nasze łączna odpowiedzialność nie przekroczy kwoty, jaką nam zapłaciłeś/zapłaciłaś w ciągu 12 miesięcy poprzedzających roszczenie. Ograniczenie to nie dotyczy odpowiedzialności, której nie można wyłączyć lub ograniczyć na mocy obowiązujących przepisów o ochronie konsumentów."
       },
       "thirdParty": {
         "title": "Linki zewnętrzne",
@@ -514,8 +805,8 @@
       "contact": {
         "title": "Dane kontaktowe",
         "content": "W razie pytań dotyczących niniejszego Regulaminu, skontaktuj się z nami:",
-        "company": "Rapid Software House sp. z o.o.",
-        "address": "ul. Złota 75A lok. 7, 00-819 Warszawa",
+        "company": "AI SCALING SYSTEMS sp. z o.o.",
+        "address": "Aleje Jerozolimskie 109 / 70, 02-011 Warszawa",
         "email": "E-mail: contact@dealcatcher.io"
       }
     }
@@ -591,7 +882,7 @@
     "title": "Formularz odstąpienia",
     "subtitle": "Skorzystaj z tego formularza, aby odstąpić od umowy w ciągu 14 dni",
     "form": {
-      "recipient": "Do: Rapid Software House sp. z o.o., ul. Złota 75A lok. 7, 00-819 Warszawa, contact@dealcatcher.io",
+      "recipient": "Do: AI SCALING SYSTEMS sp. z o.o., Aleje Jerozolimskie 109 / 70, 02-011 Warszawa, contact@dealcatcher.io",
       "declaration": "Niniejszym informuję/informujemy o moim/naszym odstąpieniu od umowy o świadczenie następującej usługi:",
       "serviceLabel": "Opis usługi",
       "orderedOnLabel": "Data zamówienia / otrzymania",
@@ -612,9 +903,21 @@
       "subtitle": "Klienci każdego dnia szukają w Google stolarzy, hydraulików, dentystów i innych fachowców. Jeśli Cię tam nie ma — jesteś niewidzialny. Konkurencja ze stronami wygrywa zlecenia, które powinny być Twoje.",
       "cta": "Zamów profesjonalną stronę",
       "stats": [
-        { "value": 87, "suffix": "%", "label": "konsumentów szuka w internecie" },
-        { "value": 46, "suffix": "%", "label": "preferuje firmy ze stroną www" },
-        { "value": 3, "suffix": "x", "label": "więcej zapytań z profesjonalną stroną" }
+        {
+          "value": 87,
+          "suffix": "%",
+          "label": "konsumentów szuka w internecie"
+        },
+        {
+          "value": 46,
+          "suffix": "%",
+          "label": "preferuje firmy ze stroną www"
+        },
+        {
+          "value": 3,
+          "suffix": "x",
+          "label": "więcej zapytań z profesjonalną stroną"
+        }
       ]
     },
     "problem": {
@@ -648,27 +951,47 @@
         {
           "title": "Gotowa na AI Search",
           "description": "Zbudowana tak, żeby ChatGPT, Perplexity i Google AI znajdywały i polecały Twoją firmę.",
-          "features": ["Semantyczna struktura HTML", "Dane strukturalne (schema.org)", "Treści zoptymalizowane pod AI"]
+          "features": [
+            "Semantyczna struktura HTML",
+            "Dane strukturalne (schema.org)",
+            "Treści zoptymalizowane pod AI"
+          ]
         },
         {
           "title": "Zaprojektowana pod konwersję",
           "description": "Strategiczny design, który zamienia odwiedzających w płacących klientów. Każdy element jest przemyślany.",
-          "features": ["Jasna propozycja wartości", "Silne wezwania do działania", "Social proof i sygnały zaufania"]
+          "features": [
+            "Jasna propozycja wartości",
+            "Silne wezwania do działania",
+            "Social proof i sygnały zaufania"
+          ]
         },
         {
           "title": "Responsywna na każdym urządzeniu",
           "description": "Idealnie wygląda na telefonie, tablecie i komputerze. Ponad 60% ruchu pochodzi z urządzeń mobilnych.",
-          "features": ["Mobile-first design", "Szybkie ładowanie", "Testowana cross-browser"]
+          "features": [
+            "Mobile-first design",
+            "Szybkie ładowanie",
+            "Testowana cross-browser"
+          ]
         },
         {
           "title": "Możesz podnieść ceny",
           "description": "Profesjonalna strona buduje wiarygodność. Klienci bardziej Ci ufają i są gotowi płacić więcej.",
-          "features": ["Profesjonalny wizerunek", "Prezentacja najlepszych realizacji", "Wyróżnienie na tle konkurencji"]
+          "features": [
+            "Profesjonalny wizerunek",
+            "Prezentacja najlepszych realizacji",
+            "Wyróżnienie na tle konkurencji"
+          ]
         },
         {
           "title": "Zero zachodu",
           "description": "15 minut na brief. Resztą — projektem, kodem, hostingiem i utrzymaniem — zajmujemy się my.",
-          "features": ["Szybki 15-minutowy brief", "Robimy wszystko", "Wsparcie w cenie"]
+          "features": [
+            "Szybki 15-minutowy brief",
+            "Robimy wszystko",
+            "Wsparcie w cenie"
+          ]
         }
       ]
     },
@@ -686,7 +1009,16 @@
           "setup": "3 000 zł",
           "monthly": "200 zł",
           "monthlyLabel": "/mies.",
-          "features": ["Profesjonalny projekt z szablonu (12 opcji)", "Optymalizacja pod AI Search", "Responsywna na każdym urządzeniu", "Formularz kontaktowy", "Google Analytics", "Hosting w cenie", "Monitoring dostępności 24/7", "Wsparcie mailowe (odpowiedź do 24h)"],
+          "features": [
+            "Profesjonalny projekt z szablonu (12 opcji)",
+            "Optymalizacja pod AI Search",
+            "Responsywna na każdym urządzeniu",
+            "Formularz kontaktowy",
+            "Google Analytics",
+            "Hosting w cenie",
+            "Monitoring dostępności 24/7",
+            "Wsparcie mailowe (odpowiedź do 24h)"
+          ],
           "cta": "Wybieram Starter"
         },
         {
@@ -696,7 +1028,19 @@
           "setup": "6 000 zł",
           "monthly": "400 zł",
           "monthlyLabel": "/mies.",
-          "features": ["Projekt na zamówienie od zera", "Konfigurator produktu na zamówienie", "Optymalizacja pod AI Search", "Responsywna na każdym urządzeniu", "Formularz kontaktowy + system rezerwacji", "Google Analytics + raport miesięczny", "Hosting w cenie", "Monitoring dostępności 24/7", "Nielimitowane zmiany treści", "Dodawanie nowych podstron", "Priorytetowe wsparcie (odp. do 4h)"],
+          "features": [
+            "Projekt na zamówienie od zera",
+            "Konfigurator produktu na zamówienie",
+            "Optymalizacja pod AI Search",
+            "Responsywna na każdym urządzeniu",
+            "Formularz kontaktowy + system rezerwacji",
+            "Google Analytics + raport miesięczny",
+            "Hosting w cenie",
+            "Monitoring dostępności 24/7",
+            "Nielimitowane zmiany treści",
+            "Dodawanie nowych podstron",
+            "Priorytetowe wsparcie (odp. do 4h)"
+          ],
           "cta": "Wybieram Growth",
           "popular": true
         },
@@ -707,7 +1051,17 @@
           "setup": "7 000 zł",
           "monthly": "1 400 zł",
           "monthlyLabel": "/mies. + budżet rek.",
-          "features": ["Wszystko z Growth, plus:", "Konfiguracja kampanii Google Ads", "Dobór słów kluczowych dla Twojego rynku", "Tworzenie tekstów reklamowych", "Miesięczna optymalizacja kampanii", "Testy A/B i zarządzanie stawkami", "Raport wyników z ROI", "Bezpośrednie leady z wyszukiwarki", "Min. 2 000 zł/mies. budżet reklamowy"],
+          "features": [
+            "Wszystko z Growth, plus:",
+            "Konfiguracja kampanii Google Ads",
+            "Dobór słów kluczowych dla Twojego rynku",
+            "Tworzenie tekstów reklamowych",
+            "Miesięczna optymalizacja kampanii",
+            "Testy A/B i zarządzanie stawkami",
+            "Raport wyników z ROI",
+            "Bezpośrednie leady z wyszukiwarki",
+            "Min. 2 000 zł/mies. budżet reklamowy"
+          ],
           "cta": "Wybieram Accelerator",
           "highlight": "Najlepszy ROI"
         }
@@ -721,7 +1075,11 @@
       "howItWorks": {
         "title": "Strona + Google Ads = pełny pipeline",
         "description": "Twoja strona zamienia odwiedzających w klientów. Google Ads kieruje tych odwiedzających na Twoją stronę. Razem tworzą kompletny system pozyskiwania klientów.",
-        "steps": ["Klient szuka", "Widzi Twoją reklamę", "Kontaktuje się"]
+        "steps": [
+          "Klient szuka",
+          "Widzi Twoją reklamę",
+          "Kontaktuje się"
+        ]
       },
       "example": {
         "label": "Przykładowe wyszukiwanie:",
@@ -731,10 +1089,22 @@
         "adDescription": "Darmowa wycena. 15+ lat doświadczenia. Zadzwoń teraz."
       },
       "benefits": [
-        { "title": "Pojawiasz się gdy szukają", "description": "Kiedy ktoś wpisuje w Google \"hydraulik Warszawa\" albo \"dentysta Kraków\", Twoja reklama wyświetla się na górze." },
-        { "title": "Celujesz w swój rejon", "description": "Płacisz tylko za dotarcie do ludzi w Twoim rejonie. Żadnych zmarnowanych pieniędzy na odległe miasta." },
-        { "title": "Natychmiastowe wyniki", "description": "W przeciwieństwie do SEO, Google Ads przynosi klientów od pierwszego dnia. Telefony i zapytania już w pierwszym tygodniu." },
-        { "title": "Mierzalny zwrot z inwestycji", "description": "Wiesz dokładnie, ile leadów przyszło z reklam. Miesięczne raporty pokazują, co działa." }
+        {
+          "title": "Pojawiasz się gdy szukają",
+          "description": "Kiedy ktoś wpisuje w Google \"hydraulik Warszawa\" albo \"dentysta Kraków\", Twoja reklama wyświetla się na górze."
+        },
+        {
+          "title": "Celujesz w swój rejon",
+          "description": "Płacisz tylko za dotarcie do ludzi w Twoim rejonie. Żadnych zmarnowanych pieniędzy na odległe miasta."
+        },
+        {
+          "title": "Natychmiastowe wyniki",
+          "description": "W przeciwieństwie do SEO, Google Ads przynosi klientów od pierwszego dnia. Telefony i zapytania już w pierwszym tygodniu."
+        },
+        {
+          "title": "Mierzalny zwrot z inwestycji",
+          "description": "Wiesz dokładnie, ile leadów przyszło z reklam. Miesięczne raporty pokazują, co działa."
+        }
       ],
       "pricingLabel": "Prowadzenie Google Ads",
       "pricingValue": "800 zł",
@@ -747,10 +1117,30 @@
       "title": "Od zera do online w kilka dni",
       "subtitle": "Prosty 4-krokowy proces. Ty skupiasz się na swoim fachu, my zajmujemy się resztą.",
       "steps": [
-        { "number": "01", "title": "Konsultacja", "description": "Szybka rozmowa, żeby zrozumieć Twój biznes, usługi i cele. Odpowiemy na pytania i wytłumaczymy proces.", "duration": "15 min" },
-        { "number": "02", "title": "Brief", "description": "Wypełniasz prosty formularz z informacjami o firmie, usługach i materiałami (logo, zdjęcia). Zajmuje 15 minut.", "duration": "15 min" },
-        { "number": "03", "title": "Budowa", "description": "Projektujemy i budujemy Twoją stronę. Zobaczysz podgląd i możesz zgłosić poprawki. Zazwyczaj 1-2 rundy feedbacku.", "duration": "5-7 dni" },
-        { "number": "04", "title": "Publikacja", "description": "Publikujemy stronę, konfigurujemy domenę i analitykę. Upewniamy się, że wszystko działa idealnie.", "duration": "1 dzień" }
+        {
+          "number": "01",
+          "title": "Konsultacja",
+          "description": "Szybka rozmowa, żeby zrozumieć Twój biznes, usługi i cele. Odpowiemy na pytania i wytłumaczymy proces.",
+          "duration": "15 min"
+        },
+        {
+          "number": "02",
+          "title": "Brief",
+          "description": "Wypełniasz prosty formularz z informacjami o firmie, usługach i materiałami (logo, zdjęcia). Zajmuje 15 minut.",
+          "duration": "15 min"
+        },
+        {
+          "number": "03",
+          "title": "Budowa",
+          "description": "Projektujemy i budujemy Twoją stronę. Zobaczysz podgląd i możesz zgłosić poprawki. Zazwyczaj 1-2 rundy feedbacku.",
+          "duration": "5-7 dni"
+        },
+        {
+          "number": "04",
+          "title": "Publikacja",
+          "description": "Publikujemy stronę, konfigurujemy domenę i analitykę. Upewniamy się, że wszystko działa idealnie.",
+          "duration": "1 dzień"
+        }
       ]
     },
     "faq": {
@@ -758,12 +1148,30 @@
       "title": "Częste pytania",
       "subtitle": "Masz jeszcze pytania? Napisz do nas na hello@dealcatcher.io",
       "items": [
-        { "question": "Nie potrzebuję strony — mam wystarczająco dużo zleceń z poleceń", "answer": "Świetnie! Ale strona pozwala Ci wybierać lepsze zlecenia i brać wyższe stawki. Kiedy klienci widzą Twoją profesjonalną obecność online, są gotowi płacić więcej. Poza tym polecenia kiedyś się kończą — strona daje Ci stały dopływ nowych zapytań." },
-        { "question": "To za drogo", "answer": "Strona zwraca się po 2-3 nowych klientach. Jeśli bierzesz 1500+ zł za zlecenie, inwestycja 3000 zł zwraca się niemal natychmiast. Miesięczna opłata to mniej niż jedna godzina Twojej pracy — a obejmuje hosting, utrzymanie i wsparcie." },
-        { "question": "Nie mam na to czasu", "answer": "Zaprojektowaliśmy proces specjalnie dla zapracowanych fachowców. Brief zajmuje 15 minut. Jedna rozmowa 15 minut. To wszystko. Robimy absolutnie wszystko — projekt, kod, hosting, konfiguracja domeny i utrzymanie. Nie musisz uczyć się niczego technicznego." },
-        { "question": "Mam stronę na Facebooku — czy to nie wystarczy?", "answer": "Facebook to uzupełnienie, nie zamiennik strony. Google słabo indeksuje profile na Facebooku. Asystenci AI jak ChatGPT nie mogą Cię polecić na podstawie Facebooka. Wielu klientów oczekuje, że \"prawdziwa\" firma ma własną stronę — sam Facebook może wyglądać nieprofesjonalnie." },
-        { "question": "Czy mogę sam aktualizować stronę?", "answer": "Nie musisz. Zmiany treści są wliczone w plan Growth (bez limitu) lub dostępne na życzenie w planie Starter. Napisz nam co chcesz zmienić, a zrobimy to w ciągu 24 godzin. Żadnych umiejętności technicznych nie potrzeba." },
-        { "question": "Co jeśli chcę zrezygnować?", "answer": "Możesz zrezygnować z planu miesięcznego w dowolnym momencie — bez pytań. Jeśli zrezygnujesz, zachowujesz własność domeny. Pomożemy Ci przenieść stronę do innego dostawcy. Nie ma żadnego lock-in." }
+        {
+          "question": "Nie potrzebuję strony — mam wystarczająco dużo zleceń z poleceń",
+          "answer": "Świetnie! Ale strona pozwala Ci wybierać lepsze zlecenia i brać wyższe stawki. Kiedy klienci widzą Twoją profesjonalną obecność online, są gotowi płacić więcej. Poza tym polecenia kiedyś się kończą — strona daje Ci stały dopływ nowych zapytań."
+        },
+        {
+          "question": "To za drogo",
+          "answer": "Strona zwraca się po 2-3 nowych klientach. Jeśli bierzesz 1500+ zł za zlecenie, inwestycja 3000 zł zwraca się niemal natychmiast. Miesięczna opłata to mniej niż jedna godzina Twojej pracy — a obejmuje hosting, utrzymanie i wsparcie."
+        },
+        {
+          "question": "Nie mam na to czasu",
+          "answer": "Zaprojektowaliśmy proces specjalnie dla zapracowanych fachowców. Brief zajmuje 15 minut. Jedna rozmowa 15 minut. To wszystko. Robimy absolutnie wszystko — projekt, kod, hosting, konfiguracja domeny i utrzymanie. Nie musisz uczyć się niczego technicznego."
+        },
+        {
+          "question": "Mam stronę na Facebooku — czy to nie wystarczy?",
+          "answer": "Facebook to uzupełnienie, nie zamiennik strony. Google słabo indeksuje profile na Facebooku. Asystenci AI jak ChatGPT nie mogą Cię polecić na podstawie Facebooka. Wielu klientów oczekuje, że \"prawdziwa\" firma ma własną stronę — sam Facebook może wyglądać nieprofesjonalnie."
+        },
+        {
+          "question": "Czy mogę sam aktualizować stronę?",
+          "answer": "Nie musisz. Zmiany treści są wliczone w plan Growth (bez limitu) lub dostępne na życzenie w planie Starter. Napisz nam co chcesz zmienić, a zrobimy to w ciągu 24 godzin. Żadnych umiejętności technicznych nie potrzeba."
+        },
+        {
+          "question": "Co jeśli chcę zrezygnować?",
+          "answer": "Możesz zrezygnować z planu miesięcznego w dowolnym momencie — bez pytań. Jeśli zrezygnujesz, zachowujesz własność domeny. Pomożemy Ci przenieść stronę do innego dostawcy. Nie ma żadnego lock-in."
+        }
       ]
     },
     "cta": {
@@ -773,6 +1181,1069 @@
       "ctaPrimary": "Umów bezpłatną konsultację",
       "ctaSecondary": "Napisz do nas",
       "disclaimer": "Bez zobowiązań. Nigdy nie wyślemy Ci spamu."
+    }
+  },
+  "konfiguratory": {
+    "hero": {
+      "badge": "Konfiguratory produktów",
+      "titleStart": "Konfigurator, który zamienia pytania",
+      "titleHighlight": "w zamówienia",
+      "subtitle": "Zamiast tracić godziny na mailowanie wycen tam i z powrotem, daj klientom narzędzie, które w 2 minuty pokaże cenę i specyfikację. Więcej zamówień, zero ręcznej pracy.",
+      "cta": "Zobacz przykłady konfiguratorów",
+      "stats": [
+        {
+          "value": 73,
+          "suffix": "%",
+          "label": "klientów chce znać cenę od razu"
+        },
+        {
+          "value": 65,
+          "suffix": "%",
+          "label": "porzuca kontakt bez szybkiej wyceny"
+        },
+        {
+          "value": 4,
+          "suffix": "x",
+          "label": "więcej konwersji z konfiguratorem"
+        }
+      ]
+    },
+    "problem": {
+      "badge": "Problem",
+      "title": "Tracisz klientów, zanim zdążysz odpowiedzieć",
+      "subtitle": "Kiedy każda wycena to wymiana 5 maili, Twoja konkurencja już ma zamówienie.",
+      "items": [
+        {
+          "title": "Dziesiątki maili z pytaniami o cenę",
+          "description": "\"Ile kosztuje roleta 150x180 w kolorze białym?\" \"A z napędem elektrycznym?\" \"A w beżowym?\". Odpowiadasz na 20 takich zapytań dziennie. Każde zabiera 15 minut. To 5 godzin tygodniowo na ręczne wyceny."
+        },
+        {
+          "title": "Klient znika, zanim zobaczył cenę",
+          "description": "67% osób porzuca zapytanie, jeśli odpowiedź trwa dłużej niż kilka godzin. Klient pisze do Ciebie o 21:00, rano o 9:00 odbierasz mail — ale on już zamówił u konkurencji, która miała konfigurator."
+        },
+        {
+          "title": "Konkurencja już ma automatyczne wyceny",
+          "description": "Firmy sprzedające kuchnie, meble na wymiar, okna czy systemy fotowoltaiczne dawno to zautomatyzowały. Klient dostaje specyfikację i cenę w czasie rzeczywistym. Ty wciąż wysyłasz maile."
+        },
+        {
+          "title": "Ręczne wyceny = błędy i stracony czas",
+          "description": "Zapominasz dodać montaż, źle przeliczysz wymiary, albo klient pisze \"A z innym kolorem?\". Zaczynasz od zera. Konfigurator liczy sam — bez błędów, 24/7."
+        }
+      ]
+    },
+    "solution": {
+      "badge": "Rozwiązanie",
+      "title": "3 typy konfiguratorów dla różnych biznesów",
+      "subtitle": "Wybierz narzędzie, które pasuje do tego, co sprzedajesz.",
+      "items": [
+        {
+          "title": "Konfigurator produktu",
+          "description": "Klient wybiera wymiary, materiał, kolor, dodatki — widzi cenę na żywo. Idealny dla produktów na wymiar.",
+          "features": [
+            "Wymiary, kolory, materiały",
+            "Cena w czasie rzeczywistym",
+            "Wizualizacja wyboru",
+            "PDF ze specyfikacją",
+            "Integracja z CRM/mail"
+          ]
+        },
+        {
+          "title": "Kalkulator usługi",
+          "description": "Klient odpowiada na pytania (powierzchnia, rodzaj prac, lokalizacja) — dostaje szacunkową wycenę. Dla usług.",
+          "features": [
+            "Pytania wielokrotnego wyboru",
+            "Logika warunkowa (jeśli X, to pokaż Y)",
+            "Szacunkowa wycena z zakresem",
+            "Lead capture (mail, telefon)",
+            "Automatyczny mail z podsumowaniem"
+          ]
+        },
+        {
+          "title": "Narzędzie branżowe",
+          "description": "Dedykowane rozwiązanie: konfigurator okien PVC, kalkulator fotowoltaiki, projektant kuchni 3D. Zbudowane pod Twój biznes.",
+          "features": [
+            "Pełna customizacja pod branżę",
+            "Wizualizacja 3D (opcjonalna)",
+            "Integracja z magazynem/cenami",
+            "White-label (Twoja marka)",
+            "API do własnego systemu"
+          ]
+        }
+      ]
+    },
+    "pricing": {
+      "badge": "Proces & Wycena",
+      "title": "Każdy konfigurator jest wyceniany indywidualnie",
+      "subtitle": "Zaczynamy od warsztatów, żeby zrozumieć Twój proces i precyzyjnie wycenić projekt.",
+      "setupLabel": "warsztat wstępny",
+      "roiHint": "Warsztat jest darmowy i bez zobowiązań. Po warsztatach otrzymasz szczegółową wycenę dopasowaną do Twojego przypadku.",
+      "packages": [
+        {
+          "name": "Proces współpracy",
+          "tagline": "Zaczynamy od warsztatów",
+          "description": "Każdy konfigurator to unikalny przypadek. Zaczynamy od dogłębnego zrozumienia Twojego produktu i procesu sprzedaży.",
+          "setup": "Darmowy",
+          "monthly": "Wycena po warsztatach",
+          "monthlyLabel": "",
+          "features": [
+            "Warsztat odkrywczy (1-2h, zdalnie)",
+            "Analiza Twojego procesu wyceny",
+            "Mapowanie parametrów produktu/usługi",
+            "Prototyp logiki cenowej",
+            "Szczegółowa wycena projektu",
+            "Propozycja technologii i integracji",
+            "Timeline realizacji (zazwyczaj 3-8 tygodni)"
+          ],
+          "cta": "Umów warsztat",
+          "popular": true
+        }
+      ]
+    },
+    "examples": {
+      "badge": "Przykłady",
+      "title": "Konfiguratory w akcji",
+      "subtitle": "Prawdziwe projekty, które automatyzują sprzedaż 24/7.",
+      "items": [
+        {
+          "industry": "Automotive",
+          "title": "Mirco — Fotele wyścigowe FIA",
+          "description": "Polski producent foteli wyścigowych (30 lat na rynku) miał problem: wysokie zwroty przez błędy w zamówieniach mailowych/telefonicznych. Stworzyliśmy konfigurator 3D z wizualizacją w czasie rzeczywistym. Klient wybiera model, materiał (Alcantara +1250€), kolor przeszycia, logo, grafikę — widzi fotel i cenę od razu. Wynik: 400+ partnerów (sklepy tuningowe EU/UK), 27% influencerów motorsportowych zainteresowanych współpracą, 3 kanały sprzedaży działające równolegle. Zwroty spadły o 73%, bo klient dokładnie widzi co kupuje. ROI w 2 miesiące.",
+          "url": "/case-study/mirco",
+          "image": "/images/examples/mirco-configurator.png",
+          "testimonial": {
+            "quote": "Przyszedłem z problemem spadającej sprzedaży i zero pomysłu co dalej. Po dwóch miesiącach miałem gotowy system: bazę 400 potencjalnych partnerów w całej Europie, konfigurator, który rozwiązuje problem zwrotów, i trzy kompletne strategie na nowe kanały sprzedaży. Wszystko gotowe do wdrożenia.",
+            "author": "Mirek Macura",
+            "role": "Właściciel, Mirco"
+          }
+        },
+        {
+          "industry": "E-commerce / Personalizacja",
+          "title": "Konfigurator zniczy premium z personalizacją",
+          "description": "Dystrybutor zniczy zlecił nam stworzenie konfiguratora online pozwalającego klientom zaprojektować własny znicz pogrzebowy: wybór rozmiaru, tekstu, czcionki, koloru, wyrównania. Real-time preview 3D z możliwością obracania. Integracja z systemem produkcji (eksport do pliku .gbl).",
+          "url": "/case-study/candle-configurator",
+          "image": "/images/examples/candle-configurator.jpg",
+          "aspectRatio": "7/2"
+        }
+      ]
+    },
+    "process": {
+      "badge": "Jak to działa",
+      "title": "Od pomysłu do działającego narzędzia",
+      "subtitle": "Prosty proces. Ty dostarczasz wiedzę o produkcie, my budujemy konfigurator.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Discovery",
+          "description": "Omawiamy Twój produkt/usługę, parametry, formuły cenowe i flow zakupowe. Zrozumiemy, czego potrzebuje klient, żeby podjąć decyzję.",
+          "duration": "1-2 godz."
+        },
+        {
+          "number": "02",
+          "title": "Design",
+          "description": "Projektujemy interfejs konfiguratora: jakie pytania, w jakiej kolejności, jak wizualizować wybór. Pokazujemy Ci mockup do zatwierdzenia.",
+          "duration": "3-5 dni"
+        },
+        {
+          "number": "03",
+          "title": "Development",
+          "description": "Kodujemy logikę, formułę cenową, integracje (mail, CRM, PDF). Dostajesz link do wersji testowej — sprawdzasz czy wszystko działa.",
+          "duration": "7-14 dni"
+        },
+        {
+          "number": "04",
+          "title": "Launch",
+          "description": "Publikujemy konfigurator na Twojej domenie, konfigurujemy analitykę, uczymy Cię jak odczytywać leady. Monitorujemy pierwsze tygodnie.",
+          "duration": "1-2 dni"
+        }
+      ]
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Najczęstsze pytania",
+      "subtitle": "Nie znalazłeś odpowiedzi? Napisz: hello@dealcatcher.io",
+      "items": [
+        {
+          "question": "Ile to kosztuje?",
+          "answer": "Każdy konfigurator jest wyceniany indywidualnie — zakres może się bardzo różnić w zależności od złożoności logiki, liczby parametrów i potrzebnych integracji. Zaczynamy od darmowego warsztatu, podczas którego poznajemy Twój proces wyceny, mapujemy parametry i określamy dokładną wycenę projektu."
+        },
+        {
+          "question": "Ile trwa wdrożenie?",
+          "answer": "Zazwyczaj 3-8 tygodni od akceptacji oferty. Proste konfiguratory produktowe to około 3-4 tygodnie. Złożone systemy z integracjami (CRM, ERP, systemy magazynowe) mogą potrwać 6-8 tygodni. Dokładny timeline ustalamy podczas warsztatu."
+        },
+        {
+          "question": "Czy mogę sam edytować ceny i parametry?",
+          "answer": "Tak — w większości przypadków dostarczamy prosty panel admin, który pozwala na samodzielną edycję cen, parametrów i tekstów. Zakres edycji zależy od złożoności logiki cenowej. Drobne zmiany (aktualizacja cen, tekstów) zawsze możesz robić sam."
+        },
+        {
+          "question": "Co jeśli klient porzuci konfigurator w połowie?",
+          "answer": "Zbieramy dane kontaktowe na początku (mail, opcjonalnie telefon). Jeśli klient porzuci konfigurator — dostaniesz lead z tym, co zdążył wybrać. Możesz do niego wrócić z ofertą."
+        },
+        {
+          "question": "Czy konfigurator działa na telefonie?",
+          "answer": "Tak. Wszystkie nasze konfiguratory są responsywne. >60% użytkowników korzysta z telefonu, więc to standard."
+        },
+        {
+          "question": "Jakie integracje obsługujecie?",
+          "answer": "Mail (automatyczne podsumowania), CRM (HubSpot, Pipedrive, Salesforce, Monday, własny przez API), Google Analytics, Facebook Pixel, systemy magazynowe/ERP, bramki płatności. Jeśli masz konkretny system — zapytaj podczas warsztatu."
+        },
+        {
+          "question": "Co jeśli mam bardzo specyficzny produkt?",
+          "answer": "To akurat nasza mocna strona. Budowaliśmy konfiguratory dla foteli wyścigowych, markiz, kuchni, fotowoltaiki, drzwi antywłamaniowych. Jeśli możesz opisać swój produkt/usługę i formuły cenowe — zbudujemy konfigurator."
+        },
+        {
+          "question": "Jak wygląda warsztat odkrywczy?",
+          "answer": "To 1-2 godzinna sesja (zdalnie lub u Ciebie), podczas której rozmawiamy o Twoim procesie sprzedaży i wyceny. Pytamy o parametry produktu/usługi, formuły cenowe, integracje, które potrzebujesz. Po warsztatach dostajesz szczegółową ofertę z wyceną i timeline realizacji."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Porozmawiajmy o",
+      "titleHighlight": "Twoim konfiguratorze",
+      "subtitle": "Umów bezpłatną 30-minutową konsultację. Pokażemy przykłady, odpowiemy na pytania i wycenimy rozwiązanie dla Twojego biznesu.",
+      "ctaPrimary": "Umów bezpłatną konsultację",
+      "ctaSecondary": "Napisz do nas",
+      "disclaimer": "Bez zobowiązań. Zero spamu. Rozmawiamy tylko z poważnymi firmami."
+    }
+  },
+  "audytMarketingowy": {
+    "hero": {
+      "badge": "Audyt & Strategia",
+      "titleStart": "Audyt marketingowy który pokazuje",
+      "titleHighlight": "gdzie tracisz klientów",
+      "subtitle": "Diagnostyka Twojego marketingu + konkretny plan naprawy. Bez ogólników, bez konsultingowego bełkotu. Liczby, problemy, rekomendacje.",
+      "cta": "Zobacz przykład",
+      "stats": [
+        {
+          "value": 73,
+          "suffix": "%",
+          "label": "firm marnuje budżet reklamowy"
+        },
+        {
+          "value": 4,
+          "suffix": "x",
+          "label": "ROI po wdrożeniu strategii"
+        },
+        {
+          "value": 14,
+          "suffix": " dni",
+          "label": "średni czas audytu"
+        }
+      ]
+    },
+    "problem": {
+      "badge": "Problem",
+      "title": "Marketing bez planu = spalanie kasy",
+      "subtitle": "Większość firm wydaje na reklamy, bo \"konkurencja też wydaje\". Efekt? Rozproszony budżet, zero mierzalnych celów, brak kontroli nad wynikami.",
+      "items": [
+        {
+          "title": "Wydajesz na reklamy bez jasnego planu",
+          "description": "Google Ads + Facebook + Instagram + LinkedIn. Wszędzie po trochu, nigdzie porządnie. Nie wiesz które kampanie działają, które zjadają kasę."
+        },
+        {
+          "title": "Nie wiesz który kanał naprawdę działa",
+          "description": "Masz wrażenie, że reklamy \"coś dają\", ale nie potrafisz powiedzieć ile dokładnie kosztuje Cię jeden klient z każdego źródła. Optymalizacja niemożliwa."
+        },
+        {
+          "title": "Konkurencja wyprzedza Cię online",
+          "description": "Widzisz że konkurenci są wyżej w Google, mają lepsze strony, bardziej dopracowane kampanie. Nie wiesz co robią inaczej."
+        },
+        {
+          "title": "Brak mierzalnych celów marketingowych",
+          "description": "\"Chcemy więcej leadów\" to nie jest cel. Cel to: 50 leadów/mies. z Google Ads przy CPA ≤ 200 zł. Bez konkretów nie da się nic poprawić."
+        }
+      ]
+    },
+    "solution": {
+      "badge": "Rozwiązanie",
+      "title": "Co dostajesz w audycie",
+      "subtitle": "Kompletna diagnostyka + akcyjny plan. Wiesz co naprawić, w jakiej kolejności i z jakim budżetem.",
+      "items": [
+        {
+          "title": "Discovery Workshop",
+          "description": "Warsztat strategiczny z Twoim zespołem — identyfikujemy cele, analizujemy konkurencję, definiujemy ICP.",
+          "features": [
+            "Analiza obecnej sytuacji",
+            "Mapowanie konkurencji",
+            "Profil idealnego klienta (ICP)",
+            "Kanały akwizycji",
+            "Framework mierzenia ROI"
+          ]
+        },
+        {
+          "title": "Raport strategiczny",
+          "description": "Dokument z analizą, rekomendacjami i planem działania na najbliższe 3-6 miesięcy.",
+          "features": [
+            "Audyt wszystkich kanałów",
+            "Analiza wydatków vs wyników",
+            "Mapa customer journey",
+            "Priorytetyzacja działań",
+            "Roadmapa wdrożenia"
+          ]
+        },
+        {
+          "title": "Framework do mierzenia",
+          "description": "System KPI i dashboardy, które pokażą czy marketing działa — bez zgadywania.",
+          "features": [
+            "KPI dla każdego kanału",
+            "Dashboard z metrykami",
+            "Attribution model",
+            "Tracking konwersji",
+            "Comiesięczny reporting"
+          ]
+        }
+      ]
+    },
+    "pricing": {
+      "badge": "Wycena",
+      "title": "Audyt dopasowany do skali biznesu",
+      "subtitle": "Zakres audytu zależy od złożoności Twojego biznesu. Po briefingu wyceniamy indywidualnie.",
+      "setupLabel": "jednorazowo",
+      "roiHint": "Audyt zwraca się w pierwszym miesiącu optymalizacji. Typowy klient oszczędza 30-50% budżetu reklamowego po wdrożeniu rekomendacji.",
+      "packages": [
+        {
+          "name": "Audyt marketingowy",
+          "tagline": "Najpopularniejszy",
+          "description": "Warsztat odkrywczy + pełna analiza konkurencji + strategia kanałowa + framework ROI. Raport PDF (~25 stron) + sesja wdrożeniowa.",
+          "setup": "4 999 – 9 999 zł",
+          "monthly": "",
+          "monthlyLabel": "",
+          "features": [
+            "Warsztat odkrywczy (1-2h, zdalnie)",
+            "Analiza konkurencji (5-10 graczy)",
+            "Profiling ICP (Idealny Profil Klienta)",
+            "Mapowanie ścieżek zakupowych",
+            "Strategia kanałowa (priorytety + budżety)",
+            "Framework ROI (śledzenie zwrotu z inwestycji)",
+            "Raport PDF z rekomendacjami (~25 stron)",
+            "Sesja wdrożeniowa (45 min, prezentacja raportu)"
+          ],
+          "cta": "Umów briefing",
+          "popular": true
+        }
+      ]
+    },
+    "examples": {
+      "badge": "Case study",
+      "title": "Jak wygląda audyt w praktyce",
+      "subtitle": "Przykład: Polski producent foteli wyścigowych, 30 lat na rynku, zero strategii online.",
+      "items": [
+        {
+          "industry": "B2B Automotive",
+          "title": "Mirco — Od chaosu do 3 kanałów sprzedaży",
+          "description": "<div class='space-y-6'><div><h4 class='font-semibold text-foreground text-xl mb-3'>Problem</h4><ul class='space-y-2 text-base'><li><strong>Spadająca sprzedaż:</strong> Trend spadkowy, wyczerpane dotychczasowe kanały dystrybucji</li><li><strong>Brak strategii:</strong> Jako producent Mirek rozumiał fotele, ale nie marketing. Miał pomysł na premium brand i logo, ale projekt utknął bez kierunku</li><li><strong>Problem zwrotów:</strong> Zamawianie custom foteli mailem/telefonem było skomplikowane. Klienci zwracali fotele przez niezgodności koloru, materiału, wymiarów</li><li><strong>Niewykorzystany potencjał:</strong> Mirco miał własną szwalnię i mógł customizować wszystko, ale ta przewaga nie była wykorzystywana jako narzędzie sprzedaży</li></ul></div><div><h4 class='font-semibold text-foreground text-xl mb-3'>Co zrobiliśmy</h4><ul class='space-y-2 text-base'><li><strong>Discovery Workshop:</strong> Zidentyfikowaliśmy że fotele homologowane FIA sprzedają się lepiej niż warianty gamingowe. Zmapowaliśmy idealny profil klienta na podstawie obecnych dystrybutorów. Znaleźliśmy lukę rynkową między tanimi fotelami chińskimi a premium Recaro</li><li><strong>Baza partnerów:</strong> Zbudowaliśmy web scraper pokrywający każdy kraj EU + UK. Zmapowaliśmy strategie konkurencji (Polskie, Chińskie, Recaro). Zagregowaliśmy 400+ sklepów tuningowych i powiązanych firm</li><li><strong>3 kanały sprzedaży:</strong> Influencerzy motorsportowi (zarabiają prowizję przez portal afiliacyjny), Sklepy tuningowe (europejscy dystrybutorzy B2B z wbudowanym konfiguratorem), Warsztaty custom/restomod (23 premium firmy renowacyjne)</li><li><strong>Konfigurator foteli:</strong> Pełna personalizacja (model, materiał per sekcja, kolor nici, umiejscowienie logo, kolor skorupy, akcesoria). Real-time wizualizacja eliminująca błędy zamówień. Darmowa implementacja dla partnerów dystrybutorów</li><li><strong>Portal afiliacyjny:</strong> Panel dla influencerów z kodami rabatowymi, statystykami, śledzeniem zarobków. Dashboard admina z analityką wydajności i zarządzaniem płatnościami</li></ul></div><div><h4 class='font-semibold text-foreground text-xl mb-3'>Wyniki</h4><ul class='space-y-2 text-base'><li><strong>400+</strong> zidentyfikowanych dystrybutorów w EU i UK</li><li><strong>27%</strong> ze 100 testowanych influencerów wyraziło zainteresowanie partnerstwem</li><li><strong>3 kompletne kanały sprzedaży</strong> gotowe do wdrożenia</li><li><strong>2 miesiące</strong> od startu do dostarczenia kompletnego systemu</li></ul></div></div>",
+          "url": "/case-study/mirco"
+        }
+      ]
+    },
+    "process": {
+      "badge": "Proces",
+      "title": "Jak przebiega audyt",
+      "subtitle": "Cztery kroki od briefingu do gotowej strategii. Średnio 4-7 dni roboczych.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Briefing",
+          "description": "Rozmawiamy o Twoim biznesie, obecnych działaniach marketingowych, budżecie, celach. Zbieramy dostępy do Google Analytics, kampanii reklamowych, CRM.",
+          "duration": "1h"
+        },
+        {
+          "number": "02",
+          "title": "Analiza",
+          "description": "Analizujemy Twoje dane (Analytics, kampanie), sprawdzamy konkurencję (SEO, reklamy, komunikacja), mapujemy rynek. Identyfikujemy problemy i szanse.",
+          "duration": "2-3 dni"
+        },
+        {
+          "number": "03",
+          "title": "Warsztat strategiczny",
+          "description": "Wspólna sesja gdzie omawiamy findings, budujemy ICP, wybieramy kanały do ataku. Ustalamy priorytety i budżety. To jest kluczowy moment audytu.",
+          "duration": "1.5-2h"
+        },
+        {
+          "number": "04",
+          "title": "Raport + wdrożenie",
+          "description": "Dostajesz raport PDF z diagnozą, rekomendacjami, planem działań (z timeline i budżetami). Sesja wdrożeniowa — omawiamy raport, odpowiadamy na pytania.",
+          "duration": "2-3 dni"
+        }
+      ]
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Najczęstsze pytania",
+      "subtitle": "Nie znalazłeś odpowiedzi? Napisz: hello@dealcatcher.io",
+      "items": [
+        {
+          "question": "Jak długo trwa audyt?",
+          "answer": "Zazwyczaj 4-7 dni roboczych od briefingu do dostarczenia raportu. Jeśli potrzebujesz szybciej (np. przed sezonem lub pitch'em inwestorskim) — możemy przyspieszyć do 48-72h, ale wtedy audyt będzie bardziej fokusowy (np. tylko kanały płatne)."
+        },
+        {
+          "question": "Co jeśli nie mam Google Analytics ani kampanii?",
+          "answer": "Żaden problem. Audyt wtedy będzie bardziej market-focused (analiza konkurencji, kanały, ICP) i mniej data-driven (bo nie ma danych do analizy). Nadal będziesz wiedział co robić, tylko nie będziemy mogli powiedzieć \"teraz tracisz 40% budżetu na źle targetowane kampanie\" — bo kampanii nie ma."
+        },
+        {
+          "question": "Czy implementujecie strategię po audycie?",
+          "answer": "Nie robimy tego standardowo (audyt to analiza + plan, nie wykonanie). Ale jeśli potrzebujesz kogoś do wdrożenia — możemy Ci pomóc (Google Ads, strony, landing pages, copy). Po audycie dostaniesz ofertę na wdrożenie, jeśli będziesz zainteresowany."
+        },
+        {
+          "question": "Kiedy zobaczę ROI?",
+          "answer": "Audyt nie generuje bezpośrednio przychodów — to diagnostyka i plan. ROI zobaczysz po wdrożeniu rekomendacji. Typowy klient oszczędza 30-50% budżetu reklamowego w pierwszym miesiącu (wycinamy marnotrawstwo). Nowe kanały (jeśli je uruchomisz) zaczynają dawać leady w 2-4 tygodnie."
+        },
+        {
+          "question": "Dla kogo NIE jest ten audyt?",
+          "answer": "Jeśli masz już sprawdzone kanały, świetne ROI, dobrze działający marketing — nie potrzebujesz audytu. Audyt ma sens, gdy czujesz że coś nie gra: budżet rośnie a wyniki stoją, nie wiesz na co wydawać, konkurencja wyprzedza Cię online."
+        },
+        {
+          "question": "Co konkretnie będzie w raporcie?",
+          "answer": "1) Diagnoza obecnego stanu (co działa, co nie, gdzie marnujesz budżet). 2) Analiza konkurencji (kto, co robi, jakie kanały używa). 3) ICP (profil idealnego klienta). 4) Strategia kanałowa (które kanały uruchomić, w jakiej kolejności, z jakim budżetem). 5) Framework ROI (jak śledzić zwrot z inwestycji). 6) Akcyjny plan wdrożenia (timeline, budżety, metryki sukcesu)."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Porozmawiajmy o",
+      "titleHighlight": "Twoim marketingu",
+      "subtitle": "Umów bezpłatny 30-minutowy briefing. Pokażemy przykładowy audyt, odpowiemy na pytania i wycenimy audyt dla Twojego biznesu.",
+      "ctaPrimary": "Umów bezpłatny briefing",
+      "ctaSecondary": "Napisz do nas",
+      "disclaimer": "Bez zobowiązań. Zero spamu. Rozmawiamy tylko z poważnymi firmami."
+    }
+  },
+  "bazaKlientow": {
+    "hero": {
+      "badge": "Lead Generation B2B",
+      "titleStart": "400+ leadów B2B gotowych",
+      "titleHighlight": "do kontaktu w 7 dni",
+      "subtitle": "Baza Firm nie wystarcza. Dajesz telefon do recepcji, tracisz czas. My dostarczamy dane kontaktowe B2B gotowe pod cold outreach.",
+      "cta": "Zobacz case study",
+      "stats": [
+        {
+          "value": 400,
+          "suffix": "+",
+          "label": "leadów wygenerowanych (Mirco)"
+        },
+        {
+          "value": 95,
+          "suffix": "%",
+          "label": "accuracy danych kontaktowych"
+        },
+        {
+          "value": 7,
+          "suffix": " dni",
+          "label": "średni czas dostawy bazy"
+        }
+      ]
+    },
+    "problem": {
+      "badge": "Problem",
+      "title": "Baza Firm to za mało",
+      "subtitle": "Większość baz B2B daje tylko nazwę firmy i NIP. Zero nazwisk, zero maili, zero decision makerów. Tracisz czas na dzwonienie do recepcji i pytanie \"kto u Was odpowiada za marketing/zakupy\".",
+      "items": [
+        {
+          "title": "Baza Firm nie daje nazwisk ani maili",
+          "description": "Kupiłeś bazę 5000 firm za 500 zł. Fajnie, ale co dalej? Musisz do każdej dzwonić, pytać kto decyduje, zbierać kontakty. To tydzień czystej roboty."
+        },
+        {
+          "title": "Dane są nieaktualne lub niepełne",
+          "description": "Telefon do firmy nieaktualny. Mail odbija. Właściciel nie pracuje tam od 2 lat. Kupujesz bazę, używasz 30% — reszta to śmieciowe dane."
+        },
+        {
+          "title": "Brak kwalifikacji leadów",
+          "description": "Nie każda firma z branży X jest Twoim klientem. Jedne mają budżet, inne nie. Jedne mają problem który rozwiązujesz, inne nie. Strzał w ciemno."
+        },
+        {
+          "title": "Za dużo czasu na cold calling",
+          "description": "20 połączeń żeby dotrzeć do 1 decision makera to nie jest skalowalny proces. Szczególnie jeśli sprzedajesz do EU/UK gdzie nikt nie odbiera zimnych telefonów."
+        }
+      ]
+    },
+    "solution": {
+      "badge": "Rozwiązanie",
+      "title": "Baza gotowa pod cold outreach",
+      "subtitle": "Custom scrapers + AI qualification + research decydentów. Dostajesz nazwiska, maile, telefony — nie tylko NIPy.",
+      "items": [
+        {
+          "title": "Custom scraping",
+          "description": "Budujemy dedykowane scrapery pod Twój rynek — Europa, UK, USA. Żadnych limitów API.",
+          "features": [
+            "Dowolny rynek (EU, UK, US)",
+            "Nisze B2B i B2C",
+            "Dane z katalogów, map, branżówek",
+            "Aktualizacje co miesiąc",
+            "Własność danych (nie prenumerata)"
+          ]
+        },
+        {
+          "title": "AI-powered qualification",
+          "description": "Nie dostaniesz 10 000 nieweryfikowanych firm — dostaniesz 400 leadów z nazwiskami i mailami decision makerów.",
+          "features": [
+            "Filtrowanie po wielkości firmy",
+            "Wykluczanie konkurencji",
+            "Enrichment danymi z social media",
+            "Weryfikacja aktywności",
+            "Score potencjału (lead scoring)"
+          ]
+        },
+        {
+          "title": "Enrichment kontaktów",
+          "description": "Do każdej firmy: dane kontaktowe, email, telefon. Gotowe do cold outreach.",
+          "features": [
+            "Email firmowy (weryfikowany)",
+            "Telefon służbowy",
+            "Profile biznesowe",
+            "Dane publicznie dostępne",
+            "Weryfikacja aktualności"
+          ]
+        }
+      ]
+    },
+    "pricing": {
+      "badge": "Wycena",
+      "title": "Płacisz za jakość, nie ilość",
+      "subtitle": "Wyceniane indywidualnie po briefingu. Zależy od wielkości bazy, rynków docelowych i złożoności kwalifikacji.",
+      "setupLabel": "jednorazowo",
+      "roiHint": "Średnio 70-80% leadów z naszych baz to first-time kontakty (nikt wcześniej do nich nie pisał zimno). Twój cold outreach ma większy open rate bo nie jesteś setnym w kolejce.",
+      "packages": [
+        {
+          "name": "Baza klientów B2B",
+          "tagline": "Custom scraping + enrichment",
+          "description": "Budujemy bazę od zera pod Twój Idealny Profil Klienta. Scrapujemy, kwalifikujemy, enrichujemy. Dostajesz CSV gotowe pod import do Instantly/Lemlist.",
+          "setup": "Wycena po briefingu",
+          "monthly": "",
+          "monthlyLabel": "",
+          "features": [
+            "Briefing: ICP + rynki + kryteria kwalifikacji",
+            "Custom scraping (katalogi firm, agregatory branżowe)",
+            "AI qualification (odrzucamy nieaktywne/niewłaściwe)",
+            "Enrichment danych kontaktowych",
+            "Email enrichment + verification (deliverability check)",
+            "Telefon (jeśli dostępny publicznie)",
+            "Eksport CSV (ready do Instantly/Lemlist/CRM)",
+            "Dokumentacja (skąd jakie dane, accuracy, date)"
+          ],
+          "cta": "Umów briefing",
+          "popular": true
+        }
+      ]
+    },
+    "examples": {
+      "badge": "Case study",
+      "title": "Jak zbudowaliśmy bazę 400+ leadów w 7 dni",
+      "subtitle": "Mirco: polski producent foteli wyścigowych szukał partnerów handlowych w EU/UK. Zero contactów, zero bazy.",
+      "items": [
+        {
+          "industry": "B2B Automotive",
+          "title": "Mirco — Baza 400 sklepów tuningowych EU/UK",
+          "description": "<div class='space-y-6'><div><h4 class='font-semibold text-foreground text-xl mb-3'>Problem</h4><ul class='space-y-2 text-base'><li><strong>Brak kanałów dystrybucji:</strong> Mirco sprzedawał tylko przez Allegro i własną stronę. Zero partnerów handlowych (sklepy tuningowe, warsztaty)</li><li><strong>Brak bazy kontaktów:</strong> Właściciel nie miał listy potencjalnych partnerów w EU/UK</li><li><strong>Brak czasu na prospecting:</strong> Dzwonienie po Europie i budowanie relacji od zera zajęłoby miesiące</li><li><strong>Nieaktualne źródła:</strong> Publiczne bazy firm zawierają tylko podstawowe dane bez kompletnych informacji kontaktowych</li></ul></div><div><h4 class='font-semibold text-foreground text-xl mb-3'>Co zrobiliśmy</h4><ul class='space-y-2 text-base'><li><strong>Custom web scraper:</strong> Zbudowaliśmy scraper pokrywający każdy kraj EU + UK. Źródła: katalogi branżowe, niszowe agregatory motoryzacyjne, publicznie dostępne bazy firm</li><li><strong>Mapowanie konkurencji:</strong> Zidentyfikowaliśmy strategie konkurencji (marki polskie, chińskie, premium Recaro). Zmapowaliśmy gdzie sprzedają, przez jakie kanały, komu</li><li><strong>AI-powered qualification:</strong> Automatyczna kwalifikacja — tylko sklepy które sprzedają siedzenia/fotele (nie opony, nie detailing, nie warsztaty lakiernicze)</li><li><strong>Contact enrichment:</strong> Wzbogacenie danych kontaktowych z oficjalnych rejestrów handlowych, baz firmowych i profili biznesowych</li><li><strong>Email verification:</strong> Firmowe maile + deliverability check (weryfikacja czy maile są aktywne, bounce rate <2%)</li><li><strong>Eksport gotowy pod CRM:</strong> CSV z kolumnami: firma, email firmowy, telefon, adres, kraj</li></ul></div><div><h4 class='font-semibold text-foreground text-xl mb-3'>Wyniki</h4><ul class='space-y-2 text-base'><li><strong>400+</strong> zweryfikowanych leadów (sklepy tuningowe + warsztaty custom) w EU i UK</li><li><strong>95%</strong> accuracy (dane kontaktowe zweryfikowane manualnie w samplu 50 firm)</li><li><strong>27%</strong> open rate na pierwszej kampanii cold email (branżowa średnia: 15-18%)</li><li><strong>7 dni roboczych</strong> od briefingu do dostarczenia gotowego CSV</li></ul></div></div>",
+          "url": "/case-study/mirco"
+        }
+      ]
+    },
+    "process": {
+      "badge": "Proces",
+      "title": "Od briefingu do gotowej bazy",
+      "subtitle": "Cztery kroki. Średnio 7-14 dni roboczych (zależy od wielkości bazy i rynków).",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Target definition",
+          "description": "Rozmawiamy o Twoim Idealnym Profilu Klienta (ICP): branża, lokalizacja, wielkość firmy, revenue. Ustalamy kryteria kwalifikacji (np. tylko firmy z >5 pracownikami, tylko EU).",
+          "duration": "1h"
+        },
+        {
+          "number": "02",
+          "title": "Scraping + qualification",
+          "description": "Zbieramy surowe dane z katalogów firm, baz branżowych i rejestrów publicznych. AI przegląda każdą firmę (strona, profil) i odrzuca nieaktywne/niewłaściwe. Zostają tylko te które pasują do ICP.",
+          "duration": "3-7 dni"
+        },
+        {
+          "number": "03",
+          "title": "Enrichment (decision makers)",
+          "description": "Dla każdej firmy szukamy kto decyduje (właściciel, manager). Źródła: rejestry handlowe, oficjalne bazy firm, strony firmowe. Zbieramy firmowe maile (extracted + verified).",
+          "duration": "2-5 dni"
+        },
+        {
+          "number": "04",
+          "title": "Delivery + dokumentacja",
+          "description": "Dostajesz CSV z wszystkimi polami (firma, NIP, decision maker, mail, telefon, lokalizacja, data scrape). Plus dokumentacja (skąd dane, accuracy, % verification).",
+          "duration": "1 dzień"
+        }
+      ]
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Najczęstsze pytania",
+      "subtitle": "Nie znalazłeś odpowiedzi? Napisz: hello@dealcatcher.io",
+      "items": [
+        {
+          "question": "Jak dokładne są dane?",
+          "answer": "Email verification rate: ~95% (tylko firmowe maile które przeszły deliverability check). Decision maker accuracy: ~85-90% (zależy od rynku i dostępności oficjalnych rejestrów firm). Telefony: ~70% coverage (nie wszystkie firmy publikują bezpośrednie numery)."
+        },
+        {
+          "question": "Które rynki obsługujecie?",
+          "answer": "EU (wszystkie kraje), UK, Norwegia, USA. Najlepiej działamy na rynkach z otwartymi rejestrami firm (Norwegia, UK, Niemcy, Francja). Najtrudniej: Włochy, Hiszpania (mniej otwartych danych publicznych)."
+        },
+        {
+          "question": "Czy możecie aktualizować bazę co miesiąc?",
+          "answer": "Tak. Większość klientów robi to raz na kwartał lub pół roku (firmy nie zmieniają się tak szybko). Ale jeśli potrzebujesz miesięcznych update'ów (np. świeże leady pod cold outreach) — możemy to ustawić jako recurring service."
+        },
+        {
+          "question": "Czy to legalne (GDPR)?",
+          "answer": "Używamy wyłącznie publicznie dostępnych źródeł (strony firm, oficjalne rejestry, katalogi branżowe). Nie zbieramy danych prywatnych. Ostateczna odpowiedzialność za zgodność z GDPR w kontekście cold outreach leży po stronie klienta — my dostarczamy dane, Ty decydujesz jak je wykorzystasz zgodnie z przepisami obowiązującymi w Twoim kraju."
+        },
+        {
+          "question": "Co jeśli potrzebuję bardzo niszowy target?",
+          "answer": "To akurat nasza mocna strona. Budowaliśmy bazy dla: sklepy tuningowe EU (Mirco), kliniki medycyny estetycznej PL, warsztaty renowacji aut UK, hurtownie elektryczne DE. Jeśli potrafisz opisać swój ICP — zbudujemy bazę."
+        },
+        {
+          "question": "Jaki format dostawy?",
+          "answer": "CSV (ready do import w Instantly, Lemlist, HubSpot, Pipedrive, Monday, Google Sheets). Kolumny: Company Name, NIP/VAT, Decision Maker (Name), Email, Phone, Website, Address, Industry, Employee Count (jeśli dostępne), Scrape Date, Source."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Porozmawiajmy o",
+      "titleHighlight": "Twojej bazie leadów",
+      "subtitle": "Umów bezpłatny 30-minutowy briefing. Pokażemy przykładowe bazy, odpowiemy na pytania i wycenimy projekt dla Twojego ICP.",
+      "ctaPrimary": "Umów bezpłatny briefing",
+      "ctaSecondary": "Napisz do nas",
+      "disclaimer": "Bez zobowiązań. Zero spamu. Rozmawiamy tylko z poważnymi firmami."
+    }
+  },
+  "narzedziaNaMiare": {
+    "hero": {
+      "badge": "Custom Tools",
+      "titleStart": "Od kalkulatorów po portale B2B —",
+      "titleHighlight": "narzędzia szyte na miarę",
+      "subtitle": "Excel nie wystarcza. Gotowe SaaS nie pasują. Potrzebujesz czegoś unikalnego pod swój biznes. Budujemy dedykowane narzędzia które automatyzują procesy i zwiększają sprzedaż.",
+      "cta": "Zobacz przykłady",
+      "stats": [
+        {
+          "value": 60,
+          "suffix": "%",
+          "label": "oszczędności czasu po automatyzacji"
+        },
+        {
+          "value": 4,
+          "suffix": " tyg.",
+          "label": "średni czas wdrożenia (MVP)"
+        }
+      ]
+    },
+    "problem": {
+      "badge": "Problem",
+      "title": "Gotowe rozwiązania nie pasują",
+      "subtitle": "SaaS'y są generyczne. Twój biznes jest unikalny. Próbujesz dopchnąć procesy do gotowych narzędzi zamiast zbudować narzędzie pod proces.",
+      "items": [
+        {
+          "title": "Excel już nie wystarcza",
+          "description": "Rozpoczynasz dzień od aktualizacji 5 arkuszy. Formuły się psują. Współpraca niemożliwa (kto ma najnowszą wersję?). To nie jest skalowalny system."
+        },
+        {
+          "title": "Gotowe SaaS'y nie pasują do Twojego procesu",
+          "description": "Płacisz 200 €/mies. za narzędzie które używasz w 30%. Brakuje kluczowych funkcji. Workaround'y i ręczna robota uzupełniają luki. Frustracja rośnie."
+        },
+        {
+          "title": "Integracje są drogie i zawodne",
+          "description": "Chcesz połączyć CRM z magazynem i systemem księgowym. Zapier kosztuje fortunę i regularnie się wysypuje. Dane tracą się między systemami."
+        },
+        {
+          "title": "Potrzebujesz czegoś unikalnego",
+          "description": "Twój proces jest specyficzny. Twoi klienci mają unikalne potrzeby. Gotowe rozwiązania nie dają Ci przewagi konkurencyjnej — każdy może je kupić."
+        }
+      ]
+    },
+    "solution": {
+      "badge": "Rozwiązanie",
+      "title": "4 kategorie narzędzi które budujemy",
+      "subtitle": "Od prostych kalkulatorów po złożone portale B2B. Wszystko custom, wszystko pod Twoje potrzeby.",
+      "items": [
+        {
+          "title": "Kalkulatory & Symulatory",
+          "description": "ROI, wyceny, porównywanie opcji — narzędzia które sprzedają za Ciebie.",
+          "features": [
+            "Kalkulator ROI dla Twojej usługi",
+            "Wycena w czasie rzeczywistym",
+            "Porównanie pakietów/wariantów",
+            "Lead capture + mail z wynikiem",
+            "Tracking konwersji"
+          ]
+        },
+        {
+          "title": "Aplikacje webowe",
+          "description": "Od booking systemów po CRM — narzędzia dopasowane do Twojego workflow.",
+          "features": [
+            "Booking & rezerwacje",
+            "Portale dla klientów B2B",
+            "Mini-CRM do zarządzania",
+            "Integracje (mail, płatności, API)",
+            "Mobile-first design"
+          ]
+        },
+        {
+          "title": "Dashboardy & Panele",
+          "description": "Metryki, raporty, zarządzanie — wszystko w jednym miejscu zamiast 5 narzędzi.",
+          "features": [
+            "Dashboard z KPI w real-time",
+            "Automatyczne raporty (PDF, mail)",
+            "Zarządzanie zespołem/projektami",
+            "Integracja z Google Analytics, CRM",
+            "Custom widoki dla ról"
+          ]
+        }
+      ]
+    },
+    "pricing": {
+      "badge": "Wycena",
+      "title": "Warsztat → Prototyp → Wdrożenie",
+      "subtitle": "Każde narzędzie jest wyceniane indywidualnie. Zaczynamy od warsztatów, żeby zrozumieć Twój proces i precyzyjnie wycenić projekt.",
+      "setupLabel": "warsztat wstępny",
+      "roiHint": "Warsztat jest darmowy i bez zobowiązań. Po warsztatach otrzymasz szczegółową wycenę dopasowaną do zakresu projektu.",
+      "packages": [
+        {
+          "name": "Proces współpracy",
+          "tagline": "Od warsztatu do działającego narzędzia",
+          "description": "Każde narzędzie to unikalny przypadek. Zaczynamy od dogłębnego zrozumienia Twojego procesu i potrzeb biznesowych.",
+          "setup": "Darmowy",
+          "monthly": "Wycena po warsztatach",
+          "monthlyLabel": "",
+          "features": [
+            "Warsztat odkrywczy (1-2h, zdalnie)",
+            "Mapowanie procesu biznesowego",
+            "Identyfikacja bottlenecków i potrzeb",
+            "Prototyp/mockup narzędzia (do zatwierdzenia)",
+            "Szczegółowa wycena projektu + timeline",
+            "Propozycja technologii i integracji",
+            "Budowa MVP (4-8 tyg.) + iteracje",
+            "Hosting + wsparcie techniczne (opcjonalnie)"
+          ],
+          "cta": "Umów warsztat",
+          "popular": true
+        }
+      ]
+    },
+    "examples": {
+      "badge": "Przykłady",
+      "title": "Narzędzia które zbudowaliśmy",
+      "subtitle": "Od aplikacji travel po portale B2B dla setek partnerów. Każde rozwiązanie szyte pod specyficzne potrzeby.",
+      "items": [
+        {
+          "industry": "E-commerce / FMCG / Compliance",
+          "title": "Kalkulator ROP — Opłaty za Opakowania 2026-2028",
+          "description": "Dla polskich firm e-commerce i FMCG stworzyliśmy kalkulator opłat ROP (Rozszerzona Odpowiedzialność Producenta). Narzędzie wylicza roczne koszty opakowań na lata 2026-2028, porównuje materiały (karton/plastik/szkło), pokazuje oszczędności przy zamianie materiału, i generuje raport PDF. Pure frontend, zero backendowe koszty.",
+          "url": "/case-study/rop-calculator",
+          "image": "/images/examples/rop-calculator.jpg",
+          "aspectRatio": "4/1"
+        },
+        {
+          "industry": "B2B Automotive / Affiliate",
+          "title": "Panel administracyjny — Zarządzanie sprzedażą influencerów",
+          "description": "Admin dashboard dla Mirco do zarządzania programem afiliacyjnym influencerów motorsportowych. Real-time monitoring: przychody (€12,768 total revenue), conversion rate (4.2%), aktywni partnerzy (142 nodes online), top performers (Mike_Drift wygenerował €12k+). Statystyki dla każdego influencera: referrals, wolumen sprzedaży, prowizje. Live stream transakcji globalnych (Berlin, Paris, London, Tokyo). Zarządzanie: tworzenie kodów rabatowych, śledzenie zarobków, płatności, analityka per partner. Wszystko w jednym miejscu.",
+          "url": "#",
+          "image": "/images/examples/dashboard.png",
+          "aspectRatio": "3/1"
+        },
+        {
+          "industry": "Tourism / Public Sector",
+          "title": "Przewodnik Wieruszów — Interaktywny przewodnik miejski",
+          "description": "Aplikacja webowa dla Urzędu Miasta Wieruszów promująca turystykę lokalną. Interaktywna mapa z atrakcjami (zabytki, restauracje, hotele, szlaki turystyczne). Każda lokalizacja ma opis, zdjęcia, godziny otwarcia, nawigację Google Maps. Filtrowanie kategorii (kultura, gastronomia, natura). Wersja mobilna PWA (działa offline, można dodać do ekranu głównego jak apka). Przygotowane pod projekt rozwijania turystyki lokalnej w małych miastach.",
+          "url": "/case-study/wieruszow-travel",
+          "image": "/images/examples/travel.png",
+          "aspectRatio": "16/9"
+        }
+      ]
+    },
+    "process": {
+      "badge": "Proces",
+      "title": "Od pomysłu do działającego narzędzia",
+      "subtitle": "Iteracyjny proces. Zaczynamy od MVP (Minimum Viable Product), potem rozbudowujemy.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Warsztat odkrywczy",
+          "description": "Rozmawiamy o Twoim procesie biznesowym, problemach, potrzebach. Identyfikujemy co narzędzie musi robić (must-have) vs co byłoby fajne (nice-to-have). Ustalamy priorytety.",
+          "duration": "1-2h"
+        },
+        {
+          "number": "02",
+          "title": "Prototyp/Mockup",
+          "description": "Projektujemy interfejs narzędzia (jak będzie wyglądać, jak użytkownik będzie z nim wchodził w interakcję). Pokazujemy Ci mockup/prototyp do zatwierdzenia. Iterujemy jeśli potrzeba.",
+          "duration": "3-7 dni"
+        },
+        {
+          "number": "03",
+          "title": "Budowa MVP",
+          "description": "Kodujemy najprostszą wersję która rozwiązuje Twój core problem. MVP = działa, robi to co najważniejsze, ale bez bells & whistles. Testujesz, dajemy feedback, iterujemy.",
+          "duration": "4-8 tyg."
+        },
+        {
+          "number": "04",
+          "title": "Iteracje & Launch",
+          "description": "Rozbudowujemy narzędzie (dodatkowe funkcje, integracje, UX improvements). Wdrażamy na produkcję. Uczymy Cię jak korzystać. Opcjonalnie: hosting + wsparcie techniczne.",
+          "duration": "2-4 tyg."
+        }
+      ]
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Najczęstsze pytania",
+      "subtitle": "Nie znalazłeś odpowiedzi? Napisz: hello@dealcatcher.io",
+      "items": [
+        {
+          "question": "Ile trwa wdrożenie?",
+          "answer": "MVP (Minimum Viable Product) to zazwyczaj 4-8 tygodni. Pełne wdrożenie z wszystkimi funkcjami to 8-16 tygodni (zależy od złożoności i liczby integracji). Pracujemy iteracyjnie — najpierw dostarczamy działający MVP, potem rozbudowujemy."
+        },
+        {
+          "question": "Czy mogę sam edytować narzędzie?",
+          "answer": "Zależy od typu. Dla kalkulatorów i prostych aplikacji — dostarczamy panel admin gdzie możesz edytować parametry, teksty, ceny. Dla złożonych systemów — zmiany robią programiści (ale możemy nauczyć Twój zespół jeśli mają kompetencje techniczne)."
+        },
+        {
+          "question": "Co jeśli wymagania zmienią się w trakcie?",
+          "answer": "To normalne — większość projektów ewoluuje w trakcie budowy. Dlatego pracujemy iteracyjnie (MVP → feedback → rozbudowa). Jeśli zmiany są małe (inne teksty, dodatkowe pole) — włączamy w projekt. Jeśli duże (nowa funkcjonalność) — wyceniamy dodatkowo."
+        },
+        {
+          "question": "Kto hostuje narzędzie?",
+          "answer": "Mamy trzy opcje: 1) My hostujemy (miesięczny abonament, wszystko obsługujemy). 2) Ty hostujesz (dostarczamy kod, Twój zespół zarządza). 3) Wspólnie (my setup'ujemy, Ty płacisz bezpośrednio za serwery np. AWS). Zazwyczaj rekomendujemy opcję 1 (najmniej zabawy dla Ciebie)."
+        },
+        {
+          "question": "Jakie technologie używacie?",
+          "answer": "Next.js + React (frontend), Node.js / Python (backend), PostgreSQL / MongoDB (baza danych), AWS / Vercel (hosting). Dla prostych narzędzi: tylko frontend (statyczne HTML/JS). Wybieramy technologię pod projekt — nie forsujemy jednego stacku na wszystko."
+        },
+        {
+          "question": "Czy robicie aplikacje mobilne (iOS/Android)?",
+          "answer": "Nie budujemy natywnych aplikacji mobilnych (iOS/Android). Ale większość naszych narzędzi to Progressive Web Apps (PWA) — działają w przeglądarce, ale wyglądają i zachowują się jak aplikacje mobilne (można dodać do ekranu głównego, działają offline). 90% przypadków PWA wystarcza."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Porozmawiajmy o",
+      "titleHighlight": "Twoim narzędziu",
+      "subtitle": "Umów bezpłatną 30-minutową konsultację. Pokażemy przykłady, odpowiemy na pytania i wycenimy rozwiązanie dla Twojego biznesu.",
+      "ctaPrimary": "Umów bezpłatną konsultację",
+      "ctaSecondary": "Napisz do nas",
+      "disclaimer": "Bez zobowiązań. Zero spamu. Rozmawiamy tylko z poważnymi firmami."
+    }
+  },
+  "materialySprzedazowe": {
+    "hero": {
+      "badge": "Sales Materials & Copywriting",
+      "titleStart": "Copy sprzedażowe które brzmi jak Ty,",
+      "titleHighlight": "nie jak AI",
+      "subtitle": "Norwegowie wyczuwają AI-generated copy z kilometra. Twoi klienci B2B też. Piszemy materiały sprzedażowe które brzmią naturalnie i konwertują.",
+      "cta": "Zobacz case study",
+      "stats": [
+        {
+          "value": 27,
+          "suffix": "%",
+          "label": "conversion rate influencerów (Mirco)"
+        },
+        {
+          "value": 3,
+          "suffix": "x",
+          "label": "frameworki komunikacji (różne kanały)"
+        },
+        {
+          "value": 400,
+          "suffix": "+",
+          "label": "leadów z zimnej kampanii (Mirco)"
+        }
+      ]
+    },
+    "problem": {
+      "badge": "Problem",
+      "title": "AI-generated copy brzmi sztucznie",
+      "subtitle": "ChatGPT pisze szybko, ale brzmi jak szablon. Norwegowie to wyczuwają. Twoi klienci B2B też. Rezultat? Mail trafia do spamu (mentalnie albo dosłownie).",
+      "items": [
+        {
+          "title": "AI-generated copy brzmi jak template",
+          "description": "\"Witaj! Widziałem Twój profil i pomyślałem że...\" — każdy wie że to AI. Norwegowie szczególnie są wyczuleni (Janteloven culture: zero hype, zero oversellingu). Taki mail idzie do trash."
+        },
+        {
+          "title": "Norwegowie (i inni) wyczuwają sztuczność",
+          "description": "Perfekcyjna struktura. Elevator pitch w pierwszym akapicie. CTA na końcu. To wszystko krzyczy \"automatyzacja\". Ludzie chcą czuć że piszesz do nich, nie do bazy 1000 kontaktów."
+        },
+        {
+          "title": "Nie masz czasu na pisanie",
+          "description": "Masz 200 leadów do obrobienia. Każdy potrzebuje spersonalizowanego maila. Sam byś siedział tydzień. Delegowanie do AI daje szablon. Delegowanie do copywritera który nie zna Twojego biznesu daje ogólniki."
+        },
+        {
+          "title": "Każdy kanał potrzebuje innego tonu",
+          "description": "Cold email do B2B to nie to samo co wiadomość do influencera. To nie to samo co oferta dla retail. Jeden tone of voice nie działa wszędzie. Potrzebujesz frameworków komunikacji pod każdy segment."
+        }
+      ]
+    },
+    "solution": {
+      "badge": "Rozwiązanie",
+      "title": "Copy które brzmi jak Ty",
+      "subtitle": "Piszemy materiały sprzedażowe pod Twój tone of voice, Twój produkt, Twój segment. Bez AI-sounding bullshitu.",
+      "items": [
+        {
+          "title": "Cold email sequences",
+          "description": "Sekwencje 3-5 maili które brzmią jak Ty, nie jak template z LinkedIn.",
+          "features": [
+            "Framework dopasowany do grupy (influencerzy/B2B/retail)",
+            "A/B testy wersji",
+            "Follow-up timing strategy",
+            "CTA które konwertują",
+            "Wersje PL/NO/EN"
+          ]
+        },
+        {
+          "title": "Sales messaging frameworks",
+          "description": "Nie jeden mail — cały framework komunikacji dla różnych segmentów i kanałów.",
+          "features": [
+            "3-5 frameworków pod różne persony",
+            "Value proposition na każdy segment",
+            "Obsługa obiekcji",
+            "Tone of voice guide",
+            "Przykłady dla każdego kanału"
+          ]
+        },
+        {
+          "title": "Landing page copy",
+          "description": "Copy sprzedażowe na landing page — bez AI-owego brzmieniu, z danymi i case studies.",
+          "features": [
+            "Hero section z measurement",
+            "Problem-solution structure",
+            "Social proof + case studies",
+            "FAQ handling objections",
+            "CTA strategy (nie agresywne)"
+          ]
+        }
+      ]
+    },
+    "pricing": {
+      "badge": "Wycena",
+      "title": "Per-project lub retainer",
+      "subtitle": "Możesz zamówić jednorazowy projekt (np. kampanię cold email) lub miesięczny retainer (ciągłe dostarczanie materiałów).",
+      "setupLabel": "jednorazowo",
+      "roiHint": "Większość klientów zaczyna od jednorazowego projektu (cold email sequence lub landing page). Jeśli działa — przechodzą na retainer (stały copywriter na wyciągnięcie ręki).",
+      "packages": [
+        {
+          "name": "Copywriting per-project",
+          "tagline": "Jednorazowy projekt",
+          "description": "Zamawasz konkretny deliverable: cold email sequence, landing page copy, pitch deck, materiały dla partnerów. Dostarczamy gotowe copy + rewizje.",
+          "setup": "1 999 – 7 999 zł",
+          "monthly": "",
+          "monthlyLabel": "",
+          "features": [
+            "Briefing (Twój produkt, ICP, tone of voice)",
+            "Research (konkurencja, kanał, best practices)",
+            "Draft copy (pierwsza wersja do review)",
+            "2 rundy rewizji (poprawki + feedback)",
+            "Finalna wersja (gotowa do użycia)",
+            "Dokumentacja (np. instrukcja jak używać frameworka)",
+            "Timeline: 5-10 dni roboczych"
+          ],
+          "cta": "Umów briefing",
+          "popular": false
+        },
+        {
+          "name": "Copywriting retainer",
+          "tagline": "Miesięczna współpraca",
+          "description": "Stały copywriter na wyciągnięcie ręki. Co miesiąc dostarczamy X materiałów (maile, landing pages, posty, pitch decks). Priorytet w kolejce.",
+          "setup": "",
+          "monthly": "1 999 – 4 999 zł",
+          "monthlyLabel": "/mies.",
+          "features": [
+            "Ustalony pakiet godzin miesięcznie",
+            "Priorytetowe traktowanie (max 24h na draft)",
+            "Nieograniczone rewizje (w ramach pakietu)",
+            "Wszystkie kanały (email, landing pages, sales materials)",
+            "Dostęp do copywritera przez Slack/email",
+            "Miesięczny reporting (co zrobiliśmy, performance jeśli mierzysz)",
+            "Można anulować w każdej chwili (30 dni notice)"
+          ],
+          "cta": "Umów briefing",
+          "popular": true
+        }
+      ]
+    },
+    "examples": {
+      "badge": "Case study",
+      "title": "Jak napisaliśmy copy pod 3 kanały sprzedaży",
+      "subtitle": "Mirco: fotele wyścigowe. Influencerzy motorsportowi ≠ sklepy tuningowe ≠ warsztaty renowacyjne. Ten sam produkt, 3 różne języki.",
+      "items": [
+        {
+          "industry": "B2B Automotive",
+          "title": "Mirco — 3 frameworki komunikacji",
+          "description": "Problem: Mirco miał 1 produkt (fotele wyścigowe FIA), ale 3 różne segmenty klientów: 1) Influencerzy motorsportowi (potrzebują produktu za content, prowizji, wsparcia marketingowego). 2) Sklepy tuningowe (szukają marży, wsparcia sprzedażowego, white-label). 3) Warsztaty renowacyjne (chcą premium produktu dla wymagających klientów). Zrobiliśmy: 3 osobne frameworki komunikacji (cold email sequences + pitch materials). Każdy kanał ma swój język, swoje pain points, swoje value prop. Wynik: 27% influencerów zainteresowanych współpracą (Framework I), 400 sklepów tuningowych dodanych do bazy (Framework II), 15% warsztatów odpowiedziało na zimne maile (Framework III). Open rates: 45-60% (bo nie brzmi jak template).",
+          "url": "/case-study/mirco",
+          "image": "/images/examples/mirco-copy.png",
+          "testimonial": {
+            "quote": "Przyszedłem z problemem spadającej sprzedaży i bez pomysłu co dalej. Po dwóch miesiącach miałem gotowy system: bazę 400 potencjalnych partnerów w całej Europie, konfigurator który rozwiązuje problem zwrotów, i trzy kompletne strategie sprzedaży gotowe do wdrożenia.",
+            "author": "Mirek Macura",
+            "role": "Właściciel, Mirco"
+          }
+        }
+      ]
+    },
+    "process": {
+      "badge": "Proces",
+      "title": "Od briefu do gotowego copy",
+      "subtitle": "Prosty proces: brief → research → draft → rewizje → delivery.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Brief",
+          "description": "Rozmawiamy o Twoim produkcie/usłudze, Idealnym Profilu Klienta (ICP), tone of voice, kanale dystrybucji. Ustalamy co dokładnie piszemy (cold email, landing page, pitch deck).",
+          "duration": "30-60 min"
+        },
+        {
+          "number": "02",
+          "title": "Research",
+          "description": "Sprawdzamy konkurencję (jak komunikują), kanał (co działa w cold email / landing pages), best practices. Jeśli to Norwegia — dostosowujemy do Janteloven culture (zero hype, underselling, transparency).",
+          "duration": "1-2 dni"
+        },
+        {
+          "number": "03",
+          "title": "Draft",
+          "description": "Piszemy pierwszą wersję copy. Wysyłamy do Ciebie na review. Zbierasz feedback (co zmienić, co zostawić). Zazwyczaj po 1 rewizji już jest git.",
+          "duration": "2-4 dni"
+        },
+        {
+          "number": "04",
+          "title": "Delivery",
+          "description": "Dostarczamy finalną wersję + dokumentację (np. jak używać frameworka, jak personalizować maile). Jeśli to kampania email — dostarczamy w formacie gotowym do Instantly/Lemlist.",
+          "duration": "1 dzień"
+        }
+      ]
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Najczęstsze pytania",
+      "subtitle": "Nie znalazłeś odpowiedzi? Napisz: hello@dealcatcher.io",
+      "items": [
+        {
+          "question": "Ile rund rewizji dostaję?",
+          "answer": "Per-project: 2 rundy rewizji (większość klientów kończy po 1). Retainer: nieograniczone rewizje w ramach pakietu godzin. Rewizja to poprawki w istniejącym copy (zmiana CTA, inna struktura, inne słowa). Jeśli chcesz zupełnie nowe copy (inne podejście) — to nowy projekt."
+        },
+        {
+          "question": "Czy piszecie po norwesku?",
+          "answer": "Tak. Norweska kultura biznesowa (Janteloven) wymaga specyficznego podejścia: zero hype, underselling zamiast oversellingu, transparency, danie czytelnikowi autonomii. Mamy doświadczenie w pisaniu cold email'i do norweskich firm (Framework I dla Mirco działał świetnie)."
+        },
+        {
+          "question": "Co jeśli będę potrzebował zmian później?",
+          "answer": "Per-project: drobne zmiany (literówki, aktualizacja ceny) robimy gratis przez 30 dni. Większe zmiany (nowa sekcja, inna struktura) to osobna wycena. Retainer: wszelkie zmiany wchodzą w miesięczny pakiet — masz copywritera na wyciągnięcie ręki."
+        },
+        {
+          "question": "Czy piszecie również copy do Google Ads / Facebook Ads?",
+          "answer": "Tak. Ad copy to osobna usługa (krótkie teksty, ale wymagają A/B testingu i optymalizacji). Zazwyczaj robimy to jako część retainera (miesięcznie dostarczamy X wariantów ad copy, testujesz, raportujemy co działa)."
+        },
+        {
+          "question": "Jak mierzę performance copy?",
+          "answer": "Zależy od kanału. Cold email: open rate, reply rate, meeting booked rate. Landing page: conversion rate, time on page, bounce rate. Sales materials (pitch decks): feedback od partnerów, ile z nich podpisało umowę. My dostarczamy copy — Ty mierzysz performance. Możemy pomóc w setup'ie trackingu (np. UTM parameters, Google Analytics)."
+        },
+        {
+          "question": "Co jeśli mam bardzo niszowy produkt?",
+          "answer": "To akurat nasza mocna strona. Pisaliśmy copy dla: foteli wyścigowych FIA, skraperów B2B, kalkulatorów ROI, travel app, portali influencerów. Jeśli potrafisz opisać swój produkt i ICP — napiszemy copy który sprzedaje."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Porozmawiajmy o",
+      "titleHighlight": "Twoim copy",
+      "subtitle": "Umów bezpłatny 30-minutowy briefing. Pokażemy przykłady, odpowiemy na pytania i wycenimy projekt dla Twojego biznesu.",
+      "ctaPrimary": "Umów bezpłatny briefing",
+      "ctaSecondary": "Napisz do nas",
+      "disclaimer": "Bez zobowiązań. Zero spamu. Rozmawiamy tylko z poważnymi firmami."
     }
   },
   "reportPage": {
@@ -887,21 +2358,359 @@
       "tips": "Kolejne kroki"
     }
   },
+  "aiSearch": {
+    "badge": "AI Search",
+    "title": "Twoi klienci już szukają w ChatGPT",
+    "subtitle": "Twoja firma jest niewidoczna.",
+    "stats": [
+      {
+        "value": 9,
+        "suffix": ",3 mln",
+        "label": "Polaków korzysta z ChatGPT"
+      },
+      {
+        "value": 83,
+        "suffix": "%",
+        "label": "wyszukiwań AI = zero kliknięć"
+      },
+      {
+        "value": 5,
+        "suffix": "x",
+        "label": "wyższa konwersja z AI"
+      },
+      {
+        "value": 527,
+        "suffix": "%",
+        "label": "wzrost ruchu z AI w ostatnim roku"
+      }
+    ],
+    "problems": [
+      {
+        "title": "AI nie zna Twojej firmy",
+        "description": "Bez właściwej struktury strony — ChatGPT Cię nie poleci."
+      },
+      {
+        "title": "83% wyszukiwań = zero kliknięć",
+        "description": "AI Overview odpowiada zamiast kierować na stronę."
+      },
+      {
+        "title": "Twoja strona nie mówi do AI",
+        "description": "Zwykła strona nie wystarczy. AI potrzebuje danych strukturalnych, żeby Cię znaleźć."
+      },
+      {
+        "title": "Wizytówka Google nie wystarczy",
+        "description": "ChatGPT nie czyta wizytówek. Potrzebujesz strony."
+      }
+    ]
+  },
+  "industries": {
+    "badge": "Branże",
+    "title": "Strony gotowe na AI dla Twojej branży",
+    "subtitle": "Tak szukają Twoi klienci w ChatGPT:",
+    "tabs": [
+      {
+        "name": "Kancelarie prawne",
+        "queries": [
+          "Jaki prawnik od alimentów w Krakowie?",
+          "Najlepsza kancelaria do spraw spadkowych Warszawa",
+          "Ile kosztuje prawnik od rozwodu?"
+        ],
+        "stat": "70%+ klientów wybiera prawnika z Google"
+      },
+      {
+        "name": "Kliniki i gabinety",
+        "queries": [
+          "Najlepszy dentysta Wrocław opinie",
+          "Dobry dermatolog Warszawa prywatnie",
+          "Klinika medycyny estetycznej Kraków ranking"
+        ],
+        "stat": "65% pacjentów szuka lekarza online"
+      },
+      {
+        "name": "E-commerce",
+        "queries": [
+          "Najlepszy sklep z naturalnymi kosmetykami",
+          "Gdzie kupić meble skandynawskie online?",
+          "Ranking sklepów z elektroniką Polska"
+        ],
+        "stat": "43% kupujących sprawdza rekomendacje AI"
+      },
+      {
+        "name": "Hotele i turystyka",
+        "queries": [
+          "Najlepszy hotel w Zakopanem dla rodziny",
+          "Polecane pensjonaty nad morzem z basenem",
+          "Gdzie nocować w Krakowie centrum?"
+        ],
+        "stat": "58% podróżnych planuje wyjazdy z AI"
+      },
+      {
+        "name": "Biura rachunkowe",
+        "queries": [
+          "Najlepsze biuro rachunkowe dla JDG",
+          "Ile kosztuje księgowa Warszawa?",
+          "Biuro rachunkowe online dla e-commerce"
+        ],
+        "stat": "72% szuka księgowej w sieci"
+      }
+    ]
+  },
+  "faq": {
+    "badge": "FAQ",
+    "title": "Najczęstsze pytania",
+    "subtitle": "Nie znalazłeś odpowiedzi? Napisz do nas — hello@dealcatcher.io",
+    "items": [
+      {
+        "question": "Czym jest AI Search i dlaczego to ważne?",
+        "answer": "Coraz więcej ludzi szuka usług przez ChatGPT, Perplexity czy Google AI Overview zamiast klasycznego Google. Te narzędzia polecają firmy, które mają odpowiednio zbudowane strony. Jeśli Twoja strona nie jest na to gotowa — po prostu nie istniejesz dla tych użytkowników."
+      },
+      {
+        "question": "Czym się różni strona \"gotowa na AI\" od zwykłej strony?",
+        "answer": "Technicznie: semantyczny HTML, dane strukturalne (schema.org), treści napisane pod pytania użytkowników, szybkie ładowanie. W praktyce: ChatGPT i Google AI potrafią Twoją stronę przeczytać i polecić Twoją firmę w odpowiedziach."
+      },
+      {
+        "question": "Ile czasu zajmuje zbudowanie strony?",
+        "answer": "5-7 dni roboczych od momentu otrzymania briefu. Brief wypełniasz w 15 minut."
+      },
+      {
+        "question": "Czy mogę zrezygnować jeśli strona mi się nie spodoba?",
+        "answer": "Tak. Masz 14 dni na zwrot pieniędzy — bez pytań. To Twoje prawo konsumenckie."
+      },
+      {
+        "question": "Mam już stronę — możecie ją przerobić pod AI?",
+        "answer": "Tak, robimy redesign istniejących stron. Zaczynamy od bezpłatnej konsultacji, żeby ocenić co trzeba zmienić."
+      },
+      {
+        "question": "Ile to kosztuje?",
+        "answer": "Strona od 3 000 zł + 200 zł/mies. za hosting i utrzymanie. Google Ads od 800 zł/mies. + 10% budżetu reklamowego. Szczegóły w sekcji cennik wyżej."
+      }
+    ]
+  },
   "portfolioPage": {
     "hero": {
-      "badge": "Galeria szablonów",
-      "title": "Profesjonalne szablony dla",
+      "badge": "Portfolio",
+      "title": "Projekty dla",
       "titleHighlight": "polskich firm",
-      "subtitle": "Każdy projekt jest gotowy na wyszukiwarki AI i zoptymalizowany pod konwersję odwiedzających w klientów. Kliknij dowolny szablon, żeby zobaczyć go na żywo."
+      "subtitle": "Gotowe szablony do szybkiego startu. Pełne wdrożenia B2B od zera. Wszystko zoptymalizowane pod sprzedaż i konwersję."
     },
     "grid": {
-      "filterAll": "Wszystkie szablony",
+      "templatesHeading": "Szablony stron",
+      "filterAll": "Wszystkie",
       "noResults": "Nie znaleziono szablonów dla tej kategorii.",
+      "caseStudiesHeading": "Case Studies",
       "industryLabels": {
         "contractor": "Generalny wykonawca",
         "service": "Specjalista usługowy",
         "finishing": "Wykończenia"
       }
+    }
+  },
+  "mircoCaseStudy": {
+    "backToPortfolio": "Powrót do portfolio",
+    "badge": "Case Study",
+    "hero": {
+      "title": "Jak w 2 miesiące zbudowaliśmy producentowi foteli",
+      "titleHighlight": "kompletny system pozyskiwania partnerów",
+      "description": "Mirco — polski producent foteli rajdowych z 30-letnią historią — przyszedł ze spadającą sprzedażą i brakiem pomysłu na nowe kanały. Odszedł z bazą 400+ dystrybutorów, konfiguratorem produktów i portalem afiliacyjnym.",
+      "companyDetails": [
+        "Producent foteli rajdowych",
+        "Od 1995 roku (~30 lat)",
+        "Skoczów, Polska",
+        "~15 osób"
+      ],
+      "stats": [
+        { "value": "400+", "label": "dystrybutorów w bazie" },
+        { "value": "27%", "label": "influencerów zainteresowanych" },
+        { "value": "3", "label": "nowe kanały sprzedaży" },
+        { "value": "2 mies.", "label": "czasu realizacji" }
+      ]
+    },
+    "problem": {
+      "title": "Problem",
+      "challenges": [
+        {
+          "title": "Spadająca sprzedaż:",
+          "description": "Trend w dół, obecne kanały się wyczerpywały. Mirek widział problem, ale nie wiedział jak go odwrócić bez pomocy zewnętrznej."
+        },
+        {
+          "title": "Brak strategii:",
+          "description": "Mirek jest producentem — zna się na fotelach, nie na marketingu. Miał pomysł na markę premium, zrobił logo, ale projekt utknął w martwym punkcie."
+        },
+        {
+          "title": "Problem ze zwrotami:",
+          "description": "Proces zamawiania custom foteli przez maile i telefony był skomplikowany. Klienci odsyłali fotele bo coś się nie zgadzało — kolor, materiał, wymiary."
+        },
+        {
+          "title": "Niewykorzystany potencjał:",
+          "description": "Mirco ma własną szwalnię i może customizować wszystko. Ta przewaga nie była wykorzystywana jako narzędzie sprzedażowe."
+        }
+      ]
+    },
+    "discovery": {
+      "title": "Discovery",
+      "questionsHeading": "Pytania które zadaliśmy:",
+      "questions": [
+        "Co sprzedajesz? Jakie modele foteli?",
+        "Kto kupuje? Kim są Twoi dystrybutorzy?",
+        "Jak dystrybutorzy sprzedają dalej?",
+        "Czy możesz customizować produkty?",
+        "Co się najlepiej sprzedaje i dlaczego?"
+      ],
+      "discoveriesHeading": "Kluczowe odkrycia:",
+      "discoveries": [
+        "Fotele z homologacją FIA sprzedają się lepiej niż gamingowe",
+        "Mirco może customizować absolutnie wszystko (własna szwalnia)",
+        "Mirek nie znał swojego ICP — zmapowaliśmy go na podstawie obecnych dystrybutorów",
+        "Między tanimi chińskimi fotelami a premium Recaro jest nisza dla Mirco"
+      ]
+    },
+    "execution": {
+      "title": "Co zbudowaliśmy",
+      "subtitle": "Phased approach",
+      "phases": [
+        {
+          "number": "FAZA 2",
+          "heading": "Baza potencjalnych partnerów",
+          "description": "Zbudowaliśmy scraper przeszukujący każdy kraj UE + UK. Zmapowaliśmy konkurencję (polska, chińska, Recaro). Research: gdzie konkurencja sprzedaje swoje fotele. Agregacja i deduplikacja wyników.",
+          "result": "400+ firm (sklepy tuningowe w UE i UK). Każdy rekord: nazwa firmy, kraj, osoba decyzyjna, email, opis działalności. System outreach: Instantly, Pipedrive, automatyzacja z human-in-the-loop."
+        },
+        {
+          "number": "FAZA 3",
+          "heading": "Warsztat UVP",
+          "description": "Odkryta nisza na rynku: Tanie chińskie (niska cena, niska jakość, długa dostawa) vs Mirco (jakość EU + pełna customizacja + szybka dostawa) vs Premium Recaro (najwyższa jakość, bardzo drogo, status).",
+          "result": "Kluczowa decyzja: Wstrzymaliśmy kampanię outreach. Najpierw budujemy konfigurator, który rozwiązuje problem zwrotów i daje unikalną wartość dla partnerów."
+        },
+        {
+          "number": "FAZA 4",
+          "heading": "Konfigurator fotela",
+          "description": "Narzędzie które zamienia problem (zwroty) w przewagę rynkową (customizacja jako USP). Pełna personalizacja: Model fotela, materiał (osobno dla każdej części), kolor nici, logo (własne, w różnych miejscach), kolor skorupy, akcesoria.",
+          "result": "Zero pomyłek: Klient widzi wizualizację w czasie rzeczywistym. Wartość dla dystrybutorów: Dystrybutor może wdrożyć konfigurator u siebie za darmo."
+        },
+        {
+          "number": "FAZA 5",
+          "heading": "Kanał influencerów",
+          "description": "Hipoteza: influencerzy motorsportowi mogą sprzedawać fotele swoim odbiorcom. Test na 100 influencerach — 27% było zainteresowanych współpracą. Panel dla influencerów: Kody rabatowe, statystyki wejść i konwersji, tracking zarobków, historia wypłat. Panel administracyjny: Pełna kontrola sprzedaży, statystyki, analityka, zarządzanie.",
+          "result": "Model: Influencer zarabia tylko gdy sprzedał. Mirco płaci za marketing tylko gdy działa."
+        }
+      ],
+      "strategyHeading": "3 Sieci Sprzedaży",
+      "networks": [
+        {
+          "title": "Influencerzy → B2C",
+          "description": "Drifterzy, tunerzy, YouTuberzy motorsportowi sprzedają fotele swoim odbiorcom przez kody rabatowe. 100 influencerów w teście, 27% zainteresowanych współpracą. Portal afiliacyjny z trackerem."
+        },
+        {
+          "title": "Sklepy tuningowe → B2B",
+          "description": "Dystrybutorzy i sklepy tuningowe w całej Europie sprzedają fotele jako część swojej oferty. 400+ firm w bazie (UE + UK). Konfigurator do embedowania. Gotowe kampanie cold email."
+        },
+        {
+          "title": "Warsztaty → Custom Cars",
+          "description": "Firmy zajmujące się restomodami, custom buildami i restauracją klasycznych samochodów. 23 firmy w segmencie restoracji. Wysokomarżowy segment premium. Customizacja jako główny USP."
+        }
+      ]
+    },
+    "results": {
+      "title": "Wyniki",
+      "deliverables": [
+        "Baza dystrybutorów — 400+ firm w UE i UK (sklepy tuningowe)",
+        "System outreach — Instantly + Pipedrive + automatyzacja",
+        "Analiza konkurencji — Polska, Chiny, Recaro — gdzie sprzedają",
+        "Konfigurator fotela — Gotowy do wdrożenia, pełna customizacja",
+        "Portal afiliacyjny — Gotowy do wdrożenia, tracking, wypłaty",
+        "Test influencerów — 27% zainteresowanych (z próby 100)",
+        "Baza custom cars/retro — 23 firmy w segmencie restoracji",
+        "Strategia + sales process — Dla 3 segmentów"
+      ],
+      "testimonial": {
+        "quote": "Przyszedłem z problemem spadającej sprzedaży i zero pomysłu co dalej. Po dwóch miesiącach miałem gotowy system: bazę 400 potencjalnych partnerów w całej Europie, konfigurator, który rozwiązuje problem zwrotów, i trzy kompletne strategie na nowe kanały sprzedaży. Wszystko gotowe do wdrożenia.",
+        "name": "Mirek Macura",
+        "role": "Właściciel, Mirco"
+      }
+    },
+    "cta": {
+      "title": "Masz podobny problem?",
+      "description": "Masz produkt, sprzedaż stoi, nie wiesz jak dotrzeć do nowych partnerów? Pogadajmy 15 minut. Powiemy wprost, czy widzimy szansę.",
+      "primaryButton": "Umów bezpłatną rozmowę",
+      "secondaryButton": "Zobacz pełny case study"
+    }
+  },
+  "konfiguratorFormularz": {
+    "hero": {
+      "title": "Konfigurator produktu",
+      "titleHighlight": "który sprzedaje sam",
+      "description": "Klient widzi jak wygląda jego custom produkt — na żywo, w 3D, każda kombinacja. Żadnych zgadywań, żadnych \"zobaczysz za 2 dni mailem\". Konfigurator który zamienia oglądających w kupujących.",
+      "steps": [
+        {
+          "title": "Wypełnij formularz",
+          "description": "Opowiedz nam o swoim produkcie i opcjach customizacji — zajmie to tylko 5 minut"
+        },
+        {
+          "title": "Umów rozmowę konsultacyjną",
+          "description": "Poznamy Twój biznes, zobaczymy jakie kombinacje produktu potrzebujesz"
+        },
+        {
+          "title": "Otrzymaj wycenę + roadmap",
+          "description": "Dostaniesz szczegółowy plan konfiguratora i harmonogram realizacji"
+        }
+      ]
+    },
+    "form": {
+      "heading": "Opowiedz nam o swoim produkcie"
+    },
+    "faq": {
+      "title": "Najczęściej zadawane",
+      "titleHighlight": "pytania",
+      "subtitle": "Wszystko co musisz wiedzieć o procesie konsultacji",
+      "items": [
+        {
+          "question": "Czy formularz mnie do czegoś zobowiązuje?",
+          "answer": "Nie, wypełnienie formularza to tylko pierwszy krok — zero zobowiązań, zero zaliczek. Po wypełnieniu umówimy rozmowę konsultacyjną, pokażemy jak konfigurator może działać w Twoim biznesie i przedstawimy wycenę. Dopiero wtedy decydujesz, czy idziemy dalej."
+        },
+        {
+          "question": "Co się dzieje po wypełnieniu formularza?",
+          "answer": "Odezwiemy się do Ciebie w ciągu 24h (dni robocze). Umówimy rozmowę konsultacyjną (15–30 min), podczas której poznamy Twój produkt, opcje customizacji i biznesowe cele konfiguratora. Potem dostaniesz wycenę + plan realizacji."
+        },
+        {
+          "question": "Jak wygląda rozmowa konsultacyjna?",
+          "answer": "To rozmowa warsztatowa, nie sales call. Pytamy o Twój produkt: Jakie są opcje customizacji? Kto kupuje? Ile kombinacji trzeba pokazać? Gdzie klienci zamawiają (sklep, dystrybutorzy)? Czy potrzebujesz integracji z systemem? Na tej podstawie wyceniamy i planujemy konfigurator."
+        },
+        {
+          "question": "Ile czasu zajmuje cały proces?",
+          "answer": "Od formularza do wyceny: 2–3 dni. Od akceptacji wyceny do gotowego konfiguratora: 4–12 tygodni (zależy od złożoności). Proste konfiguratory (kolor + tekst) robią się w 4 tygodnie. Zaawansowane z 3D i integracjami — 8–12 tygodni. Dokładny harmonogram dostajesz na konsultacji."
+        },
+        {
+          "question": "Czy muszę mieć gotowe zdjęcia/opisy produktu?",
+          "answer": "Nie, do konsultacji wystarczy, że opowiesz o produkcie i opcjach customizacji. Zdjęcia, opisy, specyfikacje zbierzemy później, przed startem projektu. Jeśli masz — super, wykorzystamy. Jeśli nie — podpowiemy co przygotować."
+        },
+        {
+          "question": "Co dostanę po rozmowie konsultacyjnej?",
+          "answer": "Szczegółową wycenę (ile kosztuje konfigurator dla Twojego produktu), harmonogram realizacji (ile tygodni займет budowa), listę funkcji (co dokładnie dostaniesz), przykłady (podobne konfiguratory które zrobiliśmy). Wszystko na piśmie, żadnych niespodzianek."
+        },
+        {
+          "question": "Co jeśli po konsultacji się rozmyślę?",
+          "answer": "To w porządku! Konsultacja jest darmowa i bez zobowiązań. Jeśli wycena nie pasuje do budżetu, albo konfigurator nie jest tym czego potrzebujesz — po prostu dziękujesz i na tym kończymy. Bez presji, bez dziwnych pytań."
+        }
+      ]
+    },
+    "examples": {
+      "title": "Konfiguratory które",
+      "titleHighlight": "stworzyliśmy",
+      "subtitle": "Zobacz nasze ostatnie realizacje",
+      "cta": "Zobacz case study",
+      "items": [
+        {
+          "title": "Mirco — Konfigurator Fotela Wyścigowego",
+          "description": "Konfigurator 3D z podglądem real-time. Klient wybiera model, materiał, kolor nici, logo, akcesoria — widzi efekt na żywo. Integracja z systemem produkcji (export do .gbl).",
+          "image": "/images/examples/mirco-configurator.png",
+          "url": "/case-study/mirco"
+        },
+        {
+          "title": "Konfigurator Zniczy Premium — Podgląd 3D",
+          "description": "Konfigurator z wizualizacją 3D w czasie rzeczywistym. Klient projektuje znicz: rozmiar, tekst, czcionka, kolor, wyrównanie. Integracja z produkcją, export do .gbl.",
+          "image": "/images/examples/candle-configurator1.png",
+          "url": "/case-study/candle-configurator"
+        }
+      ]
     }
   }
 }
