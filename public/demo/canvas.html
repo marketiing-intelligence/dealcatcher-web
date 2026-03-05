@@ -222,6 +222,8 @@
                     class="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-black transition-colors">NO</button>
                 <button onclick="LocalApp.setLang('en')"
                     class="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-black transition-colors">EN</button>
+                <button onclick="LocalApp.setLang('pl')"
+                    class="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-black transition-colors">PL</button>
             </div>
         </nav>
 
@@ -323,7 +325,7 @@
                     <h2 class="text-5xl md:text-8xl font-serif text-white mb-4 relative z-10 leading-[0.8]">
                         Texture<br><span class="opacity-50 italic">Study</span></h2>
                 </div>
-                <p class="text-xs font-mono uppercase tracking-widest text-accent mb-2">Library_V.2</p>
+                <p class="text-xs font-mono uppercase tracking-widest text-accent mb-2" data-i18n="lib_version">Library_V.2</p>
             </div>
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -386,7 +388,7 @@
             <div class="flex flex-col md:flex-row items-baseline justify-between mb-32">
                 <h2 class="text-4xl md:text-6xl font-serif text-white tracking-tighter" data-i18n="process.title">
                     The<br>Sequence</h2>
-                <div class="text-sm font-mono uppercase tracking-widest text-accent/50 mt-4 md:mt-0">[ Execution_Flow ]
+                <div class="text-sm font-mono uppercase tracking-widest text-accent/50 mt-4 md:mt-0" data-i18n="exec_flow">[ Execution_Flow ]
                 </div>
             </div>
 
@@ -587,15 +589,15 @@
                 <!-- SOCIALS -->
                 <div class="flex justify-center gap-8 mb-16">
                     <a href="#"
-                        class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-black transition-all">
+                        class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-black transition-all" data-i18n="social_ig">
                         IG
                     </a>
                     <a href="#"
-                        class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-black transition-all">
+                        class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-black transition-all" data-i18n="social_ln">
                         LN
                     </a>
                     <a href="#"
-                        class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-black transition-all">
+                        class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-black transition-all" data-i18n="social_em">
                         EM
                     </a>
                 </div>
@@ -623,9 +625,28 @@
         // SHIM: Prevent common.js from crashing
         window.showcaseConfig = window.showcaseConfig || {};
 
+        // Helper: Get language from URL params > localStorage > default
+        function getInitialLanguage() {
+            // 1. Check URL query param (?lang=pl)
+            const urlParams = new URLSearchParams(window.location.search);
+            const urlLang = urlParams.get('lang');
+            if (urlLang && ['no', 'en', 'pl'].includes(urlLang)) {
+                return urlLang;
+            }
+
+            // 2. Check localStorage
+            const storedLang = localStorage.getItem('finish_lang');
+            if (storedLang && ['no', 'en', 'pl'].includes(storedLang)) {
+                return storedLang;
+            }
+
+            // 3. Default
+            return 'no';
+        }
+
         const LocalApp = {
             state: {
-                lang: localStorage.getItem('finish_lang') || 'no',
+                lang: getInitialLanguage(),
                 theme: 'canvas' // Hardcoded
             },
 
@@ -656,6 +677,7 @@
                     mat_brass: "Messing",
                     mat_brass_desc: "Eldet_Patina",
                     process_title: "Vår<br>Prosess",
+                    process: { title: "Vår<br>Prosess" },
                     process_step1_label: "01 // FORARBEID",
                     process_step1_title: "Visjon & Befaring",
                     process_step1_desc: "Etablering av det visuelle språket. Vi oversetter dine estetiske preferanser til en konkret materialpalett.",
@@ -706,7 +728,27 @@
                     credit_prod_role: "Produksjon",
                     credit_prod_year: "2026",
                     foot_sys: "System_Slutt",
-                    foot_design: "Designet av"
+                    foot_design: "Designet av",
+                    lib_version: "Bibliotek_V.2",
+                    exec_flow: "[ Utførelses_Flyt ]",
+                    social_ig: "IG",
+                    social_ln: "LN",
+                    social_em: "EM",
+                    config_title: "Tema Konfigurasjon",
+                    config_close: "Lukk konfigurator",
+                    config_business: "1. Velg Virksomhet",
+                    config_demo1: "TOTAL ENTREPRENØR",
+                    config_demo2: "SERVICE SPESIALIST",
+                    config_demo3: "FINISHING EXPERT",
+                    config_layout: "2. Velg Layout",
+                    config_gallery: "GALLERI",
+                    config_studio: "STUDIO",
+                    config_canvas: "LERRET",
+                    config_style: "3. Visuell Stil",
+                    config_gallery_light: "Galleri Lys",
+                    config_studio_blue: "Studio Blå",
+                    config_canvas_dark: "Lerret Mørk",
+                    config_current: "Nåværende:"
                 },
                 en: {
                     brand: "FINISH_EXPERT",
@@ -734,6 +776,7 @@
                     mat_brass: "Brass",
                     mat_brass_desc: "Aged_Patina",
                     process_title: "The<br>Sequence",
+                    process: { title: "The<br>Sequence" },
                     process_step1_label: "01 // PRE.PRODUCTION",
                     process_step1_title: "Vision & Consultation",
                     process_step1_desc: "Establishing the visual language. We decode your aesthetic preferences into a tangible material palette.",
@@ -781,7 +824,123 @@
                     credit_prod_role: "Production",
                     credit_prod_year: "2026",
                     foot_sys: "System_End",
-                    foot_design: "Designed by"
+                    foot_design: "Designed by",
+                    lib_version: "Library_V.2",
+                    exec_flow: "[ Execution_Flow ]",
+                    social_ig: "IG",
+                    social_ln: "LN",
+                    social_em: "EM",
+                    config_title: "Theme Config",
+                    config_close: "Close configurator",
+                    config_business: "1. Select Business",
+                    config_demo1: "THE TOTAL CONTRACTOR",
+                    config_demo2: "SERVICE SPECIALIST",
+                    config_demo3: "FINISHING EXPERT",
+                    config_layout: "2. Select Layout",
+                    config_gallery: "GALLERY",
+                    config_studio: "STUDIO",
+                    config_canvas: "CANVAS",
+                    config_style: "3. Visual Style",
+                    config_gallery_light: "Gallery Light",
+                    config_studio_blue: "Studio Blue",
+                    config_canvas_dark: "Canvas Dark",
+                    config_current: "Current:"
+                },
+                pl: {
+                    brand: "FINISH_EXPERT",
+                    nav_services: "Usługi",
+                    nav_materials: "Materiały",
+                    nav_contact: "Kontakt",
+                    hero_eyebrow: "Ekspert Wykończeniowy",
+                    hero_desc: "Gdzie ciemność spotyka szczegóły. Tworzymy atmosfery, nie tylko pomieszczenia. Doświadcz głębi premium wykończenia.",
+                    hero_before: "GENERALNY",
+                    hero_after: "WYKONAWCA",
+                    serv_title: "NASZA<br>EKSPERTYZA",
+                    serv_sub: "Precyzja ma pierwszeństwo. Dostarczamy rzemiosło muzealnej jakości dla wymagających rezydencji.",
+                    serv_1: "Mistrz Malarski",
+                    serv_1_desc: "Bezpyłowe szlifowanie, malowanie natryskowe i ekskluzywne wykończenia matowe. Używamy tylko Jotun Lady Pure Color.",
+                    serv_2: "Układanie Płytek",
+                    serv_2_desc: "Płytki dużego formatu, mikrocement i precyzyjne cięcia. Certyfikat łazienki z 10-letnią gwarancją.",
+                    serv_3: "Stolarka",
+                    serv_3_desc: "Szafy na wymiar, listwy i spersonalizowane rozwiązania z dębu i orzecha.",
+                    mat_oak: "Dąb",
+                    mat_oak_desc: "Biały_Olej",
+                    mat_stone: "Bazalt",
+                    mat_stone_desc: "Szlif_Kamień",
+                    mat_lime: "Wapno",
+                    mat_lime_desc: "Stucco_Matowy",
+                    mat_brass: "Mosiądz",
+                    mat_brass_desc: "Patyna_Antyk",
+                    process_title: "Nasza<br>Sekwencja",
+                    process: { title: "Nasza<br>Sekwencja" },
+                    process_step1_label: "01 // PRE.PRODUKCJA",
+                    process_step1_title: "Wizja & Konsultacja",
+                    process_step1_desc: "Ustalanie języka wizualnego. Dekodujemy Twoje preferencje estetyczne w namacalną paletę materiałów.",
+                    process_step2_label: "02 // WARSTWA.BAZOWA",
+                    process_step2_title: "Przygotowanie",
+                    process_step2_desc: "Niewidzialna sztuka. Perfekcjonowanie podłoża zapewnia trwałość i czystość finalnej instalacji.",
+                    process_step3_label: "03 // GŁÓWNE.WYDARZENIE",
+                    process_step3_title: "Wykonanie",
+                    process_step3_desc: "Gdzie rzemiosło spotyka obsesję. Precyzyjna aplikacja farby, płytek i drewna.",
+                    process_step4_label: "04 // FINALNE.CIĘCIE",
+                    process_step4_title: "Przekazanie",
+                    process_step4_desc: "Dostawa w białych rękawiczkach. Kompleksowa dokumentacja i protokoły konserwacji.",
+                    port_label: "WYRÓŻNIONY PROJEKT",
+                    port_title: "",
+                    proj_meta: "Mieszkaniowy / 2026",
+                    proj_title: "Nowoczesny<br>Nordycki<br>Noir",
+                    proj_desc: "Kompletna renowacja skupiająca się na cieniu, świetle i dotykowych materiałach. Wykorzystanie wędzonego dębu i matowych czarnych detali.",
+                    btn_explore: "ODKRYJ PROJEKT",
+                    spec_wall: "Ściany",
+                    spec_floor: "Podłogi",
+                    spec_time: "Czas Trwania",
+                    btn_case: "ZOBACZ STUDIUM",
+                    foot_contact: "SKONTAKTUJ SIĘ",
+                    contact_sub: "Gotowy rozpocząć transformację?",
+                    contact_hq: "OSLO_HQ // +47 99 88 77 66",
+                    contact_email: "MAIL // post@finish.no",
+                    ph_name: "IMIĘ",
+                    ph_email: "EMAIL",
+                    ph_details: "SZCZEGÓŁY_PROJEKTU",
+                    btn_send: "WYŚLIJ ZAPYTANIE",
+                    foot_insta: "INSTAGRAM",
+                    foot_mail: "POST@FINISH.NO",
+                    cert_1: "Tytuł Mistrza",
+                    cert_2: "StartBANK",
+                    cert_3: "Norsk Industri",
+                    cert_4: "Certyfikat Łazienki",
+
+                    // NEW CREDITS
+                    credit_dir_role: "Reżyseria",
+                    credit_dir_name: "Finishing Expert",
+                    credit_art_role: "Kierownictwo Artystyczne",
+                    credit_art_name: "Oslo Studios",
+                    credit_cine_role: "Cinematografia",
+                    credit_cine_name: "Canon R5C",
+                    credit_prod_role: "Produkcja",
+                    credit_prod_year: "2026",
+                    foot_sys: "Koniec_Systemu",
+                    foot_design: "Zaprojektowane przez",
+                    lib_version: "Biblioteka_V.2",
+                    exec_flow: "[ Sekwencja_Wykonania ]",
+                    social_ig: "IG",
+                    social_ln: "LN",
+                    social_em: "EM",
+                    config_title: "Konfiguracja Motywu",
+                    config_close: "Zamknij konfigurator",
+                    config_business: "1. Wybierz Branżę",
+                    config_demo1: "GENERALNY WYKONAWCA",
+                    config_demo2: "SPECJALISTA SERWISOWY",
+                    config_demo3: "EKSPERT WYKOŃCZENIOWY",
+                    config_layout: "2. Wybierz Układ",
+                    config_gallery: "GALERIA",
+                    config_studio: "STUDIO",
+                    config_canvas: "PŁÓTNO",
+                    config_style: "3. Styl Wizualny",
+                    config_gallery_light: "Galeria Jasna",
+                    config_studio_blue: "Studio Niebieskie",
+                    config_canvas_dark: "Płótno Ciemne",
+                    config_current: "Aktualny:"
                 }
             },
 
@@ -823,6 +982,11 @@
                 document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
                     const key = el.getAttribute('data-i18n-placeholder');
                     if (terms[key]) el.placeholder = terms[key];
+                });
+
+                document.querySelectorAll('[data-i18n-aria-label]').forEach(el => {
+                    const key = el.getAttribute('data-i18n-aria-label');
+                    if (terms[key]) el.setAttribute('aria-label', terms[key]);
                 });
             },
 
@@ -875,8 +1039,8 @@
     <div id="theme-panel"
         class="fixed top-0 right-0 h-full w-80 bg-[#1A1A1B] border-l border-white/10 z-[1000] transform translate-x-full transition-transform duration-500 ease-out p-8 shadow-2xl text-white">
         <div class="flex justify-between items-center mb-12">
-            <h3 class="font-mono text-sm uppercase tracking-widest opacity-50">Theme Config</h3>
-            <button onclick="App.toggleThemePanel()" aria-label="Lukk konfigurator"
+            <h3 class="font-mono text-sm uppercase tracking-widest opacity-50" data-i18n="config_title">Theme Config</h3>
+            <button onclick="App.toggleThemePanel()" aria-label="Close configurator" data-i18n-aria-label="config_close"
                 class="opacity-50 hover:opacity-100 hover:text-accent transition-opacity">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
@@ -889,21 +1053,21 @@
 
             <!-- SECTION 1: BUSINESS TYPE (DEMO) -->
             <div>
-                <h4 class="font-mono text-[10px] opacity-50 mb-3 uppercase tracking-widest">1. Select Business</h4>
+                <h4 class="font-mono text-[10px] opacity-50 mb-3 uppercase tracking-widest" data-i18n="config_business">1. Select Business</h4>
                 <div class="flex flex-col gap-2">
                     <button onclick="App.setDemo('demo1')"
                         class="text-left px-4 py-3 border border-white/10 text-xs font-mono bg-white/5 hover:bg-white/10 hover:border-accent transition-all flex justify-between items-center group">
-                        <span>THE TOTAL CONTRACTOR</span>
+                        <span data-i18n="config_demo1">THE TOTAL CONTRACTOR</span>
                         <span class="opacity-0 group-hover:opacity-100 text-accent transition-opacity">→</span>
                     </button>
                     <button onclick="App.setDemo('demo2')"
                         class="text-left px-4 py-3 border border-white/10 text-xs font-mono bg-white/5 hover:bg-white/10 hover:border-accent transition-all flex justify-between items-center group">
-                        <span>SERVICE SPECIALIST</span>
+                        <span data-i18n="config_demo2">SERVICE SPECIALIST</span>
                         <span class="opacity-0 group-hover:opacity-100 text-accent transition-opacity">→</span>
                     </button>
                     <button onclick="App.setDemo('demo3')"
                         class="text-left px-4 py-3 border border-white/10 text-xs font-mono bg-white/5 hover:bg-white/10 hover:border-accent transition-all flex justify-between items-center group">
-                        <span>FINISHING EXPERT</span>
+                        <span data-i18n="config_demo3">FINISHING EXPERT</span>
                         <span class="opacity-0 group-hover:opacity-100 text-accent transition-opacity">→</span>
                     </button>
                 </div>
@@ -911,58 +1075,58 @@
 
             <!-- SECTION 2: TEMPLATE MODE -->
             <div>
-                <h4 class="font-mono text-[10px] opacity-50 mb-3 uppercase tracking-widest">2. Select Layout</h4>
+                <h4 class="font-mono text-[10px] opacity-50 mb-3 uppercase tracking-widest" data-i18n="config_layout">2. Select Layout</h4>
 
                 <!-- Demo 3 Templates Only -->
                 <div class="grid grid-cols-3 gap-2">
                     <button onclick="App.setTemplate('gallery')"
                         class="aspect-video border border-white/10 bg-white/5 flex flex-col items-center justify-center gap-1 group hover:border-accent hover:text-accent transition-all">
                         <div class="w-4 h-2 border border-white/30 group-hover:border-accent"></div>
-                        <span class="text-[8px] font-mono opacity-50 group-hover:text-accent">GALLERY</span>
+                        <span class="text-[8px] font-mono opacity-50 group-hover:text-accent" data-i18n="config_gallery">GALLERY</span>
                     </button>
                     <button onclick="App.setTemplate('studio')"
                         class="aspect-video border border-white/10 bg-white/5 flex flex-col items-center justify-center gap-1 group hover:border-accent hover:text-accent transition-all">
                         <div class="w-4 h-2 border border-white/30 group-hover:border-accent"></div>
-                        <span class="text-[8px] font-mono opacity-50 group-hover:text-accent">STUDIO</span>
+                        <span class="text-[8px] font-mono opacity-50 group-hover:text-accent" data-i18n="config_studio">STUDIO</span>
                     </button>
                     <button onclick="App.setTemplate('canvas')"
                         class="aspect-video border border-white/10 bg-white/5 flex flex-col items-center justify-center gap-1 group hover:border-accent hover:text-accent transition-all">
                         <div class="w-4 h-2 border border-white/30 group-hover:border-accent"></div>
-                        <span class="text-[8px] font-mono opacity-50 group-hover:text-accent">CANVAS</span>
+                        <span class="text-[8px] font-mono opacity-50 group-hover:text-accent" data-i18n="config_canvas">CANVAS</span>
                     </button>
                 </div>
             </div>
 
             <!-- SECTION 3: VISUAL STYLE -->
             <div>
-                <h4 class="font-mono text-[10px] opacity-50 mb-3 uppercase tracking-widest">3. Visual Style</h4>
+                <h4 class="font-mono text-[10px] opacity-50 mb-3 uppercase tracking-widest" data-i18n="config_style">3. Visual Style</h4>
                 <div class="space-y-2">
                     <button onclick="LocalApp.setTheme('gallery')"
                         class="w-full p-3 border border-white/10 flex items-center gap-4 hover:border-accent group transition-all bg-white/5">
                         <div class="w-6 h-6 bg-[#FCFCFC] border border-[#C19A6B] rounded-full"></div>
                         <span
-                            class="font-mono text-xs uppercase opacity-70 group-hover:opacity-100 group-hover:text-accent">Gallery
+                            class="font-mono text-xs uppercase opacity-70 group-hover:opacity-100 group-hover:text-accent" data-i18n="config_gallery_light">Gallery
                             Light</span>
                     </button>
                     <button onclick="LocalApp.setTheme('studio')"
                         class="w-full p-3 border border-white/10 flex items-center gap-4 hover:border-accent group transition-all bg-white/5">
                         <div class="w-6 h-6 bg-[#002B49] border border-[#0057FF] rounded-full"></div>
                         <span
-                            class="font-mono text-xs uppercase opacity-70 group-hover:opacity-100 group-hover:text-accent">Studio
+                            class="font-mono text-xs uppercase opacity-70 group-hover:opacity-100 group-hover:text-accent" data-i18n="config_studio_blue">Studio
                             Blue</span>
                     </button>
                     <button onclick="LocalApp.setTheme('canvas')"
                         class="w-full p-3 border border-white/10 flex items-center gap-4 hover:border-accent group transition-all bg-white/5">
                         <div class="w-6 h-6 bg-[#050505] border border-[#D4AF37] rounded-full"></div>
                         <span
-                            class="font-mono text-xs uppercase opacity-70 group-hover:opacity-100 group-hover:text-accent">Canvas
+                            class="font-mono text-xs uppercase opacity-70 group-hover:opacity-100 group-hover:text-accent" data-i18n="config_canvas_dark">Canvas
                             Dark</span>
                     </button>
                 </div>
             </div>
 
             <div class="p-4 bg-white/5 border border-white/10 text-[10px] font-mono opacity-60">
-                <p>Current: <span id="debug-current-template">CANVAS</span></p>
+                <p><span data-i18n="config_current">Current:</span> <span id="debug-current-template">CANVAS</span></p>
             </div>
         </div>
     </div>

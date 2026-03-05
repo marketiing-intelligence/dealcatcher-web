@@ -205,13 +205,14 @@
             <div class="hidden md:flex flex-col gap-2 pointer-events-auto">
                 <div id="nav-links"
                     class="flex gap-6 text-[10px] uppercase tracking-[0.2em] font-sans text-text transition-colors duration-300">
-                    <a href="#services" class="hover:text-accent transition-colors">Services</a>
-                    <a href="#materials" class="hover:text-accent transition-colors">Materials</a>
-                    <a href="#portfolio" class="hover:text-accent transition-colors">Projects</a>
-                    <a href="#contact" class="hover:text-accent transition-colors">Contact</a>
+                    <a href="#services" class="hover:text-accent transition-colors" data-i18n="nav_services">Services</a>
+                    <a href="#materials" class="hover:text-accent transition-colors" data-i18n="nav_materials">Materials</a>
+                    <a href="#portfolio" class="hover:text-accent transition-colors" data-i18n="nav_projects">Projects</a>
+                    <a href="#contact" class="hover:text-accent transition-colors" data-i18n="nav_contact">Contact</a>
                     <div class="w-px h-3 bg-current opacity-20 mx-2"></div>
                     <button onclick="LocalApp.setLang('no')" class="hover:text-accent transition-colors">NO</button>
                     <button onclick="LocalApp.setLang('en')" class="hover:text-accent transition-colors">EN</button>
+                    <button onclick="LocalApp.setLang('pl')" class="hover:text-accent transition-colors">PL</button>
                 </div>
             </div>
         </nav>
@@ -235,7 +236,7 @@
             <!-- OVERLAY TEXT LEFT -->
             <div
                 class="absolute top-[20%] left-8 md:left-24 z-20 pointer-events-none text-white drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
-                <p class="text-[10px] uppercase tracking-[0.4em] mb-4 opacity-90 font-sans pl-1 drop-shadow-md">Oslo
+                <p class="text-[10px] uppercase tracking-[0.4em] mb-4 opacity-90 font-sans pl-1 drop-shadow-md" data-i18n="hero_location">Oslo
                     &
                     Omegn</p>
                 <h2 class="text-5xl md:text-7xl font-serif leading-none italic drop-shadow-xl whitespace-nowrap"
@@ -246,7 +247,7 @@
             <!-- OVERLAY TEXT RIGHT -->
             <div
                 class="absolute bottom-[20%] right-8 md:right-24 z-20 pointer-events-none text-white text-right drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
-                <p class="text-[10px] uppercase tracking-[0.4em] mb-4 opacity-90 font-sans pr-1 drop-shadow-md">
+                <p class="text-[10px] uppercase tracking-[0.4em] mb-4 opacity-90 font-sans pr-1 drop-shadow-md" data-i18n="hero_tagline">
                     Eksklusiv
                     Renovering</p>
                 <h2 class="text-5xl md:text-7xl font-serif leading-none drop-shadow-xl whitespace-nowrap"
@@ -266,7 +267,7 @@
 
             <!-- SCROLL INDICATOR -->
             <div
-                class="absolute bottom-8 left-1/2 -translate-x-1/2 text-[10px] tracking-[0.2em] opacity-50 font-sans uppercase animate-pulse mix-blend-difference text-white">
+                class="absolute bottom-8 left-1/2 -translate-x-1/2 text-[10px] tracking-[0.2em] opacity-50 font-sans uppercase animate-pulse mix-blend-difference text-white" data-i18n="hero_scroll">
                 Scroll to Explore
             </div>
         </section>
@@ -287,7 +288,7 @@
         <section class="py-24 px-8 md:px-24 bg-bg relative z-20">
             <div class="flex flex-col md:flex-row items-baseline justify-between mb-24 border-b border-text/10 pb-8">
                 <h2 class="text-5xl md:text-8xl font-serif text-text" data-i18n="serv_title">Expertise</h2>
-                <div class="text-sm font-sans uppercase tracking-widest opacity-40 mt-4 md:mt-0">[ Services ]</div>
+                <div class="text-sm font-sans uppercase tracking-widest opacity-40 mt-4 md:mt-0" data-i18n="serv_label">[ Services ]</div>
             </div>
 
             <div class="space-y-32">
@@ -302,7 +303,7 @@
                             finishes that absorb light rather than reflecting it.
                         </p>
                         <a href="#"
-                            class="text-xs uppercase tracking-widest hover:text-accent border-b border-transparent hover:border-accent transition-all pb-1 inline-block">View
+                            class="text-xs uppercase tracking-widest hover:text-accent border-b border-transparent hover:border-accent transition-all pb-1 inline-block" data-i18n="serv_view_specs">View
                             Specs</a>
                     </div>
                     <div class="md:col-span-6 relative aspect-[4/3] overflow-hidden">
@@ -330,7 +331,7 @@
                             class="md:col-span-1 text-accent font-serif text-2xl italic opacity-50 mb-4 md:mb-0 md:absolute md:-left-12">
                             02</div>
                         <a href="#"
-                            class="text-xs uppercase tracking-widest hover:text-accent border-b border-transparent hover:border-accent transition-all pb-1 inline-block">View
+                            class="text-xs uppercase tracking-widest hover:text-accent border-b border-transparent hover:border-accent transition-all pb-1 inline-block" data-i18n="serv_view_specs">View
                             Specs</a>
                     </div>
                 </div>
@@ -346,7 +347,7 @@
                             white oak, and integrated LED lighting systems.
                         </p>
                         <a href="#"
-                            class="text-xs uppercase tracking-widest hover:text-accent border-b border-transparent hover:border-accent transition-all pb-1 inline-block">View
+                            class="text-xs uppercase tracking-widest hover:text-accent border-b border-transparent hover:border-accent transition-all pb-1 inline-block" data-i18n="serv_view_specs">View
                             Specs</a>
                     </div>
                     <div class="md:col-span-6 relative aspect-[4/3] overflow-hidden">
@@ -374,8 +375,8 @@
                         alt="Oak">
                     <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
                     <div class="absolute bottom-6 left-6">
-                        <p class="font-serif text-2xl italic">White Oak</p>
-                        <p class="font-sans text-[10px] uppercase tracking-widest opacity-60">Natural Oil</p>
+                        <p class="font-serif text-2xl italic" data-i18n="mat_oak">White Oak</p>
+                        <p class="font-sans text-[10px] uppercase tracking-widest opacity-60" data-i18n="mat_oak_finish">Natural Oil</p>
                     </div>
                 </div>
                 <!-- Item 2 -->
@@ -383,8 +384,8 @@
                     <img src="assets/demo3/texture_stone.png" class="absolute inset-0 w-full h-full object-cover"
                         alt="Basalt">
                     <div class="absolute bottom-6 left-6 text-white">
-                        <p class="font-serif text-2xl italic">Basalt</p>
-                        <p class="font-sans text-[10px] uppercase tracking-widest opacity-60">Matte Stone</p>
+                        <p class="font-serif text-2xl italic" data-i18n="mat_basalt">Basalt</p>
+                        <p class="font-sans text-[10px] uppercase tracking-widest opacity-60" data-i18n="mat_basalt_finish">Matte Stone</p>
                     </div>
                 </div>
                 <!-- Item 3 -->
@@ -394,8 +395,8 @@
                         alt="Lime">
                     <div class="absolute inset-0 bg-white/20 group-hover:bg-transparent transition-colors"></div>
                     <div class="absolute bottom-6 left-6 text-dark">
-                        <p class="font-serif text-2xl italic">Limewash</p>
-                        <p class="font-sans text-[10px] uppercase tracking-widest opacity-60">Warm Beige</p>
+                        <p class="font-serif text-2xl italic" data-i18n="mat_lime">Limewash</p>
+                        <p class="font-sans text-[10px] uppercase tracking-widest opacity-60" data-i18n="mat_lime_finish">Warm Beige</p>
                     </div>
                 </div>
                 <!-- Item 4 -->
@@ -405,8 +406,8 @@
                         alt="Brass">
                     <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
                     <div class="absolute bottom-6 left-6 text-white">
-                        <p class="font-serif text-2xl italic">Aged Brass</p>
-                        <p class="font-sans text-[10px] uppercase tracking-widest opacity-60">Patina</p>
+                        <p class="font-serif text-2xl italic" data-i18n="mat_brass">Aged Brass</p>
+                        <p class="font-sans text-[10px] uppercase tracking-widest opacity-60" data-i18n="mat_brass_finish">Patina</p>
                     </div>
                 </div>
             </div>
@@ -416,14 +417,14 @@
         <section class="py-24 px-8 md:px-24 bg-bg relative z-20 text-text">
             <div class="flex flex-col md:flex-row items-baseline justify-between mb-24">
                 <h2 class="text-4xl md:text-6xl font-serif text-text" data-i18n="process_title">The Journey</h2>
-                <div class="text-sm font-sans uppercase tracking-widest opacity-40 mt-4 md:mt-0">[ From Concept to
+                <div class="text-sm font-sans uppercase tracking-widest opacity-40 mt-4 md:mt-0" data-i18n="process_label">[ From Concept to
                     Perfection ]</div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 border-t border-text/10 pt-12">
                 <!-- Step 1 -->
                 <div class="group">
-                    <div class="text-[10px] font-sans uppercase tracking-widest opacity-40 mb-4">01. Consultation</div>
+                    <div class="text-[10px] font-sans uppercase tracking-widest opacity-40 mb-4" data-i18n="process_label1">01. Consultation</div>
                     <h3 class="text-2xl font-serif italic mb-4 group-hover:text-accent transition-colors"
                         data-i18n="process_step1">Vision & Style
                     </h3>
@@ -433,7 +434,7 @@
                 </div>
                 <!-- Step 2 -->
                 <div class="group">
-                    <div class="text-[10px] font-sans uppercase tracking-widest opacity-40 mb-4">02. Preparation</div>
+                    <div class="text-[10px] font-sans uppercase tracking-widest opacity-40 mb-4" data-i18n="process_label2">02. Preparation</div>
                     <h3 class="text-2xl font-serif italic mb-4 group-hover:text-accent transition-colors"
                         data-i18n="process_step2">The Foundation
                     </h3>
@@ -443,7 +444,7 @@
                 </div>
                 <!-- Step 3 -->
                 <div class="group">
-                    <div class="text-[10px] font-sans uppercase tracking-widest opacity-40 mb-4">03. Execution</div>
+                    <div class="text-[10px] font-sans uppercase tracking-widest opacity-40 mb-4" data-i18n="process_label3">03. Execution</div>
                     <h3 class="text-2xl font-serif italic mb-4 group-hover:text-accent transition-colors"
                         data-i18n="process_step3">Artisanal
                         Craft</h3>
@@ -453,7 +454,7 @@
                 </div>
                 <!-- Step 4 -->
                 <div class="group">
-                    <div class="text-[10px] font-sans uppercase tracking-widest opacity-40 mb-4">04. Handover</div>
+                    <div class="text-[10px] font-sans uppercase tracking-widest opacity-40 mb-4" data-i18n="process_label4">04. Handover</div>
                     <h3 class="text-2xl font-serif italic mb-4 group-hover:text-accent transition-colors"
                         data-i18n="process_step4">White Glove
                     </h3>
@@ -473,22 +474,22 @@
                     <div
                         class="w-12 h-12 border border-text/20 rounded-full flex items-center justify-center font-serif italic">
                         M</div>
-                    <span class="font-sans text-xs uppercase tracking-widest">Mesterbrev</span>
+                    <span class="font-sans text-xs uppercase tracking-widest" data-i18n="cert_mesterbrev">Mesterbrev</span>
                 </div>
                 <div class="flex items-center gap-4">
                     <div class="w-12 h-12 border border-text/20 flex items-center justify-center font-serif italic">S
                     </div>
-                    <span class="font-sans text-xs uppercase tracking-widest">StartBANK</span>
+                    <span class="font-sans text-xs uppercase tracking-widest" data-i18n="cert_startbank">StartBANK</span>
                 </div>
                 <div class="flex items-center gap-4">
                     <div class="w-12 h-12 border border-text/20 flex items-center justify-center font-serif italic">N
                     </div>
-                    <span class="font-sans text-xs uppercase tracking-widest">Norsk Industri</span>
+                    <span class="font-sans text-xs uppercase tracking-widest" data-i18n="cert_norsk">Norsk Industri</span>
                 </div>
                 <div class="flex items-center gap-4">
                     <div class="w-12 h-12 border border-text/20 flex items-center justify-center font-serif italic">V
                     </div>
-                    <span class="font-sans text-xs uppercase tracking-widest">Våtrom</span>
+                    <span class="font-sans text-xs uppercase tracking-widest" data-i18n="cert_vatrom">Våtrom</span>
                 </div>
             </div>
         </section>
@@ -519,9 +520,9 @@
                     expertise.
                 </p>
                 <div class="flex flex-col gap-4 text-sm font-sans opacity-60">
-                    <p>Oslo & Omegn</p>
-                    <p>+47 22 33 44 55</p>
-                    <p>post@finishing-expert.no</p>
+                    <p data-i18n="cta_location">Oslo & Omegn</p>
+                    <p data-i18n="cta_phone">+47 22 33 44 55</p>
+                    <p data-i18n="cta_email_text">post@finishing-expert.no</p>
                 </div>
             </div>
 
@@ -538,7 +539,7 @@
                         class="w-full bg-transparent border-b border-white/20 py-2 focus:border-accent outline-none font-sans text-sm">
 
                     <div class="pt-4">
-                        <p class="text-[10px] uppercase tracking-widest opacity-50 mb-4" data-i18n="cta_style">Preferred
+                        <p class="text-[10px] uppercase tracking-widest opacity-50 mb-4" data-i18n="cta_style_label">Preferred
                             Style:</p>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2 cursor-pointer group">
@@ -630,18 +631,51 @@
         // SHIM: Prevent common.js from crashing
         window.showcaseConfig = window.showcaseConfig || {};
 
+        // Helper: Get language from URL params > localStorage > default
+        function getInitialLanguage() {
+            // 1. Check URL query param (?lang=pl)
+            const urlParams = new URLSearchParams(window.location.search);
+            const urlLang = urlParams.get('lang');
+            if (urlLang && ['no', 'en', 'pl'].includes(urlLang)) {
+                return urlLang;
+            }
+
+            // 2. Check localStorage
+            const storedLang = localStorage.getItem('finish_lang');
+            if (storedLang && ['no', 'en', 'pl'].includes(storedLang)) {
+                return storedLang;
+            }
+
+            // 3. Default
+            return 'no';
+        }
+
         const LocalApp = {
             state: {
-                lang: localStorage.getItem('finish_lang') || 'no',
+                lang: getInitialLanguage(),
                 theme: 'gallery' // Hardcoded
             },
 
             i18n: {
                 no: {
                     brand: "FINISH_EXPERT",
+
+                    // NAV
+                    nav_services: "Tjenester",
+                    nav_materials: "Materialer",
+                    nav_projects: "Prosjekter",
+                    nav_contact: "Kontakt",
+
+                    // HERO
+                    hero_location: "Oslo & Omegn",
+                    hero_tagline: "Eksklusiv Renovering",
                     hero_before: "TOTAL",
                     hero_after: "ENTREPRENØR",
+                    hero_scroll: "Scroll for å Utforske",
+
+                    // SERVICES
                     serv_title: "VÅRE<br>FAGFELT",
+                    serv_label: "[ Tjenester ]",
                     serv_sub: "Presisjon ligger i detaljene. Vi leverer håndverk av museumskvalitet for kresne boliger.",
                     serv_1: "Malermester",
                     serv_1_desc: "Støvfri sliping, spraylakkering, og eksklusive matte overflater. Vi bruker kun Jotun Lady Pure Color.",
@@ -649,37 +683,60 @@
                     serv_2_desc: "Storformat fliser, mikrosement, og presisjonskutt. Våtromssertifisert med 10 års garanti.",
                     serv_3: "Snekkerglede",
                     serv_3_desc: "Plassbygde garderober, listerverk, og spesialtilpassede løsninger i eik og valnøtt.",
-                    port_label: "UTVALGT PROSJEKT",
-                    port_title: "VILLA<br>HOLMENKOLLEN",
-                    spec_wall: "Vegger",
-                    spec_floor: "Gulv",
-                    spec_time: "Tid",
-                    btn_case: "SE CASE STUDY",
-                    foot_contact: "KONTAKT OSS",
-                    foot_insta: "INSTAGRAM",
-                    foot_mail: "POST@FINISH.NO",
+                    serv_view_specs: "Se Spesifikasjoner",
 
-                    // NEW SECTIONS
+                    // MATERIALS
                     mat_title: "Materialbibliotek",
                     mat_sub: "Utvalgte Overflater",
+                    mat_oak: "Hvit Eik",
+                    mat_oak_finish: "Naturlig Olje",
+                    mat_basalt: "Basalt",
+                    mat_basalt_finish: "Matt Stein",
+                    mat_lime: "Kalkpuss",
+                    mat_lime_finish: "Varm Beige",
+                    mat_brass: "Aldret Messing",
+                    mat_brass_finish: "Patina",
+
+                    // PROCESS
                     process_title: "Reisen",
+                    process_label: "[ Fra Konsept til Perfeksjon ]",
+                    process_label1: "01. Konsultasjon",
                     process_step1: "Visjon & Stil",
                     process_desc1: "Vi definerer ditt estetiske uttrykk. Fargevalg, materialer og mulighetsstudie.",
+                    process_label2: "02. Forberedelse",
                     process_step2: "Grunnlaget",
                     process_desc2: "Presis tildekking og grunnarbeid. 70% av kvaliteten ligger i det du ikke ser.",
+                    process_label3: "03. Utførelse",
                     process_step3: "Håndverket",
                     process_desc3: "Utførelse av mestere. Sprøytemaling, flislegging og snekkerarbeid med millimeterpresisjon.",
+                    process_label4: "04. Overlevering",
                     process_step4: "Overlevering",
                     process_desc4: "Sluttkontroll, utvask og levering av FDV-dokumentasjon.",
+
+                    // CERTIFICATIONS
+                    cert_mesterbrev: "Mesterbrev",
+                    cert_startbank: "StartBANK",
+                    cert_norsk: "Norsk Industri",
+                    cert_vatrom: "Våtrom",
+
+                    // PORTFOLIO
                     work_title: "Utvalgte Prosjekter",
                     work_view: "Se Hele Arkivet",
+
+                    // CTA
                     cta_title: "Klar for<br>Forandring?",
                     cta_desc: "Hjemmet ditt er ditt fristed. La oss diskutere hvordan vi kan løfte boligen med vår ekspertise.",
+                    cta_location: "Oslo & Omegn",
+                    cta_phone: "+47 22 33 44 55",
+                    cta_email_text: "post@finishing-expert.no",
                     cta_form_title: "Be om Befaring",
                     cta_name: "Navn",
                     cta_phone: "Telefon",
                     cta_email: "E-postadresse",
-                    cta_style: "Ønsket Stil:",
+                    cta_style_label: "Ønsket Stil:",
+                    cta_style_nordic: "Nordisk",
+                    cta_style_classic: "Klassisk",
+                    cta_style_modern: "Moderne",
                     cta_btn: "Send Forespørsel",
 
                     // FOOTER
@@ -698,9 +755,23 @@
                 },
                 en: {
                     brand: "FINISH_EXPERT",
+
+                    // NAV
+                    nav_services: "Services",
+                    nav_materials: "Materials",
+                    nav_projects: "Projects",
+                    nav_contact: "Contact",
+
+                    // HERO
+                    hero_location: "Oslo & Vicinity",
+                    hero_tagline: "Exclusive Renovation",
                     hero_before: "TOTAL",
                     hero_after: "CONTRACTOR",
+                    hero_scroll: "Scroll to Explore",
+
+                    // SERVICES
                     serv_title: "OUR<br>EXPERTISE",
+                    serv_label: "[ Services ]",
                     serv_sub: "Precision takes precedence. We deliver museum-grade craftsmanship for discerning residences.",
                     serv_1: "Master Painter",
                     serv_1_desc: "Dust-free sanding, spray painting, and exclusive matte finishes. We use only Jotun Lady Pure Color.",
@@ -708,37 +779,60 @@
                     serv_2_desc: "Large-format tiles, microcement, and precision cuts. Wet room certified with 10-year warranty.",
                     serv_3: "Carpentry",
                     serv_3_desc: "Custom wardrobes, moldings, and bespoke solutions in oak and walnut.",
-                    port_label: "FEATURED PROJECT",
-                    port_title: "VILLA<br>HOLMENKOLLEN",
-                    spec_wall: "Walls",
-                    spec_floor: "Floors",
-                    spec_time: "Duration",
-                    btn_case: "VIEW CASE STUDY",
-                    foot_contact: "CONTACT US",
-                    foot_insta: "INSTAGRAM",
-                    foot_mail: "MAIL@FINISH.NO",
+                    serv_view_specs: "View Specs",
 
-                    // NEW SECTIONS
+                    // MATERIALS
                     mat_title: "Material Library",
                     mat_sub: "Curated Finishes",
+                    mat_oak: "White Oak",
+                    mat_oak_finish: "Natural Oil",
+                    mat_basalt: "Basalt",
+                    mat_basalt_finish: "Matte Stone",
+                    mat_lime: "Limewash",
+                    mat_lime_finish: "Warm Beige",
+                    mat_brass: "Aged Brass",
+                    mat_brass_finish: "Patina",
+
+                    // PROCESS
                     process_title: "The Journey",
+                    process_label: "[ From Concept to Perfection ]",
+                    process_label1: "01. Consultation",
                     process_step1: "Vision & Style",
                     process_desc1: "We meet to define your aesthetic. Color matching, material selection, and feasibility study.",
+                    process_label2: "02. Preparation",
                     process_step2: "The Foundation",
                     process_desc2: "Precise masking and surface treatment. 70% of the quality lies in what you don't see.",
+                    process_label3: "03. Execution",
                     process_step3: "Artisanal Craft",
                     process_desc3: "Application by master craftsmen. Spray painting, tiling, and joinery with millimeter precision.",
+                    process_label4: "04. Handover",
                     process_step4: "White Glove",
                     process_desc4: "Final inspection, cleaning, and digital documentation (FDV) delivery.",
+
+                    // CERTIFICATIONS
+                    cert_mesterbrev: "Master Craftsman",
+                    cert_startbank: "StartBANK",
+                    cert_norsk: "Norwegian Industry",
+                    cert_vatrom: "Wet Room Certified",
+
+                    // PORTFOLIO
                     work_title: "Curated Projects",
                     work_view: "View Full Archive",
+
+                    // CTA
                     cta_title: "Ready for a<br>Change?",
                     cta_desc: "Your home is your sanctuary. Let's discuss how we can elevate your space with our finishing expertise.",
+                    cta_location: "Oslo & Vicinity",
+                    cta_phone: "+47 22 33 44 55",
+                    cta_email_text: "post@finishing-expert.no",
                     cta_form_title: "Request Consultation",
                     cta_name: "Name",
                     cta_phone: "Phone",
                     cta_email: "Email Address",
-                    cta_style: "Preferred Style:",
+                    cta_style_label: "Preferred Style:",
+                    cta_style_nordic: "Nordic",
+                    cta_style_classic: "Classic",
+                    cta_style_modern: "Modern",
                     cta_btn: "Send Request",
 
                     // FOOTER
@@ -754,6 +848,102 @@
                     foot_li: "LinkedIn",
                     foot_copy: "&copy; The Finishing Expert",
                     foot_design_text: "Designed by <a href='https://marketing-intelligence.io/' target='_blank' class='hover:text-accent transition-colors'>Marketing Intelligence</a>"
+                },
+                pl: {
+                    brand: "FINISH_EXPERT",
+
+                    // NAV
+                    nav_services: "Usługi",
+                    nav_materials: "Materiały",
+                    nav_projects: "Projekty",
+                    nav_contact: "Kontakt",
+
+                    // HERO
+                    hero_location: "Oslo i Okolice",
+                    hero_tagline: "Ekskluzywne Remonty",
+                    hero_before: "GENERALNY",
+                    hero_after: "WYKONAWCA",
+                    hero_scroll: "Przewiń, aby Odkryć",
+
+                    // SERVICES
+                    serv_title: "NASZA<br>EKSPERTYZA",
+                    serv_label: "[ Usługi ]",
+                    serv_sub: "Precyzja tkwi w szczegółach. Dostarczamy rzemiosło muzealnej jakości dla wymagających rezydencji.",
+                    serv_1: "Mistrz Malarski",
+                    serv_1_desc: "Bezpyłowe szlifowanie, malowanie natryskowe i ekskluzywne wykończenia matowe. Używamy tylko Jotun Lady Pure Color.",
+                    serv_2: "Układanie Płytek",
+                    serv_2_desc: "Płytki dużego formatu, mikrocement i precyzyjne cięcia. Certyfikat łazienki z 10-letnią gwarancją.",
+                    serv_3: "Stolarka",
+                    serv_3_desc: "Szafy na wymiar, listwy i spersonalizowane rozwiązania z dębu i orzecha.",
+                    serv_view_specs: "Zobacz Specyfikacje",
+
+                    // MATERIALS
+                    mat_title: "Biblioteka Materiałów",
+                    mat_sub: "Wybrane Wykończenia",
+                    mat_oak: "Biały Dąb",
+                    mat_oak_finish: "Naturalny Olej",
+                    mat_basalt: "Bazalt",
+                    mat_basalt_finish: "Matowy Kamień",
+                    mat_lime: "Tynk Wapienny",
+                    mat_lime_finish: "Ciepły Beż",
+                    mat_brass: "Postarzony Mosiądz",
+                    mat_brass_finish: "Patyna",
+
+                    // PROCESS
+                    process_title: "Podróż",
+                    process_label: "[ Od Koncepcji do Perfekcji ]",
+                    process_label1: "01. Konsultacja",
+                    process_step1: "Wizja & Styl",
+                    process_desc1: "Definiujemy Twój estetyczny wyraz. Dobór kolorów, materiałów i studium możliwości.",
+                    process_label2: "02. Przygotowanie",
+                    process_step2: "Fundament",
+                    process_desc2: "Precyzyjne maskowanie i przygotowanie powierzchni. 70% jakości tkwi w tym, czego nie widać.",
+                    process_label3: "03. Wykonanie",
+                    process_step3: "Rzemiosło",
+                    process_desc3: "Wykonanie przez mistrzów. Malowanie natryskowe, układanie płytek i stolarka z milimetrową precyzją.",
+                    process_label4: "04. Przekazanie",
+                    process_step4: "Przekazanie",
+                    process_desc4: "Kontrola końcowa, sprzątanie i dostawa dokumentacji (FDV).",
+
+                    // CERTIFICATIONS
+                    cert_mesterbrev: "Tytuł Mistrza",
+                    cert_startbank: "StartBANK",
+                    cert_norsk: "Norsk Industri",
+                    cert_vatrom: "Certyfikat Łazienki",
+
+                    // PORTFOLIO
+                    work_title: "Wybrane Projekty",
+                    work_view: "Zobacz Pełne Archiwum",
+
+                    // CTA
+                    cta_title: "Gotowy na<br>Zmianę?",
+                    cta_desc: "Twój dom to Twoja świątynia. Porozmawiajmy, jak możemy podnieść Twoją przestrzeń naszą ekspertyzą wykończeniową.",
+                    cta_location: "Oslo i Okolice",
+                    cta_phone: "+47 22 33 44 55",
+                    cta_email_text: "post@finishing-expert.no",
+                    cta_form_title: "Poproś o Konsultację",
+                    cta_name: "Imię",
+                    cta_phone: "Telefon",
+                    cta_email: "Adres Email",
+                    cta_style_label: "Preferowany Styl:",
+                    cta_style_nordic: "Nordycki",
+                    cta_style_classic: "Klasyczny",
+                    cta_style_modern: "Nowoczesny",
+                    cta_btn: "Wyślij Zapytanie",
+
+                    // FOOTER
+                    foot_quote: "\"Dobre rzemiosło wytrzymuje lupę.\"",
+                    foot_exp: "Ekspertyza",
+                    foot_mat: "Materiały",
+                    foot_atelier: "Atelier",
+                    foot_contact: "Kontakt",
+                    foot_loc: "Oslo, Norwegia",
+                    foot_est: "Est. 2026",
+                    foot_cert: "Tytuł Mistrza",
+                    foot_ig: "Instagram",
+                    foot_li: "LinkedIn",
+                    foot_copy: "&copy; The Finishing Expert",
+                    foot_design_text: "Zaprojektowane przez <a href='https://marketing-intelligence.io/' target='_blank' class='hover:text-accent transition-colors'>Marketing Intelligence</a>"
                 }
             },
 

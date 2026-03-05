@@ -146,6 +146,9 @@
                 <span class="opacity-20 text-white">/</span>
                 <button id="lang-en" onclick="App.setLanguage('en')"
                     class="hover:text-neon opacity-50 font-bold transition-all">EN</button>
+                <span class="opacity-20 text-white">/</span>
+                <button id="lang-pl" onclick="App.setLanguage('pl')"
+                    class="hover:text-neon opacity-50 font-bold transition-all">PL</button>
             </div>
             <!-- Spacer for Toggle -->
             <div class="w-2"></div>
@@ -573,7 +576,7 @@
 
         <div
             class="container mx-auto mt-16 pt-8 border-t border-white/5 flex justify-between items-center text-xs text-white/20 font-sans">
-            <div>© 2026 Total Entreprenør AS. All rights reserved.</div>
+            <div data-i18n="copyright">© 2026 Total Entreprenør AS. All rights reserved.</div>
             <div class="flex gap-4">
                 <a href="#" class="hover:text-white" data-i18n="link_privacy">Privacy Policy</a>
                 <a href="#" class="hover:text-white" data-i18n="link_terms">Terms of Service</a>
@@ -587,7 +590,7 @@
     <div id="theme-panel"
         class="fixed top-0 right-0 h-full w-80 bg-[#0F172A] border-l border-white/10 z-[1000] transform translate-x-full transition-transform duration-500 ease-out p-8 shadow-2xl text-white">
         <div class="flex justify-between items-center mb-12">
-            <h3 class="font-mono text-sm uppercase tracking-widest opacity-50">Theme Config</h3>
+            <h3 class="font-mono text-sm uppercase tracking-widest opacity-50" data-i18n="config_title">Theme Config</h3>
             <button onclick="App.toggleThemePanel()" aria-label="Close Config"
                 class="opacity-50 hover:opacity-100 hover:text-neon transition-opacity">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -601,21 +604,21 @@
 
             <!-- SECTION 1: BUSINESS TYPE (DEMO) -->
             <div>
-                <h4 class="font-mono text-[10px] opacity-50 mb-3 uppercase tracking-widest">1. Select Business</h4>
+                <h4 class="font-mono text-[10px] opacity-50 mb-3 uppercase tracking-widest" data-i18n="config_business">1. Select Business</h4>
                 <div class="flex flex-col gap-2">
                     <button onclick="App.setDemo('demo1')"
                         class="text-left px-4 py-3 border border-white/10 text-xs font-mono bg-white/5 hover:bg-white/10 hover:border-neon transition-all flex justify-between items-center group">
-                        <span>THE TOTAL CONTRACTOR</span>
+                        <span data-i18n="demo_1">THE TOTAL CONTRACTOR</span>
                         <span class="opacity-0 group-hover:opacity-100 text-neon transition-opacity">→</span>
                     </button>
                     <button onclick="App.setDemo('demo2')"
                         class="text-left px-4 py-3 border border-white/10 text-xs font-mono bg-white/5 hover:bg-white/10 hover:border-neon transition-all flex justify-between items-center group">
-                        <span>SERVICE SPECIALIST</span>
+                        <span data-i18n="demo_2">SERVICE SPECIALIST</span>
                         <span class="opacity-0 group-hover:opacity-100 text-neon transition-opacity">→</span>
                     </button>
                     <button onclick="App.setDemo('demo3')"
                         class="text-left px-4 py-3 border border-white/10 text-xs font-mono bg-white/5 hover:bg-white/10 hover:border-neon transition-all flex justify-between items-center group">
-                        <span>FINISHING EXPERT</span>
+                        <span data-i18n="demo_3">FINISHING EXPERT</span>
                         <span class="opacity-0 group-hover:opacity-100 text-neon transition-opacity">→</span>
                     </button>
                 </div>
@@ -623,64 +626,64 @@
 
             <!-- SECTION 2: TEMPLATE MODE -->
             <div>
-                <h4 class="font-mono text-[10px] opacity-50 mb-3 uppercase tracking-widest">2. Select Layout</h4>
+                <h4 class="font-mono text-[10px] opacity-50 mb-3 uppercase tracking-widest" data-i18n="config_layout">2. Select Layout</h4>
 
                 <div class="grid grid-cols-3 gap-2">
                     <button onclick="App.setTemplate('term')"
                         class="aspect-video border border-white/10 bg-white/5 flex flex-col items-center justify-center gap-1 group hover:border-neon hover:text-neon transition-all">
                         <div class="w-4 h-2 border border-white/30 group-hover:border-neon"></div>
-                        <span class="text-[8px] font-mono opacity-50 group-hover:text-neon">TERM</span>
+                        <span class="text-[8px] font-mono opacity-50 group-hover:text-neon" data-i18n="layout_term">TERM</span>
                     </button>
                     <button onclick="App.setTemplate('blue')"
                         class="aspect-video border border-white/10 bg-white/5 flex flex-col items-center justify-center gap-1 group hover:border-neon hover:text-neon transition-all">
                         <div class="w-4 h-2 border border-white/30 group-hover:border-neon"></div>
-                        <span class="text-[8px] font-mono opacity-50 group-hover:text-neon">BLUE</span>
+                        <span class="text-[8px] font-mono opacity-50 group-hover:text-neon" data-i18n="layout_blue">BLUE</span>
                     </button>
                     <button onclick="App.setTemplate('pulse')"
                         class="aspect-video border border-white/10 bg-white/5 flex flex-col items-center justify-center gap-1 group hover:border-neon hover:text-neon transition-all">
                         <div class="w-4 h-2 border border-white/30 group-hover:border-neon"></div>
-                        <span class="text-[8px] font-mono opacity-50 group-hover:text-neon">PULSE</span>
+                        <span class="text-[8px] font-mono opacity-50 group-hover:text-neon" data-i18n="layout_pulse">PULSE</span>
                     </button>
                 </div>
             </div>
 
             <!-- SECTION 3: VISUAL STYLE -->
             <div>
-                <h4 class="font-mono text-[10px] opacity-50 mb-3 uppercase tracking-widest">3. Visual Style</h4>
+                <h4 class="font-mono text-[10px] opacity-50 mb-3 uppercase tracking-widest" data-i18n="config_style">3. Visual Style</h4>
                 <div class="space-y-2">
                     <button id="btn-theme-nordic" onclick="App.setTheme('nordic')"
                         class="w-full p-3 border border-white/10 flex items-center gap-4 hover:border-neon group transition-all bg-white/5">
                         <div class="w-6 h-6 bg-[#38BDF8] border border-white/20 rounded-full"></div>
                         <span
-                            class="font-mono text-xs uppercase opacity-70 group-hover:opacity-100 group-hover:text-neon">Nordic
+                            class="font-mono text-xs uppercase opacity-70 group-hover:opacity-100 group-hover:text-neon" data-i18n="theme_nordic">Nordic
                             Blue</span>
                     </button>
                     <button id="btn-theme-default" onclick="App.setTheme('default')"
                         class="w-full p-3 border border-white/10 flex items-center gap-4 hover:border-neon group transition-all bg-white/5">
                         <div class="w-6 h-6 bg-[#EA580C] border border-white/20 rounded-full"></div>
                         <span
-                            class="font-mono text-xs uppercase opacity-70 group-hover:opacity-100 group-hover:text-neon">Safe
+                            class="font-mono text-xs uppercase opacity-70 group-hover:opacity-100 group-hover:text-neon" data-i18n="theme_orange">Safe
                             Orange</span>
                     </button>
                     <button id="btn-theme-nature" onclick="App.setTheme('nature')"
                         class="w-full p-3 border border-white/10 flex items-center gap-4 hover:border-neon group transition-all bg-white/5">
                         <div class="w-6 h-6 bg-[#B45309] border border-white/20 rounded-full"></div>
                         <span
-                            class="font-mono text-xs uppercase opacity-70 group-hover:opacity-100 group-hover:text-neon">Forest
+                            class="font-mono text-xs uppercase opacity-70 group-hover:opacity-100 group-hover:text-neon" data-i18n="theme_copper">Forest
                             Copper</span>
                     </button>
                     <button id="btn-theme-steel" onclick="App.setTheme('steel')"
                         class="w-full p-3 border border-white/10 flex items-center gap-4 hover:border-neon group transition-all bg-white/5">
                         <div class="w-6 h-6 bg-[#525252] border border-white/20 rounded-full"></div>
                         <span
-                            class="font-mono text-xs uppercase opacity-70 group-hover:opacity-100 group-hover:text-neon">Steel
+                            class="font-mono text-xs uppercase opacity-70 group-hover:opacity-100 group-hover:text-neon" data-i18n="theme_steel">Steel
                             Mono</span>
                     </button>
                 </div>
             </div>
 
             <div class="mt-8 border-t border-white/10 pt-4">
-                <p class="text-[10px] text-white/30 text-center font-mono">Template: PULSE_PRO_v2.2</p>
+                <p class="text-[10px] text-white/30 text-center font-mono" data-i18n="config_version">Template: PULSE_PRO_v2.2</p>
             </div>
         </div>
     </div>
@@ -725,6 +728,22 @@
                         "nav_services": "TJENESTER",
                         "nav_status": "STATUS",
                         "nav_contact": "KONTAKT",
+                        "config_title": "Tema Konfigurasjon",
+                        "config_business": "1. Velg Virksomhet",
+                        "demo_1": "TOTALENTREPRENØREN",
+                        "demo_2": "SERVICESPESIALIST",
+                        "demo_3": "FINISH-EKSPERT",
+                        "config_layout": "2. Velg Layout",
+                        "layout_term": "TERM",
+                        "layout_blue": "BLUE",
+                        "layout_pulse": "PULSE",
+                        "config_style": "3. Visuell Stil",
+                        "theme_nordic": "Nordisk Blå",
+                        "theme_orange": "Sikker Oransje",
+                        "theme_copper": "Skogs Kobber",
+                        "theme_steel": "Stål Mono",
+                        "config_version": "Mal: PULSE_PRO_v2.2",
+                        "copyright": "© 2026 Total Entreprenør AS. Alle rettigheter forbeholdt.",
                         "hero_eyebrow": "TEKNISK TOTALENTREPRENØR",
                         "hero_title": "PRESISJONS <br> <span class='text-neon transition-colors duration-300'>TEKNIKK</span>.",
                         "hero_sub": "Spesialisert infrastrukturstøtte for kritiske sektorer. 24/7 elektro og VVS diagnostikk med umiddelbar utrykning.",
@@ -786,6 +805,22 @@
                         "nav_services": "SERVICES",
                         "nav_status": "STATUS",
                         "nav_contact": "REQUEST",
+                        "config_title": "Theme Config",
+                        "config_business": "1. Select Business",
+                        "demo_1": "THE TOTAL CONTRACTOR",
+                        "demo_2": "SERVICE SPECIALIST",
+                        "demo_3": "FINISHING EXPERT",
+                        "config_layout": "2. Select Layout",
+                        "layout_term": "TERM",
+                        "layout_blue": "BLUE",
+                        "layout_pulse": "PULSE",
+                        "config_style": "3. Visual Style",
+                        "theme_nordic": "Nordic Blue",
+                        "theme_orange": "Safe Orange",
+                        "theme_copper": "Forest Copper",
+                        "theme_steel": "Steel Mono",
+                        "config_version": "Template: PULSE_PRO_v2.2",
+                        "copyright": "© 2026 Total Entreprenør AS. All rights reserved.",
                         "hero_eyebrow": "TECHNICAL SERVICES GROUP",
                         "hero_title": "PRECISION <br> <span class='text-neon transition-colors duration-300'>ENGINEERING</span>.",
                         "hero_sub": "Specialized infrastructure support for critical sectors. 24/7 electrical and HVAC diagnostics with rapid mobilization.",
@@ -842,6 +877,83 @@
                         "contact_hq": "Headquarters:",
                         "link_privacy": "Privacy Policy",
                         "link_terms": "Terms of Service"
+                    },
+                    pl: {
+                        "nav_services": "USŁUGI",
+                        "nav_status": "STATUS",
+                        "nav_contact": "KONTAKT",
+                        "config_title": "Konfiguracja Motywu",
+                        "config_business": "1. Wybierz Biznes",
+                        "demo_1": "GENERALNY WYKONAWCA",
+                        "demo_2": "SPECJALISTA SERWISOWY",
+                        "demo_3": "EKSPERT WYKOŃCZENIOWY",
+                        "config_layout": "2. Wybierz Layout",
+                        "layout_term": "TERM",
+                        "layout_blue": "BLUE",
+                        "layout_pulse": "PULSE",
+                        "config_style": "3. Styl Wizualny",
+                        "theme_nordic": "Nordycki Niebieski",
+                        "theme_orange": "Bezpieczny Pomarańczowy",
+                        "theme_copper": "Leśna Miedź",
+                        "theme_steel": "Stalowy Mono",
+                        "config_version": "Szablon: PULSE_PRO_v2.2",
+                        "copyright": "© 2026 Total Entreprenør AS. Wszelkie prawa zastrzeżone.",
+                        "hero_eyebrow": "TECHNICZNY GENERALNY WYKONAWCA",
+                        "hero_title": "PRECYZYJNA <br> <span class='text-neon transition-colors duration-300'>TECHNIKA</span>.",
+                        "hero_sub": "Specjalistyczne wsparcie infrastruktury dla sektorów krytycznych. 24/7 diagnostyka elektryczna i HVAC z natychmiastowym wyjazdem.",
+                        "btn_service": "ZAMÓW SERWIS",
+                        "status_teams": "ZESPOŁY DOSTĘPNE",
+                        "metric_response": "Czas Reakcji",
+                        "metric_coverage": "Zasięg",
+                        "metric_coverage_val": "OGÓLNOKRAJOWY",
+                        "metric_cert": "Certyfikacja",
+                        "metric_cert_desc": "Pełna zgodność ze standardami NEK 400:2022.",
+                        "services_title": "KLUCZOWE KOMPETENCJE",
+                        "services_sub": "Kompleksowe usługi techniczne dla biznesu i przemysłu.",
+                        "srv_1_title": "Systemy Elektryczne",
+                        "srv_1_desc": "Diagnostyka wysokonapięciowa, analiza stabilności sieci i przywracanie zasilania awaryjnego.",
+                        "srv_1_short": "Elektrotechnika",
+                        "srv_2_title": "Technika HVAC",
+                        "srv_2_desc": "Przemysłowa kontrola klimatu, optymalizacja wentylacji i wykrywanie wycieków.",
+                        "srv_2_short": "HVAC & Klimatyzacja",
+                        "srv_3_title": "Automatyka & IoT",
+                        "srv_3_desc": "Integracja inteligentnych budynków, rozmieszczenie czujników i zdalne monitorowanie.",
+                        "srv_3_short": "Automatyka",
+                        "srv_4_short": "Zarządzanie Nieruchomościami",
+                        "btn_view_specs": "Zobacz Specyfikacje",
+                        "ops_title": "SYSTEM <span class='text-neon transition-colors duration-300'>OPERACYJNY</span>",
+                        "ops_status": "STATUS: STABILNY",
+                        "op_1_title": "SYGNAŁ_PRZYCHODZĄCY",
+                        "op_1_desc": "Otrzymano zapytanie klienta.",
+                        "op_2_title": "SKANOWANIE_DIAGNOSTYCZNE",
+                        "op_2_desc": "AI ocena infrastruktury.",
+                        "op_3_title": "WYSYŁKA",
+                        "op_3_desc": "Technik wysłany do współrzędnych.",
+                        "op_4_title": "GENEROWANIE_RAPORTU",
+                        "op_4_desc": "Zaszyfrowany log przesłany.",
+                        "map_label": "Obszar Operacyjny",
+                        "map_area": "WIELKIE OSLO",
+                        "map_desc": "Jednostki szybkiego reagowania rozmieszczone w kluczowych sektorach.",
+                        "contact_title": "ZAMÓW SERWIS",
+                        "contact_sub": "Bezpośrednia linia do naszej centrali dyspozytorskiej. Priorytetowa reakcja dla klientów kontraktowych.",
+                        "contact_phone_label": "Linia Awaryjna",
+                        "contact_email_label": "Email Dyspozytorski",
+                        "form_name": "Firma / Imię",
+                        "form_phone": "Telefon",
+                        "form_loc": "Lokalizacja",
+                        "form_desc": "Opis Problemu",
+                        "form_submit": "WYŚLIJ PILNE ZGŁOSZENIE",
+                        "form_disclaimer": "Standardowy czas reakcji obowiązuje bez kontraktu.",
+                        "footer_about": "Wiodący dostawca technicznych usług infrastrukturalnych w regionie nordyckim.",
+                        "footer_services": "USŁUGI",
+                        "footer_corp": "FIRMA",
+                        "footer_contact": "KONTAKT",
+                        "link_about": "O Nas",
+                        "link_careers": "Kariera",
+                        "link_investor": "Relacje Inwestorskie",
+                        "contact_hq": "Centrala:",
+                        "link_privacy": "Polityka Prywatności",
+                        "link_terms": "Warunki Usługi"
                     }
                 }
             }

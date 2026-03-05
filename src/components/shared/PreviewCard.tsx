@@ -145,8 +145,8 @@ export function PreviewCard({ item, lang, showPremiumBadge = false }: PreviewCar
             poster={item.thumbnail}
             className="w-full h-full object-contain"
           />
-        ) : (
-          // Fallback: simple thumbnail with zoom on hover
+        ) : item.industry === "case-study" ? (
+          // Case studies: static image with simple zoom
           <Image
             src={previewImage}
             alt={item.title}
@@ -154,6 +154,30 @@ export function PreviewCard({ item, lang, showPremiumBadge = false }: PreviewCar
             className="object-cover transition-transform duration-500 group-hover:scale-105"
             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
           />
+        ) : (
+          // Templates: scroll preview on hover
+          <motion.div
+            className="relative w-full h-[200%]"
+            initial={{ y: "0%" }}
+            variants={{
+              rest: { y: "0%" },
+              hover: {
+                y: "-50%",
+                transition: {
+                  duration: 3.5,
+                  ease: "linear",
+                }
+              },
+            }}
+          >
+            <Image
+              src={previewImage}
+              alt={item.title}
+              fill
+              className="object-cover object-top"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            />
+          </motion.div>
         )}
 
         {/* Overlay with Live Demo button */}
@@ -178,7 +202,7 @@ export function PreviewCard({ item, lang, showPremiumBadge = false }: PreviewCar
               </Link>
             ) : (
               <a
-                href={item.demoUrl}
+                href={`${item.demoUrl}${lang ? `?lang=${lang}` : ''}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >

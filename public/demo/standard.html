@@ -176,7 +176,7 @@
 
 <body class="cursor-none">
     <a href="#main-content"
-        class="fixed top-0 left-0 -translate-y-full focus:translate-y-0 z-[100] bg-accent text-dark px-4 py-2 font-mono text-sm transition-transform">
+        class="fixed top-0 left-0 -translate-y-full focus:translate-y-0 z-[100] bg-accent text-dark px-4 py-2 font-mono text-sm transition-transform" data-i18n="skip.content">
         Hopp til innhold
     </a>
 
@@ -211,6 +211,8 @@
                     onclick="setLanguage('no')">NO</span>
                 <span class="opacity-30">/</span>
                 <span id="lang-en" class="hover:text-accent transition-colors" onclick="setLanguage('en')">EN</span>
+                <span class="opacity-30">/</span>
+                <span id="lang-pl" class="hover:text-accent transition-colors" onclick="setLanguage('pl')">PL</span>
             </div>
             <button
                 class="border border-light/30 px-6 py-2 rounded-full font-mono text-xs uppercase hover:bg-light hover:text-dark transition-all duration-300 hover-trigger"
@@ -295,18 +297,18 @@
             </div>
             <!-- Item 2: Mesterbrev -->
             <div class="text-center group flex flex-col items-center gap-3">
-                <span class="font-bold text-lg md:text-xl text-light uppercase tracking-tighter">Mesterbrev</span>
-                <span class="font-mono text-[9px] text-light/40 uppercase tracking-widest">[SERT: M-992]</span>
+                <span class="font-bold text-lg md:text-xl text-light uppercase tracking-tighter" data-i18n="trust.mesterbrev">Mesterbrev</span>
+                <span class="font-mono text-[9px] text-light/40 uppercase tracking-widest" data-i18n="trust.mesterbrev.code">[SERT: M-992]</span>
             </div>
             <!-- Item 3: StartBANK -->
             <div class="text-center group flex flex-col items-center gap-3">
-                <span class="font-bold text-lg md:text-xl text-light uppercase tracking-tighter">StartBANK</span>
-                <span class="font-mono text-[9px] text-light/40 uppercase tracking-widest">[ID: 88421]</span>
+                <span class="font-bold text-lg md:text-xl text-light uppercase tracking-tighter" data-i18n="trust.startbank">StartBANK</span>
+                <span class="font-mono text-[9px] text-light/40 uppercase tracking-widest" data-i18n="trust.startbank.code">[ID: 88421]</span>
             </div>
             <!-- Item 4: Miljøfyrtårn -->
             <div class="text-center group flex flex-col items-center gap-3">
-                <span class="font-bold text-lg md:text-xl text-light uppercase tracking-tighter">Miljøfyrtårn</span>
-                <span class="font-mono text-[9px] text-light/40 uppercase tracking-widest">[ECO: A+]</span>
+                <span class="font-bold text-lg md:text-xl text-light uppercase tracking-tighter" data-i18n="trust.miljofyrtarn">Miljøfyrtårn</span>
+                <span class="font-mono text-[9px] text-light/40 uppercase tracking-widest" data-i18n="trust.miljofyrtarn.code">[ECO: A+]</span>
             </div>
         </div>
     </section>
@@ -622,14 +624,14 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 13l4 4L19 7">
                         </path>
                     </svg>
-                    <h3 class="text-2xl font-bold mb-2">Forespørsel Sendt</h3>
+                    <h3 class="text-2xl font-bold mb-2" data-i18n="conf.success.title">Forespørsel Sendt</h3>
                     <p class="text-light/60 text-center max-w-xs" data-i18n="conf.success">Vi kontakter deg innen 24
                         timer for en uforpliktende befaring.</p>
                 </div>
 
                 <!-- Step 1: Type -->
                 <div id="step-1" class="conf-step transition-opacity duration-500">
-                    <h4 class="font-mono text-xs text-accent mb-8">01 / TYPE PROSJEKT</h4>
+                    <h4 class="font-mono text-xs text-accent mb-8" data-i18n="conf.step1.title">01 / TYPE PROSJEKT</h4>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                         <button
                             class="type-btn group p-6 border border-light/10 hover:border-accent hover:bg-light/5 text-left transition-all"
@@ -640,7 +642,7 @@
                                     d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
                                 </path>
                             </svg>
-                            <span class="block font-bold">Enebolig</span>
+                            <span class="block font-bold" data-i18n="conf.type.house">Enebolig</span>
                         </button>
                         <button
                             class="type-btn group p-6 border border-light/10 hover:border-accent hover:bg-light/5 text-left transition-all"
@@ -651,7 +653,7 @@
                                     d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
                                 </path>
                             </svg>
-                            <span class="block font-bold">Hytte</span>
+                            <span class="block font-bold" data-i18n="conf.type.cabin">Hytte</span>
                         </button>
                         <button
                             class="type-btn group p-6 border border-light/10 hover:border-accent hover:bg-light/5 text-left transition-all"
@@ -662,14 +664,14 @@
                                     d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z">
                                 </path>
                             </svg>
-                            <span class="block font-bold">Grunnarbeid</span>
+                            <span class="block font-bold" data-i18n="conf.type.ground">Grunnarbeid</span>
                         </button>
                     </div>
                 </div>
 
                 <!-- Step 2: Budget -->
                 <div id="step-2" class="conf-step hidden transition-opacity duration-500">
-                    <h4 class="font-mono text-xs text-accent mb-8">02 / BUDSJETTRAMME</h4>
+                    <h4 class="font-mono text-xs text-accent mb-8" data-i18n="conf.step2.title">02 / BUDSJETTRAMME</h4>
                     <div class="py-12">
                         <div class="flex justify-between font-mono text-xs mb-4">
                             <span data-i18n="conf.min">5 MNOK</span>
@@ -679,7 +681,7 @@
                         <input type="range" min="5" max="50" value="25"
                             class="w-full h-1 bg-light/20 rounded-lg appearance-none cursor-pointer accent-accent hover:accent-white transition-all"
                             id="budget-slider" oninput="updateBudgetDisplay(this.value)"
-                            aria-label="Velg budsjettramme">
+                            aria-label="Velg budsjettramme" data-i18n-aria="conf.budget.aria">
                     </div>
                     <button onclick="nextStep(3)"
                         class="w-full py-4 border border-light/20 hover:bg-white hover:text-dark transition-colors font-mono uppercase tracking-widest"
@@ -688,18 +690,19 @@
 
                 <!-- Step 3: Details -->
                 <div id="step-3" class="conf-step hidden transition-opacity duration-500">
-                    <h4 class="font-mono text-xs text-accent mb-8">03 / LOKASJON & KONTAKT</h4>
+                    <h4 class="font-mono text-xs text-accent mb-8" data-i18n="conf.step3.title">03 / LOKASJON & KONTAKT</h4>
                     <div class="space-y-6">
-                        <input type="text" placeholder="Hvor skal det bygges? (Kommune/Sted)"
+                        <input type="text" data-i18n-placeholder="conf.location.placeholder"
+                            placeholder="Hvor skal det bygges? (Kommune/Sted)"
                             aria-label="Lokasjon for prosjekt"
                             class="w-full bg-transparent border-b border-light/20 py-4 focus:border-accent focus:outline-none placeholder-light/30 text-lg">
                         <div class="grid grid-cols-2 gap-6">
-                            <input type="text" placeholder="Navn" aria-label="Ditt navn"
+                            <input type="text" data-i18n-placeholder="conf.name.placeholder" placeholder="Navn" aria-label="Ditt navn"
                                 class="w-full bg-transparent border-b border-light/20 py-4 focus:border-accent focus:outline-none placeholder-light/30">
-                            <input type="email" placeholder="E-post" aria-label="Din e-postadresse"
+                            <input type="email" data-i18n-placeholder="conf.email.placeholder" placeholder="E-post" aria-label="Din e-postadresse"
                                 class="w-full bg-transparent border-b border-light/20 py-4 focus:border-accent focus:outline-none placeholder-light/30">
                         </div>
-                        <input type="tel" placeholder="Telefon" aria-label="Ditt telefonnummer"
+                        <input type="tel" data-i18n-placeholder="conf.phone.placeholder" placeholder="Telefon" aria-label="Ditt telefonnummer"
                             class="w-full bg-transparent border-b border-light/20 py-4 focus:border-accent focus:outline-none placeholder-light/30">
                     </div>
                     <button onclick="submitConfigurator()"
@@ -744,14 +747,14 @@
 
                     <!-- Col 3: Socials -->
                     <div class="flex flex-col gap-2">
-                        <span class="text-light uppercase tracking-widest mb-4">Social</span>
+                        <span class="text-light uppercase tracking-widest mb-4" data-i18n="footer.social">Social</span>
                         <a href="#" class="flex items-center gap-2 hover:text-accent transition-colors group">
                             <svg class="w-4 h-4 fill-current group-hover:scale-110 transition-transform"
                                 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.073-4.948-.197-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                             </svg>
-                            Instagram
+                            <span data-i18n="footer.instagram">Instagram</span>
                         </a>
                         <a href="#" class="flex items-center gap-2 hover:text-accent transition-colors group">
                             <svg class="w-4 h-4 fill-current group-hover:scale-110 transition-transform"
@@ -759,7 +762,7 @@
                                 <path
                                     d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h5v-8.306c0-4.613 5.432-5.185 5.432 0v8.306h5v-10.5c0-5.352-7.053-5.127-8.026-2.502h-.056v-2.998z" />
                             </svg>
-                            LinkedIn
+                            <span data-i18n="footer.linkedin">LinkedIn</span>
                         </a>
                         <a href="#" class="flex items-center gap-2 hover:text-accent transition-colors group">
                             <svg class="w-4 h-4 fill-current group-hover:scale-110 transition-transform"
@@ -767,7 +770,7 @@
                                 <path
                                     d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385h-3.047v-3.47h3.047v-2.641c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953h-1.513c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385c5.737-.9 10.125-5.864 10.125-11.854z" />
                             </svg>
-                            Facebook
+                            <span data-i18n="footer.facebook">Facebook</span>
                         </a>
                     </div>
                 </div>
@@ -775,13 +778,13 @@
                 <div
                     class="flex flex-col justify-between items-start mt-12 font-mono text-[10px] text-light/20 uppercase tracking-widest gap-2">
                     <div class="flex gap-4">
-                        <a href="#" class="hover:text-light transition-colors">Personvern</a>
+                        <a href="#" class="hover:text-light transition-colors" data-i18n="footer.privacy">Personvern</a>
                         <a href="accessibility.html"
-                            class="hover:text-light transition-colors">Tilgjengelseserklæring</a>
+                            class="hover:text-light transition-colors" data-i18n="footer.accessibility">Tilgjengelseserklæring</a>
                     </div>
                     <div>
-                        <p>© 2026 Totalentreprenør AS</p>
-                        <p class="mt-1">Designed by <a href="https://www.marketing-intelligence.io/" target="_blank"
+                        <p data-i18n="footer.copyright">© 2026 Totalentreprenør AS</p>
+                        <p class="mt-1"><span data-i18n="footer.designed">Designed by</span> <a href="https://www.marketing-intelligence.io/" target="_blank"
                                 class="hover:text-accent transition-colors text-light/30">Marketing Intelligence</a></p>
                     </div>
                 </div>
@@ -799,7 +802,7 @@
                         <div class="w-4 h-4 rounded-full bg-[#FF5F1F] relative shadow-[0_0_20px_#FF5F1F]"></div>
                         <!-- Tooltip -->
                         <div
-                            class="absolute bottom-full left-1/2 -translate-x-1/2 mb-4 px-4 py-2 bg-dark/90 backdrop-blur-md border border-light/10 text-xs font-mono whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+                            class="absolute bottom-full left-1/2 -translate-x-1/2 mb-4 px-4 py-2 bg-dark/90 backdrop-blur-md border border-light/10 text-xs font-mono whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" data-i18n="footer.hq">
                             HOVEDKONTOR OSLO
                         </div>
                     </div>
@@ -843,7 +846,7 @@
     <div id="theme-panel"
         class="fixed top-0 right-0 h-full w-80 bg-dark border-l border-light/10 z-[1000] transform translate-x-full transition-transform duration-500 ease-out p-8 shadow-2xl">
         <div class="flex justify-between items-center mb-8 border-b border-light/20 pb-4">
-            <h3 class="font-mono text-sm uppercase tracking-widest text-light">Internal Config</h3>
+            <h3 class="font-mono text-sm uppercase tracking-widest text-light" data-i18n="config.title">Internal Config</h3>
             <button onclick="App.toggleThemePanel()" class="text-light/50 hover:text-accent">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
@@ -856,7 +859,7 @@
 
             <!-- SECTION 1: BUSINESS TYPE (DEMO) -->
             <div>
-                <h4 class="font-mono text-[10px] text-light/50 mb-3 uppercase tracking-widest">1. Select Business</h4>
+                <h4 class="font-mono text-[10px] text-light/50 mb-3 uppercase tracking-widest" data-i18n="config.business">1. Select Business</h4>
                 <div class="flex flex-col gap-2">
                     <button id="btn-demo-demo1" onclick="loadDemo('demo1')"
                         class="text-left px-4 py-3 border border-light/10 text-xs font-mono text-light bg-light/5 hover:bg-light/10 hover:border-accent transition-all flex justify-between items-center group">
@@ -877,7 +880,7 @@
             </div>
 
             <div>
-                <h4 class="font-mono text-[10px] text-light/50 mb-3 uppercase tracking-widest">2. Select Layout</h4>
+                <h4 class="font-mono text-[10px] text-light/50 mb-3 uppercase tracking-widest" data-i18n="config.layout">2. Select Layout</h4>
                 <div class="grid grid-cols-3 gap-2 mb-2">
                     <button id="btn-tpl-std" onclick="setTemplate('std')"
                         class="aspect-video border border-light/10 bg-light/5 flex flex-col items-center justify-center gap-1 group hover:border-accent hover:text-accent transition-all">
@@ -900,7 +903,7 @@
 
             <!-- SECTION 3: VISUAL THEME -->
             <div>
-                <h4 class="font-mono text-[10px] text-light/50 mb-3 uppercase tracking-widest">3. Visual Style</h4>
+                <h4 class="font-mono text-[10px] text-light/50 mb-3 uppercase tracking-widest" data-i18n="config.visual">3. Visual Style</h4>
                 <div class="space-y-2">
                     <!-- Theme 1 -->
                     <button id="btn-theme-default" onclick="setTheme('default')"
@@ -932,7 +935,7 @@
             </div>
         </div>
 
-        <p class="absolute bottom-8 left-8 text-[10px] text-light/20 font-mono">
+        <p class="absolute bottom-8 left-8 text-[10px] text-light/20 font-mono" data-i18n="config.preview">
             PREVIEW MODE
         </p>
     </div>
@@ -1013,8 +1016,41 @@
                         "footer.org": "Orgnr: 965 242 112",
                         "footer.loc": "Oslo, Norge",
                         "footer.contact": "KONTAKT",
+                        "footer.social": "Sosiale medier",
+                        "footer.instagram": "Instagram",
+                        "footer.linkedin": "LinkedIn",
+                        "footer.facebook": "Facebook",
+                        "footer.privacy": "Personvern",
+                        "footer.accessibility": "Tilgjengelseserklæring",
+                        "footer.copyright": "© 2026 Totalentreprenør AS",
+                        "footer.designed": "Designet av",
+                        "footer.hq": "HOVEDKONTOR OSLO",
                         "cta.free": "GRATIS",
-                        "cta.befaring": "BEFARING"
+                        "cta.befaring": "BEFARING",
+                        "skip.content": "Hopp til innhold",
+                        "trust.mesterbrev": "Mesterbrev",
+                        "trust.mesterbrev.code": "[SERT: M-992]",
+                        "trust.startbank": "StartBANK",
+                        "trust.startbank.code": "[ID: 88421]",
+                        "trust.miljofyrtarn": "Miljøfyrtårn",
+                        "trust.miljofyrtarn.code": "[ECO: A+]",
+                        "conf.step1.title": "01 / TYPE PROSJEKT",
+                        "conf.step2.title": "02 / BUDSJETTRAMME",
+                        "conf.step3.title": "03 / LOKASJON & KONTAKT",
+                        "conf.type.house": "Enebolig",
+                        "conf.type.cabin": "Hytte",
+                        "conf.type.ground": "Grunnarbeid",
+                        "conf.budget.aria": "Velg budsjettramme",
+                        "conf.location.placeholder": "Hvor skal det bygges? (Kommune/Sted)",
+                        "conf.name.placeholder": "Navn",
+                        "conf.email.placeholder": "E-post",
+                        "conf.phone.placeholder": "Telefon",
+                        "conf.success.title": "Forespørsel Sendt",
+                        "config.title": "Intern Konfigurasjon",
+                        "config.business": "1. Velg Virksomhet",
+                        "config.layout": "2. Velg Oppsett",
+                        "config.visual": "3. Visuell Stil",
+                        "config.preview": "FORHÅNDSVISNINGSMODUS"
                     },
                     en: {
                         "nav.process": "PROCESS",
@@ -1073,8 +1109,138 @@
                         "footer.contact": "CONTACT",
                         "footer.org": "Org No: 965 242 112",
                         "footer.loc": "Oslo, Norway",
+                        "footer.social": "Social Media",
+                        "footer.instagram": "Instagram",
+                        "footer.linkedin": "LinkedIn",
+                        "footer.facebook": "Facebook",
+                        "footer.privacy": "Privacy",
+                        "footer.accessibility": "Accessibility Statement",
+                        "footer.copyright": "© 2026 Totalentreprenør AS",
+                        "footer.designed": "Designed by",
+                        "footer.hq": "HEADQUARTERS OSLO",
                         "cta.free": "FREE",
-                        "cta.befaring": "INSPECTION"
+                        "cta.befaring": "INSPECTION",
+                        "skip.content": "Skip to content",
+                        "trust.mesterbrev": "Master Certificate",
+                        "trust.mesterbrev.code": "[CERT: M-992]",
+                        "trust.startbank": "StartBANK",
+                        "trust.startbank.code": "[ID: 88421]",
+                        "trust.miljofyrtarn": "Eco-Lighthouse",
+                        "trust.miljofyrtarn.code": "[ECO: A+]",
+                        "conf.step1.title": "01 / PROJECT TYPE",
+                        "conf.step2.title": "02 / BUDGET RANGE",
+                        "conf.step3.title": "03 / LOCATION & CONTACT",
+                        "conf.type.house": "House",
+                        "conf.type.cabin": "Cabin",
+                        "conf.type.ground": "Groundwork",
+                        "conf.budget.aria": "Select budget range",
+                        "conf.location.placeholder": "Where to build? (Municipality/Location)",
+                        "conf.name.placeholder": "Name",
+                        "conf.email.placeholder": "Email",
+                        "conf.phone.placeholder": "Phone",
+                        "conf.success.title": "Request Sent",
+                        "config.title": "Internal Config",
+                        "config.business": "1. Select Business",
+                        "config.layout": "2. Select Layout",
+                        "config.visual": "3. Visual Style",
+                        "config.preview": "PREVIEW MODE"
+                    },
+                    pl: {
+                        "nav.process": "PROCES",
+                        "nav.sustainability": "ZRÓWNOWAŻONY ROZWÓJ",
+                        "nav.projects": "PROJEKTY",
+                        "nav.contact": "KONTAKT",
+                        "hero.title": "REALIZUJEMY",
+                        "hero.subtitle": "// 01 <br>Od pierwszej łopaty do domu pod klucz. Przekraczamy Twoje ambicje z precyzją.",
+                        "hero.scroll": "PRZEWIŃ ABY ODKRYĆ",
+                        "hero.cta": "ROZPOCZNIJ PROJEKT",
+                        "marquee.sentral": "Centralne Zatwierdzenie",
+                        "marquee.eco": "Certyfikat Ekologiczny",
+                        "marquee.ns": "Norma Polska 3420",
+                        "marquee.startbank": "Zarejestrowany Wykonawca",
+                        "trust.appro": "CENTRALNIE ZATWIERDZONY",
+                        "trust.exp": "25 LAT DOŚWIADCZENIA",
+                        "trust.qual": "CERTYFIKAT ISO 9001",
+                        "core.label": "// GENERALNY WYKONAWCA",
+                        "core.title": "Od Pierwszej Łopaty<br>Do Gotowego Domu.",
+                        "core.desc": "Bierzemy pełną odpowiedzialność. Jedna umowa, jeden kontakt, żadnych wymówek. Koordynujemy architektów, prace ziemne, cieśli i monterów stali, abyś mógł skupić się na wizji, a nie na logistyce.",
+                        "process.title": "PROCES",
+                        "process.desc": "Przemysłowa precyzja spotyka wizję architektoniczną. Nasz przepływ pracy reprezentuje najwyższy standard wykonania.",
+                        "process.step1.label": "// 01 POMYSŁ I KONCEPCJA",
+                        "process.step1.title": "Konsultacja i Architektura",
+                        "process.step1.text": "Zaczynamy od dekonstrukcji wizji. Analiza działki, topografii, warunków świetlnych i wykonalności strukturalnej.",
+                        "process.fig1": "RYS 01.0 - PLANOWANIE",
+                        "process.step2.label": "// 02 FUNDAMENTY",
+                        "process.step2.title": "Prace Ziemne",
+                        "process.step2.text": "Precyzyjne wyburzenia i zbrojenie betonu. Zapewniamy, że góra ustępuje konstrukcji, a nie odwrotnie.",
+                        "process.fig2": "RYS 02.0 - FUNDAMENTY",
+                        "process.step3.label": "// 03 KONSTRUKCJA",
+                        "process.step3.title": "Konstrukcja",
+                        "process.step3.text": "Szkielet się wznosi. Stal spotyka drewno.",
+                        "process.fig3": "RYS 03.0 - KONSTRUKCJA",
+                        "process.step4.label": "// 04 ODBIÓR",
+                        "process.step4.title": "Odbiór",
+                        "process.step4.text": "Kontrola jakości w najmniejszym szczególe.",
+                        "process.fig4": "RYS 04.0 - ODBIÓR",
+                        "team.label": "// ZARZĄDZANIE",
+                        "team.title": "Profesjonalizm.",
+                        "team.text": "\"Naszym zadaniem jest eliminacja niepewności.\"",
+                        "sust.tag": "// ZIELONA PRZYSZŁOŚĆ",
+                        "sust.title": "Natura<br>Naszym<br>Partnerem.",
+                        "sust.text": "Budowanie z CLT redukuje ślad węglowy.",
+                        "work.label": "// PORTFOLIO",
+                        "work.title": "WYBRANE<br>REALIZACJE",
+                        "work.viewall": "ZOBACZ ARCHIWUM",
+                        "work.p1.title": "Villa Nordstrand",
+                        "work.p1.sub": "OSLO // BETON",
+                        "work.p2.title": "Domek Geilo",
+                        "work.p2.sub": "GEILO // DREWNO",
+                        "conf.title": "ROZPOCZNIJ DIALOG",
+                        "conf.subtitle": "WYBIERZ TYP PROJEKTU",
+                        "conf.min": "5 mln zł",
+                        "conf.max": "50 mln zł+",
+                        "conf.next": "NASTĘPNY KROK",
+                        "conf.submit": "WYŚLIJ ZAPYTANIE",
+                        "conf.analyzing": "ANALIZUJEMY SPECYFIKACJĘ...",
+                        "conf.success": "Skontaktujemy się w ciągu 24 godzin.",
+                        "footer.contact": "KONTAKT",
+                        "footer.org": "NIP: 965 242 112",
+                        "footer.loc": "Oslo, Norwegia",
+                        "footer.social": "Media społecznościowe",
+                        "footer.instagram": "Instagram",
+                        "footer.linkedin": "LinkedIn",
+                        "footer.facebook": "Facebook",
+                        "footer.privacy": "Prywatność",
+                        "footer.accessibility": "Deklaracja dostępności",
+                        "footer.copyright": "© 2026 Totalentreprenør AS",
+                        "footer.designed": "Zaprojektowane przez",
+                        "footer.hq": "CENTRALA OSLO",
+                        "cta.free": "BEZPŁATNY",
+                        "cta.befaring": "INSPEKCJA",
+                        "skip.content": "Przejdź do treści",
+                        "trust.mesterbrev": "Certyfikat Mistrza",
+                        "trust.mesterbrev.code": "[CERT: M-992]",
+                        "trust.startbank": "StartBANK",
+                        "trust.startbank.code": "[ID: 88421]",
+                        "trust.miljofyrtarn": "Eko-Latarnia",
+                        "trust.miljofyrtarn.code": "[ECO: A+]",
+                        "conf.step1.title": "01 / TYP PROJEKTU",
+                        "conf.step2.title": "02 / ZAKRES BUDŻETU",
+                        "conf.step3.title": "03 / LOKALIZACJA I KONTAKT",
+                        "conf.type.house": "Dom",
+                        "conf.type.cabin": "Chata",
+                        "conf.type.ground": "Prace ziemne",
+                        "conf.budget.aria": "Wybierz zakres budżetu",
+                        "conf.location.placeholder": "Gdzie budować? (Gmina/Lokalizacja)",
+                        "conf.name.placeholder": "Imię",
+                        "conf.email.placeholder": "Email",
+                        "conf.phone.placeholder": "Telefon",
+                        "conf.success.title": "Zapytanie wysłane",
+                        "config.title": "Konfiguracja wewnętrzna",
+                        "config.business": "1. Wybierz Biznes",
+                        "config.layout": "2. Wybierz Układ",
+                        "config.visual": "3. Styl wizualny",
+                        "config.preview": "TRYB PODGLĄDU"
                     }
                 }
             },
@@ -1206,6 +1372,66 @@
                         "footer.loc": "Oslo, Norway",
                         "cta.free": "FREE",
                         "cta.befaring": "INSPECTION"
+                    },
+                    pl: {
+                        "nav.process": "USŁUGI",
+                        "nav.sustainability": "GWARANCJA",
+                        "nav.projects": "REFERENCJE",
+                        "nav.contact": "DYŻUR 24/7",
+                        "hero.title": "POMOC<br>NATYCHMIASTOWA",
+                        "hero.subtitle": "// 01 <br>Rozwiązujemy Twoje problemy gdy się pojawią. 24 godziny na dobę, 365 dni w roku.",
+                        "hero.scroll": "PRZEWIŃ DO USŁUG",
+                        "hero.cta": "ZADZWOŃ TERAZ",
+                        "marquee.sentral": "Autoryzowany Instalator",
+                        "marquee.eco": "Certyfikat Bezpieczeństwa",
+                        "marquee.ns": "Gwarancja",
+                        "marquee.startbank": "Tytuł Mistrza",
+                        "trust.appro": "AUTORYZOWANY INSTALATOR",
+                        "trust.exp": "INFOLINIA 24/7",
+                        "trust.qual": "CERTYFIKAT BEZPIECZEŃSTWA",
+                        "core.label": "// TWÓJ SPECJALISTA",
+                        "core.title": "Bezpieczeństwo, Serwis<br>i Gwarancja.",
+                        "core.desc": "Jesteśmy Twoim bezpieczeństwem na co dzień. Od awaryjnej instalacji hydraulicznej do kompleksowej rehabilitacji instalacji elektrycznej. Nasze pojazdy to mobilne warsztaty.",
+                        "process.title": "SERWIS",
+                        "process.desc": "Efektywność to nasza wizytówka. Nie marnujemy Twojego czasu.",
+                        "process.step1.label": "// 01 KONTAKT",
+                        "process.step1.title": "Zgłoszenie & Dyżur",
+                        "process.step1.text": "Zadzwoń na naszą infolinię dyżurną. Identyfikujemy zakres i wysyłamy najbliższy pojazd natychmiast w przypadku pilnych potrzeb.",
+                        "process.fig1": "FIG 01.0 - CZAS REAKCJI",
+                        "process.step2.label": "// 02 WYJAZD",
+                        "process.step2.title": "Na Miejscu",
+                        "process.step2.text": "Nasi monterzy przybywają z kompletnym wyposażeniem. Diagnostyka rozpoczyna się natychmiast.",
+                        "process.fig2": "FIG 02.0 - DIAGNOZA",
+                        "process.step3.label": "// 03 NAPRAWA",
+                        "process.step3.title": "Naprawa",
+                        "process.step3.text": "Naprawiamy usterkę efektywnie i zgodnie z obowiązującymi przepisami. Dokumentacja jest prowadzona na bieżąco.",
+                        "process.fig3": "FIG 03.0 - WYKONANIE",
+                        "process.step4.label": "// 04 DOKUMENTACJA",
+                        "process.step4.title": "Finalizacja",
+                        "process.step4.text": "Deklaracja zgodności otrzymywana cyfrowo natychmiast po wykonaniu zlecenia.",
+                        "process.fig4": "FIG 04.0 - GWARANCJA",
+                        "team.label": "// O NAS",
+                        "team.title": "Zawsze Na<br>Dyżurze.",
+                        "team.text": "\"W branży usługowej dostępność to wszystko. Nie śpimy, abyś Ty mógł spać spokojnie. Łączymy tradycje rzemieślnicze z nowoczesną technologią.\"",
+                        "sust.tag": "// ENERGIA",
+                        "sust.title": "Inteligentne<br>Oszczędzanie<br>Energii.",
+                        "sust.text": "Instalujemy rozwiązania inteligentnego domu, które automatycznie zmniejszają Twój rachunek za prąd.",
+                        "work.label": "// REFERENCJE",
+                        "work.title": "OSTATNIE<br>ZLECENIA",
+                        "work.viewall": "ZOBACZ WIĘCEJ ZLECEŃ",
+                        "work.p1.title": "Aktualizacja Smart",
+                        "work.p1.sub": "OSLO // INTELIGENTNY DOM",
+                        "work.p2.title": "Pełna Rehabilitacja Łazienki",
+                        "work.p2.sub": "ASIN // HYDRAULIKA",
+                        "conf.title": "ZAMÓW SERWIS",
+                        "conf.subtitle": "W CZYM MOŻEMY POMÓC?",
+                        "conf.analyzing": "SZUKAMY WOLNEGO MONTERA...",
+                        "conf.success": "Zlecenie zarejestrowane. Monter skontaktuje się z Tobą wkrótce.",
+                        "footer.contact": "INFOLINIA DYŻURNA",
+                        "footer.org": "NIP: 965 242 112",
+                        "footer.loc": "Oslo, Norwegia",
+                        "cta.free": "BEZPŁATNA",
+                        "cta.befaring": "INSPEKCJA"
                     }
                 }
             },
@@ -1337,6 +1563,66 @@
                         "footer.loc": "Oslo, Norway",
                         "cta.free": "FREE",
                         "cta.befaring": "INSPECTION"
+                    },
+                    pl: {
+                        "nav.process": "METODA",
+                        "nav.sustainability": "PALETA",
+                        "nav.projects": "GALERIA",
+                        "nav.contact": "WYCENA",
+                        "hero.title": "CZYSTA<br>PERFEKCJA",
+                        "hero.subtitle": "// 01 <br>To powierzchnia, którą widzisz. To szczegóły, które czujesz. Nadajemy pomieszczeniom charakter.",
+                        "hero.scroll": "PRZEWIŃ PO SZCZEGÓŁY",
+                        "hero.cta": "ZOBACZ NASZE KOLORY",
+                        "marquee.sentral": "Stowarzyszenie Malarzy",
+                        "marquee.eco": "Farby Certyfikowane",
+                        "marquee.ns": "Szacunek dla Rzemiosła",
+                        "marquee.startbank": "Gwarancja Estetyki",
+                        "trust.appro": "CZŁONEK STOWARZYSZENIA MALARZY",
+                        "trust.exp": "3. POKOLENIE",
+                        "trust.qual": "CERTYFIKAT ECO",
+                        "core.label": "// SPECJALISTA POWIERZCHNI",
+                        "core.title": "Wszystko Tkwi<br>w Szczegółach.",
+                        "core.desc": "Pomieszczenie to tylko cztery ściany, dopóki nie zyska koloru i tekstury. Jesteśmy specjalistami od ekskluzywnych technik powierzchniowych, rozwiązań bez listew i mikrocementu.",
+                        "process.title": "METODA",
+                        "process.desc": "Cierpliwość i precyzja. Perfekcyjnego rezultatu nie można przyspieszyć.",
+                        "process.step1.label": "// 01 PRZYGOTOWANIE",
+                        "process.step1.title": "Maskowanie & Szlifowanie",
+                        "process.step1.text": "Podłoże to wszystko. Poświęcamy 70% czasu na przygotowanie, aby zapewnić nieskazitelne wykończenie.",
+                        "process.fig1": "FIG 01.0 - GRUNTOWANIE",
+                        "process.step2.label": "// 02 STRUKTURA",
+                        "process.step2.title": "Szpachlowanie & Wyrównanie",
+                        "process.step2.text": "Gładkie ściany wymagają chirurgicznej precyzji. Szpachlujemy całość, aby uzyskać bezszwowy wygląd.",
+                        "process.fig2": "FIG 02.0 - WYGŁADZANIE",
+                        "process.step3.label": "// 03 KOLOR",
+                        "process.step3.title": "Pigmentacja",
+                        "process.step3.text": "Aplikacja farby lub mikrocementu. Głębia koloru i gra światła tworzona świadomymi pociągnięciami.",
+                        "process.fig3": "FIG 03.0 - PIGMENT",
+                        "process.step4.label": "// 04 WYKOŃCZENIE",
+                        "process.step4.title": "Kontrola Jakości",
+                        "process.step4.text": "Sprawdzamy każdy centymetr kwadratowy przy świetle padającym. Nic nie jest pozostawione przypadkowi.",
+                        "process.fig4": "FIG 04.0 - KONTROLA ŚWIATŁA",
+                        "team.label": "// ATELIER",
+                        "team.title": "Rzemieślnicy<br>z Pasją.",
+                        "team.text": "\"Malowanie to nie tylko ochrona, to nastrój. Nasi malarze rozumieją teorię kolorów i materiałoznawstwo. Tworzymy pomieszczenia, w których chcesz przebywać.\"",
+                        "sust.tag": "// KOLOR",
+                        "sust.title": "Żywe<br>Kolory<br>Naturalnie.",
+                        "sust.text": "Używamy wyłącznie produktów bez rozpuszczalników i naturalnych pigmentów, które oddychają.",
+                        "work.label": "// GALERIA",
+                        "work.title": "WYBRANE<br>WNĘTRZA",
+                        "work.viewall": "ZOBACZ GALERIĘ",
+                        "work.p1.title": "Łazienka Mikrocement",
+                        "work.p1.sub": "OSLO // BETON LOOK",
+                        "work.p2.title": "Klasyczny Salon",
+                        "work.p2.sub": "BYGDØY // FARBA WAPIENNA",
+                        "conf.title": "NOWY WYGLĄD?",
+                        "conf.subtitle": "CO MALUJEMY?",
+                        "conf.analyzing": "MIESZAMY KOLORY...",
+                        "conf.success": "Zapytanie otrzymane. Chętnie przyjedziemy na wycenę.",
+                        "footer.contact": "KONTAKT",
+                        "footer.org": "NIP: 965 242 112",
+                        "footer.loc": "Oslo, Norwegia",
+                        "cta.free": "BEZPŁATNA",
+                        "cta.befaring": "WYCENA"
                     }
                 }
             }
@@ -1480,6 +1766,25 @@
         let currentLang = 'no';
         let currentI18n = showcaseConfig.demo1.i18n;
 
+        // Helper: Get language from URL params > localStorage > default
+        function getInitialLanguage() {
+            // 1. Check URL query param (?lang=pl)
+            const urlParams = new URLSearchParams(window.location.search);
+            const urlLang = urlParams.get('lang');
+            if (urlLang && ['no', 'en', 'pl'].includes(urlLang)) {
+                return urlLang;
+            }
+
+            // 2. Check localStorage
+            const storedLang = localStorage.getItem('lang');
+            if (storedLang && ['no', 'en', 'pl'].includes(storedLang)) {
+                return storedLang;
+            }
+
+            // 3. Default
+            return 'no';
+        }
+
         function loadDemo(demoId) {
             console.log("Loading Demo:", demoId);
             if (!showcaseConfig[demoId]) return;
@@ -1546,6 +1851,24 @@
                     el.innerHTML = currentI18n[currentLang][key];
                 }
             });
+
+            // Handle placeholders
+            const placeholderElements = document.querySelectorAll('[data-i18n-placeholder]');
+            placeholderElements.forEach(el => {
+                const key = el.getAttribute('data-i18n-placeholder');
+                if (currentI18n[currentLang] && currentI18n[currentLang][key]) {
+                    el.placeholder = currentI18n[currentLang][key];
+                }
+            });
+
+            // Handle aria-labels
+            const ariaElements = document.querySelectorAll('[data-i18n-aria]');
+            ariaElements.forEach(el => {
+                const key = el.getAttribute('data-i18n-aria');
+                if (currentI18n[currentLang] && currentI18n[currentLang][key]) {
+                    el.setAttribute('aria-label', currentI18n[currentLang][key]);
+                }
+            });
         }
 
         function setLanguage(lang) {
@@ -1556,8 +1879,10 @@
             // Update Active State
             const noBtn = document.getElementById('lang-no');
             const enBtn = document.getElementById('lang-en');
+            const plBtn = document.getElementById('lang-pl');
             if (noBtn) noBtn.classList.toggle('underline', lang === 'no');
             if (enBtn) enBtn.classList.toggle('underline', lang === 'en');
+            if (plBtn) plBtn.classList.toggle('underline', lang === 'pl');
         }
 
         // --- THEME & TEMPLATE ENGINE ---
@@ -1605,11 +1930,13 @@
                 savedDemo = 'demo1';
                 localStorage.setItem('demo', 'demo1');
             }
-            const savedLang = localStorage.getItem('lang') || 'no';
+            const savedLang = getInitialLanguage();
             const savedTheme = localStorage.getItem('theme') || 'steel'; // Default to Steel
             const savedTemplate = localStorage.getItem('template') || 'std'; // Default to Standard
 
             // 2. Apply State
+            currentLang = savedLang;
+            setLanguage(savedLang);
             if (savedLang) {
                 currentLang = savedLang;
                 setLanguage(savedLang); // Updates UI active state

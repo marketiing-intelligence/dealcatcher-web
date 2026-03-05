@@ -318,7 +318,7 @@
                 <img src="assets/company_logo_total_1767961946647.png" alt="Total Contractor"
                     class="h-12 w-auto object-contain mix-blend-multiply dark:mix-blend-screen">
             </a>
-            <span class="font-mono text-xs font-bold uppercase tracking-widest hidden md:block">Total.</span>
+            <span class="font-mono text-xs font-bold uppercase tracking-widest hidden md:block" data-i18n="nav.logo">Total.</span>
         </div>
         <div class="nav-corner nav-tr flex gap-6 font-mono text-xs font-bold tracking-widest items-center">
             <a href="#process" class="hover:text-[var(--color-accent)] transition-colors hidden md:block"
@@ -337,6 +337,9 @@
                 <span class="opacity-30">/</span>
                 <span onclick="setLanguage('en')" id="lang-en"
                     class="cursor-pointer hover:text-[var(--color-accent)]">EN</span>
+                <span class="opacity-30">/</span>
+                <span onclick="setLanguage('pl')" id="lang-pl"
+                    class="cursor-pointer hover:text-[var(--color-accent)]">PL</span>
             </div>
 
             <!-- MENU Button Removed as requested -->
@@ -398,7 +401,7 @@
             <!-- Scroll Indicator -->
             <div
                 class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 opacity-50 mix-blend-multiply">
-                <span class="font-mono text-[10px] uppercase tracking-widest">SCROLL TO EXPLORE</span>
+                <span class="font-mono text-[10px] uppercase tracking-widest" data-i18n="scroll.text">SCROLL TO EXPLORE</span>
                 <div class="w-[1px] h-12 bg-black overflow-hidden relative">
                     <div class="absolute top-0 left-0 w-full h-1/2 bg-[var(--color-accent)] animate-scrolldown"></div>
                 </div>
@@ -407,8 +410,8 @@
             <!-- Footer Info -->
             <div
                 class="absolute bottom-8 left-8 right-8 flex justify-between font-mono text-[10px] uppercase opacity-40 hidden md:flex">
-                <div>HQ: 59.91° N</div>
-                <div>EST. 1999</div>
+                <div data-i18n="hero.hq">HQ: 59.91° N</div>
+                <div data-i18n="hero.est">EST. 1999</div>
             </div>
         </section>
 
@@ -459,7 +462,7 @@
         <!-- 3. MANIFESTO -->
         <section class="py-32 grid-layout">
             <div class="lg:col-span-1">
-                <span class="font-mono text-xs text-[var(--color-accent)]">(02) MANIFESTO</span>
+                <span class="font-mono text-xs text-[var(--color-accent)]" data-i18n="section.manifesto">(02) MANIFESTO</span>
             </div>
             <div class="lg:col-span-3">
                 <h2 class="text-4xl lg:text-7xl leading-tight mb-12" data-i18n="core.title">
@@ -480,8 +483,8 @@
             <div class="grid-layout">
                 <div class="lg:col-span-1 h-full relative">
                     <div class="sticky top-32">
-                        <span class="font-mono text-xs text-[var(--color-accent)] block mb-4">(03) METHODOLOGY</span>
-                        <h3 class="text-3xl font-bold uppercase leading-none mb-8">Precision<br>Protocol</h3>
+                        <span class="font-mono text-xs text-[var(--color-accent)] block mb-4" data-i18n="section.methodology">(03) METHODOLOGY</span>
+                        <h3 class="text-3xl font-bold uppercase leading-none mb-8" data-i18n="process.header">Precision<br>Protocol</h3>
                         <div class="hidden lg:block w-px h-32 bg-black/10 relative">
                             <div class="absolute top-0 left-[-2px] w-[5px] h-[10px] bg-[var(--color-accent)]"
                                 id="process-progress"></div>
@@ -495,7 +498,7 @@
                     <!-- Step 1 -->
                     <div
                         class="bg-white p-8 group hover:bg-black hover:text-white transition-colors h-[300px] flex flex-col justify-between">
-                        <span class="font-mono text-xs block opacity-50">01 // ANALYSIS</span>
+                        <span class="font-mono text-xs block opacity-50" data-i18n="process.step1.label">01 // ANALYSIS</span>
                         <div>
                             <h4 class="text-xl mb-2" data-i18n="process.step1.title">Consultation</h4>
                             <p class="font-mono text-[10px] max-w-[200px]" data-i18n="process.step1.text">Analysis of
@@ -506,7 +509,7 @@
                     <!-- Step 2 -->
                     <div
                         class="bg-white p-8 group hover:bg-black hover:text-white transition-colors h-[300px] flex flex-col justify-between">
-                        <span class="font-mono text-xs block opacity-50">02 // FOUNDATION</span>
+                        <span class="font-mono text-xs block opacity-50" data-i18n="process.step2.label">02 // FOUNDATION</span>
                         <div>
                             <h4 class="text-xl mb-2" data-i18n="process.step2.title">Groundwork</h4>
                             <p class="font-mono text-[10px] max-w-[200px]" data-i18n="process.step2.text">Precision
@@ -517,7 +520,7 @@
                     <!-- Step 3 -->
                     <div
                         class="bg-white p-8 group hover:bg-black hover:text-white transition-colors h-[300px] flex flex-col justify-between">
-                        <span class="font-mono text-xs block opacity-50">03 // STRUCTURE</span>
+                        <span class="font-mono text-xs block opacity-50" data-i18n="process.step3.label">03 // STRUCTURE</span>
                         <div>
                             <h4 class="text-xl mb-2" data-i18n="process.step3.title">Construction</h4>
                             <p class="font-mono text-[10px] max-w-[200px]" data-i18n="process.step3.text">Steel beams
@@ -528,7 +531,7 @@
                     <!-- Step 4 -->
                     <div
                         class="bg-white p-8 group hover:bg-black hover:text-white transition-colors h-[300px] flex flex-col justify-between">
-                        <span class="font-mono text-xs block opacity-50">04 // HANDOVER</span>
+                        <span class="font-mono text-xs block opacity-50" data-i18n="process.step4.label">04 // HANDOVER</span>
                         <div>
                             <h4 class="text-xl mb-2" data-i18n="process.step4.title">Completion</h4>
                             <p class="font-mono text-[10px] max-w-[200px]" data-i18n="process.step4.text">Final quality
@@ -553,7 +556,7 @@
 
             <div class="grid-layout relative z-10">
                 <div class="lg:col-span-2">
-                    <span class="font-mono text-xs text-[var(--color-accent)] block mb-6">(04) IMPACT</span>
+                    <span class="font-mono text-xs text-[var(--color-accent)] block mb-6" data-i18n="section.impact">(04) IMPACT</span>
                     <h3 class="text-6xl lg:text-8xl font-black uppercase tracking-tighter leading-[0.8] mb-8"
                         data-i18n="sust.title">
                         Nature<br><span class="text-transparent stroke-white"
@@ -575,22 +578,22 @@
         <section class="section-border py-24 bg-white" id="leadership" data-bgcolor="#FFFFFF">
             <div class="grid-layout">
                 <div class="lg:col-span-1">
-                    <span class="font-mono text-xs text-[var(--color-accent)]">(05) LEADERSHIP</span>
+                    <span class="font-mono text-xs text-[var(--color-accent)]" data-i18n="section.leadership">(05) LEADERSHIP</span>
                 </div>
                 <div class="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div class="relative order-2 md:order-1">
                         <img src="assets/ceo_portrait_nordic_1767961934691.png"
                             class="w-full grayscale hover:grayscale-0 transition-all duration-500" alt="CEO">
                         <div class="mt-4 border-l-2 border-black pl-4">
-                            <h4 class="font-bold uppercase">Jan-Erik Johansen</h4>
-                            <span class="font-mono text-xs text-gray-500">CEO / DAGLIG LEDER</span>
+                            <h4 class="font-bold uppercase" data-i18n="leader.name">Jan-Erik Johansen</h4>
+                            <span class="font-mono text-xs text-gray-500" data-i18n="leader.role">CEO / DAGLIG LEDER</span>
                         </div>
                     </div>
                     <div class="order-1 md:order-2">
-                        <h3 class="text-4xl lg:text-5xl font-black uppercase tracking-tighter leading-none mb-8">
+                        <h3 class="text-4xl lg:text-5xl font-black uppercase tracking-tighter leading-none mb-8" data-i18n="leader.title">
                             Professionalism<br>in Every Step.
                         </h3>
-                        <p class="font-serif text-xl italic leading-relaxed max-w-md">
+                        <p class="font-serif text-xl italic leading-relaxed max-w-md" data-i18n="leader.quote">
                             "As a total contractor, our job is to remove uncertainty. We lead the project with military
                             precision and an artist's eye for detail."
                         </p>
@@ -606,12 +609,12 @@
 
                 <!-- Header -->
                 <div class="lg:col-span-1 mb-12 lg:mb-0">
-                    <span class="font-mono text-xs text-[var(--color-accent)]">(06) ARCHIVE</span>
+                    <span class="font-mono text-xs text-[var(--color-accent)]" data-i18n="section.archive">(06) ARCHIVE</span>
                     <h3 class="text-4xl mt-4 font-bold uppercase leading-none mb-8" data-i18n="work.title">
                         Selected<br>Works
                     </h3>
                     <a href="#"
-                        class="font-mono text-xs underline decoration-[var(--color-accent)] underline-offset-4 hover:bg-black hover:text-white inline-block p-2 transition-colors">VIEW
+                        class="font-mono text-xs underline decoration-[var(--color-accent)] underline-offset-4 hover:bg-black hover:text-white inline-block p-2 transition-colors" data-i18n="work.archive_link">VIEW
                         FULL ARCHIVE -></a>
                 </div>
 
@@ -634,8 +637,8 @@
                         <img src="assets/portfolio_item_2_1767958409257.png"
                             class="w-full h-full object-cover img-reveal" alt="Geilo Lodge - Timber Cabin">
                         <div class="absolute bottom-0 left-0 bg-white p-4 border-t border-r border-black/10">
-                            <h4 class="text-xl font-bold uppercase">Geilo Lodge</h4>
-                            <span class="font-mono text-[10px] block mt-1 text-gray-500">GEILO // TIMBER</span>
+                            <h4 class="text-xl font-bold uppercase" data-i18n="work.p2.title">Geilo Lodge</h4>
+                            <span class="font-mono text-[10px] block mt-1 text-gray-500" data-i18n="work.p2.sub">GEILO // TIMBER</span>
                         </div>
                     </div>
 
@@ -644,8 +647,8 @@
                         <img src="assets/project_seaside_villa_minimalist_1767964503602.png"
                             class="w-full h-full object-cover img-reveal" alt="Fjord Retreat - Glass Villa">
                         <div class="absolute bottom-0 left-0 bg-white p-4 border-t border-r border-black/10">
-                            <h4 class="text-xl font-bold uppercase">Fjord Retreat</h4>
-                            <span class="font-mono text-[10px] block mt-1 text-gray-500">ALESUND // GLASS</span>
+                            <h4 class="text-xl font-bold uppercase" data-i18n="work.p3.title">Fjord Retreat</h4>
+                            <span class="font-mono text-[10px] block mt-1 text-gray-500" data-i18n="work.p3.sub">ALESUND // GLASS</span>
                         </div>
                     </div>
 
@@ -654,8 +657,8 @@
                         <img src="assets/project_urban_loft_renovation_1767964516112.png"
                             class="w-full h-full object-cover img-reveal" alt="Urban Loft - Brick Interior">
                         <div class="absolute bottom-0 left-0 bg-white p-4 border-t border-r border-black/10">
-                            <h4 class="text-xl font-bold uppercase">Urban Loft</h4>
-                            <span class="font-mono text-[10px] block mt-1 text-gray-500">BERGEN // BRICK</span>
+                            <h4 class="text-xl font-bold uppercase" data-i18n="work.p4.title">Urban Loft</h4>
+                            <span class="font-mono text-[10px] block mt-1 text-gray-500" data-i18n="work.p4.sub">BERGEN // BRICK</span>
                         </div>
                     </div>
 
@@ -675,11 +678,11 @@
             <div class="grid-layout relative z-10">
                 <!-- Side Panel -->
                 <div class="lg:col-span-1">
-                    <span class="font-mono text-xs text-[var(--color-accent)] block mb-4">(06) INITIATE</span>
+                    <span class="font-mono text-xs text-[var(--color-accent)] block mb-4" data-i18n="section.initiate">(06) INITIATE</span>
                     <div class="font-mono text-[10px] text-gray-500 space-y-2">
-                        <p>> SYSTEM: ONLINE</p>
-                        <p>> ENCRYPTION: SECURE</p>
-                        <p>> RESPONSE: < 24H</p>
+                        <p data-i18n="conf.status1">> SYSTEM: ONLINE</p>
+                        <p data-i18n="conf.status2">> ENCRYPTION: SECURE</p>
+                        <p data-i18n="conf.status3">> RESPONSE: < 24H</p>
                     </div>
                 </div>
 
@@ -693,31 +696,31 @@
 
                         <!-- STEP 1: TYPE -->
                         <div id="step-1" class="conf-step">
-                            <p class="font-mono text-xs text-[var(--color-accent)] mb-6">SELECT PROJECT TYPE_</p>
+                            <p class="font-mono text-xs text-[var(--color-accent)] mb-6" data-i18n="conf.step1_prompt">SELECT PROJECT TYPE_</p>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <button onclick="selectType(this, 'Residential')"
                                     class="border border-white/20 p-8 text-left hover:bg-white hover:text-black hover:border-white transition-all group">
                                     <span
                                         class="font-mono text-xs opacity-50 block mb-2 group-hover:opacity-100">[A]</span>
-                                    <span class="text-xl font-bold uppercase tracking-widest">Residential</span>
+                                    <span class="text-xl font-bold uppercase tracking-widest" data-i18n="conf.type_residential">Residential</span>
                                 </button>
                                 <button onclick="selectType(this, 'Commercial')"
                                     class="border border-white/20 p-8 text-left hover:bg-white hover:text-black hover:border-white transition-all group">
                                     <span
                                         class="font-mono text-xs opacity-50 block mb-2 group-hover:opacity-100">[B]</span>
-                                    <span class="text-xl font-bold uppercase tracking-widest">Cabin / Leisure</span>
+                                    <span class="text-xl font-bold uppercase tracking-widest" data-i18n="conf.type_cabin">Cabin / Leisure</span>
                                 </button>
                             </div>
                         </div>
 
                         <!-- STEP 2: BUDGET (Hidden) -->
                         <div id="step-2" class="conf-step hidden">
-                            <p class="font-mono text-xs text-[var(--color-accent)] mb-6">BUDGET ESTIMATE_</p>
+                            <p class="font-mono text-xs text-[var(--color-accent)] mb-6" data-i18n="conf.step2_prompt">BUDGET ESTIMATE_</p>
                             <div class="border-y border-white/20 py-12">
                                 <div class="flex justify-between font-mono text-xs mb-4 text-gray-500">
-                                    <span>MIN (5M)</span>
+                                    <span data-i18n="conf.budget_min">MIN (5M)</span>
                                     <span class="text-white font-bold text-xl" id="budget-val">25 MNOK</span>
-                                    <span>MAX (50M+)</span>
+                                    <span data-i18n="conf.budget_max">MAX (50M+)</span>
                                 </div>
                                 <input type="range" min="5" max="50" value="25"
                                     class="w-full h-1 bg-gray-800 appearance-none cursor-pointer accent-[var(--color-accent)]"
@@ -725,38 +728,38 @@
                             </div>
                             <div class="mt-8">
                                 <button onclick="nextStep(3)"
-                                    class="bg-white text-black px-8 py-3 font-mono text-xs font-bold uppercase hover:bg-[var(--color-accent)] transition-colors">CONFIRM
+                                    class="bg-white text-black px-8 py-3 font-mono text-xs font-bold uppercase hover:bg-[var(--color-accent)] transition-colors" data-i18n="conf.confirm_btn">CONFIRM
                                     & PROCEED -></button>
                             </div>
                         </div>
 
                         <!-- STEP 3: CONTACT (Hidden) -->
                         <div id="step-3" class="conf-step hidden">
-                            <p class="font-mono text-xs text-[var(--color-accent)] mb-6">CONTACT PROTOCOL_</p>
+                            <p class="font-mono text-xs text-[var(--color-accent)] mb-6" data-i18n="conf.step3_prompt">CONTACT PROTOCOL_</p>
                             <div class="space-y-4 max-w-md">
-                                <label class="sr-only" for="input-name">Full Name</label>
+                                <label class="sr-only" for="input-name" data-i18n="conf.label_name">Full Name</label>
                                 <input type="text" id="input-name" placeholder="FULL NAME" aria-label="Full Name"
-                                    class="w-full bg-transparent border-b border-white/20 py-4 font-mono text-sm text-white focus:border-[var(--color-accent)] focus:outline-none placeholder-gray-600">
-                                <label class="sr-only" for="input-email">Email Address</label>
+                                    class="w-full bg-transparent border-b border-white/20 py-4 font-mono text-sm text-white focus:border-[var(--color-accent)] focus:outline-none placeholder-gray-600" data-i18n-placeholder="conf.placeholder_name">
+                                <label class="sr-only" for="input-email" data-i18n="conf.label_email">Email Address</label>
                                 <input type="email" id="input-email" placeholder="EMAIL ADDRESS"
                                     aria-label="Email Address"
-                                    class="w-full bg-transparent border-b border-white/20 py-4 font-mono text-sm text-white focus:border-[var(--color-accent)] focus:outline-none placeholder-gray-600">
-                                <label class="sr-only" for="input-phone">Phone Number</label>
+                                    class="w-full bg-transparent border-b border-white/20 py-4 font-mono text-sm text-white focus:border-[var(--color-accent)] focus:outline-none placeholder-gray-600" data-i18n-placeholder="conf.placeholder_email">
+                                <label class="sr-only" for="input-phone" data-i18n="conf.label_phone">Phone Number</label>
                                 <input type="tel" id="input-phone" placeholder="PHONE NUMBER" aria-label="Phone Number"
-                                    class="w-full bg-transparent border-b border-white/20 py-4 font-mono text-sm text-white focus:border-[var(--color-accent)] focus:outline-none placeholder-gray-600">
+                                    class="w-full bg-transparent border-b border-white/20 py-4 font-mono text-sm text-white focus:border-[var(--color-accent)] focus:outline-none placeholder-gray-600" data-i18n-placeholder="conf.placeholder_phone">
                             </div>
                             <button onclick="submitForm()"
-                                class="mt-12 w-full max-w-md bg-[var(--color-accent)] text-white py-4 font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-colors">
+                                class="mt-12 w-full max-w-md bg-[var(--color-accent)] text-white py-4 font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-colors" data-i18n="conf.submit_btn">
                                 TRANSMIT REQUEST
                             </button>
                         </div>
 
                         <!-- SUCCESS (Hidden) -->
                         <div id="conf-success" class="hidden py-8">
-                            <h4 class="text-3xl font-bold mb-4 text-[var(--color-accent)]">TRANSMISSION RECEIVED.</h4>
-                            <p class="font-mono text-sm text-gray-400">Our engineers will evaluate the data and
+                            <h4 class="text-3xl font-bold mb-4 text-[var(--color-accent)]" data-i18n="conf.success_title">TRANSMISSION RECEIVED.</h4>
+                            <p class="font-mono text-sm text-gray-400" data-i18n="conf.success_text">Our engineers will evaluate the data and
                                 establish contact within 24 hours.</p>
-                            <button onclick="location.reload()" class="mt-8 text-xs font-mono underline">RESET
+                            <button onclick="location.reload()" class="mt-8 text-xs font-mono underline" data-i18n="conf.reset_btn">RESET
                                 SIGNAL</button>
                         </div>
 
@@ -770,28 +773,28 @@
         <footer class="bg-dark text-white pt-24 pb-8 section-border">
             <div class="grid-layout">
                 <div class="lg:col-span-1">
-                    <span class="font-black text-2xl uppercase tracking-tighter block mb-4">Total.</span>
-                    <span class="font-mono text-[10px] uppercase opacity-50 block mb-8">EST. 1999</span>
+                    <span class="font-black text-2xl uppercase tracking-tighter block mb-4" data-i18n="footer.logo">Total.</span>
+                    <span class="font-mono text-[10px] uppercase opacity-50 block mb-8" data-i18n="footer.est">EST. 1999</span>
                 </div>
                 <div class="lg:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-12 font-mono text-xs text-gray-400">
                     <div>
-                        <span class="text-white block mb-4 uppercase tracking-widest">Office</span>
-                        <p>Dronning Eufemias gate 8</p>
-                        <p>0191 Oslo, Norway</p>
+                        <span class="text-white block mb-4 uppercase tracking-widest" data-i18n="footer.office_title">Office</span>
+                        <p data-i18n="footer.office_address1">Dronning Eufemias gate 8</p>
+                        <p data-i18n="footer.office_address2">0191 Oslo, Norway</p>
                     </div>
                     <div>
-                        <span class="text-white block mb-4 uppercase tracking-widest">Connect</span>
+                        <span class="text-white block mb-4 uppercase tracking-widest" data-i18n="footer.connect_title">Connect</span>
                         <p><a href="#" class="hover:text-[var(--color-accent)]">post@totalentreprenor.no</a></p>
                         <p>+47 22 33 44 55</p>
                     </div>
                     <div>
-                        <span class="text-white block mb-4 uppercase tracking-widest">Legal</span>
-                        <p>Org. nr: 931 930 202 MVA</p>
-                        <p><a href="#" class="hover:text-white">Privacy Policy</a></p>
+                        <span class="text-white block mb-4 uppercase tracking-widest" data-i18n="footer.legal_title">Legal</span>
+                        <p data-i18n="footer.legal_org">Org. nr: 931 930 202 MVA</p>
+                        <p><a href="#" class="hover:text-white" data-i18n="footer.legal_privacy">Privacy Policy</a></p>
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-24 font-mono text-[10px] text-gray-600">
+            <div class="text-center mt-24 font-mono text-[10px] text-gray-600" data-i18n="footer.copyright">
                 © 2026 Totalentreprenør AS. All systems nominal.
             </div>
         </footer>
@@ -826,8 +829,8 @@
             </svg>
         </div>
         <div class="flex flex-col">
-            <span class="text-[10px] font-mono opacity-80 leading-none">FREE</span>
-            <span class="font-bold text-sm leading-none">INSPECTION</span>
+            <span class="text-[10px] font-mono opacity-80 leading-none" data-i18n="cta.free">FREE</span>
+            <span class="font-bold text-sm leading-none" data-i18n="cta.inspection">INSPECTION</span>
         </div>
     </a>
 
@@ -836,7 +839,7 @@
 
         <!-- Header with Logo -->
         <div class="flex justify-between items-center mb-8 border-b border-light/20 pb-4">
-            <h3 class="font-mono text-sm uppercase tracking-widest text-light">Internal Config</h3>
+            <h3 class="font-mono text-sm uppercase tracking-widest text-light" data-i18n="panel.title">Internal Config</h3>
             <button onclick="App.toggleThemePanel()" class="text-light/50 hover:text-accent">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
@@ -849,44 +852,44 @@
 
             <!-- SECTION 1: BUSINESS TYPE (DEMO) -->
             <div>
-                <h4 class="font-mono text-[10px] text-light/50 mb-3 uppercase tracking-widest">1. Select Business
+                <h4 class="font-mono text-[10px] text-light/50 mb-3 uppercase tracking-widest" data-i18n="panel.section1">1. Select Business
                 </h4>
                 <div class="flex flex-col gap-2">
                     <button id="btn-demo-demo1" onclick="loadDemo('demo1')"
                         class="text-left px-4 py-3 border border-light/10 text-xs font-mono text-light bg-light/5 hover:bg-light/10 hover:border-accent transition-all flex justify-between items-center group">
-                        <span>THE TOTAL CONTRACTOR</span>
+                        <span data-i18n="panel.demo1">THE TOTAL CONTRACTOR</span>
                         <span class="opacity-0 group-hover:opacity-100 text-accent transition-opacity">→</span>
                     </button>
                     <button id="btn-demo-demo2" onclick="loadDemo('demo2')"
                         class="text-left px-4 py-3 border border-light/10 text-xs font-mono text-light bg-light/5 hover:bg-light/10 hover:border-accent transition-all flex justify-between items-center group">
-                        <span>SERVICE SPECIALIST</span>
+                        <span data-i18n="panel.demo2">SERVICE SPECIALIST</span>
                         <span class="opacity-0 group-hover:opacity-100 text-accent transition-opacity">→</span>
                     </button>
                     <button id="btn-demo-demo3" onclick="loadDemo('demo3')"
                         class="text-left px-4 py-3 border border-light/10 text-xs font-mono text-light bg-light/5 hover:bg-light/10 hover:border-accent transition-all flex justify-between items-center group">
-                        <span>FINISHING EXPERT</span>
+                        <span data-i18n="panel.demo3">FINISHING EXPERT</span>
                         <span class="opacity-0 group-hover:opacity-100 text-accent transition-opacity">→</span>
                     </button>
                 </div>
             </div>
 
             <div>
-                <h4 class="font-mono text-[10px] text-light/50 mb-3 uppercase tracking-widest">2. Select Layout</h4>
+                <h4 class="font-mono text-[10px] text-light/50 mb-3 uppercase tracking-widest" data-i18n="panel.section2">2. Select Layout</h4>
                 <div class="grid grid-cols-3 gap-2 mb-2">
                     <button id="btn-tpl-std" onclick="setTemplate('std')"
                         class="aspect-video border border-light/10 bg-light/5 flex flex-col items-center justify-center gap-1 group hover:border-accent hover:text-accent transition-all">
                         <div class="w-4 h-2 border border-light/30 group-hover:border-accent"></div>
-                        <span class="text-[8px] font-mono text-light/50 group-hover:text-accent">STD</span>
+                        <span class="text-[8px] font-mono text-light/50 group-hover:text-accent" data-i18n="panel.tpl_std">STD</span>
                     </button>
                     <button id="btn-tpl-min" onclick="setTemplate('min')"
                         class="aspect-video border border-light/10 bg-light/5 flex flex-col items-center justify-center gap-1 group hover:border-accent hover:text-accent transition-all config-active">
                         <div class="w-4 h-2 border border-light/30 group-hover:border-accent"></div>
-                        <span class="text-[8px] font-mono text-light/50 group-hover:text-accent">SWISS</span>
+                        <span class="text-[8px] font-mono text-light/50 group-hover:text-accent" data-i18n="panel.tpl_swiss">SWISS</span>
                     </button>
                     <button id="btn-tpl-grid" onclick="setTemplate('grid')"
                         class="aspect-video border border-light/10 bg-light/5 flex flex-col items-center justify-center gap-1 group hover:border-accent hover:text-accent transition-all">
                         <div class="w-4 h-2 border border-light/30 group-hover:border-accent"></div>
-                        <span class="text-[8px] font-mono text-light/50 group-hover:text-accent">TECH</span>
+                        <span class="text-[8px] font-mono text-light/50 group-hover:text-accent" data-i18n="panel.tpl_tech">TECH</span>
                     </button>
                 </div>
 
@@ -894,25 +897,25 @@
 
             <!-- SECTION 3: VISUAL THEME -->
             <div>
-                <h4 class="font-mono text-[10px] text-light/50 mb-3 uppercase tracking-widest">3. Visual Style</h4>
+                <h4 class="font-mono text-[10px] text-light/50 mb-3 uppercase tracking-widest" data-i18n="panel.section3">3. Visual Style</h4>
                 <div class="space-y-2">
                     <!-- Theme 1 -->
                     <button id="btn-theme-default" onclick="setTheme('default')"
                         class="w-full p-3 border border-light/10 flex items-center gap-4 hover:border-accent group transition-all bg-light/5">
                         <div class="w-6 h-6 bg-[#1A1A1B] border border-[#FF5F1F] rounded-full"></div>
-                        <span class="font-mono text-xs uppercase group-hover:text-accent">Safety Orange</span>
+                        <span class="font-mono text-xs uppercase group-hover:text-accent" data-i18n="panel.theme1">Safety Orange</span>
                     </button>
                     <!-- Theme 2 -->
                     <button id="btn-theme-nordic" onclick="setTheme('nordic')"
                         class="w-full p-3 border border-light/10 flex items-center gap-4 hover:border-accent group transition-all bg-light/5">
                         <div class="w-6 h-6 bg-[#0F172A] border border-[#38BDF8] rounded-full"></div>
-                        <span class="font-mono text-xs uppercase group-hover:text-accent">Nordic Blue</span>
+                        <span class="font-mono text-xs uppercase group-hover:text-accent" data-i18n="panel.theme2">Nordic Blue</span>
                     </button>
                     <!-- Theme 3 -->
                     <button id="btn-theme-nature" onclick="setTheme('nature')"
                         class="w-full p-3 border border-light/10 flex items-center gap-4 hover:border-accent group transition-all bg-light/5">
                         <div class="w-6 h-6 bg-[#1B2B1E] border border-[#D4A373] rounded-full"></div>
-                        <span class="font-mono text-xs uppercase group-hover:text-accent">Forest Copper</span>
+                        <span class="font-mono text-xs uppercase group-hover:text-accent" data-i18n="panel.theme3">Forest Copper</span>
                     </button>
                     <!-- Theme 4 -->
                     <button id="btn-theme-steel" onclick="setTheme('steel')"
@@ -920,13 +923,13 @@
                         <div class="w-6 h-6 bg-[#E5E5E5] border border-[#333] rounded-full relative overflow-hidden">
                             <div class="absolute inset-0 bg-[#333] w-1/2"></div>
                         </div>
-                        <span class="font-mono text-xs uppercase group-hover:text-accent">Steel Mono</span>
+                        <span class="font-mono text-xs uppercase group-hover:text-accent" data-i18n="panel.theme4">Steel Mono</span>
                     </button>
                 </div>
             </div>
         </div>
 
-        <p class="absolute bottom-8 left-8 text-[10px] text-light/20 font-mono">
+        <p class="absolute bottom-8 left-8 text-[10px] text-light/20 font-mono" data-i18n="panel.preview">
             PREVIEW MODE
         </p>
     </div>
@@ -953,8 +956,90 @@
                 title: "The Total Contractor",
                 images: { hero: "assets/hero_background_1767958362195.png", sust: "assets/sustainability_texture_1767958375058.png", team: "assets/ceo_portrait_nordic_1767961934691.png" },
                 i18n: {
-                    no: { "nav.process": "PROSESS", "nav.projects": "PROSJEKTER", "nav.contact": "KONTAKT", "hero.title": "VI<br>REALISERER", "hero.subtitle": "Fra første spadetak til nøkkelferdig hjem.", "core.title": "Fra Første Spadetak<br>Til Nøkkelferdig Drøm.", "core.desc": "Vi tar det fulle ansvaret. Én kontrakt, én kontaktperson.", "process.step1.title": "Konsultasjon", "process.step1.text": "Analyse av tomt og behov.", "process.step2.title": "Grunnarbeid", "process.step2.text": "Sprengning og fundamentering.", "process.step3.title": "Konstruksjon", "process.step3.text": "Reising av råbygg.", "process.step4.title": "Overlevering", "process.step4.text": "Nøkkelferdig leveranse.", "work.title": "Utvalgte<br>Prosjekter", "work.p1.title": "Villa Nordstrand", "work.p1.sub": "OSLO // BETONG", "sust.title": "Naturen<br>Vår Partner", "sust.text": "Massivtre reduserer klimaavtrykket.", "conf.title": "Start Prosjekt" },
-                    en: { "nav.process": "PROCESS", "nav.projects": "PROJECTS", "nav.contact": "CONTACT", "hero.title": "WE<br>REALIZE", "hero.subtitle": "From groundbreak to turnkey.", "core.title": "From First Spade<br>To Turnkey Dream.", "core.desc": "We take full responsibility. One contract, one contact.", "process.step1.title": "Consultation", "process.step1.text": "Site analysis.", "process.step2.title": "Groundwork", "process.step2.text": "Blasting and foundation.", "process.step3.title": "Structure", "process.step3.text": "Steel and timber.", "process.step4.title": "Handover", "process.step4.text": "Turnkey delivery.", "work.title": "Selected<br>Works", "work.p1.title": "Villa Nordstrand", "work.p1.sub": "OSLO // CONCRETE", "sust.title": "Nature<br>Partner", "sust.text": "CLT reduces carbon footprint.", "conf.title": "Start Project" }
+                    no: {
+                        "nav.logo": "Total.", "nav.process": "PROSESS", "nav.projects": "PROSJEKTER", "nav.contact": "KONTAKT",
+                        "hero.title": "VI<br>REALISERER", "hero.subtitle": "Fra første spadetak til nøkkelferdig hjem.", "hero.hq": "HK: 59.91° N", "hero.est": "EST. 1999",
+                        "scroll.text": "RULL FOR Å UTFORSKE",
+                        "section.manifesto": "(02) MANIFEST", "section.methodology": "(03) METODIKK", "section.impact": "(04) PÅVIRKNING", "section.leadership": "(05) LEDELSE", "section.archive": "(06) ARKIV", "section.initiate": "(06) INITIER",
+                        "core.title": "Fra Første Spadetak<br>Til Nøkkelferdig Drøm.", "core.desc": "Vi tar det fulle ansvaret. Én kontrakt, én kontaktperson.",
+                        "process.header": "Presisjon<br>Protokoll",
+                        "process.step1.label": "01 // ANALYSE", "process.step1.title": "Konsultasjon", "process.step1.text": "Analyse av tomt og behov.",
+                        "process.step2.label": "02 // FUNDAMENT", "process.step2.title": "Grunnarbeid", "process.step2.text": "Sprengning og fundamentering.",
+                        "process.step3.label": "03 // STRUKTUR", "process.step3.title": "Konstruksjon", "process.step3.text": "Reising av råbygg.",
+                        "process.step4.label": "04 // OVERLEVERING", "process.step4.title": "Overlevering", "process.step4.text": "Nøkkelferdig leveranse.",
+                        "sust.title": "Naturen<br>Vår Partner", "sust.text": "Massivtre reduserer klimaavtrykket.",
+                        "leader.name": "Jan-Erik Johansen", "leader.role": "CEO / DAGLIG LEDER", "leader.title": "Profesjonalitet<br>i Hvert Skritt.", "leader.quote": "\"Som totalentreprenør er vår jobb å fjerne usikkerhet. Vi leder prosjektet med militær presisjon og et kunstnerøye for detaljer.\"",
+                        "work.title": "Utvalgte<br>Prosjekter", "work.archive_link": "SE FULLT ARKIV ->",
+                        "work.p1.title": "Villa Nordstrand", "work.p1.sub": "OSLO // BETONG",
+                        "work.p2.title": "Geilo Lodge", "work.p2.sub": "GEILO // TRE",
+                        "work.p3.title": "Fjord Retreat", "work.p3.sub": "ALESUND // GLASS",
+                        "work.p4.title": "Urban Loft", "work.p4.sub": "BERGEN // MURSTEIN",
+                        "conf.title": "Start Prosjekt",
+                        "conf.status1": "> SYSTEM: ONLINE", "conf.status2": "> KRYPTERING: SIKKER", "conf.status3": "> RESPONS: < 24T",
+                        "conf.step1_prompt": "VELG PROSJEKTTYPE_", "conf.type_residential": "Bolig", "conf.type_cabin": "Hytte / Fritid",
+                        "conf.step2_prompt": "BUDSJETTESTIMAT_", "conf.budget_min": "MIN (5M)", "conf.budget_max": "MAKS (50M+)", "conf.confirm_btn": "BEKREFT & FORTSETT ->",
+                        "conf.step3_prompt": "KONTAKTPROTOKOLL_", "conf.label_name": "Fullt Navn", "conf.placeholder_name": "FULLT NAVN", "conf.label_email": "E-postadresse", "conf.placeholder_email": "E-POSTADRESSE", "conf.label_phone": "Telefonnummer", "conf.placeholder_phone": "TELEFONNUMMER", "conf.submit_btn": "SEND FORESPØRSEL",
+                        "conf.success_title": "OVERFØRING MOTTATT.", "conf.success_text": "Våre ingeniører vil evaluere dataene og ta kontakt innen 24 timer.", "conf.reset_btn": "TILBAKESTILL SIGNAL",
+                        "cta.free": "GRATIS", "cta.inspection": "BEFARING",
+                        "footer.logo": "Total.", "footer.est": "EST. 1999", "footer.office_title": "Kontor", "footer.office_address1": "Dronning Eufemias gate 8", "footer.office_address2": "0191 Oslo, Norge", "footer.connect_title": "Kontakt", "footer.legal_title": "Juridisk", "footer.legal_org": "Org. nr: 931 930 202 MVA", "footer.legal_privacy": "Personvern", "footer.copyright": "© 2026 Totalentreprenør AS. Alle systemer nominelle.",
+                        "panel.title": "Intern Konfigurasjon", "panel.section1": "1. Velg Virksomhet", "panel.demo1": "TOTALENTREPRENØREN", "panel.demo2": "SERVICESPESIALIST", "panel.demo3": "FINISHEKSPERT", "panel.section2": "2. Velg Layout", "panel.tpl_std": "STD", "panel.tpl_swiss": "SWISS", "panel.tpl_tech": "TECH", "panel.section3": "3. Visuell Stil", "panel.theme1": "Sikkerhetsoransje", "panel.theme2": "Nordisk Blå", "panel.theme3": "Skogskobber", "panel.theme4": "Stål Mono", "panel.preview": "FORHÅNDSVISNINGSMODUS"
+                    },
+                    en: {
+                        "nav.logo": "Total.", "nav.process": "PROCESS", "nav.projects": "PROJECTS", "nav.contact": "CONTACT",
+                        "hero.title": "WE<br>REALIZE", "hero.subtitle": "From groundbreak to turnkey.", "hero.hq": "HQ: 59.91° N", "hero.est": "EST. 1999",
+                        "scroll.text": "SCROLL TO EXPLORE",
+                        "section.manifesto": "(02) MANIFESTO", "section.methodology": "(03) METHODOLOGY", "section.impact": "(04) IMPACT", "section.leadership": "(05) LEADERSHIP", "section.archive": "(06) ARCHIVE", "section.initiate": "(06) INITIATE",
+                        "core.title": "From First Spade<br>To Turnkey Dream.", "core.desc": "We take full responsibility. One contract, one contact.",
+                        "process.header": "Precision<br>Protocol",
+                        "process.step1.label": "01 // ANALYSIS", "process.step1.title": "Consultation", "process.step1.text": "Site analysis.",
+                        "process.step2.label": "02 // FOUNDATION", "process.step2.title": "Groundwork", "process.step2.text": "Blasting and foundation.",
+                        "process.step3.label": "03 // STRUCTURE", "process.step3.title": "Structure", "process.step3.text": "Steel and timber.",
+                        "process.step4.label": "04 // HANDOVER", "process.step4.title": "Handover", "process.step4.text": "Turnkey delivery.",
+                        "sust.title": "Nature<br>Partner", "sust.text": "CLT reduces carbon footprint.",
+                        "leader.name": "Jan-Erik Johansen", "leader.role": "CEO / MANAGING DIRECTOR", "leader.title": "Professionalism<br>in Every Step.", "leader.quote": "\"As a total contractor, our job is to remove uncertainty. We lead the project with military precision and an artist's eye for detail.\"",
+                        "work.title": "Selected<br>Works", "work.archive_link": "VIEW FULL ARCHIVE ->",
+                        "work.p1.title": "Villa Nordstrand", "work.p1.sub": "OSLO // CONCRETE",
+                        "work.p2.title": "Geilo Lodge", "work.p2.sub": "GEILO // TIMBER",
+                        "work.p3.title": "Fjord Retreat", "work.p3.sub": "ALESUND // GLASS",
+                        "work.p4.title": "Urban Loft", "work.p4.sub": "BERGEN // BRICK",
+                        "conf.title": "Start Project",
+                        "conf.status1": "> SYSTEM: ONLINE", "conf.status2": "> ENCRYPTION: SECURE", "conf.status3": "> RESPONSE: < 24H",
+                        "conf.step1_prompt": "SELECT PROJECT TYPE_", "conf.type_residential": "Residential", "conf.type_cabin": "Cabin / Leisure",
+                        "conf.step2_prompt": "BUDGET ESTIMATE_", "conf.budget_min": "MIN (5M)", "conf.budget_max": "MAX (50M+)", "conf.confirm_btn": "CONFIRM & PROCEED ->",
+                        "conf.step3_prompt": "CONTACT PROTOCOL_", "conf.label_name": "Full Name", "conf.placeholder_name": "FULL NAME", "conf.label_email": "Email Address", "conf.placeholder_email": "EMAIL ADDRESS", "conf.label_phone": "Phone Number", "conf.placeholder_phone": "PHONE NUMBER", "conf.submit_btn": "TRANSMIT REQUEST",
+                        "conf.success_title": "TRANSMISSION RECEIVED.", "conf.success_text": "Our engineers will evaluate the data and establish contact within 24 hours.", "conf.reset_btn": "RESET SIGNAL",
+                        "cta.free": "FREE", "cta.inspection": "INSPECTION",
+                        "footer.logo": "Total.", "footer.est": "EST. 1999", "footer.office_title": "Office", "footer.office_address1": "Dronning Eufemias gate 8", "footer.office_address2": "0191 Oslo, Norway", "footer.connect_title": "Connect", "footer.legal_title": "Legal", "footer.legal_org": "Org. nr: 931 930 202 MVA", "footer.legal_privacy": "Privacy Policy", "footer.copyright": "© 2026 Totalentreprenør AS. All systems nominal.",
+                        "panel.title": "Internal Config", "panel.section1": "1. Select Business", "panel.demo1": "THE TOTAL CONTRACTOR", "panel.demo2": "SERVICE SPECIALIST", "panel.demo3": "FINISHING EXPERT", "panel.section2": "2. Select Layout", "panel.tpl_std": "STD", "panel.tpl_swiss": "SWISS", "panel.tpl_tech": "TECH", "panel.section3": "3. Visual Style", "panel.theme1": "Safety Orange", "panel.theme2": "Nordic Blue", "panel.theme3": "Forest Copper", "panel.theme4": "Steel Mono", "panel.preview": "PREVIEW MODE"
+                    },
+                    pl: {
+                        "nav.logo": "Total.", "nav.process": "PROCES", "nav.projects": "PROJEKTY", "nav.contact": "KONTAKT",
+                        "hero.title": "REALIZUJEMY", "hero.subtitle": "Od wykopu do domu pod klucz.", "hero.hq": "SZ: 59.91° N", "hero.est": "ZAŁOŻONO 1999",
+                        "scroll.text": "PRZEWIŃ ABY ODKRYĆ",
+                        "section.manifesto": "(02) MANIFEST", "section.methodology": "(03) METODOLOGIA", "section.impact": "(04) WPŁYW", "section.leadership": "(05) PRZYWÓDZTWO", "section.archive": "(06) ARCHIWUM", "section.initiate": "(06) ROZPOCZNIJ",
+                        "core.title": "Od Pierwszej Łopaty<br>Do Gotowego Domu.", "core.desc": "Bierzemy pełną odpowiedzialność. Jedna umowa, jeden kontakt.",
+                        "process.header": "Protokół<br>Precyzji",
+                        "process.step1.label": "01 // ANALIZA", "process.step1.title": "Konsultacja", "process.step1.text": "Analiza działki i potrzeb.",
+                        "process.step2.label": "02 // FUNDAMENTY", "process.step2.title": "Fundamenty", "process.step2.text": "Wykopy i fundamentowanie.",
+                        "process.step3.label": "03 // KONSTRUKCJA", "process.step3.title": "Konstrukcja", "process.step3.text": "Stal i drewno.",
+                        "process.step4.label": "04 // ODBIÓR", "process.step4.title": "Odbiór", "process.step4.text": "Oddanie pod klucz.",
+                        "sust.title": "Natura<br>Nasz Partner", "sust.text": "CLT redukuje ślad węglowy.",
+                        "leader.name": "Jan-Erik Johansen", "leader.role": "CEO / DYREKTOR ZARZĄDZAJĄCY", "leader.title": "Profesjonalizm<br>w Każdym Kroku.", "leader.quote": "\"Jako generalny wykonawca naszym zadaniem jest eliminacja niepewności. Prowadzimy projekt z wojskową precyzją i artystycznym okiem do detalu.\"",
+                        "work.title": "Wybrane<br>Realizacje", "work.archive_link": "ZOBACZ PEŁNE ARCHIWUM ->",
+                        "work.p1.title": "Villa Nordstrand", "work.p1.sub": "OSLO // BETON",
+                        "work.p2.title": "Geilo Lodge", "work.p2.sub": "GEILO // DREWNO",
+                        "work.p3.title": "Fjord Retreat", "work.p3.sub": "ALESUND // SZKŁO",
+                        "work.p4.title": "Urban Loft", "work.p4.sub": "BERGEN // CEGŁA",
+                        "conf.title": "Rozpocznij Projekt",
+                        "conf.status1": "> SYSTEM: ONLINE", "conf.status2": "> SZYFROWANIE: BEZPIECZNE", "conf.status3": "> ODPOWIEDŹ: < 24H",
+                        "conf.step1_prompt": "WYBIERZ TYP PROJEKTU_", "conf.type_residential": "Mieszkalny", "conf.type_cabin": "Domek / Wypoczynek",
+                        "conf.step2_prompt": "SZACUNKOWY BUDŻET_", "conf.budget_min": "MIN (5M)", "conf.budget_max": "MAKS (50M+)", "conf.confirm_btn": "POTWIERDŹ I KONTYNUUJ ->",
+                        "conf.step3_prompt": "PROTOKÓŁ KONTAKTOWY_", "conf.label_name": "Pełne Imię i Nazwisko", "conf.placeholder_name": "PEŁNE IMIĘ I NAZWISKO", "conf.label_email": "Adres E-mail", "conf.placeholder_email": "ADRES E-MAIL", "conf.label_phone": "Numer Telefonu", "conf.placeholder_phone": "NUMER TELEFONU", "conf.submit_btn": "WYŚLIJ ZAPYTANIE",
+                        "conf.success_title": "TRANSMISJA ODEBRANA.", "conf.success_text": "Nasi inżynierowie ocenią dane i nawiążą kontakt w ciągu 24 godzin.", "conf.reset_btn": "ZRESETUJ SYGNAŁ",
+                        "cta.free": "DARMOWA", "cta.inspection": "INSPEKCJA",
+                        "footer.logo": "Total.", "footer.est": "ZAŁOŻONO 1999", "footer.office_title": "Biuro", "footer.office_address1": "Dronning Eufemias gate 8", "footer.office_address2": "0191 Oslo, Norwegia", "footer.connect_title": "Kontakt", "footer.legal_title": "Prawne", "footer.legal_org": "Nr org.: 931 930 202 MVA", "footer.legal_privacy": "Polityka Prywatności", "footer.copyright": "© 2026 Totalentreprenør AS. Wszystkie systemy nominalne.",
+                        "panel.title": "Konfiguracja Wewnętrzna", "panel.section1": "1. Wybierz Firmę", "panel.demo1": "GENERALNY WYKONAWCA", "panel.demo2": "SPECJALISTA SERWISU", "panel.demo3": "EKSPERT WYKOŃCZENIOWY", "panel.section2": "2. Wybierz Layout", "panel.tpl_std": "STD", "panel.tpl_swiss": "SWISS", "panel.tpl_tech": "TECH", "panel.section3": "3. Styl Wizualny", "panel.theme1": "Pomarańcz Ostrzegawczy", "panel.theme2": "Nordycki Niebieski", "panel.theme3": "Leśna Miedź", "panel.theme4": "Stal Mono", "panel.preview": "TRYB PODGLĄDU"
+                    }
                 }
             },
             demo2: {
@@ -962,7 +1047,8 @@
                 images: { hero: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=2669&auto=format&fit=crop", sust: "https://images.unsplash.com/photo-1581094794329-c8112a89af12", team: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7" },
                 i18n: {
                     no: { "nav.process": "TJENESTER", "nav.projects": "REFERANSER", "nav.contact": "VAKT 24/7", "hero.title": "AKUTT<br>BISTAND", "hero.subtitle": "Vi løser problemer umiddelbart.", "core.title": "Sikkerhet, Service<br>og Garanti.", "core.desc": "Din trygghet i hverdagen. Rørlegger og Elektriker på dagen.", "process.step1.title": "Henvendelse", "process.step1.text": "Ring vår vakttelefon.", "process.step2.title": "Utrykning", "process.step2.text": "Vi er på stedet raskt.", "process.step3.title": "Utbedring", "process.step3.text": "Feilretting etter forskrift.", "process.step4.title": "Dokumentasjon", "process.step4.text": "Digital samsvarserklæring.", "work.title": "Siste<br>Oppdrag", "work.p1.title": "Total Rehab", "work.p1.sub": "BAD // RØRLEGGER", "sust.title": "Smart<br>Energi", "sust.text": "Vi reduserer strømregningen din.", "conf.title": "Bestill Service" },
-                    en: { "nav.process": "SERVICES", "nav.projects": "REFERENCES", "nav.contact": "24/7 SUPPORT", "hero.title": "EXPERT<br>SERVICE", "hero.subtitle": "Instant problem solving.", "core.title": "Safety, Service<br>& Warranty.", "core.desc": "Your daily security. Plumbers and Electricians on call.", "process.step1.title": "Call Us", "process.step1.text": "24/7 hotline.", "process.step2.title": "Dispatch", "process.step2.text": "We arrive quickly.", "process.step3.title": "Repair", "process.step3.text": "Fixed to code.", "process.step4.title": "Docs", "process.step4.text": "Digital certification.", "work.title": "Recent<br>Jobs", "work.p1.title": "Full Rehab", "work.p1.sub": "BATH // PLUMBING", "sust.title": "Smart<br>Energy", "sust.text": "Lowering your power bill.", "conf.title": "Order Service" }
+                    en: { "nav.process": "SERVICES", "nav.projects": "REFERENCES", "nav.contact": "24/7 SUPPORT", "hero.title": "EXPERT<br>SERVICE", "hero.subtitle": "Instant problem solving.", "core.title": "Safety, Service<br>& Warranty.", "core.desc": "Your daily security. Plumbers and Electricians on call.", "process.step1.title": "Call Us", "process.step1.text": "24/7 hotline.", "process.step2.title": "Dispatch", "process.step2.text": "We arrive quickly.", "process.step3.title": "Repair", "process.step3.text": "Fixed to code.", "process.step4.title": "Docs", "process.step4.text": "Digital certification.", "work.title": "Recent<br>Jobs", "work.p1.title": "Full Rehab", "work.p1.sub": "BATH // PLUMBING", "sust.title": "Smart<br>Energy", "sust.text": "Lowering your power bill.", "conf.title": "Order Service" },
+                    pl: { "nav.process": "USŁUGI", "nav.projects": "REFERENCJE", "nav.contact": "WSPARCIE 24/7", "hero.title": "SERWIS<br>EKSPERCKI", "hero.subtitle": "Natychmiastowe rozwiązanie problemów.", "core.title": "Bezpieczeństwo, Serwis<br>i Gwarancja.", "core.desc": "Twoje bezpieczeństwo na co dzień. Hydraulicy i Elektrycy na telefon.", "process.step1.title": "Zgłoszenie", "process.step1.text": "Infolinia 24/7.", "process.step2.title": "Wyjazd", "process.step2.text": "Szybko docieramy na miejsce.", "process.step3.title": "Naprawa", "process.step3.text": "Zgodnie z przepisami.", "process.step4.title": "Dokumentacja", "process.step4.text": "Cyfrowa certyfikacja.", "work.title": "Ostatnie<br>Zlecenia", "work.p1.title": "Pełny Remont", "work.p1.sub": "ŁAZIENKA // HYDRAULIKA", "sust.title": "Inteligentna<br>Energia", "sust.text": "Obniżamy Twój rachunek za prąd.", "conf.title": "Zamów Serwis" }
                 }
             },
             demo3: {
@@ -970,13 +1056,33 @@
                 images: { hero: "https://images.unsplash.com/photo-1562663474-6cbb3eaa4d14?q=80&w=2574&auto=format&fit=crop", sust: "https://images.unsplash.com/photo-1594818379496-da1e345b0ded", team: "https://images.unsplash.com/photo-1581092160562-40aa08e78837" },
                 i18n: {
                     no: { "nav.process": "METODE", "nav.projects": "GALLERI", "nav.contact": "BEFARING", "hero.title": "REN<br>PERFEKSJON", "hero.subtitle": "Detaljene skaper helheten.", "core.title": "Det Ligger i<br>Detaljene.", "core.desc": "Spesialister på maling, mikrosement og eksklusive overflater.", "process.step1.title": "Forarbeid", "process.step1.text": "70% av jobben.", "process.step2.title": "Struktur", "process.step2.text": "Sparkling og duk.", "process.step3.title": "Pigment", "process.step3.text": "Nøyaktig fargeblanding.", "process.step4.title": "Finish", "process.step4.text": "Perfekt resultat.", "work.title": "Utvalgte<br>Rom", "work.p1.title": "Mikrosement Bad", "work.p1.sub": "OSLO // BETONG LOOK", "sust.title": "Levende<br>Farger", "sust.text": "Miljøvennlige pigmenter.", "conf.title": "Nytt Uttrykk" },
-                    en: { "nav.process": "METHOD", "nav.projects": "GALLERY", "nav.contact": "INQUIRY", "hero.title": "PURE<br>PERFECTION", "hero.subtitle": "Details make the whole.", "core.title": "It's All in<br>The Details.", "core.desc": "Specialists in paint, microcement and exclusive surfaces.", "process.step1.title": "Prep", "process.step1.text": "70% of the work.", "process.step2.title": "Structure", "process.step2.text": "Plastering.", "process.step3.title": "Pigment", "process.step3.text": "Exact color mixing.", "process.step4.title": "Finish", "process.step4.text": "Perfect results.", "work.title": "Selected<br>Rooms", "work.p1.title": "Microcement Bath", "work.p1.sub": "OSLO // CONCRETE LOOK", "sust.title": "Living<br>Colors", "sust.text": "Eco-friendly pigments.", "conf.title": "New Look" }
+                    en: { "nav.process": "METHOD", "nav.projects": "GALLERY", "nav.contact": "INQUIRY", "hero.title": "PURE<br>PERFECTION", "hero.subtitle": "Details make the whole.", "core.title": "It's All in<br>The Details.", "core.desc": "Specialists in paint, microcement and exclusive surfaces.", "process.step1.title": "Prep", "process.step1.text": "70% of the work.", "process.step2.title": "Structure", "process.step2.text": "Plastering.", "process.step3.title": "Pigment", "process.step3.text": "Exact color mixing.", "process.step4.title": "Finish", "process.step4.text": "Perfect results.", "work.title": "Selected<br>Rooms", "work.p1.title": "Microcement Bath", "work.p1.sub": "OSLO // CONCRETE LOOK", "sust.title": "Living<br>Colors", "sust.text": "Eco-friendly pigments.", "conf.title": "New Look" },
+                    pl: { "nav.process": "METODA", "nav.projects": "GALERIA", "nav.contact": "WYCENA", "hero.title": "CZYSTA<br>PERFEKCJA", "hero.subtitle": "Szczegóły tworzą całość.", "core.title": "To Wszystko Tkwi<br>w Szczegółach.", "core.desc": "Specjaliści od malowania, mikrocementu i ekskluzywnych powierzchni.", "process.step1.title": "Przygotowanie", "process.step1.text": "70% pracy.", "process.step2.title": "Struktura", "process.step2.text": "Tynkowanie.", "process.step3.title": "Pigment", "process.step3.text": "Precyzyjne mieszanie kolorów.", "process.step4.title": "Wykończenie", "process.step4.text": "Perfekcyjny rezultat.", "work.title": "Wybrane<br>Wnętrza", "work.p1.title": "Łazienka Mikrocement", "work.p1.sub": "OSLO // BETON", "sust.title": "Żywe<br>Kolory", "sust.text": "Ekologiczne pigmenty.", "conf.title": "Nowy Wygląd" }
                 }
             }
         };
 
         let currentLang = 'no';
         let currentDemo = 'demo1';
+
+        // Helper: Get language from URL params > localStorage > default
+        function getInitialLanguage() {
+            // 1. Check URL query param (?lang=pl)
+            const urlParams = new URLSearchParams(window.location.search);
+            const urlLang = urlParams.get('lang');
+            if (urlLang && ['no', 'en', 'pl'].includes(urlLang)) {
+                return urlLang;
+            }
+
+            // 2. Check localStorage
+            const storedLang = localStorage.getItem('lang');
+            if (storedLang && ['no', 'en', 'pl'].includes(storedLang)) {
+                return storedLang;
+            }
+
+            // 3. Default
+            return 'no';
+        }
 
         // 2. CORE LOGIC (Load, Theme, Lang)
         function loadDemo(demoId) {
@@ -1015,6 +1121,11 @@
                 const key = el.getAttribute('data-i18n');
                 if (i18n[key]) el.innerHTML = i18n[key];
             });
+            // Handle placeholder translations
+            document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+                const key = el.getAttribute('data-i18n-placeholder');
+                if (i18n[key]) el.placeholder = i18n[key];
+            });
         }
 
         function setLanguage(lang) {
@@ -1022,6 +1133,7 @@
             updateText();
             document.getElementById('lang-no').classList.toggle('underline', lang === 'no');
             document.getElementById('lang-en').classList.toggle('underline', lang === 'en');
+            document.getElementById('lang-pl').classList.toggle('underline', lang === 'pl');
             localStorage.setItem('lang', lang);
         }
 
@@ -1179,14 +1291,13 @@
                 d = 'demo1';
                 localStorage.setItem('demo', 'demo1');
             }
-            const l = localStorage.getItem('lang') || 'no';
+            const l = getInitialLanguage();
             const t = localStorage.getItem('theme') || 'default';
 
-            // In Swiss mode, default to 'default (Orange)' if none set, or respect choice
-            if (l) {
-                currentLang = l;
-                setLanguage(l);
-            }
+            // Set language (now respects URL param)
+            currentLang = l;
+            setLanguage(l);
+
             loadDemo(d);
             setTheme(t);
         });

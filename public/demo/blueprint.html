@@ -191,7 +191,7 @@
         class="fixed top-0 w-full z-50 bg-paper/90 backdrop-blur border-b border-blueprint/10 px-8 py-6 flex justify-between items-center">
         <div class="flex items-center gap-2">
             <div class="w-3 h-3 bg-blueprint"></div>
-            <span class="font-mono text-sm tracking-widest font-bold">TOTAL_PLAN</span>
+            <span class="font-mono text-sm tracking-widest font-bold" data-i18n="brand">TOTAL_PLAN</span>
         </div>
         <div class="hidden md:flex gap-12 font-mono text-xs">
             <a href="#hero" class="hover:underline underline-offset-4 decoration-blueprint" data-i18n="nav_1">01.0 //
@@ -208,6 +208,8 @@
                 <button id="lang-no" onclick="App.setLanguage('no')" class="hover:text-blueprint opacity-50">NO</button>
                 <span class="opacity-20">|</span>
                 <button id="lang-en" onclick="App.setLanguage('en')" class="hover:text-blueprint opacity-50">EN</button>
+                <span class="opacity-20">|</span>
+                <button id="lang-pl" onclick="App.setLanguage('pl')" class="hover:text-blueprint opacity-50">PL</button>
             </div>
             <!-- Removed DWG.SETTINGS button to standardize floating icon -->
             <div class="w-4"></div>
@@ -246,7 +248,7 @@
         </div>
 
         <div class="relative z-10 text-center">
-            <span class="font-mono text-xs bg-blueprint text-white px-2 py-1 mb-6 inline-block">SCALE 1:1</span>
+            <span class="font-mono text-xs bg-blueprint text-white px-2 py-1 mb-6 inline-block" data-i18n="scale">SCALE 1:1</span>
 
             <h1 class="text-7xl md:text-9xl font-light tracking-tighter mb-4 text-dark reveal-text" data-i18n="hero_h1">
                 24/7 <span class="font-bold text-blueprint">AKUTT</span>VAKT
@@ -283,7 +285,7 @@
                     class="w-full shadow-[20px_20px_0px_rgba(0,87,255,0.1)] border border-blueprint/10 grayscale mix-blend-multiply opacity-80">
                 <!-- Overlay Grids -->
                 <div class="absolute inset-0 border border-blueprint/20 m-4"></div>
-                <div class="absolute -bottom-4 -right-4 bg-blueprint text-white text-xs font-mono p-2">FIG 2.4 -
+                <div class="absolute -bottom-4 -right-4 bg-blueprint text-white text-xs font-mono p-2" data-i18n="fig_struct">FIG 2.4 -
                     STRUCTURE</div>
             </div>
 
@@ -370,7 +372,7 @@
                 <!-- Center Core -->
                 <div
                     class="absolute bg-blueprint/10 w-24 h-24 rounded-full flex items-center justify-center border border-blueprint/50 animate-pulse">
-                    <span class="text-blueprint font-mono text-xs">SCANNING</span>
+                    <span class="text-blueprint font-mono text-xs" data-i18n="scanning">SCANNING</span>
                 </div>
 
                 <!-- Pulsing Data Nodes -->
@@ -459,7 +461,7 @@
 
             <!-- Label -->
             <div class="absolute top-4 left-4 bg-white/80 backdrop-blur border border-blueprint/20 px-3 py-1">
-                <span class="font-mono text-[10px] text-blueprint font-bold tracking-widest">SECTOR_04: ACTIVE</span>
+                <span class="font-mono text-[10px] text-blueprint font-bold tracking-widest" data-i18n="sector_active">SECTOR_04: ACTIVE</span>
             </div>
         </div>
 
@@ -468,19 +470,19 @@
             class="absolute bottom-8 right-8 bg-white/90 backdrop-blur border border-blueprint/20 p-6 shadow-lg max-w-xs">
             <h4 class="font-mono text-xs text-blueprint font-bold mb-2 flex items-center gap-2">
                 <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                LIVE_COVERAGE
+                <span data-i18n="live_coverage">LIVE_COVERAGE</span>
             </h4>
             <div class="space-y-2 font-mono text-[10px] text-dark/70">
                 <div class="flex justify-between border-b border-blueprint/10 py-1">
-                    <span>UNITS_ACTIVE</span>
+                    <span data-i18n="units_active">UNITS_ACTIVE</span>
                     <span class="font-bold">14</span>
                 </div>
                 <div class="flex justify-between border-b border-blueprint/10 py-1">
-                    <span>AVG_RESPONSE</span>
+                    <span data-i18n="avg_response">AVG_RESPONSE</span>
                     <span class="font-bold">12m 30s</span>
                 </div>
                 <div class="flex justify-between py-1">
-                    <span>SIGNAL_STR</span>
+                    <span data-i18n="signal_str">SIGNAL_STR</span>
                     <span class="font-bold">98.4%</span>
                 </div>
             </div>
@@ -510,7 +512,7 @@
                     <p class="mb-4 italic" data-i18n="ref_1">"Fantastisk oppfølging fra start til slutt. Total
                         Entreprenør holdt
                         tidsfristen og leverte uten feil."</p>
-                    <div class="text-[10px] text-blueprint uppercase tracking-wider">
+                    <div class="text-[10px] text-blueprint uppercase tracking-wider" data-i18n="ref_1_author">
                         — Anders H., Prosjektleder Obos
                     </div>
                 </div>
@@ -518,7 +520,7 @@
                     <p class="mb-4 italic" data-i18n="ref_2">"Vi bruker dem fast på alle våre næringsbygg.
                         Profesjonelle, dokumenterte og
                         alltid tilgjengelig."</p>
-                    <div class="text-[10px] text-blueprint uppercase tracking-wider">
+                    <div class="text-[10px] text-blueprint uppercase tracking-wider" data-i18n="ref_2_author">
                         — Siri K., Eiendomsdrift AS
                     </div>
                 </div>
@@ -533,7 +535,7 @@
 
         <div class="container mx-auto max-w-4xl bg-white border border-blueprint/20 shadow-xl relative z-10 p-12">
             <div
-                class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-blueprint text-white px-4 py-1 font-mono text-xs">
+                class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-blueprint text-white px-4 py-1 font-mono text-xs" data-i18n="form_id">
                 FORM_ID: REQ-001
             </div>
 
@@ -562,14 +564,14 @@
                             FIRMA</label>
                         <input type="text"
                             class="w-full border-b border-blueprint/20 py-2 focus:outline-none focus:border-blueprint transition-colors font-mono text-sm bg-transparent"
-                            placeholder="Navn / Foretak" data-i18n-ph="ph_name">
+                            placeholder="Name / Company" data-i18n-ph="ph_name">
                     </div>
                     <div>
                         <label class="block font-mono text-[10px] mb-1 text-blueprint"
                             data-i18n="form_coord">PROJEKTADRESSE</label>
                         <input type="text"
                             class="w-full border-b border-blueprint/20 py-2 focus:outline-none focus:border-blueprint transition-colors font-mono text-sm bg-transparent"
-                            placeholder="Adresse" data-i18n-ph="ph_addr">
+                            placeholder="Address" data-i18n-ph="ph_addr">
                     </div>
 
                     <!-- File Upload Blueprint Style -->
@@ -596,7 +598,7 @@
 
             <div class="container mx-auto relative z-10 grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div class="space-y-4">
-                    <div class="text-2xl font-bold tracking-tighter uppercase text-dark">
+                    <div class="text-2xl font-bold tracking-tighter uppercase text-dark" data-i18n="ft_brand">
                         TOTAL<span class="text-blueprint">.ENT</span>
                     </div>
                     <p class="font-mono text-xs text-dark/60" data-i18n="ft_desc">
@@ -604,7 +606,7 @@
                         License: NO-9942
                     </p>
                     <div
-                        class="font-mono text-[10px] text-blueprint border border-blueprint/20 px-2 py-1 inline-block bg-white">
+                        class="font-mono text-[10px] text-blueprint border border-blueprint/20 px-2 py-1 inline-block bg-white" data-i18n="ft_org">
                         ORG.NR: 994 221 112 MVA
                     </div>
                 </div>
@@ -635,8 +637,8 @@
 
                 <div class="font-mono text-xs text-dark/70">
                     <h4 class="text-blueprint font-bold mb-4" data-i18n="ft_hq">[ HQ_DETAILS ]</h4>
-                    <p class="text-lg text-blueprint mb-2">99 44 22 11</p>
-                    <p class="mb-4">Oslo, Norway</p>
+                    <p class="text-lg text-blueprint mb-2" data-i18n="ft_phone">99 44 22 11</p>
+                    <p class="mb-4" data-i18n="ft_location">Oslo, Norway</p>
                     <div class="flex gap-2">
                         <a href="#"
                             class="px-2 py-1 border border-blueprint/20 hover:bg-blueprint hover:text-white transition-colors">FB</a>
@@ -646,7 +648,7 @@
                 </div>
             </div>
             <div
-                class="container mx-auto mt-12 pt-8 border-t border-blueprint/10 text-center font-mono text-[10px] text-dark/40">
+                class="container mx-auto mt-12 pt-8 border-t border-blueprint/10 text-center font-mono text-[10px] text-dark/40" data-i18n="ft_copy">
                 © 2026 TOTAL ENTREPRENØR AS. ALL RIGHTS RESERVED.
             </div>
         </footer>
@@ -655,7 +657,7 @@
         <div id="theme-panel" style="background-color: #0F172A; color: white;"
             class="fixed top-0 right-0 h-full w-80 bg-[#0F172A] border-l border-white/10 z-[1000] transform translate-x-full transition-transform duration-500 ease-out p-8 shadow-2xl">
             <div class="flex justify-between items-center mb-8 border-b border-white/20 pb-4">
-                <h3 class="font-mono text-sm uppercase tracking-widest text-white">Internal Config</h3>
+                <h3 class="font-mono text-sm uppercase tracking-widest text-white" data-i18n="cfg_title">Internal Config</h3>
                 <button onclick="App.toggleThemePanel()" class="text-white/50 hover:text-white">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
@@ -668,29 +670,29 @@
 
                 <!-- SECTION 1: BUSINESS TYPE (DEMO) -->
                 <div>
-                    <h4 class="font-mono text-[10px] text-white/50 mb-3 uppercase tracking-widest">1. Select Business
+                    <h4 class="font-mono text-[10px] text-white/50 mb-3 uppercase tracking-widest" data-i18n="cfg_business">1. Select Business
                     </h4>
                     <div class="flex flex-col gap-2">
                         <button id="btn-demo-demo1" onclick="App.setDemo('demo1')"
                             class="config-btn text-left px-4 py-3 text-xs font-mono text-white transition-all flex justify-between items-center group">
-                            <span>THE TOTAL CONTRACTOR</span>
+                            <span data-i18n="cfg_biz_1">THE TOTAL CONTRACTOR</span>
                             <span class="opacity-0 group-hover:opacity-100 text-white transition-opacity">→</span>
                         </button>
                         <button id="btn-demo-demo2" onclick="App.setDemo('demo2')"
                             class="config-btn text-left px-4 py-3 text-xs font-mono text-white transition-all flex justify-between items-center group config-active">
-                            <span>SERVICE SPECIALIST</span>
+                            <span data-i18n="cfg_biz_2">SERVICE SPECIALIST</span>
                             <span class="opacity-0 group-hover:opacity-100 text-white transition-opacity">→</span>
                         </button>
                         <button id="btn-demo-demo3" onclick="App.setDemo('demo3')"
                             class="config-btn text-left px-4 py-3 text-xs font-mono text-white transition-all flex justify-between items-center group">
-                            <span>FINISHING EXPERT</span>
+                            <span data-i18n="cfg_biz_3">FINISHING EXPERT</span>
                             <span class="opacity-0 group-hover:opacity-100 text-white transition-opacity">→</span>
                         </button>
                     </div>
                 </div>
 
                 <div>
-                    <h4 class="font-mono text-[10px] text-white/50 mb-3 uppercase tracking-widest">2. Select Layout</h4>
+                    <h4 class="font-mono text-[10px] text-white/50 mb-3 uppercase tracking-widest" data-i18n="cfg_layout">2. Select Layout</h4>
                     <div class="grid grid-cols-3 gap-2 mb-2">
                         <button id="btn-tpl-term" onclick="App.setTemplate('term')"
                             class="config-btn aspect-video flex flex-col items-center justify-center gap-1 group transition-all">
@@ -711,7 +713,7 @@
 
                     <!-- SECTION 3: VISUAL THEME -->
                     <div>
-                        <h4 class="font-mono text-[10px] text-white/50 mb-3 uppercase tracking-widest">3. Visual Style
+                        <h4 class="font-mono text-[10px] text-white/50 mb-3 uppercase tracking-widest" data-i18n="cfg_theme">3. Visual Style
                         </h4>
                         <div class="space-y-2">
                             <!-- Theme 1 -->
@@ -720,7 +722,7 @@
                                 <div
                                     class="w-6 h-6 bg-[#FF5F1F] rounded-full border-2 border-[#1A1A1B] shadow-[0_0_10px_rgba(255,95,31,0.3)]">
                                 </div>
-                                <span class="font-mono text-xs uppercase text-white group-hover:text-white">Safety
+                                <span class="font-mono text-xs uppercase text-white group-hover:text-white" data-i18n="theme_1">Safety
                                     Orange</span>
                             </button>
                             <!-- Theme 2 -->
@@ -729,7 +731,7 @@
                                 <div
                                     class="w-6 h-6 bg-[#38BDF8] rounded-full border-2 border-[#0F172A] shadow-[0_0_10px_rgba(56,189,248,0.3)]">
                                 </div>
-                                <span class="font-mono text-xs uppercase text-white group-hover:text-white">Nordic
+                                <span class="font-mono text-xs uppercase text-white group-hover:text-white" data-i18n="theme_2">Nordic
                                     Blue</span>
                             </button>
                             <!-- Theme 3 -->
@@ -738,14 +740,14 @@
                                 <div
                                     class="w-6 h-6 bg-[#D4A373] rounded-full border-2 border-[#1B2B1E] shadow-[0_0_10px_rgba(212,163,115,0.3)]">
                                 </div>
-                                <span class="font-mono text-xs uppercase text-white group-hover:text-white">Forest
+                                <span class="font-mono text-xs uppercase text-white group-hover:text-white" data-i18n="theme_3">Forest
                                     Copper</span>
                             </button>
                             <!-- Theme 4 -->
                             <button id="btn-theme-steel" onclick="App.setTheme('steel')"
                                 class="config-btn w-full p-3 flex items-center gap-4 group transition-all">
                                 <div class="w-6 h-6 bg-[#E5E5E5] rounded-full border-2 border-[#333]"></div>
-                                <span class="font-mono text-xs uppercase text-white group-hover:text-white">Steel
+                                <span class="font-mono text-xs uppercase text-white group-hover:text-white" data-i18n="theme_4">Steel
                                     Mono</span>
                             </button>
                         </div>
@@ -820,6 +822,7 @@
                     demo2: {
                         i18n: {
                             no: {
+                                "brand": "TOTAL_PLAN",
                                 "nav_1": "01.0 // OVERSIKT",
                                 "nav_2": "02.0 // SPESIFIKASJON",
                                 "nav_3": "03.0 // KONTAKT",
@@ -829,6 +832,7 @@
                                 "hero_sub": "// KUN AUTORISERT PERSONELL.<br>// UMIDDELBAR RESPONS-PROTOKOLL.",
                                 "hero_alert": "/// RESPONS: 45 MIN",
                                 "hero_cta": "RING NÅ ->",
+                                "form_id": "SKJEMA_ID: REQ-001",
                                 "fig_struct": "FIG 2.4 - STRUKTUR",
                                 "tech_cert": "SERTIFISERING_LAG",
                                 "tech_dsb": "DSB RANGERING: A+",
@@ -842,29 +846,54 @@
                                 "flow_doc": "04. DOKUMENTASJON",
                                 "flow_exec_d": "Feilretting utført.",
                                 "flow_doc_d": "Lastet opp til Boligmappa.",
+                                "scanning": "SKANNER",
+                                "sector_active": "SEKTOR_04: AKTIV",
+                                "live_coverage": "DIREKTEDEKNING",
+                                "units_active": "AKTIVE_ENHETER",
+                                "avg_response": "GJENNOM_RESPONS",
+                                "signal_str": "SIGNAL_STYRKE",
                                 "radar_title": "TJENESTE_MODULER",
                                 "radar_1_t": "[01] INSTALLASJON", "radar_1_d": "Full spec kabling, sikringsskap.",
                                 "radar_2_t": "[02] DIAGNOSTIKK", "radar_2_d": "Termografering, feilsøking.",
                                 "radar_3_t": "[03] AUTOMASJON", "radar_3_d": "Smarthus logikk-kontroller.",
                                 "ref_title": "[ KUNDER & REFERANSER ]",
                                 "ref_1": "\"Fantastisk oppfølging fra start til slutt. Total Entreprenør holdt tidsfristen og leverte uten feil.\"",
+                                "ref_1_author": "— Anders H., Prosjektleder Obos",
                                 "ref_2": "\"Vi bruker dem fast på alle våre næringsbygg. Profesjonelle, dokumenterte og alltid tilgjengelig.\"",
+                                "ref_2_author": "— Siri K., Eiendomsdrift AS",
                                 "form_title": "Prosjekt<br>Parameter",
                                 "form_desc": "Definer omfanget av vedlikehold eller nødprotokoll.",
                                 "form_est": "EST. TID", "form_avail": "TILGJENGELIGHET", "form_stat": "PÅ NETT",
-                                "form_client": "KLIENT_ID", "ph_name": "Navn / Foretak",
-                                "form_coord": "KOORDINATER", "ph_addr": "Adresse",
+                                "form_client": "KUNDE / FIRMA", "ph_name": "Navn / Foretak",
+                                "form_coord": "PROJEKTADRESSE", "ph_addr": "Adresse",
                                 "form_spec": "SPESIFIKASJONER",
-                                "form_up": "LAST OPP TEGNING",
-                                "form_btn": "[ SEND_TEGNING ]",
+                                "form_up": "LAST OPP TEGNING / BILDE",
+                                "form_btn": "[ SEND FORESPØRSEL ]",
+                                "ft_brand": "TOTAL<span class='text-blueprint'>.ENT</span>",
+                                "ft_desc": "Konstruert for presisjon. Bygget for pålitelighet.<br>Lisens: NO-9942",
+                                "ft_org": "ORG.NR: 994 221 112 MVA",
                                 "ft_map": "[ SIDEKART ]",
                                 "ft_l1": "TJENESTER", "ft_l2": "TEGNINGER", "ft_l3": "PROSJEKTER",
                                 "ft_leg": "[ JURIDISK ]",
                                 "ft_gdpr": "GDPR_SAMSVAR", "ft_hms": "HMS_DOKUMENTASJON", "ft_acc": "TILGJENGELIGHETSERKLÆRING",
                                 "ft_hq": "[ HOVEDKONTOR ]",
-                                "ft_desc": "Konstruert for presisjon. Bygget for pålitelighet.<br>Lisens: NO-9942"
+                                "ft_phone": "99 44 22 11",
+                                "ft_location": "Oslo, Norge",
+                                "ft_copy": "© 2026 TOTAL ENTREPRENØR AS. ALLE RETTIGHETER FORBEHOLDT.",
+                                "cfg_title": "Intern Konfigurasjon",
+                                "cfg_business": "1. Velg Bedrift",
+                                "cfg_biz_1": "DEN TOTALE ENTREPRENØR",
+                                "cfg_biz_2": "SERVICESPESIALIST",
+                                "cfg_biz_3": "FERDIGGJØRINGSEKSPERT",
+                                "cfg_layout": "2. Velg Layout",
+                                "cfg_theme": "3. Visuell Stil",
+                                "theme_1": "Sikkerhetsoransje",
+                                "theme_2": "Nordisk Blå",
+                                "theme_3": "Skogkobber",
+                                "theme_4": "Stål Mono"
                             },
                             en: {
+                                "brand": "TOTAL_PLAN",
                                 "nav_1": "01.0 // OVERVIEW",
                                 "nav_2": "02.0 // SPECS",
                                 "nav_3": "03.0 // CONNECT",
@@ -874,6 +903,7 @@
                                 "hero_sub": "// AUTHORIZED PERSONNEL ONLY.<br>// IMMEDIATE RESPONSE PROTOCOL INITIATED.",
                                 "hero_alert": "/// RESPONSE: 45 MIN",
                                 "hero_cta": "CALL NOW ->",
+                                "form_id": "FORM_ID: REQ-001",
                                 "fig_struct": "FIG 2.4 - STRUCTURE",
                                 "tech_cert": "CERTIFICATION_LAYER",
                                 "tech_dsb": "DSB RATING: A+",
@@ -887,27 +917,122 @@
                                 "flow_doc": "04. HANDOVER",
                                 "flow_exec_d": "Repair implemented.",
                                 "flow_doc_d": "Docs uploaded.",
+                                "scanning": "SCANNING",
+                                "sector_active": "SECTOR_04: ACTIVE",
+                                "live_coverage": "LIVE_COVERAGE",
+                                "units_active": "UNITS_ACTIVE",
+                                "avg_response": "AVG_RESPONSE",
+                                "signal_str": "SIGNAL_STR",
                                 "radar_title": "SERVICE_MODULES",
                                 "radar_1_t": "[01] INSTALLATION", "radar_1_d": "Full specs wiring, fuse box upgrades.",
                                 "radar_2_t": "[02] DIAGNOSTICS", "radar_2_d": "Thermal imaging, fault finding.",
                                 "radar_3_t": "[03] AUTOMATION", "radar_3_d": "Smart home logic controller.",
                                 "ref_title": "[ CLIENTS & REFERENCES ]",
                                 "ref_1": "\"Incredible follow-up from start to finish. Total Contractor met the deadline and delivered without errors.\"",
+                                "ref_1_author": "— Anders H., Project Manager Obos",
                                 "ref_2": "\"We use them regularly for all our commercial buildings. Professional, documented, and always available.\"",
+                                "ref_2_author": "— Siri K., Property Management AS",
                                 "form_title": "Project<br>Parameters",
                                 "form_desc": "Please define the scope of required maintenance or emergency protocols.",
                                 "form_est": "EST. TIME", "form_avail": "AVAILABILITY", "form_stat": "ONLINE",
-                                "form_client": "CLIENT_ID", "ph_name": "Name / Company",
-                                "form_coord": "COORDINATES", "ph_addr": "Address",
+                                "form_client": "CLIENT / COMPANY", "ph_name": "Name / Company",
+                                "form_coord": "PROJECT ADDRESS", "ph_addr": "Address",
                                 "form_spec": "SPECIFICATIONS",
-                                "form_up": "UPLOAD BLUEPRINT",
-                                "form_btn": "[ SUBMIT_BLUEPRINT ]",
+                                "form_up": "UPLOAD BLUEPRINT / IMAGE",
+                                "form_btn": "[ SEND REQUEST ]",
+                                "ft_brand": "TOTAL<span class='text-blueprint'>.ENT</span>",
+                                "ft_desc": "Engineered for precision. Built for reliability.<br>License: NO-9942",
+                                "ft_org": "ORG.NR: 994 221 112 MVA",
                                 "ft_map": "[ SITEMAP ]",
                                 "ft_l1": "SERVICES", "ft_l2": "BLUEPRINTS", "ft_l3": "PROJECTS",
                                 "ft_leg": "[ LEGAL ]",
                                 "ft_gdpr": "GDPR_COMPLIANCE", "ft_hms": "HSE_DOCS", "ft_acc": "ACCESSIBILITY",
                                 "ft_hq": "[ HQ_DETAILS ]",
-                                "ft_desc": "Engineered for precision. Built for reliability.<br>License: NO-9942"
+                                "ft_phone": "99 44 22 11",
+                                "ft_location": "Oslo, Norway",
+                                "ft_copy": "© 2026 TOTAL ENTREPRENØR AS. ALL RIGHTS RESERVED.",
+                                "cfg_title": "Internal Config",
+                                "cfg_business": "1. Select Business",
+                                "cfg_biz_1": "THE TOTAL CONTRACTOR",
+                                "cfg_biz_2": "SERVICE SPECIALIST",
+                                "cfg_biz_3": "FINISHING EXPERT",
+                                "cfg_layout": "2. Select Layout",
+                                "cfg_theme": "3. Visual Style",
+                                "theme_1": "Safety Orange",
+                                "theme_2": "Nordic Blue",
+                                "theme_3": "Forest Copper",
+                                "theme_4": "Steel Mono"
+                            },
+                            pl: {
+                                "brand": "TOTAL_PLAN",
+                                "nav_1": "01.0 // PRZEGLĄD",
+                                "nav_2": "02.0 // SPECYFIKACJA",
+                                "nav_3": "03.0 // KONTAKT",
+                                "scale": "SKALA 1:1",
+                                "hero_h1": "24/7 <span class='font-bold text-blueprint'>DYŻUR</span>AWARYJNY",
+                                "hero_title": "JEDNOSTKA_AWARYJNA",
+                                "hero_sub": "// TYLKO AUTORYZOWANY PERSONEL.<br>// PROTOKÓŁ NATYCHMIASTOWEJ REAKCJI.",
+                                "hero_alert": "/// REAKCJA: 45 MIN",
+                                "hero_cta": "ZADZWOŃ TERAZ ->",
+                                "form_id": "ID_FORMULARZA: REQ-001",
+                                "fig_struct": "FIG 2.4 - STRUKTURA",
+                                "tech_cert": "WARSTWA_CERTYFIKACJI",
+                                "tech_dsb": "OCENA DSB: A+",
+                                "tech_bvn": "NORMA ŁAZIENKI: 2026",
+                                "tech_flow": "PRZEPŁYW_OPERACYJNY",
+                                "flow_contact": "01. KONTAKT",
+                                "flow_contact_d": "Sygnał otrzymany.",
+                                "flow_diag": "02. DIAGNOZA",
+                                "flow_diag_d": "Analiza na miejscu.",
+                                "flow_exec": "03. WYKONANIE",
+                                "flow_doc": "04. DOKUMENTACJA",
+                                "flow_exec_d": "Naprawa wykonana.",
+                                "flow_doc_d": "Przesłano do Boligmappa.",
+                                "scanning": "SKANOWANIE",
+                                "sector_active": "SEKTOR_04: AKTYWNY",
+                                "live_coverage": "POKRYCIE_NA_ŻYWO",
+                                "units_active": "AKTYWNE_JEDNOSTKI",
+                                "avg_response": "ŚREDNI_CZAS_REAKCJI",
+                                "signal_str": "MOC_SYGNAŁU",
+                                "radar_title": "MODUŁY_USŁUG",
+                                "radar_1_t": "[01] INSTALACJA", "radar_1_d": "Pełna specyfikacja okablowania, skrzynki bezpieczników.",
+                                "radar_2_t": "[02] DIAGNOSTYKA", "radar_2_d": "Termografia, wykrywanie usterek.",
+                                "radar_3_t": "[03] AUTOMATYKA", "radar_3_d": "Kontrolery logiki inteligentnego domu.",
+                                "ref_title": "[ KLIENCI & REFERENCJE ]",
+                                "ref_1": "\"Niesamowite wsparcie od początku do końca. Generalny Wykonawca dotrzymał terminu i dostarczył bez błędów.\"",
+                                "ref_1_author": "— Anders H., Kierownik Projektu Obos",
+                                "ref_2": "\"Regularnie korzystamy z ich usług we wszystkich naszych budynkach komercyjnych. Profesjonalni, udokumentowani i zawsze dostępni.\"",
+                                "ref_2_author": "— Siri K., Zarządzanie Nieruchomościami AS",
+                                "form_title": "Parametry<br>Projektu",
+                                "form_desc": "Określ zakres wymaganej konserwacji lub protokołów awaryjnych.",
+                                "form_est": "SZAC. CZAS", "form_avail": "DOSTĘPNOŚĆ", "form_stat": "ONLINE",
+                                "form_client": "KLIENT / FIRMA", "ph_name": "Imię / Firma",
+                                "form_coord": "ADRES PROJEKTU", "ph_addr": "Adres",
+                                "form_spec": "SPECYFIKACJE",
+                                "form_up": "PRZEŚLIJ PLAN / ZDJĘCIE",
+                                "form_btn": "[ WYŚLIJ ZAPYTANIE ]",
+                                "ft_brand": "TOTAL<span class='text-blueprint'>.ENT</span>",
+                                "ft_desc": "Zaprojektowany z precyzją. Zbudowany dla niezawodności.<br>Licencja: NO-9942",
+                                "ft_org": "ORG.NR: 994 221 112 MVA",
+                                "ft_map": "[ MAPA STRONY ]",
+                                "ft_l1": "USŁUGI", "ft_l2": "PLANY", "ft_l3": "PROJEKTY",
+                                "ft_leg": "[ PRAWNE ]",
+                                "ft_gdpr": "ZGODNOŚĆ_GDPR", "ft_hms": "DOKUMENTY_BHP", "ft_acc": "DOSTĘPNOŚĆ",
+                                "ft_hq": "[ DANE_CENTRALI ]",
+                                "ft_phone": "99 44 22 11",
+                                "ft_location": "Oslo, Norwegia",
+                                "ft_copy": "© 2026 TOTAL ENTREPRENØR AS. WSZELKIE PRAWA ZASTRZEŻONE.",
+                                "cfg_title": "Konfiguracja Wewnętrzna",
+                                "cfg_business": "1. Wybierz Biznes",
+                                "cfg_biz_1": "GENERALNY WYKONAWCA",
+                                "cfg_biz_2": "SPECJALISTA SERWISOWY",
+                                "cfg_biz_3": "EKSPERT OD WYKOŃCZEŃ",
+                                "cfg_layout": "2. Wybierz Układ",
+                                "cfg_theme": "3. Styl Wizualny",
+                                "theme_1": "Pomarańczowy Bezpieczeństwa",
+                                "theme_2": "Nordycki Niebieski",
+                                "theme_3": "Leśna Miedź",
+                                "theme_4": "Stalowy Mono"
                             }
                         }
                     }

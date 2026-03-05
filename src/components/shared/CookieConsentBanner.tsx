@@ -122,7 +122,7 @@ export function CookieConsentBanner({ lang, dict }: CookieConsentBannerProps) {
           transition={{ type: "spring", damping: 25, stiffness: 300 }}
           className="fixed bottom-0 left-0 right-0 z-50 p-4 md:p-6"
         >
-          <div className="max-w-4xl mx-auto bg-card border border-border rounded-2xl shadow-2xl overflow-hidden">
+          <div className="max-w-4xl mx-auto bg-background/95 backdrop-blur-md border-2 border-primary/20 dark:border-border rounded-2xl shadow-2xl ring-1 ring-black/5 dark:ring-white/5 overflow-visible">
             {/* Main content */}
             <div className="p-6">
               <div className="flex items-start gap-4">
@@ -183,7 +183,7 @@ export function CookieConsentBanner({ lang, dict }: CookieConsentBannerProps) {
                   animate={{ height: "auto", opacity: 1 }}
                   exit={{ height: 0, opacity: 0 }}
                   transition={{ duration: 0.2 }}
-                  className="border-t border-border overflow-hidden"
+                  className="border-t border-border"
                 >
                   <div className="p-6 space-y-4">
                     {/* Essential cookies - always on */}

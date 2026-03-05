@@ -1,86 +1,90 @@
 /**
- * Screenshot Generator for Portfolio Previews
- *
- * Usage:
- * 1. First, install puppeteer: npm install puppeteer --save-dev
- * 2. Start the dev server: npm run dev
- * 3. Run this script: node scripts/generate-previews.js
- *
- * This will generate full-page screenshots of each demo template
- * and save them to public/previews/
+ * Generate preview screenshots for demo templates
+ * Creates TWO types of screenshots:
+ * 1. Hero screenshot (viewport only - for thumbnail)
+ * 2. Full-page screenshot (entire page - for scroll animation)
  */
 
-const puppeteer = require('puppeteer');
+const { chromium } = require('playwright');
 const path = require('path');
 const fs = require('fs');
 
-const BASE_URL = 'http://localhost:3000';
-
-const templates = [
-  { name: 'swiss', url: '/demo/swiss.html' },
-  { name: 'standard', url: '/demo/standard.html' },
-  { name: 'technical', url: '/demo/technical.html' },
-  { name: 'terminal', url: '/demo/terminal.html' },
-  { name: 'blueprint', url: '/demo/blueprint.html' },
-  { name: 'gallery', url: '/demo/gallery.html' },
+const TEMPLATES = [
+  { name: 'swiss', url: 'http://localhost:3001/demo/swiss.html' },
+  { name: 'standard', url: 'http://localhost:3001/demo/standard.html' },
+  { name: 'technical', url: 'http://localhost:3001/demo/technical.html' },
+  { name: 'terminal', url: 'http://localhost:3001/demo/terminal.html' },
+  { name: 'blueprint', url: 'http://localhost:3001/demo/blueprint.html' },
+  { name: 'pulse', url: 'http://localhost:3001/demo/pulse.html' },
+  { name: 'gallery', url: 'http://localhost:3001/demo/gallery.html' },
+  { name: 'studio', url: 'http://localhost:3001/demo/studio.html' },
+  { name: 'canvas', url: 'http://localhost:3001/demo/canvas.html' },
 ];
 
-async function generatePreviews() {
-  console.log('Starting screenshot generation...');
+const OUTPUT_DIR = path.join(__dirname, '../public/previews');
 
-  // Ensure previews directory exists
-  const previewsDir = path.join(__dirname, '..', 'public', 'previews');
-  if (!fs.existsSync(previewsDir)) {
-    fs.mkdirSync(previewsDir, { recursive: true });
+async function generatePreviews() {
+  console.log('🚀 Starting preview generation...\n');
+
+  // Ensure output directory exists
+  if (!fs.existsSync(OUTPUT_DIR)) {
+    fs.mkdirSync(OUTPUT_DIR, { recursive: true });
   }
 
-  const browser = await puppeteer.launch({
-    headless: true,
-    args: ['--no-sandbox', '--disable-setuid-sandbox']
+  const browser = await chromium.launch();
+  const context = await browser.newContext({
+    viewport: { width: 1920, height: 1080 },
+    deviceScaleFactor: 2, // Retina quality
   });
 
-  for (const template of templates) {
-    console.log(`Capturing ${template.name}...`);
+  for (const template of TEMPLATES) {
+    console.log(`📸 Capturing ${template.name}...`);
 
-    const page = await browser.newPage();
-
-    // Set viewport to desktop size
-    await page.setViewport({
-      width: 1280,
-      height: 800,
-      deviceScaleFactor: 1,
-    });
+    const page = await context.newPage();
 
     try {
-      // Navigate to the demo page
-      await page.goto(`${BASE_URL}${template.url}`, {
-        waitUntil: 'networkidle2',
-        timeout: 30000,
+      // Navigate to template
+      await page.goto(template.url, {
+        waitUntil: 'networkidle',
+        timeout: 10000
       });
 
-      // Wait for any animations to settle
+      // Wait for content to load
       await page.waitForTimeout(2000);
 
-      // Take a full-page screenshot
-      const outputPath = path.join(previewsDir, `${template.name}-preview.webp`);
-
+      // 1. HERO SCREENSHOT (viewport only - for thumbnail)
+      const heroPath = path.join(OUTPUT_DIR, `${template.name}-preview.png`);
       await page.screenshot({
-        path: outputPath,
-        type: 'webp',
-        quality: 85,
-        fullPage: true,
+        path: heroPath,
+        fullPage: false, // Only visible viewport
+        type: 'png',
       });
 
-      console.log(`  ✓ Saved: ${outputPath}`);
-    } catch (error) {
-      console.error(`  ✗ Error capturing ${template.name}:`, error.message);
-    }
+      console.log(`   ✓ Hero: ${template.name}-preview.png`);
 
-    await page.close();
+      // 2. FULL-PAGE SCREENSHOT (entire page - for scroll)
+      const fullPath = path.join(OUTPUT_DIR, `${template.name}-full.png`);
+      await page.screenshot({
+        path: fullPath,
+        fullPage: true, // Entire page from top to bottom
+        type: 'png',
+      });
+
+      console.log(`   ✓ Full: ${template.name}-full.png\n`);
+
+    } catch (error) {
+      console.error(`   ✗ Failed: ${template.name}`, error.message);
+    } finally {
+      await page.close();
+    }
   }
 
   await browser.close();
-  console.log('\nDone! Screenshots saved to public/previews/');
+  console.log('✅ Preview generation complete!\n');
+  console.log('📁 Files saved to:', OUTPUT_DIR);
+  console.log('\n📝 Usage:');
+  console.log('  - *-preview.png = Hero screenshot (thumbnail)');
+  console.log('  - *-full.png = Full-page screenshot (scroll animation)');
 }
 
 generatePreviews().catch(console.error);

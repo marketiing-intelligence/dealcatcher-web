@@ -40,15 +40,19 @@ const industryLabelsByLocale: Record<Locale, Record<Industry, string>> = {
   pl: { contractor: "Generalny wykonawca", service: "Specjalista usługowy", finishing: "Wykończenia", "case-study": "Case Study" },
 };
 
-// Placeholder images - replace with actual screenshots later
-// Demo files are in: demo1/total-contractor/*.html
+// Template preview images
+// For templates with existing previews, use actual screenshots
+// For new templates, use generated preview images
 const placeholders = {
-  swiss: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=500&fit=crop",
-  standard: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&h=500&fit=crop",
-  technical: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&h=500&fit=crop",
-  terminal: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=800&h=500&fit=crop",
-  blueprint: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=500&fit=crop",
-  gallery: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&h=500&fit=crop",
+  swiss: "/previews/swiss-preview.png",
+  standard: "/previews/standard-preview.png",
+  technical: "/previews/technical-preview.png",
+  terminal: "/previews/terminal-preview.png",
+  blueprint: "/previews/blueprint-preview.png",
+  pulse: "/previews/pulse-preview.png",
+  gallery: "/previews/gallery-preview.png",
+  studio: "/previews/studio-preview.png",
+  canvas: "/previews/canvas-preview.png",
 };
 
 const itemTranslations: Record<string, Record<Locale, { title?: string; description: string; features: string[] }>> = {
@@ -77,10 +81,25 @@ const itemTranslations: Record<string, Record<Locale, { title?: string; descript
     no: { description: "Teknisk rutenett med siktekryss og papirhvit bakgrunn. Ingeniørpresisjon.", features: ["Blueprint Rutenett", "Tekniske Linjer", "Presis Layout"] },
     pl: { description: "Techniczny grid z celownikami i białym tłem. Precyzja inżynieryjna.", features: ["Siatka Blueprint", "Linie Techniczne", "Precyzyjny Layout"] },
   },
+  "pulse-service": {
+    en: { description: "Futuristic tech aesthetic with reticle cursor and smooth animations. Perfect for high-tech service providers.", features: ["Reticle Cursor", "Smooth Animations", "Tech-Focused"] },
+    no: { description: "Futuristisk tech-estetikk med sikte-cursor og smooth animasjoner. Perfekt for high-tech tjenesteleverandører.", features: ["Sikte-cursor", "Smooth Animasjoner", "Tech-fokusert"] },
+    pl: { description: "Futurystyczna estetyka tech z celownikiem i płynnymi animacjami. Idealny dla dostawców high-tech.", features: ["Celownik Kursor", "Płynne Animacje", "Fokus Tech"] },
+  },
   "gallery-finishing": {
     en: { description: "Museum-grade presentation for finishing experts. Serif typography, gold accents.", features: ["Museum Grade", "Serif Typography", "Gold Accents"] },
     no: { description: "Museumskvalitet presentasjon for overflateeksperter. Serif typografi, gullaksenter.", features: ["Museumskvalitet", "Serif Typografi", "Gullaksenter"] },
     pl: { description: "Muzealna prezentacja dla ekspertów wykończeniowych. Typografia szeryfowa, złote akcenty.", features: ["Klasa Muzealna", "Typografia Szeryfowa", "Złote Akcenty"] },
+  },
+  "studio-finishing": {
+    en: { description: "Professional studio aesthetic with clean lines and modern typography. Precision-focused design.", features: ["Studio Design", "Clean Lines", "Modern Typography"] },
+    no: { description: "Profesjonell studio-estetikk med rene linjer og moderne typografi. Presisjonsfokusert design.", features: ["Studio Design", "Rene Linjer", "Moderne Typografi"] },
+    pl: { description: "Profesjonalna estetyka studio z czystymi liniami i nowoczesną typografią. Design skupiony na precyzji.", features: ["Design Studio", "Czyste Linie", "Nowoczesna Typografia"] },
+  },
+  "canvas-finishing": {
+    en: { description: "Dark canvas with gold accents and atmospheric shadows. For premium finishing work.", features: ["Dark Canvas", "Gold Accents", "Atmospheric"] },
+    no: { description: "Mørk lerret med gullaksenter og atmosfæriske skygger. For premium overflatearbeid.", features: ["Mørkt Lerret", "Gullaksenter", "Atmosfærisk"] },
+    pl: { description: "Ciemne płótno ze złotymi akcentami i atmosferycznymi cieniami. Dla premium wykończeń.", features: ["Ciemne Płótno", "Złote Akcenty", "Atmosferyczne"] },
   },
   "mirco-case-study": {
     en: { title: "Mirco — Full B2B Growth System", description: "Complete B2B growth system: influencer portal, sales messaging, lead database, marketing strategy — all built from scratch in 8 weeks.", features: ["400+ B2B Leads", "3 Sales Frameworks", "Influencer Portal"] },
@@ -113,6 +132,7 @@ export const portfolioItems: PortfolioItem[] = [
     industryLabel: "Total Contractor",
     template: "swiss",
     thumbnail: placeholders.swiss,
+    fullPreview: "/previews/swiss-full.png", // Full-page screenshot for scroll
     previewVideo: "/previews/swiss-scroll.webm",
     demoUrl: "/demo/swiss.html",
     features: ["Swiss Grid", "4-Corner Nav", "Art House Design"],
@@ -126,7 +146,7 @@ export const portfolioItems: PortfolioItem[] = [
     industryLabel: "Total Contractor",
     template: "standard",
     thumbnail: placeholders.standard,
-    previewVideo: "/previews/standard-scroll.webm",
+    fullPreview: "/previews/standard-full.png", // Full-page screenshot for scroll
     demoUrl: "/demo/standard.html",
     features: ["Kinetic Typography", "Video Hero", "Trust Badges"],
     isPremium: false,
@@ -139,7 +159,7 @@ export const portfolioItems: PortfolioItem[] = [
     industryLabel: "Total Contractor",
     template: "technical",
     thumbnail: placeholders.technical,
-    previewVideo: "/previews/technical-scroll.webm",
+    fullPreview: "/previews/technical-full.png", // Full-page screenshot for scroll
     demoUrl: "/demo/technical.html",
     features: ["Wireframe Style", "Monospace Fonts", "Data-Dense"],
     isPremium: false,
@@ -152,6 +172,7 @@ export const portfolioItems: PortfolioItem[] = [
     industryLabel: "Service Specialist",
     template: "terminal",
     thumbnail: placeholders.terminal,
+    fullPreview: "/previews/terminal-full.png", // Full-page screenshot for scroll
     previewVideo: "/previews/terminal-scroll.webm",
     demoUrl: "/demo/terminal.html",
     features: ["CLI Aesthetic", "Neon Accents", "24/7 Focus"],
@@ -165,10 +186,23 @@ export const portfolioItems: PortfolioItem[] = [
     industryLabel: "Service Specialist",
     template: "blueprint",
     thumbnail: placeholders.blueprint,
-    previewVideo: "/previews/blueprint-scroll.webm",
+    fullPreview: "/previews/blueprint-full.png", // Full-page screenshot for scroll
     demoUrl: "/demo/blueprint.html",
     features: ["Blueprint Grid", "Technical Lines", "Precise Layout"],
     isPremium: false,
+  },
+  {
+    id: "pulse-service",
+    title: "Pulse Pro",
+    description: "Futuristic tech aesthetic with reticle cursor and smooth animations. Perfect for high-tech service providers.",
+    industry: "service",
+    industryLabel: "Service Specialist",
+    template: "pulse",
+    thumbnail: placeholders.pulse,
+    fullPreview: "/previews/pulse-full.png", // Full-page screenshot for scroll
+    demoUrl: "/demo/pulse.html",
+    features: ["Reticle Cursor", "Smooth Animations", "Tech-Focused"],
+    isPremium: true,
   },
   {
     id: "gallery-finishing",
@@ -178,9 +212,36 @@ export const portfolioItems: PortfolioItem[] = [
     industryLabel: "Finishing Expert",
     template: "gallery",
     thumbnail: placeholders.gallery,
+    fullPreview: "/previews/gallery-full.png", // Full-page screenshot for scroll
     previewVideo: "/previews/gallery-scroll.webm",
     demoUrl: "/demo/gallery.html",
     features: ["Museum Grade", "Serif Typography", "Gold Accents"],
+    isPremium: true,
+  },
+  {
+    id: "studio-finishing",
+    title: "Studio Modern",
+    description: "Professional studio aesthetic with clean lines and modern typography. Precision-focused design.",
+    industry: "finishing",
+    industryLabel: "Finishing Expert",
+    template: "studio",
+    thumbnail: placeholders.studio,
+    fullPreview: "/previews/studio-full.png", // Full-page screenshot for scroll
+    demoUrl: "/demo/studio.html",
+    features: ["Studio Design", "Clean Lines", "Modern Typography"],
+    isPremium: false,
+  },
+  {
+    id: "canvas-finishing",
+    title: "Canvas Dark",
+    description: "Dark canvas with gold accents and atmospheric shadows. For premium finishing work.",
+    industry: "finishing",
+    industryLabel: "Finishing Expert",
+    template: "canvas",
+    thumbnail: placeholders.canvas,
+    fullPreview: "/previews/canvas-full.png", // Full-page screenshot for scroll
+    demoUrl: "/demo/canvas.html",
+    features: ["Dark Canvas", "Gold Accents", "Atmospheric"],
     isPremium: true,
   },
   {

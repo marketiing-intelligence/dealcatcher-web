@@ -137,9 +137,9 @@
                 class="h-8 md:h-10 w-auto object-contain opacity-100 transition-opacity" style="filter: invert(1);">
         </a>
         <div class="hidden md:flex gap-8 font-medium text-sm items-center">
-            <a href="#services" class="hover:underline decoration-2 underline-offset-4 transition-all">Services</a>
-            <a href="#about" class="hover:underline decoration-2 underline-offset-4 transition-all">About</a>
-            <a href="#projects" class="hover:underline decoration-2 underline-offset-4 transition-all">Projects</a>
+            <a href="#services" class="hover:underline decoration-2 underline-offset-4 transition-all" data-i18n="nav.services">Services</a>
+            <a href="#about" class="hover:underline decoration-2 underline-offset-4 transition-all" data-i18n="nav.about">About</a>
+            <a href="#projects" class="hover:underline decoration-2 underline-offset-4 transition-all" data-i18n="nav.projects">Projects</a>
 
             <!-- Language Switcher -->
             <div class="flex gap-2 border-l border-white/20 pl-6">
@@ -147,12 +147,14 @@
                     class="hover:text-accent font-mono text-xs opacity-50 transition-all">NO</button>
                 <button onclick="setLanguage('en')" id="lang-en"
                     class="hover:text-accent font-mono text-xs font-bold transition-all">EN</button>
+                <button onclick="setLanguage('pl')" id="lang-pl"
+                    class="hover:text-accent font-mono text-xs opacity-50 transition-all">PL</button>
             </div>
 
             <a href="#contact"
-                class="px-4 py-2 border border-white rounded-sm hover:bg-white hover:text-black transition-colors">Contact</a>
+                class="px-4 py-2 border border-white rounded-sm hover:bg-white hover:text-black transition-colors" data-i18n="nav.contact">Contact</a>
         </div>
-        <button onclick="toggleThemePanel()" class="md:hidden font-bold uppercase tracking-widest text-xs">MENU</button>
+        <button onclick="toggleThemePanel()" class="md:hidden font-bold uppercase tracking-widest text-xs" data-i18n="nav.menu">MENU</button>
     </nav>
 
     <!-- 01. HERO (Enhanced Split Layout) -->
@@ -189,7 +191,7 @@
                 </div>
             </div>
 
-            <span class="font-mono text-xs uppercase tracking-widest opacity-60 mb-6 relative block reveal-text">Est.
+            <span class="font-mono text-xs uppercase tracking-widest opacity-60 mb-6 relative block reveal-text" data-i18n="hero.est">Est.
                 1999 • Norway</span>
 
             <h1 class="display-font text-6xl md:text-8xl lg:text-9xl font-bold leading-[0.85] mb-8 relative drop-shadow-2xl"
@@ -228,27 +230,27 @@
             <!-- Item 1 -->
             <div class="flex items-center gap-4 py-2 opacity-100">
                 <div class="w-2 h-2 bg-accent animate-pulse"></div>
-                <span class="text-white font-bold">Sentral Godkjenning</span>
-                <span class="border border-white/40 px-1 py-0.5 text-accent">[REG: 2026-B30]</span>
+                <span class="text-white font-bold" data-i18n="trust.i1.label">Sentral Godkjenning</span>
+                <span class="border border-white/40 px-1 py-0.5 text-accent" data-i18n="trust.i1.code">[REG: 2026-B30]</span>
             </div>
             <!-- Item 2 -->
             <div class="hidden md:flex items-center gap-4 py-2 border-l border-white/20 pl-4 opacity-100">
-                <span class="text-white font-bold">Mesterbrev</span>
-                <span class="border border-white/40 px-1 py-0.5 text-accent">[SERT: M-992]</span>
+                <span class="text-white font-bold" data-i18n="trust.i2.label">Mesterbrev</span>
+                <span class="border border-white/40 px-1 py-0.5 text-accent" data-i18n="trust.i2.code">[SERT: M-992]</span>
             </div>
             <!-- Item 3 -->
             <div class="hidden md:flex items-center gap-4 py-2 border-l border-white/20 pl-4 opacity-100">
-                <span class="text-white font-bold">StartBANK</span>
-                <span class="border border-white/40 px-1 py-0.5 text-accent">[ID: 88421]</span>
+                <span class="text-white font-bold" data-i18n="trust.i3.label">StartBANK</span>
+                <span class="border border-white/40 px-1 py-0.5 text-accent" data-i18n="trust.i3.code">[ID: 88421]</span>
             </div>
             <!-- Item 4 -->
             <div class="hidden md:flex items-center gap-4 py-2 border-l border-white/20 pl-4 opacity-100">
-                <span class="text-white font-bold">Miljøfyrtårn</span>
-                <span class="border border-white/40 px-1 py-0.5 text-accent">[ECO: A+]</span>
+                <span class="text-white font-bold" data-i18n="trust.i4.label">Miljøfyrtårn</span>
+                <span class="border border-white/40 px-1 py-0.5 text-accent" data-i18n="trust.i4.code">[ECO: A+]</span>
             </div>
             <!-- Coordinates -->
             <div class="hidden lg:block ml-auto text-white/50">
-                SYS.STATUS: <span class="text-green-500 font-bold">ONLINE</span>
+                <span data-i18n="trust.status.label">SYS.STATUS:</span> <span class="text-green-500 font-bold" data-i18n="trust.status.value">ONLINE</span>
             </div>
         </div>
     </section>
@@ -350,7 +352,7 @@
                     <div class="aspect-video bg-black mb-6 relative overflow-hidden border border-white/5">
                         <img src="assets/daglig_leder_portrait_1767958435216.png"
                             class="w-full h-full object-cover grayscale mix-blend-luminosity hover:mix-blend-normal transition-all duration-500">
-                        <div class="absolute top-2 left-2 font-mono text-[9px] bg-accent text-black px-1">SCANNING...
+                        <div class="absolute top-2 left-2 font-mono text-[9px] bg-accent text-black px-1" data-i18n="proc.s1.badge">SCANNING...
                         </div>
                     </div>
                     <h3 class="font-bold text-xl mb-2 text-white uppercase" data-i18n="proc.s1.title">Analysis</h3>
@@ -373,7 +375,7 @@
                     <div class="aspect-video bg-black mb-6 relative overflow-hidden border border-white/5">
                         <img src="assets/technical_texture_1767958422508.png"
                             class="w-full h-full object-cover grayscale mix-blend-luminosity hover:mix-blend-normal transition-all duration-500">
-                        <div class="absolute top-2 left-2 font-mono text-[9px] bg-accent text-black px-1">DEPLOYING
+                        <div class="absolute top-2 left-2 font-mono text-[9px] bg-accent text-black px-1" data-i18n="proc.s2.badge">DEPLOYING
                         </div>
                     </div>
                     <h3 class="font-bold text-xl mb-2 text-white uppercase" data-i18n="proc.s2.title">Groundwork</h3>
@@ -396,7 +398,7 @@
                     <div class="aspect-video bg-black mb-6 relative overflow-hidden border border-white/5">
                         <img src="assets/process_step_3_steel_timber_1767960667755.png"
                             class="w-full h-full object-cover grayscale mix-blend-luminosity hover:mix-blend-normal transition-all duration-500">
-                        <div class="absolute top-2 left-2 font-mono text-[9px] bg-accent text-black px-1">ASSEMBLY</div>
+                        <div class="absolute top-2 left-2 font-mono text-[9px] bg-accent text-black px-1" data-i18n="proc.s3.badge">ASSEMBLY</div>
                     </div>
                     <h3 class="font-bold text-xl mb-2 text-white uppercase" data-i18n="proc.s3.title">Structure</h3>
                     <p class="font-mono text-xs text-white leading-relaxed font-bold shadow-black drop-shadow-md"
@@ -418,7 +420,7 @@
                     <div class="aspect-video bg-black mb-6 relative overflow-hidden border border-white/5">
                         <img src="assets/process_step_4_handover_1767960776152.png"
                             class="w-full h-full object-cover grayscale mix-blend-luminosity hover:mix-blend-normal transition-all duration-500">
-                        <div class="absolute top-2 left-2 font-mono text-[9px] bg-accent text-black px-1">COMPLETE</div>
+                        <div class="absolute top-2 left-2 font-mono text-[9px] bg-accent text-black px-1" data-i18n="proc.s4.badge">COMPLETE</div>
                     </div>
                     <h3 class="font-bold text-xl mb-2 text-white uppercase" data-i18n="proc.s4.title">Handover</h3>
                     <p class="font-mono text-xs text-white leading-relaxed font-bold shadow-black drop-shadow-md"
@@ -445,14 +447,14 @@
 
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center relative z-10">
             <div class="relative order-2 md:order-1 group border border-white/20 p-4 bg-white/5 backdrop-blur-sm">
-                <div class="absolute top-0 left-0 bg-accent text-black font-mono text-xs px-2 py-1 font-bold z-20">
+                <div class="absolute top-0 left-0 bg-accent text-black font-mono text-xs px-2 py-1 font-bold z-20" data-i18n="sust.img.label">
                     MAT_ID: TIMBER_CLT</div>
                 <img src="assets/sustainability_texture_1767958375058.png"
                     class="w-full grayscale contrast-125 filter group-hover:grayscale-0 transition-all duration-700 block"
                     alt="Wood">
                 <div class="mt-4 flex justify-between font-mono text-xs text-white/60 pt-4 border-t border-white/10">
-                    <span>DENSITY: 500kg/m3</span>
-                    <span>ORIGIN: NORDIC_FORESTS</span>
+                    <span data-i18n="sust.img.density">DENSITY: 500kg/m3</span>
+                    <span data-i18n="sust.img.origin">ORIGIN: NORDIC_FORESTS</span>
                 </div>
             </div>
 
@@ -477,12 +479,12 @@
 
                     <div class="grid grid-cols-2 gap-4 mt-8">
                         <div class="bg-white/5 p-4 border border-white/10">
-                            <span class="block text-accent text-xs mb-1">CO2_EMISSION</span>
-                            <span class="text-2xl font-bold">-45%</span>
+                            <span class="block text-accent text-xs mb-1" data-i18n="sust.stat1.label">CO2_EMISSION</span>
+                            <span class="text-2xl font-bold" data-i18n="sust.stat1.value">-45%</span>
                         </div>
                         <div class="bg-white/5 p-4 border border-white/10">
-                            <span class="block text-accent text-xs mb-1">RECYCLABILITY</span>
-                            <span class="text-2xl font-bold">98%</span>
+                            <span class="block text-accent text-xs mb-1" data-i18n="sust.stat2.label">RECYCLABILITY</span>
+                            <span class="text-2xl font-bold" data-i18n="sust.stat2.value">98%</span>
                         </div>
                     </div>
                 </div>
@@ -493,7 +495,7 @@
     <!-- 06. LEADERSHIP (Personnel File) -->
     <section class="py-24 bg-light text-dark border-t border-dark/5 relative overflow-hidden">
         <!-- Tech Decoration -->
-        <div class="absolute top-0 right-0 p-4 font-mono text-[10px] text-dark/20 hidden md:block">
+        <div class="absolute top-0 right-0 p-4 font-mono text-[10px] text-dark/20 hidden md:block" data-i18n="lead.access">
             PERSONNEL_DB_ACCESS: AUTHORIZED
         </div>
 
@@ -509,11 +511,11 @@
                     <div
                         class="absolute bottom-6 left-6 bg-white/90 backdrop-blur border border-dark/20 p-4 min-w-[200px]">
                         <div class="flex justify-between items-center mb-2 border-b border-dark/10 pb-2">
-                            <span class="font-mono text-[10px] text-dark/50">ID_CARD</span>
+                            <span class="font-mono text-[10px] text-dark/50" data-i18n="lead.card.label">ID_CARD</span>
                             <div class="w-2 h-2 rounded-full bg-green-500"></div>
                         </div>
-                        <h4 class="font-bold text-lg leading-none">J.E. Johansen</h4>
-                        <span class="font-mono text-xs text-accent">CEO / OPERATOR</span>
+                        <h4 class="font-bold text-lg leading-none" data-i18n="lead.card.name">J.E. Johansen</h4>
+                        <span class="font-mono text-xs text-accent" data-i18n="lead.card.role">CEO / OPERATOR</span>
                     </div>
                 </div>
 
@@ -539,8 +541,8 @@
                     </div>
 
                     <div class="mt-12 pt-6 border-t border-dark/10 flex justify-between items-center font-mono text-xs">
-                        <span>EXP_LEVEL: 25_YEARS</span>
-                        <span>STATUS: ACTIVE</span>
+                        <span data-i18n="lead.exp">EXP_LEVEL: 25_YEARS</span>
+                        <span data-i18n="lead.status">STATUS: ACTIVE</span>
                     </div>
                 </div>
             </div>
@@ -551,7 +553,7 @@
     <section id="projects" class="py-24 bg-dark text-light clip-diagonal-top pb-48 relative border-t border-white/10">
         <div class="container mx-auto px-6 mb-16 flex justify-between items-end border-b border-white/20 pb-6">
             <div>
-                <span class="text-accent font-mono text-xs uppercase tracking-widest mb-2 block">>
+                <span class="text-accent font-mono text-xs uppercase tracking-widest mb-2 block" data-i18n="work.sub">>
                     DATABASE_ACCESS</span>
                 <h2 class="display-font text-5xl md:text-7xl font-bold uppercase" data-i18n="work.title">
                     Selected<br>Archives</h2>
@@ -577,7 +579,7 @@
                 <div class="absolute inset-0 z-10 p-8 flex flex-col justify-between pointer-events-none">
                     <div class="flex justify-between items-start">
                         <span
-                            class="bg-black/80 text-white font-mono text-[10px] px-2 py-1 border border-white/20">REC_001</span>
+                            class="bg-black/80 text-white font-mono text-[10px] px-2 py-1 border border-white/20" data-i18n="work.p1.rec">REC_001</span>
                         <div class="w-2 h-2 bg-accent opacity-0 group-hover:opacity-100 transition-opacity"></div>
                     </div>
 
@@ -587,7 +589,7 @@
                         <div
                             class="flex gap-4 font-mono text-[10px] text-accent uppercase tracking-widest bg-black/80 w-fit px-2 py-1 border border-white/20">
                             <span data-i18n="work.p1.sub">OSLO // CONCRETE</span>
-                            <span>:: COMPLETED</span>
+                            <span data-i18n="work.p1.status">:: COMPLETED</span>
                         </div>
                     </div>
                 </div>
@@ -611,7 +613,7 @@
                 <div class="absolute inset-0 z-10 p-8 flex flex-col justify-between pointer-events-none">
                     <div class="flex justify-between items-start">
                         <span
-                            class="bg-black/80 text-white font-mono text-[10px] px-2 py-1 border border-white/20">REC_002</span>
+                            class="bg-black/80 text-white font-mono text-[10px] px-2 py-1 border border-white/20" data-i18n="work.p2.rec">REC_002</span>
                         <div class="w-2 h-2 bg-accent opacity-0 group-hover:opacity-100 transition-opacity"></div>
                     </div>
 
@@ -621,7 +623,7 @@
                         <div
                             class="flex gap-4 font-mono text-[10px] text-accent uppercase tracking-widest bg-black/80 w-fit px-2 py-1 border border-white/20">
                             <span data-i18n="work.p2.sub">GEILO // TIMBER</span>
-                            <span>:: IN_PROGRESS</span>
+                            <span data-i18n="work.p2.status">:: IN_PROGRESS</span>
                         </div>
                     </div>
                 </div>
@@ -647,7 +649,7 @@
             <!-- Terminal Header -->
             <div class="border-b-2 border-white/20 pb-8 mb-12 flex justify-between items-end">
                 <div>
-                    <span class="text-xs uppercase tracking-widest block mb-2 opacity-70 text-accent">>
+                    <span class="text-xs uppercase tracking-widest block mb-2 opacity-70 text-accent" data-i18n="conf.protocol">>
                         SYSTEM_INIT_PROTOCOL</span>
                     <h2 class="text-4xl md:text-6xl font-black uppercase tracking-tighter text-white"
                         data-i18n="conf.title">
@@ -656,9 +658,9 @@
                     </h2>
                 </div>
                 <div class="hidden md:block text-right text-xs opacity-70 font-mono">
-                    <p>SERVER: ONLINE</p>
-                    <p>PING: <span class="text-accent">12ms</span></p>
-                    <p>ENCRYPTION: 256-BIT</p>
+                    <p><span data-i18n="conf.server.label">SERVER:</span> <span data-i18n="conf.server.value">ONLINE</span></p>
+                    <p><span data-i18n="conf.ping.label">PING:</span> <span class="text-accent" data-i18n="conf.ping.value">12ms</span></p>
+                    <p data-i18n="conf.encryption">ENCRYPTION: 256-BIT</p>
                 </div>
             </div>
 
@@ -677,8 +679,7 @@
                                 data-i18n="conf.stat.lock">LOCKED</span></li>
                     </ul>
                     <div class="mt-12 p-4 border border-white/10 bg-white/5">
-                        <p class="text-[10px] leading-relaxed opacity-70" data-i18n="conf.sidebar.msg">> Awaiting user
-                            input sequence. Select project parameters to initialize total contracting engine.</p>
+                        <p class="text-[10px] leading-relaxed opacity-70" data-i18n="conf.sidebar.msg">> Awaiting user input sequence. Select project parameters to initialize total contracting engine.</p>
                     </div>
                 </div>
 
@@ -697,7 +698,7 @@
                                 class="group border border-white/20 p-8 text-left hover:bg-white/5 hover:border-accent transition-all duration-300">
                                 <span
                                     class="block text-4xl mb-4 opacity-50 font-display group-hover:opacity-100 group-hover:text-accent transition-all">01</span>
-                                <span class="block text-lg font-bold text-white uppercase tracking-widest">
+                                <span class="block text-lg font-bold text-white uppercase tracking-widest" data-i18n="conf.s1.opt1">
                                     < Resident>
                                 </span>
                             </button>
@@ -705,7 +706,7 @@
                                 class="group border border-white/20 p-8 text-left hover:bg-white/5 hover:border-accent transition-all duration-300">
                                 <span
                                     class="block text-4xl mb-4 opacity-50 font-display group-hover:opacity-100 group-hover:text-accent transition-all">02</span>
-                                <span class="block text-lg font-bold text-white uppercase tracking-widest">
+                                <span class="block text-lg font-bold text-white uppercase tracking-widest" data-i18n="conf.s1.opt2">
                                     < Cabin>
                                 </span>
                             </button>
@@ -713,7 +714,7 @@
                                 class="group border border-white/20 p-8 text-left hover:bg-white/5 hover:border-accent transition-all duration-300">
                                 <span
                                     class="block text-4xl mb-4 opacity-50 font-display group-hover:opacity-100 group-hover:text-accent transition-all">03</span>
-                                <span class="block text-lg font-bold text-white uppercase tracking-widest">
+                                <span class="block text-lg font-bold text-white uppercase tracking-widest" data-i18n="conf.s1.opt3">
                                     < Industry>
                                 </span>
                             </button>
@@ -724,7 +725,7 @@
                     <div id="step-2" class="conf-step hidden">
                         <div class="mb-8 flex items-center gap-4">
                             <div class="w-3 h-3 bg-accent animate-pulse"></div>
-                            <h4 class="text-white text-xl font-bold">DEFINE_CAPITAL_ALLOCATION:</h4>
+                            <h4 class="text-white text-xl font-bold" data-i18n="conf.s2.title">DEFINE_CAPITAL_ALLOCATION:</h4>
                         </div>
                         <div class="border border-white/20 p-12 bg-black relative">
                             <!-- Ruler -->
@@ -734,17 +735,17 @@
 
                             <div class="relative z-10">
                                 <div class="flex justify-between text-xs mb-6 text-white/70 font-mono">
-                                    <span>[MIN: 5M]</span>
-                                    <span class="text-white text-2xl font-bold bg-black px-2 border border-accent">25.0
+                                    <span data-i18n="conf.s2.min">[MIN: 5M]</span>
+                                    <span class="text-white text-2xl font-bold bg-black px-2 border border-accent" data-i18n="conf.s2.value">25.0
                                         MNOK</span>
-                                    <span>[MAX: 50M+]</span>
+                                    <span data-i18n="conf.s2.max">[MAX: 50M+]</span>
                                 </div>
                                 <input type="range"
                                     class="w-full h-2 bg-white/10 rounded-none appearance-none cursor-pointer accent-accent">
                             </div>
                         </div>
                         <button onclick="configNext(3)"
-                            class="mt-8 px-12 py-4 bg-accent hover:bg-white hover:text-black text-white font-bold uppercase tracking-widest shadow-lg transition-all duration-300">
+                            class="mt-8 px-12 py-4 bg-accent hover:bg-white hover:text-black text-white font-bold uppercase tracking-widest shadow-lg transition-all duration-300" data-i18n="conf.s2.btn">
                             >> EXECUTE_NEXT_PHASE
                         </button>
                     </div>
@@ -753,34 +754,34 @@
                     <div id="step-3" class="conf-step hidden">
                         <div class="mb-8 flex items-center gap-4">
                             <div class="w-3 h-3 bg-accent animate-pulse"></div>
-                            <h4 class="text-white text-xl font-bold">INPUT_CONTACT_COORDINATES:</h4>
+                            <h4 class="text-white text-xl font-bold" data-i18n="conf.s3.title">INPUT_CONTACT_COORDINATES:</h4>
                         </div>
                         <div class="space-y-6 max-w-2xl">
                             <div class="relative group">
                                 <span
-                                    class="absolute left-0 top-0 text-xs text-accent font-bold opacity-70 group-focus-within:opacity-100 transition-opacity">>>
+                                    class="absolute left-0 top-0 text-xs text-accent font-bold opacity-70 group-focus-within:opacity-100 transition-opacity" data-i18n="conf.s3.location">>>
                                     LOCATION_ID</span>
-                                <input type="text" placeholder="MUNICIPALITY"
+                                <input type="text" data-i18n-placeholder="conf.s3.location.ph" placeholder="MUNICIPALITY"
                                     class="w-full bg-transparent border-b-2 border-white/20 py-4 pt-6 text-white font-bold uppercase tracking-widest focus:border-accent focus:outline-none transition-colors placeholder-white/30">
                             </div>
                             <div class="grid grid-cols-2 gap-8">
                                 <div class="relative group">
                                     <span
-                                        class="absolute left-0 top-0 text-xs text-accent font-bold opacity-70 group-focus-within:opacity-100 transition-opacity">>>
+                                        class="absolute left-0 top-0 text-xs text-accent font-bold opacity-70 group-focus-within:opacity-100 transition-opacity" data-i18n="conf.s3.agent">>>
                                         AGENT_ID</span>
-                                    <input type="text" placeholder="FULL NAME"
+                                    <input type="text" data-i18n-placeholder="conf.s3.agent.ph" placeholder="FULL NAME"
                                         class="w-full bg-transparent border-b-2 border-white/20 py-4 pt-6 text-white font-bold uppercase tracking-widest focus:border-accent focus:outline-none transition-colors placeholder-white/30">
                                 </div>
                                 <div class="relative group">
                                     <span
-                                        class="absolute left-0 top-0 text-xs text-accent font-bold opacity-70 group-focus-within:opacity-100 transition-opacity">>>
+                                        class="absolute left-0 top-0 text-xs text-accent font-bold opacity-70 group-focus-within:opacity-100 transition-opacity" data-i18n="conf.s3.comms">>>
                                         COMMS_LINK</span>
-                                    <input type="email" placeholder="EMAIL ADDRESS"
+                                    <input type="email" data-i18n-placeholder="conf.s3.comms.ph" placeholder="EMAIL ADDRESS"
                                         class="w-full bg-transparent border-b-2 border-white/20 py-4 pt-6 text-white font-bold uppercase tracking-widest focus:border-accent focus:outline-none transition-colors placeholder-white/30">
                                 </div>
                             </div>
                             <button
-                                class="mt-12 px-12 py-4 border border-accent text-accent hover:bg-accent hover:text-white font-bold uppercase tracking-widest transition-all w-full md:w-auto">
+                                class="mt-12 px-12 py-4 border border-accent text-accent hover:bg-accent hover:text-white font-bold uppercase tracking-widest transition-all w-full md:w-auto" data-i18n="conf.s3.btn">
                                 [ TRANSMIT_DATA ]
                             </button>
                         </div>
@@ -795,8 +796,8 @@
     <footer class="bg-black text-white border-t border-white/20 font-mono text-xs">
         <!-- Top Tech Bar -->
         <div class="border-b border-white/20 py-2 px-6 flex justify-between uppercase opacity-50">
-            <span>> SYSTEM_SHUTDOWN</span>
-            <span>> END_OF_LINE</span>
+            <span data-i18n="foot.shutdown">> SYSTEM_SHUTDOWN</span>
+            <span data-i18n="foot.eol">> END_OF_LINE</span>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-12 min-h-[400px]">
@@ -813,7 +814,7 @@
                     <div class="absolute w-full h-px bg-white/10"></div>
                     <div class="absolute h-full w-px bg-white/10"></div>
                 </div>
-                <div class="absolute bottom-4 left-4 bg-black border border-white p-2 text-[10px]">
+                <div class="absolute bottom-4 left-4 bg-black border border-white p-2 text-[10px]" data-i18n="foot.map.coords">
                     HQ_COORDS: 59.91°N / 10.75°E
                 </div>
             </div>
@@ -822,18 +823,18 @@
             <div
                 class="md:col-span-3 border-b md:border-b-0 md:border-r border-white/20 p-8 flex flex-col justify-between">
                 <div>
-                    <h3 class="font-bold text-2xl uppercase mb-8 border-l-4 border-accent pl-4">Total<br>Contractor</h3>
+                    <h3 class="font-bold text-2xl uppercase mb-8 border-l-4 border-accent pl-4" data-i18n="foot.company">Total<br>Contractor</h3>
                     <div class="space-y-4 opacity-70">
-                        <p>> Dronning Eufemias gate 8</p>
-                        <p>> 0191 Oslo, Norway</p>
-                        <p>> Org: 931 930 202 MVA</p>
+                        <p data-i18n="foot.addr1">> Dronning Eufemias gate 8</p>
+                        <p data-i18n="foot.addr2">> 0191 Oslo, Norway</p>
+                        <p data-i18n="foot.org">> Org: 931 930 202 MVA</p>
                     </div>
                 </div>
                 <div class="mt-12">
-                    <p class="opacity-50 mb-2">__CONTACT_UPLINK:</p>
+                    <p class="opacity-50 mb-2" data-i18n="foot.contact.label">__CONTACT_UPLINK:</p>
                     <a href="mailto:post@total.no"
-                        class="block text-lg hover:text-accent transition-colors">post@total.no</a>
-                    <a href="tel:+4722334455" class="block text-lg hover:text-accent transition-colors">+47 22 33 44
+                        class="block text-lg hover:text-accent transition-colors" data-i18n="foot.contact.email">post@total.no</a>
+                    <a href="tel:+4722334455" class="block text-lg hover:text-accent transition-colors" data-i18n="foot.contact.phone">+47 22 33 44
                         55</a>
                 </div>
             </div>
@@ -851,7 +852,7 @@
                         CAREERS</a>
                 </nav>
                 <div class="opacity-40 text-[10px] mt-12">
-                    <p>© 2026 TOTAL CONTRACTOR AS</p>
+                    <p data-i18n="foot.copyright">© 2026 TOTAL CONTRACTOR AS</p>
                     <a href="accessibility.html" class="underline hover:text-white" data-i18n="foot.acc">ACCESSIBILITY
                         PROTOCOL</a>
                 </div>
@@ -861,7 +862,7 @@
 
     <!-- SHARED: FLOATING CONFIGURATOR BUTTON (Internal Tool) -->
 
-    <button onclick="App.toggleThemePanel()" id="config-trigger" aria-label="Open Configurator"
+    <button onclick="App.toggleThemePanel()" id="config-trigger" data-i18n-aria="conf.trigger.aria" aria-label="Open Configurator"
         class="fixed top-1/2 right-0 z-[1001] bg-white text-dark p-3 rounded-l-md hover:bg-accent hover:text-white transition-colors shadow-2xl translate-y-[-50%] border-l border-y border-dark/10 group transition-opacity duration-300">
         <svg class="w-6 h-6 group-hover:rotate-90 transition-transform duration-700" fill="none" stroke="currentColor"
             viewBox="0 0 24 24">
@@ -879,8 +880,8 @@
     <div id="theme-panel"
         class="fixed top-0 right-0 h-full w-80 bg-dark border-l border-light/10 z-[1000] transform translate-x-full transition-transform duration-500 ease-out p-8 shadow-2xl text-white">
         <div class="flex justify-between items-center mb-8 border-b border-light/20 pb-4">
-            <h3 class="font-mono text-sm uppercase tracking-widest text-light">Internal Config</h3>
-            <button onclick="App.toggleThemePanel()" aria-label="Lukk konfigurator"
+            <h3 class="font-mono text-sm uppercase tracking-widest text-light" data-i18n="panel.title">Internal Config</h3>
+            <button onclick="App.toggleThemePanel()" data-i18n-aria="panel.close.aria" aria-label="Close configurator"
                 class="text-light/50 hover:text-accent">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
@@ -893,45 +894,45 @@
 
             <!-- SECTION 1: BUSINESS TYPE (DEMO) -->
             <div>
-                <h4 class="font-mono text-[10px] text-light/50 mb-3 uppercase tracking-widest">1. Select
+                <h4 class="font-mono text-[10px] text-light/50 mb-3 uppercase tracking-widest" data-i18n="panel.sect1">1. Select
                     Business
                 </h4>
                 <div class="flex flex-col gap-2">
                     <button id="btn-demo-demo1" onclick="App.setDemo('demo1')"
                         class="text-left px-4 py-3 border border-light/10 text-xs font-mono text-light bg-light/5 hover:bg-light/10 hover:border-accent transition-all flex justify-between items-center group">
-                        <span>THE TOTAL CONTRACTOR</span>
+                        <span data-i18n="panel.demo1">THE TOTAL CONTRACTOR</span>
                         <span class="opacity-0 group-hover:opacity-100 text-accent transition-opacity">→</span>
                     </button>
                     <button id="btn-demo-demo2" onclick="App.setDemo('demo2')"
                         class="text-left px-4 py-3 border border-light/10 text-xs font-mono text-light bg-light/5 hover:bg-light/10 hover:border-accent transition-all flex justify-between items-center group">
-                        <span>SERVICE SPECIALIST</span>
+                        <span data-i18n="panel.demo2">SERVICE SPECIALIST</span>
                         <span class="opacity-0 group-hover:opacity-100 text-accent transition-opacity">→</span>
                     </button>
                     <button id="btn-demo-demo3" onclick="App.setDemo('demo3')"
                         class="text-left px-4 py-3 border border-light/10 text-xs font-mono text-light bg-light/5 hover:bg-light/10 hover:border-accent transition-all flex justify-between items-center group">
-                        <span>FINISHING EXPERT</span>
+                        <span data-i18n="panel.demo3">FINISHING EXPERT</span>
                         <span class="opacity-0 group-hover:opacity-100 text-accent transition-opacity">→</span>
                     </button>
                 </div>
             </div>
 
             <div>
-                <h4 class="font-mono text-[10px] text-light/50 mb-3 uppercase tracking-widest">2. Select Layout</h4>
+                <h4 class="font-mono text-[10px] text-light/50 mb-3 uppercase tracking-widest" data-i18n="panel.sect2">2. Select Layout</h4>
                 <div class="grid grid-cols-3 gap-2 mb-2">
                     <button id="btn-tpl-std" onclick="App.setTemplate('std')"
                         class="aspect-video border border-light/10 bg-light/5 flex flex-col items-center justify-center gap-1 group hover:border-accent hover:text-accent transition-all">
                         <div class="w-4 h-2 border border-light/30 group-hover:border-accent"></div>
-                        <span class="text-[8px] font-mono text-light/50 group-hover:text-accent">STD</span>
+                        <span class="text-[8px] font-mono text-light/50 group-hover:text-accent" data-i18n="panel.tpl.std">STD</span>
                     </button>
                     <button id="btn-tpl-min" onclick="App.setTemplate('min')"
                         class="aspect-video border border-light/10 bg-light/5 flex flex-col items-center justify-center gap-1 group hover:border-accent hover:text-accent transition-all">
                         <div class="w-4 h-2 border border-light/30 group-hover:border-accent"></div>
-                        <span class="text-[8px] font-mono text-light/50 group-hover:text-accent">SWISS</span>
+                        <span class="text-[8px] font-mono text-light/50 group-hover:text-accent" data-i18n="panel.tpl.swiss">SWISS</span>
                     </button>
                     <button id="btn-tpl-grid" onclick="App.setTemplate('grid')"
                         class="aspect-video border border-light/10 bg-light/5 flex flex-col items-center justify-center gap-1 group hover:border-accent hover:text-accent transition-all config-active">
                         <div class="w-4 h-2 border border-light/30 group-hover:border-accent"></div>
-                        <span class="text-[8px] font-mono text-light/50 group-hover:text-accent">TECH</span>
+                        <span class="text-[8px] font-mono text-light/50 group-hover:text-accent" data-i18n="panel.tpl.tech">TECH</span>
                     </button>
                 </div>
 
@@ -939,25 +940,25 @@
 
             <!-- SECTION 3: VISUAL THEME -->
             <div>
-                <h4 class="font-mono text-[10px] text-light/50 mb-3 uppercase tracking-widest">3. Visual Style</h4>
+                <h4 class="font-mono text-[10px] text-light/50 mb-3 uppercase tracking-widest" data-i18n="panel.sect3">3. Visual Style</h4>
                 <div class="space-y-2">
                     <!-- Theme 1 -->
                     <button id="btn-theme-default" onclick="App.setTheme('default')"
                         class="w-full p-3 border border-light/10 flex items-center gap-4 hover:border-accent group transition-all bg-light/5">
                         <div class="w-6 h-6 bg-[#1A1A1B] border border-[#FF5F1F] rounded-full"></div>
-                        <span class="font-mono text-xs uppercase group-hover:text-accent">Safety Orange</span>
+                        <span class="font-mono text-xs uppercase group-hover:text-accent" data-i18n="panel.theme.orange">Safety Orange</span>
                     </button>
                     <!-- Theme 2 -->
                     <button id="btn-theme-nordic" onclick="App.setTheme('nordic')"
                         class="w-full p-3 border border-light/10 flex items-center gap-4 hover:border-accent group transition-all bg-light/5">
                         <div class="w-6 h-6 bg-[#0F172A] border border-[#38BDF8] rounded-full"></div>
-                        <span class="font-mono text-xs uppercase group-hover:text-accent">Nordic Blue</span>
+                        <span class="font-mono text-xs uppercase group-hover:text-accent" data-i18n="panel.theme.nordic">Nordic Blue</span>
                     </button>
                     <!-- Theme 3 -->
                     <button id="btn-theme-nature" onclick="App.setTheme('nature')"
                         class="w-full p-3 border border-light/10 flex items-center gap-4 hover:border-accent group transition-all bg-light/5">
                         <div class="w-6 h-6 bg-[#1B2B1E] border border-[#D4A373] rounded-full"></div>
-                        <span class="font-mono text-xs uppercase group-hover:text-accent">Forest Copper</span>
+                        <span class="font-mono text-xs uppercase group-hover:text-accent" data-i18n="panel.theme.nature">Forest Copper</span>
                     </button>
                     <!-- Theme 4 -->
                     <button id="btn-theme-steel" onclick="App.setTheme('steel')"
@@ -965,7 +966,7 @@
                         <div class="w-6 h-6 bg-[#E5E5E5] border border-[#333] rounded-full relative overflow-hidden">
                             <div class="absolute inset-0 bg-[#333] w-1/2"></div>
                         </div>
-                        <span class="font-mono text-xs uppercase group-hover:text-accent">Steel Mono</span>
+                        <span class="font-mono text-xs uppercase group-hover:text-accent" data-i18n="panel.theme.steel">Steel Mono</span>
                     </button>
                 </div>
             </div>
@@ -980,9 +981,25 @@
                 images: { hero: "assets/hero_background_1767958362195.png", p1: "assets/portfolio_item_1_1767958389520.png", p2: "assets/portfolio_item_2_1767958409257.png", team: "assets/ceo_portrait_nordic_1767961934691.png" },
                 i18n: {
                     no: {
+                        "nav.services": "Tjenester",
+                        "nav.about": "Om Oss",
+                        "nav.projects": "Prosjekter",
+                        "nav.contact": "Kontakt",
+                        "nav.menu": "MENY",
+                        "hero.est": "Etbl. 1999 • Norge",
                         "hero.title": "Bygger<br>Fremtiden.",
                         "hero.subtitle": "Vi realiserer ambisiøse prosjekter med industriell presisjon. Fra konsept til ferdigstillelse.",
                         "hero.cta": "Kontakt Oss",
+                        "trust.i1.label": "Sentral Godkjenning",
+                        "trust.i1.code": "[REG: 2026-B30]",
+                        "trust.i2.label": "Mesterbrev",
+                        "trust.i2.code": "[SERT: M-992]",
+                        "trust.i3.label": "StartBANK",
+                        "trust.i3.code": "[ID: 88421]",
+                        "trust.i4.label": "Miljøfyrtårn",
+                        "trust.i4.code": "[ECO: A+]",
+                        "trust.status.label": "SYS.STATUS:",
+                        "trust.status.value": "ONLINE",
                         "serv.sub": "// EKSPERTISE",
                         "serv.title": "Total<br>Enterprise",
                         "serv.c1.title": "Totalentreprise",
@@ -995,42 +1012,125 @@
                         "proc.title": "Prosjekt<br>Logg",
                         "proc.s1.title": "ANALYSE",
                         "proc.s1.desc": "> Topografisk skanning<br>> Strukturell mulighetsstudie<br>> Konseptgenerering",
+                        "proc.s1.badge": "SKANNER...",
                         "proc.s2.title": "GRUNNARBEID",
                         "proc.s2.desc": "> Presisjonssprengning<br>> Fjellstabilisering<br>> Fundamentstøping",
+                        "proc.s2.badge": "UTPLASSERER",
                         "proc.s3.title": "STRUKTUR",
                         "proc.s3.desc": "> Stålrammeverk<br>> Massivtre montasje<br>> Klimaskall tetting",
+                        "proc.s3.badge": "MONTASJE",
                         "proc.s4.title": "OVERLEVERING",
                         "proc.s4.desc": "> Kvalitetssikring<br>> Dokumentasjon<br>> Nøkkeloverdragelse",
+                        "proc.s4.badge": "FULLFØRT",
                         "sust.sub": "> MILJØ_PROTOKOLL",
                         "sust.title": "Natur<br>OS <span class='text-accent'>2.0</span>",
                         "sust.p1": "> SYSTEMOPTIMALISERING: Massivtre-konstruksjon reduserer totalt karbonavtrykk med 40% vs tradisjonell betong.",
                         "sust.p2": "> INTEGRASJON: Passiv termisk reguleringslogikk implementert i alle ytre skall.",
+                        "sust.img.label": "MAT_ID: MASSIVTRE_CLT",
+                        "sust.img.density": "DENSITET: 500kg/m3",
+                        "sust.img.origin": "OPPRINNELSE: NORDISKE_SKOGER",
+                        "sust.stat1.label": "CO2_UTSLIPP",
+                        "sust.stat1.value": "-45%",
+                        "sust.stat2.label": "RESIRKULERBARHET",
+                        "sust.stat2.value": "98%",
                         "lead.sub": "> LEDELSES_ERKLÆRING",
                         "lead.quote": "\"Usikkerhet er<br> Systemfeil.\"",
                         "lead.p1": "// Som totalentreprenør er vår hovedinstruks presisjon. Vi eliminerer variabler. Vi utfører med militær disiplin.",
                         "lead.p2": "// Arkitektur er koden. Konstruksjon er kompileringen.",
+                        "lead.access": "PERSONELL_DB_TILGANG: AUTORISERT",
+                        "lead.card.label": "ID_KORT",
+                        "lead.card.name": "J.E. Johansen",
+                        "lead.card.role": "CEO / OPERATØR",
+                        "lead.exp": "EXP_NIVÅ: 25_ÅR",
+                        "lead.status": "STATUS: AKTIV",
+                        "work.sub": "> DATABASE_TILGANG",
                         "work.title": "Utvalgte Verk",
                         "work.viewall": "[ SE ARKIVET ]",
+                        "work.p1.rec": "REC_001",
                         "work.p1.title": "Villa Nord",
                         "work.p1.sub": "OSLO // BETONG",
+                        "work.p1.status": ":: FULLFØRT",
+                        "work.p2.rec": "REC_002",
                         "work.p2.title": "Fjellhytte",
                         "work.p2.sub": "GEILO // TØMMER",
+                        "work.p2.status": ":: PÅGÅR",
+                        "conf.protocol": "> SYSTEM_INIT_PROTOKOLL",
                         "conf.title": "Start<br><span class='text-transparent' style='-webkit-text-stroke: 1px var(--color-accent);'>Oppkobling_</span>",
+                        "conf.server.label": "SERVER:",
+                        "conf.server.value": "ONLINE",
+                        "conf.ping.label": "PING:",
+                        "conf.ping.value": "12ms",
+                        "conf.encryption": "KRYPTERING: 256-BIT",
                         "conf.m1": "[01] TYPE", "conf.m2": "[02] BUDSJETT", "conf.m3": "[03] DATA", "conf.m4": "[04] EXEC",
                         "conf.stat.done": "FERDIG", "conf.stat.wait": "VENTER", "conf.stat.lock": "LÅST",
                         "conf.sidebar.msg": "> Venter på input-sekvens. Velg prosjektparametere for å initialisere totalentreprenørmotoren.",
                         "conf.s1.title": "VELG_MÅL_MODUL:",
+                        "conf.s1.opt1": "< Bolig>",
+                        "conf.s1.opt2": "< Hytte>",
+                        "conf.s1.opt3": "< Industri>",
                         "conf.s2.title": "DEFINER_KAPITAL_ALLOKERING:",
+                        "conf.s2.min": "[MIN: 5M]",
+                        "conf.s2.value": "25.0 MNOK",
+                        "conf.s2.max": "[MAKS: 50M+]",
+                        "conf.s2.btn": ">> UTFØR_NESTE_FASE",
                         "conf.s3.title": "INPUT_KONTAKT_KOORDINATER:",
-                        "conf.btn.next": "Eksekver",
-                        "conf.btn.submit": "[ SEND_DATA ]",
+                        "conf.s3.location": ">> LOKASJON_ID",
+                        "conf.s3.location.ph": "KOMMUNE",
+                        "conf.s3.agent": ">> AGENT_ID",
+                        "conf.s3.agent.ph": "FULLT NAVN",
+                        "conf.s3.comms": ">> KOMM_LINK",
+                        "conf.s3.comms.ph": "E-POSTADRESSE",
+                        "conf.s3.btn": "[ SEND_DATA ]",
+                        "conf.trigger.aria": "Åpne konfigurator",
+                        "foot.shutdown": "> SYSTEM_NEDSTENGING",
+                        "foot.eol": "> LINJESLUTT",
+                        "foot.company": "Total<br>Entreprenør",
+                        "foot.addr1": "> Dronning Eufemias gate 8",
+                        "foot.addr2": "> 0191 Oslo, Norge",
+                        "foot.org": "> Org: 931 930 202 MVA",
+                        "foot.contact.label": "__KONTAKT_OPPKOBLING:",
+                        "foot.contact.email": "post@total.no",
+                        "foot.contact.phone": "+47 22 33 44 55",
+                        "foot.map.coords": "HK_KOORD: 59.91°N / 10.75°E",
                         "foot.serv": "> TJENESTER", "foot.proj": "> PROSJEKTER", "foot.about": "> OM OSS", "foot.car": "> KARRIERE",
-                        "foot.acc": "TILGJENGELIGHETSPROTOKOLL"
+                        "foot.copyright": "© 2026 TOTAL ENTREPRENØR AS",
+                        "foot.acc": "TILGJENGELIGHETSPROTOKOLL",
+                        "panel.title": "Intern Konfig",
+                        "panel.close.aria": "Lukk konfigurator",
+                        "panel.sect1": "1. Velg Virksomhet",
+                        "panel.demo1": "TOTALENTREPRENØREN",
+                        "panel.demo2": "SERVICESPESIALIST",
+                        "panel.demo3": "FERDIGSTILLINGSEKSPERT",
+                        "panel.sect2": "2. Velg Layout",
+                        "panel.tpl.std": "STD",
+                        "panel.tpl.swiss": "SWISS",
+                        "panel.tpl.tech": "TECH",
+                        "panel.sect3": "3. Visuell Stil",
+                        "panel.theme.orange": "Sikkerhetsoransje",
+                        "panel.theme.nordic": "Nordisk Blå",
+                        "panel.theme.nature": "Skog Kobber",
+                        "panel.theme.steel": "Stål Mono"
                     },
                     en: {
+                        "nav.services": "Services",
+                        "nav.about": "About",
+                        "nav.projects": "Projects",
+                        "nav.contact": "Contact",
+                        "nav.menu": "MENU",
+                        "hero.est": "Est. 1999 • Norway",
                         "hero.title": "Building<br>Tomorrow.",
                         "hero.subtitle": "We combine industrial precision with architectural vision. From concept to turnkey delivery.",
                         "hero.cta": "Get in Touch",
+                        "trust.i1.label": "Central Approval",
+                        "trust.i1.code": "[REG: 2026-B30]",
+                        "trust.i2.label": "Master Certificate",
+                        "trust.i2.code": "[CERT: M-992]",
+                        "trust.i3.label": "StartBANK",
+                        "trust.i3.code": "[ID: 88421]",
+                        "trust.i4.label": "Eco-Lighthouse",
+                        "trust.i4.code": "[ECO: A+]",
+                        "trust.status.label": "SYS.STATUS:",
+                        "trust.status.value": "ONLINE",
                         "serv.sub": "// EXPERTISE",
                         "serv.title": "Comprehensive<br>Construction",
                         "serv.c1.title": "Total Enterprise",
@@ -1043,42 +1143,240 @@
                         "proc.title": "Execution<br>Log",
                         "proc.s1.title": "Analysis",
                         "proc.s1.desc": "> Site topography scan<br>> Structural feasibility<br>> Concept generation",
+                        "proc.s1.badge": "SCANNING...",
                         "proc.s2.title": "Groundwork",
                         "proc.s2.desc": "> Precision blasting<br>> Rock stabilization<br>> Foundation casting",
+                        "proc.s2.badge": "DEPLOYING",
                         "proc.s3.title": "Structure",
                         "proc.s3.desc": "> Steel framework<br>> CLT installation<br>> Envelope sealing",
+                        "proc.s3.badge": "ASSEMBLY",
                         "proc.s4.title": "Handover",
                         "proc.s4.desc": "> Quality assurance<br>> Documentation<br>> Key transfer",
+                        "proc.s4.badge": "COMPLETE",
                         "sust.sub": "> ENV_PROTOCOL",
                         "sust.title": "Nature<br>OS <span class='text-accent'>2.0</span>",
                         "sust.p1": "> SYSTEM_OPTIMIZATION: Cross Laminated Timber structure reduces total carbon footprint by 40% vs Traditional Concrete.",
                         "sust.p2": "> INTEGRATION: Passive thermal regulation logic applied to all exterior envelopes.",
+                        "sust.img.label": "MAT_ID: TIMBER_CLT",
+                        "sust.img.density": "DENSITY: 500kg/m3",
+                        "sust.img.origin": "ORIGIN: NORDIC_FORESTS",
+                        "sust.stat1.label": "CO2_EMISSION",
+                        "sust.stat1.value": "-45%",
+                        "sust.stat2.label": "RECYCLABILITY",
+                        "sust.stat2.value": "98%",
                         "lead.sub": "> LEADERSHIP_STATEMENT",
                         "lead.quote": "\"Uncertainty is<br> System Error.\"",
                         "lead.p1": "// As a total contractor, our prime directive is precision. We eliminate variables. We execute with military discipline.",
                         "lead.p2": "// Architecture is the code. Construction is the compilation.",
+                        "lead.access": "PERSONNEL_DB_ACCESS: AUTHORIZED",
+                        "lead.card.label": "ID_CARD",
+                        "lead.card.name": "J.E. Johansen",
+                        "lead.card.role": "CEO / OPERATOR",
+                        "lead.exp": "EXP_LEVEL: 25_YEARS",
+                        "lead.status": "STATUS: ACTIVE",
+                        "work.sub": "> DATABASE_ACCESS",
                         "work.title": "Selected<br>Archives",
                         "work.viewall": "[ VIEW_ALL_RECORDS ]",
+                        "work.p1.rec": "REC_001",
                         "work.p1.title": "Villa North",
                         "work.p1.sub": "OSLO // CONCRETE",
+                        "work.p1.status": ":: COMPLETED",
+                        "work.p2.rec": "REC_002",
                         "work.p2.title": "Mountain Lodge",
                         "work.p2.sub": "GEILO // TIMBER",
+                        "work.p2.status": ":: IN_PROGRESS",
+                        "conf.protocol": "> SYSTEM_INIT_PROTOCOL",
                         "conf.title": "Start<br><span class='text-transparent' style='-webkit-text-stroke: 1px var(--color-accent);'>Uplink_</span>",
+                        "conf.server.label": "SERVER:",
+                        "conf.server.value": "ONLINE",
+                        "conf.ping.label": "PING:",
+                        "conf.ping.value": "12ms",
+                        "conf.encryption": "ENCRYPTION: 256-BIT",
                         "conf.m1": "[01] TYPE", "conf.m2": "[02] BUDGET", "conf.m3": "[03] DATA", "conf.m4": "[04] EXEC",
                         "conf.stat.done": "DONE", "conf.stat.wait": "WAITING", "conf.stat.lock": "LOCKED",
                         "conf.sidebar.msg": "> Awaiting user input sequence. Select project parameters to initialize total contracting engine.",
                         "conf.s1.title": "SELECT_TARGET_MODULE:",
+                        "conf.s1.opt1": "< Resident>",
+                        "conf.s1.opt2": "< Cabin>",
+                        "conf.s1.opt3": "< Industry>",
                         "conf.s2.title": "DEFINE_CAPITAL_ALLOCATION:",
+                        "conf.s2.min": "[MIN: 5M]",
+                        "conf.s2.value": "25.0 MNOK",
+                        "conf.s2.max": "[MAX: 50M+]",
+                        "conf.s2.btn": ">> EXECUTE_NEXT_PHASE",
                         "conf.s3.title": "INPUT_CONTACT_COORDINATES:",
-                        "conf.btn.next": "Execute",
-                        "conf.btn.submit": "[ TRANSMIT_DATA ]",
+                        "conf.s3.location": ">> LOCATION_ID",
+                        "conf.s3.location.ph": "MUNICIPALITY",
+                        "conf.s3.agent": ">> AGENT_ID",
+                        "conf.s3.agent.ph": "FULL NAME",
+                        "conf.s3.comms": ">> COMMS_LINK",
+                        "conf.s3.comms.ph": "EMAIL ADDRESS",
+                        "conf.s3.btn": "[ TRANSMIT_DATA ]",
+                        "conf.trigger.aria": "Open Configurator",
+                        "foot.shutdown": "> SYSTEM_SHUTDOWN",
+                        "foot.eol": "> END_OF_LINE",
+                        "foot.company": "Total<br>Contractor",
+                        "foot.addr1": "> Dronning Eufemias gate 8",
+                        "foot.addr2": "> 0191 Oslo, Norway",
+                        "foot.org": "> Org: 931 930 202 MVA",
+                        "foot.contact.label": "__CONTACT_UPLINK:",
+                        "foot.contact.email": "post@total.no",
+                        "foot.contact.phone": "+47 22 33 44 55",
+                        "foot.map.coords": "HQ_COORDS: 59.91°N / 10.75°E",
                         "foot.serv": "> SERVICES", "foot.proj": "> PROJECTS", "foot.about": "> ABOUT", "foot.car": "> CAREERS",
-                        "foot.acc": "ACCESSIBILITY PROTOCOL"
+                        "foot.copyright": "© 2026 TOTAL CONTRACTOR AS",
+                        "foot.acc": "ACCESSIBILITY PROTOCOL",
+                        "panel.title": "Internal Config",
+                        "panel.close.aria": "Close configurator",
+                        "panel.sect1": "1. Select Business",
+                        "panel.demo1": "THE TOTAL CONTRACTOR",
+                        "panel.demo2": "SERVICE SPECIALIST",
+                        "panel.demo3": "FINISHING EXPERT",
+                        "panel.sect2": "2. Select Layout",
+                        "panel.tpl.std": "STD",
+                        "panel.tpl.swiss": "SWISS",
+                        "panel.tpl.tech": "TECH",
+                        "panel.sect3": "3. Visual Style",
+                        "panel.theme.orange": "Safety Orange",
+                        "panel.theme.nordic": "Nordic Blue",
+                        "panel.theme.nature": "Forest Copper",
+                        "panel.theme.steel": "Steel Mono"
+                    },
+                    pl: {
+                        "nav.services": "Usługi",
+                        "nav.about": "O Nas",
+                        "nav.projects": "Projekty",
+                        "nav.contact": "Kontakt",
+                        "nav.menu": "MENU",
+                        "hero.est": "Zał. 1999 • Norwegia",
+                        "hero.title": "Budujemy<br>Przyszłość.",
+                        "hero.subtitle": "Realizujemy ambitne projekty z przemysłową precyzją. Od koncepcji do finalizacji.",
+                        "hero.cta": "Skontaktuj Się",
+                        "trust.i1.label": "Centralne Zatwierdzenie",
+                        "trust.i1.code": "[REG: 2026-B30]",
+                        "trust.i2.label": "Certyfikat Mistrza",
+                        "trust.i2.code": "[CERT: M-992]",
+                        "trust.i3.label": "StartBANK",
+                        "trust.i3.code": "[ID: 88421]",
+                        "trust.i4.label": "Eko-Latarnia",
+                        "trust.i4.code": "[ECO: A+]",
+                        "trust.status.label": "SYS.STATUS:",
+                        "trust.status.value": "ONLINE",
+                        "serv.sub": "// EKSPERTYZA",
+                        "serv.title": "Kompleksowa<br>Realizacja",
+                        "serv.c1.title": "Generalny Wykonawca",
+                        "serv.c1.desc": "Pełne zarządzanie projektem od pierwszej łopaty do przekazania. Jeden punkt kontaktowy.",
+                        "serv.c2.title": "Architektura",
+                        "serv.c2.desc": "Wewnętrzni architekci zapewniają, że forma idzie za funkcją. Projektujemy nowoczesne przestrzenie dla nowoczesnego życia.",
+                        "serv.c3.title": "Systemy Energetyczne",
+                        "serv.c3.desc": "Lider w zrównoważonym budownictwie. Ciepło geotermalne, energia słoneczna i standardy domów pasywnych.",
+                        "proc.sub": "// PROTOKÓŁ",
+                        "proc.title": "Dziennik<br>Projektu",
+                        "proc.s1.title": "ANALIZA",
+                        "proc.s1.desc": "> Skanowanie topograficzne<br>> Studium strukturalne<br>> Generowanie koncepcji",
+                        "proc.s1.badge": "SKANOWANIE...",
+                        "proc.s2.title": "ROBOTY ZIEMNE",
+                        "proc.s2.desc": "> Precyzyjne odstrzały<br>> Stabilizacja skał<br>> Wylewanie fundamentów",
+                        "proc.s2.badge": "ROZMIESZCZANIE",
+                        "proc.s3.title": "KONSTRUKCJA",
+                        "proc.s3.desc": "> Stalowa konstrukcja<br>> Montaż CLT<br>> Szczelność obudowy",
+                        "proc.s3.badge": "MONTAŻ",
+                        "proc.s4.title": "PRZEKAZANIE",
+                        "proc.s4.desc": "> Zapewnienie jakości<br>> Dokumentacja<br>> Przekazanie kluczy",
+                        "proc.s4.badge": "UKOŃCZONO",
+                        "sust.sub": "> PROTOKÓŁ_ŚRODOWISKOWY",
+                        "sust.title": "Natura<br>OS <span class='text-accent'>2.0</span>",
+                        "sust.p1": "> OPTYMALIZACJA_SYSTEMU: Konstrukcja z drewna klejonego warstwowo redukuje całkowity ślad węglowy o 40% w porównaniu z tradycyjnym betonem.",
+                        "sust.p2": "> INTEGRACJA: Pasywna logika regulacji termicznej zaimplementowana we wszystkich zewnętrznych obudowach.",
+                        "sust.img.label": "MAT_ID: DREWNO_CLT",
+                        "sust.img.density": "GĘSTOŚĆ: 500kg/m3",
+                        "sust.img.origin": "POCHODZENIE: LASY_NORDYCKIE",
+                        "sust.stat1.label": "EMISJA_CO2",
+                        "sust.stat1.value": "-45%",
+                        "sust.stat2.label": "RECYKLING",
+                        "sust.stat2.value": "98%",
+                        "lead.sub": "> OŚWIADCZENIE_ZARZĄDU",
+                        "lead.quote": "\"Niepewność to<br> Błąd Systemu.\"",
+                        "lead.p1": "// Jako generalny wykonawca, naszą główną dyrektywą jest precyzja. Eliminujemy zmienne. Wykonujemy z wojskową dyscypliną.",
+                        "lead.p2": "// Architektura to kod. Konstrukcja to kompilacja.",
+                        "lead.access": "DOSTĘP_DB_PERSONELU: AUTORYZOWANY",
+                        "lead.card.label": "KARTA_ID",
+                        "lead.card.name": "J.E. Johansen",
+                        "lead.card.role": "CEO / OPERATOR",
+                        "lead.exp": "POZIOM_DOŚWIADCZENIA: 25_LAT",
+                        "lead.status": "STATUS: AKTYWNY",
+                        "work.sub": "> DOSTĘP_DO_BAZY_DANYCH",
+                        "work.title": "Wybrane Dzieła",
+                        "work.viewall": "[ ZOBACZ ARCHIWUM ]",
+                        "work.p1.rec": "REC_001",
+                        "work.p1.title": "Villa Nord",
+                        "work.p1.sub": "OSLO // BETON",
+                        "work.p1.status": ":: UKOŃCZONO",
+                        "work.p2.rec": "REC_002",
+                        "work.p2.title": "Górska Chata",
+                        "work.p2.sub": "GEILO // DREWNO",
+                        "work.p2.status": ":: W_TRAKCIE",
+                        "conf.protocol": "> PROTOKÓŁ_INIT_SYSTEMU",
+                        "conf.title": "Start<br><span class='text-transparent' style='-webkit-text-stroke: 1px var(--color-accent);'>Połączenie_</span>",
+                        "conf.server.label": "SERWER:",
+                        "conf.server.value": "ONLINE",
+                        "conf.ping.label": "PING:",
+                        "conf.ping.value": "12ms",
+                        "conf.encryption": "SZYFROWANIE: 256-BIT",
+                        "conf.m1": "[01] TYP", "conf.m2": "[02] BUDŻET", "conf.m3": "[03] DANE", "conf.m4": "[04] EXEC",
+                        "conf.stat.done": "GOTOWE", "conf.stat.wait": "OCZEKIWANIE", "conf.stat.lock": "ZABLOKOWANE",
+                        "conf.sidebar.msg": "> Oczekiwanie na sekwencję wejściową. Wybierz parametry projektu, aby zainicjować silnik generalnego wykonawstwa.",
+                        "conf.s1.title": "WYBIERZ_MODUŁ_DOCELOWY:",
+                        "conf.s1.opt1": "< Mieszkalny>",
+                        "conf.s1.opt2": "< Chatka>",
+                        "conf.s1.opt3": "< Przemysł>",
+                        "conf.s2.title": "OKREŚL_ALOKACJĘ_KAPITAŁU:",
+                        "conf.s2.min": "[MIN: 5M]",
+                        "conf.s2.value": "25.0 MNOK",
+                        "conf.s2.max": "[MAKS: 50M+]",
+                        "conf.s2.btn": ">> WYKONAJ_NASTĘPNĄ_FAZĘ",
+                        "conf.s3.title": "WPROWADŹ_WSPÓŁRZĘDNE_KONTAKTU:",
+                        "conf.s3.location": ">> ID_LOKALIZACJI",
+                        "conf.s3.location.ph": "GMINA",
+                        "conf.s3.agent": ">> ID_AGENTA",
+                        "conf.s3.agent.ph": "PEŁNA NAZWA",
+                        "conf.s3.comms": ">> LINK_KOMUNIKACYJNY",
+                        "conf.s3.comms.ph": "ADRES EMAIL",
+                        "conf.s3.btn": "[ WYŚLIJ_DANE ]",
+                        "conf.trigger.aria": "Otwórz konfigurator",
+                        "foot.shutdown": "> ZAMYKANIE_SYSTEMU",
+                        "foot.eol": "> KONIEC_LINII",
+                        "foot.company": "Total<br>Contractor",
+                        "foot.addr1": "> Dronning Eufemias gate 8",
+                        "foot.addr2": "> 0191 Oslo, Norwegia",
+                        "foot.org": "> Org: 931 930 202 MVA",
+                        "foot.contact.label": "__ŁĄCZE_KONTAKTOWE:",
+                        "foot.contact.email": "post@total.no",
+                        "foot.contact.phone": "+47 22 33 44 55",
+                        "foot.map.coords": "KOORD_SIEDZIBY: 59.91°N / 10.75°E",
+                        "foot.serv": "> USŁUGI", "foot.proj": "> PROJEKTY", "foot.about": "> O NAS", "foot.car": "> KARIERA",
+                        "foot.copyright": "© 2026 TOTAL CONTRACTOR AS",
+                        "foot.acc": "PROTOKÓŁ DOSTĘPNOŚCI",
+                        "panel.title": "Konfiguracja Wewnętrzna",
+                        "panel.close.aria": "Zamknij konfigurator",
+                        "panel.sect1": "1. Wybierz Działalność",
+                        "panel.demo1": "GENERALNY WYKONAWCA",
+                        "panel.demo2": "SPECJALISTA SERWISOWY",
+                        "panel.demo3": "EKSPERT WYKOŃCZENIOWY",
+                        "panel.sect2": "2. Wybierz Layout",
+                        "panel.tpl.std": "STD",
+                        "panel.tpl.swiss": "SWISS",
+                        "panel.tpl.tech": "TECH",
+                        "panel.sect3": "3. Styl Wizualny",
+                        "panel.theme.orange": "Pomarańcz Bezpieczeństwa",
+                        "panel.theme.nordic": "Nordycki Błękit",
+                        "panel.theme.nature": "Leśna Miedź",
+                        "panel.theme.steel": "Stalowe Mono"
                     }
                 }
             },
-            demo2: { title: "Service", images: {}, i18n: { no: {}, en: {} } },
-            demo3: { title: "Expert", images: {}, i18n: { no: {}, en: {} } }
+            demo2: { title: "Service", images: {}, i18n: { no: {}, en: {}, pl: {} } },
+            demo3: { title: "Expert", images: {}, i18n: { no: {}, en: {}, pl: {} } }
         };
 
         // 3. PAGE LOGIC (Scripts)
@@ -1138,12 +1436,33 @@
         let currentLang = 'en';
         let currentDemo = 'demo1';
 
+        // Helper: Get language from URL params > localStorage > default
+        function getInitialLanguage() {
+            // 1. Check URL query param (?lang=pl)
+            const urlParams = new URLSearchParams(window.location.search);
+            const urlLang = urlParams.get('lang');
+            if (urlLang && ['no', 'en', 'pl'].includes(urlLang)) {
+                return urlLang;
+            }
+
+            // 2. Check localStorage
+            const storedLang = localStorage.getItem('lang');
+            if (storedLang && ['no', 'en', 'pl'].includes(storedLang)) {
+                return storedLang;
+            }
+
+            // 3. Default
+            return 'no';
+        }
+
         function setLanguage(lang) {
             currentLang = lang;
             document.getElementById('lang-no').classList.toggle('font-bold', lang === 'no');
             document.getElementById('lang-no').classList.toggle('opacity-50', lang !== 'no');
             document.getElementById('lang-en').classList.toggle('font-bold', lang === 'en');
             document.getElementById('lang-en').classList.toggle('opacity-50', lang !== 'en');
+            document.getElementById('lang-pl').classList.toggle('font-bold', lang === 'pl');
+            document.getElementById('lang-pl').classList.toggle('opacity-50', lang !== 'pl');
             updateText();
             localStorage.setItem('lang', lang);
         }
@@ -1177,6 +1496,16 @@
             document.querySelectorAll('[data-i18n]').forEach(el => {
                 const key = el.getAttribute('data-i18n');
                 if (i18n[key]) el.innerHTML = i18n[key];
+            });
+            // Handle placeholders
+            document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+                const key = el.getAttribute('data-i18n-placeholder');
+                if (i18n[key]) el.placeholder = i18n[key];
+            });
+            // Handle aria-labels
+            document.querySelectorAll('[data-i18n-aria]').forEach(el => {
+                const key = el.getAttribute('data-i18n-aria');
+                if (i18n[key]) el.setAttribute('aria-label', i18n[key]);
             });
         }
 
@@ -1225,12 +1554,10 @@
                 localStorage.setItem('demo', 'demo1');
             }
 
-            const l = localStorage.getItem('lang') || 'no';
+            const l = getInitialLanguage();
             const t = localStorage.getItem('theme') || 'nordic';
-            if (l) {
-                currentLang = l;
-                setLanguage(l);
-            }
+            currentLang = l;
+            setLanguage(l);
             loadDemo(d);
             setTheme(t);
         });

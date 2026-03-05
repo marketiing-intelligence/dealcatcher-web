@@ -252,22 +252,24 @@
             <div class="hidden md:flex gap-8 items-center">
                 <a href="#services"
                     class="text-xs font-mono uppercase tracking-widest text-text hover:text-accent transition-colors"><span
-                        class="text-accent opacity-50 mr-2">01</span>Services</a>
+                        class="text-accent opacity-50 mr-2">01</span><span data-i18n="nav_services">Services</span></a>
                 <a href="#materials"
                     class="text-xs font-mono uppercase tracking-widest text-text hover:text-accent transition-colors"><span
-                        class="text-accent opacity-50 mr-2">02</span>Specs</a>
+                        class="text-accent opacity-50 mr-2">02</span><span data-i18n="nav_materials">Specs</span></a>
                 <a href="#process"
                     class="text-xs font-mono uppercase tracking-widest text-text hover:text-accent transition-colors"><span
-                        class="text-accent opacity-50 mr-2">03</span>Process</a>
+                        class="text-accent opacity-50 mr-2">03</span><span data-i18n="nav_process">Process</span></a>
                 <a href="#contact"
                     class="text-xs font-mono uppercase tracking-widest text-text hover:text-accent transition-colors"><span
-                        class="text-accent opacity-50 mr-2">04</span>Contact</a>
+                        class="text-accent opacity-50 mr-2">04</span><span data-i18n="nav_contact">Contact</span></a>
             </div>
 
             <div class="flex gap-2 text-xs font-bold text-accent">
                 <button onclick="LocalApp.setLang('no')" class="hover:text-text transition-colors">NO</button>
                 <span class="opacity-50 text-text">/</span>
                 <button onclick="LocalApp.setLang('en')" class="hover:text-text transition-colors">EN</button>
+                <span class="opacity-50 text-text">/</span>
+                <button onclick="LocalApp.setLang('pl')" class="hover:text-text transition-colors">PL</button>
             </div>
         </nav>
 
@@ -299,7 +301,7 @@
                         <span class="text-xs md:text-sm font-mono text-accent uppercase tracking-[0.3em]"
                             data-i18n="hero_before">Oslo & Omegn</span>
                     </div>
-                    <h1 class="text-5xl md:text-7xl font-bold tracking-tighter text-white mb-6 drop-shadow-2xl leading-[0.9]"
+                    <h1 class="text-5xl md:text-7xl font-bold tracking-tighter text-white mb-6 drop-shadow-2xl leading-[0.9] break-words"
                         data-i18n="hero_after">TOTAL<br><span
                             class="opacity-50 text-4xl md:text-6xl stroke-text">ENTREPRENØR</span></h1>
                 </div>
@@ -320,30 +322,30 @@
                 <!-- Top Spec Data -->
                 <div class="relative z-10 mt-24 md:mt-32">
 
-                    <h2 class="text-3xl md:text-5xl font-bold text-text mb-2 uppercase tracking-tight">
+                    <h2 class="text-3xl md:text-5xl font-bold text-text mb-2 uppercase tracking-tight break-words" data-i18n="tech_ops">
                         TECHNICAL<br>OPERATIONS</h2>
 
 
                     <div class="space-y-6 font-mono text-xs text-text/70">
                         <div
                             class="flex justify-between items-center border-b border-text/10 pb-3 group hover:border-accent transition-colors">
-                            <span class="group-hover:text-text transition-colors">Total Area</span>
+                            <span class="group-hover:text-text transition-colors" data-i18n="spec_area">Total Area</span>
                             <span class="text-text font-bold">450 m²</span>
                         </div>
                         <div
                             class="flex justify-between items-center border-b border-text/10 pb-3 group hover:border-accent transition-colors">
-                            <span class="group-hover:text-text transition-colors">Material</span>
-                            <span class="text-accent animate-pulse">● Stone / Oak</span>
+                            <span class="group-hover:text-text transition-colors" data-i18n="spec_material">Material</span>
+                            <span class="text-accent animate-pulse" data-i18n="spec_mat_value">● Stone / Oak</span>
                         </div>
                         <div
                             class="flex justify-between items-center border-b border-text/10 pb-3 group hover:border-accent transition-colors">
-                            <span class="group-hover:text-text transition-colors">Grade</span>
-                            <span class="text-text font-bold">Premium A</span>
+                            <span class="group-hover:text-text transition-colors" data-i18n="spec_grade">Grade</span>
+                            <span class="text-text font-bold" data-i18n="spec_grade_value">Premium A</span>
                         </div>
                         <div
                             class="flex justify-between items-center border-b border-text/10 pb-3 group hover:border-accent transition-colors">
-                            <span class="group-hover:text-text transition-colors">Execution</span>
-                            <span class="text-text font-bold">4 Weeks</span>
+                            <span class="group-hover:text-text transition-colors" data-i18n="spec_exec">Execution</span>
+                            <span class="text-text font-bold" data-i18n="spec_exec_value">4 Weeks</span>
                         </div>
                     </div>
                 </div>
@@ -352,11 +354,11 @@
                 <div class="relative z-10 mt-auto">
                     <div class="text-[10px] uppercase tracking-[0.3em] text-text/40 mb-4 flex items-center gap-2">
                         <span class="w-2 h-2 rounded-full bg-green-500"></span>
-                        Ready for Inquiry
+                        <span data-i18n="status_ready">Ready for Inquiry</span>
                     </div>
                     <a href="#contact"
                         class="flex items-center justify-between w-full bg-text text-bg p-5 hover:bg-accent hover:text-white transition-all duration-300 group cursor-pointer shadow-xl">
-                        <span class="font-bold tracking-widest text-xs uppercase">View Blueprint</span>
+                        <span class="font-bold tracking-widest text-xs uppercase" data-i18n="btn_blueprint">View Blueprint</span>
                         <span class="text-xl group-hover:translate-x-2 transition-transform">&rarr;</span>
                     </a>
                 </div>
@@ -369,9 +371,9 @@
         <section id="materials" class="py-24 px-8 md:px-16 ml-0 md:ml-8 relative z-20 border-b border-text/10 bg-bg">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
                 <div>
-                    <h2 class="text-4xl md:text-5xl font-bold mb-8 text-text"><span class="text-accent">///</span>
-                        ARCHITECTURAL OVERVIEW</h2>
-                    <p class="text-sm leading-relaxed opacity-70 max-w-md" data-i18n="serv_sub">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-8 text-text break-words"><span class="text-accent">///</span>
+                        <span data-i18n="arch_overview">ARCHITECTURAL OVERVIEW</span></h2>
+                    <p class="text-sm leading-relaxed opacity-70 max-w-md break-words" data-i18n="arch_overview_desc">
                         Precision engineering for interior spaces. Utilizing industrial-grade standards (NS 3420) to
                         deliver technically superior finishes.
                     </p>
@@ -380,25 +382,25 @@
                     <table class="w-full text-xs text-left font-mono">
                         <thead class="uppercase opacity-50 border-b border-text/10">
                             <tr>
-                                <th class="py-2">Specification</th>
-                                <th class="py-2">Standard</th>
-                                <th class="py-2">Unit</th>
+                                <th class="py-2" data-i18n="table_spec">Specification</th>
+                                <th class="py-2" data-i18n="table_standard">Standard</th>
+                                <th class="py-2" data-i18n="table_unit">Unit</th>
                             </tr>
                         </thead>
                         <tbody class="opacity-80">
                             <tr class="border-b border-text/5">
-                                <td class="py-2">TOLERANCE</td>
+                                <td class="py-2" data-i18n="table_tolerance">TOLERANCE</td>
                                 <td class="py-2 text-accent">+/- 1.0</td>
                                 <td class="py-2">mm</td>
                             </tr>
                             <tr class="border-b border-text/5">
-                                <td class="py-2">GLOSS_LEVEL</td>
+                                <td class="py-2" data-i18n="table_gloss">GLOSS_LEVEL</td>
                                 <td class="py-2 text-accent">01-05</td>
                                 <td class="py-2">GU</td>
                             </tr>
                             <tr>
-                                <td class="py-2">DURABILITY</td>
-                                <td class="py-2 text-accent">CLASS_A</td>
+                                <td class="py-2" data-i18n="table_durability">DURABILITY</td>
+                                <td class="py-2 text-accent" data-i18n="table_dur_value">CLASS_A</td>
                                 <td class="py-2">ISO</td>
                             </tr>
                         </tbody>
@@ -411,58 +413,58 @@
         <section id="services" class="py-0 relative z-20 ml-0 md:ml-8 border-b border-text/10">
             <!-- Header -->
             <div class="px-8 md:px-16 py-8 border-b border-text/10 bg-secondary">
-                <h2 class="text-2xl font-bold"><span class="text-accent">></span> SERVICES [SCOPE]</h2>
+                <h2 class="text-2xl font-bold break-words"><span class="text-accent">></span> <span data-i18n="services_header">SERVICES [SCOPE]</span></h2>
             </div>
 
             <!-- Service 1 -->
             <div
-                class="grid grid-cols-1 md:grid-cols-12 border-b border-text/10 text-sm group hover:bg-text/5 transition-colors">
-                <div class="md:col-span-1 p-6 border-r border-text/10 text-text/30 font-bold">01</div>
-                <div class="md:col-span-3 p-6 border-r border-text/10 flex items-center">
+                class="grid grid-cols-1 md:grid-cols-[auto_minmax(120px,150px)_minmax(300px,1fr)_auto] border-b border-text/10 text-sm group hover:bg-text/5 transition-colors">
+                <div class="p-4 border-r border-text/10 text-text/30 font-bold">01</div>
+                <div class="p-4 border-r border-text/10 flex items-center">
                     <h3 class="font-bold text-accent" data-i18n="serv_1">Malermester</h3>
                 </div>
-                <div class="md:col-span-6 p-6 border-r border-text/10 opacity-70" data-i18n="serv_1_desc">
+                <div class="p-4 border-r border-text/10 opacity-70" data-i18n="serv_1_desc">
                     Application of restorative compounds. Dust extraction protocols active.
                 </div>
-                <div class="md:col-span-2 p-6 flex items-center justify-end">
+                <div class="p-4 flex items-center justify-end">
                     <a href="#"
-                        class="text-[10px] uppercase border border-accent/50 text-accent px-4 py-2 hover:bg-accent hover:text-white transition-colors">View
+                        class="text-[10px] uppercase border border-accent/50 text-accent px-3 py-2 hover:bg-accent hover:text-white transition-colors whitespace-nowrap" data-i18n="btn_view_details">View
                         Details</a>
-                </div>
+
             </div>
 
             <!-- Service 2 -->
             <div
-                class="grid grid-cols-1 md:grid-cols-12 border-b border-text/10 text-sm group hover:bg-text/5 transition-colors">
-                <div class="md:col-span-1 p-6 border-r border-text/10 text-text/30 font-bold">02</div>
-                <div class="md:col-span-3 p-6 border-r border-text/10 flex items-center">
+                class="grid grid-cols-1 md:grid-cols-[auto_minmax(120px,150px)_minmax(300px,1fr)_auto] border-b border-text/10 text-sm group hover:bg-text/5 transition-colors">
+                <div class="p-4 border-r border-text/10 text-text/30 font-bold">02</div>
+                <div class="p-4 border-r border-text/10 flex items-center">
                     <h3 class="font-bold text-accent" data-i18n="serv_2">Flislegging</h3>
                 </div>
-                <div class="md:col-span-6 p-6 border-r border-text/10 opacity-70" data-i18n="serv_2_desc">
+                <div class="p-4 border-r border-text/10 opacity-70" data-i18n="serv_2_desc">
                     Laser-guided alignment for high-density ceramic modules. Wet-zone waterproofing active.
                 </div>
-                <div class="md:col-span-2 p-6 flex items-center justify-end">
+                <div class="p-4 flex items-center justify-end">
                     <a href="#"
-                        class="text-[10px] uppercase border border-accent/50 text-accent px-4 py-2 hover:bg-accent hover:text-white transition-colors">View
+                        class="text-[10px] uppercase border border-accent/50 text-accent px-3 py-2 hover:bg-accent hover:text-white transition-colors whitespace-nowrap" data-i18n="btn_view_details">View
                         Details</a>
-                </div>
+
             </div>
 
             <!-- Service 3 -->
             <div
-                class="grid grid-cols-1 md:grid-cols-12 border-b border-text/10 text-sm group hover:bg-text/5 transition-colors">
-                <div class="md:col-span-1 p-6 border-r border-text/10 text-text/30 font-bold">03</div>
-                <div class="md:col-span-3 p-6 border-r border-text/10 flex items-center">
+                class="grid grid-cols-1 md:grid-cols-[auto_minmax(120px,150px)_minmax(300px,1fr)_auto] border-b border-text/10 text-sm group hover:bg-text/5 transition-colors">
+                <div class="p-4 border-r border-text/10 text-text/30 font-bold">03</div>
+                <div class="p-4 border-r border-text/10 flex items-center">
                     <h3 class="font-bold text-accent" data-i18n="serv_3">Snekkerglede</h3>
                 </div>
-                <div class="md:col-span-6 p-6 border-r border-text/10 opacity-70" data-i18n="serv_3_desc">
+                <div class="p-4 border-r border-text/10 opacity-70" data-i18n="serv_3_desc">
                     Assembly of load-bearing timber frameworks and aesthetic cladding.
                 </div>
-                <div class="md:col-span-2 p-6 flex items-center justify-end">
+                <div class="p-4 flex items-center justify-end">
                     <a href="#"
-                        class="text-[10px] uppercase border border-accent/50 text-accent px-4 py-2 hover:bg-accent hover:text-white transition-colors">View
+                        class="text-[10px] uppercase border border-accent/50 text-accent px-3 py-2 hover:bg-accent hover:text-white transition-colors whitespace-nowrap" data-i18n="btn_view_details">View
                         Details</a>
-                </div>
+
             </div>
         </section>
 
@@ -473,7 +475,7 @@
                 <div class="absolute inset-0 z-0 opacity-10 pointer-events-none grid-bg"></div>
                 <h2 class="text-4xl md:text-6xl font-serif text-text mb-4 relative z-10" data-i18n="mat_title">Material
                     Spec</h2>
-                <p class="text-sm font-sans uppercase tracking-widest opacity-40 relative z-10" data-i18n="mat_sub">
+                <p class="text-sm font-sans uppercase tracking-widest opacity-40 relative z-10" data-i18n="mat_subtitle">
                     Technical Finishes</p>
             </div>
 
@@ -486,7 +488,7 @@
                     <div class="absolute inset-0 bg-secondary/20 group-hover:bg-transparent transition-colors"></div>
                     <div class="absolute bottom-4 left-4">
                         <p class="font-mono text-xs text-accent">MAT-01</p>
-                        <p class="font-sans text-[10px] uppercase tracking-widest">Oak // White</p>
+                        <p class="font-sans text-[10px] uppercase tracking-widest" data-i18n="mat_oak">Oak // White</p>
                     </div>
                 </div>
                 <!-- Item 2 -->
@@ -496,7 +498,7 @@
                         alt="Basalt">
                     <div class="absolute bottom-4 left-4 text-white">
                         <p class="font-mono text-xs text-accent">MAT-02</p>
-                        <p class="font-sans text-[10px] uppercase tracking-widest">Basalt // Honed</p>
+                        <p class="font-sans text-[10px] uppercase tracking-widest" data-i18n="mat_basalt">Basalt // Honed</p>
                     </div>
                 </div>
                 <!-- Item 3 -->
@@ -507,7 +509,7 @@
                     <div class="absolute inset-0 bg-white/20 group-hover:bg-transparent transition-colors"></div>
                     <div class="absolute bottom-4 left-4 text-dark">
                         <p class="font-mono text-xs text-accent">MAT-03</p>
-                        <p class="font-sans text-[10px] uppercase tracking-widest">Lime // Stucco</p>
+                        <p class="font-sans text-[10px] uppercase tracking-widest" data-i18n="mat_lime">Lime // Stucco</p>
                     </div>
                 </div>
                 <!-- Item 4 -->
@@ -518,7 +520,7 @@
                     <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
                     <div class="absolute bottom-4 left-4 text-white">
                         <p class="font-mono text-xs text-accent">MAT-04</p>
-                        <p class="font-sans text-[10px] uppercase tracking-widest">Brass // Aged</p>
+                        <p class="font-sans text-[10px] uppercase tracking-widest" data-i18n="mat_brass">Brass // Aged</p>
                     </div>
                 </div>
             </div>
@@ -532,37 +534,37 @@
             </div>
 
             <div class="flex flex-col md:flex-row items-baseline justify-between mb-24 relative z-10">
-                <h2 class="text-4xl md:text-6xl font-serif" data-i18n="process_title">Protocol</h2>
-                <div class="text-sm font-mono uppercase tracking-widest opacity-60 mt-4 md:mt-0 text-accent">[
-                    Timeline
+                <h2 class="text-4xl md:text-6xl font-serif break-words" data-i18n="process_title">Protocol</h2>
+                <div class="text-sm font-mono uppercase tracking-widest opacity-60 mt-4 md:mt-0 text-accent break-words">[
+                    <span data-i18n="process_timeline">Timeline</span>
                     ]</div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 border-t border-text/20 pt-12 relative z-10">
                 <!-- Step 1 -->
                 <div class="group border-l border-text/10 pl-6 hover:border-accent transition-colors">
-                    <div class="text-[10px] font-mono uppercase tracking-widest text-accent mb-4">Stage 01</div>
+                    <div class="text-[10px] font-mono uppercase tracking-widest text-accent mb-4" data-i18n="stage_01">Stage 01</div>
                     <h3 class="text-xl font-sans font-bold mb-4" data-i18n="process_step1">Consultation</h3>
                     <p class="text-sm opacity-60 font-mono text-xs" data-i18n="process_desc1">Aesthetic definition.
                         Feasibility analysis. Technical specs.</p>
                 </div>
                 <!-- Step 2 -->
                 <div class="group border-l border-text/10 pl-6 hover:border-accent transition-colors">
-                    <div class="text-[10px] font-mono uppercase tracking-widest text-accent mb-4">Stage 02</div>
+                    <div class="text-[10px] font-mono uppercase tracking-widest text-accent mb-4" data-i18n="stage_02">Stage 02</div>
                     <h3 class="text-xl font-sans font-bold mb-4" data-i18n="process_step2">Prep_Work</h3>
                     <p class="text-sm opacity-60 font-mono text-xs" data-i18n="process_desc2">Surface calibration.
                         Masking. Environment control.</p>
                 </div>
                 <!-- Step 3 -->
                 <div class="group border-l border-text/10 pl-6 hover:border-accent transition-colors">
-                    <div class="text-[10px] font-mono uppercase tracking-widest text-accent mb-4">Stage 03</div>
+                    <div class="text-[10px] font-mono uppercase tracking-widest text-accent mb-4" data-i18n="stage_03">Stage 03</div>
                     <h3 class="text-xl font-sans font-bold mb-4" data-i18n="process_step3">Execution</h3>
                     <p class="text-sm opacity-60 font-mono text-xs" data-i18n="process_desc3">Installation. Application.
                         Millimeter tolerance.</p>
                 </div>
                 <!-- Step 4 -->
                 <div class="group border-l border-text/10 pl-6 hover:border-accent transition-colors">
-                    <div class="text-[10px] font-mono uppercase tracking-widest text-accent mb-4">Stage 04</div>
+                    <div class="text-[10px] font-mono uppercase tracking-widest text-accent mb-4" data-i18n="stage_04">Stage 04</div>
                     <h3 class="text-xl font-sans font-bold mb-4" data-i18n="process_step4">Handover</h3>
                     <p class="text-sm opacity-60 font-mono text-xs" data-i18n="process_desc4">Quality Audit. Cleanup.
                         FDV Documentation.</p>
@@ -579,25 +581,25 @@
                     <div
                         class="w-8 h-8 border border-text/20 rounded-none flex items-center justify-center font-bold text-accent">
                         [M]</div>
-                    <span class="uppercase tracking-widest">Mesterbrev</span>
+                    <span class="uppercase tracking-widest" data-i18n="cert_mesterbrev">Mesterbrev</span>
                 </div>
                 <div class="flex items-center gap-4">
                     <div class="w-8 h-8 border border-text/20 flex items-center justify-center font-bold text-accent">
                         [S]
                     </div>
-                    <span class="uppercase tracking-widest">StartBANK</span>
+                    <span class="uppercase tracking-widest" data-i18n="cert_startbank">StartBANK</span>
                 </div>
                 <div class="flex items-center gap-4">
                     <div class="w-8 h-8 border border-text/20 flex items-center justify-center font-bold text-accent">
                         [N]
                     </div>
-                    <span class="uppercase tracking-widest">Norsk Industri</span>
+                    <span class="uppercase tracking-widest" data-i18n="cert_norsk">Norsk Industri</span>
                 </div>
                 <div class="flex items-center gap-4">
                     <div class="w-8 h-8 border border-text/20 flex items-center justify-center font-bold text-accent">
                         [V]
                     </div>
-                    <span class="uppercase tracking-widest">Våtrom</span>
+                    <span class="uppercase tracking-widest" data-i18n="cert_vatrom">Våtrom</span>
                 </div>
             </div>
         </section>
@@ -619,8 +621,8 @@
                             alt="File">
                         <div class="absolute top-2 left-2 text-[10px] bg-accent text-white px-1">Img 001</div>
                     </div>
-                    <h4 class="text-xs font-bold text-text group-hover:text-accent truncate">CASE: HOLMENKOLLEN</h4>
-                    <p class="text-[10px] opacity-50">Size: 420 m²</p>
+                    <h4 class="text-xs font-bold text-text group-hover:text-accent truncate" data-i18n="case_holmenkollen">CASE: HOLMENKOLLEN</h4>
+                    <p class="text-[10px] opacity-50"><span data-i18n="case_size">Size</span>: 420 m²</p>
                 </div>
                 <!-- File 2 -->
                 <div class="border border-text/10 p-4 hover:border-accent transition-colors cursor-pointer group bg-bg">
@@ -630,8 +632,8 @@
                             alt="File">
                         <div class="absolute top-2 left-2 text-[10px] bg-accent text-white px-1">Img 002</div>
                     </div>
-                    <h4 class="text-xs font-bold text-text group-hover:text-accent truncate">CASE: AKER BRYGGE</h4>
-                    <p class="text-[10px] opacity-50">Size: 120m2</p>
+                    <h4 class="text-xs font-bold text-text group-hover:text-accent truncate" data-i18n="case_aker">CASE: AKER BRYGGE</h4>
+                    <p class="text-[10px] opacity-50"><span data-i18n="case_size">Size</span>: 120m2</p>
                 </div>
                 <!-- File 3 -->
                 <div class="border border-text/10 p-4 hover:border-accent transition-colors cursor-pointer group bg-bg">
@@ -641,14 +643,14 @@
                             alt="File">
                         <div class="absolute top-2 left-2 text-[10px] bg-accent text-white px-1">Img 003</div>
                     </div>
-                    <h4 class="text-xs font-bold text-text group-hover:text-accent truncate">CASE: FROGNER</h4>
-                    <p class="text-[10px] opacity-50">Size: 85m2</p>
+                    <h4 class="text-xs font-bold text-text group-hover:text-accent truncate" data-i18n="case_frogner">CASE: FROGNER</h4>
+                    <p class="text-[10px] opacity-50"><span data-i18n="case_size">Size</span>: 85m2</p>
                 </div>
                 <!-- File 4 -->
                 <div
                     class="border border-text/10 p-4 border-dashed opacity-50 hover:opacity-100 cursor-pointer flex flex-col items-center justify-center gap-2">
                     <span class="text-2xl text-accent">+</span>
-                    <span class="text-[10px]">Load More</span>
+                    <span class="text-[10px]" data-i18n="arch_load">Load More</span>
                 </div>
             </div>
         </section>
@@ -666,9 +668,9 @@
                         Let's calibrate your dedicated space.
                     </p>
                     <div class="flex flex-col gap-4 text-xs font-mono opacity-60 text-accent">
-                        <p>LOC: Oslo & Omegn</p>
-                        <p>TEL: +47 22 33 44 55</p>
-                        <p>MAIL: post@finishing-expert.no</p>
+                        <p><span data-i18n="contact_loc">LOC</span>: Oslo & Omegn</p>
+                        <p><span data-i18n="contact_tel">TEL</span>: +47 22 33 44 55</p>
+                        <p><span data-i18n="contact_mail">MAIL</span>: post@finishing-expert.no</p>
                     </div>
                 </div>
 
@@ -678,17 +680,17 @@
                         Inquiry Form</h3>
                     <form class="space-y-6">
                         <div class="grid grid-cols-2 gap-6">
-                            <input type="text" placeholder="Full Name" data-i18n-attr="placeholder:ph_name"
+                            <input type="text" placeholder="Full Name" data-i18n-placeholder="ph_name"
                                 class="bg-transparent border border-text/20 p-2 focus:border-accent outline-none font-mono text-xs text-text placeholder-text/30">
-                            <input type="text" placeholder="Phone Number" data-i18n-attr="placeholder:ph_phone"
+                            <input type="text" placeholder="Phone Number" data-i18n-placeholder="ph_phone"
                                 class="bg-transparent border border-text/20 p-2 focus:border-accent outline-none font-mono text-xs text-text placeholder-text/30">
                         </div>
-                        <input type="email" placeholder="Email Address" data-i18n-attr="placeholder:ph_email"
+                        <input type="email" placeholder="Email Address" data-i18n-placeholder="ph_email"
                             class="w-full bg-transparent border border-text/20 p-2 focus:border-accent outline-none font-mono text-xs text-text placeholder-text/30">
 
                         <div class="pt-4">
                             <p class="text-[10px] uppercase tracking-widest opacity-50 mb-4 font-mono"
-                                data-i18n="form_style">Style Preference:
+                                data-i18n="form_style_pref">Style Preference:
                             </p>
                             <div class="flex gap-4">
                                 <label
@@ -806,7 +808,7 @@
                         </div>
                         <div class="mt-8 pt-4">
                             <button
-                                class="w-full border border-text/20 py-2 hover:bg-accent hover:text-white transition-colors uppercase tracking-widest">
+                                class="w-full border border-text/20 py-2 hover:bg-accent hover:text-white transition-colors uppercase tracking-widest" data-i18n="btn_view_status">
                                 View Status
                             </button>
                         </div>
@@ -832,9 +834,28 @@
         // SHIM: Prevent common.js from crashing
         window.showcaseConfig = window.showcaseConfig || {};
 
+        // Helper: Get language from URL params > localStorage > default
+        function getInitialLanguage() {
+            // 1. Check URL query param (?lang=pl)
+            const urlParams = new URLSearchParams(window.location.search);
+            const urlLang = urlParams.get('lang');
+            if (urlLang && ['no', 'en', 'pl'].includes(urlLang)) {
+                return urlLang;
+            }
+
+            // 2. Check localStorage
+            const storedLang = localStorage.getItem('finish_lang');
+            if (storedLang && ['no', 'en', 'pl'].includes(storedLang)) {
+                return storedLang;
+            }
+
+            // 3. Default
+            return 'no';
+        }
+
         const LocalApp = {
             state: {
-                lang: localStorage.getItem('finish_lang') || 'no',
+                lang: getInitialLanguage(),
                 theme: 'studio' // Hardcoded
             },
 
@@ -906,7 +927,52 @@
                     btn_case: "SE CASE STUDY",
                     foot_contact: "KONTAKT OSS",
                     foot_insta: "INSTAGRAM",
-                    foot_mail: "POST@FINISH.NO"
+                    foot_mail: "POST@FINISH.NO",
+                    nav_process: "PROSESS",
+                    tech_ops: "TEKNISK<br>OPERASJON",
+                    spec_area: "Totalt Areal",
+                    spec_material: "Materiale",
+                    spec_mat_value: "● Stein / Eik",
+                    spec_grade: "Kvalitet",
+                    spec_grade_value: "Premium A",
+                    spec_exec: "Utførelse",
+                    spec_exec_value: "4 Uker",
+                    status_ready: "Klar for Forespørsel",
+                    btn_blueprint: "Se Tegning",
+                    arch_overview: "ARKITEKTONISK OVERSIKT",
+                    arch_overview_desc: "Presisjonsingeniørarbeid for interiørrom. Bruker industristandarder (NS 3420) for å levere teknisk overlegne finish.",
+                    table_spec: "Spesifikasjon",
+                    table_standard: "Standard",
+                    table_unit: "Enhet",
+                    table_tolerance: "TOLERANSE",
+                    table_gloss: "GLANS_NIVÅ",
+                    table_durability: "HOLDBARHET",
+                    table_dur_value: "KLASSE_A",
+                    services_header: "TJENESTER [OMFANG]",
+                    btn_view_details: "Se Detaljer",
+                    mat_subtitle: "Tekniske Finish",
+                    mat_oak: "Eik // Hvit",
+                    mat_basalt: "Basalt // Slipt",
+                    mat_lime: "Kalk // Stukko",
+                    mat_brass: "Messing // Aldret",
+                    process_timeline: "Tidslinje",
+                    stage_01: "Fase 01",
+                    stage_02: "Fase 02",
+                    stage_03: "Fase 03",
+                    stage_04: "Fase 04",
+                    cert_mesterbrev: "Mesterbrev",
+                    cert_startbank: "StartBANK",
+                    cert_norsk: "Norsk Industri",
+                    cert_vatrom: "Våtrom",
+                    case_holmenkollen: "SAK: HOLMENKOLLEN",
+                    case_aker: "SAK: AKER BRYGGE",
+                    case_frogner: "SAK: FROGNER",
+                    case_size: "Størrelse",
+                    contact_loc: "LOK",
+                    contact_tel: "TLF",
+                    contact_mail: "EPOST",
+                    form_style_pref: "Stilpreferanse:",
+                    btn_view_status: "Se Status"
                 },
                 en: {
                     brand: "FINISH_EXPERT",
@@ -975,7 +1041,166 @@
                     btn_case: "VIEW CASE STUDY",
                     foot_contact: "CONTACT US",
                     foot_insta: "INSTAGRAM",
-                    foot_mail: "MAIL@FINISH.NO"
+                    foot_mail: "MAIL@FINISH.NO",
+                    nav_process: "PROCESS",
+                    tech_ops: "TECHNICAL<br>OPERATIONS",
+                    spec_area: "Total Area",
+                    spec_material: "Material",
+                    spec_mat_value: "● Stone / Oak",
+                    spec_grade: "Grade",
+                    spec_grade_value: "Premium A",
+                    spec_exec: "Execution",
+                    spec_exec_value: "4 Weeks",
+                    status_ready: "Ready for Inquiry",
+                    btn_blueprint: "View Blueprint",
+                    arch_overview: "ARCHITECTURAL OVERVIEW",
+                    arch_overview_desc: "Precision engineering for interior spaces. Utilizing industrial-grade standards (NS 3420) to deliver technically superior finishes.",
+                    table_spec: "Specification",
+                    table_standard: "Standard",
+                    table_unit: "Unit",
+                    table_tolerance: "TOLERANCE",
+                    table_gloss: "GLOSS_LEVEL",
+                    table_durability: "DURABILITY",
+                    table_dur_value: "CLASS_A",
+                    services_header: "SERVICES [SCOPE]",
+                    btn_view_details: "View Details",
+                    mat_subtitle: "Technical Finishes",
+                    mat_oak: "Oak // White",
+                    mat_basalt: "Basalt // Honed",
+                    mat_lime: "Lime // Stucco",
+                    mat_brass: "Brass // Aged",
+                    process_timeline: "Timeline",
+                    stage_01: "Stage 01",
+                    stage_02: "Stage 02",
+                    stage_03: "Stage 03",
+                    stage_04: "Stage 04",
+                    cert_mesterbrev: "Mesterbrev",
+                    cert_startbank: "StartBANK",
+                    cert_norsk: "Norsk Industri",
+                    cert_vatrom: "Våtrom",
+                    case_holmenkollen: "CASE: HOLMENKOLLEN",
+                    case_aker: "CASE: AKER BRYGGE",
+                    case_frogner: "CASE: FROGNER",
+                    case_size: "Size",
+                    contact_loc: "LOC",
+                    contact_tel: "TEL",
+                    contact_mail: "MAIL",
+                    form_style_pref: "Style Preference:",
+                    btn_view_status: "View Status"
+                },
+                pl: {
+                    brand: "FINISH_EXPERT",
+                    nav_services: "USŁUGI",
+                    nav_materials: "MATERIAŁY",
+                    nav_contact: "KONTAKT",
+                    nav_lang_no: "NO",
+                    nav_lang_en: "EN",
+                    hero_line1: "ARCHITEKTONICZNA",
+                    hero_line2: "PRECYZJA",
+                    hero_sub: "Definiujemy przestrzenie przez bezkompromisowe wykończenie i zrozumienie materiałów.",
+                    serv_bg_1: "MIESZKANIOWE",
+                    serv_bg_2: "KOMERCYJNE",
+                    serv_bg_3: "RENOWACJA",
+                    serv_title: "DYSCYPLINY",
+                    serv_1: "Mistrz Malarski",
+                    serv_1_desc: "Ekspertyza w malowaniu natryskowym i wykończeniach.",
+                    serv_2: "Podłogi",
+                    serv_2_desc: "Bezszwowe podłogi mikrocementowe i epoksydowe.",
+                    serv_3: "Stolarka",
+                    serv_3_desc: "Niestandardowe wnętrza i listwy.",
+                    mat_title: "PALETA MATERIAŁÓW",
+                    mat_1: "Dąb",
+                    mat_1_desc: "Olej_Naturalny",
+                    mat_2: "Beton",
+                    mat_2_desc: "Szlif_Przemysł",
+                    mat_3: "Welur",
+                    mat_3_desc: "Wykończenie_Matowe",
+                    mat_4: "Stal",
+                    mat_4_desc: "Chrom_Szczotkowany",
+                    arch_title: "ARCHIWUM_PROJEKTÓW",
+                    arch_sub: "Archiwum: Ukończone Prace",
+                    arch_load: "Załaduj Więcej",
+                    form_title: "Rozpocznij<br>Projekt",
+                    form_sub: "// Podaj szczegóły.<br>Skalibrujmy Twoją przestrzeń.",
+                    form_header: "Formularz Zapytania",
+                    ph_name: "Imię i Nazwisko",
+                    ph_phone: "Numer Telefonu",
+                    ph_email: "Adres Email",
+                    form_style: "Preferencja Stylu:",
+                    style_nordic: "Nordycki",
+                    style_classic: "Klasyczny",
+                    style_modern: "Nowoczesny",
+                    form_btn: "[ Wyślij Zapytanie ]",
+                    foot_est: "ZAŁOŻONE 2010",
+                    foot_index: "Indeks Strony",
+                    foot_link_1: "01 // Usługi",
+                    foot_link_2: "02 // Specyfikacje",
+                    foot_link_3: "03 // Proces",
+                    foot_link_4: "04 // Kontakt",
+                    foot_link_5: "Prawne / Prywatność",
+                    foot_link_6: "Dostępność",
+                    foot_status: "Status Firmy",
+                    stat_avail: "DOSTĘPNOŚĆ",
+                    stat_open: "OTWARTE",
+                    stat_resp: "ODPOWIEDŹ",
+                    stat_reg: "REGION",
+                    stat_login: "LOGIN_PARTNERA",
+                    hero_before: "Oslo & Region",
+                    hero_after: "GENERALNY<br>WYKONAWCA",
+                    port_label: "WYRÓŻNIONY PROJEKT",
+                    port_title: "WILLA<br>HOLMENKOLLEN",
+                    spec_wall: "Ściany",
+                    spec_floor: "Podłogi",
+                    spec_time: "Czas Trwania",
+                    btn_case: "ZOBACZ STUDIUM",
+                    foot_contact: "KONTAKT",
+                    foot_insta: "INSTAGRAM",
+                    foot_mail: "POST@FINISH.NO",
+                    nav_process: "PROCES",
+                    tech_ops: "TECHNICZNE<br>OPERACJE",
+                    spec_area: "Całkowita Powierzchnia",
+                    spec_material: "Materiał",
+                    spec_mat_value: "● Kamień / Dąb",
+                    spec_grade: "Klasa",
+                    spec_grade_value: "Premium A",
+                    spec_exec: "Wykonanie",
+                    spec_exec_value: "4 Tygodnie",
+                    status_ready: "Gotowe na Zapytanie",
+                    btn_blueprint: "Zobacz Projekt",
+                    arch_overview: "PRZEGLĄD ARCHITEKTONICZNY",
+                    arch_overview_desc: "Precyzyjna inżynieria dla przestrzeni wnętrz. Wykorzystanie standardów przemysłowych (NS 3420) do dostarczenia technicznie wyższych wykończeń.",
+                    table_spec: "Specyfikacja",
+                    table_standard: "Standard",
+                    table_unit: "Jednostka",
+                    table_tolerance: "TOLERANCJA",
+                    table_gloss: "POZIOM_POŁYSKU",
+                    table_durability: "TRWAŁOŚĆ",
+                    table_dur_value: "KLASA_A",
+                    services_header: "USŁUGI [ZAKRES]",
+                    btn_view_details: "Zobacz Szczegóły",
+                    mat_subtitle: "Wykończenia Techniczne",
+                    mat_oak: "Dąb // Biały",
+                    mat_basalt: "Bazalt // Szlifowany",
+                    mat_lime: "Wapno // Tynk",
+                    mat_brass: "Mosiądz // Postarzany",
+                    process_timeline: "Oś Czasu",
+                    stage_01: "Etap 01",
+                    stage_02: "Etap 02",
+                    stage_03: "Etap 03",
+                    stage_04: "Etap 04",
+                    cert_mesterbrev: "Mesterbrev",
+                    cert_startbank: "StartBANK",
+                    cert_norsk: "Norsk Industri",
+                    cert_vatrom: "Våtrom",
+                    case_holmenkollen: "SPRAWA: HOLMENKOLLEN",
+                    case_aker: "SPRAWA: AKER BRYGGE",
+                    case_frogner: "SPRAWA: FROGNER",
+                    case_size: "Rozmiar",
+                    contact_loc: "LOK",
+                    contact_tel: "TEL",
+                    contact_mail: "EMAIL",
+                    form_style_pref: "Preferencja Stylu:",
+                    btn_view_status: "Zobacz Status"
                 }
             },
 
@@ -1012,6 +1237,10 @@
                 document.querySelectorAll('[data-i18n]').forEach(el => {
                     const key = el.getAttribute('data-i18n');
                     if (terms[key]) el.innerHTML = terms[key];
+                });
+                document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+                    const key = el.getAttribute('data-i18n-placeholder');
+                    if (terms[key]) el.placeholder = terms[key];
                 });
             },
 

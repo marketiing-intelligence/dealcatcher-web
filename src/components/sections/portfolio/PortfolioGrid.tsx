@@ -59,33 +59,39 @@ export function PortfolioGrid({ lang, dict }: PortfolioGridProps) {
         {/* Filters */}
         <div className="flex flex-wrap items-center justify-center gap-2 mb-12">
           <Filter className="h-4 w-4 text-muted-foreground mr-2" />
-          {industries.map((industry) => (
-            <Button
-              key={industry}
-              variant={activeFilter === industry ? "default" : "outline"}
-              size="sm"
-              onClick={() => setActiveFilter(industry)}
-              className={
-                activeFilter === industry
-                  ? "bg-primary text-primary-foreground"
-                  : ""
-              }
-            >
-              {industry === "all" ? dict.filterAll : dict.industryLabels[industry]}
-            </Button>
-          ))}
+          {industries.map((industry) => {
+            const label = industry === "all"
+              ? dict.filterAll
+              : dict.industryLabels[industry as Industry];
+
+            return (
+              <Button
+                key={industry}
+                variant={activeFilter === industry ? "default" : "outline"}
+                size="sm"
+                onClick={() => setActiveFilter(industry)}
+                className={
+                  activeFilter === industry
+                    ? "bg-primary text-primary-foreground"
+                    : ""
+                }
+              >
+                {label}
+              </Button>
+            );
+          })}
         </div>
 
         {/* Templates Grid */}
         <motion.div
+          key={activeFilter}
           initial="hidden"
-          whileInView="visible"
-          viewport={viewportOnce}
+          animate="visible"
           variants={staggerContainer}
           className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           {filteredTemplates.map((item) => (
-            <motion.div key={item.id} variants={staggerItem} layout>
+            <motion.div key={item.id} variants={staggerItem}>
               <PreviewCard item={item} lang={lang} showPremiumBadge />
             </motion.div>
           ))}

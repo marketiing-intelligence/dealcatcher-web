@@ -185,6 +185,9 @@
                 <span class="text-white/20">/</span>
                 <button id="lang-en" onclick="App.setLanguage('en')"
                     class="hover:text-accent transition-colors opacity-50">EN</button>
+                <span class="text-white/20">/</span>
+                <button id="lang-pl" onclick="App.setLanguage('pl')"
+                    class="hover:text-accent transition-colors opacity-50">PL</button>
             </div>
 
             <button
@@ -198,7 +201,7 @@
     <!-- CONFIG PANEL TRIGGER -->
     <button onclick="App.toggleThemePanel()" id="config-trigger"
         class="fixed top-1/2 right-0 z-[1001] bg-white text-black p-3 hover:bg-accent hover:text-white transition-colors transform -translate-y-1/2 rounded-l-md hover-trigger"
-        data-cursor="link">
+        data-cursor="link" aria-label="Open configuration panel" data-i18n-attr="aria-label:cfg_open">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z">
@@ -253,7 +256,8 @@
 
         <!-- Scroll Indicator -->
         <div
-            class="absolute bottom-12 left-6 text-[10px] font-mono text-white/40 uppercase tracking-widest animate-bounce">
+            class="absolute bottom-12 left-6 text-[10px] font-mono text-white/40 uppercase tracking-widest animate-bounce"
+            data-i18n="scroll_hint">
             Scroll to explore
         </div>
     </header>
@@ -262,12 +266,12 @@
     <div class="border-y border-white/10 py-12 bg-dark relative overflow-hidden">
         <div class="flex gap-24 whitespace-nowrap animate-marquee opacity-50">
             <!-- Repeated items for marquee effect -->
-            <span class="text-4xl font-display font-bold text-transparent text-stroke-white">NEK 400 CERTIFIED</span>
-            <span class="text-4xl font-display font-bold text-white">DSB APPROVED</span>
-            <span class="text-4xl font-display font-bold text-transparent text-stroke-white">ISO 9001</span>
-            <span class="text-4xl font-display font-bold text-white">MESTERBREV</span>
-            <span class="text-4xl font-display font-bold text-transparent text-stroke-white">NEK 400 CERTIFIED</span>
-            <span class="text-4xl font-display font-bold text-white">DSB APPROVED</span>
+            <span class="text-4xl font-display font-bold text-transparent text-stroke-white" data-i18n="cert_1">NEK 400 CERTIFIED</span>
+            <span class="text-4xl font-display font-bold text-white" data-i18n="cert_2">DSB APPROVED</span>
+            <span class="text-4xl font-display font-bold text-transparent text-stroke-white" data-i18n="cert_3">ISO 9001</span>
+            <span class="text-4xl font-display font-bold text-white" data-i18n="cert_4">MESTERBREV</span>
+            <span class="text-4xl font-display font-bold text-transparent text-stroke-white" data-i18n="cert_1">NEK 400 CERTIFIED</span>
+            <span class="text-4xl font-display font-bold text-white" data-i18n="cert_2">DSB APPROVED</span>
         </div>
     </div>
 
@@ -275,8 +279,8 @@
     <section id="services" class="py-32 px-6 relative z-10">
         <div class="container mx-auto">
             <div class="flex justify-between items-end mb-24 border-b border-white/10 pb-8">
-                <h2 class="text-6xl md:text-8xl font-display font-light">Services</h2>
-                <span class="text-sm font-mono text-white/40 mb-4">(04)</span>
+                <h2 class="text-6xl md:text-8xl font-display font-light" data-i18n="svc_title">Services</h2>
+                <span class="text-sm font-mono text-white/40 mb-4" data-i18n="svc_count">(04)</span>
             </div>
 
             <div class="flex flex-col relative">
@@ -438,17 +442,17 @@
                     surrounding districts
                     with a fleet of 15 fully equipped service vans.</p>
                 <ul class="grid grid-cols-2 gap-4 font-mono text-sm uppercase tracking-widest text-accent">
-                    <li class="flex items-center gap-2">/// Oslo Sentrum</li>
-                    <li class="flex items-center gap-2">/// Bærum & Asker</li>
-                    <li class="flex items-center gap-2">/// Drammen</li>
-                    <li class="flex items-center gap-2">/// Lillestrøm</li>
+                    <li class="flex items-center gap-2" data-i18n="area_loc_1">/// Oslo Sentrum</li>
+                    <li class="flex items-center gap-2" data-i18n="area_loc_2">/// Bærum & Asker</li>
+                    <li class="flex items-center gap-2" data-i18n="area_loc_3">/// Drammen</li>
+                    <li class="flex items-center gap-2" data-i18n="area_loc_4">/// Lillestrøm</li>
                 </ul>
             </div>
             <!-- Map Graphic: NORWAY -->
             <!-- Map Graphic: NORWAY (Responsive Frame) -->
             <div class="relative w-full border border-white/10 rounded-3xl overflow-hidden group bg-[#0A0A0A]">
                 <!-- Image Tag determines height (Frame fits Photo) -->
-                <img src="assets/demo2/map_norway.png" alt="Norway Service Area"
+                <img src="assets/demo2/map_norway.png" alt="Norway Service Area" data-i18n-attr="alt:area_map_alt"
                     class="w-full h-auto object-cover opacity-80 mix-blend-screen">
 
                 <!-- Overlays -->
@@ -479,21 +483,21 @@
                     <p class="text-lg leading-relaxed mb-6" data-i18n="rev_1">"Incredible response time. They fixed our
                         main fuse box
                         within an hour of my call."</p>
-                    <p class="text-white/40 font-mono text-sm uppercase">/// Ole Johansen</p>
+                    <p class="text-white/40 font-mono text-sm uppercase" data-i18n="rev_1_auth">/// Ole Johansen</p>
                 </div>
                 <div class="bg-white/5 border border-white/10 p-8 rounded-2xl hover-card">
                     <div class="text-accent text-xl mb-4">★★★★★</div>
                     <p class="text-lg leading-relaxed mb-6" data-i18n="rev_2">"Professional installation of our Easee
                         charger. Neat wiring
                         and great service."</p>
-                    <p class="text-white/40 font-mono text-sm uppercase">/// Marit Karlsen</p>
+                    <p class="text-white/40 font-mono text-sm uppercase" data-i18n="rev_2_auth">/// Marit Karlsen</p>
                 </div>
                 <div class="bg-white/5 border border-white/10 p-8 rounded-2xl hover-card">
                     <div class="text-accent text-xl mb-4">★★★★★</div>
                     <p class="text-lg leading-relaxed mb-6" data-i18n="rev_3">"The only electrician closer to an
                         engineer. High precision
                         work on our smart home."</p>
-                    <p class="text-white/40 font-mono text-sm uppercase">/// Erik Hagen</p>
+                    <p class="text-white/40 font-mono text-sm uppercase" data-i18n="rev_3_auth">/// Erik Hagen</p>
                 </div>
             </div>
         </div>
@@ -584,15 +588,15 @@
         <div
             class="container mx-auto flex flex-col md:flex-row justify-between items-center text-xs font-mono uppercase tracking-widest">
             <div>
-                <p>ELECTRO PRO AS - Org. 999 888 777</p>
-                <p>Industriveien 12, 0580 Oslo</p>
-                <p>© 2026 Electro Pro. All rights reserved.</p>
+                <p data-i18n="footer_org">ELECTRO PRO AS - Org. 999 888 777</p>
+                <p data-i18n="footer_addr">Industriveien 12, 0580 Oslo</p>
+                <p data-i18n="footer_rights">© 2026 Electro Pro. All rights reserved.</p>
             </div>
             <div class="flex gap-8 mt-4 md:mt-0">
-                <a href="#" class="hover:text-white">Privacy</a>
-                <a href="#" class="hover:text-white">Terms</a>
-                <a href="#" class="hover:text-white">Accessibility</a>
-                <a href="#" class="hover:text-white">Facebook</a>
+                <a href="#" class="hover:text-white" data-i18n="footer_priv">Privacy</a>
+                <a href="#" class="hover:text-white" data-i18n="footer_terms">Terms</a>
+                <a href="#" class="hover:text-white" data-i18n="footer_acc">Accessibility</a>
+                <a href="#" class="hover:text-white" data-i18n="footer_social">Facebook</a>
             </div>
         </div>
     </footer>
@@ -601,8 +605,8 @@
     <div id="theme-panel"
         class="fixed top-0 right-0 h-full w-80 bg-[#1A1A1A] border-l border-white/10 z-[3000] transform translate-x-full transition-transform duration-500 ease-out p-8 shadow-2xl">
         <div class="flex justify-between items-center mb-8 border-b border-white/20 pb-4">
-            <h3 class="font-mono text-sm uppercase tracking-widest text-white">Internal Config</h3>
-            <button onclick="App.toggleThemePanel()" class="text-white/50 hover:text-blue-500">
+            <h3 class="font-mono text-sm uppercase tracking-widest text-white" data-i18n="cfg_title">Internal Config</h3>
+            <button onclick="App.toggleThemePanel()" class="text-white/50 hover:text-blue-500" aria-label="Close panel" data-i18n-attr="aria-label:cfg_close">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
                     </path>
@@ -612,27 +616,27 @@
         <div class="space-y-4 overflow-y-auto h-[calc(100vh-150px)] pb-10 custom-scrollbar">
             <!-- COPIED FROM PREVIOUS -->
             <div>
-                <h4 class="font-mono text-[10px] text-white/50 mb-3 uppercase tracking-widest">1. Select Business</h4>
+                <h4 class="font-mono text-[10px] text-white/50 mb-3 uppercase tracking-widest" data-i18n="cfg_step1">1. Select Business</h4>
                 <div class="flex flex-col gap-2">
                     <button id="btn-demo-demo1" onclick="App.setDemo('demo1')"
                         class="text-left px-4 py-3 border border-white/10 text-xs font-mono text-white bg-white/5 hover:bg-white/10 hover:border-blue-500 transition-all flex justify-between items-center group">
-                        <span>THE TOTAL CONTRACTOR</span><span
+                        <span data-i18n="cfg_demo1">THE TOTAL CONTRACTOR</span><span
                             class="opacity-0 group-hover:opacity-100 text-blue-500 transition-opacity">→</span>
                     </button>
                     <button id="btn-demo-demo2" onclick="App.setDemo('demo2')"
                         class="text-left px-4 py-3 border border-white/10 text-xs font-mono text-white bg-white/5 hover:bg-white/10 hover:border-blue-500 transition-all flex justify-between items-center group config-active">
-                        <span>SERVICE SPECIALIST</span><span
+                        <span data-i18n="cfg_demo2">SERVICE SPECIALIST</span><span
                             class="opacity-0 group-hover:opacity-100 text-blue-500 transition-opacity">→</span>
                     </button>
                     <button id="btn-demo-demo3" onclick="App.setDemo('demo3')"
                         class="text-left px-4 py-3 border border-white/10 text-xs font-mono text-white bg-white/5 hover:bg-white/10 hover:border-blue-500 transition-all flex justify-between items-center group">
-                        <span>FINISHING EXPERT</span><span
+                        <span data-i18n="cfg_demo3">FINISHING EXPERT</span><span
                             class="opacity-0 group-hover:opacity-100 text-blue-500 transition-opacity">→</span>
                     </button>
                 </div>
             </div>
             <div>
-                <h4 class="font-mono text-[10px] text-white/50 mb-3 uppercase tracking-widest">2. Select Layout</h4>
+                <h4 class="font-mono text-[10px] text-white/50 mb-3 uppercase tracking-widest" data-i18n="cfg_step2">2. Select Layout</h4>
                 <div class="grid grid-cols-3 gap-2 mb-2">
                     <button id="btn-tpl-term" onclick="App.setTemplate('term')"
                         class="aspect-video border border-white/10 bg-white/5 flex flex-col items-center justify-center gap-1 group hover:border-blue-500 hover:text-blue-500 transition-all config-active">
@@ -651,24 +655,24 @@
                     </button>
                 </div>
                 <div>
-                    <h4 class="font-mono text-[10px] text-white/50 mb-3 uppercase tracking-widest">3. Visual Style</h4>
+                    <h4 class="font-mono text-[10px] text-white/50 mb-3 uppercase tracking-widest" data-i18n="cfg_step3">3. Visual Style</h4>
                     <div class="space-y-2">
                         <button id="btn-theme-default" onclick="App.setTheme('default')"
                             class="w-full p-3 border border-white/10 flex items-center gap-4 hover:border-blue-500 group transition-all bg-white/5">
                             <div class="w-6 h-6 bg-[#1A1A1B] border border-[#FF5F1F] rounded-full"></div><span
-                                class="font-mono text-xs uppercase text-white group-hover:text-blue-500">Safety
+                                class="font-mono text-xs uppercase text-white group-hover:text-blue-500" data-i18n="cfg_theme1">Safety
                                 Orange</span>
                         </button>
                         <button id="btn-theme-nordic" onclick="App.setTheme('nordic')"
                             class="w-full p-3 border border-white/10 flex items-center gap-4 hover:border-blue-500 group transition-all bg-white/5">
                             <div class="w-6 h-6 bg-[#0F172A] border border-[#38BDF8] rounded-full"></div><span
-                                class="font-mono text-xs uppercase text-white group-hover:text-blue-500">Nordic
+                                class="font-mono text-xs uppercase text-white group-hover:text-blue-500" data-i18n="cfg_theme2">Nordic
                                 Blue</span>
                         </button>
                         <button id="btn-theme-nature" onclick="App.setTheme('nature')"
                             class="w-full p-3 border border-white/10 flex items-center gap-4 hover:border-blue-500 group transition-all bg-white/5">
                             <div class="w-6 h-6 bg-[#1B2B1E] border border-[#D4A373] rounded-full"></div><span
-                                class="font-mono text-xs uppercase text-white group-hover:text-blue-500">Forest
+                                class="font-mono text-xs uppercase text-white group-hover:text-blue-500" data-i18n="cfg_theme3">Forest
                                 Copper</span>
                         </button>
                     </div>
@@ -770,7 +774,9 @@
                         hero_t1: "ELEKTRISK", hero_t2: "MESTERSKAP",
                         hero_desc: "Presisjons-elektro for moderne infrastruktur. Lisensiert for fremtiden.",
                         hero_cta: "Ring Vakttelefon",
-                        svc_title: "Tjenester",
+                        scroll_hint: "Scroll for å utforske",
+                        cert_1: "NEK 400 SERTIFISERT", cert_2: "DSB GODKJENT", cert_3: "ISO 9001", cert_4: "MESTERBREV",
+                        svc_title: "Tjenester", svc_count: "(04)",
                         svc_1_t: "Sikringsskap", svc_1_d: "Moderne automatsikringer med overspenningsvern.",
                         svc_2_t: "Elbil Lading", svc_2_d: "Sertifisert montering av Zaptec & Easee.",
                         svc_3_t: "El-Sjekk", svc_3_d: "Full NEK 400 samsvarskontroll.",
@@ -781,15 +787,26 @@
                         proc_3_t: "Utbedring", proc_3_d: "Arbeid utført i henhold til forskriftene.",
                         proc_4_t: "Overlevering", proc_4_d: "Dokumentasjon lastet opp til Boligmappa.",
                         area_title: "Regional Dekning", area_desc: "Vi betjener Stor-Oslo, Viken og omkringliggende distrikter med en flåte på 15 fullt utstyrte servicebiler.",
+                        area_loc_1: "/// Oslo Sentrum", area_loc_2: "/// Bærum & Asker", area_loc_3: "/// Drammen", area_loc_4: "/// Lillestrøm",
+                        area_map_alt: "Norge Dekningsområde",
                         rev_title: "Kundeuttalelser",
                         rev_1: "Utrolig responstid. De fikset hovedsikringen innen en time.",
+                        rev_1_auth: "/// Ole Johansen",
                         rev_2: "Profesjonell montering av vår Easee lader. Pent og ryddig.",
+                        rev_2_auth: "/// Marit Karlsen",
                         rev_3: "Den eneste elektrikeren som tenker som en ingeniør.",
+                        rev_3_auth: "/// Erik Hagen",
                         form_title: "La oss fikse det.",
                         form_ph1: "Nødnummer", form_ph2: "Send Epost", form_disclaimer: "Ved å kontakte oss godtar du våre vilkår for utrykning.",
                         inp_name: "Ditt Navn", inp_addr: "Adresse", inp_desc: "Beskriv Problemet", btn_photo: "Legg ved bilde", btn_send: "Send Oppdrag",
+                        footer_org: "ELECTRO PRO AS - Org. 999 888 777",
+                        footer_addr: "Industriveien 12, 0580 Oslo",
                         footer_rights: "© 2026 Electro Pro. Alle rettigheter reservert.",
-                        footer_priv: "Personvern", footer_terms: "Vilkår", footer_acc: "Tilgjengelighet"
+                        footer_priv: "Personvern", footer_terms: "Vilkår", footer_acc: "Tilgjengelighet", footer_social: "Facebook",
+                        cfg_title: "Intern Konfigurasjon", cfg_open: "Åpne konfigurasjonspanel", cfg_close: "Lukk panel",
+                        cfg_step1: "1. Velg Virksomhet", cfg_step2: "2. Velg Layout", cfg_step3: "3. Visuell Stil",
+                        cfg_demo1: "TOTALENTREPRENØREN", cfg_demo2: "SERVICE SPESIALIST", cfg_demo3: "FINISH EKSPERT",
+                        cfg_theme1: "Sikkerhetsoransje", cfg_theme2: "Nordisk Blå", cfg_theme3: "Skog Kobber"
                     },
                     en: {
                         nav_work: "Services", nav_process: "Process", nav_reviews: "Reviews", nav_contact: "Contact", nav_menu: "Menu",
@@ -797,7 +814,9 @@
                         hero_t1: "ELECTRICAL", hero_t2: "MASTERY",
                         hero_desc: "Precision electrical engineering for modern infrastructure. Licensed for the future.",
                         hero_cta: "Call Dispatch Now",
-                        svc_title: "Services",
+                        scroll_hint: "Scroll to explore",
+                        cert_1: "NEK 400 CERTIFIED", cert_2: "DSB APPROVED", cert_3: "ISO 9001", cert_4: "MESTERBREV",
+                        svc_title: "Services", svc_count: "(04)",
                         svc_1_t: "Fuse Box Upgrades", svc_1_d: "Modern automatic fuses with surge protection.",
                         svc_2_t: "EV Charging Systems", svc_2_d: "Certified installation for Zaptec & Easee.",
                         svc_3_t: "Safety Inspections", svc_3_d: "Full NEK 400 compliance review.",
@@ -808,15 +827,66 @@
                         proc_3_t: "Repair", proc_3_d: "Work executed according to DSB regulations.",
                         proc_4_t: "Handover", proc_4_d: "Documentation uploaded to Boligmappa.",
                         area_title: "Regional Coverage", area_desc: "Proudly serving Greater Oslo, Viken, and surrounding districts with a fleet of 15 fully equipped service vans.",
+                        area_loc_1: "/// Oslo Sentrum", area_loc_2: "/// Bærum & Asker", area_loc_3: "/// Drammen", area_loc_4: "/// Lillestrøm",
+                        area_map_alt: "Norway Service Area",
                         rev_title: "Client Intel",
                         rev_1: "Incredible response time. They fixed our main fuse box within an hour of my call.",
+                        rev_1_auth: "/// Ole Johansen",
                         rev_2: "Professional installation of our Easee charger. Neat wiring and great service.",
+                        rev_2_auth: "/// Marit Karlsen",
                         rev_3: "The only electrician closer to an engineer. High precision work on our smart home.",
+                        rev_3_auth: "/// Erik Hagen",
                         form_title: "Let's Fix It.",
                         form_ph1: "Emergency Hotline", form_ph2: "Email Dispatch", form_disclaimer: "By contacting you agree to our rapid response terms. We prioritize safety above all.",
                         inp_name: "Your Name", inp_addr: "Address", inp_desc: "Describe the Issue", btn_photo: "Attach Photo", btn_send: "Dispatch",
+                        footer_org: "ELECTRO PRO AS - Org. 999 888 777",
+                        footer_addr: "Industriveien 12, 0580 Oslo",
                         footer_rights: "© 2026 Electro Pro. All rights reserved.",
-                        footer_priv: "Privacy", footer_terms: "Terms", footer_acc: "Accessibility"
+                        footer_priv: "Privacy", footer_terms: "Terms", footer_acc: "Accessibility", footer_social: "Facebook",
+                        cfg_title: "Internal Config", cfg_open: "Open configuration panel", cfg_close: "Close panel",
+                        cfg_step1: "1. Select Business", cfg_step2: "2. Select Layout", cfg_step3: "3. Visual Style",
+                        cfg_demo1: "THE TOTAL CONTRACTOR", cfg_demo2: "SERVICE SPECIALIST", cfg_demo3: "FINISHING EXPERT",
+                        cfg_theme1: "Safety Orange", cfg_theme2: "Nordic Blue", cfg_theme3: "Forest Copper"
+                    },
+                    pl: {
+                        nav_work: "Usługi", nav_process: "Proces", nav_reviews: "Opinie", nav_contact: "Kontakt", nav_menu: "Menu",
+                        hero_tag: "/// Czas Reakcji: 45min",
+                        hero_t1: "ELEKTRYCZNE", hero_t2: "MISTRZOSTWO",
+                        hero_desc: "Precyzyjna inżynieria elektryczna dla nowoczesnej infrastruktury. Licencjonowani dla przyszłości.",
+                        hero_cta: "Zadzwoń na Dyżur",
+                        scroll_hint: "Przewiń aby odkryć",
+                        cert_1: "CERTYFIKAT NEK 400", cert_2: "ZATWIERDZONY DSB", cert_3: "ISO 9001", cert_4: "MESTERBREV",
+                        svc_title: "Usługi", svc_count: "(04)",
+                        svc_1_t: "Modernizacja Skrzynek", svc_1_d: "Nowoczesne bezpieczniki automatyczne z ochroną przepięciową.",
+                        svc_2_t: "Ładowarki EV", svc_2_d: "Certyfikowany montaż Zaptec & Easee.",
+                        svc_3_t: "Przeglądy Bezpieczeństwa", svc_3_d: "Pełna kontrola zgodności NEK 400.",
+                        svc_4_t: "Inteligentny Dom", svc_4_d: "Sterowanie oświetleniem i optymalizacja energii.",
+                        proc_label: "/// Proces", proc_title: "Przejrzysta realizacja od początku do końca.", proc_sub: "Brak ukrytych opłat. Bez niespodzianek. Tylko certyfikowana praca dostarczona na czas.",
+                        proc_1_t: "Zgłoszenie Otrzymane", proc_1_d: "Kontakt przez telefon lub formularz. Rejestrujemy sprawę natychmiast.",
+                        proc_2_t: "Diagnoza", proc_2_d: "Elektryk przyjeżdża, diagnozuje i podaje stałą cenę.",
+                        proc_3_t: "Naprawa", proc_3_d: "Praca wykonana zgodnie z przepisami DSB.",
+                        proc_4_t: "Przekazanie", proc_4_d: "Dokumentacja przesłana do Boligmappa.",
+                        area_title: "Zasięg Regionalny", area_desc: "Z dumą obsługujemy Wielkie Oslo, Viken i okoliczne dzielnice flotą 15 w pełni wyposażonych pojazdów serwisowych.",
+                        area_loc_1: "/// Oslo Sentrum", area_loc_2: "/// Bærum & Asker", area_loc_3: "/// Drammen", area_loc_4: "/// Lillestrøm",
+                        area_map_alt: "Norwegia Obszar Usług",
+                        rev_title: "Opinie Klientów",
+                        rev_1: "Niewiarygodny czas reakcji. Naprawili naszą główną skrzynkę w ciągu godziny.",
+                        rev_1_auth: "/// Ole Johansen",
+                        rev_2: "Profesjonalny montaż naszej ładowarki Easee. Czysto i schludnie.",
+                        rev_2_auth: "/// Marit Karlsen",
+                        rev_3: "Jedyny elektryk, który myśli jak inżynier. Wysokoprecyzyjna praca w naszym inteligentnym domu.",
+                        rev_3_auth: "/// Erik Hagen",
+                        form_title: "Naprawmy To.",
+                        form_ph1: "Infolinia Awaryjna", form_ph2: "Email Dyspozytorski", form_disclaimer: "Kontaktując się zgadzasz się na nasze warunki szybkiej reakcji. Bezpieczeństwo jest priorytetem.",
+                        inp_name: "Twoje Imię", inp_addr: "Adres", inp_desc: "Opisz Problem", btn_photo: "Załącz Zdjęcie", btn_send: "Wyślij Zlecenie",
+                        footer_org: "ELECTRO PRO AS - Org. 999 888 777",
+                        footer_addr: "Industriveien 12, 0580 Oslo",
+                        footer_rights: "© 2026 Electro Pro. Wszelkie prawa zastrzeżone.",
+                        footer_priv: "Prywatność", footer_terms: "Regulamin", footer_acc: "Dostępność", footer_social: "Facebook",
+                        cfg_title: "Konfiguracja Wewnętrzna", cfg_open: "Otwórz panel konfiguracji", cfg_close: "Zamknij panel",
+                        cfg_step1: "1. Wybierz Firmę", cfg_step2: "2. Wybierz Układ", cfg_step3: "3. Styl Wizualny",
+                        cfg_demo1: "GENERALNY WYKONAWCA", cfg_demo2: "SPECJALISTA SERWISOWY", cfg_demo3: "EKSPERT WYKOŃCZENIOWY",
+                        cfg_theme1: "Pomarańcz Bezpieczeństwa", cfg_theme2: "Nordycki Niebieski", cfg_theme3: "Leśna Miedź"
                     }
                 }
             }
