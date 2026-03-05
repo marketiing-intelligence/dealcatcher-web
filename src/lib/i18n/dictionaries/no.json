@@ -1872,7 +1872,8 @@
       "industryLabels": {
         "contractor": "Totalentreprenor",
         "service": "Servicespesialist",
-        "finishing": "Overflateekspert"
+        "finishing": "Overflateekspert",
+        "case-study": "Casestudie"
       }
     }
   },

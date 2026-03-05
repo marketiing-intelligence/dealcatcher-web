@@ -2501,7 +2501,8 @@
       "industryLabels": {
         "contractor": "Generalny wykonawca",
         "service": "Specjalista usługowy",
-        "finishing": "Wykończenia"
+        "finishing": "Wykończenia",
+        "case-study": "Case Study"
       }
     }
   },

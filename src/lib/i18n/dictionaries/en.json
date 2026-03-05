@@ -1872,7 +1872,8 @@
       "industryLabels": {
         "contractor": "Total Contractor",
         "service": "Service Specialist",
-        "finishing": "Finishing Expert"
+        "finishing": "Finishing Expert",
+        "case-study": "Case Study"
       }
     }
   },

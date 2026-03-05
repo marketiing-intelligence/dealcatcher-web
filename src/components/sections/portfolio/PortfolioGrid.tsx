@@ -13,11 +13,12 @@ import type { Locale } from "@/lib/i18n/config";
 import { Filter } from "lucide-react";
 import { useState } from "react";
 
-const industries: ("all" | "contractor" | "service" | "finishing")[] = [
+const industries: ("all" | "contractor" | "service" | "finishing" | "case-study")[] = [
   "all",
   "contractor",
   "service",
   "finishing",
+  "case-study",
 ];
 
 interface PortfolioGridProps {
@@ -30,13 +31,14 @@ interface PortfolioGridProps {
       contractor: string;
       service: string;
       finishing: string;
+      "case-study": string;
     };
     noResults: string;
   };
 }
 
 export function PortfolioGrid({ lang, dict }: PortfolioGridProps) {
-  const [activeFilter, setActiveFilter] = useState<"all" | "contractor" | "service" | "finishing">("all");
+  const [activeFilter, setActiveFilter] = useState<"all" | "contractor" | "service" | "finishing" | "case-study">("all");
   const localizedItems = getPortfolioItems(lang);
 
   // Separate templates from case studies
