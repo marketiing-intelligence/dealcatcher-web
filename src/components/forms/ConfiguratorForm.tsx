@@ -14,6 +14,7 @@ import { fadeUp, staggerContainer, viewportOnce } from "@/lib/animations";
 import type { Locale } from "@/lib/i18n/config";
 import { z } from "zod";
 import { trackMetaEvent } from "@/components/analytics/MetaPixel";
+import { getMetaCookies } from "@/lib/utils/cookies";
 
 type FormStatus = "idle" | "loading" | "success" | "error";
 
@@ -94,10 +95,13 @@ export function ConfiguratorForm({ lang }: ConfiguratorFormProps) {
   const onSubmit = async (data: ConfiguratorFormData) => {
     setStatus("loading");
     try {
+      // Get Meta Pixel cookies for CAPI
+      const metaCookies = getMetaCookies();
+
       const response = await fetch("/api/configurator", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...data, lang }),
+        body: JSON.stringify({ ...data, lang, ...metaCookies }),
       });
 
       if (response.ok) {

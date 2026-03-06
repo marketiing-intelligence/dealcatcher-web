@@ -39,7 +39,7 @@ const prototypeSchema = z.object({
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { lang = "pl", ...formData } = body;
+    const { lang = "pl", fbp, fbc, ...formData } = body;
     const validatedData = prototypeSchema.parse(formData);
 
     const resend = new Resend(process.env.RESEND_API_KEY);
@@ -173,6 +173,8 @@ export async function POST(request: Request) {
           clientIpAddress: request.headers.get("x-forwarded-for") || request.headers.get("x-real-ip") || undefined,
           clientUserAgent: request.headers.get("user-agent") || undefined,
           country: "PL", // Prototyp form is Polish only
+          fbp: fbp || undefined, // Facebook Browser ID
+          fbc: fbc || undefined, // Facebook Click ID
         },
         customData: {
           content_name: "Prototype Form Submission",

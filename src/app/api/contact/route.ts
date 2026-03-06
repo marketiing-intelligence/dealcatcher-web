@@ -7,7 +7,7 @@ import { sendMetaConversionEvent, generateEventId } from "@/lib/analytics/meta-c
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { lang = "en", ...formData } = body;
+    const { lang = "en", fbp, fbc, ...formData } = body;
     const validatedData = contactSchema.parse(formData);
 
     const resend = new Resend(process.env.RESEND_API_KEY);
@@ -43,6 +43,8 @@ export async function POST(request: Request) {
           clientIpAddress: request.headers.get("x-forwarded-for") || request.headers.get("x-real-ip") || undefined,
           clientUserAgent: request.headers.get("user-agent") || undefined,
           country: lang === "pl" ? "PL" : lang === "no" ? "NO" : "US", // Infer country from language
+          fbp: fbp || undefined, // Facebook Browser ID
+          fbc: fbc || undefined, // Facebook Click ID
         },
         customData: {
           content_name: "Contact Form Submission",
