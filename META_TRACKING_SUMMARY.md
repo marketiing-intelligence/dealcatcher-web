@@ -75,6 +75,41 @@ NEXT_PUBLIC_BASE_URL=https://dealcatcher.io
 3. Test forms + booking button
 4. Verify events in [Meta Events Manager → Test Events](https://business.facebook.com/events_manager2/)
 
+## 🐛 Debugging CAPI Issues
+
+If server-side events (CAPI) are not appearing in Meta Test Events:
+
+### 1. Check Vercel Function Logs
+```bash
+# Via Vercel Dashboard:
+1. Go to https://vercel.com/[your-project]/logs
+2. Select "Functions" tab
+3. Submit a form on your site
+4. Look for logs with ✅ or ❌ emoji:
+   - "✅ CAPI SUCCESS: Lead event sent" = working
+   - "❌ CAPI FAILED: [error message]" = CAPI error
+   - "❌ CAPI EXCEPTION: [error]" = code error
+```
+
+### 2. Verify Environment Variables
+```bash
+# Check in Vercel Dashboard → Settings → Environment Variables:
+- NEXT_PUBLIC_META_PIXEL_ID = 1461442255513982
+- META_CONVERSION_API_ACCESS_TOKEN = EAA... (starts with EAA)
+- NEXT_PUBLIC_BASE_URL = https://dealcatcher.io
+
+# After adding/changing env vars, MUST redeploy!
+```
+
+### 3. Common CAPI Errors
+
+| Error | Cause | Fix |
+|-------|-------|-----|
+| "Missing credentials" | Env vars not set in Vercel | Add to Vercel Settings → redeploy |
+| "Invalid OAuth access token" | Token expired/wrong | Generate new token from Meta Events Manager |
+| "Invalid parameter" | Data format issue | Check phone/email normalization |
+| No error, but no events | CAPI silently failing | Check function logs for details |
+
 ---
 
 ## 📊 Next Steps
