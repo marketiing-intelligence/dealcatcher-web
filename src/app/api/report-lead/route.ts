@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
+import { sendMetaConversionEvent, generateEventId } from "@/lib/analytics/meta-capi";
 
 export async function POST(request: Request) {
   try {
@@ -57,6 +58,25 @@ export async function POST(request: Request) {
         `,
       });
     }
+
+    // Track Lead event with Meta Conversions API (server-side)
+    await sendMetaConversionEvent({
+      eventName: "Lead",
+      eventId: generateEventId("report_lead"),
+      eventSourceUrl: `${process.env.NEXT_PUBLIC_BASE_URL || "https://dealcatcher.io"}/${lang}/reports/${reportSlug}`,
+      userData: {
+        email,
+        clientIpAddress: request.headers.get("x-forwarded-for") || request.headers.get("x-real-ip") || undefined,
+        clientUserAgent: request.headers.get("user-agent") || undefined,
+        city,
+        country: lang === "pl" ? "PL" : lang === "no" ? "NO" : "US", // Infer country from language
+      },
+      customData: {
+        content_name: `Report Lead - ${reportNiche} in ${reportCity}`,
+        content_category: "report_download",
+        currency: lang === "pl" ? "PLN" : "NOK",
+      },
+    });
 
     return NextResponse.json({ success: true });
   } catch (error) {

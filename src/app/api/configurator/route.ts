@@ -1,5 +1,6 @@
 import { Resend } from "resend";
 import { ZodError, z } from "zod";
+import { sendMetaConversionEvent, generateEventId } from "@/lib/analytics/meta-capi";
 
 const configuratorSchema = z.object({
   // Contact
@@ -149,6 +150,26 @@ export async function POST(request: Request) {
         { status: 500 }
       );
     }
+
+    // Track Lead event with Meta Conversions API (server-side)
+    await sendMetaConversionEvent({
+      eventName: "Lead",
+      eventId: generateEventId("configurator_lead"),
+      eventSourceUrl: `${process.env.NEXT_PUBLIC_BASE_URL || "https://dealcatcher.io"}/${lang}/konfigurator-formularz`,
+      userData: {
+        email: validatedData.email,
+        phone: validatedData.phone,
+        clientIpAddress: request.headers.get("x-forwarded-for") || request.headers.get("x-real-ip") || undefined,
+        clientUserAgent: request.headers.get("user-agent") || undefined,
+        country: "PL", // Configurator form is Polish only
+      },
+      customData: {
+        content_name: "Configurator Form Submission",
+        content_category: "configurator_request",
+        value: 15000, // Average configurator value in PLN
+        currency: "PLN",
+      },
+    });
 
     return Response.json({ success: true });
   } catch (error) {

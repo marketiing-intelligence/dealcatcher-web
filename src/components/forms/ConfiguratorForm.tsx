@@ -13,6 +13,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { fadeUp, staggerContainer, viewportOnce } from "@/lib/animations";
 import type { Locale } from "@/lib/i18n/config";
 import { z } from "zod";
+import { trackMetaEvent } from "@/components/analytics/MetaPixel";
 
 type FormStatus = "idle" | "loading" | "success" | "error";
 
@@ -63,6 +64,7 @@ interface ConfiguratorFormProps {
 
 export function ConfiguratorForm({ lang }: ConfiguratorFormProps) {
   const [status, setStatus] = useState<FormStatus>("idle");
+  const [hasTrackedCheckout, setHasTrackedCheckout] = useState(false);
 
   const {
     register,
@@ -75,6 +77,19 @@ export function ConfiguratorForm({ lang }: ConfiguratorFormProps) {
   });
 
   const hasAssets = watch("hasAssets");
+
+  // Track InitiateCheckout when user starts filling the form
+  const handleFormStart = () => {
+    if (!hasTrackedCheckout) {
+      trackMetaEvent("InitiateCheckout", {
+        content_name: "Configurator Form",
+        content_category: "configurator_request",
+        value: 15000,
+        currency: "PLN",
+      });
+      setHasTrackedCheckout(true);
+    }
+  };
 
   const onSubmit = async (data: ConfiguratorFormData) => {
     setStatus("loading");
@@ -139,6 +154,7 @@ export function ConfiguratorForm({ lang }: ConfiguratorFormProps) {
             type="email"
             placeholder="twoj@email.pl"
             {...register("email")}
+            onFocus={handleFormStart}
             className={errors.email ? "border-red-500" : ""}
           />
           {errors.email && (

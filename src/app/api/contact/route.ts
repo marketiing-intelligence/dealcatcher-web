@@ -2,6 +2,7 @@ import { Resend } from "resend";
 import { contactSchema } from "@/lib/validations/contact";
 import ContactNotification from "@/emails/ContactNotification";
 import { ZodError } from "zod";
+import { sendMetaConversionEvent, generateEventId } from "@/lib/analytics/meta-capi";
 
 export async function POST(request: Request) {
   try {
@@ -30,6 +31,24 @@ export async function POST(request: Request) {
         { status: 500 }
       );
     }
+
+    // Track Lead event with Meta Conversions API (server-side)
+    await sendMetaConversionEvent({
+      eventName: "Lead",
+      eventId: generateEventId("contact_lead"),
+      eventSourceUrl: `${process.env.NEXT_PUBLIC_BASE_URL || "https://dealcatcher.io"}/${lang}/contact`,
+      userData: {
+        email: validatedData.email,
+        clientIpAddress: request.headers.get("x-forwarded-for") || request.headers.get("x-real-ip") || undefined,
+        clientUserAgent: request.headers.get("user-agent") || undefined,
+        country: lang === "pl" ? "PL" : lang === "no" ? "NO" : "US", // Infer country from language
+      },
+      customData: {
+        content_name: "Contact Form Submission",
+        content_category: "contact",
+        currency: lang === "pl" ? "PLN" : "NOK",
+      },
+    });
 
     return Response.json({ success: true });
   } catch (error) {

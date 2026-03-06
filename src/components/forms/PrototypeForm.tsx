@@ -13,6 +13,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { fadeUp, staggerContainer, viewportOnce } from "@/lib/animations";
 import type { Locale } from "@/lib/i18n/config";
 import { z } from "zod";
+import { trackMetaEvent } from "@/components/analytics/MetaPixel";
 
 type FormStatus = "idle" | "loading" | "success" | "error";
 
@@ -66,6 +67,7 @@ interface PrototypeFormProps {
 
 export function PrototypeForm({ lang }: PrototypeFormProps) {
   const [status, setStatus] = useState<FormStatus>("idle");
+  const [hasTrackedCheckout, setHasTrackedCheckout] = useState(false);
 
   const {
     register,
@@ -78,6 +80,19 @@ export function PrototypeForm({ lang }: PrototypeFormProps) {
   });
 
   const hasLogo = watch("hasLogo");
+
+  // Track InitiateCheckout when user starts filling the form
+  const handleFormStart = () => {
+    if (!hasTrackedCheckout) {
+      trackMetaEvent("InitiateCheckout", {
+        content_name: "Prototype Form",
+        content_category: "prototype_request",
+        value: 3500,
+        currency: "PLN",
+      });
+      setHasTrackedCheckout(true);
+    }
+  };
 
   const onSubmit = async (data: PrototypeFormData) => {
     setStatus("loading");
@@ -142,6 +157,7 @@ export function PrototypeForm({ lang }: PrototypeFormProps) {
             type="email"
             placeholder="twoj@email.pl"
             {...register("email")}
+            onFocus={handleFormStart}
             className={errors.email ? "border-red-500" : ""}
           />
           {errors.email && (

@@ -9,6 +9,7 @@ import { ArrowRight, Calendar, Mail, Sparkles } from "lucide-react";
 import Link from "next/link";
 import { useRef } from "react";
 import type { Locale } from "@/lib/i18n/config";
+import { trackMetaCustomEvent } from "@/components/analytics/MetaPixel";
 
 interface CTASectionProps {
   lang: Locale;
@@ -131,7 +132,19 @@ export function CTASection({ lang, dict }: CTASectionProps) {
                 size="lg"
                 className="group border-primary/50 hover:border-primary hover:bg-primary/10 h-14 px-8 text-base font-medium bg-white/5 backdrop-blur-sm transition-all duration-300"
               >
-                <a href="https://cal.dealcatcher.io/marcin-jaworski/discovery-call" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://cal.dealcatcher.io/marcin-jaworski/discovery-call"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => {
+                    trackMetaCustomEvent("BookingInitiated", {
+                      content_name: "Discovery Call Booking",
+                      content_category: "booking",
+                      value: 0,
+                      currency: lang === "pl" ? "PLN" : "NOK",
+                    });
+                  }}
+                >
                   <Calendar className="mr-2 h-5 w-5 transition-transform group-hover:scale-110" />
                   Book a call
                 </a>

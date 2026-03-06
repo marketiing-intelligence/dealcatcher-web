@@ -7,6 +7,7 @@ import { i18n, type Locale } from "@/lib/i18n/config";
 import { getAlternates } from "@/lib/seo";
 import { CookieConsentBanner } from "@/components/shared/CookieConsentBanner";
 import { getDictionary } from "@/lib/i18n/dictionaries";
+import { MetaPixel } from "@/components/analytics/MetaPixel";
 
 // Body font - DM Sans from Google Fonts
 const dmSans = DM_Sans({
@@ -175,6 +176,9 @@ export default async function LangLayout({
       </body>
       {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
         <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
+      )}
+      {process.env.NEXT_PUBLIC_META_PIXEL_ID && (
+        <MetaPixel pixelId={process.env.NEXT_PUBLIC_META_PIXEL_ID} />
       )}
     </html>
   );

@@ -1,5 +1,6 @@
 import { Resend } from "resend";
 import { ZodError, z } from "zod";
+import { sendMetaConversionEvent, generateEventId } from "@/lib/analytics/meta-capi";
 
 const prototypeSchema = z.object({
   // Contact
@@ -159,6 +160,26 @@ export async function POST(request: Request) {
         { status: 500 }
       );
     }
+
+    // Track Lead event with Meta Conversions API (server-side)
+    await sendMetaConversionEvent({
+      eventName: "Lead",
+      eventId: generateEventId("prototype_lead"),
+      eventSourceUrl: `${process.env.NEXT_PUBLIC_BASE_URL || "https://dealcatcher.io"}/${lang}/formularz`,
+      userData: {
+        email: validatedData.email,
+        phone: validatedData.phone,
+        clientIpAddress: request.headers.get("x-forwarded-for") || request.headers.get("x-real-ip") || undefined,
+        clientUserAgent: request.headers.get("user-agent") || undefined,
+        country: "PL", // Prototyp form is Polish only
+      },
+      customData: {
+        content_name: "Prototype Form Submission",
+        content_category: "prototype_request",
+        value: 3500, // Average prototype value in PLN
+        currency: "PLN",
+      },
+    });
 
     return Response.json({ success: true });
   } catch (error) {
