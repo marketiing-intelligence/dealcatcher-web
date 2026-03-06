@@ -15,11 +15,6 @@ const nextConfig: NextConfig = {
     optimizePackageImports: ["framer-motion", "lucide-react"],
   },
 
-  // Compiler optimizations
-  compiler: {
-    removeConsole: process.env.NODE_ENV === "production",
-  },
-
   // Redirect root to default locale
   async redirects() {
     return [
