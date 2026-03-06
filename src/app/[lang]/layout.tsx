@@ -91,6 +91,9 @@ export async function generateMetadata({
     description: descriptions[lang],
     keywords: keywords[lang],
     alternates: getAlternates(lang),
+    other: {
+      "facebook-domain-verification": "q36fpnvykraqwpvqk2ll7r2htpbnxr", // Meta domain verification
+    },
     openGraph: {
       title: titles[lang],
       description: descriptions[lang],
