@@ -8,6 +8,7 @@ export async function POST(request: Request) {
   try {
     const body = await request.json();
     const { lang = "en", fbp, fbc, ...formData } = body;
+    console.log("🔍 Meta cookies received:", { fbp, fbc }); // Debug: check if cookies are available
     const validatedData = contactSchema.parse(formData);
 
     const resend = new Resend(process.env.RESEND_API_KEY);
@@ -40,6 +41,8 @@ export async function POST(request: Request) {
         eventSourceUrl: `${process.env.NEXT_PUBLIC_BASE_URL || "https://dealcatcher.io"}/${lang}/contact`,
         userData: {
           email: validatedData.email,
+          phone: validatedData.phone, // Optional phone field (improves Event Match Quality)
+          external_id: validatedData.email, // Use email as external_id for better attribution
           clientIpAddress: request.headers.get("x-forwarded-for") || request.headers.get("x-real-ip") || undefined,
           clientUserAgent: request.headers.get("user-agent") || undefined,
           country: lang === "pl" ? "PL" : lang === "no" ? "NO" : "US", // Infer country from language

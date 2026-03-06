@@ -23,6 +23,7 @@ interface MetaUserData {
   city?: string;
   country?: string;
   zipCode?: string;
+  external_id?: string; // External user ID (e.g., email hash, user_id) for better attribution
   clientIpAddress?: string;
   clientUserAgent?: string;
   fbc?: string; // Facebook click ID (from _fbc cookie)
@@ -93,6 +94,11 @@ function normalizeUserData(userData: MetaUserData) {
   // Hash zip code (optional)
   if (userData.zipCode) {
     normalized.zp = hashData(userData.zipCode);
+  }
+
+  // Hash external_id (user ID from your system for better attribution)
+  if (userData.external_id) {
+    normalized.external_id = hashData(userData.external_id);
   }
 
   // Client IP and User Agent (NOT hashed)

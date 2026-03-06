@@ -154,6 +154,14 @@ export function ContactForm({ lang, dict }: ContactFormProps) {
       </motion.div>
 
       <motion.div variants={fadeUp}>
+        <Input
+          {...register("phone")}
+          type="tel"
+          placeholder={lang === "pl" ? "Telefon (opcjonalnie)" : lang === "no" ? "Telefon (valgfritt)" : "Phone (optional)"}
+        />
+      </motion.div>
+
+      <motion.div variants={fadeUp}>
         <Input {...register("company")} placeholder={dict.form.company} />
       </motion.div>
 

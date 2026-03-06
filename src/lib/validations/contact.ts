@@ -4,6 +4,7 @@ import { z } from "zod";
 export const contactSchema = z.object({
   name: z.string().min(2, "Name is required"),
   email: z.string().email("Invalid email address"),
+  phone: z.string().optional(), // Optional phone field for better CAPI Event Match Quality
   company: z.string().optional(),
   message: z.string().min(10, "Message must be at least 10 characters"),
   gdprConsent: z

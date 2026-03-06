@@ -40,6 +40,7 @@ export async function POST(request: Request) {
   try {
     const body = await request.json();
     const { lang = "pl", fbp, fbc, ...formData } = body;
+    console.log("🔍 Meta cookies received:", { fbp, fbc }); // Debug: check if cookies are available
     const validatedData = prototypeSchema.parse(formData);
 
     const resend = new Resend(process.env.RESEND_API_KEY);
@@ -170,6 +171,7 @@ export async function POST(request: Request) {
         userData: {
           email: validatedData.email,
           phone: validatedData.phone,
+          external_id: validatedData.email, // Use email as external_id for better attribution
           clientIpAddress: request.headers.get("x-forwarded-for") || request.headers.get("x-real-ip") || undefined,
           clientUserAgent: request.headers.get("user-agent") || undefined,
           country: "PL", // Prototyp form is Polish only
