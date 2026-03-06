@@ -15,6 +15,7 @@ import {
 } from "@/lib/validations/contact";
 import { fadeUp, staggerContainer, viewportOnce } from "@/lib/animations";
 import type { Locale } from "@/lib/i18n/config";
+import { trackMetaEvent } from "@/components/analytics/MetaPixel";
 
 type FormStatus = "idle" | "loading" | "success" | "error";
 
@@ -91,6 +92,13 @@ export function ContactForm({ lang, dict }: ContactFormProps) {
       });
 
       if (response.ok) {
+        // Track Lead event with Meta Pixel (client-side)
+        trackMetaEvent("Lead", {
+          content_name: "Contact Form Submission",
+          content_category: "contact",
+          currency: lang === "pl" ? "PLN" : lang === "no" ? "NOK" : "USD",
+        });
+
         setStatus("success");
         reset();
       } else {
