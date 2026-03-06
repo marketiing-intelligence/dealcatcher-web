@@ -21,7 +21,7 @@
 | Prototype Form | `/pl/formularz` | 3,500 PLN |
 | Configurator Form | `/pl/konfigurator-formularz` | 15,000 PLN |
 
-**Data Sent:** Email (hashed), Phone (hashed), IP, User Agent, Country, Content metadata
+**Data Sent:** Email (hashed), Phone (hashed), IP, User Agent, Country, fbp, fbc, Content metadata
 
 ### 3. **InitiateCheckout** (Intent Signal)
 **Tracking:** Client-side (Pixel)
@@ -112,10 +112,25 @@ If server-side events (CAPI) are not appearing in Meta Test Events:
 
 ---
 
+## 🎯 Event Match Quality
+
+**Current Score:** 5.0/10 (baseline implementation)
+**After fbp/fbc cookies:** Expected ~8.0/10
+
+**Parameters sent to CAPI:**
+- ✅ Email (hashed) - 100% coverage
+- ✅ Phone (hashed) - Prototype & Configurator forms
+- ✅ IP Address - 100% coverage
+- ✅ User Agent - 100% coverage
+- ✅ Country - 100% coverage
+- ✅ **fbp** (Facebook Browser ID) - +24% quality
+- ✅ **fbc** (Facebook Click ID) - +32% quality
+
 ## 📊 Next Steps
 
 - Create Custom Audiences (InitiateCheckout, BookingInitiated)
 - Create Lookalike Audiences (Lead event)
 - Optimize campaigns for "Lead" conversion
+- Monitor Event Match Quality score improvement
 
 See [META_SETUP.md](META_SETUP.md) for detailed instructions.
