@@ -485,6 +485,10 @@
       "analytics": {
         "title": "Analityczne cookies",
         "description": "Te pliki cookies pomagają nam zrozumieć, jak odwiedzający korzystają z naszej strony, zbierając anonimowe informacje."
+      },
+      "marketing": {
+        "title": "Marketingowe cookies",
+        "description": "Te pliki cookies są wykorzystywane do śledzenia odwiedzających na stronach internetowych, wyświetlania reklam i mierzenia skuteczności kampanii."
       }
     },
     "privacyLink": "Dowiedz się więcej w naszej",
@@ -525,7 +529,7 @@
   },
   "privacy": {
     "title": "Polityka prywatności",
-    "lastUpdated": "Ostatnia aktualizacja: 19 lutego 2026",
+    "lastUpdated": "Ostatnia aktualizacja: 6 marca 2026",
     "sections": {
       "intro": {
         "title": "Wprowadzenie",
@@ -654,6 +658,11 @@
             "name": "Google Analytics",
             "purpose": "Analityka strony",
             "privacy": "https://policies.google.com/privacy"
+          },
+          {
+            "name": "Meta Pixel (Facebook)",
+            "purpose": "Analityka marketingowa, śledzenie zdarzeń i pomiar konwersji. Zbieramy dane: email (hashed), telefon (hashed), adres IP, user agent, fbp/fbc cookies",
+            "privacy": "https://www.facebook.com/privacy/policy"
           }
         ]
       },

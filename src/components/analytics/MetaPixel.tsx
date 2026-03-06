@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Script from "next/script";
 
 interface MetaPixelProps {
@@ -17,13 +17,41 @@ interface MetaPixelProps {
  * )}
  */
 export function MetaPixel({ pixelId }: MetaPixelProps) {
+  const [hasConsent, setHasConsent] = useState(false);
+
   useEffect(() => {
-    // Initialize pixel and track PageView after script loads
-    if (typeof window !== "undefined" && (window as any).fbq) {
+    // Check for marketing consent from localStorage
+    const checkConsent = () => {
+      try {
+        const consent = localStorage.getItem("dealcatcher-cookie-consent");
+        if (consent) {
+          const parsed = JSON.parse(consent);
+          setHasConsent(parsed.marketing === true);
+        }
+      } catch {
+        setHasConsent(false);
+      }
+    };
+
+    checkConsent();
+
+    // Listen for consent changes (when user updates preferences)
+    window.addEventListener("storage", checkConsent);
+    return () => window.removeEventListener("storage", checkConsent);
+  }, []);
+
+  useEffect(() => {
+    // Initialize pixel and track PageView only if consent is granted
+    if (hasConsent && typeof window !== "undefined" && (window as any).fbq) {
       (window as any).fbq("init", pixelId);
       (window as any).fbq("track", "PageView");
     }
-  }, [pixelId]);
+  }, [pixelId, hasConsent]);
+
+  // Only load Meta Pixel if marketing consent is granted
+  if (!hasConsent) {
+    return null;
+  }
 
   return (
     <>

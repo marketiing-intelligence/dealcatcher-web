@@ -25,6 +25,10 @@ interface CookieConsentBannerProps {
         title: string;
         description: string;
       };
+      marketing: {
+        title: string;
+        description: string;
+      };
     };
     privacyLink: string;
     privacyLinkText: string;
@@ -36,6 +40,7 @@ const COOKIE_CONSENT_KEY = "dealcatcher-cookie-consent";
 type ConsentState = {
   essential: boolean;
   analytics: boolean;
+  marketing: boolean;
   timestamp: number;
 };
 
@@ -43,6 +48,7 @@ export function CookieConsentBanner({ lang, dict }: CookieConsentBannerProps) {
   const [isVisible, setIsVisible] = useState(false);
   const [showCustomize, setShowCustomize] = useState(false);
   const [analyticsEnabled, setAnalyticsEnabled] = useState(false);
+  const [marketingEnabled, setMarketingEnabled] = useState(false);
 
   useEffect(() => {
     // Check if consent has been given
@@ -57,6 +63,9 @@ export function CookieConsentBanner({ lang, dict }: CookieConsentBannerProps) {
         const parsed: ConsentState = JSON.parse(consent);
         if (parsed.analytics) {
           enableAnalytics();
+        }
+        if (parsed.marketing) {
+          enableMarketing();
         }
       } catch {
         // Invalid consent, show banner
@@ -83,10 +92,25 @@ export function CookieConsentBanner({ lang, dict }: CookieConsentBannerProps) {
     }
   };
 
-  const saveConsent = (analytics: boolean) => {
+  const enableMarketing = () => {
+    // Enable Meta Pixel
+    if (typeof window !== "undefined" && window.fbq) {
+      window.fbq("consent", "grant");
+    }
+  };
+
+  const disableMarketing = () => {
+    // Disable Meta Pixel
+    if (typeof window !== "undefined" && window.fbq) {
+      window.fbq("consent", "revoke");
+    }
+  };
+
+  const saveConsent = (analytics: boolean, marketing: boolean) => {
     const consent: ConsentState = {
       essential: true, // Always true
       analytics,
+      marketing,
       timestamp: Date.now(),
     };
     localStorage.setItem(COOKIE_CONSENT_KEY, JSON.stringify(consent));
@@ -97,19 +121,25 @@ export function CookieConsentBanner({ lang, dict }: CookieConsentBannerProps) {
       disableAnalytics();
     }
 
+    if (marketing) {
+      enableMarketing();
+    } else {
+      disableMarketing();
+    }
+
     setIsVisible(false);
   };
 
   const handleAcceptAll = () => {
-    saveConsent(true);
+    saveConsent(true, true);
   };
 
   const handleAcceptEssential = () => {
-    saveConsent(false);
+    saveConsent(false, false);
   };
 
   const handleSavePreferences = () => {
-    saveConsent(analyticsEnabled);
+    saveConsent(analyticsEnabled, marketingEnabled);
   };
 
   return (
@@ -234,6 +264,37 @@ export function CookieConsentBanner({ lang, dict }: CookieConsentBannerProps) {
                       </div>
                     </div>
 
+                    {/* Marketing cookies - toggleable */}
+                    <div className="flex items-start justify-between gap-4 p-4 bg-muted/30 rounded-lg">
+                      <div>
+                        <h4 className="font-medium text-foreground">
+                          {dict.categories.marketing.title}
+                        </h4>
+                        <p className="text-sm text-muted-foreground">
+                          {dict.categories.marketing.description}
+                        </p>
+                      </div>
+                      <div className="flex items-center">
+                        <button
+                          type="button"
+                          role="switch"
+                          aria-checked={marketingEnabled}
+                          onClick={() => setMarketingEnabled(!marketingEnabled)}
+                          className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
+                            marketingEnabled ? "bg-primary" : "bg-muted"
+                          }`}
+                        >
+                          <span
+                            className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
+                              marketingEnabled
+                                ? "translate-x-6"
+                                : "translate-x-1"
+                            }`}
+                          />
+                        </button>
+                      </div>
+                    </div>
+
                     {/* Save button */}
                     <div className="flex justify-end pt-2">
                       <Button onClick={handleSavePreferences} size="sm">
@@ -257,7 +318,7 @@ export function openCookieSettings() {
   window.location.reload();
 }
 
-// Extend Window interface for gtag
+// Extend Window interface for gtag and fbq
 declare global {
   interface Window {
     gtag?: (
@@ -265,5 +326,6 @@ declare global {
       action: string,
       params: Record<string, string>
     ) => void;
+    fbq?: (command: string, action: string) => void;
   }
 }

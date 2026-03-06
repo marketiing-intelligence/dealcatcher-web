@@ -486,6 +486,10 @@
       "analytics": {
         "title": "Analyseinformasjonskapsler",
         "description": "Disse informasjonskapslene hjelper oss a forsta hvordan besokende samhandler med nettstedet vart ved a samle inn anonym informasjon."
+      },
+      "marketing": {
+        "title": "Markedsforingsinformasjonskapsler",
+        "description": "Disse informasjonskapslene brukes til a spore besokende pa nettsteder, vise annonser og male kampanjeeffektivitet."
       }
     },
     "privacyLink": "Les mer i var",
@@ -526,7 +530,7 @@
   },
   "privacy": {
     "title": "Personvernerklæring",
-    "lastUpdated": "Sist oppdatert: 19. januar 2026",
+    "lastUpdated": "Sist oppdatert: 6. mars 2026",
     "sections": {
       "intro": {
         "title": "Introduksjon",
@@ -655,6 +659,11 @@
             "name": "Google Analytics",
             "purpose": "Nettstedsanalyse",
             "privacy": "https://policies.google.com/privacy"
+          },
+          {
+            "name": "Meta Pixel (Facebook)",
+            "purpose": "Markedsforingsanalyse, hendelsessporing og konverteringsmaling. Vi samler inn: e-post (hashet), telefon (hashet), IP-adresse, brukeragent, fbp/fbc informasjonskapsler",
+            "privacy": "https://www.facebook.com/privacy/policy"
           }
         ]
       },
