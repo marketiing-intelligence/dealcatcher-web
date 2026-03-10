@@ -15,12 +15,12 @@ const nextConfig: NextConfig = {
     optimizePackageImports: ["framer-motion", "lucide-react"],
   },
 
-  // Redirect root to default locale
+  // Redirect root to default locale (Polish)
   async redirects() {
     return [
       {
         source: "/",
-        destination: "/en",
+        destination: "/pl",
         permanent: false,
       },
     ];
