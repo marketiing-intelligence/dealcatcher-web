@@ -1,0 +1,503 @@
+1
+00:00:00,330 --> 00:00:03,070
+Prowadzisz firmę, obroty rosną, firma rośnie.
+
+2
+00:00:03,230 --> 00:00:05,370
+Zatrudniasz ludzi, kupujesz narzędzia, próbujesz nowych
+
+3
+00:00:05,370 --> 00:00:05,650
+rzeczy.
+
+4
+00:00:05,950 --> 00:00:08,330
+Ale masz wrażenie, że im większa
+
+5
+00:00:08,330 --> 00:00:09,950
+ta firma, im więcej robisz, tym
+
+6
+00:00:09,950 --> 00:00:11,110
+większy bałagan wszędzie.
+
+7
+00:00:11,270 --> 00:00:13,070
+I gdzieś z tyłu głowy siedzi
+
+8
+00:00:13,070 --> 00:00:14,750
+pytanie, co tak naprawdę hamuje tą
+
+9
+00:00:14,750 --> 00:00:15,110
+firmę?
+
+10
+00:00:15,350 --> 00:00:17,510
+Albo w jaki sposób moglibyśmy wykorzystać
+
+11
+00:00:17,510 --> 00:00:20,570
+nowe technologie, AI, bazę wiedzy, automatyzację
+
+12
+00:00:21,550 --> 00:00:23,570
+do tego, żeby rosnąć szybciej i
+
+13
+00:00:23,570 --> 00:00:24,090
+mądrzej.
+
+14
+00:00:24,290 --> 00:00:26,730
+A przy okazji, żeby pracować najlepiej
+
+15
+00:00:26,730 --> 00:00:28,310
+mniej i zarabiać więcej.
+
+16
+00:00:28,870 --> 00:00:31,369
+To pytanie nurtuje większość moich klientów,
+
+17
+00:00:31,470 --> 00:00:33,030
+z którymi w tym momencie współpracuję.
+
+18
+00:00:33,890 --> 00:00:35,750
+Mają problem z tym, że wiedzą,
+
+19
+00:00:35,870 --> 00:00:37,750
+że jeżeli nic nie zmienią, to
+
+20
+00:00:37,750 --> 00:00:40,710
+ciężko im będzie rosnąć szczególnie, jeżeli
+
+21
+00:00:40,710 --> 00:00:43,270
+konkurencja będzie wykorzystywać nowe technologie.
+
+22
+00:00:43,930 --> 00:00:45,110
+I teraz widzę to u każdego
+
+23
+00:00:45,110 --> 00:00:47,490
+właściciela, klienta, z którym rozmawiam.
+
+24
+00:00:47,710 --> 00:00:49,510
+Firma działa, ale mogłaby działać dużo
+
+25
+00:00:49,510 --> 00:00:49,990
+szybciej.
+
+26
+00:00:50,310 --> 00:00:51,350
+I ty o tym wiesz, czujesz
+
+27
+00:00:51,350 --> 00:00:51,550
+to.
+
+28
+00:00:52,270 --> 00:00:53,630
+Może sprzedaż stoi w miejscu i
+
+29
+00:00:53,630 --> 00:00:54,310
+nie wiesz dlaczego.
+
+30
+00:00:54,550 --> 00:00:56,230
+Może koszty rosną szybciej niż przychody.
+
+31
+00:00:56,230 --> 00:00:58,710
+Może masz dziesięć pomysłów, ale nie
+
+32
+00:00:58,710 --> 00:00:59,750
+wiesz, co robić dalej.
+
+33
+00:00:59,990 --> 00:01:01,110
+Próbowałeś różnych rzeczy.
+
+34
+00:01:01,610 --> 00:01:05,010
+Próbujesz się automatyzować, wykorzystujesz narzędzia typu
+
+35
+00:01:05,010 --> 00:01:05,510
+CRM.
+
+36
+00:01:06,030 --> 00:01:08,230
+Zatrudniasz agencję, żeby pomagała ci w
+
+37
+00:01:08,230 --> 00:01:10,590
+tym, żeby rozwijać twoje pomysły.
+
+38
+00:01:11,150 --> 00:01:12,690
+Może kupiłeś jakieś narzędzia AI i
+
+39
+00:01:12,690 --> 00:01:14,510
+dostałeś generyczne odpowiedzi, które nie mają
+
+40
+00:01:14,510 --> 00:01:16,150
+nic wspólnego z twoim biznesem.
+
+41
+00:01:16,450 --> 00:01:17,670
+I bardziej cię to męczy niż
+
+42
+00:01:17,670 --> 00:01:18,150
+rozwija.
+
+43
+00:01:18,550 --> 00:01:19,850
+I teraz pomyśl o tym.
+
+44
+00:01:20,050 --> 00:01:22,110
+Zatrudniasz agencję marketingową.
+
+45
+00:01:22,430 --> 00:01:23,970
+Robi marketing, ale nie sprawdza, czy
+
+46
+00:01:23,970 --> 00:01:25,410
+twoja oferta w ogóle ma sens.
+
+47
+00:01:25,410 --> 00:01:26,930
+Zatrudniasz software house.
+
+48
+00:01:27,110 --> 00:01:28,470
+On buduje to, co mu każesz.
+
+49
+00:01:28,610 --> 00:01:30,910
+Analizuje wszystko dookoła tego pomysłu, który
+
+50
+00:01:30,910 --> 00:01:31,250
+masz.
+
+51
+00:01:31,370 --> 00:01:32,810
+Ale nie pyta, czy to rozwiązuje
+
+52
+00:01:32,810 --> 00:01:33,370
+twój problem.
+
+53
+00:01:33,570 --> 00:01:35,530
+Zatrudniasz konsultanta, on wchodzi do firmy,
+
+54
+00:01:35,630 --> 00:01:36,170
+analizuje.
+
+55
+00:01:36,670 --> 00:01:38,150
+Finalnie zostajesz z PDF-em.
+
+56
+00:01:38,950 --> 00:01:40,710
+Każdy robi swój kawałek, ale nikt
+
+57
+00:01:40,710 --> 00:01:42,350
+nie patrzy na całość holistycznie.
+
+58
+00:01:42,890 --> 00:01:44,570
+Nikt nie sprawdza, jak sprzedaż wpływa
+
+59
+00:01:44,570 --> 00:01:45,270
+na operacje.
+
+60
+00:01:45,510 --> 00:01:47,130
+Jak procesy wpływają na koszty.
+
+61
+00:01:47,350 --> 00:01:49,270
+Jak brak danych wpływa na decyzje.
+
+62
+00:01:49,770 --> 00:01:52,270
+I dlatego wydajesz dziesiątki tysięcy na
+
+63
+00:01:52,270 --> 00:01:55,410
+różne rzeczy, które finalnie nie przynoszą
+
+64
+00:01:55,410 --> 00:01:57,050
+ci efektów, które byś chciał.
+
+65
+00:01:57,630 --> 00:02:00,030
+My robimy coś, czego nikt na
+
+66
+00:02:00,030 --> 00:02:00,650
+rynku nie robi.
+
+67
+00:02:00,770 --> 00:02:03,470
+Być może dlatego, że prowadziliśmy siedem
+
+68
+00:02:03,470 --> 00:02:06,190
+różnych firm, kilka startupów.
+
+69
+00:02:06,930 --> 00:02:09,610
+To doświadczenie nauczyło nas, że zanim
+
+70
+00:02:09,610 --> 00:02:12,610
+cokolwiek zbudujemy, musimy zebrać odpowiednie dane.
+
+71
+00:02:13,970 --> 00:02:15,950
+A jak już prowadzimy biznes, to
+
+72
+00:02:15,950 --> 00:02:18,990
+jeżeli mamy dane na temat sprzedaży,
+
+73
+00:02:18,990 --> 00:02:23,350
+marketingu, operacji, finansów, zespołów, procesów, konkurencji,
+
+74
+00:02:23,490 --> 00:02:26,750
+oferty, narzędzi i różnych kanałów, wszystko,
+
+75
+00:02:27,110 --> 00:02:28,590
+to wtedy możemy połączyć się do
+
+76
+00:02:28,590 --> 00:02:28,870
+AI.
+
+77
+00:02:29,470 --> 00:02:35,510
+I zebrane dane przeanalizować przez przeróżniste
+
+78
+00:02:35,510 --> 00:02:40,330
+modele myślowe, mental modele, frameworki i
+
+79
+00:02:40,330 --> 00:02:42,210
+wyciągnąć informacje, o których nawet byśmy
+
+80
+00:02:42,210 --> 00:02:42,930
+nie pomyśleli.
+
+81
+00:02:43,710 --> 00:02:46,810
+To pomaga nam budować strategię i
+
+82
+00:02:46,810 --> 00:02:48,110
+podejmować odpowiednie decyzje.
+
+83
+00:02:48,110 --> 00:02:51,130
+Klient przychodzi po nową stronę, a
+
+84
+00:02:51,130 --> 00:02:52,450
+wychodząc wie, że problem jest w
+
+85
+00:02:52,450 --> 00:02:53,230
+procesie sprzedaży.
+
+86
+00:02:53,310 --> 00:02:55,410
+Klient przychodzi po automatyzację, okazuje się,
+
+87
+00:02:55,510 --> 00:02:57,190
+że najpierw trzeba przebudować ofertę.
+
+88
+00:02:58,010 --> 00:02:59,250
+Diagnoza przed leczeniem.
+
+89
+00:02:59,530 --> 00:03:00,750
+Brzmi prosto, ale nikt tego nie
+
+90
+00:03:00,750 --> 00:03:00,930
+robi.
+
+91
+00:03:01,210 --> 00:03:01,870
+Dam Ci przykład.
+
+92
+00:03:03,350 --> 00:03:04,470
+Jakiś czas temu przyszedł do nas
+
+93
+00:03:04,470 --> 00:03:05,750
+producent foteli rajdowych.
+
+94
+00:03:05,870 --> 00:03:07,870
+Świetny produkt, sprzedaż spada.
+
+95
+00:03:08,110 --> 00:03:09,130
+Jeden kanał sprzedaży.
+
+96
+00:03:10,010 --> 00:03:12,370
+Mógłby pójść do agencji marketingowej, zrobiłaby
+
+97
+00:03:12,370 --> 00:03:14,270
+mu reklamę na ten jeden kanał.
+
+98
+00:03:14,550 --> 00:03:16,490
+My prześwietliliśmy cały biznes.
+
+99
+00:03:16,490 --> 00:03:18,050
+Okazało się, że problem to nie
+
+100
+00:03:18,050 --> 00:03:18,670
+jest marketing.
+
+101
+00:03:19,710 --> 00:03:21,970
+To brak kanałów i brak systematycznego
+
+102
+00:03:21,970 --> 00:03:23,150
+podejścia do nowych rynków.
+
+103
+00:03:23,530 --> 00:03:24,130
+Co zrobiliśmy?
+
+104
+00:03:24,410 --> 00:03:26,770
+Konfigurator produktu z wizualizacją na żywo.
+
+105
+00:03:27,010 --> 00:03:28,050
+Portal afliacyjny.
+
+106
+00:03:28,210 --> 00:03:32,030
+Scraper AI, który przeszukiwał rynki europejskie
+
+107
+00:03:32,030 --> 00:03:33,530
+i zbudował bazę dystrybutorów.
+
+108
+00:03:33,670 --> 00:03:34,830
+Trzy nowe kanały sprzedaży.
+
+109
+00:03:35,010 --> 00:03:36,630
+System outreachowy z automatyzacją.
+
+110
+00:03:36,690 --> 00:03:37,990
+Z jednego kanału do czterech.
+
+111
+00:03:38,690 --> 00:03:42,720
+Z lokalnej sprzedaży i kilkunastu redistrybutorów
+
+112
+00:03:43,450 --> 00:03:45,410
+do czterystu potencjalnych klientów.
+
+113
+00:03:46,950 --> 00:03:49,530
+Influencerów i firm w całej Europie.
+
+114
+00:03:49,990 --> 00:03:52,130
+Jeżeli prowadzisz firmę, powiedzmy powyżej 20
+
+115
+00:03:52,130 --> 00:03:53,690
+osób i czujesz, że coś ją
+
+116
+00:03:53,690 --> 00:03:55,250
+hamuje, ale nie wiesz co dokładnie.
+
+117
+00:03:55,450 --> 00:03:57,010
+Umów się na bezpłatną ze mną
+
+118
+00:03:57,010 --> 00:03:58,110
+rozmowę.
+
+119
+00:03:58,290 --> 00:03:59,170
+30 minut.
+
+120
+00:03:59,570 --> 00:04:01,470
+Opowiesz o firmie, ja powiem Ci
+
+121
+00:04:01,470 --> 00:04:02,290
+wprost co widzę.
+
+122
+00:04:02,410 --> 00:04:03,890
+Po rozmowie dostaniesz ode mnie krótki
+
+123
+00:04:03,890 --> 00:04:06,170
+raport z kluczowymi obserwacjami i zobaczymy
+
+124
+00:04:06,170 --> 00:04:08,750
+czy jesteśmy w stanie Ci pomóc
+
+125
+00:04:08,750 --> 00:04:11,050
+i czy współpraca będzie miała sens.
+
+126
+00:04:11,570 --> 00:04:12,230
+Do zobaczenia.
