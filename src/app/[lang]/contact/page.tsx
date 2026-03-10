@@ -22,13 +22,11 @@ export async function generateMetadata({
 
   const titles: Record<Locale, string> = {
     en: "Contact | DealCatcher",
-    no: "Kontakt | DealCatcher",
     pl: "Kontakt | DealCatcher",
   };
 
   const descriptions: Record<Locale, string> = {
     en: "Get in touch with us. We'll respond within 24 hours.",
-    no: "Ta kontakt med oss. Vi svarer innen 24 timer.",
     pl: "Skontaktuj się z nami. Odpowiemy w ciągu 24 godzin.",
   };
 

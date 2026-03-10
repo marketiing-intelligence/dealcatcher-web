@@ -21,12 +21,10 @@ export async function generateMetadata({
 
   const titles: Record<Locale, string> = {
     en: "B2B Client Database | DealCatcher",
-    no: "B2B Kundedatabase | DealCatcher",
     pl: "Baza Klientów B2B | DealCatcher",
   };
   const descriptions: Record<Locale, string> = {
     en: "Custom B2B client database with qualified leads and contact information for your business.",
-    no: "Tilpasset B2B kundedatabase med kvalifiserte leads og kontaktinformasjon for din virksomhet.",
     pl: "Dedykowana baza klientów B2B z wykwalifikowanymi leadami i danymi kontaktowymi dla Twojego biznesu.",
   };
 

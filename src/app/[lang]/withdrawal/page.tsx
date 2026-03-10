@@ -14,12 +14,10 @@ export async function generateMetadata({
 
   const titles: Record<Locale, string> = {
     en: "Withdrawal Form | DealCatcher",
-    no: "Angreskjema | DealCatcher",
     pl: "Formularz Odstąpienia | DealCatcher",
   };
   const descriptions: Record<Locale, string> = {
     en: "Use this form to withdraw from your contract within 14 days under consumer law.",
-    no: "Bruk dette skjemaet for a trekke deg fra avtalen innen 14 dager i henhold til angrerettloven.",
     pl: "Użyj tego formularza, aby odstąpić od umowy w ciągu 14 dni zgodnie z ustawą o prawach konsumenta.",
   };
 

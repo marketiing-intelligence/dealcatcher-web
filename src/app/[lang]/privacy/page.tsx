@@ -14,12 +14,10 @@ export async function generateMetadata({
 
   const titles: Record<Locale, string> = {
     en: "Privacy Policy | DealCatcher",
-    no: "Personvernerklæring | DealCatcher",
     pl: "Polityka Prywatności | DealCatcher",
   };
   const descriptions: Record<Locale, string> = {
     en: "Read our privacy policy to understand how we collect, use, and protect your personal information.",
-    no: "Les vår personvernerklæring for å forstå hvordan vi samler inn, bruker og beskytter dine personopplysninger.",
     pl: "Przeczytaj naszą politykę prywatności, aby zrozumieć jak zbieramy, wykorzystujemy i chronimy Twoje dane osobowe.",
   };
 

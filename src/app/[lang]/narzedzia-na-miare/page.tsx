@@ -21,12 +21,10 @@ export async function generateMetadata({
 
   const titles: Record<Locale, string> = {
     en: "Custom Tools | DealCatcher",
-    no: "Tilpassede Verktøy | DealCatcher",
     pl: "Narzędzia na Miarę | DealCatcher",
   };
   const descriptions: Record<Locale, string> = {
     en: "Custom tools and automation solutions tailored to your business needs.",
-    no: "Tilpassede verktøy og automatiseringsløsninger skreddersydd for din virksomhet.",
     pl: "Dedykowane narzędzia i rozwiązania automatyzacji dopasowane do potrzeb Twojego biznesu.",
   };
 

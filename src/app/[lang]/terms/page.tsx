@@ -13,12 +13,10 @@ export async function generateMetadata({
 
   const titles: Record<Locale, string> = {
     en: "Terms of Service | DealCatcher",
-    no: "Vilkår for Bruk | DealCatcher",
     pl: "Regulamin | DealCatcher",
   };
   const descriptions: Record<Locale, string> = {
     en: "Read our terms of service for using DealCatcher's services and website.",
-    no: "Les våre vilkår for bruk av DealCatcher sine tjenester og nettsted.",
     pl: "Przeczytaj regulamin korzystania z usług i strony DealCatcher.",
   };
 

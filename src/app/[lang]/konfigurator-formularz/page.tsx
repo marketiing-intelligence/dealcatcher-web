@@ -28,13 +28,11 @@ export async function generateMetadata({
 
   const titles: Record<Locale, string> = {
     en: "Free Configurator Consultation | DealCatcher",
-    no: "Gratis Konfigurator-konsultasjon | DealCatcher",
     pl: "Bezpłatna Konsultacja Konfiguratora | DealCatcher",
   };
 
   const descriptions: Record<Locale, string> = {
     en: "Get a free consultation for your product configurator. See how 3D visualization can boost your sales.",
-    no: "Få en gratis konsultasjon for din produktkonfigurator. Se hvordan 3D-visualisering kan øke salget ditt.",
     pl: "Otrzymaj bezpłatną konsultację konfiguratora produktu. Zobacz jak wizualizacja 3D zwiększy Twoją sprzedaż.",
   };
 

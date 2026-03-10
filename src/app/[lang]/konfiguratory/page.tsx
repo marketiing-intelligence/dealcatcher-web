@@ -21,12 +21,10 @@ export async function generateMetadata({
 
   const titles: Record<Locale, string> = {
     en: "Product Configurators & Pricing Calculators | DealCatcher",
-    no: "Produktkonfiguratorer & Priskalkulator | DealCatcher",
     pl: "Konfiguratory Produktów i Kalkulatory Cen | DealCatcher",
   };
   const descriptions: Record<Locale, string> = {
     en: "Turn questions into orders with interactive product configurators. Real-time pricing, custom specifications, and automated quotes.",
-    no: "Gjør spørsmål til bestillinger med interaktive produktkonfiguratorer. Sanntidsprising, tilpassede spesifikasjoner og automatiske tilbud.",
     pl: "Zamień pytania w zamówienia dzięki interaktywnym konfiguratorem produktów. Ceny w czasie rzeczywistym, specyfikacje na wymiar i automatyczne wyceny.",
   };
 

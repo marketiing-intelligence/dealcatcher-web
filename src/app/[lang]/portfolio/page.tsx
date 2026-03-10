@@ -15,12 +15,10 @@ export async function generateMetadata({
 
   const titles: Record<Locale, string> = {
     en: "Template Gallery — Premium Website Templates | DealCatcher",
-    no: "Malgalleri — Premium Nettsidemal | DealCatcher",
     pl: "Galeria Szablonów — Profesjonalne Szablony Stron | DealCatcher",
   };
   const descriptions: Record<Locale, string> = {
     en: "Explore our collection of premium website templates for Norwegian businesses. AI-ready, WCAG compliant, built to convert.",
-    no: "Utforsk vare samling av premium nettsidemal for norske bedrifter. AI-klare, WCAG-kompatible, bygget for a konvertere.",
     pl: "Odkryj naszą kolekcję profesjonalnych szablonów stron internetowych. Gotowe na AI, zoptymalizowane pod konwersję.",
   };
 

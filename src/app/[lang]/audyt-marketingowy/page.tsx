@@ -21,12 +21,10 @@ export async function generateMetadata({
 
   const titles: Record<Locale, string> = {
     en: "Marketing Audit | DealCatcher",
-    no: "Markedsføringsaudit | DealCatcher",
     pl: "Audyt Marketingowy | DealCatcher",
   };
   const descriptions: Record<Locale, string> = {
     en: "Comprehensive marketing audit to identify opportunities and optimize your marketing strategy.",
-    no: "Omfattende markedsføringsaudit for å identifisere muligheter og optimalisere din markedsføringsstrategi.",
     pl: "Kompleksowy audyt marketingowy do identyfikacji możliwości i optymalizacji strategii marketingowej.",
   };
 
