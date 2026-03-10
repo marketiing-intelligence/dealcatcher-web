@@ -38,13 +38,13 @@ export function FinalCTASection({ lang, dict }: FinalCTASectionProps) {
             <Button
               asChild
               size="lg"
-              className="group relative bg-primary hover:bg-primary/90 text-primary-foreground h-16 px-10 text-lg font-medium overflow-hidden"
+              className="group relative bg-primary hover:bg-primary/90 text-primary-foreground h-12 md:h-14 lg:h-16 px-6 md:px-8 lg:px-10 text-sm md:text-base lg:text-lg font-medium overflow-hidden w-full sm:w-auto"
             >
               <Link href={`/${lang}#xray-form`}>
                 <span className="absolute inset-0 bg-gradient-to-r from-primary via-accent-hover to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <span className="relative flex items-center gap-2">
                   {dict.cta}
-                  <ArrowRight className="h-6 w-6 transition-transform group-hover:translate-x-1" />
+                  <ArrowRight className="h-5 w-5 md:h-6 md:w-6 transition-transform group-hover:translate-x-1" />
                 </span>
               </Link>
             </Button>

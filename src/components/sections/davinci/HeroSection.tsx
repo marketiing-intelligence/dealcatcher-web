@@ -49,7 +49,7 @@ export function HeroSection({ lang, dict }: HeroSectionProps) {
               <Button
                 asChild
                 size="lg"
-                className="group relative bg-primary hover:bg-primary/90 text-primary-foreground h-14 px-8 text-base font-medium overflow-hidden"
+                className="group relative bg-primary hover:bg-primary/90 text-primary-foreground h-12 md:h-14 px-6 md:px-8 text-sm md:text-base font-medium overflow-hidden w-full sm:w-auto"
               >
                 <Link href={`/${lang}#xray-form`}>
                   <span className="absolute inset-0 bg-gradient-to-r from-primary via-accent-hover to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
