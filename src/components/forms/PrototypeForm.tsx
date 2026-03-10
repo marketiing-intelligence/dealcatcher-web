@@ -9,7 +9,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { fadeUp, staggerContainer, viewportOnce } from "@/lib/animations";
 import type { Locale } from "@/lib/i18n/config";
 import { z } from "zod";
@@ -77,6 +76,7 @@ export function PrototypeForm({ lang }: PrototypeFormProps) {
     reset,
     watch,
     control,
+    setValue,
   } = useForm<PrototypeFormData>({
     resolver: zodResolver(prototypeSchema),
   });
@@ -261,26 +261,46 @@ export function PrototypeForm({ lang }: PrototypeFormProps) {
             name="language"
             control={control}
             render={({ field }) => (
-              <RadioGroup value={field.value} onValueChange={field.onChange} className="space-y-3">
+              <div className="space-y-3">
                 <div
-                  onClick={() => field.onChange("pl")}
-                  className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors cursor-pointer"
+                  onClick={() => setValue("language", "pl", { shouldValidate: true, shouldDirty: true, shouldTouch: true })}
+                  className={`flex items-start space-x-3 rounded-lg border p-4 hover:bg-white/10 transition-colors cursor-pointer ${
+                    field.value === "pl"
+                      ? "border-primary bg-white/10"
+                      : "border-white/10 bg-white/5"
+                  }`}
                 >
-                  <RadioGroupItem value="pl" id="lang-pl" className="mt-0.5" />
-                  <Label htmlFor="lang-pl" className="cursor-pointer flex-1">
+                  <div className={`mt-0.5 h-4 w-4 rounded-full border-2 flex items-center justify-center ${
+                    field.value === "pl" ? "border-primary" : "border-white/30"
+                  }`}>
+                    {field.value === "pl" && (
+                      <div className="h-2 w-2 rounded-full bg-primary" />
+                    )}
+                  </div>
+                  <Label className="cursor-pointer flex-1">
                     Polski
                   </Label>
                 </div>
                 <div
-                  onClick={() => field.onChange("en")}
-                  className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors cursor-pointer"
+                  onClick={() => setValue("language", "en", { shouldValidate: true, shouldDirty: true, shouldTouch: true })}
+                  className={`flex items-start space-x-3 rounded-lg border p-4 hover:bg-white/10 transition-colors cursor-pointer ${
+                    field.value === "en"
+                      ? "border-primary bg-white/10"
+                      : "border-white/10 bg-white/5"
+                  }`}
                 >
-                  <RadioGroupItem value="en" id="lang-en" className="mt-0.5" />
-                  <Label htmlFor="lang-en" className="cursor-pointer flex-1">
+                  <div className={`mt-0.5 h-4 w-4 rounded-full border-2 flex items-center justify-center ${
+                    field.value === "en" ? "border-primary" : "border-white/30"
+                  }`}>
+                    {field.value === "en" && (
+                      <div className="h-2 w-2 rounded-full bg-primary" />
+                    )}
+                  </div>
+                  <Label className="cursor-pointer flex-1">
                     Angielski
                   </Label>
                 </div>
-              </RadioGroup>
+              </div>
             )}
           />
           {errors.language && (
@@ -299,13 +319,23 @@ export function PrototypeForm({ lang }: PrototypeFormProps) {
             name="targetAudience"
             control={control}
             render={({ field }) => (
-              <RadioGroup value={field.value} onValueChange={field.onChange} className="space-y-3">
+              <div className="space-y-3">
                 <div
-                  onClick={() => field.onChange("b2b")}
-                  className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors cursor-pointer"
+                  onClick={() => setValue("targetAudience", "b2b", { shouldValidate: true, shouldDirty: true, shouldTouch: true })}
+                  className={`flex items-start space-x-3 rounded-lg border p-4 hover:bg-white/10 transition-colors cursor-pointer ${
+                    field.value === "b2b"
+                      ? "border-primary bg-white/10"
+                      : "border-white/10 bg-white/5"
+                  }`}
                 >
-                  <RadioGroupItem value="b2b" id="audience-b2b" className="mt-0.5" />
-                  <Label htmlFor="audience-b2b" className="cursor-pointer flex-1">
+                  <div className={`mt-0.5 h-4 w-4 rounded-full border-2 flex items-center justify-center ${
+                    field.value === "b2b" ? "border-primary" : "border-white/30"
+                  }`}>
+                    {field.value === "b2b" && (
+                      <div className="h-2 w-2 rounded-full bg-primary" />
+                    )}
+                  </div>
+                  <Label className="cursor-pointer flex-1">
                     <div>
                       <div className="font-medium">B2B (Business to Business)</div>
                       <div className="text-sm text-muted-foreground">
@@ -315,11 +345,21 @@ export function PrototypeForm({ lang }: PrototypeFormProps) {
                   </Label>
                 </div>
                 <div
-                  onClick={() => field.onChange("b2c")}
-                  className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors cursor-pointer"
+                  onClick={() => setValue("targetAudience", "b2c", { shouldValidate: true, shouldDirty: true, shouldTouch: true })}
+                  className={`flex items-start space-x-3 rounded-lg border p-4 hover:bg-white/10 transition-colors cursor-pointer ${
+                    field.value === "b2c"
+                      ? "border-primary bg-white/10"
+                      : "border-white/10 bg-white/5"
+                  }`}
                 >
-                  <RadioGroupItem value="b2c" id="audience-b2c" className="mt-0.5" />
-                  <Label htmlFor="audience-b2c" className="cursor-pointer flex-1">
+                  <div className={`mt-0.5 h-4 w-4 rounded-full border-2 flex items-center justify-center ${
+                    field.value === "b2c" ? "border-primary" : "border-white/30"
+                  }`}>
+                    {field.value === "b2c" && (
+                      <div className="h-2 w-2 rounded-full bg-primary" />
+                    )}
+                  </div>
+                  <Label className="cursor-pointer flex-1">
                     <div>
                       <div className="font-medium">B2C (Business to Consumer)</div>
                       <div className="text-sm text-muted-foreground">
@@ -329,11 +369,21 @@ export function PrototypeForm({ lang }: PrototypeFormProps) {
                   </Label>
                 </div>
                 <div
-                  onClick={() => field.onChange("b2g")}
-                  className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors cursor-pointer"
+                  onClick={() => setValue("targetAudience", "b2g", { shouldValidate: true, shouldDirty: true, shouldTouch: true })}
+                  className={`flex items-start space-x-3 rounded-lg border p-4 hover:bg-white/10 transition-colors cursor-pointer ${
+                    field.value === "b2g"
+                      ? "border-primary bg-white/10"
+                      : "border-white/10 bg-white/5"
+                  }`}
                 >
-                  <RadioGroupItem value="b2g" id="audience-b2g" className="mt-0.5" />
-                  <Label htmlFor="audience-b2g" className="cursor-pointer flex-1">
+                  <div className={`mt-0.5 h-4 w-4 rounded-full border-2 flex items-center justify-center ${
+                    field.value === "b2g" ? "border-primary" : "border-white/30"
+                  }`}>
+                    {field.value === "b2g" && (
+                      <div className="h-2 w-2 rounded-full bg-primary" />
+                    )}
+                  </div>
+                  <Label className="cursor-pointer flex-1">
                     <div>
                       <div className="font-medium">B2G (Business to Government)</div>
                       <div className="text-sm text-muted-foreground">
@@ -342,7 +392,7 @@ export function PrototypeForm({ lang }: PrototypeFormProps) {
                     </div>
                   </Label>
                 </div>
-              </RadioGroup>
+              </div>
             )}
           />
           {errors.targetAudience && (
@@ -427,13 +477,23 @@ export function PrototypeForm({ lang }: PrototypeFormProps) {
             name="hasLogo"
             control={control}
             render={({ field }) => (
-              <RadioGroup value={field.value} onValueChange={field.onChange} className="space-y-3">
+              <div className="space-y-3">
                 <div
-                  onClick={() => field.onChange("yes")}
-                  className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors cursor-pointer"
+                  onClick={() => setValue("hasLogo", "yes", { shouldValidate: true, shouldDirty: true, shouldTouch: true })}
+                  className={`flex items-start space-x-3 rounded-lg border p-4 hover:bg-white/10 transition-colors cursor-pointer ${
+                    field.value === "yes"
+                      ? "border-primary bg-white/10"
+                      : "border-white/10 bg-white/5"
+                  }`}
                 >
-                  <RadioGroupItem value="yes" id="logo-yes" className="mt-0.5" />
-                  <Label htmlFor="logo-yes" className="cursor-pointer flex-1">
+                  <div className={`mt-0.5 h-4 w-4 rounded-full border-2 flex items-center justify-center ${
+                    field.value === "yes" ? "border-primary" : "border-white/30"
+                  }`}>
+                    {field.value === "yes" && (
+                      <div className="h-2 w-2 rounded-full bg-primary" />
+                    )}
+                  </div>
+                  <Label className="cursor-pointer flex-1">
                     <div>
                       <div className="font-medium">Tak, mam logo i kolory</div>
                       <div className="text-sm text-muted-foreground">
@@ -443,11 +503,21 @@ export function PrototypeForm({ lang }: PrototypeFormProps) {
                   </Label>
                 </div>
                 <div
-                  onClick={() => field.onChange("no")}
-                  className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors cursor-pointer"
+                  onClick={() => setValue("hasLogo", "no", { shouldValidate: true, shouldDirty: true, shouldTouch: true })}
+                  className={`flex items-start space-x-3 rounded-lg border p-4 hover:bg-white/10 transition-colors cursor-pointer ${
+                    field.value === "no"
+                      ? "border-primary bg-white/10"
+                      : "border-white/10 bg-white/5"
+                  }`}
                 >
-                  <RadioGroupItem value="no" id="logo-no" className="mt-0.5" />
-                  <Label htmlFor="logo-no" className="cursor-pointer flex-1">
+                  <div className={`mt-0.5 h-4 w-4 rounded-full border-2 flex items-center justify-center ${
+                    field.value === "no" ? "border-primary" : "border-white/30"
+                  }`}>
+                    {field.value === "no" && (
+                      <div className="h-2 w-2 rounded-full bg-primary" />
+                    )}
+                  </div>
+                  <Label className="cursor-pointer flex-1">
                     <div>
                       <div className="font-medium">Nie, nie mam</div>
                       <div className="text-sm text-muted-foreground">
@@ -456,7 +526,7 @@ export function PrototypeForm({ lang }: PrototypeFormProps) {
                     </div>
                   </Label>
                 </div>
-              </RadioGroup>
+              </div>
             )}
           />
           {errors.hasLogo && (
@@ -502,55 +572,84 @@ export function PrototypeForm({ lang }: PrototypeFormProps) {
             name="goal"
             control={control}
             render={({ field }) => (
-              <RadioGroup value={field.value} onValueChange={field.onChange} className="space-y-3">
+              <div className="space-y-3">
                 <div
-                  onClick={() => field.onChange("info")}
-                  className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors cursor-pointer"
+                  onClick={() => setValue("goal", "info", { shouldValidate: true, shouldDirty: true, shouldTouch: true })}
+                  className={`flex items-start space-x-3 rounded-lg border p-4 hover:bg-white/10 transition-colors cursor-pointer ${
+                    field.value === "info"
+                      ? "border-primary bg-white/10"
+                      : "border-white/10 bg-white/5"
+                  }`}
                 >
-                  <RadioGroupItem value="info" id="goal-info" className="mt-0.5" />
-                  <Label htmlFor="goal-info" className="cursor-pointer flex-1">
+                  <div className={`mt-0.5 h-4 w-4 rounded-full border-2 flex items-center justify-center ${
+                    field.value === "info" ? "border-primary" : "border-white/30"
+                  }`}>
+                    {field.value === "info" && (
+                      <div className="h-2 w-2 rounded-full bg-primary" />
+                    )}
+                  </div>
+                  <Label className="cursor-pointer flex-1">
                     Strona informacyjna / wizytówka
                   </Label>
                 </div>
                 <div
-                  onClick={() => field.onChange("form")}
-                  className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors cursor-pointer"
+                  onClick={() => setValue("goal", "form", { shouldValidate: true, shouldDirty: true, shouldTouch: true })}
+                  className={`flex items-start space-x-3 rounded-lg border p-4 hover:bg-white/10 transition-colors cursor-pointer ${
+                    field.value === "form"
+                      ? "border-primary bg-white/10"
+                      : "border-white/10 bg-white/5"
+                  }`}
                 >
-                  <RadioGroupItem value="form" id="goal-form" className="mt-0.5" />
-                  <Label htmlFor="goal-form" className="cursor-pointer flex-1">
+                  <div className={`mt-0.5 h-4 w-4 rounded-full border-2 flex items-center justify-center ${
+                    field.value === "form" ? "border-primary" : "border-white/30"
+                  }`}>
+                    {field.value === "form" && (
+                      <div className="h-2 w-2 rounded-full bg-primary" />
+                    )}
+                  </div>
+                  <Label className="cursor-pointer flex-1">
                     Wypełnienie formularza kontaktowego
                   </Label>
                 </div>
                 <div
-                  onClick={() => field.onChange("consultation")}
-                  className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors cursor-pointer"
+                  onClick={() => setValue("goal", "consultation", { shouldValidate: true, shouldDirty: true, shouldTouch: true })}
+                  className={`flex items-start space-x-3 rounded-lg border p-4 hover:bg-white/10 transition-colors cursor-pointer ${
+                    field.value === "consultation"
+                      ? "border-primary bg-white/10"
+                      : "border-white/10 bg-white/5"
+                  }`}
                 >
-                  <RadioGroupItem
-                    value="consultation"
-                    id="goal-consultation"
-                    className="mt-0.5"
-                  />
-                  <Label
-                    htmlFor="goal-consultation"
-                    className="cursor-pointer flex-1"
-                  >
+                  <div className={`mt-0.5 h-4 w-4 rounded-full border-2 flex items-center justify-center ${
+                    field.value === "consultation" ? "border-primary" : "border-white/30"
+                  }`}>
+                    {field.value === "consultation" && (
+                      <div className="h-2 w-2 rounded-full bg-primary" />
+                    )}
+                  </div>
+                  <Label className="cursor-pointer flex-1">
                     Umówienie konsultacji / wizyty
                   </Label>
                 </div>
                 <div
-                  onClick={() => field.onChange("sales")}
-                  className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors cursor-pointer"
+                  onClick={() => setValue("goal", "sales", { shouldValidate: true, shouldDirty: true, shouldTouch: true })}
+                  className={`flex items-start space-x-3 rounded-lg border p-4 hover:bg-white/10 transition-colors cursor-pointer ${
+                    field.value === "sales"
+                      ? "border-primary bg-white/10"
+                      : "border-white/10 bg-white/5"
+                  }`}
                 >
-                  <RadioGroupItem
-                    value="sales"
-                    id="goal-sales"
-                    className="mt-0.5"
-                  />
-                  <Label htmlFor="goal-sales" className="cursor-pointer flex-1">
+                  <div className={`mt-0.5 h-4 w-4 rounded-full border-2 flex items-center justify-center ${
+                    field.value === "sales" ? "border-primary" : "border-white/30"
+                  }`}>
+                    {field.value === "sales" && (
+                      <div className="h-2 w-2 rounded-full bg-primary" />
+                    )}
+                  </div>
+                  <Label className="cursor-pointer flex-1">
                     Sprzedaż produktu / usługi
                   </Label>
                 </div>
-              </RadioGroup>
+              </div>
             )}
           />
           {errors.goal && (

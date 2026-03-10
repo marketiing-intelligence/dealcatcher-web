@@ -9,7 +9,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { fadeUp, staggerContainer, viewportOnce } from "@/lib/animations";
 import type { Locale } from "@/lib/i18n/config";
 import { z } from "zod";
@@ -74,6 +73,7 @@ export function ConfiguratorForm({ lang }: ConfiguratorFormProps) {
     reset,
     watch,
     control,
+    setValue,
   } = useForm<ConfiguratorFormData>({
     resolver: zodResolver(configuratorSchema),
   });
@@ -239,13 +239,23 @@ export function ConfiguratorForm({ lang }: ConfiguratorFormProps) {
             name="targetAudience"
             control={control}
             render={({ field }) => (
-              <RadioGroup value={field.value} onValueChange={field.onChange} className="space-y-3">
+              <div className="space-y-3">
                 <div
-                  onClick={() => field.onChange("b2b")}
-                  className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors cursor-pointer"
+                  onClick={() => setValue("targetAudience", "b2b", { shouldValidate: true, shouldDirty: true, shouldTouch: true })}
+                  className={`flex items-start space-x-3 rounded-lg border p-4 hover:bg-white/10 transition-colors cursor-pointer ${
+                    field.value === "b2b"
+                      ? "border-primary bg-white/10"
+                      : "border-white/10 bg-white/5"
+                  }`}
                 >
-                  <RadioGroupItem value="b2b" id="audience-b2b" className="mt-0.5" />
-                  <Label htmlFor="audience-b2b" className="cursor-pointer flex-1">
+                  <div className={`mt-0.5 h-4 w-4 rounded-full border-2 flex items-center justify-center ${
+                    field.value === "b2b" ? "border-primary" : "border-white/30"
+                  }`}>
+                    {field.value === "b2b" && (
+                      <div className="h-2 w-2 rounded-full bg-primary" />
+                    )}
+                  </div>
+                  <Label className="cursor-pointer flex-1">
                     <div>
                       <div className="font-medium">B2B</div>
                       <div className="text-sm text-muted-foreground">
@@ -255,11 +265,21 @@ export function ConfiguratorForm({ lang }: ConfiguratorFormProps) {
                   </Label>
                 </div>
                 <div
-                  onClick={() => field.onChange("b2c")}
-                  className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors cursor-pointer"
+                  onClick={() => setValue("targetAudience", "b2c", { shouldValidate: true, shouldDirty: true, shouldTouch: true })}
+                  className={`flex items-start space-x-3 rounded-lg border p-4 hover:bg-white/10 transition-colors cursor-pointer ${
+                    field.value === "b2c"
+                      ? "border-primary bg-white/10"
+                      : "border-white/10 bg-white/5"
+                  }`}
                 >
-                  <RadioGroupItem value="b2c" id="audience-b2c" className="mt-0.5" />
-                  <Label htmlFor="audience-b2c" className="cursor-pointer flex-1">
+                  <div className={`mt-0.5 h-4 w-4 rounded-full border-2 flex items-center justify-center ${
+                    field.value === "b2c" ? "border-primary" : "border-white/30"
+                  }`}>
+                    {field.value === "b2c" && (
+                      <div className="h-2 w-2 rounded-full bg-primary" />
+                    )}
+                  </div>
+                  <Label className="cursor-pointer flex-1">
                     <div>
                       <div className="font-medium">B2C</div>
                       <div className="text-sm text-muted-foreground">
@@ -269,11 +289,21 @@ export function ConfiguratorForm({ lang }: ConfiguratorFormProps) {
                   </Label>
                 </div>
                 <div
-                  onClick={() => field.onChange("both")}
-                  className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors cursor-pointer"
+                  onClick={() => setValue("targetAudience", "both", { shouldValidate: true, shouldDirty: true, shouldTouch: true })}
+                  className={`flex items-start space-x-3 rounded-lg border p-4 hover:bg-white/10 transition-colors cursor-pointer ${
+                    field.value === "both"
+                      ? "border-primary bg-white/10"
+                      : "border-white/10 bg-white/5"
+                  }`}
                 >
-                  <RadioGroupItem value="both" id="audience-both" className="mt-0.5" />
-                  <Label htmlFor="audience-both" className="cursor-pointer flex-1">
+                  <div className={`mt-0.5 h-4 w-4 rounded-full border-2 flex items-center justify-center ${
+                    field.value === "both" ? "border-primary" : "border-white/30"
+                  }`}>
+                    {field.value === "both" && (
+                      <div className="h-2 w-2 rounded-full bg-primary" />
+                    )}
+                  </div>
+                  <Label className="cursor-pointer flex-1">
                     <div>
                       <div className="font-medium">B2B + B2C</div>
                       <div className="text-sm text-muted-foreground">
@@ -282,7 +312,7 @@ export function ConfiguratorForm({ lang }: ConfiguratorFormProps) {
                     </div>
                   </Label>
                 </div>
-              </RadioGroup>
+              </div>
             )}
           />
           {errors.targetAudience && (
@@ -349,13 +379,23 @@ export function ConfiguratorForm({ lang }: ConfiguratorFormProps) {
             name="variantsCount"
             control={control}
             render={({ field }) => (
-              <RadioGroup value={field.value} onValueChange={field.onChange} className="space-y-3">
+              <div className="space-y-3">
                 <div
-                  onClick={() => field.onChange("10-50")}
-                  className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors cursor-pointer"
+                  onClick={() => setValue("variantsCount", "10-50", { shouldValidate: true, shouldDirty: true, shouldTouch: true })}
+                  className={`flex items-start space-x-3 rounded-lg border p-4 hover:bg-white/10 transition-colors cursor-pointer ${
+                    field.value === "10-50"
+                      ? "border-primary bg-white/10"
+                      : "border-white/10 bg-white/5"
+                  }`}
                 >
-                  <RadioGroupItem value="10-50" id="variants-small" className="mt-0.5" />
-                  <Label htmlFor="variants-small" className="cursor-pointer flex-1">
+                  <div className={`mt-0.5 h-4 w-4 rounded-full border-2 flex items-center justify-center ${
+                    field.value === "10-50" ? "border-primary" : "border-white/30"
+                  }`}>
+                    {field.value === "10-50" && (
+                      <div className="h-2 w-2 rounded-full bg-primary" />
+                    )}
+                  </div>
+                  <Label className="cursor-pointer flex-1">
                     <div>
                       <div className="font-medium">10-50 kombinacji</div>
                       <div className="text-sm text-muted-foreground">
@@ -365,11 +405,21 @@ export function ConfiguratorForm({ lang }: ConfiguratorFormProps) {
                   </Label>
                 </div>
                 <div
-                  onClick={() => field.onChange("50-200")}
-                  className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors cursor-pointer"
+                  onClick={() => setValue("variantsCount", "50-200", { shouldValidate: true, shouldDirty: true, shouldTouch: true })}
+                  className={`flex items-start space-x-3 rounded-lg border p-4 hover:bg-white/10 transition-colors cursor-pointer ${
+                    field.value === "50-200"
+                      ? "border-primary bg-white/10"
+                      : "border-white/10 bg-white/5"
+                  }`}
                 >
-                  <RadioGroupItem value="50-200" id="variants-medium" className="mt-0.5" />
-                  <Label htmlFor="variants-medium" className="cursor-pointer flex-1">
+                  <div className={`mt-0.5 h-4 w-4 rounded-full border-2 flex items-center justify-center ${
+                    field.value === "50-200" ? "border-primary" : "border-white/30"
+                  }`}>
+                    {field.value === "50-200" && (
+                      <div className="h-2 w-2 rounded-full bg-primary" />
+                    )}
+                  </div>
+                  <Label className="cursor-pointer flex-1">
                     <div>
                       <div className="font-medium">50-200 kombinacji</div>
                       <div className="text-sm text-muted-foreground">
@@ -379,11 +429,21 @@ export function ConfiguratorForm({ lang }: ConfiguratorFormProps) {
                   </Label>
                 </div>
                 <div
-                  onClick={() => field.onChange("200+")}
-                  className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors cursor-pointer"
+                  onClick={() => setValue("variantsCount", "200+", { shouldValidate: true, shouldDirty: true, shouldTouch: true })}
+                  className={`flex items-start space-x-3 rounded-lg border p-4 hover:bg-white/10 transition-colors cursor-pointer ${
+                    field.value === "200+"
+                      ? "border-primary bg-white/10"
+                      : "border-white/10 bg-white/5"
+                  }`}
                 >
-                  <RadioGroupItem value="200+" id="variants-large" className="mt-0.5" />
-                  <Label htmlFor="variants-large" className="cursor-pointer flex-1">
+                  <div className={`mt-0.5 h-4 w-4 rounded-full border-2 flex items-center justify-center ${
+                    field.value === "200+" ? "border-primary" : "border-white/30"
+                  }`}>
+                    {field.value === "200+" && (
+                      <div className="h-2 w-2 rounded-full bg-primary" />
+                    )}
+                  </div>
+                  <Label className="cursor-pointer flex-1">
                     <div>
                       <div className="font-medium">200+ kombinacji</div>
                       <div className="text-sm text-muted-foreground">
@@ -392,7 +452,7 @@ export function ConfiguratorForm({ lang }: ConfiguratorFormProps) {
                     </div>
                   </Label>
                 </div>
-              </RadioGroup>
+              </div>
             )}
           />
           {errors.variantsCount && (
@@ -416,13 +476,23 @@ export function ConfiguratorForm({ lang }: ConfiguratorFormProps) {
             name="hasAssets"
             control={control}
             render={({ field }) => (
-              <RadioGroup value={field.value} onValueChange={field.onChange} className="space-y-3">
+              <div className="space-y-3">
                 <div
-                  onClick={() => field.onChange("photos")}
-                  className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors cursor-pointer"
+                  onClick={() => setValue("hasAssets", "photos", { shouldValidate: true, shouldDirty: true, shouldTouch: true })}
+                  className={`flex items-start space-x-3 rounded-lg border p-4 hover:bg-white/10 transition-colors cursor-pointer ${
+                    field.value === "photos"
+                      ? "border-primary bg-white/10"
+                      : "border-white/10 bg-white/5"
+                  }`}
                 >
-                  <RadioGroupItem value="photos" id="assets-photos" className="mt-0.5" />
-                  <Label htmlFor="assets-photos" className="cursor-pointer flex-1">
+                  <div className={`mt-0.5 h-4 w-4 rounded-full border-2 flex items-center justify-center ${
+                    field.value === "photos" ? "border-primary" : "border-white/30"
+                  }`}>
+                    {field.value === "photos" && (
+                      <div className="h-2 w-2 rounded-full bg-primary" />
+                    )}
+                  </div>
+                  <Label className="cursor-pointer flex-1">
                     <div>
                       <div className="font-medium">Tak, mam zdjęcia produktu</div>
                       <div className="text-sm text-muted-foreground">
@@ -432,11 +502,21 @@ export function ConfiguratorForm({ lang }: ConfiguratorFormProps) {
                   </Label>
                 </div>
                 <div
-                  onClick={() => field.onChange("3d")}
-                  className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors cursor-pointer"
+                  onClick={() => setValue("hasAssets", "3d", { shouldValidate: true, shouldDirty: true, shouldTouch: true })}
+                  className={`flex items-start space-x-3 rounded-lg border p-4 hover:bg-white/10 transition-colors cursor-pointer ${
+                    field.value === "3d"
+                      ? "border-primary bg-white/10"
+                      : "border-white/10 bg-white/5"
+                  }`}
                 >
-                  <RadioGroupItem value="3d" id="assets-3d" className="mt-0.5" />
-                  <Label htmlFor="assets-3d" className="cursor-pointer flex-1">
+                  <div className={`mt-0.5 h-4 w-4 rounded-full border-2 flex items-center justify-center ${
+                    field.value === "3d" ? "border-primary" : "border-white/30"
+                  }`}>
+                    {field.value === "3d" && (
+                      <div className="h-2 w-2 rounded-full bg-primary" />
+                    )}
+                  </div>
+                  <Label className="cursor-pointer flex-1">
                     <div>
                       <div className="font-medium">Tak, mam modele 3D</div>
                       <div className="text-sm text-muted-foreground">
@@ -446,11 +526,21 @@ export function ConfiguratorForm({ lang }: ConfiguratorFormProps) {
                   </Label>
                 </div>
                 <div
-                  onClick={() => field.onChange("none")}
-                  className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors cursor-pointer"
+                  onClick={() => setValue("hasAssets", "none", { shouldValidate: true, shouldDirty: true, shouldTouch: true })}
+                  className={`flex items-start space-x-3 rounded-lg border p-4 hover:bg-white/10 transition-colors cursor-pointer ${
+                    field.value === "none"
+                      ? "border-primary bg-white/10"
+                      : "border-white/10 bg-white/5"
+                  }`}
                 >
-                  <RadioGroupItem value="none" id="assets-none" className="mt-0.5" />
-                  <Label htmlFor="assets-none" className="cursor-pointer flex-1">
+                  <div className={`mt-0.5 h-4 w-4 rounded-full border-2 flex items-center justify-center ${
+                    field.value === "none" ? "border-primary" : "border-white/30"
+                  }`}>
+                    {field.value === "none" && (
+                      <div className="h-2 w-2 rounded-full bg-primary" />
+                    )}
+                  </div>
+                  <Label className="cursor-pointer flex-1">
                     <div>
                       <div className="font-medium">Nie, nie mam</div>
                       <div className="text-sm text-muted-foreground">
@@ -459,7 +549,7 @@ export function ConfiguratorForm({ lang }: ConfiguratorFormProps) {
                     </div>
                   </Label>
                 </div>
-              </RadioGroup>
+              </div>
             )}
           />
           {errors.hasAssets && (
@@ -505,13 +595,23 @@ export function ConfiguratorForm({ lang }: ConfiguratorFormProps) {
             name="showPricing"
             control={control}
             render={({ field }) => (
-              <RadioGroup value={field.value} onValueChange={field.onChange} className="space-y-3">
+              <div className="space-y-3">
                 <div
-                  onClick={() => field.onChange("yes")}
-                  className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors cursor-pointer"
+                  onClick={() => setValue("showPricing", "yes", { shouldValidate: true, shouldDirty: true, shouldTouch: true })}
+                  className={`flex items-start space-x-3 rounded-lg border p-4 hover:bg-white/10 transition-colors cursor-pointer ${
+                    field.value === "yes"
+                      ? "border-primary bg-white/10"
+                      : "border-white/10 bg-white/5"
+                  }`}
                 >
-                  <RadioGroupItem value="yes" id="pricing-yes" className="mt-0.5" />
-                  <Label htmlFor="pricing-yes" className="cursor-pointer flex-1">
+                  <div className={`mt-0.5 h-4 w-4 rounded-full border-2 flex items-center justify-center ${
+                    field.value === "yes" ? "border-primary" : "border-white/30"
+                  }`}>
+                    {field.value === "yes" && (
+                      <div className="h-2 w-2 rounded-full bg-primary" />
+                    )}
+                  </div>
+                  <Label className="cursor-pointer flex-1">
                     <div>
                       <div className="font-medium">Tak, pokazuj cenę</div>
                       <div className="text-sm text-muted-foreground">
@@ -521,11 +621,21 @@ export function ConfiguratorForm({ lang }: ConfiguratorFormProps) {
                   </Label>
                 </div>
                 <div
-                  onClick={() => field.onChange("no")}
-                  className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors cursor-pointer"
+                  onClick={() => setValue("showPricing", "no", { shouldValidate: true, shouldDirty: true, shouldTouch: true })}
+                  className={`flex items-start space-x-3 rounded-lg border p-4 hover:bg-white/10 transition-colors cursor-pointer ${
+                    field.value === "no"
+                      ? "border-primary bg-white/10"
+                      : "border-white/10 bg-white/5"
+                  }`}
                 >
-                  <RadioGroupItem value="no" id="pricing-no" className="mt-0.5" />
-                  <Label htmlFor="pricing-no" className="cursor-pointer flex-1">
+                  <div className={`mt-0.5 h-4 w-4 rounded-full border-2 flex items-center justify-center ${
+                    field.value === "no" ? "border-primary" : "border-white/30"
+                  }`}>
+                    {field.value === "no" && (
+                      <div className="h-2 w-2 rounded-full bg-primary" />
+                    )}
+                  </div>
+                  <Label className="cursor-pointer flex-1">
                     <div>
                       <div className="font-medium">Nie, bez ceny</div>
                       <div className="text-sm text-muted-foreground">
@@ -534,7 +644,7 @@ export function ConfiguratorForm({ lang }: ConfiguratorFormProps) {
                     </div>
                   </Label>
                 </div>
-              </RadioGroup>
+              </div>
             )}
           />
           {errors.showPricing && (

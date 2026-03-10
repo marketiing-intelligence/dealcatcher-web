@@ -1,0 +1,93 @@
+"use client";
+
+import { Container } from "@/components/shared/Container";
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+import { fadeUp, viewportOnce } from "@/lib/animations";
+import { Calendar, MessageSquare, Check } from "lucide-react";
+import { CALCOM_BOOKING_URL } from "@/lib/constants";
+import Link from "next/link";
+import type { Locale } from "@/lib/i18n/config";
+
+interface CTASectionProps {
+  lang: Locale;
+  dict: {
+    title: string;
+    titleHighlight: string;
+    subtitle: string;
+    ctaPrimary: string;
+    ctaSecondary: string;
+    checkpoints?: string[];
+    disclaimer: string;
+  };
+}
+
+export function CTASection({ lang, dict }: CTASectionProps) {
+  return (
+    <section className="py-20 md:py-32 bg-[#141414] relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-t from-primary/5 via-transparent to-transparent" />
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/10 rounded-full blur-[120px]" />
+
+      <Container className="relative z-10">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={viewportOnce}
+          variants={fadeUp}
+          className="text-center max-w-3xl mx-auto"
+        >
+          <h2 className="mb-6">
+            {dict.title} <span className="text-primary">{dict.titleHighlight}</span>
+          </h2>
+          <p className="text-xl text-muted-foreground mb-10 leading-relaxed">
+            {dict.subtitle}
+          </p>
+
+          {/* Optional checkpoints list */}
+          {dict.checkpoints && dict.checkpoints.length > 0 && (
+            <div className="mb-10 inline-block text-left">
+              <ul className="space-y-3">
+                {dict.checkpoints.map((checkpoint, index) => (
+                  <li key={index} className="flex items-center gap-3 text-muted-foreground">
+                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center">
+                      <Check className="h-4 w-4 text-primary" />
+                    </div>
+                    <span>{checkpoint}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <Button
+              asChild
+              size="lg"
+              className="bg-primary text-primary-foreground hover:bg-accent-hover h-14 px-8 text-base font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_var(--accent-glow)]"
+            >
+              <a href={CALCOM_BOOKING_URL} target="_blank" rel="noopener noreferrer">
+                <Calendar className="mr-2 h-5 w-5" />
+                {dict.ctaPrimary}
+              </a>
+            </Button>
+            <Button
+              asChild
+              variant="outline"
+              size="lg"
+              className="border-border hover:border-primary hover:text-primary h-14 px-8 text-base font-medium"
+            >
+              <Link href={`/${lang}/contact`}>
+                <MessageSquare className="mr-2 h-5 w-5" />
+                {dict.ctaSecondary}
+              </Link>
+            </Button>
+          </div>
+
+          <p className="mt-8 text-sm text-muted-foreground">
+            {dict.disclaimer}
+          </p>
+        </motion.div>
+      </Container>
+    </section>
+  );
+}

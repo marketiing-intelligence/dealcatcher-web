@@ -5,13 +5,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://dealcatcher.io";
 
   // Define all locales
-  const locales = ["en", "no", "pl"];
+  const locales = ["pl", "en"];
 
-  // Routes per locale — PL doesn't have WCAG
+  // Routes per locale
   const routesByLocale: Record<string, string[]> = {
-    en: ["", "/no-website", "/wcag", "/portfolio", "/contact"],
-    no: ["", "/no-website", "/wcag", "/portfolio", "/contact"],
     pl: ["", "/no-website", "/portfolio", "/contact"],
+    en: ["", "/no-website", "/portfolio", "/contact"],
   };
 
   // Generate sitemap entries for all routes and locales

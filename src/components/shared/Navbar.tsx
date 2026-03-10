@@ -23,6 +23,7 @@ interface NavbarProps {
     nav: {
       services: string;
       portfolio: string;
+      xray?: string;
       newWebsite: string;
       wcagCompliance?: string;
       freePrototype: string;
@@ -59,6 +60,7 @@ export function Navbar({ lang, dict }: NavbarProps) {
   });
 
   const serviceLinks = [
+    ...(dict.nav.xray ? [{ href: `/${lang}/xray`, label: dict.nav.xray }] : []),
     { href: `/${lang}/no-website`, label: dict.nav.newWebsite },
     { href: `/${lang}/konfiguratory`, label: dict.nav.configurators },
     { href: `/${lang}/google-ads`, label: dict.nav.googleAds },

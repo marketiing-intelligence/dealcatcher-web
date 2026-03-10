@@ -5,9 +5,8 @@ import Link from "next/link";
 import type { Locale } from "@/lib/i18n/config";
 
 const languages: { code: Locale; label: string }[] = [
-  { code: "en", label: "EN" },
-  { code: "no", label: "NO" },
   { code: "pl", label: "PL" },
+  { code: "en", label: "EN" },
 ];
 
 interface LanguageSwitcherProps {

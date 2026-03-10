@@ -13,7 +13,7 @@ const prototypeSchema = z.object({
   currentWebsite: z.string().optional(),
 
   // Project specifics
-  language: z.enum(["pl", "en", "no"]),
+  language: z.enum(["pl", "en"]),
   targetAudience: z.enum(["b2b", "b2c", "b2g"]),
 
   // Services & USP
@@ -49,7 +49,6 @@ export async function POST(request: Request) {
     const languageLabels = {
       pl: "Polski",
       en: "Angielski",
-      no: "Norweski",
     };
 
     const audienceLabels = {

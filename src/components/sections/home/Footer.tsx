@@ -67,6 +67,14 @@ export function Footer({ lang, dict }: FooterProps) {
               )}
               <li>
                 <Link
+                  href={`/${lang}/xray`}
+                  className="text-foreground hover:text-primary transition-colors"
+                >
+                  X-Ray — diagnoza biznesu
+                </Link>
+              </li>
+              <li>
+                <Link
                   href={`/${lang}/formularz`}
                   className="text-foreground hover:text-primary transition-colors"
                 >

@@ -29,15 +29,13 @@ export async function generateMetadata({
   const { lang } = await params;
 
   const titles: Record<Locale, string> = {
-    en: "Free Prototype | DealCatcher",
-    no: "Gratis Prototype | DealCatcher",
     pl: "Darmowy Prototyp | DealCatcher",
+    en: "Free Prototype | DealCatcher",
   };
 
   const descriptions: Record<Locale, string> = {
-    en: "Get a free website prototype in 48h. See the result before you pay.",
-    no: "Få en gratis nettside prototype på 48 timer. Se resultatet før du betaler.",
     pl: "Otrzymaj darmowy prototyp strony w 48h. Zobacz efekt zanim zapłacisz.",
+    en: "Get a free website prototype in 48h. See the result before you pay.",
   };
 
   return {

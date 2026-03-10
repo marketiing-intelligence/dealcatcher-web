@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-const locales = ["en", "no", "pl"];
-const defaultLocale = "en";
+const locales = ["pl", "en"];
+const defaultLocale = "pl";
 
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
@@ -28,9 +28,14 @@ export function middleware(request: NextRequest) {
     return;
   }
 
-  // Detect country from Vercel header (production) or default to EN
-  const country = request.headers.get("x-vercel-ip-country");
-  const locale = country === "NO" ? "no" : country === "PL" ? "pl" : defaultLocale;
+  // Detect browser language from Accept-Language header
+  const acceptLanguage = request.headers.get("accept-language") || "";
+
+  // Parse the first language from Accept-Language header (e.g., "pl-PL" -> "pl")
+  const browserLang = acceptLanguage.split(",")[0]?.split("-")[0]?.toLowerCase();
+
+  // If browser language is Polish, redirect to /pl, otherwise /en
+  const locale = browserLang === "pl" ? "pl" : "en";
 
   // Redirect to localized path
   return NextResponse.redirect(new URL(`/${locale}${pathname}`, request.url));

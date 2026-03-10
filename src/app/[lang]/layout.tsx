@@ -37,52 +37,42 @@ export async function generateMetadata({
   const { lang } = await params;
 
   const titles: Record<Locale, string> = {
-    en: "DealCatcher — Professional Websites for Norwegian Businesses",
-    no: "DealCatcher — Profesjonelle Nettsider for Norske Bedrifter",
-    pl: "DealCatcher — Tworzenie Stron Internetowych dla Firm",
+    en: "DealCatcher — Professional Websites for Businesses",
+    pl: "Davinci Agency | Strategia, Technologia, Wdrożenie",
   };
 
   const descriptions: Record<Locale, string> = {
-    en: "AI-ready, WCAG compliant websites that convert visitors into customers. Built for Norwegian craftsmen and businesses.",
-    no: "AI-klare, WCAG-kompatible nettsider som konverterer besokende til kunder. Bygget for norske handverkere og bedrifter.",
-    pl: "Profesjonalne strony internetowe z konfiguratorami i kalkulatorami cenowymi. Tworzenie stron WWW, konfiguratory online i kampanie Google Ads dla polskich firm.",
+    en: "AI-ready, WCAG compliant websites that convert visitors into customers. Built for businesses worldwide.",
+    pl: "Analizujemy cały biznes — sprzedaż, operacje, marketing, finanse, zespół, procesy. Znajdujemy co naprawdę blokuje wzrost i budujemy rozwiązanie. Strategia, technologia i wdrożenie. Pod jednym dachem.",
   };
 
   const keywords: Record<Locale, string[]> = {
     en: [
-      "web design norway",
-      "website norway",
-      "WCAG compliance",
-      "norwegian web agency",
+      "web design",
+      "website development",
       "AI ready websites",
-    ],
-    no: [
-      "webdesign norge",
-      "nettside bedrift",
-      "WCAG compliance",
-      "norsk webbyrå",
-      "AI klare nettsider",
+      "business consulting",
+      "business strategy",
     ],
     pl: [
+      "x-ray",
+      "diagnoza biznesu",
+      "strategia biznesowa",
+      "wdrożenie ai",
+      "automatyzacja procesów",
+      "narzędzia ai",
+      "agenci ai",
       "tworzenie stron internetowych",
-      "strona internetowa dla firmy",
       "konfigurator online",
-      "kalkulator cenowy na stronę",
-      "konfigurator produktów",
       "kampanie google ads",
-      "strona z konfiguratorem",
-      "interaktywne narzędzia na stronę",
       "aeo",
       "ai seo",
       "pozycjonowanie w ai",
-      "strona gotowa na ai",
-      "ai search optimization",
     ],
   };
 
   const localeMap: Record<Locale, string> = {
     en: "en_US",
-    no: "nb_NO",
     pl: "pl_PL",
   };
 

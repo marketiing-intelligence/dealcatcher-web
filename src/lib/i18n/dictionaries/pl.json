@@ -3,7 +3,6 @@
     "services": "Usługi",
     "portfolio": "Portfolio",
     "newWebsite": "Nowa Strona",
-    "wcagCompliance": "Dostępność WCAG",
     "freePrototype": "Darmowy Prototyp",
     "configurators": "Konfiguratory",
     "googleAds": "Google Ads",
@@ -11,7 +10,8 @@
     "customerDatabase": "Baza klientów B2B",
     "customTools": "Narzędzia na miarę",
     "salesMaterials": "Materiały sprzedażowe",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "xray": "X-Ray"
   },
   "hero": {
     "badge": "Przestań tracić klientów",
@@ -2529,10 +2529,22 @@
         "~15 osób"
       ],
       "stats": [
-        { "value": "400+", "label": "dystrybutorów w bazie" },
-        { "value": "27%", "label": "influencerów zainteresowanych" },
-        { "value": "3", "label": "nowe kanały sprzedaży" },
-        { "value": "2 mies.", "label": "czasu realizacji" }
+        {
+          "value": "400+",
+          "label": "dystrybutorów w bazie"
+        },
+        {
+          "value": "27%",
+          "label": "influencerów zainteresowanych"
+        },
+        {
+          "value": "3",
+          "label": "nowe kanały sprzedaży"
+        },
+        {
+          "value": "2 mies.",
+          "label": "czasu realizacji"
+        }
       ]
     },
     "problem": {
@@ -2721,6 +2733,592 @@
           "url": "/case-study/candle-configurator"
         }
       ]
+    }
+  },
+  "davinci": {
+    "hero": {
+      "headline": "Pokaż nam swoją firmę. Pokażemy Ci rzeczy, których nie widać od środka.",
+      "subheadline": "Analizujemy cały biznes — sprzedaż, operacje, marketing, finanse, zespół, procesy. Znajdujemy co naprawdę blokuje wzrost i budujemy rozwiązanie. Strategia, technologia i wdrożenie. Pod jednym dachem.",
+      "cta": "Umów się na darmową rozmowę — 30 min",
+      "ctaNote": "Zero zobowiązań."
+    },
+    "problem": {
+      "badge": "Znasz to?",
+      "title": "Twoja firma mogłaby rosnąć szybciej. Pytanie: co ją hamuje?",
+      "pains": [
+        {
+          "title": "Wiesz że powinieneś wdrożyć AI. Wiesz że jak tego nie zrobisz — odpadniesz.",
+          "description": [
+            "Twoja konkurencja już to robi. Obniżają koszty, przyspieszają procesy, podejmują lepsze decyzje. Ty to widzisz. Czujesz presję.",
+            "Może nawet próbowałeś — ChatGPT, jakiś tool, automatyzacja. Dostałeś generyczne odpowiedzi, które nie mają nic wspólnego z Twoim biznesem.",
+            "Bo AI nie zna Twojej firmy. Nie ma skąd — Twoje dane są porozrzucane po głowach ludzi, Excelach i skrzynkach mailowych."
+          ]
+        },
+        {
+          "title": "Twoja firma jest w Twojej głowie. I tylko w Twojej głowie.",
+          "description": [
+            "Procesy, wiedza, kontakty, doświadczenie — to wszystko siedzi w ludziach. Jak ktoś odchodzi, zabiera kawałek firmy ze sobą.",
+            "Nie możesz delegować, bo nikt nie wie co robić bez Ciebie.",
+            "Nie możesz wykorzystać AI, bo nie ma danych na których mogłoby pracować.",
+            "Nie możesz skalować, bo wszystko zależy od Twojej dostępności.",
+            "Pracujesz W firmie zamiast NAD firmą."
+          ]
+        },
+        {
+          "title": "Kupiłeś narzędzia. Zatrudniłeś agencję. Nic się nie zmieniło.",
+          "description": [
+            "CRM leży. Automatyzacja nie działa. Strona nie konwertuje.",
+            "Bo nikt nie sprawdził czy to w ogóle jest Twój problem.",
+            "Wydałeś dziesiątki tysięcy na złe rzeczy — bo agencja zrobiła co kazałeś, zamiast powiedzieć Ci co naprawdę trzeba."
+          ]
+        },
+        {
+          "title": "Masz za dużo pomysłów i zero jasności co da najszybszy efekt.",
+          "description": [
+            "Eksport? Nowy kanał? Automatyzacja? Nowa oferta? Nowy produkt?",
+            "Masz umiejętności, masz zasoby, masz pomysły — ale nie wiesz od czego zacząć.",
+            "Każdy doradca mówi co innego.",
+            "Brakuje kogoś kto popatrzy na WSZYSTKO i powie: tu jest największa szansa."
+          ]
+        },
+        {
+          "title": "Koszty rosną szybciej niż przychody.",
+          "description": [
+            "Każdy nowy klient = więcej ludzi, więcej chaosu, więcej kosztów.",
+            "Procesy które działały dla 10 klientów rozpadają się przy 50.",
+            "Nie skalujesz — multiplikujesz bałagan."
+          ]
+        }
+      ]
+    },
+    "rootCause": {
+      "badge": "Dlaczego",
+      "title": "Bo nikt nigdy nie popatrzył na Twoją firmę jako całość.",
+      "paragraphs": [
+        "Zatrudniłeś agencję marketingową — zrobiła marketing. Ale nie sprawdziła czy Twoja oferta ma sens.",
+        "Zatrudniłeś software house — zbudował co kazałeś. Ale nie zapytał czy to w ogóle rozwiązuje Twój problem.",
+        "Zatrudniłeś konsultanta — dał PDF z rekomendacjami. I odszedł.",
+        "Każdy zrobił SWÓJ kawałek. Nikt nie popatrzył na CAŁOŚĆ. Na to jak sprzedaż wpływa na operacje. Jak procesy wpływają na koszty. Jak brak danych wpływa na decyzje. Jak to wszystko się ze sobą łączy."
+      ],
+      "emphasis": "My zaczynamy od tego.",
+      "conclusion": "My robimy coś, czego nikt przed nami nie zrobił. Zbieramy WSZYSTKIE informacje o Twojej firmie — z każdego działu, każdego procesu, każdego Excela i każdej głowy — i przepuszczamy je przez dziesiątki modeli analitycznych. Nie po to żeby potwierdzić to co już wiesz. Po to żeby znaleźć to czego nie widzisz."
+    },
+    "benefits": {
+      "badge": "Co dostajesz",
+      "title": "Nie raport do szuflady. Strategia szyta pod Twój biznes — i zespół który ją wdroży.",
+      "items": [
+        {
+          "number": "①",
+          "title": "Baza wiedzy Twojej firmy",
+          "description": "Pierwszy raz WSZYSTKO o firmie jest w jednym, ustrukturyzowanym miejscu. Procesy, dane, kanały, finanse, zespół, konkurencja. To jest fundament — pod AI, pod decyzje, pod delegowanie, pod skalowanie."
+        },
+        {
+          "number": "②",
+          "title": "Mapa strat i niewykorzystanych szans",
+          "description": "Pokazujemy gdzie tracisz pieniądze — na nieefektywnych procesach, złych kanałach, źle wycenionej ofercie. Ale też gdzie ich NIE ZARABIASZ — bo masz umiejętności, zasoby i zespół, z których nie wyciągasz pełnego potencjału. Nowe produkty, nowe usługi, nowe rynki które leżą na stole."
+        },
+        {
+          "number": "③",
+          "title": "Strategia dopasowana do Ciebie",
+          "description": "Nie generyczny szablon. Strategia dopasowana do Twojego biznesu, Twojego produktu, Twojego zespołu, Twoich zasobów i technologii której używasz. Co robić, w jakiej kolejności, od czego zacząć."
+        },
+        {
+          "number": "④",
+          "title": "Prawdziwy bottleneck",
+          "description": "Nie to co MYŚLISZ że jest problemem — ale to co NAPRAWDĘ blokuje wzrost. Klient przychodzi po nową stronę — wychodzi wiedząc, że problem jest w procesie sprzedaży."
+        },
+        {
+          "number": "⑤",
+          "title": "Gotowość na AI i automatyzację",
+          "description": "Z bazą wiedzy AI wreszcie może działać na TWOICH danych. Bez tego — każdy tool daje generyczne odpowiedzi. Z tym — konkretne rekomendacje, raporty, kalkulacje dla TWOJEJ firmy."
+        },
+        {
+          "number": "⑥",
+          "title": "Wdrożenie — nie tylko plan",
+          "description": "Konsultant daje PDF i odchodzi. My tworzymy strategię I ją wdrażamy. Software, automatyzacja, marketing, sprzedaż, AI — cokolwiek dane pokażą."
+        }
+      ],
+      "cta": "Umów się na darmową rozmowę",
+      "ctaNote": "Zero zobowiązań."
+    },
+    "howWeWork": {
+      "badge": "Nasza metoda",
+      "title": "12 obszarów. Dziesiątki modeli. Jeden cel: znaleźć co naprawdę blokuje wzrost.",
+      "intro": "Do tego używamy deep research, 98 modeli analitycznych, autorskich AI agentów i scraperów — żeby wyciągnąć jak najwięcej informacji, które pomogą Twojej firmie.",
+      "areas": [
+        {
+          "area": "Sprzedaż",
+          "what": "Gdzie leady odpadają, jak długo trwa cykl, ile kosztuje pozyskanie klienta. Jak wygląda oferta — czy jest ułożona tak żeby klient chciał kupować więcej"
+        },
+        {
+          "area": "Marketing",
+          "what": "Który kanał naprawdę działa, który przepala budżet. Jak wygląda komunikacja — czy trafia w ból klienta czy mówi o sobie"
+        },
+        {
+          "area": "Operacje",
+          "what": "Co robicie ręcznie a powinno działać samo. Które procesy się dublują"
+        },
+        {
+          "area": "Finanse",
+          "what": "Ukryte koszty, marże per usługa, cash flow. Gdzie zarabiacie, a gdzie dokładacie"
+        },
+        {
+          "area": "Zespół i procesy",
+          "what": "Kto jest wąskim gardłem, co nie jest udokumentowane, co się stanie jak ktoś odejdzie"
+        },
+        {
+          "area": "Skalowanie",
+          "what": "Co działa dla 10 klientów ale nie zadziała dla 50"
+        },
+        {
+          "area": "Konkurencja",
+          "what": "Co robią, ile biorą, gdzie jest luka na rynku"
+        },
+        {
+          "area": "Kanały sprzedaży",
+          "what": "Które pominąłeś, gdzie jest niska konkurencja, nowe rynki"
+        },
+        {
+          "area": "Pozycjonowanie i oferta",
+          "what": "Jak rynek Cię widzi. Czy Twoja oferta jest ułożona tak żeby klient sam chciał iść dalej — od wejścia do najdroższego produktu"
+        },
+        {
+          "area": "Narzędzia i technologia",
+          "what": "Systemy które nie gadają ze sobą. Konfiguratory i narzędzia które mogą usprawnić sprzedaż i obsługę klienta"
+        },
+        {
+          "area": "Automatyzacja i AI",
+          "what": "Gdzie AI agenci mogą generować raporty, kalkulacje, content, obsługę klienta. Gdzie automatyzacja zastąpi ręczną robotę"
+        },
+        {
+          "area": "Niewykorzystany potencjał",
+          "what": "Jakie nowe produkty, usługi, rynki leżą na stole — bo masz zasoby i umiejętności, ale ich nie wykorzystujesz"
+        }
+      ],
+      "emphasis": "Efekt: strategia dopasowana do Twojego biznesu, Twojego produktu, Twojego zespołu, Twoich zasobów i technologii. Z konkretnymi danymi, źródłami i rekomendacjami. Plus plan wdrożenia i zespół który go zrealizuje."
+    },
+    "process": {
+      "badge": "Proces",
+      "title": "Co musisz zrobić? Wypełnić formularz i porozmawiać 30 minut.",
+      "steps": [
+        {
+          "number": "①",
+          "title": "Darmowa rozmowa — 0 PLN",
+          "description": "Wypełniasz krótki formularz (5 pytań, 3 minuty) i umawiasz się na rozmowę. 30 minut — opowiadasz o firmie, my słuchamy i zadajemy pytania, które nikt Ci wcześniej nie zadał. Po rozmowie dostajesz follow-up z obserwacjami."
+        },
+        {
+          "number": "②",
+          "title": "X-Ray — prześwietlenie firmy",
+          "description": "Głęboka analiza Twojego biznesu. Wszystkie obszary, dziesiątki modeli analitycznych, prawdziwe dane. Dostajesz strategię z rekomendacjami: co robić, w jakiej kolejności, od czego zacząć.",
+          "note": "Jeśli po X-Ray zdecydujesz się na wdrożenie z nami — koszt X-Ray odliczamy od projektu."
+        },
+        {
+          "number": "③a",
+          "title": "Growth Partner — external growth team",
+          "description": "Wchodzimy do firmy na stałe. Co miesiąc pracujemy nad tym co jest teraz najważniejsze. Strategia + wdrożenie + technologia. Minimum 3 miesiące."
+        },
+        {
+          "number": "③b",
+          "title": "Build — konkretne wdrożenie",
+          "description": "Wiemy co budować bo mamy dane. Milestone-based, z odbiorem po każdym etapie. Pełna transparentność — wiesz na co idą pieniądze."
+        }
+      ]
+    },
+    "whatWeBuild": {
+      "badge": "Realizacja",
+      "title": "Diagnoza mówi CO. My budujemy JAK.",
+      "services": [
+        {
+          "title": "X-Ray — diagnoza biznesu",
+          "description": "Prześwietlamy cały Twój biznes i dajemy Ci plan działania oparty o dane, nie opinie. Od 3 000 PLN."
+        },
+        {
+          "title": "Custom software",
+          "description": "Konfiguratory produktów, portale klienckie, dashboardy, aplikacje. Szyte pod Twój biznes."
+        },
+        {
+          "title": "AI agenci i narzędzia AI",
+          "description": "Systemy które generują raporty, kalkulują opcje dla klientów, automatyzują content i obsługę. AI na TWOICH danych."
+        },
+        {
+          "title": "Marketing i konwersja",
+          "description": "Strony, landing pages, reklamy, funnele. Po diagnozie — nie na ślepo."
+        },
+        {
+          "title": "Sprzedaż i oferta",
+          "description": "Procesy sprzedażowe, CRM, pipeline, restrukturyzacja oferty. Żeby klient sam chciał kupować więcej."
+        },
+        {
+          "title": "Go-to-Market",
+          "description": "Nowe rynki, nowe kanały, bazy prospectów, strategia eksportu."
+        },
+        {
+          "title": "Automatyzacja procesów",
+          "description": "Workflow, integracje systemów, eliminacja ręcznej roboty. Ludzie robią to, w czym są dobrzy — maszyny resztę."
+        }
+      ],
+      "footer": "Jedna firma potrzebowała konfiguratora produktów i 3 kanałów sprzedaży na rynki UE. Inna — automatyzacji operacji. Trzecia — restrukturyzacji oferty i nowej strategii GTM. Nie zgadujemy — dane mówią co budować."
+    },
+    "caseStudy": {
+      "badge": "Przykład",
+      "title": "Co zrobiliśmy, nie co obiecujemy.",
+      "company": "Mirco — Producent foteli rajdowych",
+      "situation": {
+        "title": "Sytuacja",
+        "text": "Producent foteli rajdowych borykał się ze spadającą sprzedażą. Świetny produkt pozycjonowany między segmentem chińskim a premium (Recaro), ale ograniczona liczba kanałów i brak systematycznego podejścia do nowych rynków."
+      },
+      "whatWeDid": {
+        "title": "Co zrobiliśmy",
+        "items": [
+          "Discovery workshop → identyfikacja niszy, pozycjonowania i nowych kanałów",
+          "Konfigurator produktu z real-time wizualizacją (model, materiał, kolor, logo, akcesoria)",
+          "Portal afiliacyjny (tracking prowizji, panele admin + influencer)",
+          "Custom scraper AI → przeszukaliśmy rynki EU/UK, zbudowaliśmy bazę dystrybutorów",
+          "3 nowe kanały sprzedaży: influencerzy B2C, sklepy B2B, warsztaty custom",
+          "System outreach (CRM + automatyzacja + follow-up)"
+        ]
+      },
+      "result": {
+        "title": "Rezultat",
+        "text": "Z jednego kanału do czterech. Z lokalnej sprzedaży do systematycznego podejścia na rynki EU/UK. Realizacja: 2 miesiące. Dotknięte działy: sprzedaż, marketing, produkcja, IT. Jeden projekt — strategia, software, AI, automatyzacja, GTM. Pod jednym dachem."
+      },
+      "bio": {
+        "title": "Kto za tym stoi",
+        "text": "Dawid — zbudował 7 firm w różnych branżach: e-commerce, software house, lead generation, content. Przez to widzi wzorce, które właściciel nie widzi — bo patrzył na te same problemy z kilkunastu różnych perspektyw. Łączy strategię biznesową z technologią: wie co zbudować, ale też DLACZEGO i CZY W OGÓLE. Prowadzi analizy, buduje strategie, rozmawia z klientami. Otaczany zespołem specjalistów i AI, które przyspiesza research, analizę i budowanie."
+      },
+      "cta": "Zobacz pełne case study"
+    },
+    "comparison": {
+      "badge": "Porównanie",
+      "title": "Konsultant daje PDF. Agencja robi co każesz. My robimy jedno i drugie.",
+      "table": {
+        "headers": [
+          "",
+          "Konsultant",
+          "Agencja",
+          "Software house",
+          "DealCatcher"
+        ],
+        "rows": [
+          {
+            "label": "Analizuje cały biznes",
+            "values": [
+              "Częściowo (jeden obszar)",
+              "Nie",
+              "Nie",
+              "Tak"
+            ]
+          },
+          {
+            "label": "Buduje rozwiązanie",
+            "values": [
+              "Nie (daje PDF)",
+              "Częściowo (marketing)",
+              "Tak (software)",
+              "Tak — wszystko"
+            ]
+          },
+          {
+            "label": "Patrzy na CAŁOŚĆ firmy",
+            "values": [
+              "Nie",
+              "Nie",
+              "Nie",
+              "Tak"
+            ]
+          },
+          {
+            "label": "Kwestionuje brief",
+            "values": [
+              "Czasem",
+              "Nie",
+              "Nie",
+              "Zawsze"
+            ]
+          },
+          {
+            "label": "AI-native",
+            "values": [
+              "Nie",
+              "Nie",
+              "Częściowo",
+              "Tak"
+            ]
+          },
+          {
+            "label": "Co dostajesz",
+            "values": [
+              "Raport",
+              "Kampanie / strona",
+              "Software",
+              "Strategia + plan + wdrożenie"
+            ]
+          }
+        ]
+      },
+      "footer": "Nie musisz wybierać między \"ktoś kto rozumie\" a \"ktoś kto buduje.\" U nas to jest ta sama firma."
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Masz pytania. To dobrze.",
+      "items": [
+        {
+          "question": "Za drogo.",
+          "answer": "Ile kosztuje Cię kolejny miesiąc działania na wyczucie? Ile wydałeś na agencje które nie zaczęły od zrozumienia Twojego biznesu?"
+        },
+        {
+          "question": "Jesteście za mali.",
+          "answer": "Mały zespół + AI = to co u innych robi 10 osób. Płacisz za efekt, nie za biuro."
+        },
+        {
+          "question": "Czym się różnicie od agencji?",
+          "answer": "Agencja dostaje brief i wykonuje. My sprawdzamy czy brief ma sens. Analizujemy cały biznes i dopiero budujemy."
+        },
+        {
+          "question": "Czym się różnicie od konsultantów?",
+          "answer": "Konsultant daje PDF i odchodzi. My diagnozujemy I budujemy."
+        },
+        {
+          "question": "Miałem złe doświadczenia.",
+          "answer": "Dlatego zaczynamy od darmowej rozmowy. Zero zobowiązań. Przekonaj się sam. Nie współpracujemy z każdym — tylko z firmami, którym realnie możemy pomóc."
+        },
+        {
+          "question": "Nie potrzebuję diagnozy.",
+          "answer": "Diagnoza może zaoszczędzić dziesiątki tysięcy na budowaniu złej rzeczy."
+        },
+        {
+          "question": "AI mnie nie przekonuje.",
+          "answer": "AI to narzędzie — jak kalkulator. Myślimy my, AI przyspiesza research i analizę."
+        }
+      ]
+    },
+    "finalCTA": {
+      "headline": "30 minut. Opowiesz o firmie. My powiemy wprost co widzimy.",
+      "cta": "Umów się na darmową rozmowę",
+      "checkpoints": [
+        "Formularz: 3 minuty, 5 pytań",
+        "Rozmowa: 30 minut",
+        "Po rozmowie: follow-up z kluczowymi obserwacjami"
+      ],
+      "footer": "Nie będziemy dzwonić co tydzień. Nie wyślemy 47 emaili. Jeśli nie pasujemy — powiemy wprost. Zero zobowiązań."
+    }
+  },
+  "xrayForm": {
+    "title": "Formularz X-Ray",
+    "subtitle": "5 pytań, 3 minuty. Zero zobowiązań.",
+    "fields": {
+      "name": "Imię i nazwisko",
+      "email": "E-mail",
+      "company": "Nazwa firmy",
+      "companySize": "Wielkość firmy",
+      "companySizeOptions": [
+        "1-10 osób",
+        "10-20 osób",
+        "20-50 osób",
+        "50-100 osób",
+        "100+ osób"
+      ],
+      "problem": "Główny problem/cel (min. 20 znaków)",
+      "phone": "Telefon (opcjonalnie)",
+      "gdpr": "Zgadzam się na przetwarzanie danych osobowych",
+      "gdprLink": "Polityka prywatności"
+    },
+    "submit": "Wyślij zgłoszenie X-Ray",
+    "sending": "Wysyłanie...",
+    "success": "Dziękujemy!",
+    "successMessage": "Otrzymaliśmy Twoje zgłoszenie. Odezwiemy się w ciągu 24h.",
+    "error": "Wystąpił błąd. Spróbuj ponownie."
+  },
+  "xray": {
+    "hero": {
+      "badge": "Diagnostyka biznesu",
+      "titleStart": "Diagnoza zamiast",
+      "titleHighlight": "zgadywania",
+      "subtitle": "Zanim powiemy jak działać, najpierw dokładnie analizujemy Twój biznes. X-Ray to dogłębna diagnostyka, która pokazuje Co działa, Co się marnuje, i Co zmienić. Bez nacisku, bez obietnic — tylko dane.",
+      "cta": "Zarezerwuj X-Ray",
+      "ctaNote": "30 min rozmowy, 0 PLN, zero zobowiązań",
+      "stats": [
+        {
+          "value": 98,
+          "suffix": "%",
+          "label": "klientów zmienia strategię po X-Ray"
+        },
+        {
+          "value": 3,
+          "suffix": "–5 dni",
+          "label": "na pełną analizę Deep Dive"
+        },
+        {
+          "value": 40,
+          "suffix": "+",
+          "label": "stron w raporcie najgłębokim"
+        }
+      ]
+    },
+    "problem": {
+      "badge": "Problem",
+      "title": "Działasz, ale czy w dobrym kierunku?",
+      "subtitle": "Większość firm robi coś bez pełnego zrozumienia dlaczego. Analityka mówi \"kliknięcia są\", ale nikt nie pytał czy to KLIENTy, które potrzebujesz.",
+      "items": [
+        {
+          "title": "Rozmyty wizerunek marki",
+          "description": "Konkurencja mówi jasno: \"jesteśmy najtańsi\" lub \"jesteśmy premium\". Ty mówisz: \"robimy dobrej jakości usługi\". Kto Cię pamiętał i dlaczego?"
+        },
+        {
+          "title": "Google Ads bez strategii",
+          "description": "Leciały kampanie, wydawały pieniądze, coś się kliknęło. Ale co realnie się sprzedawało? Gdzie się robi rzeczywisty zysk?"
+        },
+        {
+          "title": "Wiele kanałów, brak synergii",
+          "description": "Email, Instagram, Google, TikTok, blog, referrals — wszystko robimy, ale żaden kanał nie wzmacnia drugiego. To jak 5 agencji na etacie, każda robiąca swoje."
+        },
+        {
+          "title": "Konkurencja robi to lepiej",
+          "description": "Oni mają mniejszy budżet, ale lepsze wyniki. Dlaczego? Nikt nie zrobił im szczegółowej analizy. Sam?"
+        }
+      ]
+    },
+    "solution": {
+      "badge": "X-Ray Pakiety",
+      "title": "3 poziomy diagnozy — wybierz co potrzebujesz",
+      "subtitle": "Od szybkiego zerknięcia do pełnej anatomii biznesu.",
+      "levels": [
+        {
+          "name": "Discovery",
+          "price": "0 PLN",
+          "duration": "30 min",
+          "deliverable": "Rozmowa + obserwacje",
+          "description": "Darmowa rozmowa. Pokazujesz biznes, my słuchamy i pytamy. Na koniec: first impressions — co widać od razu, gdzie bym patrzył głębiej.",
+          "features": [
+            "30-minutowa rozmowa (Zoom)",
+            "Analiza Twoich ostatnich 3 lat",
+            "First impressions & rekomendacje badawcze",
+            "Propozycja następnego kroku"
+          ]
+        },
+        {
+          "name": "Intensive",
+          "price": "3 000 PLN",
+          "duration": "1 dzień",
+          "deliverable": "Raport 15–20 stron",
+          "description": "Pół dnia analizy na miejscu (lub zdalnie). Mapa biznesu + bottlenecks + quick wins. Raport z konkretnym planem działań na najbliższe 90 dni.",
+          "features": [
+            "Half-day diagnostyka (4–5 godzin)",
+            "Analiza kanałów sprzedaży",
+            "Mapa customer journey (gdzie tracimy klientów?)",
+            "Top 5 quick wins (co zmienić w najpierw)",
+            "Raport PDF: obserwacje + rekomendacje + timeline"
+          ]
+        },
+        {
+          "name": "Deep Dive",
+          "price": "8 000–12 000 PLN",
+          "duration": "3–5 dni",
+          "deliverable": "Raport 40+ stron + 98 modeli analitycznych",
+          "description": "Pełna analiza biznesu. Przyjeżdżamy na 3–5 dni. Mapujemy wszystko: produkty, kanały, procesy, konkurencję, klientów, technologię. Raport z AI-wspomaganą diagnostyką (98 modeli analitycznych) + pełny strategic roadmap na 12 miesięcy.",
+          "features": [
+            "3–5 dni diagnostyki na miejscu",
+            "Pełna analiza competitive landscape",
+            "Deep dive do każdego kanału (SEO, SEM, socials, email, referrals)",
+            "Customer interviews (3–5 rozmów z klientami + byłymi klientami)",
+            "Analiza financials & margins",
+            "AI-wspomagana diagnostyka (98 modeli: SWOT, Porter, Growth Matrix, Unit Economics itp.)",
+            "Raport 40+ stron z wizualizacjami",
+            "Strategic roadmap na 12 miesięcy",
+            "Workshop podsumowujący (2 godziny z całym zespołem)"
+          ]
+        }
+      ],
+      "footer": "Każdy X-Ray zaczyna się od rozmowy. Jeśli po Discovery widzimy że to nie bedzie dobra współpraca — powiemy wprost. Zero presji na sprzedaż."
+    },
+    "process": {
+      "badge": "Jak to działa",
+      "title": "Od rejestracji do raportu",
+      "subtitle": "Prosty flow. Ty odpowiadasz na pytania, my robimy pracę.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Ankieta",
+          "description": "Wypełniasz formularz: o firmie, biznesie, celach. 5 pytań, 3 minuty."
+        },
+        {
+          "number": "02",
+          "title": "Rozmowa Discovery",
+          "description": "30 min Zoom. Opowiadasz. My pytamy i słuchamy. Decydujemy razem czy to ma sens."
+        },
+        {
+          "number": "03",
+          "title": "Analiza (jeśli Intensive/Deep Dive)",
+          "description": "My pracujemy. 1 dzień (Intensive) lub 3–5 dni (Deep Dive). Zbieramy dane, analizujemy, budujemy modele."
+        },
+        {
+          "number": "04",
+          "title": "Raport + Prezentacja",
+          "description": "Dostajesz PDF z wynikami. Ostatnia rozmowa: wyjaśniamy co znaleźliśmy i co dalej robić."
+        }
+      ]
+    },
+    "examples": {
+      "badge": "Przypadek",
+      "title": "Jak X-Ray zmienia biznes",
+      "subtitle": "Prawdziwy case study od klienta która zatrudniła nas na Deep Dive.",
+      "items": [
+        {
+          "industry": "Automotive / B2B+B2C",
+          "title": "Mirco — Z jednego kanału do czterech",
+          "description": "Producent foteli rajdowych borykał się ze spadającą sprzedażą. Świetny produkt pozycjonowany między segmentem chińskim a premium (Recaro), ale ograniczona liczba kanałów i brak systematycznego podejścia do nowych rynków. Po Deep Dive X-Ray odkryliśmy potencjał w 3 nowych kanałach (influencerzy B2C, sklepy B2B, warsztaty custom) i zbudowaliśmy: konfigurator produktu, portal afiliacyjny, custom scraper AI do identyfikacji dystrybutorów EU/UK, system outreach (CRM + automatyzacja). Wynik: z lokalnej sprzedaży do systematycznego podejścia na rynki EU/UK. Realizacja: 2 miesiące. Dotknięte działy: sprzedaż, marketing, produkcja, IT.",
+          "url": "/pl/case-study/mirco",
+          "image": "/images/examples/mirco-configurator.png"
+        }
+      ]
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Masz pytania o X-Ray.",
+      "subtitle": "To normalne. Odpowiadamy poniżej.",
+      "items": [
+        {
+          "question": "Czy Discovery jest naprawdę darmowe?",
+          "answer": "Tak. 30 minut, żaden catch. Oczywiście mamy nadzieję że się spodoba i zamawiasz Intensive/Deep Dive, ale jeśli nie — bez pretensji."
+        },
+        {
+          "question": "Na jakie pytania odpowiada X-Ray?",
+          "answer": "Intensywne: \"Gdzie robi się rzeczywisty zysk?\", \"Co marnuje czas i peniądze?\", \"Konkurencja — co robi lepiej?\", \"Jaką strategię wdrożyć na 2026?\". Deep Dive dodaje: \"Jakie są moje 3 opcje wzrostu?\" i konkretny 12-miesięczny roadmap."
+        },
+        {
+          "question": "Czy raport to tylko PDF czy coś więcej?",
+          "answer": "PDF + prezentacja online (komentujemy wyniki razem). Deep Dive: dodatkowo workshop z Twoim zespołem, gdzie pokazujemy jak wdrażać rekomendacje."
+        },
+        {
+          "question": "Ile czasu przechowujesz dane z X-Ray?",
+          "answer": "12 miesięcy. Po tym czasie możemy zrobić re-audit i zobaczyć co się zmieniło. Dane są Twoje — możesz je sobie wziąć."
+        },
+        {
+          "question": "Czy X-Ray to sprzedaż dla Waszych usług?",
+          "answer": "Oczywiście chcemy Was wdrożyć swoją strategię, ale jeśli wymaga np. SEO u kogoś innego — powiemy szczerze. Czasem Davinci to wdrażanie (Google Ads, copywriting, strona), czasem inny partner, czasem Ty sam."
+        },
+        {
+          "question": "Deep Dive na miejscu czy zdalnie?",
+          "answer": "Domyślnie na miejscu (Twoja siedziba). Zdalnie potrafimy, ale mniej danych (trudniej obserwować procesy, pracowników, real-world bottlenecks). Polska + EU — jeśli warto, jedziemy. Polecamy na miejscu."
+        },
+        {
+          "question": "Co jeśli X-Ray mówi że nie mamy szans?",
+          "answer": "Było. Powiedzieliśmy szczerze. Lepiej wiedzieć wcześnie niż tracić czas i pieniądze. Nie robimy X-Ray każdemu — tylko firmom które mają potencjał."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Gotów na",
+      "titleHighlight": "szczerą diagnozę?",
+      "subtitle": "30 minut Discovery to bez zobowiązań. Ale musisz być gotów na szczere słowa — nawet jeśli będą nieprzyjemne.",
+      "ctaPrimary": "Zarezerwuj X-Ray Discovery",
+      "ctaSecondary": "Dowiedz się więcej o Intensive & Deep Dive",
+      "checkpoints": [
+        "Ankieta: 3 minuty, 5 pytań",
+        "Rozmowa: 30 minut, zero presji",
+        "Rekomendacja: co dalej (z nami lub bez)"
+      ],
+      "footer": "Najpierw Discovery. Jeśli będzie sense — omawiamy Intensive/Deep Dive. Nie sprzedajemy nie znając kontekstu."
     }
   }
 }
