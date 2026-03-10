@@ -28,20 +28,9 @@ export function middleware(request: NextRequest) {
     return;
   }
 
-  // Detect browser language from Accept-Language header
-  const acceptLanguage = request.headers.get("accept-language") || "";
-
-  // Parse the first language from Accept-Language header
-  // Handle formats like: "pl-PL,en-US;q=0.9" or "pl-PL;q=1.0,en;q=0.8"
-  const firstLang = acceptLanguage
-    .split(",")[0]           // Get first language
-    ?.trim()                  // Remove whitespace
-    .split(";")[0]            // Remove quality value (q=0.9)
-    ?.split("-")[0]           // Get language code (pl from pl-PL)
-    ?.toLowerCase();          // Normalize to lowercase
-
-  // Default to Polish (main audience), only use English if explicitly requested
-  const locale = firstLang === "en" ? "en" : "pl";
+  // Always redirect to Polish (main market)
+  // English is available via language switcher for those who need it
+  const locale = "pl";
 
   // Redirect to localized path
   return NextResponse.redirect(new URL(`/${locale}${pathname}`, request.url));
