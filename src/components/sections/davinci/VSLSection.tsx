@@ -6,7 +6,9 @@ import { SectionHeading } from "@/components/shared/SectionHeading";
 interface VSLSectionProps {
   dict: {
     badge: string;
-    title: string;
+    titleStart: string;
+    titleHighlight: string;
+    titleEnd: string;
     subtitle?: string;
   };
 }
@@ -23,8 +25,9 @@ export function VSLSection({ dict }: VSLSectionProps) {
             </span>
           )}
           <h2 className="mb-4 [word-spacing:0.1em]">
-            Dlaczego inne agencje pytają "czego potrzebujesz", a my pytamy{" "}
-            <span className="text-primary">"co hamuje Twoją firmę"</span>?
+            {dict.titleStart}
+            <span className="text-primary">{dict.titleHighlight}</span>
+            {dict.titleEnd}
           </h2>
           {dict.subtitle && (
             <p className="text-muted-foreground max-w-xl">

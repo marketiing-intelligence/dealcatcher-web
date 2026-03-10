@@ -2744,7 +2744,9 @@
     },
     "vsl": {
       "badge": "Zobacz jak to robimy",
-      "title": "Dlaczego inne agencje pytają \"czego potrzebujesz\", a my pytamy \"co hamuje Twoją firmę\"?",
+      "titleStart": "Dlaczego inne agencje pytają \"czego potrzebujesz\", a my pytamy ",
+      "titleHighlight": "\"co hamuje Twoją firmę\"",
+      "titleEnd": "?",
       "subtitle": "4 minuty, które zmienią sposób w jaki myślisz o rozwoju firmy."
     },
     "problem": {

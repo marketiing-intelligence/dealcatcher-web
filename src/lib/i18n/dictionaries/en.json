@@ -1894,7 +1894,9 @@
     },
     "vsl": {
       "badge": "See how we do it",
-      "title": "Why do other agencies ask \"what do you need\", while we ask \"what's blocking your company\"?",
+      "titleStart": "Why do other agencies ask \"what do you need\", while we ask ",
+      "titleHighlight": "\"what's blocking your company\"",
+      "titleEnd": "?",
       "subtitle": "4 minutes that will change how you think about business growth."
     },
     "problem": {
