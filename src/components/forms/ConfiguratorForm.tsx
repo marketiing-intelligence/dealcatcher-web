@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useForm } from "react-hook-form";
+import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { motion } from "framer-motion";
 import { Loader2, CheckCircle, AlertCircle } from "lucide-react";
@@ -73,6 +73,7 @@ export function ConfiguratorForm({ lang }: ConfiguratorFormProps) {
     formState: { errors },
     reset,
     watch,
+    control,
   } = useForm<ConfiguratorFormData>({
     resolver: zodResolver(configuratorSchema),
   });
@@ -234,41 +235,56 @@ export function ConfiguratorForm({ lang }: ConfiguratorFormProps) {
           <Label className="text-sm font-medium mb-3 block">
             Grupa docelowa *
           </Label>
-          <RadioGroup {...register("targetAudience")} className="space-y-3">
-            <div className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors">
-              <RadioGroupItem value="b2b" id="audience-b2b" className="mt-0.5" />
-              <Label htmlFor="audience-b2b" className="cursor-pointer flex-1">
-                <div>
-                  <div className="font-medium">B2B</div>
-                  <div className="text-sm text-muted-foreground">
-                    Sprzedajesz firmom / dystrybu torom / partnerom
-                  </div>
+          <Controller
+            name="targetAudience"
+            control={control}
+            render={({ field }) => (
+              <RadioGroup value={field.value} onValueChange={field.onChange} className="space-y-3">
+                <div
+                  onClick={() => field.onChange("b2b")}
+                  className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors cursor-pointer"
+                >
+                  <RadioGroupItem value="b2b" id="audience-b2b" className="mt-0.5" />
+                  <Label htmlFor="audience-b2b" className="cursor-pointer flex-1">
+                    <div>
+                      <div className="font-medium">B2B</div>
+                      <div className="text-sm text-muted-foreground">
+                        Sprzedajesz firmom / dystrybutorom / partnerom
+                      </div>
+                    </div>
+                  </Label>
                 </div>
-              </Label>
-            </div>
-            <div className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors">
-              <RadioGroupItem value="b2c" id="audience-b2c" className="mt-0.5" />
-              <Label htmlFor="audience-b2c" className="cursor-pointer flex-1">
-                <div>
-                  <div className="font-medium">B2C</div>
-                  <div className="text-sm text-muted-foreground">
-                    Sprzedajesz konsumentom końcowym
-                  </div>
+                <div
+                  onClick={() => field.onChange("b2c")}
+                  className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors cursor-pointer"
+                >
+                  <RadioGroupItem value="b2c" id="audience-b2c" className="mt-0.5" />
+                  <Label htmlFor="audience-b2c" className="cursor-pointer flex-1">
+                    <div>
+                      <div className="font-medium">B2C</div>
+                      <div className="text-sm text-muted-foreground">
+                        Sprzedajesz konsumentom końcowym
+                      </div>
+                    </div>
+                  </Label>
                 </div>
-              </Label>
-            </div>
-            <div className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors">
-              <RadioGroupItem value="both" id="audience-both" className="mt-0.5" />
-              <Label htmlFor="audience-both" className="cursor-pointer flex-1">
-                <div>
-                  <div className="font-medium">B2B + B2C</div>
-                  <div className="text-sm text-muted-foreground">
-                    Sprzedajesz zarówno firmom jak i konsumentom
-                  </div>
+                <div
+                  onClick={() => field.onChange("both")}
+                  className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors cursor-pointer"
+                >
+                  <RadioGroupItem value="both" id="audience-both" className="mt-0.5" />
+                  <Label htmlFor="audience-both" className="cursor-pointer flex-1">
+                    <div>
+                      <div className="font-medium">B2B + B2C</div>
+                      <div className="text-sm text-muted-foreground">
+                        Sprzedajesz zarówno firmom jak i konsumentom
+                      </div>
+                    </div>
+                  </Label>
                 </div>
-              </Label>
-            </div>
-          </RadioGroup>
+              </RadioGroup>
+            )}
+          />
           {errors.targetAudience && (
             <p className="text-sm text-red-500 mt-2">
               {errors.targetAudience.message}
@@ -329,41 +345,56 @@ export function ConfiguratorForm({ lang }: ConfiguratorFormProps) {
           <Label className="text-sm font-medium mb-3 block">
             Ile kombinacji/wariantów przewidujesz? *
           </Label>
-          <RadioGroup {...register("variantsCount")} className="space-y-3">
-            <div className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors">
-              <RadioGroupItem value="10-50" id="variants-small" className="mt-0.5" />
-              <Label htmlFor="variants-small" className="cursor-pointer flex-1">
-                <div>
-                  <div className="font-medium">10-50 kombinacji</div>
-                  <div className="text-sm text-muted-foreground">
-                    Prosty konfigurator (kilka opcji, mało wariantów)
-                  </div>
+          <Controller
+            name="variantsCount"
+            control={control}
+            render={({ field }) => (
+              <RadioGroup value={field.value} onValueChange={field.onChange} className="space-y-3">
+                <div
+                  onClick={() => field.onChange("10-50")}
+                  className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors cursor-pointer"
+                >
+                  <RadioGroupItem value="10-50" id="variants-small" className="mt-0.5" />
+                  <Label htmlFor="variants-small" className="cursor-pointer flex-1">
+                    <div>
+                      <div className="font-medium">10-50 kombinacji</div>
+                      <div className="text-sm text-muted-foreground">
+                        Prosty konfigurator (kilka opcji, mało wariantów)
+                      </div>
+                    </div>
+                  </Label>
                 </div>
-              </Label>
-            </div>
-            <div className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors">
-              <RadioGroupItem value="50-200" id="variants-medium" className="mt-0.5" />
-              <Label htmlFor="variants-medium" className="cursor-pointer flex-1">
-                <div>
-                  <div className="font-medium">50-200 kombinacji</div>
-                  <div className="text-sm text-muted-foreground">
-                    Średnio złożony (wiele opcji, średnio wariantów)
-                  </div>
+                <div
+                  onClick={() => field.onChange("50-200")}
+                  className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors cursor-pointer"
+                >
+                  <RadioGroupItem value="50-200" id="variants-medium" className="mt-0.5" />
+                  <Label htmlFor="variants-medium" className="cursor-pointer flex-1">
+                    <div>
+                      <div className="font-medium">50-200 kombinacji</div>
+                      <div className="text-sm text-muted-foreground">
+                        Średnio złożony (wiele opcji, średnio wariantów)
+                      </div>
+                    </div>
+                  </Label>
                 </div>
-              </Label>
-            </div>
-            <div className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors">
-              <RadioGroupItem value="200+" id="variants-large" className="mt-0.5" />
-              <Label htmlFor="variants-large" className="cursor-pointer flex-1">
-                <div>
-                  <div className="font-medium">200+ kombinacji</div>
-                  <div className="text-sm text-muted-foreground">
-                    Bardzo złożony (dziesiątki opcji, tysiące wariantów)
-                  </div>
+                <div
+                  onClick={() => field.onChange("200+")}
+                  className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors cursor-pointer"
+                >
+                  <RadioGroupItem value="200+" id="variants-large" className="mt-0.5" />
+                  <Label htmlFor="variants-large" className="cursor-pointer flex-1">
+                    <div>
+                      <div className="font-medium">200+ kombinacji</div>
+                      <div className="text-sm text-muted-foreground">
+                        Bardzo złożony (dziesiątki opcji, tysiące wariantów)
+                      </div>
+                    </div>
+                  </Label>
                 </div>
-              </Label>
-            </div>
-          </RadioGroup>
+              </RadioGroup>
+            )}
+          />
           {errors.variantsCount && (
             <p className="text-sm text-red-500 mt-2">
               {errors.variantsCount.message}
@@ -381,41 +412,56 @@ export function ConfiguratorForm({ lang }: ConfiguratorFormProps) {
           <Label className="text-sm font-medium mb-3 block">
             Czy masz zdjęcia produktu lub modele 3D? *
           </Label>
-          <RadioGroup {...register("hasAssets")} className="space-y-3">
-            <div className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors">
-              <RadioGroupItem value="photos" id="assets-photos" className="mt-0.5" />
-              <Label htmlFor="assets-photos" className="cursor-pointer flex-1">
-                <div>
-                  <div className="font-medium">Tak, mam zdjęcia produktu</div>
-                  <div className="text-sm text-muted-foreground">
-                    Zdjęcia w różnych wariantach/kolorach
-                  </div>
+          <Controller
+            name="hasAssets"
+            control={control}
+            render={({ field }) => (
+              <RadioGroup value={field.value} onValueChange={field.onChange} className="space-y-3">
+                <div
+                  onClick={() => field.onChange("photos")}
+                  className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors cursor-pointer"
+                >
+                  <RadioGroupItem value="photos" id="assets-photos" className="mt-0.5" />
+                  <Label htmlFor="assets-photos" className="cursor-pointer flex-1">
+                    <div>
+                      <div className="font-medium">Tak, mam zdjęcia produktu</div>
+                      <div className="text-sm text-muted-foreground">
+                        Zdjęcia w różnych wariantach/kolorach
+                      </div>
+                    </div>
+                  </Label>
                 </div>
-              </Label>
-            </div>
-            <div className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors">
-              <RadioGroupItem value="3d" id="assets-3d" className="mt-0.5" />
-              <Label htmlFor="assets-3d" className="cursor-pointer flex-1">
-                <div>
-                  <div className="font-medium">Tak, mam modele 3D</div>
-                  <div className="text-sm text-muted-foreground">
-                    Pliki 3D (.obj, .fbx, .gltf) gotowe do renderowania
-                  </div>
+                <div
+                  onClick={() => field.onChange("3d")}
+                  className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors cursor-pointer"
+                >
+                  <RadioGroupItem value="3d" id="assets-3d" className="mt-0.5" />
+                  <Label htmlFor="assets-3d" className="cursor-pointer flex-1">
+                    <div>
+                      <div className="font-medium">Tak, mam modele 3D</div>
+                      <div className="text-sm text-muted-foreground">
+                        Pliki 3D (.obj, .fbx, .gltf) gotowe do renderowania
+                      </div>
+                    </div>
+                  </Label>
                 </div>
-              </Label>
-            </div>
-            <div className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors">
-              <RadioGroupItem value="none" id="assets-none" className="mt-0.5" />
-              <Label htmlFor="assets-none" className="cursor-pointer flex-1">
-                <div>
-                  <div className="font-medium">Nie, nie mam</div>
-                  <div className="text-sm text-muted-foreground">
-                    Potrzebuję sesji foto lub stworzenia modelu 3D
-                  </div>
+                <div
+                  onClick={() => field.onChange("none")}
+                  className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors cursor-pointer"
+                >
+                  <RadioGroupItem value="none" id="assets-none" className="mt-0.5" />
+                  <Label htmlFor="assets-none" className="cursor-pointer flex-1">
+                    <div>
+                      <div className="font-medium">Nie, nie mam</div>
+                      <div className="text-sm text-muted-foreground">
+                        Potrzebuję sesji foto lub stworzenia modelu 3D
+                      </div>
+                    </div>
+                  </Label>
                 </div>
-              </Label>
-            </div>
-          </RadioGroup>
+              </RadioGroup>
+            )}
+          />
           {errors.hasAssets && (
             <p className="text-sm text-red-500 mt-2">
               {errors.hasAssets.message}
@@ -455,30 +501,42 @@ export function ConfiguratorForm({ lang }: ConfiguratorFormProps) {
           <Label className="text-sm font-medium mb-3 block">
             Czy konfigurator ma pokazywać cenę w czasie rzeczywistym? *
           </Label>
-          <RadioGroup {...register("showPricing")} className="space-y-3">
-            <div className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors">
-              <RadioGroupItem value="yes" id="pricing-yes" className="mt-0.5" />
-              <Label htmlFor="pricing-yes" className="cursor-pointer flex-1">
-                <div>
-                  <div className="font-medium">Tak, pokazuj cenę</div>
-                  <div className="text-sm text-muted-foreground">
-                    Cena aktualizuje się podczas konfiguracji (jak u Mirco)
-                  </div>
+          <Controller
+            name="showPricing"
+            control={control}
+            render={({ field }) => (
+              <RadioGroup value={field.value} onValueChange={field.onChange} className="space-y-3">
+                <div
+                  onClick={() => field.onChange("yes")}
+                  className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors cursor-pointer"
+                >
+                  <RadioGroupItem value="yes" id="pricing-yes" className="mt-0.5" />
+                  <Label htmlFor="pricing-yes" className="cursor-pointer flex-1">
+                    <div>
+                      <div className="font-medium">Tak, pokazuj cenę</div>
+                      <div className="text-sm text-muted-foreground">
+                        Cena aktualizuje się podczas konfiguracji (jak u Mirco)
+                      </div>
+                    </div>
+                  </Label>
                 </div>
-              </Label>
-            </div>
-            <div className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors">
-              <RadioGroupItem value="no" id="pricing-no" className="mt-0.5" />
-              <Label htmlFor="pricing-no" className="cursor-pointer flex-1">
-                <div>
-                  <div className="font-medium">Nie, bez ceny</div>
-                  <div className="text-sm text-muted-foreground">
-                    Użytkownik konfiguruje → dostaje wycenę mailem
-                  </div>
+                <div
+                  onClick={() => field.onChange("no")}
+                  className="flex items-start space-x-3 rounded-lg border border-white/10 bg-white/5 p-4 hover:bg-white/10 transition-colors cursor-pointer"
+                >
+                  <RadioGroupItem value="no" id="pricing-no" className="mt-0.5" />
+                  <Label htmlFor="pricing-no" className="cursor-pointer flex-1">
+                    <div>
+                      <div className="font-medium">Nie, bez ceny</div>
+                      <div className="text-sm text-muted-foreground">
+                        Użytkownik konfiguruje → dostaje wycenę mailem
+                      </div>
+                    </div>
+                  </Label>
                 </div>
-              </Label>
-            </div>
-          </RadioGroup>
+              </RadioGroup>
+            )}
+          />
           {errors.showPricing && (
             <p className="text-sm text-red-500 mt-2">
               {errors.showPricing.message}
