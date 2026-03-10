@@ -207,15 +207,23 @@ export function CookieConsentBanner({ lang, dict }: CookieConsentBannerProps) {
                     .
                   </p>
 
-                  {/* Buttons */}
+                  {/* Buttons - GDPR compliant: Accept and Reject must be equally visible */}
                   <div className="flex flex-wrap gap-3">
                     <Button onClick={handleAcceptAll} size="lg" className="font-semibold">
                       {dict.acceptAll}
                     </Button>
                     <Button
-                      onClick={() => setShowCustomize(!showCustomize)}
+                      onClick={handleAcceptEssential}
                       variant="outline"
                       size="lg"
+                    >
+                      {dict.acceptEssential}
+                    </Button>
+                    <Button
+                      onClick={() => setShowCustomize(!showCustomize)}
+                      variant="ghost"
+                      size="sm"
+                      className="text-muted-foreground"
                     >
                       {dict.customize}
                       {showCustomize ? (
