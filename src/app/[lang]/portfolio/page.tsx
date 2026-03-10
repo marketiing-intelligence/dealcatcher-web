@@ -18,7 +18,7 @@ export async function generateMetadata({
     pl: "Galeria Szablonów — Profesjonalne Szablony Stron | DealCatcher",
   };
   const descriptions: Record<Locale, string> = {
-    en: "Explore our collection of premium website templates for Norwegian businesses. AI-ready, WCAG compliant, built to convert.",
+    en: "Explore our collection of premium website templates for Norwegian businesses. AI-ready, lightning-fast, built to convert.",
     pl: "Odkryj naszą kolekcję profesjonalnych szablonów stron internetowych. Gotowe na AI, zoptymalizowane pod konwersję.",
   };
 

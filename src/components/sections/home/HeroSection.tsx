@@ -18,9 +18,9 @@ interface HeroSectionProps {
 
 // Stats data
 const stats = [
-  { value: "97%", label: "Sites with accessibility issues" },
+  { value: "100%", label: "AI Search Ready" },
   { value: "3s", label: "Average load time goal" },
-  { value: "100%", label: "WCAG compliant delivery" },
+  { value: "24/7", label: "Support & Monitoring" },
 ];
 
 export function HeroSection({ lang, dict }: HeroSectionProps) {
@@ -86,7 +86,7 @@ export function HeroSection({ lang, dict }: HeroSectionProps) {
                 size="lg"
                 className="group border-border hover:border-primary hover:text-primary h-14 px-8 text-base font-medium transition-all duration-300"
               >
-                <Link href={`/${lang}/wcag-compliance`}>
+                <Link href={`/${lang}/contact`}>
                   <span className="group-hover:text-primary transition-colors">{dict.ctaSecondary}</span>
                 </Link>
               </Button>

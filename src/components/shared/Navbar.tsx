@@ -25,7 +25,6 @@ interface NavbarProps {
       portfolio: string;
       xray?: string;
       newWebsite: string;
-      wcagCompliance?: string;
       freePrototype: string;
       configurators: string;
       googleAds: string;

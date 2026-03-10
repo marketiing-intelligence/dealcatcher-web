@@ -30,9 +30,9 @@
       "description": "Your digital foundation. A website that looks professional, ranks in AI search results, and converts visitors into paying customers.",
       "features": [
         "AI Search Ready (ChatGPT, Perplexity, Google AI)",
-        "WCAG 2.0 AA compliant (Norwegian law)",
         "Built to convert visitors into clients",
-        "Hosting & maintenance included"
+        "Hosting & maintenance included",
+        "Mobile responsive design"
       ],
       "priceLabel": "Starting at",
       "price": "$1,000",
@@ -352,18 +352,18 @@
         "cta": "Get your professional website",
         "features": [
           "AI Search Ready",
-          "WCAG Compliant",
+          "Fast & Responsive",
           "From $1,000"
         ]
       },
       {
-        "title": "Website accessibility issues?",
-        "description": "97% of Norwegian websites fail WCAG compliance checks. Your site might be breaking the law without you knowing it. Digdir conducts random audits and publishes results publicly.",
-        "cta": "Get your free WCAG audit",
+        "title": "Need a complete business diagnosis?",
+        "description": "We analyze your entire business — sales, operations, marketing, finances, team, processes. We identify what's truly blocking growth and build a solution. Strategy, technology, and implementation. All under one roof.",
+        "cta": "Book X-Ray session",
         "features": [
-          "Free Audit",
-          "Detailed Report",
-          "Rebuild Option"
+          "Full Analysis",
+          "Clear Action Plan",
+          "Implementation Ready"
         ]
       }
     ]
@@ -371,7 +371,7 @@
   "portfolio": {
     "badge": "Our Templates",
     "title": "Designs that convert visitors into customers",
-    "subtitle": "Every template is AI-ready, WCAG compliant, and optimized for Norwegian businesses.",
+    "subtitle": "Every template is AI-ready, fast, and optimized for Norwegian businesses.",
     "viewAll": "View all templates",
     "viewDemo": "View Live Demo"
   },
@@ -389,11 +389,11 @@
         ]
       },
       {
-        "title": "Norwegian Law Ready",
+        "title": "Performance First",
         "points": [
-          "100% WCAG 2.0 AA compliant",
-          "Monthly compliance monitoring",
-          "Zero risk of Digdir fines"
+          "Lightning fast load times",
+          "Monthly performance monitoring",
+          "SEO optimized from day one"
         ]
       },
       {
@@ -460,11 +460,10 @@
     "ctaSecondary": "We'll call you in 2 hours"
   },
   "footer": {
-    "description": "Professional websites for Norwegian businesses. AI-ready, WCAG compliant, built to convert.",
+    "description": "Professional websites for Norwegian businesses. AI-ready, fast, built to convert.",
     "services": "Services",
     "contact": "Contact",
     "newWebsite": "New Website",
-    "wcagCompliance": "WCAG Compliance",
     "copyright": "All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
@@ -728,8 +727,8 @@
           "Custom website design and development",
           "Template-based website solutions",
           "Website hosting and maintenance",
-          "WCAG compliance audits and remediation",
-          "Google Ads setup and management"
+          "Google Ads setup and management",
+          "Custom business tools and configurators"
         ],
         "note": "Specific terms, pricing, and deliverables for each service are defined in individual service agreements."
       },
@@ -978,12 +977,12 @@
           ]
         },
         {
-          "title": "WCAG Compliant",
-          "description": "100% compliant with Norwegian accessibility law. No risk of fines from Digdir.",
+          "title": "Lightning Fast",
+          "description": "Optimized for speed and performance. Fast sites rank higher and convert better.",
           "features": [
-            "WCAG 2.0 AA certified",
-            "Monthly compliance checks",
-            "Ongoing monitoring"
+            "Optimized code & assets",
+            "Monthly performance checks",
+            "Ongoing speed monitoring"
           ]
         },
         {
@@ -1023,13 +1022,13 @@
           "features": [
             "Professional template design (12 options)",
             "AI Search optimization",
-            "WCAG 2.0 AA compliant",
+            "Lightning fast performance",
             "Mobile responsive",
             "Contact form",
             "Google Analytics setup",
             "Hosting included",
             "24/7 uptime monitoring",
-            "Monthly compliance check",
+            "Monthly performance check",
             "Email support (24h response)"
           ],
           "cta": "Get Started"
@@ -1044,13 +1043,13 @@
           "features": [
             "Custom design from scratch",
             "AI Search optimization",
-            "WCAG 2.0 AA compliant",
+            "Lightning fast performance",
             "Mobile responsive",
             "Contact form + booking system",
             "Google Analytics + monthly report",
             "Hosting included",
             "24/7 uptime monitoring",
-            "Monthly compliance check",
+            "Monthly performance check",
             "Unlimited content changes",
             "Add new pages anytime",
             "Priority support (4h response)"

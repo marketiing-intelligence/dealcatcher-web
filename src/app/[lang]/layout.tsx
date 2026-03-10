@@ -42,7 +42,7 @@ export async function generateMetadata({
   };
 
   const descriptions: Record<Locale, string> = {
-    en: "AI-ready, WCAG compliant websites that convert visitors into customers. Built for businesses worldwide.",
+    en: "AI-ready, lightning-fast websites that convert visitors into customers. Built for businesses worldwide.",
     pl: "Analizujemy cały biznes — sprzedaż, operacje, marketing, finanse, zespół, procesy. Znajdujemy co naprawdę blokuje wzrost i budujemy rozwiązanie. Strategia, technologia i wdrożenie. Pod jednym dachem.",
   };
 
@@ -122,7 +122,7 @@ export default async function LangLayout({
         addressCountry: "PL",
       },
       vatID: "PL7011297183",
-      description: "Professional websites for Norwegian and Polish businesses. AI-ready, WCAG compliant, built to convert.",
+      description: "Professional websites for Norwegian and Polish businesses. AI-ready, lightning-fast, built to convert.",
       sameAs: [
         "https://www.linkedin.com/company/dealcatcher-io",
       ],
@@ -135,7 +135,7 @@ export default async function LangLayout({
         "AI Search Optimization",
         "Answer Engine Optimization",
         "Google Ads",
-        "WCAG Compliance",
+        "Performance Optimization",
         "Structured Data",
         "Schema.org",
       ],

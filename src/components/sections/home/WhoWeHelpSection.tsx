@@ -25,7 +25,7 @@ interface WhoWeHelpSectionProps {
 }
 
 const icons = [Globe, ShieldAlert];
-const hrefs = ["no-website", "wcag-compliance"];
+const hrefs = ["no-website", "xray"];
 
 export function WhoWeHelpSection({ lang, dict }: WhoWeHelpSectionProps) {
   return (

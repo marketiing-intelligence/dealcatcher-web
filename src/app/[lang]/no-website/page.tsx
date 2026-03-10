@@ -24,7 +24,7 @@ export async function generateMetadata({
     pl: "Profesjonalne Strony Internetowe dla Twojej Firmy | DealCatcher",
   };
   const descriptions: Record<Locale, string> = {
-    en: "Get found online by clients searching for carpenters, plumbers, and electricians. AI-ready, WCAG compliant websites starting at $1,000.",
+    en: "Get found online by clients searching for carpenters, plumbers, and electricians. AI-ready, lightning-fast websites starting at $1,000.",
     pl: "Zostań znaleziony w internecie przez klientów szukających Twoich usług. Profesjonalne strony gotowe na AI od 3 000 zł.",
   };
 
