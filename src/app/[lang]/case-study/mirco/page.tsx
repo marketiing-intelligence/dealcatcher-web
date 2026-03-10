@@ -15,8 +15,8 @@ export async function generateMetadata({
   const { lang } = await params;
 
   const titles: Record<Locale, string> = {
-    en: "Mirco Case Study — B2B Expansion Strategy | DealCatcher",
-    pl: "Case Study Mirco — Strategia Ekspansji B2B | DealCatcher",
+    en: "Mirco Case Study — B2B Expansion Strategy | DaVinci",
+    pl: "Case Study Mirco — Strategia Ekspansji B2B | DaVinci",
   };
   const descriptions: Record<Locale, string> = {
     en: "How we built a complete B2B sales infrastructure for a Polish racing seat manufacturer: 400+ qualified partners, 3 sales channels, custom tools in 8 weeks.",

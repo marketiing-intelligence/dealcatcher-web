@@ -129,7 +129,7 @@ export async function POST(request: Request) {
         ` : ""}
 
         <div class="footer">
-          <p>Wysłano z formularza: <a href="https://dealcatcher.io/pl/konfigurator-formularz">dealcatcher.io/pl/konfigurator-formularz</a></p>
+          <p>Wysłano z formularza: <a href="https://davinci.agency/pl/konfigurator-formularz">davinci.agency/pl/konfigurator-formularz</a></p>
           <p>Data: ${new Date().toLocaleString("pl-PL", { timeZone: "Europe/Warsaw" })}</p>
         </div>
       </body>
@@ -137,8 +137,8 @@ export async function POST(request: Request) {
     `;
 
     const { error } = await resend.emails.send({
-      from: "DealCatcher Konfigurator <noreply@dealcatcher.io>",
-      to: ["contact@dealcatcher.io"],
+      from: "DaVinci Konfigurator <noreply@davinci.agency>",
+      to: ["contact@davinci.agency"],
       replyTo: validatedData.email,
       subject: `🎮 Konfigurator: ${validatedData.companyName} — ${validatedData.productType}`,
       html: emailHtml,
@@ -157,7 +157,7 @@ export async function POST(request: Request) {
       const capiResult = await sendMetaConversionEvent({
         eventName: "Lead",
         eventId: generateEventId("configurator_lead"),
-        eventSourceUrl: `${process.env.NEXT_PUBLIC_BASE_URL || "https://dealcatcher.io"}/${lang}/konfigurator-formularz`,
+        eventSourceUrl: `${process.env.NEXT_PUBLIC_BASE_URL || "https://davinci.agency"}/${lang}/konfigurator-formularz`,
         userData: {
           email: validatedData.email,
           phone: validatedData.phone,

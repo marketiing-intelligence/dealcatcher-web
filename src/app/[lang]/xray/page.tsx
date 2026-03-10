@@ -20,7 +20,7 @@ export async function generateMetadata({
   const { lang } = await params;
 
   const titles: Record<Locale, string> = {
-    en: "X-Ray — Business Diagnosis | DealCatcher",
+    en: "X-Ray — Business Diagnosis | DaVinci",
     pl: "X-Ray — Diagnoza Biznesu | Davinci Agency",
   };
   const descriptions: Record<Locale, string> = {

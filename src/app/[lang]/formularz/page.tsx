@@ -29,8 +29,8 @@ export async function generateMetadata({
   const { lang } = await params;
 
   const titles: Record<Locale, string> = {
-    pl: "Darmowy Prototyp | DealCatcher",
-    en: "Free Prototype | DealCatcher",
+    pl: "Darmowy Prototyp | DaVinci",
+    en: "Free Prototype | DaVinci",
   };
 
   const descriptions: Record<Locale, string> = {

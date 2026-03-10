@@ -20,11 +20,11 @@ export async function generateMetadata({
   const { lang } = await params;
 
   if (lang === "pl") {
-    return { title: "DealCatcher" };
+    return { title: "DaVinci" };
   }
 
   return {
-    title: "WCAG Compliance for Websites | DealCatcher",
+    title: "WCAG Compliance for Websites | DaVinci",
     description: "97% of websites fail accessibility audits. Get a free WCAG audit and learn how to become compliant with accessibility standards.",
     alternates: getAlternates(lang, "/wcag-compliance", ["en", "pl"]),
   };

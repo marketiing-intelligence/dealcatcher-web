@@ -20,8 +20,8 @@ export async function generateMetadata({
   const { lang } = await params;
 
   const titles: Record<Locale, string> = {
-    en: "Marketing Audit | DealCatcher",
-    pl: "Audyt Marketingowy | DealCatcher",
+    en: "Marketing Audit | DaVinci",
+    pl: "Audyt Marketingowy | DaVinci",
   };
   const descriptions: Record<Locale, string> = {
     en: "Comprehensive marketing audit to identify opportunities and optimize your marketing strategy.",

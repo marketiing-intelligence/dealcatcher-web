@@ -13,8 +13,8 @@ export async function generateMetadata({
   const { lang } = await params;
 
   const titles: Record<Locale, string> = {
-    en: "Privacy Policy | DealCatcher",
-    pl: "Polityka Prywatności | DealCatcher",
+    en: "Privacy Policy | DaVinci",
+    pl: "Polityka Prywatności | DaVinci",
   };
   const descriptions: Record<Locale, string> = {
     en: "Read our privacy policy to understand how we collect, use, and protect your personal information.",

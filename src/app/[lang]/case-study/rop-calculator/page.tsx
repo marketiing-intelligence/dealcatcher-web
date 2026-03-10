@@ -15,8 +15,8 @@ export async function generateMetadata({
   const { lang } = await params;
 
   const titles: Record<Locale, string> = {
-    en: "ROP Calculator Case Study — Packaging Fee Compliance Tool | DealCatcher",
-    pl: "Case Study Kalkulator ROP — Narzędzie Compliance Opłat Opakowaniowych | DealCatcher",
+    en: "ROP Calculator Case Study — Packaging Fee Compliance Tool | DaVinci",
+    pl: "Case Study Kalkulator ROP — Narzędzie Compliance Opłat Opakowaniowych | DaVinci",
   };
   const descriptions: Record<Locale, string> = {
     en: "How we built a free packaging fee calculator for Polish e-commerce companies: helping hundreds plan budgets for 2026-2028 regulations.",

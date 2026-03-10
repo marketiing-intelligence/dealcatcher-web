@@ -1,7 +1,7 @@
 import type { Locale } from "@/lib/i18n/config";
 import { i18n } from "@/lib/i18n/config";
 
-const BASE_URL = "https://dealcatcher.io";
+const BASE_URL = "https://davinci.agency";
 
 const hreflangMap: Record<Locale, string> = {
   pl: "pl",

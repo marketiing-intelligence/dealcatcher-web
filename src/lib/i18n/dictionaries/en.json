@@ -296,7 +296,7 @@
     "faq": {
       "badge": "FAQ",
       "title": "Frequently asked questions",
-      "subtitle": "Didn't find an answer? Write to us — hello@dealcatcher.io",
+      "subtitle": "Didn't find an answer? Write to us — hello@davinci.agency",
       "items": [
         {
           "question": "What's the minimum ad budget?",
@@ -376,7 +376,7 @@
     "viewDemo": "View Live Demo"
   },
   "whyUs": {
-    "badge": "Why DealCatcher",
+    "badge": "Why DaVinci",
     "title": "The right partner for your online presence",
     "subtitle": "We're not just another web agency. We build websites that are ready for the future.",
     "reasons": [
@@ -422,7 +422,7 @@
       },
       {
         "title": "No Questions Asked",
-        "description": "Simply email us at contact@dealcatcher.io and we'll process your refund immediately."
+        "description": "Simply email us at contact@davinci.agency and we'll process your refund immediately."
       },
       {
         "title": "Revisions Included",
@@ -520,7 +520,7 @@
     },
     "info": {
       "email": "Email",
-      "emailValue": "contact@dealcatcher.io",
+      "emailValue": "contact@davinci.agency",
       "responseTime": "Response time",
       "responseValue": "Within 24 hours",
       "location": "Location",
@@ -533,7 +533,7 @@
     "sections": {
       "intro": {
         "title": "Introduction",
-        "content": "AI SCALING SYSTEMS sp. z o.o. (\"we\", \"us\", or \"our\") operates the dealcatcher.io website. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website."
+        "content": "AI SCALING SYSTEMS sp. z o.o. (\"we\", \"us\", or \"our\") operates the davinci.agency website. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website."
       },
       "controller": {
         "title": "Data Controller",
@@ -543,7 +543,7 @@
         "krs": "KRS: 0001221058",
         "nip": "NIP: 7011297183",
         "regon": "REGON: 543861552",
-        "email": "Email: contact@dealcatcher.io"
+        "email": "Email: contact@davinci.agency"
       },
       "dataCollected": {
         "title": "Information We Collect",
@@ -648,7 +648,7 @@
             "description": "Where processing is based on consent, you can withdraw it at any time."
           }
         ],
-        "exercise": "To exercise any of these rights, please contact us at contact@dealcatcher.io."
+        "exercise": "To exercise any of these rights, please contact us at contact@davinci.agency."
       },
       "thirdParty": {
         "title": "Third-Party Services",
@@ -681,7 +681,7 @@
       "contact": {
         "title": "Contact Us",
         "content": "If you have questions about this Privacy Policy or wish to exercise your rights, please contact us:",
-        "email": "Email: contact@dealcatcher.io",
+        "email": "Email: contact@davinci.agency",
         "address": "Address: ul. Zlota 75A lok. 7, 00-819 Warsaw, Poland",
         "complaint": "You also have the right to lodge a complaint with a supervisory authority. If you are located in Norway, you can contact the Norwegian Data Protection Authority (Datatilsynet) at datatilsynet.no. If you are located elsewhere in the EU/EEA, you may contact your local supervisory authority or the President of the Personal Data Protection Office (UODO) in Poland."
       }
@@ -693,7 +693,7 @@
     "sections": {
       "intro": {
         "title": "Introduction",
-        "content": "These Terms of Service (\"Terms\") govern your use of the dealcatcher.io website and services provided by AI SCALING SYSTEMS sp. z o.o. By accessing or using our website, you agree to be bound by these Terms."
+        "content": "These Terms of Service (\"Terms\") govern your use of the davinci.agency website and services provided by AI SCALING SYSTEMS sp. z o.o. By accessing or using our website, you agree to be bound by these Terms."
       },
       "definitions": {
         "title": "Definitions",
@@ -712,7 +712,7 @@
           },
           {
             "term": "Website",
-            "definition": "The dealcatcher.io website and all its subpages"
+            "definition": "The davinci.agency website and all its subpages"
           },
           {
             "term": "Services",
@@ -722,7 +722,7 @@
       },
       "services": {
         "title": "Our Services",
-        "content": "DealCatcher provides the following services to businesses and individuals:",
+        "content": "DaVinci provides the following services to businesses and individuals:",
         "list": [
           "Custom website design and development",
           "Template-based website solutions",
@@ -740,7 +740,7 @@
           "title": "How to Exercise Your Right of Withdrawal",
           "content": "To exercise the right of withdrawal, you must inform us of your decision to withdraw from the contract by an unambiguous statement. You can do this by:",
           "methods": [
-            "Email to: contact@dealcatcher.io",
+            "Email to: contact@davinci.agency",
             "Using the withdrawal form available on our website"
           ]
         },
@@ -762,7 +762,7 @@
         },
         "cancellation": {
           "title": "Cancellation",
-          "content": "You may cancel your subscription at any time by contacting us at contact@dealcatcher.io. Cancellation will take effect at the end of the current billing period. You will continue to have access to the service until the end of the paid period."
+          "content": "You may cancel your subscription at any time by contacting us at contact@davinci.agency. Cancellation will take effect at the end of the current billing period. You will continue to have access to the service until the end of the paid period."
         },
         "autoRenewal": {
           "title": "Automatic Renewal",
@@ -817,7 +817,7 @@
         "content": "For questions about these Terms, please contact us:",
         "company": "AI SCALING SYSTEMS sp. z o.o.",
         "address": "Aleje Jerozolimskie 109 / 70, 02-011 Warsaw, Poland",
-        "email": "Email: contact@dealcatcher.io"
+        "email": "Email: contact@davinci.agency"
       }
     }
   },
@@ -873,7 +873,7 @@
         "support": "Limited"
       },
       {
-        "provider": "DealCatcher",
+        "provider": "DaVinci",
         "price": "10,000 NOK",
         "time": "5-7 days",
         "meetings": "1 call",
@@ -892,7 +892,7 @@
     "title": "Withdrawal Form",
     "subtitle": "Use this form to withdraw from your contract within 14 days",
     "form": {
-      "recipient": "To: AI SCALING SYSTEMS sp. z o.o., Aleje Jerozolimskie 109 / 70, 02-011 Warsaw, Poland, contact@dealcatcher.io",
+      "recipient": "To: AI SCALING SYSTEMS sp. z o.o., Aleje Jerozolimskie 109 / 70, 02-011 Warsaw, Poland, contact@davinci.agency",
       "declaration": "I/We hereby give notice that I/We withdraw from my/our contract for the provision of the following service:",
       "serviceLabel": "Service description",
       "orderedOnLabel": "Ordered on / Received on",
@@ -902,7 +902,7 @@
       "signatureLabel": "Signature (only if submitted on paper)",
       "submit": "Submit withdrawal",
       "success": "Your withdrawal has been submitted. We will process it within 14 days.",
-      "error": "An error occurred. Please try again or contact us directly at contact@dealcatcher.io."
+      "error": "An error occurred. Please try again or contact us directly at contact@davinci.agency."
     }
   },
   "noWebsite": {
@@ -1159,7 +1159,7 @@
     "faq": {
       "badge": "FAQ",
       "title": "Common questions",
-      "subtitle": "Still have questions? Email us at hello@dealcatcher.io",
+      "subtitle": "Still have questions? Email us at hello@davinci.agency",
       "items": [
         {
           "question": "I don't need a website — I have enough work from referrals",
@@ -1580,7 +1580,7 @@
     "faq": {
       "badge": "FAQ",
       "title": "Common questions",
-      "subtitle": "Didn't find your answer? Email: hello@dealcatcher.io",
+      "subtitle": "Didn't find your answer? Email: hello@davinci.agency",
       "items": [
         {
           "question": "How much does it cost?",
@@ -1713,12 +1713,12 @@
       "emailPlaceholder": "Your email",
       "websitePlaceholder": "Your website (e.g. yourcompany.no)",
       "cityPlaceholder": "Your city",
-      "gdpr": "I consent to DealCatcher processing my data to prepare a report.",
+      "gdpr": "I consent to DaVinci processing my data to prepare a report.",
       "gdprLink": "Privacy Policy",
       "submit": "Send me a personalized report",
       "success": "We got it!",
       "successMessage": "We'll look at your website and local market, and send you a personalized analysis within 48 hours.",
-      "error": "Something went wrong. Try again or email us at contact@dealcatcher.io.",
+      "error": "Something went wrong. Try again or email us at contact@davinci.agency.",
       "validationEmail": "Enter a valid email address",
       "validationRequired": "This field is required"
     },
@@ -1837,7 +1837,7 @@
   "faq": {
     "badge": "FAQ",
     "title": "Frequently asked questions",
-    "subtitle": "Can't find your answer? Contact us — hello@dealcatcher.io",
+    "subtitle": "Can't find your answer? Contact us — hello@davinci.agency",
     "items": [
       {
         "question": "What is AI Search and why does it matter?",
@@ -2154,7 +2154,7 @@
           "Consultant",
           "Agency",
           "Software house",
-          "DealCatcher"
+          "DaVinci"
         ],
         "rows": [
           {
@@ -2450,7 +2450,7 @@
     "faq": {
       "badge": "FAQ",
       "title": "Most common questions",
-      "subtitle": "Didn't find an answer? Write: hello@dealcatcher.io",
+      "subtitle": "Didn't find an answer? Write: hello@davinci.agency",
       "items": [
         {
           "question": "How long does the audit take?",
@@ -2651,7 +2651,7 @@
     "faq": {
       "badge": "FAQ",
       "title": "Most common questions",
-      "subtitle": "Didn't find an answer? Write: hello@dealcatcher.io",
+      "subtitle": "Didn't find an answer? Write: hello@davinci.agency",
       "items": [
         {
           "question": "How accurate is the data?",
@@ -2955,7 +2955,7 @@
     "faq": {
       "badge": "FAQ",
       "title": "Most common questions",
-      "subtitle": "Didn't find an answer? Write: hello@dealcatcher.io",
+      "subtitle": "Didn't find an answer? Write: hello@davinci.agency",
       "items": [
         {
           "question": "How many revision rounds do I get?",
@@ -3310,7 +3310,7 @@
     "faq": {
       "badge": "FAQ",
       "title": "Most common questions",
-      "subtitle": "Didn't find an answer? Write: hello@dealcatcher.io",
+      "subtitle": "Didn't find an answer? Write: hello@davinci.agency",
       "items": [
         {
           "question": "How long does implementation take?",

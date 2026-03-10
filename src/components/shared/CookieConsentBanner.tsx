@@ -35,7 +35,7 @@ interface CookieConsentBannerProps {
   };
 }
 
-const COOKIE_CONSENT_KEY = "dealcatcher-cookie-consent";
+const COOKIE_CONSENT_KEY = "davinci-cookie-consent";
 
 type ConsentState = {
   essential: boolean;

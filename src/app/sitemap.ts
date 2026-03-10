@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://dealcatcher.io";
+  const baseUrl = "https://davinci.agency";
 
   // Define all locales
   const locales = ["pl", "en"];

@@ -20,8 +20,8 @@ export async function generateMetadata({
   const { lang } = await params;
 
   const titles: Record<Locale, string> = {
-    en: "Google Ads Management for Local Businesses | DealCatcher",
-    pl: "Prowadzenie Google Ads dla Lokalnych Firm | DealCatcher",
+    en: "Google Ads Management for Local Businesses | DaVinci",
+    pl: "Prowadzenie Google Ads dla Lokalnych Firm | DaVinci",
   };
   const descriptions: Record<Locale, string> = {
     en: "Professional Google Ads campaign management. Appear when clients search for your services. Local targeting, transparent ROI tracking, from 800 PLN/month.",

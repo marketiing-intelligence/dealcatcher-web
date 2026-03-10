@@ -37,7 +37,7 @@ export async function generateMetadata({
   const { lang } = await params;
 
   const titles: Record<Locale, string> = {
-    en: "DealCatcher — Professional Websites for Businesses",
+    en: "DaVinci — Professional Websites for Businesses",
     pl: "Davinci Agency | Strategia, Technologia, Wdrożenie",
   };
 
@@ -87,8 +87,8 @@ export async function generateMetadata({
     openGraph: {
       title: titles[lang],
       description: descriptions[lang],
-      url: `https://dealcatcher.io/${lang}`,
-      siteName: "DealCatcher",
+      url: `https://davinci.agency/${lang}`,
+      siteName: "DaVinci",
       locale: localeMap[lang],
       type: "website",
     },
@@ -110,10 +110,10 @@ export default async function LangLayout({
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      name: "DealCatcher",
+      name: "DaVinci",
       legalName: "AI SCALING SYSTEMS sp. z o.o.",
-      url: "https://dealcatcher.io",
-      email: "contact@dealcatcher.io",
+      url: "https://davinci.agency",
+      email: "contact@davinci.agency",
       address: {
         "@type": "PostalAddress",
         streetAddress: "Aleje Jerozolimskie 109 / 70",
@@ -124,7 +124,7 @@ export default async function LangLayout({
       vatID: "PL7011297183",
       description: "Professional websites for Norwegian and Polish businesses. AI-ready, lightning-fast, built to convert.",
       sameAs: [
-        "https://www.linkedin.com/company/dealcatcher-io",
+        "https://www.linkedin.com/company/davinci-agency",
       ],
       areaServed: [
         { "@type": "Country", name: "Norway" },
@@ -149,8 +149,8 @@ export default async function LangLayout({
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      name: "DealCatcher",
-      url: "https://dealcatcher.io",
+      name: "DaVinci",
+      url: "https://davinci.agency",
       inLanguage: ["en", "nb", "pl"],
     },
   ];

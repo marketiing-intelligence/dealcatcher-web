@@ -14,8 +14,8 @@ export async function generateMetadata({
   const { lang } = await params;
 
   const titles: Record<Locale, string> = {
-    en: "Template Gallery — Premium Website Templates | DealCatcher",
-    pl: "Galeria Szablonów — Profesjonalne Szablony Stron | DealCatcher",
+    en: "Template Gallery — Premium Website Templates | DaVinci",
+    pl: "Galeria Szablonów — Profesjonalne Szablony Stron | DaVinci",
   };
   const descriptions: Record<Locale, string> = {
     en: "Explore our collection of premium website templates for Norwegian businesses. AI-ready, lightning-fast, built to convert.",

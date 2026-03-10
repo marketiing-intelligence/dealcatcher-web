@@ -20,8 +20,8 @@ export async function generateMetadata({
   const { lang } = await params;
 
   const titles: Record<Locale, string> = {
-    en: "B2B Client Database | DealCatcher",
-    pl: "Baza Klientów B2B | DealCatcher",
+    en: "B2B Client Database | DaVinci",
+    pl: "Baza Klientów B2B | DaVinci",
   };
   const descriptions: Record<Locale, string> = {
     en: "Custom B2B client database with qualified leads and contact information for your business.",

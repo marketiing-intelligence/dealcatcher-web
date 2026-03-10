@@ -138,7 +138,7 @@ export async function POST(request: Request) {
         ` : ""}
 
         <div class="footer">
-          <p>Wysłano z formularza: <a href="https://dealcatcher.io/pl/formularz">dealcatcher.io/pl/formularz</a></p>
+          <p>Wysłano z formularza: <a href="https://davinci.agency/pl/formularz">davinci.agency/pl/formularz</a></p>
           <p>Data: ${new Date().toLocaleString("pl-PL", { timeZone: "Europe/Warsaw" })}</p>
         </div>
       </body>
@@ -146,8 +146,8 @@ export async function POST(request: Request) {
     `;
 
     const { error } = await resend.emails.send({
-      from: "DealCatcher Prototyp <noreply@dealcatcher.io>",
-      to: ["contact@dealcatcher.io"],
+      from: "DaVinci Prototyp <noreply@davinci.agency>",
+      to: ["contact@davinci.agency"],
       replyTo: validatedData.email,
       subject: `🎨 Prototyp: ${validatedData.companyName} (${validatedData.industry})`,
       html: emailHtml,
@@ -166,7 +166,7 @@ export async function POST(request: Request) {
       const capiResult = await sendMetaConversionEvent({
         eventName: "Lead",
         eventId: generateEventId("prototype_lead"),
-        eventSourceUrl: `${process.env.NEXT_PUBLIC_BASE_URL || "https://dealcatcher.io"}/${lang}/formularz`,
+        eventSourceUrl: `${process.env.NEXT_PUBLIC_BASE_URL || "https://davinci.agency"}/${lang}/formularz`,
         userData: {
           email: validatedData.email,
           phone: validatedData.phone,

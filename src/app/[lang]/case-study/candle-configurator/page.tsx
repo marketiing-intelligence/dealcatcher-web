@@ -15,8 +15,8 @@ export async function generateMetadata({
   const { lang } = await params;
 
   const titles: Record<Locale, string> = {
-    en: "Candle Configurator Case Study — Premium Product Customization | DealCatcher",
-    pl: "Case Study Konfigurator Zniczy — Personalizacja Premium | DealCatcher",
+    en: "Candle Configurator Case Study — Premium Product Customization | DaVinci",
+    pl: "Case Study Konfigurator Zniczy — Personalizacja Premium | DaVinci",
   };
   const descriptions: Record<Locale, string> = {
     en: "How we built a 3D candle configurator with real-time preview and production integration: reduced returns, automated workflow, better customer experience.",

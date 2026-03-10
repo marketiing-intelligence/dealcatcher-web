@@ -15,8 +15,8 @@ export async function generateMetadata({
   const { lang } = await params;
 
   const titles: Record<Locale, string> = {
-    en: "TravelPL Case Study — Complete Digital System for Travel Agency | DealCatcher",
-    pl: "Case Study TravelPL — Kompletny System Cyfrowy dla Biura Podróży | DealCatcher",
+    en: "TravelPL Case Study — Complete Digital System for Travel Agency | DaVinci",
+    pl: "Case Study TravelPL — Kompletny System Cyfrowy dla Biura Podróży | DaVinci",
   };
   const descriptions: Record<Locale, string> = {
     en: "How we built a complete digital ecosystem for a Polish travel agency: professional website, mobile travel app, and Google Ads campaigns — from zero digital presence to modern online business.",

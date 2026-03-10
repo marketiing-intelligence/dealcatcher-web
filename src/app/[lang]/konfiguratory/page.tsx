@@ -20,8 +20,8 @@ export async function generateMetadata({
   const { lang } = await params;
 
   const titles: Record<Locale, string> = {
-    en: "Product Configurators & Pricing Calculators | DealCatcher",
-    pl: "Konfiguratory Produktów i Kalkulatory Cen | DealCatcher",
+    en: "Product Configurators & Pricing Calculators | DaVinci",
+    pl: "Konfiguratory Produktów i Kalkulatory Cen | DaVinci",
   };
   const descriptions: Record<Locale, string> = {
     en: "Turn questions into orders with interactive product configurators. Real-time pricing, custom specifications, and automated quotes.",

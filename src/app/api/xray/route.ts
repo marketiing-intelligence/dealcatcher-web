@@ -13,8 +13,8 @@ export async function POST(request: Request) {
 
     const resend = new Resend(process.env.RESEND_API_KEY);
     const { error } = await resend.emails.send({
-      from: "DealCatcher <noreply@dealcatcher.io>",
-      to: ["contact@dealcatcher.io"],
+      from: "DaVinci <noreply@davinci.agency>",
+      to: ["contact@davinci.agency"],
       replyTo: validatedData.email,
       subject:
         false
@@ -38,7 +38,7 @@ export async function POST(request: Request) {
       const capiResult = await sendMetaConversionEvent({
         eventName: "Lead",
         eventId: generateEventId("xray_lead"),
-        eventSourceUrl: `${process.env.NEXT_PUBLIC_BASE_URL || "https://dealcatcher.io"}/${lang}`,
+        eventSourceUrl: `${process.env.NEXT_PUBLIC_BASE_URL || "https://davinci.agency"}/${lang}`,
         userData: {
           email: validatedData.email,
           phone: validatedData.phone, // Optional phone field

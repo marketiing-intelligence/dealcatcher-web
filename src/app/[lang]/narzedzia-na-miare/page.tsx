@@ -20,8 +20,8 @@ export async function generateMetadata({
   const { lang } = await params;
 
   const titles: Record<Locale, string> = {
-    en: "Custom Tools | DealCatcher",
-    pl: "Narzędzia na Miarę | DealCatcher",
+    en: "Custom Tools | DaVinci",
+    pl: "Narzędzia na Miarę | DaVinci",
   };
   const descriptions: Record<Locale, string> = {
     en: "Custom tools and automation solutions tailored to your business needs.",

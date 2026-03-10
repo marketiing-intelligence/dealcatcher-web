@@ -13,8 +13,8 @@ export async function generateMetadata({
   const { lang } = await params;
 
   const titles: Record<Locale, string> = {
-    en: "Withdrawal Form | DealCatcher",
-    pl: "Formularz Odstąpienia | DealCatcher",
+    en: "Withdrawal Form | DaVinci",
+    pl: "Formularz Odstąpienia | DaVinci",
   };
   const descriptions: Record<Locale, string> = {
     en: "Use this form to withdraw from your contract within 14 days under consumer law.",

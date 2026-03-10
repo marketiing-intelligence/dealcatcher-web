@@ -21,8 +21,8 @@ export async function generateMetadata({
   const { lang } = await params;
 
   const titles: Record<Locale, string> = {
-    en: "Contact | DealCatcher",
-    pl: "Kontakt | DealCatcher",
+    en: "Contact | DaVinci",
+    pl: "Kontakt | DaVinci",
   };
 
   const descriptions: Record<Locale, string> = {
@@ -134,7 +134,7 @@ export default async function ContactPage({
 
                 {/* Company Info */}
                 <div className="text-sm text-muted-foreground space-y-1 pt-4">
-                  <p className="font-medium text-foreground">DealCatcher</p>
+                  <p className="font-medium text-foreground">DaVinci</p>
                   <p>AI SCALING SYSTEMS sp. z o.o.</p>
                   <p>Aleje Jerozolimskie 109 / 70</p>
                   <p>02-011 Warszawa, Polska</p>

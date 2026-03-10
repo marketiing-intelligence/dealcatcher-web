@@ -142,7 +142,7 @@ export function Footer({ lang, dict }: FooterProps) {
         {/* Bottom bar */}
         <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            &copy; {currentYear} DealCatcher. {dict.copyright}
+            &copy; {currentYear} DaVinci. {dict.copyright}
             <br />
             NIP: 7011297183 | KRS: 0001221058 | REGON: 543861552
           </p>
@@ -162,7 +162,7 @@ export function Footer({ lang, dict }: FooterProps) {
               <button
                 type="button"
                 onClick={() => {
-                  localStorage.removeItem("dealcatcher-cookie-consent");
+                  localStorage.removeItem("davinci-cookie-consent");
                   window.location.reload();
                 }}
                 className="hover:text-foreground transition-colors"

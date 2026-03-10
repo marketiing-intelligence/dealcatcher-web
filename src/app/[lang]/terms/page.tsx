@@ -12,12 +12,12 @@ export async function generateMetadata({
   const { lang } = await params;
 
   const titles: Record<Locale, string> = {
-    en: "Terms of Service | DealCatcher",
-    pl: "Regulamin | DealCatcher",
+    en: "Terms of Service | DaVinci",
+    pl: "Regulamin | DaVinci",
   };
   const descriptions: Record<Locale, string> = {
-    en: "Read our terms of service for using DealCatcher's services and website.",
-    pl: "Przeczytaj regulamin korzystania z usług i strony DealCatcher.",
+    en: "Read our terms of service for using DaVinci's services and website.",
+    pl: "Przeczytaj regulamin korzystania z usług i strony DaVinci.",
   };
 
   return {

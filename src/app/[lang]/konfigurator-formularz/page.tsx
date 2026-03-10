@@ -27,8 +27,8 @@ export async function generateMetadata({
   const { lang } = await params;
 
   const titles: Record<Locale, string> = {
-    en: "Free Configurator Consultation | DealCatcher",
-    pl: "Bezpłatna Konsultacja Konfiguratora | DealCatcher",
+    en: "Free Configurator Consultation | DaVinci",
+    pl: "Bezpłatna Konsultacja Konfiguratora | DaVinci",
   };
 
   const descriptions: Record<Locale, string> = {

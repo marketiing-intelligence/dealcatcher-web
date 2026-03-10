@@ -20,8 +20,8 @@ export async function generateMetadata({
   const { lang } = await params;
 
   const titles: Record<Locale, string> = {
-    en: "Professional Websites for Norwegian Craftsmen | DealCatcher",
-    pl: "Profesjonalne Strony Internetowe dla Twojej Firmy | DealCatcher",
+    en: "Professional Websites for Norwegian Craftsmen | DaVinci",
+    pl: "Profesjonalne Strony Internetowe dla Twojej Firmy | DaVinci",
   };
   const descriptions: Record<Locale, string> = {
     en: "Get found online by clients searching for carpenters, plumbers, and electricians. AI-ready, lightning-fast websites starting at $1,000.",

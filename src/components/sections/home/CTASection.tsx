@@ -133,7 +133,7 @@ export function CTASection({ lang, dict }: CTASectionProps) {
                 className="group border-primary/50 hover:border-primary hover:bg-primary/10 h-14 px-8 text-base font-medium bg-white/5 backdrop-blur-sm transition-all duration-300"
               >
                 <a
-                  href="https://cal.dealcatcher.io/marcin-jaworski/discovery-call"
+                  href="https://cal.davinci.agency/marcin-jaworski/discovery-call"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => {
@@ -155,7 +155,7 @@ export function CTASection({ lang, dict }: CTASectionProps) {
                 size="lg"
                 className="group border-white/20 hover:border-primary hover:text-primary h-14 px-8 text-base font-medium bg-white/5 backdrop-blur-sm transition-all duration-300"
               >
-                <a href="mailto:contact@dealcatcher.io">
+                <a href="mailto:contact@davinci.agency">
                   <Mail className="mr-2 h-5 w-5 transition-transform group-hover:scale-110" />
                   {dict.ctaSecondary}
                 </a>

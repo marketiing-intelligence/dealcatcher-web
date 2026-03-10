@@ -23,7 +23,7 @@ export function MetaPixel({ pixelId }: MetaPixelProps) {
     // Check for marketing consent from localStorage
     const checkConsent = () => {
       try {
-        const consent = localStorage.getItem("dealcatcher-cookie-consent");
+        const consent = localStorage.getItem("davinci-cookie-consent");
         if (consent) {
           const parsed = JSON.parse(consent);
           setHasConsent(parsed.marketing === true);
