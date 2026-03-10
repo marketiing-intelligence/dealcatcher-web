@@ -143,9 +143,41 @@ export function CookieConsentBanner({ lang, dict }: CookieConsentBannerProps) {
   };
 
   return (
-    <AnimatePresence>
+    <>
+      {/* Floating cookie icon - shows when banner is hidden */}
+      <AnimatePresence>
+        {!isVisible && (
+          <motion.button
+            initial={{ scale: 0, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0, opacity: 0 }}
+            transition={{ delay: 0.5, type: "spring", damping: 15 }}
+            onClick={() => {
+              localStorage.removeItem(COOKIE_CONSENT_KEY);
+              setIsVisible(true);
+            }}
+            className="fixed bottom-6 right-6 z-40 h-14 w-14 rounded-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transition-all duration-200 flex items-center justify-center group"
+            aria-label="Cookie settings"
+          >
+            <Cookie className="h-6 w-6 group-hover:scale-110 transition-transform" />
+          </motion.button>
+        )}
+      </AnimatePresence>
+
+      {/* Cookie consent banner */}
+      <AnimatePresence>
       {isVisible && (
-        <motion.div
+        <>
+          {/* Backdrop overlay */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black/40 backdrop-blur-sm z-40"
+          />
+
+          {/* Banner */}
+          <motion.div
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 100, opacity: 0 }}
@@ -177,21 +209,13 @@ export function CookieConsentBanner({ lang, dict }: CookieConsentBannerProps) {
 
                   {/* Buttons */}
                   <div className="flex flex-wrap gap-3">
-                    <Button onClick={handleAcceptAll} size="sm">
+                    <Button onClick={handleAcceptAll} size="lg" className="font-semibold">
                       {dict.acceptAll}
                     </Button>
                     <Button
-                      onClick={handleAcceptEssential}
-                      variant="outline"
-                      size="sm"
-                    >
-                      {dict.acceptEssential}
-                    </Button>
-                    <Button
                       onClick={() => setShowCustomize(!showCustomize)}
-                      variant="ghost"
-                      size="sm"
-                      className="text-muted-foreground"
+                      variant="outline"
+                      size="lg"
                     >
                       {dict.customize}
                       {showCustomize ? (
@@ -307,8 +331,10 @@ export function CookieConsentBanner({ lang, dict }: CookieConsentBannerProps) {
             </AnimatePresence>
           </div>
         </motion.div>
+        </>
       )}
     </AnimatePresence>
+    </>
   );
 }
 
