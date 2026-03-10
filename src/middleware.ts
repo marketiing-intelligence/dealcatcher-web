@@ -31,11 +31,17 @@ export function middleware(request: NextRequest) {
   // Detect browser language from Accept-Language header
   const acceptLanguage = request.headers.get("accept-language") || "";
 
-  // Parse the first language from Accept-Language header (e.g., "pl-PL" -> "pl")
-  const browserLang = acceptLanguage.split(",")[0]?.split("-")[0]?.toLowerCase();
+  // Parse the first language from Accept-Language header
+  // Handle formats like: "pl-PL,en-US;q=0.9" or "pl-PL;q=1.0,en;q=0.8"
+  const firstLang = acceptLanguage
+    .split(",")[0]           // Get first language
+    ?.trim()                  // Remove whitespace
+    .split(";")[0]            // Remove quality value (q=0.9)
+    ?.split("-")[0]           // Get language code (pl from pl-PL)
+    ?.toLowerCase();          // Normalize to lowercase
 
   // If browser language is Polish, redirect to /pl, otherwise /en
-  const locale = browserLang === "pl" ? "pl" : "en";
+  const locale = firstLang === "pl" ? "pl" : "en";
 
   // Redirect to localized path
   return NextResponse.redirect(new URL(`/${locale}${pathname}`, request.url));
