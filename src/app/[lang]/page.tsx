@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/shared/Navbar";
 import { HeroSection } from "@/components/sections/davinci/HeroSection";
+import { VSLSection } from "@/components/sections/davinci/VSLSection";
 import { ProblemSection } from "@/components/sections/davinci/ProblemSection";
 import { RootCauseSection } from "@/components/sections/davinci/RootCauseSection";
 import { BenefitsSection } from "@/components/sections/davinci/BenefitsSection";
@@ -34,6 +35,7 @@ export default async function Home({
       <Navbar lang={lang} dict={dict} />
       <main className="pt-16 md:pt-20">
         <HeroSection lang={lang} dict={dict.davinci.hero} />
+        <VSLSection dict={dict.davinci.vsl} />
         <ProblemSection dict={dict.davinci.problem} />
         <RootCauseSection dict={dict.davinci.rootCause} />
         <BenefitsSection lang={lang} dict={dict.davinci.benefits} />
