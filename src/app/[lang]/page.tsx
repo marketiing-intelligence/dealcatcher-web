@@ -48,7 +48,7 @@ export default async function Home({
         <FinalCTASection lang={lang} dict={dict.davinci.finalCTA} />
         {/* X-Ray Form Section */}
         <section id="xray-form" className="py-20 md:py-32 bg-muted/30">
-          <div className="container">
+          <div className="container mx-auto px-6 md:px-12 lg:px-16">
             <XRayForm lang={lang} dict={dict.xrayForm} />
           </div>
         </section>

@@ -7,8 +7,8 @@
 @custom-variant dark (&:is(.dark *));
 
 /* ============================================
-   DealCatcher — Agency Dark Theme
-   Accent: Emerald Green (#10B981)
+   Davinci Agency — Dark Theme
+   Accent: Gold (#E5A84B)
    ============================================ */
 
 @theme inline {
@@ -51,41 +51,40 @@
 :root {
   --radius: 0.5rem;
 
-  /* Agency Dark - Default (no light mode) */
+  /* Dark Theme (matching marketing-intelligence.io) */
   /* Backgrounds */
   --background: #0A0A0A;
-  --background-alt: #141414;
-  --card: #1A1A1A;
-  --card-foreground: #FAFAFA;
-  --popover: #1A1A1A;
-  --popover-foreground: #FAFAFA;
+  --background-alt: #0F0F0F;
+  --card: #161616;
+  --card-foreground: #F5F5F5;
+  --popover: #161616;
+  --popover-foreground: #F5F5F5;
 
   /* Text */
-  --foreground: #FAFAFA;
-  --muted: #27272A;
-  --muted-foreground: #D4D4D8;
+  --foreground: #F5F5F5;
+  --muted: #222222;
+  --muted-foreground: #A1A1A1;
 
-  /* Accent - EMERALD GREEN */
-  /* Use #34D399 (emerald-400) for better contrast on dark backgrounds */
-  --primary: #34D399;
-  --primary-foreground: #022c22;
-  --accent: #34D399;
-  --accent-foreground: #022c22;
-  --accent-hover: #6EE7B7;
-  --accent-glow: rgba(52, 211, 153, 0.15);
+  /* Accent - GOLD */
+  --primary: #E5A84B;
+  --primary-foreground: #0A0A0A;
+  --accent: #E5A84B;
+  --accent-foreground: #0A0A0A;
+  --accent-hover: #F0BE6A;
+  --accent-glow: rgba(229, 168, 75, 0.15);
 
   /* Secondary */
-  --secondary: #1A1A1A;
-  --secondary-foreground: #FAFAFA;
+  --secondary: #222222;
+  --secondary-foreground: #F5F5F5;
 
   /* Borders */
-  --border: #27272A;
-  --border-hover: #3F3F46;
-  --input: #27272A;
-  --ring: #34D399;
+  --border: #222222;
+  --border-hover: #333333;
+  --input: #222222;
+  --ring: #E5A84B;
 
   /* Destructive */
-  --destructive: #EF4444;
+  --destructive: #F87171;
 }
 
 @layer base {
