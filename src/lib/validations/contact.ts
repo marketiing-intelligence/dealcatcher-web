@@ -15,19 +15,13 @@ export const contactSchema = z.object({
 export type ContactFormData = z.infer<typeof contactSchema>;
 
 // Validation messages for i18n
-export const getValidationMessages = (lang: "en" | "no" | "pl") => {
+export const getValidationMessages = (lang: "en" | "pl") => {
   const messages = {
     en: {
       nameRequired: "Name is required",
       emailInvalid: "Invalid email address",
       messageMin: "Message must be at least 10 characters",
       gdprRequired: "GDPR consent is required",
-    },
-    no: {
-      nameRequired: "Navn er påkrevd",
-      emailInvalid: "Ugyldig e-postadresse",
-      messageMin: "Meldingen må være minst 10 tegn",
-      gdprRequired: "GDPR-samtykke er påkrevd",
     },
     pl: {
       nameRequired: "Imię jest wymagane",

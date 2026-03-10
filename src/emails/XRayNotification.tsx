@@ -19,7 +19,7 @@ interface XRayNotificationProps {
     problem: string;
     phone?: string;
   };
-  lang?: "en" | "no" | "pl";
+  lang?: "en" | "pl";
 }
 
 export default function XRayNotification({
@@ -36,16 +36,6 @@ export default function XRayNotification({
       companySize: "Company size:",
       problem: "Main problem/goal:",
       phone: "Phone:",
-    },
-    no: {
-      preview: `X-Ray forespørsel fra ${data.name} (${data.company})`,
-      heading: "Ny X-Ray diagnoseforespørsel",
-      name: "Fullt navn:",
-      email: "E-post:",
-      company: "Firma:",
-      companySize: "Firmastørrelse:",
-      problem: "Hovedproblem/mål:",
-      phone: "Telefon:",
     },
     pl: {
       preview: `Zgłoszenie X-Ray od ${data.name} (${data.company})`,
