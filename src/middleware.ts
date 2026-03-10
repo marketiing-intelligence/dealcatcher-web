@@ -40,8 +40,8 @@ export function middleware(request: NextRequest) {
     ?.split("-")[0]           // Get language code (pl from pl-PL)
     ?.toLowerCase();          // Normalize to lowercase
 
-  // If browser language is Polish, redirect to /pl, otherwise /en
-  const locale = firstLang === "pl" ? "pl" : "en";
+  // Default to Polish (main audience), only use English if explicitly requested
+  const locale = firstLang === "en" ? "en" : "pl";
 
   // Redirect to localized path
   return NextResponse.redirect(new URL(`/${locale}${pathname}`, request.url));
