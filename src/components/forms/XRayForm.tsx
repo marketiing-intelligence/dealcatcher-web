@@ -87,7 +87,7 @@ export function XRayForm({ lang, dict }: XRayFormProps) {
         trackMetaEvent("Lead", {
           content_name: "X-Ray Form Submission",
           content_category: "xray",
-          currency: lang === "pl" ? "PLN" : lang === "no" ? "NOK" : "USD",
+          currency: lang === "pl" ? "PLN" : "USD",
         });
 
         setStatus("success");

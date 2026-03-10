@@ -16,12 +16,10 @@ export async function generateMetadata({
 
   const titles: Record<Locale, string> = {
     en: "ROP Calculator Case Study — Packaging Fee Compliance Tool | DealCatcher",
-    no: "ROP-kalkulator Casestudie — Verktøy for emballasjeavgifter | DealCatcher",
     pl: "Case Study Kalkulator ROP — Narzędzie Compliance Opłat Opakowaniowych | DealCatcher",
   };
   const descriptions: Record<Locale, string> = {
     en: "How we built a free packaging fee calculator for Polish e-commerce companies: helping hundreds plan budgets for 2026-2028 regulations.",
-    no: "Hvordan vi bygde en gratis emballasjeavgift-kalkulator for polske e-handelsselskaper: hjelper hundrevis med budsjettplanlegging for 2026-2028-forskrifter.",
     pl: "Jak stworzyliśmy darmowy kalkulator opłat ROP dla polskich firm e-commerce: pomoc setkom firm w planowaniu budżetów na lata 2026-2028.",
   };
 

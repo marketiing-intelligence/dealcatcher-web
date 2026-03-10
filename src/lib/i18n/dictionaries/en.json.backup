@@ -3,6 +3,7 @@
     "services": "Services",
     "portfolio": "Portfolio",
     "newWebsite": "New Website",
+    "wcagCompliance": "WCAG Compliance",
     "freePrototype": "Free Prototype",
     "configurators": "Configurators",
     "googleAds": "Google Ads",
@@ -10,8 +11,7 @@
     "customerDatabase": "B2B Client Database",
     "customTools": "Custom Tools",
     "salesMaterials": "Sales Materials",
-    "contact": "Contact",
-    "xray": "X-Ray"
+    "contact": "Contact"
   },
   "hero": {
     "badge": "Stop Losing Customers",
@@ -1886,469 +1886,75 @@
       }
     }
   },
-  "davinci": {
-    "hero": {
-      "headline": "Show us your company. We'll show you things you can't see from the inside.",
-      "subheadline": "We analyze the entire business — sales, operations, marketing, finance, team, processes. We find what's really blocking growth and build the solution. Strategy, technology, and implementation. Under one roof.",
-      "cta": "Book a free consultation — 30 min",
-      "ctaNote": "Zero commitments."
-    },
-    "problem": {
-      "badge": "Sound familiar?",
-      "title": "Your company could be growing faster. The question is: what's holding it back?",
-      "pains": [
-        {
-          "title": "You know you should implement AI. You know if you don't — you'll fall behind.",
-          "description": [
-            "Your competition is already doing it. Lowering costs, speeding up processes, making better decisions. You see it. You feel the pressure.",
-            "Maybe you even tried — ChatGPT, some tool, automation. Got generic answers that have nothing to do with your business.",
-            "Because AI doesn't know your company. It has no way to — your data is scattered across people's heads, Excels, and email inboxes."
-          ]
-        },
-        {
-          "title": "Your company exists in your head. And only in your head.",
-          "description": [
-            "Processes, knowledge, contacts, experience — it all lives in people. When someone leaves, they take a piece of the company with them.",
-            "You can't delegate because nobody knows what to do without you.",
-            "You can't leverage AI because there's no data for it to work with.",
-            "You can't scale because everything depends on your availability.",
-            "You're working IN the business instead of ON the business."
-          ]
-        },
-        {
-          "title": "You bought tools. You hired an agency. Nothing changed.",
-          "description": [
-            "CRM sits unused. Automation doesn't work. The website doesn't convert.",
-            "Because nobody checked if that was even your problem.",
-            "You spent tens of thousands on the wrong things — because the agency did what you told them, instead of telling you what actually needs to be done."
-          ]
-        },
-        {
-          "title": "You have too many ideas and zero clarity on what will deliver the fastest results.",
-          "description": [
-            "Export? New channel? Automation? New offering? New product?",
-            "You have skills, you have resources, you have ideas — but you don't know where to start.",
-            "Every advisor says something different.",
-            "You're missing someone who'll look at EVERYTHING and say: here's the biggest opportunity."
-          ]
-        },
-        {
-          "title": "Costs are growing faster than revenue.",
-          "description": [
-            "Every new client = more people, more chaos, more costs.",
-            "Processes that worked for 10 clients fall apart at 50.",
-            "You're not scaling — you're multiplying the mess."
-          ]
-        }
-      ]
-    },
-    "rootCause": {
-      "badge": "Why",
-      "title": "Because nobody ever looked at your company as a whole.",
-      "paragraphs": [
-        "You hired a marketing agency — they did marketing. But didn't check if your offering made sense.",
-        "You hired a software house — they built what you told them. But didn't ask if it actually solves your problem.",
-        "You hired a consultant — gave you a PDF with recommendations. And left.",
-        "Everyone did THEIR piece. Nobody looked at the WHOLE. At how sales affects operations. How processes affect costs. How lack of data affects decisions. How it all connects."
-      ],
-      "emphasis": "We start with that.",
-      "conclusion": "We do something nobody has done before. We collect ALL information about your company — from every department, every process, every Excel, and every head — and run it through dozens of analytical models. Not to confirm what you already know. To find what you don't see."
-    },
-    "benefits": {
-      "badge": "What you get",
-      "title": "Not a report for the drawer. A strategy tailored to your business — and the team to implement it.",
-      "items": [
-        {
-          "number": "①",
-          "title": "Your company's knowledge base",
-          "description": "For the first time, EVERYTHING about the company is in one structured place. Processes, data, channels, finances, team, competition. This is the foundation — for AI, for decisions, for delegation, for scaling."
-        },
-        {
-          "number": "②",
-          "title": "Map of losses and untapped opportunities",
-          "description": "We show you where you're losing money — on inefficient processes, bad channels, poorly priced offerings. But also where you're NOT MAKING money — because you have skills, resources, and a team whose full potential you're not extracting. New products, new services, new markets that are sitting on the table."
-        },
-        {
-          "number": "③",
-          "title": "Strategy tailored to you",
-          "description": "Not a generic template. Strategy tailored to your business, your product, your team, your resources, and the technology you use. What to do, in what order, where to start."
-        },
-        {
-          "number": "④",
-          "title": "The real bottleneck",
-          "description": "Not what you THINK is the problem — but what's ACTUALLY blocking growth. Client comes for a new website — leaves knowing the problem is in the sales process."
-        },
-        {
-          "number": "⑤",
-          "title": "Ready for AI and automation",
-          "description": "With a knowledge base, AI can finally work on YOUR data. Without it — every tool gives generic answers. With it — specific recommendations, reports, calculations for YOUR company."
-        },
-        {
-          "number": "⑥",
-          "title": "Implementation — not just a plan",
-          "description": "Consultant gives you a PDF and leaves. We create strategy AND implement it. Software, automation, marketing, sales, AI — whatever the data shows."
-        }
-      ],
-      "cta": "Book a free consultation",
-      "ctaNote": "Zero commitments."
-    },
-    "howWeWork": {
-      "badge": "Our method",
-      "title": "12 areas. Dozens of models. One goal: find what's really blocking growth.",
-      "intro": "We use deep research, 98 analytical models, custom AI agents, and scrapers — to extract as much information as possible to help your company.",
-      "areas": [
-        {
-          "area": "Sales",
-          "what": "Where leads drop off, how long the cycle takes, how much it costs to acquire a customer. How the offering looks — is it structured so the customer wants to buy more"
-        },
-        {
-          "area": "Marketing",
-          "what": "Which channel actually works, which burns budget. How the messaging looks — does it hit the customer's pain or talk about you"
-        },
-        {
-          "area": "Operations",
-          "what": "What you do manually that should run automatically. Which processes are duplicated"
-        },
-        {
-          "area": "Finance",
-          "what": "Hidden costs, margins per service, cash flow. Where you're making money, where you're losing it"
-        },
-        {
-          "area": "Team and processes",
-          "what": "Who's the bottleneck, what's not documented, what happens if someone leaves"
-        },
-        {
-          "area": "Scaling",
-          "what": "What works for 10 clients but won't work for 50"
-        },
-        {
-          "area": "Competition",
-          "what": "What they do, how much they charge, where the market gap is"
-        },
-        {
-          "area": "Sales channels",
-          "what": "Which ones you missed, where there's low competition, new markets"
-        },
-        {
-          "area": "Positioning and offering",
-          "what": "How the market sees you. Is your offering structured so customers naturally move from entry to premium"
-        },
-        {
-          "area": "Tools and technology",
-          "what": "Systems that don't talk to each other. Configurators and tools that could improve sales and customer service"
-        },
-        {
-          "area": "Automation and AI",
-          "what": "Where AI agents can generate reports, calculations, content, customer service. Where automation can replace manual work"
-        },
-        {
-          "area": "Untapped potential",
-          "what": "What new products, services, markets are on the table — because you have the resources and skills, but you're not using them"
-        }
-      ],
-      "emphasis": "Result: strategy tailored to your business, your product, your team, your resources and technology. With concrete data, sources, and recommendations. Plus an implementation plan and the team to execute it."
-    },
-    "process": {
-      "badge": "Process",
-      "title": "What do you need to do? Fill out a form and talk for 30 minutes.",
-      "steps": [
-        {
-          "number": "①",
-          "title": "Free consultation — 0 PLN",
-          "description": "You fill out a short form (5 questions, 3 minutes) and schedule a call. 30 minutes — you talk about your company, we listen and ask questions nobody's asked you before. After the call, you get a follow-up with observations."
-        },
-        {
-          "number": "②",
-          "title": "X-Ray — business scan",
-          "description": "Deep analysis of your business. All areas, dozens of analytical models, real data. You get a strategy with recommendations: what to do, in what order, where to start.",
-          "note": "If after X-Ray you decide to implement with us — we deduct the X-Ray cost from the project."
-        },
-        {
-          "number": "③a",
-          "title": "Growth Partner — external growth team",
-          "description": "We join the company permanently. Every month we work on what's most important now. Strategy + implementation + technology. Minimum 3 months."
-        },
-        {
-          "number": "③b",
-          "title": "Build — concrete implementation",
-          "description": "We know what to build because we have data. Milestone-based, with sign-off after each stage. Full transparency — you know where the money goes."
-        }
-      ]
-    },
-    "whatWeBuild": {
-      "badge": "Implementation",
-      "title": "Diagnosis says WHAT. We build HOW.",
-      "services": [
-        {
-          "title": "X-Ray — business diagnosis",
-          "description": "We X-ray your entire business and give you an action plan based on data, not opinions. From PLN 3,000."
-        },
-        {
-          "title": "Custom software",
-          "description": "Product configurators, client portals, dashboards, applications. Tailored to your business."
-        },
-        {
-          "title": "AI agents and AI tools",
-          "description": "Systems that generate reports, calculate options for customers, automate content and service. AI on YOUR data."
-        },
-        {
-          "title": "Marketing and conversion",
-          "description": "Websites, landing pages, ads, funnels. After diagnosis — not blindly."
-        },
-        {
-          "title": "Sales and offering",
-          "description": "Sales processes, CRM, pipeline, offering restructuring. So customers naturally want to buy more."
-        },
-        {
-          "title": "Go-to-Market",
-          "description": "New markets, new channels, prospect databases, export strategy."
-        },
-        {
-          "title": "Process automation",
-          "description": "Workflows, system integrations, elimination of manual work. People do what they're good at — machines do the rest."
-        }
-      ],
-      "footer": "One company needed a product configurator and 3 sales channels for EU markets. Another — operations automation. Third — offering restructuring and new GTM strategy. We don't guess — data tells us what to build."
-    },
-    "caseStudy": {
-      "badge": "Example",
-      "title": "What we did, not what we promise.",
-      "company": "Mirco — Racing seat manufacturer",
-      "situation": {
-        "title": "Situation",
-        "text": "Racing seat manufacturer struggled with declining sales. Great product positioned between Chinese segment and premium (Recaro), but limited channels and no systematic approach to new markets."
-      },
-      "whatWeDid": {
-        "title": "What we did",
-        "items": [
-          "Discovery workshop → niche identification, positioning, and new channels",
-          "Product configurator with real-time visualization (model, material, color, logo, accessories)",
-          "Affiliate portal (commission tracking, admin + influencer panels)",
-          "Custom AI scraper → scanned EU/UK markets, built distributor database",
-          "3 new sales channels: B2C influencers, B2B shops, custom workshops",
-          "Outreach system (CRM + automation + follow-up)"
-        ]
-      },
-      "result": {
-        "title": "Result",
-        "text": "From one channel to four. From local sales to systematic approach to EU/UK markets. Implementation: 2 months. Departments touched: sales, marketing, production, IT. One project — strategy, software, AI, automation, GTM. Under one roof."
-      },
-      "bio": {
-        "title": "Who's behind this",
-        "text": "Dawid — built 7 companies in different industries: e-commerce, software house, lead generation, content. This lets him see patterns that owners don't see — because he looked at the same problems from a dozen different perspectives. Combines business strategy with technology: knows what to build, but also WHY and WHETHER AT ALL. Leads analyses, builds strategies, talks to clients. Supported by a team of specialists and AI that speeds up research, analysis, and building."
-      },
-      "cta": "View full case study"
-    },
-    "comparison": {
-      "badge": "Comparison",
-      "title": "Consultant gives PDF. Agency does what you tell them. We do both.",
-      "table": {
-        "headers": [
-          "",
-          "Consultant",
-          "Agency",
-          "Software house",
-          "DealCatcher"
-        ],
-        "rows": [
-          {
-            "label": "Analyzes entire business",
-            "values": [
-              "Partially (one area)",
-              "No",
-              "No",
-              "Yes"
-            ]
-          },
-          {
-            "label": "Builds the solution",
-            "values": [
-              "No (gives PDF)",
-              "Partially (marketing)",
-              "Yes (software)",
-              "Yes — everything"
-            ]
-          },
-          {
-            "label": "Looks at WHOLE company",
-            "values": [
-              "No",
-              "No",
-              "No",
-              "Yes"
-            ]
-          },
-          {
-            "label": "Challenges the brief",
-            "values": [
-              "Sometimes",
-              "No",
-              "No",
-              "Always"
-            ]
-          },
-          {
-            "label": "AI-native",
-            "values": [
-              "No",
-              "No",
-              "Partially",
-              "Yes"
-            ]
-          },
-          {
-            "label": "What you get",
-            "values": [
-              "Report",
-              "Campaigns / website",
-              "Software",
-              "Strategy + plan + implementation"
-            ]
-          }
-        ]
-      },
-      "footer": "You don't have to choose between \"someone who understands\" and \"someone who builds.\" With us, it's the same company."
-    },
-    "faq": {
-      "badge": "FAQ",
-      "title": "You have questions. That's good.",
-      "items": [
-        {
-          "question": "Too expensive.",
-          "answer": "How much does another month of operating on gut feel cost you? How much did you spend on agencies that didn't start by understanding your business?"
-        },
-        {
-          "question": "You're too small.",
-          "answer": "Small team + AI = what takes 10 people elsewhere. You pay for results, not for an office."
-        },
-        {
-          "question": "How are you different from agencies?",
-          "answer": "Agency gets a brief and executes. We check if the brief makes sense. We analyze the whole business and only then build."
-        },
-        {
-          "question": "How are you different from consultants?",
-          "answer": "Consultant gives PDF and leaves. We diagnose AND build."
-        },
-        {
-          "question": "I've had bad experiences.",
-          "answer": "That's why we start with a free consultation. Zero commitments. See for yourself. We don't work with everyone — only with companies we can actually help."
-        },
-        {
-          "question": "I don't need diagnosis.",
-          "answer": "Diagnosis can save tens of thousands on building the wrong thing."
-        },
-        {
-          "question": "AI doesn't convince me.",
-          "answer": "AI is a tool — like a calculator. We think, AI speeds up research and analysis."
-        }
-      ]
-    },
-    "finalCTA": {
-      "headline": "30 minutes. You talk about your company. We tell you straight what we see.",
-      "cta": "Book a free consultation",
-      "checkpoints": [
-        "Form: 3 minutes, 5 questions",
-        "Call: 30 minutes",
-        "After call: follow-up with key observations"
-      ],
-      "footer": "We won't call you every week. We won't send 47 emails. If we're not a fit — we'll tell you straight. Zero commitments."
-    }
-  },
-  "xrayForm": {
-    "title": "X-Ray Form",
-    "subtitle": "5 questions, 3 minutes. Zero commitments.",
-    "fields": {
-      "name": "Name and surname",
-      "email": "E-mail",
-      "company": "Company name",
-      "companySize": "Company size",
-      "companySizeOptions": [
-        "1-10 people",
-        "10-20 people",
-        "20-50 people",
-        "50-100 people",
-        "100+ people"
-      ],
-      "problem": "Main problem/goal (min. 20 characters)",
-      "phone": "Phone (optional)",
-      "gdpr": "I consent to the processing of personal data",
-      "gdprLink": "Privacy policy"
-    },
-    "submit": "Submit X-Ray request",
-    "sending": "Sending...",
-    "success": "Thank you!",
-    "successMessage": "We received your request. We'll contact you within 24h.",
-    "error": "An error occurred. Please try again."
-  },
   "audytMarketingowy": {
     "hero": {
-      "badge": "Audit & Strategy",
-      "titleStart": "Marketing audit that shows",
-      "titleHighlight": "where you're losing customers",
-      "subtitle": "Diagnostics of your marketing + concrete action plan. No fluff, no consulting jargon. Numbers, problems, recommendations.",
-      "cta": "See example",
+      "badge": "Audit & Strategi",
+      "titleStart": "Marketingaudit som viser",
+      "titleHighlight": "hvor du taper kunder",
+      "subtitle": "Diagnostikk av markedsføringen din + konkret reparasjonsplan. Tall, problemer, anbefalinger.",
+      "cta": "Se eksempel",
       "stats": [
         {
           "value": 73,
           "suffix": "%",
-          "label": "of companies waste advertising budget"
+          "label": "bedrifter kaster bort annonsebudsjett"
         },
         {
           "value": 4,
           "suffix": "x",
-          "label": "ROI after strategy implementation"
+          "label": "ROI etter implementering"
         },
         {
           "value": 14,
-          "suffix": " days",
-          "label": "average audit time"
+          "suffix": " dager",
+          "label": "gjennomsnittlig audit-tid"
         }
       ]
     },
     "problem": {
       "badge": "Problem",
-      "title": "Marketing without a plan = burning cash",
-      "subtitle": "Most companies spend on ads because \"the competition does too\". The result? Scattered budget, zero measurable goals, no control over results.",
+      "title": "Markedsføring uten plan = kaste penger",
+      "subtitle": "De fleste bedrifter bruker penger på annonser fordi \"konkurrenter også gjør det\". Resultat? Spredt budsjett, ingen målbare mål.",
       "items": [
         {
-          "title": "You're spending on ads without a clear plan",
-          "description": "Google Ads + Facebook + Instagram + LinkedIn. A bit everywhere, nowhere properly. You don't know which campaigns work, which burn money."
+          "title": "Du bruker på annonser uten klar plan",
+          "description": "Google Ads + Facebook + Instagram + LinkedIn. Litt overalt, ingenting ordentlig."
         },
         {
-          "title": "You don't know which channel actually works",
-          "description": "You have a feeling ads \"do something\", but you can't say exactly how much one customer costs you from each source. Optimization impossible."
+          "title": "Du vet ikke hvilken kanal som fungerer",
+          "description": "Du føler at annonser \"gir noe\", men kan ikke si hva en kunde fra hver kilde koster."
         },
         {
-          "title": "Competition is ahead of you online",
-          "description": "You see competitors ranking higher in Google, having better websites, more polished campaigns. You don't know what they're doing differently."
+          "title": "Konkurrenter passerer deg online",
+          "description": "Du ser at konkurrenter er høyere i Google, har bedre nettsider, bedre kampanjer."
         },
         {
-          "title": "Lack of measurable marketing goals",
-          "description": "\"We want more leads\" is not a goal. A goal is: 50 leads/month from Google Ads at CPA ≤ 200 PLN. Without specifics, nothing can be improved."
+          "title": "Mangler målbare markedsføringsmål",
+          "description": "\"Vi vil ha flere leads\" er ikke et mål. Mål: 50 leads/md fra Google Ads ved CPA ≤ 200 kr."
         }
       ]
     },
     "solution": {
-      "badge": "Solution",
-      "title": "What you get in the audit",
-      "subtitle": "Complete diagnostics + action plan. You know what to fix, in what order, and with what budget.",
+      "badge": "Løsning",
+      "title": "Hva du får i auditten",
+      "subtitle": "Komplett diagnostikk + handlingsplan. Du vet hva du skal fikse, i hvilken rekkefølge og med hvilket budsjett.",
       "items": [
         {
           "title": "Discovery Workshop",
-          "description": "Strategic workshop with your team — we identify goals, analyze competition, define ICP.",
+          "description": "Strategic workshop with your team — identify goals, analyze competition, define ICP.",
           "features": [
             "Current situation analysis",
             "Competition mapping",
-            "Ideal Customer Profile (ICP)",
+            "Ideal customer profile (ICP)",
             "Acquisition channels",
             "ROI measurement framework"
           ]
         },
         {
-          "title": "Strategic report",
-          "description": "Document with analysis, recommendations, and action plan for the next 3-6 months.",
+          "title": "Strategic Report",
+          "description": "Document with analysis, recommendations and action plan for the next 3-6 months.",
           "features": [
-            "Audit of all channels",
+            "All channels audit",
             "Spend vs results analysis",
             "Customer journey map",
             "Action prioritization",
@@ -2356,10 +1962,10 @@
           ]
         },
         {
-          "title": "Measurement framework",
-          "description": "KPI system and dashboards that show whether marketing works — without guessing.",
+          "title": "Measurement Framework",
+          "description": "KPI system and dashboards that show if marketing works — no guessing.",
           "features": [
-            "KPIs for each channel",
+            "KPI per channel",
             "Metrics dashboard",
             "Attribution model",
             "Conversion tracking",
@@ -2369,202 +1975,208 @@
       ]
     },
     "pricing": {
-      "badge": "Pricing",
-      "title": "Audit tailored to business scale",
-      "subtitle": "Audit scope depends on your business complexity. After the briefing, we quote individually.",
-      "setupLabel": "one-time",
-      "roiHint": "The audit pays for itself in the first month of optimization. Typical client saves 30-50% of advertising budget after implementing recommendations.",
+      "badge": "Pris",
+      "title": "Audit tilpasset virksomhetens størrelse",
+      "subtitle": "Omfanget avhenger av kompleksiteten i virksomheten din. Etter briefing prissetter vi individuelt.",
+      "setupLabel": "engangssum",
+      "roiHint": "Auditten betaler seg tilbake første måned. Typisk klient sparer 30-50% av annonsebudsjettet.",
       "packages": [
         {
-          "name": "Marketing audit",
-          "tagline": "Most popular",
-          "description": "Discovery workshop + full competition analysis + channel strategy + ROI framework. PDF report (~25 pages) + implementation session.",
-          "setup": "4,999 – 9,999 PLN",
+          "name": "Marketingaudit",
+          "tagline": "Mest populær",
+          "description": "Discovery workshop + full konkurranseanalyse + kanalstrategi + ROI-rammeverk. PDF-rapport (~25 sider) + implementeringssesjon.",
+          "setup": "4 999 – 9 999 kr",
           "monthly": "",
           "monthlyLabel": "",
           "features": [
-            "Discovery workshop (1-2h, remote)",
-            "Competition analysis (5-10 players)",
-            "ICP profiling (Ideal Customer Profile)",
-            "Customer journey mapping",
-            "Channel strategy (priorities + budgets)",
-            "ROI framework (tracking return on investment)",
-            "PDF report with recommendations (~25 pages)",
-            "Implementation session (45 min, report presentation)"
+            "Discovery workshop (1-2t, eksternt eller hos deg)",
+            "Konkurranseanalyse (5-10 aktører)",
+            "ICP-profiling",
+            "Kjøpsveikartlegging",
+            "Kanalstrategi (prioriteter + budsjetter)",
+            "ROI-rammeverk",
+            "PDF-rapport (~25 sider)",
+            "Implementeringssesjon (45 min)"
           ],
-          "cta": "Schedule briefing",
+          "cta": "Bestill briefing",
           "popular": true
         }
       ]
     },
     "examples": {
       "badge": "Case study",
-      "title": "What an audit looks like in practice",
-      "subtitle": "Example: Polish racing seat manufacturer, 30 years on the market, zero online strategy.",
+      "title": "Hvordan audit fungerer i praksis",
+      "subtitle": "Eksempel: Polsk produsent av racingstoler, 30 år i markedet, null online-strategi.",
       "items": [
         {
           "industry": "B2B Automotive",
-          "title": "Mirco — From chaos to 3 sales channels",
-          "description": "<div class='space-y-6'><div><h4 class='font-semibold text-foreground text-xl mb-3'>Problem</h4><ul class='space-y-2 text-base'><li><strong>Falling sales:</strong> Downward trend, existing distribution channels exhausted</li><li><strong>No strategy:</strong> As a manufacturer, Mirek understood seats but not marketing. He had an idea for a premium brand and logo, but the project stalled</li><li><strong>Return problem:</strong> Ordering custom seats via email/phone was complicated. Customers returned seats due to color, material, dimension mismatches</li><li><strong>Untapped potential:</strong> Mirco had its own sewing shop and could customize everything, but this advantage wasn't used as a sales tool</li></ul></div><div><h4 class='font-semibold text-foreground text-xl mb-3'>What we did</h4><ul class='space-y-2 text-base'><li><strong>Discovery Workshop:</strong> Identified that FIA-homologated seats sell better than gaming variants. Mapped ideal customer profile based on existing distributors. Found market gap between cheap Chinese seats and premium Recaro</li><li><strong>Partner database:</strong> Built web scraper covering every EU country + UK. Mapped competition strategies (Polish, Chinese, Recaro). Aggregated 400+ tuning shops and related companies</li><li><strong>3 sales channels:</strong> Motorsport influencers (earn commission through affiliate portal), Tuning shops (European B2B distributors with built-in configurator), Custom/restomod workshops (23 premium renovation companies)</li><li><strong>Seat configurator:</strong> Full personalization (model, material per section, thread color, logo placement, shell color, accessories). Real-time visualization eliminating order errors. Free implementation for distributor partners</li><li><strong>Affiliate portal:</strong> Panel for influencers with discount codes, statistics, earnings tracking. Admin dashboard with performance analytics and payment management</li></ul></div><div><h4 class='font-semibold text-foreground text-xl mb-3'>Results</h4><ul class='space-y-2 text-base'><li><strong>400+</strong> distributors identified in EU and UK</li><li><strong>27%</strong> of 100 tested influencers expressed interest in partnership</li><li><strong>3 complete sales channels</strong> ready for implementation</li><li><strong>2 months</strong> from start to complete system delivery</li></ul></div></div>",
-          "url": "/case-study/mirco"
+          "title": "Mirco — Fra kaos til 3 salgskanaler",
+          "description": "Problem: Mirco hadde fallende salg, null markedsføringsstrategi. Vi gjorde EU/UK-markedsaudit, identifiserte 3 distribusjonskanaler. Resultat: 27% influencere interessert, 400 potensielle partnere, 3 parallelle salgskanaler. ROI på 2 måneder.",
+          "url": "https://www.marketing-intelligence.io/case-study/mirco",
+          "image": "/images/examples/mirco-audit.png",
+          "testimonial": {
+            "quote": "Jeg kom med problem med fallende salg og null idé om hva jeg skulle gjøre. Etter to måneder hadde jeg et ferdig system: database med 400 potensielle partnere i hele Europa, konfigurator og tre komplette strategier for nye salgskanaler.",
+            "author": "Mirek Macura",
+            "role": "Eier, Mirco"
+          }
         }
       ]
     },
     "process": {
-      "badge": "Process",
-      "title": "How the audit works",
-      "subtitle": "Four steps from briefing to ready strategy. Average 4-7 business days.",
+      "badge": "Prosess",
+      "title": "Hvordan auditten fungerer",
+      "subtitle": "Fire trinn fra briefing til ferdig strategi. Gjennomsnittlig 4-7 arbeidsdager.",
       "steps": [
         {
           "number": "01",
           "title": "Briefing",
-          "description": "We discuss your business, current marketing activities, budget, goals. Collect access to Google Analytics, ad campaigns, CRM.",
-          "duration": "1h"
+          "description": "Vi diskuterer virksomheten din, nåværende markedsføringsaktiviteter, budsjett, mål.",
+          "duration": "1t"
         },
         {
           "number": "02",
-          "title": "Analysis",
-          "description": "We analyze your data (Analytics, campaigns), check competition (SEO, ads, communication), map the market. Identify problems and opportunities.",
-          "duration": "2-3 days"
+          "title": "Analyse",
+          "description": "Vi analyserer dataene dine, sjekker konkurrenter, kartlegger markedet.",
+          "duration": "2-3 dager"
         },
         {
           "number": "03",
-          "title": "Strategic workshop",
-          "description": "Joint session where we discuss findings, build ICP, choose channels to target. Set priorities and budgets. This is the key moment of the audit.",
-          "duration": "1.5-2h"
+          "title": "Strategisk workshop",
+          "description": "Felles sesjon hvor vi diskuterer funn, bygger ICP, velger kanaler. Dette er nøkkelen til auditten.",
+          "duration": "1.5-2t"
         },
         {
           "number": "04",
-          "title": "Report + implementation",
-          "description": "You receive PDF report with diagnosis, recommendations, action plan (with timeline and budgets). Implementation session — we discuss the report, answer questions.",
-          "duration": "2-3 days"
+          "title": "Rapport + implementering",
+          "description": "Du får PDF-rapport med diagnose, anbefalinger, handlingsplan (med tidslinje og budsjetter).",
+          "duration": "2-3 dager"
         }
       ]
     },
     "faq": {
       "badge": "FAQ",
-      "title": "Most common questions",
-      "subtitle": "Didn't find an answer? Write: hello@dealcatcher.io",
+      "title": "Ofte stilte spørsmål",
+      "subtitle": "Fant du ikke svar? Skriv: hello@dealcatcher.io",
       "items": [
         {
-          "question": "How long does the audit take?",
-          "answer": "Usually 4-7 business days from briefing to report delivery. If you need it faster (e.g., before season or investor pitch) — we can speed it up to 48-72h, but then the audit will be more focused (e.g., only paid channels)."
+          "question": "Hvor lang tid tar auditten?",
+          "answer": "Vanligvis 4-7 arbeidsdager fra briefing til rapport. Hvis du trenger raskere — vi kan levere på 48-72t, men da blir auditten mer fokusert."
         },
         {
-          "question": "What if I don't have Google Analytics or campaigns?",
-          "answer": "No problem. The audit will then be more market-focused (competition analysis, channels, ICP) and less data-driven (because there's no data to analyze). You'll still know what to do, we just won't be able to say \"now you're wasting 40% of budget on poorly targeted campaigns\" — because there are no campaigns."
+          "question": "Hva hvis jeg ikke har Google Analytics eller kampanjer?",
+          "answer": "Ikke noe problem. Auditten blir da mer markedsfokusert (konkurranseanalyse, kanaler, ICP) og mindre datadrevet. Du får fortsatt vite hva du skal gjøre."
         },
         {
-          "question": "Do you implement the strategy after the audit?",
-          "answer": "We don't do this by default (audit is analysis + plan, not execution). But if you need someone to implement — we can help (Google Ads, websites, landing pages, copy). After the audit, you'll get an implementation offer if you're interested."
+          "question": "Implementerer dere strategien etter auditten?",
+          "answer": "Det gjør vi ikke som standard (audit = analyse + plan, ikke utførelse). Men hvis du trenger noen til å implementere — vi kan hjelpe. Etter auditten får du tilbud på implementering."
         },
         {
-          "question": "When will I see ROI?",
-          "answer": "The audit doesn't directly generate revenue — it's diagnostics and a plan. You'll see ROI after implementing recommendations. Typical client saves 30-50% of advertising budget in the first month (we cut waste). New channels (if you launch them) start giving leads in 2-4 weeks."
+          "question": "Når ser jeg ROI?",
+          "answer": "Auditten genererer ikke direkte inntekter — det er diagnostikk og plan. ROI ser du etter implementering av anbefalingene. Typisk klient sparer 30-50% av annonsebudsjettet første måned."
         },
         {
-          "question": "Who is this audit NOT for?",
-          "answer": "If you already have proven channels, great ROI, well-working marketing — you don't need an audit. An audit makes sense when you feel something's off: budget grows but results stagnate, you don't know what to spend on, competition is ahead of you online."
+          "question": "For hvem er IKKE denne auditten?",
+          "answer": "Hvis du har testede kanaler, god ROI, velfungerende markedsføring — trenger du ikke audit. Audit er fornuftig når noe ikke stemmer: budsjettet øker men resultatene står stille, du vet ikke hva du skal bruke penger på, konkurrenter passerer deg online."
         },
         {
-          "question": "What exactly will be in the report?",
-          "answer": "1) Current state diagnosis (what works, what doesn't, where you're wasting budget). 2) Competition analysis (who, what they do, what channels they use). 3) ICP (ideal customer profile). 4) Channel strategy (which channels to launch, in what order, with what budget). 5) ROI framework (how to track return on investment). 6) Action implementation plan (timeline, budgets, success metrics)."
+          "question": "Hva kommer konkret i rapporten?",
+          "answer": "1) Diagnose av nåværende tilstand. 2) Konkurranseanalyse. 3) ICP. 4) Kanalstrategi (hvilke kanaler, i hvilken rekkefølge, med hvilket budsjett). 5) ROI-rammeverk. 6) Handlingsplan med implementering (tidslinje, budsjetter, suksessmålinger)."
         }
       ]
     },
     "cta": {
-      "title": "Let's talk about",
-      "titleHighlight": "your marketing",
-      "subtitle": "Schedule a free 30-minute briefing. We'll show a sample audit, answer questions, and quote the audit for your business.",
-      "ctaPrimary": "Schedule free briefing",
-      "ctaSecondary": "Write to us",
-      "disclaimer": "No commitment. Zero spam. We only talk to serious companies."
+      "title": "La oss snakke om",
+      "titleHighlight": "markedsføringen din",
+      "subtitle": "Bestill en gratis 30-minutters briefing. Vi viser eksempler på audits, svarer på spørsmål og gir pristilbud for din virksomhet.",
+      "ctaPrimary": "Bestill gratis briefing",
+      "ctaSecondary": "Send oss en melding",
+      "disclaimer": "Ingen forpliktelse. Null spam. Vi snakker kun med seriøse bedrifter."
     }
   },
   "bazaKlientow": {
     "hero": {
-      "badge": "B2B Lead Generation",
+      "badge": "Lead Generation B2B",
       "titleStart": "400+ B2B leads ready",
       "titleHighlight": "for contact in 7 days",
-      "subtitle": "Company Database isn't enough. You call the reception, waste time. We deliver B2B contact data ready for cold outreach.",
+      "subtitle": "Company registers aren't enough. You call reception, waste time. We deliver B2B contact data ready for cold outreach.",
       "cta": "See case study",
       "stats": [
         {
           "value": 400,
           "suffix": "+",
-          "label": "leads generated (Mirco)"
+          "label": "leads generert (Mirco)"
         },
         {
           "value": 95,
           "suffix": "%",
-          "label": "contact data accuracy"
+          "label": "nøyaktighet kontaktdata"
         },
         {
           "value": 7,
-          "suffix": " days",
-          "label": "average database delivery time"
+          "suffix": " dager",
+          "label": "gj.snitt leveringstid"
         }
       ]
     },
     "problem": {
       "badge": "Problem",
-      "title": "Company Database is not enough",
-      "subtitle": "Most B2B databases only give company name and tax ID. Zero names, zero emails, zero decision makers. You waste time calling reception and asking \"who's responsible for marketing/purchasing\".",
+      "title": "Firmaregister er ikke nok",
+      "subtitle": "De fleste B2B-databaser gir bare firmanavn og org.nr. Null navn, null e-post, null beslutningstakere.",
       "items": [
         {
-          "title": "Company Database doesn't give names or emails",
-          "description": "You bought a database of 5000 companies for 500 PLN. Nice, but what next? You have to call each one, ask who decides, collect contacts. That's a week of pure work."
+          "title": "Firmaregister gir ikke navn eller e-post",
+          "description": "Du kjøpte database med 5000 bedrifter for 500 kr. Flott, men hva nå? Du må ringe hver, spørre hvem som bestemmer, samle kontakter. Det er en uke rent arbeid."
         },
         {
-          "title": "Data is outdated or incomplete",
-          "description": "Phone to company outdated. Email bounces. Owner hasn't worked there for 2 years. You buy database, use 30% — the rest is junk data."
+          "title": "Data er utdatert eller ufullstendig",
+          "description": "Telefon til firma ugyldig. E-post bouncer. Eier jobber ikke der lenger. Du kjøper database, bruker 30% — resten er søppeldata."
         },
         {
-          "title": "No lead qualification",
-          "description": "Not every company in industry X is your client. Some have budget, others don't. Some have the problem you solve, others don't. Shot in the dark."
+          "title": "Mangler kvalifisering av leads",
+          "description": "Ikke alle bedrifter i bransje X er din kunde. Noen har budsjett, andre ikke."
         },
         {
-          "title": "Too much time on cold calling",
-          "description": "20 calls to reach 1 decision maker is not a scalable process. Especially if you're selling to EU/UK where nobody answers cold calls."
+          "title": "For mye tid på cold calling",
+          "description": "20 anrop for å nå 1 beslutningstaker er ikke skalerbar prosess."
         }
       ]
     },
     "solution": {
       "badge": "Solution",
       "title": "Database ready for cold outreach",
-      "subtitle": "Custom scrapers + AI qualification + decision maker research. You get names, emails, phones — not just tax IDs.",
+      "subtitle": "Custom scrapers + AI qualification + enrichment. You get verified B2B contact data.",
       "items": [
         {
-          "title": "Custom scraping",
+          "title": "Custom Scraping",
           "description": "We build dedicated scrapers for your market — Europe, UK, USA. No API limits.",
           "features": [
             "Any market (EU, UK, US)",
             "B2B and B2C niches",
-            "Data from directories, maps, industry sites",
+            "Data from directories, maps, industry portals",
             "Monthly updates",
             "Data ownership (not subscription)"
           ]
         },
         {
-          "title": "AI-powered qualification",
-          "description": "You won't get 10,000 unverified companies — you'll get 400 leads with names and emails of decision makers.",
+          "title": "AI-Powered Qualification",
+          "description": "You won't get 10,000 unverified companies — you'll get 400 verified leads with complete contact data.",
           "features": [
             "Filtering by company size",
             "Competition exclusion",
-            "Social media data enrichment",
+            "Social media enrichment",
             "Activity verification",
             "Potential score (lead scoring)"
           ]
         },
         {
-          "title": "Contact enrichment",
+          "title": "Contact Enrichment",
           "description": "For each company: contact data, email, phone. Ready for cold outreach.",
           "features": [
-            "Business email (verified)",
-            "Business phone",
-            "Business profiles",
-            "Publicly available data",
-            "Currency verification"
+            "Email (verified)",
+            "Direct phone",
+            "LinkedIn profiles",
+            "GDPR-compliant sources",
+            "Actuality verification"
           ]
         }
       ]
@@ -2572,275 +2184,411 @@
     "pricing": {
       "badge": "Pricing",
       "title": "You pay for quality, not quantity",
-      "subtitle": "Individually priced after briefing. Depends on database size, target markets, and qualification complexity.",
-      "setupLabel": "one-time",
-      "roiHint": "On average 70-80% of leads from our databases are first-time contacts (nobody wrote to them cold before). Your cold outreach has higher open rate because you're not the hundredth in line.",
+      "subtitle": "Priced individually after briefing. Depends on database size, target markets and qualification complexity.",
+      "setupLabel": "engangssum",
+      "roiHint": "I gjennomsnitt er 70-80% av leads fra våre databaser first-time kontakter (ingen har skrevet kaldt til dem før).",
       "packages": [
         {
           "name": "B2B Client Database",
           "tagline": "Custom scraping + enrichment",
-          "description": "We build database from scratch for your Ideal Customer Profile. Scrape, qualify, enrich. You get CSV ready for import to Instantly/Lemlist.",
-          "setup": "Quote after briefing",
+          "description": "We build database from scratch based on your Ideal Customer Profile. Scrape, qualify, enrich. You get CSV ready for import to Instantly/Lemlist.",
+          "setup": "Priced after briefing",
           "monthly": "",
           "monthlyLabel": "",
           "features": [
             "Briefing: ICP + markets + qualification criteria",
-            "Custom scraping (company directories, industry aggregators)",
-            "AI qualification (reject inactive/inappropriate)",
+            "Custom scraping (Google Maps, directories, LinkedIn)",
+            "AI qualification",
             "Contact data enrichment",
-            "Email enrichment + verification (deliverability check)",
+            "Email enrichment + verification",
             "Phone (if publicly available)",
             "CSV export (ready for Instantly/Lemlist/CRM)",
-            "Documentation (where data from, accuracy, date)"
+            "Documentation (sources, accuracy, date)"
           ],
-          "cta": "Schedule briefing",
+          "cta": "Book briefing",
           "popular": true
         }
       ]
     },
     "examples": {
       "badge": "Case study",
-      "title": "How we built 400+ lead database in 7 days",
-      "subtitle": "Mirco: Polish racing seat manufacturer looking for trade partners in EU/UK. Zero contacts, zero database.",
+      "title": "Hvordan vi bygget 400+ leads database på 7 dager",
+      "subtitle": "Mirco: polsk produsent av racingstoler søkte handelspartnere i EU/UK. Null kontakter, null database.",
       "items": [
         {
           "industry": "B2B Automotive",
-          "title": "Mirco — 400 tuning shop database EU/UK",
-          "description": "<div class='space-y-6'><div><h4 class='font-semibold text-foreground text-xl mb-3'>Problem</h4><ul class='space-y-2 text-base'><li><strong>No distribution channels:</strong> Mirco sold only through Allegro and own website. Zero trade partners (tuning shops, workshops)</li><li><strong>No contact database:</strong> Owner had no list of potential partners in EU/UK</li><li><strong>No time for prospecting:</strong> Calling around Europe and building relationships from scratch would take months</li><li><strong>Outdated sources:</strong> Public company databases contain only basic data without complete contact information</li></ul></div><div><h4 class='font-semibold text-foreground text-xl mb-3'>What we did</h4><ul class='space-y-2 text-base'><li><strong>Custom web scraper:</strong> Built scraper covering every EU country + UK. Sources: industry directories, niche automotive aggregators, publicly available company databases</li><li><strong>Competition mapping:</strong> Identified competition strategies (Polish, Chinese, premium Recaro brands). Mapped where they sell, through what channels, to whom</li><li><strong>AI-powered qualification:</strong> Automatic qualification — only shops selling seats (not tires, not detailing, not paint shops)</li><li><strong>Contact enrichment:</strong> Data enrichment from official trade registers, company databases, and business profiles</li><li><strong>Email verification:</strong> Business emails + deliverability check (verify emails are active, bounce rate <2%)</li><li><strong>CRM-ready export:</strong> CSV with columns: company, business email, phone, address, country</li></ul></div><div><h4 class='font-semibold text-foreground text-xl mb-3'>Results</h4><ul class='space-y-2 text-base'><li><strong>400+</strong> verified leads (tuning shops + custom workshops) in EU and UK</li><li><strong>95%</strong> accuracy (contact data manually verified in sample of 50 companies)</li><li><strong>27%</strong> open rate on first cold email campaign (industry average: 15-18%)</li><li><strong>7 business days</strong> from briefing to ready CSV delivery</li></ul></div></div>",
-          "url": "/case-study/mirco"
+          "title": "Mirco — Database of 400 tuning shops EU/UK",
+          "description": "Problem: Mirco sold only via Allegro and own website. Zero trade partners. Owner had no time to call through Europe. We did: custom scraping Google Maps + industry catalogs (EU + UK). AI qualification. Enrichment: contact data from public sources (BRREG for Norway, Companies House UK, LinkedIn). Email: extracted + verified. Result: 400+ verified leads with complete contact data. 27% open rate on first cold email campaign. 7 business days from brief to CSV delivery.",
+          "url": "https://www.marketing-intelligence.io/case-study/mirco",
+          "image": "/images/examples/mirco-database.png",
+          "testimonial": {
+            "quote": "Etter to måneder hadde jeg et ferdig system: database med 400 potensielle partnere i hele Europa, konfigurator som løser retur-problemet, og tre komplette strategier for nye salgskanaler.",
+            "author": "Mirek Macura",
+            "role": "Eier, Mirco"
+          }
         }
       ]
     },
     "process": {
-      "badge": "Process",
-      "title": "From briefing to ready database",
-      "subtitle": "Four steps. Average 7-14 business days (depends on database size and markets).",
+      "badge": "Prosess",
+      "title": "Fra briefing til ferdig database",
+      "subtitle": "Fire trinn. Gjennomsnittlig 7-14 arbeidsdager (avhenger av databasestørrelse og markeder).",
       "steps": [
         {
           "number": "01",
-          "title": "Target definition",
-          "description": "We discuss your Ideal Customer Profile (ICP): industry, location, company size, revenue. Set qualification criteria (e.g., only companies with >5 employees, only EU).",
-          "duration": "1h"
+          "title": "Måldefinisjon",
+          "description": "Vi diskuterer din Ideelle Kundeprofil (ICP): bransje, lokasjon, bedriftsstørrelse. Setter kvalifiseringskriterier.",
+          "duration": "1t"
         },
         {
           "number": "02",
-          "title": "Scraping + qualification",
-          "description": "Collect raw data from company directories, industry databases, and public registers. AI reviews each company (website, profile) and rejects inactive/inappropriate. Only those matching ICP remain.",
-          "duration": "3-7 days"
+          "title": "Scraping + kvalifisering",
+          "description": "Vi samler rådata (Google Maps, kataloger, LinkedIn). AI gjennomgår hver bedrift og forkaster inaktive/feil. Bare de som passer ICP blir igjen.",
+          "duration": "3-7 dager"
         },
         {
           "number": "03",
-          "title": "Enrichment (decision makers)",
-          "description": "For each company, find who decides (owner, manager). Sources: trade registers, official company databases, company websites. Collect business emails (extracted + verified).",
-          "duration": "2-5 days"
+          "title": "Anrikning (beslutningstakere)",
+          "description": "For hver bedrift finner vi hvem som bestemmer (eier, manager). Kilder: BRREG (NO), Companies House (UK), LinkedIn. Samler e-post (extracted + verified).",
+          "duration": "2-5 dager"
         },
         {
           "number": "04",
-          "title": "Delivery + documentation",
-          "description": "You get CSV with all fields (company, tax ID, decision maker, email, phone, location, scrape date). Plus documentation (data source, accuracy, % verification).",
-          "duration": "1 day"
+          "title": "Levering + dokumentasjon",
+          "description": "Du får CSV med alle felt (firma, org.nr, beslutningstaker, e-post, telefon, lokasjon, scrape-dato). Pluss dokumentasjon (kilder, nøyaktighet, % verifisering).",
+          "duration": "1 dag"
         }
       ]
     },
     "faq": {
       "badge": "FAQ",
-      "title": "Most common questions",
-      "subtitle": "Didn't find an answer? Write: hello@dealcatcher.io",
+      "title": "Ofte stilte spørsmål",
+      "subtitle": "Fant du ikke svar? Skriv: hello@dealcatcher.io",
       "items": [
         {
-          "question": "How accurate is the data?",
-          "answer": "Email verification rate: ~95% (only business emails that passed deliverability check). Decision maker accuracy: ~85-90% (depends on market and availability of official company registers). Phones: ~70% coverage (not all companies publish direct numbers)."
+          "question": "Hvor nøyaktige er dataene?",
+          "answer": "E-postverifiseringsrate: ~95%. Beslutningstaker-nøyaktighet: ~85-90% (for Norge/UK høyere pga. BRREG/Companies House). Telefoner: ~70% dekning."
         },
         {
-          "question": "Which markets do you cover?",
-          "answer": "EU (all countries), UK, Norway, USA. We work best in markets with open company registers (Norway, UK, Germany, France). Hardest: Italy, Spain (less open public data)."
+          "question": "Hvilke markeder støtter dere?",
+          "answer": "EU (alle land), UK, Norge, USA. Fungerer best på: Norge (BRREG = 95% nøyaktighet), UK (Companies House), Tyskland, Frankrike."
         },
         {
-          "question": "Can you update the database monthly?",
-          "answer": "Yes. Most clients do this quarterly or semi-annually (companies don't change that fast). But if you need monthly updates (e.g., fresh leads for cold outreach) — we can set it up as recurring service."
+          "question": "Kan dere oppdatere databasen månedlig?",
+          "answer": "Ja. De fleste klienter gjør det én gang per kvartal eller halvår (bedrifter endrer seg ikke så raskt). Men hvis du trenger månedlige oppdateringer — vi kan sette det opp som recurring service."
         },
         {
-          "question": "Is this legal (GDPR)?",
-          "answer": "We use only publicly available sources (company websites, official registers, industry directories). We don't collect private data. Final responsibility for GDPR compliance in cold outreach context lies with the client — we provide data, you decide how to use it according to laws in your country."
+          "question": "Er dette lovlig (GDPR)?",
+          "answer": "Ja. Vi samler bare offentlig tilgjengelige data (Google Maps, firmanettsider, handelsregistre). Cold outreach til B2B-bedrifter (til firmae-post, i forretningsøyemed) er lovlig i EU så lenge du gir opt-out — noe Instantly/Lemlist sikrer."
         },
         {
-          "question": "What if I need very niche target?",
-          "answer": "That's actually our strong suit. We've built databases for: EU tuning shops (Mirco), PL aesthetic medicine clinics, UK car restoration workshops, DE electrical wholesalers. If you can describe your ICP — we'll build the database."
+          "question": "Hva hvis jeg trenger svært nisjemålgruppe?",
+          "answer": "Det er faktisk vår sterke side. Vi har bygget databaser for: tuning-butikker EU (Mirco), klinikker for estetisk medisin PL, restaureringsverksteder UK, elektriske grossister DE."
         },
         {
-          "question": "What delivery format?",
-          "answer": "CSV (ready for import in Instantly, Lemlist, HubSpot, Pipedrive, Monday, Google Sheets). Columns: Company Name, Tax ID/VAT, Decision Maker (Name), Email, Phone, Website, Address, Industry, Employee Count (if available), Scrape Date, Source."
+          "question": "Hvilket format på leveranse?",
+          "answer": "CSV (klar til import i Instantly, Lemlist, HubSpot, Pipedrive, Monday, Google Sheets). Kolonner: Company Name, Org.nr/VAT, Decision Maker (Name), Email, Phone, Website, Address, Industry, Employee Count (hvis tilgjengelig), Scrape Date, Source."
         }
       ]
     },
     "cta": {
-      "title": "Let's talk about",
-      "titleHighlight": "your lead database",
-      "subtitle": "Schedule a free 30-minute briefing. We'll show sample databases, answer questions, and quote the project for your ICP.",
-      "ctaPrimary": "Schedule free briefing",
-      "ctaSecondary": "Write to us",
-      "disclaimer": "No commitment. Zero spam. We only talk to serious companies."
+      "title": "La oss snakke om",
+      "titleHighlight": "din leads-database",
+      "subtitle": "Bestill en gratis 30-minutters briefing. Vi viser eksempler på databaser, svarer på spørsmål og gir pristilbud for din ICP.",
+      "ctaPrimary": "Bestill gratis briefing",
+      "ctaSecondary": "Send oss en melding",
+      "disclaimer": "Ingen forpliktelse. Null spam. Vi snakker kun med seriøse bedrifter."
     }
   },
-  "konfiguratorFormularz": {
+  "narzedziaNaMiare": {
     "hero": {
-      "title": "Product configurator",
-      "titleHighlight": "that sells itself",
-      "description": "Customer sees what their custom product looks like — live, in 3D, every combination. No guessing, no \"you'll see in 2 days via email\". A configurator that turns browsers into buyers.",
-      "steps": [
-        {
-          "title": "Fill out the form",
-          "description": "Tell us about your product and customization options — takes only 5 minutes"
-        },
-        {
-          "title": "Schedule consultation call",
-          "description": "We'll learn about your business, see what product combinations you need"
-        },
-        {
-          "title": "Receive quote + roadmap",
-          "description": "You'll get detailed configurator plan and implementation timeline"
-        }
-      ]
-    },
-    "form": {
-      "heading": "Tell us about your product"
-    },
-    "faq": {
-      "title": "Most frequently asked",
-      "titleHighlight": "questions",
-      "subtitle": "Everything you need to know about the consultation process",
-      "items": [
-        {
-          "question": "Does the form commit me to anything?",
-          "answer": "No, filling out the form is just the first step — zero commitment, zero deposits. After submission, we'll schedule a consultation call, show how the configurator can work in your business, and present a quote. Only then do you decide whether to proceed."
-        },
-        {
-          "question": "What happens after filling out the form?",
-          "answer": "We'll contact you within 24h (business days). We'll schedule a consultation call (15–30 min), during which we'll learn about your product, customization options, and business goals for the configurator. Then you'll receive a quote + implementation plan."
-        },
-        {
-          "question": "What does the consultation call look like?",
-          "answer": "It's a workshop conversation, not a sales call. We ask about your product: What are the customization options? Who buys? How many combinations need to be shown? Where do customers order (shop, distributors)? Do you need system integration? Based on this, we quote and plan the configurator."
-        },
-        {
-          "question": "How long does the whole process take?",
-          "answer": "From form to quote: 2–3 days. From quote acceptance to ready configurator: 4–12 weeks (depends on complexity). Simple configurators (color + text) are done in 4 weeks. Advanced with 3D and integrations — 8–12 weeks. You get exact timeline in consultation."
-        },
-        {
-          "question": "Do I need ready photos/product descriptions?",
-          "answer": "No, for consultation it's enough to tell about product and customization options. Photos, descriptions, specifications we'll collect later, before project start. If you have them — great, we'll use them. If not — we'll advise what to prepare."
-        },
-        {
-          "question": "What will I get after the consultation call?",
-          "answer": "Detailed quote (how much configurator costs for your product), implementation timeline (how many weeks it takes to build), feature list (what exactly you get), examples (similar configurators we've made). Everything in writing, no surprises."
-        },
-        {
-          "question": "What if I change my mind after consultation?",
-          "answer": "That's fine! Consultation is free and without commitment. If quote doesn't fit budget, or configurator isn't what you need — just say thanks and that's where we end. No pressure, no weird questions."
-        }
-      ]
-    },
-    "examples": {
-      "title": "Configurators we've",
-      "titleHighlight": "created",
-      "subtitle": "See our recent implementations",
-      "cta": "See case study",
-      "items": [
-        {
-          "title": "Mirco — Racing Seat Configurator",
-          "description": "3D configurator with real-time preview. Customer chooses model, material, thread color, logo, accessories — sees result live. Integration with production system (export to .gbl).",
-          "image": "/images/examples/mirco-configurator.png",
-          "url": "/case-study/mirco"
-        },
-        {
-          "title": "Premium Memorial Candle Configurator — 3D Preview",
-          "description": "Configurator with 3D visualization in real time. Customer designs candle: size, text, font, color, alignment. Production integration, export to .gbl.",
-          "image": "/images/examples/candle-configurator1.png",
-          "url": "/case-study/candle-configurator"
-        }
-      ]
-    }
-  },
-  "materialySprzedazowe": {
-    "hero": {
-      "badge": "Sales Materials & Copywriting",
-      "titleStart": "Sales copy that sounds like you,",
-      "titleHighlight": "not like AI",
-      "subtitle": "Norwegians can spot AI-generated copy from a mile away. Your B2B clients too. We write sales materials that sound natural and convert.",
-      "cta": "See case study",
+      "badge": "Custom Tools",
+      "titleStart": "Fra kalkulatorer til B2B-portaler —",
+      "titleHighlight": "verktøy skreddersydd",
+      "subtitle": "Excel er ikke nok. Klare SaaS passer ikke. Du trenger noe unikt for din virksomhet. Vi bygger dedikerte verktøy som automatiserer prosesser og øker salget.",
+      "cta": "Se eksempler",
       "stats": [
         {
-          "value": 27,
+          "value": 60,
           "suffix": "%",
-          "label": "influencer conversion rate (Mirco)"
+          "label": "tidsbesparelse etter automat."
         },
         {
-          "value": 3,
-          "suffix": "x",
-          "label": "communication frameworks (different channels)"
-        },
-        {
-          "value": 400,
-          "suffix": "+",
-          "label": "leads from cold campaign (Mirco)"
+          "value": 4,
+          "suffix": " uker",
+          "label": "gj.snitt impl.tid (MVP)"
         }
       ]
     },
     "problem": {
       "badge": "Problem",
-      "title": "AI-generated copy sounds artificial",
-      "subtitle": "ChatGPT writes fast, but sounds like a template. Norwegians can tell. Your B2B clients too. Result? Email goes to spam (mentally or literally).",
+      "title": "Klare løsninger passer ikke",
+      "subtitle": "SaaS er generiske. Din virksomhet er unik. Du prøver å presse prosesser inn i klare verktøy i stedet for å bygge verktøy for prosessen.",
       "items": [
         {
-          "title": "AI-generated copy sounds like a template",
-          "description": "\"Hi! I saw your profile and thought...\" — everyone knows it's AI. Norwegians are especially sensitive (Janteloven culture: zero hype, zero overselling). Such email goes to trash."
+          "title": "Excel er ikke nok lenger",
+          "description": "Du starter dagen med å oppdatere 5 ark. Formler ødelegges. Samarbeid umulig (hvem har nyeste versjon?). Dette er ikke skalerbar system."
         },
         {
-          "title": "Norwegians (and others) sense artificiality",
-          "description": "Perfect structure. Elevator pitch in first paragraph. CTA at the end. All of this screams \"automation\". People want to feel you're writing to them, not to a database of 1000 contacts."
+          "title": "Klare SaaS passer ikke prosessen din",
+          "description": "Du betaler 200 €/md for verktøy du bruker 30% av. Mangler nøkkelfunksjoner. Workarounds og manuelt arbeid fyller hullene."
         },
         {
-          "title": "You don't have time for writing",
-          "description": "You have 200 leads to process. Each needs personalized email. You'd sit for a week. Delegating to AI gives template. Delegating to copywriter who doesn't know your business gives generalities."
+          "title": "Integrasjoner er dyre og upålitelige",
+          "description": "Du vil koble CRM med lager og regnskapssystem. Zapier koster formue og krasjer regelmessig. Data forsvinner mellom systemene."
         },
         {
-          "title": "Each channel needs different tone",
-          "description": "Cold email to B2B is not the same as message to influencer. It's not the same as offer for retail. One tone of voice doesn't work everywhere. You need communication frameworks for each segment."
+          "title": "Du trenger noe unikt",
+          "description": "Prosessen din er spesifikk. Kundene dine har unike behov. Klare løsninger gir ikke deg konkurransefortrinn — alle kan kjøpe dem."
         }
       ]
     },
     "solution": {
-      "badge": "Solution",
-      "title": "Copy that sounds like you",
-      "subtitle": "We write sales materials for your tone of voice, your product, your segment. Without AI-sounding BS.",
+      "badge": "Løsning",
+      "title": "4 kategorier verktøy vi bygger",
+      "subtitle": "Fra enkle kalkulatorer til komplekse B2B-portaler. Alt tilpasset, alt etter dine behov.",
       "items": [
         {
-          "title": "Cold email sequences",
-          "description": "3-5 email sequences that sound like you, not like LinkedIn template.",
+          "title": "Calculators & Simulators",
+          "description": "ROI, quotes, option comparison — tools that sell for you.",
           "features": [
-            "Framework tailored to group (influencers/B2B/retail)",
-            "A/B test versions",
+            "ROI calculator for your service",
+            "Real-time pricing",
+            "Package/variant comparison",
+            "Lead capture + email with result",
+            "Conversion tracking"
+          ]
+        },
+        {
+          "title": "Web Applications",
+          "description": "From booking systems to CRM — tools tailored to your workflow.",
+          "features": [
+            "Booking & reservations",
+            "B2B customer portals",
+            "Mini-CRM for management",
+            "Integrations (email, payments, API)",
+            "Mobile-first design"
+          ]
+        },
+        {
+          "title": "Dashboards & Panels",
+          "description": "Metrics, reports, management — everything in one place instead of 5 tools.",
+          "features": [
+            "Real-time KPI dashboard",
+            "Automatic reports (PDF, email)",
+            "Team/project management",
+            "Google Analytics, CRM integration",
+            "Custom views per role"
+          ]
+        }
+      ]
+    },
+    "pricing": {
+      "badge": "Pris",
+      "title": "Workshop → Prototype → Implementering",
+      "subtitle": "Hvert verktøy prissettes individuelt. Vi starter med workshop for å forstå prosessen din og nøyaktig prissette prosjektet.",
+      "setupLabel": "innledende workshop",
+      "roiHint": "Workshopen er gratis og uten forpliktelse. Etter workshop får du detaljert pristilbud tilpasset prosjektomfang.",
+      "packages": [
+        {
+          "name": "Samarbeidsprosess",
+          "tagline": "Fra workshop til fungerende verktøy",
+          "description": "Hvert verktøy er unikt tilfelle. Vi starter med grundig forståelse av prosessen og forretningsbehovene dine.",
+          "setup": "Gratis",
+          "monthly": "Pris etter workshop",
+          "monthlyLabel": "",
+          "features": [
+            "Discovery workshop (1-2t, eksternt eller hos deg)",
+            "Kartlegging av forretningsprosess",
+            "Identifisering av flaskehalser og behov",
+            "Prototype/mockup av verktøy (til godkjenning)",
+            "Detaljert pristilbud + tidslinje",
+            "Teknologiforslag og integrasjoner",
+            "Bygging av MVP (4-8 uker) + iterasjoner",
+            "Hosting + teknisk support (valgfritt)"
+          ],
+          "cta": "Bestill workshop",
+          "popular": true
+        }
+      ]
+    },
+    "examples": {
+      "badge": "Eksempler",
+      "title": "Verktøy vi har bygget",
+      "subtitle": "Fra travel app til B2B-portaler for hundrevis av partnere. Hver løsning skreddersydd for spesifikke behov.",
+      "items": [
+        {
+          "industry": "SaaS / Travel",
+          "title": "Travel App — Kundereiseadministrasjon",
+          "description": "Problem: reisebyrå administrerte bestillinger via Excel og e-post. Kaos, feil, ingen synlighet for kunder. Vi bygget webapp hvor hver kunde har innlogging, ser bestillinger, itineraries, dokumenter. Byrået administrerer alt fra ett panel. Integrasjon med Gmail, Google Calendar, PDF-generering. Resultat: 60% tidsbesparelse på kundeservice, null feil i bestillinger.",
+          "url": "#",
+          "image": "/images/examples/travel-app.png"
+        },
+        {
+          "industry": "E-commerce / FMCG / Compliance",
+          "title": "ROP Calculator — Packaging Fees 2026-2028",
+          "description": "For Polish e-commerce and FMCG companies, we created an ROP calculator (Extended Producer Responsibility). The tool calculates annual packaging costs for 2026-2028, compares materials (cardboard/plastic/glass), shows savings when switching materials, and generates PDF report. Pure frontend, zero backend costs.",
+          "url": "#",
+          "image": "/images/examples/rop-calculator.jpg",
+          "aspectRatio": "4/1"
+        }
+      ]
+    },
+    "process": {
+      "badge": "Prosess",
+      "title": "Fra idé til fungerende verktøy",
+      "subtitle": "Iterativ prosess. Vi starter med MVP (Minimum Viable Product), så utvider vi.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Discovery workshop",
+          "description": "Vi diskuterer forretningsprosessen din, problemer, behov. Identifiserer hva verktøyet må gjøre (must-have) vs hva som ville vært fint (nice-to-have).",
+          "duration": "1-2t"
+        },
+        {
+          "number": "02",
+          "title": "Prototype/Mockup",
+          "description": "Vi designer verktøyets grensesnitt (hvordan det ser ut, hvordan bruker samhandler). Viser deg mockup/prototype til godkjenning.",
+          "duration": "3-7 dager"
+        },
+        {
+          "number": "03",
+          "title": "Bygging av MVP",
+          "description": "Vi koder enkleste versjonen som løser kjerneproblemet ditt. MVP = fungerer, gjør det viktigste, men uten bells & whistles. Du tester, gir feedback, vi itererer.",
+          "duration": "4-8 uker"
+        },
+        {
+          "number": "04",
+          "title": "Iterasjoner & Launch",
+          "description": "Vi utvider verktøyet (ekstra funksjoner, integrasjoner, UX-forbedringer). Implementerer i produksjon. Lærer deg hvordan du bruker det. Valgfritt: hosting + teknisk support.",
+          "duration": "2-4 uker"
+        }
+      ]
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Ofte stilte spørsmål",
+      "subtitle": "Fant du ikke svar? Skriv: hello@dealcatcher.io",
+      "items": [
+        {
+          "question": "Hvor mye koster det?",
+          "answer": "Avhenger av kompleksitet. Enkel kalkulator: 3-5k kr. Webapp med integrasjoner: 15-30k kr. B2B-portal for hundrevis av brukere: 40-80k kr. Du får nøyaktig pris etter workshop."
+        },
+        {
+          "question": "Hvor lang tid tar implementering?",
+          "answer": "MVP tar vanligvis 4-8 uker. Full implementering med alle funksjoner: 8-16 uker (avhenger av kompleksitet). Vi jobber iterativt — først leverer vi fungerende MVP, så utvider vi."
+        },
+        {
+          "question": "Kan jeg redigere verktøyet selv?",
+          "answer": "Avhenger av type. For kalkulatorer og enkle apper — vi leverer admin-panel hvor du kan redigere parametere, tekster, priser. For komplekse systemer — endringer gjøres av programmerere."
+        },
+        {
+          "question": "Hva hvis kravene endres underveis?",
+          "answer": "Det er normalt — de fleste prosjekter utvikler seg underveis i byggingen. Derfor jobber vi iterativt (MVP → feedback → utvidelse). Små endringer (andre tekster, ekstra felt) inkluderer vi. Store (ny funksjonalitet) prissetter vi separat."
+        },
+        {
+          "question": "Hvem hoster verktøyet?",
+          "answer": "Tre alternativer: 1) Vi hoster (månedlig abonnement, vi håndterer alt). 2) Du hoster (vi leverer kode, ditt team administrerer). 3) Sammen (vi setter opp, du betaler direkte for servere f.eks. AWS). Vanligvis anbefaler vi alternativ 1."
+        },
+        {
+          "question": "Hvilke teknologier bruker dere?",
+          "answer": "Next.js + React (frontend), Node.js / Python (backend), PostgreSQL / MongoDB (database), AWS / Vercel (hosting). For enkle verktøy: bare frontend (statisk HTML/JS). Vi velger teknologi for prosjektet."
+        },
+        {
+          "question": "Lager dere mobilapper (iOS/Android)?",
+          "answer": "Vi bygger ikke native mobilapper (iOS/Android). Men de fleste verktøyene våre er Progressive Web Apps (PWA) — fungerer i nettleser, men ser ut og oppfører seg som mobilapper. 90% av tilfellene er PWA nok."
+        }
+      ]
+    },
+    "cta": {
+      "title": "La oss snakke om",
+      "titleHighlight": "ditt verktøy",
+      "subtitle": "Bestill en gratis 30-minutters konsultasjon. Vi viser eksempler, svarer på spørsmål og gir pristilbud for din virksomhet.",
+      "ctaPrimary": "Bestill gratis konsultasjon",
+      "ctaSecondary": "Send oss en melding",
+      "disclaimer": "Ingen forpliktelse. Null spam. Vi snakker kun med seriøse bedrifter."
+    }
+  },
+  "materialySprzedazowe": {
+    "hero": {
+      "badge": "Sales Materials & Copywriting",
+      "titleStart": "Salgskopi som låter som deg,",
+      "titleHighlight": "ikke som AI",
+      "subtitle": "Nordmenn oppdager AI-generert kopi på én kilometer. Dine B2B-kunder også. Vi skriver salgsmateriell som låter naturlig og konverterer.",
+      "cta": "Se case study",
+      "stats": [
+        {
+          "value": 27,
+          "suffix": "%",
+          "label": "conversion rate influencere (Mirco)"
+        },
+        {
+          "value": 3,
+          "suffix": "x",
+          "label": "kommunikasjonsrammeverk (ulike kanaler)"
+        },
+        {
+          "value": 400,
+          "suffix": "+",
+          "label": "leads fra kald kampanje (Mirco)"
+        }
+      ]
+    },
+    "problem": {
+      "badge": "Problem",
+      "title": "AI-generert kopi låter kunstig",
+      "subtitle": "ChatGPT skriver raskt, men låter som mal. Nordmenn oppdager dette. Dine B2B-kunder også. Resultat? E-post går til spam (mentalt eller bokstavelig talt).",
+      "items": [
+        {
+          "title": "AI-generert kopi låter som mal",
+          "description": "\"Hei! Jeg så profilen din og tenkte at...\" — alle vet at dette er AI. Nordmenn er spesielt følsomme (Janteloven-kultur: null hype, null oversalg). Slik e-post går i søpla."
+        },
+        {
+          "title": "Nordmenn (og andre) oppdager kunstighet",
+          "description": "Perfekt struktur. Elevator pitch i første avsnitt. CTA på slutten. Alt dette skriker \"automatisering\". Folk vil føle at du skriver til dem, ikke til database med 1000 kontakter."
+        },
+        {
+          "title": "Du har ikke tid til å skrive",
+          "description": "Du har 200 leads å ta deg av. Hver trenger personlig e-post. Alene ville du sittet en uke. Delegering til AI gir mal. Delegering til tekstforfatter som ikke kjenner virksomheten din gir generikk."
+        },
+        {
+          "title": "Hver kanal trenger annen tone",
+          "description": "Kald e-post til B2B er ikke det samme som melding til influencer. Ikke det samme som tilbud til retail. Én tone of voice fungerer ikke overalt. Du trenger kommunikasjonsrammeverk for hvert segment."
+        }
+      ]
+    },
+    "solution": {
+      "badge": "Løsning",
+      "title": "Kopi som låter som deg",
+      "subtitle": "Vi skriver salgsmateriell under din tone of voice, ditt produkt, ditt segment. Uten AI-sounding bullshit.",
+      "items": [
+        {
+          "title": "Cold Email Sequences",
+          "description": "3-5 email sequences that sound like you, not like a LinkedIn template.",
+          "features": [
+            "Framework tailored to segment (influencers/B2B/retail)",
+            "A/B testing versions",
             "Follow-up timing strategy",
             "Converting CTAs",
             "PL/NO/EN versions"
           ]
         },
         {
-          "title": "Sales messaging frameworks",
-          "description": "Not one email — entire communication framework for different segments and channels.",
+          "title": "Sales Messaging Frameworks",
+          "description": "Not one email — complete communication framework for different segments and channels.",
           "features": [
             "3-5 frameworks for different personas",
-            "Value proposition for each segment",
+            "Value proposition per segment",
             "Objection handling",
             "Tone of voice guide",
             "Examples for each channel"
           ]
         },
         {
-          "title": "Landing page copy",
-          "description": "Sales copy for landing page — without AI sound, with data and case studies.",
+          "title": "Landing Page Copy",
+          "description": "Sales copy for landing pages — without AI sound, with data and case studies.",
           "features": [
-            "Hero section with measurement",
+            "Hero section with measurable numbers",
             "Problem-solution structure",
             "Social proof + case studies",
             "FAQ handling objections",
@@ -2850,192 +2598,180 @@
       ]
     },
     "pricing": {
-      "badge": "Pricing",
-      "title": "Per-project or retainer",
-      "subtitle": "You can order one-time project (e.g., cold email campaign) or monthly retainer (continuous material delivery).",
-      "setupLabel": "one-time",
-      "roiHint": "Most clients start with one-time project (cold email sequence or landing page). If it works — they move to retainer (permanent copywriter at hand).",
+      "badge": "Pris",
+      "title": "Per-prosjekt eller retainer",
+      "subtitle": "Du kan bestille engangsprosjekt (f.eks. cold email-kampanje) eller månedlig retainer (kontinuerlig levering av materialer).",
+      "setupLabel": "engangssum",
+      "roiHint": "De fleste klienter starter med engangsprosjekt (cold email sequence eller landing page). Hvis det fungerer — går de over til retainer (fast tekstforfatter på hånd).",
       "packages": [
         {
-          "name": "Copywriting per-project",
-          "tagline": "One-time project",
-          "description": "You order specific deliverable: cold email sequence, landing page copy, pitch deck, partner materials. We deliver ready copy + revisions.",
-          "setup": "1,999 – 7,999 PLN",
+          "name": "Copywriting per-prosjekt",
+          "tagline": "Engangsprosjekt",
+          "description": "Du bestiller konkret leveranse: cold email sequence, landing page copy, pitch deck, materialer for partnere. Vi leverer ferdig kopi + revisjoner.",
+          "setup": "1 999 – 7 999 kr",
           "monthly": "",
           "monthlyLabel": "",
           "features": [
-            "Briefing (your product, ICP, tone of voice)",
-            "Research (competition, channel, best practices)",
-            "Draft copy (first version for review)",
-            "2 revision rounds (corrections + feedback)",
-            "Final version (ready to use)",
-            "Documentation (e.g., how to use framework)",
-            "Timeline: 5-10 business days"
+            "Briefing (ditt produkt, ICP, tone of voice)",
+            "Research (konkurrenter, kanal, beste praksis)",
+            "Utkast-kopi (første versjon til gjennomgang)",
+            "2 runder revisjoner (rettelser + feedback)",
+            "Endelig versjon (klar til bruk)",
+            "Dokumentasjon (f.eks. instruksjon hvordan bruke rammeverk)",
+            "Tidslinje: 5-10 arbeidsdager"
           ],
-          "cta": "Schedule briefing",
+          "cta": "Bestill briefing",
           "popular": false
         },
         {
           "name": "Copywriting retainer",
-          "tagline": "Monthly collaboration",
-          "description": "Permanent copywriter at hand. Every month we deliver X materials (emails, landing pages, posts, pitch decks). Priority in queue.",
+          "tagline": "Månedlig samarbeid",
+          "description": "Fast tekstforfatter på hånd. Hver måned leverer vi X materialer (e-post, landing pages, innlegg, pitch decks). Prioritet i køen.",
           "setup": "",
-          "monthly": "1,999 – 4,999 PLN",
-          "monthlyLabel": "/month",
+          "monthly": "1 999 – 4 999 kr",
+          "monthlyLabel": "/md",
           "features": [
-            "Fixed monthly hour package",
-            "Priority treatment (max 24h to draft)",
-            "Unlimited revisions (within package)",
-            "All channels (email, landing pages, sales materials)",
-            "Copywriter access via Slack/email",
-            "Monthly reporting (what we did, performance if you measure)",
-            "Can cancel anytime (30 days notice)"
+            "Avtalt timepakke månedlig",
+            "Prioritert behandling (maks 24t til utkast)",
+            "Ubegrensede revisjoner (innenfor pakken)",
+            "Alle kanaler (e-post, landing pages, salgsmateriell)",
+            "Tilgang til tekstforfatter via Slack/e-post",
+            "Månedlig rapportering (hva vi gjorde, ytelse hvis du måler)",
+            "Kan kanselleres når som helst (30 dagers oppsigelse)"
           ],
-          "cta": "Schedule briefing",
+          "cta": "Bestill briefing",
           "popular": true
         }
       ]
     },
     "examples": {
       "badge": "Case study",
-      "title": "How we wrote copy for 3 sales channels",
-      "subtitle": "Mirco: racing seats. Motorsport influencers ≠ tuning shops ≠ restoration workshops. Same product, 3 different languages.",
+      "title": "Hvordan vi skrev kopi for 3 salgskanaler",
+      "subtitle": "Mirco: racingstoler. Motorsport-influencere ≠ tuning-butikker ≠ restaureringsverksteder. Samme produkt, 3 forskjellige språk.",
       "items": [
         {
           "industry": "B2B Automotive",
-          "title": "Mirco — 3 communication frameworks",
-          "description": "Problem: Mirco had 1 product (FIA racing seats), but 3 different customer segments: 1) Motorsport influencers (need product for content, commission, marketing support). 2) Tuning shops (looking for margin, sales support, white-label). 3) Restoration workshops (want premium product for demanding clients). We made: 3 separate communication frameworks (cold email sequences + pitch materials). Each channel has its language, its pain points, its value prop. Result: 27% influencers interested in cooperation (Framework I), 400 tuning shops added to database (Framework II), 15% workshops responded to cold emails (Framework III). Open rates: 45-60% (because doesn't sound like template).",
-          "url": "/case-study/mirco",
+          "title": "Mirco — 3 kommunikasjonsrammeverk",
+          "description": "Problem: Mirco hadde 1 produkt (FIA racingstoler), men 3 forskjellige kundesegmenter: 1) Motorsport-influencere (trenger produkt for innhold, provisjon, markedsføringsstøtte). 2) Tuning-butikker (søker margin, salgsstøtte, white-label). 3) Restaureringsverksteder (ønsker premium produkt for krevende kunder). Vi gjorde: 3 separate kommunikasjonsrammeverk (cold email sequences + pitch materials). Hver kanal har sitt språk, sine pain points, sin value prop. Resultat: 27% influencere interessert (Framework I), 400 tuning-butikker lagt til database (Framework II), 15% verksteder svarte på kalde e-poster (Framework III). Åpningsrater: 45-60% (fordi det ikke låter som mal).",
+          "url": "https://www.marketing-intelligence.io/case-study/mirco",
           "image": "/images/examples/mirco-copy.png",
           "testimonial": {
-            "quote": "I came with falling sales problem and no idea what next. After two months I had ready system: database of 400 potential partners across Europe, configurator solving returns problem, and three complete sales strategies ready for implementation.",
+            "quote": "Jeg kom med problem med fallende salg og null idé om hva jeg skulle gjøre. Etter to måneder hadde jeg et ferdig system: database med 400 potensielle partnere i hele Europa, konfigurator og tre komplette strategier for nye salgskanaler.",
             "author": "Mirek Macura",
-            "role": "Owner, Mirco"
+            "role": "Eier, Mirco"
           }
         }
       ]
     },
     "process": {
-      "badge": "Process",
-      "title": "From brief to ready copy",
-      "subtitle": "Simple process: brief → research → draft → revisions → delivery.",
+      "badge": "Prosess",
+      "title": "Fra brief til ferdig kopi",
+      "subtitle": "Enkel prosess: brief → research → utkast → revisjoner → levering.",
       "steps": [
         {
           "number": "01",
           "title": "Brief",
-          "description": "We talk about your product/service, Ideal Customer Profile (ICP), tone of voice, distribution channel. Set what exactly we're writing (cold email, landing page, pitch deck).",
+          "description": "Vi diskuterer produktet/tjenesten din, Ideell Kundeprofil (ICP), tone of voice, distribusjonskanal. Setter hva vi skriver nøyaktig (kald e-post, landing page, pitch deck).",
           "duration": "30-60 min"
         },
         {
           "number": "02",
           "title": "Research",
-          "description": "We check competition (how they communicate), channel (what works in cold email / landing pages), best practices. If it's Norway — adjust to Janteloven culture (zero hype, underselling, transparency).",
-          "duration": "1-2 days"
+          "description": "Vi sjekker konkurrenter (hvordan de kommuniserer), kanal (hva som fungerer i cold email / landing pages), beste praksis. Hvis det er Norge — tilpasser vi til Janteloven-kultur (null hype, undersalg, åpenhet).",
+          "duration": "1-2 dager"
         },
         {
           "number": "03",
-          "title": "Draft",
-          "description": "We write first version of copy. Send to you for review. You collect feedback (what to change, what to keep). Usually after 1 revision it's ready.",
-          "duration": "2-4 days"
+          "title": "Utkast",
+          "description": "Vi skriver første versjon av kopi. Sender til deg for gjennomgang. Du samler feedback (hva endres, hva beholdes). Vanligvis etter 1 revisjon er det klart.",
+          "duration": "2-4 dager"
         },
         {
           "number": "04",
-          "title": "Delivery",
-          "description": "We deliver final version + documentation (e.g., how to use framework, how to personalize emails). If it's email campaign — deliver in format ready for Instantly/Lemlist.",
-          "duration": "1 day"
+          "title": "Levering",
+          "description": "Vi leverer endelig versjon + dokumentasjon (f.eks. hvordan bruke rammeverk, hvordan personalisere e-post). Hvis det er e-postkampanje — leverer vi i format klart til Instantly/Lemlist.",
+          "duration": "1 dag"
         }
       ]
     },
     "faq": {
       "badge": "FAQ",
-      "title": "Most common questions",
-      "subtitle": "Didn't find an answer? Write: hello@dealcatcher.io",
+      "title": "Ofte stilte spørsmål",
+      "subtitle": "Fant du ikke svar? Skriv: hello@dealcatcher.io",
       "items": [
         {
-          "question": "How many revision rounds do I get?",
-          "answer": "Per-project: 2 revision rounds (most clients finish after 1). Retainer: unlimited revisions within hour package. Revision is corrections in existing copy (change CTA, different structure, other words). If you want completely new copy (different approach) — that's new project."
+          "question": "Hvor mange revisjonsrunder får jeg?",
+          "answer": "Per-prosjekt: 2 revisjonsrunder (de fleste klienter avslutter etter 1). Retainer: ubegrensede revisjoner innenfor timepakke. Revisjon er rettelser i eksisterende kopi (endring CTA, annen struktur, andre ord). Hvis du vil helt ny kopi (annet tilnærming) — det er nytt prosjekt."
         },
         {
-          "question": "Do you write in Norwegian?",
-          "answer": "Yes. Norwegian business culture (Janteloven) requires specific approach: zero hype, underselling instead of overselling, transparency, giving reader autonomy. We have experience writing cold emails to Norwegian companies (Framework I for Mirco worked great)."
+          "question": "Skriver dere på norsk?",
+          "answer": "Ja. Norsk forretningskultur (Janteloven) krever spesifikk tilnærming: null hype, undersalg i stedet for oversalg, åpenhet, gi leser autonomi. Vi har erfaring med å skrive kalde e-poster til norske bedrifter (Framework I for Mirco fungerte utmerket)."
         },
         {
-          "question": "What if I need changes later?",
-          "answer": "Per-project: minor changes (typos, price update) we do free for 30 days. Bigger changes (new section, different structure) is separate quote. Retainer: all changes included in monthly package — you have copywriter at hand."
+          "question": "Hva hvis jeg trenger endringer senere?",
+          "answer": "Per-prosjekt: mindre endringer (skrivefeil, prisoppdatering) gjør vi gratis i 30 dager. Større endringer (ny seksjon, annen struktur) er separat pris. Retainer: alle endringer inngår i månedlig pakke — du har tekstforfatter på hånd."
         },
         {
-          "question": "Do you also write copy for Google Ads / Facebook Ads?",
-          "answer": "Yes. Ad copy is separate service (short texts, but require A/B testing and optimization). Usually we do this as part of retainer (monthly we deliver X ad copy variants, you test, we report what works)."
+          "question": "Skriver dere også kopi til Google Ads / Facebook Ads?",
+          "answer": "Ja. Annonsekopi er separat tjeneste (korte tekster, men krever A/B-testing og optimalisering). Vanligvis gjør vi dette som del av retainer (månedlig leverer vi X varianter annonsekopi, du tester, vi rapporterer hva som fungerer)."
         },
         {
-          "question": "How do I measure copy performance?",
-          "answer": "Depends on channel. Cold email: open rate, reply rate, meeting booked rate. Landing page: conversion rate, time on page, bounce rate. Sales materials (pitch decks): feedback from partners, how many signed contract. We deliver copy — you measure performance. We can help setup tracking (e.g., UTM parameters, Google Analytics)."
+          "question": "Hvordan måler jeg ytelsen til kopi?",
+          "answer": "Avhenger av kanal. Kald e-post: åpningsrate, svarrate, møte booket rate. Landing page: konverteringsrate, tid på side, bounce rate. Salgsmateriell (pitch decks): feedback fra partnere, hvor mange av dem signerte avtale. Vi leverer kopi — du måler ytelse. Vi kan hjelpe med oppsett av tracking (f.eks. UTM-parametere, Google Analytics)."
         },
         {
-          "question": "What if I have very niche product?",
-          "answer": "That's actually our strong suit. We've written copy for: FIA racing seats, B2B scrapers, ROI calculators, travel app, influencer portals. If you can describe your product and ICP — we'll write copy that sells."
+          "question": "Hva hvis jeg har svært nisjeproduk?",
+          "answer": "Det er faktisk vår sterke side. Vi har skrevet kopi for: FIA racingstoler, B2B-scrapers, ROI-kalkulatorer, travel app, influencer-portaler. Hvis du kan beskrive produktet og ICP — skriver vi kopi som selger."
         }
       ]
     },
     "cta": {
-      "title": "Let's talk about",
-      "titleHighlight": "your copy",
-      "subtitle": "Schedule a free 30-minute briefing. We'll show examples, answer questions, and quote project for your business.",
-      "ctaPrimary": "Schedule free briefing",
-      "ctaSecondary": "Write to us",
-      "disclaimer": "No commitment. Zero spam. We only talk to serious companies."
+      "title": "La oss snakke om",
+      "titleHighlight": "din kopi",
+      "subtitle": "Bestill en gratis 30-minutters briefing. Vi viser eksempler, svarer på spørsmål og gir pristilbud for din virksomhet.",
+      "ctaPrimary": "Bestill gratis briefing",
+      "ctaSecondary": "Send oss en melding",
+      "disclaimer": "Ingen forpliktelse. Null spam. Vi snakker kun med seriøse bedrifter."
     }
   },
   "mircoCaseStudy": {
     "backToPortfolio": "Back to portfolio",
     "badge": "Case Study",
     "hero": {
-      "title": "How in 2 months we built a seat manufacturer",
-      "titleHighlight": "complete partner acquisition system",
-      "description": "Mirco — Polish racing seat manufacturer with 30-year history — came with falling sales and no idea for new channels. Left with 400+ distributor database, product configurator, and affiliate portal.",
+      "title": "How we built a racing seat manufacturer",
+      "titleHighlight": "a complete partner acquisition system in 2 months",
+      "description": "Mirco — a Polish racing seat manufacturer with a 30-year history — came with declining sales and no plan for new channels. Left with a database of 400+ distributors, product configurator, and affiliate portal.",
       "companyDetails": [
         "Racing seat manufacturer",
         "Since 1995 (~30 years)",
         "Skoczów, Poland",
-        "~15 people"
+        "~15 employees"
       ],
       "stats": [
-        {
-          "value": "400+",
-          "label": "distributors in database"
-        },
-        {
-          "value": "27%",
-          "label": "influencers interested"
-        },
-        {
-          "value": "3",
-          "label": "new sales channels"
-        },
-        {
-          "value": "2 months",
-          "label": "implementation time"
-        }
+        { "value": "400+", "label": "distributors in database" },
+        { "value": "27%", "label": "influencers interested" },
+        { "value": "3", "label": "new sales channels" },
+        { "value": "2 mo.", "label": "delivery time" }
       ]
     },
     "problem": {
-      "title": "Problem",
+      "title": "The Problem",
       "challenges": [
         {
-          "title": "Falling sales:",
-          "description": "Downward trend, existing channels exhausting. Mirek saw the problem but didn't know how to reverse it without external help."
+          "title": "Declining sales:",
+          "description": "Downward trend, existing channels exhausted. Mirek saw the problem but didn't know how to reverse it without external help."
         },
         {
-          "title": "No strategy:",
-          "description": "Mirek is manufacturer — knows seats, not marketing. Had idea for premium brand, made logo, but project stalled."
+          "title": "Lack of strategy:",
+          "description": "Mirek is a manufacturer — knows seats, not marketing. Had an idea for a premium brand, made a logo, but the project stalled."
         },
         {
           "title": "Return problem:",
-          "description": "Process of ordering custom seats via email and phone was complicated. Customers returned seats because something didn't match — color, material, dimensions."
+          "description": "Custom seat ordering process via email and phone was complicated. Customers returned seats because something didn't match — color, material, dimensions."
         },
         {
           "title": "Untapped potential:",
-          "description": "Mirco has own sewing shop and can customize everything. This advantage wasn't used as sales tool."
+          "description": "Mirco has its own sewing facility and can customize everything. This advantage wasn't being used as a sales tool."
         }
       ]
     },
@@ -3045,16 +2781,16 @@
       "questions": [
         "What do you sell? What seat models?",
         "Who buys? Who are your distributors?",
-        "How do distributors sell further?",
+        "How do distributors resell?",
         "Can you customize products?",
         "What sells best and why?"
       ],
       "discoveriesHeading": "Key discoveries:",
       "discoveries": [
-        "FIA-homologated seats sell better than gaming variants",
-        "Mirco can customize absolutely everything (own sewing shop)",
+        "FIA-homologated seats sell better than gaming seats",
+        "Mirco can customize absolutely everything (own sewing facility)",
         "Mirek didn't know his ICP — we mapped it based on existing distributors",
-        "Between cheap Chinese seats and premium Recaro there's niche for Mirco"
+        "Between cheap Chinese seats and premium Recaro is a niche for Mirco"
       ]
     },
     "execution": {
@@ -3064,25 +2800,25 @@
         {
           "number": "PHASE 2",
           "heading": "Potential partner database",
-          "description": "Built scraper searching every EU country + UK. Mapped competition (Polish, Chinese, Recaro). Research: where competition sells their seats. Results aggregation and deduplication.",
-          "result": "400+ companies (tuning shops in EU and UK). Each record: company name, country, decision person, email, activity description. Outreach system: Instantly, Pipedrive, automation with human-in-the-loop."
+          "description": "Built scraper searching through every EU country + UK. Mapped competition (Polish, Chinese, Recaro). Research: where competition sells their seats. Aggregation and deduplication of results.",
+          "result": "400+ companies (tuning shops in EU and UK). Each record: company name, country, decision maker, email, business description. Outreach system: Instantly, Pipedrive, automation with human-in-the-loop."
         },
         {
           "number": "PHASE 3",
-          "heading": "UVP Workshop",
+          "heading": "UVP workshop",
           "description": "Discovered market niche: Cheap Chinese (low price, low quality, long delivery) vs Mirco (EU quality + full customization + fast delivery) vs Premium Recaro (highest quality, very expensive, status).",
-          "result": "Key decision: Stopped outreach campaign. First build configurator that solves return problem and gives unique value to partners."
+          "result": "Key decision: Paused outreach campaign. First build configurator that solves return problem and provides unique value for partners."
         },
         {
           "number": "PHASE 4",
           "heading": "Seat configurator",
-          "description": "Tool that turns problem (returns) into market advantage (customization as USP). Full personalization: Seat model, material (separate for each part), thread color, logo (own, in different places), shell color, accessories.",
-          "result": "Zero mistakes: Customer sees real-time visualization. Value for distributors: Distributor can implement configurator at their place for free."
+          "description": "Tool that turns problem (returns) into market advantage (customization as USP). Full personalization: Seat model, material (separate for each part), thread colors, logo (custom, in different places), shell color, accessories.",
+          "result": "Zero errors: Customer sees real-time visualization. Value for distributors: Distributor can implement configurator for free."
         },
         {
           "number": "PHASE 5",
           "heading": "Influencer channel",
-          "description": "Hypothesis: motorsport influencers can sell seats to their audiences. Test on 100 influencers — 27% were interested in cooperation. Panel for influencers: Discount codes, entry and conversion statistics, earnings tracking, payout history. Admin panel: Full sales control, statistics, analytics, management.",
+          "description": "Hypothesis: motorsport influencers can sell seats to their followers. Test on 100 influencers — 27% were interested in partnership. Panel for influencers: Discount codes, traffic and conversion statistics, earnings tracking, payout history. Admin panel: Full sales control, statistics, analytics, management.",
           "result": "Model: Influencer earns only when sold. Mirco pays for marketing only when it works."
         }
       ],
@@ -3090,11 +2826,11 @@
       "networks": [
         {
           "title": "Influencers → B2C",
-          "description": "Drifters, tuners, motorsport YouTubers sell seats to their audiences through discount codes. 100 influencers in test, 27% interested in cooperation. Affiliate portal with tracker."
+          "description": "Drifters, tuners, motorsport YouTubers sell seats to their followers through discount codes. 100 influencers in test, 27% interested in partnership. Affiliate portal with tracker."
         },
         {
           "title": "Tuning shops → B2B",
-          "description": "Distributors and tuning shops across Europe sell seats as part of their offer. 400+ companies in database (EU + UK). Embeddable configurator. Ready cold email campaigns."
+          "description": "Distributors and tuning shops across Europe sell seats as part of their offering. 400+ companies in database (EU + UK). Configurator for embedding. Ready cold email campaigns."
         },
         {
           "title": "Workshops → Custom Cars",
@@ -3115,422 +2851,453 @@
         "Strategy + sales process — For 3 segments"
       ],
       "testimonial": {
-        "quote": "I came with falling sales problem and zero idea what next. After two months I had ready system: database of 400 potential partners across Europe, configurator solving returns problem, and three complete strategies for new sales channels. Everything ready for implementation.",
+        "quote": "I came with the problem of declining sales and zero plan for what's next. After two months I had a ready system: database of 400 potential partners across Europe, configurator that solves the return problem, and three complete strategies for new sales channels. Everything ready for implementation.",
         "name": "Mirek Macura",
         "role": "Owner, Mirco"
       }
     },
     "cta": {
-      "title": "Have similar problem?",
-      "description": "You have product, sales stalled, don't know how to reach new partners? Let's talk 15 minutes. We'll tell straight if we see opportunity.",
+      "title": "Have a similar problem?",
+      "description": "Have a product, sales stalled, don't know how to reach new partners? Let's talk 15 minutes. We'll tell you straight if we see opportunities.",
       "primaryButton": "Schedule free call",
-      "secondaryButton": "See full case study"
+      "secondaryButton": "View full case study"
     }
   },
-  "narzedziaNaMiare": {
+  "konfiguratorFormularz": {
     "hero": {
-      "badge": "Custom Tools",
-      "titleStart": "From calculators to B2B portals —",
-      "titleHighlight": "custom-built tools",
-      "subtitle": "Excel isn't enough. Ready-made SaaS doesn't fit. You need something unique for your business. We build dedicated tools that automate processes and increase sales.",
-      "cta": "See examples",
-      "stats": [
+      "title": "Product configurator",
+      "titleHighlight": "that sells itself",
+      "description": "Customer sees what their custom product looks like — live, in 3D, every combination. No guessing, no \"you'll see it in 2 days via email\". A configurator that turns viewers into buyers.",
+      "steps": [
         {
-          "value": 60,
-          "suffix": "%",
-          "label": "time savings after automation"
+          "title": "Fill out the form",
+          "description": "Tell us about your product and customization options — takes only 5 minutes"
         },
         {
-          "value": 4,
-          "suffix": " weeks",
-          "label": "average MVP implementation time"
+          "title": "Schedule consultation call",
+          "description": "We'll learn about your business, see which product combinations you need"
+        },
+        {
+          "title": "Receive quote + roadmap",
+          "description": "You'll get a detailed configurator plan and implementation timeline"
         }
       ]
     },
-    "problem": {
-      "badge": "Problem",
-      "title": "Ready-made solutions don't fit",
-      "subtitle": "SaaS are generic. Your business is unique. You try to force processes into ready tools instead of building tool for the process.",
+    "form": {
+      "heading": "Tell us about your product"
+    },
+    "faq": {
+      "title": "Frequently asked",
+      "titleHighlight": "questions",
+      "subtitle": "Everything you need to know about the consultation process",
       "items": [
         {
-          "title": "Excel no longer enough",
-          "description": "You start day updating 5 spreadsheets. Formulas break. Collaboration impossible (who has latest version?). This is not scalable system."
+          "question": "Does the form commit me to anything?",
+          "answer": "No, filling out the form is just the first step — zero commitments, zero upfront payments. After submission we'll schedule a consultation call, show how configurator can work in your business, and present a quote. Only then you decide if we move forward."
         },
         {
-          "title": "Ready SaaS don't fit your process",
-          "description": "You pay 200 €/month for tool you use 30%. Missing key features. Workarounds and manual work fill gaps. Frustration grows."
+          "question": "What happens after I fill out the form?",
+          "answer": "We'll contact you within 24h (business days). We'll schedule a consultation call (15–30 min) where we learn about your product, customization options, and business goals for the configurator. Then you receive quote + implementation plan."
         },
         {
-          "title": "Integrations are expensive and unreliable",
-          "description": "You want to connect CRM with warehouse and accounting system. Zapier costs fortune and regularly crashes. Data lost between systems."
+          "question": "What's the consultation call like?",
+          "answer": "It's a workshop conversation, not a sales call. We ask about your product: What are customization options? Who buys? How many combinations need to be shown? Where do customers order (store, distributors)? Do you need system integration? Based on this we price and plan the configurator."
         },
         {
-          "title": "You need something unique",
-          "description": "Your process is specific. Your clients have unique needs. Ready solutions don't give competitive advantage — anyone can buy them."
-        }
-      ]
-    },
-    "solution": {
-      "badge": "Solution",
-      "title": "4 categories of tools we build",
-      "subtitle": "From simple calculators to complex B2B portals. Everything custom, everything for your needs.",
-      "items": [
-        {
-          "title": "Calculators & Simulators",
-          "description": "ROI, quotes, comparing options — tools that sell for you.",
-          "features": [
-            "ROI calculator for your service",
-            "Real-time pricing",
-            "Package/variant comparison",
-            "Lead capture + email with result",
-            "Conversion tracking"
-          ]
+          "question": "How long does the whole process take?",
+          "answer": "From form to quote: 2–3 days. From quote acceptance to finished configurator: 4–12 weeks (depends on complexity). Simple configurators (color + text) take 4 weeks. Advanced with 3D and integrations — 8–12 weeks. Exact timeline you get on consultation."
         },
         {
-          "title": "Web applications",
-          "description": "From booking systems to CRM — tools tailored to your workflow.",
-          "features": [
-            "Booking & reservations",
-            "B2B customer portals",
-            "Mini-CRM for management",
-            "Integrations (email, payments, API)",
-            "Mobile-first design"
-          ]
+          "question": "Do I need to have ready photos/descriptions of the product?",
+          "answer": "No, for consultation it's enough to tell about the product and customization options. Photos, descriptions, specifications we'll collect later, before project start. If you have them — great, we'll use them. If not — we'll advise what to prepare."
         },
         {
-          "title": "Dashboards & Panels",
-          "description": "Metrics, reports, management — everything in one place instead of 5 tools.",
-          "features": [
-            "Real-time KPI dashboard",
-            "Automatic reports (PDF, email)",
-            "Team/project management",
-            "Google Analytics, CRM integration",
-            "Custom views by role"
-          ]
-        }
-      ]
-    },
-    "pricing": {
-      "badge": "Pricing",
-      "title": "Workshop → Prototype → Implementation",
-      "subtitle": "Each tool is individually priced. We start with workshops to understand your process and precisely quote the project.",
-      "setupLabel": "initial workshop",
-      "roiHint": "Workshop is free and without commitment. After workshops you'll receive detailed quote tailored to project scope.",
-      "packages": [
+          "question": "What do I get after the consultation call?",
+          "answer": "Detailed quote (what configurator costs for your product), implementation timeline (how many weeks building takes), feature list (what exactly you get), examples (similar configurators we built). Everything in writing, no surprises."
+        },
         {
-          "name": "Collaboration process",
-          "tagline": "From workshop to working tool",
-          "description": "Each tool is unique case. We start with deep understanding of your process and business needs.",
-          "setup": "Free",
-          "monthly": "Quote after workshops",
-          "monthlyLabel": "",
-          "features": [
-            "Discovery workshop (1-2h, remote)",
-            "Business process mapping",
-            "Bottleneck and needs identification",
-            "Tool prototype/mockup (for approval)",
-            "Detailed project quote + timeline",
-            "Technology and integration proposal",
-            "MVP build (4-8 weeks) + iterations",
-            "Hosting + technical support (optional)"
-          ],
-          "cta": "Schedule workshop",
-          "popular": true
+          "question": "What if I change my mind after consultation?",
+          "answer": "That's okay! Consultation is free and without commitments. If quote doesn't fit budget, or configurator isn't what you need — you just say thanks and we end there. No pressure, no weird questions."
         }
       ]
     },
     "examples": {
-      "badge": "Examples",
-      "title": "Tools we've built",
-      "subtitle": "From travel apps to B2B portals for hundreds of partners. Each solution tailored to specific needs.",
+      "title": "Configurators we",
+      "titleHighlight": "built",
+      "subtitle": "See our latest implementations",
+      "cta": "View case study",
       "items": [
         {
-          "industry": "E-commerce / FMCG / Compliance",
-          "title": "ROP Calculator — Packaging Fees 2026-2028",
-          "description": "For Polish e-commerce and FMCG companies we created ROP fee calculator (Extended Producer Responsibility). Tool calculates annual packaging costs for 2026-2028, compares materials (cardboard/plastic/glass), shows savings when switching material, and generates PDF report. Pure frontend, zero backend costs.",
-          "url": "/case-study/rop-calculator",
-          "image": "/images/examples/rop-calculator.jpg",
-          "aspectRatio": "4/1"
+          "title": "Mirco — Racing Seat Configurator",
+          "description": "3D configurator with real-time preview. Customer chooses model, material, thread color, logo, accessories — sees result live. Integrated with production system (export to .gbl).",
+          "image": "/images/examples/mirco-configurator.png",
+          "url": "/case-study/mirco"
         },
         {
-          "industry": "B2B Automotive / Affiliate",
-          "title": "Admin panel — Influencer sales management",
-          "description": "Admin dashboard for Mirco managing motorsport influencer affiliate program. Real-time monitoring: revenue (€12,768 total revenue), conversion rate (4.2%), active partners (142 nodes online), top performers (Mike_Drift generated €12k+). Statistics for each influencer: referrals, sales volume, commissions. Live global transaction stream (Berlin, Paris, London, Tokyo). Management: creating discount codes, earnings tracking, payments, per-partner analytics. Everything in one place.",
-          "url": "#",
-          "image": "/images/examples/dashboard.png",
-          "aspectRatio": "3/1"
-        },
-        {
-          "industry": "Tourism / Public Sector",
-          "title": "Wieruszów Guide — Interactive city guide",
-          "description": "Web application for Wieruszów City Hall promoting local tourism. Interactive map with attractions (monuments, restaurants, hotels, tourist trails). Each location has description, photos, opening hours, Google Maps navigation. Category filtering (culture, gastronomy, nature). Mobile PWA version (works offline, can be added to home screen like app). Prepared for developing local tourism in small cities project.",
-          "url": "/case-study/wieruszow-travel",
-          "image": "/images/examples/travel.png",
-          "aspectRatio": "16/9"
+          "title": "Premium Candle Configurator — 3D Preview",
+          "description": "Configurator with 3D visualization in real-time. Customer designs their candle: size, text, font, color, alignment. Integrated with production, export to .gbl.",
+          "image": "/images/examples/candle-configurator1.png",
+          "url": "/case-study/candle-configurator"
         }
       ]
     },
-    "process": {
-      "badge": "Process",
-      "title": "From idea to working tool",
-      "subtitle": "Iterative process. We start with MVP (Minimum Viable Product), then expand.",
-      "steps": [
-        {
-          "number": "01",
-          "title": "Discovery workshop",
-          "description": "We discuss your business process, problems, needs. Identify what tool must do (must-have) vs what would be nice (nice-to-have). Set priorities.",
-          "duration": "1-2h"
+    "davinci": {
+      "hero": {
+        "headline": "Show us your company. We'll show you things you can't see from the inside.",
+        "subheadline": "We analyze the entire business — sales, operations, marketing, finance, team, processes. We find what's really blocking growth and build the solution. Strategy, technology, and implementation. Under one roof.",
+        "cta": "Book a free consultation — 30 min",
+        "ctaNote": "Zero commitments."
+      },
+      "problem": {
+        "badge": "Sound familiar?",
+        "title": "Your company could be growing faster. The question is: what's holding it back?",
+        "pains": [
+          {
+            "title": "You know you should implement AI. You know if you don't — you'll fall behind.",
+            "description": [
+              "Your competition is already doing it. Lowering costs, speeding up processes, making better decisions. You see it. You feel the pressure.",
+              "Maybe you even tried — ChatGPT, some tool, automation. Got generic answers that have nothing to do with your business.",
+              "Because AI doesn't know your company. It has no way to — your data is scattered across people's heads, Excels, and email inboxes."
+            ]
+          },
+          {
+            "title": "Your company exists in your head. And only in your head.",
+            "description": [
+              "Processes, knowledge, contacts, experience — it all lives in people. When someone leaves, they take a piece of the company with them.",
+              "You can't delegate because nobody knows what to do without you.",
+              "You can't leverage AI because there's no data for it to work with.",
+              "You can't scale because everything depends on your availability.",
+              "You're working IN the business instead of ON the business."
+            ]
+          },
+          {
+            "title": "You bought tools. You hired an agency. Nothing changed.",
+            "description": [
+              "CRM sits unused. Automation doesn't work. The website doesn't convert.",
+              "Because nobody checked if that was even your problem.",
+              "You spent tens of thousands on the wrong things — because the agency did what you told them, instead of telling you what actually needs to be done."
+            ]
+          },
+          {
+            "title": "You have too many ideas and zero clarity on what will deliver the fastest results.",
+            "description": [
+              "Export? New channel? Automation? New offering? New product?",
+              "You have skills, you have resources, you have ideas — but you don't know where to start.",
+              "Every advisor says something different.",
+              "You're missing someone who'll look at EVERYTHING and say: here's the biggest opportunity."
+            ]
+          },
+          {
+            "title": "Costs are growing faster than revenue.",
+            "description": [
+              "Every new client = more people, more chaos, more costs.",
+              "Processes that worked for 10 clients fall apart at 50.",
+              "You're not scaling — you're multiplying the mess."
+            ]
+          }
+        ]
+      },
+      "rootCause": {
+        "badge": "Why",
+        "title": "Because nobody ever looked at your company as a whole.",
+        "paragraphs": [
+          "You hired a marketing agency — they did marketing. But didn't check if your offering made sense.",
+          "You hired a software house — they built what you told them. But didn't ask if it actually solves your problem.",
+          "You hired a consultant — gave you a PDF with recommendations. And left.",
+          "Everyone did THEIR piece. Nobody looked at the WHOLE. At how sales affects operations. How processes affect costs. How lack of data affects decisions. How it all connects."
+        ],
+        "emphasis": "We start with that.",
+        "conclusion": "We do something nobody has done before. We collect ALL information about your company — from every department, every process, every Excel, and every head — and run it through dozens of analytical models. Not to confirm what you already know. To find what you don't see."
+      },
+      "benefits": {
+        "badge": "What you get",
+        "title": "Not a report for the drawer. A strategy tailored to your business — and the team to implement it.",
+        "items": [
+          {
+            "number": "①",
+            "title": "Your company's knowledge base",
+            "description": "For the first time, EVERYTHING about the company is in one structured place. Processes, data, channels, finances, team, competition. This is the foundation — for AI, for decisions, for delegation, for scaling."
+          },
+          {
+            "number": "②",
+            "title": "Map of losses and untapped opportunities",
+            "description": "We show you where you're losing money — on inefficient processes, bad channels, poorly priced offerings. But also where you're NOT MAKING money — because you have skills, resources, and a team whose full potential you're not extracting. New products, new services, new markets that are sitting on the table."
+          },
+          {
+            "number": "③",
+            "title": "Strategy tailored to you",
+            "description": "Not a generic template. Strategy tailored to your business, your product, your team, your resources, and the technology you use. What to do, in what order, where to start."
+          },
+          {
+            "number": "④",
+            "title": "The real bottleneck",
+            "description": "Not what you THINK is the problem — but what's ACTUALLY blocking growth. Client comes for a new website — leaves knowing the problem is in the sales process."
+          },
+          {
+            "number": "⑤",
+            "title": "Ready for AI and automation",
+            "description": "With a knowledge base, AI can finally work on YOUR data. Without it — every tool gives generic answers. With it — specific recommendations, reports, calculations for YOUR company."
+          },
+          {
+            "number": "⑥",
+            "title": "Implementation — not just a plan",
+            "description": "Consultant gives you a PDF and leaves. We create strategy AND implement it. Software, automation, marketing, sales, AI — whatever the data shows."
+          }
+        ],
+        "cta": "Book a free consultation",
+        "ctaNote": "Zero commitments."
+      },
+      "howWeWork": {
+        "badge": "Our method",
+        "title": "12 areas. Dozens of models. One goal: find what's really blocking growth.",
+        "intro": "We use deep research, 98 analytical models, custom AI agents, and scrapers — to extract as much information as possible to help your company.",
+        "areas": [
+          {
+            "area": "Sales",
+            "what": "Where leads drop off, how long the cycle takes, how much it costs to acquire a customer. How the offering looks — is it structured so the customer wants to buy more"
+          },
+          {
+            "area": "Marketing",
+            "what": "Which channel actually works, which burns budget. How the messaging looks — does it hit the customer's pain or talk about you"
+          },
+          {
+            "area": "Operations",
+            "what": "What you do manually that should run automatically. Which processes are duplicated"
+          },
+          {
+            "area": "Finance",
+            "what": "Hidden costs, margins per service, cash flow. Where you're making money, where you're losing it"
+          },
+          {
+            "area": "Team and processes",
+            "what": "Who's the bottleneck, what's not documented, what happens if someone leaves"
+          },
+          {
+            "area": "Scaling",
+            "what": "What works for 10 clients but won't work for 50"
+          },
+          {
+            "area": "Competition",
+            "what": "What they do, how much they charge, where the market gap is"
+          },
+          {
+            "area": "Sales channels",
+            "what": "Which ones you missed, where there's low competition, new markets"
+          },
+          {
+            "area": "Positioning and offering",
+            "what": "How the market sees you. Is your offering structured so customers naturally move from entry to premium"
+          },
+          {
+            "area": "Tools and technology",
+            "what": "Systems that don't talk to each other. Configurators and tools that could improve sales and customer service"
+          },
+          {
+            "area": "Automation and AI",
+            "what": "Where AI agents can generate reports, calculations, content, customer service. Where automation can replace manual work"
+          },
+          {
+            "area": "Untapped potential",
+            "what": "What new products, services, markets are on the table — because you have the resources and skills, but you're not using them"
+          }
+        ],
+        "emphasis": "Result: strategy tailored to your business, your product, your team, your resources and technology. With concrete data, sources, and recommendations. Plus an implementation plan and the team to execute it."
+      },
+      "process": {
+        "badge": "Process",
+        "title": "What do you need to do? Fill out a form and talk for 30 minutes.",
+        "steps": [
+          {
+            "number": "①",
+            "title": "Free consultation — 0 PLN",
+            "description": "You fill out a short form (5 questions, 3 minutes) and schedule a call. 30 minutes — you talk about your company, we listen and ask questions nobody's asked you before. After the call, you get a follow-up with observations."
+          },
+          {
+            "number": "②",
+            "title": "X-Ray — business scan",
+            "description": "Deep analysis of your business. All areas, dozens of analytical models, real data. You get a strategy with recommendations: what to do, in what order, where to start.",
+            "note": "If after X-Ray you decide to implement with us — we deduct the X-Ray cost from the project."
+          },
+          {
+            "number": "③a",
+            "title": "Growth Partner — external growth team",
+            "description": "We join the company permanently. Every month we work on what's most important now. Strategy + implementation + technology. Minimum 3 months."
+          },
+          {
+            "number": "③b",
+            "title": "Build — concrete implementation",
+            "description": "We know what to build because we have data. Milestone-based, with sign-off after each stage. Full transparency — you know where the money goes."
+          }
+        ]
+      },
+      "whatWeBuild": {
+        "badge": "Implementation",
+        "title": "Diagnosis says WHAT. We build HOW.",
+        "services": [
+          {
+            "title": "X-Ray — business diagnosis",
+            "description": "We X-ray your entire business and give you an action plan based on data, not opinions. From PLN 3,000."
+          },
+          {
+            "title": "Custom software",
+            "description": "Product configurators, client portals, dashboards, applications. Tailored to your business."
+          },
+          {
+            "title": "AI agents and AI tools",
+            "description": "Systems that generate reports, calculate options for customers, automate content and service. AI on YOUR data."
+          },
+          {
+            "title": "Marketing and conversion",
+            "description": "Websites, landing pages, ads, funnels. After diagnosis — not blindly."
+          },
+          {
+            "title": "Sales and offering",
+            "description": "Sales processes, CRM, pipeline, offering restructuring. So customers naturally want to buy more."
+          },
+          {
+            "title": "Go-to-Market",
+            "description": "New markets, new channels, prospect databases, export strategy."
+          },
+          {
+            "title": "Process automation",
+            "description": "Workflows, system integrations, elimination of manual work. People do what they're good at — machines do the rest."
+          }
+        ],
+        "footer": "One company needed a product configurator and 3 sales channels for EU markets. Another — operations automation. Third — offering restructuring and new GTM strategy. We don't guess — data tells us what to build."
+      },
+      "caseStudy": {
+        "badge": "Example",
+        "title": "What we did, not what we promise.",
+        "company": "Mirco — Racing seat manufacturer",
+        "situation": {
+          "title": "Situation",
+          "text": "Racing seat manufacturer struggled with declining sales. Great product positioned between Chinese segment and premium (Recaro), but limited channels and no systematic approach to new markets."
         },
-        {
-          "number": "02",
-          "title": "Prototype/Mockup",
-          "description": "We design tool interface (what it will look like, how user will interact with it). Show you mockup/prototype for approval. Iterate if needed.",
-          "duration": "3-7 days"
-        },
-        {
-          "number": "03",
-          "title": "MVP build",
-          "description": "We code simplest version that solves your core problem. MVP = works, does most important thing, but without bells & whistles. You test, give feedback, we iterate.",
-          "duration": "4-8 weeks"
-        },
-        {
-          "number": "04",
-          "title": "Iterations & Launch",
-          "description": "We expand tool (additional features, integrations, UX improvements). Deploy to production. Teach you how to use. Optionally: hosting + technical support.",
-          "duration": "2-4 weeks"
-        }
-      ]
-    },
-    "faq": {
-      "badge": "FAQ",
-      "title": "Most common questions",
-      "subtitle": "Didn't find an answer? Write: hello@dealcatcher.io",
-      "items": [
-        {
-          "question": "How long does implementation take?",
-          "answer": "MVP (Minimum Viable Product) usually 4-8 weeks. Full implementation with all features 8-16 weeks (depends on complexity and number of integrations). We work iteratively — first deliver working MVP, then expand."
-        },
-        {
-          "question": "Can I edit the tool myself?",
-          "answer": "Depends on type. For calculators and simple apps — we deliver admin panel where you can edit parameters, texts, prices. For complex systems — programmers make changes (but we can teach your team if they have technical skills)."
-        },
-        {
-          "question": "What if requirements change during work?",
-          "answer": "That's normal — most projects evolve during build. That's why we work iteratively (MVP → feedback → expansion). If changes are small (different texts, additional field) — we include in project. If big (new functionality) — we quote additionally."
-        },
-        {
-          "question": "Who hosts the tool?",
-          "answer": "We have three options: 1) We host (monthly subscription, we handle everything). 2) You host (we deliver code, your team manages). 3) Together (we setup, you pay directly for servers e.g., AWS). Usually we recommend option 1 (least hassle for you)."
-        },
-        {
-          "question": "What technologies do you use?",
-          "answer": "Next.js + React (frontend), Node.js / Python (backend), PostgreSQL / MongoDB (database), AWS / Vercel (hosting). For simple tools: frontend only (static HTML/JS). We choose technology for project — don't force one stack on everything."
-        },
-        {
-          "question": "Do you make mobile apps (iOS/Android)?",
-          "answer": "We don't build native mobile apps (iOS/Android). But most of our tools are Progressive Web Apps (PWA) — work in browser but look and behave like mobile apps (can add to home screen, work offline). 90% cases PWA is enough."
-        }
-      ]
-    },
-    "cta": {
-      "title": "Let's talk about",
-      "titleHighlight": "your tool",
-      "subtitle": "Schedule free 30-minute consultation. We'll show examples, answer questions, and quote solution for your business.",
-      "ctaPrimary": "Schedule free consultation",
-      "ctaSecondary": "Write to us",
-      "disclaimer": "No commitment. Zero spam. We only talk to serious companies."
-    }
-  },
-  "xray": {
-    "hero": {
-      "badge": "Business Diagnostics",
-      "titleStart": "Diagnosis instead of",
-      "titleHighlight": "guessing",
-      "subtitle": "Before we say how to act, we first thoroughly analyze your business. X-Ray is deep diagnostics showing What works, What's wasted, and What to change. No pressure, no promises — only data.",
-      "cta": "Book X-Ray",
-      "ctaNote": "30 min call, 0 PLN, zero commitment",
-      "stats": [
-        {
-          "value": 98,
-          "suffix": "%",
-          "label": "clients change strategy after X-Ray"
-        },
-        {
-          "value": 3,
-          "suffix": "–5 days",
-          "label": "for full Deep Dive analysis"
-        },
-        {
-          "value": 40,
-          "suffix": "+",
-          "label": "pages in deepest report"
-        }
-      ]
-    },
-    "problem": {
-      "badge": "Problem",
-      "title": "You're acting, but in right direction?",
-      "subtitle": "Most companies do something without full understanding why. Analytics says \"clicks are there\", but nobody asked if these are CLIENTS you need.",
-      "items": [
-        {
-          "title": "Blurry brand image",
-          "description": "Competition says clearly: \"we're cheapest\" or \"we're premium\". You say: \"we do quality services\". Who remembered you and why?"
-        },
-        {
-          "title": "Google Ads without strategy",
-          "description": "Campaigns ran, spent money, something clicked. But what actually sold? Where is real profit made?"
-        },
-        {
-          "title": "Many channels, no synergy",
-          "description": "Email, Instagram, Google, TikTok, blog, referrals — we do everything, but no channel strengthens another. Like 5 agencies on payroll, each doing their thing."
-        },
-        {
-          "title": "Competition does it better",
-          "description": "They have smaller budget but better results. Why? Nobody did them detailed analysis. Yourself?"
-        }
-      ]
-    },
-    "solution": {
-      "badge": "X-Ray Packages",
-      "title": "3 diagnosis levels — choose what you need",
-      "subtitle": "From quick look to full business anatomy.",
-      "levels": [
-        {
-          "name": "Discovery",
-          "price": "0 PLN",
-          "duration": "30 min",
-          "deliverable": "Conversation + observations",
-          "description": "Free conversation. You show business, we listen and ask. At end: first impressions — what's visible immediately, where I'd look deeper.",
-          "features": [
-            "30-minute call (Zoom)",
-            "Analysis of your last 3 years",
-            "First impressions & research recommendations",
-            "Next step proposal"
+        "whatWeDid": {
+          "title": "What we did",
+          "items": [
+            "Discovery workshop → niche identification, positioning, and new channels",
+            "Product configurator with real-time visualization (model, material, color, logo, accessories)",
+            "Affiliate portal (commission tracking, admin + influencer panels)",
+            "Custom AI scraper → scanned EU/UK markets, built distributor database",
+            "3 new sales channels: B2C influencers, B2B shops, custom workshops",
+            "Outreach system (CRM + automation + follow-up)"
           ]
         },
-        {
-          "name": "Intensive",
-          "price": "3,000 PLN",
-          "duration": "1 day",
-          "deliverable": "15–20 page report",
-          "description": "Half day analysis on-site (or remote). Business map + bottlenecks + quick wins. Report with concrete action plan for next 90 days.",
-          "features": [
-            "Half-day diagnostics (4–5 hours)",
-            "Sales channel analysis",
-            "Customer journey map (where losing customers?)",
-            "Top 5 quick wins (what to change first)",
-            "PDF report: observations + recommendations + timeline"
+        "result": {
+          "title": "Result",
+          "text": "From one channel to four. From local sales to systematic approach to EU/UK markets. Implementation: 2 months. Departments touched: sales, marketing, production, IT. One project — strategy, software, AI, automation, GTM. Under one roof."
+        },
+        "bio": {
+          "title": "Who's behind this",
+          "text": "Dawid — built 7 companies in different industries: e-commerce, software house, lead generation, content. This lets him see patterns that owners don't see — because he looked at the same problems from a dozen different perspectives. Combines business strategy with technology: knows what to build, but also WHY and WHETHER AT ALL. Leads analyses, builds strategies, talks to clients. Supported by a team of specialists and AI that speeds up research, analysis, and building."
+        },
+        "cta": "View full case study"
+      },
+      "comparison": {
+        "badge": "Comparison",
+        "title": "Consultant gives PDF. Agency does what you tell them. We do both.",
+        "table": {
+          "headers": ["", "Consultant", "Agency", "Software house", "DealCatcher"],
+          "rows": [
+            {
+              "label": "Analyzes entire business",
+              "values": ["Partially (one area)", "No", "No", "Yes"]
+            },
+            {
+              "label": "Builds the solution",
+              "values": ["No (gives PDF)", "Partially (marketing)", "Yes (software)", "Yes — everything"]
+            },
+            {
+              "label": "Looks at WHOLE company",
+              "values": ["No", "No", "No", "Yes"]
+            },
+            {
+              "label": "Challenges the brief",
+              "values": ["Sometimes", "No", "No", "Always"]
+            },
+            {
+              "label": "AI-native",
+              "values": ["No", "No", "Partially", "Yes"]
+            },
+            {
+              "label": "What you get",
+              "values": ["Report", "Campaigns / website", "Software", "Strategy + plan + implementation"]
+            }
           ]
         },
-        {
-          "name": "Deep Dive",
-          "price": "8,000–12,000 PLN",
-          "duration": "3–5 days",
-          "deliverable": "40+ page report + 98 analytical models",
-          "description": "Full business analysis. We come for 3–5 days. Map everything: products, channels, processes, competition, customers, technology. Report with AI-assisted diagnostics (98 analytical models) + full strategic roadmap for 12 months.",
-          "features": [
-            "3–5 days on-site diagnostics",
-            "Full competitive landscape analysis",
-            "Deep dive into each channel (SEO, SEM, socials, email, referrals)",
-            "Customer interviews (3–5 conversations with customers + former customers)",
-            "Financials & margins analysis",
-            "AI-assisted diagnostics (98 models: SWOT, Porter, Growth Matrix, Unit Economics etc.)",
-            "40+ page report with visualizations",
-            "12-month strategic roadmap",
-            "Closing workshop (2 hours with whole team)"
-          ]
-        }
-      ],
-      "footer": "Each X-Ray starts with conversation. If after Discovery we see it won't be good cooperation — we'll say straight. Zero sales pressure."
+        "footer": "You don't have to choose between \"someone who understands\" and \"someone who builds.\" With us, it's the same company."
+      },
+      "faq": {
+        "badge": "FAQ",
+        "title": "You have questions. That's good.",
+        "items": [
+          {
+            "question": "Too expensive.",
+            "answer": "How much does another month of operating on gut feel cost you? How much did you spend on agencies that didn't start by understanding your business?"
+          },
+          {
+            "question": "You're too small.",
+            "answer": "Small team + AI = what takes 10 people elsewhere. You pay for results, not for an office."
+          },
+          {
+            "question": "How are you different from agencies?",
+            "answer": "Agency gets a brief and executes. We check if the brief makes sense. We analyze the whole business and only then build."
+          },
+          {
+            "question": "How are you different from consultants?",
+            "answer": "Consultant gives PDF and leaves. We diagnose AND build."
+          },
+          {
+            "question": "I've had bad experiences.",
+            "answer": "That's why we start with a free consultation. Zero commitments. See for yourself. We don't work with everyone — only with companies we can actually help."
+          },
+          {
+            "question": "I don't need diagnosis.",
+            "answer": "Diagnosis can save tens of thousands on building the wrong thing."
+          },
+          {
+            "question": "AI doesn't convince me.",
+            "answer": "AI is a tool — like a calculator. We think, AI speeds up research and analysis."
+          }
+        ]
+      },
+      "finalCTA": {
+        "headline": "30 minutes. You talk about your company. We tell you straight what we see.",
+        "cta": "Book a free consultation",
+        "checkpoints": [
+          "Form: 3 minutes, 5 questions",
+          "Call: 30 minutes",
+          "After call: follow-up with key observations"
+        ],
+        "footer": "We won't call you every week. We won't send 47 emails. If we're not a fit — we'll tell you straight. Zero commitments."
+      }
     },
-    "process": {
-      "badge": "How it works",
-      "title": "From registration to report",
-      "subtitle": "Simple flow. You answer questions, we do work.",
-      "steps": [
-        {
-          "number": "01",
-          "title": "Survey",
-          "description": "You fill form: about company, business, goals. 5 questions, 3 minutes."
-        },
-        {
-          "number": "02",
-          "title": "Discovery call",
-          "description": "30 min Zoom. You tell. We ask and listen. Decide together if it makes sense."
-        },
-        {
-          "number": "03",
-          "title": "Analysis (if Intensive/Deep Dive)",
-          "description": "We work. 1 day (Intensive) or 3–5 days (Deep Dive). Collect data, analyze, build models."
-        },
-        {
-          "number": "04",
-          "title": "Report + Presentation",
-          "description": "You get PDF with results. Final call: we explain what we found and what to do next."
-        }
-      ]
-    },
-    "examples": {
-      "badge": "Case",
-      "title": "How X-Ray changes business",
-      "subtitle": "Real case study from client who hired us for Deep Dive.",
-      "items": [
-        {
-          "industry": "Automotive / B2B+B2C",
-          "title": "Mirco — From one channel to four",
-          "description": "Racing seat manufacturer struggled with falling sales. Great product positioned between Chinese segment and premium (Recaro), but limited channels and no systematic approach to new markets. After Deep Dive X-Ray we discovered potential in 3 new channels (B2C influencers, B2B shops, custom workshops) and built: product configurator, affiliate portal, custom AI scraper to identify EU/UK distributors, outreach system (CRM + automation). Result: from local sales to systematic EU/UK market approach. Implementation: 2 months. Touched departments: sales, marketing, production, IT.",
-          "url": "/pl/case-study/mirco",
-          "image": "/images/examples/mirco-configurator.png"
-        }
-      ]
-    },
-    "faq": {
-      "badge": "FAQ",
-      "title": "You have questions about X-Ray.",
-      "subtitle": "That's normal. We answer below.",
-      "items": [
-        {
-          "question": "Is Discovery really free?",
-          "answer": "Yes. 30 minutes, no catch. Of course we hope you'll like it and order Intensive/Deep Dive, but if not — no hard feelings."
-        },
-        {
-          "question": "What questions does X-Ray answer?",
-          "answer": "Intensive: \"Where is real profit made?\", \"What wastes time and money?\", \"Competition — what do they do better?\", \"What strategy to implement for 2026?\". Deep Dive adds: \"What are my 3 growth options?\" and concrete 12-month roadmap."
-        },
-        {
-          "question": "Is report just PDF or something more?",
-          "answer": "PDF + online presentation (we comment results together). Deep Dive: additionally workshop with your team, where we show how to implement recommendations."
-        },
-        {
-          "question": "How long do you keep X-Ray data?",
-          "answer": "12 months. After that we can do re-audit and see what changed. Data is yours — you can take it."
-        },
-        {
-          "question": "Is X-Ray sales for your services?",
-          "answer": "Of course we want to implement your strategy, but if it requires e.g., SEO from someone else — we'll say honestly. Sometimes Davinci is implementing (Google Ads, copywriting, website), sometimes another partner, sometimes you yourself."
-        },
-        {
-          "question": "Deep Dive on-site or remote?",
-          "answer": "Default on-site (your location). Remotely we can, but less data (harder to observe processes, employees, real-world bottlenecks). Poland + EU — if worth it, we come. We recommend on-site."
-        },
-        {
-          "question": "What if X-Ray says we have no chance?",
-          "answer": "It happened. We said honestly. Better to know early than waste time and money. We don't do X-Ray for everyone — only companies with potential."
-        }
-      ]
-    },
-    "cta": {
-      "title": "Ready for",
-      "titleHighlight": "honest diagnosis?",
-      "subtitle": "30 minutes Discovery is without commitment. But you must be ready for honest words — even if uncomfortable.",
-      "ctaPrimary": "Book X-Ray Discovery",
-      "ctaSecondary": "Learn more about Intensive & Deep Dive",
-      "checkpoints": [
-        "Survey: 3 minutes, 5 questions",
-        "Call: 30 minutes, zero pressure",
-        "Recommendation: what next (with us or without)"
-      ],
-      "footer": "First Discovery. If makes sense — we discuss Intensive/Deep Dive. We don't sell without knowing context."
+    "xrayForm": {
+      "title": "X-Ray Form",
+      "subtitle": "5 questions, 3 minutes. Zero commitments.",
+      "fields": {
+        "name": "Name and surname",
+        "email": "E-mail",
+        "company": "Company name",
+        "companySize": "Company size",
+        "companySizeOptions": [
+          "1-10 people",
+          "10-20 people",
+          "20-50 people",
+          "50-100 people",
+          "100+ people"
+        ],
+        "problem": "Main problem/goal (min. 20 characters)",
+        "phone": "Phone (optional)",
+        "gdpr": "I consent to the processing of personal data",
+        "gdprLink": "Privacy policy"
+      },
+      "submit": "Submit X-Ray request",
+      "sending": "Sending...",
+      "success": "Thank you!",
+      "successMessage": "We received your request. We'll contact you within 24h.",
+      "error": "An error occurred. Please try again."
     }
   }
 }

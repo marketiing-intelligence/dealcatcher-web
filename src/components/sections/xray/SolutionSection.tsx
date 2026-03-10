@@ -17,9 +17,9 @@ interface SolutionSectionProps {
       name: string;
       price: string;
       duration: string;
+      deliverable: string;
       description: string;
       features: string[];
-      cta: string;
       popular?: boolean;
     }>;
     footer?: string;

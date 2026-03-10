@@ -11,7 +11,7 @@ interface ProcessSectionProps {
     badge: string;
     title: string;
     subtitle: string;
-    steps: Array<{ number: string; title: string; description: string; duration: string }>;
+    steps: Array<{ number: string; title: string; description: string; duration?: string }>;
   };
 }
 
@@ -86,9 +86,11 @@ export function ProcessSection({ dict }: ProcessSectionProps) {
                 </p>
 
                 {/* Duration badge */}
-                <span className="inline-block rounded-full bg-card border border-border px-3 py-1 text-sm text-muted-foreground">
-                  {step.duration}
-                </span>
+                {step.duration && (
+                  <span className="inline-block rounded-full bg-card border border-border px-3 py-1 text-sm text-muted-foreground">
+                    {step.duration}
+                  </span>
+                )}
               </motion.div>
             ))}
           </motion.div>

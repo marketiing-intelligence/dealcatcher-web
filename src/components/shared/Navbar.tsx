@@ -39,7 +39,6 @@ interface NavbarProps {
 
 const bookCallLabels: Record<Locale, string> = {
   en: "Book a call",
-  no: "Book en samtale",
   pl: "Umów rozmowę",
 };
 

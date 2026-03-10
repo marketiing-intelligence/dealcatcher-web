@@ -100,7 +100,7 @@ export function ContactForm({ lang, dict }: ContactFormProps) {
         trackMetaEvent("Lead", {
           content_name: "Contact Form Submission",
           content_category: "contact",
-          currency: lang === "pl" ? "PLN" : lang === "no" ? "NOK" : "USD",
+          currency: lang === "pl" ? "PLN" : "USD",
         });
 
         setStatus("success");
@@ -157,7 +157,7 @@ export function ContactForm({ lang, dict }: ContactFormProps) {
         <Input
           {...register("phone")}
           type="tel"
-          placeholder={lang === "pl" ? "Telefon (opcjonalnie)" : lang === "no" ? "Telefon (valgfritt)" : "Phone (optional)"}
+          placeholder={lang === "pl" ? "Telefon (opcjonalnie)" : "Phone (optional)"}
         />
       </motion.div>
 

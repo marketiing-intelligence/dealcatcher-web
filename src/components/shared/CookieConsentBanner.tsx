@@ -228,7 +228,7 @@ export function CookieConsentBanner({ lang, dict }: CookieConsentBannerProps) {
                       </div>
                       <div className="flex items-center">
                         <span className="text-xs text-muted-foreground bg-muted px-2 py-1 rounded">
-                          {lang === "no" ? "Alltid pa" : "Always on"}
+                          Always on
                         </span>
                       </div>
                     </div>

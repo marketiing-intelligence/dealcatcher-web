@@ -17,7 +17,7 @@ export async function POST(request: Request) {
       to: ["contact@dealcatcher.io"],
       replyTo: validatedData.email,
       subject:
-        lang === "no"
+        false
           ? `X-Ray forespørsel: ${validatedData.company}`
           : lang === "pl"
             ? `Zgłoszenie X-Ray: ${validatedData.company}`
@@ -45,7 +45,7 @@ export async function POST(request: Request) {
           external_id: validatedData.email,
           clientIpAddress: request.headers.get("x-forwarded-for") || request.headers.get("x-real-ip") || undefined,
           clientUserAgent: request.headers.get("user-agent") || undefined,
-          country: lang === "pl" ? "PL" : lang === "no" ? "NO" : "US",
+          country: lang === "pl" ? "PL" : false ? "NO" : "US",
           fbp: fbp || undefined,
           fbc: fbc || undefined,
         },

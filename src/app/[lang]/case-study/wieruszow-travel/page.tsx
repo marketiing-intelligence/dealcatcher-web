@@ -16,12 +16,10 @@ export async function generateMetadata({
 
   const titles: Record<Locale, string> = {
     en: "TravelPL Case Study — Complete Digital System for Travel Agency | DealCatcher",
-    no: "TravelPL Casestudie — Komplett digitalt system for reisebyrå | DealCatcher",
     pl: "Case Study TravelPL — Kompletny System Cyfrowy dla Biura Podróży | DealCatcher",
   };
   const descriptions: Record<Locale, string> = {
     en: "How we built a complete digital ecosystem for a Polish travel agency: professional website, mobile travel app, and Google Ads campaigns — from zero digital presence to modern online business.",
-    no: "Hvordan vi bygde et komplett digitalt økosystem for et polsk reisebyrå: profesjonell nettside, mobil reiseapp og Google Ads-kampanjer — fra null digital tilstedeværelse til moderne online virksomhet.",
     pl: "Jak zbudowaliśmy kompletny ekosystem cyfrowy dla polskiego biura podróży: profesjonalna strona www, aplikacja mobilna i kampanie Google Ads — od zera do nowoczesnej obecności online.",
   };
 

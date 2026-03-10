@@ -82,7 +82,7 @@ export function WithdrawalForm({ lang, dict }: WithdrawalFormProps) {
       >
         <CheckCircle className="mx-auto h-16 w-16 text-green-500 mb-4" />
         <h3 className="text-2xl font-semibold mb-2">
-          {lang === "no" ? "Sendt!" : lang === "pl" ? "Wysłano!" : "Submitted!"}
+          {lang === "pl" ? "Wysłano!" : "Submitted!"}
         </h3>
         <p className="text-muted-foreground">{dict.success}</p>
       </motion.div>

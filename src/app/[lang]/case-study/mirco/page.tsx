@@ -16,12 +16,10 @@ export async function generateMetadata({
 
   const titles: Record<Locale, string> = {
     en: "Mirco Case Study — B2B Expansion Strategy | DealCatcher",
-    no: "Mirco Casestudie — B2B-ekspansjonsstrategi | DealCatcher",
     pl: "Case Study Mirco — Strategia Ekspansji B2B | DealCatcher",
   };
   const descriptions: Record<Locale, string> = {
     en: "How we built a complete B2B sales infrastructure for a Polish racing seat manufacturer: 400+ qualified partners, 3 sales channels, custom tools in 8 weeks.",
-    no: "Hvordan vi bygde en komplett B2B-salgsinfrastruktur for en polsk racingsete-produsent: 400+ kvalifiserte partnere, 3 salgskanaler, skreddersydde verktøy på 8 uker.",
     pl: "Jak zbudowaliśmy kompletną infrastrukturę sprzedażową B2B dla polskiego producenta foteli wyścigowych: 400+ partnerów, 3 kanały sprzedaży, narzędzia w 8 tygodni.",
   };
 

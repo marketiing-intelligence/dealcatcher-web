@@ -47,7 +47,6 @@ export function FloatingContact({ lang, dict, phoneNumber }: FloatingContactProp
   };
 
   const whatsappMessages: Record<Locale, string> = {
-    no: "Hei! Jeg er interessert i en nettside for bedriften min.",
     pl: "Cześć! Interesuje mnie strona internetowa dla mojej firmy.",
     en: "Hi! I'm interested in a website for my business.",
   };

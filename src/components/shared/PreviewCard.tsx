@@ -12,13 +12,11 @@ import type { Locale } from "@/lib/i18n/config";
 
 const viewDemoLabels: Record<Locale, string> = {
   en: "View Live Demo",
-  no: "Se Live Demo",
   pl: "Zobacz Demo",
 };
 
 const readMoreLabels: Record<Locale, string> = {
   en: "Read More",
-  no: "Les mer",
   pl: "Przeczytaj więcej",
 };
 

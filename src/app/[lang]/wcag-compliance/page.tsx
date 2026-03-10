@@ -24,15 +24,9 @@ export async function generateMetadata({
   }
 
   return {
-    title:
-      lang === "no"
-        ? "WCAG Samsvar for Norske Nettsider | DealCatcher"
-        : "WCAG Compliance for Norwegian Websites | DealCatcher",
-    description:
-      lang === "no"
-        ? "97% av norske nettsider feiler tilgjengelighetsrevisjoner. Fa en gratis WCAG-revisjon og laer hvordan du blir kompatibel med norsk lov."
-        : "97% of Norwegian websites fail accessibility audits. Get a free WCAG audit and learn how to become compliant with Norwegian law.",
-    alternates: getAlternates(lang, "/wcag-compliance", ["en", "no"]),
+    title: "WCAG Compliance for Websites | DealCatcher",
+    description: "97% of websites fail accessibility audits. Get a free WCAG audit and learn how to become compliant with accessibility standards.",
+    alternates: getAlternates(lang, "/wcag-compliance", ["en", "pl"]),
   };
 }
 
@@ -48,13 +42,12 @@ export default async function WCAGCompliancePage({
     redirect(`/pl`);
   }
 
-  // After redirect guard, lang is "en" | "no" — both have wcagPage
-  const wcagLang = lang as "en" | "no";
-  const dict = await getDictionary(wcagLang) as any;
+  // After redirect guard, lang is "en"
+  const dict = await getDictionary(lang) as any;
 
   return (
     <>
-      <Navbar lang={wcagLang} dict={dict} />
+      <Navbar lang={lang} dict={dict} />
       <main className="pt-16 md:pt-20">
         <HeroSection dict={dict.wcagPage.hero} />
         <ProblemSection dict={dict.wcagPage.problem} />
@@ -62,9 +55,9 @@ export default async function WCAGCompliancePage({
         <PricingSection dict={dict.wcagPage.pricing} />
         <ProcessSection dict={dict.wcagPage.process} />
         <TrustSection dict={dict.wcagPage.trust} />
-        <CTASection lang={wcagLang} dict={dict.wcagPage.cta} />
+        <CTASection lang={lang} dict={dict.wcagPage.cta} />
       </main>
-      <Footer lang={wcagLang} dict={dict.footer} />
+      <Footer lang={lang} dict={dict.footer} />
     </>
   );
 }

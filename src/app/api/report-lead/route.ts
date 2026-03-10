@@ -69,7 +69,7 @@ export async function POST(request: Request) {
         clientIpAddress: request.headers.get("x-forwarded-for") || request.headers.get("x-real-ip") || undefined,
         clientUserAgent: request.headers.get("user-agent") || undefined,
         city,
-        country: lang === "pl" ? "PL" : lang === "no" ? "NO" : "US", // Infer country from language
+        country: lang === "pl" ? "PL" : false ? "NO" : "US", // Infer country from language
       },
       customData: {
         content_name: `Report Lead - ${reportNiche} in ${reportCity}`,

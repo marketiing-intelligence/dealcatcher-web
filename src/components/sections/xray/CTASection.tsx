@@ -18,7 +18,7 @@ interface CTASectionProps {
     ctaPrimary: string;
     ctaSecondary: string;
     checkpoints?: string[];
-    disclaimer: string;
+    footer: string;
   };
 }
 
@@ -84,7 +84,7 @@ export function CTASection({ lang, dict }: CTASectionProps) {
           </div>
 
           <p className="mt-8 text-sm text-muted-foreground">
-            {dict.disclaimer}
+            {dict.footer}
           </p>
         </motion.div>
       </Container>

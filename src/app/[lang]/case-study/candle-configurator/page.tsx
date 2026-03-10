@@ -16,12 +16,10 @@ export async function generateMetadata({
 
   const titles: Record<Locale, string> = {
     en: "Candle Configurator Case Study — Premium Product Customization | DealCatcher",
-    no: "Candle Configurator Casestudie — Premium produkttilpasning | DealCatcher",
     pl: "Case Study Konfigurator Zniczy — Personalizacja Premium | DealCatcher",
   };
   const descriptions: Record<Locale, string> = {
     en: "How we built a 3D candle configurator with real-time preview and production integration: reduced returns, automated workflow, better customer experience.",
-    no: "Hvordan vi bygde en 3D lysestøtte-konfigurator med sanntidsforhåndsvisning og produksjonsintegrasjon: reduserte returer, automatisert arbeidsflyt, bedre kundeopplevelse.",
     pl: "Jak stworzyliśmy konfigurator zniczy 3D z podglądem na żywo i integracją produkcyjną: zmniejszone zwroty, zautomatyzowany proces, lepsza obsługa klienta.",
   };
 

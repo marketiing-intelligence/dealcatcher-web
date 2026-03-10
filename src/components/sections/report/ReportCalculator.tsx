@@ -153,7 +153,7 @@ export function ReportCalculator({ calculator, lang, currency, dict }: ReportCal
             <div className="bg-gradient-to-br from-primary/10 to-green-500/10 border border-primary/20 rounded-2xl p-6 md:p-8">
               <h3 className="text-lg font-semibold mb-6 flex items-center gap-2">
                 <TrendingUp className="w-5 h-5 text-green-500" />
-                {lang === "no" ? "Resultater" : lang === "pl" ? "Wyniki" : "Results"}
+                {lang === "pl" ? "Wyniki" : "Results"}
               </h3>
 
               <div className="space-y-3">

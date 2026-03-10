@@ -17,7 +17,7 @@ export async function POST(request: Request) {
       to: ["contact@dealcatcher.io"],
       replyTo: validatedData.email,
       subject:
-        lang === "no"
+        false
           ? `Ny melding fra ${validatedData.name}`
           : lang === "pl"
             ? `Nowa wiadomość od ${validatedData.name}`
@@ -45,7 +45,7 @@ export async function POST(request: Request) {
           external_id: validatedData.email, // Use email as external_id for better attribution
           clientIpAddress: request.headers.get("x-forwarded-for") || request.headers.get("x-real-ip") || undefined,
           clientUserAgent: request.headers.get("user-agent") || undefined,
-          country: lang === "pl" ? "PL" : lang === "no" ? "NO" : "US", // Infer country from language
+          country: lang === "pl" ? "PL" : false ? "NO" : "US", // Infer country from language
           fbp: fbp || undefined, // Facebook Browser ID
           fbc: fbc || undefined, // Facebook Click ID
         },

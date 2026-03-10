@@ -143,13 +143,12 @@ export interface ReportData {
   sources: ReportSource[];
 }
 
-// Helper to get bilingual/trilingual text
-// Fallback chain: PL → EN, NO → NO, EN → EN
+// Helper to get bilingual text
+// Fallback chain: PL → EN, EN → EN
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function t(obj: any, lang: Locale, field: string): string {
   let key: string;
-  if (lang === "no") key = `${field}NO`;
-  else if (lang === "pl") key = `${field}PL`;
+  if (lang === "pl") key = `${field}PL`;
   else key = `${field}EN`;
   return obj[key] ?? obj[`${field}EN`] ?? "";
 }
