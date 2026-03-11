@@ -17,11 +17,22 @@ interface FinalCTASectionProps {
 export function FinalCTASection({ lang, dict }: FinalCTASectionProps) {
   return (
     <section className="relative py-20 md:py-32 overflow-hidden">
-      {/* Background glow */}
+      {/* Background layers */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent" />
+
+        {/* Dot grid */}
         <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-primary/10 blur-[120px] pointer-events-none"
+          className="absolute inset-0 opacity-[0.02]"
+          style={{
+            backgroundImage: "radial-gradient(circle, #F5F5F5 1px, transparent 1px)",
+            backgroundSize: "32px 32px",
+          }}
+        />
+
+        {/* Primary glow */}
+        <div
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full bg-primary/8 blur-[150px] pointer-events-none"
           aria-hidden="true"
         />
       </div>
@@ -38,7 +49,7 @@ export function FinalCTASection({ lang, dict }: FinalCTASectionProps) {
             <Button
               asChild
               size="lg"
-              className="group relative bg-primary hover:bg-primary/90 text-primary-foreground h-12 md:h-14 lg:h-16 px-6 md:px-8 lg:px-10 text-sm md:text-base lg:text-lg font-medium overflow-hidden w-full sm:w-auto"
+              className="group relative bg-primary hover:bg-primary/90 text-primary-foreground h-14 md:h-16 lg:h-18 px-8 md:px-10 lg:px-12 text-base md:text-lg lg:text-xl font-medium overflow-hidden w-full sm:w-auto shadow-[0_0_40px_rgba(229,168,75,0.25)] hover:shadow-[0_0_60px_rgba(229,168,75,0.4)] transition-shadow duration-500"
             >
               <Link href={`/${lang}#xray-form`}>
                 <span className="absolute inset-0 bg-gradient-to-r from-primary via-accent-hover to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-500" />

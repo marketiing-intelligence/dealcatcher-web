@@ -1,6 +1,7 @@
 "use client";
 
 import { Container } from "@/components/shared/Container";
+import Image from "next/image";
 import Link from "next/link";
 import type { Locale } from "@/lib/i18n/config";
 import { CONTACT_EMAIL } from "@/lib/constants";
@@ -11,7 +12,7 @@ interface FooterProps {
     description: string;
     services: string;
     contact: string;
-    newWebsite: string;
+    xray: string;
     copyright: string;
     privacy: string;
     terms: string;
@@ -29,11 +30,14 @@ export function Footer({ lang, dict }: FooterProps) {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="col-span-2">
-            <Link
-              href={`/${lang}`}
-              className="text-2xl font-semibold text-foreground"
-            >
-              Deal<span className="text-primary">Catcher</span>
+            <Link href={`/${lang}`} className="inline-block">
+              <Image
+                src="/Logo_white.png"
+                alt="DaVinci"
+                width={140}
+                height={36}
+                className="h-8 w-auto"
+              />
             </Link>
             <p className="mt-4 text-muted-foreground max-w-sm leading-relaxed">
               {dict.description}
@@ -48,18 +52,18 @@ export function Footer({ lang, dict }: FooterProps) {
             <ul className="space-y-3">
               <li>
                 <Link
-                  href={`/${lang}/no-website`}
+                  href={`/${lang}/xray`}
                   className="text-foreground hover:text-primary transition-colors"
                 >
-                  {dict.newWebsite}
+                  {dict.xray}
                 </Link>
               </li>
               <li>
                 <Link
-                  href={`/${lang}/xray`}
+                  href={`/${lang}/no-website`}
                   className="text-foreground hover:text-primary transition-colors"
                 >
-                  X-Ray — diagnoza biznesu
+                  Nowa strona
                 </Link>
               </li>
               <li>

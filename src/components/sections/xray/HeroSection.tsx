@@ -100,7 +100,7 @@ export function HeroSection({ dict }: HeroSectionProps) {
 
             {/* Headline with gradient effect */}
             <motion.div variants={staggerItem} className="mb-8">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl leading-[1.05]">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl leading-[1.15]">
                 <TextAnimate text={dict.titleStart} className="inline" />
                 {" "}
                 <GradientText animate className="inline-block">

@@ -9,6 +9,7 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
 } from "@/components/ui/dropdown-menu";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { Calendar, Menu, X, ChevronDown } from "lucide-react";
@@ -85,12 +86,15 @@ export function Navbar({ lang, dict }: NavbarProps) {
       <Container>
         <div className="flex h-16 md:h-20 items-center justify-between">
           {/* Logo */}
-          <Link
-            href={`/${lang}`}
-            className="text-xl md:text-2xl font-semibold text-foreground group"
-          >
-            <span className="transition-colors">Deal</span>
-            <span className="text-primary group-hover:drop-shadow-[0_0_10px_rgba(16,185,129,0.5)] transition-all">Catcher</span>
+          <Link href={`/${lang}`} className="flex items-center">
+            <Image
+              src="/Logo_white.png"
+              alt="DaVinci"
+              width={140}
+              height={36}
+              className="h-7 md:h-9 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}

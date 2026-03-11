@@ -47,9 +47,14 @@ export default async function Home({
         <FAQSection dict={dict.davinci.faq} />
         <FinalCTASection lang={lang} dict={dict.davinci.finalCTA} />
         {/* X-Ray Form Section */}
-        <section id="xray-form" className="py-20 md:py-32 bg-muted/30">
-          <div className="container mx-auto px-6 md:px-12 lg:px-16">
-            <XRayForm lang={lang} dict={dict.xrayForm} />
+        <section id="xray-form" className="py-20 md:py-32 relative overflow-hidden">
+          <div className="absolute inset-0 bg-muted/30" />
+          <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-primary/[0.06] blur-[120px] pointer-events-none" />
+          <div className="container mx-auto px-6 md:px-12 lg:px-16 relative z-10">
+            <div className="max-w-2xl mx-auto rounded-2xl border border-white/[0.06] bg-white/[0.02] backdrop-blur-sm p-8 md:p-12">
+              <XRayForm lang={lang} dict={dict.xrayForm} />
+            </div>
           </div>
         </section>
       </main>

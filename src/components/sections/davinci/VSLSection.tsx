@@ -1,7 +1,6 @@
 "use client";
 
 import { Container } from "@/components/shared/Container";
-import { SectionHeading } from "@/components/shared/SectionHeading";
 
 interface VSLSectionProps {
   dict: {
@@ -15,12 +14,16 @@ interface VSLSectionProps {
 
 export function VSLSection({ dict }: VSLSectionProps) {
   return (
-    <section className="py-20 md:py-32 bg-muted/30">
+    <section className="py-20 md:py-32 relative overflow-hidden">
+      {/* Background */}
+      <div className="absolute inset-0 bg-muted/30" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+
       <Container>
-        {/* Custom heading with green highlight */}
+        {/* Heading */}
         <div className="mb-12 md:mb-16">
           {dict.badge && (
-            <span className="mb-4 inline-block rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
+            <span className="mb-4 inline-block rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-sm font-medium text-primary">
               {dict.badge}
             </span>
           )}
@@ -37,10 +40,12 @@ export function VSLSection({ dict }: VSLSectionProps) {
         </div>
 
         <div className="mt-12 max-w-4xl mx-auto">
-          <div className="relative aspect-video rounded-xl overflow-hidden border border-border shadow-2xl">
+          <div className="relative aspect-video rounded-2xl overflow-hidden border border-white/[0.06] shadow-2xl shadow-primary/5">
+            {/* Glow behind video */}
+            <div className="absolute -inset-4 bg-primary/[0.04] blur-[40px] rounded-2xl pointer-events-none" />
             <video
               controls
-              className="w-full h-full"
+              className="relative w-full h-full"
             >
               <source src="/vsl.mp4" type="video/mp4" />
               Twoja przeglądarka nie obsługuje odtwarzania wideo.

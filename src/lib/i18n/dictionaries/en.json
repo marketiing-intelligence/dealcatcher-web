@@ -460,10 +460,10 @@
     "ctaSecondary": "We'll call you in 2 hours"
   },
   "footer": {
-    "description": "Professional websites for Norwegian businesses. AI-ready, fast, built to convert.",
+    "description": "We analyze businesses, find where you're losing money, and build exactly what your business needs.",
     "services": "Services",
     "contact": "Contact",
-    "newWebsite": "New Website",
+    "xray": "X-Ray",
     "copyright": "All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
@@ -3524,6 +3524,48 @@
           "answer": "It happened. We said honestly. Better to know early than waste time and money. We don't do X-Ray for everyone — only companies with potential."
         }
       ]
+    },
+    "nextSteps": {
+      "badge": "What happens after X-Ray?",
+      "title": "X-Ray is the diagnosis. Then what?",
+      "subtitle": "We know what's broken — now it's time to fix it. We offer 3 paths forward.",
+      "intro": "X-Ray reveals problems and opportunities. But a report on the shelf changes nothing. That's why we offer concrete next steps — from a detailed plan to full implementation and ongoing growth support.",
+      "services": [
+        {
+          "name": "Blueprint",
+          "price": "from 8,000 PLN",
+          "description": "Detailed action plan based on X-Ray findings. Exact map: what to build, in what order, with which tools. Ready to implement — by us or on your own.",
+          "features": [
+            "Solution architecture (tech stack, tools, integrations)",
+            "Implementation timeline with milestones",
+            "Cost and resource estimation",
+            "Specification for each element"
+          ]
+        },
+        {
+          "name": "Build",
+          "price": "from 20,000 PLN",
+          "description": "We implement what we planned. Websites, automations, campaigns, tools — everything under one roof. Milestone-based: you pay for concrete deliverables.",
+          "features": [
+            "Websites and landing pages",
+            "Process automation (n8n, AI)",
+            "Google Ads / Meta Ads campaigns",
+            "Custom tools (configurators, dashboards, CRM)"
+          ]
+        },
+        {
+          "name": "Growth Partner",
+          "price": "from 10,000 PLN/mo",
+          "description": "External growth team on retainer. Every month we work on what matters most right now. Strategy + technology + execution. Minimum 3 months.",
+          "features": [
+            "Dedicated team (strategy + execution)",
+            "Monthly priorities based on data",
+            "Continuous channel optimization",
+            "Reporting and monthly review"
+          ]
+        }
+      ],
+      "footer": "No need to decide right away. X-Ray ends with a recommendation — we'll show which path makes the most sense for you. You can also take the report and implement on your own."
     },
     "cta": {
       "title": "Ready for",

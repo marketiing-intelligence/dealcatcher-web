@@ -460,10 +460,10 @@
     "ctaSecondary": "Oddzwonimy w 2 godziny"
   },
   "footer": {
-    "description": "Profesjonalne strony internetowe dla polskich firm. Gotowe na AI, zoptymalizowane pod konwersję.",
+    "description": "Analizujemy firmy, znajdujemy gdzie tracisz pieniądze i budujemy dokładnie to, co Twój biznes potrzebuje.",
     "services": "Usługi",
     "contact": "Kontakt",
-    "newWebsite": "Nowa strona",
+    "xray": "X-Ray",
     "copyright": "Wszelkie prawa zastrzeżone.",
     "privacy": "Polityka prywatności",
     "terms": "Regulamin",
@@ -3313,6 +3313,48 @@
           "answer": "Było. Powiedzieliśmy szczerze. Lepiej wiedzieć wcześnie niż tracić czas i pieniądze. Nie robimy X-Ray każdemu — tylko firmom które mają potencjał."
         }
       ]
+    },
+    "nextSteps": {
+      "badge": "Co dalej po X-Ray?",
+      "title": "X-Ray to diagnoza. A potem?",
+      "subtitle": "Wiemy co nie działa — teraz trzeba to naprawić. Mamy 3 ścieżki współpracy.",
+      "intro": "X-Ray pokazuje gdzie są problemy i szanse. Ale raport na półce nic nie zmieni. Dlatego oferujemy konkretne następne kroki — od szczegółowego planu po pełne wdrożenie i stałą opiekę nad wzrostem.",
+      "services": [
+        {
+          "name": "Blueprint",
+          "price": "od 8 000 PLN",
+          "description": "Szczegółowy plan działania na podstawie X-Ray. Dokładna mapa: co budować, w jakiej kolejności, z jakimi narzędziami. Gotowy do wdrożenia — przez nas lub samodzielnie.",
+          "features": [
+            "Architektura rozwiązania (tech stack, narzędzia, integracje)",
+            "Harmonogram wdrożenia z milestones",
+            "Estymacja kosztów i zasobów",
+            "Specyfikacja dla każdego elementu"
+          ]
+        },
+        {
+          "name": "Build",
+          "price": "od 20 000 PLN",
+          "description": "Wdrażamy to co zaplanowaliśmy. Strony, automatyzacje, kampanie, narzędzia — wszystko pod jednym dachem. Milestone-based: płacisz za konkretne deliverables.",
+          "features": [
+            "Strony internetowe i landing pages",
+            "Automatyzacje procesów (n8n, AI)",
+            "Kampanie Google Ads / Meta Ads",
+            "Narzędzia custom (konfiguratory, dashboardy, CRM)"
+          ]
+        },
+        {
+          "name": "Growth Partner",
+          "price": "od 10 000 PLN/mies",
+          "description": "Zewnętrzny zespół wzrostu na stałe. Co miesiąc pracujemy nad tym co jest teraz najważniejsze. Strategia + technologia + wdrożenie. Minimum 3 miesiące.",
+          "features": [
+            "Dedykowany zespół (strategia + execution)",
+            "Miesięczne priorytety oparte o dane",
+            "Ciągła optymalizacja kanałów",
+            "Raportowanie i monthly review"
+          ]
+        }
+      ],
+      "footer": "Nie musisz od razu decydować. X-Ray kończy się rekomendacją — pokażemy która ścieżka ma dla Ciebie największy sense. Możesz też wziąć raport i wdrożyć samodzielnie."
     },
     "cta": {
       "title": "Gotów na",

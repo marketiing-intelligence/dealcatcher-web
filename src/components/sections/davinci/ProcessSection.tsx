@@ -29,7 +29,10 @@ export function ProcessSection({ dict }: ProcessSectionProps) {
   const lineWidth = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   return (
-    <section className="py-20 md:py-32 relative">
+    <section className="py-20 md:py-32 relative overflow-hidden">
+      {/* Subtle background glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] rounded-full bg-primary/5 blur-[120px] pointer-events-none" />
+
       <Container>
         <motion.div
           initial="hidden"
@@ -40,7 +43,7 @@ export function ProcessSection({ dict }: ProcessSectionProps) {
           {/* Badge */}
           <motion.span
             variants={staggerItem}
-            className="inline-flex items-center gap-2 rounded-full border border-border bg-background/50 px-4 py-1.5 text-sm font-medium text-foreground mb-6"
+            className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-sm font-medium text-primary mb-6"
           >
             {dict.badge}
           </motion.span>
@@ -57,7 +60,7 @@ export function ProcessSection({ dict }: ProcessSectionProps) {
             {/* Connecting line through all steps - background (gray) */}
             <div className="hidden md:block absolute top-8 left-8 right-8 h-px bg-border z-0" />
 
-            {/* Connecting line through all steps - animated glow (amber) */}
+            {/* Connecting line through all steps - animated glow (gold) */}
             <motion.div
               className="hidden md:block absolute top-8 left-8 right-8 h-px z-0 origin-left"
               style={{
@@ -73,18 +76,22 @@ export function ProcessSection({ dict }: ProcessSectionProps) {
               whileInView="visible"
               viewport={viewportOnce}
               variants={staggerContainer}
-              className="grid md:grid-cols-4 gap-8 relative z-10"
+              className="grid md:grid-cols-4 gap-6 relative z-10"
             >
               {dict.steps.map((step, index) => (
-                <motion.div key={step.number} variants={staggerItem} className="relative">
+                <motion.div
+                  key={step.number}
+                  variants={staggerItem}
+                  className="relative rounded-2xl border border-white/[0.06] bg-white/[0.02] backdrop-blur-sm p-6 hover:border-primary/20 hover:bg-white/[0.04] transition-all duration-500"
+                >
                   {/* Step number with glow */}
                   <motion.div
-                    className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full border-2 border-primary bg-background text-primary text-xl font-semibold relative"
+                    className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full border-2 border-primary/60 bg-primary/10 text-primary text-xl font-semibold relative"
                     whileInView={{
                       boxShadow: [
-                        "0 0 0 0 rgba(16, 185, 129, 0)",
-                        "0 0 20px 2px rgba(16, 185, 129, 0.4)",
-                        "0 0 10px 1px rgba(16, 185, 129, 0.2)",
+                        "0 0 0 0 rgba(229, 168, 75, 0)",
+                        "0 0 20px 2px rgba(229, 168, 75, 0.3)",
+                        "0 0 10px 1px rgba(229, 168, 75, 0.15)",
                       ],
                     }}
                     transition={{
@@ -94,8 +101,6 @@ export function ProcessSection({ dict }: ProcessSectionProps) {
                     }}
                     viewport={{ once: true }}
                   >
-                    {/* Inner glow circle */}
-                    <div className="absolute inset-0 rounded-full bg-primary/10" />
                     <span className="relative z-10">{step.number}</span>
                   </motion.div>
 
@@ -109,7 +114,7 @@ export function ProcessSection({ dict }: ProcessSectionProps) {
 
                   {/* Note (only for step 2) */}
                   {step.note && (
-                    <p className="text-sm text-primary italic leading-relaxed mt-4 border-l-2 border-primary pl-4">
+                    <p className="text-sm text-primary/80 italic leading-relaxed mt-4 border-l-2 border-primary/40 pl-4">
                       {step.note}
                     </p>
                   )}

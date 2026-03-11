@@ -26,7 +26,10 @@ interface BenefitsSectionProps {
 
 export function BenefitsSection({ lang, dict }: BenefitsSectionProps) {
   return (
-    <section className="py-20 md:py-32 relative">
+    <section className="py-20 md:py-32 relative overflow-hidden">
+      {/* Background glow */}
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[600px] h-[400px] rounded-full bg-primary/[0.04] blur-[100px] pointer-events-none" />
+
       <Container>
         <motion.div
           initial="hidden"
@@ -37,7 +40,7 @@ export function BenefitsSection({ lang, dict }: BenefitsSectionProps) {
           {/* Badge */}
           <motion.span
             variants={staggerItem}
-            className="inline-flex items-center gap-2 rounded-full border border-border bg-background/50 px-4 py-1.5 text-sm font-medium text-foreground mb-6"
+            className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-sm font-medium text-primary mb-6"
           >
             {dict.badge}
           </motion.span>
@@ -55,8 +58,8 @@ export function BenefitsSection({ lang, dict }: BenefitsSectionProps) {
             {dict.items.map((item, index) => (
               <motion.div key={index} variants={staggerItem}>
                 <SpotlightCard>
-                  <div className="flex items-start gap-4 mb-4">
-                    <span className="text-4xl font-semibold text-primary flex-shrink-0">
+                  <div className="mb-4">
+                    <span className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 text-2xl font-semibold text-primary">
                       {item.number}
                     </span>
                   </div>
@@ -77,7 +80,7 @@ export function BenefitsSection({ lang, dict }: BenefitsSectionProps) {
               <Button
                 asChild
                 size="lg"
-                className="group relative bg-primary hover:bg-primary/90 text-primary-foreground h-12 md:h-14 px-6 md:px-8 text-sm md:text-base font-medium overflow-hidden w-full sm:w-auto"
+                className="group relative bg-primary hover:bg-primary/90 text-primary-foreground h-14 md:h-16 px-8 md:px-10 text-base md:text-lg font-medium overflow-hidden w-full sm:w-auto shadow-[0_0_30px_rgba(229,168,75,0.2)] hover:shadow-[0_0_40px_rgba(229,168,75,0.35)] transition-shadow duration-500"
               >
                 <Link href={`/${lang}#xray-form`}>
                   <span className="absolute inset-0 bg-gradient-to-r from-primary via-accent-hover to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-500" />

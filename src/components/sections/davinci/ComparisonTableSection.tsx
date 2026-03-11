@@ -21,11 +21,14 @@ interface ComparisonTableSectionProps {
 }
 
 export function ComparisonTableSection({ dict }: ComparisonTableSectionProps) {
-  // Icons for comparison columns: [empty, Consultant, Agency, Software House, Davinci]
   const columnIcons = [null, User, Building2, Code, Sparkles];
 
   return (
-    <section className="py-20 md:py-32 relative bg-muted/30">
+    <section className="py-20 md:py-32 relative overflow-hidden">
+      {/* Background */}
+      <div className="absolute inset-0 bg-muted/30" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+
       <Container>
         <motion.div
           initial="hidden"
@@ -36,7 +39,7 @@ export function ComparisonTableSection({ dict }: ComparisonTableSectionProps) {
           {/* Badge */}
           <motion.span
             variants={staggerItem}
-            className="inline-flex items-center gap-2 rounded-full border border-border bg-background/50 px-4 py-1.5 text-sm font-medium text-foreground mb-6"
+            className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-sm font-medium text-primary mb-6"
           >
             {dict.badge}
           </motion.span>
@@ -50,10 +53,13 @@ export function ComparisonTableSection({ dict }: ComparisonTableSectionProps) {
           </motion.h2>
 
           {/* Comparison table */}
-          <motion.div variants={staggerItem} className="mb-12 overflow-x-auto rounded-lg border border-border">
+          <motion.div
+            variants={staggerItem}
+            className="mb-12 overflow-x-auto rounded-2xl border border-white/[0.06] bg-white/[0.02] backdrop-blur-sm"
+          >
             <table className="w-full border-collapse min-w-[600px]">
               <thead>
-                <tr className="border-b-2 border-border bg-background/50">
+                <tr className="border-b border-white/[0.06]">
                   {dict.table.headers.map((header, index) => {
                     const Icon = columnIcons[index];
                     const isLast = index === dict.table.headers.length - 1;
@@ -62,18 +68,19 @@ export function ComparisonTableSection({ dict }: ComparisonTableSectionProps) {
                     return (
                       <th
                         key={index}
-                        className={`py-5 px-5 font-semibold ${
+                        className={`py-5 px-5 font-semibold text-left ${
                           isLast
-                            ? "text-primary bg-primary/10 border-l-2 border-primary/30"
+                            ? "text-primary border-l border-primary/20"
                             : isFirst
                               ? "text-muted-foreground text-sm"
                               : "text-foreground"
                         }`}
+                        style={isLast ? { background: "rgba(229, 168, 75, 0.06)" } : undefined}
                       >
                         {Icon ? (
                           <div className="flex items-center gap-2">
                             <div className={`flex items-center justify-center w-8 h-8 rounded-lg ${
-                              isLast ? "bg-primary/20" : "bg-muted"
+                              isLast ? "bg-primary/15 border border-primary/20" : "bg-white/[0.04] border border-white/[0.06]"
                             }`}>
                               <Icon className={`w-4 h-4 ${isLast ? "text-primary" : "text-muted-foreground"}`} />
                             </div>
@@ -91,9 +98,7 @@ export function ComparisonTableSection({ dict }: ComparisonTableSectionProps) {
                 {dict.table.rows.map((row, rowIndex) => (
                   <tr
                     key={rowIndex}
-                    className={`border-b border-border/50 transition-colors ${
-                      rowIndex % 2 === 0 ? "bg-background/30" : "bg-background/50"
-                    } hover:bg-background`}
+                    className="border-b border-white/[0.04] hover:bg-white/[0.02] transition-colors duration-300"
                   >
                     <td className="py-4 px-5 font-medium text-sm align-top text-muted-foreground">
                       {row.label}
@@ -103,9 +108,10 @@ export function ComparisonTableSection({ dict }: ComparisonTableSectionProps) {
                         key={valueIndex}
                         className={`py-4 px-5 text-sm leading-relaxed ${
                           valueIndex === row.values.length - 1
-                            ? "font-semibold text-primary bg-primary/5 border-l-2 border-primary/30"
+                            ? "font-semibold text-primary border-l border-primary/20"
                             : "text-muted-foreground"
                         }`}
+                        style={valueIndex === row.values.length - 1 ? { background: "rgba(229, 168, 75, 0.04)" } : undefined}
                       >
                         {value}
                       </td>
@@ -117,12 +123,14 @@ export function ComparisonTableSection({ dict }: ComparisonTableSectionProps) {
           </motion.div>
 
           {/* Footer */}
-          <motion.p
+          <motion.div
             variants={staggerItem}
-            className="text-base md:text-lg text-foreground leading-relaxed border-l-4 border-primary pl-6"
+            className="rounded-2xl border border-white/[0.06] bg-white/[0.02] backdrop-blur-sm p-6 md:p-8 max-w-3xl"
           >
-            {dict.footer}
-          </motion.p>
+            <p className="text-base md:text-lg text-foreground leading-relaxed border-l-4 border-primary pl-6">
+              {dict.footer}
+            </p>
+          </motion.div>
         </motion.div>
       </Container>
     </section>

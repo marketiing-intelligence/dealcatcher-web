@@ -20,7 +20,7 @@ interface FAQSectionProps {
 
 export function FAQSection({ dict }: FAQSectionProps) {
   return (
-    <section className="py-20 md:py-32 relative">
+    <section className="py-20 md:py-32 relative overflow-hidden">
       <Container>
         <motion.div
           initial="hidden"
@@ -32,7 +32,7 @@ export function FAQSection({ dict }: FAQSectionProps) {
           {/* Badge */}
           <motion.span
             variants={staggerItem}
-            className="inline-flex items-center gap-2 rounded-full border border-border bg-background/50 px-4 py-1.5 text-sm font-medium text-foreground mb-6"
+            className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-sm font-medium text-primary mb-6"
           >
             {dict.badge}
           </motion.span>
@@ -45,12 +45,15 @@ export function FAQSection({ dict }: FAQSectionProps) {
             {dict.title}
           </motion.h2>
 
-          {/* FAQ Accordion */}
-          <motion.div variants={staggerItem}>
+          {/* FAQ Accordion in glassmorphism card */}
+          <motion.div
+            variants={staggerItem}
+            className="rounded-2xl border border-white/[0.06] bg-white/[0.02] backdrop-blur-sm p-6 md:p-8"
+          >
             <Accordion type="single" collapsible className="w-full">
               {dict.items.map((faq, index) => (
-                <AccordionItem key={index} value={`item-${index}`} className="border-border">
-                  <AccordionTrigger className="text-left text-base md:text-lg font-medium hover:text-primary">
+                <AccordionItem key={index} value={`item-${index}`} className="border-white/[0.06]">
+                  <AccordionTrigger className="text-left text-base md:text-lg font-medium hover:text-primary transition-colors">
                     {faq.question}
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground leading-relaxed text-base">

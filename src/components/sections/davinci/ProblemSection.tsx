@@ -4,7 +4,7 @@ import { Container } from "@/components/shared/Container";
 import { SpotlightCard } from "@/components/ui/spotlight";
 import { motion } from "framer-motion";
 import { staggerContainer, staggerItem, viewportOnce } from "@/lib/animations";
-import { Check } from "lucide-react";
+import { X } from "lucide-react";
 
 interface ProblemSectionProps {
   dict: {
@@ -19,7 +19,10 @@ interface ProblemSectionProps {
 
 export function ProblemSection({ dict }: ProblemSectionProps) {
   return (
-    <section className="py-20 md:py-32 relative">
+    <section className="py-20 md:py-32 relative overflow-hidden">
+      {/* Subtle red-tinted background glow for problem section */}
+      <div className="absolute top-1/2 right-0 w-[500px] h-[500px] rounded-full bg-red-500/[0.03] blur-[120px] pointer-events-none" />
+
       <Container>
         <motion.div
           initial="hidden"
@@ -30,7 +33,7 @@ export function ProblemSection({ dict }: ProblemSectionProps) {
           {/* Badge */}
           <motion.span
             variants={staggerItem}
-            className="inline-flex items-center gap-2 rounded-full border border-border bg-background/50 px-4 py-1.5 text-sm font-medium text-foreground mb-6"
+            className="inline-flex items-center gap-2 rounded-full border border-red-500/20 bg-red-500/5 px-4 py-1.5 text-sm font-medium text-red-400 mb-6"
           >
             {dict.badge}
           </motion.span>
@@ -56,7 +59,7 @@ export function ProblemSection({ dict }: ProblemSectionProps) {
                         <div key={i} className="flex items-start gap-3">
                           <div className="flex-shrink-0 mt-1">
                             <div className="w-5 h-5 rounded-full bg-red-500/10 border border-red-500/20 flex items-center justify-center">
-                              <Check className="w-3 h-3 text-red-500" />
+                              <X className="w-3 h-3 text-red-400" strokeWidth={2.5} />
                             </div>
                           </div>
                           <p className="text-muted-foreground leading-relaxed flex-1">

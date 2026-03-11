@@ -36,7 +36,10 @@ interface CaseStudySectionProps {
 
 export function CaseStudySection({ lang, dict }: CaseStudySectionProps) {
   return (
-    <section className="py-20 md:py-32 relative">
+    <section className="py-20 md:py-32 relative overflow-hidden">
+      {/* Background glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-primary/[0.03] blur-[120px] pointer-events-none" />
+
       <Container>
         <motion.div
           initial="hidden"
@@ -48,7 +51,7 @@ export function CaseStudySection({ lang, dict }: CaseStudySectionProps) {
           {/* Badge */}
           <motion.span
             variants={staggerItem}
-            className="inline-flex items-center gap-2 rounded-full border border-border bg-background/50 px-4 py-1.5 text-sm font-medium text-foreground mb-6"
+            className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-sm font-medium text-primary mb-6"
           >
             {dict.badge}
           </motion.span>
@@ -69,78 +72,87 @@ export function CaseStudySection({ lang, dict }: CaseStudySectionProps) {
             {dict.company}
           </motion.p>
 
-          {/* Situation */}
-          <motion.div variants={staggerItem} className="mb-8">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 border border-primary/20">
-                <FileText className="w-6 h-6 text-primary" />
+          {/* Main content card */}
+          <motion.div
+            variants={staggerItem}
+            className="rounded-2xl border border-white/[0.06] bg-white/[0.02] backdrop-blur-sm p-8 md:p-10 space-y-8"
+          >
+            {/* Situation */}
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="flex items-center justify-center w-11 h-11 rounded-xl bg-primary/10 border border-primary/20">
+                  <FileText className="w-5 h-5 text-primary" />
+                </div>
+                <h3 className="text-xl md:text-2xl font-semibold text-primary">
+                  {dict.situation.title}
+                </h3>
               </div>
-              <h3 className="text-xl md:text-2xl font-semibold text-primary">
-                {dict.situation.title}
-              </h3>
-            </div>
-            <div className="pl-0 md:pl-15">
-              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed pl-14">
                 {dict.situation.text}
               </p>
             </div>
-          </motion.div>
 
-          {/* Divider */}
-          <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent my-8" />
+            {/* Divider */}
+            <div className="h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent" />
 
-          {/* What we did */}
-          <motion.div variants={staggerItem} className="mb-8">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 border border-primary/20">
-                <Wrench className="w-6 h-6 text-primary" />
+            {/* What we did */}
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="flex items-center justify-center w-11 h-11 rounded-xl bg-primary/10 border border-primary/20">
+                  <Wrench className="w-5 h-5 text-primary" />
+                </div>
+                <h3 className="text-xl md:text-2xl font-semibold text-primary">
+                  {dict.whatWeDid.title}
+                </h3>
               </div>
-              <h3 className="text-xl md:text-2xl font-semibold text-primary">
-                {dict.whatWeDid.title}
-              </h3>
+              <ul className="space-y-3 pl-14">
+                {dict.whatWeDid.items.map((item, index) => (
+                  <li key={index} className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-base md:text-lg text-muted-foreground leading-relaxed">
+                      {item}
+                    </span>
+                  </li>
+                ))}
+              </ul>
             </div>
-            <ul className="space-y-3 pl-0 md:pl-15">
-              {dict.whatWeDid.items.map((item, index) => (
-                <li key={index} className="flex items-start gap-3">
-                  <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                    {item}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
 
-          {/* Divider */}
-          <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent my-8" />
+            {/* Divider */}
+            <div className="h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent" />
 
-          {/* Result */}
-          <motion.div variants={staggerItem} className="mb-12">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 border border-primary/20">
-                <Trophy className="w-6 h-6 text-primary" />
+            {/* Result - highlighted */}
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="flex items-center justify-center w-11 h-11 rounded-xl bg-primary/10 border border-primary/20">
+                  <Trophy className="w-5 h-5 text-primary" />
+                </div>
+                <h3 className="text-xl md:text-2xl font-semibold text-primary">
+                  {dict.result.title}
+                </h3>
               </div>
-              <h3 className="text-xl md:text-2xl font-semibold text-primary">
-                {dict.result.title}
-              </h3>
-            </div>
-            <div className="p-6 md:p-8 border border-primary/30 bg-primary/5 rounded-lg">
-              <p className="text-base md:text-lg text-foreground leading-relaxed">
-                {dict.result.text}
-              </p>
+              <div
+                className="ml-14 p-6 rounded-xl border border-primary/20"
+                style={{
+                  background: "linear-gradient(135deg, rgba(229, 168, 75, 0.08) 0%, rgba(229, 168, 75, 0.02) 100%)",
+                }}
+              >
+                <p className="text-base md:text-lg text-foreground leading-relaxed">
+                  {dict.result.text}
+                </p>
+              </div>
             </div>
           </motion.div>
 
-          {/* Divider */}
-          <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent my-8" />
-
-          {/* Bio */}
-          <motion.div variants={staggerItem} className="flex gap-4">
-            <div className="flex items-start justify-center w-12 h-12 rounded-full bg-primary/10 border border-primary/20 flex-shrink-0">
-              <User className="w-6 h-6 text-primary mt-3" />
+          {/* Bio - separate card */}
+          <motion.div
+            variants={staggerItem}
+            className="mt-8 rounded-2xl border border-white/[0.06] bg-white/[0.02] backdrop-blur-sm p-6 md:p-8 flex gap-4"
+          >
+            <div className="flex items-center justify-center w-11 h-11 rounded-xl bg-primary/10 border border-primary/20 flex-shrink-0">
+              <User className="w-5 h-5 text-primary" />
             </div>
             <div>
-              <h3 className="text-lg md:text-xl font-semibold mb-3">
+              <h3 className="text-lg md:text-xl font-semibold mb-2">
                 {dict.bio.title}
               </h3>
               <p className="text-base text-muted-foreground leading-relaxed italic">
@@ -156,7 +168,7 @@ export function CaseStudySection({ lang, dict }: CaseStudySectionProps) {
                 asChild
                 size="lg"
                 variant="outline"
-                className="group h-12 px-6 border-primary/30 hover:bg-primary/10"
+                className="group h-12 px-8 border-primary/30 hover:bg-primary/10 hover:border-primary/50 transition-all duration-300"
               >
                 <Link href={`/${lang}/case-study/mirco`}>
                   <span className="flex items-center gap-2">
