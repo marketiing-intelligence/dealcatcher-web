@@ -1,6 +1,7 @@
 import { Resend } from "resend";
 import { ZodError, z } from "zod";
 import { sendMetaConversionEvent, generateEventId } from "@/lib/analytics/meta-capi";
+import { sendDiscordNotification } from "@/lib/discord";
 
 const prototypeSchema = z.object({
   // Contact
@@ -160,6 +161,10 @@ export async function POST(request: Request) {
         { status: 500 }
       );
     }
+
+    await sendDiscordNotification(
+      `🎨 **Nowe zgłoszenie: Prototyp strony!**\n🏢 ${validatedData.companyName}\n📧 ${validatedData.email}\n🌍 ${validatedData.industry}`
+    );
 
     // Track Lead event with Meta Conversions API (server-side)
     try {

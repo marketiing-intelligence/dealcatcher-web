@@ -3,6 +3,7 @@ import { xraySchema } from "@/lib/validations/xray";
 import XRayNotification from "@/emails/XRayNotification";
 import { ZodError } from "zod";
 import { sendMetaConversionEvent, generateEventId } from "@/lib/analytics/meta-capi";
+import { sendDiscordNotification } from "@/lib/discord";
 
 export async function POST(request: Request) {
   try {
@@ -32,6 +33,10 @@ export async function POST(request: Request) {
         { status: 500 }
       );
     }
+
+    await sendDiscordNotification(
+      `🔬 **Nowe zgłoszenie X-Ray!**\n🏢 ${validatedData.company}\n📧 ${validatedData.email}`
+    );
 
     // Track Lead event with Meta Conversions API (server-side)
     try {

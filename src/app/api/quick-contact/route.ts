@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
+import { sendDiscordNotification } from "@/lib/discord";
 
 export async function POST(request: Request) {
   try {
@@ -29,6 +30,10 @@ export async function POST(request: Request) {
         `,
       });
     }
+
+    await sendDiscordNotification(
+      `📞 **Szybki kontakt — prośba o callback!**\n📱 ${phone}`
+    );
 
     return NextResponse.json({ success: true });
   } catch (error) {

@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
+import { sendDiscordNotification } from "@/lib/discord";
 
 export async function POST(request: Request) {
   try {
@@ -52,6 +53,10 @@ export async function POST(request: Request) {
         `,
       });
     }
+
+    await sendDiscordNotification(
+      `⚠️ **Odstąpienie od umowy!**\n👤 ${consumerName}\n📋 ${serviceDescription}`
+    );
 
     return NextResponse.json({ success: true });
   } catch (error) {
