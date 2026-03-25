@@ -1,14 +1,12 @@
 import { Navbar } from "@/components/shared/Navbar";
 import { HeroSection } from "@/components/sections/davinci/HeroSection";
-import { VSLSection } from "@/components/sections/davinci/VSLSection";
 import { ProblemSection } from "@/components/sections/davinci/ProblemSection";
-import { RootCauseSection } from "@/components/sections/davinci/RootCauseSection";
-import { BenefitsSection } from "@/components/sections/davinci/BenefitsSection";
-import { HowWeWorkSection } from "@/components/sections/davinci/HowWeWorkSection";
+import { WhyItFailsSection } from "@/components/sections/davinci/WhyItFailsSection";
+import { AdvantageSection } from "@/components/sections/davinci/AdvantageSection";
 import { ProcessSection } from "@/components/sections/davinci/ProcessSection";
-import { WhatWeBuildSection } from "@/components/sections/davinci/WhatWeBuildSection";
 import { CaseStudySection } from "@/components/sections/davinci/CaseStudySection";
 import { ComparisonTableSection } from "@/components/sections/davinci/ComparisonTableSection";
+import { OfferSection } from "@/components/sections/davinci/OfferSection";
 import { FAQSection } from "@/components/sections/davinci/FAQSection";
 import { FinalCTASection } from "@/components/sections/davinci/FinalCTASection";
 import { XRayForm } from "@/components/forms/XRayForm";
@@ -35,18 +33,15 @@ export default async function Home({
       <Navbar lang={lang} dict={dict} />
       <main className="pt-16 md:pt-20">
         <HeroSection lang={lang} dict={dict.davinci.hero} />
-        <VSLSection dict={dict.davinci.vsl} />
         <ProblemSection dict={dict.davinci.problem} />
-        <RootCauseSection dict={dict.davinci.rootCause} />
-        <BenefitsSection lang={lang} dict={dict.davinci.benefits} />
-        <HowWeWorkSection dict={dict.davinci.howWeWork} />
+        <WhyItFailsSection dict={dict.davinci.whyItFails} />
+        <AdvantageSection dict={dict.davinci.advantage} />
         <ProcessSection dict={dict.davinci.process} />
-        <WhatWeBuildSection dict={dict.davinci.whatWeBuild} />
         <CaseStudySection lang={lang} dict={dict.davinci.caseStudy} />
         <ComparisonTableSection dict={dict.davinci.comparison} />
+        <OfferSection dict={dict.davinci.offer} />
         <FAQSection dict={dict.davinci.faq} />
         <FinalCTASection lang={lang} dict={dict.davinci.finalCTA} />
-        {/* X-Ray Form Section */}
         <section id="xray-form" className="py-20 md:py-32 relative overflow-hidden">
           <div className="absolute inset-0 bg-muted/30" />
           <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent" />

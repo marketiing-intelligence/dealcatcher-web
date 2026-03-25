@@ -2,4 +2,4 @@
 // Centralized URLs and emails for consistent CTA across the site
 
 export const CALCOM_BOOKING_URL = "https://cal.davinci.agency/dawid-stelmach/discovery-call";
-export const CONTACT_EMAIL = "contact@davinci.agency";
+export const CONTACT_EMAIL = "apps@davinci.agency";

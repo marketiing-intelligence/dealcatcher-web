@@ -3,135 +3,131 @@
 import { Container } from "@/components/shared/Container";
 import { motion } from "framer-motion";
 import { staggerContainer, staggerItem, viewportOnce } from "@/lib/animations";
-import { User, Building2, Code, Sparkles } from "lucide-react";
+import { Check, X } from "lucide-react";
 
 interface ComparisonTableSectionProps {
   dict: {
     badge: string;
     title: string;
-    table: {
-      headers: string[];
-      rows: Array<{
-        label: string;
-        values: string[];
-      }>;
-    };
+    table: { headers: string[]; rows: Array<{ label: string; values: string[] }> };
     footer: string;
+    footerHighlight: string;
   };
 }
 
 export function ComparisonTableSection({ dict }: ComparisonTableSectionProps) {
-  const columnIcons = [null, User, Building2, Code, Sparkles];
+  // Column cards approach — each provider as a card
+  const providers = dict.table.headers.slice(1); // skip empty first header
 
   return (
-    <section className="py-20 md:py-32 relative overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-muted/30" />
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
-
+    <section className="py-16 md:py-20 bg-background">
       <Container>
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportOnce}
-          variants={staggerContainer}
-        >
-          {/* Badge */}
-          <motion.span
-            variants={staggerItem}
-            className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-sm font-medium text-primary mb-6"
-          >
-            {dict.badge}
-          </motion.span>
-
-          {/* Title */}
-          <motion.h2
-            variants={staggerItem}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold [word-spacing:0.15em] mb-12 md:mb-16 max-w-4xl leading-tight"
-          >
-            {dict.title}
-          </motion.h2>
-
-          {/* Comparison table */}
+        <div className="max-w-4xl mx-auto">
           <motion.div
-            variants={staggerItem}
-            className="mb-12 overflow-x-auto rounded-2xl border border-white/[0.06] bg-white/[0.02] backdrop-blur-sm"
+            initial="hidden"
+            whileInView="visible"
+            viewport={viewportOnce}
+            variants={staggerContainer}
           >
-            <table className="w-full border-collapse min-w-[600px]">
-              <thead>
-                <tr className="border-b border-white/[0.06]">
-                  {dict.table.headers.map((header, index) => {
-                    const Icon = columnIcons[index];
-                    const isLast = index === dict.table.headers.length - 1;
-                    const isFirst = index === 0;
+            {/* Header */}
+            <div className="text-center mb-12">
+              <motion.span
+                variants={staggerItem}
+                className="text-[10px] font-bold text-primary uppercase tracking-[0.2em] mb-4 block"
+              >
+                {dict.badge}
+              </motion.span>
+              <motion.h2
+                variants={staggerItem}
+                className="text-xl sm:text-2xl md:text-3xl font-semibold tracking-tight leading-[1.25]"
+              >
+                {dict.title}
+              </motion.h2>
+            </div>
 
-                    return (
-                      <th
-                        key={index}
-                        className={`py-5 px-5 font-semibold text-left ${
-                          isLast
-                            ? "text-primary border-l border-primary/20"
-                            : isFirst
-                              ? "text-muted-foreground text-sm"
-                              : "text-foreground"
-                        }`}
-                        style={isLast ? { background: "rgba(229, 168, 75, 0.06)" } : undefined}
-                      >
-                        {Icon ? (
-                          <div className="flex items-center gap-2">
-                            <div className={`flex items-center justify-center w-8 h-8 rounded-lg ${
-                              isLast ? "bg-primary/15 border border-primary/20" : "bg-white/[0.04] border border-white/[0.06]"
-                            }`}>
-                              <Icon className={`w-4 h-4 ${isLast ? "text-primary" : "text-muted-foreground"}`} />
-                            </div>
-                            <span>{header}</span>
-                          </div>
-                        ) : (
-                          header
-                        )}
-                      </th>
-                    );
-                  })}
-                </tr>
-              </thead>
-              <tbody>
-                {dict.table.rows.map((row, rowIndex) => (
-                  <tr
-                    key={rowIndex}
-                    className="border-b border-white/[0.04] hover:bg-white/[0.02] transition-colors duration-300"
+            {/* Card-based comparison */}
+            <motion.div
+              variants={staggerItem}
+              className="grid grid-cols-2 md:grid-cols-4 gap-3"
+            >
+              {providers.map((provider, colIdx) => {
+                const isUs = colIdx === providers.length - 1;
+
+                return (
+                  <div
+                    key={colIdx}
+                    className={`rounded-xl p-5 transition-all duration-300 ${
+                      isUs
+                        ? "bg-primary/[0.06] border-2 border-primary/25 shadow-lg shadow-primary/5"
+                        : "bg-[#141414] border border-white/[0.06] hover:border-white/[0.1]"
+                    }`}
                   >
-                    <td className="py-4 px-5 font-medium text-sm align-top text-muted-foreground">
-                      {row.label}
-                    </td>
-                    {row.values.map((value, valueIndex) => (
-                      <td
-                        key={valueIndex}
-                        className={`py-4 px-5 text-sm leading-relaxed ${
-                          valueIndex === row.values.length - 1
-                            ? "font-semibold text-primary border-l border-primary/20"
-                            : "text-muted-foreground"
-                        }`}
-                        style={valueIndex === row.values.length - 1 ? { background: "rgba(229, 168, 75, 0.04)" } : undefined}
-                      >
-                        {value}
-                      </td>
-                    ))}
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </motion.div>
+                    {/* Provider name */}
+                    <h3
+                      className={`text-sm font-semibold mb-5 pb-3 border-b ${
+                        isUs
+                          ? "text-primary border-primary/20"
+                          : "text-foreground/70 border-white/[0.06]"
+                      }`}
+                    >
+                      {provider}
+                    </h3>
 
-          {/* Footer */}
-          <motion.div
-            variants={staggerItem}
-            className="rounded-2xl border border-white/[0.06] bg-white/[0.02] backdrop-blur-sm p-6 md:p-8 max-w-3xl"
-          >
-            <p className="text-base md:text-lg text-foreground leading-relaxed border-l-4 border-primary pl-6">
-              {dict.footer}
-            </p>
+                    {/* Rows as feature list */}
+                    <div className="space-y-3">
+                      {dict.table.rows.map((row, rowIdx) => {
+                        const value = row.values[colIdx];
+                        const isPositive = value.startsWith("✓");
+                        const isNegative = value.startsWith("✗");
+
+                        return (
+                          <div key={rowIdx}>
+                            <p className="text-[10px] text-muted-foreground/40 uppercase tracking-wider mb-0.5">
+                              {row.label}
+                            </p>
+                            <div className="flex items-center gap-1.5">
+                              {isPositive ? (
+                                <Check className={`w-3.5 h-3.5 flex-shrink-0 ${isUs ? "text-primary" : "text-emerald-400"}`} />
+                              ) : isNegative ? (
+                                <X className="w-3.5 h-3.5 text-red-400/50 flex-shrink-0" />
+                              ) : null}
+                              <span
+                                className={`text-xs leading-snug ${
+                                  isUs
+                                    ? "text-primary font-medium"
+                                    : isPositive
+                                      ? "text-foreground/70"
+                                      : isNegative
+                                        ? "text-muted-foreground/50"
+                                        : "text-muted-foreground/60"
+                                }`}
+                              >
+                                {value.replace(/^[✓✗]\s*/, "")}
+                              </span>
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                );
+              })}
+            </motion.div>
+
+            {/* Footer */}
+            <motion.div
+              variants={staggerItem}
+              className="mt-10 text-center max-w-lg mx-auto"
+            >
+              <p className="text-sm text-muted-foreground leading-relaxed mb-1">
+                {dict.footer}
+              </p>
+              <p className="text-sm font-semibold text-primary">
+                {dict.footerHighlight}
+              </p>
+            </motion.div>
           </motion.div>
-        </motion.div>
+        </div>
       </Container>
     </section>
   );

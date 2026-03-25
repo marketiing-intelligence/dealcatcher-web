@@ -4,7 +4,7 @@ import { Container } from "@/components/shared/Container";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { staggerContainer, staggerItem, viewportOnce } from "@/lib/animations";
-import { CheckCircle, FileText, Wrench, Trophy, User, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import type { Locale } from "@/lib/i18n/config";
 
@@ -14,172 +14,131 @@ interface CaseStudySectionProps {
     badge: string;
     title: string;
     company: string;
-    situation: {
-      title: string;
-      text: string;
-    };
-    whatWeDid: {
-      title: string;
-      items: string[];
-    };
-    result: {
-      title: string;
-      text: string;
-    };
-    bio: {
-      title: string;
-      text: string;
-    };
-    cta?: string;
+    companyDetails: string;
+    problem: string;
+    whatWeDid: string;
+    results: string[];
+    cta: string;
   };
 }
 
 export function CaseStudySection({ lang, dict }: CaseStudySectionProps) {
   return (
-    <section className="py-20 md:py-32 relative overflow-hidden">
-      {/* Background glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-primary/[0.03] blur-[120px] pointer-events-none" />
-
-      <Container>
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportOnce}
-          variants={staggerContainer}
-          className="max-w-4xl mx-auto"
+    <section className="relative py-20 md:py-28 overflow-hidden">
+      {/* Background video */}
+      <div className="absolute inset-0">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
         >
-          {/* Badge */}
-          <motion.span
-            variants={staggerItem}
-            className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-sm font-medium text-primary mb-6"
-          >
-            {dict.badge}
-          </motion.span>
+          <source src="/videos/hero-video.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-black/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-transparent to-background/60" />
+      </div>
 
-          {/* Title */}
-          <motion.h2
-            variants={staggerItem}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold [word-spacing:0.15em] mb-4 leading-tight"
-          >
-            {dict.title}
-          </motion.h2>
-
-          {/* Company */}
-          <motion.p
-            variants={staggerItem}
-            className="text-xl md:text-2xl text-primary font-semibold mb-12"
-          >
-            {dict.company}
-          </motion.p>
-
-          {/* Main content card */}
+      <Container className="relative z-10">
+        <div className="max-w-5xl mx-auto">
           <motion.div
-            variants={staggerItem}
-            className="rounded-2xl border border-white/[0.06] bg-white/[0.02] backdrop-blur-sm p-8 md:p-10 space-y-8"
+            initial="hidden"
+            whileInView="visible"
+            viewport={viewportOnce}
+            variants={staggerContainer}
           >
-            {/* Situation */}
-            <div>
-              <div className="flex items-center gap-3 mb-4">
-                <div className="flex items-center justify-center w-11 h-11 rounded-xl bg-primary/10 border border-primary/20">
-                  <FileText className="w-5 h-5 text-primary" />
-                </div>
-                <h3 className="text-xl md:text-2xl font-semibold text-primary">
-                  {dict.situation.title}
-                </h3>
-              </div>
-              <p className="text-base md:text-lg text-muted-foreground leading-relaxed pl-14">
-                {dict.situation.text}
-              </p>
-            </div>
-
-            {/* Divider */}
-            <div className="h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent" />
-
-            {/* What we did */}
-            <div>
-              <div className="flex items-center gap-3 mb-4">
-                <div className="flex items-center justify-center w-11 h-11 rounded-xl bg-primary/10 border border-primary/20">
-                  <Wrench className="w-5 h-5 text-primary" />
-                </div>
-                <h3 className="text-xl md:text-2xl font-semibold text-primary">
-                  {dict.whatWeDid.title}
-                </h3>
-              </div>
-              <ul className="space-y-3 pl-14">
-                {dict.whatWeDid.items.map((item, index) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                      {item}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Divider */}
-            <div className="h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent" />
-
-            {/* Result - highlighted */}
-            <div>
-              <div className="flex items-center gap-3 mb-4">
-                <div className="flex items-center justify-center w-11 h-11 rounded-xl bg-primary/10 border border-primary/20">
-                  <Trophy className="w-5 h-5 text-primary" />
-                </div>
-                <h3 className="text-xl md:text-2xl font-semibold text-primary">
-                  {dict.result.title}
-                </h3>
-              </div>
-              <div
-                className="ml-14 p-6 rounded-xl border border-primary/20"
-                style={{
-                  background: "linear-gradient(135deg, rgba(229, 168, 75, 0.08) 0%, rgba(229, 168, 75, 0.02) 100%)",
-                }}
-              >
-                <p className="text-base md:text-lg text-foreground leading-relaxed">
-                  {dict.result.text}
-                </p>
-              </div>
-            </div>
-          </motion.div>
-
-          {/* Bio - separate card */}
-          <motion.div
-            variants={staggerItem}
-            className="mt-8 rounded-2xl border border-white/[0.06] bg-white/[0.02] backdrop-blur-sm p-6 md:p-8 flex gap-4"
-          >
-            <div className="flex items-center justify-center w-11 h-11 rounded-xl bg-primary/10 border border-primary/20 flex-shrink-0">
-              <User className="w-5 h-5 text-primary" />
-            </div>
-            <div>
-              <h3 className="text-lg md:text-xl font-semibold mb-2">
-                {dict.bio.title}
-              </h3>
-              <p className="text-base text-muted-foreground leading-relaxed italic">
-                {dict.bio.text}
-              </p>
-            </div>
-          </motion.div>
-
-          {/* CTA to full case study */}
-          {dict.cta && (
-            <motion.div variants={staggerItem} className="text-center mt-12">
-              <Button
-                asChild
-                size="lg"
-                variant="outline"
-                className="group h-12 px-8 border-primary/30 hover:bg-primary/10 hover:border-primary/50 transition-all duration-300"
-              >
-                <Link href={`/${lang}/case-study/mirco`}>
-                  <span className="flex items-center gap-2">
-                    {dict.cta}
-                    <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  </span>
-                </Link>
-              </Button>
+            {/* Header */}
+            <motion.div variants={staggerItem} className="mb-10">
+              <span className="text-[10px] font-bold text-primary uppercase tracking-[0.2em] block mb-3">
+                {dict.badge}
+              </span>
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold tracking-tight leading-[1.25]">
+                {dict.title}
+              </h2>
             </motion.div>
-          )}
-        </motion.div>
+
+            {/* Glass card */}
+            <motion.div
+              variants={staggerItem}
+              className="rounded-2xl border border-white/[0.08] backdrop-blur-md bg-white/[0.04] p-6 md:p-10"
+            >
+              {/* Inner grid: image left, content right */}
+              <div className="grid md:grid-cols-[1fr,1.2fr] gap-8 items-start">
+                {/* Left: screenshot */}
+                <div className="rounded-xl overflow-hidden border border-white/[0.08] shadow-2xl shadow-black/40">
+                  <img
+                    src="/images/examples/mirco-configurator.png"
+                    alt="Mirco Konfigurator"
+                    className="w-full h-auto block"
+                  />
+                </div>
+
+                {/* Right: content */}
+                <div>
+                  {/* Company */}
+                  <h3 className="text-base md:text-lg font-bold mb-0.5">
+                    {dict.company}
+                  </h3>
+                  <p className="text-xs text-white/40 mb-6">
+                    {dict.companyDetails}
+                  </p>
+
+                  {/* Problem */}
+                  <div className="mb-5">
+                    <p className="text-[10px] font-bold text-red-400/80 uppercase tracking-wider mb-1.5">
+                      Problem
+                    </p>
+                    <p className="text-sm text-white/70 leading-[1.7]">
+                      {dict.problem}
+                    </p>
+                  </div>
+
+                  {/* What we did */}
+                  <div className="mb-5">
+                    <p className="text-[10px] font-bold text-primary/80 uppercase tracking-wider mb-1.5">
+                      Co zrobiliśmy
+                    </p>
+                    <p className="text-sm text-white/70 leading-[1.7]">
+                      {dict.whatWeDid}
+                    </p>
+                  </div>
+
+                  {/* Results */}
+                  <div className="mb-6">
+                    <p className="text-[10px] font-bold text-white/60 uppercase tracking-wider mb-2">
+                      Efekt
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {dict.results.map((item, i) => (
+                        <span
+                          key={i}
+                          className="inline-flex items-center gap-1.5 rounded-full bg-white/[0.06] border border-white/[0.08] px-3 py-1.5 text-xs text-white/80"
+                        >
+                          <ArrowRight className="w-2.5 h-2.5 text-primary" />
+                          {item}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* CTA */}
+                  <Button
+                    asChild
+                    className="group bg-primary hover:bg-primary/90 text-primary-foreground h-9 px-5 text-xs font-medium"
+                  >
+                    <Link href={`/${lang}/case-study/mirco`}>
+                      <span className="flex items-center gap-1.5">
+                        {dict.cta}
+                        <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-0.5" />
+                      </span>
+                    </Link>
+                  </Button>
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
+        </div>
       </Container>
     </section>
   );

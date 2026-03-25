@@ -4,7 +4,6 @@ import { Container } from "@/components/shared/Container";
 import Image from "next/image";
 import Link from "next/link";
 import type { Locale } from "@/lib/i18n/config";
-import { CONTACT_EMAIL } from "@/lib/constants";
 
 interface FooterProps {
   lang: Locale;
@@ -25,11 +24,11 @@ export function Footer({ lang, dict }: FooterProps) {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-border bg-[#0A0A0A] py-12 md:py-16">
+    <footer className="border-t border-white/[0.06] bg-[#0A0A0A] py-12 md:py-16">
       <Container>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
-          <div className="col-span-2">
+          <div className="md:col-span-2">
             <Link href={`/${lang}`} className="inline-block">
               <Image
                 src="/Logo_white.png"
@@ -39,118 +38,45 @@ export function Footer({ lang, dict }: FooterProps) {
                 className="h-8 w-auto"
               />
             </Link>
-            <p className="mt-4 text-muted-foreground max-w-sm leading-relaxed">
+            <p className="mt-4 text-sm text-muted-foreground max-w-sm leading-relaxed">
               {dict.description}
             </p>
           </div>
 
-          {/* Services */}
-          <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-4">
-              {dict.services}
-            </h4>
-            <ul className="space-y-3">
-              <li>
-                <Link
-                  href={`/${lang}/xray`}
-                  className="text-foreground hover:text-primary transition-colors"
-                >
-                  {dict.xray}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={`/${lang}/no-website`}
-                  className="text-foreground hover:text-primary transition-colors"
-                >
-                  Nowa strona
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={`/${lang}/formularz`}
-                  className="text-foreground hover:text-primary transition-colors"
-                >
-                  Darmowy prototyp
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={`/${lang}/konfiguratory`}
-                  className="text-foreground hover:text-primary transition-colors"
-                >
-                  Konfiguratory
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={`/${lang}/google-ads`}
-                  className="text-foreground hover:text-primary transition-colors"
-                >
-                  Google Ads
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={`/${lang}/audyt-marketingowy`}
-                  className="text-foreground hover:text-primary transition-colors"
-                >
-                  Audyt marketingowy
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={`/${lang}/baza-klientow`}
-                  className="text-foreground hover:text-primary transition-colors"
-                >
-                  Baza klientów B2B
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={`/${lang}/narzedzia-na-miare`}
-                  className="text-foreground hover:text-primary transition-colors"
-                >
-                  Narzędzia na miarę
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={`/${lang}/portfolio`}
-                  className="text-foreground hover:text-primary transition-colors"
-                >
-                  Portfolio
-                </Link>
-              </li>
-            </ul>
-          </div>
-
           {/* Contact */}
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-4">
+            <h4 className="text-xs font-bold uppercase tracking-wider text-muted-foreground/60 mb-4">
               {dict.contact}
             </h4>
-            <ul className="space-y-3">
+            <ul className="space-y-2">
               <li>
                 <a
-                  href={`mailto:${CONTACT_EMAIL}`}
-                  className="text-foreground hover:text-primary transition-colors"
+                  href="mailto:apps@davinci.agency"
+                  className="text-sm text-foreground hover:text-primary transition-colors"
                 >
-                  {CONTACT_EMAIL}
+                  apps@davinci.agency
                 </a>
+              </li>
+              <li>
+                <Link
+                  href={`/${lang}/case-study/mirco`}
+                  className="text-sm text-foreground hover:text-primary transition-colors"
+                >
+                  Case Study
+                </Link>
               </li>
             </ul>
           </div>
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-muted-foreground">
+        <div className="mt-12 pt-8 border-t border-white/[0.04] flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-xs text-muted-foreground/50">
             &copy; {currentYear} DaVinci. {dict.copyright}
             <br />
             NIP: 7011297183 | KRS: 0001221058 | REGON: 543861552
           </p>
-          <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
+          <div className="flex flex-wrap justify-center gap-6 text-xs text-muted-foreground/50">
             <Link href={`/${lang}/privacy`} className="hover:text-foreground transition-colors">
               {dict.privacy}
             </Link>

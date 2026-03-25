@@ -1,99 +1,90 @@
 "use client";
 
 import { Container } from "@/components/shared/Container";
-import { SpotlightCard } from "@/components/ui/spotlight";
-import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { staggerContainer, staggerItem, viewportOnce } from "@/lib/animations";
-import { ArrowRight } from "lucide-react";
-import Link from "next/link";
-import type { Locale } from "@/lib/i18n/config";
 
 interface BenefitsSectionProps {
-  lang: Locale;
   dict: {
     badge: string;
     title: string;
-    items: Array<{
-      number: string;
-      title: string;
-      description: string;
-    }>;
-    cta: string;
-    ctaNote: string;
+    subtitle: string;
+    subtitleSecond: string;
+    subtitleThird: string;
+    items: Array<{ number: string; title: string; description: string }>;
   };
 }
 
-export function BenefitsSection({ lang, dict }: BenefitsSectionProps) {
+export function BenefitsSection({ dict }: BenefitsSectionProps) {
   return (
-    <section className="py-20 md:py-32 relative overflow-hidden">
-      {/* Background glow */}
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[600px] h-[400px] rounded-full bg-primary/[0.04] blur-[100px] pointer-events-none" />
-
+    <section className="py-16 md:py-20 bg-[#0e0e0e]">
       <Container>
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportOnce}
-          variants={staggerContainer}
-        >
-          {/* Badge */}
-          <motion.span
-            variants={staggerItem}
-            className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-sm font-medium text-primary mb-6"
+        <div className="max-w-4xl mx-auto">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={viewportOnce}
+            variants={staggerContainer}
           >
-            {dict.badge}
-          </motion.span>
+            {/* Header — centered, stacked */}
+            <div className="text-center mb-14">
+              <motion.span
+                variants={staggerItem}
+                className="text-[10px] font-bold text-primary uppercase tracking-[0.2em] mb-4 block"
+              >
+                {dict.badge}
+              </motion.span>
 
-          {/* Title */}
-          <motion.h2
-            variants={staggerItem}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold [word-spacing:0.15em] mb-12 md:mb-16 max-w-4xl leading-tight"
-          >
-            {dict.title}
-          </motion.h2>
+              <motion.h2
+                variants={staggerItem}
+                className="text-xl sm:text-2xl md:text-3xl font-semibold tracking-tight leading-[1.25] mb-6"
+              >
+                {dict.title}
+              </motion.h2>
 
-          {/* Benefit cards */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12">
-            {dict.items.map((item, index) => (
-              <motion.div key={index} variants={staggerItem}>
-                <SpotlightCard>
-                  <div className="mb-4">
-                    <span className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 text-2xl font-semibold text-primary">
+              <motion.div
+                variants={staggerItem}
+                className="max-w-xl mx-auto space-y-2"
+              >
+                <p className="text-sm text-muted-foreground leading-[1.7]">
+                  {dict.subtitle}
+                </p>
+                <p className="text-sm text-muted-foreground leading-[1.7]">
+                  {dict.subtitleSecond}
+                </p>
+                <p className="text-sm text-foreground font-medium leading-[1.7]">
+                  {dict.subtitleThird}
+                </p>
+              </motion.div>
+            </div>
+
+            {/* 6 deliverable cards — 3x2 grid */}
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {dict.items.map((item, i) => (
+                <motion.div
+                  key={i}
+                  variants={staggerItem}
+                  className="group rounded-xl bg-[#141414] border border-white/[0.08] p-6 hover:border-primary/20 hover:bg-[#171717] transition-all duration-300"
+                >
+                  {/* Number badge */}
+                  <div className="w-9 h-9 rounded-lg bg-primary/10 border border-primary/15 flex items-center justify-center mb-4">
+                    <span className="text-sm font-bold text-primary">
                       {item.number}
                     </span>
                   </div>
-                  <h3 className="text-xl md:text-2xl font-semibold mb-4 leading-tight">
+
+                  <h3 className="text-sm font-semibold mb-2 tracking-tight leading-snug">
                     {item.title}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed">
+
+                  <p className="text-sm text-muted-foreground leading-[1.7]">
                     {item.description}
                   </p>
-                </SpotlightCard>
-              </motion.div>
-            ))}
-          </div>
-
-          {/* CTA */}
-          <motion.div variants={staggerItem} className="text-center">
-            <div className="mb-4">
-              <Button
-                asChild
-                size="lg"
-                className="group relative bg-primary hover:bg-primary/90 text-primary-foreground h-14 md:h-16 px-8 md:px-10 text-base md:text-lg font-medium overflow-hidden w-full sm:w-auto shadow-[0_0_30px_rgba(229,168,75,0.2)] hover:shadow-[0_0_40px_rgba(229,168,75,0.35)] transition-shadow duration-500"
-              >
-                <Link href={`/${lang}#xray-form`}>
-                  <span className="absolute inset-0 bg-gradient-to-r from-primary via-accent-hover to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  <span className="relative flex items-center gap-2">
-                    {dict.cta}
-                    <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
-                  </span>
-                </Link>
-              </Button>
+                </motion.div>
+              ))}
             </div>
-            <p className="text-sm text-muted-foreground">{dict.ctaNote}</p>
           </motion.div>
-        </motion.div>
+        </div>
       </Container>
     </section>
   );

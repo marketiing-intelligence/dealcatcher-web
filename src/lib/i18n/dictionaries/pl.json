@@ -422,7 +422,7 @@
       },
       {
         "title": "Bez zbędnych pytań",
-        "description": "Napisz do nas na contact@davinci.agency, a przetworzymy zwrot natychmiast."
+        "description": "Napisz do nas na apps@davinci.agency, a przetworzymy zwrot natychmiast."
       },
       {
         "title": "Poprawki w cenie",
@@ -460,7 +460,7 @@
     "ctaSecondary": "Oddzwonimy w 2 godziny"
   },
   "footer": {
-    "description": "Analizujemy firmy, znajdujemy gdzie tracisz pieniądze i budujemy dokładnie to, co Twój biznes potrzebuje.",
+    "description": "Analizujemy firmy, znajdujemy gdzie tracisz pieniądze i budujemy dokładnie to, czego Twój biznes potrzebuje.",
     "services": "Usługi",
     "contact": "Kontakt",
     "xray": "X-Ray",
@@ -520,7 +520,7 @@
     },
     "info": {
       "email": "E-mail",
-      "emailValue": "contact@davinci.agency",
+      "emailValue": "apps@davinci.agency",
       "responseTime": "Czas odpowiedzi",
       "responseValue": "Do 24 godzin",
       "location": "Lokalizacja",
@@ -543,7 +543,7 @@
         "krs": "KRS: 0001221058",
         "nip": "NIP: 7011297183",
         "regon": "REGON: 543861552",
-        "email": "E-mail: contact@davinci.agency"
+        "email": "E-mail: apps@davinci.agency"
       },
       "dataCollected": {
         "title": "Jakie dane zbieramy",
@@ -648,7 +648,7 @@
             "description": "W przypadku gdy przetwarzanie opiera się na zgodzie, możesz ją cofnąć w każdej chwili."
           }
         ],
-        "exercise": "Aby skorzystać z tych praw, skontaktuj się z nami pod adresem contact@davinci.agency."
+        "exercise": "Aby skorzystać z tych praw, skontaktuj się z nami pod adresem apps@davinci.agency."
       },
       "thirdParty": {
         "title": "Usługi zewnętrzne",
@@ -681,7 +681,7 @@
       "contact": {
         "title": "Kontakt",
         "content": "Jeśli masz pytania dotyczące niniejszej Polityki prywatności lub chcesz skorzystać ze swoich praw, skontaktuj się z nami:",
-        "email": "E-mail: contact@davinci.agency",
+        "email": "E-mail: apps@davinci.agency",
         "address": "Adres: ul. Złota 75A lok. 7, 00-819 Warszawa",
         "complaint": "Masz również prawo złożyć skargę do organu nadzorczego. W Polsce jest to Prezes Urzędu Ochrony Danych Osobowych (UODO), ul. Stawki 2, 00-193 Warszawa, uodo.gov.pl."
       }
@@ -739,7 +739,7 @@
           "title": "Jak skorzystać z prawa odstąpienia",
           "content": "Aby skorzystać z prawa odstąpienia od umowy, musisz nas poinformować o swojej decyzji w drodze jednoznacznego oświadczenia. Możesz to zrobić:",
           "methods": [
-            "E-mailem na adres: contact@davinci.agency",
+            "E-mailem na adres: apps@davinci.agency",
             "Korzystając z formularza odstąpienia dostępnego na naszej stronie"
           ]
         },
@@ -761,7 +761,7 @@
         },
         "cancellation": {
           "title": "Rezygnacja",
-          "content": "Możesz zrezygnować z subskrypcji w dowolnym momencie, kontaktując się z nami pod adresem contact@davinci.agency. Rezygnacja wchodzi w życie z końcem bieżącego okresu rozliczeniowego. Dostęp do usługi zachowujesz do końca opłaconego okresu."
+          "content": "Możesz zrezygnować z subskrypcji w dowolnym momencie, kontaktując się z nami pod adresem apps@davinci.agency. Rezygnacja wchodzi w życie z końcem bieżącego okresu rozliczeniowego. Dostęp do usługi zachowujesz do końca opłaconego okresu."
         },
         "autoRenewal": {
           "title": "Automatyczne odnowienie",
@@ -816,7 +816,7 @@
         "content": "W razie pytań dotyczących niniejszego Regulaminu, skontaktuj się z nami:",
         "company": "AI SCALING SYSTEMS sp. z o.o.",
         "address": "Aleje Jerozolimskie 109 / 70, 02-011 Warszawa",
-        "email": "E-mail: contact@davinci.agency"
+        "email": "E-mail: apps@davinci.agency"
       }
     }
   },
@@ -891,7 +891,7 @@
     "title": "Formularz odstąpienia",
     "subtitle": "Skorzystaj z tego formularza, aby odstąpić od umowy w ciągu 14 dni",
     "form": {
-      "recipient": "Do: AI SCALING SYSTEMS sp. z o.o., Aleje Jerozolimskie 109 / 70, 02-011 Warszawa, contact@davinci.agency",
+      "recipient": "Do: AI SCALING SYSTEMS sp. z o.o., Aleje Jerozolimskie 109 / 70, 02-011 Warszawa, apps@davinci.agency",
       "declaration": "Niniejszym informuję/informujemy o moim/naszym odstąpieniu od umowy o świadczenie następującej usługi:",
       "serviceLabel": "Opis usługi",
       "orderedOnLabel": "Data zamówienia / otrzymania",
@@ -901,7 +901,7 @@
       "signatureLabel": "Podpis (tylko w przypadku przesyłania na papierze)",
       "submit": "Wyślij formularz odstąpienia",
       "success": "Twoje odstąpienie zostało przesłane. Przetworzymy je w ciągu 14 dni.",
-      "error": "Wystąpił błąd. Spróbuj ponownie lub skontaktuj się z nami bezpośrednio pod adresem contact@davinci.agency."
+      "error": "Wystąpił błąd. Spróbuj ponownie lub skontaktuj się z nami bezpośrednio pod adresem apps@davinci.agency."
     }
   },
   "noWebsite": {
@@ -2348,7 +2348,7 @@
       "submit": "Wyślij mi spersonalizowany raport",
       "success": "Mamy to!",
       "successMessage": "Przyjrzymy się Twojej stronie i lokalnemu rynkowi, a spersonalizowaną analizę wyślemy w ciągu 48 godzin.",
-      "error": "Coś poszło nie tak. Spróbuj ponownie lub napisz do nas na contact@davinci.agency.",
+      "error": "Coś poszło nie tak. Spróbuj ponownie lub napisz do nas na apps@davinci.agency.",
       "validationEmail": "Podaj prawidłowy adres e-mail",
       "validationRequired": "To pole jest wymagane"
     },
@@ -2737,365 +2737,263 @@
   },
   "davinci": {
     "hero": {
-      "headline": "Pokaż nam swoją firmę. Pokażemy Ci rzeczy, których nie widać od środka.",
-      "subheadline": "Analizujemy cały biznes — sprzedaż, operacje, marketing, finanse, zespół, procesy. Znajdujemy co naprawdę blokuje wzrost i budujemy rozwiązanie. Strategia, technologia i wdrożenie. Pod jednym dachem.",
+      "headline": "Sprawiamy że Twoja firma",
+      "headlineRotation": [
+        "wie więcej niż konkurencja.",
+        "podejmuje lepsze decyzje.",
+        "widzi to czego inni nie widzą.",
+        "działa szybciej.",
+        "skaluje się bez chaosu."
+      ],
+      "subheadline": "Diagnoza oparta na danych. Strategia szyta na miarę. Wdrożenie pod jednym dachem.",
       "cta": "Umów się na darmową rozmowę — 30 min",
       "ctaNote": "Zero zobowiązań."
     },
-    "vsl": {
-      "badge": "Zobacz jak to robimy",
-      "titleStart": "Dlaczego inne agencje pytają \"czego potrzebujesz\", a my pytamy ",
-      "titleHighlight": "\"co hamuje Twoją firmę\"",
-      "titleEnd": "?",
-      "subtitle": "4 minuty, które zmienią sposób w jaki myślisz o rozwoju firmy."
+    "pilotProgram": {
+      "badge": "PROGRAM PILOTAŻOWY",
+      "title": "Szukamy 3 firm do programu pilotażowego.",
+      "description": "Pełny X-Ray Biznesowy za 5 000 PLN. W zamian: Twój feedback + case study.",
+      "cta": "Chcę jedno z 3 miejsc"
     },
     "problem": {
-      "badge": "Znasz to?",
-      "title": "Twoja firma mogłaby rosnąć szybciej. Pytanie: co ją hamuje?",
-      "pains": [
+      "title": "Wiesz że coś blokuje Twoją firmę. Nie wiesz co.",
+      "cards": [
         {
-          "title": "Wiesz że powinieneś wdrożyć AI. Wiesz że jak tego nie zrobisz — odpadniesz.",
-          "description": [
-            "Twoja konkurencja już to robi. Obniżają koszty, przyspieszają procesy, podejmują lepsze decyzje. Ty to widzisz. Czujesz presję.",
-            "Może nawet próbowałeś — ChatGPT, jakiś tool, automatyzacja. Dostałeś generyczne odpowiedzi, które nie mają nic wspólnego z Twoim biznesem.",
-            "Bo AI nie zna Twojej firmy. Nie ma skąd — Twoje dane są porozrzucane po głowach ludzi, Excelach i skrzynkach mailowych."
-          ]
+          "number": "01",
+          "title": "Konkurencja nie śpi.",
+          "description": "Firmy które wdrożyły AI naprawdę — rosną 2x szybciej i mają 3.5x wyższy zwrot dla właścicieli. (BCG, 2025)"
         },
         {
-          "title": "Twoja firma jest w Twojej głowie. I tylko w Twojej głowie.",
-          "description": [
-            "Procesy, wiedza, kontakty, doświadczenie — to wszystko siedzi w ludziach. Jak ktoś odchodzi, zabiera kawałek firmy ze sobą.",
-            "Nie możesz delegować, bo nikt nie wie co robić bez Ciebie.",
-            "Nie możesz wykorzystać AI, bo nie ma danych na których mogłoby pracować.",
-            "Nie możesz skalować, bo wszystko zależy od Twojej dostępności.",
-            "Pracujesz W firmie zamiast NAD firmą."
-          ]
+          "number": "02",
+          "title": "Koszty rosną.",
+          "description": "Wojna, łańcuchy dostaw, inflacja. A Ty nie wiesz gdzie dokładnie tracisz."
         },
         {
-          "title": "Kupiłeś narzędzia. Zatrudniłeś agencję. Nic się nie zmieniło.",
-          "description": [
-            "CRM leży. Automatyzacja nie działa. Strona nie konwertuje.",
-            "Bo nikt nie sprawdził czy to w ogóle jest Twój problem.",
-            "Wydałeś dziesiątki tysięcy na złe rzeczy — bo agencja zrobiła co kazałeś, zamiast powiedzieć Ci co naprawdę trzeba."
-          ]
-        },
-        {
-          "title": "Masz za dużo pomysłów i zero jasności co da najszybszy efekt.",
-          "description": [
-            "Eksport? Nowy kanał? Automatyzacja? Nowa oferta? Nowy produkt?",
-            "Masz umiejętności, masz zasoby, masz pomysły — ale nie wiesz od czego zacząć.",
-            "Każdy doradca mówi co innego.",
-            "Brakuje kogoś kto popatrzy na WSZYSTKO i powie: tu jest największa szansa."
-          ]
-        },
-        {
-          "title": "Koszty rosną szybciej niż przychody.",
-          "description": [
-            "Każdy nowy klient = więcej ludzi, więcej chaosu, więcej kosztów.",
-            "Procesy które działały dla 10 klientów rozpadają się przy 50.",
-            "Nie skalujesz — multiplikujesz bałagan."
-          ]
+          "number": "03",
+          "title": "AI zmienia zasady gry.",
+          "description": "Firma która dziś ma nad Tobą przewagę 2 lat, za pół roku będzie miała przewagę 5 lat."
         }
-      ]
-    },
-    "rootCause": {
-      "badge": "Dlaczego",
-      "title": "Bo nikt nigdy nie popatrzył na Twoją firmę jako całość.",
-      "paragraphs": [
-        "Zatrudniłeś agencję marketingową — zrobiła marketing. Ale nie sprawdziła czy Twoja oferta ma sens.",
-        "Zatrudniłeś software house — zbudował co kazałeś. Ale nie zapytał czy to w ogóle rozwiązuje Twój problem.",
-        "Zatrudniłeś konsultanta — dał PDF z rekomendacjami. I odszedł.",
-        "Każdy zrobił SWÓJ kawałek. Nikt nie popatrzył na CAŁOŚĆ. Na to jak sprzedaż wpływa na operacje. Jak procesy wpływają na koszty. Jak brak danych wpływa na decyzje. Jak to wszystko się ze sobą łączy."
       ],
-      "emphasis": "My zaczynamy od tego.",
-      "conclusion": "My robimy coś, czego nikt przed nami nie zrobił. Zbieramy WSZYSTKIE informacje o Twojej firmie — z każdego działu, każdego procesu, każdego Excela i każdej głowy — i przepuszczamy je przez dziesiątki modeli analitycznych. Nie po to żeby potwierdzić to co już wiesz. Po to żeby znaleźć to czego nie widzisz."
+      "vslBadge": "4 MINUTY",
+      "vslTitle": "Obejrzyj co robimy — i dlaczego to zmienia zasady gry"
     },
-    "benefits": {
-      "badge": "Co dostajesz",
-      "title": "Nie raport do szuflady. Strategia szyta pod Twój biznes — i zespół który ją wdroży.",
+    "whyItFails": {
+      "title": "A co robi większość?",
+      "blocks": [
+        "Kupuje dostęp do ChatGPT. Daje ludziom i mówi \"używajcie.\"",
+        "Po miesiącu: więcej dokumentów. Więcej chaosu. Zero efektu.",
+        "Pracownicy kończą więcej zadań. Ale na poziomie firmy? Zero poprawy.",
+        "Bo przyspieszyli bałagan. Nie naprawili fundamentu."
+      ],
+      "bridge": [
+        "Agencja zrobiła kampanię — nie rozumie Twojego biznesu.",
+        "Konsultant dał raport — leży w szufladzie.",
+        "Software house zbudował co prosiłeś — nie to co potrzebujesz."
+      ],
+      "bridgeKey": "Każdy patrzy na KAWAŁEK. Nikt na CAŁOŚĆ.",
+      "conclusion": "Problem nigdy nie był w rozwiązaniu.",
+      "conclusionHighlight": "Problem był w FUNDAMENCIE."
+    },
+    "advantage": {
+      "intro": "Same algorytmy ma każdy. ChatGPT, Claude, Gemini — to jest commodity.",
+      "highlight": "Tym co staje się realną przewagą jest to co do nich WKŁADASZ.",
+      "subtitle": "Kiedy masz bazę wiedzy firmy, odblokowujesz rzeczy które bez niej po prostu nie istnieją:",
       "items": [
         {
-          "number": "①",
-          "title": "Baza wiedzy Twojej firmy",
-          "description": "Pierwszy raz WSZYSTKO o firmie jest w jednym, ustrukturyzowanym miejscu. Procesy, dane, kanały, finanse, zespół, konkurencja. To jest fundament — pod AI, pod decyzje, pod delegowanie, pod skalowanie."
+          "number": "01",
+          "title": "Widzisz firmę jako CAŁOŚĆ",
+          "description": "Nie fragment. Nie jeden dział w izolacji. Cały łańcuch wartości."
         },
         {
-          "number": "②",
-          "title": "Mapa strat i niewykorzystanych szans",
-          "description": "Pokazujemy gdzie tracisz pieniądze — na nieefektywnych procesach, złych kanałach, źle wycenionej ofercie. Ale też gdzie ich NIE ZARABIASZ — bo masz umiejętności, zasoby i zespół, z których nie wyciągasz pełnego potencjału. Nowe produkty, nowe usługi, nowe rynki które leżą na stole."
+          "number": "02",
+          "title": "Wiesz co naprawić NAJPIERW",
+          "description": "Które ogniwo blokuje resztę. Gdzie jedna zmiana pociągnie poprawę w trzech innych miejscach."
         },
         {
-          "number": "③",
-          "title": "Strategia dopasowana do Ciebie",
-          "description": "Nie generyczny szablon. Strategia dopasowana do Twojego biznesu, Twojego produktu, Twojego zespołu, Twoich zasobów i technologii której używasz. Co robić, w jakiej kolejności, od czego zacząć."
+          "number": "03",
+          "title": "AI pracuje NA TWOICH danych",
+          "description": "Agent monitoruje ceny materiałów i dostawców. Co tydzień raport: tu przepłacasz, tu możesz renegocjować."
         },
         {
-          "number": "④",
-          "title": "Prawdziwy bottleneck",
-          "description": "Nie to co MYŚLISZ że jest problemem — ale to co NAPRAWDĘ blokuje wzrost. Klient przychodzi po nową stronę — wychodzi wiedząc, że problem jest w procesie sprzedaży."
+          "number": "04",
+          "title": "Dostajesz odpowiedzi zamiast Exceli",
+          "description": "Agent analizuje konkurencję — ofertę, ceny, kampanie. I informuje Cię kiedy coś się zmieni."
         },
         {
-          "number": "⑤",
-          "title": "Gotowość na AI i automatyzację",
-          "description": "Z bazą wiedzy AI wreszcie może działać na TWOICH danych. Bez tego — każdy tool daje generyczne odpowiedzi. Z tym — konkretne rekomendacje, raporty, kalkulacje dla TWOJEJ firmy."
+          "number": "05",
+          "title": "Automatyzujesz to co zjada czas",
+          "description": "Procesy które robisz ręcznie od lat — działają same. Ty wracasz do strategii."
         },
         {
-          "number": "⑥",
-          "title": "Wdrożenie — nie tylko plan",
-          "description": "Konsultant daje PDF i odchodzi. My tworzymy strategię I ją wdrażamy. Software, automatyzacja, marketing, sprzedaż, AI — cokolwiek dane pokażą."
+          "number": "06",
+          "title": "Widzisz szanse których wcześniej nie widziałeś",
+          "description": "Nowe produkty, nowe usługi, nowe rynki. Zawsze tam były — nie miałeś czasu ich zobaczyć."
         }
-      ],
-      "cta": "Umów się na darmową rozmowę",
-      "ctaNote": "Zero zobowiązań."
-    },
-    "howWeWork": {
-      "badge": "Nasza metoda",
-      "title": "12 obszarów. Dziesiątki modeli. Jeden cel: znaleźć co naprawdę blokuje wzrost.",
-      "intro": "Do tego używamy deep research, 98 modeli analitycznych, autorskich AI agentów i scraperów — żeby wyciągnąć jak najwięcej informacji, które pomogą Twojej firmie.",
-      "areas": [
-        {
-          "area": "Sprzedaż",
-          "what": "Gdzie leady odpadają, jak długo trwa cykl, ile kosztuje pozyskanie klienta. Jak wygląda oferta — czy jest ułożona tak żeby klient chciał kupować więcej"
-        },
-        {
-          "area": "Marketing",
-          "what": "Który kanał naprawdę działa, który przepala budżet. Jak wygląda komunikacja — czy trafia w ból klienta czy mówi o sobie"
-        },
-        {
-          "area": "Operacje",
-          "what": "Co robicie ręcznie a powinno działać samo. Które procesy się dublują"
-        },
-        {
-          "area": "Finanse",
-          "what": "Ukryte koszty, marże per usługa, cash flow. Gdzie zarabiacie, a gdzie dokładacie"
-        },
-        {
-          "area": "Zespół i procesy",
-          "what": "Kto jest wąskim gardłem, co nie jest udokumentowane, co się stanie jak ktoś odejdzie"
-        },
-        {
-          "area": "Skalowanie",
-          "what": "Co działa dla 10 klientów ale nie zadziała dla 50"
-        },
-        {
-          "area": "Konkurencja",
-          "what": "Co robią, ile biorą, gdzie jest luka na rynku"
-        },
-        {
-          "area": "Kanały sprzedaży",
-          "what": "Które pominąłeś, gdzie jest niska konkurencja, nowe rynki"
-        },
-        {
-          "area": "Pozycjonowanie i oferta",
-          "what": "Jak rynek Cię widzi. Czy Twoja oferta jest ułożona tak żeby klient sam chciał iść dalej — od wejścia do najdroższego produktu"
-        },
-        {
-          "area": "Narzędzia i technologia",
-          "what": "Systemy które nie gadają ze sobą. Konfiguratory i narzędzia które mogą usprawnić sprzedaż i obsługę klienta"
-        },
-        {
-          "area": "Automatyzacja i AI",
-          "what": "Gdzie AI agenci mogą generować raporty, kalkulacje, content, obsługę klienta. Gdzie automatyzacja zastąpi ręczną robotę"
-        },
-        {
-          "area": "Niewykorzystany potencjał",
-          "what": "Jakie nowe produkty, usługi, rynki leżą na stole — bo masz zasoby i umiejętności, ale ich nie wykorzystujesz"
-        }
-      ],
-      "emphasis": "Efekt: strategia dopasowana do Twojego biznesu, Twojego produktu, Twojego zespołu, Twoich zasobów i technologii. Z konkretnymi danymi, źródłami i rekomendacjami. Plus plan wdrożenia i zespół który go zrealizuje."
+      ]
     },
     "process": {
       "badge": "Proces",
-      "title": "Co musisz zrobić? Wypełnić formularz i porozmawiać 30 minut.",
+      "title": "Jak to wygląda — 5 kroków",
       "steps": [
         {
           "number": "①",
-          "title": "Darmowa rozmowa — 0 PLN",
-          "description": "Wypełniasz krótki formularz (5 pytań, 3 minuty) i umawiasz się na rozmowę. 30 minut — opowiadasz o firmie, my słuchamy i zadajemy pytania, które nikt Ci wcześniej nie zadał. Po rozmowie dostajesz follow-up z obserwacjami."
+          "title": "Bezpłatna konsultacja",
+          "description": "30 min, online. Opowiadasz z czym się mierzysz. Sprawdzamy czy możemy pomóc. Zero zobowiązań."
         },
         {
           "number": "②",
-          "title": "X-Ray — prześwietlenie firmy",
-          "description": "Głęboka analiza Twojego biznesu. Wszystkie obszary, dziesiątki modeli analitycznych, prawdziwe dane. Dostajesz strategię z rekomendacjami: co robić, w jakiej kolejności, od czego zacząć.",
-          "note": "Jeśli po X-Ray zdecydujesz się na wdrożenie z nami — koszt X-Ray odliczamy od projektu."
+          "title": "Warsztat X-Ray",
+          "description": "1 dzień. Ty + 1-2 kluczowe osoby z firmy. Online lub na miejscu. Nie musisz niczego przygotowywać — my prowadzimy, Ty odpowiadasz."
         },
         {
-          "number": "③a",
-          "title": "Growth Partner — external growth team",
-          "description": "Wchodzimy do firmy na stałe. Co miesiąc pracujemy nad tym co jest teraz najważniejsze. Strategia + wdrożenie + technologia. Minimum 3 miesiące."
+          "number": "③",
+          "title": "Analiza",
+          "description": "3-5 dni roboczych. Nasze narzędzia przepuszczają Twoje dane przez consulting frameworks i AI."
         },
         {
-          "number": "③b",
-          "title": "Build — konkretne wdrożenie",
-          "description": "Wiemy co budować bo mamy dane. Milestone-based, z odbiorem po każdym etapie. Pełna transparentność — wiesz na co idą pieniądze."
-        }
-      ]
-    },
-    "whatWeBuild": {
-      "badge": "Realizacja",
-      "title": "Diagnoza mówi CO. My budujemy JAK.",
-      "services": [
-        {
-          "title": "X-Ray — diagnoza biznesu",
-          "description": "Prześwietlamy cały Twój biznes i dajemy Ci plan działania oparty o dane, nie opinie. Od 3 000 PLN."
+          "number": "④",
+          "title": "Prezentacja wyników",
+          "description": "60 minut. Pokazujemy co znaleźliśmy. Konkretne wnioski, plan, wycena wdrożenia."
         },
         {
-          "title": "Custom software",
-          "description": "Konfiguratory produktów, portale klienckie, dashboardy, aplikacje. Szyte pod Twój biznes."
-        },
-        {
-          "title": "AI agenci i narzędzia AI",
-          "description": "Systemy które generują raporty, kalkulują opcje dla klientów, automatyzują content i obsługę. AI na TWOICH danych."
-        },
-        {
-          "title": "Marketing i konwersja",
-          "description": "Strony, landing pages, reklamy, funnele. Po diagnozie — nie na ślepo."
-        },
-        {
-          "title": "Sprzedaż i oferta",
-          "description": "Procesy sprzedażowe, CRM, pipeline, restrukturyzacja oferty. Żeby klient sam chciał kupować więcej."
-        },
-        {
-          "title": "Go-to-Market",
-          "description": "Nowe rynki, nowe kanały, bazy prospectów, strategia eksportu."
-        },
-        {
-          "title": "Automatyzacja procesów",
-          "description": "Workflow, integracje systemów, eliminacja ręcznej roboty. Ludzie robią to, w czym są dobrzy — maszyny resztę."
+          "number": "⑤",
+          "title": "Twoja decyzja",
+          "description": "Wdrażamy razem — albo idziesz z planem do kogo chcesz. Plan jest Twój. Bez lock-in."
         }
       ],
-      "footer": "Jedna firma potrzebowała konfiguratora produktów i 3 kanałów sprzedaży na rynki UE. Inna — automatyzacji operacji. Trzecia — restrukturyzacji oferty i nowej strategii GTM. Nie zgadujemy — dane mówią co budować."
+      "guarantee": "14 dni na zwrot pieniędzy — bez pytań."
     },
     "caseStudy": {
-      "badge": "Przykład",
-      "title": "Co zrobiliśmy, nie co obiecujemy.",
-      "company": "Mirco — Producent foteli rajdowych",
-      "situation": {
-        "title": "Sytuacja",
-        "text": "Producent foteli rajdowych borykał się ze spadającą sprzedażą. Świetny produkt pozycjonowany między segmentem chińskim a premium (Recaro), ale ograniczona liczba kanałów i brak systematycznego podejścia do nowych rynków."
-      },
-      "whatWeDid": {
-        "title": "Co zrobiliśmy",
-        "items": [
-          "Discovery workshop → identyfikacja niszy, pozycjonowania i nowych kanałów",
-          "Konfigurator produktu z real-time wizualizacją (model, materiał, kolor, logo, akcesoria)",
-          "Portal afiliacyjny (tracking prowizji, panele admin + influencer)",
-          "Custom scraper AI → przeszukaliśmy rynki EU/UK, zbudowaliśmy bazę dystrybutorów",
-          "3 nowe kanały sprzedaży: influencerzy B2C, sklepy B2B, warsztaty custom",
-          "System outreach (CRM + automatyzacja + follow-up)"
-        ]
-      },
-      "result": {
-        "title": "Rezultat",
-        "text": "Z jednego kanału do czterech. Z lokalnej sprzedaży do systematycznego podejścia na rynki EU/UK. Realizacja: 2 miesiące. Dotknięte działy: sprzedaż, marketing, produkcja, IT. Jeden projekt — strategia, software, AI, automatyzacja, GTM. Pod jednym dachem."
-      },
-      "bio": {
-        "title": "Kto za tym stoi",
-        "text": "Dawid — zbudował 7 firm w różnych branżach: e-commerce, software house, lead generation, content. Przez to widzi wzorce, które właściciel nie widzi — bo patrzył na te same problemy z kilkunastu różnych perspektyw. Łączy strategię biznesową z technologią: wie co zbudować, ale też DLACZEGO i CZY W OGÓLE. Prowadzi analizy, buduje strategie, rozmawia z klientami. Otaczany zespołem specjalistów i AI, które przyspiesza research, analizę i budowanie."
-      },
+      "badge": "Case study",
+      "title": "Jak to wygląda w praktyce",
+      "company": "Mirco — producent foteli rajdowych",
+      "companyDetails": "30 lat historii · 15 osób · Skoczów",
+      "problem": "Spadająca sprzedaż, jeden kanał, zero systemu. Myśleli że potrzebują nowej strony.",
+      "whatWeDid": "Prześwietliliśmy firmę. Zmapowaliśmy konkurencję i cały rynek foteli w Europie. Znaleźliśmy że ich największa przewaga — pełna customizacja — była kompletnie niewidoczna.",
+      "results": [
+        "4 kanały sprzedaży zamiast 1",
+        "400+ dystrybutorów w bazie",
+        "Konfigurator, portal afiliacyjny, system outreach",
+        "8 tygodni od startu do systemu"
+      ],
       "cta": "Zobacz pełne case study"
     },
     "comparison": {
       "badge": "Porównanie",
-      "title": "Konsultant daje PDF. Agencja robi co każesz. My robimy jedno i drugie.",
+      "title": "Czym się różnimy",
       "table": {
         "headers": [
           "",
           "Konsultant",
           "Agencja",
           "Software house",
-          "DaVinci"
+          "My"
         ],
         "rows": [
           {
             "label": "Analizuje cały biznes",
-            "values": [
-              "Częściowo (jeden obszar)",
-              "Nie",
-              "Nie",
-              "Tak"
-            ]
+            "values": ["✓", "✗", "✗", "✓"]
           },
           {
-            "label": "Buduje rozwiązanie",
-            "values": [
-              "Nie (daje PDF)",
-              "Częściowo (marketing)",
-              "Tak (software)",
-              "Tak — wszystko"
-            ]
-          },
-          {
-            "label": "Patrzy na CAŁOŚĆ firmy",
-            "values": [
-              "Nie",
-              "Nie",
-              "Nie",
-              "Tak"
-            ]
+            "label": "Wdraża rozwiązanie",
+            "values": ["✗ raport", "częściowo", "✓ tylko software", "✓ pełen zakres"]
           },
           {
             "label": "Kwestionuje brief",
-            "values": [
-              "Czasem",
-              "Nie",
-              "Nie",
-              "Zawsze"
-            ]
+            "values": ["✓", "rzadko", "nigdy", "✓"]
           },
           {
-            "label": "AI-native",
-            "values": [
-              "Nie",
-              "Nie",
-              "Częściowo",
-              "Tak"
-            ]
+            "label": "Buduje custom narzędzia",
+            "values": ["✗", "✗", "✓", "✓"]
           },
           {
-            "label": "Co dostajesz",
-            "values": [
-              "Raport",
-              "Kampanie / strona",
-              "Software",
-              "Strategia + plan + wdrożenie"
-            ]
+            "label": "Cena dla MŚP",
+            "values": ["✗ drogo", "✓", "✓", "✓"]
           }
         ]
       },
-      "footer": "Nie musisz wybierać między \"ktoś kto rozumie\" a \"ktoś kto buduje.\" U nas to jest ta sama firma."
+      "footer": "Konsultant powie Ci co robić — ale nie zrobi tego za Ciebie. Agencja zrobi marketing — ale nie sprawdzi czy Twój problem w ogóle jest w marketingu.",
+      "footerHighlight": "My najpierw SPRAWDZAMY. Potem NAPRAWIAMY."
+    },
+    "offer": {
+      "badge": "Oferta",
+      "title": "X-Ray Biznesowy — 5 000 PLN",
+      "urgency": "Jedno wolne miejsce na kwiecień",
+      "includes": [
+        "Warsztat z właścicielem i kluczowymi osobami (1 dzień)",
+        "Analiza AI + consulting frameworks",
+        "Identyfikacja bottlenecka i mapa szans",
+        "Analiza konkurencji na danych",
+        "Plan działania 30-60-90 dni",
+        "Wycena wdrożenia"
+      ],
+      "details": [
+        { "label": "Format", "value": "Online lub na miejscu" },
+        { "label": "Kto musi być", "value": "Właściciel + 1-2 kluczowe osoby" },
+        { "label": "Wyniki", "value": "3-5 dni roboczych po warsztacie" },
+        { "label": "Gwarancja", "value": "14 dni na zwrot — bez pytań" }
+      ],
+      "pathsIntro": "Po X-Ray — dwie ścieżki:",
+      "project": {
+        "title": "PROJEKT",
+        "price": "Wycena indywidualna",
+        "description": "Wdrażamy to co X-Ray pokaże:",
+        "items": [
+          "Automatyzacja procesów",
+          "AI Agenci i narzędzia",
+          "Systemy wewnętrzne i panele",
+          "Konfiguratory produktowe",
+          "Systemy sprzedażowe i outreach",
+          "Strony i lejki marketingowe",
+          "Integracje systemów",
+          "Custom scrapery i bazy danych",
+          "Kampanie reklamowe",
+          "Portale klienckie i afiliacyjne"
+        ],
+        "footer": "Scope, milestony i cena ustalane na bazie wyników X-Ray. Płacisz per milestone."
+      },
+      "partner": {
+        "title": "PARTNER WZROSTU",
+        "price": "8-12K PLN / miesiąc",
+        "description": "Doradztwo + wdrożenie na bieżąco. Działamy jako zewnętrzny zespół strategiczny i techniczny w Twojej firmie. Min. 3 miesiące."
+      },
+      "afterNote": "Ale o tym rozmawiamy PO X-Ray — gdy wiemy co naprawić i ile to kosztuje."
     },
     "faq": {
       "badge": "FAQ",
-      "title": "Masz pytania. To dobrze.",
+      "title": "Najczęstsze pytania",
       "items": [
         {
-          "question": "Za drogo.",
-          "answer": "Ile kosztuje Cię kolejny miesiąc działania na wyczucie? Ile wydałeś na agencje które nie zaczęły od zrozumienia Twojego biznesu?"
+          "question": "Czy mogę zobaczyć jak to wygląda zanim zapłacę?",
+          "answer": "Tak — umów bezpłatną konsultację. Pokażemy na przykładach jak wygląda X-Ray. Zero zobowiązań. A jeśli po warsztacie uznasz że to nie było warte — masz 14 dni na zwrot."
         },
         {
-          "question": "Jesteście za mali.",
-          "answer": "Mały zespół + AI = to co u innych robi 10 osób. Płacisz za efekt, nie za biuro."
+          "question": "Czym to się różni od audytu który już robiłem?",
+          "answer": "Audyt patrzy na jeden obszar. My patrzymy na CAŁĄ firmę. I nie kończymy na raporcie — naprawiamy to co znajdziemy."
         },
         {
-          "question": "Czym się różnicie od agencji?",
-          "answer": "Agencja dostaje brief i wykonuje. My sprawdzamy czy brief ma sens. Analizujemy cały biznes i dopiero budujemy."
+          "question": "Mam 15 osób — czy to dla mnie?",
+          "answer": "X-Ray działa najlepiej dla firm 20-100+ osób. Przy 15 porozmawiajmy — powiemy wprost czy to ma sens."
         },
         {
-          "question": "Czym się różnicie od konsultantów?",
-          "answer": "Konsultant daje PDF i odchodzi. My diagnozujemy I budujemy."
+          "question": "Co jeśli nie znajdziecie nic do naprawienia?",
+          "answer": "Powiemy Ci to wprost. Nie sprzedajemy wdrożeń na siłę."
         },
         {
-          "question": "Miałem złe doświadczenia.",
-          "answer": "Dlatego zaczynamy od darmowej rozmowy. Zero zobowiązań. Przekonaj się sam. Nie współpracujemy z każdym — tylko z firmami, którym realnie możemy pomóc."
+          "question": "Ile kosztuje wdrożenie?",
+          "answer": "Zależy od tego co X-Ray pokaże — każda firma jest inna. Projekt: wycena indywidualna, milestone-based. Partner Wzrostu: 8-12K PLN/mies. Konkretną wycenę dostajesz po X-Ray, ZANIM podejmiesz decyzję. Zero niespodzianek."
         },
         {
-          "question": "Nie potrzebuję diagnozy.",
-          "answer": "Diagnoza może zaoszczędzić dziesiątki tysięcy na budowaniu złej rzeczy."
+          "question": "Miałem złe doświadczenia z agencjami/konsultantami.",
+          "answer": "Rozumiemy. Dlatego zaczynamy od diagnozy — nie od obietnic. Dlatego plan jest Twój niezależnie od decyzji o wdrożeniu. I dlatego masz 14 dni na zwrot."
+        },
+        {
+          "question": "Mogę wziąć plan i wdrożyć sam?",
+          "answer": "Tak. Plan jest Twój. Bez lock-in."
         },
         {
           "question": "AI mnie nie przekonuje.",
-          "answer": "AI to narzędzie — jak kalkulator. Myślimy my, AI przyspiesza research i analizę."
+          "answer": "My nie wdrażamy AI jako hasło marketingowe. Sami pracujemy z AI na co dzień. Jeśli AI rozwiąże Twój problem — użyjemy go. Jeśli nie — nie użyjemy."
         }
       ]
     },

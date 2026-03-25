@@ -1,13 +1,18 @@
+"use client";
+
 import { Container } from "@/components/shared/Container";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import type { Locale } from "@/lib/i18n/config";
+import { useEffect, useState } from "react";
 
 interface HeroSectionProps {
   lang: Locale;
   dict: {
     headline: string;
+    headlineRotation: string[];
     subheadline: string;
     cta: string;
     ctaNote: string;
@@ -15,76 +20,162 @@ interface HeroSectionProps {
 }
 
 export function HeroSection({ lang, dict }: HeroSectionProps) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Rotate headline
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % dict.headlineRotation.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [dict.headlineRotation.length]);
+
+  // Load UnicornStudio for Da Vinci animation
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    // Hide branding
+    const style = document.createElement("style");
+    style.textContent = `
+      [data-us-project] a[href*="unicorn"],
+      [data-us-project] [class*="brand"],
+      [data-us-project] [class*="credit"],
+      [data-us-project] [class*="watermark"] {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+        position: absolute !important;
+        left: -9999px !important;
+      }
+    `;
+    document.head.appendChild(style);
+
+    const script = document.createElement("script");
+    script.src =
+      "https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v1.4.33/dist/unicornStudio.umd.js";
+    script.onload = () => {
+      if (
+        window.UnicornStudio &&
+        !window.UnicornStudio.isInitialized
+      ) {
+        window.UnicornStudio.init();
+        window.UnicornStudio.isInitialized = true;
+      }
+    };
+    document.head.appendChild(script);
+
+    // Remove branding elements after load
+    const hideBranding = () => {
+      const el = document.querySelector('[data-us-project]');
+      if (!el) return;
+      el.querySelectorAll('a, div, span').forEach((node) => {
+        const text = (node.textContent || '').toLowerCase();
+        if (text.includes('made with') || text.includes('unicorn')) {
+          (node as HTMLElement).style.display = 'none';
+        }
+      });
+    };
+    const interval = setInterval(hideBranding, 200);
+    setTimeout(() => clearInterval(interval), 10000);
+
+    return () => {
+      clearInterval(interval);
+      try { document.head.removeChild(script); } catch {}
+      try { document.head.removeChild(style); } catch {}
+    };
+  }, []);
+
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background layers */}
-      <div className="absolute inset-0 overflow-hidden">
-        {/* Gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent" />
-
-        {/* Dot grid pattern */}
+    <section className="relative min-h-[60vh] md:min-h-screen flex items-center overflow-hidden">
+      {/* Da Vinci Vitruvian Man animation — desktop only */}
+      <div className="absolute inset-0 hidden md:block" style={{ top: "-10%", bottom: "-80px", clipPath: "inset(0 0 80px 0)" }}>
         <div
-          className="absolute inset-0 opacity-[0.03]"
-          style={{
-            backgroundImage: "radial-gradient(circle, #F5F5F5 1px, transparent 1px)",
-            backgroundSize: "32px 32px",
-          }}
+          data-us-project="whwOGlfJ5Rz2rHaEUgHl"
+          style={{ width: "100%", height: "calc(100% + 80px)", minHeight: "calc(110vh + 80px)" }}
         />
-
-        {/* Primary glow - top center */}
-        <div
-          className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[600px] rounded-full bg-primary/8 blur-[150px] pointer-events-none"
-          aria-hidden="true"
-        />
-
-        {/* Secondary glow - bottom left */}
-        <div
-          className="absolute bottom-0 -left-1/4 w-[500px] h-[500px] rounded-full bg-primary/5 blur-[120px] pointer-events-none"
-          aria-hidden="true"
-        />
-
-        {/* Gradient fade to bottom */}
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
       </div>
 
-      {/* Main content */}
+      {/* Dark overlay — desktop only (over animation) */}
+      <div className="hidden md:block absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent" />
+
+      {/* Content */}
       <div className="relative z-10 w-full">
-        <Container className="py-20 md:py-32 lg:py-40">
-          <div className="max-w-5xl animate-in fade-in slide-in-from-bottom-4 duration-700">
-            {/* Headline */}
-            <div className="mb-6 md:mb-8">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.1] md:leading-[1.05] font-semibold [word-spacing:0.15em]">
+        <Container>
+          <div className="max-w-2xl py-10 md:py-28">
+            {/* Static line */}
+            <div className="overflow-hidden mb-1">
+              <motion.h1
+                initial={{ y: "100%" }}
+                animate={{ y: 0 }}
+                transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1]"
+              >
                 {dict.headline}
-              </h1>
+              </motion.h1>
+            </div>
+
+            {/* Rotating line */}
+            <div className="h-[2.6em] sm:h-[1.3em] relative overflow-hidden mb-8 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-[1.1]">
+              <AnimatePresence mode="wait">
+                <motion.span
+                  key={currentIndex}
+                  initial={{ y: "100%", opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  exit={{ y: "-100%", opacity: 0 }}
+                  transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                  className="absolute left-0 text-primary"
+                >
+                  {dict.headlineRotation[currentIndex]}
+                </motion.span>
+              </AnimatePresence>
             </div>
 
             {/* Subheadline */}
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-10 md:mb-14 max-w-3xl leading-relaxed">
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="text-base md:text-lg text-muted-foreground leading-[1.8] max-w-xl mb-10"
+            >
               {dict.subheadline}
-            </p>
+            </motion.p>
 
             {/* CTA */}
-            <div className="mb-4">
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+            >
               <Button
                 asChild
                 size="lg"
-                className="group relative bg-primary hover:bg-primary/90 text-primary-foreground h-14 md:h-16 px-8 md:px-10 text-base md:text-lg font-medium overflow-hidden w-full sm:w-auto shadow-[0_0_30px_rgba(229,168,75,0.2)] hover:shadow-[0_0_40px_rgba(229,168,75,0.35)] transition-shadow duration-500"
+                className="group bg-primary hover:bg-primary/90 text-primary-foreground h-12 px-8 text-sm font-semibold shadow-[0_0_30px_rgba(229,168,75,0.15)] hover:shadow-[0_0_50px_rgba(229,168,75,0.25)] transition-all duration-500"
               >
-                <Link href={`/${lang}#xray-form`}>
-                  <span className="absolute inset-0 bg-gradient-to-r from-primary via-accent-hover to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  <span className="relative flex items-center gap-2">
+                <Link href="https://cal.davinci.agency/dawid-stelmach/discovery-call">
+                  <span className="flex items-center gap-2">
                     {dict.cta}
-                    <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+                    <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </span>
                 </Link>
               </Button>
-            </div>
-
-            {/* CTA note */}
-            <p className="text-sm text-muted-foreground">{dict.ctaNote}</p>
+              <p className="text-xs text-muted-foreground/30 mt-3">
+                {dict.ctaNote}
+              </p>
+            </motion.div>
           </div>
         </Container>
       </div>
     </section>
   );
+}
+
+// TypeScript declaration for UnicornStudio
+declare global {
+  interface Window {
+    UnicornStudio: {
+      isInitialized: boolean;
+      init: () => void;
+    };
+  }
 }

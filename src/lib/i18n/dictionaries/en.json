@@ -422,7 +422,7 @@
       },
       {
         "title": "No Questions Asked",
-        "description": "Simply email us at contact@davinci.agency and we'll process your refund immediately."
+        "description": "Simply email us at apps@davinci.agency and we'll process your refund immediately."
       },
       {
         "title": "Revisions Included",
@@ -520,7 +520,7 @@
     },
     "info": {
       "email": "Email",
-      "emailValue": "contact@davinci.agency",
+      "emailValue": "apps@davinci.agency",
       "responseTime": "Response time",
       "responseValue": "Within 24 hours",
       "location": "Location",
@@ -543,7 +543,7 @@
         "krs": "KRS: 0001221058",
         "nip": "NIP: 7011297183",
         "regon": "REGON: 543861552",
-        "email": "Email: contact@davinci.agency"
+        "email": "Email: apps@davinci.agency"
       },
       "dataCollected": {
         "title": "Information We Collect",
@@ -648,7 +648,7 @@
             "description": "Where processing is based on consent, you can withdraw it at any time."
           }
         ],
-        "exercise": "To exercise any of these rights, please contact us at contact@davinci.agency."
+        "exercise": "To exercise any of these rights, please contact us at apps@davinci.agency."
       },
       "thirdParty": {
         "title": "Third-Party Services",
@@ -681,7 +681,7 @@
       "contact": {
         "title": "Contact Us",
         "content": "If you have questions about this Privacy Policy or wish to exercise your rights, please contact us:",
-        "email": "Email: contact@davinci.agency",
+        "email": "Email: apps@davinci.agency",
         "address": "Address: ul. Zlota 75A lok. 7, 00-819 Warsaw, Poland",
         "complaint": "You also have the right to lodge a complaint with a supervisory authority. If you are located in Norway, you can contact the Norwegian Data Protection Authority (Datatilsynet) at datatilsynet.no. If you are located elsewhere in the EU/EEA, you may contact your local supervisory authority or the President of the Personal Data Protection Office (UODO) in Poland."
       }
@@ -740,7 +740,7 @@
           "title": "How to Exercise Your Right of Withdrawal",
           "content": "To exercise the right of withdrawal, you must inform us of your decision to withdraw from the contract by an unambiguous statement. You can do this by:",
           "methods": [
-            "Email to: contact@davinci.agency",
+            "Email to: apps@davinci.agency",
             "Using the withdrawal form available on our website"
           ]
         },
@@ -762,7 +762,7 @@
         },
         "cancellation": {
           "title": "Cancellation",
-          "content": "You may cancel your subscription at any time by contacting us at contact@davinci.agency. Cancellation will take effect at the end of the current billing period. You will continue to have access to the service until the end of the paid period."
+          "content": "You may cancel your subscription at any time by contacting us at apps@davinci.agency. Cancellation will take effect at the end of the current billing period. You will continue to have access to the service until the end of the paid period."
         },
         "autoRenewal": {
           "title": "Automatic Renewal",
@@ -817,7 +817,7 @@
         "content": "For questions about these Terms, please contact us:",
         "company": "AI SCALING SYSTEMS sp. z o.o.",
         "address": "Aleje Jerozolimskie 109 / 70, 02-011 Warsaw, Poland",
-        "email": "Email: contact@davinci.agency"
+        "email": "Email: apps@davinci.agency"
       }
     }
   },
@@ -892,7 +892,7 @@
     "title": "Withdrawal Form",
     "subtitle": "Use this form to withdraw from your contract within 14 days",
     "form": {
-      "recipient": "To: AI SCALING SYSTEMS sp. z o.o., Aleje Jerozolimskie 109 / 70, 02-011 Warsaw, Poland, contact@davinci.agency",
+      "recipient": "To: AI SCALING SYSTEMS sp. z o.o., Aleje Jerozolimskie 109 / 70, 02-011 Warsaw, Poland, apps@davinci.agency",
       "declaration": "I/We hereby give notice that I/We withdraw from my/our contract for the provision of the following service:",
       "serviceLabel": "Service description",
       "orderedOnLabel": "Ordered on / Received on",
@@ -902,7 +902,7 @@
       "signatureLabel": "Signature (only if submitted on paper)",
       "submit": "Submit withdrawal",
       "success": "Your withdrawal has been submitted. We will process it within 14 days.",
-      "error": "An error occurred. Please try again or contact us directly at contact@davinci.agency."
+      "error": "An error occurred. Please try again or contact us directly at apps@davinci.agency."
     }
   },
   "noWebsite": {
@@ -1718,7 +1718,7 @@
       "submit": "Send me a personalized report",
       "success": "We got it!",
       "successMessage": "We'll look at your website and local market, and send you a personalized analysis within 48 hours.",
-      "error": "Something went wrong. Try again or email us at contact@davinci.agency.",
+      "error": "Something went wrong. Try again or email us at apps@davinci.agency.",
       "validationEmail": "Enter a valid email address",
       "validationRequired": "This field is required"
     },
@@ -1887,365 +1887,226 @@
   },
   "davinci": {
     "hero": {
-      "headline": "Show us your company. We'll show you things you can't see from the inside.",
-      "subheadline": "We analyze the entire business — sales, operations, marketing, finance, team, processes. We find what's really blocking growth and build the solution. Strategy, technology, and implementation. Under one roof.",
+      "headline": "We make your company",
+      "headlineRotation": [
+        "know more than the competition.",
+        "make better decisions.",
+        "see what others can't.",
+        "move faster.",
+        "scale without chaos."
+      ],
+      "subheadline": "Data-driven diagnosis. Tailored strategy. Implementation under one roof.",
       "cta": "Book a free consultation — 30 min",
       "ctaNote": "Zero commitments."
     },
-    "vsl": {
-      "badge": "See how we do it",
-      "titleStart": "Why do other agencies ask \"what do you need\", while we ask ",
-      "titleHighlight": "\"what's blocking your company\"",
-      "titleEnd": "?",
-      "subtitle": "4 minutes that will change how you think about business growth."
+    "pilotProgram": {
+      "badge": "PILOT PROGRAM",
+      "title": "We're looking for 3 companies for our pilot program.",
+      "description": "Full Business X-Ray for PLN 5,000. In return: your feedback + case study.",
+      "cta": "I want one of 3 spots"
     },
     "problem": {
-      "badge": "Sound familiar?",
-      "title": "Your company could be growing faster. The question is: what's holding it back?",
-      "pains": [
-        {
-          "title": "You know you should implement AI. You know if you don't — you'll fall behind.",
-          "description": [
-            "Your competition is already doing it. Lowering costs, speeding up processes, making better decisions. You see it. You feel the pressure.",
-            "Maybe you even tried — ChatGPT, some tool, automation. Got generic answers that have nothing to do with your business.",
-            "Because AI doesn't know your company. It has no way to — your data is scattered across people's heads, Excels, and email inboxes."
-          ]
-        },
-        {
-          "title": "Your company exists in your head. And only in your head.",
-          "description": [
-            "Processes, knowledge, contacts, experience — it all lives in people. When someone leaves, they take a piece of the company with them.",
-            "You can't delegate because nobody knows what to do without you.",
-            "You can't leverage AI because there's no data for it to work with.",
-            "You can't scale because everything depends on your availability.",
-            "You're working IN the business instead of ON the business."
-          ]
-        },
-        {
-          "title": "You bought tools. You hired an agency. Nothing changed.",
-          "description": [
-            "CRM sits unused. Automation doesn't work. The website doesn't convert.",
-            "Because nobody checked if that was even your problem.",
-            "You spent tens of thousands on the wrong things — because the agency did what you told them, instead of telling you what actually needs to be done."
-          ]
-        },
-        {
-          "title": "You have too many ideas and zero clarity on what will deliver the fastest results.",
-          "description": [
-            "Export? New channel? Automation? New offering? New product?",
-            "You have skills, you have resources, you have ideas — but you don't know where to start.",
-            "Every advisor says something different.",
-            "You're missing someone who'll look at EVERYTHING and say: here's the biggest opportunity."
-          ]
-        },
-        {
-          "title": "Costs are growing faster than revenue.",
-          "description": [
-            "Every new client = more people, more chaos, more costs.",
-            "Processes that worked for 10 clients fall apart at 50.",
-            "You're not scaling — you're multiplying the mess."
-          ]
-        }
-      ]
-    },
-    "rootCause": {
-      "badge": "Why",
-      "title": "Because nobody ever looked at your company as a whole.",
-      "paragraphs": [
-        "You hired a marketing agency — they did marketing. But didn't check if your offering made sense.",
-        "You hired a software house — they built what you told them. But didn't ask if it actually solves your problem.",
-        "You hired a consultant — gave you a PDF with recommendations. And left.",
-        "Everyone did THEIR piece. Nobody looked at the WHOLE. At how sales affects operations. How processes affect costs. How lack of data affects decisions. How it all connects."
+      "title": "You know something is blocking your company. You don't know what.",
+      "cards": [
+        { "number": "01", "title": "Competition isn't sleeping.", "description": "Companies that truly implemented AI grow 2x faster and deliver 3.5x higher returns for owners. (BCG, 2025)" },
+        { "number": "02", "title": "Costs are rising.", "description": "War, supply chains, inflation. And you don't know where exactly you're losing." },
+        { "number": "03", "title": "AI is changing the rules.", "description": "A company that has a 2-year lead over you today will have a 5-year lead in six months." }
       ],
-      "emphasis": "We start with that.",
-      "conclusion": "We do something nobody has done before. We collect ALL information about your company — from every department, every process, every Excel, and every head — and run it through dozens of analytical models. Not to confirm what you already know. To find what you don't see."
+      "vslBadge": "4 MINUTES",
+      "vslTitle": "Watch what we do — and why it changes the game"
     },
-    "benefits": {
-      "badge": "What you get",
-      "title": "Not a report for the drawer. A strategy tailored to your business — and the team to implement it.",
+    "whyItFails": {
+      "title": "What does everyone else do?",
+      "blocks": [
+        "Buys ChatGPT access. Gives it to people and says \"use it.\"",
+        "After a month: more documents. More chaos. Zero impact.",
+        "Employees finish more tasks. But at the company level? Zero improvement.",
+        "Because they sped up the mess. They didn't fix the foundation."
+      ],
+      "bridge": [
+        "Agency ran a campaign — doesn't understand your business.",
+        "Consultant gave a report — sits in a drawer.",
+        "Software house built what you asked — not what you need."
+      ],
+      "bridgeKey": "Everyone looks at a PIECE. Nobody at the WHOLE.",
+      "conclusion": "The problem was never the solution.",
+      "conclusionHighlight": "The problem was the FOUNDATION."
+    },
+    "advantage": {
+      "intro": "Everyone has the same algorithms. ChatGPT, Claude, Gemini — that's a commodity.",
+      "highlight": "What becomes the real advantage is what you PUT INTO them.",
+      "subtitle": "When you have a company knowledge base, you unlock things that simply don't exist without it:",
       "items": [
-        {
-          "number": "①",
-          "title": "Your company's knowledge base",
-          "description": "For the first time, EVERYTHING about the company is in one structured place. Processes, data, channels, finances, team, competition. This is the foundation — for AI, for decisions, for delegation, for scaling."
-        },
-        {
-          "number": "②",
-          "title": "Map of losses and untapped opportunities",
-          "description": "We show you where you're losing money — on inefficient processes, bad channels, poorly priced offerings. But also where you're NOT MAKING money — because you have skills, resources, and a team whose full potential you're not extracting. New products, new services, new markets that are sitting on the table."
-        },
-        {
-          "number": "③",
-          "title": "Strategy tailored to you",
-          "description": "Not a generic template. Strategy tailored to your business, your product, your team, your resources, and the technology you use. What to do, in what order, where to start."
-        },
-        {
-          "number": "④",
-          "title": "The real bottleneck",
-          "description": "Not what you THINK is the problem — but what's ACTUALLY blocking growth. Client comes for a new website — leaves knowing the problem is in the sales process."
-        },
-        {
-          "number": "⑤",
-          "title": "Ready for AI and automation",
-          "description": "With a knowledge base, AI can finally work on YOUR data. Without it — every tool gives generic answers. With it — specific recommendations, reports, calculations for YOUR company."
-        },
-        {
-          "number": "⑥",
-          "title": "Implementation — not just a plan",
-          "description": "Consultant gives you a PDF and leaves. We create strategy AND implement it. Software, automation, marketing, sales, AI — whatever the data shows."
-        }
-      ],
-      "cta": "Book a free consultation",
-      "ctaNote": "Zero commitments."
-    },
-    "howWeWork": {
-      "badge": "Our method",
-      "title": "12 areas. Dozens of models. One goal: find what's really blocking growth.",
-      "intro": "We use deep research, 98 analytical models, custom AI agents, and scrapers — to extract as much information as possible to help your company.",
-      "areas": [
-        {
-          "area": "Sales",
-          "what": "Where leads drop off, how long the cycle takes, how much it costs to acquire a customer. How the offering looks — is it structured so the customer wants to buy more"
-        },
-        {
-          "area": "Marketing",
-          "what": "Which channel actually works, which burns budget. How the messaging looks — does it hit the customer's pain or talk about you"
-        },
-        {
-          "area": "Operations",
-          "what": "What you do manually that should run automatically. Which processes are duplicated"
-        },
-        {
-          "area": "Finance",
-          "what": "Hidden costs, margins per service, cash flow. Where you're making money, where you're losing it"
-        },
-        {
-          "area": "Team and processes",
-          "what": "Who's the bottleneck, what's not documented, what happens if someone leaves"
-        },
-        {
-          "area": "Scaling",
-          "what": "What works for 10 clients but won't work for 50"
-        },
-        {
-          "area": "Competition",
-          "what": "What they do, how much they charge, where the market gap is"
-        },
-        {
-          "area": "Sales channels",
-          "what": "Which ones you missed, where there's low competition, new markets"
-        },
-        {
-          "area": "Positioning and offering",
-          "what": "How the market sees you. Is your offering structured so customers naturally move from entry to premium"
-        },
-        {
-          "area": "Tools and technology",
-          "what": "Systems that don't talk to each other. Configurators and tools that could improve sales and customer service"
-        },
-        {
-          "area": "Automation and AI",
-          "what": "Where AI agents can generate reports, calculations, content, customer service. Where automation can replace manual work"
-        },
-        {
-          "area": "Untapped potential",
-          "what": "What new products, services, markets are on the table — because you have the resources and skills, but you're not using them"
-        }
-      ],
-      "emphasis": "Result: strategy tailored to your business, your product, your team, your resources and technology. With concrete data, sources, and recommendations. Plus an implementation plan and the team to execute it."
+        { "number": "01", "title": "See your company as a WHOLE", "description": "Not a fragment. Not one department in isolation. The entire value chain." },
+        { "number": "02", "title": "Know what to fix FIRST", "description": "Which link blocks the rest. Where one change pulls improvement in three other places." },
+        { "number": "03", "title": "AI works on YOUR data", "description": "Agent monitors material prices and suppliers. Weekly report: here you're overpaying, here you can renegotiate." },
+        { "number": "04", "title": "Get answers instead of spreadsheets", "description": "Agent analyzes competition — offering, prices, campaigns. And informs you when something changes." },
+        { "number": "05", "title": "Automate what eats your time", "description": "Processes you've been doing manually for years — run themselves. You go back to strategy." },
+        { "number": "06", "title": "See opportunities you couldn't before", "description": "New products, new services, new markets. They were always there — you didn't have time to see them." }
+      ]
     },
     "process": {
       "badge": "Process",
-      "title": "What do you need to do? Fill out a form and talk for 30 minutes.",
+      "title": "How it works — 5 steps",
       "steps": [
         {
           "number": "①",
-          "title": "Free consultation — 0 PLN",
-          "description": "You fill out a short form (5 questions, 3 minutes) and schedule a call. 30 minutes — you talk about your company, we listen and ask questions nobody's asked you before. After the call, you get a follow-up with observations."
+          "title": "Free consultation",
+          "description": "30 min, online. You tell us what you're dealing with. We check if we can help. Zero commitments."
         },
         {
           "number": "②",
-          "title": "X-Ray — business scan",
-          "description": "Deep analysis of your business. All areas, dozens of analytical models, real data. You get a strategy with recommendations: what to do, in what order, where to start.",
-          "note": "If after X-Ray you decide to implement with us — we deduct the X-Ray cost from the project."
+          "title": "X-Ray Workshop",
+          "description": "1 day. You + 1-2 key people from your company. Online or on-site. No preparation needed — we lead, you answer."
         },
         {
-          "number": "③a",
-          "title": "Growth Partner — external growth team",
-          "description": "We join the company permanently. Every month we work on what's most important now. Strategy + implementation + technology. Minimum 3 months."
+          "number": "③",
+          "title": "Analysis",
+          "description": "3-5 business days. Our tools run your data through consulting frameworks and AI."
         },
         {
-          "number": "③b",
-          "title": "Build — concrete implementation",
-          "description": "We know what to build because we have data. Milestone-based, with sign-off after each stage. Full transparency — you know where the money goes."
-        }
-      ]
-    },
-    "whatWeBuild": {
-      "badge": "Implementation",
-      "title": "Diagnosis says WHAT. We build HOW.",
-      "services": [
-        {
-          "title": "X-Ray — business diagnosis",
-          "description": "We X-ray your entire business and give you an action plan based on data, not opinions. From PLN 3,000."
+          "number": "④",
+          "title": "Results presentation",
+          "description": "60 minutes. We show what we found. Concrete conclusions, plan, implementation estimate."
         },
         {
-          "title": "Custom software",
-          "description": "Product configurators, client portals, dashboards, applications. Tailored to your business."
-        },
-        {
-          "title": "AI agents and AI tools",
-          "description": "Systems that generate reports, calculate options for customers, automate content and service. AI on YOUR data."
-        },
-        {
-          "title": "Marketing and conversion",
-          "description": "Websites, landing pages, ads, funnels. After diagnosis — not blindly."
-        },
-        {
-          "title": "Sales and offering",
-          "description": "Sales processes, CRM, pipeline, offering restructuring. So customers naturally want to buy more."
-        },
-        {
-          "title": "Go-to-Market",
-          "description": "New markets, new channels, prospect databases, export strategy."
-        },
-        {
-          "title": "Process automation",
-          "description": "Workflows, system integrations, elimination of manual work. People do what they're good at — machines do the rest."
+          "number": "⑤",
+          "title": "Your decision",
+          "description": "We implement together — or you take the plan to whoever you want. The plan is yours. No lock-in."
         }
       ],
-      "footer": "One company needed a product configurator and 3 sales channels for EU markets. Another — operations automation. Third — offering restructuring and new GTM strategy. We don't guess — data tells us what to build."
+      "guarantee": "14-day money-back guarantee — no questions asked."
     },
     "caseStudy": {
-      "badge": "Example",
-      "title": "What we did, not what we promise.",
-      "company": "Mirco — Racing seat manufacturer",
-      "situation": {
-        "title": "Situation",
-        "text": "Racing seat manufacturer struggled with declining sales. Great product positioned between Chinese segment and premium (Recaro), but limited channels and no systematic approach to new markets."
-      },
-      "whatWeDid": {
-        "title": "What we did",
-        "items": [
-          "Discovery workshop → niche identification, positioning, and new channels",
-          "Product configurator with real-time visualization (model, material, color, logo, accessories)",
-          "Affiliate portal (commission tracking, admin + influencer panels)",
-          "Custom AI scraper → scanned EU/UK markets, built distributor database",
-          "3 new sales channels: B2C influencers, B2B shops, custom workshops",
-          "Outreach system (CRM + automation + follow-up)"
-        ]
-      },
-      "result": {
-        "title": "Result",
-        "text": "From one channel to four. From local sales to systematic approach to EU/UK markets. Implementation: 2 months. Departments touched: sales, marketing, production, IT. One project — strategy, software, AI, automation, GTM. Under one roof."
-      },
-      "bio": {
-        "title": "Who's behind this",
-        "text": "Dawid — built 7 companies in different industries: e-commerce, software house, lead generation, content. This lets him see patterns that owners don't see — because he looked at the same problems from a dozen different perspectives. Combines business strategy with technology: knows what to build, but also WHY and WHETHER AT ALL. Leads analyses, builds strategies, talks to clients. Supported by a team of specialists and AI that speeds up research, analysis, and building."
-      },
+      "badge": "Case study",
+      "title": "What it looks like in practice",
+      "company": "Mirco — racing seat manufacturer",
+      "companyDetails": "30 years in business · 15 people · Skoczów, Poland",
+      "problem": "Declining sales, one channel, zero system. They thought they needed a new website.",
+      "whatWeDid": "We X-Rayed the company. Mapped the competition and the entire European seat market. Found that their biggest advantage — full customization — was completely invisible.",
+      "results": [
+        "4 sales channels instead of 1",
+        "400+ distributors in database",
+        "Configurator, affiliate portal, outreach system",
+        "8 weeks from start to working system"
+      ],
       "cta": "View full case study"
     },
     "comparison": {
       "badge": "Comparison",
-      "title": "Consultant gives PDF. Agency does what you tell them. We do both.",
+      "title": "How we're different",
       "table": {
         "headers": [
           "",
           "Consultant",
           "Agency",
           "Software house",
-          "DaVinci"
+          "Us"
         ],
         "rows": [
           {
             "label": "Analyzes entire business",
-            "values": [
-              "Partially (one area)",
-              "No",
-              "No",
-              "Yes"
-            ]
+            "values": ["✓", "✗", "✗", "✓"]
           },
           {
-            "label": "Builds the solution",
-            "values": [
-              "No (gives PDF)",
-              "Partially (marketing)",
-              "Yes (software)",
-              "Yes — everything"
-            ]
-          },
-          {
-            "label": "Looks at WHOLE company",
-            "values": [
-              "No",
-              "No",
-              "No",
-              "Yes"
-            ]
+            "label": "Implements solution",
+            "values": ["✗ report", "partially", "✓ software only", "✓ full scope"]
           },
           {
             "label": "Challenges the brief",
-            "values": [
-              "Sometimes",
-              "No",
-              "No",
-              "Always"
-            ]
+            "values": ["✓", "rarely", "never", "✓"]
           },
           {
-            "label": "AI-native",
-            "values": [
-              "No",
-              "No",
-              "Partially",
-              "Yes"
-            ]
+            "label": "Builds custom tools",
+            "values": ["✗", "✗", "✓", "✓"]
           },
           {
-            "label": "What you get",
-            "values": [
-              "Report",
-              "Campaigns / website",
-              "Software",
-              "Strategy + plan + implementation"
-            ]
+            "label": "SMB pricing",
+            "values": ["✗ expensive", "✓", "✓", "✓"]
           }
         ]
       },
-      "footer": "You don't have to choose between \"someone who understands\" and \"someone who builds.\" With us, it's the same company."
+      "footer": "Consultant will tell you what to do — but won't do it for you. Agency will do marketing — but won't check if your problem is even in marketing.",
+      "footerHighlight": "We CHECK first. Then we FIX."
+    },
+    "offer": {
+      "badge": "Offer",
+      "title": "Business X-Ray — PLN 5,000",
+      "includes": [
+        "Workshop with owner and key people (1 day)",
+        "AI + consulting frameworks analysis",
+        "Bottleneck identification and opportunity map",
+        "Data-driven competitive analysis",
+        "30-60-90 day action plan",
+        "Implementation estimate"
+      ],
+      "details": [
+        { "label": "Format", "value": "Online or on-site" },
+        { "label": "Who needs to be there", "value": "Owner + 1-2 key people" },
+        { "label": "Results", "value": "3-5 business days after workshop" },
+        { "label": "Guarantee", "value": "14-day refund — no questions asked" }
+      ],
+      "pathsIntro": "After X-Ray — two paths:",
+      "project": {
+        "title": "PROJECT",
+        "price": "Custom pricing",
+        "description": "We implement what X-Ray reveals:",
+        "items": [
+          "Process automation",
+          "AI Agents and tools",
+          "Internal systems and dashboards",
+          "Product configurators",
+          "Sales and outreach systems",
+          "Websites and marketing funnels",
+          "System integrations",
+          "Custom scrapers and databases",
+          "Ad campaigns",
+          "Client and affiliate portals"
+        ],
+        "footer": "Scope, milestones and pricing based on X-Ray results. You pay per milestone."
+      },
+      "partner": {
+        "title": "GROWTH PARTNER",
+        "price": "PLN 8-12K / month",
+        "description": "Advisory + implementation on an ongoing basis. We act as your external strategic and technical team. Min. 3 months."
+      },
+      "afterNote": "But we discuss this AFTER X-Ray — when we know what to fix and how much it costs."
     },
     "faq": {
       "badge": "FAQ",
-      "title": "You have questions. That's good.",
+      "title": "Frequently asked questions",
       "items": [
         {
-          "question": "Too expensive.",
-          "answer": "How much does another month of operating on gut feel cost you? How much did you spend on agencies that didn't start by understanding your business?"
+          "question": "Can I see what it looks like before I pay?",
+          "answer": "Yes — book a free consultation. We'll show you examples of what X-Ray looks like. Zero commitments. And if after the workshop you decide it wasn't worth it — you have 14 days for a refund."
         },
         {
-          "question": "You're too small.",
-          "answer": "Small team + AI = what takes 10 people elsewhere. You pay for results, not for an office."
+          "question": "How is this different from an audit I've already done?",
+          "answer": "An audit looks at one area. We look at the ENTIRE company. And we don't stop at a report — we fix what we find."
         },
         {
-          "question": "How are you different from agencies?",
-          "answer": "Agency gets a brief and executes. We check if the brief makes sense. We analyze the whole business and only then build."
+          "question": "I have 15 people — is this for me?",
+          "answer": "X-Ray works best for companies with 20-100+ people. With 15, let's talk — we'll tell you straight if it makes sense."
         },
         {
-          "question": "How are you different from consultants?",
-          "answer": "Consultant gives PDF and leaves. We diagnose AND build."
+          "question": "What if you don't find anything to fix?",
+          "answer": "We'll tell you straight. We don't sell implementations by force."
         },
         {
-          "question": "I've had bad experiences.",
-          "answer": "That's why we start with a free consultation. Zero commitments. See for yourself. We don't work with everyone — only with companies we can actually help."
+          "question": "How much does implementation cost?",
+          "answer": "Depends on what X-Ray reveals — every company is different. Project: custom pricing, milestone-based. Growth Partner: PLN 8-12K/month. You get a concrete estimate after X-Ray, BEFORE you make a decision. Zero surprises."
         },
         {
-          "question": "I don't need diagnosis.",
-          "answer": "Diagnosis can save tens of thousands on building the wrong thing."
+          "question": "I've had bad experiences with agencies/consultants.",
+          "answer": "We understand. That's why we start with diagnosis — not promises. That's why the plan is yours regardless of implementation decision. And that's why you have 14 days for a refund."
+        },
+        {
+          "question": "Can I take the plan and implement it myself?",
+          "answer": "Yes. The plan is yours. No lock-in."
         },
         {
           "question": "AI doesn't convince me.",
-          "answer": "AI is a tool — like a calculator. We think, AI speeds up research and analysis."
+          "answer": "We don't implement AI as a marketing buzzword. We work with AI every day. If AI solves your problem — we'll use it. If not — we won't."
         }
       ]
     },

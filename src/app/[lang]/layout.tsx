@@ -1,28 +1,26 @@
 import type { Metadata } from "next";
-import { DM_Sans } from "next/font/google";
-import localFont from "next/font/local";
+import { Inter, Space_Grotesk } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import "../globals.css";
 import { i18n, type Locale } from "@/lib/i18n/config";
 import { getAlternates } from "@/lib/seo";
 import { CookieConsentBanner } from "@/components/shared/CookieConsentBanner";
+import { SmoothScroll } from "@/components/shared/SmoothScroll";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { MetaPixel } from "@/components/analytics/MetaPixel";
 
-// Body font - DM Sans from Google Fonts
-const dmSans = DM_Sans({
-  subsets: ["latin"],
-  variable: "--font-dm-sans",
+// Body font - Inter
+const inter = Inter({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-inter",
   display: "swap",
 });
 
-// Headlines font - Clash Display from Fontshare
-const clashDisplay = localFont({
-  src: "../fonts/ClashDisplay-Variable.woff2",
-  variable: "--font-clash-display",
+// Headlines font - Space Grotesk (geometric, variable weight)
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-space-grotesk",
   display: "swap",
-  fallback: ["system-ui", "sans-serif"],
-  preload: true,
 });
 
 export async function generateStaticParams() {
@@ -158,12 +156,13 @@ export default async function LangLayout({
   return (
     <html lang={lang} className="dark">
       <body
-        className={`${dmSans.variable} ${clashDisplay.variable} min-h-screen bg-background font-sans antialiased`}
+        className={`${inter.variable} ${spaceGrotesk.variable} min-h-screen bg-background font-sans antialiased`}
       >
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <SmoothScroll />
         {children}
         <CookieConsentBanner lang={lang} dict={dict.cookieBanner} />
       </body>

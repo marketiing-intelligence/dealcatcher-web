@@ -1,78 +1,82 @@
 "use client";
 
 import { Container } from "@/components/shared/Container";
-import { SpotlightCard } from "@/components/ui/spotlight";
 import { motion } from "framer-motion";
 import { staggerContainer, staggerItem, viewportOnce } from "@/lib/animations";
-import { X } from "lucide-react";
 
 interface ProblemSectionProps {
   dict: {
-    badge: string;
     title: string;
-    pains: Array<{
-      title: string;
-      description: string[];
-    }>;
+    cards: Array<{ number: string; title: string; description: string }>;
+    vslBadge: string;
+    vslTitle: string;
   };
 }
 
 export function ProblemSection({ dict }: ProblemSectionProps) {
   return (
-    <section className="py-20 md:py-32 relative overflow-hidden">
-      {/* Subtle red-tinted background glow for problem section */}
-      <div className="absolute top-1/2 right-0 w-[500px] h-[500px] rounded-full bg-red-500/[0.03] blur-[120px] pointer-events-none" />
-
+    <section className="py-16 md:py-20 bg-[#0e0e0e]">
       <Container>
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportOnce}
-          variants={staggerContainer}
-        >
-          {/* Badge */}
-          <motion.span
-            variants={staggerItem}
-            className="inline-flex items-center gap-2 rounded-full border border-red-500/20 bg-red-500/5 px-4 py-1.5 text-sm font-medium text-red-400 mb-6"
+        <div className="max-w-5xl mx-auto">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={viewportOnce}
+            variants={staggerContainer}
           >
-            {dict.badge}
-          </motion.span>
+            {/* Layout: video LEFT, cards RIGHT */}
+            <div className="flex flex-col md:flex-row gap-6 items-start">
+              {/* Left: video */}
+              <motion.div
+                variants={staggerItem}
+                className="w-full md:w-auto flex-shrink-0"
+              >
+                <div className="mb-3">
+                  <span className="text-[10px] font-bold text-primary uppercase tracking-[0.15em] block mb-1">
+                    {dict.vslBadge}
+                  </span>
+                  <h3 className="text-xs font-semibold tracking-tight text-muted-foreground">
+                    {dict.vslTitle}
+                  </h3>
+                </div>
+                <div className="w-full md:w-[320px] rounded-2xl overflow-hidden border-2 border-white/[0.1] shadow-2xl shadow-black/50 bg-black">
+                  <video controls className="w-full h-auto block">
+                    <source src="/vsl.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </motion.div>
 
-          {/* Title */}
-          <motion.h2
-            variants={staggerItem}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold [word-spacing:0.15em] mb-12 md:mb-16 max-w-4xl leading-tight"
-          >
-            {dict.title}
-          </motion.h2>
-
-          {/* Pain point cards */}
-          <div className="grid md:grid-cols-2 gap-6 md:gap-8">
-            {dict.pains.map((pain, index) => (
-                <motion.div key={index} variants={staggerItem}>
-                  <SpotlightCard className="h-full">
-                    <h3 className="text-xl md:text-2xl font-semibold [word-spacing:0.15em] mb-6 leading-tight">
-                      {pain.title}
-                    </h3>
-                    <div className="space-y-3">
-                      {pain.description.map((point, i) => (
-                        <div key={i} className="flex items-start gap-3">
-                          <div className="flex-shrink-0 mt-1">
-                            <div className="w-5 h-5 rounded-full bg-red-500/10 border border-red-500/20 flex items-center justify-center">
-                              <X className="w-3 h-3 text-red-400" strokeWidth={2.5} />
-                            </div>
-                          </div>
-                          <p className="text-muted-foreground leading-relaxed flex-1">
-                            {point}
-                          </p>
-                        </div>
-                      ))}
+              {/* Right: title + 3 cards */}
+              <div className="flex-1 w-full">
+                <motion.h2
+                  variants={staggerItem}
+                  className="text-xl sm:text-2xl md:text-3xl font-semibold tracking-tight leading-[1.25] mb-6"
+                >
+                  {dict.title}
+                </motion.h2>
+                <div className="space-y-3">
+                {dict.cards.map((card, i) => (
+                  <motion.div
+                    key={i}
+                    variants={staggerItem}
+                    className="rounded-xl bg-[#141414] border border-white/[0.08] p-5 hover:border-red-500/15 hover:bg-[#161616] transition-all duration-300"
+                  >
+                    <div className="flex items-start gap-4">
+                      <div className="w-9 h-9 rounded-lg bg-red-500/10 border border-red-500/15 flex items-center justify-center flex-shrink-0">
+                        <span className="text-xs font-bold text-red-400">{card.number}</span>
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-sm font-semibold mb-1 tracking-tight">{card.title}</h3>
+                        <p className="text-sm text-muted-foreground leading-[1.7]">{card.description}</p>
+                      </div>
                     </div>
-                  </SpotlightCard>
-                </motion.div>
-            ))}
-          </div>
-        </motion.div>
+                  </motion.div>
+                ))}
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
       </Container>
     </section>
   );
